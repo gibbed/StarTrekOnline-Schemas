@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="QueueGameInfo">
+  <table>
+    <column name="QueueGameInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Queuedef" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Levelband" type="INT">
+      <offset>8</offset>
+      <default>-1</default>
+    </column>
+    <column name="Gametype" type="INT">
+      <offset>12</offset>
+      <static_define_list external="PVPGameType" />
+    </column>
+    <column name="Bolstertype" type="INT">
+      <offset>16</offset>
+      <static_define_list external="BolsterType" />
+    </column>
+    <column name="Bolsterlevel" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Leaverpenaltyduration" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Isprivate" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

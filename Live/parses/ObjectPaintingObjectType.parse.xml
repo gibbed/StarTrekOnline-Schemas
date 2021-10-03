@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ObjectPaintingObjectType">
+  <table>
+    <column name="ObjectPaintingObjectType" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Object" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="GroupDefRef" />
+    </column>
+    <column name="Properties" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <subtable external="WorldTerrainProperties" />
+    </column>
+    <column name="Overrideproperties" type="U8">
+      <offset>96</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Weldinstances" type="INT">
+      <offset>100</offset>
+      <default>-1</default>
+    </column>
+    <column name="Density" type="F32">
+      <offset>104</offset>
+      <default>100</default>
+    </column>
+    <column name="Randomizeallaxes" type="U8">
+      <offset>108</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Visible" type="U8">
+      <offset>109</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Physicalcollision" type="U8">
+      <offset>110</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Twosidedcollision" type="U8">
+      <offset>111</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Splatscollision" type="U8">
+      <offset>112</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Cameracolltype" type="INT">
+      <offset>116</offset>
+      <static_define_list external="WLCameraCollisionType" />
+    </column>
+    <column name="Gamecolltype" type="INT">
+      <offset>120</offset>
+      <static_define_list external="WLGameCollisionType" />
+    </column>
+    <column name="Seed" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenMapLaneIconDef">
+  <table>
+    <column name="UIGenMapLaneIconDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Unowned" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenMapIconDef" />
+    </column>
+    <column name="Ownedfriendly" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="UIGenMapIconDef" />
+    </column>
+    <column name="Ownedenemy" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="UIGenMapIconDef" />
+    </column>
+    <column name="Unlockedfriendly" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="UIGenMapIconDef" />
+    </column>
+    <column name="Unlockedenemy" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="UIGenMapIconDef" />
+    </column>
+    <column name="Towerfriendly" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="UIGenMapIconDef" />
+    </column>
+    <column name="Towerenemy" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="UIGenMapIconDef" />
+    </column>
+    <column name="Basefriendly" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="UIGenMapIconDef" />
+    </column>
+    <column name="Baseenemy" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="UIGenMapIconDef" />
+    </column>
+    <column name="Group1faction" type="STRING">
+      <offset>72</offset>
+    </column>
+    <column name="Group2faction" type="STRING">
+      <offset>80</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SMTPMessage">
+  <table>
+    <column name="SMTPMessage" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="From" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+      <default_string>utilitieslib@crypticstudios.com</default_string>
+    </column>
+    <column name="Recipients" type="STRINGARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Parts" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="SMTPMessagePart" />
+    </column>
+    <column name="UID" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Utimeout" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Utimestart" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Failedrecipients" type="STRINGARRAY">
+      <offset>72</offset>
+    </column>
+    <column name="Result" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Allrcpts" type="U8">
+      <offset>88</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Done" type="U8">
+      <offset>89</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Success" type="U8">
+      <offset>90</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

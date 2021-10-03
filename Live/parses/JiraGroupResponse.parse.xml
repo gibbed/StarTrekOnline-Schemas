@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="JiraGroupResponse">
+  <table>
+    <column name="JiraGroupResponse" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Self" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Expand" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Users" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="JiraGroupUserExpand" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

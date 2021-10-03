@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIStyleBorder">
+  <table>
+    <column name="UIStyleBorder" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Top" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Htop" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <redundant_name>Top</redundant_name>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Bottom" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Hbottom" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <redundant_name>Bottom</redundant_name>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Left" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Hleft" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <redundant_name>Left</redundant_name>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Right" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Hright" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <redundant_name>Right</redundant_name>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Topleft" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Htopleft" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <redundant_name>Topleft</redundant_name>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Topright" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Htopright" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <redundant_name>Topright</redundant_name>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Bottomleft" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Hbottomleft" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <redundant_name>Bottomleft</redundant_name>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Bottomright" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Hbottomright" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <redundant_name>Bottomright</redundant_name>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Background" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Hbackground" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <redundant_name>Background</redundant_name>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Pattern" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Backgroundtype" type="INT">
+      <offset>168</offset>
+      <static_define_list external="UITextureMode" />
+    </column>
+    <column name="Bordertype" type="INT">
+      <offset>172</offset>
+      <static_define_list external="UITextureMode" />
+    </column>
+    <column name="Outercolor" type="INT">
+      <offset>176</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Innercolor" type="INT">
+      <offset>180</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Topleftcolor" type="INT">
+      <offset>184</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Toprightcolor" type="INT">
+      <offset>188</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Bottomleftcolor" type="INT">
+      <offset>192</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Bottomrightcolor" type="INT">
+      <offset>196</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Paddingtop" type="F32">
+      <offset>200</offset>
+      <default>-943501440</default>
+    </column>
+    <column name="Paddingbottom" type="F32">
+      <offset>204</offset>
+      <default>-943501440</default>
+    </column>
+    <column name="Paddingleft" type="F32">
+      <offset>208</offset>
+      <default>-943501440</default>
+    </column>
+    <column name="Paddingright" type="F32">
+      <offset>212</offset>
+      <default>-943501440</default>
+    </column>
+    <column name="Drawunder" type="BIT">
+      <offset>216</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bfusedbits" type="INTFIXEDARRAY">
+      <offset>220</offset>
+      <flags>
+        <flag>USEDFIELD</flag>
+      </flags>
+      <num_elements>2</num_elements>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>232</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ChatCommandFilter">
+  <table>
+    <column name="ChatCommandFilter" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Maxaccessleveltofilter" type="INT">
+      <offset>0</offset>
+      <default>-1</default>
+    </column>
+    <column name="Command" type="STRINGARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemUpgradeConfig">
+  <table>
+    <column name="ItemUpgradeConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Itemname" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="ItemUpgradeNames" />
+    </column>
+    <column name="Upgradeladder" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ItemUpgradeLadder" />
+    </column>
+    <column name="Tier" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="ItemUpgradeTiers" />
+    </column>
+    <column name="Modifier" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="ItemUpgradeModifiers" />
+    </column>
+    <column name="Maxstack" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="ItemUpgradeMaxStack" />
+    </column>
+    <column name="Bonus" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="ItemUpgradeBonus" />
+    </column>
+    <column name="Upgradetime" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WICommonWebSite">
+  <table>
+    <column name="WICommonWebSite" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Version" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Buildversion" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Instance" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Access" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Content" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Extension" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

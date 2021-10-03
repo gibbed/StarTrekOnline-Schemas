@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenBundleText">
+  <table>
+    <column name="UIGenBundleText" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Text" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Smf" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Text</redundant_name>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Textblock" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Textexpr" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Textblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Smfexpr" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Textblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Alignment" type="BIT">
+      <offset>16</offset>
+      <bit_offset>327680</bit_offset>
+      <static_define_list external="UIDirection" />
+    </column>
+    <column name="FilterProfanity" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Scaletofit" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Shrinktofit" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Nowrap" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

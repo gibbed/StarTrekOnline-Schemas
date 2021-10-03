@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisMissionTrap">
+  <table>
+    <column name="GenesisMissionTrap" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Onvolumeentered" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="PowerName" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Emitterchallenge" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Targetchallenge" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

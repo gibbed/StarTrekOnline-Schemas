@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemAssignmentBonusModBonusMultiplierParams">
+  <table>
+    <column name="ItemAssignmentBonusModBonusMultiplierParams" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Attribute" type="INT">
+      <offset>0</offset>
+      <static_define_list external="ItemAssignmentAttribute" />
+    </column>
+    <column name="Multiplier" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

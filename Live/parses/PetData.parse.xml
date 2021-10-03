@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PetData">
+  <table>
+    <column name="PetData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Entity" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Entity" />
+    </column>
+    <column name="Aistate" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Aistance" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Level" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Combatlevel" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Uicreatepowerid" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Uicreateattribmodidx" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Uicreateattribmodcount" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Power" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Power" />
+    </column>
+    <column name="PowerDef" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="PowerDef" />
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Stackidx" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Summonidx" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Pet" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Summon" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dead" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenListState">
+  <table>
+    <column name="UIGenListState" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>10</default>
+      <static_define_list external="UIGenType" />
+    </column>
+    <column name="Selectedrow" type="INT">
+      <offset>4</offset>
+      <default>-1</default>
+    </column>
+    <column name="Managedfocusindex" type="INT">
+      <offset>8</offset>
+      <default>-1</default>
+    </column>
+    <column name="Preferredcolumnfocus" type="INT">
+      <offset>12</offset>
+      <default>-1</default>
+    </column>
+    <column name="Resizecol" type="INT16">
+      <offset>16</offset>
+      <default>-1</default>
+    </column>
+    <column name="Mostrecentresizecol" type="INT16">
+      <offset>18</offset>
+      <default>-1</default>
+    </column>
+    <column name="Movecol" type="INT16">
+      <offset>20</offset>
+      <default>-1</default>
+    </column>
+    <column name="Destcol" type="INT16">
+      <offset>22</offset>
+      <default>-1</default>
+    </column>
+    <column name="Mousedownx" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Mousedowny" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Mouselastx" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Mouselasty" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Mouseinsiderow" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Mouseinsidecol" type="INT16">
+      <offset>44</offset>
+    </column>
+    <column name="Lastmouseinsiderow" type="INT">
+      <offset>48</offset>
+      <default>-1</default>
+    </column>
+    <column name="Lastmouseinsidecol" type="INT16">
+      <offset>52</offset>
+    </column>
+    <column name="Sortcol" type="INT16">
+      <offset>54</offset>
+      <default>-1</default>
+    </column>
+    <column name="Sortfieldindex" type="INT">
+      <offset>56</offset>
+      <default>-1</default>
+    </column>
+    <column name="Sortmode" type="INT">
+      <offset>60</offset>
+      <static_define_list external="UISortType" />
+    </column>
+    <column name="Sorttokeninterpretation" type="INT">
+      <offset>64</offset>
+      <static_define_list external="UIGenTokenInterpretation" />
+    </column>
+    <column name="Sortfieldname" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Sortascindicatorbundletexture" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
+      <subtable external="UIGenBundleTexture" />
+    </column>
+    <column name="Sortdesindicatorbundletexture" type="EMBEDDEDSTRUCT">
+      <offset>184</offset>
+      <subtable external="UIGenBundleTexture" />
+    </column>
+    <column name="Sortascindicatorbundle" type="EMBEDDEDSTRUCT">
+      <offset>280</offset>
+      <subtable external="UIGenBundleTextureState" />
+    </column>
+    <column name="Sortdesindicatorbundle" type="EMBEDDEDSTRUCT">
+      <offset>304</offset>
+      <subtable external="UIGenBundleTextureState" />
+    </column>
+    <column name="Scrollbar" type="EMBEDDEDSTRUCT">
+      <offset>328</offset>
+      <subtable external="UIGenScrollbarState" />
+    </column>
+    <column name="Badtemplatenames" type="STRINGARRAY">
+      <offset>480</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rows" type="STRUCT">
+      <offset>488</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+        <flag>STRUCT_NORECURSE</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="UIGen" />
+    </column>
+    <column name="Ownedrows" type="STRUCT">
+      <offset>496</offset>
+      <flags>
+        <flag>STRUCT_NORECURSE</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="UIGen" />
+    </column>
+    <column name="Templategens" type="STRUCT">
+      <offset>504</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="UIGenChild" />
+    </column>
+    <column name="Columnorder" type="STRUCT">
+      <offset>512</offset>
+      <flags>
+        <flag>STRUCT_NORECURSE</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="UIColumn" />
+    </column>
+    <column name="Cols" type="STRUCT">
+      <offset>520</offset>
+      <flags>
+        <flag>STRUCT_NORECURSE</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="UIGen" />
+    </column>
+    <column name="Layoutfixedcolumnpercentage" type="F32">
+      <offset>528</offset>
+    </column>
+    <column name="Layoutunfixedcolumnpercentage" type="F32">
+      <offset>532</offset>
+    </column>
+    <column name="Layoutstretchycolumnpercentage" type="F32">
+      <offset>536</offset>
+    </column>
+    <column name="Layoutplayercolumnpercentage" type="F32">
+      <offset>540</offset>
+    </column>
+    <column name="Layouttotalstretchyratio" type="F32">
+      <offset>544</offset>
+    </column>
+    <column name="Layouttotalplayerpercentage" type="F32">
+      <offset>548</offset>
+    </column>
+    <column name="Destdrawhigh" type="U8">
+      <offset>552</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forceshowselectedrow" type="U8">
+      <offset>553</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Selectedrownotselected" type="U8">
+      <offset>554</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Unselected" type="U8">
+      <offset>555</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Desiredrowselection" type="INT">
+      <offset>556</offset>
+      <default>-1</default>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

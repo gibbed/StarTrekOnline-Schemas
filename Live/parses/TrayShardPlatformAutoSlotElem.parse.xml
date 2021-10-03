@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TrayShardPlatformAutoSlotElem">
+  <table>
+    <column name="TrayShardPlatformAutoSlotElem" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Tray" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Slot" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Requiredpowercategories" type="INTARRAY">
+      <offset>8</offset>
+      <static_define_list external="PowerCategory" />
+    </column>
+    <column name="Excludedpowercategories" type="INTARRAY">
+      <offset>16</offset>
+      <static_define_list external="PowerCategory" />
+    </column>
+    <column name="Requirepropagatedpower" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Excludepropagatedpower" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

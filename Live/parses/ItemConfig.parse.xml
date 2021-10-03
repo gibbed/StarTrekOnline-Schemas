@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemConfig">
+  <table>
+    <column name="ItemConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Useuniqueidsforitempowerdefrefs" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Gemremovalusesoverflow" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Itemtypeequippedfx" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ItemRestrictBagToFxMap" />
+    </column>
+    <column name="Itemtransmutecost" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Itemtransmutecurrency" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Headshotstyleconfig" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="ItemHeadshotStyleConfig" />
+    </column>
+    <column name="Missioncooldownclear" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="MissionItemCooldownClear" />
+    </column>
+    <column name="Maxnumberofautorewardpackopens" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Maxitemassignmentquantityoverride" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Htablecontrolledgemrerollcosttype" type="REFERENCE">
+      <offset>56</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Tablecontrolledgemrerollcostamount" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Htablecontrolledgemunlockcosttype" type="REFERENCE">
+      <offset>72</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Tablecontrolledgemunlockcostamount" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Htablecontrolledgemrestorecosttype" type="REFERENCE">
+      <offset>88</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Tablecontrolledgemrestorecostamount" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Applyslottedgemcostumes" type="BIT">
+      <offset>100</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Persistitemqualityingems" type="BIT">
+      <offset>100</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Itempowerchargesarepersisted" type="BIT">
+      <offset>100</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Gamepermissionnumericbonusitem" type="STRUCT">
+      <offset>104</offset>
+      <subtable external="ItemDefRef" />
+    </column>
+    <column name="Ignoredirtyinnateaccrualnumericitem" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="ItemDefRef" />
+    </column>
+    <column name="Itemdynamicsalvageenabled" type="BIT">
+      <offset>120</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Itemdynamicbasesalvage" type="F32">
+      <offset>124</offset>
+    </column>
+    <column name="Itemdynamicvariablesalvage" type="F32">
+      <offset>128</offset>
+    </column>
+    <column name="Itemdynamicnosalvage" type="STRINGARRAY">
+      <offset>136</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Itemdynamicsalvagenumericitemdef" type="REFERENCE">
+      <offset>144</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Itemdynamicsalvagenumericperlevel" type="F32">
+      <offset>152</offset>
+    </column>
+    <column name="Itemdynamicsalvagenumericvariance" type="F32">
+      <offset>156</offset>
+    </column>
+    <column name="Itemdynamicsalvagenumericbyquality" type="F32ARRAY">
+      <offset>160</offset>
+    </column>
+    <column name="Itemdynamicsalvagenumericlevelless" type="INT">
+      <offset>168</offset>
+    </column>
+    <column name="Itemdynamicsalvagecraftingevent" type="STRING">
+      <offset>176</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Itemdynamicsalvagecraftingeventadditionalmultiplier" type="F32">
+      <offset>184</offset>
+    </column>
+    <column name="Itemdynamicsalvageroundat" type="F32">
+      <offset>188</offset>
+    </column>
+    <column name="Dynamicitempowerrerollcost" type="STRUCT">
+      <offset>192</offset>
+      <subtable external="DynamicItemPowerRerollCost" />
+    </column>
+    <column name="Dynamicitempowerrerolltimecurrencynumericitemdef" type="REFERENCE">
+      <offset>200</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Dynamicitempowerrerollsalvagenumericitemdef" type="REFERENCE">
+      <offset>208</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Itempowerrerollscalefactornumericitemdef" type="REFERENCE">
+      <offset>216</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Scalefactorrerollcost" type="INT">
+      <offset>224</offset>
+    </column>
+    <column name="Scalefactorrerollcostnumeric" type="REFERENCE">
+      <offset>232</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Scalefactorrerolluniversalcountdef" type="REFERENCE">
+      <offset>240</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Pvppowermode" type="INT">
+      <offset>248</offset>
+      <default>-1</default>
+      <static_define_list external="PowerMode" />
+    </column>
+    <column name="Xpconfig" type="STRUCT">
+      <offset>256</offset>
+      <subtable external="ItemExperienceConfig" />
+    </column>
+    <column name="Levelconfig" type="STRUCT">
+      <offset>264</offset>
+      <subtable external="ItemLevelConfig" />
+    </column>
+    <column name="Bagspowercontrol" type="INTARRAY">
+      <offset>288</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Bagspowercontrolminimum" type="INT">
+      <offset>296</offset>
+    </column>
+    <column name="Trackingstreakbreakmax" type="INT">
+      <offset>300</offset>
+    </column>
+    <column name="Descvariable" type="STRUCT">
+      <offset>304</offset>
+      <subtable external="DisplayMessageReplaceKey" />
+    </column>
+    <column name="Getrequiredpetitemsstorename" type="STRING">
+      <offset>312</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ClientDialogBox">
+  <table>
+    <column name="ClientDialogBox" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <static_define_list external="NotifyType" />
+    </column>
+    <column name="Title" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Body" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Ok" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Cancel" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Htarget" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>UIGen</dictionary_name>
+    </column>
+    <column name="Canceldialog" type="U8">
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hidetype" type="INT">
+      <offset>52</offset>
+      <static_define_list external="HideConfirmDialogType" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

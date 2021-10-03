@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldCivilianVolumeProperties">
+  <table>
+    <column name="WorldCivilianVolumeProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Disableroads" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disablesidewalks" type="U8">
+      <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forcedroad" type="U8">
+      <offset>2</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forcedroadhasmedian" type="U8">
+      <offset>3</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forcedsidewalk" type="U8">
+      <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forcedasis" type="U8">
+      <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forcedintersection" type="U8">
+      <offset>6</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forcedcrosswalk" type="U8">
+      <offset>7</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Pedestrianwanderarea" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Civiliancritterspawns" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="CivilianCritterSpawn" />
+    </column>
+    <column name="Legdefinition" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

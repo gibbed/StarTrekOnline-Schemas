@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EmailV3UIMessage">
+  <table>
+    <column name="EmailV3UIMessage" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Message" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="EmailV3Message" />
+    </column>
+    <column name="Chatservermessage" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="ChatMailStruct" />
+    </column>
+    <column name="Npcmessage" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="NPCEMailData" />
+    </column>
+    <column name="Subject" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Subjectowned" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="FromName" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="FromHandle" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Body" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Bodyowned" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="shardName" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Sent" type="INT">
+      <offset>80</offset>
+      <format_strings>
+        <format_string name="JSON_SECS_TO_RFC822">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Read" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="UID" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Ulotid" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="Sendertype" type="INT">
+      <offset>96</offset>
+      <static_define_list external="EMailV3SenderType" />
+    </column>
+    <column name="ContentType" type="INT">
+      <offset>100</offset>
+      <static_define_list external="EMailV3ContentType" />
+    </column>
+    <column name="Tocontainerid" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Npcemailid" type="INT">
+      <offset>108</offset>
+    </column>
+    <column name="Numattacheditems" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Flaggedfordelete" type="U8">
+      <offset>116</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

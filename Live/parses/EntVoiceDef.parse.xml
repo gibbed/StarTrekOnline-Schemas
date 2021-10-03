@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EntVoiceDef">
+  <table>
+    <column name="EntVoiceDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Astrfilename" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Genderdef" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="EntVoiceGenderDef" />
+    </column>
+    <column name="Lastupdated" type="FIXEDSTRING">
+      <offset>24</offset>
+      <string_length>128</string_length>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

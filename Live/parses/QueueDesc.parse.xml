@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="QueueDesc">
+  <table>
+    <column name="QueueDesc" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="QueueName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Def" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="QueueDef" />
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Categoryicon" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Requiredmission" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Requiredactivity" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Categorydisplayname" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Privatename" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Formatteddisplayname" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Formatteddescription" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Formattedname" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Displaynamemesg" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Descriptionmesg" type="EMBEDDEDSTRUCT">
+      <offset>112</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Cooldowndisplaynamemesg" type="EMBEDDEDSTRUCT">
+      <offset>136</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Cooldowndescriptionmesg" type="EMBEDDEDSTRUCT">
+      <offset>160</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Category" type="INT">
+      <offset>184</offset>
+      <static_define_list external="QueueCategory" />
+    </column>
+    <column name="Reward" type="INT">
+      <offset>188</offset>
+      <static_define_list external="QueueReward" />
+    </column>
+    <column name="Difficulty" type="INT">
+      <offset>192</offset>
+      <static_define_list external="QueueDifficulty" />
+    </column>
+    <column name="Expectedgametime" type="INT">
+      <offset>196</offset>
+    </column>
+    <column name="Cannotusereason" type="INT">
+      <offset>200</offset>
+      <static_define_list external="QueueCannotUseReason" />
+    </column>
+    <column name="Queuestate" type="INT">
+      <offset>204</offset>
+      <static_define_list external="PlayerQueueState" />
+    </column>
+    <column name="Regionflags" type="INT">
+      <offset>208</offset>
+      <static_define_list external="ControlSchemeRegionType" />
+    </column>
+    <column name="Ucooldowntime" type="INT">
+      <offset>212</offset>
+    </column>
+    <column name="Uiinstanceid" type="INT">
+      <offset>216</offset>
+    </column>
+    <column name="Mapkey" type="INT64">
+      <offset>224</offset>
+    </column>
+    <column name="Uimapid" type="INT64">
+      <offset>224</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Mapkey</redundant_name>
+    </column>
+    <column name="Uiownerid" type="INT">
+      <offset>232</offset>
+    </column>
+    <column name="Uavgwaittime" type="INT">
+      <offset>236</offset>
+    </column>
+    <column name="Elapsedmaptime" type="INT">
+      <offset>240</offset>
+    </column>
+    <column name="Queuedplayercount" type="INT">
+      <offset>244</offset>
+    </column>
+    <column name="Offeredplayercount" type="INT">
+      <offset>248</offset>
+    </column>
+    <column name="Acceptedplayercount" type="INT">
+      <offset>252</offset>
+    </column>
+    <column name="Inmapplayercount" type="INT">
+      <offset>256</offset>
+    </column>
+    <column name="Playercountmax" type="INT">
+      <offset>260</offset>
+    </column>
+    <column name="Playercountmin" type="INT">
+      <offset>264</offset>
+    </column>
+    <column name="Groupcount" type="INT">
+      <offset>268</offset>
+    </column>
+    <column name="Groupplayercount" type="INTARRAY">
+      <offset>272</offset>
+    </column>
+    <column name="Totalplayercount" type="INT">
+      <offset>280</offset>
+    </column>
+    <column name="Simplestatus" type="INT">
+      <offset>284</offset>
+    </column>
+    <column name="Levelbandindex" type="INT">
+      <offset>288</offset>
+    </column>
+    <column name="MinLevel" type="INT">
+      <offset>292</offset>
+    </column>
+    <column name="MaxLevel" type="INT">
+      <offset>296</offset>
+    </column>
+    <column name="Compositelevel" type="INT">
+      <offset>300</offset>
+    </column>
+    <column name="Hgroup1allegiance" type="REFERENCE">
+      <offset>304</offset>
+      <dictionary_name>AllegianceDef</dictionary_name>
+    </column>
+    <column name="Hgroup2allegiance" type="REFERENCE">
+      <offset>312</offset>
+      <dictionary_name>AllegianceDef</dictionary_name>
+    </column>
+    <column name="Requiredgearrating" type="INT">
+      <offset>320</offset>
+    </column>
+    <column name="Inqueue" type="BIT">
+      <offset>324</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bolster" type="BIT">
+      <offset>324</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allgroupssameaffiliation" type="BIT">
+      <offset>324</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Overtime" type="BIT">
+      <offset>324</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Haspassword" type="BIT">
+      <offset>324</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hidden" type="BIT">
+      <offset>324</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Optionalinstance" type="BIT">
+      <offset>324</offset>
+      <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

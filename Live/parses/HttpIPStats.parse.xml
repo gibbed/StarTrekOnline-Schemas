@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="HttpIPStats">
+  <table>
+    <column name="HttpIPStats" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ip" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Totalbytessent" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Byteslast15secs" type="INT64">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

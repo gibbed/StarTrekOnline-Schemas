@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ObjectPathSegment">
+  <table>
+    <column name="ObjectPathSegment" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Fieldoffset" type="INT16">
+      <offset>0</offset>
+    </column>
+    <column name="Fieldsize" type="INT16">
+      <offset>2</offset>
+    </column>
+    <column name="Column" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Offset" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Index" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Key" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Descend" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ispoly" type="U8">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isstashtable" type="U8">
+      <offset>34</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

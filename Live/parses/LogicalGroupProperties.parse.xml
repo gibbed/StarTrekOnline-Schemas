@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="LogicalGroupProperties">
+  <table>
+    <column name="LogicalGroupProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Interactablespawnproperties" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="LogicalGroupSpawnProperties" />
+    </column>
+    <column name="Encounterspawnproperties" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <subtable external="LogicalGroupSpawnProperties" />
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

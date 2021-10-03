@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ProgressionMissionGroupData">
+  <table>
+    <column name="ProgressionMissionGroupData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Nodedef" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>GameProgressionNodeDef</dictionary_name>
+    </column>
+    <column name="DisplayName" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Summary" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Teaser" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Image" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="isCurrent" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Complete" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Unlocked" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Timetocomplete" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Major" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

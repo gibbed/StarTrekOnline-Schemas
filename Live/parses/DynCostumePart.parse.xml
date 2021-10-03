@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynCostumePart">
+  <table>
+    <column name="DynCostumePart" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="BoneName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Clickedbonename" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Geometry" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Model" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Material" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Clothdata" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="DynCostumeClothData" />
+    </column>
+    <column name="Textureswap" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="DynCostumePartTextureSwap" />
+    </column>
+    <column name="Usecolor" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="DynCostumePartColorSwap" />
+    </column>
+    <column name="Usealtparams" type="BOOLFLAG">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

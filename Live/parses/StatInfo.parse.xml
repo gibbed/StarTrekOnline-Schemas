@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="StatInfo">
+  <table>
+    <column name="StatInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Stat" type="INT">
+      <offset>0</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Lasttier" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Nexttier" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Value" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Currenttier" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="LeaderboardEventDef">
+  <table>
+    <column name="LeaderboardEventDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Leaderboardevent" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Includestat" type="STRINGARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Excludestat" type="STRINGARRAY">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Subscribedincludestat" type="STRINGARRAY">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Subscribedexcludestat" type="STRINGARRAY">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Numtokeep" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Subscribedindex" type="INT">
+      <offset>44</offset>
+      <default>-1</default>
+    </column>
+    <column name="Account" type="U8">
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Neverprune" type="U8">
+      <offset>49</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="MapName" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="QueueGroup">
+  <table>
+    <column name="QueueGroup" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Matchmembers" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="QueueMatchMember" />
+    </column>
+    <column name="Memberparticipation" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="QueueMemberParticipation" />
+    </column>
+    <column name="Puiinmapteamids" type="INTARRAY">
+      <offset>16</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Groupindex" type="INT">
+      <offset>24</offset>
+      <default>-1</default>
+    </column>
+    <column name="Groupsize" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Limbocount" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Groupdef" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="QueueGroupDef" />
+    </column>
+    <column name="Uiteamupid" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Uguildid" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GfxDiffuseProbeDebug">
+  <table>
+    <column name="GfxDiffuseProbeDebug" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Barycoords" type="F32FIXEDARRAY">
+      <offset>512</offset>
+      <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Projectedbarycoords" type="F32FIXEDARRAY">
+      <offset>528</offset>
+      <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Tetraindex" type="INT">
+      <offset>656</offset>
+    </column>
+    <column name="Tetraneighbors" type="INTFIXEDARRAY">
+      <offset>660</offset>
+      <num_elements>4</num_elements>
+      <format_raw>15</format_raw>
+    </column>
+    <column name="Cacheposition" type="F32FIXEDARRAY">
+      <offset>676</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Posxcolor" type="F32FIXEDARRAY">
+      <offset>688</offset>
+      <num_elements>3</num_elements>
+      <format>HSV</format>
+    </column>
+    <column name="Negxcolor" type="F32FIXEDARRAY">
+      <offset>700</offset>
+      <num_elements>3</num_elements>
+      <format>HSV</format>
+    </column>
+    <column name="Posycolor" type="F32FIXEDARRAY">
+      <offset>712</offset>
+      <num_elements>3</num_elements>
+      <format>HSV</format>
+    </column>
+    <column name="Negycolor" type="F32FIXEDARRAY">
+      <offset>724</offset>
+      <num_elements>3</num_elements>
+      <format>HSV</format>
+    </column>
+    <column name="Poszcolor" type="F32FIXEDARRAY">
+      <offset>736</offset>
+      <num_elements>3</num_elements>
+      <format>HSV</format>
+    </column>
+    <column name="Negzcolor" type="F32FIXEDARRAY">
+      <offset>748</offset>
+      <num_elements>3</num_elements>
+      <format>HSV</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

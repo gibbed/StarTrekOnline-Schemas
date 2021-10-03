@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WleAEParamHSV">
+  <table>
+    <column name="WleAEParamHSV" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Is_Specified" type="BOOLFLAG">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hsvvalue" type="F32FIXEDARRAY">
+      <offset>4</offset>
+      <num_elements>4</num_elements>
+      <format>HSV</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

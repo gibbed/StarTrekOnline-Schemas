@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MovementClientStatsFrame">
+  <table>
+    <column name="MovementClientStatsFrame" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Serverstepcount" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Leftoversteps" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Behind" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Usedsteps" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Forcedsteps" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Skipsteps" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Consolidatestepsearly" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Consolidatestepslate" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Flags" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="MovementClientStatsFrameFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

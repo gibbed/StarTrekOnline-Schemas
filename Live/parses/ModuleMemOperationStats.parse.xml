@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ModuleMemOperationStats">
+  <table>
+    <column name="ModuleMemOperationStats" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ModuleName" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Parentbudget" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="MemoryBudget" />
+    </column>
+    <column name="Size" type="INT64">
+      <offset>16</offset>
+    </column>
+    <column name="Sizetraffic" type="INT64">
+      <offset>24</offset>
+    </column>
+    <column name="Count" type="INT64">
+      <offset>32</offset>
+    </column>
+    <column name="Counttraffic" type="INT64">
+      <offset>40</offset>
+    </column>
+    <column name="Shortterm" type="IGNORE" />
+    <column name="Shared" type="IGNORE" />
+    <column name="Frame_Id" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

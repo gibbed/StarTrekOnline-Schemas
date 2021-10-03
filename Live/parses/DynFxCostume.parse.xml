@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynFxCostume">
+  <table>
+    <column name="DynFxCostume" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="CostumeName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Costumetag" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Clonesourcecostume" type="BOOLFLAG">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disableterraintilt" type="BOOLFLAG">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Subcostume" type="BOOLFLAG">
+      <offset>18</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Snapshotofcallerspose" type="BOOLFLAG">
+      <offset>19</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Releasesnapshot" type="BOOLFLAG">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritbits" type="U8">
+      <offset>21</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Material" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Texture1new" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Texture1old" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Texture2new" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Texture2old" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Texture3new" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Texture3old" type="STRING">
+      <offset>72</offset>
+    </column>
+    <column name="Texture4new" type="STRING">
+      <offset>80</offset>
+    </column>
+    <column name="Texture4old" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Color" type="F32FIXEDARRAY">
+      <offset>96</offset>
+      <num_elements>3</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Color1" type="F32FIXEDARRAY">
+      <offset>108</offset>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Color2" type="F32FIXEDARRAY">
+      <offset>124</offset>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Color3" type="F32FIXEDARRAY">
+      <offset>140</offset>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Altmaterial" type="STRING">
+      <offset>160</offset>
+    </column>
+    <column name="Alttexture1new" type="STRING">
+      <offset>168</offset>
+    </column>
+    <column name="Alttexture1old" type="STRING">
+      <offset>176</offset>
+    </column>
+    <column name="Alttexture2new" type="STRING">
+      <offset>184</offset>
+    </column>
+    <column name="Alttexture2old" type="STRING">
+      <offset>192</offset>
+    </column>
+    <column name="Alttexture3new" type="STRING">
+      <offset>200</offset>
+    </column>
+    <column name="Alttexture3old" type="STRING">
+      <offset>208</offset>
+    </column>
+    <column name="Alttexture4new" type="STRING">
+      <offset>216</offset>
+    </column>
+    <column name="Alttexture4old" type="STRING">
+      <offset>224</offset>
+    </column>
+    <column name="Altcolor" type="F32FIXEDARRAY">
+      <offset>232</offset>
+      <num_elements>3</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Altcolor1" type="F32FIXEDARRAY">
+      <offset>244</offset>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Altcolor2" type="F32FIXEDARRAY">
+      <offset>260</offset>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Altcolor3" type="F32FIXEDARRAY">
+      <offset>276</offset>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Animkeyword" type="STRINGARRAY">
+      <offset>296</offset>
+    </column>
+    <column name="Animflag" type="STRINGARRAY">
+      <offset>304</offset>
+    </column>
+    <column name="Setstance" type="STRINGARRAY">
+      <offset>312</offset>
+    </column>
+    <column name="Clearstance" type="STRINGARRAY">
+      <offset>320</offset>
+    </column>
+    <column name="Togglestance" type="STRINGARRAY">
+      <offset>328</offset>
+    </column>
+    <column name="Param" type="STRUCT">
+      <offset>336</offset>
+      <subtable external="DynApplyParam" />
+    </column>
+    <column name="Notdependentskeleton" type="BOOLFLAG">
+      <offset>344</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Donotautofade" type="BOOLFLAG">
+      <offset>345</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bitset" type="IGNORE" />
+    <column name="Bitclear" type="IGNORE" />
+    <column name="Bittoggle" type="IGNORE" />
+    <column name="Bitflash" type="IGNORE" />
+    <column name="End" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemRewardPackTransferData">
+  <table>
+    <column name="ItemRewardPackTransferData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hrewardpackitem" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Hrewardpackdisplaynamemsg" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Packoverridequality" type="INT">
+      <offset>16</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Packresultquality" type="INT">
+      <offset>20</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Rewards" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="InvRewardRequest" />
+    </column>
+    <column name="Rewardpacktype" type="INT">
+      <offset>32</offset>
+      <static_define_list external="ItemRewardPackType" />
+    </column>
+    <column name="Autoequip" type="U8">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemAssignmentSchoolXPSettings">
+  <table>
+    <column name="ItemAssignmentSchoolXPSettings" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Xprewardtable" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Xpdurationrewardscale" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ItemAssignmentDurationRewardScale" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

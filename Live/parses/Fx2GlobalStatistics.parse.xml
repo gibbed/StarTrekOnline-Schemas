@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="Fx2GlobalStatistics">
+  <table>
+    <column name="Fx2GlobalStatistics" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Utotalfx2regions" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Utotalfx2owners" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Utotalfx2s" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Uactivefx2s" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Ofx2statistics" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <subtable external="Fx2Statistics" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

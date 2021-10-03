@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SearchStatusData">
+  <table>
+    <column name="SearchStatusData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Searchtitle" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Ft" type="INT">
+      <offset>8</offset>
+      <static_define_list external="SearchFilterType" />
+    </column>
+    <column name="Filter" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Resultstyle" type="INT">
+      <offset>24</offset>
+      <static_define_list external="SearchResultsStyle" />
+    </column>
+    <column name="Result" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="ResourceSearchResult" />
+    </column>
+    <column name="Selectedrowdict" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Selectedrowresource" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Eaiselectedrows" type="INTARRAY">
+      <offset>64</offset>
+    </column>
+    <column name="Types" type="STRINGARRAY">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Sub Searches" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="SearchStatusSubSearch" />
+    </column>
+    <column name="Typesresult" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
+      <subtable external="ResourceSearchResult" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

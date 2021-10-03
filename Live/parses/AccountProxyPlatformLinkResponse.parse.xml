@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AccountProxyPlatformLinkResponse">
+  <table>
+    <column name="AccountProxyPlatformLinkResponse" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Result" type="INT">
+      <offset>0</offset>
+      <static_define_list external="AccountProxyPlatformLinkResult" />
+    </column>
+    <column name="Uentityid" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

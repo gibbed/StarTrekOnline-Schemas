@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ProjectileEntityMMSettings">
+  <table>
+    <column name="ProjectileEntityMMSettings" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Speed" type="F32">
+      <offset>0</offset>
+      <default>-1</default>
+    </column>
+    <column name="Acceleration" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Targetspeed" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Range" type="F32">
+      <offset>12</offset>
+      <default>300</default>
+    </column>
+    <column name="Lifetime" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Gravity" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Entitycollisionradius" type="F32">
+      <offset>24</offset>
+      <default>6</default>
+    </column>
+    <column name="Worldcollisionradius" type="F32">
+      <offset>28</offset>
+      <default>3</default>
+    </column>
+    <column name="Surfaceobstructangle" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Stepheight" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Hitsfriendlies" type="BIT">
+      <offset>40</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">0</format_string>
+      </format_strings>
+    </column>
+    <column name="Hitsteammates" type="BIT">
+      <offset>40</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">0</format_string>
+      </format_strings>
+    </column>
+    <column name="Hitsenemies" type="BIT">
+      <offset>40</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Linearvelocity" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Hugground" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Wallsobstruct" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Hitsowner" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Ignorehitwhilestationary" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

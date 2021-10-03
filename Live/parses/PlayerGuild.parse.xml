@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayerGuild">
+  <table>
+    <column name="PlayerGuild" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Iguildid" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Hguild" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>CopyDict_GUILD</dictionary_name>
+    </column>
+    <column name="Hguildbank" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>CopyDict_EntityGuildBank</dictionary_name>
+    </column>
+    <column name="Itimesincehandleinit" type="INT">
+      <offset>24</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Itimesincelastupdate" type="INT">
+      <offset>28</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Estate" type="INT">
+      <offset>32</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="GuildState" />
+    </column>
+    <column name="Pcinvitername" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pcinviterhandle" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Iinviterentid" type="INT">
+      <offset>56</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Iversion" type="INT">
+      <offset>60</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Bjoinedguild" type="U8">
+      <offset>64</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Iguildchat" type="INT">
+      <offset>68</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Iofficerchat" type="INT">
+      <offset>72</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Ialliancechat" type="INT">
+      <offset>76</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Flastupdate" type="F32">
+      <offset>80</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Uidisplayedmotd" type="INT">
+      <offset>84</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Uidisplayedevent" type="INT">
+      <offset>88</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Eabanklog" type="STRUCT">
+      <offset>96</offset>
+      <subtable external="PlayerGuildLog" />
+    </column>
+    <column name="Ibanklogsize" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Iupdated" type="INT">
+      <offset>108</offset>
+    </column>
+    <column name="Eaguildcostumes" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="PlayerCostumeHolder" />
+    </column>
+    <column name="Bupdatedofficercomments" type="U8">
+      <offset>120</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Iocversion" type="INT">
+      <offset>124</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Eaofficercomments" type="STRUCT">
+      <offset>128</offset>
+      <subtable external="PlayerGuildOfficerComments" />
+    </column>
+    <column name="Hgroupprojectcontainer" type="REFERENCE">
+      <offset>136</offset>
+      <dictionary_name>CopyDict_GroupProjectContainerGuild</dictionary_name>
+    </column>
+    <column name="Eaalliancegroupprojectcontainers" type="STRUCT">
+      <offset>144</offset>
+      <subtable external="GroupProjectContainerRef" />
+    </column>
+    <column name="Uilastgroupprojectpowerversion" type="INT">
+      <offset>152</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Eailastgroupprojectlevellogid" type="INTARRAY">
+      <offset>160</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Uilastgroupprojectcontainerversion" type="INT">
+      <offset>168</offset>
+    </column>
+    <column name="Dirtybit" type="U8">
+      <offset>172</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+        <flag>DIRTY_BIT</flag>
+      </flags>
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>176</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Eaalliancependinginvites" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

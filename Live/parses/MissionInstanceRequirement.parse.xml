@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MissionInstanceRequirement">
+  <table>
+    <column name="MissionInstanceRequirement" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hinstance" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>MissionInstanceDef</dictionary_name>
+    </column>
+    <column name="Hmission" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>MissionDef</dictionary_name>
+    </column>
+    <column name="Peconditions" type="INTARRAY">
+      <offset>16</offset>
+      <static_define_list external="MissionListRequirementComparator" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

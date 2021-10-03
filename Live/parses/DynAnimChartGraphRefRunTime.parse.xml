@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynAnimChartGraphRefRunTime">
+  <table>
+    <column name="DynAnimChartGraphRefRunTime" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Keyword" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Graph" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>DynAnimGraph</dictionary_name>
+    </column>
+    <column name="Graphchances" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="DynAnimGraphChanceRef" />
+    </column>
+    <column name="Blank" type="BOOLFLAG">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

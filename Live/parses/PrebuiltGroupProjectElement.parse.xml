@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PrebuiltGroupProjectElement">
+  <table>
+    <column name="PrebuiltGroupProjectElement" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ProjectName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Numericnames" type="STRINGARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Numericvalues" type="INTARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Unlockdefnames" type="STRINGARRAY">
+      <offset>24</offset>
+    </column>
+    <column name="Completedtasksnames" type="STRINGARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

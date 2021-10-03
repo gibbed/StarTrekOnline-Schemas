@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TPTickets">
+  <table>
+    <column name="TPTickets" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Tickets" type="STRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="TPTicket" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

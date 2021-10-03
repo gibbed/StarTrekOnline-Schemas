@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CommandHistoryEntry">
+  <table>
+    <column name="CommandHistoryEntry" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Command" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Nontemporary" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="data" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="ChatData" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

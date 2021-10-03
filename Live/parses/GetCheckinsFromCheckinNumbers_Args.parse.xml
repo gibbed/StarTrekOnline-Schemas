@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GetCheckinsFromCheckinNumbers_Args">
+  <table>
+    <column name="GetCheckinsFromCheckinNumbers_Args" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Repository" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Checkinnums" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>16</offset>
+      <static_define_list external="SVNGetCheckinsFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

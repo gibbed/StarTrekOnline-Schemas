@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SurfaceBGFlags">
+  <table>
+    <column name="SurfaceBGFlags" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Isatrest" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Wasatrest" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Isusinginput" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Notmoving" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Precheckifonground" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Onground" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Touchingsurface" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Wasoffgroundmotion" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Isjumping" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Offgroundbyjumping" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Jumpbuttonnotreleased" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Jumpbuttoncausedjump" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Jumpbuttonpressed" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Jumpbuttonreleased" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Wasoffgroundanim" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Justlanded" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Fastfalling" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Flourishisactive" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Holdforflourish" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Playflourish" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Onsteepslope" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Stuckonsteepslope" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Sticking" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Hasadditivevel" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Hasconstantforcevel" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Setrepelanim" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Turnbecomesstrafe" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Isturning" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Ownsanimation" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Pitchdiffinput" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Facemovementrestricted" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Hasstancemask" type="BIT">
+      <offset>4</offset>
+      <bit_offset>655360</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

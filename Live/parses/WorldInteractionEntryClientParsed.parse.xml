@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldInteractionEntryClientParsed">
+  <table>
+    <column name="WorldInteractionEntryClientParsed" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Base_Data" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="WorldCellEntryParsed" />
+    </column>
+    <column name="UID" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Initial_Selected_Child" type="INT">
+      <offset>76</offset>
+      <default>-1</default>
+    </column>
+    <column name="Visible_Child_Count" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Base_Interaction_Properties" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="WorldBaseInteractionProperties" />
+    </column>
+    <column name="Scale" type="F32FIXEDARRAY">
+      <offset>96</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1.0, 1.0, 1.0</format_string>
+      </format_strings>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

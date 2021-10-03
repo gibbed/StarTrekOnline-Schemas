@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EntityMapNotifications">
+  <table>
+    <column name="EntityMapNotifications" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Erentity" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Notifications" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="MapNotificationEntry" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

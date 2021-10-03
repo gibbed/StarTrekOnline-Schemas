@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ShardInfo_Basic">
+  <table>
+    <column name="ShardInfo_Basic" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Monitoringlink" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Shardcategoryname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="ProductName" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="shardName" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Clustername" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Shardname_Display" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Clustername_Display" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Shardloginserveraddress" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Shardcontrolleraddress" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Versionstring" type="STRING">
+      <offset>72</offset>
+    </column>
+    <column name="Clientversionstring" type="STRING">
+      <offset>80</offset>
+    </column>
+    <column name="Languages" type="STRINGARRAY">
+      <offset>88</offset>
+    </column>
+    <column name="Patchcommandline" type="STRING">
+      <offset>96</offset>
+    </column>
+    <column name="Autoclientcommandline" type="STRING">
+      <offset>104</offset>
+    </column>
+    <column name="Prepatchcommandline" type="STRING">
+      <offset>112</offset>
+    </column>
+    <column name="Uniqueid" type="INT">
+      <offset>120</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+    </column>
+    <column name="Haslocalmontiringmcp" type="U8">
+      <offset>124</offset>
+      <format>INT_WAS_BOOL</format>
+      <format_strings>
+        <format_string name="HTML_SKIP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Allloginserverips" type="INTARRAY">
+      <offset>128</offset>
+      <format>IP</format>
+    </column>
+    <column name="Loginserverportsandips" type="OPTIONALSTRUCT">
+      <offset>136</offset>
+      <subtable external="PortIPPairList" />
+    </column>
+    <column name="Notreallythere" type="U8">
+      <offset>144</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="ip" type="INT">
+      <offset>148</offset>
+      <format_strings>
+        <format_string name="HTML_IP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Shardtypeincluster" type="INT">
+      <offset>152</offset>
+      <static_define_list external="ClusterShardType" />
+    </column>
+    <column name="Filelayouttype" type="INT">
+      <offset>156</offset>
+      <static_define_list external="ClientFileLayoutType" />
+    </column>
+    <column name="Force32bitclient" type="U8">
+      <offset>160</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

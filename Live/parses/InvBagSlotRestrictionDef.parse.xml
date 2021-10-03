@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="InvBagSlotRestrictionDef">
+  <table>
+    <column name="InvBagSlotRestrictionDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Categories" type="INTARRAY">
+      <offset>0</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Anyof" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="InvBagSlotRestrictionDef" />
+    </column>
+    <column name="Allof" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="InvBagSlotRestrictionDef" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

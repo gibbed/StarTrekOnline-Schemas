@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="OngoingFileReceive">
+  <table>
+    <column name="OngoingFileReceive" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Receivetype" type="INT">
+      <offset>0</offset>
+      <static_define_list external="OngoingFileReceiveType" />
+    </column>
+    <column name="Localkey" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Lastactivitytime" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Remotekey" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Managerremotesessionid" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Buffer" type="STRING">
+      <offset>32</offset>
+      <format_strings>
+        <format_string name="HTML_SKIP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Buffersize" type="INT64">
+      <offset>40</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Outfilename" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Bytesreceived" type="INT64">
+      <offset>64</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

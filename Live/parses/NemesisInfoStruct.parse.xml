@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="NemesisInfoStruct">
+  <table>
+    <column name="NemesisInfoStruct" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Leaderidx" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Nemesisteam" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="NemesisTeamStruct" />
+    </column>
+    <column name="Leaderset" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Leadernonemesis" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Utimefirstchecked" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

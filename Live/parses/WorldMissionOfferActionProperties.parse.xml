@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldMissionOfferActionProperties">
+  <table>
+    <column name="WorldMissionOfferActionProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Missionfrom" type="INT">
+      <offset>0</offset>
+      <static_define_list external="WorldMissionActionType" />
+    </column>
+    <column name="MissionDef" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>MissionDef</dictionary_name>
+    </column>
+    <column name="Variablename" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Headshotprops" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="WorldGameActionHeadshotProperties" />
+    </column>
+    <column name="Headshotnamemsg" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

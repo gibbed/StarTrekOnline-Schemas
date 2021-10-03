@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynFxDeps">
+  <table>
+    <column name="DynFxDeps" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Texture_Deps" type="STRINGARRAY">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Texture_Dep_Flags" type="INTARRAY">
+      <offset>8</offset>
+      <static_define_list external="eDynFxDepFlag" />
+    </column>
+    <column name="Material_Deps" type="STRINGARRAY">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Material_Dep_Flags" type="INTARRAY">
+      <offset>24</offset>
+      <static_define_list external="eDynFxDepFlag" />
+    </column>
+    <column name="Geometry_Deps" type="STRINGARRAY">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Geometry_Dep_Flags" type="INTARRAY">
+      <offset>40</offset>
+      <static_define_list external="eDynFxDepFlag" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

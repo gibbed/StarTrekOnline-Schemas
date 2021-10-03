@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GfxSettings">
+  <table>
+    <column name="Screenxpos" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Screenypos" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Maximized" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Fullscreen" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Monitorindex" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Devicetype" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Refreshrate" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Gamma" type="F32">
+      <offset>280</offset>
+    </column>
+    <column name="Renderscalex" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Renderscaley" type="F32">
+      <offset>68</offset>
+    </column>
+    <column name="Aspectratio" type="F32">
+      <offset>92</offset>
+    </column>
+    <column name="Settingsversion" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="Settingsdataversion" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Videocardvendorid" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Videocarddeviceid" type="INT">
+      <offset>108</offset>
+    </column>
+    <column name="Gpuquality" type="F32">
+      <offset>56</offset>
+    </column>
+    <column name="Cpuquality" type="F32">
+      <offset>60</offset>
+    </column>
+    <column name="Customsettings" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Fidelitylevel" type="INT">
+      <offset>52</offset>
+      <default>2</default>
+      <static_define_list external="GfxFidelityLevel" />
+    </column>
+    <column name="Worldtexlodlevel" type="F32">
+      <offset>128</offset>
+    </column>
+    <column name="Charactertexlodlevel" type="F32">
+      <offset>132</offset>
+    </column>
+    <column name="Worlddetaillevel" type="F32">
+      <offset>112</offset>
+    </column>
+    <column name="Characterdetaillevel" type="F32">
+      <offset>116</offset>
+    </column>
+    <column name="Terraindetaillevel" type="F32">
+      <offset>120</offset>
+      <default>1</default>
+    </column>
+    <column name="Terraintexturequality" type="INT">
+      <offset>124</offset>
+      <default>1</default>
+    </column>
+    <column name="Worldloadscale" type="F32">
+      <offset>136</offset>
+      <default>1</default>
+    </column>
+    <column name="Reducefilestreaming" type="INT">
+      <offset>140</offset>
+    </column>
+    <column name="Texanisotropy" type="INT">
+      <offset>160</offset>
+    </column>
+    <column name="SoftParticles" type="INT">
+      <offset>144</offset>
+    </column>
+    <column name="Fxquality" type="INT">
+      <offset>148</offset>
+    </column>
+    <column name="Usevsync2" type="INT">
+      <offset>152</offset>
+    </column>
+    <column name="Antialiasingisenabled" type="INT">
+      <offset>336</offset>
+      <default>1</default>
+    </column>
+    <column name="Antialiasingsamplecount" type="INT">
+      <offset>332</offset>
+    </column>
+    <column name="Antialiasingmode" type="INT">
+      <offset>328</offset>
+      <default>1</default>
+      <static_define_list external="GfxAntialiasingMode" />
+    </column>
+    <column name="Softwarecursor2" type="INT">
+      <offset>156</offset>
+    </column>
+    <column name="Dynamiclights" type="INT">
+      <offset>176</offset>
+    </column>
+    <column name="Drawhighdetail" type="INT">
+      <offset>180</offset>
+      <default>1</default>
+    </column>
+    <column name="Drawhighfilldetail" type="INT">
+      <offset>184</offset>
+    </column>
+    <column name="Gfxfeaturesdesired" type="INT">
+      <offset>164</offset>
+    </column>
+    <column name="Preloadmaterials" type="INT">
+      <offset>188</offset>
+    </column>
+    <column name="Frameratestabilizer2" type="INT">
+      <offset>192</offset>
+    </column>
+    <column name="Autoenableframeratestabilizer" type="INT">
+      <offset>196</offset>
+    </column>
+    <column name="Maxinactivefps" type="F32">
+      <offset>200</offset>
+    </column>
+    <column name="Renderthread" type="INT">
+      <offset>208</offset>
+    </column>
+    <column name="Bloomquality" type="INT">
+      <offset>212</offset>
+      <default>2</default>
+    </column>
+    <column name="Bloomintensity" type="F32">
+      <offset>216</offset>
+      <default>1</default>
+    </column>
+    <column name="Scattering" type="INT">
+      <offset>220</offset>
+    </column>
+    <column name="Ssao" type="INT">
+      <offset>224</offset>
+    </column>
+    <column name="Maxreflection" type="INT">
+      <offset>236</offset>
+    </column>
+    <column name="Decalquality" type="INT">
+      <offset>232</offset>
+    </column>
+    <column name="Maxlightsperobject" type="INT">
+      <offset>168</offset>
+    </column>
+    <column name="Maxshadowedlights" type="INT">
+      <offset>172</offset>
+    </column>
+    <column name="Highqualitydof2" type="INT">
+      <offset>240</offset>
+    </column>
+    <column name="Maxdebris" type="INT">
+      <offset>244</offset>
+    </column>
+    <column name="Poissonshadows" type="INT">
+      <offset>248</offset>
+    </column>
+    <column name="Shadowresolution" type="INT">
+      <offset>252</offset>
+    </column>
+    <column name="Lastrecordedperf" type="F32">
+      <offset>284</offset>
+    </column>
+    <column name="Lastrecordedmsaaperf" type="F32">
+      <offset>288</offset>
+    </column>
+    <column name="Lastrecordedcpuperf" type="F32">
+      <offset>292</offset>
+    </column>
+    <column name="Mindepthbiasfix" type="INT">
+      <offset>256</offset>
+    </column>
+    <column name="Perframesleep" type="INT">
+      <offset>260</offset>
+    </column>
+    <column name="Maxfps" type="INT">
+      <offset>264</offset>
+    </column>
+    <column name="Lenseflare" type="INT">
+      <offset>272</offset>
+    </column>
+    <column name="Defaultfov" type="F32">
+      <offset>316</offset>
+    </column>
+    <column name="Matquality" type="INT">
+      <offset>320</offset>
+      <static_define_list external="ShaderGraphQuality" />
+    </column>
+    <column name="Hasselectedfullscreenmode" type="INT">
+      <offset>324</offset>
+    </column>
+    <column name="Fullscreenwidth" type="INT">
+      <offset>412</offset>
+    </column>
+    <column name="Fullscreenheight" type="INT">
+      <offset>416</offset>
+    </column>
+    <column name="Windowedwidth" type="INT">
+      <offset>404</offset>
+    </column>
+    <column name="Windowedheight" type="INT">
+      <offset>408</offset>
+    </column>
+  </table>
+</parse>

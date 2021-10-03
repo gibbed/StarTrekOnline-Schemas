@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DaboBetUI">
+  <table>
+    <column name="DaboBetUI" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hnumericitemdef" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Hpayoutnumericitemdef" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Betamount" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Payout" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Wheelindex" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="playerName" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Results" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
+      <subtable external="DaboResultsUI" />
+    </column>
+    <column name="Potentialbet" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Defaultbet" type="U8">
+      <offset>65</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

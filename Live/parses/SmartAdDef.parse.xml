@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SmartAdDef">
+  <table>
+    <column name="SmartAdDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Key" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Displayinfo" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="SmartAdDisplayInfo" />
+    </column>
+    <column name="Includeblock" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Includeexpr" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Includeblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Excludeblock" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Excludeexpr" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Excludeblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Disableblock" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Disableexpr" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Disableblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Weight" type="F32">
+      <offset>56</offset>
+      <default>1</default>
+    </column>
+    <column name="Uisortorder" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="ActionType" type="INT">
+      <offset>64</offset>
+      <static_define_list external="SmartAdActionType" />
+    </column>
+    <column name="Concepttype" type="INT">
+      <offset>68</offset>
+      <static_define_list external="SmartAdConceptType" />
+    </column>
+    <column name="Fallbackactionstring" type="STRING">
+      <offset>72</offset>
+    </column>
+    <column name="Category" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Fallbackactionstring</redundant_name>
+    </column>
+    <column name="Action" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="SmartAdAction" />
+    </column>
+    <column name="Gameprogressionnode" type="STRINGARRAY">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Hnodedef_Internaldonotuse" type="REFERENCE">
+      <offset>112</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <dictionary_name>GameProgressionNodeDef</dictionary_name>
+    </column>
+    <column name="Hmissiondef_Internaldonotuse" type="REFERENCE">
+      <offset>120</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <dictionary_name>MissionDef</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

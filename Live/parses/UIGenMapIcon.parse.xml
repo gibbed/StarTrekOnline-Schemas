@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenMapIcon">
+  <table>
+    <column name="UIGenMapIcon" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Entity" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Ucontainerid" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Node" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Layer" type="INT">
+      <offset>32</offset>
+      <default>-1</default>
+    </column>
+    <column name="Def" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="UIGenMapIconDef" />
+    </column>
+    <column name="Mission" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Texture" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Color" type="INT">
+      <offset>64</offset>
+      <static_define_list external="Color" />
+    </column>
+    <column name="Worldpos" type="F32FIXEDARRAY">
+      <offset>68</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Worldsize" type="F32FIXEDARRAY">
+      <offset>80</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V2desiredscreenpos" type="F32FIXEDARRAY">
+      <offset>92</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Rotation" type="F32">
+      <offset>100</offset>
+    </column>
+    <column name="Z" type="F32">
+      <offset>104</offset>
+    </column>
+    <column name="Pushx" type="F32">
+      <offset>108</offset>
+    </column>
+    <column name="Pushy" type="F32">
+      <offset>112</offset>
+    </column>
+    <column name="Centerdistance" type="F32">
+      <offset>116</offset>
+    </column>
+    <column name="Distancescalegroup" type="STRING">
+      <offset>120</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Distancescale" type="F32">
+      <offset>128</offset>
+    </column>
+    <column name="Label" type="STRING">
+      <offset>136</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Labelalignment" type="INT">
+      <offset>144</offset>
+      <default>4</default>
+      <static_define_list external="UIDirection" />
+    </column>
+    <column name="Layerz" type="INT16">
+      <offset>176</offset>
+    </column>
+    <column name="Priority" type="INT16">
+      <offset>178</offset>
+    </column>
+    <column name="Mousedistancesqd" type="F32">
+      <offset>196</offset>
+    </column>
+    <column name="Keyindex" type="INT">
+      <offset>208</offset>
+    </column>
+    <column name="Indexlabel" type="STRING">
+      <offset>216</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Indices" type="INTARRAY">
+      <offset>224</offset>
+    </column>
+    <column name="Timesecondsremaining" type="INT">
+      <offset>232</offset>
+      <default>-1</default>
+    </column>
+    <column name="Visited" type="BIT">
+      <offset>236</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mouseover" type="BIT">
+      <offset>236</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mouseoverlasttick" type="BIT">
+      <offset>236</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Reticuleover" type="BIT">
+      <offset>236</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Reticuleoverlasttick" type="BIT">
+      <offset>236</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hideunlessrevealed" type="BIT">
+      <offset>236</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Alwaysshowlabel" type="BIT">
+      <offset>236</offset>
+      <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Emphasized" type="BIT">
+      <offset>236</offset>
+      <bit_offset>65543</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

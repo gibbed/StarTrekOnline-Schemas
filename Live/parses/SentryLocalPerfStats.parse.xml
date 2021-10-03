@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SentryLocalPerfStats">
+  <table>
+    <column name="SentryLocalPerfStats" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Timesent" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Ramphysused" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Ramvirtused" type="INT64">
+      <offset>16</offset>
+    </column>
+    <column name="Ramkernelpaged" type="INT64">
+      <offset>24</offset>
+    </column>
+    <column name="Ramkernelnonpaged" type="INT64">
+      <offset>32</offset>
+    </column>
+    <column name="Netsent" type="INT64">
+      <offset>40</offset>
+    </column>
+    <column name="NetRecv" type="INT64">
+      <offset>48</offset>
+    </column>
+    <column name="Cpuload" type="F32">
+      <offset>56</offset>
+    </column>
+    <column name="Diskperf_Bytessec" type="F32">
+      <offset>60</offset>
+    </column>
+    <column name="Diskperf_Queue" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Interfacespecificnetworkperf" type="STRUCT">
+      <offset>72</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <subtable external="PerformancePair" />
+    </column>
+    <column name="Interfacespecificdiskperf" type="STRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <subtable external="PerformancePair" />
+    </column>
+    <column name="Numdisks" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Perdiskstats" type="STRUCT">
+      <offset>96</offset>
+      <subtable external="SentryLocalPerfStats_PerDisk" />
+    </column>
+    <column name="Largestdiskstats" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <subtable external="SentryLocalPerfStats_PerDisk" />
+    </column>
+    <column name="Numnics" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Pernetworkinterfacestats" type="STRUCT">
+      <offset>120</offset>
+      <subtable external="SentryLocalPerfStats_PerNetworkInterface" />
+    </column>
+    <column name="Numprocessors" type="INT">
+      <offset>128</offset>
+    </column>
+    <column name="Perprocstats" type="STRUCT">
+      <offset>136</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <subtable external="SentryLocalPerfStats_PerProc" />
+    </column>
+    <column name="Windowssessionid" type="INT">
+      <offset>144</offset>
+    </column>
+    <column name="Windowsusername" type="STRING">
+      <offset>152</offset>
+    </column>
+    <column name="Cpuclockpercent" type="INT">
+      <offset>160</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

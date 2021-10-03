@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynFxDamageRangeInfo">
+  <table>
+    <column name="DynFxDamageRangeInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Minhitpoints" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Maxhitpoints" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Useabsolutevalues" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Damagefx" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="DynFxDamageRangeInfoFxRef" />
+    </column>
+    <column name="Damagefxalpha" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="DynFxDamageRangeInfoFxRef" />
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

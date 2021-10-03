@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenComplexStateDef">
+  <table>
+    <column name="UIGenComplexStateDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Conditionblock" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Condition" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Conditionblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Intcondition" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="UIGenIntCondition" />
+    </column>
+    <column name="Floatcondition" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="UIGenFloatCondition" />
+    </column>
+    <column name="Stringcondition" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="UIGenStringCondition" />
+    </column>
+    <column name="Intcondition2" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="UIGenCondition2" />
+    </column>
+    <column name="Floatcondition2" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="UIGenCondition2" />
+    </column>
+    <column name="Stringcondition2" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="UIGenCondition2" />
+    </column>
+    <column name="Instate" type="INTARRAY">
+      <offset>56</offset>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="Notinstate" type="INTARRAY">
+      <offset>64</offset>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="GenInState" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="UIGenInStateCondition" />
+    </column>
+    <column name="Gennotinstate" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="UIGenInStateCondition" />
+    </column>
+    <column name="Override" type="OPTIONALPOLYMORPH">
+      <offset>88</offset>
+      <subtable external="_PolyTable_UIGenInternal" />
+    </column>
+    <column name="Onenter" type="OPTIONALSTRUCT">
+      <offset>96</offset>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="Onexit" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

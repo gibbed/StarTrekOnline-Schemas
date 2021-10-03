@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemUpgradeMaxStack">
+  <table>
+    <column name="ItemUpgradeMaxStack" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Maxstack" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Upgradetime" type="F32">
+      <offset>4</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Exprrequired" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprrequiredblock" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <redundant_name>Exprrequired</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="Required" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <redundant_name>Exprrequired</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

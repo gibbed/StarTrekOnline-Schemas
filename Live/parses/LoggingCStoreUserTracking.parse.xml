@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="LoggingCStoreUserTracking">
+  <table>
+    <column name="LoggingCStoreUserTracking" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uusertrackinginitialtimestamp" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Uusertrackinginteractioncount" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Uusertrackingvisitduration" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Uusertrackinglastupdatedframecount" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Usertrackingaction" type="INT">
+      <offset>16</offset>
+      <static_define_list external="LoggingCStoreUserTrackingAction" />
+    </column>
+    <column name="Usertrackingcategory" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Usertrackingsubcategory" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Usertrackingproduct" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Usertracking_Currentprice" type="INT64">
+      <offset>48</offset>
+    </column>
+    <column name="Usertracking_Originalprice" type="INT64">
+      <offset>56</offset>
+    </column>
+    <column name="Usertracking_Validcoupon" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Usertracking_Validpersonaldiscount" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Usertracking_Validprorateddiscount" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Usertracking_Issale" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Microtrans2ruledefname" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>MicroTrans2RuleDef</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

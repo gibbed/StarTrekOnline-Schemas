@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GamePermissionDef">
+  <table>
+    <column name="GamePermissionDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="File" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Token" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="GameTokenText" />
+    </column>
+    <column name="Notpresenttoken" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="GameTokenText" />
+    </column>
+    <column name="Levelrestrictedtokens" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="LevelRestrictedTokens" />
+    </column>
+    <column name="Type" type="INT">
+      <offset>40</offset>
+      <static_define_list external="GamePermissionType" />
+    </column>
+    <column name="Vippointsrestrictedtokens" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="VIPPointsRestrictedTokens" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

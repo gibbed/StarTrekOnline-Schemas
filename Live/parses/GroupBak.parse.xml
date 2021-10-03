@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GroupBak">
+  <table>
+    <column name="GroupBak" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Groupbak" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <subtable external="GroupDefBak" />
+    </column>
+    <column name="Childbak" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="GroupChildBak" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

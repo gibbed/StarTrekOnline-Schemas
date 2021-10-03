@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TeamMemberData">
+  <table>
+    <column name="TeamMemberData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Ent" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Entity" />
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Account" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Location" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Level" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Combatlevel" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Officerrank" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Status" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="className" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Explevel" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="TeamID" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Isleader" type="U8">
+      <offset>72</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Sidekicked" type="U8">
+      <offset>73</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dead" type="U8">
+      <offset>74</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Invited" type="U8">
+      <offset>75</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requested" type="U8">
+      <offset>76</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disconnected" type="U8">
+      <offset>77</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Nonlocal" type="U8">
+      <offset>78</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ispet" type="U8">
+      <offset>79</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Queuejoinvoteisyes" type="U8">
+      <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Queuejoinvoteisno" type="U8">
+      <offset>81</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Aistate" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Aistance" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="EntID" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="IsTalking" type="U8">
+      <offset>96</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

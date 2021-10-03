@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SkelBlendSeqInfo">
+  <table>
+    <column name="SkelBlendSeqInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Seqname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Chart" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>DynAnimChartRunTime</dictionary_name>
+    </column>
+    <column name="Maxlod" type="INT">
+      <offset>16</offset>
+      <default>10</default>
+    </column>
+    <column name="Bone" type="STRINGARRAY">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Overlay" type="BOOLFLAG">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Suboverlay" type="BOOLFLAG">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Augmenter" type="BOOLFLAG">
+      <offset>34</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ignoremasteroverlay" type="BOOLFLAG">
+      <offset>35</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Neveroverride" type="BOOLFLAG">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Movement" type="BOOLFLAG">
+      <offset>37</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

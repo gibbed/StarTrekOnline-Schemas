@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="InteractionLootTrackerPlayer">
+  <table>
+    <column name="InteractionLootTrackerPlayer" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Owningplayer" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Timemodified" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Lootbags" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="InventoryBag" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

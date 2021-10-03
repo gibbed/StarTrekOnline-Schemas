@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PCLStatusMonitoringUpdate">
+  <table>
+    <column name="PCLStatusMonitoringUpdate" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_DEF_FIELDS_TO_SHOW">internalStatus.State, internalStatus.UpdateString, MostRecentUpdateTime</format_string>
+      </format_strings>
+    </column>
+    <column name="{" type="START" />
+    <column name="Internalstatus" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="PCLStatusMonitoringUpdate_Internal" />
+    </column>
+    <column name="Timebegan" type="INT">
+      <offset>576</offset>
+      <format_strings>
+        <format_string name="HTML_SECS_AGO">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Mostrecentupdatetime" type="INT">
+      <offset>580</offset>
+      <format_strings>
+        <format_string name="HTML_SECS_AGO">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Succeededorfailedtime" type="INT">
+      <offset>584</offset>
+      <format_strings>
+        <format_string name="HTML_SECS_AGO">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Numupdatesreceived" type="INT">
+      <offset>588</offset>
+    </column>
+    <column name="Timeoutlength" type="INT">
+      <offset>592</offset>
+      <format_strings>
+        <format_string name="HTML_SECS_DURATION">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Timeoutindex" type="INT">
+      <offset>596</offset>
+    </column>
+    <column name="Destroyrequested" type="U8">
+      <offset>600</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

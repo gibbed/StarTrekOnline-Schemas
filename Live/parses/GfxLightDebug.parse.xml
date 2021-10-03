@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GfxLightDebug">
+  <table>
+    <column name="GfxLightDebug" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Light_Type" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Affects" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Position" type="F32FIXEDARRAY">
+      <offset>24</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Direction" type="F32FIXEDARRAY">
+      <offset>36</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Distance" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Radius" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Usecount" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Ambientcolor" type="F32FIXEDARRAY">
+      <offset>60</offset>
+      <num_elements>3</num_elements>
+      <format>HSV</format>
+    </column>
+    <column name="Diffusecolor" type="F32FIXEDARRAY">
+      <offset>72</offset>
+      <num_elements>3</num_elements>
+      <format>HSV</format>
+    </column>
+    <column name="Specularcolor" type="F32FIXEDARRAY">
+      <offset>84</offset>
+      <num_elements>3</num_elements>
+      <format>HSV</format>
+    </column>
+    <column name="Projected_Texture" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Casts_Shadows" type="U8">
+      <offset>104</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Is_Dynamic" type="U8">
+      <offset>105</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Casts_Shadows_This_Frame" type="U8">
+      <offset>106</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Indoors" type="U8">
+      <offset>107</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Shadowed" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <subtable external="GfxShadowLightDebug" />
+    </column>
+    <column name="Room" type="STRING">
+      <offset>120</offset>
+    </column>
+    <column name="Roomlimitslight" type="U8">
+      <offset>128</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Shadow_Sort_Val" type="F32">
+      <offset>132</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

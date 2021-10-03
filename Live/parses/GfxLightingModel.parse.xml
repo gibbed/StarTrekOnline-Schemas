@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GfxLightingModel">
+  <table>
+    <column name="GfxLightingModel" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Text" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Lightshadowbuffer" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Requireslightassembly" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Endlightingmodel" type="END" />
+  </table>
+</parse>

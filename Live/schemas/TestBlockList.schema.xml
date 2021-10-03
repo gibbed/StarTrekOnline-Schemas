@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parser name="TestBlockList">
-  <table>
-    <column name="Testblock" type="STRUCT">
-      <offset>0</offset>
-      <subtable external="Testblock" />
-    </column>
-  </table>
-</parser>

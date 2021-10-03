@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EntityUI">
+  <table>
+    <column name="EntityUI" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Viscache" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="EntityVisibilityCache" />
+    </column>
+    <column name="Bubbles" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ChatBubble" />
+    </column>
+    <column name="Draw" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Wasonscreen" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Gen" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="UIGen" />
+    </column>
+    <column name="EncounterData" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="EncounterUIData" />
+    </column>
+    <column name="Offscreendata" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="OffscreenUIData" />
+    </column>
+    <column name="Gamespecificdata" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="NullStruct" />
+    </column>
+    <column name="Lastlos" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uilastloscheck" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Lastcameralos" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uilastcameraloscheck" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Uilastdamaged" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Uilastflank" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Uilastdamagedbyplayer" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Uilastcritdamagedbyplayer" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Uilastdamagetoplayer" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Uilastplayerdamagedent" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="Lastdamageangle" type="F32">
+      <offset>96</offset>
+      <default>-1</default>
+    </column>
+    <column name="Lastdamagetangentangle" type="F32">
+      <offset>100</offset>
+    </column>
+    <column name="Uilastdamagedirectiontimes" type="INTFIXEDARRAY">
+      <offset>104</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Distoverheadgenbonetocapsulemax" type="F32">
+      <offset>120</offset>
+    </column>
+    <column name="Damagefloatgroups" type="STRUCT">
+      <offset>128</offset>
+      <subtable external="DamageFloatGroup" />
+    </column>
+    <column name="Uilasttime" type="INT">
+      <offset>136</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Boxmin" type="F32FIXEDARRAY">
+      <offset>140</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Boxmax" type="F32FIXEDARRAY">
+      <offset>152</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Vuilowerattime" type="INTFIXEDARRAY">
+      <offset>164</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <num_elements>3</num_elements>
+    </column>
+    <column name="Uigenjailhideendtime" type="INT">
+      <offset>180</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

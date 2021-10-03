@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GameBoxEvent">
+  <table>
+    <column name="GameBoxEvent" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <static_define_list external="GameBoxEventType" />
+    </column>
+    <column name="Killeventparams" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="GameBoxEventKillParams" />
+    </column>
+    <column name="Missioncompleteeventparams" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="GameBoxEventMissionCompleteParams" />
+    </column>
+    <column name="Itemgainedparams" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="GameBoxEventItemGainedParams" />
+    </column>
+    <column name="Pokeeventparams" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="GameBoxEventPokeParams" />
+    </column>
+    <column name="Baggetsitemparams" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="GameBoxEventBagGetsItemParams" />
+    </column>
+    <column name="Levelupparams" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="GameBoxEventLevelUpParams" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

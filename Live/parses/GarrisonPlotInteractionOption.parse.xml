@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GarrisonPlotInteractionOption">
+  <table>
+    <column name="GarrisonPlotInteractionOption" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Action" type="INT">
+      <offset>0</offset>
+      <static_define_list external="GarrisonPlotAction" />
+    </column>
+    <column name="Permissionok" type="U8">
+      <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Resourcesok" type="U8">
+      <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

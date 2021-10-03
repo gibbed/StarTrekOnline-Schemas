@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GimmeOperationStatus">
+  <table>
+    <column name="GimmeOperationStatus" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Progress" type="F32">
+      <offset>0</offset>
+      <default>-1</default>
+    </column>
+    <column name="Astatus" type="FIXEDSTRING">
+      <offset>4</offset>
+      <string_length>160</string_length>
+    </column>
+    <column name="Count" type="INT">
+      <offset>164</offset>
+      <default>-1</default>
+    </column>
+    <column name="Maxcount" type="INT">
+      <offset>168</offset>
+      <default>-1</default>
+    </column>
+    <column name="Error" type="INT">
+      <offset>172</offset>
+      <static_define_list external="GimmeErrorValue" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

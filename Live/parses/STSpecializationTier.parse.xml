@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="STSpecializationTier">
+  <table>
+    <column name="STSpecializationTier" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Tier" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Unlockpointsspent" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Nodescountintier" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Unlockednodescountintier" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Subtrees" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="STSpecializationSubTree" />
+    </column>
+    <column name="Subtreecount" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Uupdatedframe" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Unlocked" type="BIT">
+      <offset>32</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

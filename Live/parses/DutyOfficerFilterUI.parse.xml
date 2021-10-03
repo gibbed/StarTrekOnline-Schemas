@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DutyOfficerFilterUI">
+  <table>
+    <column name="DutyOfficerFilterUI" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="DisplayName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Smallicon" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Largeicon" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Filtervalue" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Matching" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Sortorder" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Basefont" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="BaseColor" type="INT">
+      <offset>56</offset>
+      <static_define_list external="Color" />
+    </column>
+    <column name="Include" type="U8">
+      <offset>60</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Exclude" type="U8">
+      <offset>61</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Includeinconsistent" type="U8">
+      <offset>62</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Excludeinconsistent" type="U8">
+      <offset>63</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

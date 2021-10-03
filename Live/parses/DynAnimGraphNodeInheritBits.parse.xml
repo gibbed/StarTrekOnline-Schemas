@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynAnimGraphNodeInheritBits">
+  <table>
+    <column name="DynAnimGraphNodeInheritBits" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Inheritswitch" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritpath" type="U8">
+      <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritinterpolation" type="U8">
+      <offset>2</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheriteasein" type="U8">
+      <offset>3</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheriteaseout" type="U8">
+      <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritnoselfinterp" type="U8">
+      <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritforceendfreeze" type="U8">
+      <offset>6</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritoverrideallbones" type="U8">
+      <offset>7</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritoverridemovement" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritoverridedefaultmove" type="U8">
+      <offset>9</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritallowrandommoverepeats" type="U8">
+      <offset>10</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritdisabletorsopointing" type="U8">
+      <offset>11</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritdisablegroundreg" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritdisableupperbodygroundreg" type="U8">
+      <offset>13</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritfxevent" type="U8">
+      <offset>14</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritgraphimpact" type="U8">
+      <offset>15</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritmaintaintrajectory" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritnonselfinterruptable" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritnodestance" type="U8">
+      <offset>18</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritbouncertoggle" type="U8">
+      <offset>19</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

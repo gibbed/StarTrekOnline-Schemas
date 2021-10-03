@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PowersAutoQueueSavedData">
+  <table>
+    <column name="PowersAutoQueueSavedData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Eaipowersautoqueuesettings" type="STRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="PowersAutoQueueSavedSetting" />
+    </column>
+    <column name="Attribmodinfocache" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PowersAutoQueueCachedAttribModProperties" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

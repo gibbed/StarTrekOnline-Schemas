@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EncounterSpawnProperties">
+  <table>
+    <column name="EncounterSpawnProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Spawnanimtype" type="INT">
+      <offset>0</offset>
+      <static_define_list external="EncounterSpawnAnimType" />
+    </column>
+    <column name="SpawnAnim" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Spawnlockdowntime" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Dynamicspawntype" type="INT">
+      <offset>20</offset>
+      <static_define_list external="EncounterInstanceDynamicSpawnType" />
+    </column>
+    <column name="Isambush" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Supportedworldspawntypes" type="INTARRAY">
+      <offset>32</offset>
+      <static_define_list external="CritterWorldSpawnAnimType" />
+    </column>
+    <column name="Randomlystaggeractorspawntimes" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Actorstaggeredspawnrange" type="F32">
+      <offset>44</offset>
+      <default>2</default>
+    </column>
+    <column name="Overrideparentvalues" type="U8">
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

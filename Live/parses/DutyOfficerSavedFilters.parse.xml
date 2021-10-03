@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DutyOfficerSavedFilters">
+  <table>
+    <column name="DutyOfficerSavedFilters" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Identifier" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Deptsfilter" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">DutyOfficerFilter</format_string>
+      </format_strings>
+    </column>
+    <column name="Deptslist" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="DutyOfficerFilterUI" />
+    </column>
+    <column name="Deptsallsettings" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <subtable external="DutyOfficerFilterUI" />
+    </column>
+    <column name="Deptscount" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Deptsincludedcount" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Deptsexcludedcount" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Specsfilter" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">DutyOfficerFilter</format_string>
+      </format_strings>
+    </column>
+    <column name="Specslist" type="STRUCT">
+      <offset>96</offset>
+      <subtable external="DutyOfficerFilterUI" />
+    </column>
+    <column name="Specsallsettings" type="EMBEDDEDSTRUCT">
+      <offset>104</offset>
+      <subtable external="DutyOfficerFilterUI" />
+    </column>
+    <column name="Specscount" type="INT">
+      <offset>168</offset>
+    </column>
+    <column name="Specsincludedcount" type="INT">
+      <offset>172</offset>
+    </column>
+    <column name="Specsexcludedcount" type="INT">
+      <offset>176</offset>
+    </column>
+    <column name="Craftingspecsfilter" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">DutyOfficerFilter</format_string>
+      </format_strings>
+    </column>
+    <column name="Craftingspecslist" type="STRUCT">
+      <offset>184</offset>
+      <subtable external="DutyOfficerFilterUI" />
+    </column>
+    <column name="Craftingspecsallsettings" type="EMBEDDEDSTRUCT">
+      <offset>192</offset>
+      <subtable external="DutyOfficerFilterUI" />
+    </column>
+    <column name="Craftingspecscount" type="INT">
+      <offset>256</offset>
+    </column>
+    <column name="Craftingspecsincludedcount" type="INT">
+      <offset>260</offset>
+    </column>
+    <column name="Craftingspecsexcludedcount" type="INT">
+      <offset>264</offset>
+    </column>
+    <column name="Traitsfilter" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">DutyOfficerFilter</format_string>
+      </format_strings>
+    </column>
+    <column name="Traitslist" type="STRUCT">
+      <offset>272</offset>
+      <subtable external="DutyOfficerFilterUI" />
+    </column>
+    <column name="Traitsallsettings" type="EMBEDDEDSTRUCT">
+      <offset>280</offset>
+      <subtable external="DutyOfficerFilterUI" />
+    </column>
+    <column name="Traitscount" type="INT">
+      <offset>344</offset>
+    </column>
+    <column name="Traitsincludedcount" type="INT">
+      <offset>348</offset>
+    </column>
+    <column name="Traitsexcludedcount" type="INT">
+      <offset>352</offset>
+    </column>
+    <column name="Qualityfilter" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">DutyOfficerFilter</format_string>
+      </format_strings>
+    </column>
+    <column name="Qualitieslist" type="STRUCT">
+      <offset>360</offset>
+      <subtable external="DutyOfficerFilterUI" />
+    </column>
+    <column name="Qualitiesallsettings" type="EMBEDDEDSTRUCT">
+      <offset>368</offset>
+      <subtable external="DutyOfficerFilterUI" />
+    </column>
+    <column name="Qualitiescount" type="INT">
+      <offset>432</offset>
+    </column>
+    <column name="Qualitiesincludedcount" type="INT">
+      <offset>436</offset>
+    </column>
+    <column name="Qualitiesexcludedcount" type="INT">
+      <offset>440</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

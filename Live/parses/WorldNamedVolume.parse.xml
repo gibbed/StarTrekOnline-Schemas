@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldNamedVolume">
+  <table>
+    <column name="WorldNamedVolume" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Common_Data" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="WorldEncounterObject" />
+    </column>
+    <column name="Entry_Id" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Def_Name" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WrappedDataValidationResult">
+  <table>
+    <column name="WrappedDataValidationResult" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Result" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="DataValidationResult" />
+      <format_strings>
+        <format_string name="HTML_SKIP_IN_TABLE">1</format_string>
+        <format_string name="HTML_WRITE_UNOWNED">1</format_string>
+      </format_strings>
+    </column>
+    <column name="TimeStamp" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Redisplaypage" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

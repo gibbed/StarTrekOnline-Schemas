@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynamicItemPower">
+  <table>
+    <column name="DynamicItemPower" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ItemPowerDef" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>ItemPowerDef</dictionary_name>
+    </column>
+    <column name="Scalefactor" type="F32">
+      <offset>8</offset>
+      <default>1</default>
+    </column>
+    <column name="Maxcount" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Weight" type="INT">
+      <offset>16</offset>
+      <default>1</default>
+    </column>
+    <column name="Fromcraftingonly" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Alwaysoncreateorupgrade" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Allowrerolling" type="BIT">
+      <offset>20</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

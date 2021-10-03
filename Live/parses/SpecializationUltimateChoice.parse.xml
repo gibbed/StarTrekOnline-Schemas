@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SpecializationUltimateChoice">
+  <table>
+    <column name="SpecializationUltimateChoice" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Unlockpointsspent" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Choice1" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rank1" type="INT">
+      <offset>16</offset>
+      <default>1</default>
+    </column>
+    <column name="Choice2" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rank2" type="INT">
+      <offset>32</offset>
+      <default>1</default>
+    </column>
+    <column name="Choice3" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rank3" type="INT">
+      <offset>48</offset>
+      <default>1</default>
+    </column>
+    <column name="Treeid" type="INT">
+      <offset>52</offset>
+      <default>-1</default>
+      <static_define_list external="SpecializationClassRestriction" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="_PolyTable_AttribCurve">
+  <table>
+    <column name="_PolyTable_AttribCurve" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="AttribCurveMax" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AttribCurveMax" />
+    </column>
+    <column name="AttribCurveQuadraticMax" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AttribCurveQuadraticMax" />
+    </column>
+  </table>
+</parse>

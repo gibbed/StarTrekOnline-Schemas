@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayerShowOverhead">
+  <table>
+    <column name="PlayerShowOverhead" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Showenemy" type="INT">
+      <offset>0</offset>
+      <default>1179</default>
+      <static_define_list external="OverHeadEntityFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Showfriendlynpc" type="INT">
+      <offset>4</offset>
+      <default>1179</default>
+      <static_define_list external="OverHeadEntityFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Showfriends" type="INT">
+      <offset>8</offset>
+      <default>1180</default>
+      <static_define_list external="OverHeadEntityFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Showteam" type="INT">
+      <offset>12</offset>
+      <default>1180</default>
+      <static_define_list external="OverHeadEntityFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Showsupergroup" type="INT">
+      <offset>16</offset>
+      <default>1180</default>
+      <static_define_list external="OverHeadEntityFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Showpet" type="INT">
+      <offset>20</offset>
+      <default>1180</default>
+      <static_define_list external="OverHeadEntityFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Showenemyplayer" type="INT">
+      <offset>24</offset>
+      <default>1180</default>
+      <static_define_list external="OverHeadEntityFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Showplayer" type="INT">
+      <offset>28</offset>
+      <default>1180</default>
+      <static_define_list external="OverHeadEntityFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Showself" type="INT">
+      <offset>32</offset>
+      <static_define_list external="OverHeadEntityFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Showplayertitles" type="U8">
+      <offset>36</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showdamagefloaters" type="U8">
+      <offset>37</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showpetdamagefloaters" type="U8">
+      <offset>38</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showteamdamagefloaters" type="U8">
+      <offset>39</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showallplayerdamagefloaters" type="U8">
+      <offset>40</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showownedentitydamagefloaters" type="U8">
+      <offset>41</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showplayerpowerdisplaynames" type="U8">
+      <offset>42</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showunrelateddamagefloaters" type="U8">
+      <offset>43</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showhostilehealingfloaters" type="U8">
+      <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dontshowplayeroutgoing" type="U8">
+      <offset>45</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dontshowplayerincoming" type="U8">
+      <offset>46</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bshowinteractionicons" type="IGNORE" />
+    <column name="Bshowcriticalstatusinfo" type="IGNORE" />
+    <column name="Bshowplayerroles" type="IGNORE" />
+    <column name="Eshowreticlesas" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

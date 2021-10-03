@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="Login2CharacterSelectionData">
+  <table>
+    <column name="Login2CharacterSelectionData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="AccountID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Publicaccountname" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Privateaccountname" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Characterchoices" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="Login2CharacterChoices" />
+    </column>
+    <column name="AvailableCharSlots" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="AvailableCharSlots" />
+    </column>
+    <column name="Virtualshardinfos" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="PossibleVirtualShard" />
+    </column>
+    <column name="unlockCreateFlags" type="INT">
+      <offset>48</offset>
+      <static_define_list external="UnlockedCreateFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="unlockedSpecies" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="LoginSpeciesUnlockedRef" />
+    </column>
+    <column name="Hgameaccountdata" type="REFERENCE">
+      <offset>64</offset>
+      <dictionary_name>CopyDict_GameAccountData</dictionary_name>
+    </column>
+    <column name="Sortstyle" type="INT">
+      <offset>72</offset>
+      <static_define_list external="CharacterSelectionSortStyle" />
+    </column>
+    <column name="Sortmainfirst" type="U8">
+      <offset>76</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="hasCompletedTutorial" type="U8">
+      <offset>77</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Loginmotd" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Virtualshardcharactersarefreenocreate" type="U8">
+      <offset>88</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

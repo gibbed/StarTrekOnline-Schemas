@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynRagdollShape">
+  <table>
+    <column name="DynRagdollShape" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Bone" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Parent" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Jointtarget" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Shape" type="INT">
+      <offset>24</offset>
+      <static_define_list external="eRagdollShape" />
+    </column>
+    <column name="Offset" type="F32FIXEDARRAY">
+      <offset>28</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Rotation" type="QUATPYR">
+      <offset>40</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Min" type="F32FIXEDARRAY">
+      <offset>56</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Max" type="F32FIXEDARRAY">
+      <offset>68</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Heightmin" type="F32">
+      <offset>80</offset>
+    </column>
+    <column name="Heightmax" type="F32">
+      <offset>84</offset>
+    </column>
+    <column name="Radius" type="F32">
+      <offset>88</offset>
+    </column>
+    <column name="Density" type="F32">
+      <offset>92</offset>
+    </column>
+    <column name="Usecustomjointaxis" type="BOOLFLAG">
+      <offset>96</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Tuning" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">DynJointTuning</format_string>
+      </format_strings>
+    </column>
+    <column name="Jointtype" type="INT">
+      <offset>100</offset>
+      <static_define_list external="eJointType" />
+    </column>
+    <column name="Axis" type="INT">
+      <offset>104</offset>
+      <static_define_list external="eJointAxis" />
+    </column>
+    <column name="Customjointorientation" type="QUATPYR">
+      <offset>108</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Spring" type="EMBEDDEDSTRUCT">
+      <offset>124</offset>
+      <subtable external="DynJointSpring" />
+    </column>
+    <column name="Limitlow" type="EMBEDDEDSTRUCT">
+      <offset>132</offset>
+      <subtable external="DynJointLimit" />
+    </column>
+    <column name="Limithigh" type="EMBEDDEDSTRUCT">
+      <offset>144</offset>
+      <subtable external="DynJointLimit" />
+    </column>
+    <column name="Swingspring" type="EMBEDDEDSTRUCT">
+      <offset>156</offset>
+      <subtable external="DynJointSpring" />
+    </column>
+    <column name="Swinglimit" type="EMBEDDEDSTRUCT">
+      <offset>164</offset>
+      <subtable external="DynJointLimit" />
+    </column>
+    <column name="Linearlimit" type="EMBEDDEDSTRUCT">
+      <offset>176</offset>
+      <subtable external="DynJointLimit" />
+    </column>
+    <column name="Springenabled" type="BIT">
+      <offset>188</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Limitenabled" type="BIT">
+      <offset>188</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Swingspringenabled" type="BIT">
+      <offset>188</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Swinglimitenabled" type="BIT">
+      <offset>188</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Linearlimitxenabled" type="BIT">
+      <offset>188</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Linearlimityenabled" type="BIT">
+      <offset>188</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Linearlimitzenabled" type="BIT">
+      <offset>188</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

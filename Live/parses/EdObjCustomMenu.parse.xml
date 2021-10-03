@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EdObjCustomMenu">
+  <table>
+    <column name="EdObjCustomMenu" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Startmenu" type="START" />
+    <column name="Menuitem" type="STRINGARRAY">
+      <offset>0</offset>
+    </column>
+    <column name="Endmenu" type="END" />
+  </table>
+</parse>

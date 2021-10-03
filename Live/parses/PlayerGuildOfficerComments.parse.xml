@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayerGuildOfficerComments">
+  <table>
+    <column name="PlayerGuildOfficerComments" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="EntID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Officercomment" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Whoofficercomment" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Officercommenttime" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

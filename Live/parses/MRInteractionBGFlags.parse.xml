@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MRInteractionBGFlags">
+  <table>
+    <column name="MRInteractionBGFlags" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Movingonrail" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Donemovingonrail" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Waitingatwaypoint" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Acquirechangeposrot" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Changeposrotisacquired" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Acquireanim" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Animisacquired" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Playedanimforwaypoint" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Inputeventhappened" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Triggerhappened" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Railmovefailed" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Sentreachedwaypoint" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Sentwaitingfortrigger" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Releasebits" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Pathbitownershipreset" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TimerConfig">
+  <table>
+    <column name="TimerConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Timeruse" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Timerattack" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Timerattacked" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Timerassist" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Timeraggro" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Timerpvpattack" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Timerpvpattacked" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Timertacticalroll" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Timertacticalaim" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Timerusevisual" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Timeraggrodistance" type="F32">
+      <offset>40</offset>
+      <default>80</default>
+    </column>
+    <column name="Disallowplayerteamaggro" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Playersignoretimeruse" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DamageFloatIcon">
+  <table>
+    <column name="DamageFloatIcon" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="OffsetFrom" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="V2pos" type="F32FIXEDARRAY">
+      <offset>12</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V2posoffset" type="F32FIXEDARRAY">
+      <offset>20</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Color" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Scale" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Fade" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

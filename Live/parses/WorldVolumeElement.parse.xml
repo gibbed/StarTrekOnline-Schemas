@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldVolumeElement">
+  <table>
+    <column name="WorldVolumeElement" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Volume_Shape" type="INT">
+      <offset>0</offset>
+      <static_define_list external="WorldVolumeShape" />
+    </column>
+    <column name="Face_Bits" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Local_Min" type="F32FIXEDARRAY">
+      <offset>8</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Local_Max" type="F32FIXEDARRAY">
+      <offset>20</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Radius" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Rot_World_Mat" type="MATPYR">
+      <offset>36</offset>
+      <num_elements>9</num_elements>
+    </column>
+    <column name="Pos_World_Mat" type="F32FIXEDARRAY">
+      <offset>72</offset>
+      <num_elements>3</num_elements>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

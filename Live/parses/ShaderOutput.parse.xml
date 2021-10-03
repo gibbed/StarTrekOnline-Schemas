@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ShaderOutput">
+  <table>
+    <column name="ShaderOutput" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Description" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Float" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Type" type="INT">
+      <offset>20</offset>
+      <static_define_list external="ShaderDataType" />
+    </column>
+    <column name="Typename" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Alphamodeand" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Alphafrom" type="STRINGARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Autoconnect" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Endoutput" type="END" />
+  </table>
+</parse>

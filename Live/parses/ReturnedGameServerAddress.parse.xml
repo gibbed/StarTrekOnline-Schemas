@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ReturnedGameServerAddress">
+  <table>
+    <column name="ReturnedGameServerAddress" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ContainerID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Upartitionid" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Instanceindex" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Cookie" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="ErrorString" type="FIXEDSTRING">
+      <offset>16</offset>
+      <string_length>1024</string_length>
+    </column>
+    <column name="Ips" type="INTARRAY">
+      <offset>1040</offset>
+    </column>
+    <column name="portNum" type="INT">
+      <offset>1048</offset>
+    </column>
+    <column name="Cookieforclientmultiplexer" type="INT">
+      <offset>1052</offset>
+    </column>
+    <column name="Structcreatedonagameserver" type="U8">
+      <offset>1056</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

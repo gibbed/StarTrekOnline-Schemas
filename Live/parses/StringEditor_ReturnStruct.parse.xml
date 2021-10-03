@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="StringEditor_ReturnStruct">
+  <table>
+    <column name="StringEditor_ReturnStruct" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Stringname" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Titlestring" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="ErrorString" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Stringcontents" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Readonly" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Buttons" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="StringEditor_CommandButton" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CompletedMissionStats">
+  <table>
+    <column name="CompletedMissionStats" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Nemesisid" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <format_strings>
+        <format_string name="DEPENDENT_CONTAINER_TYPE">EntitySavedPet</format_string>
+      </format_strings>
+    </column>
+    <column name="Inemesisid" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Nemesisid</redundant_name>
+      <format_strings>
+        <format_string name="DEPENDENT_CONTAINER_TYPE">EntitySavedPet</format_string>
+      </format_strings>
+    </column>
+    <column name="Firstcompletedtime" type="INT">
+      <offset>4</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Lastcompletedtime" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Firststarttime" type="INT">
+      <offset>12</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Laststarttime" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Besttime" type="INT">
+      <offset>20</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Timesrepeated" type="INT16">
+      <offset>24</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

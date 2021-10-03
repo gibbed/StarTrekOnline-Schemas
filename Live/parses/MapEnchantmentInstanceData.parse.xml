@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MapEnchantmentInstanceData">
+  <table>
+    <column name="MapEnchantmentInstanceData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Difficulty" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <subtable external="DifficultyMode" />
+    </column>
+    <column name="Difficultyindex" type="INT">
+      <offset>8</offset>
+      <default>-1</default>
+    </column>
+    <column name="Enchantments" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="TieredMapEnchant" />
+    </column>
+    <column name="Multimodcount" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Numericscales" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="RewardItemScale" />
+    </column>
+    <column name="Itemscales" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="RewardItemScale" />
+    </column>
+    <column name="Endofmissionrewards" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="RewardTableRef" />
+    </column>
+    <column name="Allowaugmentedspawns" type="U8">
+      <offset>56</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uleadercontainerid" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Modids" type="INT64FIXEDARRAY">
+      <offset>64</offset>
+      <num_elements>3</num_elements>
+    </column>
+    <column name="Gearscorecap" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

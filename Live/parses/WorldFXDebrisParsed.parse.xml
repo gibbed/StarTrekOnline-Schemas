@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldFXDebrisParsed">
+  <table>
+    <column name="WorldFXDebrisParsed" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Model_Idx" type="INT">
+      <offset>0</offset>
+      <default>-1</default>
+    </column>
+    <column name="Draw_List_Idx" type="INT">
+      <offset>4</offset>
+      <default>-1</default>
+    </column>
+    <column name="Scale" type="F32FIXEDARRAY">
+      <offset>8</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Tint_Color" type="F32FIXEDARRAY">
+      <offset>20</offset>
+      <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

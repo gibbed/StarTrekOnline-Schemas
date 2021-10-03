@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="NotifyActionFloatToGen">
+  <table>
+    <column name="NotifyActionFloatToGen" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Interptype" type="INT">
+      <offset>0</offset>
+      <static_define_list external="ENotifyFloatToInterp" />
+    </column>
+    <column name="Gen" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UIGen</dictionary_name>
+    </column>
+    <column name="Fallback" type="REFERENCE">
+      <offset>16</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UIGen</dictionary_name>
+    </column>
+    <column name="Font" type="REFERENCE">
+      <offset>24</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UIStyleFont</dictionary_name>
+    </column>
+    <column name="Lifetime" type="F32">
+      <offset>32</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <default>1075838976</default>
+    </column>
+    <column name="Displaystringoverride" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprdisplaystringoverride" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Displaystringoverride</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Showfloatto" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprshowfloatto" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Showfloatto</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Onexpire" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Expronexpire" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Onexpire</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Offsetmagnitude" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Offsetyaw" type="F32">
+      <offset>68</offset>
+    </column>
+    <column name="Textscale" type="F32">
+      <offset>72</offset>
+      <default>1</default>
+    </column>
+    <column name="Startx" type="F32">
+      <offset>76</offset>
+      <default>1056964608</default>
+    </column>
+    <column name="Starty" type="F32">
+      <offset>80</offset>
+      <default>1056964608</default>
+    </column>
+    <column name="IconName" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+    </column>
+    <column name="Iconwidth" type="F32">
+      <offset>96</offset>
+    </column>
+    <column name="Iconheight" type="F32">
+      <offset>100</offset>
+    </column>
+    <column name="Attachedfx" type="STRING">
+      <offset>104</offset>
+    </column>
+    <column name="Splineinfo" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <subtable external="NotifyFloatToSplineDef" />
+    </column>
+    <column name="Scaleinnormtime" type="F32">
+      <offset>120</offset>
+      <default>1048576000</default>
+    </column>
+    <column name="Scaleoutnormtime" type="F32">
+      <offset>124</offset>
+      <default>1048576000</default>
+    </column>
+    <column name="Fadeinnormtime" type="F32">
+      <offset>128</offset>
+    </column>
+    <column name="Fadeoutnormtime" type="F32">
+      <offset>132</offset>
+    </column>
+    <column name="Anchortoworld" type="U8">
+      <offset>136</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

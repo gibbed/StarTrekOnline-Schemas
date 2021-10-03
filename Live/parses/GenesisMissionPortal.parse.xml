@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisMissionPortal">
+  <table>
+    <column name="GenesisMissionPortal" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Type" type="INT">
+      <offset>8</offset>
+      <static_define_list external="GenesisMissionPortalType" />
+    </column>
+    <column name="Usetype" type="INT">
+      <offset>12</offset>
+      <static_define_list external="GenesisMissionPortalUseType" />
+    </column>
+    <column name="Startlayout" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Layoutname" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Startlayout</redundant_name>
+    </column>
+    <column name="Endlayout" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Startroom" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Endroom" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Startdoor" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Enddoor" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="When" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
+      <subtable external="GenesisWhen" />
+    </column>
+    <column name="Startspawn" type="STRING">
+      <offset>232</offset>
+    </column>
+    <column name="Endspawn" type="STRING">
+      <offset>240</offset>
+    </column>
+    <column name="Startclickable" type="STRING">
+      <offset>248</offset>
+    </column>
+    <column name="Endclickable" type="STRING">
+      <offset>256</offset>
+    </column>
+    <column name="Startusevolume" type="U8">
+      <offset>264</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Endusevolume" type="U8">
+      <offset>265</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Endzmap" type="STRING">
+      <offset>272</offset>
+    </column>
+    <column name="Endvariable" type="STRUCT">
+      <offset>280</offset>
+      <subtable external="WorldVariableDef" />
+    </column>
+    <column name="Warptostarttext" type="STRING">
+      <offset>288</offset>
+    </column>
+    <column name="Warptoendtext" type="STRING">
+      <offset>296</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

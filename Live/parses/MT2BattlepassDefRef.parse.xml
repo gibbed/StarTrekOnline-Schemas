@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MT2BattlepassDefRef">
+  <table>
+    <column name="MT2BattlepassDefRef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Def_Ref" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+      <dictionary_name>MT2BattlepassDef</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

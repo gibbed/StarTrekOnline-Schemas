@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PCChildBone">
+  <table>
+    <column name="PCChildBone" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Childbone" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>CostumeBone</dictionary_name>
+    </column>
+    <column name="Childlayer" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>CostumeLayer</dictionary_name>
+    </column>
+    <column name="Childlayerback" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>CostumeLayer</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

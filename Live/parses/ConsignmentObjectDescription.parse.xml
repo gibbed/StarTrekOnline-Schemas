@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ConsignmentObjectDescription">
+  <table>
+    <column name="ConsignmentObjectDescription" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Buckettype" type="INT">
+      <offset>0</offset>
+      <static_define_list external="ConsignmentBucketType" />
+    </column>
+    <column name="Item" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="Item" />
+    </column>
+    <column name="Objectname" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Objectlevel" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

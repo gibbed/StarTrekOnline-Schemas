@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisShoebox">
+  <table>
+    <column name="GenesisShoebox" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Pointlist" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="ShoeboxPointList" />
+    </column>
+    <column name="Detailobject" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="SSLibObj" />
+    </column>
+    <column name="Overview_Pos" type="F32FIXEDARRAY">
+      <offset>16</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

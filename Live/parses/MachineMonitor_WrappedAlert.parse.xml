@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MachineMonitor_WrappedAlert">
+  <table>
+    <column name="MachineMonitor_WrappedAlert" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Controllertrackername" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Mycritsysname" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Alert" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="Alert" />
+    </column>
+    <column name="Sendtimebegan" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

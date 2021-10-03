@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenJail">
+  <table>
+    <column name="UIGenJail" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hjail" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>UIGenJailDef</dictionary_name>
+    </column>
+    <column name="Cells" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="UIGenJailCell" />
+    </column>
+    <column name="Pbfstates" type="INTARRAY">
+      <offset>24</offset>
+    </column>
+    <column name="Bfcomplexstates" type="INTFIXEDARRAY">
+      <offset>32</offset>
+      <num_elements>6</num_elements>
+    </column>
+    <column name="Scale" type="F32">
+      <offset>56</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MT2BattlepassLevelDef">
+  <table>
+    <column name="MT2BattlepassLevelDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Free" type="STRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>REQUIRED</flag>
+      </flags>
+      <subtable external="MicroTransactionPart" />
+    </column>
+    <column name="Paid" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>REQUIRED</flag>
+      </flags>
+      <subtable external="MicroTransactionPart" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

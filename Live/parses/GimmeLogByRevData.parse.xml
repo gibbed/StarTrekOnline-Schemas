@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GimmeLogByRevData">
+  <table>
+    <column name="GimmeLogByRevData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>2</default>
+      <static_define_list external="GimmeStatusStructDataType" />
+    </column>
+    <column name="Result" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="GimmeGetLogByRevResult" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

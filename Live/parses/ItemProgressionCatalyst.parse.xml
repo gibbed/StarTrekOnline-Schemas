@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemProgressionCatalyst">
+  <table>
+    <column name="ItemProgressionCatalyst" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hitem" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Type" type="INT">
+      <offset>8</offset>
+      <static_define_list external="ItemProgressionCatalystType" />
+    </column>
+    <column name="Numrequired" type="INT">
+      <offset>12</offset>
+      <default>1</default>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

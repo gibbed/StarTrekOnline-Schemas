@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ShaderOutputOneLine">
+  <table>
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Description" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="_Floatdefault" type="INT">
+      <offset>16</offset>
+      <default>4</default>
+    </column>
+    <column name="_Typedefault" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="&#xA;" type="END" />
+  </table>
+</parse>

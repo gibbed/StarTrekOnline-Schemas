@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="RewardBagInfo">
+  <table>
+    <column name="RewardBagInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Flags" type="INT">
+      <offset>0</offset>
+      <static_define_list external="RewardFlag" />
+    </column>
+    <column name="Executetype" type="INT">
+      <offset>4</offset>
+      <static_define_list external="RewardExecuteType" />
+    </column>
+    <column name="Pickuptype" type="INT">
+      <offset>8</offset>
+      <static_define_list external="RewardPickupType" />
+    </column>
+    <column name="OwnerType" type="INT">
+      <offset>12</offset>
+      <static_define_list external="RewardOwnerType" />
+    </column>
+    <column name="Launchtype" type="INT">
+      <offset>16</offset>
+      <static_define_list external="RewardLaunchType" />
+    </column>
+    <column name="Lingertime" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Numpicks" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Loot_Mode" type="INT">
+      <offset>28</offset>
+      <static_define_list external="LootMode" />
+    </column>
+    <column name="Lootmodethreshold" type="INT">
+      <offset>32</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Lootfxoverride" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rank" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rewardtable" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Dropatnamedpoint" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Leveldelta" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Nextid" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Showrewardpackui" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Hiderewardpackui" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Bestofitemorpack" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Silent" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Rewardpackoverallquality" type="INT">
+      <offset>84</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Pealootowners" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="CritterLootOwner" />
+    </column>
+    <column name="Specialrewardstatus" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Rewardgroup" type="INT">
+      <offset>100</offset>
+      <static_define_list external="RewardGroup" />
+    </column>
+    <column name="Peaitemslottablepowerunlocks" type="STRUCT">
+      <offset>104</offset>
+      <subtable external="ItemSlottablePowerUnlock" />
+    </column>
+    <column name="Peaitemaccountunlocks" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="ItemDefRef" />
+    </column>
+    <column name="Gamespecificdata" type="OPTIONALSTRUCT">
+      <offset>120</offset>
+      <subtable external="GameSpecificRewardBagData" />
+    </column>
+    <column name="Notyourscostume" type="REFERENCE">
+      <offset>128</offset>
+      <dictionary_name>PlayerCostume</dictionary_name>
+    </column>
+    <column name="Yourscostume" type="REFERENCE">
+      <offset>136</offset>
+      <dictionary_name>PlayerCostume</dictionary_name>
+    </column>
+    <column name="Futuredate" type="INT">
+      <offset>144</offset>
+    </column>
+    <column name="Hstoredrewardtable" type="REFERENCE">
+      <offset>152</offset>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Storedtablebags" type="STRUCT">
+      <offset>160</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="InventoryBag" />
+    </column>
+    <column name="Lootrolloverdistanceoverride" type="F32">
+      <offset>168</offset>
+      <default>-1</default>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

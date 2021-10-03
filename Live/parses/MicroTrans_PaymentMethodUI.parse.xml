@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MicroTrans_PaymentMethodUI">
+  <table>
+    <column name="MicroTrans_PaymentMethodUI" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ID" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Description" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Type" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Nameonaccount" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Currency" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Ccprefix" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Ccsuffix" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Ccexpdate" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Steamwallet" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Xbox" type="U8">
+      <offset>65</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Epic" type="U8">
+      <offset>66</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

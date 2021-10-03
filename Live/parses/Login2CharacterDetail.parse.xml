@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="Login2CharacterDetail">
+  <table>
+    <column name="Login2CharacterDetail" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="playerID" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Playerent" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="Entity" />
+    </column>
+    <column name="Activepuppetents" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="Entity" />
+    </column>
+    <column name="Teamrequestents" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="Entity" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ProjectileEntity">
+  <table>
+    <column name="ProjectileEntity" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hprojectiledef" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>ProjectileEntityDef</dictionary_name>
+    </column>
+    <column name="Ergotoent" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Numentitieshit" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Uilastprocesshittime" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Timetolinger" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Muqueuedietime" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Mfresethitentstime" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Mionexpireindex" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Mionqueuedeathindex" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Mioncollideworldindex" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Mionhitentityindex" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Mionhitgotoent" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Miontickindex" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Ticktimer" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Expiretimer" type="F32">
+      <offset>68</offset>
+    </column>
+    <column name="Queueddie" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Hastickupdate" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemAssignmentSchoolBucketList">
+  <table>
+    <column name="ItemAssignmentSchoolBucketList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Buckets" type="STRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="ItemAssignmentSchoolBucket" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

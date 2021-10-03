@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayerQueueInfo">
+  <table>
+    <column name="PlayerQueueInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Queues" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="PlayerQueue" />
+    </column>
+    <column name="Failsallreqs" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="QueueFailRequirementsData" />
+    </column>
+    <column name="Penaltydata" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PlayerQueuePenaltyData" />
+    </column>
+    <column name="Uleaverpenaltyduration" type="INT">
+      <offset>24</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Queueinstantiationinfo" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="QueueInstantiationInfo" />
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>56</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

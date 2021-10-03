@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ContactInfo">
+  <table>
+    <column name="ContactInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Entref" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="ContactDef" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Staticencname" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Currindicator" type="INT">
+      <offset>24</offset>
+      <static_define_list external="ContactIndicator" />
+    </column>
+    <column name="Indicatoryoffset" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Nextofferlevel" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Flags1" type="INT">
+      <offset>36</offset>
+      <static_define_list external="ContactFlags1" />
+    </column>
+    <column name="Flags2" type="INT">
+      <offset>40</offset>
+      <static_define_list external="ContactFlags2" />
+    </column>
+    <column name="Peallowedclasscategories" type="INTARRAY">
+      <offset>48</offset>
+    </column>
+    <column name="Availablespecialdialogs" type="INTARRAY">
+      <offset>56</offset>
+    </column>
+    <column name="Allowswitchtolastactivepuppet" type="U8">
+      <offset>65</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

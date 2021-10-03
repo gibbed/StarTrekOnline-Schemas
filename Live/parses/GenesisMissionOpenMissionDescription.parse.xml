@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisMissionOpenMissionDescription">
+  <table>
+    <column name="GenesisMissionOpenMissionDescription" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="DisplayName" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Uistring" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Shorttext" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Uistring</redundant_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EventConfig">
+  <table>
+    <column name="EventConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Preeventremindertimeinminutes" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Maxeventreminders" type="INT">
+      <offset>4</offset>
+      <default>10</default>
+    </column>
+    <column name="Serverincludetag" type="INTARRAY">
+      <offset>8</offset>
+      <static_define_list external="ActivityDisplayTags" />
+    </column>
+    <column name="Serverexcludetag" type="INTARRAY">
+      <offset>16</offset>
+      <static_define_list external="ActivityDisplayTags" />
+    </column>
+    <column name="Servercalendartime" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

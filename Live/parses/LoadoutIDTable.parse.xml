@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="LoadoutIDTable">
+  <table>
+    <column name="LoadoutIDTable" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ID" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="LoadoutIDToDef" />
+    </column>
+    <column name="Defstoloadoutids" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <subtable external="DefToLoadoutID" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

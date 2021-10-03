@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ScoreboardPartitionInfo">
+  <table>
+    <column name="ScoreboardPartitionInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hdefaultfaction" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+      <dictionary_name>CritterFaction</dictionary_name>
+    </column>
+    <column name="Scores" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <subtable external="ScoreboardEntityList" />
+    </column>
+    <column name="Dirtybit" type="U8">
+      <offset>34</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+        <flag>DIRTY_BIT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

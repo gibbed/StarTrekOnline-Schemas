@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynClothInfo">
+  <table>
+    <column name="DynClothInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Infoname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Stiffness" type="F32">
+      <offset>16</offset>
+      <default>1063675494</default>
+    </column>
+    <column name="Drag" type="F32">
+      <offset>20</offset>
+      <default>1036831949</default>
+    </column>
+    <column name="Minweight" type="F32">
+      <offset>24</offset>
+      <default>1036831949</default>
+    </column>
+    <column name="Maxweight" type="F32">
+      <offset>28</offset>
+      <default>1063675494</default>
+    </column>
+    <column name="Tessellate" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allowextrastiffness" type="U8">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Windripplescale" type="F32">
+      <offset>36</offset>
+      <default>1</default>
+    </column>
+    <column name="Windripplewavetimescale" type="F32">
+      <offset>40</offset>
+      <default>1</default>
+    </column>
+    <column name="Windripplewaveperiodscale" type="F32">
+      <offset>44</offset>
+      <default>1</default>
+    </column>
+    <column name="Windspeedscale" type="F32">
+      <offset>48</offset>
+      <default>1</default>
+    </column>
+    <column name="Fakewindfrommovement" type="F32">
+      <offset>52</offset>
+    </column>
+    <column name="Normalwindfrommovement" type="F32">
+      <offset>56</offset>
+    </column>
+    <column name="Gravityscale" type="F32">
+      <offset>60</offset>
+      <default>1</default>
+    </column>
+    <column name="Timescale" type="F32">
+      <offset>64</offset>
+      <default>1</default>
+    </column>
+    <column name="Numiterations" type="INT">
+      <offset>68</offset>
+      <default>1</default>
+    </column>
+    <column name="Worldmovementscale" type="F32">
+      <offset>72</offset>
+      <default>1</default>
+    </column>
+    <column name="Clothboneinfluenceexponent" type="F32">
+      <offset>76</offset>
+      <default>2</default>
+    </column>
+    <column name="Particlecollisionradius" type="F32">
+      <offset>80</offset>
+      <default>1045220557</default>
+    </column>
+    <column name="Particlecollisionradiusmax" type="F32">
+      <offset>84</offset>
+      <default>1045220557</default>
+    </column>
+    <column name="Particlecollisionmaxspeed" type="F32">
+      <offset>88</offset>
+      <default>1045220557</default>
+    </column>
+    <column name="Applyleglengthscale" type="BOOLFLAG">
+      <offset>92</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WriteHTMLContextInternalState">
+  <table>
+    <column name="WriteHTMLContextInternalState" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Depth" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Generatingtablestack" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Xpathsegments" type="STRINGARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Overridelink" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Xpathdepthofoverridelink" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

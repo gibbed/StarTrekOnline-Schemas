@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldMapLevelOverrideVolumeProperties">
+  <table>
+    <column name="WorldMapLevelOverrideVolumeProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Level" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Sidekicklevel" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Scaleditemlevel" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Sidekickup" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Sidekickdown" type="U8">
+      <offset>13</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Levelscalecond" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Combatscalingdef" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>CombatScalingDef</dictionary_name>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

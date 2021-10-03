@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="Fx2DebugSelectionDetails">
+  <table>
+    <column name="Fx2DebugSelectionDetails" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uselectedfx2debugkey" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Ucpuemitters" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Ugpuemitters" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

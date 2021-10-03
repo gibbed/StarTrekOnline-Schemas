@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CalendarEvent">
+  <table>
+    <column name="CalendarEvent" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="EventName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Timing" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="CalendarTiming" />
+    </column>
+    <column name="Msgdisplayname" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Msgdisplaydescshort" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Msgdisplaydesclong" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="DisplayName" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Displaydescshort" type="STRING">
+      <offset>96</offset>
+    </column>
+    <column name="Displaydesclong" type="STRING">
+      <offset>104</offset>
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>112</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Background" type="STRING">
+      <offset>120</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Tagart" type="STRUCT">
+      <offset>128</offset>
+      <subtable external="EventTagArt" />
+    </column>
+    <column name="Mtsaleindicator" type="INT">
+      <offset>136</offset>
+    </column>
+    <column name="Match" type="STRING">
+      <offset>144</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Parent" type="STRING">
+      <offset>152</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Displaytag" type="INTARRAY">
+      <offset>160</offset>
+      <static_define_list external="ActivityDisplayTags" />
+    </column>
+    <column name="Eventrunmode" type="INT">
+      <offset>168</offset>
+    </column>
+    <column name="Eventactiveonserver" type="BIT">
+      <offset>172</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Eventmapmove" type="BIT">
+      <offset>172</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Eventcontact" type="BIT">
+      <offset>172</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Eventaffectscurrentmap" type="BIT">
+      <offset>172</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

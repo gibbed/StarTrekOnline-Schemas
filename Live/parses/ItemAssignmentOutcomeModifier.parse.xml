@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemAssignmentOutcomeModifier">
+  <table>
+    <column name="ItemAssignmentOutcomeModifier" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Modifiertype" type="INT">
+      <offset>8</offset>
+      <static_define_list external="ItemAssignmentOutcomeModifierType" />
+    </column>
+    <column name="Itemcategory" type="INTARRAY">
+      <offset>16</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Weightadjustment" type="IGNORE" />
+    <column name="Affectedoutcome" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="FX2LODRange">
+  <table>
+    <column name="FX2LODRange" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Best" type="U8">
+      <offset>0</offset>
+    </column>
+    <column name="Worst" type="U8">
+      <offset>1</offset>
+      <default>3</default>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

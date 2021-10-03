@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AttribModNet">
+  <table>
+    <column name="AttribModNet" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Dirtybit" type="U8">
+      <offset>0</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+        <flag>DIRTY_BIT</flag>
+      </flags>
+    </column>
+    <column name="Erowner" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Hpowerdef" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Uidefidx" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Uidurationoriginal" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Uitimestamp" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Magnitude" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Magnitudeoriginal" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Health" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Healthmax" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Resistpositive" type="BIT">
+      <offset>56</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Resistnegative" type="BIT">
+      <offset>56</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Forever" type="BIT">
+      <offset>56</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

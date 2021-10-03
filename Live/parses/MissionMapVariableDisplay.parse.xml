@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MissionMapVariableDisplay">
+  <table>
+    <column name="MissionMapVariableDisplay" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Worldvariable" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Type" type="INT">
+      <offset>8</offset>
+      <static_define_list external="MissionMapVariableDisplayType" />
+    </column>
+    <column name="Minvalue" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Maxvalue" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

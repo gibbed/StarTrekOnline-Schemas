@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemAccountUnlockData">
+  <table>
+    <column name="ItemAccountUnlockData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Itemaccountunlockname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Requiredunlock" type="INT">
+      <offset>8</offset>
+      <static_define_list external="ItemAccountUnlockType" />
+    </column>
+    <column name="Itemaccountunlockrequirename" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Cancreateunlock" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Itemaccountunlockfree" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Itemaccountunlockpaid" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Costtounlock" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

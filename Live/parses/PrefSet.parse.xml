@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PrefSet">
+  <table>
+    <column name="{" type="IGNORE" />
+    <column name="Prefentry" type="STRUCT">
+      <offset>8</offset>
+      <subtable>
+        <table>
+          <column name="Name" type="STRING">
+            <offset>0</offset>
+            <flags>
+              <flag>STRUCTPARAM</flag>
+            </flags>
+          </column>
+          <column name="Value" type="STRING">
+            <offset>8</offset>
+            <flags>
+              <flag>STRUCTPARAM</flag>
+            </flags>
+          </column>
+          <column name="&#xA;" type="END" />
+        </table>
+      </subtable>
+    </column>
+    <column name="Prefentries" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Prefentry</redundant_name>
+      <subtable external="PrefEntry" />
+    </column>
+    <column name="FileName" type="IGNORE" />
+    <column name="}" type="IGNORE" />
+  </table>
+</parse>

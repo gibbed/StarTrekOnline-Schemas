@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ChoosableItem">
+  <table>
+    <column name="ChoosableItem" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hitemdef" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Item" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Item" />
+    </column>
+    <column name="Bagidx" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="SlotIdx" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Numpicks" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Selected" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Itemcopy" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="Item" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

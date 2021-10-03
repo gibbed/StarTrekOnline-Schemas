@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisMapDescriptionVersion0">
+  <table>
+    <column name="GenesisMapDescriptionVersion0" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <static_define_list external="GenesisMapType" />
+    </column>
+    <column name="Layoutinfospecifier" type="INT">
+      <offset>4</offset>
+      <static_define_list external="GenesisTemplateOrCustom" />
+    </column>
+    <column name="Exteriorlayoutinfotemplate" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>GenesisMapDescExteriorLayoutTemplate</dictionary_name>
+    </column>
+    <column name="Interiorlayoutinfotemplate" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>GenesisMapDescInteriorLayoutTemplate</dictionary_name>
+    </column>
+    <column name="Backdrop_Info" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">GenesisMapDescBackdrop</format_string>
+      </format_strings>
+    </column>
+    <column name="Backdropspecifier" type="INT">
+      <offset>24</offset>
+      <static_define_list external="GenesisTagOrName" />
+    </column>
+    <column name="Backdroptags2" type="STRINGARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="Backdroptags" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Backdrop" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>GenesisBackdrop</dictionary_name>
+    </column>
+    <column name="Nosharingdetail" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Encounterjitter" type="EMBEDDEDSTRUCT">
+      <offset>60</offset>
+      <subtable external="GenesisEncounterJitter" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

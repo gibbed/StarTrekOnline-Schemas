@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="OfficerRankDef">
+  <table>
+    <column name="OfficerRankDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="DisplayName" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Displaynameshort" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Displaynamealt" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Allegiance" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>Allegiance</dictionary_name>
+    </column>
+    <column name="Ranknumeric" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Pointsspentnumeric" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+      <default_string>OfficerSkillPointSpent</default_string>
+    </column>
+    <column name="Requiredpointsspent" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Requiredpointsspenttopromote" type="INT">
+      <offset>56</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Requiredpointsspent</redundant_name>
+    </column>
+    <column name="Pointsspentplayernumeric" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+      <default_string>ExperiencePoint</default_string>
+    </column>
+    <column name="Requiredpointsspentplayer" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Requiredpointsspenttopromoteplayer" type="INT">
+      <offset>72</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Requiredpointsspentplayer</redundant_name>
+    </column>
+    <column name="Costnumeric" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Promotioncostnumeric" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Costnumeric</redundant_name>
+    </column>
+    <column name="Cost" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Promotioncost" type="INT">
+      <offset>88</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Cost</redundant_name>
+    </column>
+    <column name="Trainingnumeric" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Trainingcost" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Trainingtime" type="INT">
+      <offset>108</offset>
+    </column>
+    <column name="Trainingrefundpercent" type="F32">
+      <offset>112</offset>
+      <default>1</default>
+    </column>
+    <column name="Baseallowedpets" type="INT">
+      <offset>116</offset>
+    </column>
+    <column name="Extraallowedpets" type="INT">
+      <offset>120</offset>
+    </column>
+    <column name="Extrapuppets" type="INT">
+      <offset>124</offset>
+    </column>
+    <column name="Gradecount" type="INT">
+      <offset>128</offset>
+      <default>10</default>
+    </column>
+    <column name="Playeronly" type="U8">
+      <offset>132</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Playeraccessibleonly" type="U8">
+      <offset>132</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Playeronly</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Missionwarpcostmultiplier" type="F32">
+      <offset>136</offset>
+      <default>1</default>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

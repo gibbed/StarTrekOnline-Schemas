@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="HttpIPStats_Internal">
+  <table>
+    <column name="HttpIPStats_Internal" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ip" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Totalsentonclosedlinks" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Ring" type="INT64FIXEDARRAY">
+      <offset>16</offset>
+      <num_elements>15</num_elements>
+    </column>
+    <column name="Ringsum" type="INT64">
+      <offset>136</offset>
+    </column>
+    <column name="Lasttimeprocessed" type="INT">
+      <offset>144</offset>
+    </column>
+    <column name="Linktrackers" type="STRUCT">
+      <offset>152</offset>
+      <subtable external="HttpLinkStatsTracker" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

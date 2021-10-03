@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="LogParsingRestrictions">
+  <table>
+    <column name="LogParsingRestrictions" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Startingtime" type="INT">
+      <offset>0</offset>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Endingtime" type="INT">
+      <offset>4</offset>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Mapnames" type="STRINGARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Actions" type="STRINGARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="Objnames" type="STRINGARRAY">
+      <offset>40</offset>
+    </column>
+    <column name="Ownernames" type="STRINGARRAY">
+      <offset>48</offset>
+    </column>
+    <column name="Serveridstomatch" type="INTARRAY">
+      <offset>56</offset>
+    </column>
+    <column name="Substring" type="STRINGARRAY">
+      <offset>64</offset>
+    </column>
+    <column name="Substringinverse" type="STRINGARRAY">
+      <offset>72</offset>
+    </column>
+    <column name="Substringcasesensitive" type="STRINGARRAY">
+      <offset>80</offset>
+    </column>
+    <column name="Substringcasesensitiveinverse" type="STRINGARRAY">
+      <offset>88</offset>
+    </column>
+    <column name="Regex" type="STRING">
+      <offset>96</offset>
+    </column>
+    <column name="Regexinverse" type="STRING">
+      <offset>104</offset>
+    </column>
+    <column name="Expression" type="STRING">
+      <offset>112</offset>
+    </column>
+    <column name="Uobjid" type="INT">
+      <offset>128</offset>
+      <format_strings>
+        <format_string name="HTML_SKIP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Uplayerid" type="INT">
+      <offset>132</offset>
+      <format_strings>
+        <format_string name="HTML_SKIP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Uaccountid" type="INT">
+      <offset>136</offset>
+      <format_strings>
+        <format_string name="HTML_SKIP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

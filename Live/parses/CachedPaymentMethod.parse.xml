@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CachedPaymentMethod">
+  <table>
+    <column name="CachedPaymentMethod" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Vid" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Description" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Type" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="AccountName" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Currency" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="CreditCard" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="CachedCreditCard" />
+      <format_strings>
+        <format_string name="RPC_SECURE_DONT_LOG">1</format_string>
+      </format_strings>
+    </column>
+    <column name="PayPal" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="CachedPayPal" />
+    </column>
+    <column name="DirectDebit" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="CachedDirectDebit" />
+      <format_strings>
+        <format_string name="RPC_SECURE_DONT_LOG">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Methodprovider" type="INT">
+      <offset>64</offset>
+      <static_define_list external="TransactionProvider" />
+    </column>
+    <column name="Billingaddress" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

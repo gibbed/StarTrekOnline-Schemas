@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldWarpActionProperties">
+  <table>
+    <column name="WorldWarpActionProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Warpdest" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="WorldVariableDef" />
+    </column>
+    <column name="MapName" type="STRING">
+      <offset>112</offset>
+    </column>
+    <column name="Spawntargetname" type="STRING">
+      <offset>120</offset>
+    </column>
+    <column name="Transitionoverride" type="REFERENCE">
+      <offset>128</offset>
+      <dictionary_name>DoorTransitionSequenceDef</dictionary_name>
+    </column>
+    <column name="Variabledef" type="STRUCT">
+      <offset>136</offset>
+      <subtable external="WorldVariableDef" />
+    </column>
+    <column name="Variable" type="STRUCT">
+      <offset>144</offset>
+      <subtable external="WorldVariable" />
+    </column>
+    <column name="Includeteammates" type="U8">
+      <offset>152</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Singleplayer" type="U8">
+      <offset>153</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

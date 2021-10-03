@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="Value">
+  <table>
+    <column name="Parambitfield" type="INTFIXEDARRAY">
+      <offset>984</offset>
+      <flags>
+        <flag>USEDFIELD</flag>
+      </flags>
+      <num_elements>5</num_elements>
+    </column>
+    <column name="Apply" type="STRUCT">
+      <offset>952</offset>
+      <subtable external="Apply" />
+    </column>
+    <column name="Param" type="STRUCT">
+      <offset>960</offset>
+      <subtable external="DynApplyParam" />
+    </column>
+    <column name="Interp" type="STRUCT">
+      <offset>968</offset>
+      <subtable external="Interp" />
+    </column>
+    <column name="Jitterlist" type="STRUCT">
+      <offset>976</offset>
+      <subtable external="DynJitterList" />
+    </column>
+    <column name="Startofvaluetoks" type="IGNORE" />
+    <column name="Texture" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Texture2" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Geometry" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Cloth" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Clothinfo" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Clothcollide" type="BOOL">
+      <offset>415</offset>
+    </column>
+    <column name="Clothcollideselfonly" type="BOOL">
+      <offset>416</offset>
+    </column>
+    <column name="Clothcollisioninfo" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Clothbackmaterial" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Material2" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Material" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Geodissolvematerial" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Geoaddmaterials" type="STRINGARRAY">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Geoonlyaddmaterials" type="BOOLFLAG">
+      <offset>418</offset>
+    </column>
+    <column name="BoneName" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Skeleton" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Skyname" type="STRINGARRAY">
+      <offset>856</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Skyfalloff" type="INT">
+      <offset>876</offset>
+      <static_define_list external="eSkyFalloffType" />
+    </column>
+    <column name="Materialtimersource" type="INT">
+      <offset>176</offset>
+      <static_define_list external="DynMaterialTimerSource" />
+    </column>
+    <column name="Materialtimeroffsetmode" type="INT">
+      <offset>180</offset>
+      <static_define_list external="DynMaterialTimerOffsetMode" />
+    </column>
+    <column name="Materialtimeroffset" type="F32">
+      <offset>184</offset>
+    </column>
+    <column name="Blendmode" type="INT">
+      <offset>188</offset>
+      <static_define_list external="DynBlendMode" />
+    </column>
+    <column name="Trail" type="INT">
+      <offset>672</offset>
+      <static_define_list external="DynMeshTrail" />
+    </column>
+    <column name="Streakmode" type="INT">
+      <offset>192</offset>
+      <static_define_list external="DynStreakMode" />
+    </column>
+    <column name="LightType" type="INT">
+      <offset>480</offset>
+      <static_define_list external="DynLightType" />
+    </column>
+    <column name="Lightshadows" type="BOOL">
+      <offset>528</offset>
+    </column>
+    <column name="Lightdeferredshaded" type="BOOL">
+      <offset>529</offset>
+      <default>1</default>
+    </column>
+    <column name="Lightlegacyforwardshaded" type="BOOL">
+      <offset>530</offset>
+      <default>1</default>
+    </column>
+    <column name="Lightspeculardisabled" type="BOOL">
+      <offset>531</offset>
+    </column>
+    <column name="Entmaterial" type="INT">
+      <offset>432</offset>
+      <static_define_list external="DynEntityMaterialMode" />
+    </column>
+    <column name="Hinvert" type="BOOL">
+      <offset>408</offset>
+    </column>
+    <column name="Vinvert" type="BOOL">
+      <offset>409</offset>
+    </column>
+    <column name="Fixedaspectratio" type="BOOL">
+      <offset>410</offset>
+    </column>
+    <column name="Streaktile" type="BOOL">
+      <offset>413</offset>
+    </column>
+    <column name="Castshadows" type="BOOL">
+      <offset>414</offset>
+    </column>
+    <column name="Oriented" type="INT">
+      <offset>392</offset>
+      <static_define_list external="DynOrientMode" />
+    </column>
+    <column name="Localvelocity" type="BOOL">
+      <offset>411</offset>
+    </column>
+    <column name="Localorientation" type="BOOL">
+      <offset>411</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Localvelocity</redundant_name>
+    </column>
+    <column name="Velocitydriveorientation" type="BOOL">
+      <offset>412</offset>
+    </column>
+    <column name="Entlightmode" type="INT">
+      <offset>420</offset>
+      <static_define_list external="DynEntityLightMode" />
+    </column>
+    <column name="Enttintmode" type="INT">
+      <offset>424</offset>
+      <static_define_list external="DynEntityTintMode" />
+    </column>
+    <column name="Entscalemode" type="INT">
+      <offset>428</offset>
+      <static_define_list external="DynEntityScaleMode" />
+    </column>
+    <column name="Flaretype" type="INT">
+      <offset>880</offset>
+      <static_define_list external="eDynFlareType" />
+    </column>
+    <column name="Flaresize" type="F32ARRAY">
+      <offset>888</offset>
+    </column>
+    <column name="Flareposition" type="F32ARRAY">
+      <offset>912</offset>
+    </column>
+    <column name="Flarematerial" type="STRINGARRAY">
+      <offset>920</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Splattype" type="INT">
+      <offset>768</offset>
+      <static_define_list external="eDynSplatType" />
+    </column>
+    <column name="Splatforcedown" type="BOOLFLAG">
+      <offset>808</offset>
+    </column>
+    <column name="Splatupdatescale" type="BOOLFLAG">
+      <offset>809</offset>
+    </column>
+    <column name="Splatcenter" type="BOOLFLAG">
+      <offset>810</offset>
+    </column>
+    <column name="Splatalign" type="INT">
+      <offset>812</offset>
+      <static_define_list external="eDynSplatAlign" />
+    </column>
+    <column name="Trailcurve" type="BOOLFLAG">
+      <offset>677</offset>
+    </column>
+    <column name="Trailstop" type="BOOLFLAG">
+      <offset>676</offset>
+    </column>
+    <column name="Texwords" type="STRING">
+      <offset>440</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Useclothwindoverride" type="BOOL">
+      <offset>460</offset>
+    </column>
+    <column name="Timescalechildren" type="BOOLFLAG">
+      <offset>932</offset>
+    </column>
+    <column name="Attachcamera" type="BOOL">
+      <offset>732</offset>
+    </column>
+    <column name="Getmodelfromcostumebone" type="STRING">
+      <offset>104</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Instanceable" type="BOOLFLAG">
+      <offset>417</offset>
+    </column>
+    <column name="Cameradelaydistancebasis" type="F32">
+      <offset>744</offset>
+    </column>
+    <column name="Cameralookat" type="STRING">
+      <offset>752</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Cameralookatspeed" type="F32">
+      <offset>760</offset>
+    </column>
+    <column name="Splatbonenameforprojection" type="STRING">
+      <offset>832</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Splatdisableculling" type="BOOLFLAG">
+      <offset>848</offset>
+    </column>
+    <column name="Splatdeferred" type="BOOLFLAG">
+      <offset>849</offset>
+    </column>
+    <column name="Splatdrawpriority" type="INT">
+      <offset>852</offset>
+      <default>200</default>
+    </column>
+    <column name="Printtype" type="INT">
+      <offset>396</offset>
+      <static_define_list external="PrintType" />
+    </column>
+    <column name="Soundprefix" type="STRING">
+      <offset>936</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Startofdynamictoks" type="IGNORE" />
+    <column name="Position" type="F32FIXEDARRAY">
+      <offset>224</offset>
+      <num_elements>3</num_elements>
+    </column>
+    <column name="Drawoffset" type="F32FIXEDARRAY">
+      <offset>468</offset>
+      <num_elements>3</num_elements>
+    </column>
+    <column name="Velocity" type="F32FIXEDARRAY">
+      <offset>236</offset>
+      <num_elements>3</num_elements>
+    </column>
+    <column name="Scale" type="F32FIXEDARRAY">
+      <offset>164</offset>
+      <num_elements>3</num_elements>
+    </column>
+    <column name="Hsvshift" type="F32FIXEDARRAY">
+      <offset>152</offset>
+      <num_elements>3</num_elements>
+      <format_raw>6</format_raw>
+    </column>
+    <column name="Texoffset" type="F32FIXEDARRAY">
+      <offset>276</offset>
+      <num_elements>2</num_elements>
+    </column>
+    <column name="Texscale" type="F32FIXEDARRAY">
+      <offset>284</offset>
+      <num_elements>2</num_elements>
+    </column>
+    <column name="Color" type="F32FIXEDARRAY">
+      <offset>136</offset>
+      <num_elements>3</num_elements>
+      <format>COLOR</format>
+    </column>
+    <column name="Alpha" type="F32">
+      <offset>148</offset>
+    </column>
+    <column name="Drag" type="F32">
+      <offset>292</offset>
+    </column>
+    <column name="Tightenup" type="F32">
+      <offset>296</offset>
+    </column>
+    <column name="Gravity" type="F32">
+      <offset>300</offset>
+    </column>
+    <column name="Orientation" type="QUATPYR">
+      <offset>248</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Spin" type="F32FIXEDARRAY">
+      <offset>264</offset>
+      <num_elements>3</num_elements>
+    </column>
+    <column name="Spritespin" type="F32">
+      <offset>308</offset>
+    </column>
+    <column name="Spriteorientation" type="F32">
+      <offset>304</offset>
+    </column>
+    <column name="Streakscale" type="F32">
+      <offset>196</offset>
+      <default>1</default>
+    </column>
+    <column name="Gotospeed" type="F32">
+      <offset>312</offset>
+    </column>
+    <column name="Gotogravity" type="F32">
+      <offset>316</offset>
+    </column>
+    <column name="Gotogravityfalloff" type="F32">
+      <offset>320</offset>
+    </column>
+    <column name="Gotoapproachspeed" type="F32">
+      <offset>324</offset>
+    </column>
+    <column name="Gotospringequilibrium" type="F32">
+      <offset>328</offset>
+    </column>
+    <column name="Gotospringconstant" type="F32">
+      <offset>332</offset>
+    </column>
+    <column name="Parentvelocityoffset" type="F32">
+      <offset>336</offset>
+    </column>
+    <column name="Color1" type="F32FIXEDARRAY">
+      <offset>344</offset>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Color2" type="F32FIXEDARRAY">
+      <offset>360</offset>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Color3" type="F32FIXEDARRAY">
+      <offset>376</offset>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Lightpbrintensity" type="F32">
+      <offset>508</offset>
+      <default>1</default>
+    </column>
+    <column name="Lightdiffusehsv" type="F32FIXEDARRAY">
+      <offset>496</offset>
+      <num_elements>3</num_elements>
+    </column>
+    <column name="Lightspecularhsv" type="F32FIXEDARRAY">
+      <offset>484</offset>
+      <num_elements>3</num_elements>
+    </column>
+    <column name="Lightradius" type="F32">
+      <offset>512</offset>
+    </column>
+    <column name="Lightinnerradiuspercentage" type="F32">
+      <offset>516</offset>
+    </column>
+    <column name="Lightinnercone" type="F32">
+      <offset>520</offset>
+    </column>
+    <column name="Lightoutercone" type="F32">
+      <offset>524</offset>
+    </column>
+    <column name="Trailkey1time" type="F32">
+      <offset>536</offset>
+    </column>
+    <column name="Trailkey2time" type="F32">
+      <offset>560</offset>
+    </column>
+    <column name="Trailkey3time" type="F32">
+      <offset>584</offset>
+    </column>
+    <column name="Trailkey4time" type="F32">
+      <offset>608</offset>
+    </column>
+    <column name="Trailkey1width" type="F32">
+      <offset>540</offset>
+    </column>
+    <column name="Trailkey2width" type="F32">
+      <offset>564</offset>
+    </column>
+    <column name="Trailkey3width" type="F32">
+      <offset>588</offset>
+    </column>
+    <column name="Trailkey4width" type="F32">
+      <offset>612</offset>
+    </column>
+    <column name="Trailkey1alpha" type="F32">
+      <offset>556</offset>
+    </column>
+    <column name="Trailkey2alpha" type="F32">
+      <offset>580</offset>
+    </column>
+    <column name="Trailkey3alpha" type="F32">
+      <offset>604</offset>
+    </column>
+    <column name="Trailkey4alpha" type="F32">
+      <offset>628</offset>
+    </column>
+    <column name="Trailkey1color" type="F32FIXEDARRAY">
+      <offset>544</offset>
+      <num_elements>3</num_elements>
+      <format>COLOR</format>
+    </column>
+    <column name="Trailkey2color" type="F32FIXEDARRAY">
+      <offset>568</offset>
+      <num_elements>3</num_elements>
+      <format>COLOR</format>
+    </column>
+    <column name="Trailkey3color" type="F32FIXEDARRAY">
+      <offset>592</offset>
+      <num_elements>3</num_elements>
+      <format>COLOR</format>
+    </column>
+    <column name="Trailkey4color" type="F32FIXEDARRAY">
+      <offset>616</offset>
+      <num_elements>3</num_elements>
+      <format>COLOR</format>
+    </column>
+    <column name="Trailfadein" type="F32">
+      <offset>632</offset>
+    </column>
+    <column name="Trailfadeout" type="F32">
+      <offset>636</offset>
+    </column>
+    <column name="Trailtexdensity" type="F32">
+      <offset>640</offset>
+    </column>
+    <column name="Trailemitrate" type="F32">
+      <offset>644</offset>
+    </column>
+    <column name="Trailemitdistance" type="F32">
+      <offset>648</offset>
+    </column>
+    <column name="Trailminspeed" type="F32">
+      <offset>680</offset>
+    </column>
+    <column name="Trailcurvedir" type="F32FIXEDARRAY">
+      <offset>684</offset>
+      <num_elements>3</num_elements>
+    </column>
+    <column name="Trailspeedthreshold" type="F32">
+      <offset>652</offset>
+    </column>
+    <column name="Trailshiftspeed" type="F32">
+      <offset>696</offset>
+    </column>
+    <column name="Shakepower" type="F32">
+      <offset>704</offset>
+    </column>
+    <column name="Shakeradius" type="F32">
+      <offset>708</offset>
+    </column>
+    <column name="Shakevertical" type="F32">
+      <offset>712</offset>
+    </column>
+    <column name="Shakepan" type="F32">
+      <offset>716</offset>
+    </column>
+    <column name="Shakespeed" type="F32">
+      <offset>720</offset>
+      <default>1</default>
+    </column>
+    <column name="Fov" type="F32">
+      <offset>724</offset>
+    </column>
+    <column name="Cameradistance" type="F32">
+      <offset>728</offset>
+    </column>
+    <column name="Cameracontrolinfluence" type="F32">
+      <offset>736</offset>
+      <default>1</default>
+    </column>
+    <column name="Cameradelayspeed" type="F32">
+      <offset>740</offset>
+    </column>
+    <column name="Rumbleintensity" type="F32">
+      <offset>764</offset>
+    </column>
+    <column name="Splatradius" type="F32">
+      <offset>772</offset>
+    </column>
+    <column name="Splatlength" type="F32">
+      <offset>776</offset>
+    </column>
+    <column name="Splatscale" type="F32FIXEDARRAY">
+      <offset>780</offset>
+      <num_elements>3</num_elements>
+    </column>
+    <column name="Splatprojectionorientation" type="QUATPYR">
+      <offset>792</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Splatfadeplane" type="F32">
+      <offset>824</offset>
+    </column>
+    <column name="Skyradius" type="F32">
+      <offset>864</offset>
+    </column>
+    <column name="Skylength" type="F32">
+      <offset>868</offset>
+    </column>
+    <column name="Skyweight" type="F32">
+      <offset>872</offset>
+    </column>
+    <column name="Flarecolor" type="F32FIXEDARRAY">
+      <offset>896</offset>
+      <num_elements>3</num_elements>
+    </column>
+    <column name="Clothwindoverride" type="F32FIXEDARRAY">
+      <offset>448</offset>
+      <num_elements>3</num_elements>
+    </column>
+    <column name="Lightmodulationamount" type="F32">
+      <offset>464</offset>
+    </column>
+    <column name="Timescale" type="F32">
+      <offset>928</offset>
+      <default>1</default>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

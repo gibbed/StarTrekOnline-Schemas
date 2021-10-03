@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CrypticRPCStats_PerCommand">
+  <table>
+    <column name="CrypticRPCStats_PerCommand" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Commandname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Requestcount" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Numoutstanding" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Maxoutstanding" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Numsuccessfulresponses" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Numfailedresponses" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Totalrequestpacketsize" type="INT64">
+      <offset>32</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Averagerequestpacketsize" type="INT">
+      <offset>40</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Totalresponsepacketsize" type="INT64">
+      <offset>48</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Averageresponsepacketsize" type="INT">
+      <offset>56</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Errorcounts" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
+      <subtable external="CrypticRPCStats_ErrorCounts" />
+    </column>
+    <column name="Timinghistogram" type="EMBEDDEDSTRUCT">
+      <offset>80</offset>
+      <subtable external="CrypticRPCStats_TimingHistorgram" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

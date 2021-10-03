@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldPerfFrameCounts">
+  <table>
+    <column name="WorldPerfFrameCounts" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Time_Type" type="INT64FIXEDARRAY">
+      <offset>0</offset>
+      <num_elements>18</num_elements>
+    </column>
+    <column name="Time_Gpu" type="F32FIXEDARRAY">
+      <offset>144</offset>
+      <num_elements>15</num_elements>
+    </column>
+    <column name="Inside_Brackets" type="INT64">
+      <offset>208</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

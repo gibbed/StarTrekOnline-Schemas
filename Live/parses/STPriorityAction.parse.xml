@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="STPriorityAction">
+  <table>
+    <column name="STPriorityAction" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="DisplayString" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Listrowicon" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Type" type="INT">
+      <offset>24</offset>
+      <static_define_list external="STPriorityActionType" />
+    </column>
+    <column name="Disabled" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Invalidinteract" type="U8">
+      <offset>29</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Timer" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Timerendtime" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Confirmtitle" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Confirmmessage0" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Confirmmessage1" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Confirmprompt0" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Confirmprompt1" type="STRING">
+      <offset>72</offset>
+    </column>
+    <column name="Confirmprompt2" type="STRING">
+      <offset>80</offset>
+    </column>
+    <column name="Confirmrequest" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="SocialRequest" />
+    </column>
+    <column name="Key" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Option" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <subtable external="InteractOption" />
+    </column>
+    <column name="Teamrequest" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <subtable external="SocialRequest" />
+    </column>
+    <column name="Guildrequest" type="OPTIONALSTRUCT">
+      <offset>120</offset>
+      <subtable external="SocialRequest" />
+    </column>
+    <column name="Interiorrequest" type="OPTIONALSTRUCT">
+      <offset>128</offset>
+      <subtable external="SocialRequest" />
+    </column>
+    <column name="Queuerequest" type="OPTIONALSTRUCT">
+      <offset>136</offset>
+      <subtable external="SocialRequest" />
+    </column>
+    <column name="Matchrequest" type="OPTIONALSTRUCT">
+      <offset>144</offset>
+      <subtable external="SocialRequest" />
+    </column>
+    <column name="Traderequest" type="OPTIONALSTRUCT">
+      <offset>152</offset>
+      <subtable external="SocialRequest" />
+    </column>
+    <column name="Queue" type="OPTIONALSTRUCT">
+      <offset>160</offset>
+      <subtable external="QueueRequest" />
+    </column>
+    <column name="Teamdifficulty" type="OPTIONALSTRUCT">
+      <offset>168</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="PlayerDifficulty" />
+    </column>
+    <column name="Teamdifficultyindex" type="INT">
+      <offset>176</offset>
+    </column>
+    <column name="Delayedrewarduistate" type="OPTIONALSTRUCT">
+      <offset>184</offset>
+      <subtable external="DelayedRewardUIState" />
+    </column>
+    <column name="Referencetime" type="INT64">
+      <offset>192</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

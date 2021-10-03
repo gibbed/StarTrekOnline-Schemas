@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ParseInfoDescriptor">
+  <table>
+    <column name="Schemaversion" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Staticdefinelist" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="Staticdefinelist" />
+    </column>
+    <column name="Parseinfo" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="Parseinfo" />
+    </column>
+  </table>
+</parse>

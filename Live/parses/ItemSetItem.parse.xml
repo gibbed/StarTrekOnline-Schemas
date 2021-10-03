@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemSetItem">
+  <table>
+    <column name="ItemSetItem" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ItemDefName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Itemsetdefname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="ItemDef" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="ItemDef" />
+    </column>
+    <column name="Itemsetdef" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="ItemDef" />
+    </column>
+    <column name="Inventoryslot" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="InventorySlot" />
+    </column>
+    <column name="Key" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Active" type="U8">
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Activecount" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Activemax" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

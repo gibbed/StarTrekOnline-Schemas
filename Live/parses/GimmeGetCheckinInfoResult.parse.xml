@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GimmeGetCheckinInfoResult">
+  <table>
+    <column name="GimmeGetCheckinInfoResult" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Root" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Info" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="GimmeRevisionInfo" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

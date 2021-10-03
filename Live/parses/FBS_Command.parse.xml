@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="FBS_Command">
+  <table>
+    <column name="FBS_Command" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Command" type="INT">
+      <offset>16</offset>
+      <static_define_list external="FBS_CommandType" />
+    </column>
+    <column name="Filekey" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="FileName" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Openmode" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="data" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="TextParserBinaryBlock" />
+    </column>
+    <column name="Noffsetbytes" type="INT64">
+      <offset>48</offset>
+    </column>
+    <column name="Kwhence" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Nfilesize" type="INT64">
+      <offset>64</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

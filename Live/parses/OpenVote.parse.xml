@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="OpenVote">
+  <table>
+    <column name="OpenVote" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Hvotedef" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>OpenVoteDef</dictionary_name>
+    </column>
+    <column name="Optionrewards" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="OpenVoteOptionRewards" />
+    </column>
+    <column name="State" type="INT">
+      <offset>24</offset>
+      <static_define_list external="OpenVoteState" />
+    </column>
+    <column name="Participants" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="OpenVoteParticipant" />
+    </column>
+    <column name="Uiendtime" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Uialtendtime" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Partitionidx" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

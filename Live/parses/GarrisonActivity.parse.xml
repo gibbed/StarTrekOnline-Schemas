@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GarrisonActivity">
+  <table>
+    <column name="GarrisonActivity" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ProjectName" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Partitionidx" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="GuildIdx" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Type" type="INT">
+      <offset>16</offset>
+      <static_define_list external="GarrisonActivityLogEntryType" />
+    </column>
+    <column name="Uentid" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Uentguildid" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Utargetguildid" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="playerName" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Srcguild" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Destguild" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Activitytargetname" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Activitydetailname" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Count" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

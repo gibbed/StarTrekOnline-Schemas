@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="VoiceConfig">
+  <table>
+    <column name="VoiceConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Defaultspeakervolume" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Defaultmiclevel" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Defaultuservolume" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Pushtotalkdefault" type="BIT">
+      <offset>12</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Showfirstconnecttutorial" type="BIT">
+      <offset>12</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Unmutedefault" type="BIT">
+      <offset>12</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Singlechannelrx" type="BIT">
+      <offset>12</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Singlechanneltx" type="BIT">
+      <offset>12</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Defaultnovoice" type="BIT">
+      <offset>12</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Usedfields" type="INTFIXEDARRAY">
+      <offset>16</offset>
+      <flags>
+        <flag>USEDFIELD</flag>
+      </flags>
+      <num_elements>1</num_elements>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

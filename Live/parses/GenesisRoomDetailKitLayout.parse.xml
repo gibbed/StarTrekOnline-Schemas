@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisRoomDetailKitLayout">
+  <table>
+    <column name="GenesisRoomDetailKitLayout" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Detailspecifier" type="INT">
+      <offset>0</offset>
+      <static_define_list external="GenesisTagNameDefault" />
+    </column>
+    <column name="Detailtags2" type="STRINGARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Detailtags" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Detailkit" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>GenesisDetailKit</dictionary_name>
+    </column>
+    <column name="Detaildensityoverride" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Detaildensity" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

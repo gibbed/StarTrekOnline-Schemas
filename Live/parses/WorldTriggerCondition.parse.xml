@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldTriggerCondition">
+  <table>
+    <column name="WorldTriggerCondition" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Common_Data" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="WorldEncounterObject" />
+    </column>
+    <column name="Properties" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="WorldTriggerConditionProperties" />
+    </column>
+    <column name="Unique_Name" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

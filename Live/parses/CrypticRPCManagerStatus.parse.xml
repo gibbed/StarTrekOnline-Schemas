@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CrypticRPCManagerStatus">
+  <table>
+    <column name="CrypticRPCManagerStatus" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Mysessionid" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Sihighestsentrequestid" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Sentbutunacknowledgedresponseids" type="INT64">
+      <offset>16</offset>
+      <flags>
+        <flag>EARRAY</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

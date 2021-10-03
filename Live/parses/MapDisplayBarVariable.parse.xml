@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MapDisplayBarVariable">
+  <table>
+    <column name="MapDisplayBarVariable" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Bar" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <dictionary_name>UIStyleBar</dictionary_name>
+    </column>
+    <column name="Lowmessage" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Highmessage" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Lowvalue" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Highvalue" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Showwhenoverhighvalue" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showwhenunderlowvalue" type="U8">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usenewline" type="U8">
+      <offset>34</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Validationignorebaroverlap" type="U8">
+      <offset>35</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

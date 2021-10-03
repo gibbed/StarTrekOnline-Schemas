@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldPlanetProperties">
+  <table>
+    <column name="WorldPlanetProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Geometryradius" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Collisionradius" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Hasatmosphere" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Atmosphere" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">WorldAtmosphereProperties</format_string>
+      </format_strings>
+    </column>
+    <column name="PlanetRadius" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="AtmosphereThickness" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="AerosolAtmosphereThickness" type="IGNORE" />
+    <column name="RayleighScattering" type="IGNORE" />
+    <column name="MieScattering" type="IGNORE" />
+    <column name="Miephaseasymmetry" type="IGNORE" />
+    <column name="IntensityMultiplier" type="IGNORE" />
+    <column name="Particlehsv" type="IGNORE" />
+    <column name="Aerosolparticlehsv" type="IGNORE" />
+    <column name="NormalizedViewHeight" type="IGNORE" />
+    <column name="End" type="END" />
+  </table>
+</parse>

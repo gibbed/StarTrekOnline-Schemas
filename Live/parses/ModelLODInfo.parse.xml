@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ModelLODInfo">
+  <table>
+    <column name="ModelLODInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Autolod" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="AutoLOD" />
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Lodtemplate" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>ModelLODTemplate</dictionary_name>
+    </column>
+    <column name="Forceautomatic" type="BIT">
+      <offset>32</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Highdetailhighlod" type="BIT">
+      <offset>32</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Preventclustering" type="IGNORE" />
+    <column name="End" type="END" />
+  </table>
+</parse>

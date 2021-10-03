@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayTimeEntry">
+  <table>
+    <column name="PlayTimeEntry" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uplaytime" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_SECS_DURATION">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Uyear" type="INT16">
+      <offset>4</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Umonth" type="U8">
+      <offset>6</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uday" type="U8">
+      <offset>7</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MicroTrans2DefRefList">
+  <table>
+    <column name="MicroTrans2DefRefList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Defrefs" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="MicroTrans2DefRef" />
+    </column>
+    <column name="Saledefrefs" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="MicroTrans2SaleDefRef" />
+    </column>
+    <column name="Battlepassdefrefs" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="MT2BattlepassDefRef" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

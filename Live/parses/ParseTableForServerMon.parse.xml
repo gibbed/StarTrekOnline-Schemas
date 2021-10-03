@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ParseTableForServerMon">
+  <table>
+    <column name="ParseTableForServerMon" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Tablename" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Maincomment" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Categories" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Numcolumns" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Fields" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="ParseTableFieldForServerMon" />
+    </column>
+    <column name="Polyparenttype" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Polychildtypes" type="STRINGARRAY">
+      <offset>48</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

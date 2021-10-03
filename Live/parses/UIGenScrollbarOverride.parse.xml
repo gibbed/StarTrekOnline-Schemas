@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenScrollbarOverride">
+  <table>
+    <column name="UIGenScrollbarOverride" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Scrollbarusestick" type="INT">
+      <offset>0</offset>
+      <static_define_list external="UIGenScrollbarStick" />
+    </column>
+    <column name="Scrollbarspeed" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ClusterShardSummary">
+  <table>
+    <column name="ClusterShardSummary" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_DEF_FIELDS_TO_SHOW">ShardName, ShardType, ControllerHostName, State</format_string>
+      </format_strings>
+    </column>
+    <column name="{" type="START" />
+    <column name="shardName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="shardDisplayName" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="shardType" type="INT">
+      <offset>16</offset>
+      <static_define_list external="ClusterShardType" />
+    </column>
+    <column name="Controllerhostname" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Controllerip" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="State" type="INT">
+      <offset>36</offset>
+      <static_define_list external="ClusterShardState" />
+    </column>
+    <column name="Mostrecentstatus" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="ClusterShardStatus" />
+    </column>
+    <column name="Localnamevaluepairs" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+      <subtable external="NameValuePairList" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

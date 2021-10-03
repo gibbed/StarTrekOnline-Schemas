@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="VertexPaintingGroup">
+  <table>
+    <column name="VertexPaintingGroup" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Groupid" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Ugeneration" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Path" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

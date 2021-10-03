@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="RewardPackDisplayData">
+  <table>
+    <column name="RewardPackDisplayData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Itemdisplayname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Item" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Item" />
+    </column>
+    <column name="Specialrewardstatus" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Rewardgroup" type="INT">
+      <offset>20</offset>
+      <static_define_list external="RewardGroup" />
+    </column>
+    <column name="TotalCount" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

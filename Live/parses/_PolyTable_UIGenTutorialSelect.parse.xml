@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="_PolyTable_UIGenTutorialSelect">
+  <table>
+    <column name="_PolyTable_UIGenTutorialSelect" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="UIGenTutorialSelectChild" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenTutorialSelectChild" />
+    </column>
+    <column name="UIGenTutorialSelectInstance" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenTutorialSelectInstance" />
+    </column>
+    <column name="UIGenTutorialSelectJail" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenTutorialSelectJail" />
+    </column>
+    <column name="UIGenTutorialSelectListColumn" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenTutorialSelectListColumn" />
+    </column>
+    <column name="UIGenTutorialSelectListRow" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenTutorialSelectListRow" />
+    </column>
+    <column name="UIGenTutorialSelectTab" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenTutorialSelectTab" />
+    </column>
+  </table>
+</parse>

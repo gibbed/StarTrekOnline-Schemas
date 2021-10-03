@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CurrencyExchangeConfig">
+  <table>
+    <column name="CurrencyExchangeConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Enabled" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usesharedbank" type="U8">
+      <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Maxplayeropenorders" type="INT">
+      <offset>4</offset>
+      <default>5</default>
+    </column>
+    <column name="Maxdisplayprices" type="INT">
+      <offset>8</offset>
+      <default>10</default>
+    </column>
+    <column name="Orderexpiredays" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Maxplayerlogentries" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Maxmtcprice" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Minmtcprice" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Maxquantityperorder" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Minquantityperorder" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Maxmtclockretrycount" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Tcnumeric" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

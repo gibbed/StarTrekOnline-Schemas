@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ToppleProperties">
+  <table>
+    <column name="ToppleProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Percentmaxhitpoints" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Frontmultiplier" type="F32">
+      <offset>4</offset>
+      <default>1</default>
+    </column>
+    <column name="Leftmultiplier" type="F32">
+      <offset>8</offset>
+      <default>1</default>
+    </column>
+    <column name="Rightmultiplier" type="F32">
+      <offset>12</offset>
+      <default>1</default>
+    </column>
+    <column name="Backmultiplier" type="F32">
+      <offset>16</offset>
+      <default>1</default>
+    </column>
+    <column name="Duration" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PCArtistCostumeData">
+  <table>
+    <column name="PCArtistCostumeData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Collisiongeo" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeGeometry</dictionary_name>
+    </column>
+    <column name="Pccollisiongeo" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>GLOBAL_NAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Collisiongeo</redundant_name>
+      <dictionary_name>CostumeGeometry</dictionary_name>
+    </column>
+    <column name="Capsule" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="SavedCapsule" />
+    </column>
+    <column name="Ppcollcapsules" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Capsule</redundant_name>
+      <subtable external="SavedCapsule" />
+    </column>
+    <column name="Collradius" type="F32">
+      <offset>16</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Fcollradius" type="F32">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Collradius</redundant_name>
+    </column>
+    <column name="FX" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PCFX" />
+    </column>
+    <column name="Eafx" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>FX</redundant_name>
+      <subtable external="PCFX" />
+    </column>
+    <column name="Fxswap" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PCFXSwap" />
+    </column>
+    <column name="Eafxswap" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Fxswap</redundant_name>
+      <subtable external="PCFXSwap" />
+    </column>
+    <column name="Soundpack" type="REFERENCE">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>DynSoundPack</dictionary_name>
+    </column>
+    <column name="Hsoundpack" type="REFERENCE">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Soundpack</redundant_name>
+      <dictionary_name>DynSoundPack</dictionary_name>
+    </column>
+    <column name="Constantbits" type="STRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PCBitName" />
+    </column>
+    <column name="Eaconstantbits" type="STRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Constantbits</redundant_name>
+      <subtable external="PCBitName" />
+    </column>
+    <column name="Transparency" type="F32">
+      <offset>56</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ftransparency" type="F32">
+      <offset>56</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Transparency</redundant_name>
+    </column>
+    <column name="Dismountfx" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PCFX" />
+    </column>
+    <column name="Pdismountfx" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Dismountfx</redundant_name>
+      <subtable external="PCFX" />
+    </column>
+    <column name="Flightcontrols" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PCFlightControls" />
+    </column>
+    <column name="Pflightcontrols" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Flightcontrols</redundant_name>
+      <subtable external="PCFlightControls" />
+    </column>
+    <column name="Nocollision" type="U8">
+      <offset>80</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bnocollision" type="U8">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Nocollision</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Nobodysock" type="U8">
+      <offset>81</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bnobodysock" type="U8">
+      <offset>81</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Nobodysock</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Noragdoll" type="U8">
+      <offset>82</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bnoragdoll" type="U8">
+      <offset>82</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Noragdoll</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Shellcoll" type="U8">
+      <offset>83</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bshellcoll" type="U8">
+      <offset>83</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Shellcoll</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Castshadows" type="U8">
+      <offset>84</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bcastshadows" type="U8">
+      <offset>84</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Castshadows</redundant_name>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Unlockall" type="U8">
+      <offset>85</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bunlockall" type="U8">
+      <offset>85</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Unlockall</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Unlockallcmat" type="U8">
+      <offset>86</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bunlockallcmat" type="U8">
+      <offset>86</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Unlockallcmat</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Unlockallctex" type="U8">
+      <offset>87</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bunlockallctex" type="U8">
+      <offset>87</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Unlockallctex</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hasonewaycollision" type="IGNORE" />
+    <column name="Disableshadowsplat" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

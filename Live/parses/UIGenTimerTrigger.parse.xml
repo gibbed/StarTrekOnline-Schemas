@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenTimerTrigger">
+  <table>
+    <column name="UIGenTimerTrigger" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Percenttime" type="F32">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Onupdate" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">UIGenAction</format_string>
+      </format_strings>
+    </column>
+    <column name="RunElevated" type="STRINGARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Command" type="STRINGARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Expressionblock" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Expression" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Expressionblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Sound" type="STRINGARRAY">
+      <offset>32</offset>
+      <flags>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Sound</dictionary_name>
+    </column>
+    <column name="Enterstate" type="INTARRAY">
+      <offset>40</offset>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="Exitstate" type="INTARRAY">
+      <offset>48</offset>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="Togglestate" type="INTARRAY">
+      <offset>56</offset>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="Mutate" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="UIGenMutateOther" />
+    </column>
+    <column name="Message" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="UIGenMessagePacket" />
+    </column>
+    <column name="Sendmessage" type="STRUCT">
+      <offset>72</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Message</redundant_name>
+      <subtable external="UIGenMessagePacket" />
+    </column>
+    <column name="Set" type="STRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="UIGenVarTypeGlobAndGen" />
+    </column>
+    <column name="Focus" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Unfocus" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Tooltipfocus" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Tooltipunfocus" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allowsoundswhendisabled" type="BIT">
+      <offset>96</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">0</format_string>
+      </format_strings>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

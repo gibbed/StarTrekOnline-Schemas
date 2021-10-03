@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PerfMetricSample_U64">
+  <table>
+    <column name="PerfMetricSample_U64" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Metric" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Parent" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Budget" type="INT">
+      <offset>8</offset>
+      <default>-1</default>
+    </column>
+    <column name="Ttotal" type="INT64">
+      <offset>16</offset>
+    </column>
+    <column name="Tself" type="INT64">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

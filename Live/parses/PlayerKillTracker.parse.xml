@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayerKillTracker">
+  <table>
+    <column name="PlayerKillTracker" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Killtrackerranks" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="KillTrackerRank" />
+    </column>
+    <column name="Utrackercreationtime" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

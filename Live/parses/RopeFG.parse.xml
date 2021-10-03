@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="RopeFG">
+  <table>
+    <column name="RopeFG" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Cast" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Mount" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Start" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="End" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Dismount" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Reverseend" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="AllowReverse" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="AutoMove" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="ReverseInput" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Speed" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Casttime" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Mounttime" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Dismounttime" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Reversedismounttime" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Mountpos" type="F32FIXEDARRAY">
+      <offset>24</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="StartPos" type="F32FIXEDARRAY">
+      <offset>36</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="EndPos" type="F32FIXEDARRAY">
+      <offset>48</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Dismountpos" type="F32FIXEDARRAY">
+      <offset>60</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Reversedismountpos" type="F32FIXEDARRAY">
+      <offset>72</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Mountrot" type="QUATPYR">
+      <offset>84</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Startrot" type="QUATPYR">
+      <offset>100</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Endrot" type="QUATPYR">
+      <offset>116</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Dismountrot" type="QUATPYR">
+      <offset>132</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Reversedismountrot" type="QUATPYR">
+      <offset>148</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ChatChannelInfo">
+  <table>
+    <column name="ChatChannelInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="DisplayName" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="ChannelAccess" type="INT">
+      <offset>16</offset>
+      <static_define_list external="ChatAccess" />
+    </column>
+    <column name="Permissionlevels" type="INTFIXEDARRAY">
+      <offset>20</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Ureservedflags" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="MOTD" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
+      <subtable external="ChatChannelMessage" />
+    </column>
+    <column name="Description" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Membercount" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Onlinemembercount" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Invitedmembercount" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Userlevel" type="INT">
+      <offset>92</offset>
+      <static_define_list external="ChannelUserLevel" />
+    </column>
+    <column name="Permissionflags" type="INT">
+      <offset>96</offset>
+      <static_define_list external="ChannelUserPrivileges" />
+    </column>
+    <column name="Userinvited" type="U8">
+      <offset>100</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usersubscribed" type="U8">
+      <offset>101</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Silenced" type="U8">
+      <offset>102</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uaccesslevel" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Voiceid" type="INT">
+      <offset>108</offset>
+    </column>
+    <column name="Voiceuri" type="STRING">
+      <offset>112</offset>
+    </column>
+    <column name="VoiceEnabled" type="BIT">
+      <offset>120</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Members" type="STRUCT">
+      <offset>128</offset>
+      <subtable external="ChatChannelMember" />
+    </column>
+    <column name="Membersinitialized" type="U8">
+      <offset>136</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Status" type="STRING">
+      <offset>144</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="AccessLevel" type="STRING">
+      <offset>152</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Euseraccess" type="IGNORE" />
+    <column name="Uuserstatus" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenScrollbarDef">
+  <table>
+    <column name="UIGenScrollbarDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>REQUIRED</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Topdefault" type="REFERENCE">
+      <offset>16</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Leftdefault" type="REFERENCE">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <redundant_name>Topdefault</redundant_name>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Bottomdefault" type="REFERENCE">
+      <offset>24</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Rightdefault" type="REFERENCE">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <redundant_name>Bottomdefault</redundant_name>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Handledefault" type="REFERENCE">
+      <offset>32</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Tophover" type="REFERENCE">
+      <offset>40</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Lefthover" type="REFERENCE">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <redundant_name>Tophover</redundant_name>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Bottomhover" type="REFERENCE">
+      <offset>48</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Righthover" type="REFERENCE">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <redundant_name>Bottomhover</redundant_name>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Handlehover" type="REFERENCE">
+      <offset>56</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Topmousedown" type="REFERENCE">
+      <offset>64</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Leftmousedown" type="REFERENCE">
+      <offset>64</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <redundant_name>Topmousedown</redundant_name>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Bottommousedown" type="REFERENCE">
+      <offset>72</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Rightmousedown" type="REFERENCE">
+      <offset>72</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <redundant_name>Bottommousedown</redundant_name>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Handlemousedown" type="REFERENCE">
+      <offset>80</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Trough" type="REFERENCE">
+      <offset>88</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Topheight" type="INT16">
+      <offset>96</offset>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Leftwidth" type="INT16">
+      <offset>96</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Topheight</redundant_name>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Bottomheight" type="INT16">
+      <offset>98</offset>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Rightwidth" type="INT16">
+      <offset>98</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Bottomheight</redundant_name>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Minhandleheight" type="INT16">
+      <offset>100</offset>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Minhandlewidth" type="INT16">
+      <offset>100</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Minhandleheight</redundant_name>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Width" type="INT16">
+      <offset>102</offset>
+      <flags>
+        <flag>REQUIRED</flag>
+      </flags>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Height" type="INT16">
+      <offset>102</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Width</redundant_name>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="OffsetFrom" type="INT">
+      <offset>104</offset>
+      <default>4</default>
+      <static_define_list external="UIDirection" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

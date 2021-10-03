@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldTextInteractionProperties">
+  <table>
+    <column name="WorldTextInteractionProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Usabilitytext" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Interacttext" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Interactdetailtext" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Interactdetailtexture" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Successconsoletext" type="EMBEDDEDSTRUCT">
+      <offset>80</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Failureconsoletext" type="EMBEDDEDSTRUCT">
+      <offset>104</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Interacttextoffset" type="F32FIXEDARRAY">
+      <offset>128</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">0, 0, 0</format_string>
+      </format_strings>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

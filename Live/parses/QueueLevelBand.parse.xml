@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="QueueLevelBand">
+  <table>
+    <column name="QueueLevelBand" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="MinLevel" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="MaxLevel" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Bolstertype" type="INT">
+      <offset>8</offset>
+      <static_define_list external="BolsterType" />
+    </column>
+    <column name="Bolsterlevel" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Maplevel" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Vardata" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">QueueVariables</format_string>
+      </format_strings>
+    </column>
+    <column name="Worldvars" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="WorldVariable" />
+    </column>
+    <column name="Queuevardata" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="QueueVariableData" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

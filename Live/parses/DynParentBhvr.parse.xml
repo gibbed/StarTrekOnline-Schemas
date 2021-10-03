@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynParentBhvr">
+  <table>
+    <column name="DynParentBhvr" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="At" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Goto" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="To" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Goto</redundant_name>
+    </column>
+    <column name="Orientto" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Orient" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Orientto</redundant_name>
+    </column>
+    <column name="Scaleto" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Near" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="DynParentNearEvent" />
+    </column>
+    <column name="Inherit" type="INT">
+      <offset>40</offset>
+      <static_define_list external="DynNodeXFormFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Update" type="INT">
+      <offset>44</offset>
+      <static_define_list external="DynNodeXFormFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Setflags" type="INT">
+      <offset>48</offset>
+      <static_define_list external="DynParentFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Param" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="DynApplyParam" />
+    </column>
+    <column name="Jitterlist" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="DynJitterList" />
+    </column>
+    <column name="Severwithbone" type="BOOLFLAG">
+      <offset>72</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

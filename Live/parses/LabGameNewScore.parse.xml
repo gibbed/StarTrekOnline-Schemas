@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="LabGameNewScore">
+  <table>
+    <column name="LabGameNewScore" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Symbol" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Generation" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Points" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Time" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Displaymessage" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Uremoved" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Hit" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Miss" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Predict" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

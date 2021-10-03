@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SetCostumeParams">
+  <table>
+    <column name="SetCostumeParams" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>1326</default>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Mode" type="INT">
+      <offset>4</offset>
+      <static_define_list external="kCostumeDisplayMode" />
+    </column>
+    <column name="Priority" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="CostumeName" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>PlayerCostume</dictionary_name>
+    </column>
+    <column name="Mountmusic" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Bonegroup" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Skeleton" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>CostumeSkeleton</dictionary_name>
+    </column>
+    <column name="Turnratescale" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Copycostumefromsourceent" type="U8">
+      <offset>52</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Copycostumefromsourceitem" type="U8">
+      <offset>53</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Asmount" type="U8">
+      <offset>54</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Donotdismount" type="U8">
+      <offset>55</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Overlaymount" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disableaddedbones" type="U8">
+      <offset>57</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disableditemcategoryoverride" type="STRINGARRAY">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Includemountpowertags" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PowerTagsStruct" />
+    </column>
+    <column name="Excludemountpowertags" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PowerTagsStruct" />
+    </column>
+    <column name="Mountscaleoverride" type="F32">
+      <offset>88</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

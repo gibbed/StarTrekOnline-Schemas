@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SharedMemoryTest">
+  <table>
+    <column name="SharedMemoryTest" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Testblock" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="Testblock" />
+    </column>
+    <column name="Stashstruct" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="StashTableTest" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

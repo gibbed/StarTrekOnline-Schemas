@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenTeamMatchStats">
+  <table>
+    <column name="UIGenTeamMatchStats" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Statname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Friendlyvalue" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Enemyvalue" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Valuessum" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

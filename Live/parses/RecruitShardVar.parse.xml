@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="RecruitShardVar">
+  <table>
+    <column name="RecruitShardVar" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Event" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="ProjectName" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Shardtask" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="File" type="CURRENTFILE">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Tiercount" type="F32ARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="Startdate" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Eventduration" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Startevent" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="ShardEventAutoStart" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

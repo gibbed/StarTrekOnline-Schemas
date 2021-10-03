@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DaboPayoutScheduleData">
+  <table>
+    <column name="DaboPayoutScheduleData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="DisplayName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Categoryname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Slottypea" type="INT">
+      <offset>16</offset>
+      <static_define_list external="DaboSlotType" />
+    </column>
+    <column name="Matchcounta" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Slottypeb" type="INT">
+      <offset>24</offset>
+      <static_define_list external="DaboSlotType" />
+    </column>
+    <column name="Matchcountb" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Slottypec" type="INT">
+      <offset>32</offset>
+      <static_define_list external="DaboSlotType" />
+    </column>
+    <column name="Matchcountc" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Payoutpercent" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Isheader" type="U8">
+      <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isdabo" type="U8">
+      <offset>45</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

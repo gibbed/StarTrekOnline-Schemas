@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ShaderInput">
+  <table>
+    <column name="ShaderInput" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Description" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Type" type="INT">
+      <offset>16</offset>
+      <static_define_list external="ShaderDataType" />
+    </column>
+    <column name="Typename" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Float" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Floatrange" type="F32FIXEDARRAY">
+      <offset>36</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Hidden" type="U8">
+      <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Notforassembler" type="U8">
+      <offset>45</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Nomanualconnect" type="U8">
+      <offset>46</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Functionparameter" type="U8">
+      <offset>47</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Default" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="ShaderInputDefault" />
+    </column>
+    <column name="Phase" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Noautoconnect" type="IGNORE" />
+    <column name="Endinput" type="END" />
+  </table>
+</parse>

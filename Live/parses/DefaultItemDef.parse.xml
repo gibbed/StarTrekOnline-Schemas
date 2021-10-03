@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DefaultItemDef">
+  <table>
+    <column name="DefaultItemDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Key" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Order" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Item" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Bagid" type="INT">
+      <offset>16</offset>
+      <default>2</default>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Count" type="INT">
+      <offset>20</offset>
+      <default>1</default>
+    </column>
+    <column name="Modifierinfo" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="aiModifierDef" />
+    </column>
+    <column name="MinLevel" type="INT">
+      <offset>32</offset>
+      <default>-1</default>
+    </column>
+    <column name="MaxLevel" type="INT">
+      <offset>36</offset>
+      <default>-1</default>
+    </column>
+    <column name="Chance" type="F32">
+      <offset>40</offset>
+      <default>1</default>
+    </column>
+    <column name="Group" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Slot" type="INT">
+      <offset>48</offset>
+      <default>-1</default>
+    </column>
+    <column name="Weight" type="F32">
+      <offset>52</offset>
+    </column>
+    <column name="Progressionlevel" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Quality" type="INT">
+      <offset>60</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Dynamicitempowers" type="STRINGARRAY">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Disabled" type="U8">
+      <offset>72</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenEntitySubTargetBuff">
+  <table>
+    <column name="UIGenEntitySubTargetBuff" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Category" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="PowerSubtargetCategory" />
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Descshort" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Desclong" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Descverylong" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Percenthealth" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Count" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="VisionModeEffectsDef">
+  <table>
+    <column name="VisionModeEffectsDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Playermode" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Entityeffect" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="VisionModeEffectDef" />
+    </column>
+    <column name="Dodesaturationeffect" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Desaturationblendtimein" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Desaturationblendtimeout" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Deatheffectmessage" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

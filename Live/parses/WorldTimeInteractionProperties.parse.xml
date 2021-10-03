@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldTimeInteractionProperties">
+  <table>
+    <column name="WorldTimeInteractionProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Usetime" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Usetimetext" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Activetime" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="CooldownTime" type="INT">
+      <offset>36</offset>
+      <static_define_list external="WorldCooldownTime" />
+    </column>
+    <column name="Customcooldowntime" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Playercooldowntime" type="INT">
+      <offset>44</offset>
+      <static_define_list external="WorldCooldownTime" />
+    </column>
+    <column name="Playercustomcooldowntime" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Playercooldownpartitionscope" type="INT">
+      <offset>52</offset>
+      <static_define_list external="WorldPlayerCooldownPartitionScope" />
+    </column>
+    <column name="Playercooldownapplytype" type="INT">
+      <offset>56</offset>
+      <static_define_list external="WorldPlayerCooldownApplyType" />
+    </column>
+    <column name="Dynamiccooldowntype" type="INT">
+      <offset>60</offset>
+      <static_define_list external="WorldDynamicSpawnType" />
+    </column>
+    <column name="Interruptonpower" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Interruptondamage" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Interruptonmove" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Waitonconfirmation" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Norespawn" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Usablewhenactive" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Teamusablewhenactive" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Hideduringcooldown" type="U8">
+      <offset>68</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

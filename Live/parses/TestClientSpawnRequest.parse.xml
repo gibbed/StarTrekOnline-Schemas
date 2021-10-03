@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TestClientSpawnRequest">
+  <table>
+    <column name="TestClientSpawnRequest" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Cscriptname" type="FIXEDSTRING">
+      <offset>0</offset>
+      <string_length>521</string_length>
+    </column>
+    <column name="Cmapname" type="FIXEDSTRING">
+      <offset>521</offset>
+      <string_length>1024</string_length>
+    </column>
+    <column name="Instanceindex" type="INT">
+      <offset>1548</offset>
+    </column>
+    <column name="Spawnpos" type="F32FIXEDARRAY">
+      <offset>1552</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="OwnerID" type="INT">
+      <offset>1564</offset>
+    </column>
+    <column name="NumToSpawn" type="INT">
+      <offset>1568</offset>
+    </column>
+    <column name="Spawndelay" type="F32">
+      <offset>1572</offset>
+    </column>
+    <column name="Cmdline" type="STRING">
+      <offset>1584</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

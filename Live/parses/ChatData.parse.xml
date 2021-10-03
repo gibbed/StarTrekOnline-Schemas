@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ChatData">
+  <table>
+    <column name="ChatData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Emote" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Linkinfos" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ChatLinkInfo" />
+    </column>
+    <column name="Bubbledata" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="ChatBubbleData" />
+    </column>
+    <column name="Msgoverride" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

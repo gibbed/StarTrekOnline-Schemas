@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenMapTextureAssembly">
+  <table>
+    <column name="UIGenMapTextureAssembly" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Mapassembly" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">UIGenTextureAssembly</format_string>
+      </format_strings>
+    </column>
+    <column name="Assembly" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Assemblyref" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Uiframelastupdate" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
+    </column>
+    <column name="Colors" type="EMBEDDEDSTRUCT">
+      <offset>20</offset>
+      <subtable external="Color4" />
+    </column>
+    <column name="Paddingtop" type="U8">
+      <offset>36</offset>
+    </column>
+    <column name="Toppadding" type="U8">
+      <offset>36</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Paddingtop</redundant_name>
+    </column>
+    <column name="Paddingbottom" type="U8">
+      <offset>37</offset>
+    </column>
+    <column name="Bottompadding" type="U8">
+      <offset>37</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Paddingbottom</redundant_name>
+    </column>
+    <column name="Paddingleft" type="U8">
+      <offset>38</offset>
+    </column>
+    <column name="Leftpadding" type="U8">
+      <offset>38</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Paddingleft</redundant_name>
+    </column>
+    <column name="Paddingright" type="U8">
+      <offset>39</offset>
+    </column>
+    <column name="Rightpadding" type="U8">
+      <offset>39</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Paddingright</redundant_name>
+    </column>
+    <column name="Bf" type="INTFIXEDARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>USEDFIELD</flag>
+      </flags>
+      <num_elements>1</num_elements>
+    </column>
+    <column name="Z" type="INT16">
+      <offset>48</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

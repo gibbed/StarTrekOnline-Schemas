@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ParsedLog">
+  <table>
+    <column name="ParsedLog" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Time" type="INT">
+      <offset>16</offset>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Originaltimeofoutoforder" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Logid" type="INT64">
+      <offset>24</offset>
+    </column>
+    <column name="ServerType" type="INT">
+      <offset>32</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Serverid" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="ServerIP" type="INT">
+      <offset>40</offset>
+      <format_strings>
+        <format_string name="HTML_IP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Serverpid" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="MapName" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Extramapinfo" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Parsedlogflags" type="U8">
+      <offset>64</offset>
+    </column>
+    <column name="Filegroup" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="LogFileGroup" />
+    </column>
+    <column name="Objinfo" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="ParsedLogObjInfo" />
+    </column>
+    <column name="Pairs" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="NameValuePair" />
+    </column>
+    <column name="Message" type="STRING">
+      <offset>104</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Parsingcategory" type="STRING">
+      <offset>112</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+    </column>
+    <column name="Serveridstring" type="FIXEDSTRING">
+      <offset>120</offset>
+      <string_length>64</string_length>
+    </column>
+    <column name="Rawlogline" type="STRING">
+      <offset>184</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

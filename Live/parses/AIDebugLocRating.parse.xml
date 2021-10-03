@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AIDebugLocRating">
+  <table>
+    <column name="AIDebugLocRating" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Arcdistance" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Clumping" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Softavoid" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Avoidoccupiedpositions" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Staytogether" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Flanking" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Targetshields" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Turnweakshieldto" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Turnstrongshieldto" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Turnweakshieldtomostdamage" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Preferarclimitedlocations" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Yoffset" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Samelocpenalty" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Raycollresult" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Bestthistick" type="BIT">
+      <offset>56</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Position" type="F32FIXEDARRAY">
+      <offset>60</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Combatposslotindex" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Combatposslot" type="F32FIXEDARRAY">
+      <offset>76</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

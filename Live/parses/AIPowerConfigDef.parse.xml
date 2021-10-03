@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AIPowerConfigDef">
+  <table>
+    <column name="AIPowerConfigDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Inheritdata" type="STRINGARRAY">
+      <offset>0</offset>
+      <flags>
+        <flag>INHERITANCE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="Inheritdata:" type="STRINGARRAY">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>INHERITANCE_STRUCT</flag>
+      </flags>
+      <redundant_name>Inheritdata</redundant_name>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Absweight" type="F32">
+      <offset>16</offset>
+      <default>1</default>
+    </column>
+    <column name="Weight:" type="F32">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Absweight</redundant_name>
+      <default>1</default>
+    </column>
+    <column name="Weightmodifier" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Weightmodifier:" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Weightmodifier</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Mindist" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Mindist:" type="F32">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Mindist</redundant_name>
+    </column>
+    <column name="MaxDist" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Maxdist:" type="F32">
+      <offset>36</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>MaxDist</redundant_name>
+    </column>
+    <column name="Chaintarget" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Chaintarget:" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Chaintarget</redundant_name>
+    </column>
+    <column name="Chaintime" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Chaintime:" type="F32">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Chaintime</redundant_name>
+    </column>
+    <column name="Airequires" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Airequires:" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Airequires</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Aiendcondition" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Aiendcondition:" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Aiendcondition</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Chainrequires" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Chainrequires:" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Chainrequires</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Targetoverride" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Targetoverride:" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Targetoverride</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Curerequires" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Curerequires:" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Curerequires</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Curepowertags" type="INTARRAY">
+      <offset>96</offset>
+      <static_define_list external="PowerTag" />
+    </column>
+    <column name="Curetags" type="INTARRAY">
+      <offset>96</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Curepowertags</redundant_name>
+      <static_define_list external="PowerTag" />
+    </column>
+    <column name="Maxrandomqueuetime" type="F32">
+      <offset>104</offset>
+    </column>
+    <column name="Maxrandomqueuetime:" type="F32">
+      <offset>104</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Maxrandomqueuetime</redundant_name>
+    </column>
+    <column name="Chainlocksfacing" type="U8">
+      <offset>108</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Chainlocksmovement" type="U8">
+      <offset>109</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>112</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Usedfields" type="INTFIXEDARRAY">
+      <offset>120</offset>
+      <flags>
+        <flag>USEDFIELD</flag>
+      </flags>
+      <num_elements>2</num_elements>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MRInteractionBG">
+  <table>
+    <column name="MRInteractionBG" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Path" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <subtable external="MRInteractionPath" />
+    </column>
+    <column name="Pathversion" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Pathversionstarted" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Targetwaypointindexmutable" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Triggeredwaypointindex" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Spcreachedwaypoint" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Spclingering" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Mindistfromwp" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Spcmindistchanged" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Spcmoveonrailstart" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Scalemoveonrail" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Posmoveonrailstart" type="F32FIXEDARRAY">
+      <offset>48</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Rotmoveonrailstart" type="QUATPYR">
+      <offset>60</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Pyfacemoveonrailstart" type="F32FIXEDARRAY">
+      <offset>76</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Hasstancemask" type="BIT">
+      <offset>84</offset>
+      <bit_offset>262144</bit_offset>
+    </column>
+    <column name="Flagsmutable" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
+      <subtable external="MRInteractionBGFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

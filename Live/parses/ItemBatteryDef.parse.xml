@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemBatteryDef">
+  <table>
+    <column name="ItemBatteryDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Affectedbyattribute" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Chargemax" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Thresholds" type="INTARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="Itemlevelincreaseperthreshold" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Chargenumeric" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Decaypointspersecond" type="F32">
+      <offset>56</offset>
+    </column>
+    <column name="Initialcharge" type="F32">
+      <offset>60</offset>
+    </column>
+    <column name="Decaywhen" type="INT">
+      <offset>64</offset>
+      <static_define_list external="ItemBatteryChargeDecayFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Disablerecharging" type="U8">
+      <offset>68</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

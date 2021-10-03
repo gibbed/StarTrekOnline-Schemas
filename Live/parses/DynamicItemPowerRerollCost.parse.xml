@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynamicItemPowerRerollCost">
+  <table>
+    <column name="DynamicItemPowerRerollCost" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Numofitempowerstoreroll" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Dynamicitempowerrerolltimecurrencynumericcost" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Dynamicitempowerrerollsalvagenumericcost" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

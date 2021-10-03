@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GarrisonDef">
+  <table>
+    <column name="GarrisonDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Plot" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="GarrisonPlotDefRef" />
+    </column>
+    <column name="Structure" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="GarrisonStructureDefRef" />
+    </column>
+    <column name="Garrisonplot" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>GarrisonPlotDef</dictionary_name>
+    </column>
+    <column name="Defaultdonationtask" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>DonationTaskDef</dictionary_name>
+    </column>
+    <column name="Destroydonationtask" type="REFERENCE">
+      <offset>56</offset>
+      <dictionary_name>DonationTaskDef</dictionary_name>
+    </column>
+    <column name="Upgraderequiredstructurerank" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
+      <subtable external="GarrisonRankBasedValues" />
+    </column>
+    <column name="Upgraderequiredstructurecount" type="EMBEDDEDSTRUCT">
+      <offset>144</offset>
+      <subtable external="GarrisonRankBasedValues" />
+    </column>
+    <column name="Buffcategory" type="INTARRAY">
+      <offset>224</offset>
+      <static_define_list external="PowerCategory" />
+    </column>
+    <column name="Usedecoratepermissions" type="U8">
+      <offset>232</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SavedPetSortData">
+  <table>
+    <column name="SavedPetSortData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Sortfirst" type="INTARRAY">
+      <offset>0</offset>
+    </column>
+    <column name="Sortlast" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Sortactive" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

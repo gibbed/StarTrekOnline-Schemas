@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UsageRestriction">
+  <table>
+    <column name="UsageRestriction" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="MinLevel" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="MaxLevel" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="SkillType" type="INT">
+      <offset>8</offset>
+      <static_define_list external="SkillType" />
+    </column>
+    <column name="Skilllevel" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Prequiresblock" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <subtable external="Expression" />
+    </column>
+    <column name="Prequires" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <redundant_name>Prequiresblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Uicategory" type="INT">
+      <offset>24</offset>
+      <static_define_list external="UsageRestrictionCategory" />
+    </column>
+    <column name="Requiredallegiance" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="AllegianceRef" />
+    </column>
+    <column name="Requireallallegiances" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Classallowed" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="CharacterClassRef" />
+    </column>
+    <column name="Classcategoryallowed" type="INTARRAY">
+      <offset>56</offset>
+      <static_define_list external="CharClassCategory" />
+    </column>
+    <column name="Pathallowed" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="CharacterPathRef" />
+    </column>
+    <column name="Requiredgemslottype" type="INT">
+      <offset>72</offset>
+      <static_define_list external="ItemGemType" />
+    </column>
+    <column name="Itemdefgatelength" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Itemdefgateinterval" type="INT">
+      <offset>80</offset>
+      <default>3</default>
+      <static_define_list external="ShardIntervalTimingMode" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EncounterInstanceActorProperties">
+  <table>
+    <column name="EncounterInstanceActorProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Overridefsm" type="BIT">
+      <offset>8</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="FSM" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>FSM</dictionary_name>
+    </column>
+    <column name="Variabledefs" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="WorldVariableDef" />
+    </column>
+    <column name="Overridebehaviortree" type="BIT">
+      <offset>32</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Behaviortree" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Overrideblackboardconfig" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Blackboardconfig" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Interactionproperties" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="WorldInteractionProperties" />
+    </column>
+    <column name="Crittergroupdisplayname" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="DisplayName" type="EMBEDDEDSTRUCT">
+      <offset>96</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Displaysubname" type="EMBEDDEDSTRUCT">
+      <offset>120</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Costumeproperties" type="OPTIONALSTRUCT">
+      <offset>144</offset>
+      <subtable external="EncounterInstanceActorCostumeProperties" />
+    </column>
+    <column name="Critterproperties" type="OPTIONALSTRUCT">
+      <offset>152</offset>
+      <subtable external="EncounterInstanceActorCritterProperties" />
+    </column>
+    <column name="Factionproperties" type="OPTIONALSTRUCT">
+      <offset>160</offset>
+      <subtable external="EncounterInstanceActorFactionProperties" />
+    </column>
+    <column name="Table" type="REFERENCE">
+      <offset>168</offset>
+      <dictionary_name>EnemyModTable</dictionary_name>
+    </column>
+    <column name="Gamespecificproperties" type="OPTIONALSTRUCT">
+      <offset>176</offset>
+      <subtable external="GameSpecificEncounterInstanceActorProperties" />
+      <format_strings>
+        <format_string name="NO_WORLD_CELL_CORE_CRC">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Position" type="F32FIXEDARRAY">
+      <offset>184</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Rotation" type="F32FIXEDARRAY">
+      <offset>196</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Usenormaldispname" type="BIT">
+      <offset>272</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

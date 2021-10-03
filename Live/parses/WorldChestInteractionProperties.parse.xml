@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldChestInteractionProperties">
+  <table>
+    <column name="WorldChestInteractionProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Rewardtable" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Chestkeys" type="STRINGARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rerolltoken" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Rerollcost" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Maxrerolls" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Openonceperplayer" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

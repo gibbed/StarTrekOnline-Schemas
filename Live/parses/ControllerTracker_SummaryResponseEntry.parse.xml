@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ControllerTracker_SummaryResponseEntry">
+  <table>
+    <column name="ControllerTracker_SummaryResponseEntry" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Criticalsystemname" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Status" type="INT">
+      <offset>8</offset>
+      <static_define_list external="ControllerTracker_SummaryResponseStatus" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

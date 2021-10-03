@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="_PolyTable_UIGenPerTypeState">
+  <table>
+    <column name="_PolyTable_UIGenPerTypeState" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="UIGenAnimatedSpriteState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenAnimatedSpriteState" />
+    </column>
+    <column name="UIGenButtonState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenButtonState" />
+    </column>
+    <column name="UIGenChatLogState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenChatLogState" />
+    </column>
+    <column name="UIGenCheckButtonState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenCheckButtonState" />
+    </column>
+    <column name="UIGenColorChooserState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenColorChooserState" />
+    </column>
+    <column name="UIGenCompassState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenCompassState" />
+    </column>
+    <column name="UIGenEntityState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenEntityState" />
+    </column>
+    <column name="UIGenInWorldContainerState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenInWorldContainerState" />
+    </column>
+    <column name="UIGenLayoutBoxState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenLayoutBoxState" />
+    </column>
+    <column name="UIGenListColumnState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenListColumnState" />
+    </column>
+    <column name="UIGenListRowState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenListRowState" />
+    </column>
+    <column name="UIGenListState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenListState" />
+    </column>
+    <column name="UIGenMapState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenMapState" />
+    </column>
+    <column name="UIGenMovableBoxState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenMovableBoxState" />
+    </column>
+    <column name="UIGenObjectState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenObjectState" />
+    </column>
+    <column name="UIGenPaperdollState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenPaperdollState" />
+    </column>
+    <column name="UIGenScrollViewState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenScrollViewState" />
+    </column>
+    <column name="UIGenSliderState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenSliderState" />
+    </column>
+    <column name="UIGenSMFState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenSMFState" />
+    </column>
+    <column name="UIGenSpriteState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenSpriteState" />
+    </column>
+    <column name="UIGenTabGroupState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenTabGroupState" />
+    </column>
+    <column name="UIGenTextAreaState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenTextAreaState" />
+    </column>
+    <column name="UIGenTextEntryState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenTextEntryState" />
+    </column>
+    <column name="UIGenTextState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenTextState" />
+    </column>
+    <column name="UIGenWaypointState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenWaypointState" />
+    </column>
+    <column name="UIGenWebViewState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenWebViewState" />
+    </column>
+  </table>
+</parse>

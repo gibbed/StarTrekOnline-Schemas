@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemUpgradeUIState">
+  <table>
+    <column name="ItemUpgradeUIState" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Sourceslot" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="InventorySlotReference" />
+    </column>
+    <column name="Modslot" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="InventorySlotReference" />
+    </column>
+    <column name="SourceItem" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Item" />
+    </column>
+    <column name="Moditem" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Item" />
+    </column>
+    <column name="Sourceslotprev" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="InventorySlotReference" />
+    </column>
+    <column name="Modslotprev" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
+      <subtable external="InventorySlotReference" />
+    </column>
+    <column name="Uisourceitemid" type="INT64">
+      <offset>48</offset>
+    </column>
+    <column name="Uimoditemid" type="INT64">
+      <offset>56</offset>
+    </column>
+    <column name="Willconsume" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Count" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Hresultitemref" type="REFERENCE">
+      <offset>72</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Resultitemdef" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="ItemDef" />
+    </column>
+    <column name="Resultitem" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="Item" />
+    </column>
+    <column name="Chance" type="F32">
+      <offset>96</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="BecomeCritterParams">
+  <table>
+    <column name="BecomeCritterParams" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>1282</default>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Critter" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>CritterDef</dictionary_name>
+    </column>
+    <column name="Class" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>CharacterClass</dictionary_name>
+    </column>
+    <column name="Keybindprofile" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Includepowertags" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="PowerTagsStruct" />
+    </column>
+    <column name="Excludepowertags" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="PowerTagsStruct" />
+    </column>
+    <column name="Disableditemcategoryoverrides" type="STRINGARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Allowitempowers" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Preserveinnates" type="U8">
+      <offset>57</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Preservepassives" type="U8">
+      <offset>58</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disablescp" type="U8">
+      <offset>59</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usecrittername" type="U8">
+      <offset>60</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disabletogglepowers" type="U8">
+      <offset>61</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hideequipment" type="U8">
+      <offset>62</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enablestrafingoverride" type="U8">
+      <offset>63</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Strafingoverride" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disablemovementrolloverride" type="U8">
+      <offset>65</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

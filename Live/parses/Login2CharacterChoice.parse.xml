@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="Login2CharacterChoice">
+  <table>
+    <column name="Login2CharacterChoice" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ContainerID" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="AccountID" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="OwnerType" type="INT">
+      <offset>8</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="OwnerID" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Createdtime" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Level" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="FixupVersion" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Lastplayedtime" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="VirtualShardID" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="shardName" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="shardDisplayName" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Pubaccountname" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Privaccountname" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Savedname" type="STRING">
+      <offset>72</offset>
+    </column>
+    <column name="Extradata1" type="STRING">
+      <offset>80</offset>
+    </column>
+    <column name="Extradata2" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Extradata3" type="STRING">
+      <offset>96</offset>
+    </column>
+    <column name="Extradata4" type="STRING">
+      <offset>104</offset>
+    </column>
+    <column name="Extradata5" type="STRING">
+      <offset>112</offset>
+    </column>
+    <column name="Oldbadname" type="STRING">
+      <offset>120</offset>
+    </column>
+    <column name="Isoffline" type="U8">
+      <offset>128</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isdeleted" type="U8">
+      <offset>129</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hasbadname" type="U8">
+      <offset>130</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Detailrequested" type="U8">
+      <offset>131</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Detailreceived" type="U8">
+      <offset>132</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ismain" type="U8">
+      <offset>133</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Issaveloginrecommended" type="U8">
+      <offset>134</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isdeleterequested" type="U8">
+      <offset>135</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

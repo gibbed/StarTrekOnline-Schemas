@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SuggestedContentInfo">
+  <table>
+    <column name="SuggestedContentInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Listname" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Type" type="INT">
+      <offset>8</offset>
+      <static_define_list external="SuggestedContentType" />
+    </column>
+    <column name="EventName" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Storyname" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Match" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>MatchDef</dictionary_name>
+    </column>
+    <column name="Queue" type="REFERENCE">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Match</redundant_name>
+      <dictionary_name>MatchDef</dictionary_name>
+    </column>
+    <column name="DisplayName" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Summary" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Artfilename" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Ustartdate" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Uenddate" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Eventactive" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Eventisvalidforplayer" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Cannotusematchreason" type="INT">
+      <offset>76</offset>
+      <static_define_list external="PlayerInvalidForMatchReason" />
+    </column>
+    <column name="Cannotusedisplaymessage" type="STRING">
+      <offset>80</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

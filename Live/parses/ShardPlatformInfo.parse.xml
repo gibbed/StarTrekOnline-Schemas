@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ShardPlatformInfo">
+  <table>
+    <column name="ShardPlatformInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Platform" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+      <static_define_list external="ShardPlatform" />
+    </column>
+    <column name="Requireteamproxy" type="U8">
+      <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requirequeueproxy" type="U8">
+      <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requirematchproxy" type="U8">
+      <offset>6</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requireexternalfriends" type="U8">
+      <offset>7</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hasplayerreputation" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Messageoverridesuffix" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Textfiltertag" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Enablegameboxevents" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Onlymissiongameboxevents" type="U8">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

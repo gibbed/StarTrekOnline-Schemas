@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynGroundRegData">
+  <table>
+    <column name="DynGroundRegData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Hipsnode" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Heightfixupnode" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Floordeltanear" type="F32">
+      <offset>32</offset>
+      <default>1045220557</default>
+    </column>
+    <column name="Floordeltafar" type="F32">
+      <offset>36</offset>
+      <default>1072064102</default>
+    </column>
+    <column name="Hipsdisplacementrate" type="F32">
+      <offset>40</offset>
+      <default>1232348144</default>
+    </column>
+    <column name="Riderhipsoffset" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Dyngroundregdatalimb" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="DynGroundRegDataLimb" />
+    </column>
+    <column name="Useraycastcollision" type="BOOLFLAG">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

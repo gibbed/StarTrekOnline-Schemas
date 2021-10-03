@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DamageFloat">
+  <table>
+    <column name="DamageFloat" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Erowner" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Ersource" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Worldstartpos" type="F32FIXEDARRAY">
+      <offset>8</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="OffsetFrom" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Maxlifetime" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Lifetime" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Delay" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="V2pos" type="F32FIXEDARRAY">
+      <offset>36</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V2velocity" type="F32FIXEDARRAY">
+      <offset>44</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V2destpos" type="F32FIXEDARRAY">
+      <offset>52</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V2acceleration" type="F32FIXEDARRAY">
+      <offset>60</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Color" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Color2" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Scale" type="F32">
+      <offset>76</offset>
+    </column>
+    <column name="Maxpopout" type="F32">
+      <offset>80</offset>
+    </column>
+    <column name="Priority" type="F32">
+      <offset>84</offset>
+    </column>
+    <column name="Message" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Angle" type="F32">
+      <offset>96</offset>
+    </column>
+    <column name="Keyframegroupindex" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="Icon" type="STRUCT">
+      <offset>104</offset>
+      <subtable external="DamageFloatIcon" />
+    </column>
+    <column name="Hfont" type="REFERENCE">
+      <offset>112</offset>
+      <dictionary_name>UIStyleFont</dictionary_name>
+    </column>
+    <column name="V2posoffset" type="F32FIXEDARRAY">
+      <offset>120</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V2velocitybase" type="F32FIXEDARRAY">
+      <offset>128</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V2size" type="F32FIXEDARRAY">
+      <offset>136</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Uipowid" type="INT">
+      <offset>144</offset>
+    </column>
+    <column name="Combattrackerflags" type="INT">
+      <offset>148</offset>
+    </column>
+    <column name="Crit" type="U8">
+      <offset>152</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

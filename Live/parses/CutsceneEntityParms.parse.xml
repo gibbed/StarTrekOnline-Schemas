@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CutsceneEntityParms">
+  <table>
+    <column name="CutsceneEntityParms" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Eiindexedents" type="INTARRAY">
+      <offset>0</offset>
+    </column>
+    <column name="Spokesmanid" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Puppetswaptype" type="INT">
+      <offset>12</offset>
+      <static_define_list external="CutscenePuppetSwapType" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

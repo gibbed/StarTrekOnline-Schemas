@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenRelative">
+  <table>
+    <column name="UIGenRelative" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Topfrom" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="UIGenRelativeAtom" />
+    </column>
+    <column name="Bottomfrom" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <subtable external="UIGenRelativeAtom" />
+    </column>
+    <column name="Leftfrom" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="UIGenRelativeAtom" />
+    </column>
+    <column name="Rightfrom" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="UIGenRelativeAtom" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

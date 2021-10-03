@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GroupProjectCampaignItemUI">
+  <table>
+    <column name="GroupProjectCampaignItemUI" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <static_define_list external="GroupProjectCampaignItemType" />
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="DisplayName" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Background" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Alternatename" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Category" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="X" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Y" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Groupprojectui" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="GroupProjectUI" />
+    </column>
+    <column name="Mission" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="Mission" />
+    </column>
+    <column name="Completedmission" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="CompletedMission" />
+    </column>
+    <column name="Progresspercent" type="F32">
+      <offset>80</offset>
+    </column>
+    <column name="Unlocklevel" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Defaultidx" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Hidebelowlevel" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="Hideabovelevel" type="INT">
+      <offset>96</offset>
+      <default>2147483647</default>
+    </column>
+    <column name="Challengecampaign" type="U8">
+      <offset>100</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Useoldui" type="U8">
+      <offset>101</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

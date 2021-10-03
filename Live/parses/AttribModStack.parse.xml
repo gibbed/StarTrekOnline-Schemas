@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AttribModStack">
+  <table>
+    <column name="AttribModStack" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Modnet" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="AttribModNet" />
+    </column>
+    <column name="Stackgroup" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="UIStackGroupData" />
+    </column>
+    <column name="Uistack" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Updateindex" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Uitimestampfirstapplication" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Uitimestamplastapplication" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

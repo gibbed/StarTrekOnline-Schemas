@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EntAttachParams">
+  <table>
+    <column name="EntAttachParams" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>1295</default>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="CostumeName" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>PlayerCostumetity</dictionary_name>
+    </column>
+    <column name="Attachbone" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Extrabit" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

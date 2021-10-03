@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SkelBlendRunAndGunBone">
+  <table>
+    <column name="SkelBlendRunAndGunBone" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Bone" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Secondary" type="BOOLFLAG">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Limitangle" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

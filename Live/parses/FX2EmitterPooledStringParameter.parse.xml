@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="FX2EmitterPooledStringParameter">
+  <table>
+    <column name="FX2EmitterPooledStringParameter" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Mode" type="INT">
+      <offset>0</offset>
+      <static_define_list external="FX2ParameterMode" />
+    </column>
+    <column name="Literalvalue" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Bindvalue" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

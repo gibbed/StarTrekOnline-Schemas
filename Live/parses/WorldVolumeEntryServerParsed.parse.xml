@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldVolumeEntryServerParsed">
+  <table>
+    <column name="WorldVolumeEntryServerParsed" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Base_Data" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="WorldCellEntryParsed" />
+    </column>
+    <column name="Elements" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="WorldVolumeElement" />
+    </column>
+    <column name="Volume_Type_String_Idxs" type="INTARRAY">
+      <offset>80</offset>
+    </column>
+    <column name="Indoor" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Occluder" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Attached_To_Parent" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Properties" type="EMBEDDEDSTRUCT">
+      <offset>96</offset>
+      <subtable external="GroupVolumePropertiesServer" />
+    </column>
+    <column name="Named_Volume_Id" type="INT">
+      <offset>248</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

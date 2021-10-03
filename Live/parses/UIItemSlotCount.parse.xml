@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIItemSlotCount">
+  <table>
+    <column name="UIItemSlotCount" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Slot" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="InventorySlot" />
+    </column>
+    <column name="Slotlite" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="InventorySlotLite" />
+    </column>
+    <column name="Countitem" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Eaigemslots" type="INTARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="Count" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

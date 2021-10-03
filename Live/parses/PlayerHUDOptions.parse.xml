@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayerHUDOptions">
+  <table>
+    <column name="PlayerHUDOptions" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Region" type="INT">
+      <offset>0</offset>
+      <static_define_list external="ControlSchemeRegionType" />
+    </column>
+    <column name="Notifyaudiomode" type="INT">
+      <offset>4</offset>
+      <default>1</default>
+      <static_define_list external="PlayerNotifyAudioMode" />
+    </column>
+    <column name="Showoverhead" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="PlayerShowOverhead" />
+    </column>
+    <column name="Buffsortorder" type="INT">
+      <offset>56</offset>
+      <static_define_list external="BuffSortOrder" />
+    </column>
+    <column name="Buffscalehud" type="F32">
+      <offset>60</offset>
+      <default>1</default>
+    </column>
+    <column name="Traymode" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Powerlevelsmode" type="U8">
+      <offset>68</offset>
+    </column>
+    <column name="Hidetraytooltips" type="U8">
+      <offset>69</offset>
+    </column>
+    <column name="Showminimap" type="U8">
+      <offset>70</offset>
+      <default>1</default>
+    </column>
+    <column name="Showlowlevelcontactindicator" type="U8">
+      <offset>71</offset>
+      <default>1</default>
+    </column>
+    <column name="Showsmallhud" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Mapiconflags" type="INT">
+      <offset>76</offset>
+      <default>-1</default>
+      <static_define_list external="MapIconInfoType" />
+    </column>
+    <column name="Version" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

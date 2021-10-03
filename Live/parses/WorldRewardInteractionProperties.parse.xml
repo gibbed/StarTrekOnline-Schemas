@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldRewardInteractionProperties">
+  <table>
+    <column name="WorldRewardInteractionProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Rewardtable" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Onceonlyrewardtable" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Rewardleveltype" type="INT">
+      <offset>16</offset>
+      <static_define_list external="WorldRewardLevelType" />
+    </column>
+    <column name="Customrewardlevel" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Mapvarname" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="_PolyTable_FX2ModuleParameterValue">
+  <table>
+    <column name="_PolyTable_FX2ModuleParameterValue" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="FX2ModuleParameterValue_Angles" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Angles" />
+    </column>
+    <column name="FX2ModuleParameterValue_Bool" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Bool" />
+    </column>
+    <column name="FX2ModuleParameterValue_Bool2" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Bool2" />
+    </column>
+    <column name="FX2ModuleParameterValue_Bool3" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Bool3" />
+    </column>
+    <column name="FX2ModuleParameterValue_Bool4" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Bool4" />
+    </column>
+    <column name="FX2ModuleParameterValue_ColorHSV" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_ColorHSV" />
+    </column>
+    <column name="FX2ModuleParameterValue_ColorHSVA" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_ColorHSVA" />
+    </column>
+    <column name="FX2ModuleParameterValue_ColorRGB" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_ColorRGB" />
+    </column>
+    <column name="FX2ModuleParameterValue_ColorRGBA" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_ColorRGBA" />
+    </column>
+    <column name="FX2ModuleParameterValue_Costume" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Costume" />
+    </column>
+    <column name="FX2ModuleParameterValue_Curve" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Curve" />
+    </column>
+    <column name="FX2ModuleParameterValue_Curve2" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Curve2" />
+    </column>
+    <column name="FX2ModuleParameterValue_Curve3" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Curve3" />
+    </column>
+    <column name="FX2ModuleParameterValue_Curve4" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Curve4" />
+    </column>
+    <column name="FX2ModuleParameterValue_EmitterState" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_EmitterState" />
+    </column>
+    <column name="FX2ModuleParameterValue_Float" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Float" />
+    </column>
+    <column name="FX2ModuleParameterValue_Float2" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Float2" />
+    </column>
+    <column name="FX2ModuleParameterValue_Float3" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Float3" />
+    </column>
+    <column name="FX2ModuleParameterValue_Float4" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Float4" />
+    </column>
+    <column name="FX2ModuleParameterValue_Geo" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Geo" />
+    </column>
+    <column name="FX2ModuleParameterValue_Int" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Int" />
+    </column>
+    <column name="FX2ModuleParameterValue_Int2" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Int2" />
+    </column>
+    <column name="FX2ModuleParameterValue_Int3" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Int3" />
+    </column>
+    <column name="FX2ModuleParameterValue_Int4" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Int4" />
+    </column>
+    <column name="FX2ModuleParameterValue_Node" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Node" />
+    </column>
+    <column name="FX2ModuleParameterValue_NodeRoot" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_NodeRoot" />
+    </column>
+    <column name="FX2ModuleParameterValue_Quat" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Quat" />
+    </column>
+    <column name="FX2ModuleParameterValue_RandomList" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_RandomList" />
+    </column>
+    <column name="FX2ModuleParameterValue_RandomList_Multi" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_RandomList_Multi" />
+    </column>
+    <column name="FX2ModuleParameterValue_RaycastResult" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_RaycastResult" />
+    </column>
+    <column name="FX2ModuleParameterValue_RotationMatrix" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_RotationMatrix" />
+    </column>
+    <column name="FX2ModuleParameterValue_String" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_String" />
+    </column>
+    <column name="FX2ModuleParameterValue_StringList" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_StringList" />
+    </column>
+    <column name="FX2ModuleParameterValue_Texture2D" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Texture2D" />
+    </column>
+    <column name="FX2ModuleParameterValue_Texture3D" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_Texture3D" />
+    </column>
+    <column name="FX2ModuleParameterValue_TextureCube" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_TextureCube" />
+    </column>
+    <column name="FX2ModuleParameterValue_UInt" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_UInt" />
+    </column>
+    <column name="FX2ModuleParameterValue_UInt2" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_UInt2" />
+    </column>
+    <column name="FX2ModuleParameterValue_UInt3" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_UInt3" />
+    </column>
+    <column name="FX2ModuleParameterValue_UInt4" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2ModuleParameterValue_UInt4" />
+    </column>
+  </table>
+</parse>

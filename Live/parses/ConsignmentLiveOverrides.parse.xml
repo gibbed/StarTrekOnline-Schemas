@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ConsignmentLiveOverrides">
+  <table>
+    <column name="ConsignmentLiveOverrides" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Bannedobjectname" type="STRINGARRAY">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Bannedbucket" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Bannedbuckethash" type="STRINGARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Priceconfig" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="ConsignmentPriceConfig" />
+    </column>
+    <column name="Objectpriceconfigoverride" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="ConsignmentObjectPriceConfigOverride" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

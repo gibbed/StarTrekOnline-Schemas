@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="LoadoutSearch">
+  <table>
+    <column name="LoadoutSearch" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Loadoutsearchitems" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="LoadoutSearchItem" />
+    </column>
+    <column name="Loadoutsearchowneritems" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="LoadoutSearchItem" />
+    </column>
+    <column name="Stgemsearches" type="STASHTABLE">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

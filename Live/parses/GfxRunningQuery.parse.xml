@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GfxRunningQuery">
+  <table>
+    <column name="GfxRunningQuery" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="History" type="F32FIXEDARRAY">
+      <offset>8</offset>
+      <num_elements>30</num_elements>
+    </column>
+    <column name="Rangehistory" type="F32FIXEDARRAY">
+      <offset>128</offset>
+      <num_elements>30</num_elements>
+    </column>
+    <column name="Index" type="INT">
+      <offset>248</offset>
+    </column>
+    <column name="Count" type="INT">
+      <offset>252</offset>
+    </column>
+    <column name="Endrunningquery" type="END" />
+  </table>
+</parse>

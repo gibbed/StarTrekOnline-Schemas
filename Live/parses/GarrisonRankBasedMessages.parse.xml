@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GarrisonRankBasedMessages">
+  <table>
+    <column name="GarrisonRankBasedMessages" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Rank1message" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank2message" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank3message" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank4message" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank5message" type="EMBEDDEDSTRUCT">
+      <offset>96</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank6message" type="EMBEDDEDSTRUCT">
+      <offset>120</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank7message" type="EMBEDDEDSTRUCT">
+      <offset>144</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank8message" type="EMBEDDEDSTRUCT">
+      <offset>168</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank9message" type="EMBEDDEDSTRUCT">
+      <offset>192</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank10message" type="EMBEDDEDSTRUCT">
+      <offset>216</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank11message" type="EMBEDDEDSTRUCT">
+      <offset>240</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank12message" type="EMBEDDEDSTRUCT">
+      <offset>264</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank13message" type="EMBEDDEDSTRUCT">
+      <offset>288</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank14message" type="EMBEDDEDSTRUCT">
+      <offset>312</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank15message" type="EMBEDDEDSTRUCT">
+      <offset>336</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank16message" type="EMBEDDEDSTRUCT">
+      <offset>360</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank17message" type="EMBEDDEDSTRUCT">
+      <offset>384</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank18message" type="EMBEDDEDSTRUCT">
+      <offset>408</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank19message" type="EMBEDDEDSTRUCT">
+      <offset>432</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rank20message" type="EMBEDDEDSTRUCT">
+      <offset>456</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

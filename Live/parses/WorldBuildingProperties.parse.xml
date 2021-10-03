@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldBuildingProperties">
+  <table>
+    <column name="WorldBuildingProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Layer" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="WorldBuildingLayerProperties" />
+    </column>
+    <column name="Disableocclusion" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disablelod" type="U8">
+      <offset>9</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Lodmodelref" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>GroupDef</dictionary_name>
+    </column>
+    <column name="Lodmodeldeprecated" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">GroupDefRef</format_string>
+      </format_strings>
+    </column>
+    <column name="Lodmodeluid" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Lodmodelname" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Lodgroupname" type="IGNORE" />
+    <column name="Lodgroupnameuid" type="IGNORE" />
+    <column name="End" type="END" />
+  </table>
+</parse>

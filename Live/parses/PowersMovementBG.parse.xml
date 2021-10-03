@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PowersMovementBG">
+  <table>
+    <column name="PowersMovementBG" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Dir" type="F32FIXEDARRAY">
+      <offset>0</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Hasanim" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hasposition" type="U8">
+      <offset>13</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hasrotation" type="U8">
+      <offset>14</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bitspendingmutable" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="PMBits" />
+    </column>
+    <column name="Bitsstickymutable" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="PMBits" />
+    </column>
+    <column name="Releaseanimmutable" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="PMReleaseAnim" />
+    </column>
+    <column name="Fxpendingmutable" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="PMFx" />
+    </column>
+    <column name="Fxstickymutable" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="PMFx" />
+    </column>
+    <column name="Movemutable" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="PMMove" />
+    </column>
+    <column name="Ignoresmutable" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="PMIgnore" />
+    </column>
+    <column name="Animstartid" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Vecpush" type="F32FIXEDARRAY">
+      <offset>76</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Uitimepush" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Erselectedtarget" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="Knockdown" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Ignoringinput" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Rooted" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Moving" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Stoppingmove" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Assumedownership" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Isoverridetacticalrepel" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Hitreactactive" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Hitreactanimstates" type="BIT">
+      <offset>97</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Waitforhold" type="BIT">
+      <offset>97</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Waitforsettled" type="BIT">
+      <offset>97</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Settled" type="BIT">
+      <offset>97</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Usingfakemotion" type="BIT">
+      <offset>97</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Settledfakemotion" type="BIT">
+      <offset>97</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Playanimbithandle" type="BIT">
+      <offset>97</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Playedanimbithandle" type="BIT">
+      <offset>97</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Playimpact" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Playedimpact" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Playgetup" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Playedgetup" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Spcholdstart" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="Spcsettled" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Spcimpactstart" type="INT">
+      <offset>108</offset>
+    </column>
+    <column name="Spcgetupstart" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Animbithandle" type="INT">
+      <offset>116</offset>
+    </column>
+    <column name="Animid" type="INT">
+      <offset>120</offset>
+    </column>
+    <column name="HoldTime" type="F32">
+      <offset>124</offset>
+    </column>
+    <column name="Settledtime" type="F32">
+      <offset>128</offset>
+    </column>
+    <column name="Impacttime" type="F32">
+      <offset>132</offset>
+    </column>
+    <column name="Getuptime" type="F32">
+      <offset>136</offset>
+    </column>
+    <column name="Vecfakemotion" type="F32FIXEDARRAY">
+      <offset>140</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Vecfakeoffset" type="F32FIXEDARRAY">
+      <offset>152</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

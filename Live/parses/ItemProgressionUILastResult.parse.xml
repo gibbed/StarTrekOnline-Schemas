@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemProgressionUILastResult">
+  <table>
+    <column name="ItemProgressionUILastResult" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <static_define_list external="ItemProgressionUIResultType" />
+    </column>
+    <column name="Utime" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Ucompletiontime" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Branch" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Evoattempts" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Evosucceeded" type="U8">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="LevelUp" type="U8">
+      <offset>21</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Newquality" type="INT">
+      <offset>24</offset>
+      <default>-1</default>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Crit" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="U64newtargetitemid" type="INT64">
+      <offset>32</offset>
+    </column>
+    <column name="Foodresults" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="ItemProgressionUILastFoodResult" />
+    </column>
+    <column name="Itemdefsconsumed" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="ItemProgressionUIEvoItemConsumed" />
+    </column>
+    <column name="Ucurrencyconsumed" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Stackbagid" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

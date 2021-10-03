@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="FolderTexOpt">
+  <table>
+    <column name="FolderTexOpt" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="F" type="CURRENTFILE">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="FolderName" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>16</offset>
+      <static_define_list external="TexOptFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Alphamipthreshold" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Mipfilter" type="INT">
+      <offset>24</offset>
+      <static_define_list external="TexOptMipFilterType" />
+    </column>
+    <column name="Mipsharpening" type="INT">
+      <offset>28</offset>
+      <static_define_list external="TexOptMipSharpening" />
+    </column>
+    <column name="Quality" type="INT">
+      <offset>32</offset>
+      <static_define_list external="TexOptQuality" />
+    </column>
+    <column name="Compression" type="INT">
+      <offset>36</offset>
+      <static_define_list external="TexOptCompressionType" />
+    </column>
+    <column name="Bordercolor" type="U8FIXEDARRAY">
+      <offset>40</offset>
+      <num_elements>4</num_elements>
+      <format>COLOR</format>
+    </column>
+    <column name="Ts" type="TIMESTAMP">
+      <offset>44</offset>
+    </column>
+    <column name="Isfolder" type="INT">
+      <offset>48</offset>
+      <default>1</default>
+    </column>
+    <column name="Highlevelsize" type="INT16">
+      <offset>52</offset>
+    </column>
+    <column name="Minlevelsplit" type="U8">
+      <offset>54</offset>
+    </column>
+    <column name="Suffix" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Fade" type="IGNORE" />
+    <column name="Texreducescale" type="IGNORE" />
+    <column name="End" type="END" />
+  </table>
+</parse>

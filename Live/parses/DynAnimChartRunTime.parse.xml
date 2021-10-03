@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynAnimChartRunTime">
+  <table>
+    <column name="DynAnimChartRunTime" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="FILENAME">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Stancewords" type="STRINGARRAY">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Chartpriority" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Defaultchances" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="DynAnimGraphChanceRef" />
+    </column>
+    <column name="Movedefaultchances" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="DynAnimGraphChanceRef" />
+    </column>
+    <column name="Graphrefs" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="DynAnimChartGraphRefRunTime" />
+    </column>
+    <column name="Movegraphrefs" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="DynAnimChartGraphRefRunTime" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

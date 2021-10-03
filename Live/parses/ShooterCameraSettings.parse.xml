@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ShooterCameraSettings">
+  <table>
+    <column name="ShooterCameraSettings" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Mindistance" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Maxdistance" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Aimdistance" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Closestdistanceoverride" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Playerheightmultiplier" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Playerheightmultipliernearest" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Aimfov" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Nearoffsetaim" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Nearoffsetnonaim" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Nearoffsetrange" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Hardtargetsnapanglethreshold" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Defaultcamdist" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Campresetclosedistancetolerance" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Adjusthardlockpointbasedonentityheight" type="U8">
+      <offset>52</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

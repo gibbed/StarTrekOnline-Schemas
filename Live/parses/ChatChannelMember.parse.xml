@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ChatChannelMember">
+  <table>
+    <column name="ChatChannelMember" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Handle" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Userlevel" type="INT">
+      <offset>16</offset>
+      <static_define_list external="ChannelUserLevel" />
+    </column>
+    <column name="Permissionflags" type="INT">
+      <offset>20</offset>
+      <static_define_list external="ChannelUserPrivileges" />
+    </column>
+    <column name="Online" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Invited" type="U8">
+      <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Silenced" type="U8">
+      <offset>26</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Status" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="AccessLevel" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Euseraccess" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

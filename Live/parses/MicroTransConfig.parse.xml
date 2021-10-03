@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MicroTransConfig">
+  <table>
+    <column name="MicroTransConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Autoimportfile" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Specialkey" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="SpecialKey" />
+    </column>
+    <column name="Globalpointbuycategory" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Pointbuycategory" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Pointbuysteamcategory" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Promogamecurrencywithdrawnumeric" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Promotionalcostumecategory" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Shardconfig" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="MicroTrans_ShardConfig" />
+    </column>
+    <column name="Maximumcoupondiscount" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

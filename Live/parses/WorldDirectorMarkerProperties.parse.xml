@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldDirectorMarkerProperties">
+  <table>
+    <column name="WorldDirectorMarkerProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Isspecialspawnlocation" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Worldspawntype" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="SpawnType" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Worldspawntype</redundant_name>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

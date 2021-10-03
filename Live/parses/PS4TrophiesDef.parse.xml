@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PS4TrophiesDef">
+  <table>
+    <column name="PS4TrophiesDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="FileName" type="CURRENTFILE">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Titledisplayname" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Titledetail" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Servicelabel" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Version" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Policy" type="INT">
+      <offset>68</offset>
+      <static_define_list external="PS4TrophyPolicy" />
+    </column>
+    <column name="Fordevelopment" type="U8">
+      <offset>72</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Group" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="PS4TrophyGroupDef" />
+    </column>
+    <column name="Supportedlanguages" type="INTARRAY">
+      <offset>88</offset>
+      <static_define_list external="PS4TrophyLanguage" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

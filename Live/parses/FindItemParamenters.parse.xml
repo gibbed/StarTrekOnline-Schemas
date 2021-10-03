@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="FindItemParamenters">
+  <table>
+    <column name="FindItemParamenters" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Checkprogressionlevel" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Includenondynamic" type="U8">
+      <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Progressionlevel" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Checkitemquality" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Finditemquality" type="INT">
+      <offset>12</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Sameplayer" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Includeitemflag" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Excludegemmeditems" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Excludeprotecteditems" type="U8">
+      <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

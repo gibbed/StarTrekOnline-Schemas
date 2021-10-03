@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SentryClient">
+  <table>
+    <column name="SentryClient" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="FIXEDSTRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+      <string_length>521</string_length>
+    </column>
+    <column name="First_Heard" type="INT">
+      <offset>524</offset>
+    </column>
+    <column name="Last_Heard" type="INT">
+      <offset>528</offset>
+    </column>
+    <column name="Stats" type="STRUCT">
+      <offset>536</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+      <subtable external="Stat" />
+    </column>
+    <column name="Machine" type="OPTIONALSTRUCT">
+      <offset>560</offset>
+      <subtable external="SentryServerMachine" />
+    </column>
+    <column name="Local_Ip" type="INT">
+      <offset>572</offset>
+    </column>
+    <column name="Public_Ip" type="INT">
+      <offset>576</offset>
+    </column>
+    <column name="Tag" type="INT">
+      <offset>580</offset>
+    </column>
+    <column name="Done_Patching" type="BIT">
+      <offset>584</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

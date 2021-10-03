@@ -1,0 +1,1407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PowerDef">
+  <table>
+    <column name="PowerDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Inheritance" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+        <flag>INHERITANCE_STRUCT</flag>
+      </flags>
+      <subtable external="InheritanceData" />
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Tags" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <subtable external="PowerTagsStruct" />
+    </column>
+    <column name="Categories" type="INTARRAY">
+      <offset>24</offset>
+      <static_define_list external="PowerCategory" />
+    </column>
+    <column name="Secondarycategories" type="INTARRAY">
+      <offset>32</offset>
+      <static_define_list external="PowerCategory" />
+    </column>
+    <column name="Categorylist" type="INTARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+    </column>
+    <column name="Conditionaltags" type="STRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <subtable external="PowerConditionalTags" />
+    </column>
+    <column name="Powerprop" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
+      <subtable external="PowerPropDef" />
+    </column>
+    <column name="Standardattribcost" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">StandardPowerAttribCost</format_string>
+      </format_strings>
+    </column>
+    <column name="Attribcost" type="INT">
+      <offset>72</offset>
+      <default>-1</default>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Exprblockcost" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprcostblock" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockcost</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprcost" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockcost</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Exprblockcostperiodic" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprcostperiodic" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockcostperiodic</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Payfromattrib" type="REFERENCE">
+      <offset>96</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>PowerPayFromAttribsDef</dictionary_name>
+    </column>
+    <column name="Additionalattribcost" type="STRUCT">
+      <offset>104</offset>
+      <subtable external="PowerAttribCost" />
+    </column>
+    <column name="Exprblockcostsecondary" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprblockcostperiodicsecondary" type="OPTIONALSTRUCT">
+      <offset>120</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Costpowermode" type="INT">
+      <offset>128</offset>
+      <static_define_list external="PowerMode" />
+    </column>
+    <column name="Costsinglepowermode" type="INT">
+      <offset>132</offset>
+    </column>
+    <column name="Costrecipe" type="REFERENCE">
+      <offset>136</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Targetmain" type="REFERENCE">
+      <offset>144</offset>
+      <dictionary_name>PowerTarget</dictionary_name>
+    </column>
+    <column name="Taptarget" type="REFERENCE">
+      <offset>152</offset>
+      <dictionary_name>PowerTarget</dictionary_name>
+    </column>
+    <column name="Targetaffected" type="REFERENCE">
+      <offset>160</offset>
+      <dictionary_name>PowerTarget</dictionary_name>
+    </column>
+    <column name="Targetarc" type="F32">
+      <offset>168</offset>
+    </column>
+    <column name="Targetyaw" type="F32">
+      <offset>172</offset>
+    </column>
+    <column name="Maxtargetshit" type="INT">
+      <offset>176</offset>
+    </column>
+    <column name="Exprblockradius" type="OPTIONALSTRUCT">
+      <offset>184</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprradiusblock" type="OPTIONALSTRUCT">
+      <offset>184</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockradius</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprradius" type="OPTIONALSTRUCT">
+      <offset>184</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockradius</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Exprblockinnerradius" type="OPTIONALSTRUCT">
+      <offset>192</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprinnerradiusblock" type="OPTIONALSTRUCT">
+      <offset>192</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockinnerradius</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprinnerradius" type="OPTIONALSTRUCT">
+      <offset>192</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockinnerradius</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Exprblockarc" type="OPTIONALSTRUCT">
+      <offset>200</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Arcblock" type="OPTIONALSTRUCT">
+      <offset>200</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockarc</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprarcblock" type="OPTIONALSTRUCT">
+      <offset>200</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockarc</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprarc" type="OPTIONALSTRUCT">
+      <offset>200</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockarc</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Arc" type="OPTIONALSTRUCT">
+      <offset>200</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockarc</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Exprblockaoetargetfilter" type="OPTIONALSTRUCT">
+      <offset>208</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Yaw" type="F32">
+      <offset>216</offset>
+    </column>
+    <column name="Pitch" type="F32">
+      <offset>220</offset>
+    </column>
+    <column name="Frontoffset" type="F32">
+      <offset>224</offset>
+    </column>
+    <column name="Rightoffset" type="F32">
+      <offset>228</offset>
+    </column>
+    <column name="Upoffset" type="F32">
+      <offset>232</offset>
+    </column>
+    <column name="Range" type="F32">
+      <offset>236</offset>
+    </column>
+    <column name="Rangemin" type="F32">
+      <offset>240</offset>
+    </column>
+    <column name="Rangesecondary" type="F32">
+      <offset>244</offset>
+    </column>
+    <column name="Startingradius" type="F32">
+      <offset>248</offset>
+    </column>
+    <column name="Exprpowerspeedscale" type="OPTIONALSTRUCT">
+      <offset>256</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Timecharge" type="F32">
+      <offset>264</offset>
+    </column>
+    <column name="Timeactivate" type="F32">
+      <offset>268</offset>
+    </column>
+    <column name="Timeactivateperiod" type="F32">
+      <offset>272</offset>
+    </column>
+    <column name="Periodsmax" type="INT">
+      <offset>276</offset>
+    </column>
+    <column name="Timepreactivate" type="F32">
+      <offset>280</offset>
+    </column>
+    <column name="Timemaintain" type="F32">
+      <offset>284</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+    </column>
+    <column name="Timerecharge" type="F32">
+      <offset>288</offset>
+    </column>
+    <column name="Exprtimerechargespeed" type="OPTIONALSTRUCT">
+      <offset>296</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="TimeOverride" type="F32">
+      <offset>304</offset>
+    </column>
+    <column name="Timeoverridereactivepower" type="F32">
+      <offset>308</offset>
+    </column>
+    <column name="Timeallowqueue" type="F32">
+      <offset>312</offset>
+      <default>-1</default>
+    </column>
+    <column name="Totalcastperiod" type="F32">
+      <offset>316</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+    </column>
+    <column name="Timepostmaintain" type="F32">
+      <offset>320</offset>
+    </column>
+    <column name="Exprblockrequiresqueue" type="OPTIONALSTRUCT">
+      <offset>328</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprblockrequirescharge" type="OPTIONALSTRUCT">
+      <offset>336</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprrequireschargeblock" type="OPTIONALSTRUCT">
+      <offset>336</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockrequirescharge</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprrequirescharge" type="OPTIONALSTRUCT">
+      <offset>336</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockrequirescharge</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Chargerequire" type="F32">
+      <offset>344</offset>
+    </column>
+    <column name="Chargeforcedminimum" type="F32">
+      <offset>348</offset>
+    </column>
+    <column name="Expectedplayerinputtime" type="F32">
+      <offset>352</offset>
+    </column>
+    <column name="Powermodesrequired" type="INTARRAY">
+      <offset>360</offset>
+      <static_define_list external="PowerMode" />
+    </column>
+    <column name="Powermodesdisallowed" type="INTARRAY">
+      <offset>368</offset>
+      <static_define_list external="PowerMode" />
+    </column>
+    <column name="Playerpowermodesdisallowed" type="INTARRAY">
+      <offset>376</offset>
+      <static_define_list external="PowerMode" />
+    </column>
+    <column name="Combatevents" type="INTARRAY">
+      <offset>384</offset>
+      <static_define_list external="CombatEvent" />
+    </column>
+    <column name="Combateventtime" type="F32">
+      <offset>392</offset>
+    </column>
+    <column name="Exprblockrequiresapply" type="OPTIONALSTRUCT">
+      <offset>400</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Charges" type="INT">
+      <offset>408</offset>
+    </column>
+    <column name="Chargerefillinterval" type="F32">
+      <offset>412</offset>
+    </column>
+    <column name="Exprchargerefillspeed" type="OPTIONALSTRUCT">
+      <offset>416</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Lifetimereal" type="F32">
+      <offset>424</offset>
+    </column>
+    <column name="Lifetimegame" type="F32">
+      <offset>428</offset>
+    </column>
+    <column name="Lifetimeusage" type="F32">
+      <offset>432</offset>
+    </column>
+    <column name="Ammocapacity" type="INT">
+      <offset>436</offset>
+    </column>
+    <column name="Ammousepershot" type="INT">
+      <offset>440</offset>
+      <default>1</default>
+    </column>
+    <column name="Ammousepershotatmaxcharge" type="INT">
+      <offset>444</offset>
+      <default>1</default>
+    </column>
+    <column name="Timereload" type="F32">
+      <offset>448</offset>
+    </column>
+    <column name="Reloadtype" type="INT">
+      <offset>452</offset>
+      <static_define_list external="PowerReloadType" />
+    </column>
+    <column name="Timeenergyreloaddelay" type="F32">
+      <offset>456</offset>
+    </column>
+    <column name="Limitedammo" type="U8">
+      <offset>460</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Limitedammocapacity" type="INT">
+      <offset>464</offset>
+    </column>
+    <column name="Attribkeyblock" type="INT">
+      <offset>468</offset>
+    </column>
+    <column name="Attribmod" type="STRUCT">
+      <offset>472</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="AttribModDef" />
+    </column>
+    <column type="STRUCT">
+      <offset>480</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="AttribModDef" />
+    </column>
+    <column name="Orderedmodsclient" type="STRUCT">
+      <offset>488</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="AttribModDef" />
+    </column>
+    <column name="Specialmodsclient" type="STRUCT">
+      <offset>496</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="AttribModDef" />
+    </column>
+    <column name="Combo" type="STRUCT">
+      <offset>504</offset>
+      <subtable external="PowerCombo" />
+    </column>
+    <column type="STRUCT">
+      <offset>512</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="PowerCombo" />
+    </column>
+    <column name="Attribignore" type="INTARRAY">
+      <offset>520</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Attribdepend" type="INTARRAY">
+      <offset>528</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Autoreapplydepend" type="INT">
+      <offset>536</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <static_define_list external="AutoReapplyCheckReason" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Exprblockenhanceattach" type="OPTIONALSTRUCT">
+      <offset>544</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprenhanceblock" type="OPTIONALSTRUCT">
+      <offset>544</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockenhanceattach</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprenhance" type="OPTIONALSTRUCT">
+      <offset>544</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockenhanceattach</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Exprblockenhanceapply" type="OPTIONALSTRUCT">
+      <offset>552</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprenhanceapplyblock" type="OPTIONALSTRUCT">
+      <offset>552</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockenhanceapply</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprenhanceentcreate" type="OPTIONALSTRUCT">
+      <offset>560</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprenhanceentcreateblock" type="OPTIONALSTRUCT">
+      <offset>560</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprenhanceentcreate</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="Attribhit" type="INT">
+      <offset>568</offset>
+      <default>-1</default>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Attribmiss" type="INT">
+      <offset>572</offset>
+      <default>-1</default>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Preactivatepowerdef" type="REFERENCE">
+      <offset>576</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Itemlevel" type="INT">
+      <offset>584</offset>
+    </column>
+    <column name="Itemlevelptnode" type="REFERENCE">
+      <offset>592</offset>
+      <dictionary_name>PTNodeDef</dictionary_name>
+    </column>
+    <column name="Expritemlevel" type="OPTIONALSTRUCT">
+      <offset>600</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprhideinui" type="OPTIONALSTRUCT">
+      <offset>608</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Animfx" type="REFERENCE">
+      <offset>616</offset>
+      <dictionary_name>PowerAnimFX</dictionary_name>
+    </column>
+    <column name="Hueoverride" type="F32">
+      <offset>624</offset>
+    </column>
+    <column name="Emitoverride" type="REFERENCE">
+      <offset>632</offset>
+      <dictionary_name>PowerEmit</dictionary_name>
+    </column>
+    <column name="IconName" type="STRING">
+      <offset>640</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Coherenticon" type="INT">
+      <offset>648</offset>
+      <static_define_list external="PowerCoherentIcon" />
+    </column>
+    <column name="Purpose" type="INT">
+      <offset>652</offset>
+      <static_define_list external="PowerPurpose" />
+    </column>
+    <column name="Purposeminlevel" type="INT">
+      <offset>656</offset>
+    </column>
+    <column name="Cursorlocationtargetradius" type="F32">
+      <offset>660</offset>
+    </column>
+    <column name="Msgdisplayname" type="EMBEDDEDSTRUCT">
+      <offset>664</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Msgdescription" type="EMBEDDEDSTRUCT">
+      <offset>688</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Msgdescriptionlong" type="EMBEDDEDSTRUCT">
+      <offset>712</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Msgdescriptionflavor" type="EMBEDDEDSTRUCT">
+      <offset>736</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Msgattriboverride" type="EMBEDDEDSTRUCT">
+      <offset>760</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Msgautodesc" type="EMBEDDEDSTRUCT">
+      <offset>784</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Msgrankchange" type="EMBEDDEDSTRUCT">
+      <offset>808</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Requiresqueuefailmsgkey" type="STRING">
+      <offset>832</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Tooltipdamagepowerdef" type="REFERENCE">
+      <offset>840</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Exprhideautodesc" type="OPTIONALSTRUCT">
+      <offset>848</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Aitags" type="INT">
+      <offset>856</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <static_define_list external="PowerAITags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="AIMinRange" type="INT">
+      <offset>860</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="AIMaxRange" type="INT">
+      <offset>864</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Aipowerconfigdef" type="STRING">
+      <offset>872</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <dictionary_name>AIPowerConfigDef</dictionary_name>
+    </column>
+    <column name="Aipowerconfigdefinst" type="OPTIONALSTRUCT">
+      <offset>880</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="AIPowerConfigDef" />
+    </column>
+    <column name="Exprblockaicommand" type="OPTIONALSTRUCT">
+      <offset>888</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="Expression" />
+    </column>
+    <column name="Expraicommand" type="OPTIONALSTRUCT">
+      <offset>888</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <redundant_name>Exprblockaicommand</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Group" type="STRING">
+      <offset>896</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Indextags" type="STRING">
+      <offset>904</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Notes" type="STRING">
+      <offset>912</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="File" type="CURRENTFILE">
+      <offset>920</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Uiversion" type="INT">
+      <offset>928</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Forcebinningagain" type="INT">
+      <offset>928</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <redundant_name>Uiversion</redundant_name>
+    </column>
+    <column name="Criticalchanceattrib" type="INT">
+      <offset>932</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <default>-1</default>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Criticalseverityattrib" type="INT">
+      <offset>936</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <default>-1</default>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Criticalresistattrib" type="INT">
+      <offset>940</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <default>-1</default>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Interrupts" type="BIT">
+      <offset>944</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>1048576</bit_offset>
+      <static_define_list external="PowerInterruption" />
+      <format>FLAGS</format>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">21</format_string>
+      </format_strings>
+    </column>
+    <column name="Requestedinterruptcooldown" type="F32">
+      <offset>948</offset>
+    </column>
+    <column name="Affectedrequiresperceivance" type="U8">
+      <offset>952</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Tracktarget" type="U8">
+      <offset>953</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Type" type="BIT">
+      <offset>956</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>524288</bit_offset>
+      <static_define_list external="PowerType" />
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">5</format_string>
+      </format_strings>
+    </column>
+    <column name="Targetvisibilitymain" type="BIT">
+      <offset>957</offset>
+      <bit_offset>524288</bit_offset>
+      <static_define_list external="TargetVisibility" />
+    </column>
+    <column name="Taptargetvisibility" type="BIT">
+      <offset>958</offset>
+      <bit_offset>524288</bit_offset>
+      <static_define_list external="TargetVisibility" />
+    </column>
+    <column name="Targetvisibilityaffected" type="BIT">
+      <offset>959</offset>
+      <bit_offset>524288</bit_offset>
+      <static_define_list external="TargetVisibility" />
+    </column>
+    <column name="Tracking" type="BIT">
+      <offset>960</offset>
+      <bit_offset>524288</bit_offset>
+      <static_define_list external="TargetTracking" />
+    </column>
+    <column name="EffectArea" type="BIT">
+      <offset>961</offset>
+      <bit_offset>524288</bit_offset>
+      <static_define_list external="EffectArea" />
+    </column>
+    <column name="Effectareasort" type="BIT">
+      <offset>962</offset>
+      <bit_offset>393216</bit_offset>
+      <static_define_list external="EffectAreaSort" />
+    </column>
+    <column name="Sourceentercombat" type="BIT">
+      <offset>962</offset>
+      <bit_offset>196614</bit_offset>
+      <static_define_list external="PowerEnterCombatType" />
+    </column>
+    <column name="Setscombat" type="BIT">
+      <offset>962</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Sourceentercombat</redundant_name>
+      <bit_offset>196614</bit_offset>
+      <static_define_list external="PowerEnterCombatType" />
+    </column>
+    <column name="Requirevalidtarget" type="BIT">
+      <offset>963</offset>
+      <bit_offset>196609</bit_offset>
+      <static_define_list external="PowerRequireValidTarget" />
+    </column>
+    <column name="Unrestrictedtargeting" type="BIT">
+      <offset>963</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Requirevalidtarget</redundant_name>
+      <bit_offset>196609</bit_offset>
+      <static_define_list external="PowerRequireValidTarget" />
+    </column>
+    <column name="Activaterules" type="BIT">
+      <offset>963</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>196612</bit_offset>
+      <static_define_list external="PowerActivateRules" />
+      <format>FLAGS</format>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">2</format_string>
+      </format_strings>
+    </column>
+    <column name="Activatewhiledead" type="BIT">
+      <offset>963</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <redundant_name>Activaterules</redundant_name>
+      <bit_offset>196612</bit_offset>
+      <static_define_list external="PowerActivateRules" />
+      <format>FLAGS</format>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">2</format_string>
+      </format_strings>
+    </column>
+    <column name="Enhancementattachunowned" type="BIT">
+      <offset>964</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>196608</bit_offset>
+      <static_define_list external="EnhancementAttachUnownedType" />
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">2</format_string>
+      </format_strings>
+    </column>
+    <column name="Powerspecialization" type="INT">
+      <offset>968</offset>
+      <static_define_list external="PowerSpecialization" />
+    </column>
+    <column name="Unpredicted" type="BIT">
+      <offset>972</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Activatewhilemundane" type="BIT">
+      <offset>972</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Overrides" type="BIT">
+      <offset>972</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Instantdeactivation" type="BIT">
+      <offset>972</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Rechargedisabled" type="BIT">
+      <offset>972</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Rechargerequireshit" type="BIT">
+      <offset>972</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Rechargerequirescombat" type="BIT">
+      <offset>972</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Forcerechargeoninterrupt" type="BIT">
+      <offset>972</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Cooldownglobalnotchecked" type="BIT">
+      <offset>973</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Cooldownglobalnotapplied" type="BIT">
+      <offset>973</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Chargessetcooldownwhenempty" type="BIT">
+      <offset>973</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Autoreapply" type="BIT">
+      <offset>973</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Deactivationleavesmods" type="BIT">
+      <offset>973</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Deactivationdisablesmods" type="BIT">
+      <offset>973</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Modsexpirewithoutpower" type="BIT">
+      <offset>973</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Alwaysqueue" type="BIT">
+      <offset>973</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Disabletargetentercombat" type="BIT">
+      <offset>974</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Hitchanceignore" type="BIT">
+      <offset>974</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Ignoreaccuracy" type="BIT">
+      <offset>974</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Hitchanceignore</redundant_name>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Hitchanceonetime" type="BIT">
+      <offset>974</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Donotautoslot" type="BIT">
+      <offset>974</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Passivecancrit" type="BIT">
+      <offset>974</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Hideinui" type="BIT">
+      <offset>974</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Jailactivator" type="BIT">
+      <offset>974</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Hidepowernameanddescription" type="BIT">
+      <offset>974</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Hidepowerrange" type="BIT">
+      <offset>975</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Hidepowertype" type="BIT">
+      <offset>975</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Simpleprojectilemotion" type="BIT">
+      <offset>975</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Alwayshitground" type="BIT">
+      <offset>975</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Simpleprojectilemotion</redundant_name>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Enhancecopylevel" type="BIT">
+      <offset>975</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Enhancepowerfields" type="BIT">
+      <offset>975</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Areaeffectoffsetsrootrelative" type="BIT">
+      <offset>975</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Slottingrequired" type="BIT">
+      <offset>975</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Toggleexclusive" type="BIT">
+      <offset>975</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Autoattackserver" type="BIT">
+      <offset>976</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Autoattackenabler" type="BIT">
+      <offset>976</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Autoattackdisabler" type="BIT">
+      <offset>976</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Weaponbased" type="BIT">
+      <offset>976</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Selfonce" type="BIT">
+      <offset>976</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Missmods" type="BIT">
+      <offset>976</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Combotoggle" type="BIT">
+      <offset>976</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Combotargetrules" type="BIT">
+      <offset>976</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Applyobjectdeath" type="BIT">
+      <offset>977</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Limiteduse" type="BIT">
+      <offset>977</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Enhancementextension" type="BIT">
+      <offset>977</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Enhanceextend" type="BIT">
+      <offset>977</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <redundant_name>Enhancementextension</redundant_name>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Permoddamageextension" type="BIT">
+      <offset>977</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Requirescooldown" type="BIT">
+      <offset>977</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Safeforselfonly" type="BIT">
+      <offset>977</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Multiattribpower" type="BIT">
+      <offset>977</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Modsignorestrength" type="BIT">
+      <offset>977</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Haseffectareaoffsets" type="BIT">
+      <offset>978</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Haseffectareapositionoffsets" type="BIT">
+      <offset>978</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Hasprojectilecreateattrib" type="BIT">
+      <offset>978</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Hasteleportattrib" type="BIT">
+      <offset>978</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Haswarpattrib" type="BIT">
+      <offset>978</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Haspredictedmods" type="BIT">
+      <offset>978</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Hasattribapplyunownedpowers" type="BIT">
+      <offset>978</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Hasdisplayasbasestatcategory" type="BIT">
+      <offset>978</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Hasdisplayasitemstatcategory" type="BIT">
+      <offset>979</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Delaytargetingonqueuedactivation" type="BIT">
+      <offset>979</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Usecameratargetingvectargetassist" type="BIT">
+      <offset>979</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Useinputdirtargeting" type="BIT">
+      <offset>979</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Usecombatposdirtargeting" type="BIT">
+      <offset>979</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Donotallowcancelbeforehitframe" type="BIT">
+      <offset>979</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Updatechargetargetondeactivate" type="BIT">
+      <offset>979</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Chargeallowindefinitecharging" type="BIT">
+      <offset>979</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Disableconfusetargeting" type="BIT">
+      <offset>980</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Activationimmunity" type="BIT">
+      <offset>980</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Forcehidedamagefloats" type="BIT">
+      <offset>980</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Ignoreshieldcheck" type="BIT">
+      <offset>980</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Rechargewhileoffline" type="BIT">
+      <offset>980</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Cancelpreactivatepower" type="BIT">
+      <offset>980</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Effectareacentered" type="BIT">
+      <offset>980</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Effectareaignoresourcecapsule" type="BIT">
+      <offset>980</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Disallowwhilerooted" type="BIT">
+      <offset>981</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Allowwhilesprinting" type="BIT">
+      <offset>981</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Checkcombobeforetoggle" type="BIT">
+      <offset>981</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Nodeactivateondeath" type="BIT">
+      <offset>981</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Generateuniqueapplyid" type="BIT">
+      <offset>981</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Neverattachenhancements" type="BIT">
+      <offset>981</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Deactivatespowerondisable" type="BIT">
+      <offset>981</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65542</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Donotsaveactivationstate" type="BIT">
+      <offset>981</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Autodescalwaysshowenhancement" type="BIT">
+      <offset>982</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Recordactivationresults" type="BIT">
+      <offset>982</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Useallchargesonactivate" type="BIT">
+      <offset>982</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Maintainshouldupdatetargets" type="BIT">
+      <offset>982</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Animfxfromsourceitem" type="BIT">
+      <offset>982</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Chargesrefillonitemmove" type="BIT">
+      <offset>982</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Respectchildrechargetimes" type="BIT">
+      <offset>982</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Respectchildchargeuses" type="BIT">
+      <offset>982</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Allowautoattack" type="BIT">
+      <offset>983</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Canbeproccedfromattrib" type="BIT">
+      <offset>983</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Centeronground" type="BIT">
+      <offset>983</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Createabavoid" type="BIT">
+      <offset>983</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Abavoidrating" type="INT">
+      <offset>984</offset>
+      <default>1</default>
+    </column>
+    <column name="Simpleprojectilespawn" type="STRUCT">
+      <offset>992</offset>
+      <subtable external="SimpleProjectileCreationInfo" />
+    </column>
+    <column name="Autoqueuecondition" type="STRUCT">
+      <offset>1000</offset>
+      <subtable external="PowersAutoQueueCondition" />
+    </column>
+    <column name="Updatelocationtime" type="INT">
+      <offset>1008</offset>
+      <static_define_list external="PowerActivationUpdateLocationTime" />
+    </column>
+    <column name="Updatelocationstoptime" type="F32">
+      <offset>1012</offset>
+    </column>
+    <column name="Gamespecificpowerdefdata" type="OPTIONALSTRUCT">
+      <offset>1016</offset>
+      <subtable external="GameSpecificPowerDefData" />
+    </column>
+    <column name="Msgactivatesource" type="IGNORE" />
+    <column name="Msgactivatebroadcast" type="IGNORE" />
+    <column name="Msghitsource" type="IGNORE" />
+    <column name="Msghittarget" type="IGNORE" />
+    <column name="Modsubtargetaccuracy" type="IGNORE" />
+    <column name="Bunrestrictedtargeting_Gettarget" type="IGNORE" />
+    <column name="Deactivatemaintainonfailedapplication" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

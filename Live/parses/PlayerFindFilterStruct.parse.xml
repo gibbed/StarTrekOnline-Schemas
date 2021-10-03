@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayerFindFilterStruct">
+  <table>
+    <column name="PlayerFindFilterStruct" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Excludefilters" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="FindFilterTokenStruct" />
+    </column>
+    <column name="Requiredfilters" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="FindFilterTokenStruct" />
+    </column>
+    <column name="Filterstring" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Language" type="INT">
+      <offset>24</offset>
+      <static_define_list external="Language" />
+    </column>
+    <column name="Findanonymous" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Findteams" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Findsoloforteam" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Maxaccesslevel" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Searchaccountid" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

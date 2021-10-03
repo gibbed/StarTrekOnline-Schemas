@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CharacterClassInfo">
+  <table>
+    <column name="CharacterClassInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Normal" type="STRINGARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Weak" type="STRINGARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Tough" type="STRINGARRAY">
+      <offset>24</offset>
+    </column>
+    <column name="File" type="CURRENTFILE">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

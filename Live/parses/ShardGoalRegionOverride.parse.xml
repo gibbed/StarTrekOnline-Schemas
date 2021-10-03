@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ShardGoalRegionOverride">
+  <table>
+    <column name="ShardGoalRegionOverride" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Shardgoal" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Shardregion" type="INT">
+      <offset>4</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <static_define_list external="ShardRegion" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

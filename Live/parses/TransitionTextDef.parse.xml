@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TransitionTextDef">
+  <table>
+    <column name="TransitionTextDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Font" type="STRING">
+      <offset>0</offset>
+      <default_string>Game_HUD</default_string>
+    </column>
+    <column name="Percentx" type="F32">
+      <offset>8</offset>
+      <default>1056964608</default>
+    </column>
+    <column name="Percenty" type="F32">
+      <offset>12</offset>
+      <default>1</default>
+    </column>
+    <column name="Scale" type="F32">
+      <offset>16</offset>
+      <default>1</default>
+    </column>
+    <column name="StartTime" type="F32">
+      <offset>20</offset>
+      <default>1</default>
+    </column>
+    <column name="EndTime" type="F32">
+      <offset>24</offset>
+      <default>6</default>
+    </column>
+    <column name="Fadetime" type="F32">
+      <offset>28</offset>
+      <default>1056964608</default>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

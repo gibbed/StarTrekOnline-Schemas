@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DefaultTrayElemDef">
+  <table>
+    <column name="DefaultTrayElemDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Relativeto" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Tray" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Slot" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Nodedef" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>PTNodeDef</dictionary_name>
+    </column>
+    <column name="Bagid" type="INT">
+      <offset>32</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Bagslot" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Itempowerindex" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Enableautoattack" type="U8">
+      <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Slotentirebag" type="U8">
+      <offset>45</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

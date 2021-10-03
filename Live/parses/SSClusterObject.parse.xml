@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SSClusterObject">
+  <table>
+    <column name="SSClusterObject" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Lib_Obj" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">SSLibObj</format_string>
+      </format_strings>
+    </column>
+    <column name="Obj" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">GroupDefRef</format_string>
+      </format_strings>
+    </column>
+    <column name="UID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Startspawnusingtransition" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>DoorTransitionSequenceDef</dictionary_name>
+    </column>
+    <column name="Challengetype" type="INT">
+      <offset>24</offset>
+      <static_define_list external="GenesisChallengeType" />
+    </column>
+    <column name="Externalname" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Challengeid" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Offset" type="EMBEDDEDSTRUCT">
+      <offset>44</offset>
+      <subtable external="SSOffset" />
+    </column>
+    <column name="Patroltype" type="INT">
+      <offset>104</offset>
+      <static_define_list external="GenesisSpacePatrolType" />
+    </column>
+    <column name="Patrolrefname" type="STRING">
+      <offset>112</offset>
+    </column>
+    <column name="Sourcecontext" type="OPTIONALSTRUCT">
+      <offset>128</offset>
+      <subtable external="GenesisRuntimeErrorContext" />
+    </column>
+    <column name="Count" type="INT">
+      <offset>136</offset>
+    </column>
+    <column name="Spawncount" type="INT">
+      <offset>140</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

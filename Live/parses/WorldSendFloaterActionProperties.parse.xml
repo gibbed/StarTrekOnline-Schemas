@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldSendFloaterActionProperties">
+  <table>
+    <column name="WorldSendFloaterActionProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Floatermsg" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Color" type="IGNORE" />
+    <column name="End" type="END" />
+  </table>
+</parse>

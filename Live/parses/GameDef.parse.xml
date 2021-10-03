@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GameDef">
+  <table>
+    <column name="GameDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Maplevelscalingtype" type="INT">
+      <offset>24</offset>
+      <static_define_list external="MapLevelScalingType" />
+    </column>
+    <column name="Maplevel" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Bolstertype" type="INT">
+      <offset>32</offset>
+      <static_define_list external="BolsterType" />
+    </column>
+    <column name="Bolsterlevel" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Gamegroup" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="GameGroupDef" />
+    </column>
+    <column name="Pvpgamerules" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">PVPGameRules</format_string>
+      </format_strings>
+    </column>
+    <column name="Publicrules" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">PVPPublicGameRules</format_string>
+      </format_strings>
+    </column>
+    <column name="Gametype" type="INT">
+      <offset>48</offset>
+      <static_define_list external="PVPGameType" />
+    </column>
+    <column name="Pointmax" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Minmembersallgroups" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Maxwaitfornextplayertime" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Maxwaittimefromfirstjoin" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Scoreboard" type="STRING">
+      <offset>72</offset>
+    </column>
+    <column name="Leaderboard" type="STRINGARRAY">
+      <offset>80</offset>
+    </column>
+    <column name="Disablenaturalrespawn" type="U8">
+      <offset>88</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Neutralfaction" type="REFERENCE">
+      <offset>96</offset>
+      <dictionary_name>CritterFaction</dictionary_name>
+    </column>
+    <column name="Hacknnoopenpvpdom" type="U8">
+      <offset>104</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Minimumpointsforreward" type="INT">
+      <offset>108</offset>
+    </column>
+    <column name="Queuerewardtables" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="QueueRewardTable" />
+    </column>
+    <column name="Ignorematchdefleaderboard" type="BIT">
+      <offset>120</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Addtomatchhistory" type="BIT">
+      <offset>120</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Enableprematchprepscreen" type="BIT">
+      <offset>120</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Suicidepenality" type="U8">
+      <offset>124</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Roundtime" type="F32">
+      <offset>128</offset>
+    </column>
+    <column name="Intervaltime" type="F32">
+      <offset>132</offset>
+    </column>
+    <column name="Capturepointnamedom" type="STRING">
+      <offset>136</offset>
+    </column>
+    <column name="Capturetime" type="F32">
+      <offset>144</offset>
+    </column>
+    <column name="Recycletime" type="F32">
+      <offset>148</offset>
+    </column>
+    <column name="Friendlybonus" type="F32">
+      <offset>152</offset>
+    </column>
+    <column name="Pointtime" type="F32">
+      <offset>156</offset>
+    </column>
+    <column name="Capturedistance" type="F32">
+      <offset>160</offset>
+    </column>
+    <column name="Pointstatusfx" type="STRINGARRAY">
+      <offset>168</offset>
+    </column>
+    <column name="Capturepointfx" type="STRINGARRAY">
+      <offset>176</offset>
+    </column>
+    <column name="Contestedpointfx" type="STRINGARRAY">
+      <offset>184</offset>
+    </column>
+    <column name="Capturepointnamegvg" type="STRING">
+      <offset>192</offset>
+    </column>
+    <column name="Unlockpointname" type="STRING">
+      <offset>200</offset>
+    </column>
+    <column name="Basestructurename" type="STRING">
+      <offset>208</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Towerstructurename" type="STRINGARRAY">
+      <offset>216</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Maxgametime" type="F32">
+      <offset>224</offset>
+    </column>
+    <column name="Maxovertime" type="F32">
+      <offset>228</offset>
+    </column>
+    <column name="Maxdroptime" type="F32">
+      <offset>232</offset>
+    </column>
+    <column name="Flagname" type="STRING">
+      <offset>240</offset>
+    </column>
+    <column name="Flagcritter" type="STRING">
+      <offset>248</offset>
+    </column>
+    <column name="Flagpower" type="STRINGARRAY">
+      <offset>256</offset>
+    </column>
+    <column name="Flagcarrierclass" type="REFERENCE">
+      <offset>264</offset>
+      <dictionary_name>CharacterClass</dictionary_name>
+    </column>
+    <column name="Rechargepowercategories" type="STRINGARRAY">
+      <offset>272</offset>
+    </column>
+    <column name="Requireownflagtoscore" type="BIT">
+      <offset>280</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Flagstackpowers" type="STRUCT">
+      <offset>288</offset>
+      <subtable external="CTF_FlagPowerStack" />
+    </column>
+    <column name="Leaverpenalizingleaderboard" type="STRINGARRAY">
+      <offset>296</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Trackedevent" type="STRUCT">
+      <offset>304</offset>
+      <subtable external="GameTrackedEvent" />
+    </column>
+    <column name="Gameafkinteractcount" type="INT">
+      <offset>312</offset>
+    </column>
+    <column name="Gameafkitemqualitycount" type="INT">
+      <offset>316</offset>
+    </column>
+    <column name="Itemcatforqualitycount" type="INTARRAY">
+      <offset>320</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Theinteracttype" type="INT">
+      <offset>328</offset>
+      <static_define_list external="GameAFKInteractType" />
+    </column>
+    <column name="Maxruntimeminutes" type="INT">
+      <offset>332</offset>
+    </column>
+    <column name="Gameafkbycombattimepercentofgametime" type="INT">
+      <offset>336</offset>
+    </column>
+    <column name="Gameafkbycombattimepercentofbestplayer" type="INT">
+      <offset>340</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemAssignmentSettingsSlots">
+  <table>
+    <column name="ItemAssignmentSettingsSlots" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Maxactiveassignmentslots" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Restrictedcategories" type="INTARRAY">
+      <offset>8</offset>
+      <static_define_list external="ItemAssignmentCategory" />
+    </column>
+    <column name="Maxinprogressinrestrictedcategory" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Maxinprogressinremainingcategories" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Initialunlockedslots" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Ranknumeric" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Slotunlockschedule" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="ItemAssignmentSlotUnlockSchedule" />
+    </column>
+    <column name="Additionalslotsunlockednumeric" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Perkunlockslots" type="STRINGARRAY">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Unlockexpression" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="ItemAssignmentSlotUnlockExpression" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

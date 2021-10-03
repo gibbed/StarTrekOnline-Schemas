@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MachineMonitor_StartupInfoFromServer">
+  <table>
+    <column name="MachineMonitor_StartupInfoFromServer" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Executablename" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Pid" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Machinemonitorcodestarttime" type="INT64">
+      <offset>16</offset>
+    </column>
+    <column name="Prodversion" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Commandline" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Globaltype" type="INT">
+      <offset>40</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="ContainerID" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Shardinfostring" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="ProductName" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="ShortProductName" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Statusreportingname" type="STRING">
+      <offset>72</offset>
+    </column>
+    <column name="Platformname" type="STRING">
+      <offset>80</offset>
+    </column>
+    <column name="Shardplatformname" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Platform" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Isimportant" type="U8">
+      <offset>100</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

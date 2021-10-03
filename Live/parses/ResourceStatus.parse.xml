@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ResourceStatus">
+  <table>
+    <column name="ResourceStatus" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ResourceName" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Resourcelocationid" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Lockowner" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Resourceowner" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Resourcerequested" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Resourcepresent" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Resourcemanaged" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Iseditcopy" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Saveworkingcopy" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Loadedfromdisk" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isbeingloaded" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Refsexist" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65543</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inunreferencedlist" type="BIT">
+      <offset>41</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ContactDef">
+  <table>
+    <column name="ContactDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Vocomments" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Genesiszonemap" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="ContactType" type="INT">
+      <offset>40</offset>
+      <static_define_list external="ContactType" />
+    </column>
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Dialogexittextoverridemsg" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Infostringmsg" type="EMBEDDEDSTRUCT">
+      <offset>96</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Costumeprefs" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">ContactCostume</format_string>
+      </format_strings>
+    </column>
+    <column name="Costumetype" type="INT">
+      <offset>120</offset>
+      <static_define_list external="ContactCostumeType" />
+    </column>
+    <column name="Costumeoverride" type="REFERENCE">
+      <offset>128</offset>
+      <dictionary_name>PlayerCostume</dictionary_name>
+    </column>
+    <column name="Usepetcostume" type="REFERENCE">
+      <offset>136</offset>
+      <dictionary_name>PetContactList</dictionary_name>
+    </column>
+    <column name="Costumecrittergrouptype" type="INT">
+      <offset>144</offset>
+      <static_define_list external="ContactMapVarOverrideType" />
+    </column>
+    <column name="Costumecrittergroup" type="REFERENCE">
+      <offset>152</offset>
+      <dictionary_name>CritterGroup</dictionary_name>
+    </column>
+    <column name="Costumemapvar" type="STRING">
+      <offset>160</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Costumeidentifier" type="STRING">
+      <offset>168</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Headshotstyledef" type="STRING">
+      <offset>176</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Headshotstyleoverride" type="STRING">
+      <offset>176</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Headshotstyledef</redundant_name>
+    </column>
+    <column name="Costumestyleoverrides" type="OPTIONALSTRUCT">
+      <offset>184</offset>
+      <subtable external="ContactCostumeStyle" />
+    </column>
+    <column name="Headshotborderframe" type="STRING">
+      <offset>192</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Petcontainerid" type="INT">
+      <offset>200</offset>
+    </column>
+    <column name="CutsceneDef" type="REFERENCE">
+      <offset>208</offset>
+      <dictionary_name>CutScene</dictionary_name>
+    </column>
+    <column name="Animlisttoplay" type="REFERENCE">
+      <offset>216</offset>
+      <dictionary_name>AIAnimList</dictionary_name>
+    </column>
+    <column name="Caninteractif" type="OPTIONALSTRUCT">
+      <offset>224</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="Expression" />
+    </column>
+    <column name="Caninteractif:" type="OPTIONALSTRUCT">
+      <offset>224</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <redundant_name>Caninteractif</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Displayeventname" type="STRING">
+      <offset>232</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="MapName" type="STRING">
+      <offset>240</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Generalcallout" type="STRUCT">
+      <offset>248</offset>
+      <subtable external="DialogBlock" />
+    </column>
+    <column name="Missioncallout" type="STRUCT">
+      <offset>256</offset>
+      <subtable external="DialogBlock" />
+    </column>
+    <column name="Rangecallout" type="STRUCT">
+      <offset>264</offset>
+      <subtable external="DialogBlock" />
+    </column>
+    <column name="Greetingdialog" type="STRUCT">
+      <offset>272</offset>
+      <subtable external="DialogBlock" />
+    </column>
+    <column name="Infodialog" type="STRUCT">
+      <offset>280</offset>
+      <subtable external="DialogBlock" />
+    </column>
+    <column name="Defaultdialog" type="STRUCT">
+      <offset>288</offset>
+      <subtable external="DialogBlock" />
+    </column>
+    <column name="Missionlistdialog" type="STRUCT">
+      <offset>296</offset>
+      <subtable external="DialogBlock" />
+    </column>
+    <column name="Nomissiondialog" type="STRUCT">
+      <offset>304</offset>
+      <subtable external="DialogBlock" />
+    </column>
+    <column name="Missionoffer:" type="STRUCT">
+      <offset>312</offset>
+      <subtable external="ContactMissionOffer" />
+    </column>
+    <column name="Offeroverrides" type="STRUCT">
+      <offset>320</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>EDITOR_IGNORE</flag>
+      </flags>
+      <subtable external="ContactMissionOffer" />
+    </column>
+    <column name="Missiontable" type="STRUCT">
+      <offset>328</offset>
+      <subtable external="MissionTableDefRef" />
+    </column>
+    <column name="Missionfarewelldialog" type="STRUCT">
+      <offset>336</offset>
+      <subtable external="DialogBlock" />
+    </column>
+    <column name="Farewelldialog" type="STRUCT">
+      <offset>344</offset>
+      <subtable external="DialogBlock" />
+    </column>
+    <column name="Missionsearchdialog" type="STRUCT">
+      <offset>352</offset>
+      <subtable external="DialogBlock" />
+    </column>
+    <column name="Specialdialog" type="STRUCT">
+      <offset>360</offset>
+      <subtable external="DialogBlock" />
+    </column>
+    <column name="Specialdialogs" type="STRUCT">
+      <offset>368</offset>
+      <subtable external="SpecialDialogBlock" />
+    </column>
+    <column name="Specialdialogoverrides" type="STRUCT">
+      <offset>376</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>EDITOR_IGNORE</flag>
+      </flags>
+      <subtable external="SpecialDialogBlock" />
+    </column>
+    <column name="Specialactions" type="STRUCT">
+      <offset>384</offset>
+      <subtable external="SpecialActionBlock" />
+    </column>
+    <column name="Specialactionblockoverrides" type="STRUCT">
+      <offset>392</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>EDITOR_IGNORE</flag>
+      </flags>
+      <subtable external="SpecialActionBlock" />
+    </column>
+    <column name="Imagemenudata" type="OPTIONALSTRUCT">
+      <offset>400</offset>
+      <subtable external="ContactImageMenuData" />
+    </column>
+    <column name="Prevcontact" type="REFERENCE">
+      <offset>408</offset>
+      <dictionary_name>ContactDef</dictionary_name>
+    </column>
+    <column name="Prevdialog" type="STRING">
+      <offset>416</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Loredialog" type="STRUCT">
+      <offset>424</offset>
+      <subtable external="ContactLoreDialog" />
+    </column>
+    <column name="Stores" type="STRUCT">
+      <offset>432</offset>
+      <subtable external="StoreRef" />
+    </column>
+    <column name="Powerstore" type="STRUCT">
+      <offset>440</offset>
+      <subtable external="PowerStoreRef" />
+    </column>
+    <column name="Buyoptionmsg" type="EMBEDDEDSTRUCT">
+      <offset>448</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Selloptionmsg" type="EMBEDDEDSTRUCT">
+      <offset>472</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Buybackoptionmsg" type="EMBEDDEDSTRUCT">
+      <offset>496</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Storecollection" type="STRUCT">
+      <offset>520</offset>
+      <subtable external="StoreCollection" />
+    </column>
+    <column name="Auctionbrokeroption" type="STRUCT">
+      <offset>528</offset>
+      <subtable external="AuctionBrokerContactData" />
+    </column>
+    <column name="Ugcsearchagentoption" type="STRUCT">
+      <offset>536</offset>
+      <subtable external="UGCSearchAgentData" />
+    </column>
+    <column name="Stickerbookcollection" type="REFERENCE">
+      <offset>544</offset>
+      <dictionary_name>StickerBook</dictionary_name>
+    </column>
+    <column name="Nostoreitemsdialog" type="STRUCT">
+      <offset>552</offset>
+      <subtable external="DialogBlock" />
+    </column>
+    <column name="Missionsearchstringmsg" type="EMBEDDEDSTRUCT">
+      <offset>560</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Optionalactioncategory" type="STRING">
+      <offset>584</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Contactflags1" type="INT">
+      <offset>592</offset>
+      <static_define_list external="ContactFlags1" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Contactflags" type="INT">
+      <offset>592</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Contactflags1</redundant_name>
+      <static_define_list external="ContactFlags1" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Contactflags2" type="INT">
+      <offset>596</offset>
+      <static_define_list external="ContactFlags2" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Indicatoryoffset" type="F32">
+      <offset>600</offset>
+    </column>
+    <column name="Skilltrainertype" type="INT">
+      <offset>604</offset>
+      <static_define_list external="SkillType" />
+    </column>
+    <column name="Trainertype" type="INT">
+      <offset>604</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Skilltrainertype</redundant_name>
+      <static_define_list external="SkillType" />
+    </column>
+    <column name="Minigametype" type="INT">
+      <offset>608</offset>
+      <static_define_list external="MinigameType" />
+    </column>
+    <column name="Demiplanetrait" type="STRING">
+      <offset>616</offset>
+    </column>
+    <column name="Leviathansystemsaccess" type="U8">
+      <offset>624</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allowedclasscategory" type="INTARRAY">
+      <offset>632</offset>
+    </column>
+    <column name="Canaccessremotely" type="OPTIONALSTRUCT">
+      <offset>640</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Canaccessremotely:" type="OPTIONALSTRUCT">
+      <offset>640</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Canaccessremotely</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Enddialogaudios" type="STRUCT">
+      <offset>648</offset>
+      <subtable external="EndDialogAudio" />
+    </column>
+    <column name="Groupproject" type="STRING">
+      <offset>656</offset>
+    </column>
+    <column name="Sourcetype" type="INT">
+      <offset>664</offset>
+      <static_define_list external="ContactSourceType" />
+    </column>
+    <column name="Sourcename" type="STRING">
+      <offset>672</offset>
+    </column>
+    <column name="Sourcesecondaryname" type="STRING">
+      <offset>680</offset>
+    </column>
+    <column name="Sourceskyoverride" type="STRING">
+      <offset>688</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Contactindicatoroverride" type="INT">
+      <offset>696</offset>
+      <static_define_list external="ContactIndicator" />
+    </column>
+    <column name="Itemassignmentdata" type="OPTIONALSTRUCT">
+      <offset>704</offset>
+      <subtable external="ContactItemAssignmentData" />
+    </column>
+    <column name="Mapvarsetterdata" type="STRUCT">
+      <offset>712</offset>
+      <subtable external="ContactMapVarSetterData" />
+    </column>
+    <column name="Uistring" type="STRING">
+      <offset>720</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Issellonlystorecollection" type="BIT">
+      <offset>728</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Issellonlystorecollection" type="BIT">
+      <offset>728</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Issellonlystorecollection</redundant_name>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Isresearchstorecollection" type="BIT">
+      <offset>728</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Iscraftingstorecollection" type="BIT">
+      <offset>728</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Isresearchstorecollection</redundant_name>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Hidefromremotecontactlist" type="BIT">
+      <offset>728</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Allowswitchtolastactivepuppet" type="BIT">
+      <offset>728</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Updateoptionseverytick" type="BIT">
+      <offset>728</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Isoverworldmap" type="BIT">
+      <offset>732</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mutevooncontactend" type="U8">
+      <offset>733</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Specializedparameter" type="OPTIONALSTRUCT">
+      <offset>736</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Spellofferdata" type="OPTIONALSTRUCT">
+      <offset>744</offset>
+      <subtable external="ContactSpellOfferData" />
+    </column>
+    <column name="Lastupdated" type="FIXEDSTRING">
+      <offset>752</offset>
+      <string_length>128</string_length>
+    </column>
+    <column name="Enddialogaudioname" type="IGNORE" />
+    <column name="Dialognodewindowpositions" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

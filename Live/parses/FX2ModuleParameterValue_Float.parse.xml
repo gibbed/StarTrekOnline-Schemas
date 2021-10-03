@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="FX2ModuleParameterValue_Float">
+  <table>
+    <column name="FX2ModuleParameterValue_Float" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <static_define_list external="FX2ModuleParameterType" />
+    </column>
+    <column name="Bindvalue" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Moduledef" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>FX2ModuleDef</dictionary_name>
+    </column>
+    <column name="Parameter" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="FX2ParameterKeyValue" />
+    </column>
+    <column name="Usebindingvalue" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usedynamicinput" type="U8">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Float" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

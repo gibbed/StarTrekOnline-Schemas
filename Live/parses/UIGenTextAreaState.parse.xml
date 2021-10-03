@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenTextAreaState">
+  <table>
+    <column name="UIGenTextAreaState" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>9</default>
+      <static_define_list external="UIGenType" />
+    </column>
+    <column name="Scrollbar" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="UIGenScrollbarState" />
+    </column>
+    <column name="Buffer" type="OPTIONALSTRUCT">
+      <offset>152</offset>
+      <flags>
+        <flag>ALWAYS_ALLOC</flag>
+      </flags>
+      <subtable external="TextBuffer" />
+    </column>
+    <column name="ChatData" type="OPTIONALSTRUCT">
+      <offset>160</offset>
+      <subtable external="ChatData" />
+    </column>
+    <column name="Cursorbundle" type="EMBEDDEDSTRUCT">
+      <offset>168</offset>
+      <subtable external="UIGenBundleTextureState" />
+    </column>
+    <column name="Staticstring" type="STRING">
+      <offset>192</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Default" type="STRING">
+      <offset>200</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Linebreaks" type="STRINGARRAY">
+      <offset>208</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+      </flags>
+    </column>
+    <column name="Lastfont" type="OPTIONALSTRUCT">
+      <offset>216</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="UIStyleFont" />
+    </column>
+    <column name="Lastwidth" type="F32">
+      <offset>224</offset>
+    </column>
+    <column name="Lastscale" type="F32">
+      <offset>228</offset>
+    </column>
+    <column name="Timer" type="F32">
+      <offset>232</offset>
+    </column>
+    <column name="Scrolltocursor" type="BIT">
+      <offset>236</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dirty" type="BIT">
+      <offset>236</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Selecting" type="BIT">
+      <offset>236</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Questionabletruncation" type="BIT">
+      <offset>236</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Truncating" type="U8">
+      <offset>237</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Truncate" type="EMBEDDEDSTRUCT">
+      <offset>240</offset>
+      <subtable external="UIGenBundleTruncateState" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

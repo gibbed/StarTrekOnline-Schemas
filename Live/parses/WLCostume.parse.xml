@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WLCostume">
+  <table>
+    <column name="WLCostume" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Context" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Costumepart" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="WLCostumePart" />
+    </column>
+    <column name="Costumepart" type="STRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Costumepart</redundant_name>
+      <subtable external="WLCostumePart" />
+    </column>
+    <column name="Subcostume" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="WLSubCostume" />
+    </column>
+    <column name="Subcostumeattachmentbone" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Skelinfo" type="REFERENCE">
+      <offset>40</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>SkelInfo</dictionary_name>
+    </column>
+    <column name="Collgeo" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Nocollision" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Bodysockinfo" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="BodySockInfo" />
+    </column>
+    <column name="Scale" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="ScaleValue" />
+    </column>
+    <column name="Rotationscale" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="RotationScaleValue" />
+    </column>
+    <column name="Scaleaniminterp" type="STRUCT">
+      <offset>96</offset>
+      <subtable external="WLScaleAnimInterp" />
+    </column>
+    <column name="Constantbits" type="STRINGARRAY">
+      <offset>104</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="FX" type="STRUCT">
+      <offset>136</offset>
+      <subtable external="CostumeFX" />
+    </column>
+    <column name="Fxswap" type="STRUCT">
+      <offset>144</offset>
+      <subtable external="CostumeFXSwap" />
+    </column>
+    <column name="Soundpacks" type="STRUCT">
+      <offset>152</offset>
+      <subtable external="CostumeSoundPackRef" />
+    </column>
+    <column name="Proceduralsoundfx" type="STRUCT">
+      <offset>160</offset>
+      <subtable external="CostumeProceduralSoundFX" />
+    </column>
+    <column name="Basefilename" type="STRING">
+      <offset>168</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>176</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Fileage" type="TIMESTAMP">
+      <offset>184</offset>
+    </column>
+    <column name="Castshadows" type="U8">
+      <offset>192</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Worldlighting" type="U8">
+      <offset>193</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Shieldgeometry" type="STRING">
+      <offset>272</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Shieldattachbone" type="STRING">
+      <offset>280</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Shieldscale" type="F32FIXEDARRAY">
+      <offset>288</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Extentsmin" type="F32FIXEDARRAY">
+      <offset>300</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Extentsmax" type="F32FIXEDARRAY">
+      <offset>312</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Autoglueup" type="U8">
+      <offset>324</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Noautocleanup" type="U8">
+      <offset>325</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Complete" type="U8">
+      <offset>326</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mountriderscaleblend" type="F32">
+      <offset>328</offset>
+    </column>
+    <column name="Mountscaleoverride" type="F32">
+      <offset>332</offset>
+    </column>
+    <column name="Mountclothcollisioninfo" type="STRING">
+      <offset>336</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Mount" type="U8">
+      <offset>344</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Riderlessmount" type="U8">
+      <offset>345</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Rider" type="U8">
+      <offset>346</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Riderchild" type="U8">
+      <offset>347</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Saddletech" type="U8">
+      <offset>348</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Terraintiltapply" type="U8">
+      <offset>349</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Terraintiltmodifyroot" type="U8">
+      <offset>350</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Terraintiltbaselength" type="F32">
+      <offset>352</offset>
+    </column>
+    <column name="Terraintiltbasewidth" type="F32">
+      <offset>356</offset>
+    </column>
+    <column name="Terraintiltstrength" type="F32">
+      <offset>360</offset>
+    </column>
+    <column name="Terraintiltmaxblendangle" type="F32">
+      <offset>364</offset>
+    </column>
+    <column name="Terraintiltblendrate" type="F32">
+      <offset>368</offset>
+    </column>
+    <column name="Costumescale" type="F32">
+      <offset>372</offset>
+      <default>1</default>
+    </column>
+    <column name="Hasnodealiases" type="U8">
+      <offset>376</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hasnodeauxtransforms" type="U8">
+      <offset>377</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disableshadowsplats" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

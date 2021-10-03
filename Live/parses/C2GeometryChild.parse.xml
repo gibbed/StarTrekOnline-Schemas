@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="C2GeometryChild">
+  <table>
+    <column name="C2GeometryChild" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Childbone" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>PCBoneDef</dictionary_name>
+    </column>
+    <column name="C2geos" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="C2GeometryRef" />
+    </column>
+    <column name="Requireschildgeometry" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

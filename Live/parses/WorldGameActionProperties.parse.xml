@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldGameActionProperties">
+  <table>
+    <column name="WorldGameActionProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="ActionType" type="INT">
+      <offset>0</offset>
+      <static_define_list external="WorldGameActionType" />
+    </column>
+    <column name="Grantmissionproperties" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="WorldGrantMissionActionProperties" />
+    </column>
+    <column name="Grantsubmissionproperties" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="WorldGrantSubMissionActionProperties" />
+    </column>
+    <column name="Missionofferproperties" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="WorldMissionOfferActionProperties" />
+    </column>
+    <column name="Dropmissionproperties" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="WorldDropMissionActionProperties" />
+    </column>
+    <column name="Giveitemproperties" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="WorldGiveItemActionProperties" />
+    </column>
+    <column name="Takeitemproperties" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="WorldTakeItemActionProperties" />
+    </column>
+    <column name="Takealgoitemproperties" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="WorldTakeAlgoItemActionProperties" />
+    </column>
+    <column name="Givedoorkeyitemproperties" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="WorldGiveDoorKeyItemActionProperties" />
+    </column>
+    <column name="Grantrewardproperties" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="WorldGrantRewardActionProperties" />
+    </column>
+    <column name="Grantstoredrewardsproperties" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="WorldGrantStoredRewardsActionProperties" />
+    </column>
+    <column name="Npcsendemailproperties" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="WorldNPCSendEmailActionProperties" />
+    </column>
+    <column name="Shardvariableproperties" type="OPTIONALSTRUCT">
+      <offset>96</offset>
+      <subtable external="WorldShardVariableActionProperties" />
+    </column>
+    <column name="Gadattribvalueproperties" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <subtable external="WorldGADAttribValueActionProperties" />
+    </column>
+    <column name="Nemesisstateproperties" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <subtable external="WorldChangeNemesisStateActionProperties" />
+    </column>
+    <column name="Activitylogproperties" type="OPTIONALSTRUCT">
+      <offset>120</offset>
+      <subtable external="WorldActivityLogActionProperties" />
+    </column>
+    <column name="Sendfloaterproperties" type="OPTIONALSTRUCT">
+      <offset>128</offset>
+      <subtable external="WorldSendFloaterActionProperties" />
+    </column>
+    <column name="Sendnotificationproperties" type="OPTIONALSTRUCT">
+      <offset>136</offset>
+      <subtable external="WorldSendNotificationActionProperties" />
+    </column>
+    <column name="Contactproperties" type="OPTIONALSTRUCT">
+      <offset>144</offset>
+      <subtable external="WorldContactActionProperties" />
+    </column>
+    <column name="Warpproperties" type="OPTIONALSTRUCT">
+      <offset>152</offset>
+      <subtable external="WorldWarpActionProperties" />
+    </column>
+    <column name="Expressionproperties" type="OPTIONALSTRUCT">
+      <offset>160</offset>
+      <subtable external="WorldExpressionActionProperties" />
+    </column>
+    <column name="Guildstatupdateproperties" type="OPTIONALSTRUCT">
+      <offset>168</offset>
+      <subtable external="WorldGuildStatUpdateActionProperties" />
+    </column>
+    <column name="Guildthemesetproperties" type="OPTIONALSTRUCT">
+      <offset>176</offset>
+      <subtable external="WorldGuildThemeSetActionProperties" />
+    </column>
+    <column name="Itemassignmentproperties" type="OPTIONALSTRUCT">
+      <offset>184</offset>
+      <subtable external="WorldItemAssignmentActionProperties" />
+    </column>
+    <column name="Accountserveractionproperties" type="OPTIONALSTRUCT">
+      <offset>192</offset>
+      <subtable external="WorldAccountServerActionProperties" />
+    </column>
+    <column name="Allegiancesetactionproperties" type="OPTIONALSTRUCT">
+      <offset>200</offset>
+      <subtable external="WorldAllegianceSetActionProperties" />
+    </column>
+    <column name="Worldmatchactionproperties" type="OPTIONALSTRUCT">
+      <offset>208</offset>
+      <subtable external="WorldMatchActionProperties" />
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MicroTrans_ShardConfig">
+  <table>
+    <column name="MicroTrans_ShardConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Mt_Category" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>REQUIRED</flag>
+        <flag>KEY</flag>
+      </flags>
+      <static_define_list external="MicroTrans_ShardCategory" />
+    </column>
+    <column name="Shardcategory" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <redundant_name>Mt_Category</redundant_name>
+      <static_define_list external="MicroTrans_ShardCategory" />
+    </column>
+    <column name="Currency" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>REQUIRED</flag>
+      </flags>
+    </column>
+    <column name="Currencyexchangeforsalebucket" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Currencyexchangereadytoclaimbucket" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Foundrytipbucket" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Promogamecurrencybucket" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Prefix" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>REQUIRED</flag>
+      </flags>
+    </column>
+    <column name="Categoryprefix" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Prefix</redundant_name>
+    </column>
+    <column name="MOTD" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="MicroTrans_MOTDConfig" />
+    </column>
+    <column name="Pointbuyenabled" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Steamwalletenabled" type="BIT">
+      <offset>65</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Epicpointbuyenabled" type="BIT">
+      <offset>65</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Exchangewithdrawcurrency" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="HeadShotFrame">
+  <table>
+    <column name="HeadShotFrame" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Framename" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Framebone" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="HeadShotFrameBone" />
+    </column>
+    <column name="Cameradirection" type="F32FIXEDARRAY">
+      <offset>16</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Margins" type="F32FIXEDARRAY">
+      <offset>28</offset>
+      <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Lockcameraatfirstframe" type="BOOLFLAG">
+      <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Useskeletonextents" type="BOOLFLAG">
+      <offset>45</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ChatGuildRankData">
+  <table>
+    <column name="ChatGuildRankData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="GuildID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Eaimembers" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Canguildchat" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isofficer" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

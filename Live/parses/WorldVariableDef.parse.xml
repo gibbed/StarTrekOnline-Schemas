@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldVariableDef">
+  <table>
+    <column name="WorldVariableDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Type" type="INT">
+      <offset>8</offset>
+      <static_define_list external="WorldVariableType" />
+    </column>
+    <column name="Defaulttype" type="INT">
+      <offset>12</offset>
+      <static_define_list external="WorldVariableDefaultValueType" />
+    </column>
+    <column name="SpecificValue" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="WorldVariable" />
+    </column>
+    <column name="Choicetable" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>ChoiceTable</dictionary_name>
+    </column>
+    <column name="Choicename" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Choiceindex" type="INT">
+      <offset>40</offset>
+      <default>1</default>
+    </column>
+    <column name="Mapvariable" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="MissionRefString" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Missionvariable" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Expression" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Activityname" type="STRING">
+      <offset>80</offset>
+    </column>
+    <column name="Activityvariable" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Activitydefaultvalue" type="OPTIONALSTRUCT">
+      <offset>96</offset>
+      <subtable external="WorldVariable" />
+    </column>
+    <column name="Ispublic" type="U8">
+      <offset>104</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Israndom" type="U8">
+      <offset>105</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

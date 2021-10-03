@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="OverlordList">
+  <table>
+    <column name="OverlordList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Servers" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+      </flags>
+      <subtable external="SimpleMonitoringStatus" />
+    </column>
+    <column name="Link" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="NetLink" />
+      <format_strings>
+        <format_string name="HTML_SKIP_IN_TABLE">1</format_string>
+        <format_string name="HTML_WRITE_UNOWNED">1</format_string>
+      </format_strings>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynamicItemConversionDef">
+  <table>
+    <column name="DynamicItemConversionDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Olditemdefname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="To" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Mark" type="U8">
+      <offset>16</offset>
+    </column>
+    <column name="Quality" type="INT">
+      <offset>20</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Itempower" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="DynamicItemPower" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SimpleProjectileCreationInfo">
+  <table>
+    <column name="SimpleProjectileCreationInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Key" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Projectiledef" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>SimpleProjectileDef</dictionary_name>
+    </column>
+    <column name="Exprblockrequires" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Getlevelfromitemlevel" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forwardoffset" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Rightoffset" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Upoffset" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Yawoffset" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Pitchoffset" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Exprblockpitch" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprblockyaw" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Firedelay" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

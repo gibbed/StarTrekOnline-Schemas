@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenChatLogState">
+  <table>
+    <column name="UIGenChatLogState" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>24</default>
+      <static_define_list external="UIGenType" />
+    </column>
+    <column name="Scrollbar" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="UIGenScrollbarState" />
+    </column>
+    <column name="Activelink" type="OPTIONALSTRUCT">
+      <offset>152</offset>
+      <subtable external="ChatLink" />
+    </column>
+    <column name="Activelinkid" type="INT">
+      <offset>160</offset>
+    </column>
+    <column name="Selectionstart" type="EMBEDDEDSTRUCT">
+      <offset>164</offset>
+      <subtable external="UIGenChatLogEntryPoint" />
+    </column>
+    <column name="Selectionend" type="EMBEDDEDSTRUCT">
+      <offset>176</offset>
+      <subtable external="UIGenChatLogEntryPoint" />
+    </column>
+    <column name="Focusedentry" type="EMBEDDEDSTRUCT">
+      <offset>188</offset>
+      <subtable external="UIGenChatLogEntryPoint" />
+    </column>
+    <column name="Lastfocusedentryy" type="F32">
+      <offset>200</offset>
+    </column>
+    <column name="Mouseover" type="EMBEDDEDSTRUCT">
+      <offset>204</offset>
+      <subtable external="UIGenChatLogEntryPoint" />
+    </column>
+    <column name="Firstentryid" type="INT">
+      <offset>216</offset>
+    </column>
+    <column name="Scanentryid" type="INT">
+      <offset>220</offset>
+    </column>
+    <column name="Channel" type="STRING">
+      <offset>224</offset>
+    </column>
+    <column name="Channeltype" type="INT">
+      <offset>232</offset>
+      <static_define_list external="ChatLogEntryType" />
+    </column>
+    <column name="Tab" type="STRING">
+      <offset>240</offset>
+    </column>
+    <column name="Utabcrc" type="INT">
+      <offset>248</offset>
+    </column>
+    <column name="Pmhandle" type="STRING">
+      <offset>256</offset>
+    </column>
+    <column name="Penotifytypes" type="INTARRAY">
+      <offset>264</offset>
+      <static_define_list external="NotifyType" />
+    </column>
+    <column name="Pechanneltypes" type="INTARRAY">
+      <offset>272</offset>
+      <static_define_list external="ChatLogEntryType" />
+    </column>
+    <column name="Entrylayouts" type="STRUCT">
+      <offset>280</offset>
+      <subtable external="UIGenChatLogEntryLayout" />
+    </column>
+    <column name="Chatlogversion" type="INT">
+      <offset>288</offset>
+    </column>
+    <column name="Chatlogupdateversion" type="INT">
+      <offset>292</offset>
+    </column>
+    <column name="Layoutversion" type="INT">
+      <offset>296</offset>
+    </column>
+    <column name="Filtertab" type="INT">
+      <offset>344</offset>
+    </column>
+    <column name="Framessincelastcompletedresize" type="INT">
+      <offset>348</offset>
+    </column>
+    <column name="Lastwidth" type="F32">
+      <offset>352</offset>
+    </column>
+    <column name="Lastheight" type="F32">
+      <offset>356</offset>
+    </column>
+    <column name="Lastfontscale" type="F32">
+      <offset>360</offset>
+    </column>
+    <column name="Selecting" type="BIT">
+      <offset>364</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Lasttextfading" type="BIT">
+      <offset>364</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

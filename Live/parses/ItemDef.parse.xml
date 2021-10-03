@@ -1,0 +1,833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemDef">
+  <table>
+    <column name="ItemDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Descriptionmsg" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Descshortmsg" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Displaynamemsgunidentified" type="EMBEDDEDSTRUCT">
+      <offset>96</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Descriptionmsgunidentified" type="EMBEDDEDSTRUCT">
+      <offset>120</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Msgclassdescstringoverride" type="EMBEDDEDSTRUCT">
+      <offset>144</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Msgautodesc" type="EMBEDDEDSTRUCT">
+      <offset>168</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Gamespecificdata" type="OPTIONALSTRUCT">
+      <offset>192</offset>
+      <subtable external="NullStruct" />
+    </column>
+    <column name="Notes" type="STRING">
+      <offset>200</offset>
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>208</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Secondaryicon" type="STRING">
+      <offset>216</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>224</offset>
+      <static_define_list external="ItemDefFlag" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Extendedflags" type="INT">
+      <offset>228</offset>
+      <static_define_list external="ItemDefExtendedFlag" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Type" type="INT">
+      <offset>232</offset>
+      <static_define_list external="ItemType" />
+    </column>
+    <column name="SkillType" type="INT">
+      <offset>236</offset>
+      <static_define_list external="SkillType" />
+    </column>
+    <column name="Gemtype" type="INT">
+      <offset>240</offset>
+      <static_define_list external="ItemGemType" />
+      <format>FLAGS</format>
+      <format_strings>
+        <format_string name="RESPECT_MULTI_BIT_FLAGS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Restrictbagid" type="INTARRAY">
+      <offset>248</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Restrictbag2id" type="INTARRAY">
+      <offset>248</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Restrictbagid</redundant_name>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Restrictslottype" type="INT">
+      <offset>256</offset>
+      <static_define_list external="SlotType" />
+    </column>
+    <column name="Transmutaterestricttype" type="INT">
+      <offset>260</offset>
+      <static_define_list external="TransmutateRestrictType" />
+    </column>
+    <column name="Stacklimit" type="INT">
+      <offset>264</offset>
+      <default>1</default>
+    </column>
+    <column name="Expreconomypoints" type="OPTIONALSTRUCT">
+      <offset>272</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Minnumericvalue" type="INT">
+      <offset>280</offset>
+      <default>-2147483647</default>
+    </column>
+    <column name="Maxnumericvalue" type="INT">
+      <offset>284</offset>
+      <default>2147483647</default>
+    </column>
+    <column name="Maxbynumeric" type="REFERENCE">
+      <offset>288</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Numericoverflow" type="REFERENCE">
+      <offset>296</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Numericoverflowmulti" type="F32">
+      <offset>304</offset>
+    </column>
+    <column name="Numericrolloverreward" type="REFERENCE">
+      <offset>312</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Numericmirror" type="REFERENCE">
+      <offset>320</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Numericmirrormulti" type="F32">
+      <offset>328</offset>
+    </column>
+    <column name="Mirrorstartsabove" type="INT">
+      <offset>332</offset>
+    </column>
+    <column name="Spendingnumeric" type="REFERENCE">
+      <offset>336</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Maybuyinbulk" type="INT">
+      <offset>344</offset>
+    </column>
+    <column name="Level" type="INT">
+      <offset>348</offset>
+      <default>1</default>
+    </column>
+    <column name="Pvpbonuslevel" type="INT">
+      <offset>352</offset>
+    </column>
+    <column name="MaxLevel" type="INT">
+      <offset>356</offset>
+    </column>
+    <column name="Quality" type="INT">
+      <offset>360</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Powerfactor" type="INT">
+      <offset>364</offset>
+    </column>
+    <column name="Numbagslots" type="INT">
+      <offset>368</offset>
+    </column>
+    <column name="Sortid" type="INT">
+      <offset>372</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+    </column>
+    <column name="Scaleui" type="F32">
+      <offset>376</offset>
+      <default>1</default>
+    </column>
+    <column name="Mission" type="REFERENCE">
+      <offset>384</offset>
+      <dictionary_name>Mission</dictionary_name>
+    </column>
+    <column name="Newitempowerdefrefid_Donttouchthis" type="INT">
+      <offset>392</offset>
+    </column>
+    <column name="Itempowerdefrefs" type="STRUCT">
+      <offset>400</offset>
+      <subtable external="ItemPowerDefRef" />
+    </column>
+    <column name="Trainablenode" type="STRUCT">
+      <offset>408</offset>
+      <subtable external="ItemTrainablePowerNode" />
+    </column>
+    <column name="Infuseslotdefrefs" type="STRUCT">
+      <offset>416</offset>
+      <subtable external="InfuseSlotDefRef" />
+    </column>
+    <column name="Itemset" type="STRUCT">
+      <offset>424</offset>
+      <subtable external="ItemDefRef" />
+    </column>
+    <column name="Itemsetdisplaynamemsg" type="EMBEDDEDSTRUCT">
+      <offset>432</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Itemsetmembers" type="STRUCT">
+      <offset>456</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <subtable external="ItemDefRef" />
+    </column>
+    <column name="Supercritterpet" type="REFERENCE">
+      <offset>464</offset>
+      <dictionary_name>SuperCritterPetDef</dictionary_name>
+    </column>
+    <column name="Itemgemslots" type="STRUCT">
+      <offset>472</offset>
+      <subtable external="ItemGemSlotDef" />
+    </column>
+    <column name="Effectiveitemgemslots" type="STRUCT">
+      <offset>480</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <subtable external="ItemGemSlotDef" />
+    </column>
+    <column name="Itemvanitypetrefs" type="STRUCT">
+      <offset>488</offset>
+      <subtable external="ItemVanityPet" />
+    </column>
+    <column name="Slottableitempowerdefrefs" type="STRUCT">
+      <offset>496</offset>
+      <subtable external="ItemPowerDefRef" />
+    </column>
+    <column name="Itempowerslots" type="INT">
+      <offset>504</offset>
+    </column>
+    <column name="Subtarget" type="REFERENCE">
+      <offset>512</offset>
+      <dictionary_name>PowerSubtarget</dictionary_name>
+    </column>
+    <column name="Art" type="REFERENCE">
+      <offset>520</offset>
+      <dictionary_name>ItemArt</dictionary_name>
+    </column>
+    <column name="Interior" type="REFERENCE">
+      <offset>528</offset>
+      <dictionary_name>InteriorDef</dictionary_name>
+    </column>
+    <column name="Rewardpackinfo" type="OPTIONALSTRUCT">
+      <offset>536</offset>
+      <subtable external="RewardPackInfo" />
+    </column>
+    <column name="Rewardtable" type="OPTIONALSTRUCT">
+      <offset>536</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Rewardpackinfo</redundant_name>
+      <subtable external="RewardPackInfo" />
+    </column>
+    <column name="Craft" type="OPTIONALSTRUCT">
+      <offset>544</offset>
+      <subtable external="ItemCraftingTable" />
+    </column>
+    <column name="Restriction" type="OPTIONALSTRUCT">
+      <offset>552</offset>
+      <subtable external="UsageRestriction" />
+    </column>
+    <column name="Equiplimit" type="OPTIONALSTRUCT">
+      <offset>560</offset>
+      <subtable external="ItemEquipLimit" />
+    </column>
+    <column name="Group" type="INT">
+      <offset>568</offset>
+      <static_define_list external="ItemPowerGroup" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Itemexpiry" type="OPTIONALSTRUCT">
+      <offset>576</offset>
+      <subtable external="ItemExpiryDef" />
+    </column>
+    <column name="Itemdye" type="OPTIONALSTRUCT">
+      <offset>584</offset>
+      <subtable external="ItemDyeDef" />
+    </column>
+    <column name="Numericdecay" type="OPTIONALSTRUCT">
+      <offset>592</offset>
+      <subtable external="NumericDecayDef" />
+    </column>
+    <column name="Costumemode" type="INT">
+      <offset>600</offset>
+      <static_define_list external="kCostumeDisplayMode" />
+    </column>
+    <column name="Costumepriority" type="INT">
+      <offset>604</offset>
+    </column>
+    <column name="Costumes" type="STRUCT">
+      <offset>608</offset>
+      <subtable external="ItemCostume" />
+    </column>
+    <column name="Species" type="REFERENCE">
+      <offset>616</offset>
+      <dictionary_name>SpeciesDef</dictionary_name>
+    </column>
+    <column name="Mountmusic" type="STRING">
+      <offset>624</offset>
+    </column>
+    <column name="Poweranimfx" type="REFERENCE">
+      <offset>632</offset>
+      <dictionary_name>PowerAnimFX</dictionary_name>
+    </column>
+    <column name="Craftrecipe" type="REFERENCE">
+      <offset>640</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Recipe" type="REFERENCE">
+      <offset>640</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Craftrecipe</redundant_name>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Valuerecipe" type="STRUCT">
+      <offset>648</offset>
+      <subtable external="ItemDefRef" />
+    </column>
+    <column name="Calloutmsg" type="EMBEDDEDSTRUCT">
+      <offset>656</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Calloutfsm" type="STRING">
+      <offset>680</offset>
+    </column>
+    <column name="Importantcallout" type="U8">
+      <offset>688</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Lorecategory" type="INT">
+      <offset>692</offset>
+      <static_define_list external="LoreCategory" />
+    </column>
+    <column name="Dynamicitempowertable" type="REFERENCE">
+      <offset>696</offset>
+      <dictionary_name>DynamicItemPowerTableDef</dictionary_name>
+    </column>
+    <column name="Dynamicitemleveltable" type="REFERENCE">
+      <offset>704</offset>
+      <dictionary_name>DynamicItemLevelTableDef</dictionary_name>
+    </column>
+    <column name="Dynamicitemqualitytable" type="REFERENCE">
+      <offset>712</offset>
+      <dictionary_name>DynamicItemQualityTableDef</dictionary_name>
+    </column>
+    <column name="Trainingrank" type="INT">
+      <offset>720</offset>
+    </column>
+    <column name="Trainingcostnumeric" type="REFERENCE">
+      <offset>728</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Exprtrainingcostamount" type="OPTIONALSTRUCT">
+      <offset>736</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Trainingcountnumeric" type="REFERENCE">
+      <offset>744</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Tag" type="INT">
+      <offset>752</offset>
+      <static_define_list external="ItemTag" />
+    </column>
+    <column name="Categories" type="INTARRAY">
+      <offset>760</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Petgrant" type="REFERENCE">
+      <offset>768</offset>
+      <dictionary_name>PetDef</dictionary_name>
+    </column>
+    <column name="Algopet" type="REFERENCE">
+      <offset>776</offset>
+      <dictionary_name>AlgoPetDef</dictionary_name>
+    </column>
+    <column name="Batterydef" type="REFERENCE">
+      <offset>784</offset>
+      <dictionary_name>ItemBatteryDef</dictionary_name>
+    </column>
+    <column name="Warp" type="OPTIONALSTRUCT">
+      <offset>792</offset>
+      <subtable external="ItemDefWarp" />
+    </column>
+    <column name="Uitemsetmaxcount" type="INT">
+      <offset>800</offset>
+    </column>
+    <column name="Makeaspuppet" type="BIT">
+      <offset>804</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Deleteafterunlock" type="BIT">
+      <offset>804</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Autodescdisabled" type="BIT">
+      <offset>804</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Logashighimportance" type="BIT">
+      <offset>804</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Logforeconomy" type="BIT">
+      <offset>804</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Logashighimportance</redundant_name>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Logfortracking" type="BIT">
+      <offset>804</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Logashighimportance</redundant_name>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Primaryforitemset" type="BIT">
+      <offset>804</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Itemsetmembersunique" type="BIT">
+      <offset>804</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65541</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Uniqueitemset" type="BIT">
+      <offset>804</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <redundant_name>Itemsetmembersunique</redundant_name>
+      <bit_offset>65541</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Itemsetmembersusecategories" type="BIT">
+      <offset>804</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Uigroupsitemsetmembersbybagandslot" type="BIT">
+      <offset>804</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Itemsetmembersgroupedbyslotrestriction" type="BIT">
+      <offset>804</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Uigroupsitemsetmembersbybagandslot</redundant_name>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Uigroupsitemsetmembersbyname" type="BIT">
+      <offset>805</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Costumeignoreskeletonmatching" type="BIT">
+      <offset>805</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Trainingdestroysitem" type="BIT">
+      <offset>805</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Couponusesitemlevel" type="BIT">
+      <offset>805</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Extrasaferemove" type="BIT">
+      <offset>805</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Messageontrayactivatefailure" type="BIT">
+      <offset>805</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Transmutationhasnocost" type="BIT">
+      <offset>805</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Transmutationenabled" type="BIT">
+      <offset>805</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65543</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Progressionevoinsurance" type="BIT">
+      <offset>806</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Disableweapondamagequalityscale" type="BIT">
+      <offset>806</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Quickslotgem" type="BIT">
+      <offset>806</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Suspicious" type="BIT">
+      <offset>806</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">0</format_string>
+      </format_strings>
+    </column>
+    <column name="Logcategory" type="INT">
+      <offset>808</offset>
+      <static_define_list external="enumLogCategory" />
+    </column>
+    <column name="Attribmodifyvalues" type="OPTIONALSTRUCT">
+      <offset>816</offset>
+      <subtable external="ItemAttribModifyValues" />
+    </column>
+    <column name="Weapon" type="OPTIONALSTRUCT">
+      <offset>824</offset>
+      <subtable external="ItemWeaponDef" />
+    </column>
+    <column name="Damage" type="OPTIONALSTRUCT">
+      <offset>832</offset>
+      <subtable external="ItemDamageDef" />
+    </column>
+    <column name="Specialparttype" type="INT">
+      <offset>840</offset>
+      <static_define_list external="SpecialPartType" />
+    </column>
+    <column name="Addedcostumefx" type="STRING">
+      <offset>848</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Addedcostumebone" type="STRING">
+      <offset>856</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Gemaddedcostumefx" type="STRING">
+      <offset>864</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Gemaddedcostumebone" type="STRING">
+      <offset>872</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Lootfxoverride" type="STRING">
+      <offset>880</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Lootrolloverdistanceoverride" type="F32">
+      <offset>888</offset>
+      <default>-1</default>
+    </column>
+    <column name="Levellessitemleveltable" type="STRING">
+      <offset>896</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Specialpartcount" type="INT">
+      <offset>904</offset>
+    </column>
+    <column name="Gamepermission" type="STRING">
+      <offset>912</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Ucoupondiscount" type="INT">
+      <offset>920</offset>
+    </column>
+    <column name="Mtcategories" type="STRINGARRAY">
+      <offset>928</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>MicroTransactionCategory</dictionary_name>
+    </column>
+    <column name="Mtitem" type="STRINGARRAY">
+      <offset>936</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>MicroTransactionDef</dictionary_name>
+    </column>
+    <column name="Microtrans2def" type="STRINGARRAY">
+      <offset>944</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+      <dictionary_name>MicroTrans2Def</dictionary_name>
+    </column>
+    <column name="Mt2couponblacklist" type="STRINGARRAY">
+      <offset>952</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+      <dictionary_name>MicroTrans2Def</dictionary_name>
+    </column>
+    <column name="Bonusnumerics" type="STRUCT">
+      <offset>960</offset>
+      <subtable external="ItemDefBonus" />
+    </column>
+    <column name="Bonuspercent" type="INT">
+      <offset>968</offset>
+    </column>
+    <column name="Powerhue" type="F32">
+      <offset>972</offset>
+    </column>
+    <column name="Clonedcostumerefsforclient" type="STRUCT">
+      <offset>976</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <subtable external="ItemCostumeClone" />
+    </column>
+    <column name="Numericthreshold" type="STRUCT">
+      <offset>984</offset>
+      <flags>
+        <flag>EDIT_ONLY</flag>
+      </flags>
+      <subtable external="NumericThresholdDef" />
+    </column>
+    <column name="Eventbasedtooltip" type="STRUCT">
+      <offset>992</offset>
+      <subtable external="EventTooltipDef" />
+    </column>
+    <column name="Progressiondef" type="REFERENCE">
+      <offset>1000</offset>
+      <dictionary_name>ItemProgressionDef</dictionary_name>
+    </column>
+    <column name="Secondaryprogressiondef" type="REFERENCE">
+      <offset>1008</offset>
+      <dictionary_name>ItemProgressionDef</dictionary_name>
+    </column>
+    <column name="Condition" type="INT">
+      <offset>1016</offset>
+      <static_define_list external="ItemProgressionCondition" />
+    </column>
+    <column name="Progressiontiercatalayst" type="STRUCT">
+      <offset>1024</offset>
+      <subtable external="ItemProgressionCatalyst" />
+    </column>
+    <column name="Uprogressionfoodxp" type="INT">
+      <offset>1032</offset>
+    </column>
+    <column name="Uprogressionupgradexp" type="INT">
+      <offset>1036</offset>
+    </column>
+    <column name="Progressionfoodcost" type="INT">
+      <offset>1040</offset>
+    </column>
+    <column name="Progressionfoodxpmultiplier" type="F32">
+      <offset>1044</offset>
+      <default>1</default>
+    </column>
+    <column name="Progressionupgradexpmultiplier" type="F32">
+      <offset>1048</offset>
+      <default>1</default>
+    </column>
+    <column name="Uprogressionevosuccessbonus" type="INT">
+      <offset>1052</offset>
+    </column>
+    <column name="Progressionupgradetomaxlevel" type="U8">
+      <offset>1056</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Itemequipcooldown" type="INT">
+      <offset>1060</offset>
+      <default>-1</default>
+    </column>
+    <column name="Dynamicitemcreation" type="REFERENCE">
+      <offset>1064</offset>
+      <dictionary_name>DynamicItemCreateDef</dictionary_name>
+    </column>
+    <column name="Auctionhousespendingallowance_Whitelistmaximumpriceperunit" type="INT">
+      <offset>1072</offset>
+    </column>
+    <column name="Costumespeciesoverridereflist" type="STRUCT">
+      <offset>1080</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <subtable external="ItemCostume" />
+    </column>
+    <column name="Itemsettomsg" type="EMBEDDEDSTRUCT">
+      <offset>1088</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Gemslotidxredirectprogression" type="INT">
+      <offset>1112</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <default>-1</default>
+    </column>
+    <column name="Overridemovementrequesterdef" type="REFERENCE">
+      <offset>1120</offset>
+      <dictionary_name>MovementRequesterDef</dictionary_name>
+    </column>
+    <column name="Itemassignmentitemproperty" type="INTARRAY">
+      <offset>1128</offset>
+      <static_define_list external="ItemAssignmentItemProperty" />
+    </column>
+    <column name="Itemassignmentattribute" type="STRUCT">
+      <offset>1136</offset>
+      <subtable external="ItemAssignmentAttributeValue" />
+    </column>
+    <column name="Itemassignmentbonusmod" type="STRUCT">
+      <offset>1144</offset>
+      <subtable external="ItemAssignmentBonusMod" />
+    </column>
+    <column name="Itemassignmentcooldown" type="INT">
+      <offset>1152</offset>
+    </column>
+    <column name="Mapenchantment" type="REFERENCE">
+      <offset>1160</offset>
+      <dictionary_name>MapEnchantment</dictionary_name>
+    </column>
+    <column name="Linkeditemlist" type="STRUCT">
+      <offset>1168</offset>
+      <subtable external="ItemDefRef" />
+    </column>
+    <column name="Specialitemtypestring1" type="STRING">
+      <offset>1176</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Consignmentpriceconfigtype" type="INT">
+      <offset>1184</offset>
+      <static_define_list external="ConsignmentPriceConfigType" />
+    </column>
+    <column name="Slot" type="IGNORE" />
+    <column name="Subtype" type="IGNORE" />
+    <column name="Kslot" type="IGNORE" />
+    <column name="Rating" type="IGNORE" />
+    <column name="Economypoints" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

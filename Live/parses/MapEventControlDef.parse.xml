@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MapEventControlDef">
+  <table>
+    <column name="MapEventControlDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Mapeventcontrollist" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="MapEventEventDef" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

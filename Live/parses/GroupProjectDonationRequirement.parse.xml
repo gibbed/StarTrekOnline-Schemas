@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GroupProjectDonationRequirement">
+  <table>
+    <column name="GroupProjectDonationRequirement" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Descriptionmsg" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Type" type="INT">
+      <offset>56</offset>
+      <static_define_list external="GroupProjectDonationSpecType" />
+    </column>
+    <column name="Count" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Requireditem" type="REFERENCE">
+      <offset>64</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Requireitem" type="REFERENCE">
+      <offset>64</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Requireditem</redundant_name>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Voucheritem" type="REFERENCE">
+      <offset>72</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Coffernumeric" type="REFERENCE">
+      <offset>80</offset>
+      <dictionary_name>GroupProjectCofferNumericDef</dictionary_name>
+    </column>
+    <column name="Alloweditemexpr" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Alloweditemexpr" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Alloweditemexpr</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Requireditemcategory" type="INTARRAY">
+      <offset>96</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Restrictitemcategory" type="INTARRAY">
+      <offset>104</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Contributionconstant" type="STRING">
+      <offset>112</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Tooltipmsg" type="EMBEDDEDSTRUCT">
+      <offset>120</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>144</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Donationincrement" type="INT">
+      <offset>152</offset>
+    </column>
+    <column name="Discount" type="STRINGARRAY">
+      <offset>160</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Quality" type="INT">
+      <offset>168</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Progressionlevel" type="INT">
+      <offset>172</offset>
+    </column>
+    <column name="Allowemptycount" type="U8">
+      <offset>176</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

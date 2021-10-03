@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AccountTicket">
+  <table>
+    <column name="AccountTicket" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="AccountID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="AccountName" type="FIXEDSTRING">
+      <offset>4</offset>
+      <string_length>128</string_length>
+    </column>
+    <column name="DisplayName" type="FIXEDSTRING">
+      <offset>132</offset>
+      <string_length>128</string_length>
+    </column>
+    <column name="Pwaccountname" type="STRING">
+      <offset>264</offset>
+    </column>
+    <column name="Uexpirationtime" type="INT">
+      <offset>272</offset>
+    </column>
+    <column name="Permissions" type="STRUCT">
+      <offset>280</offset>
+      <subtable external="AccountPermissionStruct" />
+    </column>
+    <column name="Usalt" type="INT">
+      <offset>288</offset>
+    </column>
+    <column name="Invaliddisplayname" type="U8">
+      <offset>292</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Machinerestricted" type="U8">
+      <offset>293</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Savingnext" type="U8">
+      <offset>294</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Logintype" type="INT">
+      <offset>296</offset>
+      <static_define_list external="AccountLoginType" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

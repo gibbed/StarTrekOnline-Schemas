@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldRegionCommonParsed">
+  <table>
+    <column name="WorldRegionCommonParsed" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Region_Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Cell_Extents" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="BlockRange" />
+    </column>
+    <column name="World_Min" type="F32FIXEDARRAY">
+      <offset>32</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="World_Max" type="F32FIXEDARRAY">
+      <offset>44</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Cell_Count" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Cells" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="WorldCellParsed" />
+    </column>
+    <column name="Tag_Locations" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="WorldTagLocation" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayerMatchInfo">
+  <table>
+    <column name="PlayerMatchInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="playerName" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="FactionName" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Partitionidx" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Erentity" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="ContainerID" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Playerstats" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="PlayerMatchStat" />
+    </column>
+    <column name="Playermissionscompleted" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="MissionDefRef" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

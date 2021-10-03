@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayerMatchRequestGroup">
+  <table>
+    <column name="PlayerMatchRequestGroup" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Groupid" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ugroupid" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Groupid</redundant_name>
+    </column>
+    <column name="Creatingentid" type="INT">
+      <offset>4</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uoriginalcreatorid" type="INT">
+      <offset>4</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Creatingentid</redundant_name>
+    </column>
+    <column name="MatchDefName" type="STRINGARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eamatchdefnames" type="STRINGARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>MatchDefName</redundant_name>
+    </column>
+    <column name="State" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="PlayerMatchRequestGroupState" />
+    </column>
+    <column name="Estate" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>State</redundant_name>
+      <static_define_list external="PlayerMatchRequestGroupState" />
+    </column>
+    <column name="Member" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PlayerMatchRequestGroupMember" />
+    </column>
+    <column name="Eamembers" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Member</redundant_name>
+      <subtable external="PlayerMatchRequestGroupMember" />
+    </column>
+    <column name="Invitedplayer" type="INTARRAY">
+      <offset>32</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eainvitedplayers" type="INTARRAY">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Invitedplayer</redundant_name>
+    </column>
+    <column name="Groupinvalidmatchdefname" type="STRINGARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eagroupinvalidmatchdefnames" type="STRINGARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Groupinvalidmatchdefname</redundant_name>
+    </column>
+    <column name="Groupinvalidmatchdefreason" type="INTARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="GroupInvalidForMatchReason" />
+    </column>
+    <column name="Ea32groupinvalidmatchdefreasons" type="INTARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Groupinvalidmatchdefreason</redundant_name>
+      <static_define_list external="GroupInvalidForMatchReason" />
+    </column>
+    <column name="Privateinvalidmatchdefname" type="STRINGARRAY">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eaprivateinvalidmatchdefnames" type="STRINGARRAY">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Privateinvalidmatchdefname</redundant_name>
+    </column>
+    <column name="Privateinvalidmatchdefreason" type="INTARRAY">
+      <offset>64</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="PrivateInvalidForMatchReason" />
+    </column>
+    <column name="Ea32privateinvalidmatchdefreasons" type="INTARRAY">
+      <offset>64</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Privateinvalidmatchdefreason</redundant_name>
+      <static_define_list external="PrivateInvalidForMatchReason" />
+    </column>
+    <column name="Leaveallqueueswhenmemberleaves" type="U8">
+      <offset>72</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bleaveallqueueswhenmemberleaves" type="U8">
+      <offset>72</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Leaveallqueueswhenmemberleaves</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Randomqueueindex" type="INT">
+      <offset>76</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Irandomqueueindex" type="INT">
+      <offset>76</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Randomqueueindex</redundant_name>
+    </column>
+    <column name="Filterforprivate" type="INT">
+      <offset>80</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ifilterforprivate" type="INT">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Filterforprivate</redundant_name>
+    </column>
+    <column name="Acceptcount" type="INT">
+      <offset>84</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uacceptcount" type="INT">
+      <offset>84</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Acceptcount</redundant_name>
+    </column>
+    <column name="Matchmodeflags" type="INT">
+      <offset>88</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Umatchmodeflags" type="INT">
+      <offset>88</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Matchmodeflags</redundant_name>
+    </column>
+    <column name="Leaveallqueueswhenmemberleaves_Desired" type="U8">
+      <offset>92</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bleaveallqueueswhenmemberleaves_Desired" type="U8">
+      <offset>92</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Leaveallqueueswhenmemberleaves_Desired</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>96</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

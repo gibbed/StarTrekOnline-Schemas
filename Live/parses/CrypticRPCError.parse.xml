@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CrypticRPCError">
+  <table>
+    <column name="CrypticRPCError" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Code" type="INT">
+      <offset>0</offset>
+      <static_define_list external="CrypticRPCErrorCode" />
+    </column>
+    <column name="Details" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

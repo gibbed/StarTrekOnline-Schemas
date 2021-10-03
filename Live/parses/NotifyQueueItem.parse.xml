@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="NotifyQueueItem">
+  <table>
+    <column name="NotifyQueueItem" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <static_define_list external="NotifyType" />
+    </column>
+    <column name="Importance" type="INT">
+      <offset>4</offset>
+      <static_define_list external="NotifyImportance" />
+    </column>
+    <column name="DisplayString" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Logicalstring" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Sound" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Texture" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Tag" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Queue" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Headshotdata" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="ContactHeadshotData" />
+    </column>
+    <column name="Font" type="REFERENCE">
+      <offset>64</offset>
+      <dictionary_name>UIStyleFont</dictionary_name>
+    </column>
+    <column name="Color" type="INT">
+      <offset>72</offset>
+      <static_define_list external="Color" />
+    </column>
+    <column name="Colorstring" type="FIXEDSTRING">
+      <offset>76</offset>
+      <string_length>10</string_length>
+    </column>
+    <column name="Lifetime" type="F32">
+      <offset>88</offset>
+    </column>
+    <column name="Lifetimemax" type="F32">
+      <offset>92</offset>
+    </column>
+    <column name="Delay" type="F32">
+      <offset>96</offset>
+    </column>
+    <column name="Itemid" type="INT64">
+      <offset>104</offset>
+    </column>
+    <column name="Urewardpackid" type="INT64">
+      <offset>112</offset>
+    </column>
+    <column name="Rewardpackname" type="STRING">
+      <offset>120</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Value" type="INT">
+      <offset>128</offset>
+    </column>
+    <column name="Origin" type="F32FIXEDARRAY">
+      <offset>132</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Erentity" type="INT">
+      <offset>144</offset>
+    </column>
+    <column name="Infinite" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Delayuntilimgone" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Count" type="INT">
+      <offset>152</offset>
+    </column>
+    <column name="Tosharedbank" type="BIT">
+      <offset>156</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ReductionSet">
+  <table>
+    <column name="ReductionSet" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Reductionmapping" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="CharMapping" />
+    </column>
+    <column name="Testcase" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="ReductionTestCase" />
+    </column>
+    <column name="Testcompare" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="ReductionTestCase" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

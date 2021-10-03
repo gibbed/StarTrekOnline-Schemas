@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AutoPlacePosition">
+  <table>
+    <column name="AutoPlacePosition" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Pos" type="F32FIXEDARRAY">
+      <offset>0</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Normal" type="F32FIXEDARRAY">
+      <offset>12</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Groupidx" type="INT16">
+      <offset>24</offset>
+    </column>
+    <column name="Objectidx" type="INT16">
+      <offset>26</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

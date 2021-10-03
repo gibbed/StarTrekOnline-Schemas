@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="_PolyTable_MovementRequesterParams">
+  <table>
+    <column name="_PolyTable_MovementRequesterParams" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="DragonMovementDef" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="DragonMovementDef" />
+    </column>
+    <column name="FlightMovementDef" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FlightMovementDef" />
+    </column>
+    <column name="MechMovementDef" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="MechMovementDef" />
+    </column>
+    <column name="SurfaceMovementDef" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="SurfaceMovementDef" />
+    </column>
+  </table>
+</parse>

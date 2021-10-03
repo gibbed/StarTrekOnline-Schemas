@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TimePeriodCounter_Year">
+  <table>
+    <column name="TimePeriodCounter_Year" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Year" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Count" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Months_0" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="TimePeriodCounter_Month" />
+    </column>
+    <column name="Months_1" type="EMBEDDEDSTRUCT">
+      <offset>136</offset>
+      <subtable external="TimePeriodCounter_Month" />
+    </column>
+    <column name="Months_2" type="EMBEDDEDSTRUCT">
+      <offset>264</offset>
+      <subtable external="TimePeriodCounter_Month" />
+    </column>
+    <column name="Months_3" type="EMBEDDEDSTRUCT">
+      <offset>392</offset>
+      <subtable external="TimePeriodCounter_Month" />
+    </column>
+    <column name="Months_4" type="EMBEDDEDSTRUCT">
+      <offset>520</offset>
+      <subtable external="TimePeriodCounter_Month" />
+    </column>
+    <column name="Months_5" type="EMBEDDEDSTRUCT">
+      <offset>648</offset>
+      <subtable external="TimePeriodCounter_Month" />
+    </column>
+    <column name="Months_6" type="EMBEDDEDSTRUCT">
+      <offset>776</offset>
+      <subtable external="TimePeriodCounter_Month" />
+    </column>
+    <column name="Months_7" type="EMBEDDEDSTRUCT">
+      <offset>904</offset>
+      <subtable external="TimePeriodCounter_Month" />
+    </column>
+    <column name="Months_8" type="EMBEDDEDSTRUCT">
+      <offset>1032</offset>
+      <subtable external="TimePeriodCounter_Month" />
+    </column>
+    <column name="Months_9" type="EMBEDDEDSTRUCT">
+      <offset>1160</offset>
+      <subtable external="TimePeriodCounter_Month" />
+    </column>
+    <column name="Months_10" type="EMBEDDEDSTRUCT">
+      <offset>1288</offset>
+      <subtable external="TimePeriodCounter_Month" />
+    </column>
+    <column name="Months_11" type="EMBEDDEDSTRUCT">
+      <offset>1416</offset>
+      <subtable external="TimePeriodCounter_Month" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

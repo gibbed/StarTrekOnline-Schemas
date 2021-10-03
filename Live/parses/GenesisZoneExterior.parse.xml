@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisZoneExterior">
+  <table>
+    <column name="GenesisZoneExterior" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Layoutname" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Layoutseed" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Transmogrifyversion" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Backdrop" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="GenesisBackdrop" />
+    </column>
+    <column name="GeoType" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>GenesisGeotype</dictionary_name>
+    </column>
+    <column name="Ecosystem" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>GenesisEcosystem</dictionary_name>
+    </column>
+    <column name="Colorshift" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Playareamin" type="F32FIXEDARRAY">
+      <offset>44</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Playareamax" type="F32FIXEDARRAY">
+      <offset>52</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Playareabuffer" type="F32">
+      <offset>60</offset>
+    </column>
+    <column name="Isvistaterrain" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Vertdir" type="INT">
+      <offset>68</offset>
+      <static_define_list external="GenesisVertDir" />
+    </column>
+    <column name="Shape" type="INT">
+      <offset>72</offset>
+      <static_define_list external="GenesisExteriorShape" />
+    </column>
+    <column name="Maxroadangle" type="F32">
+      <offset>76</offset>
+    </column>
+    <column name="Vistamap" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Startroom" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Endroom" type="STRING">
+      <offset>96</offset>
+    </column>
+    <column name="Room" type="STRUCT">
+      <offset>104</offset>
+      <subtable external="GenesisZoneMapRoom" />
+    </column>
+    <column name="Path" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="GenesisZoneMapPath" />
+    </column>
+    <column name="Constraint" type="STRUCT">
+      <offset>120</offset>
+      <subtable external="GenesisRoomConstraint" />
+    </column>
+    <column name="Nosharingdetail" type="U8">
+      <offset>128</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Detailkit" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

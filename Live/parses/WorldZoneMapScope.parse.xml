@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldZoneMapScope">
+  <table>
+    <column name="WorldZoneMapScope" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Scope" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="WorldScope" />
+    </column>
+    <column name="Encounter_Hacks" type="STRUCT">
+      <offset>96</offset>
+      <subtable external="WorldEncounterHack" />
+    </column>
+    <column name="Encounters" type="STRUCT">
+      <offset>104</offset>
+      <subtable external="WorldEncounter" />
+    </column>
+    <column name="Interactables" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="WorldNamedInteractable" />
+    </column>
+    <column name="Spawn_Points" type="STRUCT">
+      <offset>120</offset>
+      <subtable external="WorldSpawnPoint" />
+    </column>
+    <column name="Patrol_Routes" type="STRUCT">
+      <offset>128</offset>
+      <subtable external="WorldPatrolRoute" />
+    </column>
+    <column name="Named_Points" type="STRUCT">
+      <offset>136</offset>
+      <subtable external="WorldNamedPoint" />
+    </column>
+    <column name="Named_Volumes" type="STRUCT">
+      <offset>144</offset>
+      <subtable external="WorldNamedVolume" />
+    </column>
+    <column name="Trigger_Conditions" type="STRUCT">
+      <offset>152</offset>
+      <subtable external="WorldTriggerCondition" />
+    </column>
+    <column name="Layer_Fsms" type="STRUCT">
+      <offset>160</offset>
+      <subtable external="WorldLayerFSM" />
+    </column>
+    <column name="Navmesh_Markers" type="STRUCT">
+      <offset>168</offset>
+      <subtable external="WorldNavMeshMarker" />
+    </column>
+    <column name="Director_Markers" type="STRUCT">
+      <offset>176</offset>
+      <subtable external="WorldDirectorMarker" />
+    </column>
+    <column name="Navmesh_Areas" type="STRUCT">
+      <offset>184</offset>
+      <subtable external="WorldNavMeshArea" />
+    </column>
+    <column name="Groups" type="STRUCT">
+      <offset>192</offset>
+      <subtable external="WorldLogicalGroup" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

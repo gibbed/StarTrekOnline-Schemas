@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="StatusReporting_Wrapper">
+  <table>
+    <column name="StatusReporting_Wrapper" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Myname" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Mytype" type="INT">
+      <offset>8</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Myid" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Myproduct" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Myshortproduct" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Mymainmonitoringport" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Mygenericmonitoringport" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Mymachinename" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Myshardname" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Myclustername" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Myoverlord" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="MyPID" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Myexename" type="STRING">
+      <offset>80</offset>
+    </column>
+    <column name="Fixednamevaluepairs" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="NameValuePairList" />
+    </column>
+    <column name="Version" type="STRING">
+      <offset>96</offset>
+    </column>
+    <column name="Status" type="EMBEDDEDSTRUCT">
+      <offset>104</offset>
+      <subtable external="StatusReporting_GenericServerStatus" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

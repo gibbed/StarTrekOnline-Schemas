@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ScoreboardEntityList">
+  <table>
+    <column name="ScoreboardEntityList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Grouplist" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="ScoreboardGroup" />
+    </column>
+    <column name="Scoreslist" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ScoreboardEntity" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

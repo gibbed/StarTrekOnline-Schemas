@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PowerMusicConfig">
+  <table>
+    <column name="PowerMusicConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Staffsize" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Maxnotelifetime" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Maxnoteduration" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Minnotedelay" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Mincoctave" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Maxcoctave" type="INT">
+      <offset>20</offset>
+      <default>3</default>
+    </column>
+    <column name="Allowsimultaneousnotes" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Autocorrectaccidentals" type="U8">
+      <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Powermoderequired" type="INT">
+      <offset>28</offset>
+      <static_define_list external="PowerMode" />
+    </column>
+    <column name="Freeplaypowermoderequired" type="INT">
+      <offset>32</offset>
+      <static_define_list external="PowerMode" />
+    </column>
+    <column name="Instrument" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="PowerMusicInstrumentVoice" />
+    </column>
+    <column name="Song" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="PowerMusicSong" />
+    </column>
+    <column name="Animkeyword" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

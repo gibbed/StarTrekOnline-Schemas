@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TemplateVariable">
+  <table>
+    <column name="TemplateVariable" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="varName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Vardependency" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="varValue" type="MULTIVAL">
+      <offset>16</offset>
+    </column>
+    <column name="Varvalueexpression" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Vartype" type="INT">
+      <offset>40</offset>
+      <static_define_list external="TemplateVariableType" />
+    </column>
+    <column name="ID" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

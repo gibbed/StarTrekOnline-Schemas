@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MouseoverInteractableInfo">
+  <table>
+    <column name="MouseoverInteractableInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="String" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Requirementstring" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Usabilitystring" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Valid" type="INT">
+      <offset>32</offset>
+      <static_define_list external="InteractValidity" />
+    </column>
+    <column name="Type" type="INT">
+      <offset>36</offset>
+      <static_define_list external="UIInteractType" />
+    </column>
+    <column name="Lootbags" type="STRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="InventoryBag" />
+    </column>
+    <column name="Cursortexture" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Cursorname" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Cursorhotspotx" type="INT16">
+      <offset>64</offset>
+    </column>
+    <column name="Cursorhotspoty" type="INT16">
+      <offset>66</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

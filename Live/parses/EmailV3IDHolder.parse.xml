@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EmailV3IDHolder">
+  <table>
+    <column name="EmailV3IDHolder" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Sendertype" type="INT">
+      <offset>0</offset>
+      <static_define_list external="EMailV3SenderType" />
+    </column>
+    <column name="UID" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Ulotid" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Npcemailid" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,1903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GlobalConfig">
+  <table>
+    <column name="GlobalConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hidechatwindow" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Useawayteams" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Hidecombatmessages" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Serversaving" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Allowoldpatroldata" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Allowoldencounterdata" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Manageoffscreengens" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Overheadentitygens" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Disablefollowcritters" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Requirepowertrainer" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Itemart" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Exposeexploittray" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Blockitemmoveifinuse" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Allowplayercostumefx" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Allowinteractwhilecontactdialogopen" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Playerrequiredtohaveafaction" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Playerrequiredtohaveaspecies" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Playerrequiredtohaveallegiance" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Nnointeractiontooltips" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Alwaysquickplay" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Updatecurrentmapmissions" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Weightmaptransferlists" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Manualsubrank" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Noalphainterponspawndefaulton" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Ignoreunbounditemcostumes" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Displayfreecostumechangeafterload" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Logincharacterssortbylastplayed" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Costumeterriblelegacymaterialconstantranges" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Costumelegacycategory" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Costumeskinoncolor0" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Costumeregions" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Usennopowerdescs" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Usennoalgonames" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Disablemaprevealdata" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Allowmultipleitempowerswithcharges" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Clientdangerdata" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Openmissionmusic" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Timecontrolallowed" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Killmecommandrespawns" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Enablemissionreturncmd" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Missionreturncmddoesnotcareaboutincombat" type="BIT">
+      <offset>5</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Allowbuyback" type="BIT">
+      <offset>5</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Allowbuybackuntilmapmove" type="BIT">
+      <offset>5</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Allowsellback" type="BIT">
+      <offset>5</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Autorewardlogging" type="BIT">
+      <offset>5</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Autocombatlogging" type="BIT">
+      <offset>5</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Verbosecombatlogging" type="BIT">
+      <offset>5</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Disablemissionmapheatmaps" type="BIT">
+      <offset>5</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Defaulttoopenteaming" type="BIT">
+      <offset>6</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Defaulttorequestteaming" type="BIT">
+      <offset>6</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Listmodecontactsdonotcontinue" type="BIT">
+      <offset>6</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Disablefullrespec" type="BIT">
+      <offset>6</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Respecinvalidloadout" type="BIT">
+      <offset>6</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Allowrespecawayfromcontact" type="BIT">
+      <offset>6</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Allownoresultrecipes" type="BIT">
+      <offset>6</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Nousermapinstancechoice" type="BIT">
+      <offset>6</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Swapmissionofferdialogtext" type="BIT">
+      <offset>7</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Disablerecruitupdates" type="BIT">
+      <offset>7</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Disableguildepwithdrawlimit" type="BIT">
+      <offset>7</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Enableguilditemwithdrawlimit" type="BIT">
+      <offset>7</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Guildwithdrawalusesshardinterval" type="BIT">
+      <offset>7</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Showcontactoffersoncooldown" type="BIT">
+      <offset>7</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Logencountersummary" type="BIT">
+      <offset>7</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Keeplootsoncorpses" type="BIT">
+      <offset>7</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Disableguildfreecostumevianumeric" type="BIT">
+      <offset>8</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Autoequipdevices" type="BIT">
+      <offset>8</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Enableautoloot" type="BIT">
+      <offset>8</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Showautolootoption" type="BIT">
+      <offset>8</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Autounholsterweapons" type="BIT">
+      <offset>8</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Showcamerafilteringoption" type="BIT">
+      <offset>8</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Hudoptionsenablesimplelifeoptions" type="BIT">
+      <offset>8</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Hudoptionsenablesmallhud" type="BIT">
+      <offset>8</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Hudoptionsenableminimaptoggle" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Donotshowmissiongrantdialogsforcontact" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Donotshowinprogressmissionsforcontact" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Donotskipcontactoptionsformissionturnin" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Donotenddialogformissionofferactionifcontactoffers" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Donotshowhudoptions" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Donotshowchatoptions" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Donotinitjoystick" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Joysticksupportrumble" type="BIT">
+      <offset>10</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Usennoitemcategorynamingrules" type="BIT">
+      <offset>10</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Disabledeathpenaltyonpvpmaps" type="BIT">
+      <offset>10</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Playercantrainpowersanywhere" type="BIT">
+      <offset>10</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Autobuypowersgointray" type="BIT">
+      <offset>10</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Encountersscalewithactivepets" type="BIT">
+      <offset>10</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Disableencounterteamsizerangecheckonmissionmaps" type="BIT">
+      <offset>10</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Recruitrequiresupgraded" type="BIT">
+      <offset>10</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Storeshardvariablesonmapstate" type="BIT">
+      <offset>11</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Clickiesglowonmouseover" type="BIT">
+      <offset>11</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Destructibleinteractoption" type="BIT">
+      <offset>11</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Targetdual" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Tailorpaymentchoice" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Autoattackfirstslot" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Delaynotificationsduringcontactdialog" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Allowguildstohavenoemblems" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Allowguildallegiancechanges" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Enforceguildguildmemberallegiancematch" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Allowspecifiedmapvarseed" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Forceenableambientcube" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Enablebulletins" type="BIT">
+      <offset>17</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Genmaphideundiscoveredrooms" type="BIT">
+      <offset>17</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Showlifetimeonpassivebuffs" type="BIT">
+      <offset>17</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Betterfsmvalidation" type="BIT">
+      <offset>17</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Allowcontaineritemsinauction" type="BIT">
+      <offset>17</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Ignoreawayteamrulesforteampets" type="BIT">
+      <offset>17</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Addrelatedopenmissionstopersonalmissionhelper" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Deactivatehenchmenwhendroppedfromteam" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Costumecategoryreplace" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Enableclientcombotracker" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Preventterrainmeshimprovements" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Singleperplayeroptionwhendoorkeyispassed" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Showmapiconsonfakezones" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Usenwomovementandanimationoptions" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Usestomovementandanimationoptions" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Damagefloatsdrawoverentitygen" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Damagetrackerserveronlysendflaggedspecial" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Damagefloatstreatownedcrittersaspets" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Tabtargetingloopswithnobreaks" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Tabtargetingalwaysincludesactivecombatants" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Enablepersistedstores" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Selfonlypowermodetimers" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Usecombinedcontactindicators" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Useglobalexpressionforinteractableglowdistance" type="BIT">
+      <offset>26</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Remembervisiteddialogs" type="BIT">
+      <offset>26</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Entbufflistonlyshowbestmodinstackgroup" type="BIT">
+      <offset>26</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Rewardtablesuseencounterlevel" type="BIT">
+      <offset>26</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Characterpathmustbefollowed" type="BIT">
+      <offset>26</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Petsdontcollidewithplayer" type="BIT">
+      <offset>26</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Enemiesdontcollidewithplayer" type="BIT">
+      <offset>26</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Npcsdontcollidewithnpcs" type="BIT">
+      <offset>26</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Noentitycollision" type="BIT">
+      <offset>27</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Useddbasestatpointsfunction" type="BIT">
+      <offset>27</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Dontusestickyflightgroundcollision" type="BIT">
+      <offset>27</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Lootbagsremainoninteractablesuntilempty" type="BIT">
+      <offset>27</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Voicechat" type="BIT">
+      <offset>27</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Voiceads" type="BIT">
+      <offset>27</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Loadplayerstatresoucesonclient" type="BIT">
+      <offset>27</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Enableassists" type="BIT">
+      <offset>27</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Disablesuperjump" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Dontautoequipupgrades" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Enablespectator" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Enabledeadplayerbodies" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Targetselectundermouseusespowersloscheck" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Entityundermouseincludeunselectable" type="BIT">
+      <offset>28</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65541</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Autochoosemapoptioningameserver" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Skippressanykey" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Legacymaintainedpowerbehavior" type="BIT">
+      <offset>29</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Applysystempoweronwarp" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Pastrsystemtrackingwarppower" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Teammaxsize" type="INT">
+      <offset>48</offset>
+      <default>5</default>
+    </column>
+    <column name="Enablennoteamwarp" type="BIT">
+      <offset>52</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Keeponteamonlogout" type="BIT">
+      <offset>52</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Manageteamdisconnecteds" type="BIT">
+      <offset>52</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Alwaystrytorejointeamafterlogout" type="BIT">
+      <offset>52</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Allowsuballegianceteaming" type="BIT">
+      <offset>52</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Queuesmartgroupnno" type="BIT">
+      <offset>52</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Uigensanelayoutorder" type="BIT">
+      <offset>52</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Uigendisallowexprobjpathing" type="BIT">
+      <offset>52</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Disablepatchstreamingbuiltinprogress" type="BIT">
+      <offset>53</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Showopenmissionincompass" type="BIT">
+      <offset>53</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Storekeybindsperprofile" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Lootmodesdontcountasinteraction" type="BIT">
+      <offset>60</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Enablelootmodesforinteractables" type="BIT">
+      <offset>60</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Enablemasterlootmodeonconsole" type="BIT">
+      <offset>60</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Checkoverlaycostumespecies" type="BIT">
+      <offset>60</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Dontshowluckycharmsinoptions" type="BIT">
+      <offset>60</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Invertmousepercontrolschemeoption" type="BIT">
+      <offset>60</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Xboxcontrollersarejoysticks" type="BIT">
+      <offset>60</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Silentinteractlocationvalidation" type="BIT">
+      <offset>60</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Lightinteractlocationvalidation" type="BIT">
+      <offset>61</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Setmapscaledefaultonload" type="BIT">
+      <offset>61</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Disableoldcharacterslotcheck" type="BIT">
+      <offset>61</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Discardduplicatecritterpets" type="BIT">
+      <offset>61</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Alwaysuselodtemplateonscaled" type="BIT">
+      <offset>61</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Exposedeprecatedpowerconfigvars" type="BIT">
+      <offset>61</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Enableautohaildisableoption" type="BIT">
+      <offset>61</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Automaticallycleanupdeadpets" type="BIT">
+      <offset>61</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Enablerequirewardtoupgradeoption" type="BIT">
+      <offset>62</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Usesimpleshipcontrollermovement" type="BIT">
+      <offset>62</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Usepowerstatbonuses" type="BIT">
+      <offset>62</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Sendinnateattribmoddata" type="BIT">
+      <offset>62</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Uselinearmapsnapresolutionscaling" type="BIT">
+      <offset>62</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Enablegoldenpath" type="BIT">
+      <offset>62</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Delaydoorinteraction" type="BIT">
+      <offset>62</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Autodescroundtotenths" type="BIT">
+      <offset>62</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Sortpowertreestepsbytablelevel" type="BIT">
+      <offset>63</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Htmlviewerenabled" type="BIT">
+      <offset>63</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Enablefmv" type="BIT">
+      <offset>63</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Enableshaderqualityslider" type="BIT">
+      <offset>63</offset>
+      <bit_offset>131075</bit_offset>
+    </column>
+    <column name="Adjustfogclipfromvisscale" type="BIT">
+      <offset>63</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65541</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Combatdeathprediction" type="BIT">
+      <offset>63</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Legacyencounterdynamicspawntype" type="BIT">
+      <offset>63</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Rounditemstatsonapplytochar" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Smartinputsmoothing" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Dontallowgadmodification" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Lowimportanceinfodialogs" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Characterdetailincludespuppets" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Characterdetailincludesteamrequestpets" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Virtualshardsonlyuserestrictedcharacterslots" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Hidezoneinstancenumberinchat" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Clientimperceptiblefadesimmediately" type="BIT">
+      <offset>65</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Showonlyonecopyofeachresolution" type="BIT">
+      <offset>65</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Usesimplifiedmultishardcharacterslotrules" type="BIT">
+      <offset>65</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Alwaysallowinteractsincombat" type="BIT">
+      <offset>65</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Cutscenedefault_Bplayersareuntargetable" type="BIT">
+      <offset>65</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Usebuybackcountoverride" type="BIT">
+      <offset>65</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Interactmapleaveconfirm" type="BIT">
+      <offset>65</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Enabletwosteptraderequest" type="BIT">
+      <offset>65</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Enableescrowtrades" type="BIT">
+      <offset>66</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Ignoreentitygenoffscreenexpression" type="BIT">
+      <offset>66</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Keybindsfromcontrolschemes" type="BIT">
+      <offset>66</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Needrollrequiresusagematch" type="BIT">
+      <offset>66</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Autorollneedgreedonnonbopitems" type="BIT">
+      <offset>66</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Disablerespawnonpvpmatchstart" type="BIT">
+      <offset>66</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Noaudioonpetcontactswithoutpet" type="BIT">
+      <offset>66</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Hudrearrangemodeeatskeys" type="BIT">
+      <offset>66</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Missionrepeatxpandgoldfilter" type="BIT">
+      <offset>67</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Uselegacycontactnameoverridebehavior" type="BIT">
+      <offset>67</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Costumeeditordoesntuseitems" type="BIT">
+      <offset>67</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Usechattradechannel" type="BIT">
+      <offset>67</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Usechatlfgchannel" type="BIT">
+      <offset>67</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Preventitemlinksinzonelikechatchannels" type="BIT">
+      <offset>67</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Nocostdonationtasksallowed" type="BIT">
+      <offset>67</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Subscribetosharedbank" type="BIT">
+      <offset>67</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Disableremotecontactselling" type="BIT">
+      <offset>68</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Onlyonecontactpermission" type="BIT">
+      <offset>68</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Rewardsignorecrittersubrank" type="BIT">
+      <offset>68</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Clientloadsmovementrequesterdefs" type="BIT">
+      <offset>68</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Useitemequipcooldowns" type="BIT">
+      <offset>68</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Enableinventorytick" type="BIT">
+      <offset>68</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Suspendmouselooklocksplayermovement" type="BIT">
+      <offset>68</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Projectilescollidewithcollisionactors" type="BIT">
+      <offset>68</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Binditemswhengemmed" type="BIT">
+      <offset>69</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Startrekerrorsuppress" type="BIT">
+      <offset>69</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Aprilfoolson" type="BIT">
+      <offset>69</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Disablecostumeviewalpha" type="BIT">
+      <offset>69</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Powerautobuymincostsort" type="BIT">
+      <offset>69</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Uniqueitemsmustbebound" type="BIT">
+      <offset>69</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Loadinventorysetsfromdirectory" type="BIT">
+      <offset>69</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Usemaxnuminvbagslotsiftokencountundefined" type="BIT">
+      <offset>69</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Itemassignmentsweightallownullitem" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Itemgenuseoriginalpowerorder" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Openmissionparticipantsfromscores" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Interleaveemotesdisplaynamesinautocomplete" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Enableitemoverridemovementrequester" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Guildbankitemfixupon" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Mapenterfixuprequiresgroupproject" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Vocsvsortcutscenes" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Nighterrorsuppress" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Usenewversionofchatupdateactivitystring" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Usepalettesandelements" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Smf_Img_Uiskindefaultstotrue" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Enablegfxrazer" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Enablegfxcorsair" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Enablegfxsteel" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Enablegfxlogitech" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Usepersonalneedorgreedqualitythreshold" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Allowlootqualitychangeautoteam" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Allowlootmodechangeautoteam" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Allowlootqualitychange" type="BIT">
+      <offset>72</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Allowlootmodechange" type="BIT">
+      <offset>72</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Itemprogressionpreventoverflow" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Ubuybackcountoverride" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Allowparallelgamepadrepeats" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Repeatdigitalgamepadbuttons" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Zerooutcontrolbitswhileplayerlocked" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Useautomrg" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Automrgonlyinviteonce" type="BIT">
+      <offset>80</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Restoreteamaftermatchcomplete" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Datavalidationfulllockdown" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Enablenavmeshes" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Enablenavmeshmovementrequesterforplayers" type="BIT">
+      <offset>81</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Enablenavmeshmovementrequesterforcritters" type="BIT">
+      <offset>81</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Onewaycollision" type="BIT">
+      <offset>81</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Disableuigens" type="BIT">
+      <offset>81</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Enablecombatencounterstates" type="BIT">
+      <offset>81</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Enabledirector" type="BIT">
+      <offset>81</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Enableaimbot" type="BIT">
+      <offset>81</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Enablecursorscaling" type="BIT">
+      <offset>81</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Enablecoherent" type="BIT">
+      <offset>82</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Usegraphicsfidelitysettings" type="BIT">
+      <offset>82</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Interactnodefindbestpointinrangecheckslineofsight" type="BIT">
+      <offset>82</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Useskyfadewithtargetsky" type="BIT">
+      <offset>82</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Renderscreenspacefxaftertonemap" type="BIT">
+      <offset>82</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Usexboxlivemultiplayeractivity" type="BIT">
+      <offset>82</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Uselegacypowerapplicationsourcebehavior" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Awardfromrewardtablematchingmapnameonkill" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Sendkilleventstoownerandmaybesource" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allowlegacyownedentityconfiguration" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Repelresisteffectsbothmagnitudeandchance" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Openmissionfullpartionparticipates" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Implementscameraoverrides" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Permitgadpurchasemigration" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Defaultshowownedproducts" type="BIT">
+      <offset>85</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Enabledestructiblesviapowertargeting" type="BIT">
+      <offset>85</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Minal0fov" type="F32">
+      <offset>88</offset>
+    </column>
+    <column name="Maxal0fov" type="F32">
+      <offset>92</offset>
+    </column>
+    <column name="Minimumfullscreenresolutionwidth" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Minimumfullscreenresolutionheight" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="Fontsmallsize" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Fontmediumsize" type="INT">
+      <offset>108</offset>
+    </column>
+    <column name="Fontlargesize" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Dxtquality" type="INT">
+      <offset>116</offset>
+    </column>
+    <column name="Defaulteditoraggroradius" type="INT">
+      <offset>120</offset>
+    </column>
+    <column name="Maxindicesonwaypointicon" type="INT">
+      <offset>124</offset>
+    </column>
+    <column name="Maxoffscreeniconsplayers" type="INT">
+      <offset>128</offset>
+    </column>
+    <column name="Maxoffscreeniconscritters" type="INT">
+      <offset>132</offset>
+    </column>
+    <column name="Offscreeniconcombinedistance" type="F32">
+      <offset>136</offset>
+    </column>
+    <column name="Maxactivemissions" type="INT">
+      <offset>140</offset>
+    </column>
+    <column name="Secondarymissioncooldownhours" type="F32">
+      <offset>144</offset>
+    </column>
+    <column name="Costumemirrorchancerequired" type="F32">
+      <offset>148</offset>
+    </column>
+    <column name="Costumemirrorchanceoptional" type="F32">
+      <offset>152</offset>
+    </column>
+    <column name="Mapsnapoutdoorres" type="F32">
+      <offset>156</offset>
+    </column>
+    <column name="Mapsnapindoorres" type="F32">
+      <offset>160</offset>
+    </column>
+    <column name="Mapsnapimagecellsize" type="INT">
+      <offset>164</offset>
+    </column>
+    <column name="Mapsnapoutdoororthoskewx" type="F32">
+      <offset>168</offset>
+    </column>
+    <column name="Mapsnapoutdoororthoskewz" type="F32">
+      <offset>172</offset>
+    </column>
+    <column name="Mapsnapindoororthoskewx" type="F32">
+      <offset>176</offset>
+    </column>
+    <column name="Mapsnapindoororthoskewz" type="F32">
+      <offset>180</offset>
+    </column>
+    <column name="Followtargetentitydistance" type="F32">
+      <offset>184</offset>
+      <default>1056964608</default>
+    </column>
+    <column name="Requiredxptableoverride" type="STRING">
+      <offset>192</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Levelingnumericitem" type="STRING">
+      <offset>200</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Debuglevelingnumericitem" type="STRING">
+      <offset>208</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Alternatexpnumericitem" type="STRING">
+      <offset>216</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Alternatelevelingnumericitem" type="STRING">
+      <offset>224</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Uiskintraypowericonhack" type="STRING">
+      <offset>232</offset>
+    </column>
+    <column name="Needbeforegreedthreshold" type="STRING">
+      <offset>240</offset>
+    </column>
+    <column name="Defaultlootmode" type="STRING">
+      <offset>248</offset>
+    </column>
+    <column name="Rollover_Distance" type="F32">
+      <offset>256</offset>
+      <default>3</default>
+    </column>
+    <column name="Rollover_Display_Time" type="F32">
+      <offset>260</offset>
+      <default>1056964608</default>
+    </column>
+    <column name="Rollover_Pickup_Time" type="F32">
+      <offset>264</offset>
+      <default>1056964608</default>
+    </column>
+    <column name="Rollover_Postpickup_Linger_Time" type="F32">
+      <offset>268</offset>
+    </column>
+    <column name="Lootent_Postloot_Linger_Time" type="F32">
+      <offset>272</offset>
+    </column>
+    <column name="Enablerolloverfx" type="U8">
+      <offset>276</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ccgetbaseattribvalues" type="INT">
+      <offset>280</offset>
+      <static_define_list external="CCGetBaseAttribValues" />
+    </column>
+    <column name="Ccgetpointsleft" type="INT">
+      <offset>284</offset>
+      <static_define_list external="CCGetPointsLeft" />
+    </column>
+    <column name="Ccvalidateattribchanges" type="INT">
+      <offset>288</offset>
+      <static_define_list external="CCValidateAttribChanges" />
+    </column>
+    <column name="Renameplayerpuppetclasstype" type="STRING">
+      <offset>296</offset>
+    </column>
+    <column name="Charselectionportraittexturefov" type="F32">
+      <offset>304</offset>
+      <default>-1</default>
+    </column>
+    <column name="Charselectionheadshotwidth" type="INT">
+      <offset>308</offset>
+      <default>128</default>
+    </column>
+    <column name="Charselectionheadshotheight" type="INT">
+      <offset>312</offset>
+      <default>128</default>
+    </column>
+    <column name="Spawnpointloadingscreendistsq" type="F32">
+      <offset>316</offset>
+      <default>1193033728</default>
+    </column>
+    <column name="Clientsidecontactdialoganimlist" type="STRING">
+      <offset>320</offset>
+    </column>
+    <column name="Defaultguildthemename" type="STRING">
+      <offset>328</offset>
+    </column>
+    <column name="Uworldcellgamecrc" type="INT">
+      <offset>336</offset>
+    </column>
+    <column name="Launchvideopath" type="STRING">
+      <offset>344</offset>
+    </column>
+    <column name="Introvideopath" type="STRING">
+      <offset>352</offset>
+    </column>
+    <column name="Skipintrofornewplayers" type="U8">
+      <offset>360</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Charcreatevideopath" type="STRING">
+      <offset>368</offset>
+    </column>
+    <column name="Postcharcreatevideopath" type="STRING">
+      <offset>376</offset>
+    </column>
+    <column name="Categorynamefordoors" type="STRING">
+      <offset>384</offset>
+    </column>
+    <column name="Combatupdatetimer" type="F32">
+      <offset>392</offset>
+      <default>1036831949</default>
+    </column>
+    <column name="Maxserverfps" type="F32">
+      <offset>396</offset>
+      <default>30</default>
+    </column>
+    <column name="Microtransactiondefaultcurrency" type="STRING">
+      <offset>400</offset>
+    </column>
+    <column name="Microtransactioncurrency" type="STRING">
+      <offset>400</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Microtransactiondefaultcurrency</redundant_name>
+    </column>
+    <column name="Mtcurrency" type="STRING">
+      <offset>400</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Microtransactiondefaultcurrency</redundant_name>
+    </column>
+    <column name="Defaultcurrency" type="STRING">
+      <offset>400</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Microtransactiondefaultcurrency</redundant_name>
+    </column>
+    <column name="Overheadgenbone" type="STRING">
+      <offset>408</offset>
+    </column>
+    <column name="Defaulttooltipdelay" type="F32">
+      <offset>416</offset>
+      <default>1</default>
+    </column>
+    <column name="Tutorialmissionname" type="STRING">
+      <offset>424</offset>
+    </column>
+    <column name="Allowsafeloginmissionnames" type="STRINGARRAY">
+      <offset>432</offset>
+    </column>
+    <column name="Defaultcutsceneforcontacts" type="STRING">
+      <offset>440</offset>
+    </column>
+    <column name="Maxnamelength" type="INT">
+      <offset>448</offset>
+      <default>31</default>
+    </column>
+    <column name="Maxformalnamelength" type="INT">
+      <offset>452</offset>
+      <default>256</default>
+    </column>
+    <column name="Maxteamupgroupsize" type="INT">
+      <offset>456</offset>
+      <default>5</default>
+    </column>
+    <column name="Minimumteamlevel" type="INT">
+      <offset>460</offset>
+    </column>
+    <column name="Maxhideshowcollisiontris" type="INT">
+      <offset>464</offset>
+      <default>2000</default>
+    </column>
+    <column name="Ugcrewardoverridetimeminutes" type="F32">
+      <offset>468</offset>
+    </column>
+    <column name="Defaultrewardlingertimeoverride" type="F32">
+      <offset>472</offset>
+    </column>
+    <column name="Characterchoiceextraheaderforallegiance" type="INT">
+      <offset>476</offset>
+    </column>
+    <column name="Characterchoiceextraheaderforsuballegiance" type="INT">
+      <offset>480</offset>
+    </column>
+    <column name="Characterchoiceextraheaderforclass" type="INT">
+      <offset>484</offset>
+    </column>
+    <column name="Characterchoiceextraheaderforpath" type="INT">
+      <offset>488</offset>
+    </column>
+    <column name="Characterchoiceextraheaderforspecies" type="INT">
+      <offset>492</offset>
+    </column>
+    <column name="Uprojspecificlogstringupdateinterval" type="INT">
+      <offset>496</offset>
+    </column>
+    <column name="Usecondsbetweenchangeinstance" type="INT">
+      <offset>500</offset>
+    </column>
+    <column name="Umaxchatsystemlogentries" type="INT">
+      <offset>504</offset>
+    </column>
+    <column name="Umaxchatsociallogentries" type="INT">
+      <offset>508</offset>
+    </column>
+    <column name="Ugcaverageplayingtimeusescustommapplayingtime" type="U8">
+      <offset>512</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ugcmigratetoaverageplayingtimeusingcustommaps" type="U8">
+      <offset>513</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uugchoursbetweenrecordingcompletionforentity" type="INT">
+      <offset>516</offset>
+    </column>
+    <column name="Ugcsearchtreatsdefaultlanguageasall" type="U8">
+      <offset>520</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ubeaconizerjumpheight" type="INT">
+      <offset>524</offset>
+      <default>20</default>
+    </column>
+    <column name="Beaconfiltersizes" type="U8">
+      <offset>528</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Beaconsharedblocks" type="U8">
+      <offset>529</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Interactionsfailifnodeoncooldown" type="U8">
+      <offset>530</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Xpnumericnameforanalyticslogging" type="STRING">
+      <offset>536</offset>
+    </column>
+    <column name="Allowzerodurationgroupprojects" type="U8">
+      <offset>544</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Donationtaskmaxcooldownminutes" type="INT">
+      <offset>548</offset>
+    </column>
+    <column name="Minlevelpointpurchase" type="INT">
+      <offset>552</offset>
+    </column>
+    <column name="Groupprojectsusenewavailabilityfield" type="U8">
+      <offset>556</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requiregamecontentthresholdformicrotranspurchases" type="BIT">
+      <offset>560</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Forceboamicrotransactionitemsduringprobation" type="BIT">
+      <offset>560</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Microtrans2allowedtobefree" type="BIT">
+      <offset>560</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Uiunstuckdelay" type="INT">
+      <offset>564</offset>
+      <default>10</default>
+    </column>
+    <column name="Dontusecontrolschemeforcontroloptions" type="U8">
+      <offset>568</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usechatcommandfilter" type="U8">
+      <offset>569</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usepublicdisallowedcommandsfilter" type="U8">
+      <offset>570</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Publicdisallowedcommands" type="STRINGARRAY">
+      <offset>576</offset>
+    </column>
+    <column name="Storageonlynolimiteduse" type="U8">
+      <offset>584</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Autoequipallowbindonequip" type="U8">
+      <offset>585</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Puppetisactiveneedsclasscategory" type="U8">
+      <offset>586</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Puppetsholdxp" type="U8">
+      <offset>587</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Encountertemplatefsmvarsalwaysapply" type="U8">
+      <offset>588</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uselogoutdelay" type="U8">
+      <offset>589</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Contactdisplaystring2showsmissionsummary" type="U8">
+      <offset>590</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usemorespecificunsafedirectgrantcheckformissions" type="U8">
+      <offset>591</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usecreatingcharacterlevelforprojectilelevel" type="U8">
+      <offset>592</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disabletraditionalteambasedsidekicking" type="U8">
+      <offset>593</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allowsimultaneousmembershiponplayermangedteamandautoteam" type="U8">
+      <offset>594</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uselightprobefeature" type="U8">
+      <offset>595</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usedistancefieldsfeature" type="U8">
+      <offset>596</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usesoftwarelightadaptation" type="U8">
+      <offset>597</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usedevicegamma" type="U8">
+      <offset>598</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Respawndisabledwhenteamisincombat" type="U8">
+      <offset>599</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Autograntmissionsagainonmissioncomplete" type="U8">
+      <offset>600</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allowfxphysicsmeshvalidationerrors" type="U8">
+      <offset>601</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enablephysicsccd" type="U8">
+      <offset>602</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enablephysicsspeculativeccd" type="U8">
+      <offset>603</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dynnodelegacydonotfixlocalspace" type="U8">
+      <offset>604</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usesonysystemsafeareasettingforps4" type="U8">
+      <offset>605</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Guildalliancesignorealligances" type="U8">
+      <offset>606</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Skipcutscenedelayfordoortransitionout" type="U8">
+      <offset>607</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Expiredelayedrewardatlogin" type="U8">
+      <offset>608</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usefx2lib" type="U8">
+      <offset>609</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usefx2" type="U8">
+      <offset>610</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enablefx1fallbacksupport" type="U8">
+      <offset>611</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uskiplevelfixupbeforeentityversion" type="INT">
+      <offset>612</offset>
+    </column>
+    <column name="Fmodsoundengine" type="U8">
+      <offset>616</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inventorydefaultsortbytype" type="U8">
+      <offset>617</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Retaindamagesourcewhenaccumulatingdamage" type="U8">
+      <offset>618</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Analoginputgradientminimumcutoff" type="F32">
+      <offset>620</offset>
+      <default>1045220557</default>
+    </column>
+    <column name="Analoginputgradientmaximumcutoff" type="F32">
+      <offset>624</offset>
+      <default>1056964608</default>
+    </column>
+    <column name="Analoginputgradientminimumvalue" type="F32">
+      <offset>628</offset>
+      <default>1045220557</default>
+    </column>
+    <column name="Analoginputgradientmaximumvalue" type="F32">
+      <offset>632</offset>
+      <default>1056964608</default>
+    </column>
+    <column name="Secondaryrangeimpliesdelayhitshared" type="U8">
+      <offset>636</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enableragdoll2" type="BIT">
+      <offset>640</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Usestandardplayercapsulesize" type="BIT">
+      <offset>640</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Enableentityspatialsearch" type="BIT">
+      <offset>640</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Wlcostumeattatchbone" type="STRING">
+      <offset>648</offset>
+    </column>
+    <column name="Disablesoundpacks" type="BIT">
+      <offset>656</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Notifyoncombatlevelchanged" type="BIT">
+      <offset>656</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Enablemapenchantments" type="BIT">
+      <offset>656</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Enableenemymods" type="BIT">
+      <offset>656</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Enableenemymodsondynamicencounters" type="BIT">
+      <offset>656</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Enableenemymodsonstandardencounters" type="BIT">
+      <offset>656</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Enablenavmeshrespawndistancefinding" type="BIT">
+      <offset>656</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Getrequiredpetitemslevel" type="INT">
+      <offset>660</offset>
+    </column>
+    <column name="Defaulttocharactereditor" type="U8">
+      <offset>664</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Getrequiredpetitemsstorename" type="STRING">
+      <offset>672</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Uforceminprocesscountforpmfacecalls" type="INT">
+      <offset>680</offset>
+    </column>
+    <column name="Collapsablestringsethierarchyforrewardtableused" type="STRING">
+      <offset>688</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Enableclientsidehitreactprediction" type="BIT">
+      <offset>696</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Usegamespecificitemcallbacks" type="BIT">
+      <offset>696</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Keepnewitemsonlogin" type="BIT">
+      <offset>696</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Enableremovingfailedrewardgatedlootdrops" type="BIT">
+      <offset>696</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Allowequipfromsharedbank" type="BIT">
+      <offset>696</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Allowbuyingwithsharedbanknumerics" type="BIT">
+      <offset>696</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Buildrewardpackpreviews" type="BIT">
+      <offset>696</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Microtrans2overwriteprdnamealways" type="BIT">
+      <offset>696</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Useunkillablecheck" type="BIT">
+      <offset>697</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Ownedmapwithinteriorallfriends" type="BIT">
+      <offset>697</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Drawlogoswhilewaitingforuser" type="BIT">
+      <offset>697</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Do_Species_Validateunlock" type="BIT">
+      <offset>697</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Bshowcriticalstatusinfoinhudoptions" type="IGNORE" />
+    <column name="Bshowplayerroleinfoinhudoptions" type="IGNORE" />
+    <column name="Busercontent" type="IGNORE" />
+    <column name="Benableugcuigens" type="IGNORE" />
+    <column name="Blegacyinteractbehaviorinugc" type="IGNORE" />
+    <column name="Bugcrewardoverrideenable" type="IGNORE" />
+    <column name="Iugcmissionrewardscaleovertime" type="IGNORE" />
+    <column name="Fugcmissionrewardmaxscale" type="IGNORE" />
+    <column name="Pchugcmissiondefaultrewardtable" type="IGNORE" />
+    <column name="Pchugcmissionfeaturedrewardtable" type="IGNORE" />
+    <column name="Pchugcmissiondefaultnoncombatrewardtable" type="IGNORE" />
+    <column name="Bugcachievementsenable" type="IGNORE" />
+    <column name="Bnougcrewardsinpreview" type="IGNORE" />
+    <column name="Iugcprojectnoplaydaysbeforenorepublish" type="IGNORE" />
+    <column name="Bugcpreviouslyfeaturedmissionsqualifyforrewards" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

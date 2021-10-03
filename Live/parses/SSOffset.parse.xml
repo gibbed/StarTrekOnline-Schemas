@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SSOffset">
+  <table>
+    <column name="SSOffset" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Offsetmin" type="F32FIXEDARRAY">
+      <offset>0</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Offsetmax" type="F32FIXEDARRAY">
+      <offset>12</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Detached" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mindist" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="MaxDist" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Mincount" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Maxcount" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

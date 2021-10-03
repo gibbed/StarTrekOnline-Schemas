@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenJailDef">
+  <table>
+    <column name="UIGenJailDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>REQUIRED</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Prisonname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Cellblock" type="STRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>REQUIRED</flag>
+      </flags>
+      <subtable external="UIGenJailCellBlock" />
+    </column>
+    <column name="Font" type="REFERENCE">
+      <offset>24</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UIStyleFont</dictionary_name>
+    </column>
+    <column name="Version" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Statedef" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="UIGenStateDef" />
+    </column>
+    <column name="Complexstatedef" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="UIGenComplexStateDef" />
+    </column>
+    <column name="Beforecreate" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="Beforehide" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="Scaleasif" type="INT16FIXEDARRAY">
+      <offset>72</offset>
+      <num_elements>2</num_elements>
+    </column>
+    <column name="Scalenoshrink" type="U8">
+      <offset>76</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Scalenogrow" type="U8">
+      <offset>77</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldTerrainProperties">
+  <table>
+    <column name="WorldTerrainProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Excludeothersbegin" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Excludeothersend" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Excludepriority" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Excludepriorityscale" type="F32">
+      <offset>12</offset>
+      <default>1</default>
+    </column>
+    <column name="Excludesame" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Multiexclusionvolumesdensity" type="F32">
+      <offset>20</offset>
+      <default>1</default>
+    </column>
+    <column name="Multiexclusionvolumesrequired" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Multiexclusionvolumesrotation" type="INT">
+      <offset>28</offset>
+      <static_define_list external="GenesisMultiExcludeRotType" />
+    </column>
+    <column name="Scalemin" type="F32">
+      <offset>32</offset>
+      <default>1</default>
+    </column>
+    <column name="Scalemax" type="F32">
+      <offset>36</offset>
+      <default>1</default>
+    </column>
+    <column name="Snaptoterrainnormal" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Terrainnormalsnapstrength" type="F32">
+      <offset>44</offset>
+      <default>1</default>
+    </column>
+    <column name="Vaccuformbrush" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Vaccuformfalloff" type="F32">
+      <offset>56</offset>
+      <default>20</default>
+    </column>
+    <column name="Intensityvariation" type="F32">
+      <offset>60</offset>
+      <default>1036831949</default>
+    </column>
+    <column name="Volumename" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Showpanel" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Snaptoterrainheight" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Snaptonormal" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Vaccuformme" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Getterraincolor" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Terrainobject" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

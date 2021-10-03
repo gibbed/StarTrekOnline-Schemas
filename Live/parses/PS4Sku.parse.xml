@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PS4Sku">
+  <table>
+    <column name="PS4Sku" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Titleid" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Contentid" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Secret" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Zenpackscategorylabel" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Skuwebname" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Storeservicelabel" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Serverstoreservicelabel" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Languages" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Fullfilecontents" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>NO_NETSEND</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_PREFORMATTED">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Clientid" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Shardregion" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldLODProperties">
+  <table>
+    <column name="WorldLODProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="LODScale" type="F32">
+      <offset>0</offset>
+      <default>1</default>
+    </column>
+    <column name="Showpanel" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Lowdetail" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Highdetail" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Highfilldetail" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Fadenode" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Ignorelodoverride" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Ignorelegacytemplatescaling" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

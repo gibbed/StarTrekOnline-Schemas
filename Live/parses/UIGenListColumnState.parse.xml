@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenListColumnState">
+  <table>
+    <column name="UIGenListColumnState" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>15</default>
+      <static_define_list external="UIGenType" />
+    </column>
+    <column name="List" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+        <flag>STRUCT_NORECURSE</flag>
+      </flags>
+      <subtable external="UIGen" />
+    </column>
+    <column name="Celltemplate" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+        <flag>STRUCT_NORECURSE</flag>
+      </flags>
+      <subtable external="UIGen" />
+    </column>
+    <column name="Rows" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+        <flag>STRUCT_NORECURSE</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="UIGen" />
+    </column>
+    <column name="Ownedrows" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>STRUCT_NORECURSE</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="UIGen" />
+    </column>
+    <column name="Templategens" type="STRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="UIGenChild" />
+    </column>
+    <column name="Column" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Plainstring" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Truncate" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
+      <subtable external="UIGenBundleTruncateState" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

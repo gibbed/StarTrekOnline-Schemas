@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="RefSystemOverview">
+  <table>
+    <column name="RefSystemOverview" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Handletable" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">StashTableOverview</format_string>
+      </format_strings>
+    </column>
+    <column name="Handletablenumentries" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Handletablesize" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Handletablewasted" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Referenttable" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">StashTableOverview</format_string>
+      </format_strings>
+    </column>
+    <column name="Referenttablenumentries" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Referenttablesize" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Referenttablewasted" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Dictionaries" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="RefSystemDictionaryOverview" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

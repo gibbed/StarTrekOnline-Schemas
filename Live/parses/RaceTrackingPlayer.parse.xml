@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="RaceTrackingPlayer">
+  <table>
+    <column name="RaceTrackingPlayer" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Distance" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Playerconid" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Currentindex" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Timeatindex" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Currentplace" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

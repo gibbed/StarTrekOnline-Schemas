@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ThreadedStreamingZipCommand_FromBG">
+  <table>
+    <column name="ThreadedStreamingZipCommand_FromBG" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Command" type="INT">
+      <offset>0</offset>
+      <static_define_list external="TSZCommand_FromBG" />
+    </column>
+    <column name="Streamid" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Datasize" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

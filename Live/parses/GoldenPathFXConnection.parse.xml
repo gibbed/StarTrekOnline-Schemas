@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GoldenPathFXConnection">
+  <table>
+    <column name="GoldenPathFXConnection" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Issame" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isteleport" type="U8">
+      <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isobstructed" type="U8">
+      <offset>2</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isarea" type="U8">
+      <offset>3</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="V3obstructedtarget" type="F32FIXEDARRAY">
+      <offset>4</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V3source" type="F32FIXEDARRAY">
+      <offset>16</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V3target" type="F32FIXEDARRAY">
+      <offset>28</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Eaifxhandles" type="INTARRAY">
+      <offset>40</offset>
+    </column>
+    <column name="Fx2handles" type="NO_AST_EARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

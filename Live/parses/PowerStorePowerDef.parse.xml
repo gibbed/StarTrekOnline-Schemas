@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PowerStorePowerDef">
+  <table>
+    <column name="PowerStorePowerDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Powertree" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>PowerTreeDef</dictionary_name>
+    </column>
+    <column name="Powertreenode" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>PTNodeDef</dictionary_name>
+    </column>
+    <column name="Rank" type="INT">
+      <offset>16</offset>
+      <default>1</default>
+    </column>
+    <column name="Value" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Exprcanbuy" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Cantbuymessage" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

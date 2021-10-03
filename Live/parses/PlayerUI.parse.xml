@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayerUI">
+  <table>
+    <column name="PlayerUI" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Eastoredpositions" type="STRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="UIPersistedPosition" />
+    </column>
+    <column name="Eastoredlists" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="UIPersistedList" />
+    </column>
+    <column name="Eapairs" type="STRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="PlayerUIPair" />
+    </column>
+    <column name="Epowertooltipdetail" type="INT">
+      <offset>24</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <static_define_list external="AutoDescDetail" />
+    </column>
+    <column name="Epowerinspectdetail" type="INT">
+      <offset>28</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <static_define_list external="AutoDescDetail" />
+    </column>
+    <column name="Pschemes" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>ALWAYS_ALLOC</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="ControlSchemes" />
+    </column>
+    <column name="Maprevealinfo" type="STRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>USEROPTIONBIT_2</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="MapRevealInfo" />
+    </column>
+    <column name="Eamaprevealinfos" type="STRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>USEROPTIONBIT_2</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Maprevealinfo</redundant_name>
+      <subtable external="MapRevealInfo" />
+    </column>
+    <column name="Eamacros" type="STRUCT">
+      <offset>64</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="PlayerMacro" />
+    </column>
+    <column name="Umacroidmax" type="INT">
+      <offset>72</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Notifysetting" type="STRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="NotifySetting" />
+    </column>
+    <column name="Eanotifysettings" type="STRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Notifysetting</redundant_name>
+      <subtable external="NotifySetting" />
+    </column>
+    <column name="Inotifysettingversion" type="INT">
+      <offset>88</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Pmaillist" type="OPTIONALSTRUCT">
+      <offset>96</offset>
+      <flags>
+        <flag>USEROPTIONBIT_2</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <subtable external="ChatMailList" />
+    </column>
+    <column name="Bunreadmail" type="U8">
+      <offset>104</offset>
+      <flags>
+        <flag>USEROPTIONBIT_2</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Pchatconfig" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="ChatConfig" />
+    </column>
+    <column name="Pchatstate" type="OPTIONALSTRUCT">
+      <offset>120</offset>
+      <flags>
+        <flag>ALWAYS_ALLOC</flag>
+        <flag>USEROPTIONBIT_2</flag>
+      </flags>
+      <subtable external="ChatState" />
+    </column>
+    <column name="Binds" type="STRUCT">
+      <offset>128</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="EntityKeyBinds" />
+    </column>
+    <column name="Eabindprofiles" type="STRUCT">
+      <offset>128</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Binds</redundant_name>
+      <subtable external="EntityKeyBinds" />
+    </column>
+    <column name="Modalbinds" type="STRUCT">
+      <offset>136</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="EntityKeyBinds" />
+    </column>
+    <column name="Eamodalbindprofiles" type="STRUCT">
+      <offset>136</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Modalbinds</redundant_name>
+      <subtable external="EntityKeyBinds" />
+    </column>
+    <column name="Uilastclientpoke" type="INT">
+      <offset>144</offset>
+      <flags>
+        <flag>USEROPTIONBIT_2</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Bidlekickwarned" type="U8">
+      <offset>148</offset>
+      <flags>
+        <flag>USEROPTIONBIT_2</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Plooseui" type="OPTIONALSTRUCT">
+      <offset>152</offset>
+      <flags>
+        <flag>ALWAYS_ALLOC</flag>
+      </flags>
+      <subtable external="PlayerLooseUI" />
+    </column>
+    <column name="Pchlooseui" type="STRING">
+      <offset>160</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>USEROPTIONBIT_2</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Pchlastemote" type="STRING">
+      <offset>168</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>USEROPTIONBIT_2</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Uilastemotetime" type="INT">
+      <offset>176</offset>
+      <flags>
+        <flag>USEROPTIONBIT_2</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Hlastemotetarget" type="INT">
+      <offset>180</offset>
+      <flags>
+        <flag>USEROPTIONBIT_2</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Elastregion" type="INT">
+      <offset>188</offset>
+      <flags>
+        <flag>USEROPTIONBIT_2</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <static_define_list external="WorldRegionType" />
+    </column>
+    <column name="Earegionscales" type="STRUCT">
+      <offset>192</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="PlayerUIMapRegionScale" />
+    </column>
+    <column name="Pchusercolorpalette" type="STRING">
+      <offset>200</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Ubfcolorpalettestatedisables" type="INT">
+      <offset>208</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Bgoldenpathactive" type="U8">
+      <offset>212</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bdisallowguildinvites" type="U8">
+      <offset>213</offset>
+      <flags>
+        <flag>USEROPTIONBIT_2</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dirtybit" type="U8">
+      <offset>214</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+        <flag>USEROPTIONBIT_2</flag>
+        <flag>DIRTY_BIT</flag>
+      </flags>
+    </column>
+    <column name="Uilastlevelpowersmenuat" type="U8">
+      <offset>215</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <default>1</default>
+    </column>
+    <column name="Uilevelupwizarddismissedat" type="U8">
+      <offset>216</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <default>1</default>
+    </column>
+    <column name="Uicompactmode" type="BIT">
+      <offset>217</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <bit_offset>131072</bit_offset>
+    </column>
+    <column name="Uidisabledamageoverlays" type="BIT">
+      <offset>217</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Ikeybindsversion" type="INT">
+      <offset>220</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Uistickerbookhasunviewedchanges" type="BIT">
+      <offset>224</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Enablemoveequipment" type="BIT">
+      <offset>224</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Enableddoubletaptorollspace" type="BIT">
+      <offset>224</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Hidepilotuidpad" type="BIT">
+      <offset>224</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Eanewstickerbookitemnames" type="STRINGARRAY">
+      <offset>232</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Eateamlootuislots" type="STRUCT">
+      <offset>240</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="TeamLootItemSlot" />
+    </column>
+    <column name="Ehideconfirmdialogflags" type="INT">
+      <offset>248</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <static_define_list external="HideConfirmDialogType" />
+    </column>
+    <column name="Pplayerleaderboardui" type="OPTIONALSTRUCT">
+      <offset>256</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PlayerLeaderboardUI" />
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>264</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Ea32currencycategoriestofilter" type="INTARRAY">
+      <offset>272</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Ea32coffercategoriestofilter" type="INTARRAY">
+      <offset>280</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Eafactioniconinfo" type="STRUCT">
+      <offset>288</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="FactionEntIconInfo" />
+    </column>
+    <column name="Eamapdetectedentries" type="STRUCT">
+      <offset>296</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="MapDetectedEntry" />
+    </column>
+    <column name="Pchdifficultymodestring" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="StaticCraftingData">
+  <table>
+    <column name="StaticCraftingData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Baserecipename" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Powerrecipenames" type="STRINGARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Quality" type="INT">
+      <offset>16</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Components" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="CraftComponentInfo" />
+    </column>
+    <column name="Componentsdirty" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uisortinggroupmask" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Sortingdescend" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

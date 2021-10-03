@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TicketSendInternalStruct">
+  <table>
+    <column name="TicketSendInternalStruct" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="UID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Status" type="INT">
+      <offset>4</offset>
+      <static_define_list external="TicketSendStatus" />
+    </column>
+    <column name="Startticks" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Type" type="INT">
+      <offset>16</offset>
+      <static_define_list external="TicketSendType" />
+    </column>
+    <column name="Link" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="NetLink" />
+      <format_strings>
+        <format_string name="HTML_SKIP_IN_TABLE">1</format_string>
+        <format_string name="HTML_WRITE_UNOWNED">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Uerrorflags" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Trackerresponse" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

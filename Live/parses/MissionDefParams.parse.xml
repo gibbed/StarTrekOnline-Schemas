@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MissionDefParams">
+  <table>
+    <column name="MissionDefParams" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Numericrewardscale" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Numericrewardscaleineligible" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Numericrewardscalealreadycompleted" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Scalerewardovertime" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Pernumericscale" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="MissionNumericScale" />
+    </column>
+    <column name="Activityname" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Onstartrewardtablename" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Onfailurerewardtablename" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Onsuccessrewardtablename" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Onreturnrewardtablename" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Onreplayreturnrewardtablename" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Activitysuccessrewardtablename" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Activityreturnrewardtablename" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Goldrewardtable" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Silverrewardtable" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Bronzerewardtable" type="STRING">
+      <offset>104</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Defaultrewardtable" type="STRING">
+      <offset>112</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Failuregoldrewardtable" type="STRING">
+      <offset>120</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Failuresilverrewardtable" type="STRING">
+      <offset>128</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Failurebronzerewardtable" type="STRING">
+      <offset>136</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Failuredefaultrewardtable" type="STRING">
+      <offset>144</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rewardmsggold" type="EMBEDDEDSTRUCT">
+      <offset>152</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rewardmsgsilver" type="EMBEDDEDSTRUCT">
+      <offset>176</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rewardmsgbronze" type="EMBEDDEDSTRUCT">
+      <offset>200</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rewardmsgdefault" type="EMBEDDEDSTRUCT">
+      <offset>224</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rewardmsgfailuregold" type="EMBEDDEDSTRUCT">
+      <offset>248</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rewardmsgfailuresilver" type="EMBEDDEDSTRUCT">
+      <offset>272</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rewardmsgfailurebronze" type="EMBEDDEDSTRUCT">
+      <offset>296</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rewardmsgfailuredefault" type="EMBEDDEDSTRUCT">
+      <offset>320</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rewardnotifytype" type="INT">
+      <offset>344</offset>
+      <static_define_list external="NotifyType" />
+    </column>
+    <column name="Rewardmsgnotify" type="EMBEDDEDSTRUCT">
+      <offset>352</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Missiondrops" type="STRUCT">
+      <offset>376</offset>
+      <subtable external="MissionDrop" />
+    </column>
+    <column name="Delayedrewardforonreturn" type="BIT">
+      <offset>384</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Delayedrewardnumericscale" type="F32">
+      <offset>388</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

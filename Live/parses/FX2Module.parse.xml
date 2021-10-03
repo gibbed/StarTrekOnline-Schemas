@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="FX2Module">
+  <table>
+    <column name="FX2Module" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Moduledef" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+        <flag>REQUIRED</flag>
+      </flags>
+      <dictionary_name>FX2ModuleDef</dictionary_name>
+    </column>
+    <column name="Usernotes" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Parameter" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="FX2ParameterKeyValue" />
+    </column>
+    <column name="Uuidindoc" type="INT">
+      <offset>32</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>EDITOR_IGNORE</flag>
+        <flag>EDIT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="M_Eaclipboardbindproperties" type="STRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>EDITOR_IGNORE</flag>
+        <flag>EDIT_ONLY</flag>
+      </flags>
+      <subtable external="FX2ComponentClipboardBindProperty" />
+    </column>
+    <column name="Previewdirty" type="U8">
+      <offset>56</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>EDITOR_IGNORE</flag>
+        <flag>EDIT_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Previewhidden" type="U8">
+      <offset>57</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>EDITOR_IGNORE</flag>
+        <flag>EDIT_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

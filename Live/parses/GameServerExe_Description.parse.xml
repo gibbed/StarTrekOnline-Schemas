@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GameServerExe_Description">
+  <table>
+    <column name="GameServerExe_Description" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_DEF_FIELDS_TO_SHOW">MapDescription, Type</format_string>
+      </format_strings>
+    </column>
+    <column name="{" type="START" />
+    <column name="ServerType" type="INT">
+      <offset>0</offset>
+      <static_define_list external="GameServerExeType" />
+    </column>
+    <column name="MapType" type="INT">
+      <offset>4</offset>
+      <static_define_list external="ZoneMapType" />
+    </column>
+    <column name="MapDescription" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Listeningportnum" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Allowinstanceswitchingbetweenownedmaps" type="U8">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Partitions" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="MapPartitionSummary" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

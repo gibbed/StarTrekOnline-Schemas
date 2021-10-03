@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ConsignmentSearchRequest">
+  <table>
+    <column name="ConsignmentSearchRequest" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Requestingplayer" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Playerlanguage" type="INT">
+      <offset>4</offset>
+      <static_define_list external="Language" />
+    </column>
+    <column name="Poolname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Searchcomponents" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="ConsignmentSearchComponent" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

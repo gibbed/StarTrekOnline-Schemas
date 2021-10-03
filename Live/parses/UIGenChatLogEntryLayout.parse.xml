@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenChatLogEntryLayout">
+  <table>
+    <column name="UIGenChatLogEntryLayout" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Simaxlinewidth" type="INT16">
+      <offset>4</offset>
+    </column>
+    <column name="Siheight" type="INT16">
+      <offset>6</offset>
+    </column>
+    <column name="Linebreaks" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Ufadetime" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Layoutversion" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Scale" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

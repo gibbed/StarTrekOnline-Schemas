@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldRopeInteractionProperties">
+  <table>
+    <column name="WorldRopeInteractionProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Ropemount" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Ropestart" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Ropeend" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Ropedismount" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Ropereversedismount" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="AllowReverse" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="AutoMove" type="U8">
+      <offset>41</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="ReverseInput" type="U8">
+      <offset>42</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ropespeed" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Ropecasttime" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Ropemounttime" type="F32">
+      <offset>52</offset>
+    </column>
+    <column name="Ropedismounttime" type="F32">
+      <offset>56</offset>
+    </column>
+    <column name="Ropereversedismounttime" type="F32">
+      <offset>60</offset>
+    </column>
+    <column name="Ropeanimname" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

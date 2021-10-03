@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AsyncStream_Zip">
+  <table>
+    <column name="AsyncStream_Zip" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Config" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="AsyncStreamZipConfig" />
+    </column>
+    <column name="Zippeddata" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Childstream" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="AsyncStream" />
+    </column>
+    <column name="Childstreamrequestsinprogress" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Timesblockedbyzipqueue" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Zippingiscomplete" type="U8">
+      <offset>108</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

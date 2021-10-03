@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AccountProxyAccountDataResponse">
+  <table>
+    <column name="AccountProxyAccountDataResponse" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uaccountid" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Usubscribedseconds" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Ufirstplayedss2000" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Utotalplayedss2000" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Ulastloginss2000" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Ulastlogoutss2000" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Uhighestlevel" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Unumcharacters" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Linkedaccount" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Shadowaccount" type="U8">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Billed" type="U8">
+      <offset>34</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enforceantiaddiction" type="U8">
+      <offset>35</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fraudprobation" type="U8">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Keyvalues" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="AccountProxyKeyValueInfoList" />
+    </column>
+    <column name="Products" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="AccountProxyProductInfoList" />
+    </column>
+    <column name="Micro_Trans2_Purchase" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="AccountProxyMicroTrans2PurchaseInfo" />
+    </column>
+    <column name="Platformids" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="PCPlatformID" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

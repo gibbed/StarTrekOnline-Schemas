@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="RdrDeviceMemoryStats">
+  <table>
+    <column name="RdrDeviceMemoryStats" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Unmovable" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="RdrDeviceHeapStats" />
+    </column>
+    <column name="Surface" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <subtable external="RdrDeviceHeapStats" />
+    </column>
+    <column name="Texture" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="RdrDeviceHeapStats" />
+    </column>
+    <column name="Resourcebuffer" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="RdrDeviceHeapStats" />
+    </column>
+    <column name="Cpureadable" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
+      <subtable external="RdrDeviceHeapStats" />
+    </column>
+    <column name="Geometry" type="EMBEDDEDSTRUCT">
+      <offset>80</offset>
+      <subtable external="RdrDeviceHeapStats" />
+    </column>
+    <column name="Shaderbinaries" type="EMBEDDEDSTRUCT">
+      <offset>96</offset>
+      <subtable external="RdrDeviceHeapStats" />
+    </column>
+    <column name="Shaderheaders" type="EMBEDDEDSTRUCT">
+      <offset>112</offset>
+      <subtable external="RdrDeviceHeapStats" />
+    </column>
+    <column name=" " type="END" />
+  </table>
+</parse>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="FlightRollConfig">
+  <table>
+    <column name="FlightRollConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Rolldef" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">FlightRequesterRollDef</format_string>
+      </format_strings>
+    </column>
+    <column name="Forwardrolldistance" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Forwardrollspeed" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Forwardaccelnumberofframes" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Forwarddecelnumberofframes" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Forwardrollfuelcost" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Forwardrolldisablethrottle" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Forwardrolldisableturning" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Backwardrolldistance" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Backwardrollspeed" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Backwardaccelnumberofframes" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Backwarddecelnumberofframes" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Backwardrollfuelcost" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Backwardrolldisablethrottle" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Backwardrolldisableturning" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Sidewaysrolldistance" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Sidewaysrollspeed" type="F32">
+      <offset>52</offset>
+    </column>
+    <column name="Sidewaysaccelnumberofframes" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Sidewaysdecelnumberofframes" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Sidewaysrollfuelcost" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Sidewaysrolldisablethrottle" type="BIT">
+      <offset>68</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Sidewaysrolldisableturning" type="BIT">
+      <offset>68</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Flightrollfuelmax" type="F32">
+      <offset>72</offset>
+    </column>
+    <column name="Flightrollfuelrefillrate" type="F32">
+      <offset>76</offset>
+    </column>
+    <column name="Flightrollonlywhenmoving" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Flightrollpowermodesdisallowed" type="INTARRAY">
+      <offset>88</offset>
+      <static_define_list external="PowerMode" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

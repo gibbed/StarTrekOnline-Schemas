@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DonationTaskBucketUI">
+  <table>
+    <column name="DonationTaskBucketUI" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="DisplayName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Description" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="ToolTip" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Image" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="ItemDef" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Donationtask" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>DonationTaskDef</dictionary_name>
+    </column>
+    <column name="Bucketname" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Currentquantity" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Requiredquantity" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Incrementquantity" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Availableitemkeys" type="STRINGARRAY">
+      <offset>72</offset>
+    </column>
+    <column name="Queueditemkeys" type="STRINGARRAY">
+      <offset>80</offset>
+    </column>
+    <column name="Queueditemcount" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Bucketkey" type="STRING">
+      <offset>96</offset>
+    </column>
+    <column name="Maximumdonation" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Opendonation" type="INT">
+      <offset>108</offset>
+    </column>
+    <column name="Opendonationfromcoffer" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Availableitemsupdate" type="INT">
+      <offset>116</offset>
+    </column>
+    <column name="Canfillbucket" type="BIT">
+      <offset>120</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Filled" type="BIT">
+      <offset>120</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Canqueueitems" type="BIT">
+      <offset>120</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Totaldonatableitemsincoffer" type="INT">
+      <offset>124</offset>
+    </column>
+    <column name="Coffernumericdefkey" type="STRING">
+      <offset>128</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

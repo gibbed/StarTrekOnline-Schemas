@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CritterPowerConfig">
+  <table>
+    <column name="CritterPowerConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Power" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Name" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <redundant_name>Power</redundant_name>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Key" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Order" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Aipreferredminrange" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Aipreferedminrange" type="F32">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Aipreferredminrange</redundant_name>
+    </column>
+    <column name="Aipreferredmaxrange" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Aipreferedmaxrange" type="F32">
+      <offset>20</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Aipreferredmaxrange</redundant_name>
+    </column>
+    <column name="Aiweight" type="F32">
+      <offset>24</offset>
+      <default>1</default>
+    </column>
+    <column name="Aiweightmodifier" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Aiweightmodifier" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Aiweightmodifier</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Aichaintarget" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Aichaintime" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Aichainrequiresblock" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Aichainrequires" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Aichainrequiresblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Aiendconditionblock" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Aiendcondition" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Aiendconditionblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Airequiresblock" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Airequires" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Airequiresblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Aitargetoverrideblock" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Aitargetoverride" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Aitargetoverrideblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Aicurerequiresblock" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Aicurerequires" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Aicurerequiresblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Aipowerconfigdef" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>AIPowerConfigDef</dictionary_name>
+    </column>
+    <column name="Aipowerconfigdefinst" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <subtable external="AIPowerConfigDef" />
+    </column>
+    <column name="Group" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Chance" type="F32">
+      <offset>116</offset>
+      <default>1</default>
+    </column>
+    <column name="Weight" type="F32">
+      <offset>120</offset>
+    </column>
+    <column name="MinLevel" type="INT">
+      <offset>124</offset>
+      <default>-1</default>
+    </column>
+    <column name="MaxLevel" type="INT">
+      <offset>128</offset>
+      <default>-1</default>
+    </column>
+    <column name="Addpowerrequiresblock" type="OPTIONALSTRUCT">
+      <offset>136</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Addpowerrequires" type="OPTIONALSTRUCT">
+      <offset>136</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Addpowerrequiresblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Autodescdisabled" type="U8">
+      <offset>144</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disabled" type="U8">
+      <offset>145</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Triggeronspawn" type="U8">
+      <offset>146</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

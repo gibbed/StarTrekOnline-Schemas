@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TerImportExportHeightmap">
+  <table>
+    <column name="TerImportExportHeightmap" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Imagefile" type="FILENAME">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Minheight" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Maxheight" type="F32">
+      <offset>12</offset>
+      <default>255</default>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

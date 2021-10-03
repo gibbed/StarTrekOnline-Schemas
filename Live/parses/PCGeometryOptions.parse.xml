@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PCGeometryOptions">
+  <table>
+    <column name="PCGeometryOptions" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Childgeometrydef" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="PCGeometryChildDef" />
+    </column>
+    <column name="Subskelattachtofinalcbone" type="BOOLFLAG">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ischild" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Printtype" type="U8">
+      <offset>10</offset>
+      <static_define_list external="kCostumePrintType" />
+    </column>
+    <column name="Subskeleton" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>SkelInfo</dictionary_name>
+    </column>
+    <column name="Subbone" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Fxswap" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="PCFXSwap" />
+    </column>
+    <column name="FX" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="PCFX" />
+    </column>
+    <column name="Bodycolorset0" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Bodycolorset" type="REFERENCE">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Bodycolorset0</redundant_name>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Bodycolorset1" type="REFERENCE">
+      <offset>56</offset>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Bodycolorset2" type="REFERENCE">
+      <offset>64</offset>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Bodycolorset3" type="REFERENCE">
+      <offset>72</offset>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Colorquadset" type="REFERENCE">
+      <offset>80</offset>
+      <dictionary_name>CostumeColorQuads</dictionary_name>
+    </column>
+    <column name="Damagefxinfo" type="REFERENCE">
+      <offset>88</offset>
+      <dictionary_name>DynFxDamageInfo</dictionary_name>
+    </column>
+    <column name="Mirror" type="IGNORE" />
+    <column name="Allowautomirroring" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

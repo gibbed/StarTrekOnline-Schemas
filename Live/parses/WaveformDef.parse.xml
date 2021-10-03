@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WaveformDef">
+  <table>
+    <column name="WaveformDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Nodecategory" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>REQUIRED</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Inherit" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="DisplayName" type="REFERENCE">
+      <offset>16</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Collectlabel" type="REFERENCE">
+      <offset>24</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Helplabel" type="REFERENCE">
+      <offset>32</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Helplabelconsole" type="REFERENCE">
+      <offset>40</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Backgroundformat" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Backgroundcount" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Scoremode" type="INT">
+      <offset>60</offset>
+      <static_define_list external="WaveformScoreType" />
+    </column>
+    <column name="Uigen" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+      <default_string>WaveformModulationUI</default_string>
+    </column>
+    <column name="Gameboxuigen" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+      <default_string>Waveform_Popup</default_string>
+    </column>
+    <column name="Timescore" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="WaveformTimeScore" />
+    </column>
+    <column name="Timerate" type="F32">
+      <offset>88</offset>
+      <default>1</default>
+    </column>
+    <column name="Successtime" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="Timeouttime" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Refreshtime" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="Refreshtimemin" type="INT">
+      <offset>100</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Refreshtime</redundant_name>
+    </column>
+    <column name="Refreshtimemax" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Minnumberofmoves" type="INT">
+      <offset>108</offset>
+      <default>3</default>
+    </column>
+    <column name="Maxnumberofmoves" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Successscore" type="INT">
+      <offset>116</offset>
+    </column>
+    <column name="Alwayssendminigamejackpotevent" type="BIT">
+      <offset>120</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Modranges" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">WaveformModRanges</format_string>
+      </format_strings>
+    </column>
+    <column name="Maxamplitude" type="INT">
+      <offset>124</offset>
+      <default>1</default>
+    </column>
+    <column name="Maxperiod" type="INT">
+      <offset>128</offset>
+      <default>1</default>
+    </column>
+    <column name="Maxphaseshift" type="INT">
+      <offset>132</offset>
+    </column>
+    <column name="Maxverticalshift" type="INT">
+      <offset>136</offset>
+    </column>
+    <column name="Maxalignmentshift" type="INT">
+      <offset>140</offset>
+    </column>
+    <column name="Amplitudemultiplier" type="F32">
+      <offset>144</offset>
+    </column>
+    <column name="Periodmultiplier" type="F32">
+      <offset>148</offset>
+    </column>
+    <column name="Phaseshiftmultiplier" type="F32">
+      <offset>152</offset>
+    </column>
+    <column name="Verticalshiftmultiplier" type="F32">
+      <offset>156</offset>
+    </column>
+    <column name="Alignmentpoints" type="INT">
+      <offset>160</offset>
+    </column>
+    <column name="Minigametype" type="INT">
+      <offset>164</offset>
+      <static_define_list external="MinigameType" />
+    </column>
+    <column name="Bfusedfields" type="INTFIXEDARRAY">
+      <offset>168</offset>
+      <flags>
+        <flag>USEDFIELD</flag>
+      </flags>
+      <num_elements>2</num_elements>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

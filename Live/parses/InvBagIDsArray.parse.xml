@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="InvBagIDsArray">
+  <table>
+    <column name="InvBagIDsArray" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Eaibagids" type="INTARRAY">
+      <offset>0</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

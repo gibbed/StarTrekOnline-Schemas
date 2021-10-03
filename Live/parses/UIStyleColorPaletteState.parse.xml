@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIStyleColorPaletteState">
+  <table>
+    <column name="UIStyleColorPaletteState" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Currentpalette" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Nextpalette" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Palettechange" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="UIStyleColorPaletteTweenState" />
+    </column>
+    <column name="Activeoverrides" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="UIStyleColorPaletteOverrideState" />
+    </column>
+    <column name="Finalpalette" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="UIStyleColorPalette" />
+    </column>
+    <column name="Uilastframe" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Uidataversion" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Uistates" type="INTFIXEDARRAY">
+      <offset>48</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Uilaststates" type="INTFIXEDARRAY">
+      <offset>64</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

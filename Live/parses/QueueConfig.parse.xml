@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="QueueConfig">
+  <table>
+    <column name="QueueConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Memberresponsetimeout" type="INT">
+      <offset>0</offset>
+      <default>60</default>
+    </column>
+    <column name="Checkoffersresponsetimeout" type="INT">
+      <offset>4</offset>
+      <default>30</default>
+    </column>
+    <column name="Privateresponsetimeout" type="INT">
+      <offset>8</offset>
+      <default>300</default>
+    </column>
+    <column name="Memberdelaytimeout" type="INT">
+      <offset>12</offset>
+      <default>180</default>
+    </column>
+    <column name="Memberinvitetimeout" type="INT">
+      <offset>16</offset>
+      <default>30</default>
+    </column>
+    <column name="Maxqueuecount" type="INT">
+      <offset>20</offset>
+      <default>3</default>
+    </column>
+    <column name="Maplaunchcountdown" type="INT">
+      <offset>24</offset>
+      <default>10</default>
+    </column>
+    <column name="Kicklogouttime" type="INT">
+      <offset>28</offset>
+      <default>10</default>
+    </column>
+    <column name="Missionreturnlogouttime" type="INT">
+      <offset>32</offset>
+      <default>60</default>
+    </column>
+    <column name="Leaverpenaltyduration" type="INT">
+      <offset>36</offset>
+      <default>900</default>
+    </column>
+    <column name="Leaverpenaltytime" type="INT">
+      <offset>36</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Leaverpenaltyduration</redundant_name>
+      <default>900</default>
+    </column>
+    <column name="Memberaccepttimeout" type="INT">
+      <offset>40</offset>
+      <default>120</default>
+    </column>
+    <column name="Memberacceptvalidatetimeout" type="INT">
+      <offset>44</offset>
+      <default>240</default>
+    </column>
+    <column name="Memberinmaptimeout" type="INT">
+      <offset>48</offset>
+      <default>45</default>
+    </column>
+    <column name="Maxpasswordlength" type="INT">
+      <offset>52</offset>
+      <default>16</default>
+    </column>
+    <column name="Autoaccepttime" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Mingameinittime" type="INT">
+      <offset>60</offset>
+      <default>8</default>
+    </column>
+    <column name="Maxwaitfornextplayertime" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Maxwaittimefromfirstjoin" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Pvprewardscalarnormaltime" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Queuegenname" type="STRING">
+      <offset>80</offset>
+      <default_string>QueueUI</default_string>
+    </column>
+    <column name="Pvequeuegenname" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Friendlyfx" type="STRING">
+      <offset>96</offset>
+    </column>
+    <column name="Enemyfx" type="STRING">
+      <offset>104</offset>
+    </column>
+    <column name="Allowqueuingonqueuemap" type="INTARRAY">
+      <offset>112</offset>
+      <static_define_list external="ZoneMapType" />
+    </column>
+    <column name="Privatequeuelevellimit" type="INT">
+      <offset>120</offset>
+    </column>
+    <column name="Provideindividualmapinfo" type="BIT">
+      <offset>124</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Enablemissionreturnatend" type="BIT">
+      <offset>124</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Enableinmapplayerchatupdates" type="BIT">
+      <offset>124</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Enablestrictteamrules" type="BIT">
+      <offset>124</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Enableteamjoinforanymember" type="BIT">
+      <offset>124</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Queuejointimeisexact" type="BIT">
+      <offset>124</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Scoreboardremovesinactiveplayerscores" type="BIT">
+      <offset>124</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Disbandautoteamswhenmatchends" type="BIT">
+      <offset>124</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65543</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Disablejoinorcreateonallqueuemaps" type="BIT">
+      <offset>125</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Remaininprivatequeuesaftermapfinishes" type="BIT">
+      <offset>125</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Alwayssendplayermemberinfo" type="BIT">
+      <offset>125</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Alwayssendmessageasnotification" type="BIT">
+      <offset>125</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Stayinqueueonmapleave" type="BIT">
+      <offset>125</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Allowqueueabandonment" type="BIT">
+      <offset>125</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Maintainqueuetrackingonmapfinish" type="BIT">
+      <offset>125</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Autojoinqueuerequiresplayeraccept" type="BIT">
+      <offset>125</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Keepqueueinfo" type="BIT">
+      <offset>126</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Disableprivatequeues" type="BIT">
+      <offset>126</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Enableprivatequeuelevellimit" type="BIT">
+      <offset>126</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Useguildallegianceforaffiliation" type="BIT">
+      <offset>126</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Roleclasssmartgroups" type="BIT">
+      <offset>126</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Autoreleaseonfinishedmapexit" type="BIT">
+      <offset>126</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Queuedlogging" type="BIT">
+      <offset>126</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Queuedrewardthreshold" type="BIT">
+      <offset>126</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Calculatemembershipstatsperplayer" type="BIT">
+      <offset>127</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Leaverpenaltyisglobal" type="BIT">
+      <offset>127</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Leaverpenalizedqueuesalwayssenttoclient" type="BIT">
+      <offset>127</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Onlyinsinglequeueatonce" type="BIT">
+      <offset>127</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Teamjoinvoting" type="BIT">
+      <offset>127</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Enableafkonbydefault" type="BIT">
+      <offset>127</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Enableafktimedcombat" type="BIT">
+      <offset>127</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Queueloggedevents" type="STRUCT">
+      <offset>128</offset>
+      <subtable external="QueueLoggedEvents" />
+    </column>
+    <column name="Queuethresholds" type="STRUCT">
+      <offset>136</offset>
+      <subtable external="QueueThreshold" />
+    </column>
+    <column name="Queuethresholdmultipler" type="F32">
+      <offset>144</offset>
+    </column>
+    <column name="Queueafkpenaltytimeseconds" type="INT">
+      <offset>148</offset>
+    </column>
+    <column name="Groupprojectshard" type="STRUCT">
+      <offset>152</offset>
+      <subtable external="QueueShardEvent" />
+    </column>
+    <column name="Recordmapleaverentsformatchmaking" type="U8">
+      <offset>160</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Maxleaverentspermap" type="INT">
+      <offset>164</offset>
+      <default>10</default>
+    </column>
+    <column name="Enablelasteffortmatchingofnewmapsmin" type="BIT">
+      <offset>168</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disabledprivatequeuenames" type="STRINGARRAY">
+      <offset>176</offset>
+    </column>
+    <column name="Afkoverride" type="STRUCT">
+      <offset>184</offset>
+      <subtable external="QueueAFKOverride" />
+    </column>
+    <column name="Lessafkaltgearscoreregion" type="STRING">
+      <offset>192</offset>
+    </column>
+    <column name="Afktimedcombatthreshold" type="F32">
+      <offset>200</offset>
+    </column>
+    <column name="Afktimedcombatdefault" type="F32">
+      <offset>204</offset>
+    </column>
+    <column name="Afktimeinmatch" type="F32">
+      <offset>208</offset>
+    </column>
+    <column name="Afkminimumtime" type="INT">
+      <offset>212</offset>
+    </column>
+    <column name="Afkinteractsuccess" type="F32">
+      <offset>216</offset>
+    </column>
+    <column name="Showclientsinvalidqueueswithreason" type="IGNORE" />
+    <column name="Gearratingcalc" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

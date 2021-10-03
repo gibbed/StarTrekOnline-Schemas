@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DonationTaskReward">
+  <table>
+    <column name="DonationTaskReward" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <static_define_list external="DonationTaskRewardType" />
+    </column>
+    <column name="Unlock" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>GroupProjectUnlockDef</dictionary_name>
+    </column>
+    <column name="Numeric" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>GroupProjectNumericDef</dictionary_name>
+    </column>
+    <column name="Rewardconstant" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Doescodespecifynumericvalue" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Codespecifiednumericvalue" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Tag" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>GroupProjectTagDef</dictionary_name>
+    </column>
+    <column name="Tagvalue" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Instancedproperties" type="REFERENCE">
+      <offset>56</offset>
+      <dictionary_name>GroupProjectInstancedPropertiesDef</dictionary_name>
+    </column>
+    <column name="Discount" type="REFERENCE">
+      <offset>64</offset>
+      <dictionary_name>DonationTaskDiscountDef</dictionary_name>
+    </column>
+    <column name="Bonus" type="REFERENCE">
+      <offset>72</offset>
+      <dictionary_name>GroupProjectBonusDef</dictionary_name>
+    </column>
+    <column name="Power" type="REFERENCE">
+      <offset>80</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

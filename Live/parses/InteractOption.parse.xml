@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="InteractOption">
+  <table>
+    <column name="InteractOption" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Interactoptiontype" type="INT">
+      <offset>0</offset>
+      <static_define_list external="InteractOptionType" />
+    </column>
+    <column name="Hnode" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>WorldInteractionNode</dictionary_name>
+    </column>
+    <column name="Entref" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Volumename" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Uugcprojectid" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Index" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Lootbags" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="InventoryBag" />
+    </column>
+    <column name="Interactstring" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Usabilitystring" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Detailstring" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Interacttexture" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Teammatetype" type="INT">
+      <offset>80</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Teammateid" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Category" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Priority" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="MatchDefName" type="STRING">
+      <offset>104</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Unodeinteractdist" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Nodeposfallback" type="F32FIXEDARRAY">
+      <offset>116</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Noderadiusfallback" type="F32">
+      <offset>128</offset>
+    </column>
+    <column name="Interactusetime" type="F32">
+      <offset>132</offset>
+    </column>
+    <column name="Interacttextoffset" type="F32FIXEDARRAY">
+      <offset>136</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Disabled" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Autoexecute" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="CanPickup" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Canthrow" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Attemptable" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

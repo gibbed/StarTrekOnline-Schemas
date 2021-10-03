@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MissionMapVariableDisplayTypeData">
+  <table>
+    <column name="MissionMapVariableDisplayTypeData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Worldvartype" type="INT">
+      <offset>8</offset>
+      <static_define_list external="WorldVariableType" />
+    </column>
+    <column name="Minvalue" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Maxvalue" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Adjustableminmax" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TicketRequestResponse">
+  <table>
+    <column name="TicketRequestResponse" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="UID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Character" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Product" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="MainCategory" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Category" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Label" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Summary" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Description" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Status" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Response" type="STRING">
+      <offset>72</offset>
+    </column>
+    <column name="Descriptionbreak" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Responsebreak" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Ufiledtime" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Ulasttime" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="Udaysago" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Priority" type="F32">
+      <offset>108</offset>
+    </column>
+    <column name="Ucount" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Usubscribedaccounts" type="INT">
+      <offset>116</offset>
+    </column>
+    <column name="Sticky" type="U8">
+      <offset>120</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Visible" type="U8">
+      <offset>121</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Issubscribed" type="U8">
+      <offset>122</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

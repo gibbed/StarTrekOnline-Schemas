@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ActiveEndeavorMissionRow">
+  <table>
+    <column name="ActiveEndeavorMissionRow" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="DisplayName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Uistringmsgdisplayname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Description" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Count" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Target" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Difficulty" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Iscompleted" type="U8">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Rerolllockout" type="U8">
+      <offset>37</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hmissiondef" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>Mission</dictionary_name>
+    </column>
+    <column name="Mission" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <subtable external="Mission" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

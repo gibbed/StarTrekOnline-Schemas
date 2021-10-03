@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisInteriorReplace">
+  <table>
+    <column name="GenesisInteriorReplace" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Oldtag" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Newtag" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Newdetailtag" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Newlighttag" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Specificobject" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Isdoor" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Layer" type="INT">
+      <offset>44</offset>
+      <static_define_list external="GenesisInteriorLayer" />
+    </column>
+    <column name="Overridex" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Overridez" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SystemSpecs">
+  <table>
+    <column name="SystemSpecs" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Physicalmemorymax" type="INT64">
+      <offset>0</offset>
+    </column>
+    <column name="Physicalmemoryavailable" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Virtualaddressspace" type="INT64">
+      <offset>16</offset>
+    </column>
+    <column name="Textureallocsconsumevirtualaddressspace" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Videocardname" type="FIXEDSTRING">
+      <offset>25</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="Videocardvendorid" type="INT">
+      <offset>292</offset>
+    </column>
+    <column name="Videocarddeviceid" type="INT">
+      <offset>296</offset>
+    </column>
+    <column name="Cpuspeed" type="F32">
+      <offset>300</offset>
+    </column>
+    <column name="Ramspeedgbs" type="F32">
+      <offset>304</offset>
+    </column>
+    <column name="Numvirtualcpus" type="INT">
+      <offset>308</offset>
+    </column>
+    <column name="Numrealcpus" type="INT">
+      <offset>312</offset>
+    </column>
+    <column name="Cpucachesize" type="INT">
+      <offset>316</offset>
+    </column>
+    <column name="Cpuidentifier" type="FIXEDSTRING">
+      <offset>320</offset>
+      <string_length>64</string_length>
+    </column>
+    <column name="Videodriverversion" type="FIXEDSTRING">
+      <offset>384</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="Videomemorydedicated" type="INT64">
+      <offset>640</offset>
+    </column>
+    <column name="Videomemorytotal" type="INT64">
+      <offset>648</offset>
+    </column>
+    <column name="Videodriverstate" type="INT">
+      <offset>656</offset>
+    </column>
+    <column name="Isusingd3ddebug" type="INT">
+      <offset>660</offset>
+    </column>
+    <column name="Osver0_Lowversion" type="INT">
+      <offset>664</offset>
+    </column>
+    <column name="Osver1_Highversion" type="INT">
+      <offset>668</offset>
+    </column>
+    <column name="Osver2_Build" type="INT">
+      <offset>672</offset>
+    </column>
+    <column name="Osver3_Servicepackmajor" type="INT">
+      <offset>676</offset>
+    </column>
+    <column name="Osver4_Servicepackminor" type="INT">
+      <offset>680</offset>
+    </column>
+    <column name="Osver5_Hostversion" type="FIXEDSTRING">
+      <offset>684</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="Iswinserver" type="U8">
+      <offset>940</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fmodversion" type="INT">
+      <offset>944</offset>
+    </column>
+    <column name="Audiodrivername" type="FIXEDSTRING">
+      <offset>948</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="Audiodriveroutput" type="FIXEDSTRING">
+      <offset>1204</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="Audiodriverversion" type="FIXEDSTRING">
+      <offset>1460</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="ComputerName" type="FIXEDSTRING">
+      <offset>1716</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="Hostname" type="FIXEDSTRING">
+      <offset>1972</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="Systemlanguage" type="FIXEDSTRING">
+      <offset>2228</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="Userlanguage" type="FIXEDSTRING">
+      <offset>2484</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="Svnbuildnumber" type="INT">
+      <offset>2740</offset>
+    </column>
+    <column name="Nummonitors" type="INT">
+      <offset>2744</offset>
+    </column>
+    <column name="Aticrossfiregpucount" type="INT">
+      <offset>2748</offset>
+    </column>
+    <column name="Nvidiasligpucount" type="INT">
+      <offset>2752</offset>
+    </column>
+    <column name="Nvidiaaftermathstate" type="INT">
+      <offset>2756</offset>
+    </column>
+    <column name="Isx64" type="U8">
+      <offset>2761</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Sse" type="FIXEDSTRING">
+      <offset>2762</offset>
+      <string_length>6</string_length>
+    </column>
+    <column name="Avx" type="FIXEDSTRING">
+      <offset>2768</offset>
+      <string_length>5</string_length>
+    </column>
+    <column name="Supporteddxversion" type="F32">
+      <offset>2776</offset>
+    </column>
+    <column name="Supporteddxversionhresult" type="INT">
+      <offset>2780</offset>
+    </column>
+    <column name="Dxgienumadaptershresult" type="INT">
+      <offset>2784</offset>
+    </column>
+    <column name="Createddxversion" type="F32">
+      <offset>2788</offset>
+    </column>
+    <column name="Dxsupportscomputeshader" type="U8">
+      <offset>2792</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="DiskFree" type="INT64">
+      <offset>2800</offset>
+    </column>
+    <column name="Disktotal" type="INT64">
+      <offset>2808</offset>
+    </column>
+    <column name="Iswine" type="U8">
+      <offset>2816</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Wineversion" type="FIXEDSTRING">
+      <offset>2817</offset>
+      <string_length>1024</string_length>
+    </column>
+    <column name="Isunsupportedspecs" type="U8">
+      <offset>3841</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Macaddr" type="STRING">
+      <offset>3848</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Systemmanufacturer" type="STRING">
+      <offset>3856</offset>
+    </column>
+    <column name="Systemmodel" type="STRING">
+      <offset>3864</offset>
+    </column>
+    <column name="Numips" type="INT">
+      <offset>3872</offset>
+    </column>
+    <column name="Localip" type="INT">
+      <offset>3876</offset>
+      <format>IP</format>
+    </column>
+    <column name="Publicip" type="INT">
+      <offset>3880</offset>
+      <format>IP</format>
+    </column>
+    <column name="Systemstartuptime" type="INT">
+      <offset>3884</offset>
+      <format_strings>
+        <format_string name="HTML_SECS_AGO">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Audiox64checkskipped" type="IGNORE" />
+    <column name="RenderingHacks" type="IGNORE" />
+    <column name="Material_Hardware_Supported_Features" type="IGNORE" />
+    <column name="Material_Supported_Features" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

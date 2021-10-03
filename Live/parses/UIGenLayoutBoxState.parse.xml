@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenLayoutBoxState">
+  <table>
+    <column name="UIGenLayoutBoxState" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>13</default>
+      <static_define_list external="UIGenType" />
+    </column>
+    <column name="Instances" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>STRUCT_NORECURSE</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="UIGenLayoutBoxInstance" />
+    </column>
+    <column name="Templategens" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="UIGenChild" />
+    </column>
+    <column name="Newinstances" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Badtemplatenames" type="STRINGARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Layoutdirection" type="U8">
+      <offset>56</offset>
+    </column>
+    <column name="Selected" type="INT">
+      <offset>60</offset>
+      <default>-9999</default>
+    </column>
+    <column name="Managedfocusindex" type="INT">
+      <offset>64</offset>
+      <default>-9999</default>
+    </column>
+    <column name="Rows" type="INT16">
+      <offset>68</offset>
+    </column>
+    <column name="Columns" type="INT16">
+      <offset>70</offset>
+    </column>
+    <column name="Boundwidth" type="F32">
+      <offset>72</offset>
+    </column>
+    <column name="Boundheight" type="F32">
+      <offset>76</offset>
+    </column>
+    <column name="Displayindexbegin" type="INT16">
+      <offset>80</offset>
+    </column>
+    <column name="Displayindexend" type="INT16">
+      <offset>82</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

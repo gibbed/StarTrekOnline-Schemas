@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CrypticJSON">
+  <table>
+    <column name="CrypticJSON" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <static_define_list external="CrypticJSONType" />
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="ValueString" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="IntValue" type="INT64">
+      <offset>24</offset>
+    </column>
+    <column name="FloatValue" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Children" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="CrypticJSON" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

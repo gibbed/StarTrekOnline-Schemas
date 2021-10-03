@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="RewardPackPreview">
+  <table>
+    <column name="RewardPackPreview" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Items" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="ItemDefRef" />
+    </column>
+    <column name="Choiceitems" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="ItemDefRef" />
+    </column>
+    <column name="Gamespecific" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="NullStruct" />
+    </column>
+    <column name="Choicepack" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

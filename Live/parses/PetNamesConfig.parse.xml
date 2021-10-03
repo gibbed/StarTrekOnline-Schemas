@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PetNamesConfig">
+  <table>
+    <column name="PetNamesConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Nameprefix" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="PetNamePrefix" />
+    </column>
+    <column name="Subnameprefix" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="PetNamePrefix" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

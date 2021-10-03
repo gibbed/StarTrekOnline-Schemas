@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisMissionContactRequirements">
+  <table>
+    <column name="GenesisMissionContactRequirements" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Contactname" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Prompts" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="GenesisMissionPromptExprPair" />
+    </column>
+    <column name="Costume" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>PlayerCostume</dictionary_name>
+    </column>
+    <column name="Contactfilename" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

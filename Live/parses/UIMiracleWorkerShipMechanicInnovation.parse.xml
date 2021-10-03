@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIMiracleWorkerShipMechanicInnovation">
+  <table>
+    <column name="UIMiracleWorkerShipMechanicInnovation" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Miracleworkershipmechanicinnovationtype" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Enabled" type="U8">
+      <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mwshiplockoutduration" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

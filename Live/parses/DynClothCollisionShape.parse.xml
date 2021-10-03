@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynClothCollisionShape">
+  <table>
+    <column name="DynClothCollisionShape" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <static_define_list external="CLOTH_COLTYPE" />
+    </column>
+    <column name="Bone" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Offset" type="F32FIXEDARRAY">
+      <offset>16</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Direction" type="F32FIXEDARRAY">
+      <offset>28</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Point1" type="F32FIXEDARRAY">
+      <offset>40</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Point2" type="F32FIXEDARRAY">
+      <offset>52</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Radius" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Exten1" type="F32">
+      <offset>68</offset>
+    </column>
+    <column name="Exten2" type="F32">
+      <offset>72</offset>
+    </column>
+    <column name="Moving" type="BOOLFLAG">
+      <offset>76</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Movingbackwards" type="BOOLFLAG">
+      <offset>77</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mountedonly" type="BOOLFLAG">
+      <offset>78</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Walkingonly" type="BOOLFLAG">
+      <offset>79</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Insidevolume" type="BOOLFLAG">
+      <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Pushtoskinnedpos" type="BOOLFLAG">
+      <offset>81</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

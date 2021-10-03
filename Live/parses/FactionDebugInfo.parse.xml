@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="FactionDebugInfo">
+  <table>
+    <column name="FactionDebugInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Astrfactiongroup1" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Astrfactiongroup2" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Enabledforcurrentmap" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Issocialhubmap" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Globalpopulationfaction1" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Globalpopulationfaction2" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Globaloverpopulationratio" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Globaloverpopulatedfaction1" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Globaloverpopulatedfaction2" type="U8">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Globaloverpopulatedmarginfaction1" type="U8">
+      <offset>34</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Globaloverpopulatedmarginfaction2" type="U8">
+      <offset>35</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Instancepopulationfaction1" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Instancepopulationfaction2" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Instanceoverpopulationratio" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Instancerewardbalanced" type="U8">
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

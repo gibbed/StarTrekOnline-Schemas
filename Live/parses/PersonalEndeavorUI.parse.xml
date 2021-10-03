@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PersonalEndeavorUI">
+  <table>
+    <column name="PersonalEndeavorUI" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Experiencenumeric" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Experiencenumericmax" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Personalendeavortalentpoint" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Personalendeavortalentpointspent" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Personalendeavortalentpointsavailable" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Personalendeavorrerolltoken" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Powerlevelmax" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Usecondsuntilpersonalendeavorsreset" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Perkupgradeanimationtimer" type="F32">
+      <offset>32</offset>
+      <default>3</default>
+    </column>
+    <column name="Perkupgradeanimationtimerduration" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Easy" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Medium" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Hard" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

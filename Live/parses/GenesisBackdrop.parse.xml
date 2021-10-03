@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisBackdrop">
+  <table>
+    <column name="GenesisBackdrop" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Fn" type="CURRENTFILE">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Tags" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="SkyGroup" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="SkyInfoGroup" />
+    </column>
+    <column name="Randskygroup" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="GenesisSkyGroup" />
+    </column>
+    <column name="Ambsound" type="STRINGARRAY">
+      <offset>40</offset>
+    </column>
+    <column name="Ambhallwaysound" type="STRINGARRAY">
+      <offset>48</offset>
+    </column>
+    <column name="Overridecubemap" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Powervolume" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="WorldPowerVolumeProperties" />
+    </column>
+    <column name="Fxvolume" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="WorldFXVolumeProperties" />
+    </column>
+    <column name="Interiorlight" type="EMBEDDEDSTRUCT">
+      <offset>80</offset>
+      <subtable external="GenesisInteriorLightingProps" />
+    </column>
+    <column name="Suninfo" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <subtable external="SolarSystemSunsInfo" />
+    </column>
+    <column name="Root" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Suninfo</redundant_name>
+      <subtable external="SolarSystemSunsInfo" />
+    </column>
+    <column name="Farsystemlight" type="OPTIONALSTRUCT">
+      <offset>120</offset>
+      <subtable external="SpaceBackdropLight" />
+    </column>
+    <column name="Nearsystemlight" type="OPTIONALSTRUCT">
+      <offset>128</offset>
+      <subtable external="SpaceBackdropLight" />
+    </column>
+    <column name="Globalgaelayers" type="STRUCT">
+      <offset>136</offset>
+      <subtable external="GlobalGAELayerDef" />
+    </column>
+    <column name="Ugcproperties" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

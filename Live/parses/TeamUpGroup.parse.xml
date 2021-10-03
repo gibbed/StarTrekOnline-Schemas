@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TeamUpGroup">
+  <table>
+    <column name="TeamUpGroup" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Groupindex" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Members" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="TeamUpMember" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

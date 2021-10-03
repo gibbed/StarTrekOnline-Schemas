@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynStrandData">
+  <table>
+    <column name="DynStrandData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Startnodename" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Breaknodename" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Endnodename" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Axis" type="F32FIXEDARRAY">
+      <offset>24</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Stablizespringk" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Stablizedamperc" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Dynmodelspringk" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Dynmodeldamperc" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Breakpointmass" type="F32">
+      <offset>52</offset>
+    </column>
+    <column name="Endpointmass" type="F32">
+      <offset>56</offset>
+    </column>
+    <column name="Applicationstrength" type="F32">
+      <offset>60</offset>
+    </column>
+    <column name="Maxjointangle" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Windresistance" type="F32">
+      <offset>68</offset>
+    </column>
+    <column name="Gravity" type="F32">
+      <offset>72</offset>
+    </column>
+    <column name="Torsionratio" type="F32">
+      <offset>76</offset>
+    </column>
+    <column name="Axisisinworldspace" type="BOOLFLAG">
+      <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Prealignstrandtoproceduralaxis" type="BOOLFLAG">
+      <offset>81</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fullgroundreg" type="BOOLFLAG">
+      <offset>82</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Partialgroundreg" type="BOOLFLAG">
+      <offset>83</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Useeulerintegration" type="BOOLFLAG">
+      <offset>84</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

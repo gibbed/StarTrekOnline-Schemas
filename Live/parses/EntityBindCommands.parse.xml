@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EntityBindCommands">
+  <table>
+    <column name="EntityBindCommands" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="DisplayName" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Command" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="EntityBindCommand" />
+    </column>
+    <column name="Category" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="EntityBindCommands" />
+    </column>
+    <column name="Schemeregions" type="INT">
+      <offset>24</offset>
+      <static_define_list external="ControlSchemeRegionType" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Profile" type="STRINGARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="Platform" type="STRINGARRAY">
+      <offset>40</offset>
+    </column>
+    <column name="Modalbindsprofile" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Visible" type="INT">
+      <offset>56</offset>
+      <static_define_list external="EntityBindVisibility" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Hidden" type="U8">
+      <offset>60</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Primarybinds" type="INT">
+      <offset>64</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
+    </column>
+    <column name="Secondarybinds" type="INT">
+      <offset>68</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
+    </column>
+    <column name="Gamepadbinds" type="INT">
+      <offset>72</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

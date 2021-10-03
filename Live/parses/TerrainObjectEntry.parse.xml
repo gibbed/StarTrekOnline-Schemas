@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TerrainObjectEntry">
+  <table>
+    <column name="TerrainObjectEntry" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Object" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="GroupDefRef" />
+    </column>
+    <column name="Seed" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Materialbindings" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="TerrainObjectMaterial" />
+    </column>
+    <column name="Properties" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="WorldTerrainProperties" />
+    </column>
+    <column name="Overrideproperties" type="U8">
+      <offset>112</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Weldinstances" type="INT">
+      <offset>116</offset>
+      <default>-1</default>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

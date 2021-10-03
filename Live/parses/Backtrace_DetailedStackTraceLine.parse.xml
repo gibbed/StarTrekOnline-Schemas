@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="Backtrace_DetailedStackTraceLine">
+  <table>
+    <column name="Backtrace_DetailedStackTraceLine" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Function" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="File" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Line" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Rsp" type="INT64">
+      <offset>24</offset>
+    </column>
+    <column name="Blamee" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Blametime" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Revision" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Hidden" type="U8">
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

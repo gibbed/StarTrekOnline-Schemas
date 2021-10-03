@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="XMLRPCFaultStruct">
+  <table>
+    <column name="XMLRPCFaultStruct" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="FaultCode" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="FaultString" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

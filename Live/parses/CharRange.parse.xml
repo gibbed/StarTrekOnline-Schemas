@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CharRange">
+  <table>
+    <column name="CharRange" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Startchar" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <subtable external="CharValue" />
+    </column>
+    <column name="Endchar" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <subtable external="CharValue" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

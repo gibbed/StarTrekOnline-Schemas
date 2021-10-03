@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AccountProxyAntiAddictionQueryResponse">
+  <table>
+    <column name="AccountProxyAntiAddictionQueryResponse" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uaccountid" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Responseservertype" type="INT">
+      <offset>4</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Uresponseserverid" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Uentityplayerid" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Ulogincookie" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Uantiaddictiontimer" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

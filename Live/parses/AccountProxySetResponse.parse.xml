@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AccountProxySetResponse">
+  <table>
+    <column name="AccountProxySetResponse" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uaccountid" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Key" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Result" type="INT">
+      <offset>16</offset>
+      <static_define_list external="AccountKeyValueResult" />
+    </column>
+    <column name="Lock" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="RequestID" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="ContainerID" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Value" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="IntValue" type="INT64">
+      <offset>48</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

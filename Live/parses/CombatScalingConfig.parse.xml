@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CombatScalingConfig">
+  <table>
+    <column name="CombatScalingConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Combatscalingtype" type="INT">
+      <offset>0</offset>
+      <static_define_list external="CombatScalingType" />
+    </column>
+    <column name="Combatscalingitemlevelsetting" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="CombatScalingItemLevelSetting" />
+    </column>
+    <column name="Scaledattribsetting" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="ScaledAttribSetting" />
+    </column>
+    <column name="Minitemlevelforupscaling" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Defaultcritteritemlevel" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Critteritemleveldangerdelta" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Itemlevelshift" type="BIT">
+      <offset>36</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Itemlevelshiftsproportionally" type="BIT">
+      <offset>36</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Disableupscaling" type="BIT">
+      <offset>36</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Expecteditemleveltable" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

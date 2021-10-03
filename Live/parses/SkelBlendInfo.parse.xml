@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SkelBlendInfo">
+  <table>
+    <column name="SkelBlendInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Blendinfoname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Mainsequencer" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Sequencer" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="SkelBlendSeqInfo" />
+    </column>
+    <column name="Uimaxweightindex" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Defaultchart" type="REFERENCE">
+      <offset>56</offset>
+      <dictionary_name>DynAnimChartRunTime</dictionary_name>
+    </column>
+    <column name="Mountedchart" type="REFERENCE">
+      <offset>64</offset>
+      <dictionary_name>DynAnimChartRunTime</dictionary_name>
+    </column>
+    <column name="Runandgunbone" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="SkelBlendRunAndGunBone" />
+    </column>
+    <column name="Preventrunandgunfootshuffle" type="BOOLFLAG">
+      <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Preventrunandgunupperbody" type="BOOLFLAG">
+      <offset>81</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Torsopointing" type="BOOLFLAG">
+      <offset>82</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Torsodirections" type="BOOLFLAG">
+      <offset>83</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Movementblending" type="BOOLFLAG">
+      <offset>84</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

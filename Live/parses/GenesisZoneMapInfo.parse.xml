@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisZoneMapInfo">
+  <table>
+    <column name="GenesisZoneMapInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="FILENAME">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Vistamap" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Isvistaterrain" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Externalmap" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Missionlevel" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Leveltype" type="INT">
+      <offset>36</offset>
+      <static_define_list external="MissionLevelType" />
+    </column>
+    <column name="Encounteroverride" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="GenesisProceduralEncounterProperties" />
+    </column>
+    <column name="Solsyslayerinfo" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="GenesisZoneMapInfoLayer" />
+    </column>
+    <column name="Interiorlayerinfo" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="GenesisZoneMapInfoLayer" />
+    </column>
+    <column name="Exteriorlayerinfo" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="GenesisZoneMapInfoLayer" />
+    </column>
+    <column name="SkyGroup" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="SkyInfoGroup" />
+    </column>
+    <column name="Type" type="IGNORE" />
+    <column name="Externalregion" type="IGNORE" />
+    <column name="Overridecubemap" type="IGNORE" />
+    <column name="Solarsystemshoeboxes" type="IGNORE" />
+    <column name="End" type="END" />
+  </table>
+</parse>

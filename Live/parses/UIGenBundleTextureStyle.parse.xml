@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenBundleTextureStyle">
+  <table>
+    <column name="UIGenBundleTextureStyle" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Topleftcolor" type="INT">
+      <offset>0</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Color" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Topleftcolor</redundant_name>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Toprightcolor" type="INT">
+      <offset>4</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Bottomleftcolor" type="INT">
+      <offset>8</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Bottomrightcolor" type="INT">
+      <offset>12</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Effectweight" type="F32">
+      <offset>16</offset>
+      <default>1</default>
+    </column>
+    <column name="Rotation" type="EMBEDDEDSTRUCT">
+      <offset>20</offset>
+      <subtable external="UIAngle" />
+    </column>
+    <column name="Texturecoordinatedata" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">UIGenTextureCoordinateData</format_string>
+      </format_strings>
+    </column>
+    <column name="Offsetu" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Offsetv" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Scaleu" type="F32">
+      <offset>36</offset>
+      <default>1</default>
+    </column>
+    <column name="Scalev" type="F32">
+      <offset>40</offset>
+      <default>1</default>
+    </column>
+    <column name="Maskcoordinatedata" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">UIGenTextureCoordinateData</format_string>
+      </format_strings>
+    </column>
+    <column name="Maskoffsetu" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Maskoffsetv" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Maskscaleu" type="F32">
+      <offset>52</offset>
+      <default>1</default>
+    </column>
+    <column name="Maskscalev" type="F32">
+      <offset>56</offset>
+      <default>1</default>
+    </column>
+    <column name="Mode" type="BIT">
+      <offset>60</offset>
+      <bit_offset>327680</bit_offset>
+      <static_define_list external="UITextureMode" />
+    </column>
+    <column name="Effect" type="BIT">
+      <offset>60</offset>
+      <bit_offset>327685</bit_offset>
+      <static_define_list external="RdrSpriteEffect" />
+    </column>
+    <column name="Alignment" type="BIT">
+      <offset>61</offset>
+      <bit_offset>327682</bit_offset>
+      <static_define_list external="UIDirection" />
+    </column>
+    <column name="Additive" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forcebottomlayer" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fliphorizontal" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Flipvertical" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Masktoscreenbox" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Btargetentitydepth" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

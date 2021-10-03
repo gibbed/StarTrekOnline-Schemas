@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PowerTarget">
+  <table>
+    <column name="PowerTarget" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Require" type="INT">
+      <offset>8</offset>
+      <static_define_list external="TargetType" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Exclude" type="INT">
+      <offset>12</offset>
+      <static_define_list external="TargetType" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Or" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="TargetTypePair" />
+    </column>
+    <column name="Targetlock" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="TargetTypePair" />
+    </column>
+    <column name="Msgdescription" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="File" type="CURRENTFILE">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Donottargetunlessrequired" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Nevertargetifnotrequired" type="BIT">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Donottargetunlessrequired</redundant_name>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Uselocationhitifnotarget" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Faceactivatesticky" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Faceduringpoweractivation" type="BIT">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Faceactivatesticky</redundant_name>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Uselocationforrangecheck" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Uselocationforrangecheck" type="BIT">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Uselocationforrangecheck</redundant_name>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Targetaslocation" type="BIT">
+      <offset>48</offset>
+      <bit_offset>131076</bit_offset>
+      <static_define_list external="PowerTargetLocationType" />
+    </column>
+    <column name="Requireself" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Allowself" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Allowfoe" type="BIT">
+      <offset>49</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Allowfriend" type="BIT">
+      <offset>49</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Allowneardeath" type="BIT">
+      <offset>49</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Safeforselfonly" type="BIT">
+      <offset>49</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

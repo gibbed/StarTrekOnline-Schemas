@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="HeadshotStyleDef">
+  <table>
+    <column name="HeadshotStyleDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="FileName" type="CURRENTFILE">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Backgroundimage" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Backgroundcolor" type="INT">
+      <offset>24</offset>
+      <default>-1</default>
+      <static_define_list external="Color" />
+    </column>
+    <column name="Sky" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Material" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Frame" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Defaultanimbits" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Animkeyword" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Stance" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Headshotfx" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="HeadshotStyleFX" />
+    </column>
+    <column name="Usebackgroundonly" type="U8">
+      <offset>88</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fov" type="INT">
+      <offset>92</offset>
+      <static_define_list external="HeadshotStyleFOV" />
+    </column>
+    <column name="Contactcameraparams" type="OPTIONALSTRUCT">
+      <offset>96</offset>
+      <subtable external="HeadshotStyleContactCameraParams" />
+    </column>
+    <column name="Ignoreframe" type="U8">
+      <offset>104</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Appearasremote" type="U8">
+      <offset>105</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Overridefov" type="IGNORE" />
+    <column name="Forward" type="IGNORE" />
+    <column name="Right" type="IGNORE" />
+    <column name="Above" type="IGNORE" />
+    <column name="Pitch" type="IGNORE" />
+    <column name="Yaw" type="IGNORE" />
+    <column name="Roll" type="IGNORE" />
+    <column name="Tags" type="IGNORE" />
+    <column name="Ugcproperties" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

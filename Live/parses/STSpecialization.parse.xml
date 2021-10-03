@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="STSpecialization">
+  <table>
+    <column name="STSpecialization" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Specialization" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Specializationname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Specializationicon" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Specializationdescription" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Nodescountinspecialization" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Unlockednodescountinspecialization" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Earnedpoints" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Availablepoints" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Remainingpoints" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Spentpoints" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Tiers" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="STSpecializationTier" />
+    </column>
+    <column name="Tiercount" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Unlockedtiers" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Selectednodename" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Selectednoderank" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Selectednode" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="PowerListNode" />
+    </column>
+    <column name="Rewards" type="STRUCT">
+      <offset>96</offset>
+      <subtable external="STSpecializationReward" />
+    </column>
+    <column name="Selectedreward" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="STSpecializationReward" />
+    </column>
+    <column name="Rewardcount" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Scalingpassives" type="STRUCT">
+      <offset>120</offset>
+      <subtable external="PowerListNode" />
+    </column>
+    <column name="Powertreeslotid" type="INT">
+      <offset>128</offset>
+    </column>
+    <column name="Uupdatedframe" type="INT">
+      <offset>132</offset>
+    </column>
+    <column name="Autotimestamptree" type="INT64">
+      <offset>136</offset>
+    </column>
+    <column name="Autotimestampinventory" type="INT64">
+      <offset>144</offset>
+    </column>
+    <column name="Autotimestampcharacter" type="INT64">
+      <offset>152</offset>
+    </column>
+    <column name="Ent" type="OPTIONALSTRUCT">
+      <offset>160</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Entity" />
+    </column>
+    <column name="Primary" type="BIT">
+      <offset>168</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Secondary" type="BIT">
+      <offset>168</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hidden" type="BIT">
+      <offset>168</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Useuisort" type="BIT">
+      <offset>168</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

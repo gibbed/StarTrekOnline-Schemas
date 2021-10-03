@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ChatTabConfig">
+  <table>
+    <column name="ChatTabConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Title" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchtitle" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Title</redundant_name>
+    </column>
+    <column name="Defaultchannel" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>POOL_STRING_DB</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchdefaultchannel" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>POOL_STRING_DB</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Defaultchannel</redundant_name>
+    </column>
+    <column name="Channelfiltermode" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="ChatTabFilterMode" />
+    </column>
+    <column name="Echannelfiltermode" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Channelfiltermode</redundant_name>
+      <static_define_list external="ChatTabFilterMode" />
+    </column>
+    <column name="Messagetypefiltermode" type="INT">
+      <offset>20</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="ChatTabFilterMode" />
+    </column>
+    <column name="Emessagetypefiltermode" type="INT">
+      <offset>20</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Messagetypefiltermode</redundant_name>
+      <static_define_list external="ChatTabFilterMode" />
+    </column>
+    <column name="Channel" type="STRINGARRAY">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING_DB</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eachannels" type="STRINGARRAY">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>POOL_STRING_DB</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Channel</redundant_name>
+    </column>
+    <column name="Messagetype" type="STRINGARRAY">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING_DB</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eamessagetypes" type="STRINGARRAY">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>POOL_STRING_DB</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Messagetype</redundant_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

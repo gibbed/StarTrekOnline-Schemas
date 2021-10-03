@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AllegianceCharacterClass">
+  <table>
+    <column name="AllegianceCharacterClass" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hclass" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <dictionary_name>CharacterClass</dictionary_name>
+    </column>
+    <column name="Classnamepattern" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Charactercreateicon" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Costumecoloring" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="AllegianceCostumeClassColor" />
+    </column>
+    <column name="Costumepart" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="AllegianceCostumeClassPart" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

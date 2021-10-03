@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CrypticRPCReturnAddress">
+  <table>
+    <column name="CrypticRPCReturnAddress" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Nameforephemeralmanager" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Mymanagerremotesessionid" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Sendername" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Sendername_Safe" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>NO_WRITE</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TerImportExportData">
+  <table>
+    <column name="TerImportExportData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Layerconfig" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="TerImportExportLayers" />
+    </column>
+    <column name="Heightmapconfig" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="TerImportExportHeightmap" />
+    </column>
+    <column name="Colorconfig" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
+      <subtable external="TerImportExportColormap" />
+    </column>
+    <column name="Materialconfig" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
+      <subtable external="TerImportExportMaterialmap" />
+    </column>
+    <column name="Objectconfig" type="EMBEDDEDSTRUCT">
+      <offset>112</offset>
+      <subtable external="TerImportExportObjectmap" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

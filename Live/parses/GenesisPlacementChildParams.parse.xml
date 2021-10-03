@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisPlacementChildParams">
+  <table>
+    <column name="GenesisPlacementChildParams" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Offset" type="F32FIXEDARRAY">
+      <offset>0</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="PYR" type="F32FIXEDARRAY">
+      <offset>12</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Actor_Params" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="GenesisPlacementActorParams" />
+    </column>
+    <column name="Is_Actor" type="BIT">
+      <offset>56</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Absoluteposition" type="U8">
+      <offset>60</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Snapraycast" type="U8">
+      <offset>61</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Snaptogeo" type="U8">
+      <offset>62</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Snapnormal" type="U8">
+      <offset>63</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Legacyheightcheck" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

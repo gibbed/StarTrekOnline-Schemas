@@ -1,0 +1,4468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CharacterAttribs">
+  <table>
+    <column name="CharacterAttribs" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Fdamagetype01" type="F32">
+      <offset>0</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype01" type="F32">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype01</redundant_name>
+    </column>
+    <column name="Fdamagetype02" type="F32">
+      <offset>4</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype02" type="F32">
+      <offset>4</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype02</redundant_name>
+    </column>
+    <column name="Fdamagetype03" type="F32">
+      <offset>8</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype03" type="F32">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype03</redundant_name>
+    </column>
+    <column name="Fdamagetype04" type="F32">
+      <offset>12</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype04" type="F32">
+      <offset>12</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype04</redundant_name>
+    </column>
+    <column name="Fdamagetype05" type="F32">
+      <offset>16</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype05" type="F32">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype05</redundant_name>
+    </column>
+    <column name="Fdamagetype06" type="F32">
+      <offset>20</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype06" type="F32">
+      <offset>20</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype06</redundant_name>
+    </column>
+    <column name="Fdamagetype07" type="F32">
+      <offset>24</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype07" type="F32">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype07</redundant_name>
+    </column>
+    <column name="Fdamagetype08" type="F32">
+      <offset>28</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype08" type="F32">
+      <offset>28</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype08</redundant_name>
+    </column>
+    <column name="Fdamagetype09" type="F32">
+      <offset>32</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype09" type="F32">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype09</redundant_name>
+    </column>
+    <column name="Fdamagetype10" type="F32">
+      <offset>36</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype10" type="F32">
+      <offset>36</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype10</redundant_name>
+    </column>
+    <column name="Fdamagetype11" type="F32">
+      <offset>40</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype11" type="F32">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype11</redundant_name>
+    </column>
+    <column name="Fdamagetype12" type="F32">
+      <offset>44</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype12" type="F32">
+      <offset>44</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype12</redundant_name>
+    </column>
+    <column name="Fdamagetype13" type="F32">
+      <offset>48</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype13" type="F32">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype13</redundant_name>
+    </column>
+    <column name="Fdamagetype14" type="F32">
+      <offset>52</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype14" type="F32">
+      <offset>52</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype14</redundant_name>
+    </column>
+    <column name="Fdamagetype15" type="F32">
+      <offset>56</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype15" type="F32">
+      <offset>56</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype15</redundant_name>
+    </column>
+    <column name="Fdamagetype16" type="F32">
+      <offset>60</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype16" type="F32">
+      <offset>60</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype16</redundant_name>
+    </column>
+    <column name="Fdamagetype17" type="F32">
+      <offset>64</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype17" type="F32">
+      <offset>64</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype17</redundant_name>
+    </column>
+    <column name="Fdamagetype18" type="F32">
+      <offset>68</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype18" type="F32">
+      <offset>68</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype18</redundant_name>
+    </column>
+    <column name="Fdamagetype19" type="F32">
+      <offset>72</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype19" type="F32">
+      <offset>72</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype19</redundant_name>
+    </column>
+    <column name="Fdamagetype20" type="F32">
+      <offset>76</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype20" type="F32">
+      <offset>76</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype20</redundant_name>
+    </column>
+    <column name="Fdamagetype21" type="F32">
+      <offset>80</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype21" type="F32">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype21</redundant_name>
+    </column>
+    <column name="Fdamagetype22" type="F32">
+      <offset>84</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype22" type="F32">
+      <offset>84</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype22</redundant_name>
+    </column>
+    <column name="Fdamagetype23" type="F32">
+      <offset>88</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype23" type="F32">
+      <offset>88</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype23</redundant_name>
+    </column>
+    <column name="Fdamagetype24" type="F32">
+      <offset>92</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype24" type="F32">
+      <offset>92</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype24</redundant_name>
+    </column>
+    <column name="Fdamagetype25" type="F32">
+      <offset>96</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype25" type="F32">
+      <offset>96</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype25</redundant_name>
+    </column>
+    <column name="Fdamagetype26" type="F32">
+      <offset>100</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype26" type="F32">
+      <offset>100</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype26</redundant_name>
+    </column>
+    <column name="Fdamagetype27" type="F32">
+      <offset>104</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype27" type="F32">
+      <offset>104</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype27</redundant_name>
+    </column>
+    <column name="Fdamagetype28" type="F32">
+      <offset>108</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype28" type="F32">
+      <offset>108</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype28</redundant_name>
+    </column>
+    <column name="Fdamagetype29" type="F32">
+      <offset>112</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype29" type="F32">
+      <offset>112</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype29</redundant_name>
+    </column>
+    <column name="Fdamagetype30" type="F32">
+      <offset>116</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Damagetype30" type="F32">
+      <offset>116</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdamagetype30</redundant_name>
+    </column>
+    <column name="Fhitpointsmax" type="F32">
+      <offset>120</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Hitpointsmax" type="F32">
+      <offset>120</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Fhitpointsmax</redundant_name>
+    </column>
+    <column name="Fhitpoints" type="F32">
+      <offset>124</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Hitpoints" type="F32">
+      <offset>124</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Fhitpoints</redundant_name>
+    </column>
+    <column name="Fpowermax" type="F32">
+      <offset>128</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="PowerMax" type="F32">
+      <offset>128</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Fpowermax</redundant_name>
+    </column>
+    <column name="Fpower" type="F32">
+      <offset>132</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Power" type="F32">
+      <offset>132</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Fpower</redundant_name>
+    </column>
+    <column name="Fairmax" type="F32">
+      <offset>136</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Airmax" type="F32">
+      <offset>136</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Fairmax</redundant_name>
+    </column>
+    <column name="Fair" type="F32">
+      <offset>140</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Air" type="F32">
+      <offset>140</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Fair</redundant_name>
+    </column>
+    <column name="Ftopple" type="F32">
+      <offset>144</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Topple" type="F32">
+      <offset>144</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Ftopple</redundant_name>
+    </column>
+    <column name="Fstatdamage" type="F32">
+      <offset>148</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Statdamage" type="F32">
+      <offset>148</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fstatdamage</redundant_name>
+    </column>
+    <column name="Fstathealth" type="F32">
+      <offset>152</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Stathealth" type="F32">
+      <offset>152</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fstathealth</redundant_name>
+    </column>
+    <column name="Fstatpower" type="F32">
+      <offset>156</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Statpower" type="F32">
+      <offset>156</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fstatpower</redundant_name>
+    </column>
+    <column name="Fstatstrength" type="F32">
+      <offset>160</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Statstrength" type="F32">
+      <offset>160</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fstatstrength</redundant_name>
+    </column>
+    <column name="Fstatagility" type="F32">
+      <offset>164</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Statagility" type="F32">
+      <offset>164</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fstatagility</redundant_name>
+    </column>
+    <column name="Fstatintelligence" type="F32">
+      <offset>168</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Statintelligence" type="F32">
+      <offset>168</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fstatintelligence</redundant_name>
+    </column>
+    <column name="Fstatego" type="F32">
+      <offset>172</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Statego" type="F32">
+      <offset>172</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fstatego</redundant_name>
+    </column>
+    <column name="Fstatpresence" type="F32">
+      <offset>176</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Statpresence" type="F32">
+      <offset>176</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fstatpresence</redundant_name>
+    </column>
+    <column name="Fstatrecovery" type="F32">
+      <offset>180</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Statrecovery" type="F32">
+      <offset>180</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fstatrecovery</redundant_name>
+    </column>
+    <column name="Fregeneration" type="F32">
+      <offset>184</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Regeneration" type="F32">
+      <offset>184</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fregeneration</redundant_name>
+    </column>
+    <column name="Fpowerdecay" type="F32">
+      <offset>188</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Powerdecay" type="F32">
+      <offset>188</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fpowerdecay</redundant_name>
+    </column>
+    <column name="Fpowerrecovery" type="F32">
+      <offset>192</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Powerrecovery" type="F32">
+      <offset>192</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fpowerrecovery</redundant_name>
+    </column>
+    <column name="Fpowerequilibrium" type="F32">
+      <offset>196</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Powerequilibrium" type="F32">
+      <offset>196</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fpowerequilibrium</redundant_name>
+    </column>
+    <column name="Fairrecovery" type="F32">
+      <offset>200</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Airrecovery" type="F32">
+      <offset>200</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fairrecovery</redundant_name>
+    </column>
+    <column name="Fdodge" type="F32">
+      <offset>204</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Dodge" type="F32">
+      <offset>204</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdodge</redundant_name>
+    </column>
+    <column name="Favoidance" type="F32">
+      <offset>208</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Avoidance" type="F32">
+      <offset>208</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Favoidance</redundant_name>
+    </column>
+    <column name="Faccuracy" type="F32">
+      <offset>212</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Accuracy" type="F32">
+      <offset>212</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Faccuracy</redundant_name>
+    </column>
+    <column name="Fcritchance" type="F32">
+      <offset>216</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Critchance" type="F32">
+      <offset>216</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fcritchance</redundant_name>
+    </column>
+    <column name="Fcritseverity" type="F32">
+      <offset>220</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Critseverity" type="F32">
+      <offset>220</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fcritseverity</redundant_name>
+    </column>
+    <column name="Fcritresist" type="F32">
+      <offset>224</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Critresist" type="F32">
+      <offset>224</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fcritresist</redundant_name>
+    </column>
+    <column name="Ftoppleseverity" type="F32">
+      <offset>228</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Toppleseverity" type="F32">
+      <offset>228</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Ftoppleseverity</redundant_name>
+    </column>
+    <column name="Fflight" type="F32">
+      <offset>232</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Flight" type="F32">
+      <offset>232</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fflight</redundant_name>
+    </column>
+    <column name="Fswinging" type="F32">
+      <offset>236</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Swinging" type="F32">
+      <offset>236</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fswinging</redundant_name>
+    </column>
+    <column name="Fnocollision" type="F32">
+      <offset>240</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Nocollision" type="F32">
+      <offset>240</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fnocollision</redundant_name>
+    </column>
+    <column name="Fspeedrunning" type="F32">
+      <offset>244</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Speedrunning" type="F32">
+      <offset>244</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fspeedrunning</redundant_name>
+    </column>
+    <column name="Fspeedwalking" type="F32">
+      <offset>248</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Speedwalking" type="F32">
+      <offset>248</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fspeedwalking</redundant_name>
+    </column>
+    <column name="Fspeedflying" type="F32">
+      <offset>252</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Speedflying" type="F32">
+      <offset>252</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fspeedflying</redundant_name>
+    </column>
+    <column name="Fflightglidedecent" type="F32">
+      <offset>256</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Flightglidedecent" type="F32">
+      <offset>256</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fflightglidedecent</redundant_name>
+    </column>
+    <column name="Fspeedjumping" type="F32">
+      <offset>260</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Speedjumping" type="F32">
+      <offset>260</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fspeedjumping</redundant_name>
+    </column>
+    <column name="Fheightjumping" type="F32">
+      <offset>264</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Heightjumping" type="F32">
+      <offset>264</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fheightjumping</redundant_name>
+    </column>
+    <column name="Ffrictionrunning" type="F32">
+      <offset>268</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Frictionrunning" type="F32">
+      <offset>268</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Ffrictionrunning</redundant_name>
+    </column>
+    <column name="Ffrictionflying" type="F32">
+      <offset>272</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Frictionflying" type="F32">
+      <offset>272</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Ffrictionflying</redundant_name>
+    </column>
+    <column name="Ftractionrunning" type="F32">
+      <offset>276</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Tractionrunning" type="F32">
+      <offset>276</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Ftractionrunning</redundant_name>
+    </column>
+    <column name="Ftractionflying" type="F32">
+      <offset>280</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Tractionflying" type="F32">
+      <offset>280</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Ftractionflying</redundant_name>
+    </column>
+    <column name="Ftractionjumping" type="F32">
+      <offset>284</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Tractionjumping" type="F32">
+      <offset>284</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Ftractionjumping</redundant_name>
+    </column>
+    <column name="Fgravity" type="F32">
+      <offset>288</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Gravity" type="F32">
+      <offset>288</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fgravity</redundant_name>
+    </column>
+    <column name="Fgravityjumpingup" type="F32">
+      <offset>292</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Gravityjumpingup" type="F32">
+      <offset>292</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fgravityjumpingup</redundant_name>
+    </column>
+    <column name="Fgravityjumpingdown" type="F32">
+      <offset>296</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Gravityjumpingdown" type="F32">
+      <offset>296</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fgravityjumpingdown</redundant_name>
+    </column>
+    <column name="Fturnraterunning" type="F32">
+      <offset>300</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Turnraterunning" type="F32">
+      <offset>300</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fturnraterunning</redundant_name>
+    </column>
+    <column name="Fturnrateflying" type="F32">
+      <offset>304</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Turnrateflying" type="F32">
+      <offset>304</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fturnrateflying</redundant_name>
+    </column>
+    <column name="Fbankrateflying" type="F32">
+      <offset>308</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Bankrateflying" type="F32">
+      <offset>308</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fbankrateflying</redundant_name>
+    </column>
+    <column name="Fbankmaxangleflying" type="F32">
+      <offset>312</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Bankmaxangleflying" type="F32">
+      <offset>312</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fbankmaxangleflying</redundant_name>
+    </column>
+    <column name="Fthrottle" type="F32">
+      <offset>316</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Throttle" type="F32">
+      <offset>316</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fthrottle</redundant_name>
+    </column>
+    <column name="Fairfrictionxz" type="F32">
+      <offset>320</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Airfrictionxz" type="F32">
+      <offset>320</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fairfrictionxz</redundant_name>
+    </column>
+    <column name="Fflighttacticalmovement" type="F32">
+      <offset>324</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Flighttacticalmovement" type="F32">
+      <offset>324</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fflighttacticalmovement</redundant_name>
+    </column>
+    <column name="Faggrostealth" type="F32">
+      <offset>328</offset>
+    </column>
+    <column name="Aggrostealth" type="F32">
+      <offset>328</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Faggrostealth</redundant_name>
+    </column>
+    <column name="Faggrostealth" type="F32">
+      <offset>328</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Faggrostealth</redundant_name>
+    </column>
+    <column name="Fperceptionstealth" type="F32">
+      <offset>332</offset>
+    </column>
+    <column name="Perceptionstealth" type="F32">
+      <offset>332</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Fperceptionstealth</redundant_name>
+    </column>
+    <column name="Fperceptionstealth" type="F32">
+      <offset>332</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Fperceptionstealth</redundant_name>
+    </column>
+    <column name="Fperceptionstealthcritter" type="F32">
+      <offset>336</offset>
+    </column>
+    <column name="Perceptionstealthcritter" type="F32">
+      <offset>336</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Fperceptionstealthcritter</redundant_name>
+    </column>
+    <column name="Fperceptionstealthcritter" type="F32">
+      <offset>336</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Fperceptionstealthcritter</redundant_name>
+    </column>
+    <column name="Fstealthsight" type="F32">
+      <offset>340</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Stealthsight" type="F32">
+      <offset>340</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fstealthsight</redundant_name>
+    </column>
+    <column name="Faggro" type="F32">
+      <offset>344</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Aggro" type="F32">
+      <offset>344</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Faggro</redundant_name>
+    </column>
+    <column name="Fperception" type="F32">
+      <offset>348</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Perception" type="F32">
+      <offset>348</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fperception</redundant_name>
+    </column>
+    <column name="Fminimap" type="F32">
+      <offset>352</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Minimap" type="F32">
+      <offset>352</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fminimap</redundant_name>
+    </column>
+    <column name="Fradardetectionstrength" type="F32">
+      <offset>356</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Radardetectionstrength" type="F32">
+      <offset>356</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fradardetectionstrength</redundant_name>
+    </column>
+    <column name="Fradarvisibility" type="F32">
+      <offset>360</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Radarvisibility" type="F32">
+      <offset>360</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fradarvisibility</redundant_name>
+    </column>
+    <column name="Froot" type="F32">
+      <offset>364</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Root" type="F32">
+      <offset>364</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Froot</redundant_name>
+    </column>
+    <column name="Fhold" type="F32">
+      <offset>368</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Hold" type="F32">
+      <offset>368</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fhold</redundant_name>
+    </column>
+    <column name="Fconfuse" type="F32">
+      <offset>372</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Confuse" type="F32">
+      <offset>372</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fconfuse</redundant_name>
+    </column>
+    <column name="Fdisable" type="F32">
+      <offset>376</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Disable" type="F32">
+      <offset>376</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdisable</redundant_name>
+    </column>
+    <column name="Fpowersdisabledbycontent" type="F32">
+      <offset>380</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Powersdisabledbycontent" type="F32">
+      <offset>380</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fpowersdisabledbycontent</redundant_name>
+    </column>
+    <column name="Fknockup" type="F32">
+      <offset>384</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Knockup" type="F32">
+      <offset>384</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fknockup</redundant_name>
+    </column>
+    <column name="Fknockback" type="F32">
+      <offset>388</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Knockback" type="F32">
+      <offset>388</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fknockback</redundant_name>
+    </column>
+    <column name="Frepel" type="F32">
+      <offset>392</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Repel" type="F32">
+      <offset>392</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Frepel</redundant_name>
+    </column>
+    <column name="Fradius" type="F32">
+      <offset>396</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Radius" type="F32">
+      <offset>396</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fradius</redundant_name>
+    </column>
+    <column name="Farc" type="F32">
+      <offset>400</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Arc" type="F32">
+      <offset>400</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Farc</redundant_name>
+    </column>
+    <column name="Fspeedactivate" type="F32">
+      <offset>404</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Speedactivate" type="F32">
+      <offset>404</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fspeedactivate</redundant_name>
+    </column>
+    <column name="Fspeedrecharge" type="F32">
+      <offset>408</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Speedrecharge" type="F32">
+      <offset>408</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fspeedrecharge</redundant_name>
+    </column>
+    <column name="Fspeedcharge" type="F32">
+      <offset>412</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Speedcharge" type="F32">
+      <offset>412</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fspeedcharge</redundant_name>
+    </column>
+    <column name="Fspeedperiod" type="F32">
+      <offset>416</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Speedperiod" type="F32">
+      <offset>416</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fspeedperiod</redundant_name>
+    </column>
+    <column name="Fspeedcooldown" type="F32">
+      <offset>420</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Speedcooldown" type="F32">
+      <offset>420</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fspeedcooldown</redundant_name>
+    </column>
+    <column name="Fspeedreload" type="F32">
+      <offset>424</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Speedreload" type="F32">
+      <offset>424</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fspeedreload</redundant_name>
+    </column>
+    <column name="Fammocapacity" type="F32">
+      <offset>428</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Ammocapacity" type="F32">
+      <offset>428</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fammocapacity</redundant_name>
+    </column>
+    <column name="Flimitedammocapacity" type="F32">
+      <offset>432</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Limitedammocapacity" type="F32">
+      <offset>432</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Flimitedammocapacity</redundant_name>
+    </column>
+    <column name="Flimitedammorefillrate" type="F32">
+      <offset>436</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Limitedammorefillrate" type="F32">
+      <offset>436</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Flimitedammorefillrate</redundant_name>
+    </column>
+    <column name="Fdiscountcost" type="F32">
+      <offset>440</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Discountcost" type="F32">
+      <offset>440</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdiscountcost</redundant_name>
+    </column>
+    <column name="Fsubtargetaccuracy" type="F32">
+      <offset>444</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Subtargetaccuracy" type="F32">
+      <offset>444</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fsubtargetaccuracy</redundant_name>
+    </column>
+    <column name="Fonlyaffectself" type="F32">
+      <offset>448</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Onlyaffectself" type="F32">
+      <offset>448</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fonlyaffectself</redundant_name>
+    </column>
+    <column name="Faithreatscale" type="F32">
+      <offset>452</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Aithreatscale" type="F32">
+      <offset>452</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Faithreatscale</redundant_name>
+    </column>
+    <column name="Faidamagescalar" type="F32">
+      <offset>452</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Faithreatscale</redundant_name>
+    </column>
+    <column name="Aidamagescalar" type="F32">
+      <offset>452</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Faithreatscale</redundant_name>
+    </column>
+    <column name="Fdatadefined01" type="F32">
+      <offset>456</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined01" type="F32">
+      <offset>456</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined01</redundant_name>
+    </column>
+    <column name="Fdatadefined02" type="F32">
+      <offset>460</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined02" type="F32">
+      <offset>460</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined02</redundant_name>
+    </column>
+    <column name="Fdatadefined03" type="F32">
+      <offset>464</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined03" type="F32">
+      <offset>464</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined03</redundant_name>
+    </column>
+    <column name="Fdatadefined04" type="F32">
+      <offset>468</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined04" type="F32">
+      <offset>468</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined04</redundant_name>
+    </column>
+    <column name="Fdatadefined05" type="F32">
+      <offset>472</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined05" type="F32">
+      <offset>472</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined05</redundant_name>
+    </column>
+    <column name="Fdatadefined06" type="F32">
+      <offset>476</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined06" type="F32">
+      <offset>476</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined06</redundant_name>
+    </column>
+    <column name="Fdatadefined07" type="F32">
+      <offset>480</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined07" type="F32">
+      <offset>480</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined07</redundant_name>
+    </column>
+    <column name="Fdatadefined08" type="F32">
+      <offset>484</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined08" type="F32">
+      <offset>484</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined08</redundant_name>
+    </column>
+    <column name="Fdatadefined09" type="F32">
+      <offset>488</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined09" type="F32">
+      <offset>488</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined09</redundant_name>
+    </column>
+    <column name="Fdatadefined10" type="F32">
+      <offset>492</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined10" type="F32">
+      <offset>492</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined10</redundant_name>
+    </column>
+    <column name="Fdatadefined11" type="F32">
+      <offset>496</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined11" type="F32">
+      <offset>496</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined11</redundant_name>
+    </column>
+    <column name="Fdatadefined12" type="F32">
+      <offset>500</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined12" type="F32">
+      <offset>500</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined12</redundant_name>
+    </column>
+    <column name="Fdatadefined13" type="F32">
+      <offset>504</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined13" type="F32">
+      <offset>504</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined13</redundant_name>
+    </column>
+    <column name="Fdatadefined14" type="F32">
+      <offset>508</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined14" type="F32">
+      <offset>508</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined14</redundant_name>
+    </column>
+    <column name="Fdatadefined15" type="F32">
+      <offset>512</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined15" type="F32">
+      <offset>512</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined15</redundant_name>
+    </column>
+    <column name="Fdatadefined16" type="F32">
+      <offset>516</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined16" type="F32">
+      <offset>516</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined16</redundant_name>
+    </column>
+    <column name="Fdatadefined17" type="F32">
+      <offset>520</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined17" type="F32">
+      <offset>520</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined17</redundant_name>
+    </column>
+    <column name="Fdatadefined18" type="F32">
+      <offset>524</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined18" type="F32">
+      <offset>524</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined18</redundant_name>
+    </column>
+    <column name="Fdatadefined19" type="F32">
+      <offset>528</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined19" type="F32">
+      <offset>528</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined19</redundant_name>
+    </column>
+    <column name="Fdatadefined20" type="F32">
+      <offset>532</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined20" type="F32">
+      <offset>532</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined20</redundant_name>
+    </column>
+    <column name="Fdatadefined21" type="F32">
+      <offset>536</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined21" type="F32">
+      <offset>536</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined21</redundant_name>
+    </column>
+    <column name="Fdatadefined22" type="F32">
+      <offset>540</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined22" type="F32">
+      <offset>540</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined22</redundant_name>
+    </column>
+    <column name="Fdatadefined23" type="F32">
+      <offset>544</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined23" type="F32">
+      <offset>544</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined23</redundant_name>
+    </column>
+    <column name="Fdatadefined24" type="F32">
+      <offset>548</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined24" type="F32">
+      <offset>548</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined24</redundant_name>
+    </column>
+    <column name="Fdatadefined25" type="F32">
+      <offset>552</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined25" type="F32">
+      <offset>552</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined25</redundant_name>
+    </column>
+    <column name="Fdatadefined26" type="F32">
+      <offset>556</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined26" type="F32">
+      <offset>556</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined26</redundant_name>
+    </column>
+    <column name="Fdatadefined27" type="F32">
+      <offset>560</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined27" type="F32">
+      <offset>560</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined27</redundant_name>
+    </column>
+    <column name="Fdatadefined28" type="F32">
+      <offset>564</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined28" type="F32">
+      <offset>564</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined28</redundant_name>
+    </column>
+    <column name="Fdatadefined29" type="F32">
+      <offset>568</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined29" type="F32">
+      <offset>568</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined29</redundant_name>
+    </column>
+    <column name="Fdatadefined30" type="F32">
+      <offset>572</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined30" type="F32">
+      <offset>572</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined30</redundant_name>
+    </column>
+    <column name="Fdatadefined31" type="F32">
+      <offset>576</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined31" type="F32">
+      <offset>576</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined31</redundant_name>
+    </column>
+    <column name="Fdatadefined32" type="F32">
+      <offset>580</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined32" type="F32">
+      <offset>580</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined32</redundant_name>
+    </column>
+    <column name="Fdatadefined33" type="F32">
+      <offset>584</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined33" type="F32">
+      <offset>584</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined33</redundant_name>
+    </column>
+    <column name="Fdatadefined34" type="F32">
+      <offset>588</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined34" type="F32">
+      <offset>588</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined34</redundant_name>
+    </column>
+    <column name="Fdatadefined35" type="F32">
+      <offset>592</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined35" type="F32">
+      <offset>592</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined35</redundant_name>
+    </column>
+    <column name="Fdatadefined36" type="F32">
+      <offset>596</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined36" type="F32">
+      <offset>596</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined36</redundant_name>
+    </column>
+    <column name="Fdatadefined37" type="F32">
+      <offset>600</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined37" type="F32">
+      <offset>600</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined37</redundant_name>
+    </column>
+    <column name="Fdatadefined38" type="F32">
+      <offset>604</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined38" type="F32">
+      <offset>604</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined38</redundant_name>
+    </column>
+    <column name="Fdatadefined39" type="F32">
+      <offset>608</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined39" type="F32">
+      <offset>608</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined39</redundant_name>
+    </column>
+    <column name="Fdatadefined40" type="F32">
+      <offset>612</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined40" type="F32">
+      <offset>612</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined40</redundant_name>
+    </column>
+    <column name="Fdatadefined41" type="F32">
+      <offset>616</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined41" type="F32">
+      <offset>616</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined41</redundant_name>
+    </column>
+    <column name="Fdatadefined42" type="F32">
+      <offset>620</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined42" type="F32">
+      <offset>620</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined42</redundant_name>
+    </column>
+    <column name="Fdatadefined43" type="F32">
+      <offset>624</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined43" type="F32">
+      <offset>624</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined43</redundant_name>
+    </column>
+    <column name="Fdatadefined44" type="F32">
+      <offset>628</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined44" type="F32">
+      <offset>628</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined44</redundant_name>
+    </column>
+    <column name="Fdatadefined45" type="F32">
+      <offset>632</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined45" type="F32">
+      <offset>632</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined45</redundant_name>
+    </column>
+    <column name="Fdatadefined46" type="F32">
+      <offset>636</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined46" type="F32">
+      <offset>636</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined46</redundant_name>
+    </column>
+    <column name="Fdatadefined47" type="F32">
+      <offset>640</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined47" type="F32">
+      <offset>640</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined47</redundant_name>
+    </column>
+    <column name="Fdatadefined48" type="F32">
+      <offset>644</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined48" type="F32">
+      <offset>644</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined48</redundant_name>
+    </column>
+    <column name="Fdatadefined49" type="F32">
+      <offset>648</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined49" type="F32">
+      <offset>648</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined49</redundant_name>
+    </column>
+    <column name="Fdatadefined50" type="F32">
+      <offset>652</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined50" type="F32">
+      <offset>652</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined50</redundant_name>
+    </column>
+    <column name="Fdatadefined51" type="F32">
+      <offset>656</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined51" type="F32">
+      <offset>656</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined51</redundant_name>
+    </column>
+    <column name="Fdatadefined52" type="F32">
+      <offset>660</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined52" type="F32">
+      <offset>660</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined52</redundant_name>
+    </column>
+    <column name="Fdatadefined53" type="F32">
+      <offset>664</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined53" type="F32">
+      <offset>664</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined53</redundant_name>
+    </column>
+    <column name="Fdatadefined54" type="F32">
+      <offset>668</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined54" type="F32">
+      <offset>668</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined54</redundant_name>
+    </column>
+    <column name="Fdatadefined55" type="F32">
+      <offset>672</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined55" type="F32">
+      <offset>672</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined55</redundant_name>
+    </column>
+    <column name="Fdatadefined56" type="F32">
+      <offset>676</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined56" type="F32">
+      <offset>676</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined56</redundant_name>
+    </column>
+    <column name="Fdatadefined57" type="F32">
+      <offset>680</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined57" type="F32">
+      <offset>680</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined57</redundant_name>
+    </column>
+    <column name="Fdatadefined58" type="F32">
+      <offset>684</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined58" type="F32">
+      <offset>684</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined58</redundant_name>
+    </column>
+    <column name="Fdatadefined59" type="F32">
+      <offset>688</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined59" type="F32">
+      <offset>688</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined59</redundant_name>
+    </column>
+    <column name="Fdatadefined60" type="F32">
+      <offset>692</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined60" type="F32">
+      <offset>692</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined60</redundant_name>
+    </column>
+    <column name="Fdatadefined61" type="F32">
+      <offset>696</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined61" type="F32">
+      <offset>696</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined61</redundant_name>
+    </column>
+    <column name="Fdatadefined62" type="F32">
+      <offset>700</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined62" type="F32">
+      <offset>700</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined62</redundant_name>
+    </column>
+    <column name="Fdatadefined63" type="F32">
+      <offset>704</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined63" type="F32">
+      <offset>704</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined63</redundant_name>
+    </column>
+    <column name="Fdatadefined64" type="F32">
+      <offset>708</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined64" type="F32">
+      <offset>708</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined64</redundant_name>
+    </column>
+    <column name="Fdatadefined65" type="F32">
+      <offset>712</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined65" type="F32">
+      <offset>712</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined65</redundant_name>
+    </column>
+    <column name="Fdatadefined66" type="F32">
+      <offset>716</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined66" type="F32">
+      <offset>716</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined66</redundant_name>
+    </column>
+    <column name="Fdatadefined67" type="F32">
+      <offset>720</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined67" type="F32">
+      <offset>720</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined67</redundant_name>
+    </column>
+    <column name="Fdatadefined68" type="F32">
+      <offset>724</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined68" type="F32">
+      <offset>724</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined68</redundant_name>
+    </column>
+    <column name="Fdatadefined69" type="F32">
+      <offset>728</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined69" type="F32">
+      <offset>728</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined69</redundant_name>
+    </column>
+    <column name="Fdatadefined70" type="F32">
+      <offset>732</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined70" type="F32">
+      <offset>732</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined70</redundant_name>
+    </column>
+    <column name="Fdatadefined71" type="F32">
+      <offset>736</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined71" type="F32">
+      <offset>736</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined71</redundant_name>
+    </column>
+    <column name="Fdatadefined72" type="F32">
+      <offset>740</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined72" type="F32">
+      <offset>740</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined72</redundant_name>
+    </column>
+    <column name="Fdatadefined73" type="F32">
+      <offset>744</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined73" type="F32">
+      <offset>744</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined73</redundant_name>
+    </column>
+    <column name="Fdatadefined74" type="F32">
+      <offset>748</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined74" type="F32">
+      <offset>748</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined74</redundant_name>
+    </column>
+    <column name="Fdatadefined75" type="F32">
+      <offset>752</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined75" type="F32">
+      <offset>752</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined75</redundant_name>
+    </column>
+    <column name="Fdatadefined76" type="F32">
+      <offset>756</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined76" type="F32">
+      <offset>756</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined76</redundant_name>
+    </column>
+    <column name="Fdatadefined77" type="F32">
+      <offset>760</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined77" type="F32">
+      <offset>760</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined77</redundant_name>
+    </column>
+    <column name="Fdatadefined78" type="F32">
+      <offset>764</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined78" type="F32">
+      <offset>764</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined78</redundant_name>
+    </column>
+    <column name="Fdatadefined79" type="F32">
+      <offset>768</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined79" type="F32">
+      <offset>768</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined79</redundant_name>
+    </column>
+    <column name="Fdatadefined80" type="F32">
+      <offset>772</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined80" type="F32">
+      <offset>772</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined80</redundant_name>
+    </column>
+    <column name="Fdatadefined81" type="F32">
+      <offset>776</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined81" type="F32">
+      <offset>776</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined81</redundant_name>
+    </column>
+    <column name="Fdatadefined82" type="F32">
+      <offset>780</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined82" type="F32">
+      <offset>780</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined82</redundant_name>
+    </column>
+    <column name="Fdatadefined83" type="F32">
+      <offset>784</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined83" type="F32">
+      <offset>784</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined83</redundant_name>
+    </column>
+    <column name="Fdatadefined84" type="F32">
+      <offset>788</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined84" type="F32">
+      <offset>788</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined84</redundant_name>
+    </column>
+    <column name="Fdatadefined85" type="F32">
+      <offset>792</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined85" type="F32">
+      <offset>792</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined85</redundant_name>
+    </column>
+    <column name="Fdatadefined86" type="F32">
+      <offset>796</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined86" type="F32">
+      <offset>796</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined86</redundant_name>
+    </column>
+    <column name="Fdatadefined87" type="F32">
+      <offset>800</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined87" type="F32">
+      <offset>800</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined87</redundant_name>
+    </column>
+    <column name="Fdatadefined88" type="F32">
+      <offset>804</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined88" type="F32">
+      <offset>804</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined88</redundant_name>
+    </column>
+    <column name="Fdatadefined89" type="F32">
+      <offset>808</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined89" type="F32">
+      <offset>808</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined89</redundant_name>
+    </column>
+    <column name="Fdatadefined90" type="F32">
+      <offset>812</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined90" type="F32">
+      <offset>812</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined90</redundant_name>
+    </column>
+    <column name="Fdatadefined91" type="F32">
+      <offset>816</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined91" type="F32">
+      <offset>816</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined91</redundant_name>
+    </column>
+    <column name="Fdatadefined92" type="F32">
+      <offset>820</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined92" type="F32">
+      <offset>820</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined92</redundant_name>
+    </column>
+    <column name="Fdatadefined93" type="F32">
+      <offset>824</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined93" type="F32">
+      <offset>824</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined93</redundant_name>
+    </column>
+    <column name="Fdatadefined94" type="F32">
+      <offset>828</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined94" type="F32">
+      <offset>828</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined94</redundant_name>
+    </column>
+    <column name="Fdatadefined95" type="F32">
+      <offset>832</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined95" type="F32">
+      <offset>832</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined95</redundant_name>
+    </column>
+    <column name="Fdatadefined96" type="F32">
+      <offset>836</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined96" type="F32">
+      <offset>836</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined96</redundant_name>
+    </column>
+    <column name="Fdatadefined97" type="F32">
+      <offset>840</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined97" type="F32">
+      <offset>840</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined97</redundant_name>
+    </column>
+    <column name="Fdatadefined98" type="F32">
+      <offset>844</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined98" type="F32">
+      <offset>844</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined98</redundant_name>
+    </column>
+    <column name="Fdatadefined99" type="F32">
+      <offset>848</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined99" type="F32">
+      <offset>848</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined99</redundant_name>
+    </column>
+    <column name="Fdatadefined100" type="F32">
+      <offset>852</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined100" type="F32">
+      <offset>852</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined100</redundant_name>
+    </column>
+    <column name="Fdatadefined101" type="F32">
+      <offset>856</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined101" type="F32">
+      <offset>856</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined101</redundant_name>
+    </column>
+    <column name="Fdatadefined102" type="F32">
+      <offset>860</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined102" type="F32">
+      <offset>860</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined102</redundant_name>
+    </column>
+    <column name="Fdatadefined103" type="F32">
+      <offset>864</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined103" type="F32">
+      <offset>864</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined103</redundant_name>
+    </column>
+    <column name="Fdatadefined104" type="F32">
+      <offset>868</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined104" type="F32">
+      <offset>868</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined104</redundant_name>
+    </column>
+    <column name="Fdatadefined105" type="F32">
+      <offset>872</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined105" type="F32">
+      <offset>872</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined105</redundant_name>
+    </column>
+    <column name="Fdatadefined106" type="F32">
+      <offset>876</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined106" type="F32">
+      <offset>876</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined106</redundant_name>
+    </column>
+    <column name="Fdatadefined107" type="F32">
+      <offset>880</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined107" type="F32">
+      <offset>880</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined107</redundant_name>
+    </column>
+    <column name="Fdatadefined108" type="F32">
+      <offset>884</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined108" type="F32">
+      <offset>884</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined108</redundant_name>
+    </column>
+    <column name="Fdatadefined109" type="F32">
+      <offset>888</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined109" type="F32">
+      <offset>888</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined109</redundant_name>
+    </column>
+    <column name="Fdatadefined110" type="F32">
+      <offset>892</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined110" type="F32">
+      <offset>892</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined110</redundant_name>
+    </column>
+    <column name="Fdatadefined111" type="F32">
+      <offset>896</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined111" type="F32">
+      <offset>896</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined111</redundant_name>
+    </column>
+    <column name="Fdatadefined112" type="F32">
+      <offset>900</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined112" type="F32">
+      <offset>900</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined112</redundant_name>
+    </column>
+    <column name="Fdatadefined113" type="F32">
+      <offset>904</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined113" type="F32">
+      <offset>904</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined113</redundant_name>
+    </column>
+    <column name="Fdatadefined114" type="F32">
+      <offset>908</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined114" type="F32">
+      <offset>908</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined114</redundant_name>
+    </column>
+    <column name="Fdatadefined115" type="F32">
+      <offset>912</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined115" type="F32">
+      <offset>912</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined115</redundant_name>
+    </column>
+    <column name="Fdatadefined116" type="F32">
+      <offset>916</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined116" type="F32">
+      <offset>916</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined116</redundant_name>
+    </column>
+    <column name="Fdatadefined117" type="F32">
+      <offset>920</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined117" type="F32">
+      <offset>920</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined117</redundant_name>
+    </column>
+    <column name="Fdatadefined118" type="F32">
+      <offset>924</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined118" type="F32">
+      <offset>924</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined118</redundant_name>
+    </column>
+    <column name="Fdatadefined119" type="F32">
+      <offset>928</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined119" type="F32">
+      <offset>928</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined119</redundant_name>
+    </column>
+    <column name="Fdatadefined120" type="F32">
+      <offset>932</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined120" type="F32">
+      <offset>932</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined120</redundant_name>
+    </column>
+    <column name="Fdatadefined121" type="F32">
+      <offset>936</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined121" type="F32">
+      <offset>936</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined121</redundant_name>
+    </column>
+    <column name="Fdatadefined122" type="F32">
+      <offset>940</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined122" type="F32">
+      <offset>940</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined122</redundant_name>
+    </column>
+    <column name="Fdatadefined123" type="F32">
+      <offset>944</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined123" type="F32">
+      <offset>944</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined123</redundant_name>
+    </column>
+    <column name="Fdatadefined124" type="F32">
+      <offset>948</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined124" type="F32">
+      <offset>948</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined124</redundant_name>
+    </column>
+    <column name="Fdatadefined125" type="F32">
+      <offset>952</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined125" type="F32">
+      <offset>952</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined125</redundant_name>
+    </column>
+    <column name="Fdatadefined126" type="F32">
+      <offset>956</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined126" type="F32">
+      <offset>956</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined126</redundant_name>
+    </column>
+    <column name="Fdatadefined127" type="F32">
+      <offset>960</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined127" type="F32">
+      <offset>960</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined127</redundant_name>
+    </column>
+    <column name="Fdatadefined128" type="F32">
+      <offset>964</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined128" type="F32">
+      <offset>964</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined128</redundant_name>
+    </column>
+    <column name="Fdatadefined129" type="F32">
+      <offset>968</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined129" type="F32">
+      <offset>968</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined129</redundant_name>
+    </column>
+    <column name="Fdatadefined130" type="F32">
+      <offset>972</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined130" type="F32">
+      <offset>972</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined130</redundant_name>
+    </column>
+    <column name="Fdatadefined131" type="F32">
+      <offset>976</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined131" type="F32">
+      <offset>976</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined131</redundant_name>
+    </column>
+    <column name="Fdatadefined132" type="F32">
+      <offset>980</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined132" type="F32">
+      <offset>980</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined132</redundant_name>
+    </column>
+    <column name="Fdatadefined133" type="F32">
+      <offset>984</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined133" type="F32">
+      <offset>984</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined133</redundant_name>
+    </column>
+    <column name="Fdatadefined134" type="F32">
+      <offset>988</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined134" type="F32">
+      <offset>988</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined134</redundant_name>
+    </column>
+    <column name="Fdatadefined135" type="F32">
+      <offset>992</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined135" type="F32">
+      <offset>992</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined135</redundant_name>
+    </column>
+    <column name="Fdatadefined136" type="F32">
+      <offset>996</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined136" type="F32">
+      <offset>996</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined136</redundant_name>
+    </column>
+    <column name="Fdatadefined137" type="F32">
+      <offset>1000</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined137" type="F32">
+      <offset>1000</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined137</redundant_name>
+    </column>
+    <column name="Fdatadefined138" type="F32">
+      <offset>1004</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined138" type="F32">
+      <offset>1004</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined138</redundant_name>
+    </column>
+    <column name="Fdatadefined139" type="F32">
+      <offset>1008</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined139" type="F32">
+      <offset>1008</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined139</redundant_name>
+    </column>
+    <column name="Fdatadefined140" type="F32">
+      <offset>1012</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined140" type="F32">
+      <offset>1012</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined140</redundant_name>
+    </column>
+    <column name="Fdatadefined141" type="F32">
+      <offset>1016</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined141" type="F32">
+      <offset>1016</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined141</redundant_name>
+    </column>
+    <column name="Fdatadefined142" type="F32">
+      <offset>1020</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined142" type="F32">
+      <offset>1020</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined142</redundant_name>
+    </column>
+    <column name="Fdatadefined143" type="F32">
+      <offset>1024</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined143" type="F32">
+      <offset>1024</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined143</redundant_name>
+    </column>
+    <column name="Fdatadefined144" type="F32">
+      <offset>1028</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined144" type="F32">
+      <offset>1028</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined144</redundant_name>
+    </column>
+    <column name="Fdatadefined145" type="F32">
+      <offset>1032</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined145" type="F32">
+      <offset>1032</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined145</redundant_name>
+    </column>
+    <column name="Fdatadefined146" type="F32">
+      <offset>1036</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined146" type="F32">
+      <offset>1036</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined146</redundant_name>
+    </column>
+    <column name="Fdatadefined147" type="F32">
+      <offset>1040</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined147" type="F32">
+      <offset>1040</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined147</redundant_name>
+    </column>
+    <column name="Fdatadefined148" type="F32">
+      <offset>1044</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined148" type="F32">
+      <offset>1044</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined148</redundant_name>
+    </column>
+    <column name="Fdatadefined149" type="F32">
+      <offset>1048</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined149" type="F32">
+      <offset>1048</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined149</redundant_name>
+    </column>
+    <column name="Fdatadefined150" type="F32">
+      <offset>1052</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined150" type="F32">
+      <offset>1052</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined150</redundant_name>
+    </column>
+    <column name="Fdatadefined151" type="F32">
+      <offset>1056</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined151" type="F32">
+      <offset>1056</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined151</redundant_name>
+    </column>
+    <column name="Fdatadefined152" type="F32">
+      <offset>1060</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined152" type="F32">
+      <offset>1060</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined152</redundant_name>
+    </column>
+    <column name="Fdatadefined153" type="F32">
+      <offset>1064</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined153" type="F32">
+      <offset>1064</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined153</redundant_name>
+    </column>
+    <column name="Fdatadefined154" type="F32">
+      <offset>1068</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined154" type="F32">
+      <offset>1068</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined154</redundant_name>
+    </column>
+    <column name="Fdatadefined155" type="F32">
+      <offset>1072</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined155" type="F32">
+      <offset>1072</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined155</redundant_name>
+    </column>
+    <column name="Fdatadefined156" type="F32">
+      <offset>1076</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined156" type="F32">
+      <offset>1076</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined156</redundant_name>
+    </column>
+    <column name="Fdatadefined157" type="F32">
+      <offset>1080</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined157" type="F32">
+      <offset>1080</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined157</redundant_name>
+    </column>
+    <column name="Fdatadefined158" type="F32">
+      <offset>1084</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined158" type="F32">
+      <offset>1084</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined158</redundant_name>
+    </column>
+    <column name="Fdatadefined159" type="F32">
+      <offset>1088</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined159" type="F32">
+      <offset>1088</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined159</redundant_name>
+    </column>
+    <column name="Fdatadefined160" type="F32">
+      <offset>1092</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined160" type="F32">
+      <offset>1092</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined160</redundant_name>
+    </column>
+    <column name="Fdatadefined161" type="F32">
+      <offset>1096</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined161" type="F32">
+      <offset>1096</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined161</redundant_name>
+    </column>
+    <column name="Fdatadefined162" type="F32">
+      <offset>1100</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined162" type="F32">
+      <offset>1100</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined162</redundant_name>
+    </column>
+    <column name="Fdatadefined163" type="F32">
+      <offset>1104</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined163" type="F32">
+      <offset>1104</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined163</redundant_name>
+    </column>
+    <column name="Fdatadefined164" type="F32">
+      <offset>1108</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined164" type="F32">
+      <offset>1108</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined164</redundant_name>
+    </column>
+    <column name="Fdatadefined165" type="F32">
+      <offset>1112</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined165" type="F32">
+      <offset>1112</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined165</redundant_name>
+    </column>
+    <column name="Fdatadefined166" type="F32">
+      <offset>1116</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined166" type="F32">
+      <offset>1116</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined166</redundant_name>
+    </column>
+    <column name="Fdatadefined167" type="F32">
+      <offset>1120</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined167" type="F32">
+      <offset>1120</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined167</redundant_name>
+    </column>
+    <column name="Fdatadefined168" type="F32">
+      <offset>1124</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined168" type="F32">
+      <offset>1124</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined168</redundant_name>
+    </column>
+    <column name="Fdatadefined169" type="F32">
+      <offset>1128</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined169" type="F32">
+      <offset>1128</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined169</redundant_name>
+    </column>
+    <column name="Fdatadefined170" type="F32">
+      <offset>1132</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined170" type="F32">
+      <offset>1132</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined170</redundant_name>
+    </column>
+    <column name="Fdatadefined171" type="F32">
+      <offset>1136</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined171" type="F32">
+      <offset>1136</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined171</redundant_name>
+    </column>
+    <column name="Fdatadefined172" type="F32">
+      <offset>1140</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined172" type="F32">
+      <offset>1140</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined172</redundant_name>
+    </column>
+    <column name="Fdatadefined173" type="F32">
+      <offset>1144</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined173" type="F32">
+      <offset>1144</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined173</redundant_name>
+    </column>
+    <column name="Fdatadefined174" type="F32">
+      <offset>1148</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined174" type="F32">
+      <offset>1148</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined174</redundant_name>
+    </column>
+    <column name="Fdatadefined175" type="F32">
+      <offset>1152</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined175" type="F32">
+      <offset>1152</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined175</redundant_name>
+    </column>
+    <column name="Fdatadefined176" type="F32">
+      <offset>1156</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined176" type="F32">
+      <offset>1156</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined176</redundant_name>
+    </column>
+    <column name="Fdatadefined177" type="F32">
+      <offset>1160</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined177" type="F32">
+      <offset>1160</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined177</redundant_name>
+    </column>
+    <column name="Fdatadefined178" type="F32">
+      <offset>1164</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined178" type="F32">
+      <offset>1164</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined178</redundant_name>
+    </column>
+    <column name="Fdatadefined179" type="F32">
+      <offset>1168</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined179" type="F32">
+      <offset>1168</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined179</redundant_name>
+    </column>
+    <column name="Fdatadefined180" type="F32">
+      <offset>1172</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined180" type="F32">
+      <offset>1172</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined180</redundant_name>
+    </column>
+    <column name="Fdatadefined181" type="F32">
+      <offset>1176</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined181" type="F32">
+      <offset>1176</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined181</redundant_name>
+    </column>
+    <column name="Fdatadefined182" type="F32">
+      <offset>1180</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined182" type="F32">
+      <offset>1180</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined182</redundant_name>
+    </column>
+    <column name="Fdatadefined183" type="F32">
+      <offset>1184</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined183" type="F32">
+      <offset>1184</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined183</redundant_name>
+    </column>
+    <column name="Fdatadefined184" type="F32">
+      <offset>1188</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined184" type="F32">
+      <offset>1188</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined184</redundant_name>
+    </column>
+    <column name="Fdatadefined185" type="F32">
+      <offset>1192</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined185" type="F32">
+      <offset>1192</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined185</redundant_name>
+    </column>
+    <column name="Fdatadefined186" type="F32">
+      <offset>1196</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined186" type="F32">
+      <offset>1196</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined186</redundant_name>
+    </column>
+    <column name="Fdatadefined187" type="F32">
+      <offset>1200</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined187" type="F32">
+      <offset>1200</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined187</redundant_name>
+    </column>
+    <column name="Fdatadefined188" type="F32">
+      <offset>1204</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined188" type="F32">
+      <offset>1204</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined188</redundant_name>
+    </column>
+    <column name="Fdatadefined189" type="F32">
+      <offset>1208</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined189" type="F32">
+      <offset>1208</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined189</redundant_name>
+    </column>
+    <column name="Fdatadefined190" type="F32">
+      <offset>1212</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined190" type="F32">
+      <offset>1212</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined190</redundant_name>
+    </column>
+    <column name="Fdatadefined191" type="F32">
+      <offset>1216</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined191" type="F32">
+      <offset>1216</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined191</redundant_name>
+    </column>
+    <column name="Fdatadefined192" type="F32">
+      <offset>1220</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined192" type="F32">
+      <offset>1220</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined192</redundant_name>
+    </column>
+    <column name="Fdatadefined193" type="F32">
+      <offset>1224</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined193" type="F32">
+      <offset>1224</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined193</redundant_name>
+    </column>
+    <column name="Fdatadefined194" type="F32">
+      <offset>1228</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined194" type="F32">
+      <offset>1228</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined194</redundant_name>
+    </column>
+    <column name="Fdatadefined195" type="F32">
+      <offset>1232</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined195" type="F32">
+      <offset>1232</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined195</redundant_name>
+    </column>
+    <column name="Fdatadefined196" type="F32">
+      <offset>1236</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined196" type="F32">
+      <offset>1236</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined196</redundant_name>
+    </column>
+    <column name="Fdatadefined197" type="F32">
+      <offset>1240</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined197" type="F32">
+      <offset>1240</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined197</redundant_name>
+    </column>
+    <column name="Fdatadefined198" type="F32">
+      <offset>1244</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined198" type="F32">
+      <offset>1244</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined198</redundant_name>
+    </column>
+    <column name="Fdatadefined199" type="F32">
+      <offset>1248</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined199" type="F32">
+      <offset>1248</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined199</redundant_name>
+    </column>
+    <column name="Fdatadefined200" type="F32">
+      <offset>1252</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Datadefined200" type="F32">
+      <offset>1252</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <redundant_name>Fdatadefined200</redundant_name>
+    </column>
+    <column name="Dirtybit" type="U8">
+      <offset>1256</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+        <flag>DIRTY_BIT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

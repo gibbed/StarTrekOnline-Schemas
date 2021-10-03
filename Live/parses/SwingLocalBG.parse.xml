@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SwingLocalBG">
+  <table>
+    <column name="SwingLocalBG" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Rottarget" type="QUATPYR">
+      <offset>0</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Lastanchortimestamp" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

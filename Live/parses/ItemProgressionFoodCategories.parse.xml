@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemProgressionFoodCategories">
+  <table>
+    <column name="ItemProgressionFoodCategories" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Msgfoodcategorydisplay" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Categories" type="INTARRAY">
+      <offset>24</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="ItemType" type="INTARRAY">
+      <offset>32</offset>
+      <static_define_list external="ItemType" />
+    </column>
+    <column name="Itemtypes" type="INTARRAY">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>ItemType</redundant_name>
+      <static_define_list external="ItemType" />
+    </column>
+    <column name="Bagid" type="INT">
+      <offset>40</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Slottype" type="INTARRAY">
+      <offset>48</offset>
+      <static_define_list external="SlotType" />
+    </column>
+    <column name="Efficiency" type="F32">
+      <offset>56</offset>
+    </column>
+    <column name="Lowleveltolerance" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Highleveltolerance" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Quality" type="INTARRAY">
+      <offset>72</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Overridefoodvaluetable" type="REFERENCE">
+      <offset>80</offset>
+      <dictionary_name>RewardValTable</dictionary_name>
+    </column>
+    <column name="Additionalfoodvalue" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Enforceleveltolerance" type="U8">
+      <offset>92</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mustbeidentified" type="U8">
+      <offset>93</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mustmatchnamingconvention" type="U8">
+      <offset>94</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mustnotmatchnamingconvention" type="U8">
+      <offset>95</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Nocrit" type="U8">
+      <offset>96</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Invalidfood" type="U8">
+      <offset>97</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Accelerator" type="U8">
+      <offset>98</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enforceminleveltolerance" type="U8">
+      <offset>99</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Lowminleveltolerance" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="Highminleveltolerance" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

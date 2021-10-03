@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIEntityItemCounts">
+  <table>
+    <column name="UIEntityItemCounts" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Ulastupdatetime" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Ent" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Entity" />
+    </column>
+    <column name="Stitems" type="STASHTABLE">
+      <offset>16</offset>
+    </column>
+    <column name="Stitemqualities" type="STASHTABLE">
+      <offset>24</offset>
+    </column>
+    <column name="Stitemcategories" type="STASHTABLE">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

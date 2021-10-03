@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MapDisplayVariable">
+  <table>
+    <column name="MapDisplayVariable" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Zonemap" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Variablename" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Volume" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Playerfaction" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Group" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="DisplayName" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Info" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Fontcolor" type="INT">
+      <offset>56</offset>
+      <static_define_list external="Color" />
+    </column>
+    <column name="Displayorder" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Valid" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="MapDisplayVariableValid" />
+    </column>
+    <column name="Bar" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="MapDisplayBarVariable" />
+    </column>
+    <column name="Timer" type="U8">
+      <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hidewhenblankstring" type="U8">
+      <offset>81</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usecustomtimer" type="U8">
+      <offset>82</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

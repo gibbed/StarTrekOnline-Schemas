@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ClassRequiredItemCategory">
+  <table>
+    <column name="ClassRequiredItemCategory" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hclass" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <dictionary_name>CharacterClass</dictionary_name>
+    </column>
+    <column name="Combatstates" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="CombatPowerStateRequiredItemCategory" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynAnimGraphFxEvent">
+  <table>
+    <column name="DynAnimGraphFxEvent" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="FX" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REQUIRED</flag>
+      </flags>
+    </column>
+    <column name="Frame" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Movementblendtrigger" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Movementblendtriggered" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Message" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

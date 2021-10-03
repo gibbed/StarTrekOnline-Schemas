@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="InvBagDef">
+  <table>
+    <column name="InvBagDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Bagid" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Fname" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Type" type="INT">
+      <offset>16</offset>
+      <default>1</default>
+      <static_define_list external="InvBagType" />
+    </column>
+    <column name="Slotdef" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="InvBagSlotDef" />
+    </column>
+    <column name="Maxslots" type="INT">
+      <offset>32</offset>
+      <default>-1</default>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>36</offset>
+      <static_define_list external="InvBagFlag" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Power_Yaw" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Not_In_Default_Inventory" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Primarymaxslots" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">InvBagVariableMaxSlotDef</format_string>
+      </format_strings>
+    </column>
+    <column name="Maxslottable" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Maxslottablenumericstandard" type="REFERENCE">
+      <offset>56</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Maxslottablenumericpremium" type="REFERENCE">
+      <offset>64</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Additionalmaxslots" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="InvBagVariableMaxSlotDef" />
+    </column>
+    <column name="Additionalmaxslotslimit" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Bagfullmessage" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Bagrefusesitemmessage" type="EMBEDDEDSTRUCT">
+      <offset>112</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Bagstorecantfill" type="EMBEDDEDSTRUCT">
+      <offset>136</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Maxactiveslots" type="INT">
+      <offset>160</offset>
+      <default>1</default>
+    </column>
+    <column name="Defaultactiveslot" type="INTARRAY">
+      <offset>168</offset>
+    </column>
+    <column name="Itemartactive" type="OPTIONALSTRUCT">
+      <offset>176</offset>
+      <subtable external="InvBagDefItemArt" />
+    </column>
+    <column name="Fxitemartactive" type="OPTIONALSTRUCT">
+      <offset>176</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Itemartactive</redundant_name>
+      <subtable external="InvBagDefItemArt" />
+    </column>
+    <column name="Itemartinactive" type="OPTIONALSTRUCT">
+      <offset>184</offset>
+      <subtable external="InvBagDefItemArt" />
+    </column>
+    <column name="Fxitemartinactive" type="OPTIONALSTRUCT">
+      <offset>184</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Itemartinactive</redundant_name>
+      <subtable external="InvBagDefItemArt" />
+    </column>
+    <column name="Itemartactivesecondary" type="OPTIONALSTRUCT">
+      <offset>192</offset>
+      <subtable external="InvBagDefItemArt" />
+    </column>
+    <column name="Secondaryfxitemartactive" type="OPTIONALSTRUCT">
+      <offset>192</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Itemartactivesecondary</redundant_name>
+      <subtable external="InvBagDefItemArt" />
+    </column>
+    <column name="Itemartinactivesecondary" type="OPTIONALSTRUCT">
+      <offset>200</offset>
+      <subtable external="InvBagDefItemArt" />
+    </column>
+    <column name="Secondaryfxitemartinactive" type="OPTIONALSTRUCT">
+      <offset>200</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Itemartinactivesecondary</redundant_name>
+      <subtable external="InvBagDefItemArt" />
+    </column>
+    <column name="Restricttomaptype" type="INTARRAY">
+      <offset>208</offset>
+      <static_define_list external="ZoneMapType" />
+    </column>
+    <column name="Excludefrommaptype" type="INTARRAY">
+      <offset>216</offset>
+      <static_define_list external="ZoneMapType" />
+    </column>
+    <column name="Fxnodename" type="STRING">
+      <offset>224</offset>
+    </column>
+    <column name="Itemmoveevent" type="STRUCT">
+      <offset>232</offset>
+      <subtable external="InvBagItemMoveEvent" />
+    </column>
+    <column name="Primaryonlycategories" type="INTARRAY">
+      <offset>240</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Changeactiveslotdelay" type="F32">
+      <offset>248</offset>
+    </column>
+    <column name="Autoattack" type="BIT">
+      <offset>252</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Useitemsininventoryfirst" type="BIT">
+      <offset>252</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Fakepropslots" type="BIT">
+      <offset>252</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Swappableitemchoices" type="BIT">
+      <offset>252</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Deprecated" type="BIT">
+      <offset>252</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Costumesetindex" type="U8">
+      <offset>256</offset>
+    </column>
+    <column name="Itemequipcooldownmin" type="INT">
+      <offset>260</offset>
+    </column>
+    <column name="Itemequipcooldownmax" type="INT">
+      <offset>264</offset>
+    </column>
+    <column name="Overridebagid" type="INT">
+      <offset>268</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ShaderCompileTaskResponseData">
+  <table>
+    <column name="ShaderCompileTaskResponseData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Compiledresultsize" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Updbdatasize" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="ErrorMessage" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Updbpath" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="FileName" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Compiledresult" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="TextParserBinaryBlock" />
+    </column>
+    <column name="Updbdata" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="TextParserBinaryBlock" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

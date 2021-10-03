@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="LinkStats">
+  <table>
+    <column name="LinkStats" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Send" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="LinkDir" />
+    </column>
+    <column name="Recv" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="LinkDir" />
+    </column>
+    <column name="History_Idx" type="INT">
+      <offset>2624</offset>
+    </column>
+    <column name="Last_Recv_Idx" type="INT">
+      <offset>2628</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

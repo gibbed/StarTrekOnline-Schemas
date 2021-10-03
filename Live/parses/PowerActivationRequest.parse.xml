@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PowerActivationRequest">
+  <table>
+    <column name="PowerActivationRequest" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Ertarget" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Erlockedtarget" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Hobjectnodekey" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>WorldInteractionNode</dictionary_name>
+    </column>
+    <column name="Vectarget" type="F32FIXEDARRAY">
+      <offset>16</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Vectargetsecondary" type="F32FIXEDARRAY">
+      <offset>28</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Vecsourcepos" type="F32FIXEDARRAY">
+      <offset>40</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Vecsourcedir" type="F32FIXEDARRAY">
+      <offset>52</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Ivectarget" type="INTFIXEDARRAY">
+      <offset>64</offset>
+      <num_elements>3</num_elements>
+      <format_raw>15</format_raw>
+    </column>
+    <column name="Ivectargetsecondary" type="INTFIXEDARRAY">
+      <offset>76</offset>
+      <num_elements>3</num_elements>
+      <format_raw>15</format_raw>
+    </column>
+    <column name="Ivecsourcepos" type="INTFIXEDARRAY">
+      <offset>88</offset>
+      <num_elements>3</num_elements>
+      <format_raw>15</format_raw>
+    </column>
+    <column name="Ivecsourcedir" type="INTFIXEDARRAY">
+      <offset>100</offset>
+      <num_elements>3</num_elements>
+      <format_raw>15</format_raw>
+    </column>
+    <column name="Uipowerid" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="PowerName" type="STRING">
+      <offset>120</offset>
+    </column>
+    <column name="Uitimequeued" type="INT">
+      <offset>128</offset>
+    </column>
+    <column name="Uitimecurrented" type="INT">
+      <offset>132</offset>
+    </column>
+    <column name="Uitimeenterstance" type="INT">
+      <offset>136</offset>
+    </column>
+    <column name="Timeplayerinput" type="F32">
+      <offset>140</offset>
+    </column>
+    <column name="Ertargetpicking" type="INT">
+      <offset>144</offset>
+    </column>
+    <column name="Activate" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Toggledeactivate" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Cancelexisting" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Usevectarget" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Usevecsource" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Usesourcedir" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Useaimtrajectorypos" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Animatenow" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Primarypet" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Autocommit" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Unpredicted" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Dontdelaytargeting" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Updatechargevectarget" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Updatechargevectargetsecondary" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Requestreload" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Activationwasautomatic" type="BIT">
+      <offset>152</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Inputdirection" type="F32FIXEDARRAY">
+      <offset>156</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Uchactid" type="U8">
+      <offset>168</offset>
+    </column>
+    <column name="Puiactidscanceled" type="INTARRAY">
+      <offset>176</offset>
+    </column>
+    <column name="Modedeactivate" type="INT">
+      <offset>184</offset>
+    </column>
+    <column name="Predictedidx" type="INT">
+      <offset>188</offset>
+    </column>
+    <column name="Lungeprediction" type="INT">
+      <offset>192</offset>
+    </column>
+    <column name="Uiseq" type="INT">
+      <offset>196</offset>
+    </column>
+    <column name="Uiseqreset" type="INT">
+      <offset>200</offset>
+    </column>
+    <column name="Erconfusetarget" type="INT">
+      <offset>204</offset>
+    </column>
+    <column name="Perconfusetargetlist" type="INTARRAY">
+      <offset>208</offset>
+    </column>
+    <column name="Uiconfuseseed" type="INT">
+      <offset>216</offset>
+    </column>
+    <column name="Erproximityassisttarget" type="INT">
+      <offset>220</offset>
+    </column>
+    <column name="Simpleprojectileids" type="STRUCT">
+      <offset>224</offset>
+      <subtable external="SimpleProjectileIDAssociation" />
+    </column>
+    <column name="Gamespecificparams" type="OPTIONALSTRUCT">
+      <offset>232</offset>
+      <subtable external="GameSpecificPowerParameters" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

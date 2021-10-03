@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ChatMailList">
+  <table>
+    <column name="ChatMailList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="UID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Mail" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ChatMailStruct" />
+    </column>
+    <column name="Utotalmail" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Upage" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Upagesize" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Utime" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

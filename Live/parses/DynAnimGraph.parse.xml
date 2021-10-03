@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynAnimGraph">
+  <table>
+    <column name="DynAnimGraph" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+      <format_strings>
+        <format_string name="__VERSION">1</format_string>
+      </format_strings>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Comments" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Template" type="REFERENCE">
+      <offset>32</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+        <flag>REQUIRED</flag>
+      </flags>
+      <dictionary_name>DynAnimTemplate</dictionary_name>
+    </column>
+    <column name="Nodes" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="DynAnimGraphNode" />
+    </column>
+    <column name="Multinodes" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="DynAnimGraphMultiNode" />
+    </column>
+    <column name="Logicnodes" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="DynAnimGraphLogicNode" />
+    </column>
+    <column name="Partialgraph" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Suppress" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="DynAnimGraphSuppress" />
+    </column>
+    <column name="Stance" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="DynAnimGraphStance" />
+    </column>
+    <column name="Onenterfxevent" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="DynAnimGraphFxEvent" />
+    </column>
+    <column name="Onexitfxevent" type="STRUCT">
+      <offset>96</offset>
+      <subtable external="DynAnimGraphFxEvent" />
+    </column>
+    <column name="Powermovementinfo" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <subtable external="DynPowerMovementInfo" />
+    </column>
+    <column name="timeout" type="F32">
+      <offset>112</offset>
+    </column>
+    <column name="Disabletorsopointingrate" type="F32">
+      <offset>116</offset>
+    </column>
+    <column name="Disabletorsopointingtimeout" type="F32">
+      <offset>120</offset>
+    </column>
+    <column name="Disablegroundregtimeout" type="F32">
+      <offset>124</offset>
+    </column>
+    <column name="Disableupperbodygroundregtimeout" type="F32">
+      <offset>128</offset>
+    </column>
+    <column name="Overrideallbones" type="U8">
+      <offset>132</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Snapoverrideallbones" type="U8">
+      <offset>133</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Overridemovement" type="U8">
+      <offset>134</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Snapoverridemovement" type="U8">
+      <offset>135</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Overridedefaultmove" type="U8">
+      <offset>136</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Snapoverridedefaultmove" type="U8">
+      <offset>137</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forcevisible" type="U8">
+      <offset>138</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Pitchtotarget" type="U8">
+      <offset>139</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disabletorsopointing" type="U8">
+      <offset>140</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Resetwhenmovementstops" type="U8">
+      <offset>141</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Generatepowermovementinfo" type="U8">
+      <offset>142</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forceallowmovement" type="U8">
+      <offset>143</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Nonselfinterruptable" type="U8">
+      <offset>144</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bouncertoggle" type="U8">
+      <offset>145</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Snapbouncertoggle" type="U8">
+      <offset>146</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritbits" type="OPTIONALSTRUCT">
+      <offset>152</offset>
+      <subtable external="DynAnimGraphInheritBits" />
+    </column>
+    <column name="Bfparamsspecified" type="INTFIXEDARRAY">
+      <offset>160</offset>
+      <flags>
+        <flag>USEDFIELD</flag>
+      </flags>
+      <num_elements>2</num_elements>
+    </column>
+    <column name="Reversedinheritbitpolarity" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

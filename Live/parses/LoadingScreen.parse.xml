@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="LoadingScreen">
+  <table>
+    <column name="LoadingScreen" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Text" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+        <flag>REQUIRED</flag>
+      </flags>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Foregroundtexture" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Color" type="INT">
+      <offset>16</offset>
+      <default>-1</default>
+      <static_define_list external="Color" />
+    </column>
+    <column name="Gen" type="REFERENCE">
+      <offset>24</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UIGen</dictionary_name>
+    </column>
+    <column name="Requiredforvisible" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Requires" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Requiredforvisible</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="Prequires" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Requiredforvisible</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Weight" type="INT">
+      <offset>40</offset>
+      <default>10</default>
+    </column>
+    <column name="Coherentforegroundtexture" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

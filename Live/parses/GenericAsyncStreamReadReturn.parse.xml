@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenericAsyncStreamReadReturn">
+  <table>
+    <column name="GenericAsyncStreamReadReturn" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Streamid" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Datasize" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Complete" type="U8">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

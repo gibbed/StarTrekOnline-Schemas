@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynamicCameraBehavior">
+  <table>
+    <column name="DynamicCameraBehavior" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Behaviorname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Camerabehaviorflags" type="INT">
+      <offset>32</offset>
+      <static_define_list external="DynamicCameraFlags" />
+    </column>
+    <column name="Priority" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Behaviormustberequested" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Urequesttime" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

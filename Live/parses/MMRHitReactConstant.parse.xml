@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MMRHitReactConstant">
+  <table>
+    <column name="MMRHitReactConstant" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Animbits" type="INTARRAY">
+      <offset>0</offset>
+    </column>
+    <column name="Wakeafterthismanypcs" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Triggerid" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Waitfortrigger" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Triggerisentityid" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

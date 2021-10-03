@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GimmeQueryFileInfoRequest">
+  <table>
+    <column name="GimmeQueryFileInfoRequest" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Base" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="GimmeRPCRequestBase" />
+    </column>
+    <column name="Path" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GuildConfig">
+  <table>
+    <column name="GuildConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Allegiancechangecost" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Allegiancechangenumeric" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Umaxsecondsallowed" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Adddevs" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Description" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Message" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Emblem" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Color1" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Color2" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Useleaderslowdemotion" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Demotiondurationhours" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Destroywaittimehours" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Provisionaltimehours" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Maxsize" type="INT">
+      <offset>80</offset>
+      <default>500</default>
+    </column>
+    <column name="Maxaccounts" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Alliancemaxchildren" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Alliancemaxdepth" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="Alliancejoinedprobationhours" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Allianceleftprobationhours" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="Alliancekickedprobationhours" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Allianceinvitedurationhours" type="INT">
+      <offset>108</offset>
+    </column>
+    <column name="Alliancerestricteditem" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="GuildAllianceRestrictedItem" />
+    </column>
+    <column name="Disablealliancesexceptindevmode" type="U8">
+      <offset>120</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allianceusecoffernumerics" type="U8">
+      <offset>121</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allianceinviteonlyifunallied" type="U8">
+      <offset>122</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Alliancemapname" type="STRING">
+      <offset>128</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

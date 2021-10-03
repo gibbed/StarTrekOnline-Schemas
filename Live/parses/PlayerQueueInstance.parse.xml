@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayerQueueInstance">
+  <table>
+    <column name="PlayerQueueInstance" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uiid" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Offeredmapkey" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Uiorigownerid" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Usecondsremaining" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Utimelimit" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Uaveragewaittime" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Groupindex" type="INT">
+      <offset>32</offset>
+      <default>-1</default>
+    </column>
+    <column name="Queuedplayercount" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Offeredplayercount" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Acceptedplayercount" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Inmapplayercount" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Inqueueguildmembercount" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Queuestate" type="INT">
+      <offset>56</offset>
+      <static_define_list external="PlayerQueueState" />
+    </column>
+    <column name="Settings" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="QueueGameSetting" />
+    </column>
+    <column name="Params" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="QueueInstanceParams" />
+    </column>
+    <column name="Playerqueuemaps" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="PlayerQueueMap" />
+    </column>
+    <column name="Members" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="PlayerQueueMember" />
+    </column>
+    <column name="Overtime" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Newmaploading" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Haspassword" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Ignorelevelrestrictions" type="BIT">
+      <offset>96</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

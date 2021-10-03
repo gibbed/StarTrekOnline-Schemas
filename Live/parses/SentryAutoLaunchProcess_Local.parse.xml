@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SentryAutoLaunchProcess_Local">
+  <table>
+    <column name="SentryAutoLaunchProcess_Local" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="TaskName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Process" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="SentryAutoLaunchProcess" />
+    </column>
+    <column name="State" type="INT">
+      <offset>48</offset>
+      <static_define_list external="SentryAutoLaunchProcessState" />
+    </column>
+    <column name="Pid" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Cmdlinecrc" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Lastactiontime" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Ticktimestamp" type="INT64">
+      <offset>64</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

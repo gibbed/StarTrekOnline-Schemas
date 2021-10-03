@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGen">
+  <table>
+    <column name="UIGen" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Borrowfrom" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <subtable external="UIGenBorrowed" />
+    </column>
+    <column name="Flatborrowfrom" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="UIGenBorrowed" />
+    </column>
+    <column name="Requiresborrow" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="UIGenRequiredBorrow" />
+    </column>
+    <column name="Borrowedinlinechildren" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>STRUCT_NORECURSE</flag>
+      </flags>
+      <subtable external="UIGen" />
+    </column>
+    <column name="Type" type="INT">
+      <offset>40</offset>
+      <static_define_list external="UIGenType" />
+    </column>
+    <column name="Base" type="OPTIONALPOLYMORPH">
+      <offset>48</offset>
+      <subtable external="_PolyTable_UIGenInternal" />
+    </column>
+    <column name="Codeoverrideearly" type="OPTIONALPOLYMORPH">
+      <offset>56</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
+      <subtable external="_PolyTable_UIGenInternal" />
+    </column>
+    <column name="Statedef" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="UIGenStateDef" />
+    </column>
+    <column name="Complexstatedef" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="UIGenComplexStateDef" />
+    </column>
+    <column name="Uicomplexstates" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Last" type="OPTIONALPOLYMORPH">
+      <offset>88</offset>
+      <subtable external="_PolyTable_UIGenInternal" />
+    </column>
+    <column name="Timer" type="STRUCT">
+      <offset>96</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="UIGenTimer" />
+    </column>
+    <column name="Message" type="STRUCT">
+      <offset>104</offset>
+      <subtable external="UIGenMessage" />
+    </column>
+    <column name="Handlemessage" type="STRUCT">
+      <offset>104</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Message</redundant_name>
+      <subtable external="UIGenMessage" />
+    </column>
+    <column name="Tweenstate" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
+      <subtable external="UIGenTweenState" />
+    </column>
+    <column name="Boxtweenstate" type="OPTIONALSTRUCT">
+      <offset>120</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
+      <subtable external="UIGenTweenBoxState" />
+    </column>
+    <column name="Result" type="OPTIONALPOLYMORPH">
+      <offset>128</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="_PolyTable_UIGenInternal" />
+    </column>
+    <column name="Code" type="OPTIONALSTRUCT">
+      <offset>144</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
+      <subtable external="UIGenCodeInterface" />
+    </column>
+    <column name="State" type="OPTIONALPOLYMORPH">
+      <offset>152</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
+      <subtable external="_PolyTable_UIGenPerTypeState" />
+    </column>
+    <column name="Genstate" type="OPTIONALPOLYMORPH">
+      <offset>152</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>NO_WRITE</flag>
+      </flags>
+      <redundant_name>State</redundant_name>
+      <subtable external="_PolyTable_UIGenPerTypeState" />
+    </column>
+    <column name="Bfstatesshort" type="INTFIXEDARRAY">
+      <offset>160</offset>
+      <num_elements>6</num_elements>
+    </column>
+    <column name="Extendedstates" type="INT">
+      <offset>192</offset>
+    </column>
+    <column name="Transitions" type="STRUCT">
+      <offset>200</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="Beforecreate" type="OPTIONALSTRUCT">
+      <offset>208</offset>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="Aftercreate" type="OPTIONALSTRUCT">
+      <offset>216</offset>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="Pointerupdate" type="OPTIONALSTRUCT">
+      <offset>224</offset>
+      <subtable external="UIGenPointerUpdate" />
+    </column>
+    <column name="Copyparentstate" type="INTARRAY">
+      <offset>232</offset>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="Mirrorparentstate" type="INTARRAY">
+      <offset>232</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Copyparentstate</redundant_name>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="Mirrorotherstate" type="STRUCT">
+      <offset>240</offset>
+      <subtable external="UIGenMirrorStateFromOther" />
+    </column>
+    <column name="Beforeupdate" type="OPTIONALSTRUCT">
+      <offset>248</offset>
+      <subtable external="UIGenBeforeUpdate" />
+    </column>
+    <column name="Beforeresult" type="OPTIONALSTRUCT">
+      <offset>256</offset>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="Beforehide" type="OPTIONALSTRUCT">
+      <offset>264</offset>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="Parent" type="OPTIONALSTRUCT">
+      <offset>272</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="UIGen" />
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>280</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Var" type="STRUCT">
+      <offset>288</offset>
+      <subtable external="UIGenVarTypeGlob" />
+    </column>
+    <column name="Vars" type="STRUCT">
+      <offset>288</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Var</redundant_name>
+      <subtable external="UIGenVarTypeGlob" />
+    </column>
+    <column name="Copyvar" type="STRUCT">
+      <offset>296</offset>
+      <subtable external="UIGenVarTypeGlob" />
+    </column>
+    <column name="Copyvars" type="STRUCT">
+      <offset>296</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Copyvar</redundant_name>
+      <subtable external="UIGenVarTypeGlob" />
+    </column>
+    <column name="Jailcell" type="STRING">
+      <offset>304</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Window" type="STRING">
+      <offset>312</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Spritecache" type="OPTIONALSTRUCT">
+      <offset>320</offset>
+      <subtable external="UIGenSpriteCache" />
+    </column>
+    <column name="Focusgroup" type="OPTIONALSTRUCT">
+      <offset>328</offset>
+      <subtable external="UIGenFocusGroup" />
+    </column>
+    <column name="Testmodel" type="OPTIONALSTRUCT">
+      <offset>336</offset>
+      <subtable external="UIGenTestModel" />
+    </column>
+    <column name="Finalscale" type="F32">
+      <offset>440</offset>
+      <default>1</default>
+    </column>
+    <column name="Finalalpha" type="U8">
+      <offset>444</offset>
+      <default>255</default>
+    </column>
+    <column name="Layer" type="U8">
+      <offset>445</offset>
+    </column>
+    <column name="Priority" type="U8">
+      <offset>446</offset>
+    </column>
+    <column name="Priority" type="U8">
+      <offset>446</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Priority</redundant_name>
+    </column>
+    <column name="Clone" type="U8">
+      <offset>447</offset>
+    </column>
+    <column name="Shiftx" type="F32">
+      <offset>448</offset>
+    </column>
+    <column name="Shifty" type="F32">
+      <offset>452</offset>
+    </column>
+    <column name="Marginleft" type="F32">
+      <offset>456</offset>
+    </column>
+    <column name="Margintop" type="F32">
+      <offset>460</offset>
+    </column>
+    <column name="Marginright" type="F32">
+      <offset>464</offset>
+    </column>
+    <column name="Marginbottom" type="F32">
+      <offset>468</offset>
+    </column>
+    <column name="Hideanimation" type="OPTIONALPOLYMORPH">
+      <offset>504</offset>
+      <subtable external="_PolyTable_UIGenInternal" />
+    </column>
+    <column name="Updatewhenchanged" type="INT">
+      <offset>528</offset>
+      <static_define_list external="UIGenOptimizationFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Optimize" type="INT">
+      <offset>528</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Updatewhenchanged</redundant_name>
+      <static_define_list external="UIGenOptimizationFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Updateperiod" type="F32">
+      <offset>532</offset>
+    </column>
+    <column name="Shiftscreenbox" type="BIT">
+      <offset>557</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Marginscreenbox" type="BIT">
+      <offset>557</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Needsrebuild" type="BIT">
+      <offset>557</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Popup" type="BIT">
+      <offset>557</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Superpopup" type="BIT">
+      <offset>557</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Drawaftertooltips" type="BIT">
+      <offset>558</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Toplevelchildren" type="BIT">
+      <offset>558</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Nextfocusoncreate" type="BIT">
+      <offset>558</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Isroot" type="BIT">
+      <offset>558</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Iscutsceneroot" type="BIT">
+      <offset>558</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Nohighlight" type="BIT">
+      <offset>558</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Recursionlocked" type="BIT">
+      <offset>558</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Instanceusagemode" type="BIT">
+      <offset>558</offset>
+      <bit_offset>131079</bit_offset>
+    </column>
+    <column name="Raiseonmousedown" type="BIT">
+      <offset>559</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

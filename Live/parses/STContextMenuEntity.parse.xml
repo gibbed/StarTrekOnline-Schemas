@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="STContextMenuEntity">
+  <table>
+    <column name="STContextMenuEntity" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="ContainerID" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="AccountID" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Enityref" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Onlineinadifferentgame" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Samegamesameshardsamevshard" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Handle" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Entity" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Entity" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

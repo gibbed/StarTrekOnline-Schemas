@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenMapEntityIconDef">
+  <table>
+    <column name="UIGenMapEntityIconDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Targettype" type="INT">
+      <offset>0</offset>
+      <static_define_list external="TargetType" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Contactindicator" type="INT">
+      <offset>4</offset>
+      <static_define_list external="ContactIndicator" />
+    </column>
+    <column name="Contactflags1" type="INT">
+      <offset>8</offset>
+      <static_define_list external="ContactFlags1" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Contactflags" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Contactflags1</redundant_name>
+      <static_define_list external="ContactFlags1" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Contactflags2" type="INT">
+      <offset>12</offset>
+      <static_define_list external="ContactFlags2" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Notificationtypes" type="INTARRAY">
+      <offset>16</offset>
+      <static_define_list external="MapNotificationType" />
+    </column>
+    <column name="Timesincelastdamagereceived" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Escort" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Savedentity" type="U8">
+      <offset>29</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Guildmate" type="U8">
+      <offset>30</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mustperceive" type="U8">
+      <offset>31</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Playerpet" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showifalive" type="U8">
+      <offset>33</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showifdead" type="U8">
+      <offset>34</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requireclass" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Requirepowermode" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Def" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">UIGenMapIconDef</format_string>
+      </format_strings>
+    </column>
+    <column name="Baselayer" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">UIGenMapIconLayerDef</format_string>
+      </format_strings>
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Textures</dictionary_name>
+    </column>
+    <column name="Texture" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <redundant_name>Icon</redundant_name>
+      <dictionary_name>Textures</dictionary_name>
+    </column>
+    <column name="Formaticon" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Textures</dictionary_name>
+    </column>
+    <column name="Formattexture" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <redundant_name>Formaticon</redundant_name>
+      <dictionary_name>Textures</dictionary_name>
+    </column>
+    <column name="Color" type="INT">
+      <offset>80</offset>
+      <static_define_list external="Color" />
+    </column>
+    <column name="Frameduration" type="F32">
+      <offset>84</offset>
+      <default>-1</default>
+    </column>
+    <column name="Framecount" type="INT">
+      <offset>88</offset>
+      <default>1</default>
+    </column>
+    <column name="Percentx" type="F32">
+      <offset>92</offset>
+    </column>
+    <column name="Percenty" type="F32">
+      <offset>96</offset>
+    </column>
+    <column name="OffsetFrom" type="INT">
+      <offset>100</offset>
+      <static_define_list external="UIDirection" />
+    </column>
+    <column name="Aboveplayer" type="F32">
+      <offset>104</offset>
+      <default>-8388609</default>
+    </column>
+    <column name="Belowplayer" type="F32">
+      <offset>108</offset>
+      <default>2139095039</default>
+    </column>
+    <column name="Region" type="INT">
+      <offset>112</offset>
+      <default>-1</default>
+      <static_define_list external="WorldRegionType" />
+    </column>
+    <column name="Z" type="INT16">
+      <offset>116</offset>
+    </column>
+    <column name="Priority" type="INT16">
+      <offset>118</offset>
+    </column>
+    <column name="Layerscale" type="F32">
+      <offset>120</offset>
+      <default>1</default>
+    </column>
+    <column name="Rotation" type="EMBEDDEDSTRUCT">
+      <offset>124</offset>
+      <subtable external="UIAngle" />
+    </column>
+    <column name="Clamptoedge" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Rotate" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Scale" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Scaletoworld" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Clip" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Pushable" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ignoreworldsize" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Skinningoverride" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65543</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showupwardsanddownwards" type="BIT">
+      <offset>133</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Shrinktofit" type="BIT">
+      <offset>133</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Layer" type="STRUCT">
+      <offset>144</offset>
+      <subtable external="UIGenMapIconLayerDef" />
+    </column>
+    <column name="Label" type="REFERENCE">
+      <offset>152</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Labelfont" type="REFERENCE">
+      <offset>160</offset>
+      <dictionary_name>UIStyleFont</dictionary_name>
+    </column>
+    <column name="Highlightfont" type="REFERENCE">
+      <offset>168</offset>
+      <dictionary_name>UIStyleFont</dictionary_name>
+    </column>
+    <column name="Labelalignment" type="INT">
+      <offset>176</offset>
+      <default>4</default>
+      <static_define_list external="UIDirection" />
+    </column>
+    <column name="Scalemultiplier" type="F32">
+      <offset>180</offset>
+      <default>1</default>
+    </column>
+    <column name="Minscale" type="F32">
+      <offset>184</offset>
+      <default>1045220557</default>
+    </column>
+    <column name="Pixelsperworldunit" type="F32">
+      <offset>188</offset>
+      <default>2</default>
+    </column>
+    <column name="Basescale" type="F32">
+      <offset>192</offset>
+      <default>1</default>
+    </column>
+    <column name="Scalewhenreticuleover" type="F32">
+      <offset>196</offset>
+      <default>1</default>
+    </column>
+    <column name="Distancescalegroup" type="STRING">
+      <offset>200</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Maxcount" type="INT">
+      <offset>208</offset>
+    </column>
+    <column name="Onleftclick" type="OPTIONALSTRUCT">
+      <offset>216</offset>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="Onrightclick" type="OPTIONALSTRUCT">
+      <offset>224</offset>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="Onleftdoubleclick" type="OPTIONALSTRUCT">
+      <offset>232</offset>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="Onreticuleover" type="OPTIONALSTRUCT">
+      <offset>240</offset>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="Onreticuleover_Ab" type="OPTIONALSTRUCT">
+      <offset>248</offset>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="Outofbounds" type="BIT">
+      <offset>256</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Alwaysshowlabel" type="BIT">
+      <offset>256</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forcehidelabel" type="BIT">
+      <offset>256</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

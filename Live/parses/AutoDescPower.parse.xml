@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AutoDescPower">
+  <table>
+    <column name="AutoDescPower" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Key" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Desc" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Desclong" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Descflavor" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Custom" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Dev" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Type" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Comborequires" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Combocharge" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Enhanceattach" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Enhanceattached" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Enhanceapply" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Costmin" type="F32">
+      <offset>104</offset>
+      <default>-1</default>
+    </column>
+    <column name="Costmax" type="F32">
+      <offset>108</offset>
+      <default>-1</default>
+    </column>
+    <column name="Costperiodicmin" type="F32">
+      <offset>112</offset>
+      <default>-1</default>
+    </column>
+    <column name="Costperiodicmax" type="F32">
+      <offset>116</offset>
+      <default>-1</default>
+    </column>
+    <column name="Cost" type="STRING">
+      <offset>120</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Costperiodic" type="STRING">
+      <offset>128</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Maxtargets" type="INT">
+      <offset>136</offset>
+      <default>-1</default>
+    </column>
+    <column name="Rangemin" type="F32">
+      <offset>140</offset>
+      <default>-1</default>
+    </column>
+    <column name="Rangemax" type="F32">
+      <offset>144</offset>
+      <default>-1</default>
+    </column>
+    <column name="Areamin" type="F32">
+      <offset>148</offset>
+      <default>-1</default>
+    </column>
+    <column name="Areamax" type="F32">
+      <offset>152</offset>
+      <default>-1</default>
+    </column>
+    <column name="Innerareamin" type="F32">
+      <offset>156</offset>
+      <default>-1</default>
+    </column>
+    <column name="Innerareamax" type="F32">
+      <offset>160</offset>
+      <default>-1</default>
+    </column>
+    <column name="Target" type="STRING">
+      <offset>168</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Range" type="STRING">
+      <offset>176</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Targetarc" type="STRING">
+      <offset>184</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Timechargemin" type="F32">
+      <offset>192</offset>
+      <default>-1</default>
+    </column>
+    <column name="Timechargemax" type="F32">
+      <offset>196</offset>
+      <default>-1</default>
+    </column>
+    <column name="Timeactivatemin" type="F32">
+      <offset>200</offset>
+      <default>-1</default>
+    </column>
+    <column name="Timeactivatemax" type="F32">
+      <offset>204</offset>
+      <default>-1</default>
+    </column>
+    <column name="Timeactivateperiodmin" type="F32">
+      <offset>208</offset>
+      <default>-1</default>
+    </column>
+    <column name="Timeactivateperiodmax" type="F32">
+      <offset>212</offset>
+      <default>-1</default>
+    </column>
+    <column name="Timemaintainmin" type="F32">
+      <offset>216</offset>
+      <default>-1</default>
+    </column>
+    <column name="Timemaintainmax" type="F32">
+      <offset>220</offset>
+      <default>-1</default>
+    </column>
+    <column name="Timerechargemin" type="F32">
+      <offset>224</offset>
+      <default>-1</default>
+    </column>
+    <column name="Timerechargemax" type="F32">
+      <offset>228</offset>
+      <default>-1</default>
+    </column>
+    <column name="Timereloadmin" type="F32">
+      <offset>232</offset>
+      <default>-1</default>
+    </column>
+    <column name="Timereloadmax" type="F32">
+      <offset>236</offset>
+      <default>-1</default>
+    </column>
+    <column name="Timereloadtype" type="INT">
+      <offset>240</offset>
+      <static_define_list external="PowerReloadType" />
+    </column>
+    <column name="Timecharge" type="STRING">
+      <offset>248</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Timeactivate" type="STRING">
+      <offset>256</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Timeactivateperiod" type="STRING">
+      <offset>264</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Timemaintain" type="STRING">
+      <offset>272</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Timerecharge" type="STRING">
+      <offset>280</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Timereload" type="STRING">
+      <offset>288</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Timereloadmode" type="STRING">
+      <offset>296</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Charges" type="STRING">
+      <offset>304</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Lifetimeusage" type="STRING">
+      <offset>312</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Lifetimegame" type="STRING">
+      <offset>320</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Lifetimereal" type="STRING">
+      <offset>328</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Ammocapacity" type="F32">
+      <offset>336</offset>
+      <default>-1</default>
+    </column>
+    <column name="Ammoburstmin" type="F32">
+      <offset>340</offset>
+      <default>-1</default>
+    </column>
+    <column name="Ammoburstmax" type="F32">
+      <offset>344</offset>
+      <default>-1</default>
+    </column>
+    <column name="Ammocount" type="STRING">
+      <offset>352</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Ammoburst" type="STRING">
+      <offset>360</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Attribs" type="STRING">
+      <offset>368</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Footnotes" type="STRINGARRAY">
+      <offset>376</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Powerscombo" type="STRUCT">
+      <offset>384</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="AutoDescPower" />
+    </column>
+    <column name="Powersenhancements" type="STRUCT">
+      <offset>392</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="AutoDescPower" />
+    </column>
+    <column name="Ps" type="STRUCT">
+      <offset>400</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="AutoDescPower" />
+    </column>
+    <column name="Attribmods" type="STRUCT">
+      <offset>408</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="AutoDescAttribMod" />
+    </column>
+    <column name="Attribmodsenhancements" type="STRUCT">
+      <offset>416</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="AutoDescAttribMod" />
+    </column>
+    <column name="M" type="STRUCT">
+      <offset>424</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="AutoDescAttribMod" />
+    </column>
+    <column name="Requiredgemtype" type="INT">
+      <offset>432</offset>
+    </column>
+    <column name="Active" type="U8">
+      <offset>436</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Powertags" type="INTARRAY">
+      <offset>440</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CharacterClassAttrib">
+  <table>
+    <column name="CharacterClassAttrib" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Pfbasic" type="F32ARRAY">
+      <offset>0</offset>
+    </column>
+    <column name="Pfstrength" type="F32ARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Pfresist" type="F32ARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Curves" type="POLYMORPH">
+      <offset>24</offset>
+      <subtable external="_PolyTable_AttribCurve" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

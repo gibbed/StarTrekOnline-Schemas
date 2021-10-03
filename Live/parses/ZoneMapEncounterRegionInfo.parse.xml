@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ZoneMapEncounterRegionInfo">
+  <table>
+    <column name="ZoneMapEncounterRegionInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="RegionName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Min" type="F32FIXEDARRAY">
+      <offset>8</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Max" type="F32FIXEDARRAY">
+      <offset>20</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Rooms" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="ZoneMapEncounterRoomInfo" />
+    </column>
+    <column name="Groundfocusheight" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Type" type="INT">
+      <offset>44</offset>
+      <static_define_list external="WorldRegionType" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

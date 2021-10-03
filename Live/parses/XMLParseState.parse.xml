@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="XMLParseState">
+  <table>
+    <column name="XMLParseState" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Methodcall" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <subtable external="XMLMethodCall" />
+    </column>
+    <column name="Methodresponse" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="XMLMethodResponse" />
+    </column>
+    <column name="Path" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="ObjectPath" />
+    </column>
+    <column name="Characters" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Tags" type="INTARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

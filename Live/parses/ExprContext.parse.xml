@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ExprContext">
+  <table>
+    <column name="ExprContext" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Input" type="STRING">
+      <offset>536</offset>
+    </column>
+    <column name="Stringresult" type="STRING">
+      <offset>544</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Selfptr" type="OPTIONALSTRUCT">
+      <offset>552</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Entity" />
+    </column>
+    <column name="FSMContext" type="OPTIONALSTRUCT">
+      <offset>568</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="FSMContext" />
+    </column>
+    <column name="Parent" type="OPTIONALSTRUCT">
+      <offset>1248</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+        <flag>STRUCT_NORECURSE</flag>
+      </flags>
+      <subtable external="ExprContext" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

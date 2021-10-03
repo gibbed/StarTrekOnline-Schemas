@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="HeadshotRequestParams">
+  <table>
+    <column name="HeadshotRequestParams" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="FileName" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="RequestID" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="ContainerType" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="ContainerID" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Costumestring" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Size" type="F32FIXEDARRAY">
+      <offset>32</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Style" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Bgtexturename" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Posestring" type="STRING">
+      <offset>72</offset>
+    </column>
+    <column name="Animdelta" type="F32">
+      <offset>80</offset>
+    </column>
+    <column name="Frame" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Campos" type="F32FIXEDARRAY">
+      <offset>96</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Camdir" type="F32FIXEDARRAY">
+      <offset>108</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Forcebodyshot" type="U8">
+      <offset>120</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Transparent" type="U8">
+      <offset>121</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Costumev0" type="U8">
+      <offset>122</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

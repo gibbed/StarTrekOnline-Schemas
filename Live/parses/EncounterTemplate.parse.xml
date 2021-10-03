@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EncounterTemplate">
+  <table>
+    <column name="EncounterTemplate" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Parentencounter" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>EncounterTemplate</dictionary_name>
+    </column>
+    <column name="Levelproperties" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="EncounterLevelProperties" />
+    </column>
+    <column name="Spawnproperties" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="EncounterSpawnProperties" />
+    </column>
+    <column name="Difficultyproperties" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="EncounterDifficultyProperties" />
+    </column>
+    <column name="Waveproperties" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="EncounterWaveProperties" />
+    </column>
+    <column name="Actorsharedproperties" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="EncounterActorSharedProperties" />
+    </column>
+    <column name="Sharedaiproperties" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="EncounterAIProperties" />
+    </column>
+    <column name="Rewardproperties" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="EncounterRewardProperties" />
+    </column>
+    <column name="Jobproperties" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="AIJobDesc" />
+    </column>
+    <column name="Actor" type="STRUCT">
+      <offset>96</offset>
+      <subtable external="EncounterActorProperties" />
+    </column>
+    <column name="Point" type="STRUCT">
+      <offset>104</offset>
+      <subtable external="EncounterPointProperties" />
+    </column>
+    <column name="Trackedevents" type="STRUCT">
+      <offset>112</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="GameEvent" />
+    </column>
+    <column name="Trackedeventssincespawn" type="STRUCT">
+      <offset>120</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="GameEvent" />
+    </column>
+    <column name="Trackedeventssincecomplete" type="STRUCT">
+      <offset>128</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="GameEvent" />
+    </column>
+    <column name="Oneoff" type="U8">
+      <offset>136</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Lastupdated" type="FIXEDSTRING">
+      <offset>137</offset>
+      <string_length>128</string_length>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

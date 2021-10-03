@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="InvRewardRequest">
+  <table>
+    <column name="InvRewardRequest" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Numericrewards" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="ItemNumericData" />
+    </column>
+    <column name="Itemrewards" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="Item" />
+    </column>
+    <column name="Grantdata" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="InvRewardGrantData" />
+    </column>
+    <column name="Rewardpackoverallquality" type="INT">
+      <offset>24</offset>
+      <default>-1</default>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Rewards" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <subtable external="InventorySlot" />
+    </column>
+    <column name="Rewardslots" type="INT">
+      <offset>40</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

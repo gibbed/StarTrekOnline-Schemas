@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AutoAttackConfig">
+  <table>
+    <column name="AutoAttackConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Serverfinishdelay" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Autoattackpowerslots" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Powercategoriescanceledbypredicteddeath" type="INTARRAY">
+      <offset>16</offset>
+      <static_define_list external="PowerCategory" />
+    </column>
+    <column name="Clientschemefinishdelay" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Allowinitialattacktofinish" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Neverdelay" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Deactivatechargepowersontargetswitch" type="BIT">
+      <offset>24</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Deactivatetargetedmaintainscancelontargetswitch" type="BIT">
+      <offset>24</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Deactivateselftargetedmaintainscancelontargetswitch" type="BIT">
+      <offset>24</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65541</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Useexplicitpower" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Alwaysenableevenifnovalidtarget" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Providefeedbackonautoattackfail" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Allareautoattacks" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ConsignmentPoolConfig">
+  <table>
+    <column name="ConsignmentPoolConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Poolname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Useallbucketsearch" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Buytokenfromsharedbank" type="U8">
+      <offset>9</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Selltokenfromsharedbank" type="U8">
+      <offset>10</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Itemfromsharedbank" type="U8">
+      <offset>11</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Itemtosharedbank" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Brokervolatilitymultiplier" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Brokersellmarkupmultiplier" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Brokerbuymarkdownmultiplier" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Buytokencurrency" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Selltokencurrency" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Itemcategory" type="INTARRAY">
+      <offset>48</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Bundlespertransaction" type="INTARRAY">
+      <offset>56</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

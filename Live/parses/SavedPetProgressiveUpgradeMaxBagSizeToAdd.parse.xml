@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SavedPetProgressiveUpgradeMaxBagSizeToAdd">
+  <table>
+    <column name="SavedPetProgressiveUpgradeMaxBagSizeToAdd" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Invbagid" type="INT">
+      <offset>0</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Numberofmaxslotstoadd" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

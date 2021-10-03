@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MinimapWaypoint">
+  <table>
+    <column name="MinimapWaypoint" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <static_define_list external="MinimapWaypointType" />
+    </column>
+    <column name="Pos" type="F32FIXEDARRAY">
+      <offset>4</offset>
+      <flags>
+        <flag>WORLD_POSITION</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="MissionRefString" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Orig_Pos" type="F32FIXEDARRAY">
+      <offset>24</offset>
+      <flags>
+        <flag>WORLD_POSITION</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Contactname" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Staticencname" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Icontexname" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Description" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Hdisplaynamemsg" type="REFERENCE">
+      <offset>72</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Uwaypointtimerseconds" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Uwaypointtimestamp" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Destinationmap" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Neighborhoods" type="STRINGARRAY">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Showinneighborhood" type="U8">
+      <offset>104</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bestneighborhood" type="STRING">
+      <offset>112</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Neighborhoodpos" type="F32FIXEDARRAY">
+      <offset>120</offset>
+      <flags>
+        <flag>WORLD_POSITION</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Hneighborhoodmessage" type="REFERENCE">
+      <offset>136</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Xaxisradius" type="F32">
+      <offset>144</offset>
+    </column>
+    <column name="Yaxisradius" type="F32">
+      <offset>148</offset>
+    </column>
+    <column name="Height" type="F32">
+      <offset>152</offset>
+    </column>
+    <column name="Rotation" type="F32">
+      <offset>156</offset>
+    </column>
+    <column name="Shape" type="INT">
+      <offset>160</offset>
+    </column>
+    <column name="Color" type="INT">
+      <offset>164</offset>
+    </column>
+    <column name="Uistyle" type="INT">
+      <offset>168</offset>
+      <static_define_list external="MissionWaypointUIStyle" />
+    </column>
+    <column name="Mapvariable" type="STRING">
+      <offset>176</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Hideunlessrevealed" type="U8">
+      <offset>184</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hidden" type="U8">
+      <offset>185</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Zorder" type="INT">
+      <offset>188</offset>
+    </column>
+    <column name="Forcealwaysshowlabel" type="F32">
+      <offset>192</offset>
+    </column>
+    <column name="Mapcreatedon" type="STRING">
+      <offset>200</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Distancefarther" type="F32">
+      <offset>208</offset>
+    </column>
+    <column name="Isdoorwaypoint" type="U8">
+      <offset>216</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isregiondoorwaypoint" type="U8">
+      <offset>217</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ismissiondoorwaypoint" type="U8">
+      <offset>218</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Useorigposforicon" type="U8">
+      <offset>219</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Garrisonplotstate" type="INT">
+      <offset>220</offset>
+      <static_define_list external="GarrisonPlotState" />
+    </column>
+    <column name="Garrisonplot" type="STRING">
+      <offset>224</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Garrisonstructure" type="STRING">
+      <offset>232</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Ugarrisonstructurelevel" type="INT">
+      <offset>240</offset>
+    </column>
+    <column name="Garrisonstructureistendabletype" type="U8">
+      <offset>244</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Garrisonstructureistemporarytype" type="U8">
+      <offset>245</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="LoginEventInfo">
+  <table>
+    <column name="LoginEventInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Events" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="EventDefRef" />
+    </column>
+    <column name="Activities" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="LoginActivity" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

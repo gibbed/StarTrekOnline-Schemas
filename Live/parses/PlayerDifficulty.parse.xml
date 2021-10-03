@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayerDifficulty">
+  <table>
+    <column name="PlayerDifficulty" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Index" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Internalname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Name" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Description" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Teamsizeoverride" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Disableteamsizemapvarname" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Mapsetting" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="PlayerDifficultyMapData" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

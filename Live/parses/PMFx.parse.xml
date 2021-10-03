@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PMFx">
+  <table>
+    <column name="PMFx" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Subid" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Type" type="INT">
+      <offset>8</offset>
+      <static_define_list external="PowerAnimFXType" />
+    </column>
+    <column name="Ahfx" type="INTFIXEDARRAY">
+      <offset>12</offset>
+      <num_elements>6</num_elements>
+    </column>
+    <column name="Timestart" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Timestop" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Apchnames_0" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Apchnames_1" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Apchnames_2" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Apchnames_3" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Apchnames_4" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Apchnames_5" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Block" type="OPTIONALSTRUCT">
+      <offset>96</offset>
+      <subtable external="DynParamBlock" />
+    </column>
+    <column name="Source" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Target" type="INT">
+      <offset>108</offset>
+    </column>
+    <column name="Vecsource" type="F32FIXEDARRAY">
+      <offset>112</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Vectarget" type="F32FIXEDARRAY">
+      <offset>124</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Quattarget" type="QUATPYR">
+      <offset>136</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Hue" type="F32">
+      <offset>152</offset>
+    </column>
+    <column name="Range" type="F32">
+      <offset>156</offset>
+    </column>
+    <column name="Arc" type="F32">
+      <offset>160</offset>
+    </column>
+    <column name="Yaw" type="F32">
+      <offset>164</offset>
+    </column>
+    <column name="Speed" type="F32">
+      <offset>168</offset>
+      <default>1</default>
+    </column>
+    <column name="Nodeselectiontype" type="INT">
+      <offset>172</offset>
+      <static_define_list external="PowerAnimNodeSelectionType" />
+    </column>
+    <column name="Start" type="BIT">
+      <offset>176</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Stop" type="BIT">
+      <offset>176</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Flash" type="BIT">
+      <offset>176</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Miss" type="BIT">
+      <offset>176</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Trigger" type="BIT">
+      <offset>176</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Triggerisentityid" type="BIT">
+      <offset>176</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Triggermultihit" type="BIT">
+      <offset>176</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Usetargetnode" type="BIT">
+      <offset>176</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Alwaysselectsamenode" type="BIT">
+      <offset>177</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Donottrackflashed" type="BIT">
+      <offset>177</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

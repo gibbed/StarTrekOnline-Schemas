@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="QueuedMissionOffer">
+  <table>
+    <column name="QueuedMissionOffer" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hmissiondef" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>MissionDef</dictionary_name>
+    </column>
+    <column name="Sharertype" type="INT">
+      <offset>8</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Usharerid" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Credittype" type="INT">
+      <offset>16</offset>
+      <static_define_list external="MissionCreditType" />
+    </column>
+    <column name="Entheadshotoverride" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Silent" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="TimeStamp" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Utimerstarttime" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

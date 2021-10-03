@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PowerCategory">
+  <table>
+    <column name="PowerCategory" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Preferredtray" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Timecooldown" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Timecooldownoutofcombat" type="F32">
+      <offset>16</offset>
+      <default>-1</default>
+    </column>
+    <column name="Requireditemcategories" type="INTARRAY">
+      <offset>24</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Classrequirements" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="ClassRequiredItemCategory" />
+    </column>
+    <column name="Sortgroup" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Matchtacticalmode" type="INT">
+      <offset>44</offset>
+      <static_define_list external="PowerTacticalMovementMode" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Msgpurposesuffix" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Requiredownerrank" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Slottingrequired" type="BIT">
+      <offset>76</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Toggleexclusive" type="BIT">
+      <offset>76</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Autoattackserver" type="BIT">
+      <offset>76</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Autoattackenabler" type="BIT">
+      <offset>76</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Autoattackdisabler" type="BIT">
+      <offset>76</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Weaponbased" type="BIT">
+      <offset>76</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Hasautoslotpriority" type="BIT">
+      <offset>76</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Ignoretargetpitch" type="BIT">
+      <offset>76</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Displayattribmodsasbasestat" type="BIT">
+      <offset>77</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Displayattribmodsasitemstat" type="BIT">
+      <offset>77</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Defaultactiveweapon" type="BIT">
+      <offset>77</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

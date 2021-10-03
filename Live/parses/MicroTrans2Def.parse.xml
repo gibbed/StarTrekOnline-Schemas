@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MicroTrans2Def">
+  <table>
+    <column name="MicroTrans2Def" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <static_define_list external="MicroTrans2Type" />
+    </column>
+    <column name="File_Version" type="TIMESTAMP">
+      <offset>4</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="File" type="CURRENTFILE">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="FILENAME">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Notes" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Time_First_Available" type="INT">
+      <offset>40</offset>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Finance_Category" type="INT">
+      <offset>44</offset>
+      <default>-1</default>
+      <static_define_list external="ProductCategory" />
+    </column>
+    <column name="Mt_Category" type="INTARRAY">
+      <offset>48</offset>
+      <static_define_list external="MicroTrans_ShardCategory" />
+    </column>
+    <column name="Shard_Category" type="INTARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Mt_Category</redundant_name>
+      <static_define_list external="MicroTrans_ShardCategory" />
+    </column>
+    <column name="Required_Purchase" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="MicroTrans2RequiredPurchase" />
+    </column>
+    <column name="Required_Not_Purchase" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="MicroTrans2RequiredNotPurchase" />
+    </column>
+    <column name="Microtransaction_To_Increment" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="MicroTrans2PurchaseIncrement" />
+    </column>
+    <column name="Ui_Category" type="STRINGARRAY">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>MicroTransactionCategory</dictionary_name>
+    </column>
+    <column name="Runtime_Ui_Category" type="STRINGARRAY">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+    </column>
+    <column name="Time_Last_Refreshed_Ui_Categories" type="INT">
+      <offset>96</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Available_Start_Time" type="STRING">
+      <offset>104</offset>
+    </column>
+    <column name="Available_End_Time" type="STRING">
+      <offset>112</offset>
+    </column>
+    <column name="Price" type="INT">
+      <offset>120</offset>
+    </column>
+    <column name="Price_Override" type="STRUCT">
+      <offset>128</offset>
+      <subtable external="MicroTrans2PriceOverride" />
+    </column>
+    <column name="Real_Money_Price" type="STRUCT">
+      <offset>136</offset>
+      <subtable external="MicroTrans2RealMoneyPrice" />
+    </column>
+    <column name="Zen_Increment" type="STRUCT">
+      <offset>144</offset>
+      <subtable external="MicroTrans2KeyValueIncrement" />
+    </column>
+    <column name="Display_Name_Mesg" type="EMBEDDEDSTRUCT">
+      <offset>152</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Display_Name_Mesg_Override" type="STRUCT">
+      <offset>176</offset>
+      <subtable external="MicroTrans2MesgOverride" />
+    </column>
+    <column name="Description_Short_Mesg" type="EMBEDDEDSTRUCT">
+      <offset>184</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Description_Short_Mesg_Override" type="STRUCT">
+      <offset>208</offset>
+      <subtable external="MicroTrans2MesgOverride" />
+    </column>
+    <column name="Description_Long_Mesg" type="EMBEDDEDSTRUCT">
+      <offset>216</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Description_Long_Mesg_Override" type="STRUCT">
+      <offset>240</offset>
+      <subtable external="MicroTrans2MesgOverride" />
+    </column>
+    <column name="Display_Sale_Ends_In_Mesg" type="EMBEDDEDSTRUCT">
+      <offset>248</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Display_Sale_Ends_In_Mesg_Override" type="STRUCT">
+      <offset>272</offset>
+      <subtable external="MicroTrans2MesgOverride" />
+    </column>
+    <column name="Display_Offer_Ends_In_Mesg" type="EMBEDDEDSTRUCT">
+      <offset>280</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Display_Offer_Ends_In_Mesg_Override" type="STRUCT">
+      <offset>304</offset>
+      <subtable external="MicroTrans2MesgOverride" />
+    </column>
+    <column name="Small_Icon" type="STRING">
+      <offset>312</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Large_Icon" type="STRING">
+      <offset>320</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Large_Icon_Second" type="STRING">
+      <offset>328</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Large_Icon_Third" type="STRING">
+      <offset>336</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Quality_Override" type="INT">
+      <offset>344</offset>
+      <default>-1</default>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Ui_Sort_Order" type="INT">
+      <offset>348</offset>
+    </column>
+    <column name="Uisortorder" type="INT">
+      <offset>348</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Ui_Sort_Order</redundant_name>
+    </column>
+    <column name="Prorated_Discount" type="OPTIONALSTRUCT">
+      <offset>352</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Prorateddiscount" type="OPTIONALSTRUCT">
+      <offset>352</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Prorated_Discount</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="Prorated_Discount:" type="OPTIONALSTRUCT">
+      <offset>352</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Prorated_Discount</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Expr_Can_Buy_Block" type="OPTIONALSTRUCT">
+      <offset>360</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprcanbuy:" type="OPTIONALSTRUCT">
+      <offset>360</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Expr_Can_Buy_Block</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Cant_Buy_Mesg" type="EMBEDDEDSTRUCT">
+      <offset>368</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Cant_Buy_Mesg_Override" type="STRUCT">
+      <offset>392</offset>
+      <subtable external="MicroTrans2MesgOverride" />
+    </column>
+    <column name="Buy_Expr_Requires_Entity" type="BIT">
+      <offset>400</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Use_Buy_Expr_For_Visibility" type="BIT">
+      <offset>400</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Once_Per_Character" type="BIT">
+      <offset>400</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Once_Per_Account" type="BIT">
+      <offset>400</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Repurchase_For_Free" type="BIT">
+      <offset>400</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="No_Spending_Cap" type="BIT">
+      <offset>400</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Must_Be_Enabled" type="BIT">
+      <offset>400</offset>
+      <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Is_Enabled" type="BIT">
+      <offset>400</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65543</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allegiance_Restriction" type="BIT">
+      <offset>401</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Web_Grantable" type="BIT">
+      <offset>401</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Create_Shadow_Account" type="BIT">
+      <offset>404</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Only_One_Requirement_Must_Be_Met" type="BIT">
+      <offset>408</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mark_As_Billed" type="BIT">
+      <offset>408</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requires_Probation_Warning" type="BIT">
+      <offset>408</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requiresprobationwarning" type="BIT">
+      <offset>408</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Requires_Probation_Warning</redundant_name>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Prorated_Allow_Multiple_Purchases" type="BIT">
+      <offset>408</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Proratedallowmultiplepurchases" type="BIT">
+      <offset>408</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Prorated_Allow_Multiple_Purchases</redundant_name>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Not_In_Current_List" type="BIT">
+      <offset>408</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Time_Once_Per_Reset" type="INT">
+      <offset>412</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Time_Once_Per_Account_Reset" type="INT">
+      <offset>412</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>NO_WRITE</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <redundant_name>Time_Once_Per_Reset</redundant_name>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Grant" type="STRUCT">
+      <offset>416</offset>
+      <subtable external="MicroTransactionPart" />
+    </column>
+    <column name="Default_Is_In_Featured" type="EMBEDDEDSTRUCT">
+      <offset>424</offset>
+      <subtable external="MicroTrans2LogicalCategory" />
+    </column>
+    <column name="In_Featured_Override" type="STRUCT">
+      <offset>448</offset>
+      <subtable external="MicroTrans2LogicalCategoryOverride" />
+    </column>
+    <column name="Default_Is_In_New" type="EMBEDDEDSTRUCT">
+      <offset>456</offset>
+      <subtable external="MicroTrans2LogicalCategory" />
+    </column>
+    <column name="In_New_Override" type="STRUCT">
+      <offset>480</offset>
+      <subtable external="MicroTrans2LogicalCategoryOverride" />
+    </column>
+    <column name="Min_Vip_Points" type="INT">
+      <offset>488</offset>
+      <default>-1</default>
+    </column>
+    <column name="Max_Vip_Points" type="INT">
+      <offset>492</offset>
+      <default>-1</default>
+    </column>
+    <column name="Mask_Old_Point_Buy_Product_Name" type="STRING">
+      <offset>496</offset>
+    </column>
+    <column name="Xbox_Prices" type="STRUCT">
+      <offset>504</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <subtable external="XboxPriceInfo" />
+    </column>
+    <column name="Epic_Price" type="OPTIONALSTRUCT">
+      <offset>512</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <subtable external="EpicPriceInfo" />
+    </column>
+    <column name="Steam_Item_Id" type="INT">
+      <offset>520</offset>
+    </column>
+    <column name="Third_Party_Id" type="STRING">
+      <offset>528</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Old_Product_Name" type="STRING">
+      <offset>536</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Required_Battlepass_Paid" type="IGNORE" />
+    <column name="Required_Battlepass" type="IGNORE" />
+    <column name="Required_Battlepass_Level" type="IGNORE" />
+    <column name="Coherent_Icon" type="IGNORE" />
+    <column name="Is_Featured" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="Featured_Override" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="Is_New" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="New_Override" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PowerListNode">
+  <table>
+    <column name="PowerListNode" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Treedef" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>PowerTreeDef</dictionary_name>
+    </column>
+    <column name="Groupdef" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>PowerTreeGroupDef</dictionary_name>
+    </column>
+    <column name="Nodedef" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>PowerTreeNodeDef</dictionary_name>
+    </column>
+    <column name="PowerDef" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Node" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="PTNode" />
+    </column>
+    <column name="Power" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Power" />
+    </column>
+    <column name="Entityconid" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Entitycontype" type="INT">
+      <offset>52</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="PowerIcon" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Buttonicon" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Shiftbuttonicon" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Powerdisplayname" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rank" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Maxrank" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="Ownedrank" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Level" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="Traininginfo" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="CharacterTraining" />
+    </column>
+    <column name="Requiredmicrotransaction" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="MicroTransactionDef" />
+    </column>
+    <column name="Emptyindex" type="INT">
+      <offset>120</offset>
+    </column>
+    <column name="Gridrow" type="INT">
+      <offset>124</offset>
+    </column>
+    <column name="Gridcolumn" type="INT">
+      <offset>128</offset>
+    </column>
+    <column name="Workinggridcolumn" type="INT">
+      <offset>132</offset>
+    </column>
+    <column name="Childcount" type="INT">
+      <offset>136</offset>
+    </column>
+    <column name="Isheader" type="BIT">
+      <offset>140</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Isgroup" type="BIT">
+      <offset>140</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Istree" type="BIT">
+      <offset>140</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Isconditionalnode" type="BIT">
+      <offset>140</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Canaccessconditionalnode" type="BIT">
+      <offset>140</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Ischildtree" type="BIT">
+      <offset>140</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Isloading" type="BIT">
+      <offset>140</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Showenhancements" type="BIT">
+      <offset>140</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65543</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="IsOwned" type="BIT">
+      <offset>141</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Canincrement" type="BIT">
+      <offset>141</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Isavailable" type="BIT">
+      <offset>141</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Isunlocked" type="BIT">
+      <offset>141</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Isavailableforfakeent" type="BIT">
+      <offset>141</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Istraining" type="BIT">
+      <offset>141</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Isempty" type="BIT">
+      <offset>141</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Alreadyentitled" type="BIT">
+      <offset>141</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Premiumentitlement" type="BIT">
+      <offset>142</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Isfakeentdifferent" type="BIT">
+      <offset>142</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Isrankcustom" type="BIT">
+      <offset>142</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Hasmanual" type="BIT">
+      <offset>142</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Treeslotted" type="BIT">
+      <offset>142</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Uupdatedframe" type="INT">
+      <offset>144</offset>
+    </column>
+    <column name="Numpowersinsamelevel" type="INT">
+      <offset>148</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

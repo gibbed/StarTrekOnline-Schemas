@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ContactSelectedMission">
+  <table>
+    <column name="ContactSelectedMission" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="MissionName" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Missionsumary" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Gearratingmin" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Gearratingmax" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Hmission" type="REFERENCE">
+      <offset>24</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <dictionary_name>MissionDef</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

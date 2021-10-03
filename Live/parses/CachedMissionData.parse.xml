@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CachedMissionData">
+  <table>
+    <column name="CachedMissionData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="MissionRefString" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="MissionDef" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Hdisplayname" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Contact" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Progressionnode" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Hcontactdisplayname" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Contactkey" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Remotecontact" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Credittype" type="INT">
+      <offset>60</offset>
+      <static_define_list external="MissionCreditType" />
+    </column>
+    <column name="State" type="INT">
+      <offset>64</offset>
+      <static_define_list external="MissionState" />
+    </column>
+    <column name="MinLevel" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Usecondarylockouttime" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Utime" type="INT">
+      <offset>76</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Playerentid" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Available" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Visible" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Update" type="BIT">
+      <offset>84</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Current" type="BIT">
+      <offset>84</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

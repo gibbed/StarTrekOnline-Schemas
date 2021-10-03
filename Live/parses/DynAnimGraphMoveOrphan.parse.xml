@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynAnimGraphMoveOrphan">
+  <table>
+    <column name="DynAnimGraphMoveOrphan" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Movename" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Orphanfx" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="DynAnimGraphFxEvent" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

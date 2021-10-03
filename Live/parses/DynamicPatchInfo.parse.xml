@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynamicPatchInfo">
+  <table>
+    <column name="DynamicPatchInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Server" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="port" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Prefix" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Clientproject" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Serverproject" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Uploadproject" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Resourceproject" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Branch" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Viewname" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="timeout" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

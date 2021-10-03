@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PerfMetricSampleBudget_U32">
+  <table>
+    <column name="PerfMetricSampleBudget_U32" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Metricname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Values" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">PerfMetricBudget_U32</format_string>
+      </format_strings>
+    </column>
+    <column name="DisplayName" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Max" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Budget" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="PerfMetricSampleBudget_U32" />
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

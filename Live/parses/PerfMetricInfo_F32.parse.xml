@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PerfMetricInfo_F32">
+  <table>
+    <column name="PerfMetricInfo_F32" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Metricname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Metricflags" type="INT">
+      <offset>8</offset>
+      <static_define_list external="PerfMetricFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Detailedusagetype" type="INT">
+      <offset>12</offset>
+      <static_define_list external="PerfDetailedUsageReportType" />
+    </column>
+    <column name="Detailedusageflags" type="INT">
+      <offset>16</offset>
+      <static_define_list external="PerfDetailedUsageFlags" />
+    </column>
+    <column name="Budget" type="INT">
+      <offset>20</offset>
+      <default>-1</default>
+    </column>
+    <column name="Tmetrictotal" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Tmetrictotalself" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Unitspec" type="INT">
+      <offset>32</offset>
+      <default>-1</default>
+    </column>
+    <column name="Unitspecscalingfactor" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

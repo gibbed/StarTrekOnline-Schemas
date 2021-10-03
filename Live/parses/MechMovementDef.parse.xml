@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MechMovementDef">
+  <table>
+    <column name="MechMovementDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>2</default>
+      <static_define_list external="MovementRequesterType" />
+    </column>
+    <column name="Gear_0" type="EMBEDDEDSTRUCT">
+      <offset>4</offset>
+      <subtable external="MechMovementGearDef" />
+    </column>
+    <column name="Gear_1" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <subtable external="MechMovementGearDef" />
+    </column>
+    <column name="Gear_2" type="EMBEDDEDSTRUCT">
+      <offset>28</offset>
+      <subtable external="MechMovementGearDef" />
+    </column>
+    <column name="Deceleration" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Reversedeceleration" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Steering" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="MechMovementSteeringDef" />
+    </column>
+    <column name="Overturn" type="EMBEDDEDSTRUCT">
+      <offset>68</offset>
+      <subtable external="MechMovementOverturnDef" />
+    </column>
+    <column name="Slide" type="EMBEDDEDSTRUCT">
+      <offset>92</offset>
+      <subtable external="MechMovementSlideDef" />
+    </column>
+    <column name="Reverse" type="EMBEDDEDSTRUCT">
+      <offset>112</offset>
+      <subtable external="MechMovementReverseDef" />
+    </column>
+    <column name="Minimumspeed" type="F32">
+      <offset>156</offset>
+    </column>
+    <column name="Bodyturnratemax" type="F32">
+      <offset>160</offset>
+      <default>120</default>
+    </column>
+    <column name="Bodyturnratemin" type="F32">
+      <offset>164</offset>
+      <default>120</default>
+    </column>
+    <column name="Uphillspeedmod" type="F32">
+      <offset>168</offset>
+      <default>1</default>
+    </column>
+    <column name="Downhillspeedmod" type="F32">
+      <offset>172</offset>
+      <default>1</default>
+    </column>
+    <column name="Landingspeedloss" type="F32">
+      <offset>176</offset>
+    </column>
+    <column name="Smoothingfactor" type="F32">
+      <offset>180</offset>
+    </column>
+    <column name="Turretyawturnrate" type="F32">
+      <offset>184</offset>
+    </column>
+    <column name="Turretyawlimit" type="F32">
+      <offset>188</offset>
+    </column>
+    <column name="Turretyawfrombody" type="BOOLFLAG">
+      <offset>192</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Turretpitchturnrate" type="F32">
+      <offset>196</offset>
+    </column>
+    <column name="Turretpitchmax" type="F32">
+      <offset>200</offset>
+    </column>
+    <column name="Turretpitchmin" type="F32">
+      <offset>204</offset>
+    </column>
+    <column name="Hover" type="EMBEDDEDSTRUCT">
+      <offset>208</offset>
+      <subtable external="MechHoverMovementDef" />
+    </column>
+    <column name="Sprint" type="EMBEDDEDSTRUCT">
+      <offset>296</offset>
+      <subtable external="MechSprintMovementDef" />
+    </column>
+    <column name="Turretturningfx" type="STRING">
+      <offset>328</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Slidingfx" type="STRING">
+      <offset>336</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

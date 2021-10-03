@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="InstantPlayUIRow">
+  <table>
+    <column name="InstantPlayUIRow" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Instantplaydef" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>InstantPlayDef</dictionary_name>
+    </column>
+    <column name="Isactivateable" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usecondsuntilcooldownfinished" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Ucooldownendtime" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Errorisdeadordieing" type="U8">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Errorisincombat" type="U8">
+      <offset>21</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Errornotinsocialzone" type="U8">
+      <offset>22</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Erroractivatableexpressionfailed" type="U8">
+      <offset>23</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Errorplayerisinteamandisnotleader" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Teamerror" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

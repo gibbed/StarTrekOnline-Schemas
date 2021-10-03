@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PCPartV0">
+  <table>
+    <column name="PCPartV0" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Bone" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeBone</dictionary_name>
+    </column>
+    <column name="Hbonedef" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Bone</redundant_name>
+      <dictionary_name>CostumeBone</dictionary_name>
+    </column>
+    <column name="Geometry" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeGeometry</dictionary_name>
+    </column>
+    <column name="Hgeodef" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Geometry</redundant_name>
+      <dictionary_name>CostumeGeometry</dictionary_name>
+    </column>
+    <column name="Material" type="REFERENCE">
+      <offset>16</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeMaterial</dictionary_name>
+    </column>
+    <column name="Hmatdef" type="REFERENCE">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Material</redundant_name>
+      <dictionary_name>CostumeMaterial</dictionary_name>
+    </column>
+    <column name="Texturegroup" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Htexturegroup" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Texturegroup</redundant_name>
+    </column>
+    <column name="Patterntexture" type="REFERENCE">
+      <offset>32</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Hpatterntexture" type="REFERENCE">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Patterntexture</redundant_name>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="DetailTexture" type="REFERENCE">
+      <offset>40</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Hdetailtexture" type="REFERENCE">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>DetailTexture</redundant_name>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Speculartexture" type="REFERENCE">
+      <offset>48</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Hspeculartexture" type="REFERENCE">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Speculartexture</redundant_name>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Diffusetexture" type="REFERENCE">
+      <offset>56</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Hdiffusetexture" type="REFERENCE">
+      <offset>56</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Diffusetexture</redundant_name>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Movabletexture" type="REFERENCE">
+      <offset>64</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Hmovabletexture" type="REFERENCE">
+      <offset>64</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Movabletexture</redundant_name>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Ibonegroupindex" type="INT">
+      <offset>72</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <default>-1</default>
+    </column>
+    <column name="Color0" type="F32FIXEDARRAY">
+      <offset>76</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Color0" type="F32FIXEDARRAY">
+      <offset>76</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Color0</redundant_name>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Color1" type="F32FIXEDARRAY">
+      <offset>92</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Color1" type="F32FIXEDARRAY">
+      <offset>92</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Color1</redundant_name>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Color2" type="F32FIXEDARRAY">
+      <offset>108</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Color2" type="F32FIXEDARRAY">
+      <offset>108</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Color2</redundant_name>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Color3" type="F32FIXEDARRAY">
+      <offset>124</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Color3" type="F32FIXEDARRAY">
+      <offset>124</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Color3</redundant_name>
+      <num_elements>4</num_elements>
+      <format_raw>16</format_raw>
+    </column>
+    <column name="Glowscale" type="U8FIXEDARRAY">
+      <offset>140</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Customreflection" type="U8">
+      <offset>144</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bcustomreflection" type="U8">
+      <offset>144</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Customreflection</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Customspecularity" type="U8">
+      <offset>145</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bcustomspecularity" type="U8">
+      <offset>145</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Customspecularity</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Reflection" type="U8FIXEDARRAY">
+      <offset>146</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Reflection" type="U8FIXEDARRAY">
+      <offset>146</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Reflection</redundant_name>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Specularity" type="U8FIXEDARRAY">
+      <offset>150</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Colorlink" type="INT">
+      <offset>156</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="PCColorLink" />
+    </column>
+    <column name="Ecolorlink" type="INT">
+      <offset>156</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Colorlink</redundant_name>
+      <static_define_list external="PCColorLink" />
+    </column>
+    <column name="Materiallink" type="INT">
+      <offset>160</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="PCColorLink" />
+    </column>
+    <column name="Emateriallink" type="INT">
+      <offset>160</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Materiallink</redundant_name>
+      <static_define_list external="PCColorLink" />
+    </column>
+    <column name="Geolink" type="U8">
+      <offset>164</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bgeolink" type="U8">
+      <offset>164</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Geolink</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Noshadow" type="U8">
+      <offset>165</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bnoshadow" type="U8">
+      <offset>165</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Noshadow</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fpatternvalue" type="F32">
+      <offset>168</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Fdetailvalue" type="F32">
+      <offset>172</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Fspecularvalue" type="F32">
+      <offset>176</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Fdiffusevalue" type="F32">
+      <offset>180</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Fmovablevalue" type="F32">
+      <offset>184</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Movablex" type="F32">
+      <offset>188</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Fmovablex" type="F32">
+      <offset>188</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Movablex</redundant_name>
+    </column>
+    <column name="Movabley" type="F32">
+      <offset>192</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Fmovabley" type="F32">
+      <offset>192</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Movabley</redundant_name>
+    </column>
+    <column name="Movablescalex" type="F32">
+      <offset>196</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <default>1</default>
+    </column>
+    <column name="Movscalex" type="F32">
+      <offset>196</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Movablescalex</redundant_name>
+      <default>1</default>
+    </column>
+    <column name="Fmovablescalex" type="F32">
+      <offset>196</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Movablescalex</redundant_name>
+      <default>1</default>
+    </column>
+    <column name="Movablescaley" type="F32">
+      <offset>200</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <default>1</default>
+    </column>
+    <column name="Movscaley" type="F32">
+      <offset>200</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Movablescaley</redundant_name>
+      <default>1</default>
+    </column>
+    <column name="Fmovablescaley" type="F32">
+      <offset>200</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Movablescaley</redundant_name>
+      <default>1</default>
+    </column>
+    <column name="Movablerotation" type="F32">
+      <offset>204</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Movrotation" type="F32">
+      <offset>204</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Movablerotation</redundant_name>
+    </column>
+    <column name="Fmovablerotation" type="F32">
+      <offset>204</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Movablerotation</redundant_name>
+    </column>
+    <column name="Extracolor" type="STRUCT">
+      <offset>208</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PCMaterialColorV0" />
+    </column>
+    <column name="Eaextracolors" type="STRUCT">
+      <offset>208</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Extracolor</redundant_name>
+      <subtable external="PCMaterialColorV0" />
+    </column>
+    <column name="Extravalue" type="STRUCT">
+      <offset>216</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PCMaterialConstant" />
+    </column>
+    <column name="Eaextraconstants" type="STRUCT">
+      <offset>216</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Extravalue</redundant_name>
+      <subtable external="PCMaterialConstant" />
+    </column>
+    <column name="Extratexture" type="STRUCT">
+      <offset>224</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PCTextureRef" />
+    </column>
+    <column name="Eaextratextures" type="STRUCT">
+      <offset>224</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Extratexture</redundant_name>
+      <subtable external="PCTextureRef" />
+    </column>
+    <column name="Cloth" type="OPTIONALSTRUCT">
+      <offset>232</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PCPartV0" />
+    </column>
+    <column name="Pclothlayer" type="OPTIONALSTRUCT">
+      <offset>232</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Cloth</redundant_name>
+      <subtable external="PCPartV0" />
+    </column>
+    <column name="Controlledrandomlocks" type="INT">
+      <offset>240</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="PCControlledRandomLock" />
+    </column>
+    <column name="Econtrolledrandomlocks" type="INT">
+      <offset>240</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Controlledrandomlocks</redundant_name>
+      <static_define_list external="PCControlledRandomLock" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

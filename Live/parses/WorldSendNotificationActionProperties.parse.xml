@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldSendNotificationActionProperties">
+  <table>
+    <column name="WorldSendNotificationActionProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Notifytype" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Logicalstring" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Sound" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Notifymsg" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="DisplayMessageWithVO" />
+    </column>
+    <column name="Soundoverride" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Headshotproperties" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="WorldGameActionHeadshotProperties" />
+    </column>
+    <column name="Splatfx" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

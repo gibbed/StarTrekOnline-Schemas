@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ScoreboardEntity">
+  <table>
+    <column name="ScoreboardEntity" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="EntID" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Entref" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="AccountName" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="FactionName" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Points" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Playerkills" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Playerassists" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Playerhealing" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Playerdamage" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Playerabsorb" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Deathstoplayers" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Playertime" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Bosskills" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Deathstobosses" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Totalkills" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Deathstotal" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Playerassaultteams" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Active" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Istrackingscores" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Wastracked" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Characterpathname" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CombatReactivePowerDef">
+  <table>
+    <column name="CombatReactivePowerDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Preactivatetime" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Deactivatetime" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Activatespeedscale" type="F32">
+      <offset>24</offset>
+      <default>-1</default>
+    </column>
+    <column name="Preactivatespeedscale" type="F32">
+      <offset>28</offset>
+      <default>-1</default>
+    </column>
+    <column name="Animfx" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="CombatReactivePowerAnimFx" />
+    </column>
+    <column name="Activatepowerdef" type="REFERENCE">
+      <offset>80</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Attribpoolname" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Attribpoolpostdelaytimer" type="F32">
+      <offset>96</offset>
+    </column>
+    <column name="Combatpowerstate" type="STRING">
+      <offset>104</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Costattrib" type="INT">
+      <offset>112</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Maxcostattrib" type="INT">
+      <offset>116</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Requiredamounttoactivate" type="F32">
+      <offset>120</offset>
+    </column>
+    <column name="Exprblockmovementattribcost" type="OPTIONALSTRUCT">
+      <offset>128</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Movementattribcost" type="OPTIONALSTRUCT">
+      <offset>128</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockmovementattribcost</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Initialactivationattribcost" type="F32">
+      <offset>136</offset>
+    </column>
+    <column name="Requireditemcategory" type="INTARRAY">
+      <offset>144</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Requireditemcategoryerrormessagekey" type="STRING">
+      <offset>152</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Disallowedpowermode" type="INT">
+      <offset>160</offset>
+      <default>-1</default>
+      <static_define_list external="PowerMode" />
+    </column>
+    <column name="Combatlevellockout" type="INT">
+      <offset>164</offset>
+    </column>
+    <column name="Roll" type="OPTIONALSTRUCT">
+      <offset>168</offset>
+      <subtable external="TacticalRequesterRollDef" />
+    </column>
+    <column name="Allowcancelpowercategory" type="INTARRAY">
+      <offset>176</offset>
+      <static_define_list external="PowerCategory" />
+    </column>
+    <column name="Disablingattribs" type="INTARRAY">
+      <offset>184</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Incombattimer" type="F32">
+      <offset>192</offset>
+    </column>
+    <column name="Cooldown" type="F32">
+      <offset>196</offset>
+    </column>
+    <column name="Disablesjump" type="BIT">
+      <offset>200</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Enablestrafing" type="BIT">
+      <offset>200</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Ignorehitfxduringactivation" type="BIT">
+      <offset>200</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Disallowpoweractivation" type="BIT">
+      <offset>200</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Poweractivationdeactivates" type="BIT">
+      <offset>200</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Canactivatebydoubletap" type="BIT">
+      <offset>200</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Activatingdisablesautoattack" type="BIT">
+      <offset>200</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65542</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Canchainroll" type="BIT">
+      <offset>200</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Xboxtogglespower" type="BIT">
+      <offset>201</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Togglepoweronconsole" type="BIT">
+      <offset>201</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Xboxtogglespower</redundant_name>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

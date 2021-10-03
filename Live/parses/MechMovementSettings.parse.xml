@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MechMovementSettings">
+  <table>
+    <column name="MechMovementSettings" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Fuelattrib" type="INT">
+      <offset>0</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Fuelpoolname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Fuelusepooltimeout" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Hovercostattrib" type="INT">
+      <offset>20</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Hoverinitialforceattrib" type="INT">
+      <offset>24</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Hoversustainedforceattrib" type="INT">
+      <offset>28</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Hovermaxairspeed" type="INT">
+      <offset>32</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Sprintcostattrib" type="INT">
+      <offset>36</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Sprintspeedattrib" type="INT">
+      <offset>40</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Basegroundfriction" type="F32">
+      <offset>44</offset>
+      <default>1054280253</default>
+    </column>
+    <column name="Baseairfriction" type="F32">
+      <offset>48</offset>
+      <default>1050924810</default>
+    </column>
+    <column name="Forceddeceleration" type="F32">
+      <offset>52</offset>
+      <default>50</default>
+    </column>
+    <column name="Forcedhoverdeceleration" type="F32">
+      <offset>56</offset>
+      <default>10</default>
+    </column>
+    <column name="Hovertoggles" type="BIT">
+      <offset>60</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

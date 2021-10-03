@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TalentsUITreeNode">
+  <table>
+    <column name="TalentsUITreeNode" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Haspowernode" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Powerlistnode" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="PowerListNode" />
+    </column>
+    <column name="Texturebits" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Texturebitspathmode" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Row" type="U8">
+      <offset>24</offset>
+    </column>
+    <column name="Column" type="U8">
+      <offset>25</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

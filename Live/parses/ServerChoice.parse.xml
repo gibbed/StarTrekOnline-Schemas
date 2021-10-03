@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ServerChoice">
+  <table>
+    <column name="ServerChoice" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Folder" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="IsOpen" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Lastmap" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Newmap" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Guildmap" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Indent" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="ContainerID" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Mapinstanceindex" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Choicetype" type="INT">
+      <offset>16</offset>
+      <static_define_list external="MapChoiceType" />
+    </column>
+    <column name="Numplayers" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="FolderName" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="DisplayName" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="MapDescription" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>DisplayName</redundant_name>
+    </column>
+    <column name="Possiblemapchoice" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="PossibleMapChoice" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

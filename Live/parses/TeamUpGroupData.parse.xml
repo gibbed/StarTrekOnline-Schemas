@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TeamUpGroupData">
+  <table>
+    <column name="TeamUpGroupData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Groupindex" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Mygroup" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Fullgroup" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Emptygroup" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

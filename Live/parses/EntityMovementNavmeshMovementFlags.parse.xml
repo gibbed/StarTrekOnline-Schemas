@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EntityMovementNavmeshMovementFlags">
+  <table>
+    <column name="EntityMovementNavmeshMovementFlags" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Inputdiriscurrent" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Hasoverridemaxspeed" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Hasinput" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Issettled" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Ignoreinputs" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Rooted" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Isignoringgravity" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Isneardeath" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Pushstart" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Pushactive" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Stunstart" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Stunactive" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Hasadditivevel" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Hasconstantforcevel" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Onground" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Needsnavmeshping" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Forcewake" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Flourishisactive" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Holdforflourish" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Playflourish" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Ownsanimation" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Releaseanimbit" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Senddeathkeyword" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Lasthitfrombehind" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Turningleft" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Playrepelanim" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Hasstancemask" type="BIT">
+      <offset>4</offset>
+      <bit_offset>983040</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

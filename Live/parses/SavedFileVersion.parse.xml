@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SavedFileVersion">
+  <table>
+    <column name="SavedFileVersion" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="FileName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Modified" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Size" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Checksum" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Header_Size" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Header_Checksum" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

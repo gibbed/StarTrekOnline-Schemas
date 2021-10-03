@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynAnimGraphLogicNode">
+  <table>
+    <column name="DynAnimGraphLogicNode" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Type" type="INT">
+      <offset>8</offset>
+      <static_define_list external="eAnimLogicNodeType" />
+    </column>
+    <column name="X" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Y" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Parameter" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="DynAnimGraphLogicNodeParam" />
+    </column>
+    <column name="Input" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="DynAnimGraphLogicNodeInput" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="FashionConfig">
+  <table>
+    <column name="FashionConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Maxtransmutesperslot" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Unlockdyecostnumeric" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Unlockdyecost" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Unlocktransmutecostnumeric" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Unlocktransmutecost" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Applydyecostnumeric" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Applydyecost" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Applytransmutecostnumeric" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Applytransmutecost" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Duplicatecostume" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="DuplicateCostume" />
+    </column>
+    <column name="Freedye" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="FashionDyeColor" />
+    </column>
+    <column name="Unlockabledye" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="FashionDyeColor" />
+    </column>
+    <column name="Dyebags" type="INTARRAY">
+      <offset>96</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Transmutebags" type="INTARRAY">
+      <offset>104</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Freetransmutebags" type="INTARRAY">
+      <offset>112</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Twoslotbags" type="INTARRAY">
+      <offset>120</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Usedyechannel3" type="U8">
+      <offset>128</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

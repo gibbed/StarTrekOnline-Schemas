@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ModArray">
+  <table>
+    <column name="ModArray" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Mods" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="AttribMod" />
+    </column>
+    <column name="Ppmods" type="STRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Mods</redundant_name>
+      <subtable external="AttribMod" />
+    </column>
+    <column name="Ppmodspending" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="AttribMod" />
+    </column>
+    <column name="Pppowers" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="Power" />
+    </column>
+    <column name="Ppmodssaved" type="STRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="AttribMod" />
+    </column>
+    <column name="Bhasbasicdisableaffects" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Ppmods" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

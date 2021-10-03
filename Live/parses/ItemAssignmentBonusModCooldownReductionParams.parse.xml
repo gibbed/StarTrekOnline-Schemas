@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemAssignmentBonusModCooldownReductionParams">
+  <table>
+    <column name="ItemAssignmentBonusModCooldownReductionParams" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Qualifieditemproperties" type="INTARRAY">
+      <offset>0</offset>
+      <static_define_list external="ItemAssignmentItemProperty" />
+    </column>
+    <column name="Percent" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

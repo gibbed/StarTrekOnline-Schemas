@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AutoPlacementObject">
+  <table>
+    <column name="AutoPlacementObject" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="ResourceName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="ResourceID" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Weight" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Placementconditionblock" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Placementcondition" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Placementconditionblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Requiredconditionblock" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Requiredcondition" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Requiredconditionblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Snaptoslope" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

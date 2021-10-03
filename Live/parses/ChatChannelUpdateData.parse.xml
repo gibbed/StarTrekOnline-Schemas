@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ChatChannelUpdateData">
+  <table>
+    <column name="ChatChannelUpdateData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Utargetuserid" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Sendtooperators" type="U8">
+      <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Sendtoall" type="U8">
+      <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Channelinfo" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="ChatChannelInfo" />
+    </column>
+    <column name="Updatetype" type="INT">
+      <offset>16</offset>
+      <static_define_list external="ChannelUpdateEnum" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

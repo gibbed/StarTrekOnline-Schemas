@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="RewardTeamLoot">
+  <table>
+    <column name="RewardTeamLoot" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="playerID" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Partitionidx" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="TeamID" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Rewardsgiven" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="TeamSize" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

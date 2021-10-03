@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ModelPackDataOnDisk">
+  <table>
+    <column name="ModelPackDataOnDisk" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Tris" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="Verts" type="EMBEDDEDSTRUCT">
+      <offset>12</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="Norms" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="Binorms" type="EMBEDDEDSTRUCT">
+      <offset>36</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="Tangents" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="Sts" type="EMBEDDEDSTRUCT">
+      <offset>60</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="Sts2" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="Colors" type="EMBEDDEDSTRUCT">
+      <offset>84</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="Weights" type="EMBEDDEDSTRUCT">
+      <offset>96</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="Matidxs" type="EMBEDDEDSTRUCT">
+      <offset>108</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="Verts2" type="EMBEDDEDSTRUCT">
+      <offset>120</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="Norms2" type="EMBEDDEDSTRUCT">
+      <offset>132</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="Sts3" type="EMBEDDEDSTRUCT">
+      <offset>144</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="Sts4" type="EMBEDDEDSTRUCT">
+      <offset>156</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="Sts5" type="EMBEDDEDSTRUCT">
+      <offset>168</offset>
+      <subtable external="PackDataOnDisk" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

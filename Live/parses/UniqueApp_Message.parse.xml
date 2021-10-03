@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UniqueApp_Message">
+  <table>
+    <column name="UniqueApp_Message" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Key" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Message" type="INT">
+      <offset>4</offset>
+      <static_define_list external="UniqueApp_MessageType" />
+    </column>
+    <column name="Commandline_Noexe" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

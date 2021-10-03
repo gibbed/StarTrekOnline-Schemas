@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayerQueue">
+  <table>
+    <column name="PlayerQueue" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="QueueName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="hDef" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>QueueDef</dictionary_name>
+    </column>
+    <column name="Descriptionsound" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Cannotusereason" type="INT">
+      <offset>24</offset>
+      <static_define_list external="QueueCannotUseReason" />
+    </column>
+    <column name="Instances" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="PlayerQueueInstance" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

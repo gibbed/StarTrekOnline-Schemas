@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="XMLMethodResponse">
+  <table>
+    <column name="XMLMethodResponse" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Params" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="XMLParam" />
+    </column>
+    <column name="Fault" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="XMLFault" />
+    </column>
+    <column name="Slowid" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

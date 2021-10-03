@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PTNodeTrainingManual">
+  <table>
+    <column name="PTNodeTrainingManual" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Node" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+      <dictionary_name>PTNodeDef</dictionary_name>
+    </column>
+    <column name="Nodedef" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <redundant_name>Node</redundant_name>
+      <dictionary_name>PTNodeDef</dictionary_name>
+    </column>
+    <column name="Hnodedef" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <redundant_name>Node</redundant_name>
+      <dictionary_name>PTNodeDef</dictionary_name>
+    </column>
+    <column name="Item" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="ItemDef" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <redundant_name>Item</redundant_name>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Manual" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <redundant_name>Item</redundant_name>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Hitemdef" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <redundant_name>Item</redundant_name>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Textparserhacktosupportblockformatting" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

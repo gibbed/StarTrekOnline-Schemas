@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenTooltipOverride">
+  <table>
+    <column name="UIGenTooltipOverride" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Htooltip" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Tooltipblock" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Tooltipexpr" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Tooltipblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Assembly" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Relative" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="UIGenRelative" />
+    </column>
+    <column name="Secondarytooltipmaxwidth" type="INT16">
+      <offset>32</offset>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Secondarytooltipmaximumwidth" type="INT16">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Secondarytooltipmaxwidth</redundant_name>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Maxwidth" type="INT16">
+      <offset>34</offset>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Maximumwidth" type="INT16">
+      <offset>34</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Maxwidth</redundant_name>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Allowobscuredsource" type="BIT">
+      <offset>36</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

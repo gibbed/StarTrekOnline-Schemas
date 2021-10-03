@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EntityBindEntry">
+  <table>
+    <column name="EntityBindEntry" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Categoryname" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Def" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="EntityBindCommand" />
+    </column>
+    <column name="Categorydef" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="EntityBindCommands" />
+    </column>
+    <column name="Primary" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="EntityBindCommandKey" />
+    </column>
+    <column name="Secondary" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="EntityBindCommandKey" />
+    </column>
+    <column name="Gamepad" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
+      <subtable external="EntityBindCommandKey" />
+    </column>
+    <column name="Extra_0" type="EMBEDDEDSTRUCT">
+      <offset>96</offset>
+      <subtable external="EntityBindCommandKey" />
+    </column>
+    <column name="Modaldisplayprimary" type="EMBEDDEDSTRUCT">
+      <offset>120</offset>
+      <subtable external="EntityBindCommandKey" />
+    </column>
+    <column name="Modaldisplaysecondary" type="EMBEDDEDSTRUCT">
+      <offset>144</offset>
+      <subtable external="EntityBindCommandKey" />
+    </column>
+    <column name="Iscategory" type="U8">
+      <offset>168</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

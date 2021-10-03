@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="JiraAuthResponse">
+  <table>
+    <column name="JiraAuthResponse" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Session" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <subtable external="JiraKeyValue" />
+    </column>
+    <column name="Errormessages" type="STRINGARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

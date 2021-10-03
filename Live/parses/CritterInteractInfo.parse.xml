@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CritterInteractInfo">
+  <table>
+    <column name="CritterInteractInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Erref" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Currindicator" type="INT">
+      <offset>4</offset>
+      <static_define_list external="ContactIndicator" />
+    </column>
+    <column name="Hactioncontactdef" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <dictionary_name>ContactDef</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

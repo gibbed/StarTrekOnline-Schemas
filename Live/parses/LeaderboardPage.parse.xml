@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="LeaderboardPage">
+  <table>
+    <column name="LeaderboardPage" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Leaderboardkey" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="EventName" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Entry" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="LeaderboardPageEntry" />
+    </column>
+    <column name="Page" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Pagecount" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Reverse" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

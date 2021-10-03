@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ShardInvestMap">
+  <table>
+    <column name="ShardInvestMap" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hzonemapinfo" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <dictionary_name>ZoneMapInfo</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

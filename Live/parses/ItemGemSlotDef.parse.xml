@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemGemSlotDef">
+  <table>
+    <column name="ItemGemSlotDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Allowedgemtype" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <static_define_list external="ItemGemType" />
+      <format>FLAGS</format>
+      <format_strings>
+        <format_string name="RESPECT_MULTI_BIT_FLAGS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <redundant_name>Allowedgemtype</redundant_name>
+      <static_define_list external="ItemGemType" />
+      <format>FLAGS</format>
+      <format_strings>
+        <format_string name="RESPECT_MULTI_BIT_FLAGS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Slotbehaviortype" type="INT">
+      <offset>4</offset>
+      <default>1</default>
+      <static_define_list external="ItemGemSlotBehaviorType" />
+    </column>
+    <column name="Preslottedgem" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="MinLevel" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="MaxLevel" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Hiddenslot" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Stub" type="U8">
+      <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disallowhigherlevelgems" type="U8">
+      <offset>26</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Redirectsitemprogression" type="U8">
+      <offset>27</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Slotunlocknumeric" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Unlocknumericvalue" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Unlockitemtier" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Possiblegemdefs" type="STRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+      <subtable external="ItemDefRef" />
+    </column>
+    <column name="Disallowrandomizegem" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disallowrandomizemagnitude" type="U8">
+      <offset>57</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Unlockall" type="U8">
+      <offset>58</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Gemtouseforpreview" type="REFERENCE">
+      <offset>64</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

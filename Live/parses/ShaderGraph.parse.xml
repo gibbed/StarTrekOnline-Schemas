@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ShaderGraph">
+  <table>
+    <column name="ShaderGraph" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Fn" type="CURRENTFILE">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="TimeStamp" type="TIMESTAMP">
+      <offset>8</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+    </column>
+    <column name="Type" type="INT">
+      <offset>12</offset>
+      <static_define_list external="ShaderGraphType" />
+    </column>
+    <column name="Target" type="INT">
+      <offset>16</offset>
+      <static_define_list external="ShaderGraphTarget" />
+    </column>
+    <column name="Operation" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="ShaderOperation" />
+    </column>
+    <column name="Userproperty" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="ShaderUserProperty" />
+    </column>
+    <column name="Functioninput" type="STRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <subtable external="ShaderInput" />
+    </column>
+    <column name="Flags" type="INT">
+      <offset>88</offset>
+      <static_define_list external="ShaderGraphFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Reflection" type="INT">
+      <offset>92</offset>
+      <static_define_list external="ShaderGraphReflectionType" />
+    </column>
+    <column name="Defines" type="STRINGARRAY">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Graphquality" type="INT">
+      <offset>104</offset>
+      <static_define_list external="ShaderGraphQuality" />
+    </column>
+    <column name="Excludeclustering" type="IGNORE" />
+    <column name="Features" type="IGNORE" />
+    <column name="Featuresoverriden" type="IGNORE" />
+    <column name="Endshadergraph" type="END" />
+  </table>
+</parse>

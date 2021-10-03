@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SimpleMonitoringStatus">
+  <table>
+    <column name="SimpleMonitoringStatus" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_DEF_FIELDS_TO_SHOW">ConnectionState, LastActivityTime, status.status.fps, status.status.State</format_string>
+      </format_strings>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Connectionstate" type="INT">
+      <offset>8</offset>
+      <static_define_list external="SimpleMonitoringState" />
+    </column>
+    <column name="Lastactivitytime" type="INT">
+      <offset>12</offset>
+      <format_strings>
+        <format_string name="HTML_SECS_AGO">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Status" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <subtable external="StatusReporting_Wrapper" />
+    </column>
+    <column name="Link" type="OPTIONALSTRUCT">
+      <offset>176</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="NetLink" />
+      <format_strings>
+        <format_string name="HTML_SKIP_IN_TABLE">1</format_string>
+        <format_string name="HTML_WRITE_UNOWNED">1</format_string>
+      </format_strings>
+    </column>
+    <column name="ip" type="INT">
+      <offset>184</offset>
+    </column>
+    <column name="Assumedmachinename" type="STRING">
+      <offset>192</offset>
+    </column>
+    <column name="Myoverlord" type="STRING">
+      <offset>200</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Logs" type="STRUCT">
+      <offset>208</offset>
+      <subtable external="SimpleMonitoringStatus_Log" />
+    </column>
+    <column name="Machinenameforwardedfrom" type="STRING">
+      <offset>216</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CrypticRPCManager_Public">
+  <table>
+    <column name="CrypticRPCManager_Public" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_DEF_FIELDS_TO_SHOW">State, LastConnectedTime, RemoteContainerType, RemoteIP</format_string>
+      </format_strings>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="State" type="INT">
+      <offset>8</offset>
+      <static_define_list external="CrypticRPCState" />
+    </column>
+    <column name="Timeenteredstate" type="INT">
+      <offset>12</offset>
+      <format_strings>
+        <format_string name="HTML_SECS_AGO">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Lastfullyconnectedtime" type="INT">
+      <offset>16</offset>
+      <format_strings>
+        <format_string name="HTML_SECS_AGO">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Remotecrypticrpcname" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Remotecontainertype" type="INT">
+      <offset>32</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Remoteip" type="INT">
+      <offset>36</offset>
+      <format>IP</format>
+    </column>
+    <column name="Crypticrpclistenname" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Stats" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="CrypticRPCStats_PerManager" />
+    </column>
+    <column name="Lastactivitytime" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Remotemanagerisephemeral" type="U8">
+      <offset>60</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AccountProxyPlatformLinkRequest">
+  <table>
+    <column name="AccountProxyPlatformLinkRequest" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uaccountid" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Uentityid" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Email" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="MachineID" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Accountguardotc" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

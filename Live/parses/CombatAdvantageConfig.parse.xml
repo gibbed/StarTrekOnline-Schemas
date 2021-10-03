@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CombatAdvantageConfig">
+  <table>
+    <column name="CombatAdvantageConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Clientadvantageringsshowdistance" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Flankangletolerance" type="F32">
+      <offset>4</offset>
+      <default>30</default>
+    </column>
+    <column name="Flankingdistance" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Strengthbonusmax" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Fxinarchue" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Fxinarcsaturation" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Fxhitframehue" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Fxhitframesaturation" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Fxhitframetimer" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Counterattrib" type="INT">
+      <offset>40</offset>
+      <default>-1</default>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

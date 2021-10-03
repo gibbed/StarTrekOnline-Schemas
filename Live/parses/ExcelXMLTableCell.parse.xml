@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ExcelXMLTableCell">
+  <table>
+    <column name="ExcelXMLTableCell" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Estrdata" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="data" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Floatdata" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="U64data" type="INT64">
+      <offset>16</offset>
+    </column>
+    <column name="Empty" type="U8">
+      <offset>24</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

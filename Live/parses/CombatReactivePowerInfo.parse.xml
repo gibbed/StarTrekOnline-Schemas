@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CombatReactivePowerInfo">
+  <table>
+    <column name="CombatReactivePowerInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hcombatblockdef" type="REFERENCE">
+      <offset>72</offset>
+      <dictionary_name>CombatReactivePowerDef</dictionary_name>
+    </column>
+    <column name="Ignorehitfxduringactivation" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Handlesdoubletap" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Isroll" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Togglepoweronconsole" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

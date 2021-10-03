@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenMapState">
+  <table>
+    <column name="UIGenMapState" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>26</default>
+      <static_define_list external="UIGenType" />
+    </column>
+    <column name="Icons" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="UIGenMapIcon" />
+    </column>
+    <column name="Iconunderreticule" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="UIGenMapIcon" />
+    </column>
+    <column name="Mapscale" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Pixelsperworldunit" type="F32">
+      <offset>28</offset>
+      <default>1056964608</default>
+    </column>
+    <column name="Savedpixelsperworldunit" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="V3oldworldcenter" type="F32FIXEDARRAY">
+      <offset>36</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V3worldcenter" type="F32FIXEDARRAY">
+      <offset>48</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V3target" type="F32FIXEDARRAY">
+      <offset>60</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V3targetprev" type="F32FIXEDARRAY">
+      <offset>72</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V3dragstarttarget" type="F32FIXEDARRAY">
+      <offset>84</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V3delayedtarget" type="F32FIXEDARRAY">
+      <offset>96</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Hasdelayedtarget" type="U8">
+      <offset>108</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Grabbedx" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Grabbedy" type="INT">
+      <offset>116</offset>
+    </column>
+    <column name="Htarget" type="INT">
+      <offset>120</offset>
+    </column>
+    <column name="Following" type="U8">
+      <offset>124</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fakezone" type="STRING">
+      <offset>128</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Fakezonereveal" type="EMBEDDEDSTRUCT">
+      <offset>144</offset>
+      <subtable external="MapRevealInfo" />
+    </column>
+    <column name="Eairevealbits" type="INTARRAY">
+      <offset>208</offset>
+    </column>
+    <column name="Selectedmissionrefstring" type="STRING">
+      <offset>288</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Previousregiontype" type="INT">
+      <offset>296</offset>
+      <static_define_list external="WorldRegionType" />
+    </column>
+    <column name="Queuedactions" type="STRUCT">
+      <offset>304</offset>
+      <subtable external="UIGenAction" />
+    </column>
+    <column name="Oldmapname" type="STRING">
+      <offset>312</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Oldregiontype" type="INT">
+      <offset>320</offset>
+      <static_define_list external="WorldRegionType" />
+    </column>
+    <column name="Savescaletimer" type="F32">
+      <offset>324</offset>
+    </column>
+    <column name="Keyindextoemphasize" type="INT">
+      <offset>328</offset>
+      <default>-1</default>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

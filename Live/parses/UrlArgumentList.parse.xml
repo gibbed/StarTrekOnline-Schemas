@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UrlArgumentList">
+  <table>
+    <column name="UrlArgumentList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Baseurl" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Rawpathbegin" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Urlarglist" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="UrlArgument" />
+    </column>
+    <column name="Uport" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Forcedmethod" type="INT">
+      <offset>28</offset>
+      <static_define_list external="HttpMethod" />
+    </column>
+    <column name="Mimetype" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="timeout" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>52</offset>
+      <static_define_list external="UrlArgumentListFlags" />
+    </column>
+    <column name="Logginglevel" type="INT">
+      <offset>56</offset>
+      <static_define_list external="Http_LoggingFlags" />
+    </column>
+    <column name="Haslogging" type="BIT">
+      <offset>60</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldStreamingPooledInfo">
+  <table>
+    <column name="WorldStreamingPooledInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Strings" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <subtable external="WorldInfoStringTable" />
+    </column>
+    <column name="Packed_Info_Offset" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Packed_Info_Crc" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Packed_Data_Serialize" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="SerializablePackedStructStream" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

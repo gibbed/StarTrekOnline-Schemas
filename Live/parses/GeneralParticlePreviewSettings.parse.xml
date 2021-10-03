@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GeneralParticlePreviewSettings">
+  <table>
+    <column name="GeneralParticlePreviewSettings" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Updaterate" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Testvelocity" type="F32FIXEDARRAY">
+      <offset>4</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Testmagnetpos" type="F32FIXEDARRAY">
+      <offset>16</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Testemittargetpos" type="F32FIXEDARRAY">
+      <offset>28</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Graphheight" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Opacity" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Axes" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Gridsize" type="F32">
+      <offset>52</offset>
+    </column>
+    <column name="Gridalpha" type="F32">
+      <offset>56</offset>
+    </column>
+    <column name="Hueshift" type="F32">
+      <offset>60</offset>
+    </column>
+    <column name="Saturationshift" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Valueshift" type="F32">
+      <offset>68</offset>
+    </column>
+    <column name="Scalefactor" type="F32">
+      <offset>72</offset>
+    </column>
+    <column name="Testhueshift" type="BOOLFLAG">
+      <offset>76</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Gridxz" type="BOOLFLAG">
+      <offset>77</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Gridxy" type="BOOLFLAG">
+      <offset>78</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Gridyz" type="BOOLFLAG">
+      <offset>79</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Drawworld" type="BOOLFLAG">
+      <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isinscreenspace" type="BOOLFLAG">
+      <offset>81</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Rebuildui" type="U8">
+      <offset>82</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dropnode" type="U8">
+      <offset>83</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Resetset" type="U8">
+      <offset>84</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Autosave" type="U8">
+      <offset>85</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Testnode" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="DynNode" />
+    </column>
+    <column name="Testmagnetnode" type="OPTIONALSTRUCT">
+      <offset>96</offset>
+      <subtable external="DynNode" />
+    </column>
+    <column name="Testemittargetnode" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <subtable external="DynNode" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="BulletinClient">
+  <table>
+    <column name="BulletinClient" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Activatetime" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Eventtime" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Message" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="BulletinMessage" />
+    </column>
+    <column name="Categorymessage" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="BulletinMessage" />
+    </column>
+    <column name="Eventmessage" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
+      <subtable external="BulletinMessage" />
+    </column>
+    <column name="Microtransactiondef" type="REFERENCE">
+      <offset>80</offset>
+      <dictionary_name>MicroTransactionDef</dictionary_name>
+    </column>
+    <column name="Microtransactionid" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Link" type="STRING">
+      <offset>96</offset>
+    </column>
+    <column name="Eventtexture" type="STRING">
+      <offset>104</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Categorytexture" type="STRING">
+      <offset>112</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Categoryname" type="STRING">
+      <offset>120</offset>
+    </column>
+    <column name="Category" type="INT">
+      <offset>128</offset>
+    </column>
+    <column name="Isheader" type="U8">
+      <offset>132</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Haseventtakenplace" type="U8">
+      <offset>133</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Missioncomplete" type="U8">
+      <offset>134</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mostrecentcategory" type="U8">
+      <offset>135</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

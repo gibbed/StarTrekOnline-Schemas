@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="MountUpgradeConfig">
+  <table>
+    <column name="MountUpgradeConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Upgradetoken" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Maxbolstercount" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Defaultrankquality" type="INT">
+      <offset>12</offset>
+      <default>-1</default>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Mountslotbags" type="INTARRAY">
+      <offset>16</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Upgraderank" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="MountUpgradeRank" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

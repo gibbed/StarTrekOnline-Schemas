@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="StoreDef">
+  <table>
+    <column name="StoreDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Notes" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Inventory" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="StoreItemDef" />
+    </column>
+    <column name="Restockdef" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="StoreRestockDef" />
+    </column>
+    <column name="DiscountDef" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="StoreDiscountDef" />
+    </column>
+    <column name="Hcurrency" type="REFERENCE">
+      <offset>56</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Buymultiplier" type="F32">
+      <offset>64</offset>
+      <default>1</default>
+    </column>
+    <column name="Sellmultiplier" type="F32">
+      <offset>68</offset>
+      <default>1</default>
+    </column>
+    <column name="Exprepconversion" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprblockrequires" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="ExprRequiresBlock" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockrequires</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="ExprRequires" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockrequires</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Contents" type="INT">
+      <offset>88</offset>
+      <static_define_list external="StoreContents" />
+    </column>
+    <column name="Uimetaitem" type="REFERENCE">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Uimetacount" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Region" type="INT">
+      <offset>108</offset>
+      <default>-1</default>
+      <static_define_list external="WorldRegionType" />
+    </column>
+    <column name="Itemlevel" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Groupprojecttype" type="INT">
+      <offset>116</offset>
+      <static_define_list external="GroupProjectType" />
+    </column>
+    <column name="Provisioningprojectdef" type="REFERENCE">
+      <offset>120</offset>
+      <dictionary_name>GroupProjectDef</dictionary_name>
+    </column>
+    <column name="Provisioningnumericdef" type="REFERENCE">
+      <offset>128</offset>
+      <dictionary_name>GroupProjectNumericDef</dictionary_name>
+    </column>
+    <column name="Sellenabled" type="BIT">
+      <offset>136</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Displayallsellitems" type="BIT">
+      <offset>136</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Failonhighlimit" type="BIT">
+      <offset>136</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Disablebuyback" type="BIT">
+      <offset>136</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Ispersisted" type="BIT">
+      <offset>136</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Isresearchstore" type="BIT">
+      <offset>136</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Displaystorecpoints" type="BIT">
+      <offset>136</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Overrideitemquality" type="BIT">
+      <offset>136</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Forcebindwhileonprobation" type="BIT">
+      <offset>137</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Provisionfromgroupproject" type="BIT">
+      <offset>137</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Guildmapownermembersonly" type="BIT">
+      <offset>137</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Removegems" type="BIT">
+      <offset>137</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Trackrewardpackoriginalsource" type="BIT">
+      <offset>137</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Inheritdiscountsstoredef" type="REFERENCE">
+      <offset>144</offset>
+      <dictionary_name>StoreDef</dictionary_name>
+    </column>
+    <column name="Storerewardpacknumericscaling" type="F32">
+      <offset>152</offset>
+    </column>
+    <column name="Itemusesstorecurrencyvalue" type="U8">
+      <offset>156</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Unviewedcategory" type="INT">
+      <offset>160</offset>
+      <static_define_list external="StoreUnviewedCategory" />
+    </column>
+    <column name="Autolearn" type="IGNORE" />
+    <column name="Tempdata" type="IGNORE" />
+    <column name="Ispromostore" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

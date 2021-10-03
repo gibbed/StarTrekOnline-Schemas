@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ObjectPaintingGroupDefComponent">
+  <table>
+    <column name="ObjectPaintingGroupDefComponent" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Exclusionversion" type="INT">
+      <offset>0</offset>
+      <default>1</default>
+      <static_define_list external="TerrainExclusionVersion" />
+    </column>
+    <column name="Objecttype" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ObjectPaintingObjectType" />
+    </column>
+    <column name="data" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="ObjectInstancesOnModel" />
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="LoadBalancingInfo">
+  <table>
+    <column name="LoadBalancingInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Launchservertype" type="INT">
+      <offset>0</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Launchservercategory" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Pickedmachine" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Machineinfo" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="LoadBalancingSingleMachineInfo" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

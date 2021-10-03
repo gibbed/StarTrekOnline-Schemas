@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SubMissionPerkSettings">
+  <table>
+    <column name="SubMissionPerkSettings" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Grantrandomperksonsuccess" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Grantrandomperksonacquire" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Savecompletedsubmissionperksonsuccess" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Saveinprogresssubmissionperksonsuccess" type="U8">
+      <offset>9</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

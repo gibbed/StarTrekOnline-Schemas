@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CameraShakeInfo">
+  <table>
+    <column name="CameraShakeInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Camerashaketime" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Camerashakemagnitude" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Camerashakevertical" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Camerashakepan" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Camerashakespeed" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Camerashakedestpyr" type="F32FIXEDARRAY">
+      <offset>20</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Camerashakedestxyz" type="F32FIXEDARRAY">
+      <offset>32</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Camerashakepyrvel" type="F32FIXEDARRAY">
+      <offset>44</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Camerashakexyzvel" type="F32FIXEDARRAY">
+      <offset>56</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Camerashakecurrentpyr" type="F32FIXEDARRAY">
+      <offset>68</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Camerashakecurrentxyz" type="F32FIXEDARRAY">
+      <offset>80</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Camerashakeshifttime" type="F32">
+      <offset>92</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SavedMapDescription">
+  <table>
+    <column name="SavedMapDescription" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Emaptype" type="U8">
+      <offset>0</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="ZoneMapType" />
+    </column>
+    <column name="OwnerType" type="U8">
+      <offset>1</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Bspawnposskipbeaconcheck" type="U8">
+      <offset>2</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="MapDescription" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Mapdetail" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="MapVariables" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Difficultymode" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Mapinstanceindex" type="INT">
+      <offset>40</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="OwnerID" type="INT">
+      <offset>44</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Spawnpos" type="F32FIXEDARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Spawnpyr" type="F32FIXEDARRAY">
+      <offset>60</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="SpawnPoint" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>USEROPTIONBIT_1</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="ContainerID" type="INT">
+      <offset>80</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ivirtualshardid" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Ipartitionid" type="INT">
+      <offset>100</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Bugc" type="IGNORE" />
+    <column name="Bugcedit" type="IGNORE" />
+    <column name="Iugcprojectid" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

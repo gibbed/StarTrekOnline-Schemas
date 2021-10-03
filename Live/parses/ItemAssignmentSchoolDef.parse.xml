@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemAssignmentSchoolDef">
+  <table>
+    <column name="ItemAssignmentSchoolDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Image" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="DisplayName" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Description" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Numericxp" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Numericrank" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rankingscheduleset" type="STRING">
+      <offset>104</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Requirements" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <subtable external="ItemAssignmentSchoolRequirements" />
+    </column>
+    <column name="Availabilitysettings" type="OPTIONALSTRUCT">
+      <offset>120</offset>
+      <subtable external="ItemAssignmentSchoolAvailabilitySettings" />
+    </column>
+    <column name="Outcomesettings" type="OPTIONALSTRUCT">
+      <offset>128</offset>
+      <subtable external="ItemAssignmentSchoolOutcomeSettings" />
+    </column>
+    <column name="Xpsettings" type="OPTIONALSTRUCT">
+      <offset>136</offset>
+      <subtable external="ItemAssignmentSchoolXPSettings" />
+    </column>
+    <column name="Rewardsettings" type="OPTIONALSTRUCT">
+      <offset>144</offset>
+      <subtable external="ItemAssignmentSchoolRewardSettings" />
+    </column>
+    <column name="Assignmentbucket" type="STRUCT">
+      <offset>152</offset>
+      <subtable external="ItemAssignmentSchoolBucketDef" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

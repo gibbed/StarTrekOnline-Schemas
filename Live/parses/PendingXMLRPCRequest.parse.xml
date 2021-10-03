@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PendingXMLRPCRequest">
+  <table>
+    <column name="PendingXMLRPCRequest" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Requesttimeclockticks" type="INT64">
+      <offset>0</offset>
+    </column>
+    <column name="RequestID" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Mcpid" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Iclientid" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Requesttimeout" type="F32">
+      <offset>20</offset>
+      <default>60</default>
+    </column>
+    <column name="Linkid" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Errorastext" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

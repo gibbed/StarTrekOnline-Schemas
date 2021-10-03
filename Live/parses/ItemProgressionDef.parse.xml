@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemProgressionDef">
+  <table>
+    <column name="ItemProgressionDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Msgprogressiontypedisplay" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Parentprogressiondef" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>ItemProgressionDef</dictionary_name>
+    </column>
+    <column name="Xpcritweight" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="ItemProgressionCritWeight" />
+    </column>
+    <column name="Tier" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="ItemProgressionTierDef" />
+    </column>
+    <column name="Quality" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="ItemProgressionQualityDef" />
+    </column>
+    <column name="Progressioncondition" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="ItemProgressionConditionDef" />
+    </column>
+    <column name="Foodcategories" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="ItemProgressionFoodCategories" />
+    </column>
+    <column name="Eventbonus" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="ItemProgressionEventBonus" />
+    </column>
+    <column name="Namingscheme" type="INT">
+      <offset>96</offset>
+      <static_define_list external="ItemProgressionNamingScheme" />
+    </column>
+    <column name="Evolutionadcostnumeric" type="STRING">
+      <offset>104</offset>
+    </column>
+    <column name="Foodadcostnumeric" type="STRING">
+      <offset>112</offset>
+    </column>
+    <column name="Xprequiredtable" type="REFERENCE">
+      <offset>120</offset>
+      <dictionary_name>RewardValTable</dictionary_name>
+    </column>
+    <column name="Foodvaluetable" type="REFERENCE">
+      <offset>128</offset>
+      <dictionary_name>RewardValTable</dictionary_name>
+    </column>
+    <column name="Xptablemultiplier" type="F32">
+      <offset>136</offset>
+      <default>1</default>
+    </column>
+    <column name="Evolutionsecondsperpointofxp" type="F32">
+      <offset>140</offset>
+    </column>
+    <column name="Evolutionfinishnowsecondsperad" type="INT">
+      <offset>144</offset>
+    </column>
+    <column name="Bindonprogression" type="U8">
+      <offset>148</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Restrictlevelcap" type="STRUCT">
+      <offset>152</offset>
+      <subtable external="ItemProgressionLevelCap" />
+    </column>
+    <column name="Canfeedreadytoevo" type="U8">
+      <offset>160</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Progressionitemsfeedactualxp" type="U8">
+      <offset>161</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Progressionitemsfeedactualxpmultiplier" type="F32">
+      <offset>164</offset>
+      <default>1</default>
+    </column>
+    <column name="Levelindependenttiers" type="U8">
+      <offset>168</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Maxlevelthatisfree" type="INT">
+      <offset>172</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

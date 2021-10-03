@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="BasicTexture">
+  <table>
+    <column name="BasicTexture" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Width" type="INT16">
+      <offset>68</offset>
+    </column>
+    <column name="Height" type="INT16">
+      <offset>70</offset>
+    </column>
+    <column name="Use_Category" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Rdr_Format" type="BIT">
+      <offset>77</offset>
+      <bit_offset>327681</bit_offset>
+    </column>
+    <column name="File_Pos" type="BIT">
+      <offset>77</offset>
+      <bit_offset>655366</bit_offset>
+    </column>
+    <column name="Flags" type="BIT">
+      <offset>79</offset>
+      <bit_offset>524288</bit_offset>
+    </column>
+    <column name="Mip_Type" type="BIT">
+      <offset>80</offset>
+      <bit_offset>262145</bit_offset>
+    </column>
+    <column name="Mip_Data_Index" type="BIT">
+      <offset>80</offset>
+      <bit_offset>1245189</bit_offset>
+    </column>
+    <column name="Max_Levels" type="BIT">
+      <offset>83</offset>
+      <bit_offset>262144</bit_offset>
+    </column>
+    <column name="Base_Levels" type="BIT">
+      <offset>83</offset>
+      <bit_offset>262148</bit_offset>
+    </column>
+    <column name="Mip_Desired_Reduce" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Tex_Is_Freeing" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Is_Dynamic" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Max_Desired_Levels" type="BIT">
+      <offset>84</offset>
+      <bit_offset>262147</bit_offset>
+    </column>
+    <column name="Recent_Max_Desired_Levels" type="BIT">
+      <offset>84</offset>
+      <bit_offset>262151</bit_offset>
+    </column>
+    <column name="FullName" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Bt_Texopt_Flags" type="INT">
+      <offset>104</offset>
+      <static_define_list external="TexOptFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

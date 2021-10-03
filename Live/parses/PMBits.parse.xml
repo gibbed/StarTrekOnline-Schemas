@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PMBits">
+  <table>
+    <column name="PMBits" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Subid" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Type" type="INT">
+      <offset>8</offset>
+      <static_define_list external="PowerAnimFXType" />
+    </column>
+    <column name="Source" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Apchbits_0" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Apchbits_1" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Apchbits_2" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Apchbits_3" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Ppchbitsoverflow" type="STRINGARRAY">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Timestart" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Timestop" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Speed" type="F32">
+      <offset>80</offset>
+    </column>
+    <column name="Start" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Stop" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Stopped" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Flash" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Iskeyword" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Isflag" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Assumeownership" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Forcedetailflag" type="BIT">
+      <offset>84</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Trigger" type="BIT">
+      <offset>85</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Triggerisentityid" type="BIT">
+      <offset>85</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Triggermultihit" type="BIT">
+      <offset>85</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Tobg" type="BIT">
+      <offset>85</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

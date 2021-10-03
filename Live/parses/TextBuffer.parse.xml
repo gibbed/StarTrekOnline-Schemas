@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TextBuffer">
+  <table>
+    <column name="TextBuffer" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Undostacksize" type="INT">
+      <offset>0</offset>
+      <default>20</default>
+    </column>
+    <column name="State" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>ALWAYS_ALLOC</flag>
+      </flags>
+      <subtable external="TextBufferState" />
+    </column>
+    <column name="Undo" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="TextBufferState" />
+    </column>
+    <column name="Redo" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="TextBufferState" />
+    </column>
+    <column name="Clipboard" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+      <default_string />
+    </column>
+    <column name="Maxlength" type="INT">
+      <offset>40</offset>
+      <default>-1</default>
+    </column>
+    <column name="Privateclipboard" type="BIT">
+      <offset>68</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Lastopwassimpleinsert" type="BIT">
+      <offset>68</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldAccountServerActionProperties">
+  <table>
+    <column name="WorldAccountServerActionProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Key" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Value" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

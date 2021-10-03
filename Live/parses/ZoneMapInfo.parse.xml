@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ZoneMapInfo">
+  <table>
+    <column name="ZoneMapInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="MapName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Tags" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="DisplayName" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="MapType" type="INT">
+      <offset>48</offset>
+      <static_define_list external="ZoneMapType" />
+    </column>
+    <column name="Defaultgamedef" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Defaultqueue" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Defaultgametype" type="STRING">
+      <offset>72</offset>
+    </column>
+    <column name="Privateto" type="STRINGARRAY">
+      <offset>80</offset>
+    </column>
+    <column name="Secondarymap" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="SecondaryZoneMap" />
+    </column>
+    <column name="Layer" type="STRUCT">
+      <offset>96</offset>
+      <subtable external="ZoneMapLayerInfo" />
+    </column>
+    <column name="Region" type="STRUCT">
+      <offset>104</offset>
+      <subtable external="WorldRegion" />
+    </column>
+    <column name="Globalgaelayers" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="GlobalGAELayerDef" />
+    </column>
+    <column name="Photooptions" type="OPTIONALSTRUCT">
+      <offset>120</offset>
+      <subtable external="PhotoOptions" />
+    </column>
+    <column name="Time" type="F32">
+      <offset>128</offset>
+    </column>
+    <column name="Minutesperday" type="F32">
+      <offset>132</offset>
+    </column>
+    <column name="Timeblock" type="STRUCT">
+      <offset>136</offset>
+      <subtable external="ZoneMapTimeBlock" />
+    </column>
+    <column name="Terrainmaterialswap" type="STRUCT">
+      <offset>144</offset>
+      <subtable external="TerrainMaterialSwap" />
+    </column>
+    <column name="Terrainplayablemin" type="F32FIXEDARRAY">
+      <offset>152</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Terrainplayablemax" type="F32FIXEDARRAY">
+      <offset>160</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Windlargeobjectradiusthreshold" type="F32">
+      <offset>168</offset>
+      <default>5</default>
+    </column>
+    <column name="Notplayervisited" type="INT">
+      <offset>172</offset>
+    </column>
+    <column name="Nobeacons" type="INT">
+      <offset>176</offset>
+    </column>
+    <column name="Mapsnapoutdoorres" type="F32">
+      <offset>180</offset>
+    </column>
+    <column name="Mapsnapindoorres" type="F32">
+      <offset>184</offset>
+    </column>
+    <column name="Startspawnname" type="STRING">
+      <offset>192</offset>
+    </column>
+    <column name="Respawntype" type="INT">
+      <offset>200</offset>
+      <static_define_list external="ZoneRespawnType" />
+    </column>
+    <column name="Respawnwavetime" type="INT">
+      <offset>204</offset>
+    </column>
+    <column name="Rewardtable" type="REFERENCE">
+      <offset>208</offset>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Playerrewardtable" type="REFERENCE">
+      <offset>216</offset>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Critteroverriderewardtable" type="REFERENCE">
+      <offset>224</offset>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Requiresexpr" type="OPTIONALSTRUCT">
+      <offset>232</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Permissionexpr" type="OPTIONALSTRUCT">
+      <offset>240</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Requiredclasscategoryset" type="REFERENCE">
+      <offset>248</offset>
+      <dictionary_name>CharClassCategorySet</dictionary_name>
+    </column>
+    <column name="Playerrewardtablecooldown" type="INT">
+      <offset>256</offset>
+    </column>
+    <column name="Genesisdata" type="OPTIONALSTRUCT">
+      <offset>264</offset>
+      <subtable external="GenesisZoneMapData" />
+    </column>
+    <column name="Proceduraldata" type="OPTIONALSTRUCT">
+      <offset>264</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Genesisdata</redundant_name>
+      <subtable external="GenesisZoneMapData" />
+    </column>
+    <column name="Backupgenesisdata" type="OPTIONALSTRUCT">
+      <offset>272</offset>
+      <subtable external="GenesisZoneMapData" />
+    </column>
+    <column name="Backupproceduraldata" type="OPTIONALSTRUCT">
+      <offset>272</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Backupgenesisdata</redundant_name>
+      <subtable external="GenesisZoneMapData" />
+    </column>
+    <column name="Genesisinfo" type="OPTIONALSTRUCT">
+      <offset>280</offset>
+      <subtable external="GenesisZoneMapInfo" />
+    </column>
+    <column name="Genesismapdata" type="OPTIONALSTRUCT">
+      <offset>280</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Genesisinfo</redundant_name>
+      <subtable external="GenesisZoneMapInfo" />
+    </column>
+    <column name="Allowencounterhack" type="U8">
+      <offset>288</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Respawndata" type="OPTIONALSTRUCT">
+      <offset>296</offset>
+      <subtable external="WorldRespawnData" />
+    </column>
+    <column name="Ambientmusic" type="STRING">
+      <offset>304</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Combatmusic" type="STRING">
+      <offset>312</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Disableautomusic" type="BOOLFLAG">
+      <offset>320</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Level" type="INT">
+      <offset>324</offset>
+    </column>
+    <column name="Playerlevel" type="INT">
+      <offset>328</offset>
+    </column>
+    <column name="Playerlevelscaletype" type="INT">
+      <offset>332</offset>
+      <static_define_list external="ZoneLevelScaleType" />
+    </column>
+    <column name="Combatscalingdef" type="STRING">
+      <offset>336</offset>
+    </column>
+    <column name="ForceTeamSize" type="INT">
+      <offset>344</offset>
+    </column>
+    <column name="Difficulty" type="INT">
+      <offset>348</offset>
+    </column>
+    <column name="Variable" type="STRUCT">
+      <offset>352</offset>
+      <subtable external="WorldVariableDef" />
+    </column>
+    <column name="Ignoreteamsizebonusxp" type="U8">
+      <offset>360</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Confirmpurchasesonexit" type="U8">
+      <offset>361</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Collectdoordeststatus" type="U8">
+      <offset>362</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disableduels" type="U8">
+      <offset>363</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disableinstancechanging" type="U8">
+      <offset>364</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Teamnotrequired" type="U8">
+      <offset>365</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Terrainstaticlighting" type="U8">
+      <offset>366</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Shardvariables" type="U8">
+      <offset>367</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disablevisitedtracking" type="U8">
+      <offset>368</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Powersrequirevalidtarget" type="U8">
+      <offset>369</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enableupsellfeatures" type="U8">
+      <offset>370</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Parentmap" type="OPTIONALSTRUCT">
+      <offset>376</offset>
+      <subtable external="ParentZoneMap" />
+    </column>
+    <column name="Masterminddef" type="STRING">
+      <offset>384</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>AIMastermindDef</dictionary_name>
+    </column>
+    <column name="Civilianmapdef" type="STRING">
+      <offset>392</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>AICivilianMapDef</dictionary_name>
+    </column>
+    <column name="Playerfsm" type="STRINGARRAY">
+      <offset>400</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>FSM</dictionary_name>
+    </column>
+    <column name="Lightoverride" type="INT">
+      <offset>408</offset>
+      <static_define_list external="ZoneMapLightOverrideType" />
+    </column>
+    <column name="Recordplayermatchstats" type="U8">
+      <offset>412</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Guildowned" type="U8">
+      <offset>413</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Guildnotrequired" type="U8">
+      <offset>414</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Leveladjusting" type="U8">
+      <offset>415</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enableunrestrictedbankaccess" type="U8">
+      <offset>416</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enableunrestrictedshipaccess" type="U8">
+      <offset>417</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enablepvpassists" type="U8">
+      <offset>418</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disableactivecompanionpowers" type="U8">
+      <offset>419</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enablegamemaptransferconfirm" type="U8">
+      <offset>420</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disablennoteamwarp" type="U8">
+      <offset>421</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Alwaysenteratstartspawn" type="U8">
+      <offset>422</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Extraentitysend" type="U8">
+      <offset>423</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Interactdelaymod" type="INT">
+      <offset>424</offset>
+    </column>
+    <column name="Weatherentry" type="STRUCT">
+      <offset>432</offset>
+      <subtable external="WeatherEntry" />
+    </column>
+    <column name="Randommapvarentry" type="STRUCT">
+      <offset>440</offset>
+      <subtable external="RandomMapVarEntry" />
+    </column>
+    <column name="Bfparamsspecified" type="INTFIXEDARRAY">
+      <offset>448</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>USEDFIELD</flag>
+      </flags>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Is_Saving" type="U8">
+      <offset>468</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enabledirector" type="U8">
+      <offset>469</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Defaultdirectormode" type="STRING">
+      <offset>472</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>DirectorMode</dictionary_name>
+    </column>
+    <column name="Initialdirectormode" type="STRING">
+      <offset>472</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <redundant_name>Defaultdirectormode</redundant_name>
+      <dictionary_name>DirectorMode</dictionary_name>
+    </column>
+    <column name="Fromugcfile" type="IGNORE" />
+    <column name="UGCProjectID" type="IGNORE" />
+    <column name="Ugcisfeaturedcopy" type="IGNORE" />
+    <column name="Initguildprojectifnull" type="IGNORE" />
+    <column name="Skiplightprobebinningonbuilder" type="IGNORE" />
+    <column name="Disablegatecharacterlighting" type="IGNORE" />
+    <column name="Saving" type="IGNORE" />
+    <column name="Enableugcdoormissions" type="IGNORE" />
+    <column name="Usedinugc" type="IGNORE" />
+    <column name="Generatemapsnapmini" type="IGNORE" />
+    <column name="Ugcproperties" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

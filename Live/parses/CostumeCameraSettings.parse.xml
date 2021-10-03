@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CostumeCameraSettings">
+  <table>
+    <column name="CostumeCameraSettings" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Desiredoffset" type="F32FIXEDARRAY">
+      <offset>0</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="F2tanfovy" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="F2tanfovx" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Camdistmin" type="F32">
+      <offset>20</offset>
+      <default>-1</default>
+    </column>
+    <column name="Camdistmax" type="F32">
+      <offset>24</offset>
+      <default>10</default>
+    </column>
+    <column name="Aspect" type="F32">
+      <offset>28</offset>
+      <default>1</default>
+    </column>
+    <column name="Fov" type="F32">
+      <offset>32</offset>
+      <default>-1</default>
+    </column>
+    <column name="Currentcostumeheight" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Currenttargetheight" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Cameraspeed" type="F32">
+      <offset>44</offset>
+      <default>3</default>
+    </column>
+    <column name="Maxcameraspeed" type="F32">
+      <offset>48</offset>
+      <default>5</default>
+    </column>
+    <column name="Resetcamera" type="BIT">
+      <offset>52</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Fovset" type="BIT">
+      <offset>52</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Usehorizontalfov" type="BIT">
+      <offset>52</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

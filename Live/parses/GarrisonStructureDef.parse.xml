@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GarrisonStructureDef">
+  <table>
+    <column name="GarrisonStructureDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Descriptionmsg" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Rankbasedbenefitsmsg" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
+      <subtable external="GarrisonRankBasedMessages" />
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>536</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>544</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Footprint" type="REFERENCE">
+      <offset>552</offset>
+      <dictionary_name>GarrisonFootprintDef</dictionary_name>
+    </column>
+    <column name="Structuredependencies" type="STRUCT">
+      <offset>560</offset>
+      <subtable external="GarrisonStructureLevelDependency" />
+    </column>
+    <column name="Rankbasedbucket" type="STRUCT">
+      <offset>568</offset>
+      <subtable external="GarrisonRankBasedRequirement" />
+    </column>
+    <column name="Productionboosts" type="STRUCT">
+      <offset>576</offset>
+      <subtable external="GarrisonProductionBoost" />
+    </column>
+    <column name="Cofferboosts" type="STRUCT">
+      <offset>584</offset>
+      <subtable external="GarrisonCofferBoost" />
+    </column>
+    <column name="Rankbasedtimes" type="EMBEDDEDSTRUCT">
+      <offset>592</offset>
+      <subtable external="GarrisonRankBasedValues" />
+    </column>
+    <column name="Rankbasedbuffs" type="EMBEDDEDSTRUCT">
+      <offset>672</offset>
+      <subtable external="GarrisonRankBasedStrings" />
+    </column>
+    <column name="Resourceproduction" type="STRUCT">
+      <offset>832</offset>
+      <subtable external="GarrisonStructureResourceProduction" />
+    </column>
+    <column name="Buildingboundedbygarrisonlevel" type="U8">
+      <offset>840</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isunique" type="U8">
+      <offset>841</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Istemporary" type="U8">
+      <offset>842</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Cannotbedestroyed" type="U8">
+      <offset>843</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="MaxLevel" type="INT">
+      <offset>844</offset>
+    </column>
+    <column name="Upgradetimes" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="Constructtime" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="Benefitsmsg" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

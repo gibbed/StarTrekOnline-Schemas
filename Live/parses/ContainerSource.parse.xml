@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ContainerSource">
+  <table>
+    <column name="ContainerSource" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Sourceinfo" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <subtable external="ContainerRepositoryInfo" />
+    </column>
+    <column name="Sourcepath" type="FIXEDSTRING">
+      <offset>8</offset>
+      <string_length>521</string_length>
+    </column>
+    <column name="Incrementalpath" type="FIXEDSTRING">
+      <offset>544</offset>
+      <string_length>521</string_length>
+    </column>
+    <column name="Offlinepath" type="FIXEDSTRING">
+      <offset>1080</offset>
+      <string_length>521</string_length>
+    </column>
+    <column name="Hasofflinehogmutex" type="U8">
+      <offset>1616</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Offlinehoglastchanged" type="INT">
+      <offset>1620</offset>
+    </column>
+    <column name="Offlineoriginalpath" type="FIXEDSTRING">
+      <offset>1624</offset>
+      <string_length>521</string_length>
+    </column>
+    <column name="Hog_Access_Lock_Count" type="INT">
+      <offset>2240</offset>
+    </column>
+    <column name="Incrementalminutes" type="INT">
+      <offset>2288</offset>
+    </column>
+    <column name="Incrementalhourstokeep" type="INT">
+      <offset>2292</offset>
+    </column>
+    <column name="Snapshotminutestokeep" type="INT">
+      <offset>2296</offset>
+      <default>120</default>
+    </column>
+    <column name="Snapshothourstokeep" type="INT">
+      <offset>2300</offset>
+      <default>24</default>
+    </column>
+    <column name="Snapshotdaystokeep" type="INT">
+      <offset>2304</offset>
+      <default>30</default>
+    </column>
+    <column name="Offlinedaystokeep" type="INT">
+      <offset>2308</offset>
+      <default>30</default>
+    </column>
+    <column name="Pendinghourstokeep" type="INT">
+      <offset>2312</offset>
+      <default>24</default>
+    </column>
+    <column name="Journalhourstokeep" type="INT">
+      <offset>2316</offset>
+      <default>730</default>
+    </column>
+    <column name="Zipjournals" type="U8">
+      <offset>2320</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Maxjournalstozip" type="INT">
+      <offset>2324</offset>
+      <default>6</default>
+    </column>
+    <column name="Skipperiodiccontainersaves" type="INT">
+      <offset>2328</offset>
+    </column>
+    <column name="Savecontainerflushperiod" type="INT">
+      <offset>2332</offset>
+    </column>
+    <column name="Savecontainernextflush" type="INT">
+      <offset>2336</offset>
+    </column>
+    <column name="Nextrotatetime" type="INT">
+      <offset>2340</offset>
+    </column>
+    <column name="Lastrotatetime" type="INT">
+      <offset>2344</offset>
+    </column>
+    <column name="Scansnapshottime" type="INT">
+      <offset>2348</offset>
+    </column>
+    <column name="Scansnapshotseq" type="INT64">
+      <offset>2352</offset>
+    </column>
+    <column name="Validsource" type="U8">
+      <offset>2360</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usehogs" type="U8">
+      <offset>2361</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ignorecontainersource" type="U8">
+      <offset>2362</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forcesnapshot" type="U8">
+      <offset>2363</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Createsnapshot" type="U8">
+      <offset>2364</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Generatelogreport" type="U8">
+      <offset>2365</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Strictmerge" type="U8">
+      <offset>2366</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Unloadonheadercreate" type="U8">
+      <offset>2367</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dumpwebdata" type="STRING">
+      <offset>2368</offset>
+    </column>
+    <column name="Hogusediskorder" type="INT">
+      <offset>2376</offset>
+    </column>
+    <column name="Opensnapshotramcachedmode" type="INT">
+      <offset>2380</offset>
+      <default>-1</default>
+    </column>
+    <column name="Containerpreloadthresholdhours" type="INT">
+      <offset>2384</offset>
+      <default>4</default>
+    </column>
+    <column name="Containerplayedunloadthresholdhours" type="INT">
+      <offset>2388</offset>
+      <default>5</default>
+    </column>
+    <column name="Containeraccessunloadthresholdhours" type="INT">
+      <offset>2392</offset>
+      <default>1</default>
+    </column>
+    <column name="Enablestalecontainercleanup" type="U8">
+      <offset>2396</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forceunpackthreshold" type="INT">
+      <offset>2400</offset>
+    </column>
+    <column name="Loadthreads" type="INT">
+      <offset>2416</offset>
+    </column>
+    <column name="Dumpload" type="INT">
+      <offset>2420</offset>
+    </column>
+    <column name="Dumpcontainertype" type="INT">
+      <offset>2424</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Purgehogonfailedcontainer" type="INT">
+      <offset>2448</offset>
+    </column>
+    <column name="Needsrotate" type="U8">
+      <offset>2452</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Rotatequeued" type="U8">
+      <offset>2453</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ignoremismatchedoffline" type="U8">
+      <offset>2472</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Offliningenabled" type="U8">
+      <offset>2473</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Offlineappendenabled" type="U8">
+      <offset>2474</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Curepoison" type="U8">
+      <offset>2475</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Unsortedjournals" type="INT">
+      <offset>2476</offset>
+    </column>
+    <column name="Verifyheaders" type="INT">
+      <offset>2480</offset>
+      <default>2</default>
+    </column>
+    <column name="Extrawriteincrementalflags" type="INT">
+      <offset>2484</offset>
+      <static_define_list external="HogFileCreateFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Snapshot_Mode_Flags" type="INT">
+      <offset>2488</offset>
+      <static_define_list external="HogFileCreateFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

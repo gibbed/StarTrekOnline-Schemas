@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WleFilter">
+  <table>
+    <column name="WleFilter" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Ignorenodestate" type="U8">
+      <offset>8</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Affecttype" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Filtertargets" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Criteria" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="WleFilterCriterion" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

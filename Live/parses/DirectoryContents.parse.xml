@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DirectoryContents">
+  <table>
+    <column name="DirectoryContents" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Dirname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Files" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="DirectoryContents_File" />
+    </column>
+    <column name="Subdirs" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="DirectoryContents" />
+    </column>
+    <column name="Cachedsummarystring" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

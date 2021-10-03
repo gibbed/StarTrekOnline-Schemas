@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PlayerAccountKeyValueOperations">
+  <table>
+    <column name="PlayerAccountKeyValueOperations" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Eapendingkeyvalueops" type="STRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PlayerAccountKeyValueOp" />
+    </column>
+    <column name="Bpending" type="U8">
+      <offset>8</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

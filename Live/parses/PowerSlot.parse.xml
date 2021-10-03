@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PowerSlot">
+  <table>
+    <column name="PowerSlot" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Requires" type="INTARRAY">
+      <offset>8</offset>
+      <static_define_list external="PowerCategory" />
+    </column>
+    <column name="Excludes" type="INTARRAY">
+      <offset>16</offset>
+      <static_define_list external="PowerCategory" />
+    </column>
+    <column name="Validpowertype" type="INTARRAY">
+      <offset>24</offset>
+      <static_define_list external="PowerType" />
+    </column>
+    <column name="Excludespowertype" type="INTARRAY">
+      <offset>32</offset>
+      <static_define_list external="PowerType" />
+    </column>
+    <column name="Defautoslotreplace" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Requiredlevel" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Leveloverride" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="RequiredLevelClassOverride" />
+    </column>
+    <column name="Requirednumeric" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Requirednumericamount" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Unlockswithsavedpetprogressiveupgrade" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Unlockswithplayerprogressiveupgradetoken" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Preventswappingduringcooldown" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Autoslot" type="BIT">
+      <offset>88</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Autoslotunlesspreviouslyfilled" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Unlockformodificationusingexplevel" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requireunlockforactivate" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requiresplatformconsole" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Unlockspecies" type="STRINGARRAY">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

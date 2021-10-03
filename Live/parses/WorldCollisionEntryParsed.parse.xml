@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldCollisionEntryParsed">
+  <table>
+    <column name="WorldCollisionEntryParsed" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Base_Data" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="WorldCellEntryParsed" />
+    </column>
+    <column name="Spline" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="SplineParamsParsed" />
+    </column>
+    <column name="Model_Idx" type="INT">
+      <offset>80</offset>
+      <default>-1</default>
+    </column>
+    <column name="Materialswaps" type="STRINGARRAY">
+      <offset>88</offset>
+    </column>
+    <column name="Filterbits" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Scale" type="F32FIXEDARRAY">
+      <offset>100</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Collision_Radius" type="F32">
+      <offset>112</offset>
+    </column>
+    <column name="Collision_Min" type="F32FIXEDARRAY">
+      <offset>116</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Collision_Max" type="F32FIXEDARRAY">
+      <offset>128</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Twosidedcollision" type="U8">
+      <offset>140</offset>
+      <default>1</default>
+    </column>
+    <column name="Fade_Group_Index" type="INT">
+      <offset>144</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

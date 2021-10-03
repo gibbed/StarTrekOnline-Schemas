@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SharedBankConfig">
+  <table>
+    <column name="SharedBankConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Requirecontact" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fullaccessalways" type="U8">
+      <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Keypermissions" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="SharedBankKeys" />
+    </column>
+    <column name="Umaximumslots" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Sharedbanknumerics" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="SharedBankNumeric" />
+    </column>
+    <column name="Canalwaysbuy" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Umaxinboxsize" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Umaxinboxattachments" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

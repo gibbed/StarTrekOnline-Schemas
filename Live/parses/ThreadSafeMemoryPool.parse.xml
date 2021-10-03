@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ThreadSafeMemoryPool">
+  <table>
+    <column name="ThreadSafeMemoryPool" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_DEF_FIELDS_TO_SHOW">allocationCount, structSize</format_string>
+      </format_strings>
+    </column>
+    <column name="{" type="START" />
+    <column name="Structsize" type="INT64">
+      <offset>24</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Structsperblock" type="INT64">
+      <offset>32</offset>
+    </column>
+    <column name="Alignment" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Allocationcount" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Totalstructcount" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Totalbytes" type="INT64">
+      <offset>56</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Usedbytes" type="INT64">
+      <offset>64</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Freebytes" type="INT64">
+      <offset>72</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>88</offset>
+      <static_define_list external="TSMPFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

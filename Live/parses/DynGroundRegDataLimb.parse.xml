@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynGroundRegDataLimb">
+  <table>
+    <column name="DynGroundRegDataLimb" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Heightfixupnode" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Endeffectornode" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Limblengthmax" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Limblengthmin" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Stepheight" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Displacementlimitrate" type="F32">
+      <offset>28</offset>
+      <default>1232348144</default>
+    </column>
+    <column name="Anklerotationlimitx" type="F32">
+      <offset>32</offset>
+      <default>90</default>
+    </column>
+    <column name="Anklerotationlimitz" type="F32">
+      <offset>36</offset>
+      <default>90</default>
+    </column>
+    <column name="Footrampgainup" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Footrampgaindown" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Footrampclamp" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Upperbody" type="BOOLFLAG">
+      <offset>52</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hashock" type="BOOLFLAG">
+      <offset>53</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ikmodifieshock" type="BOOLFLAG">
+      <offset>54</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Localswivelplane" type="BOOLFLAG">
+      <offset>55</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Reversejoint" type="BOOLFLAG">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Reversehockjoint" type="BOOLFLAG">
+      <offset>57</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hyperextaxis" type="IGNORE" />
+    <column name="Terrainikmax" type="IGNORE" />
+    <column name="Terrainikmin" type="IGNORE" />
+    <column name="End" type="END" />
+  </table>
+</parse>

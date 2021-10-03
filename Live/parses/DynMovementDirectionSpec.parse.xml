@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynMovementDirectionSpec">
+  <table>
+    <column name="DynMovementDirectionSpec" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Movementdirection" type="INT">
+      <offset>0</offset>
+      <static_define_list external="DynMovementDirection" />
+    </column>
+    <column name="Angle" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Anglewidth" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Coveranglemin" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Coveranglemax" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

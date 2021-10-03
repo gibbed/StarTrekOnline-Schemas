@@ -1,0 +1,1129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="Character">
+  <table>
+    <column name="Character" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Dirtyid" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Dirtyclientmatchid" type="INT">
+      <offset>12</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Ilevelexp" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ilevelnumericoverride" type="INT">
+      <offset>20</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ilevelcombat" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Plevelcombatcontrol" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="LevelCombatControl" />
+    </column>
+    <column name="Iscaleditemlevel" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Pscaleditemlevelcontrol" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="ScaledItemLevelControl" />
+    </column>
+    <column name="Publicpoweractivationsummary" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
+      <subtable external="PowerActivationSummary" />
+    </column>
+    <column name="Hclass" type="REFERENCE">
+      <offset>88</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CharacterClass</dictionary_name>
+    </column>
+    <column name="Hclasstemporary" type="REFERENCE">
+      <offset>96</offset>
+      <dictionary_name>CharacterClass</dictionary_name>
+    </column>
+    <column name="Puitempclasspowers" type="INTARRAY">
+      <offset>104</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Classdisplaynameprefixkey" type="STRING">
+      <offset>112</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchclassdisplaynameprefixkey" type="STRING">
+      <offset>112</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Classdisplaynameprefixkey</redundant_name>
+    </column>
+    <column name="Hpath" type="REFERENCE">
+      <offset>120</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CharacterPath</dictionary_name>
+    </column>
+    <column name="Ppsecondarypaths_Use_Accessor" type="STRUCT">
+      <offset>128</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="AdditionalCharacterPath" />
+    </column>
+    <column name="Ppsecondarypaths" type="STRUCT">
+      <offset>128</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Ppsecondarypaths_Use_Accessor</redundant_name>
+      <subtable external="AdditionalCharacterPath" />
+    </column>
+    <column name="Hspecies" type="REFERENCE">
+      <offset>136</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>Species</dictionary_name>
+    </column>
+    <column name="Pcustomspecies" type="OPTIONALSTRUCT">
+      <offset>144</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="CustomSpecies" />
+    </column>
+    <column name="Pgamespecificdata" type="OPTIONALSTRUCT">
+      <offset>152</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="GameSpecificCharacterData" />
+    </column>
+    <column name="Uipoweridmax" type="INT">
+      <offset>160</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Forcepoweridsmaxreset" type="U8">
+      <offset>164</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Pppowerspersonal" type="STRUCT">
+      <offset>176</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="Power" />
+    </column>
+    <column name="Pppowersclass" type="STRUCT">
+      <offset>184</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="Power" />
+    </column>
+    <column name="Pppowersspecies" type="STRUCT">
+      <offset>192</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="Power" />
+    </column>
+    <column name="Pppowerstemporary" type="STRUCT">
+      <offset>200</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="Power" />
+    </column>
+    <column name="Pppowerspropagation" type="STRUCT">
+      <offset>208</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="Power" />
+    </column>
+    <column name="Pppowersgroupproject" type="STRUCT">
+      <offset>216</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="Power" />
+    </column>
+    <column name="Pppowersmodifiers" type="STRUCT">
+      <offset>224</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="Power" />
+    </column>
+    <column name="Eagarrisonpowerbycategory" type="STRUCT">
+      <offset>232</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="GarrisonCategoryPower" />
+    </column>
+    <column name="Pppowersscp" type="STRUCT">
+      <offset>240</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="Power" />
+    </column>
+    <column name="Pslots" type="OPTIONALSTRUCT">
+      <offset>256</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>READONLY_TRANSACT</flag>
+      </flags>
+      <subtable external="CharacterPowerSlots" />
+    </column>
+    <column name="Pslotsetbecomecritter" type="OPTIONALSTRUCT">
+      <offset>264</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PowerSlotSet" />
+    </column>
+    <column name="Ppowertreeslots" type="OPTIONALSTRUCT">
+      <offset>272</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="CharacterPowerTreeSlots" />
+    </column>
+    <column name="Pcombatreactivepowerinfo" type="OPTIONALSTRUCT">
+      <offset>304</offset>
+      <subtable external="CombatReactivePowerInfo" />
+    </column>
+    <column name="Pcombatpowerstateinfo" type="OPTIONALSTRUCT">
+      <offset>312</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="CombatPowerStateSwitchingInfo" />
+    </column>
+    <column name="Pppowertrees_Use_Accessor" type="STRUCT">
+      <offset>320</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PowerTree" />
+    </column>
+    <column name="Pppowertrees" type="STRUCT">
+      <offset>320</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Pppowertrees_Use_Accessor</redundant_name>
+      <subtable external="PowerTree" />
+    </column>
+    <column name="Ppbuilds" type="STRUCT">
+      <offset>328</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PowerTreeBuild" />
+    </column>
+    <column name="Utimelastgearscoreupdated" type="INT">
+      <offset>336</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Ulastupdatedgearscoreversion" type="INT">
+      <offset>340</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Igearscorecached" type="INT">
+      <offset>344</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Igearscorecappedcached" type="INT">
+      <offset>348</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Ialternategearscorecached" type="INT">
+      <offset>352</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Ipowersitemlevelcached" type="INT">
+      <offset>356</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Iinnateequipitemlevelcached" type="INT">
+      <offset>360</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Ientityloadoutidx" type="INT">
+      <offset>364</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uipowertreebuild" type="INT">
+      <offset>368</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pclientpowertreeinfo" type="OPTIONALSTRUCT">
+      <offset>376</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+      </flags>
+      <subtable external="PowerTreeClientInfoList" />
+    </column>
+    <column name="Pppointspentpowertrees" type="STRUCT">
+      <offset>384</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="CharacterPointSpent" />
+    </column>
+    <column name="Uipowertreemodcount" type="INT">
+      <offset>392</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uilastfreerespectime_Use_Accessor" type="INT">
+      <offset>396</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uilastfreerespectime" type="INT">
+      <offset>396</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Uilastfreerespectime_Use_Accessor</redundant_name>
+    </column>
+    <column name="Uilastforcedrespectime_Use_Accessor" type="INT">
+      <offset>400</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uilastforcedrespectime" type="INT">
+      <offset>400</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Uilastforcedrespectime_Use_Accessor</redundant_name>
+    </column>
+    <column name="Eaitypelastfreerespectime" type="INTARRAY">
+      <offset>408</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ppassignedstats" type="STRUCT">
+      <offset>416</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="AssignedStats" />
+    </column>
+    <column name="Ppsavedattribstats" type="STRUCT">
+      <offset>424</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="SavedAttribStats" />
+    </column>
+    <column name="Pchattribstatspreset" type="STRING">
+      <offset>432</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchcurrentattribstatspreset" type="STRING">
+      <offset>432</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Pchattribstatspreset</redundant_name>
+    </column>
+    <column name="Pchcurrentattribstatspreset" type="STRING">
+      <offset>432</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Pchattribstatspreset</redundant_name>
+    </column>
+    <column name="Ppsavedattributes" type="STRUCT">
+      <offset>440</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="SavedAttribute" />
+    </column>
+    <column name="Hmodifierpowerset" type="REFERENCE">
+      <offset>448</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <dictionary_name>CharacterModifierPowerSetDef</dictionary_name>
+    </column>
+    <column name="Pattrbasic" type="OPTIONALSTRUCT">
+      <offset>456</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="CharacterAttribs" />
+    </column>
+    <column name="Ppowerstatbonusdata" type="OPTIONALSTRUCT">
+      <offset>464</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PowerStatBonusData" />
+    </column>
+    <column name="Pinnateattribmoddata" type="OPTIONALSTRUCT">
+      <offset>472</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="InnateAttribModData" />
+    </column>
+    <column name="ModArray" type="EMBEDDEDSTRUCT">
+      <offset>496</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="ModArray" />
+    </column>
+    <column name="Ppofflinemodrefresh" type="STRUCT">
+      <offset>568</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="OfflineAttribRefresh" />
+    </column>
+    <column name="Ppmodsnet" type="STRUCT">
+      <offset>576</offset>
+      <subtable external="AttribModNet" />
+    </column>
+    <column name="Pinnateaccrualset" type="OPTIONALSTRUCT">
+      <offset>592</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="AttribAccrualSet" />
+    </column>
+    <column name="Pptraining" type="STRUCT">
+      <offset>624</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="CharacterTraining" />
+    </column>
+    <column name="Pcombateventstate" type="OPTIONALSTRUCT">
+      <offset>632</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="CombatEventState" />
+    </column>
+    <column name="Pipowermodes" type="INTARRAY">
+      <offset>640</offset>
+    </column>
+    <column name="Piaipowermodes" type="INTARRAY">
+      <offset>648</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Pppowermodehistory" type="STRUCT">
+      <offset>656</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="PowerModes" />
+    </column>
+    <column name="Ppcooldowntimers" type="STRUCT">
+      <offset>664</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="CooldownTimer" />
+    </column>
+    <column name="Ppspeedcooldown" type="STRUCT">
+      <offset>672</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="CooldownRateModifier" />
+    </column>
+    <column name="Ppcombatadvantages" type="STRUCT">
+      <offset>744</offset>
+      <subtable external="CombatAdvantageNode" />
+    </column>
+    <column name="Pchargedata" type="OPTIONALSTRUCT">
+      <offset>808</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+      <subtable external="CharacterChargeData" />
+    </column>
+    <column name="Psubtarget" type="OPTIONALSTRUCT">
+      <offset>816</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PowerSubtargetChoice" />
+    </column>
+    <column name="Hpowerdefstancedefault" type="REFERENCE">
+      <offset>912</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="CombatTrackerNetList" type="EMBEDDEDSTRUCT">
+      <offset>952</offset>
+      <subtable external="CombatTrackerNetList" />
+    </column>
+    <column name="Ppsubtargets" type="STRUCT">
+      <offset>976</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="PowerSubtargetNet" />
+    </column>
+    <column name="Erringoutcredit" type="INT">
+      <offset>984</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Currenttargetref" type="INT">
+      <offset>988</offset>
+    </column>
+    <column name="Ertargetdual" type="INT">
+      <offset>992</offset>
+    </column>
+    <column name="Ertargetfocus" type="INT">
+      <offset>996</offset>
+    </column>
+    <column name="Currenttargethandle" type="REFERENCE">
+      <offset>1000</offset>
+      <dictionary_name>WorldInteractionNode</dictionary_name>
+    </column>
+    <column name="Targetchangeid" type="INT">
+      <offset>1008</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Focustargetchangeid" type="INT">
+      <offset>1012</offset>
+    </column>
+    <column name="Peruntargetable" type="INTARRAY">
+      <offset>1016</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Perhidden" type="INTARRAY">
+      <offset>1024</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Ppaitargets" type="STRUCT">
+      <offset>1032</offset>
+      <subtable external="CharacterAITargetInfo" />
+    </column>
+    <column name="Ppchspecifiedtargetablepowers" type="STRINGARRAY">
+      <offset>1048</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Hheldnode" type="REFERENCE">
+      <offset>1056</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <dictionary_name>WorldInteractionNode</dictionary_name>
+    </column>
+    <column name="Erheld" type="INT">
+      <offset>1064</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Fheldmass" type="F32">
+      <offset>1068</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Erheldby" type="INT">
+      <offset>1072</offset>
+    </column>
+    <column name="Ppchheldfxnames" type="STRINGARRAY">
+      <offset>1080</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Pftimersattribpool" type="F32ARRAY">
+      <offset>1096</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="PVPDuelState" type="OPTIONALSTRUCT">
+      <offset>1120</offset>
+      <subtable external="PVPDuelState" />
+    </column>
+    <column name="PVPFlag" type="OPTIONALSTRUCT">
+      <offset>1128</offset>
+      <subtable external="PVPFlag" />
+    </column>
+    <column name="Gangid" type="INT">
+      <offset>1136</offset>
+    </column>
+    <column name="Pvpteamduelflag" type="OPTIONALSTRUCT">
+      <offset>1144</offset>
+      <subtable external="PVPTeamFlag" />
+    </column>
+    <column name="Utimelastmapdetected" type="INT">
+      <offset>1152</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Pneardeath" type="OPTIONALSTRUCT">
+      <offset>1160</offset>
+      <subtable external="NearDeath" />
+    </column>
+    <column name="Primarypetref" type="INT">
+      <offset>1172</offset>
+    </column>
+    <column name="Uitimecombatexit" type="INT">
+      <offset>1176</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Uitimecombatvisualsexit" type="INT">
+      <offset>1180</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Uitimebattleform" type="INT">
+      <offset>1184</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Uiconfuseseed" type="INT">
+      <offset>1188</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Ifreerespecavailable" type="INT">
+      <offset>1196</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Ppautoexecitems" type="STRUCT">
+      <offset>1208</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="Item" />
+    </column>
+    <column name="Uipowerscreatedentitytime" type="INT">
+      <offset>1236</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Eownedentitytype" type="BIT">
+      <offset>1244</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <bit_offset>196608</bit_offset>
+      <static_define_list external="OwnedEntityStrType" />
+    </column>
+    <column name="Erownedentitysource" type="INT">
+      <offset>1248</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Bisrooted" type="BIT">
+      <offset>1252</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Bisheld" type="BIT">
+      <offset>1252</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Binvulnerable" type="BIT">
+      <offset>1264</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Bunstoppable" type="BIT">
+      <offset>1264</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Bunkillable" type="BIT">
+      <offset>1264</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Bkillunkillable" type="BIT">
+      <offset>1265</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Bdonotdraw" type="BIT">
+      <offset>1265</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Bleveladjusting" type="BIT">
+      <offset>1265</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Bsafe" type="BIT">
+      <offset>1265</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Bbattleform" type="BIT">
+      <offset>1265</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Bdisablefaceactivate" type="BIT">
+      <offset>1265</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Bdisablefaceselected" type="BIT">
+      <offset>1265</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Brequirevalidtarget" type="BIT">
+      <offset>1266</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Busecameratargeting" type="BIT">
+      <offset>1266</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Bdisablepowerqueuing" type="BIT">
+      <offset>1266</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Bshootercontrols" type="BIT">
+      <offset>1266</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Bisprimarypet" type="BIT">
+      <offset>1267</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Bmodsownedbyowner" type="BIT">
+      <offset>1267</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Bbecomecritter" type="BIT">
+      <offset>1267</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Bbecomecritterhideequipment" type="BIT">
+      <offset>1267</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Busebecomecrittertray" type="BIT">
+      <offset>1268</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Bbecomecritterpreserveinnates" type="BIT">
+      <offset>1268</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Bbecomecritterpreservepassives" type="BIT">
+      <offset>1268</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Bbecomecritterallowitempowers" type="BIT">
+      <offset>1268</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Bbecomecritterdisablescp" type="BIT">
+      <offset>1268</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Bbecomecritterdisabletogglepowers" type="BIT">
+      <offset>1268</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Bhasavailableresearch" type="BIT">
+      <offset>1268</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Bspeciallargemonster" type="BIT">
+      <offset>1269</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Bisdoingropemovement" type="BIT">
+      <offset>1269</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Bdisablemovementroll" type="BIT">
+      <offset>1270</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Ppchbecomecritterdisableditemcategoryoverrides" type="STRINGARRAY">
+      <offset>1272</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Uibecomecritterpowerid" type="INT">
+      <offset>1280</offset>
+    </column>
+    <column name="Becomecrittermsgnamekey" type="STRING">
+      <offset>1288</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Binpvp" type="U8">
+      <offset>1296</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ppactivationstate" type="STRUCT">
+      <offset>1304</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="PowerActivationState" />
+    </column>
+    <column name="Ppstealthsights" type="STRUCT">
+      <offset>1432</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="AttribMod" />
+    </column>
+    <column name="Ppfactionrelationshipoverrideincoming" type="STRUCT">
+      <offset>1448</offset>
+      <subtable external="FactionRelationshipOverride" />
+    </column>
+    <column name="Ppfactionrelationshipoverrideoutgoing" type="STRUCT">
+      <offset>1456</offset>
+      <subtable external="FactionRelationshipOverride" />
+    </column>
+    <column name="Puipoweridssaved_Obsolete" type="INTARRAY">
+      <offset>1472</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Easavedpowersids" type="INTARRAY">
+      <offset>1472</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Puipoweridssaved_Obsolete</redundant_name>
+    </column>
+    <column name="Puipoweridssaved" type="INTARRAY">
+      <offset>1472</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Puipoweridssaved_Obsolete</redundant_name>
+    </column>
+    <column name="Uipredicteddeathtime" type="INT">
+      <offset>1480</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Pcswingingfx" type="STRING">
+      <offset>1488</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Psimpleprojqueue" type="OPTIONALSTRUCT">
+      <offset>1496</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+      <subtable external="SimpleProjectileSpawnQueue" />
+    </column>
+    <column name="Astrbecritterkeybindprofile" type="STRING">
+      <offset>1504</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Astrkeybindoverrideprofile" type="STRING">
+      <offset>1512</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Includebecritterpowertags" type="EMBEDDEDSTRUCT">
+      <offset>1520</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PowerTagsStruct" />
+    </column>
+    <column name="Excludebecritterpowertags" type="EMBEDDEDSTRUCT">
+      <offset>1528</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PowerTagsStruct" />
+    </column>
+    <column name="Includemountpowertags" type="EMBEDDEDSTRUCT">
+      <offset>1536</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PowerTagsStruct" />
+    </column>
+    <column name="Excludemountpowertags" type="EMBEDDEDSTRUCT">
+      <offset>1544</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PowerTagsStruct" />
+    </column>
+    <column name="Ptoppleproperties" type="OPTIONALSTRUCT">
+      <offset>1552</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="ToppleProperties" />
+    </column>
+    <column name="Ppowersautoqueuedata" type="OPTIONALSTRUCT">
+      <offset>1560</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="PowersAutoQueueSavedData" />
+    </column>
+    <column name="Dirtybit" type="U8">
+      <offset>1568</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+        <flag>DIRTY_BIT</flag>
+      </flags>
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>1576</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Ipowersitemlevelcachedscaled" type="IGNORE" />
+    <column name="Garrisonpowers" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

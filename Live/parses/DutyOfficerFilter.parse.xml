@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DutyOfficerFilter">
+  <table>
+    <column name="DutyOfficerFilter" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="List" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="DutyOfficerFilterUI" />
+    </column>
+    <column name="Allsettings" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="DutyOfficerFilterUI" />
+    </column>
+    <column name="Count" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Includedcount" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Excludedcount" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

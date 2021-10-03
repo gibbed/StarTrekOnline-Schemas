@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ComboTrackerEntry">
+  <table>
+    <column name="ComboTrackerEntry" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="hDef" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="IconName" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Uchpoweractid" type="U8">
+      <offset>16</offset>
+    </column>
+    <column name="Queued" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Canactivate" type="U8">
+      <offset>18</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Trayslot" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Uipowerid" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

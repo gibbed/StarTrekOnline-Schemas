@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CSRListenerInfo">
+  <table>
+    <column name="CSRListenerInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Listenertype" type="INT">
+      <offset>0</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Listenerid" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Listenername" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Listeneraccount" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Uvaliduntiltime" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Listeneraccesslevel" type="INT">
+      <offset>28</offset>
+      <static_define_list external="AccessLevel" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

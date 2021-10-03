@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemAssignmentCategorySettings">
+  <table>
+    <column name="ItemAssignmentCategorySettings" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="DisplayName" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Image" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Numericxp1" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Numericxp" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Numericxp1</redundant_name>
+    </column>
+    <column name="Numericxp2" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Numericxp2" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Numericxp2</redundant_name>
+    </column>
+    <column name="Numericrank1" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Numericrank" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Numericrank1</redundant_name>
+    </column>
+    <column name="Numericrank2" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Numericrank2" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Numericrank2</redundant_name>
+    </column>
+    <column name="Numranks" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Associateditemcategories" type="INTARRAY">
+      <offset>88</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Associatedtags" type="INTARRAY">
+      <offset>96</offset>
+      <static_define_list external="ItemAssignmentTag" />
+    </column>
+    <column name="Sortorder" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Exprblockiscategoryhidden" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Iscategoryhidden" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockiscategoryhidden</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="EventName" type="STRING">
+      <offset>120</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Slotset" type="STRING">
+      <offset>128</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rankingscheduleset" type="STRING">
+      <offset>136</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Forcecompletionmode" type="INT">
+      <offset>144</offset>
+      <static_define_list external="ItemAssignmentForceCompleteMode" />
+    </column>
+    <column name="Costitemcategorygroup" type="INTARRAY">
+      <offset>152</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Chooserewardoutcomeonstart" type="U8">
+      <offset>160</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Completeexpbonus" type="STRUCT">
+      <offset>168</offset>
+      <subtable external="ItemAssignmentEventExpBonus" />
+    </column>
+    <column name="Excludefromitemassignmentnumericbonusgamepermission" type="U8">
+      <offset>176</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Categorynumeric" type="STRING">
+      <offset>184</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Categorynumericreward" type="STRING">
+      <offset>192</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

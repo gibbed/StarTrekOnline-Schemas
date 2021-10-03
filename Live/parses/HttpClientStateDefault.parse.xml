@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="HttpClientStateDefault">
+  <table>
+    <column name="HttpClientStateDefault" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Postheaderstring" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Postdatastring" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Authusername" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Ticket" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Requestpathdecoded" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Authstringcrc" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Waitingforpostdata" type="U8">
+      <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requesttime" type="INT64">
+      <offset>48</offset>
+    </column>
+    <column name="Req" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="PendingXMLRPCRequest" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

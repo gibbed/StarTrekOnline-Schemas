@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CombatPowerStateSwitchingDef">
+  <table>
+    <column name="CombatPowerStateSwitchingDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="State" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="CombatPowerStateDef" />
+    </column>
+    <column name="Powerset" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="CombatPowerStatePowerSet" />
+    </column>
+    <column name="Powerslotset" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="CombatPowerStatePowerslotSet" />
+    </column>
+    <column name="Specialpowerswitchedslot" type="INT">
+      <offset>40</offset>
+      <default>-1</default>
+    </column>
+    <column name="Switchcooldown" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Combatlevellockout" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Activatetime" type="F32">
+      <offset>52</offset>
+    </column>
+    <column name="Activatespeedscale" type="F32">
+      <offset>56</offset>
+      <default>1</default>
+    </column>
+    <column name="Activatepowerqueuetime" type="F32">
+      <offset>60</offset>
+    </column>
+    <column name="Disableactivationattribs" type="INTARRAY">
+      <offset>64</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Queuetype" type="INT">
+      <offset>72</offset>
+      <static_define_list external="EPowerActivationQueueType" />
+    </column>
+    <column name="Disallowstatecycling" type="BIT">
+      <offset>76</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Dismountonstateswitch" type="BIT">
+      <offset>76</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Disableactivationwhileknocked" type="BIT">
+      <offset>76</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Donotpropagaterecharge" type="BIT">
+      <offset>76</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Hidefrompowertreeui" type="BIT">
+      <offset>76</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Poweractivationdelayanims" type="BIT">
+      <offset>76</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Exitstateondeath" type="BIT">
+      <offset>76</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65542</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SysLogStats">
+  <table>
+    <column name="SysLogStats" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Resetall" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogResetAll "$FIELD(Name)" $NOCONFIRM $NORETURN</command_string>
+    </column>
+    <column name="Redirectdisabled" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogRedirectDisabled "$FIELD(Name)" $SELECT(Redirect to type|ENUM_SysLogType) $NORETURN</command_string>
+    </column>
+    <column name="Redirectall" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogRedirectAll "$FIELD(Name)" $SELECT(Redirect to type|ENUM_SysLogType) $NORETURN</command_string>
+    </column>
+    <column name="Chainall" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogChainAll "$FIELD(Name)" $SELECT(Chain to type|ENUM_SysLogType) $NORETURN</command_string>
+    </column>
+    <column name="Disableall" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogDisableAll "$FIELD(Name)" $NOCONFIRM $NORETURN</command_string>
+    </column>
+    <column name="Enableall" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogEnableAll "$FIELD(Name)" $NOCONFIRM $NORETURN</command_string>
+    </column>
+    <column name="Redirect_Disabled_To" type="INT">
+      <offset>16</offset>
+      <static_define_list external="SysLogType" />
+    </column>
+    <column name="Stats" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="SysLogTypeStats" />
+    </column>
+    <column name="Call_Stats" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="SysLogCallStats" />
+    </column>
+    <column name="Trace" type="STRINGARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisInteriorKit">
+  <table>
+    <column name="GenesisInteriorKit" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="FileName" type="CURRENTFILE">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Tags" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Kitelementsize" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Kitfloorheight" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Roompadding" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Lighttop" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Floorbottom" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Soundinfo" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="GenesisSoundInfo" />
+    </column>
+    <column name="Keylight" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Lightdetailkit" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="GenesisDetailKit" />
+    </column>
+    <column name="Compactjunct" type="U8">
+      <offset>72</offset>
+    </column>
+    <column name="Hallwaystraightdooronly" type="U8">
+      <offset>73</offset>
+    </column>
+    <column name="Noocclusionvolumes" type="U8">
+      <offset>74</offset>
+    </column>
+    <column name="Element" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="GenesisInteriorElement" />
+    </column>
+    <column name="Interiortag" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="GenesisInteriorTag" />
+    </column>
+    <column name="Ugcproperties" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

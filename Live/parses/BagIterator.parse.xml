@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="BagIterator">
+  <table>
+    <column name="BagIterator" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Bags" type="STRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="InventoryBag" />
+    </column>
+    <column name="Litebags" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="InventoryBagLite" />
+    </column>
+    <column name="_Cur" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="_Bag" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

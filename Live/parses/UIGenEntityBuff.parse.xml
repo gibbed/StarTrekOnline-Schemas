@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="UIGenEntityBuff">
+  <table>
+    <column name="UIGenEntityBuff" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Icon" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Descshort" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Desclong" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Descverylong" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Nameinternal" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Autodesc" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Powertag" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Eaipowertags" type="INTARRAY">
+      <offset>56</offset>
+    </column>
+    <column name="Duration" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Durationoriginal" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Timestampfirstapplication" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Timestamplastapplication" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Stack" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Lifetimeremaining" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Lifetimeusageleft" type="INT">
+      <offset>84</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Lifetimeremaining</redundant_name>
+    </column>
+    <column name="Resist" type="F32">
+      <offset>88</offset>
+    </column>
+    <column name="Isownedbyplayer" type="U8">
+      <offset>92</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Haslifetimetimer" type="BIT">
+      <offset>93</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Haslifetimeusage" type="BIT">
+      <offset>93</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Haslifetimetimer</redundant_name>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Hpowerdef" type="REFERENCE">
+      <offset>96</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Noduration" type="BIT">
+      <offset>104</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Forever" type="BIT">
+      <offset>104</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

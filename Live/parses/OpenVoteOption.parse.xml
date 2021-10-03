@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="OpenVoteOption">
+  <table>
+    <column name="OpenVoteOption" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Optionitem" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="OpenVoteOptionItem" />
+    </column>
+    <column name="Tiepreference" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Donotcount" type="U8">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disabled" type="U8">
+      <offset>37</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disabledmsg" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

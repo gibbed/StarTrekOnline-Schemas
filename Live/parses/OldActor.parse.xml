@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="OldActor">
+  <table>
+    <column name="OldActor" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Crittergroupdisplaynamemsg" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="ID" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Default" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
+      <subtable external="OldActorScaling" />
+    </column>
+    <column name="Disablespawn" type="INT">
+      <offset>88</offset>
+      <default>1</default>
+      <static_define_list external="ActorScalingFlag" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Usebossbar" type="INT">
+      <offset>92</offset>
+      <default>1</default>
+      <static_define_list external="ActorScalingFlag" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Hasflavor" type="IGNORE" />
+    <column name="Teamsize2" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="Teamsize3" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="Teamsize4" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="Teamsize5" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

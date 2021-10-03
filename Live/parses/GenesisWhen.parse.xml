@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisWhen">
+  <table>
+    <column name="GenesisWhen" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Whentype" type="INT">
+      <offset>0</offset>
+      <static_define_list external="GenesisWhenType" />
+    </column>
+    <column name="Showwhen" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Whentype</redundant_name>
+      <static_define_list external="GenesisWhenType" />
+    </column>
+    <column name="Spawnwhen" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Whentype</redundant_name>
+      <static_define_list external="GenesisWhenType" />
+    </column>
+    <column name="Not" type="U8">
+      <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Checkedattrib" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="GenesisCheckedAttrib" />
+    </column>
+    <column name="Whenchallengename" type="STRINGARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Showwhenchallengename" type="STRINGARRAY">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Whenchallengename</redundant_name>
+    </column>
+    <column name="Spawnwhenchallengename" type="STRINGARRAY">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Whenchallengename</redundant_name>
+    </column>
+    <column name="Whenchallengenumtocomplete" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Showwhenchallengenumtocomplete" type="INT">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Whenchallengenumtocomplete</redundant_name>
+    </column>
+    <column name="Whenroomname" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="GenesisWhenRoom" />
+    </column>
+    <column name="Showwhenroomname" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Whenroomname</redundant_name>
+      <subtable external="GenesisWhenRoom" />
+    </column>
+    <column name="Spawnwhenroomname" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Whenroomname</redundant_name>
+      <subtable external="GenesisWhenRoom" />
+    </column>
+    <column name="Whenobjectivename" type="STRINGARRAY">
+      <offset>40</offset>
+    </column>
+    <column name="Showwhenobjectivename" type="STRINGARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Whenobjectivename</redundant_name>
+    </column>
+    <column name="Spawnwhenobjectivename" type="STRINGARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Whenobjectivename</redundant_name>
+    </column>
+    <column name="Whenpromptname" type="STRINGARRAY">
+      <offset>48</offset>
+    </column>
+    <column name="Showwhenpromptname" type="STRINGARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Whenpromptname</redundant_name>
+    </column>
+    <column name="Spawnwhenpromptname" type="STRINGARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Whenpromptname</redundant_name>
+    </column>
+    <column name="Whenpromptblock" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="GenesisWhenPromptBlock" />
+    </column>
+    <column name="Whenpromptchallengename" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Whencontactname" type="STRINGARRAY">
+      <offset>72</offset>
+    </column>
+    <column name="Whencritterdefname" type="STRINGARRAY">
+      <offset>80</offset>
+    </column>
+    <column name="Whencrittergroupname" type="STRINGARRAY">
+      <offset>88</offset>
+    </column>
+    <column name="Whencritternumtocomplete" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Whenexternalmission" type="STRINGARRAY">
+      <offset>104</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Whenexternalmap" type="STRINGARRAY">
+      <offset>112</offset>
+    </column>
+    <column name="Whenanycrypticmap" type="U8">
+      <offset>120</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Whenexternalchallenge" type="STRUCT">
+      <offset>128</offset>
+      <subtable external="GenesisWhenExternalChallenge" />
+    </column>
+    <column name="Whenexternalroom" type="STRUCT">
+      <offset>136</offset>
+      <subtable external="GenesisWhenExternalRoom" />
+    </column>
+    <column name="Whenexternalprompt" type="STRUCT">
+      <offset>144</offset>
+      <subtable external="GenesisWhenExternalPrompt" />
+    </column>
+    <column name="Whenitemdefname" type="STRINGARRAY">
+      <offset>152</offset>
+    </column>
+    <column name="Whenitemcount" type="INT">
+      <offset>160</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

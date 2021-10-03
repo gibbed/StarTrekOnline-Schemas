@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ClientPlayerStruct">
+  <table>
+    <column name="ClientPlayerStruct" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="AccountID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Onlinecharacterid" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Loginserverid" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Handle" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="XUID" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Location" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Mapnameandinstance" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Playerlevel" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Playerteam" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Playerrank" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Playerallegiance" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="className" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Classdispname" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Pathname" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Guildname" type="STRING">
+      <offset>104</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Comment" type="STRING">
+      <offset>112</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Status" type="STRING">
+      <offset>120</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Activity" type="STRING">
+      <offset>128</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Lfgmode" type="INT">
+      <offset>136</offset>
+      <static_define_list external="TeamMode" />
+    </column>
+    <column name="Lfgdifficultymode" type="INT">
+      <offset>140</offset>
+      <static_define_list external="LFGDifficultyMode" />
+    </column>
+    <column name="Difficulty" type="STRING">
+      <offset>144</offset>
+    </column>
+    <column name="Difficultyidx" type="INT">
+      <offset>152</offset>
+    </column>
+    <column name="Teamstatusmessage" type="STRING">
+      <offset>160</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Sameinstance" type="U8">
+      <offset>168</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Onlinestatus" type="INT">
+      <offset>172</offset>
+      <static_define_list external="UserStatus" />
+    </column>
+    <column name="Playingstyles" type="STRING">
+      <offset>176</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Teammembers" type="INT">
+      <offset>184</offset>
+    </column>
+    <column name="Extramembers" type="STRUCT">
+      <offset>192</offset>
+      <subtable external="ClientTeamMemberStruct" />
+    </column>
+    <column name="Ignored" type="U8">
+      <offset>200</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Friend" type="U8">
+      <offset>201</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Guildmate" type="U8">
+      <offset>202</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Buddy" type="U8">
+      <offset>203</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Following" type="U8">
+      <offset>204</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Insameconsolegame" type="U8">
+      <offset>205</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Favorite" type="U8">
+      <offset>206</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fakeprofile" type="U8">
+      <offset>207</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Afk" type="U8">
+      <offset>208</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dnd" type="U8">
+      <offset>209</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Differentgame" type="U8">
+      <offset>210</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Differentvshard" type="U8">
+      <offset>211</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Samegamesameshardsamevshard" type="U8">
+      <offset>212</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ugcshard" type="U8">
+      <offset>213</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

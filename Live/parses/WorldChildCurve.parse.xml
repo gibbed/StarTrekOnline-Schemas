@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldChildCurve">
+  <table>
+    <column name="WorldChildCurve" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Deformgeometry" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Normalizegeometry" type="U8">
+      <offset>1</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Repeatlength" type="F32">
+      <offset>4</offset>
+      <default>1176256512</default>
+    </column>
+    <column name="Curvefactor" type="F32">
+      <offset>8</offset>
+      <default>1</default>
+    </column>
+    <column name="Stretchfactor" type="F32">
+      <offset>12</offset>
+      <default>1</default>
+    </column>
+    <column name="Attachable" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Linearize" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Maxpointcount" type="INT">
+      <offset>20</offset>
+      <default>250</default>
+    </column>
+    <column name="Geometrylength" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Childtype" type="INT">
+      <offset>28</offset>
+      <static_define_list external="CurveChildType" />
+    </column>
+    <column name="Avoidgaps" type="U8">
+      <offset>32</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Reverse" type="U8">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Beginoffset" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Endoffset" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Beginpad" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Endpad" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Resetup" type="U8">
+      <offset>52</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Xscale" type="F32">
+      <offset>56</offset>
+      <default>1</default>
+    </column>
+    <column name="Uvrotation" type="F32">
+      <offset>60</offset>
+    </column>
+    <column name="Uvscale" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Noboundsoffset" type="U8">
+      <offset>68</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Extrapoint" type="U8">
+      <offset>69</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

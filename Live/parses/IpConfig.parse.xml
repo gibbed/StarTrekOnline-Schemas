@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="IpConfig">
+  <table>
+    <column name="IpConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Local" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="IpConfigEntry" />
+    </column>
+    <column name="Public" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="IpConfigEntry" />
+    </column>
+    <column name="Vpnorvirtual" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="IpConfigEntry" />
+    </column>
+    <column name="Internal" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="IpConfigEntry" />
+    </column>
+    <column name="Noip" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="IpConfigEntry" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

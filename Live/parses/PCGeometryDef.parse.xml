@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PCGeometryDef">
+  <table>
+    <column name="PCGeometryDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Bone" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>CostumeBone</dictionary_name>
+    </column>
+    <column name="Geometry" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Model" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Mirrorgeometry" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>CostumeGeometry</dictionary_name>
+    </column>
+    <column name="Defaultmaterial" type="REFERENCE">
+      <offset>80</offset>
+      <dictionary_name>CostumeMaterial</dictionary_name>
+    </column>
+    <column name="Material" type="STRINGARRAY">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>CostumeMaterial</dictionary_name>
+    </column>
+    <column name="LOD" type="U8">
+      <offset>96</offset>
+      <default>10</default>
+      <static_define_list external="CostumeLODLevel" />
+    </column>
+    <column name="Restrictedto" type="U8">
+      <offset>97</offset>
+      <static_define_list external="PCRestriction" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Colorchoices" type="U8">
+      <offset>98</offset>
+      <default>15</default>
+      <static_define_list external="PCColorFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Hasalpha" type="U8">
+      <offset>99</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Order" type="F32">
+      <offset>100</offset>
+    </column>
+    <column name="Randomweight" type="F32">
+      <offset>104</offset>
+    </column>
+    <column name="Category" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="PCCategoryRef" />
+    </column>
+    <column name="Clothdata" type="OPTIONALSTRUCT">
+      <offset>120</offset>
+      <subtable external="PCGeometryClothData" />
+    </column>
+    <column name="Options" type="OPTIONALSTRUCT">
+      <offset>128</offset>
+      <subtable external="PCGeometryOptions" />
+    </column>
+    <column name="Animnodealiaslist" type="STRING">
+      <offset>136</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Animnodeauxtransformlist" type="STRING">
+      <offset>144</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

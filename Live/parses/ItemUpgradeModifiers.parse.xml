@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemUpgradeModifiers">
+  <table>
+    <column name="ItemUpgradeModifiers" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ItemDef" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Modifychance" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Overridechance" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Modifyrequired" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Overriderequired" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Upgradetorank" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Nolossonfailure" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Tiermin" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Tiermax" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Onlyconsumemodifieronfail" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

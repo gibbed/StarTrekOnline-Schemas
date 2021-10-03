@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="InvBagSlotSwitchRequest">
+  <table>
+    <column name="InvBagSlotSwitchRequest" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Bagid" type="INT">
+      <offset>0</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Index" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Newactiveslot" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Urequestid" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Utime" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Delay" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Timer" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Haschangedslot" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hashandledmoveevents" type="U8">
+      <offset>29</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

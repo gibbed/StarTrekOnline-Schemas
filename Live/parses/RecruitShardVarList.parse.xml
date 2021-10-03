@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="RecruitShardVarList">
+  <table>
+    <column name="RecruitShardVarList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Recruitshardvar" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="RecruitShardVar" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

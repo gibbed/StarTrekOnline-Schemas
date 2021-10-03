@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="FX2ModuleParameter">
+  <table>
+    <column name="FX2ModuleParameter" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Type" type="INT">
+      <offset>8</offset>
+      <static_define_list external="FX2ModuleParameterType" />
+    </column>
+    <column name="Description" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Output" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bindable" type="U8">
+      <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Literal" type="U8">
+      <offset>26</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Defaultvalue" type="OPTIONALPOLYMORPH">
+      <offset>32</offset>
+      <subtable external="_PolyTable_FX2ModuleParameterValue" />
+    </column>
+    <column name="Subparameter" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="FX2ModuleParameter" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

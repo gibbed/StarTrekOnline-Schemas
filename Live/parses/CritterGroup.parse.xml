@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CritterGroup">
+  <table>
+    <column name="CritterGroup" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Notes" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Descriptionmsg" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="SkillType" type="INT">
+      <offset>88</offset>
+      <static_define_list external="SkillType" />
+    </column>
+    <column name="Rewardtable" type="REFERENCE">
+      <offset>96</offset>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Addrewardtable" type="REFERENCE">
+      <offset>104</offset>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Dropsettag" type="STRING">
+      <offset>112</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Chatbubbledef" type="REFERENCE">
+      <offset>120</offset>
+      <dictionary_name>ChatBubbleDef</dictionary_name>
+    </column>
+    <column name="Malevoiceset" type="STRING">
+      <offset>128</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Femalevoiceset" type="STRING">
+      <offset>136</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Neutralvoiceset" type="STRING">
+      <offset>144</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="SpawnAnim" type="STRING">
+      <offset>152</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>AnimationLibrary</dictionary_name>
+    </column>
+    <column name="Spawnlockdowntime" type="F32">
+      <offset>160</offset>
+    </column>
+    <column name="Spawnanimalternate" type="STRING">
+      <offset>168</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>AnimationLibrary</dictionary_name>
+    </column>
+    <column name="Spawnlockdowntimealternate" type="F32">
+      <offset>176</offset>
+    </column>
+    <column name="Crittervars" type="STRUCT">
+      <offset>184</offset>
+      <subtable external="CritterVar" />
+    </column>
+    <column name="Critterloreentries" type="STRUCT">
+      <offset>192</offset>
+      <subtable external="CritterLore" />
+    </column>
+    <column name="Headshotcrittergroup" type="REFERENCE">
+      <offset>200</offset>
+      <dictionary_name>CritterGroup</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

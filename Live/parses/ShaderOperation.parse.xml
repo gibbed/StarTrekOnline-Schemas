@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ShaderOperation">
+  <table>
+    <column name="ShaderOperation" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Group" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Notes" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Function" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="operationType" type="REFERENCE">
+      <offset>32</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+        <flag>REQUIRED</flag>
+      </flags>
+      <dictionary_name>OperationDef</dictionary_name>
+    </column>
+    <column name="Input" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="ShaderInputEdge" />
+    </column>
+    <column name="Fixedinput" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="ShaderFixedInput" />
+    </column>
+    <column name="Position" type="F32FIXEDARRAY">
+      <offset>56</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Collapsed" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Instanceparam" type="IGNORE" />
+    <column name="Endoperation" type="END" />
+  </table>
+</parse>

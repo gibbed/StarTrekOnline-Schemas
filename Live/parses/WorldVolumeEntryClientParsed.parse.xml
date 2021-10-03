@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldVolumeEntryClientParsed">
+  <table>
+    <column name="WorldVolumeEntryClientParsed" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Base_Data" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="WorldCellEntryParsed" />
+    </column>
+    <column name="Elements" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="WorldVolumeElement" />
+    </column>
+    <column name="Volume_Type_String_Idxs" type="INTARRAY">
+      <offset>80</offset>
+    </column>
+    <column name="Water_Condition_Idx" type="INT">
+      <offset>88</offset>
+      <default>-1</default>
+    </column>
+    <column name="Indoor" type="BIT">
+      <offset>92</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Occluder" type="BIT">
+      <offset>92</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Camera_Subject_Pos" type="F32FIXEDARRAY">
+      <offset>96</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Camera_Subject_Spline_Pos" type="F32FIXEDARRAY">
+      <offset>108</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Camera_Subject_Spline" type="EMBEDDEDSTRUCT">
+      <offset>120</offset>
+      <subtable external="Spline" />
+    </column>
+    <column name="Camera_Subject_Tracking_Spline_Pos" type="F32FIXEDARRAY">
+      <offset>160</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Camera_Subject_Tracking_Spline" type="EMBEDDEDSTRUCT">
+      <offset>176</offset>
+      <subtable external="Spline" />
+    </column>
+    <column name="Camera_Movement_Spline_Pos" type="F32FIXEDARRAY">
+      <offset>216</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Camera_Movement_Spline" type="EMBEDDEDSTRUCT">
+      <offset>232</offset>
+      <subtable external="Spline" />
+    </column>
+    <column name="Camera_Movement_Tracking_Spline_Pos" type="F32FIXEDARRAY">
+      <offset>272</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Camera_Movement_Tracking_Spline" type="EMBEDDEDSTRUCT">
+      <offset>288</offset>
+      <subtable external="Spline" />
+    </column>
+    <column name="Properties" type="EMBEDDEDSTRUCT">
+      <offset>328</offset>
+      <subtable external="GroupVolumePropertiesClient" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

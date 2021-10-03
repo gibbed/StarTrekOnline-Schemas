@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="AwayTeamMemberData">
+  <table>
+    <column name="AwayTeamMemberData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Ent" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Entity" />
+    </column>
+    <column name="OwnerEnt" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Entity" />
+    </column>
+    <column name="Slotid" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Ownername" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Onlen" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Ispet" type="U8">
+      <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Class" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="className" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Petpermission" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="IsReady" type="U8">
+      <offset>65</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="EntType" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="EntID" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Hcostume" type="REFERENCE">
+      <offset>80</offset>
+      <dictionary_name>PlayerCostume</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

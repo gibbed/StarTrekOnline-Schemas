@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EntityMovementNavmeshFG">
+  <table>
+    <column name="EntityMovementNavmeshFG" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Tobg" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="EntityMovementNavmeshToBG" />
+    </column>
+    <column name="Tofg" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
+      <subtable external="EntityMovementNavmeshToFG" />
+    </column>
+    <column name="Pushdata" type="EMBEDDEDSTRUCT">
+      <offset>112</offset>
+      <subtable external="EntityMovementNavmeshPushData" />
+    </column>
+    <column name="Stundata" type="EMBEDDEDSTRUCT">
+      <offset>144</offset>
+      <subtable external="EntityMovementNavmeshStunData" />
+    </column>
+    <column name="Ignores" type="STRUCT">
+      <offset>160</offset>
+      <subtable external="EntityMovementNavmeshIgnoreInput" />
+    </column>
+    <column name="Updated" type="EMBEDDEDSTRUCT">
+      <offset>296</offset>
+      <subtable external="EntityMovementNavmeshMovementUpdate" />
+    </column>
+    <column name="Flagsmutable" type="EMBEDDEDSTRUCT">
+      <offset>300</offset>
+      <subtable external="EntityMovementNavmeshMovementFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

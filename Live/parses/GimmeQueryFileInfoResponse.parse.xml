@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GimmeQueryFileInfoResponse">
+  <table>
+    <column name="GimmeQueryFileInfoResponse" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Base" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="GimmeRPCResponseBase" />
+    </column>
+    <column name="Result" type="EMBEDDEDSTRUCT">
+      <offset>192</offset>
+      <subtable external="GimmeQueryFileInfoResult" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

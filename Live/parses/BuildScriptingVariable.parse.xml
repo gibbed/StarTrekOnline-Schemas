@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="BuildScriptingVariable">
+  <table>
+    <column name="BuildScriptingVariable" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="varName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="varValue" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Comment" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Behavior" type="INT">
+      <offset>24</offset>
+      <static_define_list external="VariableBehavior" />
+    </column>
+    <column name="Setindex" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

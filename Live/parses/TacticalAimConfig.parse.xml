@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TacticalAimConfig">
+  <table>
+    <column name="TacticalAimConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Aimdef" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">TacticalRequesterAimDef</format_string>
+      </format_strings>
+    </column>
+    <column name="Speedscalecrouch" type="F32">
+      <offset>0</offset>
+      <default>1</default>
+    </column>
+    <column name="Speedscaleaim" type="F32">
+      <offset>4</offset>
+      <default>1</default>
+    </column>
+    <column name="Speed" type="F32">
+      <offset>8</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+    </column>
+    <column name="Aimmindurationseconds" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Aimcooldown" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Aimdisabled" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Aimstancedisabled" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Crouchentityheightratio" type="F32">
+      <offset>24</offset>
+      <default>1058642330</default>
+    </column>
+    <column name="Aimrequireditemcategory" type="INTARRAY">
+      <offset>32</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Aimcostattrib" type="INT">
+      <offset>40</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Splitaimandcrouch" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Movementcancelscrouch" type="BIT">
+      <offset>44</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Crouchmodetoggles" type="BIT">
+      <offset>44</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Nostancetransitionswhileaiming" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Aimignoresglobalcooldown" type="BIT">
+      <offset>44</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Aimdisablesjump" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

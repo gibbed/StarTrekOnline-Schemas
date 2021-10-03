@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DynamicItemRepairVersionDef">
+  <table>
+    <column name="DynamicItemRepairVersionDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Version" type="U8">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Minprogressionlevel" type="U8">
+      <offset>1</offset>
+    </column>
+    <column name="Maxprogressionlevel" type="U8">
+      <offset>2</offset>
+    </column>
+    <column name="Minquality" type="INT">
+      <offset>4</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Maxquality" type="INT">
+      <offset>8</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Extrapowercount" type="U8">
+      <offset>12</offset>
+    </column>
+    <column name="Missingpowercount" type="U8">
+      <offset>13</offset>
+    </column>
+    <column name="Rerollallpowers" type="U8">
+      <offset>14</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Additempower" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="DynamicItemPower" />
+    </column>
+    <column name="Removeitempower" type="STRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Additempower</redundant_name>
+      <subtable external="DynamicItemPower" />
+    </column>
+    <column name="Replace" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="DynamicItemPowerReplace" />
+    </column>
+    <column name="Replaceduplicate" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="DynamicItemPowerReplace" />
+    </column>
+    <column name="Replaceduplicatefromset" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="DynamicItemPowerReplaceDuplicateFromSet" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ExprFuncDesc">
+  <table>
+    <column name="ExprFuncDesc" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Argc" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Exprcodeenum" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="FuncName" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Comment" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Sourcefile" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Linenum" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Args_0" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
+      <subtable external="ExprFuncArg" />
+    </column>
+    <column name="Args_1" type="EMBEDDEDSTRUCT">
+      <offset>104</offset>
+      <subtable external="ExprFuncArg" />
+    </column>
+    <column name="Args_2" type="EMBEDDEDSTRUCT">
+      <offset>152</offset>
+      <subtable external="ExprFuncArg" />
+    </column>
+    <column name="Args_3" type="EMBEDDEDSTRUCT">
+      <offset>200</offset>
+      <subtable external="ExprFuncArg" />
+    </column>
+    <column name="Args_4" type="EMBEDDEDSTRUCT">
+      <offset>248</offset>
+      <subtable external="ExprFuncArg" />
+    </column>
+    <column name="Args_5" type="EMBEDDEDSTRUCT">
+      <offset>296</offset>
+      <subtable external="ExprFuncArg" />
+    </column>
+    <column name="Args_6" type="EMBEDDEDSTRUCT">
+      <offset>344</offset>
+      <subtable external="ExprFuncArg" />
+    </column>
+    <column name="Args_7" type="EMBEDDEDSTRUCT">
+      <offset>392</offset>
+      <subtable external="ExprFuncArg" />
+    </column>
+    <column name="Args_8" type="EMBEDDEDSTRUCT">
+      <offset>440</offset>
+      <subtable external="ExprFuncArg" />
+    </column>
+    <column name="Args_9" type="EMBEDDEDSTRUCT">
+      <offset>488</offset>
+      <subtable external="ExprFuncArg" />
+    </column>
+    <column name="Args_10" type="EMBEDDEDSTRUCT">
+      <offset>536</offset>
+      <subtable external="ExprFuncArg" />
+    </column>
+    <column name="Args_11" type="EMBEDDEDSTRUCT">
+      <offset>584</offset>
+      <subtable external="ExprFuncArg" />
+    </column>
+    <column name="ReturnType" type="EMBEDDEDSTRUCT">
+      <offset>632</offset>
+      <subtable external="ExprFuncArg" />
+    </column>
+    <column name="Tags_0" type="EMBEDDEDSTRUCT">
+      <offset>680</offset>
+      <subtable external="ExprFuncDescString" />
+    </column>
+    <column name="Tags_1" type="EMBEDDEDSTRUCT">
+      <offset>688</offset>
+      <subtable external="ExprFuncDescString" />
+    </column>
+    <column name="Tags_2" type="EMBEDDEDSTRUCT">
+      <offset>696</offset>
+      <subtable external="ExprFuncDescString" />
+    </column>
+    <column name="Tags_3" type="EMBEDDEDSTRUCT">
+      <offset>704</offset>
+      <subtable external="ExprFuncDescString" />
+    </column>
+    <column name="Tags_4" type="EMBEDDEDSTRUCT">
+      <offset>712</offset>
+      <subtable external="ExprFuncDescString" />
+    </column>
+    <column name="Tags_5" type="EMBEDDEDSTRUCT">
+      <offset>720</offset>
+      <subtable external="ExprFuncDescString" />
+    </column>
+    <column name="Tags_6" type="EMBEDDEDSTRUCT">
+      <offset>728</offset>
+      <subtable external="ExprFuncDescString" />
+    </column>
+    <column name="Tags_7" type="EMBEDDEDSTRUCT">
+      <offset>736</offset>
+      <subtable external="ExprFuncDescString" />
+    </column>
+    <column name="Tags_8" type="EMBEDDEDSTRUCT">
+      <offset>744</offset>
+      <subtable external="ExprFuncDescString" />
+    </column>
+    <column name="Tags_9" type="EMBEDDEDSTRUCT">
+      <offset>752</offset>
+      <subtable external="ExprFuncDescString" />
+    </column>
+    <column name="Tags_10" type="EMBEDDEDSTRUCT">
+      <offset>760</offset>
+      <subtable external="ExprFuncDescString" />
+    </column>
+    <column name="Tags_11" type="EMBEDDEDSTRUCT">
+      <offset>768</offset>
+      <subtable external="ExprFuncDescString" />
+    </column>
+    <column name="Cost" type="F32">
+      <offset>776</offset>
+    </column>
+    <column name="Exprcodename" type="STRING">
+      <offset>784</offset>
+    </column>
+    <column name="Funcflags" type="INT">
+      <offset>800</offset>
+      <static_define_list external="ExprFuncFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ShaderOperationDef">
+  <table>
+    <column name="ShaderOperationDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Category" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Description" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Parentname" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Optionname" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Defaultoptionname" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Type" type="INT">
+      <offset>48</offset>
+      <static_define_list external="ShaderOperationType" />
+    </column>
+    <column name="Input" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="ShaderInput" />
+    </column>
+    <column name="Input:" type="STRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Input</redundant_name>
+      <subtable external="ShaderInputOneLine" />
+    </column>
+    <column name="Output" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="ShaderOutput" />
+    </column>
+    <column name="Output:" type="STRUCT">
+      <offset>64</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Output</redundant_name>
+      <subtable external="ShaderOutputOneLine" />
+    </column>
+    <column name="Fn" type="CURRENTFILE">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Minshader" type="F32">
+      <offset>80</offset>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>84</offset>
+      <static_define_list external="ShaderOperationFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Operationdef" type="IGNORE" />
+    <column name="Endoperationdef" type="END" />
+  </table>
+</parse>

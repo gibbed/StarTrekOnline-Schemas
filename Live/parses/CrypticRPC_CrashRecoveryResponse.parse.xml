@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CrypticRPC_CrashRecoveryResponse">
+  <table>
+    <column name="CrypticRPC_CrashRecoveryResponse" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Persistloadingfailed" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requestidscompleted" type="INT64">
+      <offset>8</offset>
+      <flags>
+        <flag>EARRAY</flag>
+      </flags>
+    </column>
+    <column name="Requestidsnotbegun" type="INT64">
+      <offset>16</offset>
+      <flags>
+        <flag>EARRAY</flag>
+      </flags>
+    </column>
+    <column name="Requestidsinprogresswhencrashed" type="INT64">
+      <offset>24</offset>
+      <flags>
+        <flag>EARRAY</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

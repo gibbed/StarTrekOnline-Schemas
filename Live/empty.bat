@@ -1,3 +1,3 @@
 del "expression functions.txt"
-del schemas\*.xml
+del parses\*.xml
 del enums\*.xml

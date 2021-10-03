@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="SerializablePackedStructStream">
+  <table>
+    <column name="SerializablePackedStructStream" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+      <format_strings>
+        <format_string name="__VERSION">1</format_string>
+      </format_strings>
+    </column>
+    <column name="{" type="START" />
+    <column name="Globalstringtable" type="STRINGARRAY">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Method" type="INT">
+      <offset>8</offset>
+      <static_define_list external="StructPackMethod" />
+    </column>
+    <column name="Flags" type="INT">
+      <offset>12</offset>
+      <static_define_list external="StructPackFlags" />
+    </column>
+    <column name="Binary_Block" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="TextParserBinaryBlock" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

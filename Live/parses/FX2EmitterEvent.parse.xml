@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="FX2EmitterEvent">
+  <table>
+    <column name="FX2EmitterEvent" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Module" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="FX2Module" />
+    </column>
+    <column name="Modules" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Module</redundant_name>
+      <subtable external="FX2Module" />
+    </column>
+    <column name="Tempproperty" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="FX2Property" />
+    </column>
+    <column name="Uuidindoc" type="INT">
+      <offset>24</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>EDITOR_IGNORE</flag>
+        <flag>EDIT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Customemitterevent" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Customparticleevent" type="U8">
+      <offset>41</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Customcpuevent" type="U8">
+      <offset>42</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ontimeline" type="U8">
+      <offset>43</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Previewdirty" type="U8">
+      <offset>44</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>EDITOR_IGNORE</flag>
+        <flag>EDIT_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Collapsed" type="U8">
+      <offset>45</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>EDITOR_IGNORE</flag>
+        <flag>EDIT_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

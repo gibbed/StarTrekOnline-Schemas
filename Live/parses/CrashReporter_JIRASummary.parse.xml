@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CrashReporter_JIRASummary">
+  <table>
+    <column name="CrashReporter_JIRASummary" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Jira_Assignee" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Jira_Status" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Jira_Lastmodtime" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

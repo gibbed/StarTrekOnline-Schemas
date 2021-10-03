@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DefaultSettingsRules">
+  <table>
+    <column name="DefaultSettingsRules" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Resolution" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="ResolutionRule" />
+    </column>
+    <column name="Renderscale" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="RenderScaleRule" />
+    </column>
+    <column name="Fillnoeffects" type="F32">
+      <offset>16</offset>
+      <default>1174011904</default>
+    </column>
+    <column name="Filllighting2" type="F32">
+      <offset>20</offset>
+      <default>1185157120</default>
+    </column>
+    <column name="Detailmin" type="F32">
+      <offset>24</offset>
+      <default>1048576000</default>
+    </column>
+    <column name="Detailmax" type="F32">
+      <offset>28</offset>
+      <default>2</default>
+    </column>
+    <column name="Filldetailmin" type="F32">
+      <offset>32</offset>
+      <default>1167867904</default>
+    </column>
+    <column name="Filldetailmax" type="F32">
+      <offset>36</offset>
+      <default>1188741120</default>
+    </column>
+    <column name="Fillterrainmin" type="F32">
+      <offset>40</offset>
+      <default>1159888896</default>
+    </column>
+    <column name="Fillterrainmax" type="F32">
+      <offset>44</offset>
+      <default>1184645120</default>
+    </column>
+    <column name="Terraintexturequalitylow" type="F32">
+      <offset>48</offset>
+      <default>1159888896</default>
+    </column>
+    <column name="Terraintexturequalitymid" type="F32">
+      <offset>52</offset>
+      <default>1189765120</default>
+    </column>
+    <column name="Fillssaomin" type="F32">
+      <offset>56</offset>
+      <default>1187205120</default>
+    </column>
+    <column name="Fillmsaamin" type="F32">
+      <offset>60</offset>
+      <default>1186693120</default>
+    </column>
+    <column name="Fillmsaa2" type="F32">
+      <offset>64</offset>
+      <default>1191753728</default>
+    </column>
+    <column name="Fillmsaa" type="F32">
+      <offset>68</offset>
+      <default>1191753728</default>
+    </column>
+    <column name="Fillmsaa4" type="F32">
+      <offset>68</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Fillmsaa</redundant_name>
+      <default>1191753728</default>
+    </column>
+    <column name="Filltxaa" type="F32">
+      <offset>72</offset>
+      <default>1185669120</default>
+    </column>
+    <column name="Fillvfxlow" type="F32">
+      <offset>76</offset>
+      <default>1165213696</default>
+    </column>
+    <column name="Fillvfxmedium" type="F32">
+      <offset>80</offset>
+      <default>1176666112</default>
+    </column>
+    <column name="Filllensflare" type="F32">
+      <offset>84</offset>
+      <default>1175334912</default>
+    </column>
+    <column name="Fillshadowmapmin" type="F32">
+      <offset>88</offset>
+      <default>1181376512</default>
+    </column>
+    <column name="Fillshadowmapmax" type="F32">
+      <offset>92</offset>
+      <default>1195593728</default>
+    </column>
+    <column name="Fillsoftparticles" type="F32">
+      <offset>96</offset>
+      <default>1176256512</default>
+    </column>
+    <column name="Filldrawhighdetail" type="F32">
+      <offset>100</offset>
+      <default>1176256512</default>
+    </column>
+    <column name="Filldynamiclights" type="F32">
+      <offset>104</offset>
+      <default>1176256512</default>
+    </column>
+    <column name="Filldrawhighfilldetail" type="F32">
+      <offset>108</offset>
+      <default>1184645120</default>
+    </column>
+    <column name="Fillbloomquality1" type="F32">
+      <offset>112</offset>
+      <default>1176256512</default>
+    </column>
+    <column name="Filltexaniso4" type="F32">
+      <offset>116</offset>
+      <default>1176256512</default>
+    </column>
+    <column name="Filltexaniso16" type="F32">
+      <offset>120</offset>
+      <default>1184645120</default>
+    </column>
+    <column name="Fillminlightsperobject" type="F32">
+      <offset>124</offset>
+      <default>1161527296</default>
+    </column>
+    <column name="Fillmaxlightsperobject" type="F32">
+      <offset>128</offset>
+      <default>1174011904</default>
+    </column>
+    <column name="Fillminshadowedlights" type="F32">
+      <offset>132</offset>
+      <default>1174011904</default>
+    </column>
+    <column name="Fillmaxshadowedlights" type="F32">
+      <offset>136</offset>
+      <default>1182400512</default>
+    </column>
+    <column name="Fillscattering" type="INT">
+      <offset>140</offset>
+      <default>18000</default>
+    </column>
+    <column name="Fillmax" type="INT">
+      <offset>144</offset>
+      <default>50000</default>
+    </column>
+    <column name="Fillreflectionquality" type="F32">
+      <offset>148</offset>
+      <default>1176256512</default>
+    </column>
+    <column name="Cpumax" type="F32">
+      <offset>152</offset>
+      <default>2</default>
+    </column>
+    <column name="ShaderQuality" type="EMBEDDEDSTRUCT">
+      <offset>156</offset>
+      <subtable external="ShaderQualityRule" />
+    </column>
+    <column name="Filltwoboneskinning" type="IGNORE" />
+    <column name="Fillgpuparticles" type="IGNORE" />
+    <column name="Fillsplatshadows" type="IGNORE" />
+    <column name="Filloutliningintel" type="IGNORE" />
+    <column name="Filllightingqualitylow" type="IGNORE" />
+    <column name="Filllightingqualitylowintel" type="IGNORE" />
+    <column name="Fillhighqualitydof" type="IGNORE" />
+    <column name="Fillclusterlow" type="IGNORE" />
+    <column name="Fillclustermid" type="IGNORE" />
+    <column name="Fillnoshadows" type="IGNORE" />
+    <column name="Fillssao" type="IGNORE" />
+    <column name="Fillpoissonshadows" type="IGNORE" />
+    <column name="Fillssaomax" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parse>

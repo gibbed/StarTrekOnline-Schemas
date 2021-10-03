@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="TraySlots">
+  <table>
+    <column name="TraySlots" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Trayslots" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="TraySlot" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemAssignmentSettings">
+  <table>
+    <column name="ItemAssignmentSettings" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Assignmentrefreshtime" type="INT">
+      <offset>0</offset>
+      <default>14400</default>
+    </column>
+    <column name="Personalassignmentrefreshtime" type="INT">
+      <offset>4</offset>
+      <default>14400</default>
+    </column>
+    <column name="Maxstarttimefromprevassignment" type="INT">
+      <offset>8</offset>
+      <default>10</default>
+    </column>
+    <column name="Globalmapraritycount" type="INTARRAY">
+      <offset>16</offset>
+      <static_define_list external="ItemAssignmentRarityCountType" />
+    </column>
+    <column name="Personalraritycount" type="INTARRAY">
+      <offset>24</offset>
+      <static_define_list external="ItemAssignmentRarityCountType" />
+    </column>
+    <column name="Autograntassignmentweights" type="INTARRAY">
+      <offset>32</offset>
+      <static_define_list external="ItemAssignmentWeightType" />
+    </column>
+    <column name="Personalassignmentsettings" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="ItemAssignmentPersonalAssignmentSettings" />
+    </column>
+    <column name="Map" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="ItemAssignmentMapSettings" />
+    </column>
+    <column name="Qualityweight" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="ItemAssignmentQualityWeight" />
+    </column>
+    <column name="Durationscale" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="ItemAssignmentQualityDurationScale" />
+    </column>
+    <column name="Durationscalecategory" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="ItemAssignmentDurationScaleCategoryData" />
+    </column>
+    <column name="Numericqualityscale" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="ItemAssignmentQualityNumericScale" />
+    </column>
+    <column name="Qualityscale" type="STRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Numericqualityscale</redundant_name>
+      <subtable external="ItemAssignmentQualityNumericScale" />
+    </column>
+    <column name="Exprblockdurationmodifier" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Durationmodifier" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockdurationmodifier</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprdurationmodifer" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprblockdurationmodifier</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Defaultweightmodifiersettings" type="STRUCT">
+      <offset>96</offset>
+      <subtable external="ItemAssignmentOutcomeModifier" />
+    </column>
+    <column name="Defaultoutcomemodifier" type="STRINGARRAY">
+      <offset>104</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Defaultdurationscalemodifiersettings" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <subtable external="ItemAssignmentOutcomeModifier" />
+    </column>
+    <column name="Durationscalenumeric" type="STRINGARRAY">
+      <offset>120</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Qualityscalenumeric" type="STRINGARRAY">
+      <offset>128</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Activeassignmentpointsperplayer" type="INT">
+      <offset>136</offset>
+      <default>5</default>
+    </column>
+    <column name="Maxassignmenthistorycount" type="INT">
+      <offset>140</offset>
+      <default>10</default>
+    </column>
+    <column name="Strictassignmentslots" type="OPTIONALSTRUCT">
+      <offset>144</offset>
+      <subtable external="ItemAssignmentSettingsSlots" />
+    </column>
+    <column name="Assignmentslotsset" type="STRUCT">
+      <offset>152</offset>
+      <subtable external="ItemAssignmentSettingsSlotsSet" />
+    </column>
+    <column name="Completenowslotsset" type="OPTIONALSTRUCT">
+      <offset>160</offset>
+      <subtable external="ItemAssignmentSettingsSlotsSet" />
+    </column>
+    <column name="Attributevaluetable" type="STRUCT">
+      <offset>168</offset>
+      <subtable external="ItemAssignmentAttributeValueTable" />
+    </column>
+    <column name="Xpfilterbasename" type="STRING">
+      <offset>176</offset>
+    </column>
+    <column name="Categoryrankingschedule" type="OPTIONALSTRUCT">
+      <offset>184</offset>
+      <subtable external="ItemAssignmentRankingSchedule" />
+    </column>
+    <column name="Metarankingschedule" type="OPTIONALSTRUCT">
+      <offset>192</offset>
+      <subtable external="ItemAssignmentRankingSchedule" />
+    </column>
+    <column name="Categoryrankingscheduleset" type="STRUCT">
+      <offset>200</offset>
+      <subtable external="ItemAssignmentRankingScheduleSet" />
+    </column>
+    <column name="Defaultinventorybagcacheids" type="INTARRAY">
+      <offset>208</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Displayweightcategories" type="INTARRAY">
+      <offset>216</offset>
+      <static_define_list external="ItemAssignmentWeightType" />
+    </column>
+    <column name="Exprforcecompletenumericcost" type="OPTIONALSTRUCT">
+      <offset>224</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Forcecompletenumericcost" type="OPTIONALSTRUCT">
+      <offset>224</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprforcecompletenumericcost</redundant_name>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprdurationmodifer" type="OPTIONALSTRUCT">
+      <offset>224</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Exprforcecompletenumericcost</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Hforcecompletenumeric" type="REFERENCE">
+      <offset>232</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Forcecompletecosteventname" type="STRING">
+      <offset>240</offset>
+    </column>
+    <column name="Forcecompletecostmodifier" type="F32">
+      <offset>248</offset>
+    </column>
+    <column name="Remotecollectioncost" type="INT">
+      <offset>252</offset>
+    </column>
+    <column name="Remotecollectionnumeric" type="REFERENCE">
+      <offset>256</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Outcomeweightwindowconfig" type="OPTIONALSTRUCT">
+      <offset>264</offset>
+      <subtable external="ItemAssignmentOutcomeWeightWindowConfig" />
+    </column>
+    <column name="Excludebagflagsforitemcosts" type="INT">
+      <offset>272</offset>
+      <static_define_list external="InvBagFlag" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Includebagflagsforitemcosts" type="INT">
+      <offset>276</offset>
+      <static_define_list external="InvBagFlag" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Maxqualitychancefrommaterials" type="F32">
+      <offset>280</offset>
+    </column>
+    <column name="Xpcatchupslope" type="F32">
+      <offset>284</offset>
+    </column>
+    <column name="Samplerewardoutcome" type="STRINGARRAY">
+      <offset>288</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Interiorsuselaststaticmap" type="BIT">
+      <offset>296</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Disablerewardmodifiers" type="BIT">
+      <offset>296</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Debugonly" type="BIT">
+      <offset>296</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Donotrequiremapraritiesforassignmentgeneration" type="BIT">
+      <offset>296</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Keepemptyrewardoutcomeassignments" type="BIT">
+      <offset>296</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Allowduplicateactiveassignments" type="BIT">
+      <offset>296</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Donotaverageoutcomeweights" type="BIT">
+      <offset>296</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Getitemassignmentuichecksslottednotinventory" type="BIT">
+      <offset>296</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Usestrictcategorychecking" type="BIT">
+      <offset>297</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Generatesamplerewardtable" type="BIT">
+      <offset>297</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Slotssortitemcategories" type="BIT">
+      <offset>297</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Useoptionalslots" type="BIT">
+      <offset>297</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Preserveslotteditems" type="BIT">
+      <offset>297</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Clearslotsonstart" type="BIT">
+      <offset>297</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Generaterewardsforactiveassignments" type="BIT">
+      <offset>297</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Clientwantsnewassignmentid" type="BIT">
+      <offset>297</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Generatesamplerewardswithscaling" type="BIT">
+      <offset>298</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Evalscaleallnumericsminimal" type="BIT">
+      <offset>298</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Donotreleaseitemsuntilrewardsareclaimed" type="BIT">
+      <offset>298</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Allowslottingequippeditemsonassignment" type="BIT">
+      <offset>298</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Userequirednumericinsteadofcharlevel" type="BIT">
+      <offset>298</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Requireassignmentstorepeat" type="BIT">
+      <offset>298</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Binditemsonassignmentstart" type="BIT">
+      <offset>298</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Repeatexemptassignments" type="STRINGARRAY">
+      <offset>304</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>ItemAssignmentDef</dictionary_name>
+    </column>
+    <column name="Qualityweightoverrides" type="STRUCT">
+      <offset>312</offset>
+      <subtable external="ItemAssignmentQualityWeightOverride" />
+    </column>
+    <column name="Groupprojectshard" type="STRUCT">
+      <offset>320</offset>
+      <subtable external="ItemAssignmentShardEvent" />
+    </column>
+    <column name="Easybuycurrency" type="STRING">
+      <offset>328</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Hqsuffix" type="STRING">
+      <offset>336</offset>
+    </column>
+    <column name="Displaytag" type="STRUCT">
+      <offset>344</offset>
+      <subtable external="ItemAssignmentDisplayTag" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

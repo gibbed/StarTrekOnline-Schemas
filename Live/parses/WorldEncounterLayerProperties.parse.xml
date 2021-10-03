@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="WorldEncounterLayerProperties">
+  <table>
+    <column name="WorldEncounterLayerProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Layerlevel" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="ForceTeamSize" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Ignore" type="BIT">
+      <offset>8</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uselockout" type="BIT">
+      <offset>8</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parse>

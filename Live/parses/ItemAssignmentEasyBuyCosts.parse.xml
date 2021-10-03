@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="ItemAssignmentEasyBuyCosts">
+  <table>
+    <column name="ItemAssignmentEasyBuyCosts" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Costs" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="ItemAssignmentEasyBuyCost" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

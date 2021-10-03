@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="NavMeshCollisionGeo">
+  <table>
+    <column name="NavMeshCollisionGeo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Eafverts" type="F32ARRAY">
+      <offset>0</offset>
+    </column>
+    <column name="Eaitris" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Min" type="F32FIXEDARRAY">
+      <offset>16</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Max" type="F32FIXEDARRAY">
+      <offset>28</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Tilex" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Tilez" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

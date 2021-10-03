@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="EntityMovementNavmeshBG">
+  <table>
+    <column name="EntityMovementNavmeshBG" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Vel" type="F32FIXEDARRAY">
+      <offset>0</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Veladditive" type="F32FIXEDARRAY">
+      <offset>12</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Velconstantpush" type="F32FIXEDARRAY">
+      <offset>24</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Pos" type="F32FIXEDARRAY">
+      <offset>36</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="LastPos" type="F32FIXEDARRAY">
+      <offset>48</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Nextpos" type="F32FIXEDARRAY">
+      <offset>60</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Surfacenormal" type="F32FIXEDARRAY">
+      <offset>72</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Input" type="F32FIXEDARRAY">
+      <offset>84</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Veltarget" type="F32FIXEDARRAY">
+      <offset>92</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Speedtarget" type="F32">
+      <offset>100</offset>
+    </column>
+    <column name="Speed" type="F32">
+      <offset>104</offset>
+    </column>
+    <column name="Speedvertical" type="F32">
+      <offset>108</offset>
+    </column>
+    <column name="Speedadjust" type="EMBEDDEDSTRUCT">
+      <offset>112</offset>
+      <subtable external="RequesterSpeedAdjustBG" />
+    </column>
+    <column name="InputMoveYaw" type="F32">
+      <offset>124</offset>
+    </column>
+    <column name="InputFaceYaw" type="F32">
+      <offset>128</offset>
+    </column>
+    <column name="Inputpitch" type="F32">
+      <offset>132</offset>
+    </column>
+    <column name="Rot" type="QUATPYR">
+      <offset>136</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Pushdata" type="EMBEDDEDSTRUCT">
+      <offset>152</offset>
+      <subtable external="EntityMovementNavmeshPushData" />
+    </column>
+    <column name="Stundata" type="EMBEDDEDSTRUCT">
+      <offset>184</offset>
+      <subtable external="EntityMovementNavmeshStunData" />
+    </column>
+    <column name="Arcstartingheight" type="F32">
+      <offset>200</offset>
+    </column>
+    <column name="Arcverticalstepdelta" type="F32">
+      <offset>204</offset>
+    </column>
+    <column name="Spcplayedflourishanim" type="INT">
+      <offset>208</offset>
+    </column>
+    <column name="Ignores" type="STRUCT">
+      <offset>216</offset>
+      <subtable external="EntityMovementNavmeshIgnoreInput" />
+    </column>
+    <column name="Updated" type="EMBEDDEDSTRUCT">
+      <offset>224</offset>
+      <subtable external="EntityMovementNavmeshMovementUpdate" />
+    </column>
+    <column name="Flagsmutable" type="EMBEDDEDSTRUCT">
+      <offset>228</offset>
+      <subtable external="EntityMovementNavmeshMovementFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

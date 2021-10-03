@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="CombatStateDebugEntry">
+  <table>
+    <column name="CombatStateDebugEntry" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Ersrcent" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Ertargetent" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Power" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Uexittime" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

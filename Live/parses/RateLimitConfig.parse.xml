@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="RateLimitConfig">
+  <table>
+    <column name="RateLimitConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Enabled" type="U8">
+      <offset>0</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Tier" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="RateLimitTier" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

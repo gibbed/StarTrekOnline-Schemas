@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PersonalEndeavorUIRow">
+  <table>
+    <column name="PersonalEndeavorUIRow" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Powerstring" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="DisplayName" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Itemdescription" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Powerlevelcurrent" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Powerlevelmax" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Valuepernumeric" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Currenttotalstatbonus" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Nexttotalstatbonus" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Showaspercent" type="U8">
+      <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="PowerIcon" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Hitemdef" type="REFERENCE">
+      <offset>56</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="QueueMapInfo">
+  <table>
+    <column name="QueueMapInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="MapName" type="STRINGARRAY">
+      <offset>0</offset>
+    </column>
+    <column name="Pchmapname" type="STRINGARRAY">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>MapName</redundant_name>
+    </column>
+    <column name="Mapchoicetable" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>ChoiceTable</dictionary_name>
+    </column>
+    <column name="Tableentry" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Queuecustommapdata" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="QueueCustomMapData" />
+    </column>
+    <column name="Queuecustommaptype" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Queuecustommapdata</redundant_name>
+      <subtable external="QueueCustomMapData" />
+    </column>
+    <column name="Queuemaptype" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Queuecustommapdata</redundant_name>
+      <subtable external="QueueCustomMapData" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PetRestrictions">
+  <table>
+    <column name="PetRestrictions" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Renamecost" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Renamecostnumeric" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Changesubnamecost" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Changesubnamecostnumeric" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Freenamechangenumeric" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Freesubnamechangenumeric" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Freeflexsubnamechangenumeric" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Potentialpetheadshotstyle" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Maxcount" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Type" type="INTARRAY">
+      <offset>72</offset>
+      <static_define_list external="CharClassTypes" />
+    </column>
+    <column name="Maxpuppets" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Puppettype" type="INTARRAY">
+      <offset>88</offset>
+      <static_define_list external="CharClassTypes" />
+    </column>
+    <column name="Maxsimultaneoustraining" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Requiredpuppetrequestcount" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="Allowedpuppetrequestchoice" type="STRUCT">
+      <offset>104</offset>
+      <subtable external="PuppetRequestChoice" />
+    </column>
+    <column name="Requiredpetrequestcount" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Allowedpetrequestchoice" type="STRUCT">
+      <offset>120</offset>
+      <subtable external="PetRequestChoice" />
+    </column>
+    <column name="Petintroductionwarp" type="STRUCT">
+      <offset>128</offset>
+      <subtable external="PetIntroductionWarp" />
+    </column>
+    <column name="Petacquirelimit" type="STRUCT">
+      <offset>136</offset>
+      <subtable external="PetAcquireLimitDef" />
+    </column>
+    <column name="Excludelastactivepuppetclasscategory" type="INTARRAY">
+      <offset>144</offset>
+      <static_define_list external="CharClassCategory" />
+    </column>
+    <column name="Requireditemfordeceasedpets" type="STRING">
+      <offset>152</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

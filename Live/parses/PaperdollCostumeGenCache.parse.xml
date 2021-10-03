@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="PaperdollCostumeGenCache">
+  <table>
+    <column name="PaperdollCostumeGenCache" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Ulastupdatetime" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="FileName" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Source1" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="PlayerCostume" />
+    </column>
+    <column name="Source2" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="PlayerCostume" />
+    </column>
+    <column name="Overlaysource" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="PlayerCostume" />
+    </column>
+    <column name="Keyint" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Keyfloat" type="F32">
+      <offset>68</offset>
+    </column>
+    <column name="Result" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="PlayerCostume" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

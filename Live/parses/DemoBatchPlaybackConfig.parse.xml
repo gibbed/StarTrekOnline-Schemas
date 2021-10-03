@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="DemoBatchPlaybackConfig">
+  <table>
+    <column name="DemoBatchPlaybackConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="FileName" type="CURRENTFILE">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Profile" type="BOOLFLAG">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Warmup" type="BOOLFLAG">
+      <offset>9</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Printresults" type="BOOLFLAG">
+      <offset>10</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="FPS" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Entry" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="DemoBatchPlaybackEntry" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>

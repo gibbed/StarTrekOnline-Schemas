@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parse name="GenesisMissionChallengeClickie">
+  <table>
+    <column name="GenesisMissionChallengeClickie" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Interactiondef" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>InteractionDef</dictionary_name>
+    </column>
+    <column name="Visiblename" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Interacttext" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Successtext" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Failuretext" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Interactanim" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>AIAnimList</dictionary_name>
+    </column>
+    <column name="Rewardtable" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Consumesuccessitem" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parse>
