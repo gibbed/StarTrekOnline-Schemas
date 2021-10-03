@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CurCount" type="INT">
+    <column name="Curcount" type="INT">
       <offset>0</offset>
     </column>
-    <column name="MaxCount" type="INT">
+    <column name="Maxcount" type="INT">
       <offset>4</offset>
     </column>
-    <column name="TotalSent" type="INT64">
+    <column name="Totalsent" type="INT64">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

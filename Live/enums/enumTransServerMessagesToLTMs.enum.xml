@@ -10,5 +10,6 @@
     <element name="SEND_PACKET_SIMPLE">16</element>
     <element name="SIMPLE_PACKET_ERROR">17</element>
     <element name="HERE_IS_OWNER">18</element>
+    <element name="I_AM_DYING">19</element>
   </elements>
 </enum>

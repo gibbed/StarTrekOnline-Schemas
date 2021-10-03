@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="AIAggroTransferApplyType">
+  <elements type="int">
+    <element name="Source">0</element>
+    <element name="Owner">1</element>
+  </elements>
+</enum>

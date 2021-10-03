@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CrypticRPCListenFlags">
+  <elements type="int">
+    <element name="ALLOW_FAILURE">1</element>
+    <element name="NO_COMPRESS">2</element>
+  </elements>
+</enum>

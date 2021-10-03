@@ -7,36 +7,36 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uSrcAccountID" type="INT">
+    <column name="Usrcaccountid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="SrcKey" type="STRING">
-      <offset>4</offset>
+    <column name="Srckey" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="uDestAccountID" type="INT">
-      <offset>8</offset>
+    <column name="Udestaccountid" type="INT">
+      <offset>16</offset>
     </column>
-    <column name="DestKey" type="STRING">
-      <offset>12</offset>
+    <column name="Destkey" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Lock" type="STRING">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="TransactionType" type="INT">
-      <offset>20</offset>
+    <column name="Transactiontype" type="INT">
+      <offset>40</offset>
       <static_define_list external="TransactionLogType" />
     </column>
-    <column name="uLockContainerID" type="INT">
-      <offset>24</offset>
+    <column name="Ulockcontainerid" type="INT">
+      <offset>44</offset>
     </column>
     <column name="}" type="END" />
   </table>

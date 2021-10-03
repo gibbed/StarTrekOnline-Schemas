@@ -15,54 +15,76 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="ParentCategory" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="File" type="CURRENTFILE">
+    <column name="Parentcategory" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
+    <column name="File" type="CURRENTFILE">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
     <column name="Type" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
       <static_define_list external="MTCategoryType" />
     </column>
     <column name="Allegiance" type="REFERENCE">
-      <offset>16</offset>
+      <offset>32</offset>
       <dictionary_name>Allegiance</dictionary_name>
     </column>
-    <column name="DisplayAllegiance" type="REFERENCE">
-      <offset>20</offset>
+    <column name="Displayallegiance" type="REFERENCE">
+      <offset>40</offset>
       <dictionary_name>Allegiance</dictionary_name>
     </column>
-    <column name="displayNameMesg" type="EMBEDDEDSTRUCT">
-      <offset>24</offset>
+    <column name="Displaynamemesg" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="SortIndex" type="INT">
-      <offset>36</offset>
+    <column name="Sortindex" type="INT">
+      <offset>72</offset>
     </column>
-    <column name="SortValue" type="INT">
-      <offset>36</offset>
+    <column name="Sortvalue" type="INT">
+      <offset>72</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>SortIndex</redundant_name>
+      <redundant_name>Sortindex</redundant_name>
     </column>
-    <column name="HideUnusable" type="BIT">
-      <offset>40</offset>
+    <column name="Showowned" type="U8">
+      <offset>76</offset>
+      <default>-1</default>
+    </column>
+    <column name="Hideunusable" type="BIT">
+      <offset>80</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="HasNewItems" type="BIT">
-      <offset>40</offset>
+    <column name="Showunavailable" type="BIT">
+      <offset>80</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Hasnewitems" type="BIT">
+      <offset>80</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>
-      <bit_offset>65537</bit_offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Hassaleitems" type="BIT">
+      <offset>80</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Haspersonaldiscountitems" type="BIT">
+      <offset>80</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

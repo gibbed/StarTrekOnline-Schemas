@@ -12,13 +12,15 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="OrigSize" type="INTFIXEDARRAY">
-      <offset>4</offset>
+    <column name="Origsize" type="INTFIXEDARRAY">
+      <offset>8</offset>
       <num_elements>2</num_elements>
+      <format_raw>15</format_raw>
     </column>
-    <column name="TileSize" type="INTFIXEDARRAY">
-      <offset>12</offset>
+    <column name="Tilesize" type="INTFIXEDARRAY">
+      <offset>16</offset>
       <num_elements>2</num_elements>
+      <format_raw>15</format_raw>
     </column>
     <column name="End" type="END" />
   </table>

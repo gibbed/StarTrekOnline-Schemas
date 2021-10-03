@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ProductKeyValuePrerequisiteOperation">
+  <elements type="int">
+    <element name="EQUALS">0</element>
+    <element name="=">0</element>
+    <element name="LESS_THAN">1</element>
+    <element name="&lt;">1</element>
+    <element name="LESS_THAN_OR_EQUAL">2</element>
+    <element name="&lt;=">2</element>
+    <element name="GREATER_THAN">3</element>
+    <element name="&gt;">3</element>
+    <element name="GREATER_THAN_OR_EQUAL">4</element>
+    <element name="&gt;=">4</element>
+  </elements>
+</enum>

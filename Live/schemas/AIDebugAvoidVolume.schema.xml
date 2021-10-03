@@ -10,22 +10,25 @@
     <column name="Pos" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="rot_mtxBox" type="MATPYR">
+    <column name="Rot_Mtxbox" type="MATPYR">
       <offset>12</offset>
       <num_elements>9</num_elements>
     </column>
-    <column name="pos_mtxBox" type="F32FIXEDARRAY">
+    <column name="Pos_Mtxbox" type="F32FIXEDARRAY">
       <offset>48</offset>
       <num_elements>3</num_elements>
     </column>
-    <column name="BoxMin" type="F32FIXEDARRAY">
+    <column name="Boxmin" type="F32FIXEDARRAY">
       <offset>60</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="BoxMax" type="F32FIXEDARRAY">
+    <column name="Boxmax" type="F32FIXEDARRAY">
       <offset>72</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Radius" type="F32">
       <offset>84</offset>

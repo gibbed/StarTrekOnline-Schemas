@@ -6,6 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="Power" type="REFERENCE">
       <offset>0</offset>
       <flags>
@@ -14,12 +15,12 @@
       <dictionary_name>PowerDef</dictionary_name>
     </column>
     <column name="State" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

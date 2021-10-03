@@ -9,12 +9,16 @@
     <column name="{" type="START" />
     <column name="FxName" type="STRING">
       <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="TimeSinceTriggered" type="F32">
-      <offset>4</offset>
-    </column>
-    <column name="played" type="U8">
+    <column name="Timesincetriggered" type="F32">
       <offset>8</offset>
+    </column>
+    <column name="Played" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

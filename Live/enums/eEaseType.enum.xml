@@ -12,5 +12,6 @@
     <element name="Fast">4</element>
     <element name="Faster">5</element>
     <element name="Fastest">6</element>
+    <element name="StepStart">7</element>
   </elements>
 </enum>

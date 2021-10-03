@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ShadingMaterialData">
+  <table>
+    <column name="ShadingMaterialData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Default_Fallback" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">MaterialFallback</format_string>
+      </format_strings>
+    </column>
+    <column name="Template" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Inputmapping" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ShaderInputMapping" />
+    </column>
+    <column name="Operationvalue" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="ShaderOperationValues" />
+    </column>
+    <column name="Fallback" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="MaterialFallback" />
+    </column>
+    <column name="Fallbacksoverriden" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Palette" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Gfxflags" type="INT">
+      <offset>56</offset>
+      <min_bits>5</min_bits>
+      <static_define_list external="RdrMaterialFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Maxreflectresolution" type="BIT">
+      <offset>60</offset>
+      <bit_offset>262144</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

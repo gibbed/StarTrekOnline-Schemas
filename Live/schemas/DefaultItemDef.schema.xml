@@ -20,43 +20,57 @@
       <offset>8</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="BagID" type="INT">
-      <offset>12</offset>
+    <column name="Bagid" type="INT">
+      <offset>16</offset>
       <default>2</default>
       <static_define_list external="InvBagIDs" />
     </column>
     <column name="Count" type="INT">
-      <offset>16</offset>
+      <offset>20</offset>
       <default>1</default>
     </column>
-    <column name="ModifierInfo" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Modifierinfo" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="aiModifierDef" />
     </column>
     <column name="MinLevel" type="INT">
-      <offset>24</offset>
+      <offset>32</offset>
       <default>-1</default>
     </column>
     <column name="MaxLevel" type="INT">
-      <offset>28</offset>
+      <offset>36</offset>
       <default>-1</default>
     </column>
     <column name="Chance" type="F32">
-      <offset>32</offset>
+      <offset>40</offset>
       <default>1</default>
     </column>
     <column name="Group" type="INT">
-      <offset>36</offset>
+      <offset>44</offset>
     </column>
     <column name="Slot" type="INT">
-      <offset>40</offset>
+      <offset>48</offset>
       <default>-1</default>
     </column>
     <column name="Weight" type="F32">
-      <offset>44</offset>
+      <offset>52</offset>
+    </column>
+    <column name="Progressionlevel" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Quality" type="INT">
+      <offset>60</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Dynamicitempowers" type="STRINGARRAY">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
     <column name="Disabled" type="U8">
-      <offset>48</offset>
+      <offset>72</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

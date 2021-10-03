@@ -2,5 +2,32 @@
 <enum name="ItemAssignmentCategory">
   <elements type="int">
     <element name="None">0</element>
+    <element name="Standard">1</element>
+    <element name="Marauding">2</element>
+    <element name="Diplomatic">3</element>
+    <element name="Science">4</element>
+    <element name="Engineering">5</element>
+    <element name="Military">6</element>
+    <element name="Exploration">7</element>
+    <element name="Espionage">8</element>
+    <element name="Medical">9</element>
+    <element name="Colonial">10</element>
+    <element name="Trade">11</element>
+    <element name="Development">12</element>
+    <element name="Recruitment">13</element>
+    <element name="Beamscrafting">14</element>
+    <element name="Cannonscrafting">15</element>
+    <element name="Projectilescrafting">16</element>
+    <element name="Shieldscrafting">17</element>
+    <element name="Engineeringcrafting">18</element>
+    <element name="Sciencecrafting">19</element>
+    <element name="Groundcrafting">20</element>
+    <element name="Kitscrafting">21</element>
+    <element name="Officertrainingcrafting">22</element>
+    <element name="Specialprojectscrafting">23</element>
+    <element name="Admiraltyfederation">24</element>
+    <element name="Admiraltyklingon">25</element>
+    <element name="Admiraltyromulan">26</element>
+    <element name="Admiraltyferengi">27</element>
   </elements>
 </enum>

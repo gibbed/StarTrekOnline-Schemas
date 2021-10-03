@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="HybridObjAndFilteredListFlags">
+  <elements type="int">
+    <element name="FOR_SERVERMONITORING">1</element>
+    <element name="DO_NOT_TOLERATE_MISSPELLINGS">2</element>
+  </elements>
+</enum>

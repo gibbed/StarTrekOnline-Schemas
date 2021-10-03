@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="AlertThrottle_FailurePercent">
+  <table>
+    <column name="AlertThrottle_FailurePercent" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>3</default>
+      <static_define_list external="AlertThrottleType" />
+    </column>
+    <column name="Comment" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+    </column>
+    <column name="Failurepercent" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Time" type="INT">
+      <offset>20</offset>
+      <format_strings>
+        <format_string name="HTML_SECS_DURATION">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Mincount" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Maxcount" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Cooldownbetweenfailures" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Levelwhenconditionsmet" type="INT">
+      <offset>36</offset>
+      <static_define_list external="enumAlertLevel" />
+    </column>
+    <column name="Levelforotherfailures" type="INT">
+      <offset>40</offset>
+      <static_define_list external="enumAlertLevel" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

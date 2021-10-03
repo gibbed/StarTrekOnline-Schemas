@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="FX2EmitterTimeline">
+  <table>
+    <column name="FX2EmitterTimeline" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uidinparent" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Segment" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="FX2EmitterTimelineSegment" />
+    </column>
+    <column name="Eventtriggers" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="FX2EmitterEventTrigger" />
+    </column>
+    <column name="Maxloopcount" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Loopstart" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Loopend" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Loopduration" type="F32">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Loopend</redundant_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

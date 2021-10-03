@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="enumCritSystemEmailType">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="SYSTEMDOWN">1</element>
+    <element name="ALERT">2</element>
+    <element name="SYSTEMUP">3</element>
+    <element name="STILLINDOWNTIME">4</element>
+    <element name="STILLSUPPRESSINGALERTS">5</element>
+    <element name="BEINGREMOVED">6</element>
+    <element name="SYSTEMCRASHED">7</element>
+    <element name="DAILYALERTSUMMARY">8</element>
+    <element name="ESCALATION">9</element>
+    <element name="ESCALATION_ACKNOWLEDGED">10</element>
+    <element name="NEWSUPPRESSIONADDED">11</element>
+    <element name="NEVER_CONNECTED">12</element>
+    <element name="MISC">13</element>
+  </elements>
+</enum>

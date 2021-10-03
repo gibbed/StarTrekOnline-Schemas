@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="AccountServerMicroTrans2ActiveInfo">
+  <table>
+    <column name="AccountServerMicroTrans2ActiveInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Mtoverrides" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="AccountServerMicroTrans2Override" />
+    </column>
+    <column name="Seenproducts" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="AccountServerMicroTrans2SeenProducts" />
+    </column>
+    <column name="Onceperaccountresets" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="AccountServerMicroTrans2OncePerAccountReset" />
+    </column>
+    <column name="Enabled_Def" type="STRINGARRAY">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -17,7 +17,7 @@
       </format_strings>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

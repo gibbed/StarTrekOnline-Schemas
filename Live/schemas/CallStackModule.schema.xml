@@ -9,24 +9,27 @@
     <column name="{" type="START" />
     <column name="ModuleName" type="STRING">
       <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
     </column>
-    <column name="PDBName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="GUID" type="STRING">
+    <column name="Pdbname" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="uBaseAddress" type="INT64">
+    <column name="GUID" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="uSize" type="INT">
+    <column name="Ubaseaddress" type="INT64">
       <offset>24</offset>
     </column>
-    <column name="uTime" type="INT">
-      <offset>28</offset>
-    </column>
-    <column name="uAge" type="INT">
+    <column name="Usize" type="INT">
       <offset>32</offset>
+    </column>
+    <column name="Utime" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Uage" type="INT">
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

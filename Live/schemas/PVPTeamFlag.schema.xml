@@ -7,33 +7,33 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="team_duel" type="OPTIONALSTRUCT">
+    <column name="Team_Duel" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="PVPTeamDuel" />
     </column>
     <column name="Group" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="Team" type="INT">
       <offset>8</offset>
     </column>
-    <column name="requester_name" type="STRING">
+    <column name="Team" type="INT">
       <offset>12</offset>
-      <flags>
-        <flag>SELF_ONLY</flag>
-      </flags>
     </column>
-    <column name="failed_reason" type="STRING">
+    <column name="Requester_Name" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
     </column>
+    <column name="Failed_Reason" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
     <column name="State" type="INT">
-      <offset>20</offset>
+      <offset>32</offset>
       <static_define_list external="PVPDuelEntityState" />
     </column>
     <column name="}" type="END" />

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ShardPlatform">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="PC">1</element>
+    <element name="XBOX">2</element>
+    <element name="XBOX_ONE">2</element>
+    <element name="EMULATE_XBOX">3</element>
+    <element name="EMULATE_XBOX_ONE">3</element>
+    <element name="PS4">4</element>
+  </elements>
+</enum>

@@ -14,27 +14,27 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="DefaultScale" type="F32">
-      <offset>4</offset>
+    <column name="Defaultscale" type="F32">
+      <offset>8</offset>
     </column>
     <column name="Scale" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="FragileScale" />
     </column>
-    <column name="pattrScale" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Pattrscale" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="TargetType" type="INT">
-      <offset>16</offset>
+    <column name="Targettype" type="INT">
+      <offset>32</offset>
       <static_define_list external="FragileTargetType" />
       <format>FLAGS</format>
     </column>
-    <column name="IgnoreTags" type="INT">
-      <offset>20</offset>
+    <column name="Ignoretags" type="INT">
+      <offset>36</offset>
       <static_define_list external="PowerTag" />
       <format>FLAGS</format>
     </column>

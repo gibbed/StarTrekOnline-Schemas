@@ -13,25 +13,25 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="StatePath:" type="STRING">
+    <column name="Statepath:" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>StatePath</redundant_name>
     </column>
     <column name="SubFSMOverride" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="SubFSMOverride:" type="STRING">
-      <offset>4</offset>
+    <column name="Subfsmoverride:" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>SubFSMOverride</redundant_name>
     </column>

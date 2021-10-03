@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DynPhysType">
+  <elements type="int">
+    <element name="Normal">0</element>
+    <element name="Large">1</element>
+    <element name="VeryLarge">2</element>
+    <element name="Background">3</element>
+    <element name="Off">4</element>
+  </elements>
+</enum>

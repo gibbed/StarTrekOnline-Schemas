@@ -15,28 +15,28 @@
       </flags>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
     <column name="Tags" type="STRING">
-      <offset>8</offset>
-    </column>
-    <column name="Width" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="MinLength" type="INT">
       <offset>16</offset>
     </column>
-    <column name="MaxLength" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="Windiness" type="F32">
+    <column name="Width" type="INT">
       <offset>24</offset>
     </column>
-    <column name="NoDetailsOrPaths" type="BIT">
+    <column name="Minlength" type="INT">
       <offset>28</offset>
+    </column>
+    <column name="Maxlength" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Windiness" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Nodetailsorpaths" type="BIT">
+      <offset>40</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

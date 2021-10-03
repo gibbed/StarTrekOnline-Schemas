@@ -7,25 +7,25 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="detailStringMsg" type="EMBEDDEDSTRUCT">
+    <column name="Detailstringmsg" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
+      <subtable external="DisplayMessageWithVO" />
+    </column>
+    <column name="Summarymsg" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="summaryMsg" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
-      <subtable external="DisplayMessage" />
-    </column>
-    <column name="SoundOnContactOffer" type="STRING">
-      <offset>24</offset>
+    <column name="Soundoncontactoffer" type="STRING">
+      <offset>72</offset>
     </column>
     <column name="Condition" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+      <offset>80</offset>
       <subtable external="Expression" />
     </column>
     <column name="Condition:" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+      <offset>80</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Condition</redundant_name>
       <subtable external="Expression_StructParam" />

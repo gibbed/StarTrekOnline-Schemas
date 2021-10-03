@@ -10,8 +10,8 @@
     <column name="Name" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="ParsedLogs" type="STRUCT">
-      <offset>4</offset>
+    <column name="Parsedlogs" type="STRUCT">
+      <offset>8</offset>
       <subtable external="ParsedLog" />
     </column>
     <column name="}" type="END" />

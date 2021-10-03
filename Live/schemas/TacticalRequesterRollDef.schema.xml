@@ -7,43 +7,43 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RollDistance" type="F32">
+    <column name="Rolldistance" type="F32">
       <offset>0</offset>
     </column>
-    <column name="RollSpeed" type="F32">
+    <column name="Rollspeed" type="F32">
       <offset>4</offset>
     </column>
-    <column name="RollFrameStart" type="INT">
+    <column name="Rollframestart" type="INT">
       <offset>8</offset>
     </column>
-    <column name="RollAccelNumberOfFrames" type="INT">
+    <column name="Rollaccelnumberofframes" type="INT">
       <offset>12</offset>
     </column>
-    <column name="RollDecelNumberOfFrames" type="INT">
+    <column name="Rolldecelnumberofframes" type="INT">
       <offset>16</offset>
     </column>
-    <column name="RollPostHoldSeconds" type="F32">
+    <column name="Rollpostholdseconds" type="F32">
       <offset>20</offset>
     </column>
-    <column name="RollCooldown" type="F32">
+    <column name="Rollcooldown" type="F32">
       <offset>24</offset>
     </column>
-    <column name="RollFuelCost" type="F32">
+    <column name="Rollfuelcost" type="F32">
       <offset>28</offset>
     </column>
-    <column name="AllowInAir" type="BIT">
+    <column name="Allowinair" type="BIT">
       <offset>32</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="RollDisabled" type="BIT">
+    <column name="Rolldisabled" type="BIT">
       <offset>32</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="RollFacesInRollDirection" type="BIT">
+    <column name="Rollfacesinrolldirection" type="BIT">
       <offset>32</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="RollDisableDuringRootAttrib" type="BIT">
+    <column name="Rolldisableduringrootattrib" type="BIT">
       <offset>32</offset>
       <bit_offset>65539</bit_offset>
     </column>

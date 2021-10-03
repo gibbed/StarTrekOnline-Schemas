@@ -15,7 +15,7 @@
       </flags>
     </column>
     <column name="Level" type="INTFIXEDARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
       <num_elements>50</num_elements>
     </column>
     <column name="}" type="END" />

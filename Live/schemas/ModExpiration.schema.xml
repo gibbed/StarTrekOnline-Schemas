@@ -12,15 +12,20 @@
       <dictionary_name>PowerDef</dictionary_name>
     </column>
     <column name="Target" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="ModExpirationEntity" />
     </column>
-    <column name="ExprBlockRequiresExpire" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Source" type="INT">
+      <offset>12</offset>
+      <default>4</default>
+      <static_define_list external="ModExpirationEntity" />
+    </column>
+    <column name="Exprblockrequiresexpire" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="Expression" />
     </column>
     <column name="Periodic" type="BIT">
-      <offset>12</offset>
+      <offset>24</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

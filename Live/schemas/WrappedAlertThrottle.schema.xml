@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="WrappedAlertThrottle">
+  <table>
+    <column name="WrappedAlertThrottle" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_DEF_FIELDS_TO_SHOW">.defaultSummary, .overrideSummary</format_string>
+      </format_strings>
+    </column>
+    <column name="{" type="START" />
+    <column name="Alertkey" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Defaultthrottle" type="OPTIONALPOLYMORPH">
+      <offset>8</offset>
+      <subtable external="_PolyTable_AlertThrottle" />
+    </column>
+    <column name="Overridethrottle" type="OPTIONALPOLYMORPH">
+      <offset>16</offset>
+      <subtable external="_PolyTable_AlertThrottle" />
+    </column>
+    <column name="Mostrecentcategory" type="INT">
+      <offset>40</offset>
+      <static_define_list external="enumAlertCategory" />
+    </column>
+    <column name="Barcode" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Defaultsummary" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Overridesummary" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Reset To Default" type="COMMAND">
+      <offset>0</offset>
+      <command_string>ResetAlertThrottle $FIELD(AlertKey)</command_string>
+    </column>
+    <column name="Set Failure Percent" type="COMMAND">
+      <offset>0</offset>
+      <command_string>ModifyAlertThrottle_FailurePercent $FIELD(AlertKey) $INT(Failure percent) $INT(How many seconds) $INT(min count) $INT(max count) $INT(cooldown seconds) $SELECT(OverrideAlertALevel|WARNING,CRITICAL) $SELECT(ThrottledAlertLevel|NONE,WARNING)</command_string>
+    </column>
+    <column name="Set X-within-y-seconds" type="COMMAND">
+      <offset>0</offset>
+      <command_string>ModifyAlertThrottle_XWithinY $FIELD(AlertKey) $INT(How many) $INT(Within this many seconds) $INT(Reset time seconds) $SELECT(OverrideLevelBeforeThrottling|NONE,WARNING,CRITICAL) $SELECT(OverrideLevelAtThrottle|NONE,WARNING,CRITICAL) $SELECT(OverrideLevelAfterThrottling|NONE,WARNING,CRITICAL)</command_string>
+    </column>
+    <column name="Set To Change Category Or Level" type="COMMAND">
+      <offset>0</offset>
+      <command_string>ModifyAlertThrottle_ChangeCategoryOrLevel $FIELD(AlertKey) $SELECT(Level|NONE,WARNING,CRITICAL) $SELECT(Category|ENUM_enumAlertCategory)</command_string>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -14,15 +14,15 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="bankSortCode" type="STRING">
-      <offset>4</offset>
+    <column name="Banksortcode" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="ribCode" type="STRING">
-      <offset>8</offset>
+    <column name="Ribcode" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>PERSIST</flag>

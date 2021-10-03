@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="WorldFootstepVolumeProperties">
+  <table>
+    <column name="WorldFootstepVolumeProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Footstepoverride" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>PhysicalProperties</dictionary_name>
+    </column>
+    <column name="Footsteppriority" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parser>

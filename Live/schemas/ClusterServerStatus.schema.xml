@@ -14,7 +14,7 @@
       <offset>4</offset>
       <format>IP</format>
     </column>
-    <column name="StateString" type="STRING">
+    <column name="Statestring" type="STRING">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

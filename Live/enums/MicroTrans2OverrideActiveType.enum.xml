@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MicroTrans2OverrideActiveType">
+  <elements type="int">
+    <element name="Always">0</element>
+    <element name="TimeBased">1</element>
+    <element name="DefVersion">2</element>
+  </elements>
+</enum>

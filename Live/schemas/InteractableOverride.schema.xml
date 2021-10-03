@@ -7,30 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="InteractableName" type="STRING">
+    <column name="Interactablename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="TypeTagName" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="MapName" type="STRING">
+    <column name="Typetagname" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="PropertyEntry" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="MapName" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Propertyentry" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="WorldInteractionPropertyEntry" />
     </column>
-    <column name="TreatAsMissionReward" type="U8">
-      <offset>16</offset>
+    <column name="Treatasmissionreward" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

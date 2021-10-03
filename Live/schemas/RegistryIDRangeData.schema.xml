@@ -13,7 +13,7 @@
     <column name="Max" type="INT">
       <offset>4</offset>
     </column>
-    <column name="ClassRegistryRanges" type="STRUCT">
+    <column name="Classregistryranges" type="STRUCT">
       <offset>8</offset>
       <subtable external="ClassRegistryIDRange" />
     </column>

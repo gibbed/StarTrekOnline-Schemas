@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="igamedef" type="INT">
+    <column name="Igamedef" type="INT">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

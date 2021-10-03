@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="STPriorityActionType">
+  <elements type="int">
+    <element name="Unspecified">0</element>
+    <element name="Interact">1</element>
+    <element name="PromptedInteract">2</element>
+    <element name="UGCMission">3</element>
+    <element name="FriendInvite">4</element>
+    <element name="TeamRequest">5</element>
+    <element name="TeamInvite">6</element>
+    <element name="InteriorMapRequest">7</element>
+    <element name="InteriorMapInvite">8</element>
+    <element name="GuildMapInvite">9</element>
+    <element name="GuildMemberRequest">10</element>
+    <element name="GuildMemberInvite">11</element>
+    <element name="GuildAllianceRequest">12</element>
+    <element name="GuildAllianceInvite">13</element>
+    <element name="QueueReady">14</element>
+    <element name="QueueInvite">15</element>
+    <element name="MatchReady">16</element>
+    <element name="MatchInvite">17</element>
+    <element name="OpenMissionRewards">18</element>
+    <element name="NeedOrGreed">19</element>
+    <element name="DelayedReward">20</element>
+    <element name="CurrentPrivateQueue">21</element>
+    <element name="InQueue">22</element>
+    <element name="TradeRequest">23</element>
+    <element name="UnreadMail">24</element>
+    <element name="TeamMapTransfer">25</element>
+    <element name="LogoutTimer_NotOnInstanceTeam">26</element>
+    <element name="LogoutTimer_MissionReturn">27</element>
+    <element name="LogoutTimer_MapDoesNotMatchProgression">28</element>
+    <element name="LogoutTimer_NotOnInstanceGuild">29</element>
+    <element name="LogoutTimer_Unknown">30</element>
+  </elements>
+</enum>

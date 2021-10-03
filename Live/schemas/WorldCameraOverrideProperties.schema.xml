@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="WorldCameraOverrideProperties">
+  <table>
+    <column name="WorldCameraOverrideProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Subjecttype" type="INT">
+      <offset>0</offset>
+      <static_define_list external="CameraOverrideSubjectType" />
+    </column>
+    <column name="Subjectworldobjectuids" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Subjectsplineuids" type="INTARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Subjectcritterdef" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>CritterDef</dictionary_name>
+    </column>
+    <column name="Subjecttrackingtype" type="INT">
+      <offset>32</offset>
+      <static_define_list external="CameraOverrideTrackingType" />
+    </column>
+    <column name="Subjecttrackingsplineuids" type="INTARRAY">
+      <offset>40</offset>
+    </column>
+    <column name="MovementType" type="INT">
+      <offset>48</offset>
+      <static_define_list external="CameraOverrideMovementType" />
+    </column>
+    <column name="Movementsplineuids" type="INTARRAY">
+      <offset>56</offset>
+    </column>
+    <column name="Pitch" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Yaw" type="F32">
+      <offset>68</offset>
+    </column>
+    <column name="Distance" type="F32">
+      <offset>72</offset>
+    </column>
+    <column name="Movementtrackingtype" type="INT">
+      <offset>76</offset>
+      <static_define_list external="CameraOverrideTrackingType" />
+    </column>
+    <column name="Movementtrackingsplineuids" type="INTARRAY">
+      <offset>80</offset>
+    </column>
+    <column name="Fov" type="F32">
+      <offset>88</offset>
+    </column>
+    <column name="Offset" type="F32FIXEDARRAY">
+      <offset>92</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Localoffset" type="F32FIXEDARRAY">
+      <offset>104</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Camerainterpolationtime" type="F32">
+      <offset>116</offset>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parser>

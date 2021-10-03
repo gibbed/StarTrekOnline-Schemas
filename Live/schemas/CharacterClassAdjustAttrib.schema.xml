@@ -13,28 +13,26 @@
     </column>
     <column name="Aspect" type="INT">
       <offset>4</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="ClassAttribAspect" />
     </column>
-    <column name="ExpressionBlock" type="OPTIONALSTRUCT">
+    <column name="Expressionblock" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <subtable external="Expression" />
     </column>
     <column name="Expr" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ExpressionBlock</redundant_name>
+      <redundant_name>Expressionblock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
     <column name="Level" type="INT">
-      <offset>12</offset>
+      <offset>16</offset>
     </column>
     <column name="Values" type="F32FIXEDARRAY">
-      <offset>16</offset>
-      <num_elements>70</num_elements>
+      <offset>20</offset>
+      <num_elements>100</num_elements>
     </column>
     <column name="}" type="END" />
   </table>

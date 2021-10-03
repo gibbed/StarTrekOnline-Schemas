@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ItemAssignmentRewardsSortOrder">
+  <elements type="int">
+    <element name="Unsorted">0</element>
+    <element name="Numeric">1</element>
+    <element name="CXP">2</element>
+    <element name="Items">3</element>
+  </elements>
+</enum>

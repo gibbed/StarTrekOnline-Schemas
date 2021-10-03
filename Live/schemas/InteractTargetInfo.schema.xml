@@ -8,14 +8,15 @@
     </column>
     <column name="{" type="START" />
     <column name="Distance" type="F32">
-      <offset>8</offset>
+      <offset>16</offset>
     </column>
     <column name="Angle" type="F32">
-      <offset>12</offset>
+      <offset>20</offset>
     </column>
     <column name="Target" type="F32FIXEDARRAY">
-      <offset>16</offset>
+      <offset>24</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

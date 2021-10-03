@@ -28,5 +28,8 @@
     <element name="STEAM_UNAVAILABLE">24</element>
     <element name="NOT_READY">25</element>
     <element name="UNKNOWN_ERROR">26</element>
+    <element name="UNKNOWN_THIRD_PARTY_ID">27</element>
+    <element name="MISMATCHED_IDS">28</element>
+    <element name="MISSING_PARAMS">29</element>
   </elements>
 </enum>

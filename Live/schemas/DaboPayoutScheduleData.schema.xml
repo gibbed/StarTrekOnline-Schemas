@@ -10,38 +10,46 @@
     <column name="DisplayName" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="SlotTypeA" type="INT">
-      <offset>4</offset>
-      <static_define_list external="DaboSlotType" />
-    </column>
-    <column name="MatchCountA" type="INT">
+    <column name="Categoryname" type="STRING">
       <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
     </column>
-    <column name="SlotTypeB" type="INT">
-      <offset>12</offset>
-      <static_define_list external="DaboSlotType" />
-    </column>
-    <column name="MatchCountB" type="INT">
+    <column name="Slottypea" type="INT">
       <offset>16</offset>
-    </column>
-    <column name="SlotTypeC" type="INT">
-      <offset>20</offset>
       <static_define_list external="DaboSlotType" />
     </column>
-    <column name="MatchCountC" type="INT">
-      <offset>24</offset>
+    <column name="Matchcounta" type="INT">
+      <offset>20</offset>
     </column>
-    <column name="PayoutPercent" type="F32">
+    <column name="Slottypeb" type="INT">
+      <offset>24</offset>
+      <static_define_list external="DaboSlotType" />
+    </column>
+    <column name="Matchcountb" type="INT">
       <offset>28</offset>
     </column>
-    <column name="IsHeader" type="U8">
+    <column name="Slottypec" type="INT">
       <offset>32</offset>
+      <static_define_list external="DaboSlotType" />
     </column>
-    <column name="IsDabo" type="U8">
-      <offset>33</offset>
+    <column name="Matchcountc" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Payoutpercent" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Isheader" type="U8">
+      <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isdabo" type="U8">
+      <offset>45</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

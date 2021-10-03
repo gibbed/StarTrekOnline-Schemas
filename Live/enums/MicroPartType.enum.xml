@@ -8,7 +8,16 @@
     <element name="VanityPet">4</element>
     <element name="Species">5</element>
     <element name="Special">6</element>
+    <element name="AccountWide">6</element>
     <element name="Permission">7</element>
     <element name="RewardTable">8</element>
+    <element name="GroupProjectRushTask">9</element>
+    <element name="ConsumeItem">10</element>
+    <element name="CharacterLoadout">11</element>
+    <element name="Empty">12</element>
+    <element name="PersonalGroupProjectSetNumeric">13</element>
+    <element name="PersonalGroupProjectCancelAndCompleteTask">14</element>
+    <element name="PersonalGroupProjectSetUnlocks">15</element>
+    <element name="PersonalGroupProjectBonusDefAndSyncWithGAD">16</element>
   </elements>
 </enum>

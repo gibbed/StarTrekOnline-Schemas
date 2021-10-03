@@ -6,5 +6,6 @@
     <element name="Pet">2</element>
     <element name="SpacePet">3</element>
     <element name="Nemesis">4</element>
+    <element name="ItemCostumeOverlay">5</element>
   </elements>
 </enum>

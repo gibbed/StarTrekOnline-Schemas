@@ -15,8 +15,8 @@
       </flags>
       <dictionary_name>PowerDef</dictionary_name>
     </column>
-    <column name="ppPurchases" type="STRUCT">
-      <offset>4</offset>
+    <column name="Pppurchases" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

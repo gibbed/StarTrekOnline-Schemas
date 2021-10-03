@@ -7,44 +7,52 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="interaction_entries" type="STRUCT">
+    <column name="Interaction_Entries" type="STRUCT">
       <offset>0</offset>
       <subtable external="WorldInteractionEntryClientParsed" />
     </column>
-    <column name="volume_entries" type="STRUCT">
-      <offset>4</offset>
+    <column name="Volume_Entries" type="STRUCT">
+      <offset>8</offset>
       <subtable external="WorldVolumeEntryClientParsed" />
     </column>
-    <column name="collision_entries" type="STRUCT">
-      <offset>8</offset>
+    <column name="Collision_Entries" type="STRUCT">
+      <offset>16</offset>
       <subtable external="WorldCollisionEntryParsed" />
     </column>
-    <column name="altpivot_entries" type="STRUCT">
-      <offset>12</offset>
+    <column name="Altpivot_Entries" type="STRUCT">
+      <offset>24</offset>
       <subtable external="WorldAltPivotEntryParsed" />
     </column>
-    <column name="sound_entries" type="STRUCT">
-      <offset>16</offset>
+    <column name="Sound_Entries" type="STRUCT">
+      <offset>32</offset>
       <subtable external="WorldSoundEntryParsed" />
     </column>
-    <column name="light_entries" type="STRUCT">
-      <offset>20</offset>
+    <column name="Light_Entries" type="STRUCT">
+      <offset>40</offset>
       <subtable external="WorldLightEntryParsed" />
     </column>
-    <column name="fx_entries" type="STRUCT">
-      <offset>24</offset>
+    <column name="Light2_Entries" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="WorldLight2EntryParsed" />
+    </column>
+    <column name="Fx_Entries" type="STRUCT">
+      <offset>56</offset>
       <subtable external="WorldFXEntryParsed" />
     </column>
-    <column name="animation_entries" type="STRUCT">
-      <offset>28</offset>
+    <column name="Animation_Entries" type="STRUCT">
+      <offset>64</offset>
       <subtable external="WorldAnimationEntryParsed" />
     </column>
-    <column name="wind_source_entries" type="STRUCT">
-      <offset>32</offset>
+    <column name="Wind_Source_Entries" type="STRUCT">
+      <offset>72</offset>
       <subtable external="WorldWindSourceEntryParsed" />
     </column>
-    <column name="drawables" type="EMBEDDEDSTRUCT">
-      <offset>36</offset>
+    <column name="Vertex_Paint_Color_Sets" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="WorldDrawableEntryVertexPaintColorSetParsed" />
+    </column>
+    <column name="Drawables" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
       <subtable external="WorldCellDrawableDataParsed" />
     </column>
     <column name="}" type="END" />

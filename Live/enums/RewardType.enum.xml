@@ -13,5 +13,14 @@
     <element name="ItemWithGems">10</element>
     <element name="AlgoNumericNoScale">11</element>
     <element name="UnidentifiedItemWrapper">12</element>
+    <element name="DynamicItem">13</element>
+    <element name="DynamicItemWithPowers">14</element>
+    <element name="ItemWithQuality">15</element>
+    <element name="ItemWithGemsAndQuality">16</element>
+    <element name="StoredTable">17</element>
+    <element name="NumericSharedBank">18</element>
+    <element name="ItemWithSlottablePowers">19</element>
+    <element name="ItemSlottablePowerUnlock">20</element>
+    <element name="ItemAccountUnlock">21</element>
   </elements>
 </enum>

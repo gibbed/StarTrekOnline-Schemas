@@ -15,13 +15,22 @@
       </flags>
     </column>
     <column name="Numeric" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="NumericCost" type="INT">
-      <offset>8</offset>
+    <column name="Numericcost" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Minimumwarpdistance" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Maximumwarpdistance" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Minimumwarpcostpercent" type="F32">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

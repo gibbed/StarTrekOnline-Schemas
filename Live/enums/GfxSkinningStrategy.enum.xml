@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GfxSkinningStrategy">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="VertexShader">1</element>
+    <element name="CPU">2</element>
+    <element name="Compute">3</element>
+  </elements>
+</enum>

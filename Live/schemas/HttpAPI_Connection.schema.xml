@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="HttpAPI_Connection">
+  <table>
+    <column name="HttpAPI_Connection" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Info" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <subtable external="HttpAPI_ConnectionInfo" />
+    </column>
+    <column name="Stats" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="HttpAPI_Stats" />
+    </column>
+    <column name="Name" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Ownsfifo" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Shuttingdown" type="U8">
+      <offset>41</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

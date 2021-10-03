@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ItemAssignmentItemProperty">
+  <elements type="int">
+    <element name="Science_Ship">13</element>
+    <element name="Escort_Ship">14</element>
+    <element name="Cruiser_Ship">15</element>
+    <element name="Small_Craft">16</element>
+  </elements>
+</enum>

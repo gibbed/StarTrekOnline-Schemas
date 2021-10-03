@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="lowpass_cutoff" type="F32">
+    <column name="Lowpass_Cutoff" type="F32">
       <offset>0</offset>
       <default>1167867904</default>
     </column>

@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ItemVar" type="STRUCT">
+    <column name="Itemvar" type="STRUCT">
       <offset>0</offset>
       <subtable external="ItemVar" />
     </column>
-    <column name="stItemVars" type="STASHTABLE">
-      <offset>4</offset>
+    <column name="Stitemvars" type="STASHTABLE">
+      <offset>8</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>

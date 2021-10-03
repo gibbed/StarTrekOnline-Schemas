@@ -11,19 +11,20 @@
       <offset>0</offset>
       <subtable external="GamePermissionDef" />
     </column>
-    <column name="InvBagRestrictions" type="STRUCT">
-      <offset>4</offset>
+    <column name="Invbagrestrictions" type="STRUCT">
+      <offset>8</offset>
       <subtable external="GamePermissionBagRestriction" />
     </column>
-    <column name="TimedTokenList" type="STRUCT">
-      <offset>8</offset>
+    <column name="Timedtokenlist" type="STRUCT">
+      <offset>16</offset>
       <subtable external="GamePermissionTimed" />
     </column>
-    <column name="UseFreeBag" type="U8">
-      <offset>12</offset>
+    <column name="Usefreebag" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="LoadingComment" type="STRING">
-      <offset>16</offset>
+    <column name="Loadingcomment" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

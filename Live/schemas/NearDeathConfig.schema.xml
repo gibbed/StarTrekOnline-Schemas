@@ -16,7 +16,7 @@
     <column name="Time" type="F32">
       <offset>4</offset>
     </column>
-    <column name="PowerModeRequired" type="INT">
+    <column name="Powermoderequired" type="INT">
       <offset>8</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
@@ -24,21 +24,21 @@
       <static_define_list external="PowerMode" />
     </column>
     <column name="Bits" type="STRINGARRAY">
-      <offset>12</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>SERVER_ONLY</flag>
-      </flags>
-    </column>
-    <column name="StanceWords" type="STRINGARRAY">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="DyingTimeAttrib" type="INT">
-      <offset>20</offset>
+    <column name="Stancewords" type="STRINGARRAY">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Dyingtimeattrib" type="INT">
+      <offset>32</offset>
       <default>-1</default>
       <static_define_list external="AttribType" />
     </column>

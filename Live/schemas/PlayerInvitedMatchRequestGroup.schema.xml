@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PlayerInvitedMatchRequestGroup">
+  <table>
+    <column name="PlayerInvitedMatchRequestGroup" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Groupid" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ugroupid" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Groupid</redundant_name>
+    </column>
+    <column name="Inviterentid" type="INT">
+      <offset>4</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uinviterentid" type="INT">
+      <offset>4</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Inviterentid</redundant_name>
+    </column>
+    <column name="Invitername" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchinvitername" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Invitername</redundant_name>
+    </column>
+    <column name="Inviterhandle" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchinviterhandle" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Inviterhandle</redundant_name>
+    </column>
+    <column name="Member" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PlayerMatchRequestGroupMember" />
+    </column>
+    <column name="Eamembers" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Member</redundant_name>
+      <subtable external="PlayerMatchRequestGroupMember" />
+    </column>
+    <column name="Matchname" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchmatchname" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Matchname</redundant_name>
+    </column>
+    <column name="Sentleave" type="U8">
+      <offset>40</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bsentleave" type="U8">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Sentleave</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Sentaccept" type="U8">
+      <offset>41</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bsentaccept" type="U8">
+      <offset>41</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Sentaccept</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Privatematch" type="U8">
+      <offset>42</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

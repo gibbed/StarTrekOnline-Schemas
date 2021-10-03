@@ -7,15 +7,19 @@
       </flags>
     </column>
     <column name="History" type="F32FIXEDARRAY">
-      <offset>4</offset>
-      <num_elements>10</num_elements>
+      <offset>8</offset>
+      <num_elements>30</num_elements>
+    </column>
+    <column name="Rangehistory" type="F32FIXEDARRAY">
+      <offset>128</offset>
+      <num_elements>30</num_elements>
     </column>
     <column name="Index" type="INT">
-      <offset>44</offset>
+      <offset>248</offset>
     </column>
     <column name="Count" type="INT">
-      <offset>48</offset>
+      <offset>252</offset>
     </column>
-    <column name="EndRunningQuery" type="END" />
+    <column name="Endrunningquery" type="END" />
   </table>
 </parser>

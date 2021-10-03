@@ -6,26 +6,40 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="Expression" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="BlocksTarget" type="STRUCT">
-      <offset>4</offset>
-      <flags>
-        <flag>NO_TEXT_SAVE</flag>
-      </flags>
-      <subtable external="DynAnimExpressionBlock" />
-    </column>
-    <column name="BlocksCode" type="STRUCT">
+    <column name="Requireddynanimstancedataname" type="STRING">
       <offset>8</offset>
       <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Excludedynanimstancedataname" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Blockstarget" type="STRUCT">
+      <offset>24</offset>
+      <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <subtable external="DynAnimExpressionBlock" />
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="Blockscode" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <subtable external="DynAnimExpressionBlock" />
+    </column>
+    <column name="}" type="END" />
   </table>
 </parser>

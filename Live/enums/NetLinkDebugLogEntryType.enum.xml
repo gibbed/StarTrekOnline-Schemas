@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="NetLinkDebugLogEntryType">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="CONNECTED">1</element>
+    <element name="DISCONNECTED">2</element>
+    <element name="SENT">3</element>
+    <element name="RECEIVED">4</element>
+    <element name="EXTRA_DBG_INFO_RECEIVED">5</element>
+    <element name="RECEIVED_CMD_OVERRIDE">6</element>
+  </elements>
+</enum>

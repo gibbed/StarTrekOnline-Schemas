@@ -7,13 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="min_block" type="INTFIXEDARRAY">
+    <column name="Min_Block" type="INTFIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>15</format_raw>
     </column>
-    <column name="max_block" type="INTFIXEDARRAY">
+    <column name="Max_Block" type="INTFIXEDARRAY">
       <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>15</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

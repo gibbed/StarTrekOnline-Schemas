@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ConsignmentLotType">
+  <elements type="int">
+    <element name="Item">0</element>
+    <element name="Spell">1</element>
+  </elements>
+</enum>

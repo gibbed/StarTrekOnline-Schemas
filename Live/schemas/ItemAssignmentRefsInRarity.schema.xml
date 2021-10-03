@@ -14,20 +14,20 @@
       </flags>
       <static_define_list external="ItemAssignmentWeightType" />
     </column>
-    <column name="ActivityRefs" type="STRUCT">
-      <offset>4</offset>
+    <column name="Activityrefs" type="STRUCT">
+      <offset>8</offset>
       <subtable external="ItemAssignmentActivityRefs" />
     </column>
     <column name="Refs" type="STRUCT">
-      <offset>8</offset>
-      <subtable external="ItemAssignmentDefRef" />
-    </column>
-    <column name="FeaturedRefs" type="STRUCT">
-      <offset>12</offset>
-      <subtable external="ItemAssignmentDefRef" />
-    </column>
-    <column name="StandardRefs" type="STRUCT">
       <offset>16</offset>
+      <subtable external="ItemAssignmentDefRef" />
+    </column>
+    <column name="Featuredrefs" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="ItemAssignmentDefRef" />
+    </column>
+    <column name="Standardrefs" type="STRUCT">
+      <offset>32</offset>
       <subtable external="ItemAssignmentDefRef" />
     </column>
     <column name="}" type="END" />

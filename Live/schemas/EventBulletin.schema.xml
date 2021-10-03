@@ -11,12 +11,12 @@
       <offset>0</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="MessageBody" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
+    <column name="Messagebody" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="PrecedeEventTime" type="INT">
-      <offset>24</offset>
+    <column name="Precedeeventtime" type="INT">
+      <offset>48</offset>
     </column>
     <column name="}" type="END" />
   </table>

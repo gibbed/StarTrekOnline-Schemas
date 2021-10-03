@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="packsize" type="INT">
+    <column name="Packsize" type="INT">
       <offset>0</offset>
     </column>
-    <column name="unpacksize" type="INT">
+    <column name="Unpacksize" type="INT">
       <offset>4</offset>
     </column>
-    <column name="data_offs" type="INT">
+    <column name="Data_Offs" type="INT">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

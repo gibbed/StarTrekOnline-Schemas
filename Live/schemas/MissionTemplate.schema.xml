@@ -7,18 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="templateTypeName" type="STRING">
+    <column name="Templatetypename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="rootVarGroup" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Rootvargroup" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="TemplateVariableGroup" />
     </column>
-    <column name="nextVarId" type="INT">
-      <offset>8</offset>
+    <column name="Nextvarid" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

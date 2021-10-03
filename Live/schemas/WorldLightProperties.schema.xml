@@ -11,145 +11,215 @@
       <offset>0</offset>
       <static_define_list external="WleAELightType" />
     </column>
-    <column name="LightAffects" type="INT">
+    <column name="Lightaffects" type="INT">
       <offset>4</offset>
       <static_define_list external="LightAffectType" />
     </column>
-    <column name="LightProjectedTexture" type="STRING">
+    <column name="Lightprojectedtexture" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="LightCloudTexture" type="STRING">
-      <offset>12</offset>
+    <column name="Lightcloudtexture" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="LightCloudMultiplier1" type="F32">
-      <offset>16</offset>
-    </column>
-    <column name="LightCloudScale1" type="F32">
-      <offset>20</offset>
-      <default>100</default>
-    </column>
-    <column name="LightCloudScrollX1" type="F32">
+    <column name="Lightspecularprobecubemap" type="STRING">
       <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="LightCloudScrollY1" type="F32">
-      <offset>28</offset>
-    </column>
-    <column name="LightCloudMultiplier2" type="F32">
+    <column name="Lightcloudmultiplier1" type="F32">
       <offset>32</offset>
     </column>
-    <column name="LightCloudScale2" type="F32">
+    <column name="Lightcloudscale1" type="F32">
       <offset>36</offset>
       <default>100</default>
     </column>
-    <column name="LightCloudScrollX2" type="F32">
+    <column name="Lightcloudscrollx1" type="F32">
       <offset>40</offset>
     </column>
-    <column name="LightCloudScrollY2" type="F32">
+    <column name="Lightcloudscrolly1" type="F32">
       <offset>44</offset>
     </column>
-    <column name="LightAmbientHSV" type="F32FIXEDARRAY">
+    <column name="Lightcloudmultiplier2" type="F32">
       <offset>48</offset>
-      <num_elements>3</num_elements>
     </column>
-    <column name="LightAmbientMultiplier" type="F32FIXEDARRAY">
+    <column name="Lightcloudscale2" type="F32">
+      <offset>52</offset>
+      <default>100</default>
+    </column>
+    <column name="Lightcloudscrollx2" type="F32">
+      <offset>56</offset>
+    </column>
+    <column name="Lightcloudscrolly2" type="F32">
       <offset>60</offset>
+    </column>
+    <column name="Lightambienthsv" type="F32FIXEDARRAY">
+      <offset>64</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LightAmbientOffset" type="F32FIXEDARRAY">
-      <offset>72</offset>
+    <column name="Lightambientmultiplier" type="F32FIXEDARRAY">
+      <offset>76</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1.0, 1.0, 1.0</format_string>
+      </format_strings>
     </column>
-    <column name="LightDiffuseHSV" type="F32FIXEDARRAY">
-      <offset>84</offset>
+    <column name="Lightambientoffset" type="F32FIXEDARRAY">
+      <offset>88</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LightDiffuseMultiplier" type="F32FIXEDARRAY">
-      <offset>96</offset>
+    <column name="Lightdiffusehsv" type="F32FIXEDARRAY">
+      <offset>100</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">0.0, 0.0, 1.0</format_string>
+      </format_strings>
     </column>
-    <column name="LightDiffuseOffset" type="F32FIXEDARRAY">
-      <offset>108</offset>
+    <column name="Lightdiffusemultiplier" type="F32FIXEDARRAY">
+      <offset>112</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1.0, 1.0, 1.0</format_string>
+      </format_strings>
     </column>
-    <column name="LightSecondaryDiffuseHSV" type="F32FIXEDARRAY">
-      <offset>120</offset>
+    <column name="Lightdiffuseoffset" type="F32FIXEDARRAY">
+      <offset>124</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LightSecondaryDiffuseMultiplier" type="F32FIXEDARRAY">
-      <offset>132</offset>
+    <column name="Lightsecondarydiffusehsv" type="F32FIXEDARRAY">
+      <offset>136</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LightSecondaryDiffuseOffset" type="F32FIXEDARRAY">
-      <offset>144</offset>
+    <column name="Lightsecondarydiffusemultiplier" type="F32FIXEDARRAY">
+      <offset>148</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1.0, 1.0, 1.0</format_string>
+      </format_strings>
     </column>
-    <column name="LightSpecularHSV" type="F32FIXEDARRAY">
-      <offset>156</offset>
+    <column name="Lightsecondarydiffuseoffset" type="F32FIXEDARRAY">
+      <offset>160</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LightSpecularMultiplier" type="F32FIXEDARRAY">
-      <offset>168</offset>
+    <column name="Lightspecularhsv" type="F32FIXEDARRAY">
+      <offset>172</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">0.0, 0.0, 1.0</format_string>
+      </format_strings>
     </column>
-    <column name="LightSpecularOffset" type="F32FIXEDARRAY">
-      <offset>180</offset>
+    <column name="Lightspecularmultiplier" type="F32FIXEDARRAY">
+      <offset>184</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1.0, 1.0, 1.0</format_string>
+      </format_strings>
     </column>
-    <column name="LightShadowColorHSV" type="F32FIXEDARRAY">
-      <offset>192</offset>
+    <column name="Lightspecularoffset" type="F32FIXEDARRAY">
+      <offset>196</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LightShadowColorMultiplier" type="F32FIXEDARRAY">
-      <offset>204</offset>
+    <column name="Lightshadowcolorhsv" type="F32FIXEDARRAY">
+      <offset>208</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LightShadowColorOffset" type="F32FIXEDARRAY">
-      <offset>216</offset>
+    <column name="Lightshadowcolormultiplier" type="F32FIXEDARRAY">
+      <offset>220</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1.0, 1.0, 1.0</format_string>
+      </format_strings>
     </column>
-    <column name="LightConeInner" type="F32">
-      <offset>228</offset>
-      <default>45</default>
-    </column>
-    <column name="LightConeOuter" type="F32">
+    <column name="Lightshadowcoloroffset" type="F32FIXEDARRAY">
       <offset>232</offset>
-      <default>55</default>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LightCone2Inner" type="F32">
-      <offset>236</offset>
+    <column name="Lightpbrintensity" type="F32">
+      <offset>244</offset>
+      <default>1</default>
+    </column>
+    <column name="Lightpbrfalloffminradius" type="F32">
+      <offset>248</offset>
+    </column>
+    <column name="Lightconeinner" type="F32">
+      <offset>252</offset>
       <default>45</default>
     </column>
-    <column name="LightCone2Outer" type="F32">
-      <offset>240</offset>
+    <column name="Lightconeouter" type="F32">
+      <offset>256</offset>
       <default>55</default>
     </column>
-    <column name="LightRadius" type="F32">
-      <offset>244</offset>
+    <column name="Lightcone2inner" type="F32">
+      <offset>260</offset>
+      <default>45</default>
+    </column>
+    <column name="Lightcone2outer" type="F32">
+      <offset>264</offset>
+      <default>55</default>
+    </column>
+    <column name="Lightradius" type="F32">
+      <offset>268</offset>
       <default>10</default>
     </column>
-    <column name="LightRadiusInner" type="F32">
-      <offset>248</offset>
+    <column name="Lightradiusinner" type="F32">
+      <offset>272</offset>
       <default>1</default>
     </column>
-    <column name="LightShadowNearDist" type="F32">
-      <offset>252</offset>
+    <column name="Lightshadowneardist" type="F32">
+      <offset>276</offset>
     </column>
-    <column name="LightVisualLODScale" type="F32">
-      <offset>256</offset>
+    <column name="Lightvisuallodscale" type="F32">
+      <offset>280</offset>
       <default>1</default>
     </column>
-    <column name="LightCastsShadows" type="BIT">
-      <offset>260</offset>
+    <column name="Lightcastsshadows" type="BIT">
+      <offset>284</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="LightInfiniteShadows" type="BIT">
-      <offset>260</offset>
+    <column name="Lightinfiniteshadows" type="BIT">
+      <offset>284</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -158,20 +228,69 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="LightIsKey" type="BIT">
-      <offset>260</offset>
+    <column name="Lightiskey" type="BIT">
+      <offset>284</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="LightIsSun" type="BIT">
-      <offset>260</offset>
+    <column name="Lightissun" type="BIT">
+      <offset>284</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="SetField" type="STRINGARRAY">
-      <offset>264</offset>
+    <column name="Lightingmodeforward" type="BIT">
+      <offset>284</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Lightingmodedeferred" type="BIT">
+      <offset>284</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65541</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">0</format_string>
+      </format_strings>
+    </column>
+    <column name="Lightenablespecular" type="BIT">
+      <offset>284</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65542</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Globalprobe" type="BIT">
+      <offset>284</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Probeid" type="INT">
+      <offset>288</offset>
+    </column>
+    <column name="Probeboundsmin" type="F32FIXEDARRAY">
+      <offset>292</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Probeboundsmax" type="F32FIXEDARRAY">
+      <offset>304</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Setfield" type="STRINGARRAY">
+      <offset>320</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
+    <column name="Probefaceheight" type="IGNORE" />
+    <column name="Probefacewidth" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

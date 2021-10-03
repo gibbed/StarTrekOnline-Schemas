@@ -10,24 +10,37 @@
     <column name="Provisioned" type="INT">
       <offset>0</offset>
     </column>
-    <column name="hStoreDef" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hstoredef" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>StoreDef</dictionary_name>
     </column>
-    <column name="uStoreItemIndex" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="provisioningProjectName" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="provisioningNumericName" type="STRING">
+    <column name="Ustoreitemindex" type="INT">
       <offset>16</offset>
+    </column>
+    <column name="Provisioningprojectname" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
+    </column>
+    <column name="Provisioningnumericname" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Originalsource" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Delayedrewardpackscaling" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Removegems" type="BIT">
+      <offset>52</offset>
+      <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -15,7 +15,7 @@
       </flags>
     </column>
     <column name="Items" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="NotifyQueueItem" />
     </column>
     <column name="}" type="END" />

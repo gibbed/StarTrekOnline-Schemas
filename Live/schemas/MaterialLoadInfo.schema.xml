@@ -6,29 +6,23 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="ShaderTemplate" type="STRUCT">
+    <column name="Shadertemplate" type="STRUCT">
       <offset>0</offset>
       <subtable external="ShaderTemplate" />
     </column>
-    <column name="stTemplates" type="STASHTABLE">
-      <offset>4</offset>
-    </column>
-    <column name="stTemplateOverrides" type="STASHTABLE">
-      <offset>8</offset>
-    </column>
     <column name="Material" type="STRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="MaterialData" />
     </column>
-    <column name="packed_data_serialize" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Packed_Data_Serialize" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <subtable external="SerializablePackedStructStream" />
     </column>
-    <column name="data_infos_serialize" type="STRUCT">
-      <offset>20</offset>
+    <column name="Data_Infos_Serialize" type="STRUCT">
+      <offset>40</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>

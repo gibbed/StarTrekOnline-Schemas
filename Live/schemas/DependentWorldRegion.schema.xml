@@ -13,12 +13,13 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="HiddenObjectID" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="CameraOffset" type="F32FIXEDARRAY">
+    <column name="Hiddenobjectid" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Cameraoffset" type="F32FIXEDARRAY">
+      <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="End" type="END" />
   </table>

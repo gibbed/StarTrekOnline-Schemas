@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PlayerAccountKeyValueOpType">
+  <elements type="int">
+    <element name="IntIncrement">0</element>
+    <element name="DateTimeIncrement">1</element>
+  </elements>
+</enum>

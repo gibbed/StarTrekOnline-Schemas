@@ -7,30 +7,30 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="entRef" type="INT">
+    <column name="Entref" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uLotID" type="INT">
+    <column name="Ulotid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="mail" type="OPTIONALSTRUCT">
+    <column name="Mail" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <subtable external="ChatMailStruct" />
     </column>
-    <column name="ItemString" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="auctionPetContainerIDs" type="INTARRAY">
+    <column name="Itemstring" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="mailPetContainerIDs" type="INTARRAY">
-      <offset>20</offset>
-    </column>
-    <column name="containerItemPetIDs" type="INTARRAY">
+    <column name="Auctionpetcontainerids" type="INTARRAY">
       <offset>24</offset>
     </column>
-    <column name="FullItemString" type="STRING">
-      <offset>28</offset>
+    <column name="Mailpetcontainerids" type="INTARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="Containeritempetids" type="INTARRAY">
+      <offset>40</offset>
+    </column>
+    <column name="Fullitemstring" type="STRING">
+      <offset>48</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

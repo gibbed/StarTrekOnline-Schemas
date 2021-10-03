@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AuctionBrokerLots" type="STRUCT">
+    <column name="Auctionbrokerlots" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>NO_INDEX</flag>

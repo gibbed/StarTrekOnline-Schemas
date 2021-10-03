@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PowerTreeSlotConfig">
+  <table>
+    <column name="PowerTreeSlotConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Powertreeslottype" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="PowerTreeSlotType" />
+    </column>
+    <column name="Powertreeslot" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="PowerTreeSlotDef" />
+    </column>
+    <column name="Slottingmaptyperestrict" type="INTARRAY">
+      <offset>16</offset>
+      <static_define_list external="ZoneMapType" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

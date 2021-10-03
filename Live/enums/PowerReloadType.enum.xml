@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PowerReloadType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="Magazine">1</element>
+    <element name="Shotgun">2</element>
+    <element name="Energy">3</element>
+  </elements>
+</enum>

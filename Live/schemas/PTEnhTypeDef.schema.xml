@@ -14,8 +14,8 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="PurchaseExpression" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Purchaseexpression" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="Expression" />
     </column>
     <column name="}" type="END" />

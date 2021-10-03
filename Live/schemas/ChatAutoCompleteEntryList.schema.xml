@@ -15,7 +15,7 @@
       </flags>
     </column>
     <column name="Command" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>REQUIRED</flag>
       </flags>

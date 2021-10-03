@@ -7,21 +7,22 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="entry_bounds" type="EMBEDDEDSTRUCT">
+    <column name="Entry_Bounds" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="WorldCellEntryBoundsParsed" />
     </column>
-    <column name="shared_bounds_idx" type="INT">
+    <column name="Shared_Bounds_Idx" type="INT">
       <offset>56</offset>
     </column>
-    <column name="parent_entry_uid" type="INT">
+    <column name="Parent_Entry_Uid" type="INT">
       <offset>60</offset>
       <default>-1</default>
     </column>
-    <column name="interaction_child_idx" type="INT">
+    <column name="Interaction_Child_Idx" type="INT">
       <offset>64</offset>
+      <default>-1</default>
     </column>
-    <column name="group_id" type="INT">
+    <column name="Group_Id" type="INT">
       <offset>68</offset>
     </column>
     <column name="}" type="END" />

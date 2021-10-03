@@ -12,389 +12,681 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>17</default>
+      <default>18</default>
       <static_define_list external="UIGenType" />
     </column>
-    <column name="bf" type="INTFIXEDARRAY">
+    <column name="Bf" type="INTFIXEDARRAY">
       <offset>4</offset>
       <flags>
         <flag>USEDFIELD</flag>
       </flags>
-      <num_elements>5</num_elements>
+      <num_elements>6</num_elements>
     </column>
     <column name="Pos" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">UIPosition</format_string>
+      </format_strings>
     </column>
     <column name="X" type="INT16">
-      <offset>24</offset>
+      <offset>28</offset>
       <static_define_list external="UISize" />
     </column>
     <column name="Y" type="INT16">
-      <offset>26</offset>
+      <offset>30</offset>
       <static_define_list external="UISize" />
     </column>
-    <column name="PercentX" type="F32">
-      <offset>28</offset>
-    </column>
-    <column name="PercentY" type="F32">
+    <column name="Percentx" type="F32">
       <offset>32</offset>
     </column>
-    <column name="Width" type="EMBEDDEDSTRUCT">
+    <column name="Percenty" type="F32">
       <offset>36</offset>
+    </column>
+    <column name="Width" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
       <subtable external="UISizeSpec" />
     </column>
     <column name="Height" type="EMBEDDEDSTRUCT">
-      <offset>44</offset>
+      <offset>48</offset>
       <subtable external="UISizeSpec" />
     </column>
-    <column name="MinimumWidth" type="EMBEDDEDSTRUCT">
-      <offset>52</offset>
+    <column name="Minimumwidth" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
       <subtable external="UISizeSpec" />
     </column>
-    <column name="MinimumHeight" type="EMBEDDEDSTRUCT">
-      <offset>60</offset>
+    <column name="Minimumheight" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
       <subtable external="UISizeSpec" />
     </column>
-    <column name="MaximumWidth" type="EMBEDDEDSTRUCT">
-      <offset>68</offset>
+    <column name="Maximumwidth" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
       <subtable external="UISizeSpec" />
     </column>
-    <column name="MaximumHeight" type="EMBEDDEDSTRUCT">
-      <offset>76</offset>
+    <column name="Maximumheight" type="EMBEDDEDSTRUCT">
+      <offset>80</offset>
       <subtable external="UISizeSpec" />
     </column>
-    <column name="LeftMargin" type="INT16">
-      <offset>84</offset>
-      <static_define_list external="UISize" />
-    </column>
-    <column name="RightMargin" type="INT16">
-      <offset>86</offset>
-      <static_define_list external="UISize" />
-    </column>
-    <column name="TopMargin" type="INT16">
+    <column name="Leftmargin" type="INT16">
       <offset>88</offset>
       <static_define_list external="UISize" />
     </column>
-    <column name="BottomMargin" type="INT16">
+    <column name="Rightmargin" type="INT16">
       <offset>90</offset>
       <static_define_list external="UISize" />
     </column>
-    <column name="Scale" type="F32">
+    <column name="Topmargin" type="INT16">
       <offset>92</offset>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Bottommargin" type="INT16">
+      <offset>94</offset>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Scale" type="F32">
+      <offset>96</offset>
       <default>1</default>
     </column>
     <column name="OffsetFrom" type="U8">
-      <offset>96</offset>
+      <offset>100</offset>
       <default>10</default>
       <static_define_list external="UIDirection" />
     </column>
-    <column name="ScaleNoGrow" type="BIT">
-      <offset>96</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Scalenogrow" type="BIT">
+      <offset>101</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ScaleNoShrink" type="BIT">
-      <offset>96</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Scalenoshrink" type="BIT">
+      <offset>101</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ScaleAsIfWithGlobal" type="BIT">
-      <offset>96</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Scaleasifwithglobal" type="BIT">
+      <offset>101</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ResetScale" type="BIT">
-      <offset>96</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Resetscale" type="BIT">
+      <offset>101</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ClipToParent" type="BIT">
-      <offset>96</offset>
-      <bit_offset>65548</bit_offset>
+    <column name="Cliptoparent" type="BIT">
+      <offset>101</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ClipToScreen" type="BIT">
-      <offset>96</offset>
-      <bit_offset>65549</bit_offset>
+    <column name="Cliptoscreen" type="BIT">
+      <offset>101</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="PositionOnScreen" type="BIT">
-      <offset>96</offset>
-      <bit_offset>65550</bit_offset>
+    <column name="Positiononscreen" type="BIT">
+      <offset>101</offset>
+      <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IgnoreParentPadding" type="BIT">
-      <offset>96</offset>
-      <bit_offset>65551</bit_offset>
+    <column name="Ignoreparentpadding" type="BIT">
+      <offset>101</offset>
+      <bit_offset>65543</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ScaleAsIf" type="INT16FIXEDARRAY">
-      <offset>98</offset>
+    <column name="Scaleasif" type="INT16FIXEDARRAY">
+      <offset>102</offset>
       <num_elements>2</num_elements>
     </column>
     <column name="Relative" type="OPTIONALSTRUCT">
-      <offset>104</offset>
+      <offset>112</offset>
       <subtable external="UIGenRelative" />
     </column>
-    <column name="PostLayoutRelative" type="OPTIONALSTRUCT">
-      <offset>108</offset>
+    <column name="Postlayoutrelative" type="OPTIONALSTRUCT">
+      <offset>120</offset>
       <subtable external="UIGenRelative" />
     </column>
     <column name="Anchor" type="OPTIONALSTRUCT">
-      <offset>112</offset>
+      <offset>128</offset>
       <subtable external="UIGenAnchor" />
     </column>
     <column name="Child" type="STRUCT">
-      <offset>116</offset>
+      <offset>136</offset>
       <subtable external="UIGenChild" />
     </column>
     <column name="Children" type="STRUCT">
-      <offset>116</offset>
+      <offset>136</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Child</redundant_name>
       <subtable external="UIGenChild" />
     </column>
-    <column name="InlineChild" type="STRUCT">
-      <offset>120</offset>
+    <column name="Inlinechild" type="STRUCT">
+      <offset>144</offset>
       <flags>
         <flag>STRUCT_NORECURSE</flag>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="UIGen" />
     </column>
-    <column name="HideChild" type="STRINGARRAY">
-      <offset>124</offset>
+    <column name="Hidechild" type="STRINGARRAY">
+      <offset>152</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="RemoveChild" type="STRINGARRAY">
-      <offset>128</offset>
+    <column name="Removechild" type="STRINGARRAY">
+      <offset>160</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Assembly" type="OPTIONALSTRUCT">
-      <offset>132</offset>
+      <offset>168</offset>
       <subtable external="UIGenTextureAssembly" />
     </column>
-    <column name="OverlayAssembly" type="OPTIONALSTRUCT">
-      <offset>136</offset>
+    <column name="Overlayassembly" type="OPTIONALSTRUCT">
+      <offset>176</offset>
       <subtable external="UIGenTextureAssembly" />
     </column>
     <column name="Alpha" type="F32">
-      <offset>140</offset>
+      <offset>184</offset>
       <default>1</default>
     </column>
     <column name="Tween" type="OPTIONALSTRUCT">
-      <offset>144</offset>
+      <offset>192</offset>
       <subtable external="UIGenTweenInfo" />
     </column>
-    <column name="BeforeLayout" type="OPTIONALSTRUCT">
-      <offset>148</offset>
+    <column name="Beforelayout" type="OPTIONALSTRUCT">
+      <offset>200</offset>
       <subtable external="UIGenAction" />
     </column>
-    <column name="AfterLayout" type="OPTIONALSTRUCT">
-      <offset>152</offset>
+    <column name="Afterlayout" type="OPTIONALSTRUCT">
+      <offset>208</offset>
       <subtable external="UIGenAction" />
     </column>
-    <column name="BeforeTick" type="OPTIONALSTRUCT">
-      <offset>156</offset>
+    <column name="Beforetick" type="OPTIONALSTRUCT">
+      <offset>216</offset>
       <subtable external="UIGenAction" />
     </column>
-    <column name="KeyAction" type="STRUCT">
-      <offset>160</offset>
+    <column name="Keyaction" type="STRUCT">
+      <offset>224</offset>
       <subtable external="UIGenKeyAction" />
     </column>
-    <column name="DefaultKeyAction" type="OPTIONALSTRUCT">
-      <offset>164</offset>
+    <column name="Defaultkeyaction" type="OPTIONALSTRUCT">
+      <offset>232</offset>
       <subtable external="UIGenAction" />
     </column>
     <column name="ToolTip" type="OPTIONALSTRUCT">
-      <offset>168</offset>
+      <offset>240</offset>
       <subtable external="UIGenTooltip" />
     </column>
+    <column name="Tooltipoverride" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">UIGenTooltipOverride</format_string>
+      </format_strings>
+    </column>
+    <column name="Tooltipoverridehtooltip" type="REFERENCE">
+      <offset>248</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Tooltipoverridetooltipblock" type="OPTIONALSTRUCT">
+      <offset>256</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Tooltipoverridetooltipexpr" type="OPTIONALSTRUCT">
+      <offset>256</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Tooltipoverridetooltipblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Tooltipoverrideassembly" type="STRING">
+      <offset>264</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Tooltipoverriderelative" type="OPTIONALSTRUCT">
+      <offset>272</offset>
+      <subtable external="UIGenRelative" />
+    </column>
+    <column name="Tooltipoverridesecondarytooltipmaxwidth" type="INT16">
+      <offset>280</offset>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Tooltipoverridesecondarytooltipmaximumwidth" type="INT16">
+      <offset>280</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Tooltipoverridesecondarytooltipmaxwidth</redundant_name>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Tooltipoverridemaxwidth" type="INT16">
+      <offset>282</offset>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Tooltipoverridemaximumwidth" type="INT16">
+      <offset>282</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Tooltipoverridemaxwidth</redundant_name>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Tooltipoverrideallowobscuredsource" type="BIT">
+      <offset>284</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
     <column name="Background" type="OPTIONALSTRUCT">
-      <offset>172</offset>
+      <offset>288</offset>
       <subtable external="UIGenBackgroundImage" />
     </column>
-    <column name="DragDrop" type="STRUCT">
-      <offset>176</offset>
+    <column name="Dragdrop" type="STRUCT">
+      <offset>296</offset>
       <subtable external="UIGenDragDropAction" />
     </column>
-    <column name="DragCancelled" type="OPTIONALSTRUCT">
-      <offset>180</offset>
+    <column name="Dragcancelled" type="OPTIONALSTRUCT">
+      <offset>304</offset>
       <subtable external="UIGenAction" />
     </column>
     <column name="Message" type="STRUCT">
-      <offset>184</offset>
+      <offset>312</offset>
+      <subtable external="UIGenMessage" />
+    </column>
+    <column name="Handlemessage" type="STRUCT">
+      <offset>312</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Message</redundant_name>
       <subtable external="UIGenMessage" />
     </column>
     <column name="Transform" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">UIGenTransformation</format_string>
+      </format_strings>
     </column>
-    <column name="CenterX" type="EMBEDDEDSTRUCT">
-      <offset>188</offset>
+    <column name="Centerx" type="EMBEDDEDSTRUCT">
+      <offset>320</offset>
       <subtable external="UISizeSpec" />
     </column>
-    <column name="CenterY" type="EMBEDDEDSTRUCT">
-      <offset>196</offset>
+    <column name="Centery" type="EMBEDDEDSTRUCT">
+      <offset>328</offset>
       <subtable external="UISizeSpec" />
+    </column>
+    <column name="Usemat" type="U8">
+      <offset>336</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Rotate" type="EMBEDDEDSTRUCT">
-      <offset>204</offset>
+      <offset>340</offset>
       <subtable external="UIAngle" />
     </column>
-    <column name="ShearX" type="F32">
-      <offset>212</offset>
+    <column name="Shearx" type="F32">
+      <offset>348</offset>
     </column>
-    <column name="ShearY" type="F32">
-      <offset>216</offset>
+    <column name="Sheary" type="F32">
+      <offset>352</offset>
     </column>
-    <column name="ScaleX" type="F32">
-      <offset>220</offset>
+    <column name="Scalex" type="F32">
+      <offset>356</offset>
       <default>1</default>
     </column>
-    <column name="ScaleY" type="F32">
-      <offset>224</offset>
+    <column name="Scaley" type="F32">
+      <offset>360</offset>
       <default>1</default>
+    </column>
+    <column name="Mat" type="F32FIXEDARRAY">
+      <offset>364</offset>
+      <num_elements>9</num_elements>
     </column>
     <column name="Cursor" type="REFERENCE">
-      <offset>228</offset>
+      <offset>400</offset>
       <flags>
         <flag>NON_NULL_REF</flag>
       </flags>
       <dictionary_name>UICursor</dictionary_name>
     </column>
-    <column name="Priority" type="U8">
-      <offset>232</offset>
+    <column name="Font" type="REFERENCE">
+      <offset>408</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UIStyleFont</dictionary_name>
     </column>
-    <column name="ResetAlpha" type="BIT">
-      <offset>232</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Fontface" type="REFERENCE">
+      <offset>416</offset>
+      <dictionary_name>GfxFont</dictionary_name>
+    </column>
+    <column name="Fontstyleformat" type="STRING">
+      <offset>424</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+      <default_string>{Face}_{Size}</default_string>
+    </column>
+    <column name="Fontsize" type="STRING">
+      <offset>432</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Fonttopleftcolor" type="INT">
+      <offset>440</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Fontcolor" type="INT">
+      <offset>440</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Fonttopleftcolor</redundant_name>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Fonttoprightcolor" type="INT">
+      <offset>444</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Fontbottomleftcolor" type="INT">
+      <offset>448</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Fontbottomrightcolor" type="INT">
+      <offset>452</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Fontdropshadowcolor" type="INT">
+      <offset>456</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Fontoutlinecolor" type="INT">
+      <offset>460</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Fontoutlinewidth" type="U8">
+      <offset>464</offset>
+    </column>
+    <column name="Fontitalic" type="BIT">
+      <offset>465</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fontbold" type="BIT">
+      <offset>465</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fontupcase" type="BIT">
+      <offset>465</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fontuseancestor" type="U8">
+      <offset>466</offset>
+    </column>
+    <column name="Priority" type="U8">
+      <offset>467</offset>
+    </column>
+    <column name="Firstfocuspriority" type="U8">
+      <offset>468</offset>
+    </column>
+    <column name="Resetalpha" type="BIT">
+      <offset>469</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Clip" type="BIT">
-      <offset>232</offset>
-      <bit_offset>65545</bit_offset>
+      <offset>469</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ResetClip" type="BIT">
-      <offset>232</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Cliptopadding" type="BIT">
+      <offset>469</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CaptureMouse" type="BIT">
-      <offset>232</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Clipchildrentoview" type="BIT">
+      <offset>469</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CaptureMouseWheel" type="BIT">
-      <offset>232</offset>
-      <bit_offset>65548</bit_offset>
+    <column name="Resetclip" type="BIT">
+      <offset>469</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FocusOnClick" type="BIT">
-      <offset>232</offset>
-      <bit_offset>65549</bit_offset>
+    <column name="Resetclipvertical" type="BIT">
+      <offset>469</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FocusOnCreate" type="BIT">
-      <offset>232</offset>
-      <bit_offset>65550</bit_offset>
+    <column name="Resetcliphorizontal" type="BIT">
+      <offset>469</offset>
+      <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="KeepFocusOnCreate" type="BIT">
-      <offset>232</offset>
-      <bit_offset>65551</bit_offset>
+    <column name="Capturemouse" type="BIT">
+      <offset>469</offset>
+      <bit_offset>65543</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FocusByDefault" type="BIT">
-      <offset>232</offset>
-      <bit_offset>65552</bit_offset>
+    <column name="Capturemousewheel" type="BIT">
+      <offset>470</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FocusEveryFrame" type="BIT">
-      <offset>232</offset>
-      <bit_offset>65553</bit_offset>
+    <column name="Focusable" type="BIT">
+      <offset>470</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ClipInput" type="BIT">
-      <offset>232</offset>
-      <bit_offset>65554</bit_offset>
+    <column name="Focusonclick" type="BIT">
+      <offset>470</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ResetInputClip" type="BIT">
-      <offset>232</offset>
-      <bit_offset>65555</bit_offset>
+    <column name="Focusoncreate" type="BIT">
+      <offset>470</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CopyChildPriority" type="BIT">
-      <offset>232</offset>
-      <bit_offset>65556</bit_offset>
+    <column name="Keepfocusoncreate" type="BIT">
+      <offset>470</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ClipToPadding" type="BIT">
-      <offset>232</offset>
-      <bit_offset>65557</bit_offset>
+    <column name="Focusbydefault" type="BIT">
+      <offset>470</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="Scrollbar" type="IGNORE">
+    <column name="Focuseveryframe" type="BIT">
+      <offset>470</offset>
+      <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Clipinput" type="BIT">
+      <offset>470</offset>
+      <bit_offset>65543</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Clipinputtopadding" type="BIT">
+      <offset>471</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Clipchildreninputtoview" type="BIT">
+      <offset>471</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Resetinputclip" type="BIT">
+      <offset>471</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Copychildpriority" type="BIT">
+      <offset>471</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dontincludeinfitcontentssize" type="BIT">
+      <offset>472</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Verticalscrollbardeprecated" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">UIGenScrollbar</format_string>
+      </format_strings>
     </column>
-    <column name="ScrollbarDef" type="REFERENCE">
-      <offset>236</offset>
+    <column name="Scrollbardef" type="REFERENCE">
+      <offset>480</offset>
       <dictionary_name>UIGenScrollbarDef</dictionary_name>
     </column>
-    <column name="DisabledScrollbarDef" type="REFERENCE">
-      <offset>240</offset>
+    <column name="Disabledscrollbardef" type="REFERENCE">
+      <offset>488</offset>
       <dictionary_name>UIGenScrollbarDef</dictionary_name>
     </column>
-    <column name="ScrollbarTopMargin" type="INT16">
-      <offset>244</offset>
+    <column name="Scrollbartopmargin" type="INT16">
+      <offset>496</offset>
       <static_define_list external="UISize" />
     </column>
-    <column name="ScrollbarBottomMargin" type="INT16">
-      <offset>246</offset>
+    <column name="Scrollbarbottommargin" type="INT16">
+      <offset>498</offset>
       <static_define_list external="UISize" />
     </column>
-    <column name="ScrollbarLeftMargin" type="INT16">
-      <offset>248</offset>
+    <column name="Scrollbarleftmargin" type="INT16">
+      <offset>500</offset>
       <static_define_list external="UISize" />
     </column>
-    <column name="ScrollbarRightMargin" type="INT16">
-      <offset>250</offset>
+    <column name="Scrollbarrightmargin" type="INT16">
+      <offset>502</offset>
       <static_define_list external="UISize" />
     </column>
-    <column name="ScrollbarOnlyShowWhenNeeded" type="BIT">
-      <offset>252</offset>
+    <column name="Autoscrollminpadding" type="INT16">
+      <offset>504</offset>
+    </column>
+    <column name="Autoscrollmaxpadding" type="INT16">
+      <offset>506</offset>
+    </column>
+    <column name="Scrollbarusestick" type="INT">
+      <offset>508</offset>
+      <default>1</default>
+      <static_define_list external="UIGenScrollbarStick" />
+    </column>
+    <column name="Scrollbarspeed" type="F32">
+      <offset>512</offset>
+      <default>300</default>
+    </column>
+    <column name="Scrollbarproportionalspeed" type="F32">
+      <offset>516</offset>
+    </column>
+    <column name="Scrollbarstickresponse" type="INT">
+      <offset>520</offset>
+      <static_define_list external="UIGenScrollbarStickResponse" />
+    </column>
+    <column name="Scrollbarcapturemouse" type="BIT">
+      <offset>524</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ScrollbarCaptureMouse" type="BIT">
-      <offset>252</offset>
+    <column name="Scrollbarusewheel" type="BIT">
+      <offset>524</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
     </column>
-    <column name="ScrollbarUseWheel" type="BIT">
-      <offset>252</offset>
-      <flags>
-        <flag>SPECIAL_DEFAULT</flag>
-      </flags>
+    <column name="Scrollbarusestickwhenunfocused" type="BIT">
+      <offset>524</offset>
       <bit_offset>65538</bit_offset>
-      <format_strings>
-        <format_string name="SPECIAL_DEFAULT">1</format_string>
-      </format_strings>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ScrollbarUseStick" type="BIT">
-      <offset>252</offset>
+    <column name="Verticalscrollbar" type="OPTIONALSTRUCT">
+      <offset>528</offset>
+      <subtable external="UIGenScrollbar" />
+    </column>
+    <column name="Horizontalscrollbar" type="OPTIONALSTRUCT">
+      <offset>536</offset>
+      <subtable external="UIGenScrollbar" />
+    </column>
+    <column name="Scrollbaroverride" type="IGNORE">
       <flags>
-        <flag>SPECIAL_DEFAULT</flag>
+        <flag>FLATEMBED</flag>
       </flags>
-      <bit_offset>65539</bit_offset>
       <format_strings>
-        <format_string name="SPECIAL_DEFAULT">1</format_string>
+        <format_string name="EMBEDDED_STRUCT">UIGenScrollbarOverride</format_string>
       </format_strings>
     </column>
-    <column name="VirtualTopPadding" type="INT16">
-      <offset>256</offset>
+    <column name="Scrollbaroverridescrollbarusestick" type="INT">
+      <offset>544</offset>
+      <static_define_list external="UIGenScrollbarStick" />
+    </column>
+    <column name="Scrollbaroverridescrollbarspeed" type="F32">
+      <offset>548</offset>
+    </column>
+    <column name="Virtualassembly" type="OPTIONALSTRUCT">
+      <offset>552</offset>
+      <subtable external="UIGenTextureAssembly" />
+    </column>
+    <column name="Virtualtoppadding" type="INT16">
+      <offset>560</offset>
       <static_define_list external="UISize" />
     </column>
-    <column name="VirtualBottomPadding" type="INT16">
-      <offset>258</offset>
+    <column name="Virtualbottompadding" type="INT16">
+      <offset>562</offset>
       <static_define_list external="UISize" />
     </column>
-    <column name="VirtualLeftPadding" type="INT16">
-      <offset>260</offset>
+    <column name="Virtualleftpadding" type="INT16">
+      <offset>564</offset>
       <static_define_list external="UISize" />
     </column>
-    <column name="VirtualRightPadding" type="INT16">
-      <offset>262</offset>
+    <column name="Virtualrightpadding" type="INT16">
+      <offset>566</offset>
       <static_define_list external="UISize" />
+    </column>
+    <column name="Edgescrollsize" type="INT">
+      <offset>568</offset>
+    </column>
+    <column name="Verticalscrollbaronlyshowwhenneeded" type="BIT">
+      <offset>572</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Scrollbaronlyshowwhenneeded" type="BIT">
+      <offset>572</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Verticalscrollbaronlyshowwhenneeded</redundant_name>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

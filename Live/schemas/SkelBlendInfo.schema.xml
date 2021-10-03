@@ -6,59 +6,60 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="BlendInfoName" type="STRING">
+    <column name="Blendinfoname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="MainSequencer" type="STRING">
-      <offset>4</offset>
+    <column name="Mainsequencer" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Sequencer" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="SkelBlendSeqInfo" />
     </column>
-    <column name="uiMaxWeightIndex" type="INT">
-      <offset>20</offset>
+    <column name="Uimaxweightindex" type="INT">
+      <offset>48</offset>
     </column>
-    <column name="DynAnimOverrideList" type="REFERENCE">
-      <offset>24</offset>
-      <dictionary_name>DynAnimOverrideList</dictionary_name>
-    </column>
-    <column name="DefaultChart" type="REFERENCE">
-      <offset>28</offset>
+    <column name="Defaultchart" type="REFERENCE">
+      <offset>56</offset>
       <dictionary_name>DynAnimChartRunTime</dictionary_name>
     </column>
-    <column name="MountedChart" type="REFERENCE">
-      <offset>32</offset>
+    <column name="Mountedchart" type="REFERENCE">
+      <offset>64</offset>
       <dictionary_name>DynAnimChartRunTime</dictionary_name>
     </column>
-    <column name="RunAndGunBone" type="STRUCT">
-      <offset>36</offset>
+    <column name="Runandgunbone" type="STRUCT">
+      <offset>72</offset>
       <subtable external="SkelBlendRunAndGunBone" />
     </column>
-    <column name="PreventRunAndGunFootShuffle" type="BOOLFLAG">
-      <offset>40</offset>
+    <column name="Preventrunandgunfootshuffle" type="BOOLFLAG">
+      <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="PreventRunAndGunUpperBody" type="BOOLFLAG">
-      <offset>41</offset>
+    <column name="Preventrunandgunupperbody" type="BOOLFLAG">
+      <offset>81</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="TorsoPointing" type="BOOLFLAG">
-      <offset>42</offset>
+    <column name="Torsopointing" type="BOOLFLAG">
+      <offset>82</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="TorsoDirections" type="BOOLFLAG">
-      <offset>43</offset>
+    <column name="Torsodirections" type="BOOLFLAG">
+      <offset>83</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MovementBlending" type="BOOLFLAG">
-      <offset>44</offset>
+    <column name="Movementblending" type="BOOLFLAG">
+      <offset>84</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>48</offset>
+      <offset>88</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

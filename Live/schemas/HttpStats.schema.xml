@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TotalBytesSent" type="INT64">
+    <column name="Totalbytessent" type="INT64">
       <offset>0</offset>
     </column>
-    <column name="BytesSentLast15Secs" type="INT64">
+    <column name="Bytessentlast15secs" type="INT64">
       <offset>8</offset>
     </column>
-    <column name="IPStats" type="STRUCT">
+    <column name="Ipstats" type="STRUCT">
       <offset>16</offset>
       <subtable external="HttpIPStats" />
     </column>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="entryID" type="INT">
+    <column name="Entryid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -30,22 +30,43 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="Time" type="INT">
-      <offset>12</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="subjectID" type="INT">
+    <column name="Argstring1ref" type="REFERENCE">
       <offset>16</offset>
       <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Argstring2ref" type="REFERENCE">
+      <offset>24</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Time" type="INT">
+      <offset>32</offset>
+      <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="playedTimeAtEvent" type="F32">
-      <offset>20</offset>
+    <column name="Subjectid" type="INT">
+      <offset>36</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Extracontainerid" type="INT">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Playedtimeatevent" type="F32">
+      <offset>44</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

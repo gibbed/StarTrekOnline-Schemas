@@ -7,8 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uAddress" type="INT64">
+    <column name="Uaddress" type="INT64">
       <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

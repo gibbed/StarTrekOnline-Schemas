@@ -13,15 +13,16 @@
     <column name="HoldTime" type="F32">
       <offset>4</offset>
     </column>
-    <column name="Pos" type="F32FIXEDARRAY">
+    <column name="Vpos" type="F32FIXEDARRAY">
       <offset>8</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="NamedPoint" type="STRING">
-      <offset>20</offset>
+    <column name="Namedpoint" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="Interpolate" type="INT">
-      <offset>24</offset>
+      <offset>32</offset>
       <static_define_list external="InterpolationType" />
     </column>
     <column name="}" type="END" />

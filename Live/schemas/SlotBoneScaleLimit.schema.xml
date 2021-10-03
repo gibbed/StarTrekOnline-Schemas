@@ -15,10 +15,10 @@
       </flags>
     </column>
     <column name="Min" type="F32">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="Max" type="F32">
-      <offset>8</offset>
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

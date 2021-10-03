@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CostumeSlotType" type="STRUCT">
+    <column name="Costumeslottype" type="STRUCT">
       <offset>0</offset>
       <subtable external="PCSlotType" />
     </column>

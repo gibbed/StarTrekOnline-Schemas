@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ObjectPaintingObjectInstance">
+  <table>
+    <column name="ObjectPaintingObjectInstance" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Position" type="F32FIXEDARRAY">
+      <offset>0</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Normal" type="F32FIXEDARRAY">
+      <offset>12</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Rotation" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Scalejitter" type="F32">
+      <offset>28</offset>
+      <default>1056964608</default>
+    </column>
+    <column name="Seed" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Useed" type="INT">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Seed</redundant_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

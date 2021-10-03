@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="lod_idx" type="INT">
+    <column name="Lod_Idx" type="INT">
       <offset>8</offset>
     </column>
-    <column name="ref_count" type="INT">
+    <column name="Ref_Count" type="INT">
       <offset>12</offset>
     </column>
     <column name="UID" type="INT">

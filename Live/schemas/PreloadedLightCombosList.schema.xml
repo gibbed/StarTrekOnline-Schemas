@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LightCombo" type="STRUCT">
+    <column name="Lightcombo" type="STRUCT">
       <offset>0</offset>
       <subtable external="PreloadedLightCombo" />
     </column>

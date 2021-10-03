@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GarrisonPlotState">
+  <elements type="int">
+    <element name="Unclaimed">0</element>
+    <element name="Ready">1</element>
+    <element name="Construction">2</element>
+    <element name="Active">3</element>
+    <element name="Destruction">4</element>
+  </elements>
+</enum>

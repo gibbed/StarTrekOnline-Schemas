@@ -7,10 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="common" type="IGNORE">
+    <column name="Common" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">CutsceneCommonPointData</format_string>
+      </format_strings>
     </column>
     <column name="Time" type="F32">
       <offset>0</offset>
@@ -18,27 +21,47 @@
     <column name="Length" type="F32">
       <offset>4</offset>
     </column>
-    <column name="FixedLength" type="U8">
+    <column name="Fixedlength" type="U8">
       <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="displaySubtitle" type="EMBEDDEDSTRUCT">
+    <column name="Uniquemessageindex" type="INT">
       <offset>12</offset>
-      <subtable external="DisplayMessage" />
     </column>
-    <column name="SubtitleVariable" type="STRING">
-      <offset>24</offset>
+    <column name="Displaysubtitle" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <subtable external="DisplayMessageWithVO" />
+    </column>
+    <column name="Subtitlevo" type="STRING">
+      <offset>64</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CutsceneEntName" type="STRING">
-      <offset>28</offset>
+    <column name="Comments" type="STRING">
+      <offset>72</offset>
     </column>
-    <column name="TranslatedSubtitle" type="STRING">
-      <offset>32</offset>
+    <column name="Subtitlevariable" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Cutsceneentname" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Cutscenevoentname" type="STRING">
+      <offset>96</offset>
+    </column>
+    <column name="Translatedsubtitle" type="STRING">
+      <offset>104</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
+    </column>
+    <column name="Subtitlepos" type="INT">
+      <offset>120</offset>
+      <static_define_list external="CutsceneSubtitlePos" />
     </column>
     <column name="}" type="END" />
   </table>

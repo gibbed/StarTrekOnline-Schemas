@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="triviaLists" type="STRUCT">
+    <column name="Trivialists" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>

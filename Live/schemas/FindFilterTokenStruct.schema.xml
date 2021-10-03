@@ -13,75 +13,90 @@
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="RangeLow" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="RangeHigh" type="INT">
+    <column name="Rangelow" type="INT">
       <offset>8</offset>
     </column>
-    <column name="AcceptableTokens" type="STRUCT">
+    <column name="Rangehigh" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Acceptabletokens" type="STRUCT">
+      <offset>16</offset>
       <subtable external="FindFilterTokenStruct" />
     </column>
     <column name="Flag" type="BIT">
-      <offset>16</offset>
+      <offset>24</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CheckName" type="BIT">
-      <offset>16</offset>
+    <column name="Checkname" type="BIT">
+      <offset>24</offset>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CheckHandle" type="BIT">
-      <offset>16</offset>
+    <column name="Checkhandle" type="BIT">
+      <offset>24</offset>
       <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CheckMap" type="BIT">
-      <offset>16</offset>
+    <column name="Checkmap" type="BIT">
+      <offset>24</offset>
       <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CheckNeighborhood" type="BIT">
-      <offset>16</offset>
+    <column name="Checkneighborhood" type="BIT">
+      <offset>24</offset>
       <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CheckInstance" type="BIT">
-      <offset>16</offset>
+    <column name="Checkinstance" type="BIT">
+      <offset>24</offset>
       <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CheckGuild" type="BIT">
-      <offset>16</offset>
+    <column name="Checkguild" type="BIT">
+      <offset>24</offset>
       <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CheckStatus" type="BIT">
-      <offset>16</offset>
+    <column name="Checkstatus" type="BIT">
+      <offset>24</offset>
       <bit_offset>65543</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CheckRank" type="BIT">
-      <offset>16</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Checkrank" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CheckOpen" type="BIT">
-      <offset>16</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Checkopen" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CheckRequestOnly" type="BIT">
-      <offset>16</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Checkrequestonly" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CheckClosed" type="BIT">
-      <offset>16</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Checkclosed" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CheckPlayingStyles" type="BIT">
-      <offset>16</offset>
-      <bit_offset>65548</bit_offset>
+    <column name="Checkplayingstyles" type="BIT">
+      <offset>25</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Exact" type="BIT">
-      <offset>16</offset>
-      <bit_offset>65549</bit_offset>
+      <offset>25</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Soft" type="BIT">
-      <offset>16</offset>
-      <bit_offset>65550</bit_offset>
+      <offset>25</offset>
+      <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

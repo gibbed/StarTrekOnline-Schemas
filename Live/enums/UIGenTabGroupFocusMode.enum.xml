@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="UIGenTabGroupFocusMode">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="SelectChildren">1</element>
+    <element name="SelectChildren_PreserveOnInitialFocus">2</element>
+    <element name="SelectChildren_FirstOrLastOnInitialFocus">3</element>
+    <element name="FocusChildren">4</element>
+    <element name="FocusChildren_PreserveOnInitialFocus">5</element>
+    <element name="FocusChildren_FirstOrLastOnInitialFocus">6</element>
+    <element name="FocusAndSelectChildren">7</element>
+    <element name="FocusAndSelectChildren_PreserveOnInitialFocus">8</element>
+    <element name="FocusAndSelectChildren_FirstOrLastOnInitialFocus">9</element>
+  </elements>
+</enum>

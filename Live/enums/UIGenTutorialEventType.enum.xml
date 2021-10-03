@@ -5,5 +5,8 @@
     <element name="Click">1</element>
     <element name="Select">2</element>
     <element name="ManualNext">3</element>
+    <element name="Activate">4</element>
+    <element name="GenAttach">5</element>
+    <element name="GenReset">6</element>
   </elements>
 </enum>

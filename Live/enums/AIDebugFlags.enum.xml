@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <enum name="AIDebugFlags">
   <elements type="int">
+    <element name="all">-1</element>
     <element name="basicInfo">1</element>
     <element name="statustable">2</element>
     <element name="statusextern">4</element>
@@ -18,6 +19,6 @@
     <element name="avoid">16384</element>
     <element name="aggro">32768</element>
     <element name="logs">65536</element>
-    <element name="all">-1</element>
+    <element name="localvars">131072</element>
   </elements>
 </enum>

@@ -14,11 +14,11 @@
       </flags>
     </column>
     <column name="Bone" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="SkelScaleBone" />
     </column>
     <column name="Group" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="SkelScaleGroupInclude" />
     </column>
     <column name="End" type="END" />

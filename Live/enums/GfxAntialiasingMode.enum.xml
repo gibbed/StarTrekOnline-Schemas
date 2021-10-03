@@ -4,6 +4,8 @@
     <element name="NONE">0</element>
     <element name="MSAA">1</element>
     <element name="TXAA">2</element>
-    <element name="MAX_MODES">3</element>
+    <element name="FXAA">3</element>
+    <element name="CMAA2">4</element>
+    <element name="MAX_MODES">5</element>
   </elements>
 </enum>

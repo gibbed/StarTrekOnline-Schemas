@@ -11,7 +11,10 @@
       <offset>8</offset>
     </column>
     <column name="Str" type="STRING">
-      <offset>16</offset>
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

@@ -11,16 +11,16 @@
       <offset>0</offset>
       <static_define_list external="AttribType" />
     </column>
-    <column name="LastTier" type="F32">
+    <column name="Lasttier" type="F32">
       <offset>4</offset>
     </column>
-    <column name="NextTier" type="F32">
+    <column name="Nexttier" type="F32">
       <offset>8</offset>
     </column>
     <column name="Value" type="F32">
       <offset>12</offset>
     </column>
-    <column name="CurrentTier" type="INT">
+    <column name="Currenttier" type="INT">
       <offset>16</offset>
     </column>
     <column name="}" type="END" />

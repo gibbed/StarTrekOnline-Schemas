@@ -7,31 +7,39 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CenterX" type="EMBEDDEDSTRUCT">
+    <column name="Centerx" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="UISizeSpec" />
     </column>
-    <column name="CenterY" type="EMBEDDEDSTRUCT">
+    <column name="Centery" type="EMBEDDEDSTRUCT">
       <offset>8</offset>
       <subtable external="UISizeSpec" />
     </column>
-    <column name="Rotate" type="EMBEDDEDSTRUCT">
+    <column name="Usemat" type="U8">
       <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Rotate" type="EMBEDDEDSTRUCT">
+      <offset>20</offset>
       <subtable external="UIAngle" />
     </column>
-    <column name="ShearX" type="F32">
-      <offset>24</offset>
-    </column>
-    <column name="ShearY" type="F32">
+    <column name="Shearx" type="F32">
       <offset>28</offset>
     </column>
-    <column name="ScaleX" type="F32">
+    <column name="Sheary" type="F32">
       <offset>32</offset>
-      <default>1</default>
     </column>
-    <column name="ScaleY" type="F32">
+    <column name="Scalex" type="F32">
       <offset>36</offset>
       <default>1</default>
+    </column>
+    <column name="Scaley" type="F32">
+      <offset>40</offset>
+      <default>1</default>
+    </column>
+    <column name="Mat" type="F32FIXEDARRAY">
+      <offset>44</offset>
+      <num_elements>9</num_elements>
     </column>
     <column name="}" type="END" />
   </table>

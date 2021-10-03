@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SourceComments_Struct">
+  <table>
+    <column name="SourceComments_Struct" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Structname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Maincomment" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Categoriesstring" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Fields" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="SourceComments_Field" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

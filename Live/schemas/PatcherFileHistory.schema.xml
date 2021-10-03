@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="dir_entry" type="OPTIONALSTRUCT">
+    <column name="Dir_Entry" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="DirEntry" />
     </column>
     <column name="Flags" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="checkins" type="STRUCT">
       <offset>8</offset>
+    </column>
+    <column name="Checkins" type="STRUCT">
+      <offset>16</offset>
       <subtable external="Checkin" />
     </column>
-    <column name="batch_info" type="STRINGARRAY">
-      <offset>12</offset>
+    <column name="Batch_Info" type="STRINGARRAY">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

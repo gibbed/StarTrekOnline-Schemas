@@ -20,8 +20,8 @@
       <offset>8</offset>
       <subtable external="ChoiceValue" />
     </column>
-    <column name="ChoiceTable" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Choicetable" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>ChoiceTable</dictionary_name>
     </column>
     <column name="}" type="END" />

@@ -11,11 +11,11 @@
       <offset>0</offset>
     </column>
     <column name="Children" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="PEInhNode" />
     </column>
     <column name="PowerDef" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="PowerDef" />
     </column>
     <column name="}" type="END" />

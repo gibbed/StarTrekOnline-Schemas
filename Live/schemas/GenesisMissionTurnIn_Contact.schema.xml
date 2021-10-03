@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CompletedText" type="STRING">
+    <column name="Completedtext" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="MissionReturnText" type="STRING">
-      <offset>4</offset>
+    <column name="Missionreturntext" type="STRING">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -15,51 +15,57 @@
       </flags>
       <dictionary_name>CostumeMaterial</dictionary_name>
     </column>
-    <column name="AllowAllTextures" type="U8">
-      <offset>4</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <default>1</default>
-    </column>
-    <column name="RequiresPattern" type="U8">
-      <offset>5</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="RequiresDetail" type="U8">
-      <offset>6</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="RequiresSpecular" type="U8">
-      <offset>7</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="RequiresDiffuse" type="U8">
+    <column name="Allowalltextures" type="U8">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RequiresMovable" type="U8">
+    <column name="Requirespattern" type="U8">
       <offset>9</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowedTexture" type="STRUCT">
+    <column name="Requiresdetail" type="U8">
+      <offset>10</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requiresspecular" type="U8">
+      <offset>11</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requiresdiffuse" type="U8">
       <offset>12</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requiresmovable" type="U8">
+      <offset>13</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allowedtexture" type="STRUCT">
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

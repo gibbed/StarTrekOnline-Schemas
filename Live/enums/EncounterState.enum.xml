@@ -6,10 +6,11 @@
     <element name="Spawned">2</element>
     <element name="Active">3</element>
     <element name="Aware">4</element>
-    <element name="Success">5</element>
-    <element name="Failure">6</element>
-    <element name="Off">7</element>
-    <element name="Disabled">8</element>
-    <element name="GroupManaged">9</element>
+    <element name="Combat">5</element>
+    <element name="Success">6</element>
+    <element name="Failure">7</element>
+    <element name="Off">8</element>
+    <element name="Disabled">9</element>
+    <element name="GroupManaged">10</element>
   </elements>
 </enum>

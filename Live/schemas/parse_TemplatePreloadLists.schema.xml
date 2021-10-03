@@ -8,21 +8,21 @@
     <column name="Folder" type="STRUCT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Template</redundant_name>
       <subtable external="parse_preload_dir" />
     </column>
-    <column name="LateTemplate" type="STRUCT">
-      <offset>4</offset>
+    <column name="Latetemplate" type="STRUCT">
+      <offset>8</offset>
       <subtable external="parse_preload_file" />
     </column>
-    <column name="LateFolder" type="STRUCT">
-      <offset>4</offset>
+    <column name="Latefolder" type="STRUCT">
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>LateTemplate</redundant_name>
+      <redundant_name>Latetemplate</redundant_name>
       <subtable external="parse_preload_dir" />
     </column>
   </table>

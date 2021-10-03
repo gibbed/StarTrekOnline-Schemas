@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="base_data" type="EMBEDDEDSTRUCT">
+    <column name="Base_Data" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="WorldCellEntryParsed" />
     </column>
-    <column name="light_data" type="OPTIONALSTRUCT">
+    <column name="Light_Data" type="OPTIONALSTRUCT">
       <offset>72</offset>
       <subtable external="LightData" />
     </column>
-    <column name="animation_entry_id" type="INT">
-      <offset>76</offset>
+    <column name="Animation_Entry_Id" type="INT">
+      <offset>80</offset>
     </column>
     <column name="}" type="END" />
   </table>

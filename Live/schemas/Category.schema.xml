@@ -14,34 +14,35 @@
       </flags>
     </column>
     <column name="DisplayName" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="hDisplayName" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hdisplayname" type="REFERENCE">
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>DisplayName</redundant_name>
       <dictionary_name>Message</dictionary_name>
     </column>
     <column name="Description" type="REFERENCE">
-      <offset>8</offset>
+      <offset>16</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="hDescriptionRef" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Hdescriptionref" type="REFERENCE">
+      <offset>16</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Description</redundant_name>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="SubCategoryNames" type="STRINGARRAY">
-      <offset>12</offset>
+    <column name="Subcategorynames" type="STRINGARRAY">
+      <offset>24</offset>
     </column>
-    <column name="ShowTicketsDefault" type="U8">
-      <offset>20</offset>
+    <column name="Showticketsdefault" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Hidden" type="IGNORE" />
     <column name="}" type="END" />

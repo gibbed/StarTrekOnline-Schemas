@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DynMeshTrail">
+  <elements type="int">
+    <element name="Off">0</element>
+    <element name="Oriented">1</element>
+    <element name="CamOriented">2</element>
+    <element name="Cylinder">3</element>
+  </elements>
+</enum>

@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="eBagID" type="INT">
+    <column name="Ebagid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <static_define_list external="InvBagIDs" />
     </column>
-    <column name="iSlot" type="INT">
+    <column name="Islot" type="INT">
       <offset>4</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="ulItemID" type="INT64">
+    <column name="Ulitemid" type="INT64">
       <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>

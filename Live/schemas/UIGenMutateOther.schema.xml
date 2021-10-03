@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hGen" type="REFERENCE">
+    <column name="Hgen" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
@@ -15,20 +15,16 @@
       </flags>
       <dictionary_name>UIGen</dictionary_name>
     </column>
-    <column name="EnterState" type="INTARRAY">
-      <offset>4</offset>
-      <static_define_list external="UIGenState" />
-    </column>
-    <column name="ExitState" type="INTARRAY">
+    <column name="Enterstate" type="INTARRAY">
       <offset>8</offset>
       <static_define_list external="UIGenState" />
     </column>
-    <column name="ToggleState" type="INTARRAY">
-      <offset>12</offset>
+    <column name="Exitstate" type="INTARRAY">
+      <offset>16</offset>
       <static_define_list external="UIGenState" />
     </column>
-    <column name="CopyParentState" type="INTARRAY">
-      <offset>16</offset>
+    <column name="Togglestate" type="INTARRAY">
+      <offset>24</offset>
       <static_define_list external="UIGenState" />
     </column>
     <column name="}" type="END" />

@@ -7,15 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="IsNonCombatant" type="U8">
+    <column name="Isnoncombatant" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="PetContactList" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Petcontactlist" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>PetContactList</dictionary_name>
     </column>
-    <column name="CombatRole" type="STRING">
-      <offset>8</offset>
+    <column name="Combatrole" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

@@ -10,11 +10,14 @@
     <column name="Offset" type="F32">
       <offset>0</offset>
     </column>
-    <column name="multipler" type="F32">
+    <column name="Multipler" type="F32">
       <offset>4</offset>
     </column>
-    <column name="vertex_light_colors" type="INTARRAY">
+    <column name="Vertex_Light_Colors" type="INTARRAY">
       <offset>8</offset>
+    </column>
+    <column name="Vertex_Count" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -9,5 +9,6 @@
     <element name="Team">5</element>
     <element name="Volume">6</element>
     <element name="Map">7</element>
+    <element name="HitScan">8</element>
   </elements>
 </enum>

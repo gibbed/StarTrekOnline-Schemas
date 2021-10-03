@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="param_name" type="STRING">
+    <column name="Param_Name" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="param_values" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Param_Values" type="STRINGARRAY">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

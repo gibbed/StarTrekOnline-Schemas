@@ -14,17 +14,20 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="qCompressedRot" type="F32FIXEDARRAY">
-      <offset>4</offset>
+    <column name="Qcompressedrot" type="F32FIXEDARRAY">
+      <offset>8</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Pos" type="F32FIXEDARRAY">
-      <offset>16</offset>
+      <offset>20</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Scale" type="F32FIXEDARRAY">
-      <offset>28</offset>
+      <offset>32</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

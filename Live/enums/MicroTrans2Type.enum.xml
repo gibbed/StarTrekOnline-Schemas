@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MicroTrans2Type">
+  <elements type="int">
+    <element name="MicroTrans">0</element>
+    <element name="Xbox">1</element>
+    <element name="Sony">2</element>
+    <element name="CodeDrivenGranted">3</element>
+    <element name="CodeDrivenPurchased">4</element>
+    <element name="Steam">5</element>
+    <element name="XboxServerOnly">6</element>
+    <element name="Epic">7</element>
+  </elements>
+</enum>

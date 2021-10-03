@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MissionJournalRowGroupType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="ObjectiveMap">1</element>
+    <element name="ObjectiveMap_Inverse">2</element>
+    <element name="ReturnMap">3</element>
+    <element name="ReturnMap_Inverse">4</element>
+  </elements>
+</enum>

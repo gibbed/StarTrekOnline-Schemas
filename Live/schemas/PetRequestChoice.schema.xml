@@ -15,7 +15,7 @@
       <dictionary_name>Allegiance</dictionary_name>
     </column>
     <column name="PetDef" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>GLOBAL_NAME</flag>
       </flags>

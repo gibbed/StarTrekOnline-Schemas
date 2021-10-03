@@ -7,26 +7,26 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="OwnerAccountID" type="INT">
+    <column name="Owneraccountid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="RecipientEntityID" type="INT">
+    <column name="Recipiententityid" type="INT">
       <offset>4</offset>
     </column>
     <column name="shardName" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="uLotIds" type="INTARRAY">
-      <offset>12</offset>
-    </column>
-    <column name="ReturnedSubject" type="STRING">
+    <column name="Ulotids" type="INTARRAY">
       <offset>16</offset>
     </column>
-    <column name="ReturnedBody" type="STRING">
-      <offset>20</offset>
-    </column>
-    <column name="ReturnedFrom" type="STRING">
+    <column name="Returnedsubject" type="STRING">
       <offset>24</offset>
+    </column>
+    <column name="Returnedbody" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Returnedfrom" type="STRING">
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

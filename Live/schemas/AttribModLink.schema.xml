@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiLinkedApplyID" type="INT">
+    <column name="Uilinkedapplyid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uiLinkedActIDServer" type="INT">
+    <column name="Uilinkedactidserver" type="INT">
       <offset>4</offset>
     </column>
-    <column name="uiLinkedDefIdx" type="INT">
+    <column name="Uilinkeddefidx" type="INT">
       <offset>8</offset>
     </column>
-    <column name="erTarget" type="INT">
+    <column name="Ertarget" type="INT">
       <offset>12</offset>
     </column>
     <column name="}" type="END" />

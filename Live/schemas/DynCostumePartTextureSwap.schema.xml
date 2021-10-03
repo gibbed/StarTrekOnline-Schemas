@@ -6,14 +6,14 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="OldTexture" type="STRING">
+    <column name="Oldtexture" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="NewTexture" type="STRING">
-      <offset>4</offset>
+    <column name="Newtexture" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

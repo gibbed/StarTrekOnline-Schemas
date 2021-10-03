@@ -7,24 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="i1" type="INT">
+    <column name="I1" type="INT">
       <offset>0</offset>
     </column>
-    <column name="i2" type="INT">
+    <column name="I2" type="INT">
       <offset>4</offset>
     </column>
-    <column name="b1" type="BIT">
+    <column name="B1" type="BIT">
       <offset>8</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="b2" type="BIT">
+    <column name="B2" type="BIT">
       <offset>8</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="i3" type="INT">
+    <column name="I3" type="INT">
       <offset>12</offset>
     </column>
-    <column name="b3" type="BIT">
+    <column name="B3" type="BIT">
       <offset>16</offset>
       <bit_offset>65536</bit_offset>
     </column>

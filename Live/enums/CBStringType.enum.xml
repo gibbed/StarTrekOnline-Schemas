@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CBStringType">
+  <elements type="int">
+    <element name="COMMENT">0</element>
+    <element name="SUBSTATE">1</element>
+    <element name="SUBSUBSTATE">2</element>
+    <element name="LEV3">3</element>
+    <element name="LEV4">4</element>
+    <element name="LEV5">5</element>
+    <element name="LEV6">6</element>
+    <element name="LEV7">7</element>
+  </elements>
+</enum>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="AdventureStepUI">
+  <table>
+    <column name="AdventureStepUI" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Missionlogicalname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Missiondisplayname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Contactlogicalname" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Contactdisplayname" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Blockedreasonmesg" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Adventurestepstate" type="INT">
+      <offset>40</offset>
+      <static_define_list external="AdventureStepState" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

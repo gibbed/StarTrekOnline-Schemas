@@ -7,35 +7,52 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="FieldName" type="STRING">
+    <column name="Fieldname" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>POOL_STRING</flag>
         <flag>KEY</flag>
       </flags>
     </column>
     <column name="Type" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="RedundantNames" type="STRINGARRAY">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="StructTypeName" type="STRING">
-      <offset>12</offset>
+    <column name="Bitdepth" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Redundantnames" type="STRINGARRAY">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="StaticDefineName" type="STRING">
-      <offset>16</offset>
+    <column name="Structtypename" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Staticdefinename" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Sourcecomment" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Designercomment" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Structparam" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Default" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="}" type="END" />

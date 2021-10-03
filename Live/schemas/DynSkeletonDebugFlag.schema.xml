@@ -9,12 +9,15 @@
     <column name="{" type="START" />
     <column name="Flag" type="STRING">
       <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
     <column name="UID" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="TimeSinceTriggered" type="F32">
       <offset>8</offset>
+    </column>
+    <column name="Timesincetriggered" type="F32">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

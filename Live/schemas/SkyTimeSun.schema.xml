@@ -9,58 +9,58 @@
     <column name="Time" type="F32">
       <offset>0</offset>
     </column>
-    <column name="LightRange" type="F32">
+    <column name="Lightrange" type="F32">
       <offset>4</offset>
     </column>
-    <column name="AmbientHSV" type="F32FIXEDARRAY">
+    <column name="Ambienthsv" type="F32FIXEDARRAY">
       <offset>8</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="AmbientHSVAlternate" type="F32FIXEDARRAY">
+    <column name="Ambienthsvalternate" type="F32FIXEDARRAY">
       <offset>20</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="SkyLightHSV" type="F32FIXEDARRAY">
+    <column name="Skylighthsv" type="F32FIXEDARRAY">
       <offset>32</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="GroundLightHSV" type="F32FIXEDARRAY">
+    <column name="Groundlighthsv" type="F32FIXEDARRAY">
       <offset>44</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="SideLightHSV" type="F32FIXEDARRAY">
+    <column name="Sidelighthsv" type="F32FIXEDARRAY">
       <offset>56</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="DiffuseHSV" type="F32FIXEDARRAY">
+    <column name="Diffusehsv" type="F32FIXEDARRAY">
       <offset>68</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="SpecularHSV" type="F32FIXEDARRAY">
+    <column name="Specularhsv" type="F32FIXEDARRAY">
       <offset>80</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="SecondaryDiffuseHSV" type="F32FIXEDARRAY">
+    <column name="Secondarydiffusehsv" type="F32FIXEDARRAY">
       <offset>92</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="ShadowColorHSV" type="F32FIXEDARRAY">
+    <column name="Shadowcolorhsv" type="F32FIXEDARRAY">
       <offset>104</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="ShadowMinValue" type="F32">
+    <column name="Shadowminvalue" type="F32">
       <offset>116</offset>
     </column>
-    <column name="BackgroundColorHSV" type="F32FIXEDARRAY">
+    <column name="Backgroundcolorhsv" type="F32FIXEDARRAY">
       <offset>120</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
@@ -68,7 +68,7 @@
     <column name="Disabled" type="INT">
       <offset>132</offset>
     </column>
-    <column name="bfParamsSpecified" type="INTFIXEDARRAY">
+    <column name="Bfparamsspecified" type="INTFIXEDARRAY">
       <offset>136</offset>
       <flags>
         <flag>USEDFIELD</flag>
@@ -76,8 +76,9 @@
       </flags>
       <num_elements>1</num_elements>
     </column>
-    <column name="MoonScales" type="IGNORE" />
-    <column name="MoonAlphas" type="IGNORE" />
-    <column name="EndSkySun" type="END" />
+    <column name="Moonscales" type="IGNORE" />
+    <column name="Moonalphas" type="IGNORE" />
+    <column name="Diffuseprobestrength" type="IGNORE" />
+    <column name="Endskysun" type="END" />
   </table>
 </parser>

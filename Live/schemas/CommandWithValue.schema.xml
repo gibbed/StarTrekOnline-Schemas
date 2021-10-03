@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CommandWithValue">
+  <table>
+    <column name="CommandWithValue" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Commandname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Value" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Sourcefile" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Comment" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Change" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+      <format_strings>
+        <format_string name="command">1</format_string>
+      </format_strings>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="processCount" type="INT">
+    <column name="Processcount" type="INT">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

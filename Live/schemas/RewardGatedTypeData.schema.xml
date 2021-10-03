@@ -7,27 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="eType" type="INT">
+    <column name="Etype" type="INT">
       <offset>0</offset>
       <flags>
+        <flag>SUBSCRIBE</flag>
         <flag>KEY</flag>
         <flag>PERSIST</flag>
-        <flag>SOMETIMES_TRANSACT</flag>
       </flags>
       <static_define_list external="RewardGatedType" />
     </column>
-    <column name="uTimeSet" type="INT">
+    <column name="Utimeset" type="INT">
       <offset>4</offset>
       <flags>
+        <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
-        <flag>SOMETIMES_TRANSACT</flag>
       </flags>
     </column>
-    <column name="uNumTimes" type="INT">
+    <column name="Unumtimes" type="INT">
       <offset>8</offset>
       <flags>
+        <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
-        <flag>SOMETIMES_TRANSACT</flag>
       </flags>
     </column>
     <column name="}" type="END" />

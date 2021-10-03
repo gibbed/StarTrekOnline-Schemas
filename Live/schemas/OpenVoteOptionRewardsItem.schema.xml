@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="OpenVoteOptionRewardsItem">
+  <table>
+    <column name="OpenVoteOptionRewardsItem" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hitemdef" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Count" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

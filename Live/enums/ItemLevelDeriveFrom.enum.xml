@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ItemLevelDeriveFrom">
+  <elements type="int">
+    <element name="RequiredXPTable">0</element>
+    <element name="SumOfMultipleLevels_IncludeLevel1">1</element>
+    <element name="SumOfMultipleLevels_IgnoreLevel1">2</element>
+  </elements>
+</enum>

@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hMsgName" type="REFERENCE">
+    <column name="Hmsgname" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="TimeCharge" type="F32">
-      <offset>4</offset>
-    </column>
-    <column name="uiTimestamp" type="INT">
+    <column name="Timecharge" type="F32">
       <offset>8</offset>
+    </column>
+    <column name="Uitimestamp" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

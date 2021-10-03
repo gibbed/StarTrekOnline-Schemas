@@ -7,85 +7,67 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TopLeftColor" type="INT">
+    <column name="Topleftcolor" type="INT">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
     </column>
     <column name="Color" type="INT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <redundant_name>TopLeftColor</redundant_name>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <redundant_name>Topleftcolor</redundant_name>
+      <static_define_list external="Color" />
     </column>
-    <column name="TopColor" type="INT">
+    <column name="Topcolor" type="INT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <redundant_name>TopLeftColor</redundant_name>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <redundant_name>Topleftcolor</redundant_name>
+      <static_define_list external="Color" />
     </column>
-    <column name="LeftColor" type="INT">
+    <column name="Leftcolor" type="INT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <redundant_name>TopLeftColor</redundant_name>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <redundant_name>Topleftcolor</redundant_name>
+      <static_define_list external="Color" />
     </column>
-    <column name="TopRightColor" type="INT">
+    <column name="Toprightcolor" type="INT">
       <offset>4</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
     </column>
-    <column name="RightColor" type="INT">
+    <column name="Rightcolor" type="INT">
       <offset>4</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>TopRightColor</redundant_name>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <redundant_name>Toprightcolor</redundant_name>
+      <static_define_list external="Color" />
     </column>
-    <column name="BottomRightColor" type="INT">
+    <column name="Bottomrightcolor" type="INT">
       <offset>8</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
     </column>
-    <column name="BottomLeftColor" type="INT">
+    <column name="Bottomleftcolor" type="INT">
       <offset>12</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
     </column>
-    <column name="BottomColor" type="INT">
+    <column name="Bottomcolor" type="INT">
       <offset>12</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>BottomLeftColor</redundant_name>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <redundant_name>Bottomleftcolor</redundant_name>
+      <static_define_list external="Color" />
     </column>
     <column name="}" type="END" />
   </table>

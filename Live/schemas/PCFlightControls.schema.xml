@@ -7,53 +7,55 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DisableBanking" type="U8">
+    <column name="Disablebanking" type="U8">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="bDisableBanking" type="U8">
+    <column name="Bdisablebanking" type="U8">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>DisableBanking</redundant_name>
+      <redundant_name>Disablebanking</redundant_name>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="BankRateFlying" type="F32">
+    <column name="Bankrateflying" type="F32">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="fBankRateFlying" type="F32">
+    <column name="Fbankrateflying" type="F32">
       <offset>4</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>BankRateFlying</redundant_name>
+      <redundant_name>Bankrateflying</redundant_name>
     </column>
-    <column name="BankMaxAngleFlying" type="F32">
+    <column name="Bankmaxangleflying" type="F32">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="fBankMaxAngleFlying" type="F32">
+    <column name="Fbankmaxangleflying" type="F32">
       <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>BankMaxAngleFlying</redundant_name>
+      <redundant_name>Bankmaxangleflying</redundant_name>
     </column>
     <column name="}" type="END" />
   </table>

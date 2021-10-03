@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ItemAssignmentForceCompleteMode">
+  <elements type="int">
+    <element name="Auto">0</element>
+    <element name="Disabled">1</element>
+    <element name="Numeric">2</element>
+  </elements>
+</enum>

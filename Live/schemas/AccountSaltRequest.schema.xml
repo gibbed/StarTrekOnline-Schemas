@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LoginField" type="FIXEDSTRING">
+    <column name="Loginfield" type="FIXEDSTRING">
       <offset>0</offset>
       <string_length>1024</string_length>
     </column>

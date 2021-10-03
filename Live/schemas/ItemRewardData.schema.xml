@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hBroadcastChatMessage" type="REFERENCE">
+    <column name="Rewarddatalist" type="STRUCT">
       <offset>0</offset>
-      <dictionary_name>Message</dictionary_name>
-    </column>
-    <column name="HideInUI" type="U8">
-      <offset>4</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="ItemRewardDataEntry" />
     </column>
     <column name="}" type="END" />
   </table>

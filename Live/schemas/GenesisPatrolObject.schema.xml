@@ -7,23 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="OwnerChallenge" type="OPTIONALSTRUCT">
+    <column name="Ownerchallenge" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="GenesisObject" />
     </column>
     <column name="Type" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="GenesisPatrolType" />
     </column>
-    <column name="PathStartIsChallengePos" type="U8">
-      <offset>8</offset>
-    </column>
-    <column name="PathStart" type="EMBEDDEDSTRUCT">
+    <column name="Pathstartischallengepos" type="U8">
       <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Pathstart" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
       <subtable external="GenesisPlacementParams" />
     </column>
-    <column name="PathEnd" type="EMBEDDEDSTRUCT">
-      <offset>120</offset>
+    <column name="Pathend" type="EMBEDDEDSTRUCT">
+      <offset>144</offset>
       <subtable external="GenesisPlacementParams" />
     </column>
     <column name="}" type="END" />

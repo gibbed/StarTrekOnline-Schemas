@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DieSize" type="INT">
+    <column name="Diesize" type="INT">
       <offset>0</offset>
     </column>
-    <column name="NumDice" type="INT">
+    <column name="Numdice" type="INT">
       <offset>4</offset>
       <default>1</default>
     </column>
-    <column name="AdditionalDamageExpr" type="OPTIONALSTRUCT">
+    <column name="Additionaldamageexpr" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <subtable external="Expression" />
     </column>

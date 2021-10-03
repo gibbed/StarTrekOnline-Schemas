@@ -7,26 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NumericAccessLevel" type="INT">
-      <offset>8</offset>
+    <column name="Numericaccesslevel" type="INT">
+      <offset>16</offset>
     </column>
     <column name="AccessLevel" type="INT">
-      <offset>12</offset>
+      <offset>20</offset>
       <static_define_list external="WIAccessLevel" />
     </column>
-    <column name="RawFileName" type="STRING">
-      <offset>16</offset>
+    <column name="Rawfilename" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Result" type="INT">
-      <offset>20</offset>
+      <offset>32</offset>
       <static_define_list external="WIResult" />
     </column>
-    <column name="DumpHDF" type="BIT">
-      <offset>24</offset>
+    <column name="Dumphdf" type="BIT">
+      <offset>36</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

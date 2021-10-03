@@ -5,5 +5,6 @@
     <element name="ACTIVE">1</element>
     <element name="INCONTROL">2</element>
     <element name="STATIC">3</element>
+    <element name="DRYDOCK">4</element>
   </elements>
 </enum>

@@ -15,872 +15,365 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="BorrowFrom" type="STRUCT">
-      <offset>4</offset>
+    <column name="Borrowfrom" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <subtable external="UIGenBorrowed" />
     </column>
-    <column name="FlatBorrowFrom" type="STRUCT">
-      <offset>8</offset>
+    <column name="Flatborrowfrom" type="STRUCT">
+      <offset>16</offset>
       <subtable external="UIGenBorrowed" />
     </column>
-    <column name="RequiresBorrow" type="STRUCT">
-      <offset>12</offset>
+    <column name="Requiresborrow" type="STRUCT">
+      <offset>24</offset>
       <subtable external="UIGenRequiredBorrow" />
     </column>
-    <column name="BorrowedInlineChildren" type="STRUCT">
-      <offset>16</offset>
+    <column name="Borrowedinlinechildren" type="STRUCT">
+      <offset>32</offset>
       <flags>
         <flag>STRUCT_NORECURSE</flag>
       </flags>
       <subtable external="UIGen" />
     </column>
     <column name="Type" type="INT">
-      <offset>20</offset>
+      <offset>40</offset>
       <static_define_list external="UIGenType" />
     </column>
     <column name="Base" type="OPTIONALPOLYMORPH">
-      <offset>24</offset>
-      <subtable>
-        <table>
-          <column name="UIGenChatLog" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenChatLog" />
-          </column>
-          <column name="UIGenCompass" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenCompass" />
-          </column>
-          <column name="UIGenEntity" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenEntity" />
-          </column>
-          <column name="UIGenList" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenList" />
-          </column>
-          <column name="UIGenListColumn" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListColumn" />
-          </column>
-          <column name="UIGenListRow" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListRow" />
-          </column>
-          <column name="UIGenMap" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenMap" />
-          </column>
-          <column name="UIGenObject" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenObject" />
-          </column>
-          <column name="UIGenPaperdoll" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenPaperdoll" />
-          </column>
-          <column name="UIGenWaypoint" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenWaypoint" />
-          </column>
-          <column name="UIGenBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenBox" />
-          </column>
-          <column name="UIGenButton" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenButton" />
-          </column>
-          <column name="UIGenCheckButton" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenCheckButton" />
-          </column>
-          <column name="UIGenColorChooser" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenColorChooser" />
-          </column>
-          <column name="UIGenLayoutBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenLayoutBox" />
-          </column>
-          <column name="UIGenMovableBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenMovableBox" />
-          </column>
-          <column name="UIGenSMF" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSMF" />
-          </column>
-          <column name="UIGenScrollView" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenScrollView" />
-          </column>
-          <column name="UIGenSlider" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSlider" />
-          </column>
-          <column name="UIGenSprite" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSprite" />
-          </column>
-          <column name="UIGenTabGroup" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTabGroup" />
-          </column>
-          <column name="UIGenText" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenText" />
-          </column>
-          <column name="UIGenTextArea" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextArea" />
-          </column>
-          <column name="UIGenTextEntry" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextEntry" />
-          </column>
-          <column name="UIGenWebView" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenWebView" />
-          </column>
-        </table>
-      </subtable>
+      <offset>48</offset>
+      <subtable external="_PolyTable_UIGenInternal" />
     </column>
-    <column name="CodeOverrideEarly" type="OPTIONALPOLYMORPH">
-      <offset>28</offset>
+    <column name="Codeoverrideearly" type="OPTIONALPOLYMORPH">
+      <offset>56</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>
-      <subtable>
-        <table>
-          <column name="UIGenChatLog" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenChatLog" />
-          </column>
-          <column name="UIGenCompass" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenCompass" />
-          </column>
-          <column name="UIGenEntity" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenEntity" />
-          </column>
-          <column name="UIGenList" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenList" />
-          </column>
-          <column name="UIGenListColumn" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListColumn" />
-          </column>
-          <column name="UIGenListRow" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListRow" />
-          </column>
-          <column name="UIGenMap" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenMap" />
-          </column>
-          <column name="UIGenObject" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenObject" />
-          </column>
-          <column name="UIGenPaperdoll" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenPaperdoll" />
-          </column>
-          <column name="UIGenWaypoint" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenWaypoint" />
-          </column>
-          <column name="UIGenBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenBox" />
-          </column>
-          <column name="UIGenButton" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenButton" />
-          </column>
-          <column name="UIGenCheckButton" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenCheckButton" />
-          </column>
-          <column name="UIGenColorChooser" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenColorChooser" />
-          </column>
-          <column name="UIGenLayoutBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenLayoutBox" />
-          </column>
-          <column name="UIGenMovableBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenMovableBox" />
-          </column>
-          <column name="UIGenSMF" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSMF" />
-          </column>
-          <column name="UIGenScrollView" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenScrollView" />
-          </column>
-          <column name="UIGenSlider" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSlider" />
-          </column>
-          <column name="UIGenSprite" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSprite" />
-          </column>
-          <column name="UIGenTabGroup" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTabGroup" />
-          </column>
-          <column name="UIGenText" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenText" />
-          </column>
-          <column name="UIGenTextArea" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextArea" />
-          </column>
-          <column name="UIGenTextEntry" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextEntry" />
-          </column>
-          <column name="UIGenWebView" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenWebView" />
-          </column>
-        </table>
-      </subtable>
+      <subtable external="_PolyTable_UIGenInternal" />
     </column>
-    <column name="StateDef" type="STRUCT">
-      <offset>32</offset>
+    <column name="Statedef" type="STRUCT">
+      <offset>64</offset>
       <subtable external="UIGenStateDef" />
     </column>
-    <column name="ComplexStateDef" type="STRUCT">
-      <offset>36</offset>
+    <column name="Complexstatedef" type="STRUCT">
+      <offset>72</offset>
       <subtable external="UIGenComplexStateDef" />
     </column>
-    <column name="uiComplexStates" type="INT">
-      <offset>40</offset>
+    <column name="Uicomplexstates" type="INT">
+      <offset>80</offset>
     </column>
     <column name="Last" type="OPTIONALPOLYMORPH">
-      <offset>44</offset>
-      <subtable>
-        <table>
-          <column name="UIGenChatLog" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenChatLog" />
-          </column>
-          <column name="UIGenCompass" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenCompass" />
-          </column>
-          <column name="UIGenEntity" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenEntity" />
-          </column>
-          <column name="UIGenList" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenList" />
-          </column>
-          <column name="UIGenListColumn" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListColumn" />
-          </column>
-          <column name="UIGenListRow" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListRow" />
-          </column>
-          <column name="UIGenMap" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenMap" />
-          </column>
-          <column name="UIGenObject" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenObject" />
-          </column>
-          <column name="UIGenPaperdoll" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenPaperdoll" />
-          </column>
-          <column name="UIGenWaypoint" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenWaypoint" />
-          </column>
-          <column name="UIGenBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenBox" />
-          </column>
-          <column name="UIGenButton" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenButton" />
-          </column>
-          <column name="UIGenCheckButton" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenCheckButton" />
-          </column>
-          <column name="UIGenColorChooser" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenColorChooser" />
-          </column>
-          <column name="UIGenLayoutBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenLayoutBox" />
-          </column>
-          <column name="UIGenMovableBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenMovableBox" />
-          </column>
-          <column name="UIGenSMF" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSMF" />
-          </column>
-          <column name="UIGenScrollView" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenScrollView" />
-          </column>
-          <column name="UIGenSlider" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSlider" />
-          </column>
-          <column name="UIGenSprite" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSprite" />
-          </column>
-          <column name="UIGenTabGroup" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTabGroup" />
-          </column>
-          <column name="UIGenText" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenText" />
-          </column>
-          <column name="UIGenTextArea" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextArea" />
-          </column>
-          <column name="UIGenTextEntry" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextEntry" />
-          </column>
-          <column name="UIGenWebView" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenWebView" />
-          </column>
-        </table>
-      </subtable>
+      <offset>88</offset>
+      <subtable external="_PolyTable_UIGenInternal" />
     </column>
     <column name="Timer" type="STRUCT">
-      <offset>48</offset>
+      <offset>96</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="UIGenTimer" />
     </column>
     <column name="Message" type="STRUCT">
-      <offset>52</offset>
+      <offset>104</offset>
       <subtable external="UIGenMessage" />
     </column>
-    <column name="TweenState" type="OPTIONALSTRUCT">
-      <offset>56</offset>
+    <column name="Handlemessage" type="STRUCT">
+      <offset>104</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Message</redundant_name>
+      <subtable external="UIGenMessage" />
+    </column>
+    <column name="Tweenstate" type="OPTIONALSTRUCT">
+      <offset>112</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>
       <subtable external="UIGenTweenState" />
     </column>
-    <column name="BoxTweenState" type="OPTIONALSTRUCT">
-      <offset>60</offset>
+    <column name="Boxtweenstate" type="OPTIONALSTRUCT">
+      <offset>120</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>
       <subtable external="UIGenTweenBoxState" />
     </column>
     <column name="Result" type="OPTIONALPOLYMORPH">
-      <offset>64</offset>
+      <offset>128</offset>
       <flags>
         <flag>NO_WRITE</flag>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
-      <subtable>
-        <table>
-          <column name="UIGenChatLog" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenChatLog" />
-          </column>
-          <column name="UIGenCompass" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenCompass" />
-          </column>
-          <column name="UIGenEntity" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenEntity" />
-          </column>
-          <column name="UIGenList" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenList" />
-          </column>
-          <column name="UIGenListColumn" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListColumn" />
-          </column>
-          <column name="UIGenListRow" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListRow" />
-          </column>
-          <column name="UIGenMap" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenMap" />
-          </column>
-          <column name="UIGenObject" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenObject" />
-          </column>
-          <column name="UIGenPaperdoll" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenPaperdoll" />
-          </column>
-          <column name="UIGenWaypoint" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenWaypoint" />
-          </column>
-          <column name="UIGenBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenBox" />
-          </column>
-          <column name="UIGenButton" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenButton" />
-          </column>
-          <column name="UIGenCheckButton" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenCheckButton" />
-          </column>
-          <column name="UIGenColorChooser" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenColorChooser" />
-          </column>
-          <column name="UIGenLayoutBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenLayoutBox" />
-          </column>
-          <column name="UIGenMovableBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenMovableBox" />
-          </column>
-          <column name="UIGenSMF" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSMF" />
-          </column>
-          <column name="UIGenScrollView" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenScrollView" />
-          </column>
-          <column name="UIGenSlider" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSlider" />
-          </column>
-          <column name="UIGenSprite" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSprite" />
-          </column>
-          <column name="UIGenTabGroup" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTabGroup" />
-          </column>
-          <column name="UIGenText" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenText" />
-          </column>
-          <column name="UIGenTextArea" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextArea" />
-          </column>
-          <column name="UIGenTextEntry" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextEntry" />
-          </column>
-          <column name="UIGenWebView" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenWebView" />
-          </column>
-        </table>
-      </subtable>
+      <subtable external="_PolyTable_UIGenInternal" />
     </column>
     <column name="Code" type="OPTIONALSTRUCT">
-      <offset>68</offset>
+      <offset>144</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>
       <subtable external="UIGenCodeInterface" />
     </column>
     <column name="State" type="OPTIONALPOLYMORPH">
-      <offset>72</offset>
+      <offset>152</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>
-      <subtable>
-        <table>
-          <column name="UIGenChatLogState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenChatLogState" />
-          </column>
-          <column name="UIGenCompassState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenCompassState" />
-          </column>
-          <column name="UIGenEntityState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenEntityState" />
-          </column>
-          <column name="UIGenListColumnState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListColumnState" />
-          </column>
-          <column name="UIGenListRowState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListRowState" />
-          </column>
-          <column name="UIGenListState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListState" />
-          </column>
-          <column name="UIGenMapState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenMapState" />
-          </column>
-          <column name="UIGenObjectState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenObjectState" />
-          </column>
-          <column name="UIGenPaperdollState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenPaperdollState" />
-          </column>
-          <column name="UIGenWaypointState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenWaypointState" />
-          </column>
-          <column name="UIGenButtonState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenButtonState" />
-          </column>
-          <column name="UIGenCheckButtonState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenCheckButtonState" />
-          </column>
-          <column name="UIGenColorChooserState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenColorChooserState" />
-          </column>
-          <column name="UIGenLayoutBoxState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenLayoutBoxState" />
-          </column>
-          <column name="UIGenMovableBoxState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenMovableBoxState" />
-          </column>
-          <column name="UIGenSMFState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSMFState" />
-          </column>
-          <column name="UIGenScrollViewState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenScrollViewState" />
-          </column>
-          <column name="UIGenSliderState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSliderState" />
-          </column>
-          <column name="UIGenSpriteState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSpriteState" />
-          </column>
-          <column name="UIGenTabGroupState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTabGroupState" />
-          </column>
-          <column name="UIGenTextAreaState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextAreaState" />
-          </column>
-          <column name="UIGenTextEntryState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextEntryState" />
-          </column>
-          <column name="UIGenTextState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextState" />
-          </column>
-          <column name="UIGenWebViewState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenWebViewState" />
-          </column>
-        </table>
-      </subtable>
+      <subtable external="_PolyTable_UIGenPerTypeState" />
     </column>
-    <column name="GenState" type="OPTIONALPOLYMORPH">
-      <offset>72</offset>
+    <column name="Genstate" type="OPTIONALPOLYMORPH">
+      <offset>152</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>NO_WRITE</flag>
       </flags>
       <redundant_name>State</redundant_name>
-      <subtable>
-        <table>
-          <column name="UIGenChatLogState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenChatLogState" />
-          </column>
-          <column name="UIGenCompassState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenCompassState" />
-          </column>
-          <column name="UIGenEntityState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenEntityState" />
-          </column>
-          <column name="UIGenListColumnState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListColumnState" />
-          </column>
-          <column name="UIGenListRowState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListRowState" />
-          </column>
-          <column name="UIGenListState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListState" />
-          </column>
-          <column name="UIGenMapState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenMapState" />
-          </column>
-          <column name="UIGenObjectState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenObjectState" />
-          </column>
-          <column name="UIGenPaperdollState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenPaperdollState" />
-          </column>
-          <column name="UIGenWaypointState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenWaypointState" />
-          </column>
-          <column name="UIGenButtonState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenButtonState" />
-          </column>
-          <column name="UIGenCheckButtonState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenCheckButtonState" />
-          </column>
-          <column name="UIGenColorChooserState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenColorChooserState" />
-          </column>
-          <column name="UIGenLayoutBoxState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenLayoutBoxState" />
-          </column>
-          <column name="UIGenMovableBoxState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenMovableBoxState" />
-          </column>
-          <column name="UIGenSMFState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSMFState" />
-          </column>
-          <column name="UIGenScrollViewState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenScrollViewState" />
-          </column>
-          <column name="UIGenSliderState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSliderState" />
-          </column>
-          <column name="UIGenSpriteState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSpriteState" />
-          </column>
-          <column name="UIGenTabGroupState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTabGroupState" />
-          </column>
-          <column name="UIGenTextAreaState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextAreaState" />
-          </column>
-          <column name="UIGenTextEntryState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextEntryState" />
-          </column>
-          <column name="UIGenTextState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextState" />
-          </column>
-          <column name="UIGenWebViewState" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenWebViewState" />
-          </column>
-        </table>
-      </subtable>
+      <subtable external="_PolyTable_UIGenPerTypeState" />
     </column>
-    <column name="bfStates" type="INTFIXEDARRAY">
-      <offset>76</offset>
-      <num_elements>7</num_elements>
+    <column name="Bfstatesshort" type="INTFIXEDARRAY">
+      <offset>160</offset>
+      <num_elements>6</num_elements>
+    </column>
+    <column name="Extendedstates" type="INT">
+      <offset>192</offset>
     </column>
     <column name="Transitions" type="STRUCT">
-      <offset>104</offset>
+      <offset>200</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="UIGenAction" />
     </column>
-    <column name="BeforeCreate" type="OPTIONALSTRUCT">
-      <offset>108</offset>
+    <column name="Beforecreate" type="OPTIONALSTRUCT">
+      <offset>208</offset>
       <subtable external="UIGenAction" />
     </column>
-    <column name="AfterCreate" type="OPTIONALSTRUCT">
-      <offset>112</offset>
+    <column name="Aftercreate" type="OPTIONALSTRUCT">
+      <offset>216</offset>
       <subtable external="UIGenAction" />
     </column>
-    <column name="PointerUpdate" type="OPTIONALSTRUCT">
-      <offset>116</offset>
+    <column name="Pointerupdate" type="OPTIONALSTRUCT">
+      <offset>224</offset>
       <subtable external="UIGenPointerUpdate" />
     </column>
-    <column name="BeforeUpdate" type="OPTIONALSTRUCT">
-      <offset>120</offset>
+    <column name="Copyparentstate" type="INTARRAY">
+      <offset>232</offset>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="Mirrorparentstate" type="INTARRAY">
+      <offset>232</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Copyparentstate</redundant_name>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="Mirrorotherstate" type="STRUCT">
+      <offset>240</offset>
+      <subtable external="UIGenMirrorStateFromOther" />
+    </column>
+    <column name="Beforeupdate" type="OPTIONALSTRUCT">
+      <offset>248</offset>
+      <subtable external="UIGenBeforeUpdate" />
+    </column>
+    <column name="Beforeresult" type="OPTIONALSTRUCT">
+      <offset>256</offset>
       <subtable external="UIGenAction" />
     </column>
-    <column name="BeforeResult" type="OPTIONALSTRUCT">
-      <offset>124</offset>
-      <subtable external="UIGenAction" />
-    </column>
-    <column name="BeforeHide" type="OPTIONALSTRUCT">
-      <offset>128</offset>
+    <column name="Beforehide" type="OPTIONALSTRUCT">
+      <offset>264</offset>
       <subtable external="UIGenAction" />
     </column>
     <column name="Parent" type="OPTIONALSTRUCT">
-      <offset>132</offset>
+      <offset>272</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="UIGen" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>136</offset>
+      <offset>280</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Var" type="STRUCT">
-      <offset>140</offset>
+      <offset>288</offset>
       <subtable external="UIGenVarTypeGlob" />
     </column>
     <column name="Vars" type="STRUCT">
-      <offset>140</offset>
+      <offset>288</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Var</redundant_name>
       <subtable external="UIGenVarTypeGlob" />
     </column>
-    <column name="CopyVar" type="STRUCT">
-      <offset>144</offset>
+    <column name="Copyvar" type="STRUCT">
+      <offset>296</offset>
       <subtable external="UIGenVarTypeGlob" />
     </column>
-    <column name="CopyVars" type="STRUCT">
-      <offset>144</offset>
+    <column name="Copyvars" type="STRUCT">
+      <offset>296</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>CopyVar</redundant_name>
+      <redundant_name>Copyvar</redundant_name>
       <subtable external="UIGenVarTypeGlob" />
     </column>
-    <column name="JailCell" type="STRING">
-      <offset>148</offset>
+    <column name="Jailcell" type="STRING">
+      <offset>304</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
     <column name="Window" type="STRING">
-      <offset>152</offset>
+      <offset>312</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="SpriteCache" type="OPTIONALSTRUCT">
-      <offset>156</offset>
+    <column name="Spritecache" type="OPTIONALSTRUCT">
+      <offset>320</offset>
       <subtable external="UIGenSpriteCache" />
     </column>
-    <column name="FinalScale" type="F32">
-      <offset>276</offset>
+    <column name="Focusgroup" type="OPTIONALSTRUCT">
+      <offset>328</offset>
+      <subtable external="UIGenFocusGroup" />
+    </column>
+    <column name="Testmodel" type="OPTIONALSTRUCT">
+      <offset>336</offset>
+      <subtable external="UIGenTestModel" />
+    </column>
+    <column name="Finalscale" type="F32">
+      <offset>440</offset>
       <default>1</default>
     </column>
-    <column name="FinalAlpha" type="U8">
-      <offset>280</offset>
+    <column name="Finalalpha" type="U8">
+      <offset>444</offset>
       <default>255</default>
     </column>
     <column name="Layer" type="U8">
-      <offset>281</offset>
+      <offset>445</offset>
     </column>
     <column name="Priority" type="U8">
-      <offset>282</offset>
+      <offset>446</offset>
     </column>
     <column name="Priority" type="U8">
-      <offset>282</offset>
+      <offset>446</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Priority</redundant_name>
     </column>
     <column name="Clone" type="U8">
-      <offset>283</offset>
+      <offset>447</offset>
     </column>
-    <column name="UseEstimatedSize" type="BIT">
-      <offset>284</offset>
-      <bit_offset>65536</bit_offset>
+    <column name="Shiftx" type="F32">
+      <offset>448</offset>
     </column>
-    <column name="NeedsRebuild" type="BIT">
-      <offset>284</offset>
-      <bit_offset>65537</bit_offset>
+    <column name="Shifty" type="F32">
+      <offset>452</offset>
     </column>
-    <column name="Popup" type="BIT">
-      <offset>284</offset>
-      <bit_offset>65538</bit_offset>
+    <column name="Marginleft" type="F32">
+      <offset>456</offset>
     </column>
-    <column name="TopLevelChildren" type="BIT">
-      <offset>284</offset>
+    <column name="Margintop" type="F32">
+      <offset>460</offset>
+    </column>
+    <column name="Marginright" type="F32">
+      <offset>464</offset>
+    </column>
+    <column name="Marginbottom" type="F32">
+      <offset>468</offset>
+    </column>
+    <column name="Hideanimation" type="OPTIONALPOLYMORPH">
+      <offset>504</offset>
+      <subtable external="_PolyTable_UIGenInternal" />
+    </column>
+    <column name="Updatewhenchanged" type="INT">
+      <offset>528</offset>
+      <static_define_list external="UIGenOptimizationFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Optimize" type="INT">
+      <offset>528</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Updatewhenchanged</redundant_name>
+      <static_define_list external="UIGenOptimizationFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Updateperiod" type="F32">
+      <offset>532</offset>
+    </column>
+    <column name="Shiftscreenbox" type="BIT">
+      <offset>557</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="NextFocusOnCreate" type="BIT">
-      <offset>284</offset>
+    <column name="Marginscreenbox" type="BIT">
+      <offset>557</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="IsRoot" type="BIT">
-      <offset>284</offset>
+    <column name="Needsrebuild" type="BIT">
+      <offset>557</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+      </flags>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="IsCutsceneRoot" type="BIT">
-      <offset>284</offset>
+    <column name="Popup" type="BIT">
+      <offset>557</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="NoHighlight" type="BIT">
-      <offset>284</offset>
+    <column name="Superpopup" type="BIT">
+      <offset>557</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="RecursionLocked" type="BIT">
-      <offset>284</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Drawaftertooltips" type="BIT">
+      <offset>558</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Toplevelchildren" type="BIT">
+      <offset>558</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Nextfocusoncreate" type="BIT">
+      <offset>558</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Isroot" type="BIT">
+      <offset>558</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Iscutsceneroot" type="BIT">
+      <offset>558</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Nohighlight" type="BIT">
+      <offset>558</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Recursionlocked" type="BIT">
+      <offset>558</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Instanceusagemode" type="BIT">
+      <offset>558</offset>
+      <bit_offset>131079</bit_offset>
+    </column>
+    <column name="Raiseonmousedown" type="BIT">
+      <offset>559</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
     </column>
     <column name="}" type="END" />
   </table>

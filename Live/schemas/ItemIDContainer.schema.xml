@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiID" type="INT64">
+    <column name="Uiid" type="INT64">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

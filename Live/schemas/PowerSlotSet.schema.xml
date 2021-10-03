@@ -7,13 +7,45 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="puiPowerIDs" type="INTARRAY">
+    <column name="Puipowerids" type="INTARRAY">
       <offset>0</offset>
       <flags>
+        <flag>PUPPET_NO_COPY</flag>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
-        <flag>SOMETIMES_TRANSACT</flag>
+        <flag>READONLY_TRANSACT</flag>
       </flags>
+    </column>
+    <column name="Puifilledslots" type="INTARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>READONLY_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Eapowerdefrefs" type="STRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>READONLY_TRANSACT</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="PowerDefRefNonTransacted" />
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>24</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
     </column>
     <column name="}" type="END" />
   </table>

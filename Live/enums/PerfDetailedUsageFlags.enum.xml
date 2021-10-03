@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PerfDetailedUsageFlags">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="ForNotSure">1</element>
+    <element name="ForUI">2</element>
+    <element name="ForFX">4</element>
+    <element name="ForEntity">8</element>
+    <element name="ForWorld">16</element>
+    <element name="ForTerrain">32</element>
+    <element name="ForUtil">64</element>
+    <element name="ForFonts">128</element>
+    <element name="ForPreviewInternal">256</element>
+  </elements>
+</enum>

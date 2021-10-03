@@ -15,26 +15,26 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>USEROPTIONBIT_1</flag>
       </flags>
     </column>
-    <column name="BackdropInfo" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Backdropinfo" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="GenesisMapDescBackdrop" />
     </column>
-    <column name="LayoutInfo" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Layoutinfo" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="GenesisExteriorLayoutInfo" />
     </column>
     <column name="Detail1" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+      <offset>32</offset>
       <subtable external="GenesisDetailKitLayout" />
     </column>
     <column name="Detail2" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+      <offset>40</offset>
       <subtable external="GenesisDetailKitLayout" />
     </column>
     <column name="}" type="END" />

@@ -4,7 +4,7 @@
     <element name="Success">0</element>
     <element name="NotOnMap">1</element>
     <element name="NotOnTeam">2</element>
-    <element name="TeamIsLocal">3</element>
+    <element name="TeamIsAutoteam">3</element>
     <element name="PlayerHostile">4</element>
   </elements>
 </enum>

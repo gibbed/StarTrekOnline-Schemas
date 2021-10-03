@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CharacterClassList" type="STRUCT">
+    <column name="Characterclasslist" type="STRUCT">
       <offset>0</offset>
       <subtable external="CharacterClassRef" />
     </column>

@@ -7,52 +7,78 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SpeciesName" type="STRING">
+    <column name="Speciesname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CurrentSpecies" type="STRING">
-      <offset>4</offset>
+    <column name="Currentspecies" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="TextureName" type="STRING">
-      <offset>20</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Creatable" type="U8">
-      <offset>24</offset>
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Selected" type="U8">
-      <offset>25</offset>
+      <offset>49</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SpeciesCount" type="INT">
-      <offset>28</offset>
+    <column name="Speciescount" type="INT">
+      <offset>52</offset>
     </column>
-    <column name="eapchRelatedSpecies" type="STRINGARRAY">
-      <offset>32</offset>
+    <column name="Eapchrelatedspecies" type="STRINGARRAY">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="uCostumeSeed" type="INT">
-      <offset>36</offset>
+    <column name="Ucostumeseed" type="INT">
+      <offset>64</offset>
     </column>
-    <column name="SpeciesDef" type="OPTIONALSTRUCT">
-      <offset>40</offset>
+    <column name="Speciesdef" type="OPTIONALSTRUCT">
+      <offset>72</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="SpeciesDef" />
+    </column>
+    <column name="IsVisible" type="U8">
+      <offset>80</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isaheader" type="U8">
+      <offset>81</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isnestedunderaheader" type="U8">
+      <offset>82</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isheaderexpanded" type="U8">
+      <offset>83</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Speciesnestedgroupuidef" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="SpeciesNestedGroupUIDef" />
     </column>
     <column name="}" type="END" />
   </table>

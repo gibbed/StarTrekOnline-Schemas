@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="display_text" type="STRING">
+    <column name="Display_Text" type="STRING">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

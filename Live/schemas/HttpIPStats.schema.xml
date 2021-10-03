@@ -10,10 +10,10 @@
     <column name="ip" type="INT">
       <offset>0</offset>
     </column>
-    <column name="TotalBytesSent" type="INT64">
+    <column name="Totalbytessent" type="INT64">
       <offset>8</offset>
     </column>
-    <column name="BytesLast15Secs" type="INT64">
+    <column name="Byteslast15secs" type="INT64">
       <offset>16</offset>
     </column>
     <column name="}" type="END" />

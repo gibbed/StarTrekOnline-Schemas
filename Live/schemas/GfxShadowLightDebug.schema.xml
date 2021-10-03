@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ShadowCasterObjs" type="INT">
+    <column name="Shadowcasterobjs" type="INT">
       <offset>0</offset>
     </column>
-    <column name="ShadowCasterTris" type="INT">
+    <column name="Shadowcastertris" type="INT">
       <offset>4</offset>
     </column>
-    <column name="ShadowmapQuality" type="F32">
+    <column name="Shadowmapquality" type="F32">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

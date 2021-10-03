@@ -7,17 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AllowedMagnitudeAttrib" type="INT">
+    <column name="Allowedmagnitudeattrib" type="INT">
       <offset>0</offset>
       <default>-2</default>
       <static_define_list external="AttribType" />
     </column>
-    <column name="AllowedDurationAttrib" type="INT">
+    <column name="Alloweddurationattrib" type="INT">
       <offset>4</offset>
       <default>-2</default>
       <static_define_list external="AttribType" />
     </column>
-    <column name="CombatMods" type="STRUCT">
+    <column name="Combatmods" type="STRUCT">
       <offset>8</offset>
       <subtable external="CombatMods" />
     </column>

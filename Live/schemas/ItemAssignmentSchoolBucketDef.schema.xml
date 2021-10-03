@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemAssignmentSchoolBucketDef">
+  <table>
+    <column name="ItemAssignmentSchoolBucketDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Includebucketassignments" type="STRINGARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Requirements" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="ItemAssignmentSchoolRequirements" />
+    </column>
+    <column name="Availabilitysettings" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="ItemAssignmentSchoolAvailabilitySettings" />
+    </column>
+    <column name="Outcomesettings" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="ItemAssignmentSchoolOutcomeSettings" />
+    </column>
+    <column name="Xpsettings" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="ItemAssignmentSchoolXPSettings" />
+    </column>
+    <column name="Rewardsettings" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="ItemAssignmentSchoolRewardSettings" />
+    </column>
+    <column name="Itemassignment" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="WeightedItemAssignmentDefRef" />
+    </column>
+    <column name="Hazard" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="WeightedItemAssignmentHazardRef" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

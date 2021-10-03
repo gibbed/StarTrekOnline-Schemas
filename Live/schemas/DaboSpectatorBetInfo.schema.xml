@@ -7,23 +7,23 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uEntID" type="INT">
+    <column name="Uentid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="BetAmount" type="INT">
+    <column name="Betamount" type="INT">
       <offset>4</offset>
     </column>
     <column name="Payout" type="INT">
       <offset>8</offset>
     </column>
     <column name="Numeric" type="STRING">
-      <offset>12</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="PayoutNumeric" type="STRING">
-      <offset>16</offset>
+    <column name="Payoutnumeric" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

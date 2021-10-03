@@ -2,5 +2,9 @@
 <enum name="GroupProjectTaskSlotType">
   <elements type="int">
     <element name="TaskSlotType_None">0</element>
+    <element name="Standard">1</element>
+    <element name="Featured">2</element>
+    <element name="Upgrade">3</element>
+    <element name="Recruit">4</element>
   </elements>
 </enum>

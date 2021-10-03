@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="model_idx" type="INT">
+    <column name="Model_Idx" type="INT">
       <offset>0</offset>
     </column>
-    <column name="lod_idx" type="U8">
+    <column name="Lod_Idx" type="U8">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

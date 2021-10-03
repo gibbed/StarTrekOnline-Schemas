@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CrashReporter_BackTraceResponseSummary">
+  <table>
+    <column name="CrashReporter_BackTraceResponseSummary" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Fingerprintlink" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML">1</format_string>
+        <format_string name="HTML_NO_HEADER">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Crashlink" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML">1</format_string>
+        <format_string name="HTML_NO_HEADER">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Fingerprintlink_Raw" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_SKIP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Crashlink_Raw" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_SKIP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Objectid" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Fingerprintid" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

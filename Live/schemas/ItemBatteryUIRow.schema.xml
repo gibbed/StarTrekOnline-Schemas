@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemBatteryUIRow">
+  <table>
+    <column name="ItemBatteryUIRow" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Item" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <subtable external="Item" />
+    </column>
+    <column name="UID" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Uallocatednumeric" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

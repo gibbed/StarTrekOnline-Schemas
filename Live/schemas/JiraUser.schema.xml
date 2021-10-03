@@ -7,23 +7,22 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="UserName" type="STRING">
+    <column name="Name" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>ESTRING</flag>
+        <flag>USEROPTIONBIT_1</flag>
+        <flag>KEY</flag>
       </flags>
     </column>
-    <column name="FullName" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
+    <column name="DisplayName" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Active" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="EmailAddress" type="STRING">
-      <offset>8</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

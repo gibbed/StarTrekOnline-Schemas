@@ -7,5 +7,6 @@
     <element name="Discard">3</element>
     <element name="KeepBest">4</element>
     <element name="RefreshDuration">5</element>
+    <element name="RefreshDuration_AddMagnitude">6</element>
   </elements>
 </enum>

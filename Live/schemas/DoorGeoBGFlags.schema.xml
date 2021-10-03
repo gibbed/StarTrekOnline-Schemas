@@ -7,9 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="isFirst" type="BIT">
+    <column name="Isfirst" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Usepyr" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Reverse" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

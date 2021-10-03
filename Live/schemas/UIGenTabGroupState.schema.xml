@@ -12,77 +12,84 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>15</default>
+      <default>16</default>
       <static_define_list external="UIGenType" />
     </column>
-    <column name="TabTemplate" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Tabtemplate" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
         <flag>STRUCT_NORECURSE</flag>
       </flags>
       <subtable external="UIGen" />
     </column>
     <column name="Tabs" type="STRUCT">
-      <offset>8</offset>
-      <flags>
-        <flag>UNKNOWN_32</flag>
-        <flag>STRUCT_NORECURSE</flag>
-        <flag>NO_INDEX</flag>
-      </flags>
-      <subtable external="UIGen" />
-    </column>
-    <column name="OwnedTabs" type="STRUCT">
-      <offset>12</offset>
-      <flags>
-        <flag>STRUCT_NORECURSE</flag>
-        <flag>NO_INDEX</flag>
-      </flags>
-      <subtable external="UIGen" />
-    </column>
-    <column name="TemplateGens" type="STRUCT">
       <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+        <flag>STRUCT_NORECURSE</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="UIGen" />
+    </column>
+    <column name="Ownedtabs" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>STRUCT_NORECURSE</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="UIGen" />
+    </column>
+    <column name="Templategens" type="STRUCT">
+      <offset>32</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="UIGenChild" />
     </column>
-    <column name="ScrollTabLeft" type="STRING">
-      <offset>20</offset>
+    <column name="Scrolltableft" type="STRING">
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ScrollTabRight" type="STRING">
-      <offset>24</offset>
+    <column name="Scrolltabright" type="STRING">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="SelectedTab" type="INT">
-      <offset>28</offset>
+    <column name="Selectedtab" type="INT">
+      <offset>64</offset>
     </column>
-    <column name="ScrollPosition" type="F32">
-      <offset>32</offset>
+    <column name="Managedfocusindex" type="INT">
+      <offset>68</offset>
+      <default>-1</default>
     </column>
-    <column name="LastTabScrollTime" type="INT">
-      <offset>36</offset>
+    <column name="Scrollposition" type="F32">
+      <offset>72</offset>
     </column>
-    <column name="LastScrollState" type="INT">
-      <offset>40</offset>
+    <column name="Lasttabscrolltime" type="INT64">
+      <offset>80</offset>
+    </column>
+    <column name="Lastscrollstate" type="INT">
+      <offset>88</offset>
       <static_define_list external="UIGenState" />
     </column>
-    <column name="ForceShowSelectedTab" type="BIT">
-      <offset>44</offset>
+    <column name="Forceshowselectedtab" type="BIT">
+      <offset>92</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ScrollButtonsVisible" type="BIT">
-      <offset>44</offset>
+    <column name="Scrollbuttonsvisible" type="BIT">
+      <offset>92</offset>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ScrollButtonClickedLastFrame" type="BIT">
-      <offset>44</offset>
+    <column name="Scrollbuttonclickedlastframe" type="BIT">
+      <offset>92</offset>
       <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

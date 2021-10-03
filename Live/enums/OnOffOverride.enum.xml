@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="OnOffOverride">
+  <elements type="int">
+    <element name="Default">0</element>
+    <element name="On">1</element>
+    <element name="Off">2</element>
+  </elements>
+</enum>

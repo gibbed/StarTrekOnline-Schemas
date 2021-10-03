@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PortIPPairs" type="STRUCT">
+    <column name="Portippairs" type="STRUCT">
       <offset>0</offset>
       <subtable external="PortIPPair" />
     </column>

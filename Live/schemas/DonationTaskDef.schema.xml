@@ -16,98 +16,223 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Scope" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
-      <subtable external="DisplayMessage" />
-    </column>
-    <column name="descriptionMsg" type="EMBEDDEDSTRUCT">
-      <offset>24</offset>
-      <subtable external="DisplayMessage" />
-    </column>
-    <column name="Repeatable" type="BOOLFLAG">
-      <offset>36</offset>
-    </column>
-    <column name="Cancelable" type="BOOLFLAG">
-      <offset>37</offset>
-    </column>
-    <column name="taskAvailableExpr" type="OPTIONALSTRUCT">
-      <offset>40</offset>
-      <subtable external="Expression" />
-    </column>
-    <column name="taskAvailableExpr" type="OPTIONALSTRUCT">
-      <offset>40</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>taskAvailableExpr</redundant_name>
-      <subtable external="Expression_StructParam" />
-    </column>
-    <column name="Bucket" type="STRUCT">
-      <offset>44</offset>
-      <subtable external="GroupProjectDonationRequirement" />
-    </column>
-    <column name="TaskStartReward" type="STRUCT">
-      <offset>48</offset>
-      <subtable external="DonationTaskReward" />
-    </column>
-    <column name="TaskReward" type="STRUCT">
-      <offset>52</offset>
-      <subtable external="DonationTaskReward" />
-    </column>
-    <column name="secondsToComplete" type="INT">
-      <offset>56</offset>
-    </column>
-    <column name="SlotType" type="INT">
-      <offset>60</offset>
-      <static_define_list external="GroupProjectTaskSlotType" />
-    </column>
-    <column name="tooltipMsg" type="EMBEDDEDSTRUCT">
-      <offset>64</offset>
-      <subtable external="DisplayMessage" />
-    </column>
-    <column name="Icon" type="STRING">
-      <offset>76</offset>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="taskAvailableForNewProject" type="BOOLFLAG">
-      <offset>80</offset>
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="DisplayMessage" />
     </column>
-    <column name="activityEventRequirement" type="STRING">
-      <offset>84</offset>
+    <column name="Descriptionmsg" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Repeatable" type="BOOLFLAG">
+      <offset>72</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Cancelable" type="BOOLFLAG">
+      <offset>73</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Nocost" type="BOOLFLAG">
+      <offset>74</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Taskavailableexpr" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Taskavailableexpr" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Taskavailableexpr</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Taskavailableunlock" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="GroupProjectUnlockDefRef" />
+    </column>
+    <column name="Bucket" type="STRUCT">
+      <offset>96</offset>
+      <subtable external="GroupProjectDonationRequirement" />
+    </column>
+    <column name="Taskstartreward" type="STRUCT">
+      <offset>104</offset>
+      <subtable external="DonationTaskReward" />
+    </column>
+    <column name="Taskreward" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="DonationTaskReward" />
+    </column>
+    <column name="Secondstocomplete" type="INT">
+      <offset>120</offset>
+    </column>
+    <column name="Slottype" type="INT">
+      <offset>124</offset>
+      <static_define_list external="GroupProjectTaskSlotType" />
+    </column>
+    <column name="Tooltipmsg" type="EMBEDDEDSTRUCT">
+      <offset>128</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>152</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Taskavailablefornewproject" type="BOOLFLAG">
+      <offset>160</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Donationtaskavailability" type="INT">
+      <offset>164</offset>
+      <static_define_list external="DonationTaskAvailability" />
+    </column>
+    <column name="Activityeventrequirement" type="STRING">
+      <offset>168</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Forcehidewithouteventactive" type="STRING">
+      <offset>176</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Category" type="INT">
-      <offset>88</offset>
+      <offset>184</offset>
       <static_define_list external="DonationTaskCategoryType" />
     </column>
-    <column name="UISortOrder" type="INT">
-      <offset>92</offset>
+    <column name="Uisortorder" type="INT">
+      <offset>188</offset>
     </column>
-    <column name="UIMaxRepeatCount" type="INT">
-      <offset>96</offset>
+    <column name="Uiprogressnumeric" type="REFERENCE">
+      <offset>192</offset>
+      <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="finalizationRewardTable" type="REFERENCE">
-      <offset>100</offset>
+    <column name="Uiprogressnumericmax" type="INT">
+      <offset>200</offset>
+    </column>
+    <column name="Uiprogressplayerstatdef" type="REFERENCE">
+      <offset>208</offset>
+      <dictionary_name>PlayerStatDef</dictionary_name>
+    </column>
+    <column name="Uiprogresspowertreedef" type="STRINGARRAY">
+      <offset>216</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Uiaccountrewarditemdef" type="REFERENCE">
+      <offset>224</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Uimaxrepeatcount" type="INT">
+      <offset>232</offset>
+    </column>
+    <column name="Finalizationrewardtable" type="REFERENCE">
+      <offset>240</offset>
       <dictionary_name>RewardTable</dictionary_name>
     </column>
-    <column name="completionRewardTable" type="REFERENCE">
-      <offset>104</offset>
+    <column name="Completionrewardtable" type="REFERENCE">
+      <offset>248</offset>
       <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Finalizationgadkey" type="STRING">
+      <offset>256</offset>
+    </column>
+    <column name="Finalizationgadvalue" type="STRING">
+      <offset>264</offset>
+    </column>
+    <column name="Taskautorewardsoncompletion" type="BOOLFLAG">
+      <offset>272</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Taskgrantsautobuypowertrees" type="BOOLFLAG">
+      <offset>273</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Taskdiscountexpr" type="OPTIONALSTRUCT">
+      <offset>280</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Taskdiscountexpr" type="OPTIONALSTRUCT">
+      <offset>280</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Taskdiscountexpr</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Taskdiscountpercent" type="F32">
+      <offset>288</offset>
+    </column>
+    <column name="Cooldownminutes" type="INT">
+      <offset>292</offset>
+    </column>
+    <column name="Timespercooldown" type="INT">
+      <offset>296</offset>
+    </column>
+    <column name="Tasksharedcooldowncategory" type="STRING">
+      <offset>304</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Completionrewardscalingon" type="BIT">
+      <offset>312</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Isshardtask" type="BIT">
+      <offset>312</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Completionrewardscale" type="F32">
+      <offset>316</offset>
+    </column>
+    <column name="Finalizeshardvariable" type="STRING">
+      <offset>320</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Finalizeshardproject" type="STRING">
+      <offset>328</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Finalizesharddonationtask" type="STRING">
+      <offset>336</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Finalizesharddonationamount" type="INT">
+      <offset>344</offset>
+    </column>
+    <column name="Garrisontask" type="U8">
+      <offset>348</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mt2buyoutdefname" type="STRING">
+      <offset>352</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

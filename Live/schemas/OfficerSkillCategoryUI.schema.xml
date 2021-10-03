@@ -15,23 +15,28 @@
       <static_define_list external="PTNodeUICategory" />
     </column>
     <column name="DisplayName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="NodeList" type="STRUCT">
       <offset>8</offset>
+    </column>
+    <column name="Nodelist" type="STRUCT">
+      <offset>16</offset>
       <subtable external="PowerListNode" />
     </column>
-    <column name="ListSize" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="RowCount" type="INT">
-      <offset>16</offset>
-    </column>
-    <column name="ColumnCount" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="AnyAvailable" type="U8">
+    <column name="Listsize" type="INT">
       <offset>24</offset>
+    </column>
+    <column name="Rowcount" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Columncount" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Anyavailable" type="U8">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Firstincategory" type="U8">
+      <offset>37</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

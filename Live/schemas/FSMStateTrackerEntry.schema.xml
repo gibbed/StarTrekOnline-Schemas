@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="totalTimeRun" type="INT64">
+    <column name="Totaltimerun" type="INT64">
       <offset>0</offset>
     </column>
-    <column name="lastEntryTime" type="INT64">
+    <column name="Lastentrytime" type="INT64">
       <offset>8</offset>
     </column>
-    <column name="lastRunTime" type="INT64">
+    <column name="Lastruntime" type="INT64">
       <offset>16</offset>
     </column>
     <column name="SubFSMOverride" type="REFERENCE">
@@ -21,7 +21,7 @@
       <dictionary_name>FSM</dictionary_name>
     </column>
     <column name="StatePath" type="STRING">
-      <offset>36</offset>
+      <offset>48</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hCostume" type="REFERENCE">
+    <column name="Hcostume" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>WLCostume</dictionary_name>
     </column>
-    <column name="refCount" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="uChangedTime" type="INT">
+    <column name="Refcount" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Uchangedtime" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

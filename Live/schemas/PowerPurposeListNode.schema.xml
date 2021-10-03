@@ -7,18 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PurposeName" type="STRING">
+    <column name="Purposename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="PowerList" type="STRUCT">
-      <offset>4</offset>
+    <column name="Powerlist" type="STRUCT">
+      <offset>8</offset>
       <subtable external="PowerListNode" />
     </column>
-    <column name="ListSize" type="INT">
-      <offset>8</offset>
+    <column name="Listsize" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

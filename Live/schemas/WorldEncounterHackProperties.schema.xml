@@ -13,11 +13,11 @@
       </flags>
       <dictionary_name>EncounterDef</dictionary_name>
     </column>
-    <column name="PhysicalSize" type="F32">
-      <offset>4</offset>
-    </column>
-    <column name="AgroSize" type="F32">
+    <column name="Physicalsize" type="F32">
       <offset>8</offset>
+    </column>
+    <column name="Agrosize" type="F32">
+      <offset>12</offset>
     </column>
     <column name="End" type="END" />
   </table>

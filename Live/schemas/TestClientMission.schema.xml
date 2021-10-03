@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="IndexName" type="STRING">
+    <column name="Indexname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
@@ -15,37 +15,42 @@
       </flags>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="IsChild" type="U8">
-      <offset>8</offset>
+    <column name="Ischild" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InProgress" type="U8">
-      <offset>9</offset>
+    <column name="Inprogress" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Completed" type="U8">
-      <offset>10</offset>
+      <offset>18</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Succeeded" type="U8">
-      <offset>11</offset>
+      <offset>19</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="NeedsReturn" type="U8">
-      <offset>12</offset>
+    <column name="Needsreturn" type="U8">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Level" type="INT">
-      <offset>16</offset>
+      <offset>24</offset>
     </column>
     <column name="Parent" type="STRING">
-      <offset>20</offset>
+      <offset>32</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Children" type="STRINGARRAY">
-      <offset>24</offset>
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

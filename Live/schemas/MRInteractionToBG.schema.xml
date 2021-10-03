@@ -11,8 +11,12 @@
       <offset>0</offset>
       <subtable external="MRInteractionPath" />
     </column>
-    <column name="pathVersion" type="INT">
-      <offset>4</offset>
+    <column name="Pathversion" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Flags" type="EMBEDDEDSTRUCT">
+      <offset>12</offset>
+      <subtable external="MRInteractionToBGFlags" />
     </column>
     <column name="}" type="END" />
   </table>

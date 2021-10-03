@@ -13,35 +13,36 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="interiorName" type="STRING">
-      <offset>4</offset>
+    <column name="Interiorname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="hInterior" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Hinterior" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>InteriorDef</dictionary_name>
     </column>
-    <column name="unlocked" type="U8">
-      <offset>12</offset>
+    <column name="Unlocked" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MicroTransactionID" type="INT">
-      <offset>16</offset>
+    <column name="Microtransactionid" type="INT">
+      <offset>28</offset>
     </column>
     <column name="Product" type="OPTIONALSTRUCT">
-      <offset>20</offset>
-      <subtable external="MicroTransactionUIProduct" />
-    </column>
-    <column name="FullProductList" type="STRUCT">
-      <offset>24</offset>
-      <subtable external="MicroTransactionUIProduct" />
-    </column>
-    <column name="MinimumProductPrice" type="INT64">
       <offset>32</offset>
+      <subtable external="MicroTransactionUIProduct" />
     </column>
-    <column name="MaximumProductPrice" type="INT64">
+    <column name="Fullproductlist" type="STRUCT">
       <offset>40</offset>
+      <subtable external="MicroTransactionUIProduct" />
+    </column>
+    <column name="Minimumproductprice" type="INT64">
+      <offset>48</offset>
+    </column>
+    <column name="Maximumproductprice" type="INT64">
+      <offset>56</offset>
     </column>
     <column name="}" type="END" />
   </table>

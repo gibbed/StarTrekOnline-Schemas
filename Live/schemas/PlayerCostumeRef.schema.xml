@@ -16,10 +16,10 @@
       </flags>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="hCostume" type="REFERENCE">
+    <column name="Hcostume" type="REFERENCE">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_AND_TEAM_ONLY</flag>
         <flag>PERSIST</flag>

@@ -11,55 +11,61 @@
       <offset>0</offset>
     </column>
     <column name="RequestID" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="ContainerType" type="INT">
       <offset>8</offset>
     </column>
-    <column name="ContainerID" type="INT">
+    <column name="ContainerType" type="INT">
       <offset>12</offset>
     </column>
-    <column name="CostumeString" type="STRING">
+    <column name="ContainerID" type="INT">
       <offset>16</offset>
     </column>
+    <column name="Costumestring" type="STRING">
+      <offset>24</offset>
+    </column>
     <column name="Size" type="F32FIXEDARRAY">
-      <offset>20</offset>
+      <offset>32</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Style" type="STRING">
-      <offset>32</offset>
-    </column>
-    <column name="Flags" type="INT">
-      <offset>36</offset>
-    </column>
-    <column name="BGTextureName" type="STRING">
-      <offset>40</offset>
-    </column>
-    <column name="PoseString" type="STRING">
-      <offset>44</offset>
-    </column>
-    <column name="animDelta" type="F32">
       <offset>48</offset>
     </column>
-    <column name="Frame" type="STRING">
-      <offset>52</offset>
-    </column>
-    <column name="camPos" type="F32FIXEDARRAY">
+    <column name="Flags" type="INT">
       <offset>56</offset>
-      <num_elements>3</num_elements>
     </column>
-    <column name="camDir" type="F32FIXEDARRAY">
-      <offset>68</offset>
-      <num_elements>3</num_elements>
+    <column name="Bgtexturename" type="STRING">
+      <offset>64</offset>
     </column>
-    <column name="ForceBodyshot" type="U8">
+    <column name="Posestring" type="STRING">
+      <offset>72</offset>
+    </column>
+    <column name="Animdelta" type="F32">
       <offset>80</offset>
     </column>
-    <column name="Transparent" type="U8">
-      <offset>81</offset>
+    <column name="Frame" type="STRING">
+      <offset>88</offset>
     </column>
-    <column name="CostumeV0" type="U8">
-      <offset>82</offset>
+    <column name="Campos" type="F32FIXEDARRAY">
+      <offset>96</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Camdir" type="F32FIXEDARRAY">
+      <offset>108</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Forcebodyshot" type="U8">
+      <offset>120</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Transparent" type="U8">
+      <offset>121</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Costumev0" type="U8">
+      <offset>122</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

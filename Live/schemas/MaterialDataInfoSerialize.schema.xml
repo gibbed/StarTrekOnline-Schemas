@@ -7,23 +7,23 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="material_name" type="STRING">
+    <column name="Material_Name" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="data_offset" type="INT">
-      <offset>4</offset>
+    <column name="Data_Offset" type="INT">
+      <offset>8</offset>
     </column>
     <column name="FileName" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="texture_deps" type="STRINGARRAY">
-      <offset>12</offset>
+    <column name="Texture_Deps" type="STRINGARRAY">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

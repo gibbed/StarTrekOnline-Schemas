@@ -14,58 +14,76 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
+    <column name="DisplayName" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="DisplayMessage" />
+    </column>
     <column name="Hint" type="STRING">
-      <offset>4</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Hint2" type="STRING">
-      <offset>8</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Icon" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="LargeIcon" type="STRING">
-      <offset>16</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="SortOrder" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="GemSlotPowerPortion" type="F32">
-      <offset>24</offset>
-    </column>
-    <column name="StanceWords" type="STRING">
-      <offset>28</offset>
-    </column>
-    <column name="PrimaryAddedBone" type="STRUCT">
-      <offset>32</offset>
-      <subtable external="ItemCategoryAdditionalCostumeBone" />
-    </column>
-    <column name="SecondaryAddedBone" type="STRUCT">
-      <offset>36</offset>
-      <subtable external="ItemCategoryAdditionalCostumeBone" />
-    </column>
-    <column name="CostumeFXScale" type="F32">
-      <offset>40</offset>
-    </column>
-    <column name="OverrideBaseCostumeFXAtBone" type="STRING">
-      <offset>44</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="OverrideCostumeFXAtBone" type="STRING">
       <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Largeicon" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Uiclass" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Sortorder" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Expecteditemcount" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Gemslotpowerportion" type="F32">
+      <offset>80</offset>
+    </column>
+    <column name="Itemsetsignorecategory" type="U8">
+      <offset>84</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Stancewords" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Primaryaddedbone" type="STRUCT">
+      <offset>96</offset>
+      <subtable external="ItemCategoryAdditionalCostumeBone" />
+    </column>
+    <column name="Secondaryaddedbone" type="STRUCT">
+      <offset>104</offset>
+      <subtable external="ItemCategoryAdditionalCostumeBone" />
+    </column>
+    <column name="Gemslotaddedbone" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="ItemCategoryAdditionalCostumeBone" />
+    </column>
+    <column name="Costumefxscale" type="F32">
+      <offset>120</offset>
+    </column>
+    <column name="Overridebasecostumefxatbone" type="STRING">
+      <offset>128</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Overridecostumefxatbone" type="STRING">
+      <offset>136</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

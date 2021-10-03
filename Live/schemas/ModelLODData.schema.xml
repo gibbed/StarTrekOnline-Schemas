@@ -7,29 +7,29 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="data_size" type="INT">
+    <column name="Data_Size" type="INT">
       <offset>0</offset>
     </column>
-    <column name="vert_count" type="INT">
+    <column name="Vert_Count" type="INT">
       <offset>4</offset>
     </column>
-    <column name="tri_count" type="INT">
+    <column name="Tri_Count" type="INT">
       <offset>8</offset>
     </column>
-    <column name="tex_count" type="INT">
+    <column name="Material_Count" type="INT">
       <offset>12</offset>
     </column>
-    <column name="texel_density_avg" type="F32">
+    <column name="Texel_Density_Avg" type="F32">
       <offset>16</offset>
     </column>
-    <column name="texel_density_stddev" type="F32">
+    <column name="Texel_Density_Stddev" type="F32">
       <offset>20</offset>
     </column>
-    <column name="process_time_flags" type="INT">
+    <column name="Process_Time_Flags" type="INT">
       <offset>24</offset>
     </column>
     <column name="Pack" type="EMBEDDEDSTRUCT">
-      <offset>32</offset>
+      <offset>40</offset>
       <subtable external="ModelPackData" />
     </column>
     <column name="}" type="END" />

@@ -13,33 +13,33 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ModifyChance" type="F32">
-      <offset>4</offset>
-    </column>
-    <column name="OverrideChance" type="F32">
+    <column name="Modifychance" type="F32">
       <offset>8</offset>
     </column>
-    <column name="ModifyRequired" type="INT">
+    <column name="Overridechance" type="F32">
       <offset>12</offset>
     </column>
-    <column name="OverrideRequired" type="INT">
+    <column name="Modifyrequired" type="INT">
       <offset>16</offset>
     </column>
-    <column name="UpgradeToRank" type="INT">
+    <column name="Overriderequired" type="INT">
       <offset>20</offset>
     </column>
-    <column name="NoLossOnFailure" type="BIT">
+    <column name="Upgradetorank" type="INT">
       <offset>24</offset>
+    </column>
+    <column name="Nolossonfailure" type="BIT">
+      <offset>28</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="TierMin" type="INT">
-      <offset>28</offset>
-    </column>
-    <column name="TierMax" type="INT">
+    <column name="Tiermin" type="INT">
       <offset>32</offset>
     </column>
-    <column name="OnlyConsumeModifierOnFail" type="BIT">
+    <column name="Tiermax" type="INT">
       <offset>36</offset>
+    </column>
+    <column name="Onlyconsumemodifieronfail" type="BIT">
+      <offset>40</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

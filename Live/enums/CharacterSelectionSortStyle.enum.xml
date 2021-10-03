@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CharacterSelectionSortStyle">
+  <elements type="int">
+    <element name="UNSORTED">0</element>
+    <element name="CUSTOM">1</element>
+    <element name="CREATION_DATETIME">2</element>
+    <element name="LAST_PLAYED">3</element>
+    <element name="LEVEL">4</element>
+    <element name="NAME">5</element>
+    <element name="CLASS">6</element>
+    <element name="MAX">7</element>
+  </elements>
+</enum>

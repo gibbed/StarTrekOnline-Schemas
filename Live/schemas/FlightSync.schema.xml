@@ -19,45 +19,49 @@
     <column name="TurnRate" type="F32">
       <offset>12</offset>
     </column>
-    <column name="bankRate" type="F32">
+    <column name="Bankrate" type="F32">
       <offset>16</offset>
     </column>
-    <column name="maxBankAngle" type="F32">
+    <column name="Maxbankangle" type="F32">
       <offset>20</offset>
     </column>
-    <column name="maxPitchAngle" type="F32">
+    <column name="Maxpitchangle" type="F32">
       <offset>24</offset>
     </column>
-    <column name="throttle" type="F32">
+    <column name="Throttle" type="F32">
       <offset>28</offset>
     </column>
-    <column name="gravityUp" type="F32">
+    <column name="Gravityup" type="F32">
       <offset>32</offset>
     </column>
-    <column name="gravityDown" type="F32">
+    <column name="Gravitydown" type="F32">
       <offset>36</offset>
     </column>
-    <column name="glideDown" type="F32">
+    <column name="Glidedown" type="F32">
       <offset>40</offset>
     </column>
-    <column name="rotPDIgnorePitch" type="BIT">
+    <column name="Rotpdignorepitch" type="BIT">
       <offset>44</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="rotAllIgnorePitch" type="BIT">
+    <column name="Rotallignorepitch" type="BIT">
       <offset>44</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="playJumpBit" type="BIT">
+    <column name="Playjumpbit" type="BIT">
       <offset>44</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="avoids" type="STRUCT">
+    <column name="Roll" type="EMBEDDEDSTRUCT">
       <offset>48</offset>
+      <subtable external="FlightRequesterRollDef" />
+    </column>
+    <column name="Avoids" type="STRUCT">
+      <offset>136</offset>
       <subtable external="FlightAvoid" />
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">
-      <offset>52</offset>
+      <offset>144</offset>
       <subtable external="FlightSyncFlags" />
     </column>
     <column name="}" type="END" />

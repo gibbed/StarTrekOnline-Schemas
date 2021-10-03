@@ -11,16 +11,18 @@
       <offset>0</offset>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="IsMission" type="U8">
-      <offset>8</offset>
+    <column name="Ismission" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsMissionComplete" type="U8">
-      <offset>9</offset>
+    <column name="Ismissioncomplete" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

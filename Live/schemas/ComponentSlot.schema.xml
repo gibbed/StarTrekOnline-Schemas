@@ -11,11 +11,11 @@
       <offset>0</offset>
       <subtable external="Item" />
     </column>
-    <column name="RecipeCount" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="MaxNum" type="INT">
+    <column name="Recipecount" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Maxnum" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PowerTreeBuild">
+  <table>
+    <column name="PowerTreeBuild" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Pppowertrees" type="STRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PowerTree" />
+    </column>
+    <column name="Ppsecondarypaths" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="AdditionalCharacterPath" />
+    </column>
+    <column name="Eaastractivegroupprojectpowers" type="STRINGARRAY">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pslots" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="CharacterPowerSlots" />
+    </column>
+    <column name="Uitimecreated" type="INT">
+      <offset>32</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uirespecsavailable" type="INT">
+      <offset>36</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Brespecpending" type="U8">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uilastfreerespectime" type="INT">
+      <offset>44</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uilastforcedrespectime" type="INT">
+      <offset>48</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Dirtybit" type="U8">
+      <offset>52</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+        <flag>DIRTY_BIT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

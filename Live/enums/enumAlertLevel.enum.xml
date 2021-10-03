@@ -4,5 +4,6 @@
     <element name="NONE">0</element>
     <element name="WARNING">1</element>
     <element name="CRITICAL">2</element>
+    <element name="SUCCEEDED">3</element>
   </elements>
 </enum>

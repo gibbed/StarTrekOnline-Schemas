@@ -14,16 +14,17 @@
       </flags>
     </column>
     <column name="Frame" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="uiFrameTrigger" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Uiframetrigger" type="INT">
+      <offset>12</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
     </column>
     <column name="Message" type="U8">
-      <offset>12</offset>
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

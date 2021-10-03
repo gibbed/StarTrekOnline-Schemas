@@ -15,126 +15,131 @@
       <offset>4</offset>
       <static_define_list external="GenesisChallengePlacement" />
     </column>
-    <column name="RefPrefabLocation" type="STRING">
+    <column name="Refprefablocation" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="RefChallengeName" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="RefDoorDestName" type="STRING">
+    <column name="Refchallengename" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="EncounterJitter" type="EMBEDDEDSTRUCT">
-      <offset>20</offset>
+    <column name="Refdoordestname" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Encounterjitter" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
       <subtable external="GenesisEncounterJitter" />
     </column>
-    <column name="ConstantRotation" type="F32">
-      <offset>32</offset>
+    <column name="Constantrotation" type="F32">
+      <offset>44</offset>
     </column>
-    <column name="RotationIncrement" type="F32">
-      <offset>36</offset>
+    <column name="Rotationincrement" type="F32">
+      <offset>48</offset>
     </column>
-    <column name="RandomRotation" type="F32">
-      <offset>36</offset>
+    <column name="Randomrotation" type="F32">
+      <offset>48</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>RotationIncrement</redundant_name>
+      <redundant_name>Rotationincrement</redundant_name>
     </column>
-    <column name="WallObject" type="BIT">
-      <offset>40</offset>
+    <column name="Wallobject" type="BIT">
+      <offset>52</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="PivotOnWall" type="BIT">
-      <offset>40</offset>
+    <column name="Pivotonwall" type="BIT">
+      <offset>52</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="CommonRoomRot" type="BIT">
-      <offset>40</offset>
+    <column name="Commonroomrot" type="BIT">
+      <offset>52</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="UseRoomDir" type="BIT">
-      <offset>40</offset>
+    <column name="Useroomdir" type="BIT">
+      <offset>52</offset>
       <bit_offset>65539</bit_offset>
     </column>
     <column name="Mirror" type="BIT">
-      <offset>40</offset>
+      <offset>52</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="FillGrid" type="BIT">
-      <offset>40</offset>
+    <column name="Fillgrid" type="BIT">
+      <offset>52</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="GridUsesDenstiy" type="BIT">
-      <offset>40</offset>
+    <column name="Gridusesdenstiy" type="BIT">
+      <offset>52</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="PreChallenge" type="BIT">
-      <offset>40</offset>
+    <column name="Prechallenge" type="BIT">
+      <offset>52</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="StartSpawn" type="BIT">
-      <offset>40</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Startspawn" type="BIT">
+      <offset>53</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="GridIgnoresPadding" type="BIT">
-      <offset>40</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Gridignorespadding" type="BIT">
+      <offset>53</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="MaxRows" type="INT">
-      <offset>44</offset>
-    </column>
-    <column name="MaxCols" type="INT">
-      <offset>48</offset>
-    </column>
-    <column name="RowSpacing" type="F32">
-      <offset>52</offset>
-    </column>
-    <column name="ColSpacing" type="F32">
+    <column name="Maxrows" type="INT">
       <offset>56</offset>
     </column>
-    <column name="RowOffset" type="F32">
+    <column name="Maxcols" type="INT">
       <offset>60</offset>
     </column>
-    <column name="ColOffset" type="F32">
+    <column name="Rowspacing" type="F32">
       <offset>64</offset>
     </column>
-    <column name="MaxPerRoom" type="INT">
+    <column name="Colspacing" type="F32">
       <offset>68</offset>
     </column>
-    <column name="ExclusionDist" type="F32">
+    <column name="Rowoffset" type="F32">
       <offset>72</offset>
     </column>
-    <column name="AffinityGroup" type="STRING">
+    <column name="Coloffset" type="F32">
       <offset>76</offset>
+    </column>
+    <column name="Maxperroom" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Exclusiondist" type="F32">
+      <offset>84</offset>
+    </column>
+    <column name="Affinitygroup" type="STRING">
+      <offset>88</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="OverridePos" type="F32FIXEDARRAY">
-      <offset>80</offset>
+    <column name="Overridepos" type="F32FIXEDARRAY">
+      <offset>96</offset>
       <num_elements>3</num_elements>
     </column>
-    <column name="OverrideRot" type="F32">
-      <offset>92</offset>
+    <column name="Overriderot" type="F32">
+      <offset>108</offset>
     </column>
-    <column name="AbsolutePosition" type="U8">
-      <offset>96</offset>
+    <column name="Absoluteposition" type="U8">
+      <offset>112</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SnapRayCast" type="U8">
-      <offset>97</offset>
+    <column name="Snapraycast" type="U8">
+      <offset>113</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SnapToGeo" type="U8">
-      <offset>98</offset>
+    <column name="Snaptogeo" type="U8">
+      <offset>114</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SnapNormal" type="U8">
-      <offset>99</offset>
+    <column name="Snapnormal" type="U8">
+      <offset>115</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="LegacyHeightCheck" type="U8">
-      <offset>100</offset>
+    <column name="Legacyheightcheck" type="U8">
+      <offset>116</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ChildPlacement" type="STRUCT">
-      <offset>104</offset>
+    <column name="Childplacement" type="STRUCT">
+      <offset>120</offset>
       <subtable external="GenesisPlacementChildParams" />
     </column>
     <column name="}" type="END" />

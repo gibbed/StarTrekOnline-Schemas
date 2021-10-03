@@ -4,7 +4,13 @@
     <element name="None">0</element>
     <element name="Value">1</element>
     <element name="Color0">2</element>
-    <element name="TexCoord0">3</element>
-    <element name="TexCoord1">4</element>
+    <element name="Time">3</element>
+    <element name="TexCoord0">4</element>
+    <element name="TexCoord1">5</element>
+    <element name="TexCoord2">6</element>
+    <element name="TexCoord3">7</element>
+    <element name="MaterialData1">8</element>
+    <element name="MaterialData2">9</element>
+    <element name="VertexPainting">10</element>
   </elements>
 </enum>

@@ -14,23 +14,25 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="defType" type="STRING">
-      <offset>4</offset>
+    <column name="Deftype" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
     <column name="Translation" type="F32FIXEDARRAY">
-      <offset>8</offset>
+      <offset>16</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Pivot" type="F32FIXEDARRAY">
-      <offset>20</offset>
+      <offset>28</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Children" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+      <offset>40</offset>
       <subtable external="WrlChildren" />
     </column>
     <column name="}" type="END" />

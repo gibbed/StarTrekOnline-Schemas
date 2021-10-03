@@ -16,61 +16,34 @@
       </flags>
       <dictionary_name>ItemAssignmentDef</dictionary_name>
     </column>
-    <column name="AssignmentID" type="INT">
-      <offset>4</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>SELF_ONLY</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="uAssignmentID" type="INT">
-      <offset>4</offset>
-      <flags>
-        <flag>ALIAS</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>SELF_ONLY</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <redundant_name>AssignmentID</redundant_name>
-    </column>
-    <column name="NewAssignmentID" type="INT">
+    <column name="Hhazarddef" type="REFERENCE">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
+      <dictionary_name>ItemAssignmentHazard</dictionary_name>
     </column>
-    <column name="uNewAssignmentID" type="INT">
-      <offset>8</offset>
-      <flags>
-        <flag>ALIAS</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>SELF_ONLY</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <redundant_name>NewAssignmentID</redundant_name>
-    </column>
-    <column name="pchOutcome" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>SELF_ONLY</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pchMapMsgKey" type="STRING">
+    <column name="Assignmentid" type="INT">
       <offset>16</offset>
       <flags>
-        <flag>POOL_STRING</flag>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uTimeStarted" type="INT">
+    <column name="Uassignmentid" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Assignmentid</redundant_name>
+    </column>
+    <column name="Newassignmentid" type="INT">
       <offset>20</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -78,16 +51,86 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uDuration" type="INT">
+    <column name="Unewassignmentid" type="INT">
+      <offset>20</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Newassignmentid</redundant_name>
+    </column>
+    <column name="Pchoutcome" type="STRING">
       <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Boutcomefailed" type="U8">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fxpmultiplier" type="F32">
+      <offset>36</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchmapmsgkey" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Utimestarted" type="INT">
+      <offset>48</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="bMarkedAsRead" type="BIT">
-      <offset>28</offset>
+    <column name="Uduration" type="INT">
+      <offset>52</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Bcreatingdynamicitem" type="U8">
+      <offset>56</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Progressionlevel" type="INT">
+      <offset>60</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Bmarkedasread" type="BIT">
+      <offset>64</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
@@ -96,8 +139,18 @@
       </flags>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="eaSlottedItemRefs" type="STRUCT">
-      <offset>32</offset>
+    <column name="Brewardcollectionfailed" type="BIT">
+      <offset>64</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Easlotteditemrefs" type="STRUCT">
+      <offset>72</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>

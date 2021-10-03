@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GroupIndex" type="INT">
+    <column name="Groupindex" type="INT">
       <offset>0</offset>
     </column>
-    <column name="MyGroup" type="INT">
+    <column name="Mygroup" type="INT">
       <offset>4</offset>
     </column>
-    <column name="FullGroup" type="INT">
+    <column name="Fullgroup" type="INT">
       <offset>8</offset>
     </column>
-    <column name="EmptyGroup" type="INT">
+    <column name="Emptygroup" type="INT">
       <offset>12</offset>
     </column>
     <column name="}" type="END" />

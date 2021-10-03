@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="next" type="EMBEDDEDSTRUCT">
+    <column name="Next" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="DynAnimTemplateNodeRef" />
     </column>

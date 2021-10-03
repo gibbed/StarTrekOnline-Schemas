@@ -10,15 +10,12 @@
     <column name="Volume" type="F32">
       <offset>0</offset>
     </column>
-    <column name="fontID" type="INT">
+    <column name="Transmitting" type="BIT">
       <offset>4</offset>
-    </column>
-    <column name="transmitting" type="BIT">
-      <offset>8</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="Muted" type="INT">
-      <offset>12</offset>
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

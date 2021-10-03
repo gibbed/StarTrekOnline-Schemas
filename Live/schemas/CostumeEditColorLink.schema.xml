@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ColorLink" type="INT">
+    <column name="Colorlink" type="INT">
       <offset>0</offset>
       <static_define_list external="PCColorLink" />
     </column>

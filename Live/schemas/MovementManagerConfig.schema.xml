@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DoubleTapInterval" type="INT">
+    <column name="Doubletapinterval" type="INT">
       <offset>0</offset>
       <default>400</default>
     </column>

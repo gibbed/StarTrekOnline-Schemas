@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PersonalEndeavorConfig">
+  <table>
+    <column name="PersonalEndeavorConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Personalendeavoron" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Missionlist" type="STRINGARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Missionsmax" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Personalendeavorpowernumeric" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="PersonalEndeavorPowerNumeric" />
+    </column>
+    <column name="Rewardchoicesmax" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Powerlevelmax" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Giverewardnumeric" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Spentrewardnumeric" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Experiencenumeric" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Timelimithours" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Rewardgatednames" type="STRINGARRAY">
+      <offset>72</offset>
+    </column>
+    <column name="Rerollmissionnumeric" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Timelimitoffsethours" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Personalendeavorversionnumber" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>96</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

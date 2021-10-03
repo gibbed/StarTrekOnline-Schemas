@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="SkelScaleBoneScaleMode">
+  <elements type="int">
+    <element name="Local Scale">0</element>
+    <element name="Universal Scale">1</element>
+    <element name="Translation">2</element>
+    <element name="Rotation">3</element>
+  </elements>
+</enum>

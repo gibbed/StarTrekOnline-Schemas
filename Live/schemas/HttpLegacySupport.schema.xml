@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ClientState" type="OPTIONALSTRUCT">
+    <column name="Clientstate" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="HttpClientStateDefault" />
     </column>
     <column name="data" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

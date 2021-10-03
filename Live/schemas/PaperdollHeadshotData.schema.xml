@@ -7,65 +7,67 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="HeadshotStyle" type="STRING">
+    <column name="Headshotstyle" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="WLCostume" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Wlcostume" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="WLCostume" />
     </column>
-    <column name="PlayerCostume" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Playercostume" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="PlayerCostume" />
     </column>
     <column name="Entity" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Entity" />
     </column>
-    <column name="ItemArt" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Itemart" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="ItemArt" />
     </column>
-    <column name="ppchAddedFX" type="STRINGARRAY">
-      <offset>20</offset>
+    <column name="Ppchaddedfx" type="STRINGARRAY">
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="AnimList" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Animlist" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="AIAnimList" />
     </column>
-    <column name="StyleOverride" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Styleoverride" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="ContactCostumeStyle" />
     </column>
-    <column name="ForceActiveSlot" type="U8">
-      <offset>32</offset>
+    <column name="Forceactiveslot" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Talking" type="U8">
-      <offset>33</offset>
+      <offset>65</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

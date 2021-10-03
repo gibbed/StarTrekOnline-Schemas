@@ -7,31 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="InterpStartSpeed" type="F32">
+    <column name="Interpstartspeed" type="F32">
       <offset>0</offset>
     </column>
-    <column name="InterpSpeedAccel" type="F32">
+    <column name="Interpspeedaccel" type="F32">
       <offset>4</offset>
     </column>
-    <column name="InterpMaxSpeed" type="F32">
+    <column name="Interpmaxspeed" type="F32">
       <offset>8</offset>
     </column>
-    <column name="LookatTimeout" type="F32">
+    <column name="Lookattimeout" type="F32">
       <offset>12</offset>
     </column>
-    <column name="IgnoreInputAngleThreshold" type="F32">
+    <column name="Ignoreinputanglethreshold" type="F32">
       <offset>16</offset>
     </column>
-    <column name="DisableLookatInputAngleThreshold" type="F32">
+    <column name="Disablelookatinputanglethreshold" type="F32">
       <offset>20</offset>
     </column>
-    <column name="SnapAngleThreshold" type="F32">
+    <column name="Snapanglethreshold" type="F32">
       <offset>24</offset>
     </column>
-    <column name="MaintainRefreshPeriod" type="F32">
+    <column name="Maintainrefreshperiod" type="F32">
       <offset>28</offset>
     </column>
-    <column name="ObstructionDistNormalizedThreshold" type="F32">
+    <column name="Obstructiondistnormalizedthreshold" type="F32">
       <offset>32</offset>
     </column>
     <column name="}" type="END" />

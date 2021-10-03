@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CrypticRPCListenConfigEntry">
+  <table>
+    <column name="CrypticRPCListenConfigEntry" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Everyone" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Local" type="U8">
+      <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Machinename" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="ip" type="INT">
+      <offset>16</offset>
+      <format>IP</format>
+    </column>
+    <column name="Secondaryip" type="INT">
+      <offset>20</offset>
+      <format>IP</format>
+    </column>
+    <column name="Ipgroup" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Accessleveltoallow" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Globalnameoflink" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Allowedcategory" type="STRINGARRAY">
+      <offset>48</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

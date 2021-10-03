@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DisplayTag" type="STRUCT">
+    <column name="Displaytag" type="STRUCT">
       <offset>0</offset>
       <subtable external="SmartAdDisplayTag" />
     </column>

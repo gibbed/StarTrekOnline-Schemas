@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pchName" type="STRING">
+    <column name="Pchname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -16,13 +16,41 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="ppPurchaseStamps" type="STRUCT">
-      <offset>4</offset>
+    <column name="Pppurchasestamps" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="MTPurchaseStamp" />
+    </column>
+    <column name="Ss2kmostrecentpurchase" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ss2kfirstpurchase" type="INT">
+      <offset>20</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uunconsumedpurchases" type="INT">
+      <offset>24</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Utotalpurchases" type="INT">
+      <offset>28</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

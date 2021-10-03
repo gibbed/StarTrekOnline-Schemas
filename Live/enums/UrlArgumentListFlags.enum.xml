@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="UrlArgumentListFlags">
+  <elements type="int">
+    <element name="GZIP">1</element>
+    <element name="NO_GZIP_HEADER">2</element>
+    <element name="INTERNAL">4</element>
+  </elements>
+</enum>

@@ -6,43 +6,44 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="MaxStack" type="INT">
+    <column name="{" type="START" />
+    <column name="Maxstack" type="INT">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="UpgradeTime" type="F32">
+    <column name="Upgradetime" type="F32">
       <offset>4</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="ExprRequired" type="OPTIONALSTRUCT">
+    <column name="Exprrequired" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <subtable external="Expression" />
     </column>
-    <column name="ExprRequiredBlock" type="OPTIONALSTRUCT">
+    <column name="Exprrequiredblock" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <redundant_name>ExprRequired</redundant_name>
+      <redundant_name>Exprrequired</redundant_name>
       <subtable external="Expression" />
     </column>
     <column name="Required" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <redundant_name>ExprRequired</redundant_name>
+      <redundant_name>Exprrequired</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

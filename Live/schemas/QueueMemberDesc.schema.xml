@@ -10,64 +10,77 @@
     <column name="Name" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Handle" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Allegiance" type="STRING">
-      <offset>4</offset>
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="hClass" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Hclass" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>CharacterClass</dictionary_name>
     </column>
     <column name="State" type="INT">
-      <offset>12</offset>
+      <offset>32</offset>
       <static_define_list external="PlayerQueueState" />
     </column>
-    <column name="uiEntID" type="INT">
-      <offset>16</offset>
-    </column>
-    <column name="Level" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="Rank" type="INT">
-      <offset>24</offset>
-    </column>
-    <column name="GroupID" type="INT">
-      <offset>28</offset>
-    </column>
-    <column name="uiTeamID" type="INT">
-      <offset>32</offset>
-    </column>
-    <column name="uiLastUpdateFrame" type="INT">
+    <column name="Uientid" type="INT">
       <offset>36</offset>
     </column>
-    <column name="IsHeader" type="BIT">
+    <column name="Uiaccountid" type="INT">
       <offset>40</offset>
+    </column>
+    <column name="Level" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Rank" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Groupid" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Uiteamid" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Uilastupdateframe" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Isheader" type="BIT">
+      <offset>64</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="IsTeammate" type="BIT">
-      <offset>40</offset>
+    <column name="Isteammate" type="BIT">
+      <offset>64</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="IsGuildmate" type="BIT">
-      <offset>40</offset>
+    <column name="Isguildmate" type="BIT">
+      <offset>64</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="IsFriend" type="BIT">
-      <offset>40</offset>
+    <column name="Isfriend" type="BIT">
+      <offset>64</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="FirstTeamMember" type="BIT">
-      <offset>40</offset>
+    <column name="Isempty" type="BIT">
+      <offset>64</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="LastTeamMember" type="BIT">
-      <offset>40</offset>
+    <column name="Firstteammember" type="BIT">
+      <offset>64</offset>
       <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Lastteammember" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65542</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

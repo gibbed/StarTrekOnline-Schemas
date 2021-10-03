@@ -7,24 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="request_id" type="INT">
+    <column name="Request_Id" type="INT">
       <offset>0</offset>
     </column>
-    <column name="task_type" type="INT">
+    <column name="Request_Uid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="worker_version" type="INT">
+    <column name="Task_Type" type="INT">
       <offset>8</offset>
     </column>
-    <column name="fileAttachment" type="STRING">
+    <column name="Worker_Version" type="INT">
       <offset>12</offset>
     </column>
-    <column name="sendStats" type="EMBEDDEDSTRUCT">
-      <offset>280</offset>
+    <column name="Sendstats" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
       <subtable external="TaskProfile" />
     </column>
-    <column name="recvStats" type="EMBEDDEDSTRUCT">
-      <offset>312</offset>
+    <column name="Recvstats" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
       <subtable external="TaskProfile" />
     </column>
     <column name="}" type="END" />

@@ -11,8 +11,15 @@
       <offset>0</offset>
       <static_define_list external="RewardOwnerType" />
     </column>
-    <column name="peaiOwnerIDs" type="INTARRAY">
+    <column name="Leaderid" type="INT">
       <offset>4</offset>
+    </column>
+    <column name="Peaiownerids" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Masterlooterteammembers" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="MasterLooterTeamMember" />
     </column>
     <column name="}" type="END" />
   </table>

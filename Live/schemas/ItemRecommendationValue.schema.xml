@@ -7,22 +7,22 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="bag" type="OPTIONALSTRUCT">
+    <column name="Bag" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="InventoryBag" />
     </column>
     <column name="Slot" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="InventorySlot" />
     </column>
     <column name="Value" type="F32">
-      <offset>8</offset>
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

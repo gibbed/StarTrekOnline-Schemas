@@ -12,41 +12,44 @@
       <static_define_list external="PlayerMapMoveType" />
     </column>
     <column name="MapName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="NamedSpawnPoint" type="STRING">
       <offset>8</offset>
     </column>
+    <column name="Namedspawnpoint" type="STRING">
+      <offset>16</offset>
+    </column>
     <column name="QueueName" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
+    </column>
+    <column name="Matchname" type="STRING">
+      <offset>32</offset>
     </column>
     <column name="OwnerType" type="INT">
-      <offset>16</offset>
+      <offset>40</offset>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="uOwnerID" type="INT">
-      <offset>20</offset>
+    <column name="Uownerid" type="INT">
+      <offset>44</offset>
     </column>
     <column name="Variables" type="STRUCT">
-      <offset>24</offset>
+      <offset>48</offset>
       <subtable external="WorldVariable" />
     </column>
     <column name="Scope" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+      <offset>56</offset>
       <subtable external="WorldScope" />
     </column>
     <column name="Warp" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+      <offset>64</offset>
       <subtable external="PlayerWarpToData" />
     </column>
-    <column name="uiTimeStart" type="INT">
-      <offset>36</offset>
+    <column name="Uitimestart" type="INT">
+      <offset>72</offset>
     </column>
-    <column name="uiTimeToConfirm" type="INT">
-      <offset>40</offset>
+    <column name="Uitimetoconfirm" type="INT">
+      <offset>76</offset>
     </column>
     <column name="Flags" type="INT">
-      <offset>44</offset>
+      <offset>80</offset>
     </column>
     <column name="}" type="END" />
   </table>

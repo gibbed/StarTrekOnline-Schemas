@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="LoggingCStoreUserTrackingAction">
+  <elements type="int">
+    <element name="Opened">0</element>
+    <element name="Closed">1</element>
+    <element name="Category_Selected">2</element>
+    <element name="Subcategory_Selected">3</element>
+    <element name="Product_Selected">4</element>
+    <element name="Purchase_Confirmed">5</element>
+    <element name="Purchase_Canceled">6</element>
+    <element name="Claim_Purchased">7</element>
+    <element name="OpenedStandalone">8</element>
+    <element name="ClosedStandalone">9</element>
+  </elements>
+</enum>

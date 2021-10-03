@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="rot_matrix" type="MATPYR">
+    <column name="Rot_Matrix" type="MATPYR">
       <offset>0</offset>
       <num_elements>9</num_elements>
     </column>
-    <column name="pos_matrix" type="F32FIXEDARRAY">
+    <column name="Pos_Matrix" type="F32FIXEDARRAY">
       <offset>36</offset>
       <num_elements>3</num_elements>
     </column>

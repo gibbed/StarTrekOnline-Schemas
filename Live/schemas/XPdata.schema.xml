@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="xpTables" type="STRUCT">
+    <column name="Xptables" type="STRUCT">
       <offset>0</offset>
       <subtable external="RewardValTable" />
     </column>
-    <column name="typeStarts" type="F32FIXEDARRAY">
-      <offset>4</offset>
+    <column name="Typestarts" type="F32FIXEDARRAY">
+      <offset>8</offset>
       <num_elements>4</num_elements>
     </column>
     <column name="}" type="END" />

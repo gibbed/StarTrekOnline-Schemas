@@ -11,19 +11,19 @@
       <offset>0</offset>
       <subtable external="TacticalToBGFlags" />
     </column>
-    <column name="spcDisableRunning" type="INT">
+    <column name="Spcdisablerunning" type="INT">
       <offset>4</offset>
     </column>
-    <column name="spcEnableRunning" type="INT">
+    <column name="Spcenablerunning" type="INT">
       <offset>8</offset>
     </column>
-    <column name="spcClearAllOverrides" type="INT">
+    <column name="Spcclearalloverrides" type="INT">
       <offset>12</offset>
     </column>
-    <column name="spcStartRoll" type="INT">
+    <column name="Spcstartroll" type="INT">
       <offset>16</offset>
     </column>
-    <column name="scheduledRollYaw" type="F32">
+    <column name="Scheduledrollyaw" type="F32">
       <offset>20</offset>
     </column>
     <column name="Overrides" type="STRUCT">

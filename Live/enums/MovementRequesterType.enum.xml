@@ -3,5 +3,7 @@
   <elements type="int">
     <element name="DEFAULTSURFACE">0</element>
     <element name="DRAGON">1</element>
+    <element name="MECH">2</element>
+    <element name="FLIGHT">3</element>
   </elements>
 </enum>

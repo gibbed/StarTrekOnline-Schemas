@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ePerms" type="INT">
+    <column name="Eperms" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,14 +15,14 @@
       </flags>
       <static_define_list external="GuildBankPermissions" />
     </column>
-    <column name="iWithdrawLimit" type="INT">
+    <column name="Iwithdrawlimit" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iWithdrawItemCountLimit" type="INT">
+    <column name="Iwithdrawitemcountlimit" type="INT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>

@@ -6,9 +6,9 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="TexWord" type="STRUCT">
+    <column name="Texword" type="STRUCT">
       <offset>0</offset>
-      <subtable external="TexWord" />
+      <subtable external="Texword" />
     </column>
   </table>
 </parser>

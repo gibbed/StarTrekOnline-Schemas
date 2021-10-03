@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AmbSound" type="STRINGARRAY">
+    <column name="Ambsound" type="STRINGARRAY">
       <offset>0</offset>
     </column>
-    <column name="AmbHallwaySound" type="STRINGARRAY">
-      <offset>4</offset>
-    </column>
-    <column name="GlobalGAELayers" type="STRUCT">
+    <column name="Ambhallwaysound" type="STRINGARRAY">
       <offset>8</offset>
+    </column>
+    <column name="Globalgaelayers" type="STRUCT">
+      <offset>16</offset>
       <subtable external="GlobalGAELayerDef" />
     </column>
     <column name="}" type="END" />

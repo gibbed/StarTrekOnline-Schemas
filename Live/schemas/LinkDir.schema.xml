@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="bytes" type="INT64">
+    <column name="Bytes" type="INT64">
       <offset>0</offset>
     </column>
-    <column name="real_bytes" type="INT64">
+    <column name="Real_Bytes" type="INT64">
       <offset>8</offset>
     </column>
-    <column name="packets" type="INT">
+    <column name="Packets" type="INT">
       <offset>16</offset>
     </column>
-    <column name="real_packets" type="INT">
+    <column name="Real_Packets" type="INT">
       <offset>20</offset>
     </column>
-    <column name="last_time_ms" type="INT">
+    <column name="Last_Time_Ms" type="INT">
       <offset>24</offset>
     </column>
     <column name="}" type="END" />

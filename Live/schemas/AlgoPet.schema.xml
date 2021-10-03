@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hAlgoPet" type="REFERENCE">
+    <column name="Halgopet" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,8 +15,8 @@
       </flags>
       <dictionary_name>AlgoPetDef</dictionary_name>
     </column>
-    <column name="ppEscrowNodes" type="STRUCT">
-      <offset>4</offset>
+    <column name="Ppescrownodes" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
@@ -24,82 +24,82 @@
       <subtable external="PTNodeDefRefCont" />
     </column>
     <column name="Costume" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <default>-1</default>
     </column>
-    <column name="iCostume" type="INT">
-      <offset>8</offset>
+    <column name="Icostume" type="INT">
+      <offset>16</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <redundant_name>Costume</redundant_name>
       <default>-1</default>
     </column>
-    <column name="RandomCostume" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Randomcostume" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="PlayerCostume" />
     </column>
-    <column name="pCostume" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Pcostume" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>RandomCostume</redundant_name>
+      <redundant_name>Randomcostume</redundant_name>
       <subtable external="PlayerCostume" />
     </column>
-    <column name="hSpecies" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Hspecies" type="REFERENCE">
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>Species</dictionary_name>
     </column>
-    <column name="PetName" type="STRING">
-      <offset>20</offset>
+    <column name="Petname" type="STRING">
+      <offset>40</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pchPetName" type="STRING">
-      <offset>20</offset>
+    <column name="Pchpetname" type="STRING">
+      <offset>40</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>PetName</redundant_name>
+      <redundant_name>Petname</redundant_name>
     </column>
-    <column name="PetSubName" type="STRING">
-      <offset>24</offset>
+    <column name="Petsubname" type="STRING">
+      <offset>48</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pchPetSubName" type="STRING">
-      <offset>24</offset>
+    <column name="Pchpetsubname" type="STRING">
+      <offset>48</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>PetSubName</redundant_name>
+      <redundant_name>Petsubname</redundant_name>
     </column>
-    <column name="hAllegiance" type="IGNORE" />
+    <column name="Hallegiance" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

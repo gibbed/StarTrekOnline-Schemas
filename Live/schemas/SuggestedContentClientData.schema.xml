@@ -7,17 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ListTagName" type="STRING">
+    <column name="Listtagname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="uDataRequestTimestamp" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="uDataReceiveTimestamp" type="INT">
+    <column name="Udatarequesttimestamp" type="INT">
       <offset>8</offset>
     </column>
-    <column name="SuggestedContentInfo" type="OPTIONALSTRUCT">
+    <column name="Udatareceivetimestamp" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Suggestedcontentinfo" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="SuggestedContentInfo" />
     </column>
     <column name="}" type="END" />

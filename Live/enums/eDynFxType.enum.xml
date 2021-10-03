@@ -4,7 +4,8 @@
     <element name="Sprite">0</element>
     <element name="FastParticleSet">1</element>
     <element name="MeshTrail">2</element>
-    <element name="Geometry">3</element>
-    <element name="SkinnedGeometry">4</element>
+    <element name="MeshTrailCylinder">3</element>
+    <element name="Geometry">4</element>
+    <element name="SkinnedGeometry">5</element>
   </elements>
 </enum>

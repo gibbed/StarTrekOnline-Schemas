@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NotifyAudioEventGroup" type="STRUCT">
+    <column name="Notifyaudioeventgroup" type="STRUCT">
       <offset>0</offset>
       <subtable external="NotifyAudioEventGroup" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

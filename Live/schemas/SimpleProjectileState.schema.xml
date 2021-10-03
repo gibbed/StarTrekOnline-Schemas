@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SimpleProjectileState">
+  <table>
+    <column name="SimpleProjectileState" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Currenttick" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Currentpos" type="F32FIXEDARRAY">
+      <offset>4</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Currentrot" type="F32FIXEDARRAY">
+      <offset>16</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Currentvelocity" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Lastknowntarget" type="F32FIXEDARRAY">
+      <offset>32</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Dtnodeid" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Lifetime" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Interptime" type="F32">
+      <offset>52</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Predictedpos" type="F32FIXEDARRAY">
+      <offset>56</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Predictedrot" type="F32FIXEDARRAY">
+      <offset>68</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Clearedowner" type="U8">
+      <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Destroyed" type="U8">
+      <offset>81</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Matchfound" type="U8">
+      <offset>82</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Predicteddeathpos" type="F32FIXEDARRAY">
+      <offset>84</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Predicteddeathtime" type="F32">
+      <offset>96</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Predicteddeath" type="U8">
+      <offset>100</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Curstage" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Intersectedtargetpos" type="U8">
+      <offset>108</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

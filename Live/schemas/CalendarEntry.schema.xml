@@ -10,26 +10,30 @@
     <column name="Event" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="CalendarEvent" />
     </column>
+    <column name="Heventdef" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>EventDef</dictionary_name>
+    </column>
     <column name="Timing" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="CalendarTiming" />
     </column>
-    <column name="OwnedTiming" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Ownedtiming" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="CalendarTiming" />
     </column>
-    <column name="SortOrder" type="INT">
-      <offset>12</offset>
+    <column name="Sortorder" type="INT">
+      <offset>32</offset>
     </column>
-    <column name="EventActive" type="BIT">
-      <offset>16</offset>
+    <column name="Eventactive" type="BIT">
+      <offset>36</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

@@ -6,14 +6,14 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="FN" type="CURRENTFILE">
+    <column name="Fn" type="CURRENTFILE">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Def" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="WrlDef" />
     </column>
   </table>

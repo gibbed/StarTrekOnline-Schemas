@@ -15,48 +15,60 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="DisplayName" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="ClassRestrictType" type="INT">
-      <offset>12</offset>
+    <column name="Classrestricttype" type="INT">
+      <offset>24</offset>
       <static_define_list external="AlwaysPropSlotClassRestrictType" />
     </column>
-    <column name="AllowPowerCategory" type="INT">
-      <offset>16</offset>
+    <column name="Allowpowercategory" type="INT">
+      <offset>28</offset>
       <default>-1</default>
       <static_define_list external="PowerCategory" />
     </column>
-    <column name="MaxPropPowers" type="INT">
-      <offset>20</offset>
+    <column name="Maxproppowers" type="INT">
+      <offset>32</offset>
     </column>
     <column name="PowerMax" type="INT">
-      <offset>20</offset>
+      <offset>32</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>MaxPropPowers</redundant_name>
+      <redundant_name>Maxproppowers</redundant_name>
     </column>
-    <column name="MinPropPowers" type="INT">
-      <offset>24</offset>
+    <column name="Minproppowers" type="INT">
+      <offset>36</offset>
     </column>
-    <column name="IgnorePurposeForMax" type="INT">
-      <offset>28</offset>
+    <column name="Ignorepurposeformax" type="INT">
+      <offset>40</offset>
       <default>-1</default>
       <static_define_list external="PowerPurpose" />
     </column>
     <column name="Category" type="INT">
-      <offset>32</offset>
+      <offset>44</offset>
       <static_define_list external="AlwaysPropSlotCategory" />
     </column>
-    <column name="ImportanceRank" type="INT">
-      <offset>36</offset>
+    <column name="Importancerank" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Extrapropslots" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="AlwaysPropSlotExtraPropSlots" />
+    </column>
+    <column name="Allowspecialization" type="INTARRAY">
+      <offset>64</offset>
+      <static_define_list external="PowerSpecialization" />
+    </column>
+    <column name="Powercategories" type="INTARRAY">
+      <offset>72</offset>
+      <static_define_list external="PowerCategory" />
     </column>
     <column name="}" type="END" />
   </table>

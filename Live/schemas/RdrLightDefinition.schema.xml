@@ -6,35 +6,26 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="deviceid" type="STRING">
-      <offset>0</offset>
-    </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="normaltext" type="STRING">
+    <column name="Normaltext" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="shadowtesttext" type="STRING">
-      <offset>16</offset>
+    <column name="Shadowtesttext" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="LightType" type="INT">
-      <offset>20</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <offset>32</offset>
+      <static_define_list external="RdrLightType" />
     </column>
-    <column name="vertexlightparams" type="EMBEDDEDSTRUCT">
-      <offset>24</offset>
+    <column name="Vertexlightparams" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
       <subtable external="RdrLightDefinitionParams" />
     </column>
-    <column name="singledirlightparams" type="EMBEDDEDSTRUCT">
-      <offset>28</offset>
-      <subtable external="RdrLightDefinitionParams" />
-    </column>
-    <column name="EndLight" type="END" />
+    <column name="Endlight" type="END" />
   </table>
 </parser>

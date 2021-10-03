@@ -11,11 +11,11 @@
       <offset>0</offset>
       <static_define_list external="ResourceSearchRequestTagsType" />
     </column>
-    <column name="strTag" type="STRING">
-      <offset>4</offset>
+    <column name="Strtag" type="STRING">
+      <offset>8</offset>
     </column>
     <column name="Children" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="ResourceSearchRequestTags" />
     </column>
     <column name="}" type="END" />

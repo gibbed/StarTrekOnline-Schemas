@@ -7,24 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="OffsetType" type="INT">
+    <column name="Offsettype" type="INT">
       <offset>0</offset>
       <static_define_list external="CutsceneOffsetType" />
     </column>
-    <column name="CutsceneEntName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="EncounterName" type="STRING">
+    <column name="Cutsceneentname" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="ActorName" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="BoneName" type="STRING">
+    <column name="Encountername" type="STRING">
       <offset>16</offset>
     </column>
+    <column name="ActorName" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="BoneName" type="STRING">
+      <offset>32</offset>
+    </column>
     <column name="EntityRef" type="INT">
-      <offset>20</offset>
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

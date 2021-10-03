@@ -11,6 +11,9 @@
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">GenesisPathDef</format_string>
+      </format_strings>
     </column>
     <column name="FileName" type="CURRENTFILE">
       <offset>0</offset>
@@ -20,85 +23,88 @@
       </flags>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
     <column name="Tags" type="STRING">
-      <offset>8</offset>
-    </column>
-    <column name="Width" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="MinLength" type="INT">
       <offset>16</offset>
     </column>
-    <column name="MaxLength" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="Windiness" type="F32">
+    <column name="Width" type="INT">
       <offset>24</offset>
     </column>
-    <column name="NoDetailsOrPaths" type="BIT">
+    <column name="Minlength" type="INT">
       <offset>28</offset>
-      <bit_offset>65536</bit_offset>
     </column>
-    <column name="DetailSeed" type="INT">
+    <column name="Maxlength" type="INT">
       <offset>32</offset>
     </column>
-    <column name="VisibleName" type="STRING">
+    <column name="Windiness" type="F32">
       <offset>36</offset>
     </column>
-    <column name="StartRoom" type="STRINGARRAY">
+    <column name="Nodetailsorpaths" type="BIT">
       <offset>40</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="EndRoom" type="STRINGARRAY">
-      <offset>44</offset>
-    </column>
-    <column name="ControlPoints" type="INTARRAY">
+    <column name="Detailseed" type="INT">
       <offset>48</offset>
     </column>
-    <column name="StartDoor" type="INTARRAY">
-      <offset>52</offset>
-    </column>
-    <column name="EndDoor" type="INTARRAY">
+    <column name="Visiblename" type="STRING">
       <offset>56</offset>
     </column>
-    <column name="detail_kit_1" type="IGNORE">
+    <column name="Startroom" type="STRINGARRAY">
+      <offset>64</offset>
+    </column>
+    <column name="Endroom" type="STRINGARRAY">
+      <offset>72</offset>
+    </column>
+    <column name="Controlpoints" type="INTARRAY">
+      <offset>80</offset>
+    </column>
+    <column name="Startdoor" type="INTARRAY">
+      <offset>88</offset>
+    </column>
+    <column name="Enddoor" type="INTARRAY">
+      <offset>96</offset>
+    </column>
+    <column name="Detail_Kit_1" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">GenesisDetailKitAndDensity</format_string>
+      </format_strings>
     </column>
     <column name="Details" type="REFERENCE">
-      <offset>60</offset>
+      <offset>104</offset>
       <dictionary_name>GenesisDetailKit</dictionary_name>
     </column>
-    <column name="DetailKit" type="REFERENCE">
-      <offset>60</offset>
+    <column name="Detailkit" type="REFERENCE">
+      <offset>104</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Details</redundant_name>
       <dictionary_name>GenesisDetailKit</dictionary_name>
     </column>
-    <column name="DetailDensity" type="F32">
-      <offset>64</offset>
+    <column name="Detaildensity" type="F32">
+      <offset>112</offset>
     </column>
     <column name="Detail2" type="EMBEDDEDSTRUCT">
-      <offset>72</offset>
+      <offset>128</offset>
       <subtable external="GenesisDetailKitAndDensity" />
     </column>
-    <column name="SideTrail" type="BIT">
-      <offset>84</offset>
+    <column name="Sidetrail" type="BIT">
+      <offset>152</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="Mission" type="STRUCT">
-      <offset>88</offset>
+      <offset>160</offset>
       <subtable external="GenesisRoomMission" />
     </column>
     <column name="Seed" type="IGNORE" />
-    <column name="LightDetail" type="IGNORE">
+    <column name="Lightdetail" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>

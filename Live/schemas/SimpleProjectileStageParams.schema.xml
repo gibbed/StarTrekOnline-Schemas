@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SimpleProjectileStageParams">
+  <table>
+    <column name="SimpleProjectileStageParams" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Overridefields" type="INT">
+      <offset>0</offset>
+      <static_define_list external="SimpleProjectileOverrideField" />
+      <format>FLAGS</format>
+    </column>
+    <column name="MovementType" type="INT">
+      <offset>4</offset>
+      <static_define_list external="SimpleProjectileMovementType" />
+    </column>
+    <column name="Acceleration" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Velocity" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Gravitymultiplier" type="F32">
+      <offset>16</offset>
+      <default>1</default>
+    </column>
+    <column name="Donotcollidewithowner" type="U8">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Donotcollidewithents" type="U8">
+      <offset>21</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Tracktarget" type="U8">
+      <offset>22</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Poweronworldcollide" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Poweronentcollide" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

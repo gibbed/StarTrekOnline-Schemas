@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="totalLegsCreated" type="INT">
+    <column name="Totallegscreated" type="INT">
       <offset>0</offset>
     </column>
-    <column name="problemAreaRequest" type="INT">
+    <column name="Problemarearequest" type="INT">
       <offset>4</offset>
     </column>
-    <column name="ProblemLocs" type="STRUCT">
+    <column name="Problemlocs" type="STRUCT">
       <offset>8</offset>
       <subtable external="AICivProblemLocation" />
     </column>

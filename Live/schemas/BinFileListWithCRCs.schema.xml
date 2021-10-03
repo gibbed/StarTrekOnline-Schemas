@@ -7,18 +7,21 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="file_list" type="OPTIONALSTRUCT">
+    <column name="File_List" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="BinFileList" />
     </column>
-    <column name="world_crc" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="encounterlayer_crc" type="INT">
+    <column name="World_Core_Crc" type="INT">
       <offset>8</offset>
     </column>
-    <column name="gaelayer_crc" type="INT">
+    <column name="World_Dynamic_Crc" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Encounterlayer_Crc" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Gaelayer_Crc" type="INT">
+      <offset>20</offset>
     </column>
     <column name="}" type="END" />
   </table>

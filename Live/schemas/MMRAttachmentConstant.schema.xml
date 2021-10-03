@@ -7,16 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="erParent" type="INT">
+    <column name="Erparent" type="INT">
       <offset>0</offset>
     </column>
-    <column name="pyrOffset" type="F32FIXEDARRAY">
+    <column name="Pyroffset" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="vecOffset" type="F32FIXEDARRAY">
+    <column name="Vecoffset" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

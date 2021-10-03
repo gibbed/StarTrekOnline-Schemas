@@ -16,34 +16,35 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="DisplayName" type="REFERENCE">
-      <offset>8</offset>
+      <offset>16</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
     <column name="Choice" type="STRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="InteriorOptionChoiceRef" />
     </column>
-    <column name="DefaultChoice" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Defaultchoice" type="REFERENCE">
+      <offset>32</offset>
       <dictionary_name>InteriorOptionChoice</dictionary_name>
     </column>
-    <column name="optionChangeCost" type="INT">
-      <offset>20</offset>
+    <column name="Optionchangecost" type="INT">
+      <offset>40</offset>
     </column>
-    <column name="optionChangeCostNumeric" type="STRING">
-      <offset>24</offset>
+    <column name="Optionchangecostnumeric" type="STRING">
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="isTailorOption" type="BOOLFLAG">
-      <offset>28</offset>
+    <column name="Istailoroption" type="BOOLFLAG">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

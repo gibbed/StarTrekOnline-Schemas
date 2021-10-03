@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SimpleProjectileConfig">
+  <table>
+    <column name="SimpleProjectileConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Upoffset" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Rightoffset" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Forwardoffset" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Spawnatentitypos" type="BIT">
+      <offset>12</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Spawnignorepitch" type="BIT">
+      <offset>12</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

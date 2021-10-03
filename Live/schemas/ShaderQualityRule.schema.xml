@@ -6,16 +6,15 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="{" type="START" />
-    <column name="mid" type="F32">
+    <column name="Mid" type="F32">
       <offset>0</offset>
     </column>
-    <column name="high" type="F32">
+    <column name="High" type="F32">
       <offset>4</offset>
     </column>
-    <column name="veryHigh" type="F32">
+    <column name="Veryhigh" type="F32">
       <offset>8</offset>
     </column>
-    <column name="EndShaderQuality" type="END" />
+    <column name="Endshaderquality" type="END" />
   </table>
 </parser>

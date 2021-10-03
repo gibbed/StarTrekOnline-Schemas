@@ -14,16 +14,17 @@
       </flags>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Set" type="U8">
-      <offset>8</offset>
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Global" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="TestServerGlobal" />
     </column>
     <column name="}" type="END" />

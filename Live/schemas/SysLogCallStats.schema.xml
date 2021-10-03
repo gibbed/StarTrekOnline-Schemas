@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SysLogCallStats">
+  <table>
+    <column name="SysLogCallStats" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Contextname" type="STRING">
+      <offset>0</offset>
+      <format_strings>
+        <format_string name="HTML_SKIP_IN_TABLE">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Call_Id" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Log_Type" type="INT">
+      <offset>16</offset>
+      <static_define_list external="SysLogType" />
+    </column>
+    <column name="Note" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Total_Count" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Current_Count" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Current_Duration" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Throttle_Override" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Default_Throttle" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Redirect_Override" type="INT">
+      <offset>52</offset>
+      <static_define_list external="SysLogType" />
+    </column>
+    <column name="Trigger_Overrides" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="SysLogCallStatsTrigger" />
+    </column>
+    <column name="reset" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogOverrideCallReset "$FIELD(ContextName)" "$FIELD(CALL_ID)" $NOCONFIRM $NORETURN</command_string>
+    </column>
+    <column name="Trigger" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogOverrideCallTrigger "$FIELD(ContextName)" "$FIELD(CALL_ID)" $SELECT(Trigger type|ENUM_SysLogType) $INT(Trigger at, -1=No Override) $NORETURN</command_string>
+    </column>
+    <column name="Redirect" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogOverrideCallRedirect "$FIELD(ContextName)" "$FIELD(CALL_ID)" $SELECT(Redirect to type, NONE=No Override|ENUM_SysLogType) $NORETURN</command_string>
+    </column>
+    <column name="Throttle" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogOverrideCallThrottle "$FIELD(ContextName)" "$FIELD(CALL_ID)" $INT(Max per minute; -1=No Override) $NORETURN</command_string>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

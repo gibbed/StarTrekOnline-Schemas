@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ConsignmentSearchOp">
+  <elements type="int">
+    <element name="Equal">0</element>
+    <element name="NotEqual">1</element>
+    <element name="MatchText">2</element>
+    <element name="InRange">3</element>
+    <element name="GreaterThan">4</element>
+    <element name="GreaterThanOrEqual">5</element>
+    <element name="LessThan">6</element>
+    <element name="LessThanOrEqual">7</element>
+  </elements>
+</enum>

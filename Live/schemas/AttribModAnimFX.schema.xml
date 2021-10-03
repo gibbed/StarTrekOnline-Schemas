@@ -7,78 +7,82 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ContinuingBits" type="STRINGARRAY">
+    <column name="Continuingbits" type="STRINGARRAY">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="ContinuingFX" type="STRINGARRAY">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>SERVER_ONLY</flag>
-      </flags>
-    </column>
-    <column name="StanceWord" type="STRINGARRAY">
+    <column name="Continuingfx" type="STRINGARRAY">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
+      <dictionary_name>DynFxInfo</dictionary_name>
     </column>
-    <column name="AnimKeyword" type="STRING">
-      <offset>12</offset>
+    <column name="Stanceword" type="STRINGARRAY">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="ContinuingFXParamBlock" type="STRUCT">
-      <offset>16</offset>
-      <flags>
-        <flag>SERVER_ONLY</flag>
-      </flags>
-      <subtable external="PowerFXParam" />
-    </column>
-    <column name="ContinuingFxParam" type="STRUCT">
-      <offset>16</offset>
-      <flags>
-        <flag>ALIAS</flag>
-        <flag>SERVER_ONLY</flag>
-      </flags>
-      <redundant_name>ContinuingFXParamBlock</redundant_name>
-      <subtable external="PowerFXParam_StructParam" />
-    </column>
-    <column name="ConditionalBits" type="STRINGARRAY">
-      <offset>20</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>SERVER_ONLY</flag>
-      </flags>
-    </column>
-    <column name="ConditionalFX" type="STRINGARRAY">
+    <column name="Animkeyword" type="STRING">
       <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="ConditionalFXParamBlock" type="STRUCT">
-      <offset>28</offset>
+    <column name="Continuingfxparamblock" type="STRUCT">
+      <offset>32</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="PowerFXParam" />
     </column>
-    <column name="ConditionalFxParam" type="STRUCT">
-      <offset>28</offset>
+    <column name="Continuingfxparam" type="STRUCT">
+      <offset>32</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
-      <redundant_name>ConditionalFXParamBlock</redundant_name>
+      <redundant_name>Continuingfxparamblock</redundant_name>
+      <subtable external="PowerFXParam_StructParam" />
+    </column>
+    <column name="Conditionalbits" type="STRINGARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Conditionalfx" type="STRINGARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <dictionary_name>DynFxInfo</dictionary_name>
+    </column>
+    <column name="Conditionalfxparamblock" type="STRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="PowerFXParam" />
+    </column>
+    <column name="Conditionalfxparam" type="STRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <redundant_name>Conditionalfxparamblock</redundant_name>
       <subtable external="PowerFXParam_StructParam" />
     </column>
     <column name="}" type="END" />

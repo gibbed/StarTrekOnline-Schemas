@@ -15,30 +15,64 @@
       </flags>
     </column>
     <column name="Mission" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="Mission" />
     </column>
-    <column name="ResetTimeRemaining" type="F32">
-      <offset>8</offset>
+    <column name="Resettimeremaining" type="F32">
+      <offset>16</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="uiResetTimeRemaining" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="Scores" type="STRUCT">
-      <offset>16</offset>
-      <subtable external="OpenMissionScoreEntry" />
-    </column>
-    <column name="eaiParticipants" type="INTARRAY">
+    <column name="Uiresettimeremaining" type="INT">
       <offset>20</offset>
     </column>
-    <column name="uiSucceededTime" type="INT">
+    <column name="Scores" type="STRUCT">
       <offset>24</offset>
+      <subtable external="OpenMissionScoreEntry" />
     </column>
-    <column name="PartitionIdx" type="INT">
-      <offset>28</offset>
+    <column name="Eaiparticipants" type="INTARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="Uisucceededtime" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Uieventendtime" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Hmissioninstance" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>MissionInstanceDef</dictionary_name>
+    </column>
+    <column name="Partitionidx" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Playercount" type="INT">
+      <offset>60</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Senddebugupdates" type="U8">
+      <offset>64</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Didsetupexpression" type="U8">
+      <offset>65</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Didcleanupexpression" type="U8">
+      <offset>66</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

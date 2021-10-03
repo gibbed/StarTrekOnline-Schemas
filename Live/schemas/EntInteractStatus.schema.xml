@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="dirtyBit" type="U8">
+    <column name="Dirtybit" type="U8">
       <offset>0</offset>
       <flags>
         <flag>NO_NETSEND</flag>
@@ -15,155 +15,191 @@
       </flags>
     </column>
     <column name="Interacting" type="BIT">
-      <offset>0</offset>
+      <offset>1</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
-      <bit_offset>65544</bit_offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SittingInChair" type="BIT">
-      <offset>0</offset>
+    <column name="Sittinginchair" type="BIT">
+      <offset>1</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
-      <bit_offset>65545</bit_offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InteractOptions" type="EMBEDDEDSTRUCT">
-      <offset>56</offset>
+    <column name="Collectingremotely" type="BIT">
+      <offset>1</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Interactoptions" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="InteractOptions" />
     </column>
-    <column name="OverrideEntries" type="STRUCT">
-      <offset>60</offset>
+    <column name="Overrideentries" type="STRUCT">
+      <offset>80</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="WorldInteractionPropertyEntry" />
     </column>
-    <column name="hInteractUseTimeMsg" type="REFERENCE">
-      <offset>96</offset>
+    <column name="Hinteractusetimemsg" type="REFERENCE">
+      <offset>144</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="overrideRef" type="INT">
-      <offset>100</offset>
+    <column name="Interactmidpos" type="F32FIXEDARRAY">
+      <offset>152</offset>
+      <flags>
+        <flag>WORLD_POSITION</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Overrideref" type="INT">
+      <offset>164</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
-    <column name="hOverrideNode" type="REFERENCE">
-      <offset>104</offset>
+    <column name="Hoverridenode" type="REFERENCE">
+      <offset>168</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <dictionary_name>WorldInteractionNode</dictionary_name>
     </column>
-    <column name="PromptedInteractOptions" type="STRUCT">
-      <offset>108</offset>
+    <column name="Promptedinteractoptions" type="STRUCT">
+      <offset>176</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <subtable external="InteractOption" />
     </column>
-    <column name="hPreferredTargetNode" type="REFERENCE">
-      <offset>112</offset>
+    <column name="Hpreferredtargetnode" type="REFERENCE">
+      <offset>184</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <dictionary_name>WorldInteractionNode</dictionary_name>
     </column>
-    <column name="preferredTargetEntity" type="INT">
-      <offset>116</offset>
+    <column name="Preferredtargetentity" type="INT">
+      <offset>192</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
-    <column name="overrideSet" type="BIT">
-      <offset>120</offset>
+    <column name="Overrideset" type="BIT">
+      <offset>196</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="promptInteraction" type="BIT">
-      <offset>120</offset>
+    <column name="Promptinteraction" type="BIT">
+      <offset>196</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="promptPickup" type="BIT">
-      <offset>120</offset>
+    <column name="Promptpickup" type="BIT">
+      <offset>196</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="pickupTarget" type="STRING">
-      <offset>124</offset>
+    <column name="Pickuptarget" type="STRING">
+      <offset>200</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
     </column>
-    <column name="NearbyContactTypes" type="INT">
-      <offset>136</offset>
+    <column name="Nearbycontacttypes1" type="INT">
+      <offset>216</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
     </column>
-    <column name="RecentQueueInteractions" type="STRUCT">
-      <offset>140</offset>
+    <column name="Nearbycontacttypes2" type="INT">
+      <offset>220</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Recentqueueinteractions" type="STRUCT">
+      <offset>224</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="InteractedQueueDef" />
     </column>
-    <column name="TargetableNodes" type="STRUCT">
-      <offset>144</offset>
+    <column name="Targetablenodes" type="STRUCT">
+      <offset>232</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="TargetableNode" />
     </column>
-    <column name="TooltipNodes" type="STRUCT">
-      <offset>152</offset>
+    <column name="Tooltipnodes" type="STRUCT">
+      <offset>248</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="TooltipNode" />
     </column>
-    <column name="OverrideDisplayTextNodes" type="STRUCT">
-      <offset>156</offset>
+    <column name="Overridedisplaytextnodes" type="STRUCT">
+      <offset>256</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="OverrideDisplayTextNode" />
     </column>
-    <column name="VisibleNodes" type="STRUCT">
-      <offset>160</offset>
+    <column name="Visiblenodes" type="STRUCT">
+      <offset>264</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="VisibleOverrideNode" />
     </column>
-    <column name="DoorStatusNodes" type="STRUCT">
-      <offset>172</offset>
+    <column name="Doorstatusnodes" type="STRUCT">
+      <offset>288</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="NodeSummary" />
     </column>
-    <column name="InteractVolumeStatus" type="STRUCT">
-      <offset>180</offset>
+    <column name="Interactvolumestatus" type="STRUCT">
+      <offset>304</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="InteractVolumeStatus" />
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>336</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
     </column>
     <column name="}" type="END" />
   </table>

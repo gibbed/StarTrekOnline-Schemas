@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="eAnimLogicNodeType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="Add">1</element>
+    <element name="Min">2</element>
+    <element name="Blend">3</element>
+    <element name="Speed">4</element>
+    <element name="TypesCount">5</element>
+  </elements>
+</enum>

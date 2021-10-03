@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FX2SwitchTimeType">
+  <elements type="int">
+    <element name="Instant">0</element>
+    <element name="Faster">1</element>
+    <element name="Fast">2</element>
+    <element name="Normal">3</element>
+    <element name="Slow">4</element>
+    <element name="Slower">5</element>
+    <element name="Persist">6</element>
+  </elements>
+</enum>

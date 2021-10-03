@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hasAnchor" type="BIT">
+    <column name="Hasanchor" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="buttonReleased" type="BIT">
+    <column name="Buttonreleased" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>

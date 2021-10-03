@@ -12,31 +12,35 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1222</default>
+      <default>1336</default>
       <static_define_list external="AttribType" />
     </column>
     <column name="Map" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Spawn" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="TransitionOverride" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Spawn" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Transwarpuicategory" type="INT">
+      <offset>24</offset>
+      <static_define_list external="TranswarpUICategory" />
+    </column>
+    <column name="Transitionoverride" type="REFERENCE">
+      <offset>32</offset>
       <dictionary_name>DoorTransitionSequenceDef</dictionary_name>
     </column>
-    <column name="DisallowSameMapTransfer" type="BIT">
-      <offset>16</offset>
+    <column name="Disallowsamemaptransfer" type="BIT">
+      <offset>40</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="AllowedInQueueMap" type="BIT">
-      <offset>16</offset>
+    <column name="Allowedinqueuemap" type="BIT">
+      <offset>40</offset>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />

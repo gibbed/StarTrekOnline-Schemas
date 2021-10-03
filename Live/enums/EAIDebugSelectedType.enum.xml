@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="EAIDebugSelectedType">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="SELECTED">1</element>
+    <element name="SELECTED_DUAL">2</element>
+    <element name="SELECTED_LOCK">3</element>
+  </elements>
+</enum>

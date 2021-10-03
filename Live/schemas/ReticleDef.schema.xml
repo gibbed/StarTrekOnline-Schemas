@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ReticleDef">
+  <table>
+    <column name="ReticleDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Statictexture" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Statictintabletexture" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Movingtexture" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Movingtintabletexture" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Combatentitytargetingreticle" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="ReticleTargetingDef" />
+    </column>
+    <column name="Targetingreticle" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="ReticleTargetingDef" />
+    </column>
+    <column name="Soundfx" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
+      <subtable external="ReticleSoundDef" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

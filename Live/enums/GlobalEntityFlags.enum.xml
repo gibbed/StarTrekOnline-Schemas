@@ -25,5 +25,9 @@
     <element name="ENTITYFLAG_CRITTERPET">2097152</element>
     <element name="ENTITYFLAG_PROJECTILE">4194304</element>
     <element name="ENTITYFLAG_PET_LOGGING_OUT">8388608</element>
+    <element name="ENTITYFLAG_DESTRUCTIBLE">16777216</element>
+    <element name="ENTITYFLAG_PRIORITY">33554432</element>
+    <element name="ENTITYFLAG_NOSTARTCOMBAT">67108864</element>
+    <element name="ENTITYFLAG_FOLLOWER">134217728</element>
   </elements>
 </enum>

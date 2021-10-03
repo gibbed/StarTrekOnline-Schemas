@@ -7,11 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="is_specified" type="BOOLFLAG">
+    <column name="Is_Specified" type="BOOLFLAG">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="boolvalue" type="BOOLFLAG">
+    <column name="Boolvalue" type="BOOLFLAG">
       <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

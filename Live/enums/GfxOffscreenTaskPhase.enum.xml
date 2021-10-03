@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GfxOffscreenTaskPhase">
+  <elements type="int">
+    <element name="Pending">0</element>
+    <element name="Render">1</element>
+    <element name="RenderWait">2</element>
+    <element name="PostProcess">3</element>
+    <element name="Output">4</element>
+    <element name="Canceling">5</element>
+    <element name="Release">6</element>
+    <element name="TimeOut">7</element>
+  </elements>
+</enum>

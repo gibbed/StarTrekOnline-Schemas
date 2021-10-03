@@ -7,16 +7,21 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pre_copy" type="OPTIONALSTRUCT">
+    <column name="Precopy" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="GroupDef" />
     </column>
-    <column name="post_copy" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Postcopy" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="GroupDef" />
     </column>
-    <column name="is_undo" type="U8">
-      <offset>12</offset>
+    <column name="Isundo" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isoverride" type="U8">
+      <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

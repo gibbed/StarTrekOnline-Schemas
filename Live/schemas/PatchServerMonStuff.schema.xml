@@ -14,11 +14,11 @@
       </flags>
     </column>
     <column name="Versions" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="PatchVersionInfoForServerMon" />
     </column>
-    <column name="RecentVersions" type="STRUCT">
-      <offset>8</offset>
+    <column name="Recentversions" type="STRUCT">
+      <offset>16</offset>
       <subtable external="PatchVersionInfoForServerMon" />
     </column>
     <column name="}" type="END" />

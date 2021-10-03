@@ -7,9 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="defs" type="STRUCT">
+    <column name="Groups" type="STRUCT">
       <offset>0</offset>
-      <subtable external="GroupDefBak" />
+      <subtable external="GroupBak" />
+    </column>
+    <column name="Layermodelvertexcolors" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="LayerModelVertexColorsBak" />
+    </column>
+    <column name="Objlibmodelvertexcolors" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="ObjLibModelVertexColorsBak" />
     </column>
     <column name="}" type="END" />
   </table>

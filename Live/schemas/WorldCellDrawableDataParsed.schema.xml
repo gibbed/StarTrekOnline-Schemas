@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="model_entries" type="STRUCT">
+    <column name="Model_Entries" type="STRUCT">
       <offset>0</offset>
       <subtable external="WorldModelEntryParsed" />
     </column>
-    <column name="model_instance_entries" type="STRUCT">
-      <offset>4</offset>
+    <column name="Model_Instance_Entries" type="STRUCT">
+      <offset>8</offset>
       <subtable external="WorldModelInstanceEntryParsed" />
     </column>
-    <column name="spline_entries" type="STRUCT">
-      <offset>8</offset>
+    <column name="Spline_Entries" type="STRUCT">
+      <offset>16</offset>
       <subtable external="WorldSplinedModelEntryParsed" />
     </column>
-    <column name="occlusion_entries" type="STRUCT">
-      <offset>12</offset>
+    <column name="Occlusion_Entries" type="STRUCT">
+      <offset>24</offset>
       <subtable external="WorldOcclusionEntryParsed" />
     </column>
     <column name="}" type="END" />

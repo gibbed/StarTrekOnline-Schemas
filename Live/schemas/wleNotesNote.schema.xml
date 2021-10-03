@@ -7,38 +7,41 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="note_name" type="STRING">
+    <column name="Note_Name" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="note_content" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="note_type" type="STRING">
+    <column name="Note_Content" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="note_cam_dist" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="note_cam_center" type="F32FIXEDARRAY">
+    <column name="Note_Type" type="STRING">
       <offset>16</offset>
-      <num_elements>3</num_elements>
     </column>
-    <column name="note_cam_target" type="F32FIXEDARRAY">
+    <column name="Note_Cam_Dist" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Note_Cam_Center" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="note_tex_id" type="INT">
+    <column name="Note_Cam_Target" type="F32FIXEDARRAY">
       <offset>40</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="note_color" type="F32FIXEDARRAY">
-      <offset>44</offset>
+    <column name="Note_Tex_Id" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Note_Color" type="F32FIXEDARRAY">
+      <offset>56</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="tracker_handle" type="STRING">
-      <offset>60</offset>
+    <column name="Tracker_Handle" type="STRING">
+      <offset>72</offset>
     </column>
-    <column name="user_name" type="STRING">
-      <offset>64</offset>
+    <column name="User_Name" type="STRING">
+      <offset>80</offset>
     </column>
     <column name="}" type="END" />
   </table>

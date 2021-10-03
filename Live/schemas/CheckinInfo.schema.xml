@@ -13,17 +13,24 @@
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="RevNum" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="checkinComment" type="STRING">
+    <column name="Revnum" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Branchnum" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Checkincomment" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="CheckinTimeSS2000" type="INT">
-      <offset>12</offset>
+    <column name="Checkintimess2000" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Files" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="CheckinInfoFile" />
     </column>
     <column name="}" type="END" />
   </table>

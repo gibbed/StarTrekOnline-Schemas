@@ -17,75 +17,89 @@
     <column name="Name" type="REFERENCE">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
       <redundant_name>Costume</redundant_name>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
     <column name="Weight" type="F32">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
     <column name="Key" type="INT">
-      <offset>8</offset>
+      <offset>12</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>KEY</flag>
       </flags>
     </column>
     <column name="Order" type="F32">
-      <offset>12</offset>
+      <offset>16</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
     <column name="MinLevel" type="INT">
-      <offset>16</offset>
-      <flags>
-        <flag>STRUCTPARAM</flag>
-      </flags>
-      <default>-1</default>
-    </column>
-    <column name="MaxLevel" type="INT">
       <offset>20</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <default>-1</default>
     </column>
-    <column name="MinTeamSize" type="INT">
+    <column name="MaxLevel" type="INT">
       <offset>24</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <default>-1</default>
     </column>
-    <column name="MaxTeamSize" type="INT">
+    <column name="Minteamsize" type="INT">
       <offset>28</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <default>-1</default>
     </column>
-    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+    <column name="Maxteamsize" type="INT">
       <offset>32</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <default>-1</default>
+    </column>
+    <column name="Assetset" type="INT">
+      <offset>36</offset>
+      <default>-1</default>
+      <static_define_list external="AssetSet" />
+    </column>
+    <column name="Assetsetindex" type="INT">
+      <offset>36</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Assetset</redundant_name>
+      <default>-1</default>
+      <static_define_list external="AssetSet" />
+    </column>
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="displaySubNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>44</offset>
+    <column name="Displaysubnamemsg" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="voiceSet" type="STRING">
-      <offset>56</offset>
+    <column name="Voiceset" type="STRING">
+      <offset>88</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CreateIgnoresDisplayName" type="BIT">
-      <offset>60</offset>
+    <column name="Createignoresdisplayname" type="BIT">
+      <offset>96</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

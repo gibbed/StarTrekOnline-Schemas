@@ -12,27 +12,28 @@
       <subtable external="UIGen" />
     </column>
     <column name="Template" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
         <flag>STRUCT_NORECURSE</flag>
       </flags>
       <subtable external="UIGen" />
     </column>
-    <column name="InstanceNumber" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="DataNumber" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="Row" type="INT16">
+    <column name="Instancenumber" type="INT">
       <offset>16</offset>
     </column>
-    <column name="Column" type="INT16">
-      <offset>18</offset>
-    </column>
-    <column name="NewInstance" type="U8">
+    <column name="Datanumber" type="INT">
       <offset>20</offset>
+    </column>
+    <column name="Row" type="INT16">
+      <offset>24</offset>
+    </column>
+    <column name="Column" type="INT16">
+      <offset>26</offset>
+    </column>
+    <column name="Newinstance" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

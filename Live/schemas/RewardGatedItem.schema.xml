@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="RewardGatedItem">
+  <table>
+    <column name="RewardGatedItem" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uitemid" type="INT64">
+      <offset>0</offset>
+    </column>
+    <column name="Ugatedvalue" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Gatedtype" type="INT">
+      <offset>12</offset>
+      <static_define_list external="RewardGatedType" />
+    </column>
+    <column name="Rewardtablegatedtype" type="INTARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -14,10 +14,10 @@
       </flags>
       <subtable external="AccountProxyKeyValueInfoContainer" />
     </column>
-    <column name="ppList" type="STRUCT">
+    <column name="Pplist" type="STRUCT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
       <redundant_name>List</redundant_name>

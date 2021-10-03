@@ -7,21 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DebugStances" type="STRUCT">
+    <column name="Debugstances" type="STRUCT">
       <offset>0</offset>
       <subtable external="DynSkeletonDebugStance" />
     </column>
-    <column name="GraphUpdaters" type="STRUCT">
-      <offset>4</offset>
+    <column name="Graphupdaters" type="STRUCT">
+      <offset>8</offset>
       <subtable external="DynSkeletonDebugGraphUpdater" />
     </column>
-    <column name="MovementBlocks" type="STRUCT">
-      <offset>8</offset>
-      <subtable external="DynSkeletonDebugMovementBlock" />
-    </column>
-    <column name="MovementFX" type="STRUCT">
-      <offset>12</offset>
+    <column name="Movementfx" type="STRUCT">
+      <offset>16</offset>
       <subtable external="DynSkeletonDebugFX" />
+    </column>
+    <column name="Stactivevissettosource" type="STASHTABLE">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

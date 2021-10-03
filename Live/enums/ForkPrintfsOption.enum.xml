@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ForkPrintfsOption">
+  <elements type="int">
+    <element name="TimestampFilename">1</element>
+    <element name="PurgeOld">2</element>
+  </elements>
+</enum>

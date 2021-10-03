@@ -11,6 +11,18 @@
       <offset>0</offset>
       <subtable external="MicroTransactionCostume" />
     </column>
+    <column name="Geometries" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="MicroTransactionCostumeUnlock" />
+    </column>
+    <column name="Materials" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="MicroTransactionCostumeUnlock" />
+    </column>
+    <column name="Textures" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="MicroTransactionCostumeUnlock" />
+    </column>
     <column name="}" type="END" />
   </table>
 </parser>

@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="bcns" type="STRUCT">
+    <column name="Bcns" type="STRUCT">
       <offset>0</offset>
       <subtable external="AIDebugAvoidBcn" />
     </column>
-    <column name="volumes" type="STRUCT">
-      <offset>4</offset>
+    <column name="Volumes" type="STRUCT">
+      <offset>8</offset>
       <subtable external="AIDebugAvoidVolume" />
     </column>
     <column name="}" type="END" />

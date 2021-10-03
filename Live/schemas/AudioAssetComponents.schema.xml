@@ -11,13 +11,13 @@
       <offset>0</offset>
     </column>
     <column name="Strings" type="STRINGARRAY">
-      <offset>4</offset>
-    </column>
-    <column name="uiNumData" type="INT">
       <offset>8</offset>
     </column>
-    <column name="uiNumDataWithAudio" type="INT">
-      <offset>12</offset>
+    <column name="Uinumdata" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Uinumdatawithaudio" type="INT">
+      <offset>20</offset>
     </column>
     <column name="}" type="END" />
   </table>

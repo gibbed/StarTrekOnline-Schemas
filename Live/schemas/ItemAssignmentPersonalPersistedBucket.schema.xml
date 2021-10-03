@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="eaAvailableAssignments" type="STRUCT">
+    <column name="Eaavailableassignments" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -16,8 +16,8 @@
       </flags>
       <subtable external="ItemAssignmentDefRefCont" />
     </column>
-    <column name="uLastPersonalUpdateTime" type="INT">
-      <offset>4</offset>
+    <column name="Ulastpersonalupdatetime" type="INT">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>

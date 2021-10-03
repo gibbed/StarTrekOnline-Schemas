@@ -6,23 +6,21 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="MessageType" type="STRING">
+    <column name="Messagetype" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="SendTo" type="INT">
-      <offset>4</offset>
+    <column name="Sendto" type="INT">
+      <offset>8</offset>
       <default>1</default>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="MessageTo" />
       <format>FLAGS</format>
     </column>
     <column name="Distance" type="F32">
-      <offset>8</offset>
+      <offset>12</offset>
       <default>10</default>
     </column>
     <column name="End" type="END" />

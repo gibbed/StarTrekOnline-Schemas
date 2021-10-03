@@ -14,15 +14,45 @@
       </flags>
       <default_string>utilitieslib@crypticstudios.com</default_string>
     </column>
-    <column name="recipients" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Recipients" type="STRINGARRAY">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Parts" type="STRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="SMTPMessagePart" />
+    </column>
+    <column name="UID" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Utimeout" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Utimestart" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Failedrecipients" type="STRINGARRAY">
+      <offset>72</offset>
+    </column>
+    <column name="Result" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Allrcpts" type="U8">
+      <offset>88</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Done" type="U8">
+      <offset>89</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Success" type="U8">
+      <offset>90</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

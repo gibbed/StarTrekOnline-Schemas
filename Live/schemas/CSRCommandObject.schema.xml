@@ -7,34 +7,40 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="callerType" type="INT">
+    <column name="Callertype" type="INT">
       <offset>0</offset>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="callerID" type="INT">
+    <column name="Callerid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="callerAccessLevel" type="INT">
+    <column name="Calleraccesslevel" type="INT">
       <offset>8</offset>
     </column>
-    <column name="callerName" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="callerAccount" type="STRING">
+    <column name="Callername" type="STRING">
       <offset>16</offset>
     </column>
+    <column name="Calleraccount" type="STRING">
+      <offset>24</offset>
+    </column>
     <column name="PlayerType" type="INT">
-      <offset>20</offset>
+      <offset>32</offset>
       <static_define_list external="GlobalType" />
     </column>
     <column name="playerID" type="INT">
-      <offset>24</offset>
+      <offset>36</offset>
     </column>
     <column name="playerName" type="STRING">
-      <offset>28</offset>
+      <offset>40</offset>
     </column>
     <column name="CommandString" type="STRING">
-      <offset>36</offset>
+      <offset>56</offset>
+    </column>
+    <column name="Commandoutput" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

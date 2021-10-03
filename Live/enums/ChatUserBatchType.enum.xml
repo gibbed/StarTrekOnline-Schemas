@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ChatUserBatchType">
+  <elements type="int">
+    <element name="FRIENDS">0</element>
+    <element name="IGNORES">1</element>
+  </elements>
+</enum>

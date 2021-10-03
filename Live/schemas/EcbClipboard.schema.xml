@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="clips" type="STRUCT">
+    <column name="Clips" type="STRUCT">
       <offset>0</offset>
       <subtable external="EcbClip" />
     </column>

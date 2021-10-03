@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uEntID" type="INT">
+    <column name="Uentid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="uTimeoutTime" type="INT">
+    <column name="Utimeouttime" type="INT">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

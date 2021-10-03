@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LootBags" type="STRUCT">
+    <column name="Lootbags" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>NO_INDEX</flag>

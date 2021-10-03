@@ -10,7 +10,7 @@
       <offset>0</offset>
     </column>
     <column name="Def" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="GroupDef" />
     </column>
   </table>

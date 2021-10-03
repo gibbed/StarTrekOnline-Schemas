@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hSubCostume" type="REFERENCE">
+    <column name="Hsubcostume" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>WLCostume</dictionary_name>
     </column>
-    <column name="AttachmentBone" type="STRING">
-      <offset>4</offset>
+    <column name="Attachmentbone" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

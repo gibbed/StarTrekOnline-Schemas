@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EntityMovementNavmeshLocalBG">
+  <table>
+    <column name="EntityMovementNavmeshLocalBG" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Inputdir" type="F32FIXEDARRAY">
+      <offset>0</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Inputrot" type="F32FIXEDARRAY">
+      <offset>12</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Maxspeedoverride" type="F32">
+      <offset>84</offset>
+    </column>
+    <column name="Debugoutputline" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Lastnavmeshping" type="F32FIXEDARRAY">
+      <offset>92</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Retrynavmeshping" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Navmeshedges" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="NavMeshTileImpassableEdge" />
+    </column>
+    <column name="Pingradiusedges" type="STRUCT">
+      <offset>120</offset>
+      <subtable external="NavMeshTileImpassableEdge" />
+    </column>
+    <column name="Pushdata" type="EMBEDDEDSTRUCT">
+      <offset>128</offset>
+      <subtable external="EntityMovementNavmeshPushData" />
+    </column>
+    <column name="Stundata" type="EMBEDDEDSTRUCT">
+      <offset>160</offset>
+      <subtable external="EntityMovementNavmeshStunData" />
+    </column>
+    <column name="Lastrotinputtimestamp" type="INT">
+      <offset>176</offset>
+    </column>
+    <column name="Yawtargetindex" type="INT">
+      <offset>180</offset>
+    </column>
+    <column name="Recentyawtargetsnum" type="F32FIXEDARRAY">
+      <offset>184</offset>
+      <num_elements>7</num_elements>
+    </column>
+    <column name="Recentyawtargetsdenom" type="F32FIXEDARRAY">
+      <offset>212</offset>
+      <num_elements>7</num_elements>
+    </column>
+    <column name="Speedadjust" type="EMBEDDEDSTRUCT">
+      <offset>240</offset>
+      <subtable external="RequesterSpeedAdjustLocalBG" />
+    </column>
+    <column name="Flagsmutable" type="EMBEDDEDSTRUCT">
+      <offset>256</offset>
+      <subtable external="EntityMovementNavmeshMovementFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

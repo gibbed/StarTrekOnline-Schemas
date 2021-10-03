@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TeamMods" type="F32FIXEDARRAY">
+    <column name="Teammods" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>5</num_elements>
     </column>

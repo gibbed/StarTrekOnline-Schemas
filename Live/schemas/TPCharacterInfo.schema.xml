@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="TPCharacterInfo">
+  <table>
+    <column name="TPCharacterInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Url" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Level" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="className" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="MapName" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Pets" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="TPPet" />
+    </column>
+    <column name="Posinmap" type="F32FIXEDARRAY">
+      <offset>48</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Characterid" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

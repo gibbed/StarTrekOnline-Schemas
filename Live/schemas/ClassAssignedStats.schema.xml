@@ -14,8 +14,8 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="AssignedStat" type="STRUCT">
-      <offset>4</offset>
+    <column name="Assignedstat" type="STRUCT">
+      <offset>8</offset>
       <subtable external="AssignedStats" />
     </column>
     <column name="}" type="END" />

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GimmeUpdateFlags">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="VERIFY">1</element>
+    <element name="IGNORE_WRITEABLE">2</element>
+    <element name="ONLY_WRITEABLE">4</element>
+    <element name="SYNC_BINS">8</element>
+  </elements>
+</enum>

@@ -16,80 +16,101 @@
       </flags>
     </column>
     <column name="Require" type="INT">
-      <offset>4</offset>
-      <static_define_list external="TargetType" />
-      <format>FLAGS</format>
-    </column>
-    <column name="Exclude" type="INT">
       <offset>8</offset>
       <static_define_list external="TargetType" />
       <format>FLAGS</format>
     </column>
-    <column name="Or" type="STRUCT">
+    <column name="Exclude" type="INT">
       <offset>12</offset>
+      <static_define_list external="TargetType" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Or" type="STRUCT">
+      <offset>16</offset>
       <subtable external="TargetTypePair" />
     </column>
-    <column name="msgDescription" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Targetlock" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="TargetTypePair" />
+    </column>
+    <column name="Msgdescription" type="REFERENCE">
+      <offset>32</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
     <column name="File" type="CURRENTFILE">
-      <offset>20</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DoNotTargetUnlessRequired" type="BIT">
-      <offset>24</offset>
+    <column name="Donottargetunlessrequired" type="BIT">
+      <offset>48</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="NeverTargetIfNotRequired" type="BIT">
-      <offset>24</offset>
+    <column name="Nevertargetifnotrequired" type="BIT">
+      <offset>48</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>DoNotTargetUnlessRequired</redundant_name>
+      <redundant_name>Donottargetunlessrequired</redundant_name>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="UseLocationHitIfNoTarget" type="BIT">
-      <offset>24</offset>
+    <column name="Uselocationhitifnotarget" type="BIT">
+      <offset>48</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="FaceActivateSticky" type="BIT">
-      <offset>24</offset>
+    <column name="Faceactivatesticky" type="BIT">
+      <offset>48</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="FaceDuringPowerActivation" type="BIT">
-      <offset>24</offset>
+    <column name="Faceduringpoweractivation" type="BIT">
+      <offset>48</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>FaceActivateSticky</redundant_name>
+      <redundant_name>Faceactivatesticky</redundant_name>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="RequireSelf" type="BIT">
-      <offset>24</offset>
+    <column name="Uselocationforrangecheck" type="BIT">
+      <offset>48</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="AllowSelf" type="BIT">
-      <offset>24</offset>
-      <bit_offset>65540</bit_offset>
+    <column name="Uselocationforrangecheck" type="BIT">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Uselocationforrangecheck</redundant_name>
+      <bit_offset>65539</bit_offset>
     </column>
-    <column name="AllowFoe" type="BIT">
-      <offset>24</offset>
-      <bit_offset>65541</bit_offset>
+    <column name="Targetaslocation" type="BIT">
+      <offset>48</offset>
+      <bit_offset>131076</bit_offset>
+      <static_define_list external="PowerTargetLocationType" />
     </column>
-    <column name="AllowFriend" type="BIT">
-      <offset>24</offset>
+    <column name="Requireself" type="BIT">
+      <offset>48</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="AllowNearDeath" type="BIT">
-      <offset>24</offset>
+    <column name="Allowself" type="BIT">
+      <offset>48</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="SafeForSelfOnly" type="BIT">
-      <offset>24</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Allowfoe" type="BIT">
+      <offset>49</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Allowfriend" type="BIT">
+      <offset>49</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Allowneardeath" type="BIT">
+      <offset>49</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Safeforselfonly" type="BIT">
+      <offset>49</offset>
+      <bit_offset>65539</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

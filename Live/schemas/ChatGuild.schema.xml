@@ -19,8 +19,17 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="GuildMembers" type="INTARRAY">
-      <offset>12</offset>
+    <column name="Namereduced" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Guildmembers" type="INTARRAY">
+      <offset>24</offset>
+    </column>
+    <column name="Allianceid" type="INT">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

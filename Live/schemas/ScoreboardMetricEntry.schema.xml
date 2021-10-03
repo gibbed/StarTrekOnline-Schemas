@@ -18,7 +18,7 @@
       <offset>132</offset>
       <string_length>128</string_length>
     </column>
-    <column name="MetricValue" type="INT">
+    <column name="Metricvalue" type="INT">
       <offset>260</offset>
     </column>
     <column name="Rank" type="INT">

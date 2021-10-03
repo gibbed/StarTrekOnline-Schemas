@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="enumExtendedErrorType">
+  <elements type="int">
+    <element name="NOTANERROR">0</element>
+    <element name="FATAL">1</element>
+    <element name="RETRY">2</element>
+  </elements>
+</enum>

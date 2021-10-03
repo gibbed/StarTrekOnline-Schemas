@@ -11,11 +11,11 @@
       <offset>0</offset>
     </column>
     <column name="Params" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="StrFmtParam" />
     </column>
-    <column name="LangSendRestriction" type="INT">
-      <offset>8</offset>
+    <column name="Langsendrestriction" type="INT">
+      <offset>16</offset>
       <static_define_list external="Language" />
     </column>
     <column name="}" type="END" />

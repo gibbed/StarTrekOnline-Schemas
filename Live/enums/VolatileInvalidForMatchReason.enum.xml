@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="VolatileInvalidForMatchReason">
+  <elements type="int">
+    <element name="Valid">0</element>
+    <element name="EventInactive">1</element>
+    <element name="ActivityInactive">2</element>
+    <element name="Disabled">4</element>
+    <element name="DisabledPrivate">8</element>
+    <element name="DisabledPublic">16</element>
+  </elements>
+</enum>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="TexOptFlags">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="RepeatS">0</element>
+    <element name="RepeatT">0</element>
+    <element name="Truecolor">0</element>
+    <element name="Exclude">1</element>
+    <element name="sRGB">2</element>
+    <element name="MagnificationFilterPoint">4</element>
+    <element name="CubeMap">8</element>
+    <element name="FixAlphaMIPs">16</element>
+    <element name="ClampS">64</element>
+    <element name="ClampT">128</element>
+    <element name="MirrorS">512</element>
+    <element name="MirrorT">1024</element>
+    <element name="NormalMap">2048</element>
+    <element name="AlphaBorderLR">8192</element>
+    <element name="AlphaBorderTB">16384</element>
+    <element name="AlphaBorder">24576</element>
+    <element name="ColorBorder">32768</element>
+    <element name="NoMip">65536</element>
+    <element name="Jpeg">131072</element>
+    <element name="VolumeMap">262144</element>
+    <element name="HDR">524288</element>
+    <element name="ForFallback">1048576</element>
+    <element name="ColorBorderLegacy">2097152</element>
+    <element name="NoAniso">4194304</element>
+    <element name="LightMap">134217728</element>
+    <element name="ReversedMips">268435456</element>
+    <element name="Crunch">536870912</element>
+    <element name="ForceLinear">1073741824</element>
+  </elements>
+</enum>

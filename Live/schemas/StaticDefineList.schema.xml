@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<parser name="StaticDefineList">
+<parser name="Staticdefinelist">
   <table>
     <column type="STRING">
       <offset>0</offset>
@@ -10,13 +10,11 @@
     <column name="{" type="START" />
     <column name="}" type="END" />
     <column name="Type" type="INT">
-      <offset>4</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <offset>8</offset>
+      <static_define_list external="StaticDefineTypeList" />
     </column>
     <column name="Define" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="Define" />
     </column>
   </table>

@@ -8,14 +8,14 @@
     </column>
     <column name="{" type="START" />
     <column name="Path" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="MRInteractionPath" />
     </column>
-    <column name="pathVersion" type="INT">
-      <offset>12</offset>
+    <column name="Pathversion" type="INT">
+      <offset>24</offset>
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">
-      <offset>16</offset>
+      <offset>28</offset>
       <subtable external="MRInteractionFGFlags" />
     </column>
     <column name="}" type="END" />

@@ -7,11 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pointLoc" type="F32FIXEDARRAY">
+    <column name="Pointloc" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="pointRot" type="QUATPYR">
+    <column name="Pointrot" type="QUATPYR">
       <offset>12</offset>
       <num_elements>4</num_elements>
     </column>

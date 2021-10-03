@@ -14,8 +14,16 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="uPlayerCount" type="INT">
-      <offset>4</offset>
+    <column name="Uplayercount" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Factiongrouplist" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="FactionGroupAndPopulation" />
+    </column>
+    <column name="Populationattime" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="PopulationAtTimeBlock" />
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="WorldVars" type="STRUCT">
+    <column name="Worldvars" type="STRUCT">
       <offset>0</offset>
       <subtable external="WorldVariable" />
     </column>

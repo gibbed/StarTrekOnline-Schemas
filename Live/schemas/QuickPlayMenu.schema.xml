@@ -7,31 +7,38 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DisplayName" type="STRING">
+    <column name="Logicalname" type="STRING">
       <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
     </column>
-    <column name="playerName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="MapName" type="STRING">
+    <column name="DisplayName" type="STRING">
       <offset>8</offset>
     </column>
+    <column name="playerName" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="MapName" type="STRING">
+      <offset>24</offset>
+    </column>
     <column name="Script" type="STRINGARRAY">
-      <offset>12</offset>
+      <offset>32</offset>
     </column>
     <column name="SubMenu" type="STRUCT">
-      <offset>16</offset>
+      <offset>40</offset>
       <subtable external="QuickPlayMenu" />
     </column>
     <column name="KeyBind" type="STRUCT">
-      <offset>20</offset>
+      <offset>48</offset>
       <subtable external="KeyBind" />
     </column>
-    <column name="DefaultCharacter" type="U8">
-      <offset>24</offset>
+    <column name="Defaultcharacter" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Info" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+      <offset>64</offset>
       <subtable external="Login2CharacterCreationData" />
     </column>
     <column name="}" type="END" />

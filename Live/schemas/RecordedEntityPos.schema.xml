@@ -10,17 +10,19 @@
     <column name="Pos" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Rot" type="QUATPYR">
       <offset>12</offset>
       <num_elements>4</num_elements>
     </column>
-    <column name="pyFace" type="F32FIXEDARRAY">
+    <column name="Pyface" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="animBits" type="STRUCT">
-      <offset>36</offset>
+    <column name="Animbits" type="STRUCT">
+      <offset>40</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>

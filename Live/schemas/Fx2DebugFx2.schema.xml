@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="Fx2DebugFx2">
+  <table>
+    <column name="Fx2DebugFx2" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Ukey" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Type" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Nodeowner" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Nodesource" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Nodetarget" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Ostats" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="Fx2Statistics" />
+    </column>
+    <column name="Umaxactiveparticles" type="INT">
+      <offset>212</offset>
+    </column>
+    <column name="Uregionkey" type="INT">
+      <offset>216</offset>
+    </column>
+    <column name="Uownerkey" type="INT">
+      <offset>220</offset>
+    </column>
+    <column name="Oselectioninfo" type="EMBEDDEDSTRUCT">
+      <offset>224</offset>
+      <subtable external="Fx2DebugFx2SelectionInfo" />
+    </column>
+    <column name="New" type="BIT">
+      <offset>248</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

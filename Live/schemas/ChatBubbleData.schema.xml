@@ -10,8 +10,8 @@
     <column name="Duration" type="F32">
       <offset>0</offset>
     </column>
-    <column name="BubbleStyle" type="STRING">
-      <offset>4</offset>
+    <column name="Bubblestyle" type="STRING">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

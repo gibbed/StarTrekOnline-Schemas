@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LevelNode" type="STRUCT">
+    <column name="Levelnode" type="STRUCT">
       <offset>0</offset>
       <subtable external="GroupProjectLevelTreeNodeDef" />
     </column>

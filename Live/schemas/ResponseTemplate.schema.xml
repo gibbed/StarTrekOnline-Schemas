@@ -12,7 +12,7 @@
       <subtable external="Placeholder" />
     </column>
     <column name="Error" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="JSONRPCErrorDetails" />
     </column>
     <column name="}" type="END" />

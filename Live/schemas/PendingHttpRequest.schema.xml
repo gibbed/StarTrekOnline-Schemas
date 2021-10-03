@@ -14,21 +14,24 @@
     <column name="RequestID" type="INT">
       <offset>4</offset>
     </column>
-    <column name="UrlArgs" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Linkid" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Urlargs" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="UrlArgumentList" />
     </column>
-    <column name="RequestTimeTicks" type="INT64">
-      <offset>16</offset>
+    <column name="Requesttimeticks" type="INT64">
+      <offset>24</offset>
     </column>
     <column name="CommandString" type="STRING">
-      <offset>24</offset>
+      <offset>32</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="FieldPath" type="STRING">
-      <offset>28</offset>
+    <column name="Fieldpath" type="STRING">
+      <offset>40</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

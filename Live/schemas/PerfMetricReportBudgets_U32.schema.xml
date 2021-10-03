@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PerfMetricReportBudgets_U32">
+  <table>
+    <column name="PerfMetricReportBudgets_U32" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Groupbudget" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="PerfMetricInfoBudget_U32" />
+    </column>
+    <column name="Budget" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="PerfMetricSampleBudget_U32" />
+    </column>
+  </table>
+</parser>

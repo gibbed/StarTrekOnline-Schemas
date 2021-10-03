@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AutoEnhancement" type="STRUCT">
+    <column name="Autoenhancement" type="STRUCT">
       <offset>0</offset>
       <subtable external="PTNodeEnhHelper" />
     </column>

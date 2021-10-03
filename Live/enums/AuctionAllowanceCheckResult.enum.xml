@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="AuctionAllowanceCheckResult">
+  <elements type="int">
+    <element name="Exempt">0</element>
+    <element name="NotApplicable">1</element>
+    <element name="TooExpensive">2</element>
+    <element name="Exceeded">3</element>
+    <element name="Allowed">4</element>
+  </elements>
+</enum>

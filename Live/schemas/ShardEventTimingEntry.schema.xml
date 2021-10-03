@@ -7,33 +7,40 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="StartDate" type="STRING">
+    <column name="Startdate" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="EndDate" type="STRING">
-      <offset>4</offset>
+    <column name="Enddate" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="DateStart" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="TimeEnd" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="TimeRepeat" type="INT">
+    <column name="Validshardregions" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="TimeDuration" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="RandomStartTime" type="BIT">
+    <column name="Datestart" type="INT">
       <offset>24</offset>
+    </column>
+    <column name="Timeend" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Timerepeat" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Timeduration" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Randomstarttime" type="BIT">
+      <offset>40</offset>
       <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Enabledforshardregion" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

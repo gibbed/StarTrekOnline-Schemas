@@ -7,18 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="UsageCategory" type="INT">
+    <column name="Usagecategory" type="INT">
       <offset>0</offset>
       <static_define_list external="UsageRestrictionCategory" />
     </column>
     <column name="DisplayName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Count" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

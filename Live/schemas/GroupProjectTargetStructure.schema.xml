@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="GroupProjectTargetStructure">
+  <table>
+    <column name="GroupProjectTargetStructure" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Plotdef" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>GarrisonPlotDef</dictionary_name>
+    </column>
+    <column name="Structuredef" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>GarrisonStructureDef</dictionary_name>
+    </column>
+    <column name="Level" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

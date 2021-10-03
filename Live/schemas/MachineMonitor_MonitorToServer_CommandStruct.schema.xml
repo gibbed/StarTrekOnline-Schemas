@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MachineMonitor_MonitorToServer_CommandStruct">
+  <table>
+    <column name="MachineMonitor_MonitorToServer_CommandStruct" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Command" type="INT">
+      <offset>16</offset>
+      <static_define_list external="MachineMonitor_ToServer_CommandEnum" />
+    </column>
+    <column name="CommandString" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Keystrokes" type="INTARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="Dialogid" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Dialogretval" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Dialogretstring" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Genericint" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Genericcallbackkey" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Summary" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="MachineMonitor_MachineSummary" />
+    </column>
+    <column name="Crypticprocesslist" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="MachineMonitor_CrypticProcess_ResponseList" />
+    </column>
+    <column name="Cxerrorconsolesnapshot" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="MachineMonitor_CxErrorConsoleSnapshot" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

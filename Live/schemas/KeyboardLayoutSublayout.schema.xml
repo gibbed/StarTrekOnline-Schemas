@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SubLayout" type="STRING">
+    <column name="Sublayout" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -16,13 +16,13 @@
       </flags>
     </column>
     <column name="X" type="INT16">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="Y" type="INT16">
-      <offset>6</offset>
+      <offset>10</offset>
     </column>
-    <column name="TransformedKey" type="STRUCT">
-      <offset>8</offset>
+    <column name="Transformedkey" type="STRUCT">
+      <offset>16</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="donatorID" type="INT">
+    <column name="Donatorid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -16,14 +16,14 @@
       </flags>
     </column>
     <column name="DisplayName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="contribution" type="INT">
-      <offset>8</offset>
+    <column name="Contribution" type="INT">
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

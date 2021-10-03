@@ -7,13 +7,28 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="fxParams" type="OPTIONALSTRUCT">
+    <column name="Fxparams" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="DynParamBlock" />
     </column>
-    <column name="vecLastKnownTarget" type="F32FIXEDARRAY">
-      <offset>4</offset>
+    <column name="Vecsource" type="F32FIXEDARRAY">
+      <offset>8</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Vectarget" type="F32FIXEDARRAY">
+      <offset>20</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Veclastknowntarget" type="F32FIXEDARRAY">
+      <offset>32</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Quattarget" type="QUATPYR">
+      <offset>44</offset>
+      <num_elements>4</num_elements>
     </column>
     <column name="}" type="END" />
   </table>

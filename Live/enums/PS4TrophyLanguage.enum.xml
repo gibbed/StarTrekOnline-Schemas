@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PS4TrophyLanguage">
+  <elements type="int">
+    <element name="EnglishUS">1</element>
+    <element name="FrenchFR">2</element>
+    <element name="German">4</element>
+    <element name="Italian">5</element>
+    <element name="Russian">8</element>
+    <element name="ChineseTraditional">10</element>
+    <element name="ChineseSimplified">11</element>
+    <element name="FrenchCA">22</element>
+    <element name="MAX">23</element>
+  </elements>
+</enum>

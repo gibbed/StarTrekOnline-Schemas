@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DefaultMovement" type="OPTIONALSTRUCT">
+    <column name="Defaultmovement" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="DynPowerMovement" />
     </column>
-    <column name="HitPauseMovement" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Hitpausemovement" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="DynPowerMovement" />
     </column>
     <column name="}" type="END" />

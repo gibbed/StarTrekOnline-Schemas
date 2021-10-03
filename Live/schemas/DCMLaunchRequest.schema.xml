@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DCMLaunchRequest">
+  <table>
+    <column name="DCMLaunchRequest" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Machineandgroupstring" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Command" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Workingdir" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Sourceip" type="INT">
+      <offset>32</offset>
+      <format>IP</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

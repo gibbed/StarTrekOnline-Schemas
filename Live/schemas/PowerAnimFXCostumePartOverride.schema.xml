@@ -7,27 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="FxGeo" type="STRING">
+    <column name="Fxgeo" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Color" type="F32FIXEDARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Color1" type="F32FIXEDARRAY">
-      <offset>20</offset>
+      <offset>24</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Color2" type="F32FIXEDARRAY">
-      <offset>36</offset>
+      <offset>40</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Color3" type="F32FIXEDARRAY">
-      <offset>52</offset>
+      <offset>56</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

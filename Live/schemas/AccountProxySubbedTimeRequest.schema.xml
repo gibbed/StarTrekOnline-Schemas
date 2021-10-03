@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ProductInternalName" type="STRING">
+    <column name="Productinternalname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="uAccountID" type="INT">
-      <offset>4</offset>
+    <column name="Uaccountid" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -13,9 +13,9 @@
         <flag>STRUCTPARAM</flag>
         <flag>REQUIRED</flag>
       </flags>
-      <static_define_list external="UITweenType" />
+      <static_define_list external="TweenType" />
     </column>
-    <column name="TweenSpeed" type="F32">
+    <column name="Tweenspeed" type="F32">
       <offset>4</offset>
       <flags>
         <flag>STRUCTPARAM</flag>

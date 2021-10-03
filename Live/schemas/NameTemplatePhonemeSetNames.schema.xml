@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PhonemeSetName" type="STRINGARRAY">
+    <column name="Phonemesetname" type="STRINGARRAY">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,7 +15,7 @@
       </flags>
     </column>
     <column name="Weight" type="F32">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
@@ -23,14 +23,6 @@
       <default>1</default>
     </column>
     <column name="Belong" type="INT">
-      <offset>8</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <default>-1</default>
-    </column>
-    <column name="Restrict" type="INT">
       <offset>12</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -38,8 +30,16 @@
       </flags>
       <default>-1</default>
     </column>
-    <column name="AutoCaps" type="BIT">
+    <column name="Restrict" type="INT">
       <offset>16</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <default>-1</default>
+    </column>
+    <column name="Autocaps" type="BIT">
+      <offset>20</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

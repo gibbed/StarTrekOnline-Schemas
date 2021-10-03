@@ -7,37 +7,29 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iNPCEMailID" type="INT">
+    <column name="Inpcemailid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
+        <flag>KEY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="sentTime" type="INT">
+    <column name="Senttime" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="fromName" type="STRING">
+    <column name="Deletedtime" type="INT">
       <offset>8</offset>
       <flags>
-        <flag>ESTRING</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="Subject" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>ESTRING</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="Body" type="STRING">
+    <column name="FromName" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
@@ -45,31 +37,15 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="ppItemSlot" type="STRUCT">
-      <offset>20</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-        <flag>NO_INDEX</flag>
-      </flags>
-      <subtable external="InventorySlot" />
-    </column>
-    <column name="bRead" type="U8">
+    <column name="Subject" type="STRING">
       <offset>24</offset>
       <flags>
+        <flag>ESTRING</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eType" type="INT">
-      <offset>28</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <static_define_list external="NPCEmailType" />
-    </column>
-    <column name="pReason" type="STRING">
+    <column name="Body" type="STRING">
       <offset>32</offset>
       <flags>
         <flag>ESTRING</flag>
@@ -77,8 +53,49 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pDetail" type="STRING">
-      <offset>36</offset>
+    <column name="Ppitemslot" type="STRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="InventorySlot" />
+    </column>
+    <column name="Ppclaimeditemslots" type="STRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="ClaimedNPCEmailItem" />
+    </column>
+    <column name="Bread" type="U8">
+      <offset>56</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Etype" type="INT">
+      <offset>60</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="NPCEmailType" />
+    </column>
+    <column name="Preason" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pdetail" type="STRING">
+      <offset>72</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>SUBSCRIBE</flag>

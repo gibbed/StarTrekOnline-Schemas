@@ -5,5 +5,7 @@
     <element name="NON_CACHED_RETURN">2</element>
     <element name="NORETURN">4</element>
     <element name="ALWAYS_ALLOW_JSONRPC">8</element>
+    <element name="DONT_REPORT_SERVER_ID">16</element>
+    <element name="RETURN_STRING_IS_ENCODED_RETURN_STRUCT">32</element>
   </elements>
 </enum>

@@ -6,5 +6,6 @@
     <element name="POINT">2</element>
     <element name="SPOT">3</element>
     <element name="PROJECTOR">4</element>
+    <element name="AUX_SPOT">6</element>
   </elements>
 </enum>

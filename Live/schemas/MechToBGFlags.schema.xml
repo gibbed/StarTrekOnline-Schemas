@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MechToBGFlags">
+  <table>
+    <column name="MechToBGFlags" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Updatedmovementdef" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Fuelamountset" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Fuelcostsset" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Hoverparamsset" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Initialyawset" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -3,5 +3,6 @@
   <elements type="int">
     <element name="Default">0</element>
     <element name="ExpiredAuction">1</element>
+    <element name="SoldAuction">2</element>
   </elements>
 </enum>

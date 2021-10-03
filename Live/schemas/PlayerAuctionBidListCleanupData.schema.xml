@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="eaiAuctionLotContainerIDsToRemove" type="INTARRAY">
+    <column name="Eaiauctionlotcontaineridstoremove" type="INTARRAY">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

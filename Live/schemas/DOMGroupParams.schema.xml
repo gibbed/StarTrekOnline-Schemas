@@ -15,16 +15,25 @@
       <default>2</default>
       <static_define_list external="PVPGameType" />
     </column>
-    <column name="CTFScore" type="INT">
+    <column name="Ctfscore" type="INT">
       <offset>4</offset>
     </column>
-    <column name="NumMembers" type="INT">
+    <column name="Nummembers" type="INT">
       <offset>8</offset>
     </column>
-    <column name="OwnedPoints" type="STRUCT">
+    <column name="Nummembersalive" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Uiwavestarttimestamp" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Uicurrentwaveduration" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Ownedpoints" type="STRUCT">
+      <offset>24</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="DOMControlPoint" />
     </column>

@@ -7,42 +7,65 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uAccountID" type="INT">
+    <column name="Uaccountid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uSubscribedSeconds" type="INT">
+    <column name="Usubscribedseconds" type="INT">
       <offset>4</offset>
     </column>
-    <column name="uFirstPlayedSS2000" type="INT">
+    <column name="Ufirstplayedss2000" type="INT">
       <offset>8</offset>
     </column>
-    <column name="uTotalPlayedSS2000" type="INT">
+    <column name="Utotalplayedss2000" type="INT">
       <offset>12</offset>
     </column>
-    <column name="uLastLoginSS2000" type="INT">
+    <column name="Ulastloginss2000" type="INT">
       <offset>16</offset>
     </column>
-    <column name="uLastLogoutSS2000" type="INT">
+    <column name="Ulastlogoutss2000" type="INT">
       <offset>20</offset>
     </column>
-    <column name="uHighestLevel" type="INT">
+    <column name="Uhighestlevel" type="INT">
       <offset>24</offset>
     </column>
-    <column name="uNumCharacters" type="INT">
+    <column name="Unumcharacters" type="INT">
       <offset>28</offset>
     </column>
-    <column name="LinkedAccount" type="U8">
+    <column name="Linkedaccount" type="U8">
       <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ShadowAccount" type="U8">
+    <column name="Shadowaccount" type="U8">
       <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Billed" type="U8">
       <offset>34</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="KeyValues" type="OPTIONALSTRUCT">
+    <column name="Enforceantiaddiction" type="U8">
+      <offset>35</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fraudprobation" type="U8">
       <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Keyvalues" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="AccountProxyKeyValueInfoList" />
+    </column>
+    <column name="Products" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="AccountProxyProductInfoList" />
+    </column>
+    <column name="Micro_Trans2_Purchase" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="AccountProxyMicroTrans2PurchaseInfo" />
+    </column>
+    <column name="Platformids" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="PCPlatformID" />
     </column>
     <column name="}" type="END" />
   </table>

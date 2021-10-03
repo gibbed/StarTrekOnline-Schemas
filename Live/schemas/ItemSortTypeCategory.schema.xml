@@ -14,12 +14,12 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="NameMsg" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Namemsg" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="ItemSortTypes" type="INTARRAY">
-      <offset>8</offset>
+    <column name="Itemsorttypes" type="INTARRAY">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

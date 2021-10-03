@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MicroTrans2SaleDef">
+  <table>
+    <column name="MicroTrans2SaleDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="File" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="FILENAME">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="File_Version" type="TIMESTAMP">
+      <offset>24</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+    </column>
+    <column name="Notes" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Notincurrentlist" type="U8">
+      <offset>40</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Sale_Type" type="INT">
+      <offset>44</offset>
+      <static_define_list external="MicroTrans2SaleType" />
+    </column>
+    <column name="Mt_Category" type="INTARRAY">
+      <offset>48</offset>
+      <static_define_list external="MicroTrans_ShardCategory" />
+    </column>
+    <column name="Shard_Category" type="INTARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Mt_Category</redundant_name>
+      <static_define_list external="MicroTrans_ShardCategory" />
+    </column>
+    <column name="Start_Time" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="End_Time" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Currency" type="STRINGARRAY">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="EventName" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Discount_Percentage" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Ui_Category" type="STRINGARRAY">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>MicroTransactionCategory</dictionary_name>
+    </column>
+    <column name="Apply_To_All" type="U8">
+      <offset>104</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mt2_Def" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="MicroTrans2DefRef" />
+    </column>
+    <column name="Blacklist_Mt2_Def" type="STRUCT">
+      <offset>120</offset>
+      <subtable external="MicroTrans2DefRef" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

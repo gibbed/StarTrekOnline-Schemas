@@ -22,13 +22,13 @@
         <format_string name="HTML_TICKS_DURATION">1</format_string>
       </format_strings>
     </column>
-    <column name="TotalSize" type="INT64">
+    <column name="Totalsize" type="INT64">
       <offset>24</offset>
       <format_strings>
         <format_string name="HTML_BYTES">1</format_string>
       </format_strings>
     </column>
-    <column name="AverageSize" type="INT64">
+    <column name="Averagesize" type="INT64">
       <offset>32</offset>
       <format_strings>
         <format_string name="HTML_BYTES">1</format_string>

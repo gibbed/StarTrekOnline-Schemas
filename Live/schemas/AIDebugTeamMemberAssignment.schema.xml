@@ -7,18 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="targetName" type="STRING">
+    <column name="Targetname" type="STRING">
       <offset>0</offset>
     </column>
     <column name="Type" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="AIDebugTeamAssignmentType" />
     </column>
-    <column name="assigneeName" type="STRING">
-      <offset>8</offset>
+    <column name="Assigneename" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="PowerName" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

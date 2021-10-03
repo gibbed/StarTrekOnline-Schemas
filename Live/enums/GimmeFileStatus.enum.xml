@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GimmeFileStatus">
+  <elements type="int">
+    <element name="UNKNOWN">0</element>
+    <element name="CHECKED_OUT_BY_ME">1</element>
+    <element name="NOT_CHECKED_OUT_BY_ME">2</element>
+    <element name="NEW_FILE">3</element>
+    <element name="NO_SC">4</element>
+    <element name="NOT_LATEST">5</element>
+    <element name="CANCELED">6</element>
+  </elements>
+</enum>

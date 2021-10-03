@@ -7,31 +7,32 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hItemDef" type="REFERENCE">
+    <column name="Hitemdef" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
     <column name="Item" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Item" />
     </column>
-    <column name="BagIdx" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="slotIdx" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="NumPicks" type="INT">
+    <column name="Bagidx" type="INT">
       <offset>16</offset>
     </column>
-    <column name="Selected" type="U8">
+    <column name="SlotIdx" type="INT">
       <offset>20</offset>
     </column>
-    <column name="ItemCopy" type="OPTIONALSTRUCT">
+    <column name="Numpicks" type="INT">
       <offset>24</offset>
+    </column>
+    <column name="Selected" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Itemcopy" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="Item" />
     </column>
     <column name="}" type="END" />

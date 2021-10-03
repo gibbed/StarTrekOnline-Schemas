@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="AccountLoginEnvironment">
+  <elements type="int">
+    <element name="Any">0</element>
+    <element name="Default">0</element>
+    <element name="PC">1</element>
+    <element name="Cryptic">1</element>
+    <element name="PerfectWorld">1</element>
+    <element name="CrypticAndPW">1</element>
+    <element name="PWAuthx">1</element>
+    <element name="ArcToken">1</element>
+    <element name="Steam">1</element>
+    <element name="Epic">1</element>
+    <element name="Xbox">5</element>
+    <element name="XboxOne">5</element>
+    <element name="PlayStation">6</element>
+    <element name="PS4">6</element>
+    <element name="PS5">6</element>
+    <element name="Max">7</element>
+  </elements>
+</enum>

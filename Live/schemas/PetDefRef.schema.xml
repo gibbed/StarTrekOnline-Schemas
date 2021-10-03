@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hPet" type="REFERENCE">
+    <column name="Hpet" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>PetDef</dictionary_name>
     </column>

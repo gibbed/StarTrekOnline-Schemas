@@ -15,21 +15,21 @@
       </flags>
     </column>
     <column name="NumToSpawn" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="groupWeight" type="INT">
       <offset>8</offset>
     </column>
-    <column name="StaticEncounter" type="STRUCT">
+    <column name="Groupweight" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Staticencounter" type="STRUCT">
+      <offset>16</offset>
       <subtable external="OldStaticEncounter" />
     </column>
     <column name="Group" type="STRUCT">
-      <offset>16</offset>
+      <offset>24</offset>
       <subtable external="OldStaticEncounterGroup" />
     </column>
-    <column name="ScopeNames" type="STRUCT">
-      <offset>24</offset>
+    <column name="Scopenames" type="STRUCT">
+      <offset>40</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>

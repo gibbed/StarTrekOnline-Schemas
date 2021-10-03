@@ -7,13 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="sentStartPathToBG" type="BIT">
+    <column name="Sentstartpathtobg" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="pathVersionAckedByBG" type="BIT">
+    <column name="Pathversionackedbybg" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Releasebits" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

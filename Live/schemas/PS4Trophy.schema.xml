@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PS4Trophy">
+  <table>
+    <column name="PS4Trophy" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Trophyid" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="MissionName" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

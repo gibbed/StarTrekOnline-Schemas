@@ -7,18 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NumByteBlocks" type="INT">
+    <column name="Numbyteblocks" type="INT">
       <offset>0</offset>
     </column>
-    <column name="ByteBlocks" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Byteblocks" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="ByteBlock" />
     </column>
-    <column name="NumMaskedBytes" type="INT">
-      <offset>8</offset>
+    <column name="Nummaskedbytes" type="INT">
+      <offset>16</offset>
     </column>
-    <column name="MaskedBytes" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Maskedbytes" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="MaskedByte" />
     </column>
     <column name="}" type="END" />

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DutyOfficerPower">
+  <table>
+    <column name="DutyOfficerPower" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="PowerDef" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Estrshortpowerdesc" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Estrlongpowerdesc" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Estrautopowerdesc" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Uupdateframe" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

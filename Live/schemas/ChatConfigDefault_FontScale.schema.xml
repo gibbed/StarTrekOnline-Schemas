@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ChatConfigDefault_FontScale">
+  <table>
+    <column name="ChatConfigDefault_FontScale" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Fontscale" type="F32">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>REQUIRED</flag>
+      </flags>
+    </column>
+    <column name="Shardregion" type="INT">
+      <offset>4</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <static_define_list external="ShardRegion" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

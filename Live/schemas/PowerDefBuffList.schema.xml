@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ModStack" type="STRUCT">
+    <column name="Modstack" type="STRUCT">
       <offset>0</offset>
       <subtable external="AttribModStack" />
     </column>
     <column name="Size" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

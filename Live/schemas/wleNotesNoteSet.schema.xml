@@ -8,7 +8,7 @@
     </column>
     <column name="{" type="START" />
     <column name="Notes" type="STRUCT">
-      <offset>16</offset>
+      <offset>24</offset>
       <subtable external="wleNotesNote" />
     </column>
     <column name="}" type="END" />

@@ -10,47 +10,51 @@
     <column name="DisplayName" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Description" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="ToolTip" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Image" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="GroupProjectNumeric" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Groupprojectnumeric" type="REFERENCE">
+      <offset>32</offset>
       <dictionary_name>GroupProjectNumericDef</dictionary_name>
     </column>
-    <column name="CurrentValue" type="INT">
-      <offset>20</offset>
+    <column name="Currentvalue" type="INT">
+      <offset>40</offset>
     </column>
-    <column name="MaximumValue" type="INT">
-      <offset>24</offset>
+    <column name="Maximumvalue" type="INT">
+      <offset>44</offset>
     </column>
-    <column name="AdjustValue" type="INT">
-      <offset>28</offset>
+    <column name="Adjustvalue" type="INT">
+      <offset>48</offset>
     </column>
-    <column name="ProjectType" type="INT">
-      <offset>32</offset>
+    <column name="Projecttype" type="INT">
+      <offset>52</offset>
       <static_define_list external="GroupProjectType" />
     </column>
     <column name="GroupName" type="REFERENCE">
-      <offset>36</offset>
+      <offset>56</offset>
       <dictionary_name>GroupProjectDef</dictionary_name>
+    </column>
+    <column name="Hideinui" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

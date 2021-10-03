@@ -7,17 +7,23 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="QueryID" type="INT">
+    <column name="Queryid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="MachineName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="FileName" type="STRING">
+    <column name="Machinename" type="STRING">
       <offset>8</offset>
     </column>
+    <column name="FileName" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="ErrorString" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
     <column name="Contents" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+      <offset>32</offset>
       <subtable external="TextParserBinaryBlock" />
     </column>
     <column name="}" type="END" />

@@ -7,40 +7,46 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TimerUse" type="F32">
+    <column name="Timeruse" type="F32">
       <offset>0</offset>
     </column>
-    <column name="TimerAttack" type="F32">
+    <column name="Timerattack" type="F32">
       <offset>4</offset>
     </column>
-    <column name="TimerAttacked" type="F32">
+    <column name="Timerattacked" type="F32">
       <offset>8</offset>
     </column>
-    <column name="TimerAssist" type="F32">
+    <column name="Timerassist" type="F32">
       <offset>12</offset>
     </column>
-    <column name="TimerAggro" type="F32">
+    <column name="Timeraggro" type="F32">
       <offset>16</offset>
     </column>
-    <column name="TimerTacticalRoll" type="F32">
+    <column name="Timerpvpattack" type="F32">
       <offset>20</offset>
     </column>
-    <column name="TimerTacticalAim" type="F32">
+    <column name="Timerpvpattacked" type="F32">
       <offset>24</offset>
     </column>
-    <column name="TimerUseVisual" type="F32">
+    <column name="Timertacticalroll" type="F32">
       <offset>28</offset>
     </column>
-    <column name="TimerAggroDistance" type="F32">
+    <column name="Timertacticalaim" type="F32">
       <offset>32</offset>
+    </column>
+    <column name="Timerusevisual" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Timeraggrodistance" type="F32">
+      <offset>40</offset>
       <default>80</default>
     </column>
-    <column name="DisallowPlayerTeamAggro" type="BIT">
-      <offset>36</offset>
+    <column name="Disallowplayerteamaggro" type="BIT">
+      <offset>44</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="PlayersIgnoreTimerUse" type="BIT">
-      <offset>36</offset>
+    <column name="Playersignoretimeruse" type="BIT">
+      <offset>44</offset>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />

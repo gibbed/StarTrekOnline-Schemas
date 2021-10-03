@@ -7,24 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NemesisCritters" type="STRUCT">
+    <column name="Nemesiscritters" type="STRUCT">
       <offset>0</offset>
       <subtable external="NemesisDefaultCritter" />
     </column>
-    <column name="NemesisCritterGroups" type="STRUCT">
-      <offset>4</offset>
+    <column name="Nemesiscrittergroups" type="STRUCT">
+      <offset>8</offset>
       <subtable external="NemesisDefaultCritterGroup" />
     </column>
-    <column name="NemesisCostumes" type="STRUCT">
-      <offset>8</offset>
+    <column name="Nemesiscostumes" type="STRUCT">
+      <offset>16</offset>
       <subtable external="NemesisDefaultCostume" />
     </column>
-    <column name="NemesisDefaultNames" type="STRUCT">
-      <offset>12</offset>
+    <column name="Nemesisdefaultnames" type="STRUCT">
+      <offset>24</offset>
       <subtable external="NemesisDefaultName" />
     </column>
-    <column name="NemesisDefaultMinionCostumes" type="STRUCT">
-      <offset>16</offset>
+    <column name="Nemesisdefaultminioncostumes" type="STRUCT">
+      <offset>32</offset>
       <subtable external="NemesisDefaultMinionCostume" />
     </column>
     <column name="}" type="END" />

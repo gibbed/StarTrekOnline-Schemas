@@ -15,6 +15,13 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
+    <column name="Eainewpowerids" type="INTARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
     <column name="}" type="END" />
   </table>
 </parser>

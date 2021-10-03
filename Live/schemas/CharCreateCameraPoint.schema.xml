@@ -17,18 +17,20 @@
       </flags>
     </column>
     <column name="Position" type="F32FIXEDARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>REQUIRED</flag>
       </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="PYR" type="F32FIXEDARRAY">
-      <offset>16</offset>
+      <offset>20</offset>
       <flags>
         <flag>REQUIRED</flag>
       </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

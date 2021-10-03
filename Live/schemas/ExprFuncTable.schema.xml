@@ -12,15 +12,18 @@
     <column name="{" type="START" />
     <column name="Name" type="STRING">
       <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="DesignerNames" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Designernames" type="STRINGARRAY">
+      <offset>8</offset>
     </column>
-    <column name="NumExprFuncs" type="INT">
-      <offset>24</offset>
+    <column name="Numexprfuncs" type="INT">
+      <offset>48</offset>
     </column>
     <column name="Funcs" type="STRING">
-      <offset>28</offset>
+      <offset>56</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

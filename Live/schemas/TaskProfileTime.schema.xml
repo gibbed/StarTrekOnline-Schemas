@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="totalTimeAccum" type="INT64">
+    <column name="Totaltimeaccum" type="INT64">
       <offset>0</offset>
     </column>
-    <column name="startTimeMarker" type="INT64">
+    <column name="Starttimemarker" type="INT64">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

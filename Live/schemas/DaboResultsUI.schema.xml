@@ -10,24 +10,26 @@
     <column name="data" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="DaboResultIndex" />
     </column>
-    <column name="RingIndex1" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="RingIndex2" type="INT">
+    <column name="Ringindex1" type="INT">
       <offset>8</offset>
     </column>
-    <column name="RingIndex3" type="INT">
+    <column name="Ringindex2" type="INT">
       <offset>12</offset>
     </column>
-    <column name="HasResults" type="U8">
+    <column name="Ringindex3" type="INT">
       <offset>16</offset>
     </column>
-    <column name="HasPayouts" type="U8">
-      <offset>17</offset>
+    <column name="Hasresults" type="U8">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Haspayouts" type="U8">
+      <offset>21</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

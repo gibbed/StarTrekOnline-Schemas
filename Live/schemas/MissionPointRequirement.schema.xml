@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MissionPointRequirement">
+  <table>
+    <column name="MissionPointRequirement" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Missionpoint" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+        <flag>REQUIRED</flag>
+      </flags>
+      <dictionary_name>MissionPointDef</dictionary_name>
+    </column>
+    <column name="Value" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Comparator" type="INT">
+      <offset>12</offset>
+      <static_define_list external="MissionPointRequirementComparator" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

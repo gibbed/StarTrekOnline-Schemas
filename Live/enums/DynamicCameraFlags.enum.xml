@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DynamicCameraFlags">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="CamCenter">1</element>
+    <element name="CamCenterOffset">2</element>
+    <element name="Distance">4</element>
+    <element name="FieldOfView">8</element>
+    <element name="Pitch">16</element>
+    <element name="Yaw">32</element>
+    <element name="Roll">64</element>
+    <element name="TargetDistance">128</element>
+    <element name="TargetFieldOfView">256</element>
+    <element name="TargetPitch">512</element>
+    <element name="TargetYaw">1024</element>
+    <element name="TargetRoll">2048</element>
+    <element name="PitchFXOffset">4096</element>
+    <element name="YawFXOffset">8192</element>
+    <element name="RollFXOffset">16384</element>
+    <element name="CamLocalOffset">32768</element>
+    <element name="SkyOverride">65536</element>
+  </elements>
+</enum>

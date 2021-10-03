@@ -11,25 +11,41 @@
       <offset>0</offset>
       <dictionary_name>PowerDef</dictionary_name>
     </column>
-    <column name="TimerRecharge" type="F32">
-      <offset>4</offset>
-      <flags>
-        <flag>CLIENT_ONLY</flag>
-      </flags>
-    </column>
-    <column name="TimerRechargeBase" type="F32">
+    <column name="Timerrecharge" type="F32">
       <offset>8</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
-    <column name="QueuedForUse" type="BIT">
+    <column name="Timerrechargebase" type="F32">
       <offset>12</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Queuedforuse" type="BIT">
+      <offset>16</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="AIUsageDisabled" type="BIT">
-      <offset>12</offset>
+    <column name="Aiusagedisabled" type="BIT">
+      <offset>16</offset>
       <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Petpowertrayelemcheck" type="BIT">
+      <offset>16</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Uipowerid" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Upetpowertrayelemchecktime" type="INT">
+      <offset>24</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

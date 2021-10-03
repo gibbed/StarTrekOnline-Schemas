@@ -10,75 +10,104 @@
     <column name="Ent" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Entity" />
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="Account" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Location" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Level" type="INT">
-      <offset>16</offset>
-    </column>
-    <column name="CombatLevel" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="OfficerRank" type="INT">
-      <offset>24</offset>
-    </column>
-    <column name="Status" type="STRING">
-      <offset>28</offset>
-      <flags>
-        <flag>UNKNOWN_32</flag>
-      </flags>
-    </column>
-    <column name="ClassName" type="STRING">
       <offset>32</offset>
-      <flags>
-        <flag>UNKNOWN_32</flag>
-      </flags>
     </column>
-    <column name="ExpLevel" type="INT">
+    <column name="Combatlevel" type="INT">
       <offset>36</offset>
     </column>
-    <column name="Sidekicked" type="U8">
+    <column name="Officerrank" type="INT">
       <offset>40</offset>
     </column>
+    <column name="Status" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="className" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Explevel" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="TeamID" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Isleader" type="U8">
+      <offset>72</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Sidekicked" type="U8">
+      <offset>73</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
     <column name="Dead" type="U8">
-      <offset>41</offset>
+      <offset>74</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Invited" type="U8">
+      <offset>75</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requested" type="U8">
+      <offset>76</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Disconnected" type="U8">
-      <offset>42</offset>
+      <offset>77</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="NonLocal" type="U8">
-      <offset>43</offset>
+    <column name="Nonlocal" type="U8">
+      <offset>78</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsPet" type="U8">
-      <offset>44</offset>
+    <column name="Ispet" type="U8">
+      <offset>79</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AiState" type="INT">
-      <offset>48</offset>
+    <column name="Queuejoinvoteisyes" type="U8">
+      <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AiStance" type="INT">
-      <offset>52</offset>
+    <column name="Queuejoinvoteisno" type="U8">
+      <offset>81</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Aistate" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Aistance" type="INT">
+      <offset>88</offset>
     </column>
     <column name="EntID" type="INT">
-      <offset>56</offset>
+      <offset>92</offset>
     </column>
     <column name="IsTalking" type="U8">
-      <offset>60</offset>
+      <offset>96</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

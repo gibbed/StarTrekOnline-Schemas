@@ -7,75 +7,89 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CombatEvents" type="STRUCT">
-      <offset>4</offset>
+    <column name="Combatevents" type="STRUCT">
+      <offset>8</offset>
       <subtable external="CombatDebugPerfEvent" />
     </column>
-    <column name="encDebug" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Encdebug" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="EncounterDebug" />
     </column>
-    <column name="showServerFPS" type="U8">
-      <offset>12</offset>
-    </column>
-    <column name="currServerFPS" type="F32">
-      <offset>16</offset>
-    </column>
-    <column name="clientsLoggedInCount" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="clientsNotLoggedInCount" type="INT">
+    <column name="Showserverfps" type="U8">
       <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="numSpawnedEnts" type="INT">
+    <column name="Currserverfps" type="F32">
       <offset>28</offset>
     </column>
-    <column name="numRunningEncs" type="INT">
+    <column name="Clientsloggedincount" type="INT">
       <offset>32</offset>
     </column>
-    <column name="numTotalEncs" type="INT">
+    <column name="Clientsnotloggedincount" type="INT">
       <offset>36</offset>
     </column>
-    <column name="spawnedFSMCost" type="INT">
+    <column name="Numspawnedents" type="INT">
       <offset>40</offset>
     </column>
-    <column name="potentialFSMCost" type="INT">
+    <column name="Numrunningencs" type="INT">
       <offset>44</offset>
     </column>
-    <column name="canRepeatMissions" type="U8">
+    <column name="Numtotalencs" type="INT">
       <offset>48</offset>
     </column>
-    <column name="aiDebugInfo" type="OPTIONALSTRUCT">
+    <column name="Spawnedfsmcost" type="INT">
       <offset>52</offset>
+    </column>
+    <column name="Potentialfsmcost" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Canrepeatmissions" type="U8">
+      <offset>60</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Combatstatedebugentries" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="CombatStateDebugEntry" />
+    </column>
+    <column name="Aidebuginfo" type="OPTIONALSTRUCT">
+      <offset>72</offset>
       <subtable external="AIDebug" />
     </column>
-    <column name="bcnDebugInfo" type="OPTIONALSTRUCT">
-      <offset>56</offset>
+    <column name="Bcndebuginfo" type="OPTIONALSTRUCT">
+      <offset>80</offset>
       <subtable external="BeaconDebugInfo" />
     </column>
-    <column name="showPathPerfCmds" type="BIT">
-      <offset>60</offset>
+    <column name="FactionDebugInfo" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="FactionDebugInfo" />
+    </column>
+    <column name="Showpathperfcmds" type="BIT">
+      <offset>96</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="showPathPerfLiving" type="BIT">
-      <offset>60</offset>
+    <column name="Showpathperfliving" type="BIT">
+      <offset>96</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="showPhysicsPerfMenu" type="BIT">
-      <offset>60</offset>
+    <column name="Showphysicsperfmenu" type="BIT">
+      <offset>96</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="combatDebugPerf" type="BIT">
-      <offset>60</offset>
+    <column name="Combatdebugperf" type="BIT">
+      <offset>96</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="showMissionDebugMenu" type="BIT">
-      <offset>60</offset>
+    <column name="Combatstatedebug" type="BIT">
+      <offset>96</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="allowAllInteractions" type="BIT">
-      <offset>60</offset>
+    <column name="Showmissiondebugmenu" type="BIT">
+      <offset>96</offset>
       <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Allowallinteractions" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65542</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

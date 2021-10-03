@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iEntID" type="INT">
+    <column name="Ientid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,175 +15,184 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iJoinTime" type="INT">
+    <column name="Ijointime" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pcName" type="STRING">
+    <column name="Irankchangedtime" type="INT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pcAccount" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="iAccountID" type="INT">
+    <column name="Pcname" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pcStatus" type="STRING">
-      <offset>20</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pcLogName" type="STRING">
+    <column name="Pcaccount" type="STRING">
       <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pcOfficerComment" type="STRING">
-      <offset>28</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>SERVER_ONLY</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pcWhoOfficerComment" type="STRING">
+    <column name="Iaccountid" type="INT">
       <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
-        <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iOfficerCommentTime" type="INT">
-      <offset>36</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>SERVER_ONLY</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pcPublicComment" type="STRING">
+    <column name="Pcstatus" type="STRING">
       <offset>40</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iPublicCommentTime" type="INT">
-      <offset>44</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pchClassName" type="STRING">
+    <column name="Pclogname" type="STRING">
       <offset>48</offset>
       <flags>
-        <flag>POOL_STRING</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iRank" type="INT">
-      <offset>52</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="iLevel" type="INT">
+    <column name="Pcofficercomment" type="STRING">
       <offset>56</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iOfficerRank" type="INT">
-      <offset>60</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pcMapName" type="STRING">
+    <column name="Pcwhoofficercomment" type="STRING">
       <offset>64</offset>
       <flags>
-        <flag>POOL_STRING</flag>
         <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pcMapVars" type="STRING">
-      <offset>68</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pcMapMsgKey" type="STRING">
+    <column name="Iofficercommenttime" type="INT">
       <offset>72</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iMapInstanceNumber" type="INT">
-      <offset>76</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="bOnline" type="U8">
+    <column name="Pcpubliccomment" type="STRING">
       <offset>80</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iLogoutTime" type="INT">
-      <offset>84</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="eLFGMode" type="INT">
+    <column name="Ipubliccommenttime" type="INT">
       <offset>88</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uProvisionalTimeSeconds" type="INT">
-      <offset>92</offset>
+    <column name="Pchclassname" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Irank" type="INT">
+      <offset>104</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eaWithdrawLimits" type="STRUCT">
-      <offset>96</offset>
+    <column name="Ilevel" type="INT">
+      <offset>108</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Iofficerrank" type="INT">
+      <offset>112</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pcmapname" type="STRING">
+      <offset>120</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pcmapvars" type="STRING">
+      <offset>128</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pcmapmsgkey" type="STRING">
+      <offset>136</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Imapinstancenumber" type="INT">
+      <offset>144</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Bonline" type="U8">
+      <offset>148</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ilogouttime" type="INT">
+      <offset>152</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Elfgmode" type="INT">
+      <offset>156</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uprovisionaltimeseconds" type="INT">
+      <offset>160</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eawithdrawlimits" type="STRUCT">
+      <offset>168</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

@@ -7,24 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PositionSmoothHistory" type="STRUCT">
+    <column name="Positionsmoothhistory" type="STRUCT">
       <offset>0</offset>
       <subtable external="CameraSmoothNode" />
     </column>
-    <column name="FilterMagnitude" type="F32">
-      <offset>4</offset>
+    <column name="Filtermagnitude" type="F32">
+      <offset>8</offset>
       <default>1008981770</default>
     </column>
-    <column name="FilterSampleTime" type="F32">
-      <offset>8</offset>
+    <column name="Filtersampletime" type="F32">
+      <offset>12</offset>
       <default>1048576000</default>
     </column>
-    <column name="MaxLagDist" type="F32">
-      <offset>12</offset>
+    <column name="Maxlagdist" type="F32">
+      <offset>16</offset>
       <default>1</default>
     </column>
-    <column name="AutoTeleportDist" type="F32">
-      <offset>16</offset>
+    <column name="Autoteleportdist" type="F32">
+      <offset>20</offset>
       <default>20</default>
     </column>
     <column name="}" type="END" />

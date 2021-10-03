@@ -11,9 +11,13 @@
       <offset>0</offset>
       <string_length>32</string_length>
     </column>
-    <column name="shortProductName" type="FIXEDSTRING">
+    <column name="ShortProductName" type="FIXEDSTRING">
       <offset>32</offset>
       <string_length>32</string_length>
+    </column>
+    <column name="Xboxoneappname" type="FIXEDSTRING">
+      <offset>64</offset>
+      <string_length>100</string_length>
     </column>
     <column name="}" type="END" />
   </table>

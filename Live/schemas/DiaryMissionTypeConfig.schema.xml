@@ -14,11 +14,13 @@
       </flags>
       <static_define_list external="MissionType" />
     </column>
-    <column name="AutoAddCurrent" type="BOOLFLAG">
+    <column name="Autoaddcurrent" type="BOOLFLAG">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AutoAddComplete" type="BOOLFLAG">
+    <column name="Autoaddcomplete" type="BOOLFLAG">
       <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

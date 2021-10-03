@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MatchRequestPlayerPermissionLevel">
+  <elements type="int">
+    <element name="MEMBER">0</element>
+    <element name="OFFICER">1</element>
+    <element name="OWNER">2</element>
+  </elements>
+</enum>

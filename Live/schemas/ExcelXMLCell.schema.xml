@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ExcelXMLCell">
+  <table>
+    <column name="ExcelXMLCell" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Index" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Estrcelldata" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Merged" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Ignore" type="U8">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

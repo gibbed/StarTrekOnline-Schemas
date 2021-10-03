@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MatchAlgoLiveData">
+  <table>
+    <column name="MatchAlgoLiveData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Uavgwaittimeformatchedplayers_Goodrep" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Uplayersinqueue_Goodrep" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Uplayerinmatch_Goodrep" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Uavgwaittimeformatchedplayers_Badrep" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Uplayersinqueue_Badrep" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Uplayerinmatch_Badrep" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Neededrole_Goodrep" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Neededrole_Badrep" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Generatedrewards" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="InventoryMatchReward" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

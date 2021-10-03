@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="routeName" type="STRING">
+    <column name="Routename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -15,11 +15,11 @@
       </flags>
     </column>
     <column name="RouteType" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="OldPatrolRouteType" />
     </column>
     <column name="Point" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="OldPatrolPoint" />
     </column>
     <column name="}" type="END" />

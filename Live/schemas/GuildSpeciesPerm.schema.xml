@@ -15,10 +15,10 @@
       </flags>
       <dictionary_name>Species</dictionary_name>
     </column>
-    <column name="hSpeciesRef" type="REFERENCE">
+    <column name="Hspeciesref" type="REFERENCE">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>

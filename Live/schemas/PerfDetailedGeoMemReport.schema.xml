@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PerfDetailedGeoMemReport">
+  <table>
+    <column name="PerfDetailedGeoMemReport" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>2</default>
+      <static_define_list external="PerfDetailedUsageReportType" />
+    </column>
+    <column name="Usageflags" type="INT">
+      <offset>4</offset>
+      <static_define_list external="PerfDetailedUsageFlags" />
+    </column>
+    <column name="Entries" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="GeoMemUsageEntry" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

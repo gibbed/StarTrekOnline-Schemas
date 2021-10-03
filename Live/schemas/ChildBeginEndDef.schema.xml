@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BeginChildIndex" type="INT">
+    <column name="Beginchildindex" type="INT">
       <offset>0</offset>
     </column>
-    <column name="EndChildIndex" type="INT">
+    <column name="Endchildindex" type="INT">
       <offset>4</offset>
     </column>
     <column name="Flags" type="INT">

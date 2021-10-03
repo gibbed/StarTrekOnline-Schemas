@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PerfMetricType">
+  <elements type="int">
+    <element name="F32">0</element>
+    <element name="U32">1</element>
+    <element name="U64">2</element>
+  </elements>
+</enum>

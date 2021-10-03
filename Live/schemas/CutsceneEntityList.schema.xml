@@ -7,86 +7,95 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="common" type="IGNORE">
+    <column name="Common" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">CutsceneCommonTrackData</format_string>
+      </format_strings>
     </column>
     <column name="Name" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="RelativePos" type="U8">
-      <offset>4</offset>
+    <column name="Relativepos" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="main_offset" type="IGNORE">
+    <column name="Main_Offset" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">CutsceneOffsetData</format_string>
+      </format_strings>
     </column>
-    <column name="OffsetType" type="INT">
-      <offset>8</offset>
+    <column name="Offsettype" type="INT">
+      <offset>16</offset>
       <static_define_list external="CutsceneOffsetType" />
     </column>
-    <column name="CutsceneEntName" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="EncounterName" type="STRING">
-      <offset>16</offset>
-    </column>
-    <column name="ActorName" type="STRING">
-      <offset>20</offset>
-    </column>
-    <column name="BoneName" type="STRING">
+    <column name="Cutsceneentname" type="STRING">
       <offset>24</offset>
     </column>
-    <column name="EntityRef" type="INT">
-      <offset>28</offset>
-    </column>
-    <column name="TwoRelativePos" type="U8">
+    <column name="Encountername" type="STRING">
       <offset>32</offset>
     </column>
-    <column name="SecondaryOffset" type="EMBEDDEDSTRUCT">
-      <offset>36</offset>
+    <column name="ActorName" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="BoneName" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="EntityRef" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Tworelativepos" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Secondaryoffset" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
       <subtable external="CutsceneOffsetData" />
     </column>
-    <column name="EntityPoint" type="STRUCT">
-      <offset>60</offset>
+    <column name="Entitypoint" type="STRUCT">
+      <offset>120</offset>
       <subtable external="CutsceneEntityPoint" />
     </column>
     <column name="EntityType" type="INT">
-      <offset>64</offset>
+      <offset>128</offset>
       <static_define_list external="CutsceneEntityType" />
     </column>
     <column name="Costume" type="REFERENCE">
-      <offset>68</offset>
+      <offset>136</offset>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="OverrideEquipment" type="STRUCT">
-      <offset>72</offset>
+    <column name="Overrideequipment" type="STRUCT">
+      <offset>144</offset>
       <subtable external="CutsceneEntityOverrideEquipment" />
     </column>
-    <column name="PreserveMovementFX" type="U8">
-      <offset>76</offset>
+    <column name="Preservemovementfx" type="U8">
+      <offset>152</offset>
       <default>1</default>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="TeamMemberIdx" type="INT">
-      <offset>80</offset>
+    <column name="Teammemberidx" type="INT">
+      <offset>156</offset>
     </column>
-    <column name="EntityEncounterName" type="STRING">
-      <offset>84</offset>
+    <column name="Entityencountername" type="STRING">
+      <offset>160</offset>
     </column>
-    <column name="EntityActorName" type="STRING">
-      <offset>88</offset>
+    <column name="Entityactorname" type="STRING">
+      <offset>168</offset>
     </column>
-    <column name="EntityActorRef" type="INT">
-      <offset>92</offset>
+    <column name="Entityactorref" type="INT">
+      <offset>176</offset>
     </column>
-    <column name="CharClassType" type="INT">
-      <offset>96</offset>
+    <column name="Charclasstype" type="INT">
+      <offset>180</offset>
       <static_define_list external="CharClassTypes" />
     </column>
-    <column name="PetName" type="STRING">
-      <offset>100</offset>
+    <column name="Petname" type="STRING">
+      <offset>184</offset>
     </column>
     <column name="}" type="END" />
   </table>

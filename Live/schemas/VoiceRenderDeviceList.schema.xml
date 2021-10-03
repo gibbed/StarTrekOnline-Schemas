@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="devices" type="STRUCT">
+    <column name="Devices" type="STRUCT">
       <offset>0</offset>
       <subtable external="VoiceRenderDevice" />
     </column>

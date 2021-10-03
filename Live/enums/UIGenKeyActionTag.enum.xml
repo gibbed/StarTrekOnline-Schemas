@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="UIGenKeyActionTag">
+  <elements type="int">
+    <element name="Disabled">1</element>
+    <element name="BadRepIcon">2</element>
+  </elements>
+</enum>

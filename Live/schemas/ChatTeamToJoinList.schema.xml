@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="chatAccounts" type="STRUCT">
+    <column name="Chataccounts" type="STRUCT">
       <offset>0</offset>
       <subtable external="ChatTeamToJoin" />
     </column>

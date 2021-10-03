@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="rot_world_matrix" type="MATPYR">
+    <column name="Rot_World_Matrix" type="MATPYR">
       <offset>0</offset>
       <num_elements>9</num_elements>
     </column>
-    <column name="pos_world_matrix" type="F32FIXEDARRAY">
+    <column name="Pos_World_Matrix" type="F32FIXEDARRAY">
       <offset>36</offset>
       <num_elements>3</num_elements>
     </column>
-    <column name="local_mid_idx" type="INT">
+    <column name="Local_Mid_Idx" type="INT">
       <offset>48</offset>
       <default>-1</default>
     </column>
-    <column name="object_tag" type="INT">
+    <column name="Object_Tag" type="INT">
       <offset>52</offset>
     </column>
     <column name="}" type="END" />

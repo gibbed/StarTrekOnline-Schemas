@@ -5,8 +5,8 @@
     <element name="Exterior">1</element>
     <element name="Interior">2</element>
     <element name="MiniSolarSystem">3</element>
-    <element name="UGC_Space">4</element>
-    <element name="UGC_Prefab">5</element>
+    <element name="UGC_Space__DEPRECATED">4</element>
+    <element name="UGC_Prefab__DEPRECATED">5</element>
     <element name="None">6</element>
   </elements>
 </enum>

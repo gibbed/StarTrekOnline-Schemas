@@ -10,7 +10,7 @@
     <column name="TotalCount" type="INT64">
       <offset>0</offset>
     </column>
-    <column name="TotalSize" type="INT64">
+    <column name="Totalsize" type="INT64">
       <offset>8</offset>
       <format_strings>
         <format_string name="HTML_BYTES">1</format_string>
@@ -22,13 +22,13 @@
         <format_string name="HTML_TICKS_DURATION">1</format_string>
       </format_strings>
     </column>
-    <column name="AverageDuration" type="INT64">
+    <column name="Averageduration" type="INT64">
       <offset>24</offset>
       <format_strings>
         <format_string name="HTML_TICKS_DURATION">1</format_string>
       </format_strings>
     </column>
-    <column name="MaxSize" type="INT64">
+    <column name="Maxsize" type="INT64">
       <offset>32</offset>
       <format_strings>
         <format_string name="HTML_BYTES">1</format_string>
@@ -40,12 +40,12 @@
         <format_string name="HTML_TICKS_DURATION">1</format_string>
       </format_strings>
     </column>
-    <column name="BySizeGroups" type="STRUCT">
+    <column name="Bysizegroups" type="STRUCT">
       <offset>48</offset>
       <subtable external="LinkReceiveStats_OneSize" />
     </column>
-    <column name="ByDurationGroups" type="STRUCT">
-      <offset>52</offset>
+    <column name="Bydurationgroups" type="STRUCT">
+      <offset>56</offset>
       <subtable external="LinkReceiveStats_OneDuration" />
     </column>
     <column name="}" type="END" />

@@ -11,11 +11,12 @@
       <offset>0</offset>
     </column>
     <column name="Offset" type="F32FIXEDARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Rotation" type="F32">
-      <offset>16</offset>
+      <offset>20</offset>
     </column>
     <column name="}" type="END" />
   </table>

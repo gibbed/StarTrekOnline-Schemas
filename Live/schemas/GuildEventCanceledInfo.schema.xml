@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iCanceledStartTime" type="INT">
+    <column name="Icanceledstarttime" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pcDescription" type="STRING">
-      <offset>4</offset>
+    <column name="Pcdescription" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MissionDetails" type="STRING">
+    <column name="Missiondetails" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="hContactCostume" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hcontactcostume" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="hPetContactList" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Hpetcontactlist" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>PetContactList</dictionary_name>
     </column>
     <column name="}" type="END" />

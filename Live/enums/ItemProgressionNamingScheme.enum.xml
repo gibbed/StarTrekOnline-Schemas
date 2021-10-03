@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ItemProgressionNamingScheme">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="AppendRank">1</element>
+    <element name="AppendRankEx">2</element>
+    <element name="PrependTier">3</element>
+    <element name="AppendPlainNumeral">4</element>
+    <element name="SingleItemDef">5</element>
+  </elements>
+</enum>

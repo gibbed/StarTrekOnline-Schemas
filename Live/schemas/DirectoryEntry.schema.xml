@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="entry_filename" type="STRING">
+    <column name="Entry_Filename" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="entry_name" type="STRING">
-      <offset>4</offset>
+    <column name="Entry_Name" type="STRING">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

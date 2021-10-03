@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="peaMembers" type="STRUCT">
+    <column name="Peamembers" type="STRUCT">
       <offset>0</offset>
       <subtable external="MasterLooterTeamMember" />
     </column>
-    <column name="peaItems" type="STRUCT">
-      <offset>4</offset>
+    <column name="Peaitems" type="STRUCT">
+      <offset>8</offset>
       <subtable external="TeamLootItemSlot" />
     </column>
-    <column name="QueueForDeletion" type="STRUCT">
-      <offset>8</offset>
+    <column name="Queuefordeletion" type="STRUCT">
+      <offset>16</offset>
       <subtable external="TeamLootItemSlot" />
     </column>
     <column name="}" type="END" />

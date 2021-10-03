@@ -1,21 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <enum name="GetActiveAssignmentFlags">
   <elements type="int">
+    <element name="ExcludeNonBoffItemRewards">-2147483648</element>
     <element name="AddHeaders">1</element>
-    <element name="AddCategoryHeaders">9</element>
-    <element name="AddAllCategoryHeaders">25</element>
-    <element name="AddStatusHeaders">17</element>
     <element name="ExcludePersonal">2</element>
     <element name="ExcludeNonPersonal">4</element>
+    <element name="AddCategoryHeaders">9</element>
+    <element name="AddStatusHeaders">17</element>
+    <element name="AddAllCategoryHeaders">25</element>
     <element name="ExcludeIncomplete">32</element>
     <element name="IncludeCompleted">64</element>
     <element name="ExcludeReady">128</element>
     <element name="DontFill">256</element>
+    <element name="ReverseTimeRemaining">512</element>
     <element name="ExcludeLevelErrors">1024</element>
     <element name="ExcludeAnyErrors">2048</element>
     <element name="ExcludeUnread">4096</element>
     <element name="IncludeUnread">8192</element>
-    <element name="ReverseTimeRemaining">512</element>
     <element name="ExcludeFactionErrors">16384</element>
     <element name="IncludeContact">32768</element>
     <element name="SortRequiredNumericAscending">65536</element>
@@ -24,5 +25,14 @@
     <element name="AddWeightHeaders">524288</element>
     <element name="HideUnmetRequirements">1048576</element>
     <element name="HideUnmetRequiredNumeric">2097152</element>
+    <element name="FilterBySlotSet">4194304</element>
+    <element name="ExcludeMarkedAsRead">8388608</element>
+    <element name="ExcludeRemote">16777216</element>
+    <element name="HideUnmetMinimumLevel">33554432</element>
+    <element name="ExcludeAvailableSchools">67108864</element>
+    <element name="ExcludeUpcomingSchools">134217728</element>
+    <element name="SortRequiredActivityFirst">268435456</element>
+    <element name="ExcludeNonItemRewards">536870912</element>
+    <element name="ExcludeNonDoffItemRewards">1073741824</element>
   </elements>
 </enum>

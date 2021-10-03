@@ -15,51 +15,51 @@
       </flags>
       <static_define_list external="CharClassTypes" />
     </column>
-    <column name="playerAddPetEntryType" type="INT">
+    <column name="Playeraddpetentrytype" type="INT">
       <offset>4</offset>
       <static_define_list external="ActivityLogEntryType" />
     </column>
-    <column name="playerDismissPetEntryType" type="INT">
+    <column name="Playerdismisspetentrytype" type="INT">
       <offset>8</offset>
       <static_define_list external="ActivityLogEntryType" />
     </column>
-    <column name="playerRenamePetEntryType" type="INT">
+    <column name="Playerrenamepetentrytype" type="INT">
       <offset>12</offset>
       <static_define_list external="ActivityLogEntryType" />
     </column>
-    <column name="sourcePlayerTradePetEntryType" type="INT">
+    <column name="Sourceplayertradepetentrytype" type="INT">
       <offset>16</offset>
       <static_define_list external="ActivityLogEntryType" />
     </column>
-    <column name="destPlayerTradePetEntryType" type="INT">
+    <column name="Destplayertradepetentrytype" type="INT">
       <offset>20</offset>
       <static_define_list external="ActivityLogEntryType" />
     </column>
-    <column name="petAddPetEntryType" type="INT">
+    <column name="Petaddpetentrytype" type="INT">
       <offset>24</offset>
       <static_define_list external="ActivityLogEntryType" />
     </column>
-    <column name="petRenamePetEntryType" type="INT">
+    <column name="Petrenamepetentrytype" type="INT">
       <offset>28</offset>
       <static_define_list external="ActivityLogEntryType" />
     </column>
-    <column name="petTradePetEntryType" type="INT">
+    <column name="Pettradepetentrytype" type="INT">
       <offset>32</offset>
       <static_define_list external="ActivityLogEntryType" />
     </column>
-    <column name="playerPromotePetEntryType" type="INT">
+    <column name="Playerpromotepetentrytype" type="INT">
       <offset>36</offset>
       <static_define_list external="ActivityLogEntryType" />
     </column>
-    <column name="petPromotePetEntryType" type="INT">
+    <column name="Petpromotepetentrytype" type="INT">
       <offset>40</offset>
       <static_define_list external="ActivityLogEntryType" />
     </column>
-    <column name="playerTrainPetEntryType" type="INT">
+    <column name="Playertrainpetentrytype" type="INT">
       <offset>44</offset>
       <static_define_list external="ActivityLogEntryType" />
     </column>
-    <column name="petTrainPetEntryType" type="INT">
+    <column name="Pettrainpetentrytype" type="INT">
       <offset>48</offset>
       <static_define_list external="ActivityLogEntryType" />
     </column>

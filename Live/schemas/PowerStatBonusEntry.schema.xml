@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TargetAttrib" type="INT">
+    <column name="Targetattrib" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SELF_ONLY</flag>

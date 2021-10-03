@@ -16,7 +16,7 @@
       </flags>
     </column>
     <column name="Texture" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
@@ -24,145 +24,127 @@
       </flags>
       <dictionary_name>Texture</dictionary_name>
     </column>
-    <column name="SubAssembly" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Subassembly" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>UITextureAssembly</dictionary_name>
     </column>
-    <column name="LeftFrom" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
+    <column name="Leftfrom" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
       <subtable external="UITextureInstancePosition" />
     </column>
-    <column name="RightFrom" type="EMBEDDEDSTRUCT">
-      <offset>28</offset>
+    <column name="Rightfrom" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
       <subtable external="UITextureInstancePosition" />
     </column>
-    <column name="TopFrom" type="EMBEDDEDSTRUCT">
-      <offset>44</offset>
+    <column name="Topfrom" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
       <subtable external="UITextureInstancePosition" />
     </column>
-    <column name="BottomFrom" type="EMBEDDEDSTRUCT">
-      <offset>60</offset>
+    <column name="Bottomfrom" type="EMBEDDEDSTRUCT">
+      <offset>96</offset>
       <subtable external="UITextureInstancePosition" />
     </column>
-    <column name="HorizontalCenterFrom" type="EMBEDDEDSTRUCT">
-      <offset>76</offset>
+    <column name="Horizontalcenterfrom" type="EMBEDDEDSTRUCT">
+      <offset>120</offset>
       <subtable external="UITextureInstancePosition" />
     </column>
-    <column name="VerticalCenterFrom" type="EMBEDDEDSTRUCT">
-      <offset>92</offset>
+    <column name="Verticalcenterfrom" type="EMBEDDEDSTRUCT">
+      <offset>144</offset>
       <subtable external="UITextureInstancePosition" />
     </column>
     <column name="Fallback" type="OPTIONALSTRUCT">
-      <offset>108</offset>
+      <offset>168</offset>
       <subtable external="UITextureInstanceFallback" />
     </column>
-    <column name="TopLeftColor" type="INT">
-      <offset>112</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+    <column name="Topleftcolor" type="INT">
+      <offset>176</offset>
+      <static_define_list external="Color" />
     </column>
     <column name="Color" type="INT">
-      <offset>112</offset>
+      <offset>176</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>TopLeftColor</redundant_name>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <redundant_name>Topleftcolor</redundant_name>
+      <static_define_list external="Color" />
     </column>
-    <column name="TopColor" type="INT">
-      <offset>112</offset>
+    <column name="Topcolor" type="INT">
+      <offset>176</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>TopLeftColor</redundant_name>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <redundant_name>Topleftcolor</redundant_name>
+      <static_define_list external="Color" />
     </column>
-    <column name="LeftColor" type="INT">
-      <offset>112</offset>
+    <column name="Leftcolor" type="INT">
+      <offset>176</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>TopLeftColor</redundant_name>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <redundant_name>Topleftcolor</redundant_name>
+      <static_define_list external="Color" />
     </column>
-    <column name="TopRightColor" type="INT">
-      <offset>116</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+    <column name="Toprightcolor" type="INT">
+      <offset>180</offset>
+      <static_define_list external="Color" />
     </column>
-    <column name="RightColor" type="INT">
-      <offset>116</offset>
+    <column name="Rightcolor" type="INT">
+      <offset>180</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>TopRightColor</redundant_name>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <redundant_name>Toprightcolor</redundant_name>
+      <static_define_list external="Color" />
     </column>
-    <column name="BottomLeftColor" type="INT">
-      <offset>120</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+    <column name="Bottomleftcolor" type="INT">
+      <offset>184</offset>
+      <static_define_list external="Color" />
     </column>
-    <column name="BottomColor" type="INT">
-      <offset>120</offset>
+    <column name="Bottomcolor" type="INT">
+      <offset>184</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>BottomLeftColor</redundant_name>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <redundant_name>Bottomleftcolor</redundant_name>
+      <static_define_list external="Color" />
     </column>
-    <column name="BottomRightColor" type="INT">
-      <offset>124</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+    <column name="Bottomrightcolor" type="INT">
+      <offset>188</offset>
+      <static_define_list external="Color" />
     </column>
-    <column name="ScaleHorizontal" type="F32">
-      <offset>128</offset>
+    <column name="Scalehorizontal" type="F32">
+      <offset>192</offset>
       <default>1</default>
     </column>
-    <column name="HorizontalScale" type="F32">
-      <offset>128</offset>
+    <column name="Horizontalscale" type="F32">
+      <offset>192</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ScaleHorizontal</redundant_name>
+      <redundant_name>Scalehorizontal</redundant_name>
       <default>1</default>
     </column>
-    <column name="ScaleVertical" type="F32">
-      <offset>132</offset>
+    <column name="Scalevertical" type="F32">
+      <offset>196</offset>
       <default>1</default>
     </column>
-    <column name="VerticalScale" type="F32">
-      <offset>132</offset>
+    <column name="Verticalscale" type="F32">
+      <offset>196</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ScaleVertical</redundant_name>
+      <redundant_name>Scalevertical</redundant_name>
       <default>1</default>
     </column>
     <column name="Rotation" type="EMBEDDEDSTRUCT">
-      <offset>136</offset>
+      <offset>200</offset>
       <subtable external="UIAngle" />
     </column>
     <column name="Z" type="U8">
-      <offset>144</offset>
+      <offset>208</offset>
     </column>
-    <column name="VerticalMode" type="BIT">
-      <offset>148</offset>
+    <column name="Verticalmode" type="BIT">
+      <offset>212</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -172,21 +154,21 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="ModeVertical" type="BIT">
-      <offset>148</offset>
+    <column name="Modevertical" type="BIT">
+      <offset>212</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
-      <redundant_name>VerticalMode</redundant_name>
+      <redundant_name>Verticalmode</redundant_name>
       <bit_offset>327680</bit_offset>
       <static_define_list external="UITextureMode" />
       <format_strings>
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="HorizontalMode" type="BIT">
-      <offset>148</offset>
+    <column name="Horizontalmode" type="BIT">
+      <offset>212</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -196,13 +178,13 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="ModeHorizontal" type="BIT">
-      <offset>148</offset>
+    <column name="Modehorizontal" type="BIT">
+      <offset>212</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
-      <redundant_name>HorizontalMode</redundant_name>
+      <redundant_name>Horizontalmode</redundant_name>
       <bit_offset>327685</bit_offset>
       <static_define_list external="UITextureMode" />
       <format_strings>
@@ -210,68 +192,84 @@
       </format_strings>
     </column>
     <column name="Alignment" type="BIT">
-      <offset>148</offset>
-      <bit_offset>327690</bit_offset>
+      <offset>213</offset>
+      <bit_offset>327682</bit_offset>
       <static_define_list external="UIDirection" />
     </column>
-    <column name="MouseRegion" type="U8">
-      <offset>152</offset>
+    <column name="Mouseregion" type="U8">
+      <offset>216</offset>
     </column>
-    <column name="ScaleReset" type="BIT">
-      <offset>152</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Scalereset" type="BIT">
+      <offset>217</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ResetScale" type="BIT">
-      <offset>152</offset>
+    <column name="Resetscale" type="BIT">
+      <offset>217</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ScaleReset</redundant_name>
-      <bit_offset>65544</bit_offset>
+      <redundant_name>Scalereset</redundant_name>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ColorReset" type="BIT">
-      <offset>152</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Colorreset" type="BIT">
+      <offset>217</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ResetColor" type="BIT">
-      <offset>152</offset>
+    <column name="Resetcolor" type="BIT">
+      <offset>217</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ColorReset</redundant_name>
-      <bit_offset>65545</bit_offset>
+      <redundant_name>Colorreset</redundant_name>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsSubAssembly" type="BIT">
-      <offset>152</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Issubassembly" type="BIT">
+      <offset>217</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Additive" type="BIT">
-      <offset>152</offset>
-      <bit_offset>65547</bit_offset>
+      <offset>217</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AdditiveReset" type="BIT">
-      <offset>152</offset>
-      <bit_offset>65548</bit_offset>
+    <column name="Additivereset" type="BIT">
+      <offset>217</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ResetAdditive" type="BIT">
-      <offset>152</offset>
+    <column name="Resetadditive" type="BIT">
+      <offset>217</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>AdditiveReset</redundant_name>
-      <bit_offset>65548</bit_offset>
+      <redundant_name>Additivereset</redundant_name>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FlipX" type="BIT">
-      <offset>152</offset>
-      <bit_offset>65550</bit_offset>
+    <column name="Flipx" type="BIT">
+      <offset>217</offset>
+      <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FlipY" type="BIT">
-      <offset>152</offset>
-      <bit_offset>65551</bit_offset>
+    <column name="Flipy" type="BIT">
+      <offset>217</offset>
+      <bit_offset>65543</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Clip" type="BIT">
-      <offset>152</offset>
-      <bit_offset>65552</bit_offset>
+      <offset>218</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uiskin" type="BIT">
+      <offset>218</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="eaActiveAssignments" type="STRUCT">
+    <column name="Eaactiveassignments" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -16,8 +16,8 @@
       </flags>
       <subtable external="ItemAssignment" />
     </column>
-    <column name="eaCompletedAssignments" type="STRUCT">
-      <offset>4</offset>
+    <column name="Eacompletedassignments" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
@@ -25,8 +25,8 @@
       </flags>
       <subtable external="ItemAssignmentCompleted" />
     </column>
-    <column name="eaRecentlyCompletedAssignments" type="STRUCT">
-      <offset>8</offset>
+    <column name="Earecentlycompletedassignments" type="STRUCT">
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
@@ -34,8 +34,8 @@
       </flags>
       <subtable external="ItemAssignmentCompletedDetails" />
     </column>
-    <column name="eaPersistedPersonalAssignmentBuckets" type="STRUCT">
-      <offset>12</offset>
+    <column name="Eapersistedpersonalassignmentbuckets" type="STRUCT">
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
@@ -43,24 +43,70 @@
       </flags>
       <subtable external="ItemAssignmentPersonalPersistedBucket" />
     </column>
-    <column name="uMaxAssignmentID" type="INT">
-      <offset>16</offset>
+    <column name="Eapersistedassignmentschools" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="ItemAssignmentPersistedSchool" />
+    </column>
+    <column name="Umaxassignmentid" type="INT">
+      <offset>40</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eaItemAssignmentSlotsUnlocked" type="INTARRAY">
-      <offset>20</offset>
+    <column name="Eaitemassignmentslotsunlocked" type="INTARRAY">
+      <offset>48</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uLastPersonalUpdateTime" type="IGNORE" />
-    <column name="eaPersonalAssignments" type="IGNORE">
+    <column name="Eaitemassignmentslotshiddenlocked" type="INTARRAY">
+      <offset>56</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eaitemassignmentunlockedslotsset" type="STRUCT">
+      <offset>64</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="ItemAssignmentSlotsUnlockedSet" />
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>72</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Unextcompletiontime" type="INT">
+      <offset>80</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ulastpersonalupdatetime" type="IGNORE" />
+    <column name="Eapersonalassignments" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>

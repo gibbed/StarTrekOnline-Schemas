@@ -7,24 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="listenerType" type="INT">
+    <column name="Listenertype" type="INT">
       <offset>0</offset>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="listenerID" type="INT">
+    <column name="Listenerid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="listenerName" type="STRING">
+    <column name="Listenername" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="listenerAccount" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="uValidUntilTime" type="INT">
+    <column name="Listeneraccount" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="listenerAccessLevel" type="INT">
-      <offset>20</offset>
+    <column name="Uvaliduntiltime" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Listeneraccesslevel" type="INT">
+      <offset>28</offset>
       <static_define_list external="AccessLevel" />
     </column>
     <column name="}" type="END" />

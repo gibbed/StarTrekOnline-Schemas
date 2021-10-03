@@ -7,53 +7,65 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="movingOnRail" type="BIT">
+    <column name="Movingonrail" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="doneMovingOnRail" type="BIT">
+    <column name="Donemovingonrail" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="waitingAtWaypoint" type="BIT">
+    <column name="Waitingatwaypoint" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="acquireChangeAll" type="BIT">
+    <column name="Acquirechangeposrot" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="changeAllIsAcquired" type="BIT">
+    <column name="Changeposrotisacquired" type="BIT">
       <offset>0</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="acquireAnim" type="BIT">
+    <column name="Acquireanim" type="BIT">
       <offset>0</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="animIsAcquired" type="BIT">
+    <column name="Animisacquired" type="BIT">
       <offset>0</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="inputEventHappened" type="BIT">
+    <column name="Playedanimforwaypoint" type="BIT">
       <offset>0</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="triggerHappened" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Inputeventhappened" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="railMoveFailed" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Triggerhappened" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="sentReachedWaypoint" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Railmovefailed" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="sentWaitingForTrigger" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Sentreachedwaypoint" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Sentwaitingfortrigger" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Releasebits" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Pathbitownershipreset" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65542</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

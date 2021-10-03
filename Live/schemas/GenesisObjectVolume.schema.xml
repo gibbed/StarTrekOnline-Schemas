@@ -7,16 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="IsSquare" type="U8">
+    <column name="Issquare" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsRelative" type="U8">
+    <column name="Isrelative" type="U8">
       <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Size" type="F32">
       <offset>4</offset>
     </column>
-    <column name="VolumeProperties" type="OPTIONALSTRUCT">
+    <column name="Volumeproperties" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <subtable external="GroupVolumeProperties" />
     </column>

@@ -9,18 +9,18 @@
     <column name="{" type="START" />
     <column name="Name" type="STRING">
       <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
     <column name="Bits" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="AnimStanceWords" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="AnimKeyword" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="AnimMove" type="STRING">
+    <column name="Animstancewords" type="STRING">
       <offset>16</offset>
+    </column>
+    <column name="Animkeyword" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

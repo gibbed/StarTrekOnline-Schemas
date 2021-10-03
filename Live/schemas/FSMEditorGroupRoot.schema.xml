@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="fsmGroups" type="STRUCT">
+    <column name="Fsmgroups" type="STRUCT">
       <offset>0</offset>
       <subtable external="FSMGroup" />
     </column>

@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="setVel" type="EMBEDDEDSTRUCT">
+    <column name="Setvel" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="SurfaceSyncSetVel" />
     </column>
-    <column name="coll" type="EMBEDDEDSTRUCT">
+    <column name="Coll" type="EMBEDDEDSTRUCT">
       <offset>16</offset>
       <subtable external="SurfaceSyncCollTest" />
     </column>
-    <column name="jump" type="EMBEDDEDSTRUCT">
+    <column name="Jump" type="EMBEDDEDSTRUCT">
       <offset>48</offset>
       <subtable external="SurfaceSyncJumpTest" />
     </column>

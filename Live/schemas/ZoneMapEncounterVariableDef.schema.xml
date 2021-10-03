@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ZoneMapEncounterVariableDef">
+  <table>
+    <column name="ZoneMapEncounterVariableDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Message" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Legacyaudioevent" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Hasvo" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+      <default_string>UNSET</default_string>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

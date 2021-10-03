@@ -46,6 +46,24 @@
     <element name="ImageMenu">42</element>
     <element name="ZStore">43</element>
     <element name="ZoneRewards">44</element>
-    <element name="Exit">45</element>
+    <element name="ConsignmentBroker">45</element>
+    <element name="Leviathan_SystemsAccess">46</element>
+    <element name="Leviathan_SystemsAccessMissionList">47</element>
+    <element name="Leviathan_SystemsAccessViewOfferedMission">48</element>
+    <element name="GarrisonPlot">49</element>
+    <element name="GarrisonPlotConstructionConfirmation">50</element>
+    <element name="GarrisonPlotDestructionConfirmation">51</element>
+    <element name="GarrisonOverview">52</element>
+    <element name="GarrisonCoffer">53</element>
+    <element name="Match">54</element>
+    <element name="SecondaryItemProgression">55</element>
+    <element name="MapVarSetter">56</element>
+    <element name="ItemAssignmentsRepeatable">57</element>
+    <element name="ItemAssignmentsNonRepeatable">58</element>
+    <element name="ItemAssignmentsCollection">59</element>
+    <element name="ItemAssignmentsManagement">60</element>
+    <element name="DemiplaneControl">61</element>
+    <element name="EventBingoVendor">62</element>
+    <element name="Exit">63</element>
   </elements>
 </enum>

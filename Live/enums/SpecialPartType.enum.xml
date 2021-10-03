@@ -18,5 +18,26 @@
     <element name="ItemAssignmentUnslotItem">14</element>
     <element name="ItemAssignmentReserveSlots">15</element>
     <element name="SuperPremium">16</element>
+    <element name="EntityLoadoutSlot">17</element>
+    <element name="PuppetLoadoutSlot">18</element>
+    <element name="Reroll">19</element>
+    <element name="VIPExpiration">20</element>
+    <element name="VIPPoints">21</element>
+    <element name="TempVIPExpiration">22</element>
+    <element name="TempVIPRank">23</element>
+    <element name="RenownExpiration">24</element>
+    <element name="PrebuiltEntity">25</element>
+    <element name="AccountServerCharSlots">26</element>
+    <element name="AccountDeckSlot">27</element>
+    <element name="PersonalGroupProjectSetNumeric">28</element>
+    <element name="PersonalGroupProjectCancelAndCompleteTask">29</element>
+    <element name="PersonalGroupProjectSetUnlocks">30</element>
+    <element name="PersonalGroupProjectBonusDefAndSyncWithGAD">31</element>
+    <element name="ItemUnlock">32</element>
+    <element name="RaceUnlock">33</element>
+    <element name="RaceUnlockAllowAlreadyUnlocked">34</element>
+    <element name="CostumeSetUnlock">35</element>
+    <element name="CostumeUnlock">36</element>
+    <element name="VanityPetUnlock">37</element>
   </elements>
 </enum>

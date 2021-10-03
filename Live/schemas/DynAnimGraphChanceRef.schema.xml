@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="graph" type="REFERENCE">
+    <column name="Graph" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>NON_NULL_REF</flag>
@@ -15,7 +15,7 @@
       <dictionary_name>DynAnimGraph</dictionary_name>
     </column>
     <column name="Chance" type="F32">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

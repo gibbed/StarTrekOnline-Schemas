@@ -34,5 +34,9 @@
     <element name="NeighborhoodChange">30</element>
     <element name="Trade">31</element>
     <element name="LookingForGroup">32</element>
+    <element name="AntiAddiction">33</element>
+    <element name="Alliance">34</element>
+    <element name="Raid">35</element>
+    <element name="MRG">36</element>
   </elements>
 </enum>

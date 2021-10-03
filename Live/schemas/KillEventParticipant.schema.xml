@@ -14,19 +14,20 @@
       </flags>
     </column>
     <column name="IsPlayer" type="U8">
-      <offset>4</offset>
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Level" type="INT">
-      <offset>8</offset>
+      <offset>12</offset>
     </column>
     <column name="Name" type="STRING">
-      <offset>12</offset>
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="GroupName" type="STRING">
-      <offset>16</offset>
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

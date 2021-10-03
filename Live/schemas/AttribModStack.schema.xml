@@ -7,25 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ModNet" type="OPTIONALSTRUCT">
+    <column name="Modnet" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="AttribModNet" />
     </column>
-    <column name="StackGroup" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Stackgroup" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="UIStackGroupData" />
     </column>
-    <column name="uiStack" type="INT">
-      <offset>8</offset>
+    <column name="Uistack" type="INT">
+      <offset>16</offset>
     </column>
-    <column name="UpdateIndex" type="INT">
-      <offset>12</offset>
+    <column name="Updateindex" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Uitimestampfirstapplication" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Uitimestamplastapplication" type="INT">
+      <offset>28</offset>
     </column>
     <column name="}" type="END" />
   </table>

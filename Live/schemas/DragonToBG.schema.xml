@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="dm" type="EMBEDDEDSTRUCT">
+    <column name="Dm" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="DragonMovementDef" />
     </column>
@@ -20,17 +20,18 @@
     <column name="Traction" type="F32">
       <offset>60</offset>
     </column>
-    <column name="erFaceTarget" type="INT">
+    <column name="Erfacetarget" type="INT">
       <offset>64</offset>
     </column>
-    <column name="erOverrideFaceTarget" type="INT">
+    <column name="Eroverridefacetarget" type="INT">
       <offset>68</offset>
     </column>
-    <column name="OverrideFacePos" type="F32FIXEDARRAY">
+    <column name="Overridefacepos" type="F32FIXEDARRAY">
       <offset>72</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="OverrideYawOffset" type="F32">
+    <column name="Overrideyawoffset" type="F32">
       <offset>84</offset>
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">

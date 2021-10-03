@@ -16,43 +16,43 @@
       </flags>
       <static_define_list external="ItemQuality" />
     </column>
-    <column name="MinLevel" type="U8">
-      <offset>1</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>LOGIN_SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="MinLevel_UseAccessor" type="U8">
-      <offset>1</offset>
-      <flags>
-        <flag>ALIAS</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>LOGIN_SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <redundant_name>MinLevel</redundant_name>
-    </column>
     <column name="Level" type="U8">
-      <offset>2</offset>
+      <offset>1</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="Level_UseAccessor" type="U8">
-      <offset>2</offset>
+    <column name="Level_Deprecated" type="U8">
+      <offset>1</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <redundant_name>Level</redundant_name>
     </column>
-    <column name="iPowerFactor" type="U8">
+    <column name="MinLevel" type="U8">
+      <offset>2</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Iunidentifieditemminlevel" type="U8">
+      <offset>2</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>MinLevel</redundant_name>
+    </column>
+    <column name="Itemlevel" type="U8">
       <offset>3</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -60,8 +60,34 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="ppItemPowerDefRefs" type="STRUCT">
+    <column name="Iunidentifieditemlevel" type="U8">
+      <offset>3</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Itemlevel</redundant_name>
+    </column>
+    <column name="Ipowerfactor" type="U8">
       <offset>4</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Iversion" type="U8">
+      <offset>5</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ppitempowerdefrefs" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -69,14 +95,80 @@
       </flags>
       <subtable external="ItemPowerDefRef" />
     </column>
-    <column name="pDyeData" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Pdyedata" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="DyeData" />
+    </column>
+    <column name="Iprogressiontier" type="INT">
+      <offset>24</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uprogressionxp" type="INT">
+      <offset>28</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uprogressionlevel" type="INT">
+      <offset>32</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uupgradexp" type="INT">
+      <offset>36</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uupgradeoverflowxp" type="INT">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uupgradestreakcount" type="INT">
+      <offset>44</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Udynamicitempowersrerolledatversion" type="INT">
+      <offset>48</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <default>-1</default>
+    </column>
+    <column name="Dynamicitembucketsinitialized" type="BIT">
+      <offset>52</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

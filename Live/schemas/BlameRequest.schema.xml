@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="BlameRequest">
+  <table>
+    <column name="BlameRequest" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Requests" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="SingleBlameRequest" />
+    </column>
+    <column name="Revnum" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Svnroot" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Sourceroot" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>32</offset>
+      <static_define_list external="BlameRequestFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

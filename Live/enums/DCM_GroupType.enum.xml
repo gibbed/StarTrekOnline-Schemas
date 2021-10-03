@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DCM_GroupType">
+  <elements type="int">
+    <element name="EXCLUSIVE">0</element>
+    <element name="NONEXCLUSIVE">1</element>
+    <element name="AUTOMATIC">2</element>
+  </elements>
+</enum>

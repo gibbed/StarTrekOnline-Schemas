@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ItemProgressionCondition">
+  <elements type="int">
+    <element name="Standard">0</element>
+    <element name="Improved">1</element>
+    <element name="Special">2</element>
+  </elements>
+</enum>

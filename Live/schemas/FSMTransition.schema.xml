@@ -17,36 +17,36 @@
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Target</redundant_name>
     </column>
     <column name="Expr" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="Expression" />
     </column>
     <column name="Expr:" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Expr</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
     <column name="Action" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="Expression" />
     </column>
     <column name="Action:" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Action</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
     <column name="Layout" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="FSMTransitionLayout" />
     </column>
     <column name="}" type="END" />

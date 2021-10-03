@@ -7,29 +7,29 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NodeDef" type="REFERENCE">
+    <column name="Nodedef" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <dictionary_name>PTNodeDef</dictionary_name>
     </column>
-    <column name="MaxRanksToBuy" type="INT">
-      <offset>4</offset>
+    <column name="Maxrankstobuy" type="INT">
+      <offset>8</offset>
     </column>
     <column name="Ranks" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>MaxRanksToBuy</redundant_name>
+      <redundant_name>Maxrankstobuy</redundant_name>
     </column>
     <column name="Rank" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>MaxRanksToBuy</redundant_name>
+      <redundant_name>Maxrankstobuy</redundant_name>
     </column>
     <column name="}" type="END" />
   </table>

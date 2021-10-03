@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="RankRequestBeforeQueue">
+  <table>
+    <column name="RankRequestBeforeQueue" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ContainerID" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="EntID" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="TeamID" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Rank" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Level" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Affiliation" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Astrrole" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Astrclass" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Reputation" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="password" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Uiinstanceid" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Mapkey" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Joinflags" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Uijointimeoverride" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Cbdata" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="NullStruct" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

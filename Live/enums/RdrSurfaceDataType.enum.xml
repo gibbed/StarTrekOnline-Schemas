@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="RdrSurfaceDataType">
+  <elements type="int">
+    <element name="RGB">0</element>
+    <element name="RGBA">1</element>
+    <element name="DEPTH">2</element>
+    <element name="STENCIL">3</element>
+    <element name="RGBA_F16">4</element>
+    <element name="RGBA_F32">5</element>
+    <element name="RGB_F32">6</element>
+    <element name="BGRA">7</element>
+  </elements>
+</enum>

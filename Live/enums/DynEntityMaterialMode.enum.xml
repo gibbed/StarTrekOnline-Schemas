@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DynEntityMaterialMode">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="Swap">1</element>
+    <element name="Add">2</element>
+    <element name="SwapWithConstants">3</element>
+    <element name="AddWithConstants">4</element>
+    <element name="Dissolve">5</element>
+    <element name="TextureSwap">6</element>
+  </elements>
+</enum>

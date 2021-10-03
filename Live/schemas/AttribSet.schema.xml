@@ -14,7 +14,10 @@
       </flags>
     </column>
     <column name="Attribs" type="INTARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
+      <flags>
+        <flag>STRUCT_NORECURSE</flag>
+      </flags>
       <static_define_list external="AttribType" />
     </column>
     <column name="}" type="END" />

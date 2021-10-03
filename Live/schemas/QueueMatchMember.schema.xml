@@ -7,21 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uEntID" type="INT">
+    <column name="Memberentityinfo" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
+      <subtable external="QueueMemberEntityInfo" />
     </column>
-    <column name="uTeamID" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="GroupRole" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="GroupClass" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="PresetMember" type="BIT">
-      <offset>16</offset>
+    <column name="Presetmember" type="BIT">
+      <offset>96</offset>
       <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Rank" type="EMBEDDEDSTRUCT">
+      <offset>100</offset>
+      <subtable external="QueueMemberRank" />
     </column>
     <column name="}" type="END" />
   </table>

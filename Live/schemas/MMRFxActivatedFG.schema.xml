@@ -7,15 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DynFx" type="INT">
+    <column name="hFX" type="INT">
       <offset>0</offset>
     </column>
-    <column name="triggerHappened" type="BIT">
-      <offset>4</offset>
+    <column name="Hfx2" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Triggerhappened" type="BIT">
+      <offset>16</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="timedOut" type="BIT">
-      <offset>4</offset>
+    <column name="Timedout" type="BIT">
+      <offset>16</offset>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />

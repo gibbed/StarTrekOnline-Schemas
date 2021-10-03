@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DCM_DataCenterSummary">
+  <table>
+    <column name="DCM_DataCenterSummary" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Crc" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="TimeStamp" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Datacentername" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Machines" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="DCM_MachineSummary" />
+    </column>
+    <column name="Local" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

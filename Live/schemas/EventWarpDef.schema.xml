@@ -15,23 +15,29 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="SpawnMap" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="SpawnPoint" type="STRING">
+    <column name="Excludeallegiance" type="STRINGARRAY">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="RequiredLevel" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="TransitionOverride" type="REFERENCE">
+    <column name="Spawnmap" type="STRING">
       <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="SpawnPoint" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Requiredlevel" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Transitionoverride" type="REFERENCE">
+      <offset>40</offset>
       <dictionary_name>DoorTransitionSequenceDef</dictionary_name>
     </column>
     <column name="}" type="END" />

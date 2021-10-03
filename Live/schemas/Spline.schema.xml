@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="spline_points" type="F32ARRAY">
+    <column name="Spline_Points" type="F32ARRAY">
       <offset>0</offset>
     </column>
-    <column name="spline_up" type="F32ARRAY">
-      <offset>4</offset>
-    </column>
-    <column name="spline_deltas" type="F32ARRAY">
+    <column name="Spline_Up" type="F32ARRAY">
       <offset>8</offset>
     </column>
-    <column name="spline_widths" type="F32ARRAY">
-      <offset>12</offset>
-    </column>
-    <column name="spline_geom" type="INTARRAY">
+    <column name="Spline_Deltas" type="F32ARRAY">
       <offset>16</offset>
+    </column>
+    <column name="Spline_Widths" type="F32ARRAY">
+      <offset>24</offset>
+    </column>
+    <column name="Spline_Geom" type="INTARRAY">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

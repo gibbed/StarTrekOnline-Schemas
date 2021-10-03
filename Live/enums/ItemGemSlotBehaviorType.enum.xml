@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ItemGemSlotBehaviorType">
+  <elements type="int">
+    <element name="Error">0</element>
+    <element name="Standard">1</element>
+    <element name="TableControlled">2</element>
+    <element name="Stub">4</element>
+  </elements>
+</enum>

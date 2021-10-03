@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="HttpAPI_Stats">
+  <table>
+    <column name="HttpAPI_Stats" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="All" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="WrappedEventCounter" />
+    </column>
+    <column name="Failed" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="WrappedEventCounter" />
+    </column>
+    <column name="Countsbyresponse" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="EventCountsByCode" />
+    </column>
+    <column name="Timecounter" type="EMBEDDEDSTRUCT">
+      <offset>96</offset>
+      <subtable external="PacketTimeCounters" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -7,91 +7,101 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DefaultTabGroupName" type="STRING">
+    <column name="Defaulttabgroupname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="DefaultTabConfig" type="STRUCT">
-      <offset>4</offset>
+    <column name="Defaulttabconfig" type="STRUCT">
+      <offset>8</offset>
       <subtable external="ChatTabConfig" />
     </column>
-    <column name="DefaultTabGroups" type="STRUCT">
-      <offset>8</offset>
+    <column name="Defaulttabgroups" type="STRUCT">
+      <offset>16</offset>
       <subtable external="ChatTabGroupConfig" />
     </column>
-    <column name="DefaultChatColor" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="UnsubscribedInputChannelColor" type="INT">
-      <offset>16</offset>
-    </column>
-    <column name="MessageTypeColorDef" type="STRUCT">
-      <offset>20</offset>
-      <subtable external="ChatConfigColorDef" />
-    </column>
-    <column name="ChannelColorDef" type="STRUCT">
+    <column name="Defaultchatcolor" type="INT">
       <offset>24</offset>
+    </column>
+    <column name="Unsubscribedinputchannelcolor" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Messagetypecolordef" type="STRUCT">
+      <offset>32</offset>
       <subtable external="ChatConfigColorDef" />
     </column>
-    <column name="ShowDate" type="BIT">
-      <offset>28</offset>
-      <bit_offset>65536</bit_offset>
-    </column>
-    <column name="ShowTime" type="BIT">
-      <offset>28</offset>
-      <bit_offset>65537</bit_offset>
-    </column>
-    <column name="ShowMessageTypeNames" type="BIT">
-      <offset>28</offset>
-      <bit_offset>65538</bit_offset>
-    </column>
-    <column name="HideAccountNames" type="BIT">
-      <offset>28</offset>
-      <bit_offset>65539</bit_offset>
-    </column>
-    <column name="ProfanityFilter" type="BIT">
-      <offset>28</offset>
-      <bit_offset>65540</bit_offset>
-    </column>
-    <column name="TextFadesWithWindow" type="BIT">
-      <offset>28</offset>
-      <bit_offset>65541</bit_offset>
-    </column>
-    <column name="EnablePrivateChatWindowSystem" type="BIT">
-      <offset>28</offset>
-      <bit_offset>65542</bit_offset>
-    </column>
-    <column name="ShowChannelNames" type="BIT">
-      <offset>28</offset>
-      <bit_offset>65543</bit_offset>
-    </column>
-    <column name="AnnotateAutoComplete" type="BIT">
-      <offset>28</offset>
-      <bit_offset>65544</bit_offset>
-    </column>
-    <column name="DisableStickyChannels" type="BIT">
-      <offset>28</offset>
-      <bit_offset>65545</bit_offset>
-    </column>
-    <column name="TimeRequiredToStartFading" type="INT16">
-      <offset>30</offset>
-    </column>
-    <column name="FadeAwayDuration" type="INT16">
-      <offset>32</offset>
-    </column>
-    <column name="FontScale" type="F32">
-      <offset>36</offset>
-      <default>1</default>
-    </column>
-    <column name="ActiveWindowAlpha" type="F32">
+    <column name="Channelcolordef" type="STRUCT">
       <offset>40</offset>
+      <subtable external="ChatConfigColorDef" />
+    </column>
+    <column name="Showdate" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showtime" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showmessagetypenames" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hideaccountnames" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Profanityfilter" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Textfadeswithwindow" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enableprivatechatwindowsystem" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showchannelnames" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65543</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Annotateautocomplete" type="BIT">
+      <offset>49</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disablestickychannels" type="BIT">
+      <offset>49</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Timerequiredtostartfading" type="INT16">
+      <offset>50</offset>
+    </column>
+    <column name="Fadeawayduration" type="INT16">
+      <offset>52</offset>
+    </column>
+    <column name="Fontscale" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="ChatConfigDefault_FontScale" />
+    </column>
+    <column name="Activewindowalpha" type="F32">
+      <offset>64</offset>
       <default>1063675494</default>
     </column>
-    <column name="InactiveWindowAlpha" type="F32">
-      <offset>44</offset>
+    <column name="Inactivewindowalpha" type="F32">
+      <offset>68</offset>
       <default>1058642330</default>
     </column>
-    <column name="PrivateSentColorShift" type="F32">
-      <offset>48</offset>
+    <column name="Privatesentcolorshift" type="F32">
+      <offset>72</offset>
       <default>-1093874483</default>
     </column>
     <column name="}" type="END" />

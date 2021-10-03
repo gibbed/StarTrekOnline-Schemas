@@ -10,8 +10,8 @@
     <column name="DisplayName" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="hCostume" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hcostume" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
     <column name="}" type="END" />

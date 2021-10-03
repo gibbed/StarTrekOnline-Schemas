@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MachineName" type="STRING">
+    <column name="Machinename" type="STRING">
       <offset>0</offset>
     </column>
     <column name="Procs" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="SentryServerCommQueryProcInfo" />
     </column>
     <column name="}" type="END" />

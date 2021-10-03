@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="erEnt" type="INT">
+    <column name="Erent" type="INT">
       <offset>0</offset>
     </column>
     <column name="Count" type="INT">
@@ -16,27 +16,30 @@
     <column name="Min" type="F32FIXEDARRAY">
       <offset>8</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Max" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="ScreenDist" type="F32">
+    <column name="Screendist" type="F32">
       <offset>24</offset>
     </column>
-    <column name="PosSum" type="F32FIXEDARRAY">
+    <column name="Possum" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Children" type="STRUCT">
       <offset>40</offset>
       <subtable external="EncounterUIData" />
     </column>
-    <column name="ValidChildren" type="INT">
-      <offset>44</offset>
-    </column>
-    <column name="GenName" type="STRING">
+    <column name="Validchildren" type="INT">
       <offset>48</offset>
+    </column>
+    <column name="Genname" type="STRING">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

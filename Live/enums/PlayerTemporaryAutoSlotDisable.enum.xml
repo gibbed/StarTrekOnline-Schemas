@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PlayerTemporaryAutoSlotDisable">
+  <elements type="int">
+    <element name="AutoSlotEnabled">0</element>
+    <element name="PuppetSwapDisable">1</element>
+    <element name="LoadoutLoadDisable">2</element>
+  </elements>
+</enum>

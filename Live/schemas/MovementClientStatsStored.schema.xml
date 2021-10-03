@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="packetsFromClient" type="OPTIONALSTRUCT">
+    <column name="Packetsfromclient" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="MovementClientStatsPacketArray" />
     </column>
-    <column name="packetsFromServer" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Packetsfromserver" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="MovementClientStatsPacketArray" />
     </column>
-    <column name="frames" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Frames" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="MovementClientStatsFrames" />
     </column>
     <column name="}" type="END" />

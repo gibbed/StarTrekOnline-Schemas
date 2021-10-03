@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PlayerPowerCreatedPetInfo">
+  <table>
+    <column name="PlayerPowerCreatedPetInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Ucritterid" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Powerid" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Itemid" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Mode" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

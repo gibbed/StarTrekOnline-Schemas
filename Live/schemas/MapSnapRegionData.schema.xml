@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GroundFocusHeight" type="F32">
+    <column name="Groundfocusheight" type="F32">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

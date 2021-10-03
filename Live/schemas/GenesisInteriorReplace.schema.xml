@@ -7,33 +7,34 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="OldTag" type="STRING">
+    <column name="Oldtag" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="NewTag" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="NewDetailTag" type="STRING">
+    <column name="Newtag" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="NewLightTag" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="SpecificObject" type="STRING">
+    <column name="Newdetailtag" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="IsDoor" type="U8">
-      <offset>20</offset>
+    <column name="Newlighttag" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Specificobject" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Isdoor" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Layer" type="INT">
-      <offset>24</offset>
+      <offset>44</offset>
       <static_define_list external="GenesisInteriorLayer" />
     </column>
-    <column name="OverrideX" type="INT">
-      <offset>28</offset>
+    <column name="Overridex" type="INT">
+      <offset>48</offset>
     </column>
-    <column name="OverrideZ" type="INT">
-      <offset>32</offset>
+    <column name="Overridez" type="INT">
+      <offset>52</offset>
     </column>
     <column name="}" type="END" />
   </table>

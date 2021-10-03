@@ -11,22 +11,22 @@
       <offset>0</offset>
       <subtable external="PowerTreeStep" />
     </column>
-    <column name="uiPowerTreeModCount" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="RespecSkillpointSpentMin" type="INT">
+    <column name="Uipowertreemodcount" type="INT">
       <offset>8</offset>
     </column>
-    <column name="UpdatePointsSpent" type="BIT">
+    <column name="Respecskillpointspentmin" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Updatepointsspent" type="BIT">
+      <offset>16</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="IsTraining" type="BIT">
-      <offset>12</offset>
+    <column name="Istraining" type="BIT">
+      <offset>16</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="OnlyLowerPoints" type="BIT">
-      <offset>12</offset>
+    <column name="Onlylowerpoints" type="BIT">
+      <offset>16</offset>
       <bit_offset>65539</bit_offset>
     </column>
     <column name="}" type="END" />

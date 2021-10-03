@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ShipJailKnownFlag">
+  <parent>ShipJailKnownFlagMacros</parent>
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="OffsetFrom">1</element>
+    <element name="X">2</element>
+    <element name="Y">4</element>
+    <element name="Width">8</element>
+    <element name="MinimumWidth">16</element>
+    <element name="MaximumWidth">32</element>
+    <element name="Height">64</element>
+    <element name="MinimumHeight">128</element>
+    <element name="MaximumHeight">256</element>
+  </elements>
+</enum>

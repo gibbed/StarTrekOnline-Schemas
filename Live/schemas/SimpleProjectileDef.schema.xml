@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SimpleProjectileDef">
+  <table>
+    <column name="SimpleProjectileDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Spawndir" type="INT">
+      <offset>16</offset>
+      <static_define_list external="SimpleProjectileSpawnDir" />
+    </column>
+    <column name="Initialstage" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">SimpleProjectileStageParams</format_string>
+      </format_strings>
+    </column>
+    <column name="Overridefields" type="INT">
+      <offset>24</offset>
+      <static_define_list external="SimpleProjectileOverrideField" />
+      <format>FLAGS</format>
+    </column>
+    <column name="MovementType" type="INT">
+      <offset>28</offset>
+      <static_define_list external="SimpleProjectileMovementType" />
+    </column>
+    <column name="Acceleration" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Velocity" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Gravitymultiplier" type="F32">
+      <offset>40</offset>
+      <default>1</default>
+    </column>
+    <column name="Donotcollidewithowner" type="U8">
+      <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Donotcollidewithents" type="U8">
+      <offset>45</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Tracktarget" type="U8">
+      <offset>46</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Poweronworldcollide" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Poweronentcollide" type="REFERENCE">
+      <offset>56</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Stage" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="SimpleProjectileStageDef" />
+    </column>
+    <column name="Startingvelocity" type="F32">
+      <offset>72</offset>
+    </column>
+    <column name="Lifetime" type="F32">
+      <offset>76</offset>
+    </column>
+    <column name="Range" type="F32">
+      <offset>80</offset>
+    </column>
+    <column name="TurnRate" type="F32">
+      <offset>84</offset>
+      <default>-1</default>
+    </column>
+    <column name="Radius" type="F32">
+      <offset>88</offset>
+      <default>1</default>
+    </column>
+    <column name="Targetfuzziness" type="F32">
+      <offset>96</offset>
+    </column>
+    <column name="Upoffset" type="F32">
+      <offset>100</offset>
+    </column>
+    <column name="Rightoffset" type="F32">
+      <offset>104</offset>
+    </column>
+    <column name="Forwardoffset" type="F32">
+      <offset>108</offset>
+    </column>
+    <column name="Spawnatentitypos" type="BIT">
+      <offset>112</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>196608</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">3</format_string>
+      </format_strings>
+    </column>
+    <column name="Spawnignorepitch" type="BIT">
+      <offset>112</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>196611</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">3</format_string>
+      </format_strings>
+    </column>
+    <column name="Umaxentshitbeforedeath" type="INT">
+      <offset>116</offset>
+      <default>1</default>
+    </column>
+    <column name="Donotcollidewithfriends" type="U8">
+      <offset>120</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Aimassistwhenlocked" type="U8">
+      <offset>121</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Alwaysaimassist" type="U8">
+      <offset>122</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="FX" type="EMBEDDEDSTRUCT">
+      <offset>128</offset>
+      <subtable external="SimpleProjectileFx" />
+    </column>
+    <column name="Poweronexpire" type="REFERENCE">
+      <offset>152</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

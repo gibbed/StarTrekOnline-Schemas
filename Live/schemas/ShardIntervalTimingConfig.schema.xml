@@ -7,16 +7,22 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TimeZoneMode" type="INT">
+    <column name="Timingconfigname" type="STRING">
       <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Timezonemode" type="INT">
+      <offset>8</offset>
       <static_define_list external="ShardIntervalTimingTimeZoneMode" />
     </column>
-    <column name="DailyResetHour" type="INT">
-      <offset>4</offset>
+    <column name="Dailyresethour" type="INT">
+      <offset>12</offset>
       <default>3</default>
     </column>
-    <column name="WeeklyResetDay" type="INT">
-      <offset>8</offset>
+    <column name="Weeklyresetday" type="INT">
+      <offset>16</offset>
       <default>4</default>
     </column>
     <column name="}" type="END" />

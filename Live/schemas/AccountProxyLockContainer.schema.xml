@@ -14,16 +14,16 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pLock" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Plock" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="AccountProxyLock" />
     </column>
     <column name="Dirty" type="IGNORE" />
-    <column name="sentToAccountServer" type="IGNORE" />
-    <column name="ppLocks" type="IGNORE">
+    <column name="Senttoaccountserver" type="IGNORE" />
+    <column name="Pplocks" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>

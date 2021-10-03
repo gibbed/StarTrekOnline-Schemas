@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="_PolyTable_FX2Emitter">
+  <table>
+    <column name="_PolyTable_FX2Emitter" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="FX2Controller" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2Controller" />
+    </column>
+    <column name="FX2EmitterAudio" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2EmitterAudio" />
+    </column>
+    <column name="FX2EmitterCamera" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2EmitterCamera" />
+    </column>
+    <column name="FX2EmitterCostume" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2EmitterCostume" />
+    </column>
+    <column name="FX2EmitterGamepad" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2EmitterGamepad" />
+    </column>
+    <column name="FX2EmitterLight" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2EmitterLight" />
+    </column>
+    <column name="FX2EmitterParticle" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2EmitterParticle" />
+    </column>
+    <column name="FX2EmitterSky" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FX2EmitterSky" />
+    </column>
+  </table>
+</parser>

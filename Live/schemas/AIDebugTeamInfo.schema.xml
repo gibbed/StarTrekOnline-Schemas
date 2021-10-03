@@ -11,12 +11,12 @@
       <offset>0</offset>
       <subtable external="AIDebugTeamMember" />
     </column>
-    <column name="teamBasicInfo" type="STRUCT">
-      <offset>4</offset>
+    <column name="Teambasicinfo" type="STRUCT">
+      <offset>8</offset>
       <subtable external="AIDebugBasicInfo" />
     </column>
-    <column name="healingAssignments" type="STRUCT">
-      <offset>8</offset>
+    <column name="Healingassignments" type="STRUCT">
+      <offset>16</offset>
       <subtable external="AIDebugTeamMemberAssignment" />
     </column>
     <column name="}" type="END" />

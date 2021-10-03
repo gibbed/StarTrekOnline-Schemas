@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CooldownDef" type="STRUCT">
+    <column name="Cooldowndef" type="STRUCT">
       <offset>0</offset>
       <subtable external="QueueCooldownDef" />
     </column>

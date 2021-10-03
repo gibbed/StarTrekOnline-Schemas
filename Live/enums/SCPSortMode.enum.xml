@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="SCPSortMode">
+  <elements type="int">
+    <element name="Name">0</element>
+    <element name="Quality">1</element>
+    <element name="Xp">2</element>
+  </elements>
+</enum>

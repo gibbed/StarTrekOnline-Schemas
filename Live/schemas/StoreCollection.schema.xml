@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="optionText" type="EMBEDDEDSTRUCT">
+    <column name="Optiontext" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Condition" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="Expression" />
     </column>
     <column name="Store" type="STRUCT">
-      <offset>16</offset>
+      <offset>32</offset>
       <subtable external="StoreRef" />
     </column>
     <column name="}" type="END" />

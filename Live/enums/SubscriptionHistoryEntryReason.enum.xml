@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="SubscriptionHistoryEntryReason">
+  <elements type="int">
+    <element name="Invalid">0</element>
+    <element name="ManualEntry">1</element>
+    <element name="Cancelled">2</element>
+    <element name="Expired">3</element>
+    <element name="Suspended">4</element>
+    <element name="Refunded">5</element>
+    <element name="Activation">6</element>
+  </elements>
+</enum>

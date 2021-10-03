@@ -11,28 +11,29 @@
       <offset>0</offset>
     </column>
     <column name="LOD" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="Width" type="INT">
       <offset>8</offset>
     </column>
-    <column name="Height" type="INT">
+    <column name="Width" type="INT">
       <offset>12</offset>
     </column>
-    <column name="x_offset" type="INT">
+    <column name="Height" type="INT">
       <offset>16</offset>
     </column>
-    <column name="y_offset" type="INT">
+    <column name="X_Offset" type="F32">
       <offset>20</offset>
     </column>
-    <column name="rel_x_cntr" type="F32">
+    <column name="Y_Offset" type="F32">
       <offset>24</offset>
     </column>
-    <column name="rel_y_cntr" type="F32">
+    <column name="Rel_X_Cntr" type="F32">
       <offset>28</offset>
     </column>
-    <column name="invert" type="U8">
+    <column name="Rel_Y_Cntr" type="F32">
       <offset>32</offset>
+    </column>
+    <column name="Invert" type="U8">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

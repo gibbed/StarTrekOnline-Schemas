@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PlayerMatchEngineData">
+  <table>
+    <column name="PlayerMatchEngineData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Matchenginekey" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Umatchenginekey" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Matchenginekey</redundant_name>
+    </column>
+    <column name="Playermatchrequestgroup" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PlayerMatchRequestGroup" />
+    </column>
+    <column name="Pplayermatchrequestgroup" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Playermatchrequestgroup</redundant_name>
+      <subtable external="PlayerMatchRequestGroup" />
+    </column>
+    <column name="Invitedgroup" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PlayerInvitedMatchRequestGroup" />
+    </column>
+    <column name="Pinvitedgroup" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Invitedgroup</redundant_name>
+      <subtable external="PlayerInvitedMatchRequestGroup" />
+    </column>
+    <column name="Playermatch" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PlayerMatch" />
+    </column>
+    <column name="Pplayermatch" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Playermatch</redundant_name>
+      <subtable external="PlayerMatch" />
+    </column>
+    <column name="Version" type="INT">
+      <offset>32</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Iversion" type="INT">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Version</redundant_name>
+    </column>
+    <column name="Dirtybit" type="U8">
+      <offset>48</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+        <flag>DIRTY_BIT</flag>
+      </flags>
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>56</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Privatematch" type="U8">
+      <offset>64</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Timeleaverpenaltyexpires" type="IGNORE" />
+    <column name="Uplayerwithleaverpenalty" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parser>

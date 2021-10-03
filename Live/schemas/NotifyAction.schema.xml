@@ -16,74 +16,101 @@
       </flags>
       <static_define_list external="NotifyType" />
     </column>
-    <column name="LogicalStringFilter" type="STRINGARRAY">
+    <column name="Importancefilter" type="INT">
       <offset>4</offset>
+      <static_define_list external="NotifyImportance" />
+    </column>
+    <column name="Logicalstringfilter" type="STRINGARRAY">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="LogicalStringIsTutorial" type="U8">
-      <offset>8</offset>
+    <column name="Logicalstringistutorial" type="U8">
+      <offset>16</offset>
       <default>-1</default>
     </column>
     <column name="Command" type="STRINGARRAY">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="GenEnterGlobalState" type="INTARRAY">
-      <offset>16</offset>
-      <static_define_list external="UIGenState" />
-    </column>
-    <column name="GenExitGlobalState" type="INTARRAY">
-      <offset>20</offset>
-      <static_define_list external="UIGenState" />
-    </column>
-    <column name="GenEnterState" type="STRUCT">
-      <offset>24</offset>
-      <subtable external="NotifyActionGenState" />
-    </column>
-    <column name="GenExitState" type="STRUCT">
-      <offset>28</offset>
-      <subtable external="NotifyActionGenState" />
-    </column>
-    <column name="GenMessage" type="STRUCT">
+    <column name="Genenterglobalstate" type="INTARRAY">
       <offset>32</offset>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="Genexitglobalstate" type="INTARRAY">
+      <offset>40</offset>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="Genenterstate" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="NotifyActionGenState" />
+    </column>
+    <column name="Genexitstate" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="NotifyActionGenState" />
+    </column>
+    <column name="Genmessage" type="STRUCT">
+      <offset>64</offset>
       <subtable external="NotifyActionGenMessage" />
     </column>
     <column name="Queue" type="STRUCT">
-      <offset>36</offset>
+      <offset>72</offset>
       <subtable external="NotifyActionEnqueue" />
     </column>
-    <column name="TutorialGen" type="STRUCT">
-      <offset>40</offset>
+    <column name="Tutorialgen" type="STRUCT">
+      <offset>80</offset>
       <subtable external="NotifyTutorialGen" />
     </column>
     <column name="Sound" type="STRINGARRAY">
-      <offset>44</offset>
+      <offset>88</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="FloatTo" type="OPTIONALSTRUCT">
-      <offset>48</offset>
+    <column name="Floatto" type="OPTIONALSTRUCT">
+      <offset>96</offset>
       <subtable external="NotifyActionFloatToGen" />
     </column>
-    <column name="PopUpDialog" type="OPTIONALSTRUCT">
-      <offset>52</offset>
+    <column name="Popupdialog" type="OPTIONALSTRUCT">
+      <offset>104</offset>
       <subtable external="NotifyActionDialog" />
     </column>
     <column name="Chat" type="OPTIONALSTRUCT">
-      <offset>56</offset>
+      <offset>112</offset>
       <subtable external="NotifyActionChat" />
     </column>
-    <column name="ChainNotify" type="INTARRAY">
-      <offset>60</offset>
+    <column name="Chainnotify" type="INTARRAY">
+      <offset>120</offset>
       <static_define_list external="NotifyType" />
     </column>
+    <column name="Requiredevent" type="STRING">
+      <offset>128</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Requiresblock" type="OPTIONALSTRUCT">
+      <offset>136</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Requiresexpr" type="OPTIONALSTRUCT">
+      <offset>136</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Requiresblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Playnotificationsound" type="U8">
+      <offset>144</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>64</offset>
+      <offset>152</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="HogFileCreateFlags">
+  <elements type="int">
+    <element name="NOCREATE">1</element>
+    <element name="READONLY">2</element>
+    <element name="MUST_BE_WRITABLE">4</element>
+    <element name="NO_INTERNAL_TIMESTAMPS">8</element>
+    <element name="NO_REPAIR">16</element>
+    <element name="NO_MUTEX">32</element>
+    <element name="SHARED_MEMORY">64</element>
+    <element name="NO_ACCESS_BY_NAME">128</element>
+    <element name="MULTIPLE_READS">256</element>
+    <element name="MUST_BE_READONLY">512</element>
+    <element name="RAM_CACHED">1024</element>
+    <element name="APPEND_ONLY">2048</element>
+    <element name="NO_JOURNAL">4096</element>
+    <element name="NO_STRING_CACHE">8192</element>
+    <element name="CREATE_AS_64">32768</element>
+  </elements>
+</enum>

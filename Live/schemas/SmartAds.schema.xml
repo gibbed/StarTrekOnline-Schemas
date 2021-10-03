@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SmartAd" type="STRUCT">
+    <column name="Smartad" type="STRUCT">
       <offset>0</offset>
       <subtable external="SmartAdDef" />
     </column>

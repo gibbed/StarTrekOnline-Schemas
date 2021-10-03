@@ -11,83 +11,87 @@
       <offset>0</offset>
       <subtable external="AIDebugSettings" />
     </column>
-    <column name="attackTargetRef" type="INT">
-      <offset>40</offset>
+    <column name="Attacktargetref" type="INT">
+      <offset>56</offset>
     </column>
-    <column name="basicInfo" type="STRUCT">
-      <offset>44</offset>
+    <column name="Basicinfo" type="STRUCT">
+      <offset>64</offset>
       <subtable external="AIDebugBasicInfo" />
     </column>
-    <column name="AggroTableHeaders" type="STRUCT">
-      <offset>48</offset>
+    <column name="Aggrotableheaders" type="STRUCT">
+      <offset>72</offset>
       <subtable external="AIDebugAggroTableHeader" />
     </column>
-    <column name="debugStatusEntries" type="STRUCT">
-      <offset>52</offset>
+    <column name="Debugstatusentries" type="STRUCT">
+      <offset>80</offset>
       <subtable external="AIDebugStatusTableEntry" />
     </column>
-    <column name="debugStatusExternEntries" type="STRUCT">
-      <offset>56</offset>
+    <column name="Debugstatusexternentries" type="STRUCT">
+      <offset>88</offset>
       <subtable external="AIDebugStatusTableEntry" />
     </column>
-    <column name="entInfo" type="STRUCT">
-      <offset>60</offset>
+    <column name="Entinfo" type="STRUCT">
+      <offset>96</offset>
       <subtable external="AIDebugPerEntity" />
     </column>
-    <column name="logEntries" type="STRUCT">
-      <offset>64</offset>
+    <column name="Logentries" type="STRUCT">
+      <offset>104</offset>
       <subtable external="AIDebugLogEntryClient" />
     </column>
-    <column name="powerBasicInfo" type="STRUCT">
-      <offset>68</offset>
+    <column name="Powerbasicinfo" type="STRUCT">
+      <offset>112</offset>
       <subtable external="AIDebugBasicInfo" />
     </column>
-    <column name="powersInfo" type="STRUCT">
-      <offset>72</offset>
+    <column name="Powersinfo" type="STRUCT">
+      <offset>120</offset>
       <subtable external="AIDebugPowersInfo" />
     </column>
-    <column name="teamInfo" type="OPTIONALSTRUCT">
-      <offset>76</offset>
+    <column name="Teaminfo" type="OPTIONALSTRUCT">
+      <offset>128</offset>
       <subtable external="AIDebugTeamInfo" />
     </column>
-    <column name="combatTeamInfo" type="OPTIONALSTRUCT">
-      <offset>80</offset>
+    <column name="Combatteaminfo" type="OPTIONALSTRUCT">
+      <offset>136</offset>
       <subtable external="AIDebugTeamInfo" />
     </column>
-    <column name="varInfo" type="STRUCT">
-      <offset>84</offset>
+    <column name="Varinfo" type="STRUCT">
+      <offset>144</offset>
       <subtable external="AIDebugVarEntry" />
     </column>
-    <column name="exVarInfo" type="STRUCT">
-      <offset>88</offset>
+    <column name="Exvarinfo" type="STRUCT">
+      <offset>152</offset>
       <subtable external="AIDebugVarEntry" />
     </column>
-    <column name="msgInfo" type="STRUCT">
-      <offset>92</offset>
+    <column name="Localvarinfo" type="STRUCT">
+      <offset>160</offset>
+      <subtable external="AIDebugVarEntry" />
+    </column>
+    <column name="Msginfo" type="STRUCT">
+      <offset>168</offset>
       <subtable external="AIDebugMsgEntry" />
     </column>
-    <column name="movementInfo" type="OPTIONALSTRUCT">
-      <offset>96</offset>
+    <column name="Movementinfo" type="OPTIONALSTRUCT">
+      <offset>176</offset>
       <subtable external="AIDebugMovementInfo" />
     </column>
-    <column name="locRatings" type="STRUCT">
-      <offset>100</offset>
+    <column name="Locratings" type="STRUCT">
+      <offset>184</offset>
       <subtable external="AIDebugLocRating" />
     </column>
-    <column name="formation" type="OPTIONALSTRUCT">
-      <offset>104</offset>
+    <column name="Formation" type="OPTIONALSTRUCT">
+      <offset>192</offset>
       <subtable external="AIDebugFormation" />
     </column>
-    <column name="configMods" type="STRUCT">
-      <offset>108</offset>
+    <column name="Configmods" type="STRUCT">
+      <offset>200</offset>
       <subtable external="AIDebugStringStringEntry" />
     </column>
-    <column name="avoidInfo" type="OPTIONALSTRUCT">
-      <offset>112</offset>
+    <column name="Avoidinfo" type="OPTIONALSTRUCT">
+      <offset>208</offset>
       <subtable external="AIDebugAvoid" />
     </column>
-    <column name="aggroInfo" type="OPTIONALSTRUCT">
-      <offset>116</offset>
+    <column name="Aggroinfo" type="OPTIONALSTRUCT">
+      <offset>216</offset>
       <subtable external="AIDebugAggro" />
     </column>
     <column name="}" type="END" />

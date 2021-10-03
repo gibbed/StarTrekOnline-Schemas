@@ -7,26 +7,26 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ClipboardType" type="INT">
+    <column name="Clipboardtype" type="INT">
       <offset>0</offset>
       <static_define_list external="PTClipBoardOption" />
     </column>
     <column name="Groups" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="PTGroupDef" />
     </column>
     <column name="Node" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="PTNodeDef" />
     </column>
-    <column name="ioffX" type="INT">
-      <offset>12</offset>
+    <column name="Ioffx" type="INT">
+      <offset>24</offset>
     </column>
-    <column name="ioffY" type="INT">
-      <offset>16</offset>
+    <column name="Ioffy" type="INT">
+      <offset>28</offset>
     </column>
     <column name="}" type="END" />
   </table>

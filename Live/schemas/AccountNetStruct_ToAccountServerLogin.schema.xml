@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hashedCrypticPassword" type="FIXEDSTRING">
+    <column name="Hashedcrypticpassword" type="FIXEDSTRING">
       <offset>0</offset>
       <string_length>128</string_length>
     </column>
-    <column name="hashedPWPassword" type="FIXEDSTRING">
+    <column name="Hashedpwpassword" type="FIXEDSTRING">
       <offset>128</offset>
       <string_length>128</string_length>
     </column>
@@ -19,27 +19,34 @@
       <offset>256</offset>
       <string_length>128</string_length>
     </column>
-    <column name="LoginType" type="INT">
+    <column name="Logintype" type="INT">
       <offset>384</offset>
     </column>
-    <column name="machineID" type="FIXEDSTRING">
+    <column name="MachineID" type="FIXEDSTRING">
       <offset>388</offset>
       <string_length>256</string_length>
     </column>
-    <column name="hashedPWPasswordFixedSalt" type="FIXEDSTRING">
+    <column name="Hashedpwpasswordfixedsalt" type="FIXEDSTRING">
       <offset>644</offset>
       <string_length>128</string_length>
     </column>
-    <column name="KeyVersion" type="INT">
+    <column name="Keyversion" type="INT">
       <offset>772</offset>
     </column>
-    <column name="encryptedPassword" type="FIXEDSTRING">
+    <column name="Encryptedpassword" type="FIXEDSTRING">
       <offset>776</offset>
       <string_length>173</string_length>
     </column>
-    <column name="localeID" type="INT">
+    <column name="Localeid" type="INT">
       <offset>952</offset>
       <default>-1</default>
+    </column>
+    <column name="Loginenvironmentid" type="INT">
+      <offset>956</offset>
+    </column>
+    <column name="Ticketsrequested" type="INT">
+      <offset>960</offset>
+      <default>1</default>
     </column>
     <column name="}" type="END" />
   </table>

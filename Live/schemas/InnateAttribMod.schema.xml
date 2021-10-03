@@ -28,22 +28,22 @@
       </flags>
       <static_define_list external="AttribAspect" />
     </column>
-    <column name="hPowerDef" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Hpowerdef" type="REFERENCE">
+      <offset>16</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <dictionary_name>PowerDef</dictionary_name>
     </column>
-    <column name="hItemDef" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Hitemdef" type="REFERENCE">
+      <offset>24</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
     <column name="Mag" type="F32">
-      <offset>20</offset>
+      <offset>32</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>

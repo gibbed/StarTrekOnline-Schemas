@@ -10,15 +10,16 @@
     <column name="Event" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="NotifyAudioEvent" />
     </column>
-    <column name="ActivateTime" type="F32">
-      <offset>4</offset>
-    </column>
-    <column name="IsSuggestion" type="U8">
+    <column name="Activatetime" type="F32">
       <offset>8</offset>
+    </column>
+    <column name="Issuggestion" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

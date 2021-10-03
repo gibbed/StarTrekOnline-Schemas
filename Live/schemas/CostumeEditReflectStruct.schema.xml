@@ -8,13 +8,13 @@
     </column>
     <column name="{" type="START" />
     <column name="Index" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="Reflection" type="INT">
       <offset>8</offset>
     </column>
-    <column name="specularity" type="INT">
+    <column name="Reflection" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Specularity" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

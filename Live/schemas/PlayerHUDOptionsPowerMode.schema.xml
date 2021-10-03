@@ -12,21 +12,24 @@
       <static_define_list external="ControlSchemeRegionType" />
     </column>
     <column name="PowerMode" type="INTARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="PowerMode" />
     </column>
-    <column name="EnableType" type="INTARRAY">
-      <offset>8</offset>
+    <column name="Enabletype" type="INTARRAY">
+      <offset>16</offset>
       <static_define_list external="OverHeadEntityTypes" />
     </column>
-    <column name="EnableName" type="U8">
-      <offset>12</offset>
+    <column name="Enablename" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="EnableLife" type="U8">
-      <offset>13</offset>
+    <column name="Enablelife" type="U8">
+      <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="EnableReticle" type="U8">
-      <offset>14</offset>
+    <column name="Enablereticle" type="U8">
+      <offset>26</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

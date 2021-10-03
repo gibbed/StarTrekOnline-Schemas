@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="NavMeshAnnealingData">
+  <table>
+    <column name="NavMeshAnnealingData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Points" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="NavMeshAnnealingPoint" />
+    </column>
+    <column name="Minscore" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Maxscore" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

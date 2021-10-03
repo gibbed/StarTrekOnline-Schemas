@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pchName" type="STRING">
+    <column name="Pchname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
@@ -15,15 +15,15 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="uiTime" type="INT">
-      <offset>4</offset>
+    <column name="Uitime" type="INT">
+      <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="bfWindows" type="INTFIXEDARRAY">
-      <offset>8</offset>
+    <column name="Bfwindows" type="INTFIXEDARRAY">
+      <offset>12</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>

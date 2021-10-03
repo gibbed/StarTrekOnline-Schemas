@@ -14,13 +14,13 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="LastInternalFrame" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="FirstTime" type="INT">
+    <column name="Lastinternalframe" type="INT">
       <offset>8</offset>
     </column>
-    <column name="FirstUtilitiesLibTicks" type="INT64">
+    <column name="Firsttime" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Firstutilitieslibticks" type="INT64">
       <offset>16</offset>
     </column>
     <column name="}" type="END" />

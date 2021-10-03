@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="deviceName" type="STRING">
+    <column name="Devicename" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="renderLevel" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="isActive" type="BIT">
+    <column name="Renderlevel" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Isactive" type="BIT">
+      <offset>12</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

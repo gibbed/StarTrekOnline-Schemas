@@ -7,90 +7,132 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DefaultExpireTimeDays" type="INT">
+    <column name="Defaultexpiretimedays" type="INT">
       <offset>0</offset>
     </column>
-    <column name="DurationOption" type="STRUCT">
-      <offset>4</offset>
+    <column name="Durationoption" type="STRUCT">
+      <offset>8</offset>
       <subtable external="AuctionDurationOption" />
     </column>
-    <column name="AuctionDefaultPostingFee" type="F32">
-      <offset>8</offset>
-    </column>
-    <column name="AuctionMinimumPostingFee" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="AuctionDefaultSoldFee" type="F32">
+    <column name="Auctiondefaultpostingfee" type="F32">
       <offset>16</offset>
     </column>
-    <column name="DefaultAuctionPostsMaximum" type="INT">
+    <column name="Auctionminimumpostingfee" type="F32">
       <offset>20</offset>
     </column>
-    <column name="BidExpirationExtensionInSeconds" type="INT">
+    <column name="Auctiondefaultsoldfee" type="F32">
       <offset>24</offset>
     </column>
-    <column name="BiddingIncrementalMultiplier" type="F32">
+    <column name="Defaultauctionpostsmaximum" type="INT">
       <offset>28</offset>
-      <default>1008981770</default>
     </column>
-    <column name="AuctionsUsePostingFee" type="U8">
+    <column name="Bidexpirationextensioninseconds" type="INT">
       <offset>32</offset>
     </column>
-    <column name="AllowCustomAuctionDurations" type="U8">
-      <offset>33</offset>
-    </column>
-    <column name="AuctionsUseSoldFee" type="U8">
-      <offset>34</offset>
-    </column>
-    <column name="BiddingEnabled" type="U8">
-      <offset>35</offset>
-    </column>
-    <column name="MailAllItemsAndCurrency" type="U8">
+    <column name="Biddingincrementalmultiplier" type="F32">
       <offset>36</offset>
+      <default>1008981770</default>
     </column>
-    <column name="PersistOwnerNameAndHandleWithAuction" type="U8">
-      <offset>37</offset>
-    </column>
-    <column name="PersistItemNameWithAuction" type="U8">
-      <offset>38</offset>
-    </column>
-    <column name="HideOwnAuctionsInSearch" type="U8">
-      <offset>39</offset>
-    </column>
-    <column name="IncludeCurrencyInSoldEmail" type="U8">
+    <column name="Auctionsusepostingfee" type="U8">
       <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ExpiredAuctionsCountTowardMaximum" type="U8">
+    <column name="Allowcustomauctiondurations" type="U8">
       <offset>41</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RequiredCategoryForSearch" type="U8">
+    <column name="Auctionsusesoldfee" type="U8">
       <offset>42</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="EnablePriceHistoryTracking" type="U8">
+    <column name="Biddingenabled" type="U8">
       <offset>43</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowContactlessAuctionHouse" type="U8">
+    <column name="Mailallitemsandcurrency" type="U8">
       <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="PlayerRoamingFeeMultiplier" type="F32">
+    <column name="Persistownernameandhandlewithauction" type="U8">
+      <offset>45</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Persistitemnamewithauction" type="U8">
+      <offset>46</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hideownauctionsinsearch" type="U8">
+      <offset>47</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Includecurrencyinsoldemail" type="U8">
       <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Expiredauctionscounttowardmaximum" type="U8">
+      <offset>49</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requiredcategoryforsearch" type="U8">
+      <offset>50</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enablepricehistorytracking" type="U8">
+      <offset>51</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allowcontactlessauctionhouse" type="U8">
+      <offset>52</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Playerroamingfeemultiplier" type="F32">
+      <offset>56</offset>
       <default>1</default>
     </column>
-    <column name="uMaximumAuctionPrice" type="INT">
-      <offset>52</offset>
+    <column name="Umaximumauctionprice" type="INT">
+      <offset>60</offset>
     </column>
-    <column name="CurrencyNumeric" type="STRING">
-      <offset>56</offset>
+    <column name="Currencynumeric" type="STRING">
+      <offset>64</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="SearchableAttribs" type="INTARRAY">
-      <offset>60</offset>
+    <column name="Searchableattribs" type="INTARRAY">
+      <offset>72</offset>
       <static_define_list external="AttribType" />
     </column>
-    <column name="NPCMailCurrencyAlertThreshold" type="INT64">
-      <offset>64</offset>
+    <column name="Npcmailcurrencyalertthreshold" type="INT64">
+      <offset>80</offset>
+    </column>
+    <column name="Autodeleteauctionnpcmailafteritemsremoveddays" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Uauctionrequesttimeoutperiod" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="Uauctionrequestsperperiod" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Accountspendingallowance_Enable" type="U8">
+      <offset>100</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Accountspendingallowance_Maxperday" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Accountspendingallowance_Resetperiodinseconds" type="INT">
+      <offset>108</offset>
+    </column>
+    <column name="Accountspendingallowance_Exemptaccountswithcharacterlevel" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Enforcemaximumnumberofnpcmail" type="BIT">
+      <offset>116</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Maximumnumberofnpcmail" type="INT">
+      <offset>120</offset>
     </column>
     <column name="}" type="END" />
   </table>

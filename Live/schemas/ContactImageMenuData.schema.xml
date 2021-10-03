@@ -11,20 +11,24 @@
       <offset>0</offset>
       <subtable external="ContactImageMenuItem" />
     </column>
-    <column name="itemOverrides" type="STRUCT">
-      <offset>4</offset>
+    <column name="Itemoverrides" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
-        <flag>USEROPTIONBIT_3</flag>
+        <flag>EDITOR_IGNORE</flag>
       </flags>
       <subtable external="ContactImageMenuItem" />
     </column>
-    <column name="BackgroundImage" type="STRING">
-      <offset>8</offset>
+    <column name="Backgroundimage" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="Title" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="DisplayMessage" />
+    </column>
+    <column name="Isimage" type="U8">
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

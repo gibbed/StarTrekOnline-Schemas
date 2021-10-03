@@ -15,7 +15,7 @@
       <offset>4</offset>
       <string_length>128</string_length>
     </column>
-    <column name="shortname" type="FIXEDSTRING">
+    <column name="ShortName" type="FIXEDSTRING">
       <offset>132</offset>
       <string_length>128</string_length>
     </column>
@@ -26,6 +26,18 @@
     <column name="Parent" type="INT">
       <offset>264</offset>
       <static_define_list external="GlobalType" />
+    </column>
+    <column name="Isserverinshard" type="BIT">
+      <offset>268</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Istoplevelserver" type="BIT">
+      <offset>268</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Isclient" type="BIT">
+      <offset>268</offset>
+      <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

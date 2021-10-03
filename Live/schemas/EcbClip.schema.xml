@@ -11,23 +11,23 @@
       <offset>0</offset>
     </column>
     <column name="Type" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="EcbClipTypeEnum" />
     </column>
-    <column name="cbExpr" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Cbexpr" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="Expression" />
     </column>
-    <column name="cbExprLine" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Cbexprline" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="ExprLine" />
     </column>
-    <column name="cbState" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Cbstate" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="FSMState" />
     </column>
-    <column name="cbStates" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Cbstates" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="FSMStates" />
     </column>
     <column name="}" type="END" />

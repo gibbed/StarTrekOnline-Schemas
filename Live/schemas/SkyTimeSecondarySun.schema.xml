@@ -9,22 +9,22 @@
     <column name="Time" type="F32">
       <offset>0</offset>
     </column>
-    <column name="DiffuseHSV" type="F32FIXEDARRAY">
+    <column name="Diffusehsv" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="SpecularHSV" type="F32FIXEDARRAY">
+    <column name="Specularhsv" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="SecondaryDiffuseHSV" type="F32FIXEDARRAY">
+    <column name="Secondarydiffusehsv" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="bfParamsSpecified" type="INTFIXEDARRAY">
+    <column name="Bfparamsspecified" type="INTFIXEDARRAY">
       <offset>40</offset>
       <flags>
         <flag>USEDFIELD</flag>
@@ -32,6 +32,6 @@
       </flags>
       <num_elements>1</num_elements>
     </column>
-    <column name="EndSkySecondarySun" type="END" />
+    <column name="Endskysecondarysun" type="END" />
   </table>
 </parser>

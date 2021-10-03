@@ -14,8 +14,8 @@
       </flags>
       <static_define_list external="PowerTag" />
     </column>
-    <column name="AttribIndex" type="INT">
-      <offset>4</offset>
+    <column name="Attribindex" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

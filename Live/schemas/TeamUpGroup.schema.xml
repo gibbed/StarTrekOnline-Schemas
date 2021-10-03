@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GroupIndex" type="INT">
+    <column name="Groupindex" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
     <column name="Members" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="TeamUpMember" />
     </column>
     <column name="}" type="END" />

@@ -15,36 +15,43 @@
       </flags>
       <dictionary_name>PowerDef</dictionary_name>
     </column>
-    <column name="uiVersion" type="INT">
-      <offset>4</offset>
-      <flags>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
-    </column>
-    <column name="pfModStrengths" type="F32ARRAY">
+    <column name="Uiversion" type="INT">
       <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="pfModStrAdd" type="F32ARRAY">
-      <offset>12</offset>
-      <flags>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
-    </column>
-    <column name="piModFlags" type="INTARRAY">
+    <column name="Pfmodstrengths" type="F32ARRAY">
       <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="pfModCritThreshold" type="F32ARRAY">
-      <offset>20</offset>
+    <column name="Pfmodstradd" type="F32ARRAY">
+      <offset>24</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Pimodflags" type="INTARRAY">
+      <offset>32</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Pfmodcritthreshold" type="F32ARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Pfmodresistignore" type="F32ARRAY">
+      <offset>48</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>

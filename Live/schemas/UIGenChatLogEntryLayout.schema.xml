@@ -10,23 +10,23 @@
     <column name="ID" type="INT">
       <offset>0</offset>
     </column>
-    <column name="siMaxLineWidth" type="INT16">
+    <column name="Simaxlinewidth" type="INT16">
       <offset>4</offset>
     </column>
-    <column name="siHeight" type="INT16">
+    <column name="Siheight" type="INT16">
       <offset>6</offset>
     </column>
-    <column name="LineBreaks" type="INTARRAY">
+    <column name="Linebreaks" type="INTARRAY">
       <offset>8</offset>
     </column>
-    <column name="uFadeTime" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="LayoutVersion" type="INT">
+    <column name="Ufadetime" type="INT">
       <offset>16</offset>
     </column>
-    <column name="Scale" type="F32">
+    <column name="Layoutversion" type="INT">
       <offset>20</offset>
+    </column>
+    <column name="Scale" type="F32">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

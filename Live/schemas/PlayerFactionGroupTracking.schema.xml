@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PlayerFactionGroupTracking">
+  <table>
+    <column name="PlayerFactionGroupTracking" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Astrfactiongroup" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Astrwarptosocialhubmapreasonmessagekey" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

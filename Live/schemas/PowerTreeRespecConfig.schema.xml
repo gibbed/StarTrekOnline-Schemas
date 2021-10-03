@@ -7,45 +7,55 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ExprCostStep" type="OPTIONALSTRUCT">
+    <column name="Exprcoststep" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="Expression" />
     </column>
-    <column name="ExprCostBase" type="OPTIONALSTRUCT">
-      <offset>4</offset>
-      <subtable external="Expression" />
-    </column>
-    <column name="ExprRequiredPointsSpent" type="OPTIONALSTRUCT">
+    <column name="Exprcostbase" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <subtable external="Expression" />
     </column>
+    <column name="Exprrequiredpointsspent" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="Expression" />
+    </column>
     <column name="Numeric" type="REFERENCE">
-      <offset>12</offset>
+      <offset>24</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="ForceUseFreeRespec" type="U8">
-      <offset>16</offset>
+    <column name="Forceusefreerespec" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="NoContactRequiredForRespec" type="U8">
-      <offset>17</offset>
+    <column name="Nocontactrequiredforrespec" type="U8">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="File" type="CURRENTFILE">
-      <offset>20</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="PTItemRespecNames" type="STRUCT">
-      <offset>24</offset>
+    <column name="Ptitemrespecnames" type="STRUCT">
+      <offset>48</offset>
       <subtable external="PowerTreeRespecName" />
     </column>
-    <column name="PTGadRespecNames" type="STRUCT">
-      <offset>28</offset>
+    <column name="Ptgadrespecnames" type="STRUCT">
+      <offset>56</offset>
       <subtable external="PowerTreeRespecName" />
     </column>
-    <column name="PTNumericRespecNames" type="STRUCT">
-      <offset>32</offset>
+    <column name="Ptnumericrespecnames" type="STRUCT">
+      <offset>64</offset>
       <subtable external="PowerTreeRespecName" />
+    </column>
+    <column name="Refillcartforrespecgroups" type="INTARRAY">
+      <offset>72</offset>
+      <static_define_list external="PTRespecGroupType" />
+    </column>
+    <column name="Removesecondarypathsforrespecgroups" type="INTARRAY">
+      <offset>80</offset>
+      <static_define_list external="PTRespecGroupType" />
     </column>
     <column name="}" type="END" />
   </table>

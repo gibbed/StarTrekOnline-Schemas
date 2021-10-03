@@ -11,12 +11,12 @@
       <offset>0</offset>
       <static_define_list external="QueueCategory" />
     </column>
-    <column name="ActiveDefs" type="STRUCT">
-      <offset>4</offset>
+    <column name="Activedefs" type="STRUCT">
+      <offset>8</offset>
       <subtable external="ActiveRandomQueueDef" />
     </column>
-    <column name="ChoiceDefs" type="STRUCT">
-      <offset>8</offset>
+    <column name="Choicedefs" type="STRUCT">
+      <offset>16</offset>
       <subtable external="QueueDefRef" />
     </column>
     <column name="}" type="END" />

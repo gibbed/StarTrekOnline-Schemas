@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="WorldPlayerCooldownPartitionScope">
+  <elements type="int">
+    <element name="AllButOriginal">0</element>
+    <element name="OriginalOnly">1</element>
+    <element name="All">2</element>
+  </elements>
+</enum>

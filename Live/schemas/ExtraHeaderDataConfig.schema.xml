@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ExtraHeaderData1Path" type="STRING">
+    <column name="Extraheaderdata1path" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="ExtraHeaderData2Path" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="ExtraHeaderData3Path" type="STRING">
+    <column name="Extraheaderdata2path" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="ExtraHeaderData4Path" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="ExtraHeaderData5Path" type="STRING">
+    <column name="Extraheaderdata3path" type="STRING">
       <offset>16</offset>
+    </column>
+    <column name="Extraheaderdata4path" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Extraheaderdata5path" type="STRING">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

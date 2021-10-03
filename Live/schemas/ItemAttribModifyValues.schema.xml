@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TempAttribs" type="OPTIONALSTRUCT">
+    <column name="Tempattribs" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="TempAttributes" />
     </column>
-    <column name="SavedPetClassType" type="INT">
-      <offset>4</offset>
+    <column name="Savedpetclasstype" type="INT">
+      <offset>8</offset>
       <static_define_list external="CharClassTypes" />
     </column>
     <column name="}" type="END" />

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ActivationFailureReason">
+  <elements type="int">
+    <element name="ComboMispredict">-1</element>
+    <element name="None">0</element>
+    <element name="Recharge">1</element>
+    <element name="Cooldown">2</element>
+    <element name="Cost">3</element>
+    <element name="PriorActNonInterrupting">4</element>
+    <element name="TargetOutOfRange">5</element>
+    <element name="TargetOutOfRangeMin">6</element>
+    <element name="TargetNotInArc">7</element>
+    <element name="TargetInvalid">8</element>
+    <element name="TargetLOSFailed">9</element>
+    <element name="TargetImperceptible">10</element>
+    <element name="DoesNotHaveRequiredItemEquipped">11</element>
+    <element name="Disabled">12</element>
+    <element name="Knocked">13</element>
+    <element name="NoChargesRemaining">14</element>
+    <element name="ReactivePowerDisallow">15</element>
+    <element name="PowerModeDisallowsUsage">16</element>
+    <element name="Rooted">17</element>
+    <element name="RequiresQueueExpression">18</element>
+    <element name="PowerCategoryDisallowsUsage">19</element>
+    <element name="CannotUseDuringSprint">20</element>
+    <element name="Other">21</element>
+  </elements>
+</enum>

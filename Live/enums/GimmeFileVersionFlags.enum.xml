@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GimmeFileVersionFlags">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="DELETED">1</element>
+    <element name="FROZEN">2</element>
+    <element name="NEW">4</element>
+  </elements>
+</enum>

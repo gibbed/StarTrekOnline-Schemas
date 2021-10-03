@@ -16,29 +16,30 @@
       <dictionary_name>ItemDef</dictionary_name>
     </column>
     <column name="Count" type="F32">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <default>1</default>
     </column>
     <column name="Weight" type="F32">
-      <offset>8</offset>
-      <default>1</default>
-    </column>
-    <column name="MinLevel" type="INT">
       <offset>12</offset>
       <default>1</default>
     </column>
-    <column name="MaxLevel" type="INT">
+    <column name="MinLevel" type="INT">
       <offset>16</offset>
+      <default>1</default>
+    </column>
+    <column name="MaxLevel" type="INT">
+      <offset>20</offset>
       <default>50</default>
     </column>
-    <column name="DeconstructOnly" type="U8">
-      <offset>20</offset>
-    </column>
-    <column name="CountType" type="INT">
+    <column name="Deconstructonly" type="U8">
       <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Counttype" type="INT">
+      <offset>28</offset>
       <static_define_list external="ComponentCountType" />
     </column>
     <column name="}" type="END" />

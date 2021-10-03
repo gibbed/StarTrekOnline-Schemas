@@ -7,17 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PlayerHitFX" type="STRING">
+    <column name="Playerhitfx" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MinumumHPPercentage" type="F32">
-      <offset>4</offset>
-    </column>
-    <column name="MaximumHPPercentage" type="F32">
+    <column name="Minumumhppercentage" type="F32">
       <offset>8</offset>
+    </column>
+    <column name="Maximumhppercentage" type="F32">
+      <offset>12</offset>
       <default>1</default>
     </column>
     <column name="}" type="END" />

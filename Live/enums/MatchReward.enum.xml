@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MatchReward">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="Special_Event">1</element>
+    <element name="Equipment_Dilithium">2</element>
+    <element name="GenericMark">3</element>
+    <element name="FleetMark">4</element>
+    <element name="RomulanMark">5</element>
+    <element name="OmegaMark">6</element>
+    <element name="Omega_Processor">7</element>
+    <element name="TholianMark">8</element>
+    <element name="DysonMark">9</element>
+    <element name="Dyson_Commendation">10</element>
+    <element name="Voth_Cybernetic">11</element>
+    <element name="UndineMark">12</element>
+    <element name="Undine_Isomorphic">13</element>
+    <element name="DeltaMark">14</element>
+    <element name="Delta_Powercell">15</element>
+    <element name="IconianMark">16</element>
+    <element name="Iconian_Datacore">17</element>
+    <element name="MirrorMark">18</element>
+    <element name="Mirror_Gravimetric">19</element>
+    <element name="TemporalMark">20</element>
+    <element name="Temporal_Chroniton">21</element>
+    <element name="LukariMark">22</element>
+    <element name="Lukari_Protomatter">23</element>
+    <element name="PvprepMark">24</element>
+    <element name="Pvprep_Strategem">25</element>
+    <element name="Colony_Provisions">26</element>
+    <element name="GammaMark">27</element>
+    <element name="DscS17_Mark">28</element>
+    <element name="DscS17_Mark_Elite">29</element>
+  </elements>
+</enum>

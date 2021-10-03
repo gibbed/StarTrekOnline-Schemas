@@ -11,63 +11,69 @@
       <offset>0</offset>
       <static_define_list external="UIAutoWidgetType" />
     </column>
-    <column name="NoLabel" type="BOOLFLAG">
+    <column name="Nolabel" type="BOOLFLAG">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Disabled" type="BOOLFLAG">
       <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="changedUpdate" type="BOOLFLAG">
+    <column name="Changedupdate" type="BOOLFLAG">
       <offset>6</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="alignTo" type="INT">
+    <column name="Alignto" type="INT">
       <offset>8</offset>
     </column>
-    <column name="overrideWidth" type="F32">
+    <column name="Overridewidth" type="F32">
       <offset>12</offset>
     </column>
-    <column name="labelName" type="STRING">
+    <column name="Labelname" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="parseNameField" type="STRING">
-      <offset>32</offset>
-    </column>
-    <column name="filterable" type="BOOLFLAG">
-      <offset>36</offset>
+    <column name="Filterable" type="BOOLFLAG">
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Editable" type="BOOLFLAG">
-      <offset>37</offset>
+      <offset>49</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Min" type="F32">
-      <offset>44</offset>
+      <offset>64</offset>
     </column>
     <column name="Max" type="F32">
-      <offset>56</offset>
+      <offset>76</offset>
       <default>1</default>
     </column>
     <column name="Step" type="F32">
-      <offset>68</offset>
-    </column>
-    <column name="spinnerStartF" type="INT">
-      <offset>80</offset>
-    </column>
-    <column name="spinnerStartData" type="INT">
-      <offset>84</offset>
-    </column>
-    <column name="spinnerStopF" type="INT">
       <offset>88</offset>
     </column>
-    <column name="spinnerStopData" type="INT">
-      <offset>92</offset>
+    <column name="Spinnerstartf" type="INT64">
+      <offset>104</offset>
     </column>
-    <column name="precision" type="INT">
-      <offset>96</offset>
+    <column name="Spinnerstartdata" type="INT64">
+      <offset>112</offset>
     </column>
-    <column name="hsvAddAlpha" type="U8">
-      <offset>100</offset>
+    <column name="Spinnerstopf" type="INT64">
+      <offset>120</offset>
+    </column>
+    <column name="Spinnerstopdata" type="INT64">
+      <offset>128</offset>
+    </column>
+    <column name="Precision" type="INT">
+      <offset>136</offset>
+    </column>
+    <column name="Hsvaddalpha" type="U8">
+      <offset>140</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Title" type="STRING">
+      <offset>144</offset>
     </column>
     <column name="}" type="END" />
   </table>

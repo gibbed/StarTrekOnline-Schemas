@@ -15,54 +15,54 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pchRequesterRef" type="STRING">
-      <offset>4</offset>
+    <column name="Pchrequesterref" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="RequestedMission" type="REFERENCE">
-      <offset>8</offset>
-      <flags>
-        <flag>PERSIST</flag>
-      </flags>
-      <dictionary_name>MissionDef</dictionary_name>
-    </column>
-    <column name="hRequestedMission" type="REFERENCE">
-      <offset>8</offset>
-      <flags>
-        <flag>ALIAS</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <redundant_name>RequestedMission</redundant_name>
-      <dictionary_name>MissionDef</dictionary_name>
-    </column>
-    <column name="RequestedMissionSet" type="REFERENCE">
-      <offset>12</offset>
-      <flags>
-        <flag>PERSIST</flag>
-      </flags>
-      <dictionary_name>MissionSet</dictionary_name>
-    </column>
-    <column name="hRequestedMissionSet" type="REFERENCE">
-      <offset>12</offset>
-      <flags>
-        <flag>ALIAS</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <redundant_name>RequestedMissionSet</redundant_name>
-      <dictionary_name>MissionSet</dictionary_name>
-    </column>
-    <column name="eState" type="INT">
+    <column name="Requestedmission" type="REFERENCE">
       <offset>16</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>MissionDef</dictionary_name>
+    </column>
+    <column name="Hrequestedmission" type="REFERENCE">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Requestedmission</redundant_name>
+      <dictionary_name>MissionDef</dictionary_name>
+    </column>
+    <column name="Requestedmissionset" type="REFERENCE">
+      <offset>24</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>MissionSet</dictionary_name>
+    </column>
+    <column name="Hrequestedmissionset" type="REFERENCE">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Requestedmissionset</redundant_name>
+      <dictionary_name>MissionSet</dictionary_name>
+    </column>
+    <column name="Estate" type="INT">
+      <offset>32</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <static_define_list external="MissionRequestState" />
     </column>
-    <column name="uInactiveTime" type="INT">
-      <offset>20</offset>
+    <column name="Uinactivetime" type="INT">
+      <offset>36</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="HttpClientFlags">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="SLEEP_ON_FULL">1</element>
+    <element name="LOW_SECURITY_SSL">2</element>
+  </elements>
+</enum>

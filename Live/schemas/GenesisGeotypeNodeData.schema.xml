@@ -7,24 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="InterpPower" type="U8">
+    <column name="Interppower" type="U8">
       <offset>0</offset>
     </column>
-    <column name="NoiseLevel" type="F32">
+    <column name="Noiselevel" type="F32">
       <offset>4</offset>
     </column>
-    <column name="NoWater" type="BIT">
+    <column name="Nowater" type="BIT">
       <offset>8</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="MaxWaterDepth" type="F32">
+    <column name="Maxwaterdepth" type="F32">
       <offset>12</offset>
     </column>
-    <column name="IgnorePaths" type="F32">
+    <column name="Ignorepaths" type="F32">
       <offset>16</offset>
     </column>
-    <column name="ErodeBrush" type="STRUCT">
-      <offset>20</offset>
+    <column name="Erodebrush" type="STRUCT">
+      <offset>24</offset>
       <subtable external="GenesisGeotypeErodeBrush" />
     </column>
     <column name="}" type="END" />

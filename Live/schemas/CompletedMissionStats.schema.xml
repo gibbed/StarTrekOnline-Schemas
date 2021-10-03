@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NemesisID" type="INT">
+    <column name="Nemesisid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
@@ -16,48 +16,48 @@
         <format_string name="DEPENDENT_CONTAINER_TYPE">EntitySavedPet</format_string>
       </format_strings>
     </column>
-    <column name="iNemesisID" type="INT">
+    <column name="Inemesisid" type="INT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>NemesisID</redundant_name>
+      <redundant_name>Nemesisid</redundant_name>
       <format_strings>
         <format_string name="DEPENDENT_CONTAINER_TYPE">EntitySavedPet</format_string>
       </format_strings>
     </column>
-    <column name="firstCompletedTime" type="INT">
+    <column name="Firstcompletedtime" type="INT">
       <offset>4</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="lastCompletedTime" type="INT">
+    <column name="Lastcompletedtime" type="INT">
       <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="firstStartTime" type="INT">
+    <column name="Firststarttime" type="INT">
       <offset>12</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="lastStartTime" type="INT">
+    <column name="Laststarttime" type="INT">
       <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="bestTime" type="INT">
+    <column name="Besttime" type="INT">
       <offset>20</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="timesRepeated" type="INT16">
+    <column name="Timesrepeated" type="INT16">
       <offset>24</offset>
       <flags>
         <flag>PERSIST</flag>

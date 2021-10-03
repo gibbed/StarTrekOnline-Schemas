@@ -6,23 +6,23 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="BitHandlesPre" type="STRINGARRAY">
+    <column name="Bithandlespre" type="STRINGARRAY">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="BitHandlesHold" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Bithandleshold" type="STRINGARRAY">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="TimeToMove" type="F32">
-      <offset>8</offset>
+    <column name="Timetomove" type="F32">
+      <offset>16</offset>
     </column>
-    <column name="TimePostHold" type="F32">
-      <offset>12</offset>
+    <column name="Timeposthold" type="F32">
+      <offset>20</offset>
     </column>
     <column name="End" type="END" />
   </table>

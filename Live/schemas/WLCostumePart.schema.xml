@@ -7,103 +7,116 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BoneName" type="STRING">
+    <column name="Context" type="STRING">
       <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="BoneName" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="OrigAttachmentBone" type="STRING">
-      <offset>4</offset>
+    <column name="Origattachmentbone" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Costumebonename" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
     <column name="Geometry" type="STRING">
-      <offset>8</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Model" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Material" type="STRING">
-      <offset>16</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="SecondMaterialInfo" type="OPTIONALSTRUCT">
-      <offset>20</offset>
-      <subtable external="WLCostumeMaterialInfo" />
-    </column>
-    <column name="ClothInfo" type="STRING">
-      <offset>24</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="ClothColInfo" type="STRING">
-      <offset>28</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="StumpGeo" type="STRING">
       <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="StumpModel" type="STRING">
-      <offset>36</offset>
+    <column name="Model" type="STRING">
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="hAnimNodeAliasList" type="REFERENCE">
-      <offset>40</offset>
+    <column name="Material" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Secondmaterialinfo" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="WLCostumeMaterialInfo" />
+    </column>
+    <column name="Clothinfo" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Clothcolinfo" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Stumpgeo" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Stumpmodel" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Hanimnodealiaslist" type="REFERENCE">
+      <offset>96</offset>
       <dictionary_name>DynAnimNodeAliasList</dictionary_name>
     </column>
-    <column name="hAnimNodeAuxTransformList" type="REFERENCE">
-      <offset>44</offset>
+    <column name="Hanimnodeauxtransformlist" type="REFERENCE">
+      <offset>104</offset>
       <dictionary_name>DynAnimNodeAuxTransformList</dictionary_name>
     </column>
-    <column name="rot_mTransform" type="MATPYR">
-      <offset>52</offset>
+    <column name="Rot_Mtransform" type="MATPYR">
+      <offset>120</offset>
       <num_elements>9</num_elements>
     </column>
-    <column name="pos_mTransform" type="F32FIXEDARRAY">
-      <offset>88</offset>
+    <column name="Pos_Mtransform" type="F32FIXEDARRAY">
+      <offset>156</offset>
       <num_elements>3</num_elements>
     </column>
-    <column name="TexSwap" type="STRUCT">
-      <offset>100</offset>
+    <column name="Texswap" type="STRUCT">
+      <offset>168</offset>
       <subtable external="CostumeTextureSwap" />
     </column>
     <column name="Set" type="STRUCT">
-      <offset>104</offset>
+      <offset>176</offset>
       <subtable external="MaterialNamedConstant" />
     </column>
-    <column name="TexSwap2" type="STRUCT">
-      <offset>116</offset>
+    <column name="Texswap2" type="STRUCT">
+      <offset>192</offset>
       <subtable external="CostumeTextureSwap" />
     </column>
     <column name="Set2" type="STRUCT">
-      <offset>120</offset>
+      <offset>200</offset>
       <subtable external="MaterialNamedConstant" />
     </column>
-    <column name="uiRequiredLOD" type="INT">
-      <offset>124</offset>
+    <column name="Uirequiredlod" type="INT">
+      <offset>208</offset>
     </column>
-    <column name="NoShadow" type="BIT">
-      <offset>128</offset>
+    <column name="Noshadow" type="BIT">
+      <offset>212</offset>
       <bit_offset>65539</bit_offset>
     </column>
     <column name="Color" type="IGNORE" />

@@ -2,5 +2,8 @@
 <enum name="UIStyleColorPaletteStates">
   <elements type="int">
     <element name="Activate">0</element>
+    <element name="Assimilated">1</element>
+    <element name="Assimilation">2</element>
+    <element name="Redalert">3</element>
   </elements>
 </enum>

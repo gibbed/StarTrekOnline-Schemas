@@ -7,50 +7,73 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="InheritTimeout" type="U8">
+    <column name="Inherittimeout" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InheritOverrideAllBones" type="U8">
+    <column name="Inheritoverrideallbones" type="U8">
       <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InheritOverrideMovement" type="U8">
+    <column name="Inheritoverridemovement" type="U8">
       <offset>2</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InheritOverrideDefaultMove" type="U8">
+    <column name="Inheritoverridedefaultmove" type="U8">
       <offset>3</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InheritForceVisible" type="U8">
+    <column name="Inheritforcevisible" type="U8">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InheritPitchToTarget" type="U8">
+    <column name="Inheritpitchtotarget" type="U8">
       <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InheritDisableTorsoPointing" type="U8">
+    <column name="Inheritdisabletorsopointing" type="U8">
       <offset>6</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InheritDisableGroundReg" type="U8">
+    <column name="Inheritdisablegroundreg" type="U8">
       <offset>7</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InheritDisableUpperBodyGroundReg" type="U8">
+    <column name="Inheritdisableupperbodygroundreg" type="U8">
       <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InheritOnEnterFxEvent" type="U8">
+    <column name="Inheritonenterfxevent" type="U8">
       <offset>9</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InheritOnExitFxEvent" type="U8">
+    <column name="Inheritonexitfxevent" type="U8">
       <offset>10</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InheritSuppress" type="U8">
+    <column name="Inheritsuppress" type="U8">
       <offset>11</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InheritStance" type="U8">
+    <column name="Inheritstance" type="U8">
       <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InheritGeneratePowerMovementInfo" type="U8">
+    <column name="Inheritgeneratepowermovementinfo" type="U8">
       <offset>13</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="InheritResetWhenMovementStops" type="U8">
+    <column name="Inheritresetwhenmovementstops" type="U8">
       <offset>14</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritnonselfinterruptable" type="U8">
+      <offset>15</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inheritbouncertoggle" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ErrorHubEntryType">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="CALLSTACK">1</element>
+    <element name="EMAIL">2</element>
+    <element name="DIALOG">3</element>
+    <element name="ASSERT">4</element>
+    <element name="SUPPRESS">5</element>
+  </elements>
+</enum>

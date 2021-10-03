@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="stData" type="STASHTABLE">
+    <column name="Stdata" type="STASHTABLE">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

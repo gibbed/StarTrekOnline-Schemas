@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="SMTPClientState">
+  <elements type="int">
+    <element name="CONNECTING">0</element>
+    <element name="WAITING_FOR_SERVICE_READY">1</element>
+    <element name="SENT_HELO">2</element>
+    <element name="SENT_FROM">3</element>
+    <element name="SENT_TO">4</element>
+    <element name="REQUESTED_DATA_SEND">5</element>
+    <element name="SENT_DATA">6</element>
+    <element name="DISCONNECTED">7</element>
+  </elements>
+</enum>

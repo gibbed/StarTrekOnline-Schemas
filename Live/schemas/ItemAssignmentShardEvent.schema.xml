@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemAssignmentShardEvent">
+  <table>
+    <column name="ItemAssignmentShardEvent" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Categories" type="INTARRAY">
+      <offset>0</offset>
+      <static_define_list external="ItemAssignmentCategory" />
+    </column>
+    <column name="EventName" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="ProjectName" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="TaskName" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Numericname" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Incrementvalue" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Multiplybyduration" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

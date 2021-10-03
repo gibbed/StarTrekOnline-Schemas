@@ -11,123 +11,215 @@
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
+        <flag>NO_INDEX</flag>
       </flags>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
-    </column>
-    <column name="Description" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="LongDescription" type="STRING">
-      <offset>12</offset>
+    <column name="Description" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="Category" type="REFERENCE">
-      <offset>16</offset>
-      <dictionary_name>MicroTransactionCategory</dictionary_name>
-    </column>
-    <column name="Allegiance" type="REFERENCE">
-      <offset>20</offset>
-      <dictionary_name>AllegianceDef</dictionary_name>
-    </column>
-    <column name="Price" type="INT64">
+    <column name="Longdescription" type="STRING">
       <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
     </column>
-    <column name="DefPrice" type="INT64">
+    <column name="Ruleappliesmessage" type="STRING">
       <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
     </column>
-    <column name="Icon" type="STRING">
+    <column name="Microtrans2ruledefname" type="STRING">
       <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
       </flags>
+      <dictionary_name>MicroTrans2RuleDef</dictionary_name>
     </column>
-    <column name="Icons" type="STRINGARRAY">
-      <offset>44</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="CannotPurchaseReason" type="STRING">
+    <column name="Missedoffermessage" type="STRING">
       <offset>48</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="CannotPurchaseType" type="INT">
-      <offset>52</offset>
+    <column name="Displaysaleendsinmesg" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Displayofferendsinmesg" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="hDef" type="REFERENCE">
+      <offset>72</offset>
+      <dictionary_name>MicroTransactionDef</dictionary_name>
+    </column>
+    <column name="Hmt2def" type="REFERENCE">
+      <offset>80</offset>
+      <dictionary_name>MicroTrans2Def</dictionary_name>
+    </column>
+    <column name="Category" type="REFERENCE">
+      <offset>88</offset>
+      <dictionary_name>MicroTransactionCategory</dictionary_name>
+    </column>
+    <column name="Allegiance" type="REFERENCE">
+      <offset>96</offset>
+      <dictionary_name>AllegianceDef</dictionary_name>
+    </column>
+    <column name="Price" type="INT64">
+      <offset>104</offset>
+    </column>
+    <column name="Defprice" type="INT64">
+      <offset>112</offset>
+    </column>
+    <column name="Bestcouponprice" type="INT64">
+      <offset>120</offset>
+    </column>
+    <column name="Ubestcouponid" type="INT64">
+      <offset>128</offset>
+    </column>
+    <column name="Bestpersonaldiscountprice" type="INT64">
+      <offset>136</offset>
+    </column>
+    <column name="Bestmissedofferprice" type="INT64">
+      <offset>144</offset>
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>152</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Icons" type="STRINGARRAY">
+      <offset>160</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Cannotpurchasereason" type="STRING">
+      <offset>168</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Cannotpurchasetype" type="INT">
+      <offset>176</offset>
       <static_define_list external="MicroPurchaseErrorType" />
     </column>
+    <column name="Debugcannotpurchasepartnum" type="INT">
+      <offset>180</offset>
+    </column>
     <column name="Inventory" type="STRUCT">
-      <offset>56</offset>
+      <offset>184</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="InventorySlot" />
     </column>
     <column name="Update" type="INT">
-      <offset>60</offset>
+      <offset>192</offset>
     </column>
-    <column name="PrerequisitesMet" type="BIT">
-      <offset>64</offset>
+    <column name="Featuredpriority" type="INT">
+      <offset>196</offset>
+    </column>
+    <column name="Uuisortorder" type="INT">
+      <offset>200</offset>
+    </column>
+    <column name="Prerequisitesmet" type="BIT">
+      <offset>204</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="CannotPurchaseAgain" type="BIT">
-      <offset>64</offset>
+    <column name="Cannotpurchaseagain" type="BIT">
+      <offset>204</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="OneTimePurchase" type="BIT">
-      <offset>64</offset>
+    <column name="Onetimepurchase" type="BIT">
+      <offset>204</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="UniqueInInv" type="BIT">
-      <offset>64</offset>
+    <column name="Uniqueininv" type="BIT">
+      <offset>204</offset>
       <bit_offset>65539</bit_offset>
     </column>
     <column name="Updated" type="BIT">
-      <offset>64</offset>
+      <offset>204</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="ItemRestrictions" type="BIT">
-      <offset>64</offset>
+    <column name="Itemrestrictions" type="BIT">
+      <offset>204</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="NewProduct" type="BIT">
-      <offset>64</offset>
+    <column name="Newproduct" type="BIT">
+      <offset>204</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="FeaturedProduct" type="BIT">
-      <offset>64</offset>
+    <column name="Featuredproduct" type="BIT">
+      <offset>204</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="OwnedProduct" type="BIT">
-      <offset>64</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Ownedproduct" type="BIT">
+      <offset>205</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="FailsExpression" type="BIT">
-      <offset>64</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Failsexpression" type="BIT">
+      <offset>205</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="NotEnoughCurrency" type="BIT">
-      <offset>64</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Notenoughcurrency" type="BIT">
+      <offset>205</offset>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="AlreadyEntitled" type="BIT">
-      <offset>64</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Alreadyentitled" type="BIT">
+      <offset>205</offset>
+      <bit_offset>65539</bit_offset>
     </column>
-    <column name="PremiumEntitlement" type="BIT">
-      <offset>64</offset>
-      <bit_offset>65548</bit_offset>
+    <column name="Premiumentitlement" type="BIT">
+      <offset>205</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Validcoupon" type="BIT">
+      <offset>205</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Unavailable" type="BIT">
+      <offset>205</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Validpersonaldiscount" type="BIT">
+      <offset>205</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Validprorateddiscount" type="BIT">
+      <offset>206</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Issale" type="BIT">
+      <offset>206</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Purchased" type="BIT">
+      <offset>206</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Uavailableendtimeseconds" type="INT">
+      <offset>208</offset>
+    </column>
+    <column name="Usaleendtimeseconds" type="INT">
+      <offset>212</offset>
     </column>
     <column name="}" type="END" />
   </table>

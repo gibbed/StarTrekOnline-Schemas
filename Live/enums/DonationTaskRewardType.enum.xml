@@ -3,10 +3,20 @@
   <elements type="int">
     <element name="None">0</element>
     <element name="Unlock">1</element>
-    <element name="NumericAdd">2</element>
-    <element name="NumericSet">3</element>
-    <element name="GuildProjectDiscount">4</element>
-    <element name="PlayerProjectDiscount">5</element>
-    <element name="Bonus">6</element>
+    <element name="InstancedUnlock">2</element>
+    <element name="ParameterizedInstancedUnlock">3</element>
+    <element name="NumericAdd">4</element>
+    <element name="InstancedNumericAdd">5</element>
+    <element name="ParameterizedInstancedNumericAdd">6</element>
+    <element name="NumericSet">7</element>
+    <element name="InstancedNumericSet">8</element>
+    <element name="ParameterizedInstancedNumericSet">9</element>
+    <element name="GuildProjectDiscount">10</element>
+    <element name="PlayerProjectDiscount">11</element>
+    <element name="Bonus">12</element>
+    <element name="TagSet">13</element>
+    <element name="InstancedTagSet">14</element>
+    <element name="ParameterizedInstancedTagSet">15</element>
+    <element name="Power">16</element>
   </elements>
 </enum>

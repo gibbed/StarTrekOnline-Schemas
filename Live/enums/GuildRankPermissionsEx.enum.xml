@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GuildRankPermissionsEx">
+  <elements type="int">
+    <element name="BuildStructureAtPlot">1</element>
+    <element name="TendStructureAtPlot">2</element>
+    <element name="RushTaskAtPlot">4</element>
+    <element name="DestroyStructureAtPlot">8</element>
+    <element name="GuildNextStructure">16</element>
+    <element name="Decorate">32</element>
+    <element name="SortBank">64</element>
+    <element name="StartSpecial">128</element>
+  </elements>
+</enum>

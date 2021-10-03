@@ -10,8 +10,8 @@
     <column name="Selected" type="INT">
       <offset>0</offset>
     </column>
-    <column name="astrParameter" type="STRING">
-      <offset>4</offset>
+    <column name="Astrparameter" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

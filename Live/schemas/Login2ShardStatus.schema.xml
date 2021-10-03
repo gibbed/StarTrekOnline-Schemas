@@ -14,24 +14,30 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="shardType" type="INT">
-      <offset>4</offset>
-      <static_define_list external="ClusterShardType" />
-    </column>
-    <column name="queueSize" type="INT">
+    <column name="shardDisplayName" type="STRING">
       <offset>8</offset>
     </column>
+    <column name="shardType" type="INT">
+      <offset>16</offset>
+      <static_define_list external="ClusterShardType" />
+    </column>
+    <column name="Queuesize" type="INT">
+      <offset>20</offset>
+    </column>
     <column name="IsReady" type="U8">
-      <offset>12</offset>
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="isCurrent" type="U8">
-      <offset>13</offset>
+      <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="creationDisabled" type="U8">
-      <offset>14</offset>
+    <column name="Creationdisabled" type="U8">
+      <offset>26</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="displayOrder" type="INT">
-      <offset>16</offset>
+    <column name="Displayorder" type="INT">
+      <offset>28</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="GroupDefOverrideInfo">
+  <table>
+    <column name="GroupDefOverrideInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Inheritsource" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Inheritpath" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Overriddenprops" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Overriddenchild" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="GroupChildOverrideInfo" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

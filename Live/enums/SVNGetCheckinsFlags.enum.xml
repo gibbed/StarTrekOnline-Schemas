@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="SVNGetCheckinsFlags">
+  <elements type="int">
+    <element name="SVNGETCHECKINS_FLAG_SANITIZE_FOR_BUILD_SCRIPTS">1</element>
+  </elements>
+</enum>

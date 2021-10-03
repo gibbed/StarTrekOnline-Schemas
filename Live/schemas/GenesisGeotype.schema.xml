@@ -15,18 +15,18 @@
       </flags>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>USEROPTIONBIT_1</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="RoomData" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+    <column name="Roomdata" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
       <subtable external="GenesisGeotypeRoomData" />
     </column>
-    <column name="NodeData" type="EMBEDDEDSTRUCT">
-      <offset>24</offset>
+    <column name="Nodedata" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
       <subtable external="GenesisGeotypeNodeData" />
     </column>
     <column name="}" type="END" />

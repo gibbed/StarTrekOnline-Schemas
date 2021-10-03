@@ -37,6 +37,13 @@
     <element name="NVPSTRUCT_LOGIN">43</element>
     <element name="TRUSTED_SET_SALT">44</element>
     <element name="TRUSTED_SET_REQUEST_IP">45</element>
-    <element name="MAX">46</element>
+    <element name="NVPSTRUCT_LOGIN_XBOX">46</element>
+    <element name="NVPSTRUCT_LOGIN_PS4">47</element>
+    <element name="PRESENCE">48</element>
+    <element name="NVPSTRUCT_LOGIN_PLATFORM">49</element>
+    <element name="CHAT_SILENCE_MIGRATE">50</element>
+    <element name="CHAT_KEYVALUE_UPDATE">51</element>
+    <element name="NVPSTRUCT_LOGIN_PS5">52</element>
+    <element name="MAX">53</element>
   </elements>
 </enum>

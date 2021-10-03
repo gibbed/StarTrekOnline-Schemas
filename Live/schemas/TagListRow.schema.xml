@@ -7,11 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="bitNum" type="INT">
+    <column name="Bitnum" type="INT">
       <offset>0</offset>
     </column>
-    <column name="permanent" type="U8">
+    <column name="Permanent" type="U8">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="String" type="STRING">
       <offset>8</offset>

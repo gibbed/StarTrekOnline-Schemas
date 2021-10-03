@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiPowerID" type="INT">
+    <column name="Uipowerid" type="INT">
       <offset>0</offset>
     </column>
     <column name="Recharge" type="F32">

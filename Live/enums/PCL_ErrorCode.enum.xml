@@ -43,6 +43,14 @@
     <element name="BAD_PACKET">39</element>
     <element name="DESTROYED">40</element>
     <element name="ABORT">41</element>
-    <element name="ERROR_COUNT">42</element>
+    <element name="FILESPEC_PROCESSING_FAILED">42</element>
+    <element name="DONT_RECONNECT">43</element>
+    <element name="SPLIT_FAILED">44</element>
+    <element name="NOT_ENOUGH_DISKSPACE">45</element>
+    <element name="RETRY_LIMIT_EXCEEDED">46</element>
+    <element name="UNSUPPORTED_COMMAND">47</element>
+    <element name="DATA_LINK_FAILURE">48</element>
+    <element name="FILE_DELETED">49</element>
+    <element name="ERROR_COUNT">50</element>
   </elements>
 </enum>

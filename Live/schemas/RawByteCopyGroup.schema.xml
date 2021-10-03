@@ -7,26 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TotalSize" type="INT">
+    <column name="Totalsize" type="INT">
       <offset>0</offset>
     </column>
-    <column name="DefaultToOn" type="U8">
+    <column name="Defaulttoon" type="U8">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="onBlocks" type="EMBEDDEDSTRUCT">
+    <column name="Onblocks" type="EMBEDDEDSTRUCT">
       <offset>8</offset>
       <subtable external="ByteBlockList" />
     </column>
-    <column name="offBlocks" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
+    <column name="Offblocks" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
       <subtable external="ByteBlockList" />
     </column>
-    <column name="OnBits" type="STRUCT">
-      <offset>16</offset>
+    <column name="Onbits" type="STRUCT">
+      <offset>24</offset>
       <subtable external="SingleBit" />
     </column>
-    <column name="OffBits" type="STRUCT">
-      <offset>20</offset>
+    <column name="Offbits" type="STRUCT">
+      <offset>32</offset>
       <subtable external="SingleBit" />
     </column>
     <column name="}" type="END" />

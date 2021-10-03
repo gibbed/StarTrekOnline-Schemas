@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CostumeCEPartCostumeConfig">
+  <table>
+    <column name="CostumeCEPartCostumeConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Nameformat" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="BoneName" type="STRINGARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Includechildbones" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

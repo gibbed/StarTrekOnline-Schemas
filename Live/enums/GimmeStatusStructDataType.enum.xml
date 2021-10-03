@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GimmeStatusStructDataType">
+  <elements type="int">
+    <element name="FileModStatus">0</element>
+    <element name="LogByTime">1</element>
+    <element name="LogByRev">2</element>
+    <element name="GetFileInfo">3</element>
+    <element name="GetFileHistory">4</element>
+    <element name="GetCheckoutInfo">5</element>
+    <element name="GetAuthor">6</element>
+    <element name="LoadProject">7</element>
+    <element name="GetAllProjects">8</element>
+  </elements>
+</enum>

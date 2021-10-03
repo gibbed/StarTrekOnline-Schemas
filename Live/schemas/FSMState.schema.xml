@@ -15,115 +15,115 @@
       </flags>
     </column>
     <column name="FullName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
     </column>
     <column name="Transition" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="FSMTransition" />
     </column>
     <column name="Comment" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="OnEntry" type="OPTIONALSTRUCT">
-      <offset>16</offset>
-      <subtable external="Expression" />
-    </column>
-    <column name="OnEntry:" type="OPTIONALSTRUCT">
-      <offset>16</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>OnEntry</redundant_name>
-      <subtable external="Expression_StructParam" />
-    </column>
-    <column name="OnEntryFlavor" type="OPTIONALSTRUCT">
-      <offset>20</offset>
-      <subtable external="Expression" />
-    </column>
-    <column name="OnEntryFlavor:" type="OPTIONALSTRUCT">
-      <offset>20</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>OnEntryFlavor</redundant_name>
-      <subtable external="Expression_StructParam" />
-    </column>
-    <column name="OnFirstEntry" type="OPTIONALSTRUCT">
       <offset>24</offset>
+    </column>
+    <column name="Onentry" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="Expression" />
     </column>
-    <column name="OnFirstEntry:" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Onentry:" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>OnFirstEntry</redundant_name>
+      <redundant_name>Onentry</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="OnFirstEntryFlavor" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Onentryflavor" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="Expression" />
     </column>
-    <column name="OnFirstEntryFlavor:" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Onentryflavor:" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>OnFirstEntryFlavor</redundant_name>
+      <redundant_name>Onentryflavor</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Onfirstentry" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Onfirstentry:" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Onfirstentry</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Onfirstentryflavor" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Onfirstentryflavor:" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Onfirstentryflavor</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
     <column name="Action" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+      <offset>64</offset>
       <subtable external="Expression" />
     </column>
     <column name="Action:" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+      <offset>64</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Action</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="ActionFlavor" type="OPTIONALSTRUCT">
-      <offset>36</offset>
+    <column name="Actionflavor" type="OPTIONALSTRUCT">
+      <offset>72</offset>
       <subtable external="Expression" />
     </column>
-    <column name="ActionFlavor:" type="OPTIONALSTRUCT">
-      <offset>36</offset>
+    <column name="Actionflavor:" type="OPTIONALSTRUCT">
+      <offset>72</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ActionFlavor</redundant_name>
+      <redundant_name>Actionflavor</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="SubFSM" type="REFERENCE">
-      <offset>40</offset>
+    <column name="Subfsm" type="REFERENCE">
+      <offset>80</offset>
       <flags>
         <flag>VITAL_REF</flag>
       </flags>
       <dictionary_name>FSM</dictionary_name>
     </column>
-    <column name="SubFSM:" type="REFERENCE">
-      <offset>40</offset>
+    <column name="Subfsm:" type="REFERENCE">
+      <offset>80</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>VITAL_REF</flag>
       </flags>
-      <redundant_name>SubFSM</redundant_name>
+      <redundant_name>Subfsm</redundant_name>
       <dictionary_name>FSM</dictionary_name>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>44</offset>
+      <offset>88</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Layout" type="OPTIONALSTRUCT">
-      <offset>48</offset>
+      <offset>96</offset>
       <subtable external="FSMStateLayout" />
     </column>
     <column name="}" type="END" />

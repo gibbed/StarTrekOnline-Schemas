@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ShardCategory" type="INT">
+    <column name="Mt_Category" type="INT">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
@@ -16,51 +16,65 @@
       </flags>
       <static_define_list external="MicroTrans_ShardCategory" />
     </column>
+    <column name="Shardcategory" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <redundant_name>Mt_Category</redundant_name>
+      <static_define_list external="MicroTrans_ShardCategory" />
+    </column>
     <column name="Currency" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>REQUIRED</flag>
       </flags>
     </column>
-    <column name="ExchangeWithdrawCurrency" type="STRING">
-      <offset>8</offset>
-    </column>
-    <column name="CurrencyExchangeForSaleBucket" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="CurrencyExchangeReadyToClaimBucket" type="STRING">
+    <column name="Currencyexchangeforsalebucket" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="FoundryTipBucket" type="STRING">
-      <offset>20</offset>
-    </column>
-    <column name="PromoGameCurrencyBucket" type="STRING">
+    <column name="Currencyexchangereadytoclaimbucket" type="STRING">
       <offset>24</offset>
     </column>
+    <column name="Foundrytipbucket" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Promogamecurrencybucket" type="STRING">
+      <offset>40</offset>
+    </column>
     <column name="Prefix" type="STRING">
-      <offset>28</offset>
+      <offset>48</offset>
       <flags>
         <flag>REQUIRED</flag>
       </flags>
     </column>
-    <column name="CategoryPrefix" type="STRING">
-      <offset>28</offset>
+    <column name="Categoryprefix" type="STRING">
+      <offset>48</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Prefix</redundant_name>
     </column>
     <column name="MOTD" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+      <offset>56</offset>
       <subtable external="MicroTrans_MOTDConfig" />
     </column>
-    <column name="PointBuyEnabled" type="U8">
-      <offset>36</offset>
+    <column name="Pointbuyenabled" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SteamWalletEnabled" type="BIT">
-      <offset>36</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Steamwalletenabled" type="BIT">
+      <offset>65</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
+    <column name="Epicpointbuyenabled" type="BIT">
+      <offset>65</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Exchangewithdrawcurrency" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

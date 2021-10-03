@@ -7,29 +7,29 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PetID" type="INT">
+    <column name="Petid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="hCostume" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hcostume" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
     <column name="Costume" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="PlayerCostume" />
     </column>
-    <column name="HeadshotStyleDef" type="STRING">
-      <offset>12</offset>
+    <column name="Headshotstyledef" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CostumeStyleOverrides" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Costumestyleoverrides" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="ContactCostumeStyle" />
     </column>
-    <column name="HeadshotBorderFrame" type="STRING">
-      <offset>20</offset>
+    <column name="Headshotborderframe" type="STRING">
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

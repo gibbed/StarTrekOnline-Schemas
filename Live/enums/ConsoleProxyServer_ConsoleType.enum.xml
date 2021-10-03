@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ConsoleProxyServer_ConsoleType">
+  <elements type="int">
+    <element name="XBOXONE">0</element>
+    <element name="PS4">1</element>
+    <element name="PS5">2</element>
+    <element name="PC">3</element>
+  </elements>
+</enum>

@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="folder_name" type="STRING">
+    <column name="Folder_Name" type="STRING">
       <offset>0</offset>
     </column>
     <column name="Folders" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DirectoryFolder" />
     </column>
     <column name="Entries" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="DirectoryEntry" />
     </column>
     <column name="}" type="END" />

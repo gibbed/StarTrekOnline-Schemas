@@ -7,44 +7,41 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="voiceServer" type="STRING">
+    <column name="Defaultspeakervolume" type="INT">
       <offset>0</offset>
     </column>
-    <column name="defaultSpeakerVolume" type="INT">
+    <column name="Defaultmiclevel" type="INT">
       <offset>4</offset>
     </column>
-    <column name="defaultMicLevel" type="INT">
+    <column name="Defaultuservolume" type="INT">
       <offset>8</offset>
     </column>
-    <column name="defaultUserVolume" type="INT">
+    <column name="Pushtotalkdefault" type="BIT">
       <offset>12</offset>
-    </column>
-    <column name="pushToTalkDefault" type="BIT">
-      <offset>16</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="showFirstConnectTutorial" type="BIT">
-      <offset>16</offset>
+    <column name="Showfirstconnecttutorial" type="BIT">
+      <offset>12</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="unmuteDefault" type="BIT">
-      <offset>16</offset>
+    <column name="Unmutedefault" type="BIT">
+      <offset>12</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="singleChannelRx" type="BIT">
-      <offset>16</offset>
+    <column name="Singlechannelrx" type="BIT">
+      <offset>12</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="singleChannelTx" type="BIT">
-      <offset>16</offset>
+    <column name="Singlechanneltx" type="BIT">
+      <offset>12</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="defaultNoVoice" type="BIT">
-      <offset>16</offset>
+    <column name="Defaultnovoice" type="BIT">
+      <offset>12</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="usedFields" type="INTFIXEDARRAY">
-      <offset>20</offset>
+    <column name="Usedfields" type="INTFIXEDARRAY">
+      <offset>16</offset>
       <flags>
         <flag>USEDFIELD</flag>
       </flags>

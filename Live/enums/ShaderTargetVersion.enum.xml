@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ShaderTargetVersion">
+  <elements type="int">
+    <element name="Default">0</element>
+    <element name="D3DX9_37">0</element>
+    <element name="D3DCompiler_42">1</element>
+    <element name="D3DXBOne_Jun14">2</element>
+    <element name="D3DXBOne_Mar15">3</element>
+    <element name="OrbisPSSLCompiler_30">4</element>
+    <element name="D3DCompiler_47">5</element>
+    <element name="OrbisPSSLCompiler_35">6</element>
+    <element name="D3DXBOne_Mar16">7</element>
+    <element name="OrbisPSSLCompiler_60">8</element>
+    <element name="DXCompilerX_Nov20">9</element>
+    <element name="DXCompilerXS_Nov20">10</element>
+    <element name="Max">11</element>
+  </elements>
+</enum>

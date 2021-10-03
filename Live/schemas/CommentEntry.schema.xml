@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pDesc" type="STRING">
+    <column name="Pdesc" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pIP" type="STRING">
-      <offset>4</offset>
+    <column name="Pip" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>

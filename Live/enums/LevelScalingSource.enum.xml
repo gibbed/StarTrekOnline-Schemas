@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="LevelScalingSource">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="Force">1</element>
+    <element name="Volume">2</element>
+    <element name="Gamedef">3</element>
+    <element name="Map">4</element>
+    <element name="EntLink">5</element>
+    <element name="PowerTree">6</element>
+  </elements>
+</enum>

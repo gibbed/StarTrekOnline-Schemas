@@ -7,20 +7,29 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="KeyName" type="STRING">
+    <column name="Keyname" type="STRING">
       <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
     </column>
-    <column name="estrNameMessage" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="estrDescMessage" type="STRING">
+    <column name="Estrnamemessage" type="STRING">
       <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Estrdescmessage" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
     </column>
     <column name="Current" type="F32">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
     <column name="Base" type="F32">
-      <offset>16</offset>
+      <offset>28</offset>
     </column>
     <column name="}" type="END" />
   </table>

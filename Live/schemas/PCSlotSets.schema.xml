@@ -7,9 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CostumeSlotSet" type="STRUCT">
+    <column name="Costumeslotset" type="STRUCT">
       <offset>0</offset>
       <subtable external="PCSlotSet" />
+    </column>
+    <column name="Costumeslotmaprestrictions" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="PCSlotRestrictions" />
     </column>
     <column name="}" type="END" />
   </table>

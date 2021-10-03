@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="UniqueApp_MessageType">
+  <elements type="int">
+    <element name="HERE_IS_COMMAND_LINE">0</element>
+    <element name="SHUTDOWN_OK">1</element>
+    <element name="SHUTDOWN_PREEMPTED">2</element>
+  </elements>
+</enum>

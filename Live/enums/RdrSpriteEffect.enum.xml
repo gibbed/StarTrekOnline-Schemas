@@ -11,6 +11,7 @@
     <element name="DistField2Layer">6</element>
     <element name="DistField1LayerGradient">7</element>
     <element name="DistField2LayerGradient">8</element>
-    <element name="MAX">9</element>
+    <element name="Leviathan_AlphaCutout">9</element>
+    <element name="MAX">10</element>
   </elements>
 </enum>

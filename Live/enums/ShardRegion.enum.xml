@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ShardRegion">
+  <elements type="int">
+    <element name="AMR">0</element>
+    <element name="RUS">1</element>
+    <element name="CHN">2</element>
+    <element name="XBC">3</element>
+    <element name="XBX">4</element>
+    <element name="HKG">5</element>
+    <element name="XBH">6</element>
+    <element name="PS4">7</element>
+    <element name="PHK">8</element>
+    <element name="INVALID">9</element>
+  </elements>
+</enum>

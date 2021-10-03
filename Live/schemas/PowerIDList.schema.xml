@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="eaiPowerIDs" type="INTARRAY">
+    <column name="Eaipowerids" type="INTARRAY">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

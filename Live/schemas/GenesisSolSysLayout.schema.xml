@@ -10,18 +10,18 @@
     <column name="Name" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="EnvironmentTags" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="EnvironmentTags2" type="STRINGARRAY">
+    <column name="Environmenttags" type="STRING">
       <offset>8</offset>
     </column>
+    <column name="Environmenttags2" type="STRINGARRAY">
+      <offset>16</offset>
+    </column>
     <column name="Shoebox" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="GenesisShoeboxLayout" />
     </column>
-    <column name="CommonData" type="EMBEDDEDSTRUCT">
-      <offset>24</offset>
+    <column name="Commondata" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
       <subtable external="GenesisLayoutCommonData" />
     </column>
     <column name="}" type="END" />

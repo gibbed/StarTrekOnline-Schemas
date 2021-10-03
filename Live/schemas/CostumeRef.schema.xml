@@ -7,68 +7,130 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="dirtyBit" type="U8">
+    <column name="Dirtybit" type="U8">
       <offset>0</offset>
       <flags>
         <flag>NO_NETSEND</flag>
         <flag>DIRTY_BIT</flag>
       </flags>
     </column>
-    <column name="dirtiedCount" type="INT16">
+    <column name="Dirtiedcount" type="INT16">
       <offset>2</offset>
     </column>
-    <column name="transformation" type="INT16">
+    <column name="Transformation" type="INT16">
       <offset>4</offset>
     </column>
-    <column name="pEffectiveCostume" type="OPTIONALSTRUCT">
+    <column name="Peffectivecostume" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <subtable external="PlayerCostume" />
     </column>
-    <column name="pStoredCostume" type="OPTIONALSTRUCT">
-      <offset>12</offset>
-      <subtable external="PlayerCostume" />
-    </column>
-    <column name="pSubstituteCostume" type="OPTIONALSTRUCT">
+    <column name="Pstoredcostume" type="OPTIONALSTRUCT">
       <offset>16</offset>
       <subtable external="PlayerCostume" />
     </column>
-    <column name="hReferencedCostume" type="REFERENCE">
-      <offset>20</offset>
-      <dictionary_name>PlayerCostume</dictionary_name>
-    </column>
-    <column name="pcDestructibleObjectCostume" type="STRING">
+    <column name="Psubstitutecostume" type="OPTIONALSTRUCT">
       <offset>24</offset>
-    </column>
-    <column name="pMountCostume" type="OPTIONALSTRUCT">
-      <offset>28</offset>
       <subtable external="PlayerCostume" />
     </column>
-    <column name="fMountScaleOverride" type="F32">
+    <column name="Hreferencedcostume" type="REFERENCE">
       <offset>32</offset>
+      <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="bPredictDismount" type="U8">
-      <offset>36</offset>
+    <column name="Pcdestructibleobjectcostume" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Pcdestructible2modelcostume" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Bdestructible2emptycostume" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Pmountcostume" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="PlayerCostume" />
+    </column>
+    <column name="Fmountscaleoverride" type="F32">
+      <offset>72</offset>
+    </column>
+    <column name="Mountriderless" type="U8">
+      <offset>76</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Briderlessmount" type="U8">
+      <offset>76</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Mountriderless</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bmountriderless" type="U8">
+      <offset>76</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Mountriderless</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bdonotdismount" type="U8">
+      <offset>77</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Boverlaymount" type="U8">
+      <offset>78</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Eaiattachedents" type="INTARRAY">
+      <offset>80</offset>
+    </column>
+    <column name="Erattachedtoent" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Bpredictdismount" type="U8">
+      <offset>92</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Utimepredictmount" type="INT">
+      <offset>96</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
-    <column name="hMood" type="REFERENCE">
-      <offset>40</offset>
+    <column name="Hmood" type="REFERENCE">
+      <offset>104</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>PCMood</dictionary_name>
     </column>
-    <column name="eaAdditionalFX" type="STRUCT">
-      <offset>44</offset>
+    <column name="Eaadditionalfx" type="STRUCT">
+      <offset>112</offset>
       <subtable external="PCFXNoPersist" />
     </column>
-    <column name="pTransformation" type="OPTIONALSTRUCT">
-      <offset>48</offset>
-      <subtable external="CostumeTransformation" />
+    <column name="Pdebugcostume" type="OPTIONALSTRUCT">
+      <offset>120</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="PlayerCostume" />
     </column>
-    <column name="hReferencedCostume" type="IGNORE" />
+    <column name="Autotimestamp" type="INT64">
+      <offset>128</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Hreferencedcostume" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

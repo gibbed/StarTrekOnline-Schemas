@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="RPCTypeForLogging">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="CRYPTICRPC">1</element>
+    <element name="JSONRPC">2</element>
+  </elements>
+</enum>

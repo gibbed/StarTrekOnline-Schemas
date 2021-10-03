@@ -7,28 +7,28 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="serverStepCount" type="INT">
+    <column name="Serverstepcount" type="INT">
       <offset>0</offset>
     </column>
-    <column name="leftOverSteps" type="INT">
+    <column name="Leftoversteps" type="INT">
       <offset>4</offset>
     </column>
-    <column name="behind" type="INT">
+    <column name="Behind" type="INT">
       <offset>8</offset>
     </column>
-    <column name="usedSteps" type="INT">
+    <column name="Usedsteps" type="INT">
       <offset>12</offset>
     </column>
-    <column name="forcedSteps" type="INT">
+    <column name="Forcedsteps" type="INT">
       <offset>16</offset>
     </column>
-    <column name="skipSteps" type="INT">
+    <column name="Skipsteps" type="INT">
       <offset>20</offset>
     </column>
-    <column name="consolidateStepsEarly" type="INT">
+    <column name="Consolidatestepsearly" type="INT">
       <offset>24</offset>
     </column>
-    <column name="consolidateStepsLate" type="INT">
+    <column name="Consolidatestepslate" type="INT">
       <offset>28</offset>
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">

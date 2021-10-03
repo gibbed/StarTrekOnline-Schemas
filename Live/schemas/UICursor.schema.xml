@@ -16,14 +16,6 @@
       </flags>
     </column>
     <column name="Texture" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>GLOBAL_NAME</flag>
-      </flags>
-      <dictionary_name>Texture</dictionary_name>
-    </column>
-    <column name="Overlay" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -31,28 +23,32 @@
       </flags>
       <dictionary_name>Texture</dictionary_name>
     </column>
-    <column name="Color" type="INT">
-      <offset>12</offset>
-      <default>-1</default>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
-    </column>
-    <column name="OverlayColor" type="INT">
+    <column name="Overlay" type="STRING">
       <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Color" type="INT">
+      <offset>24</offset>
       <default>-1</default>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
     </column>
-    <column name="HotspotX" type="INT16">
-      <offset>20</offset>
+    <column name="Overlaycolor" type="INT">
+      <offset>28</offset>
+      <default>-1</default>
+      <static_define_list external="Color" />
     </column>
-    <column name="HotspotY" type="INT16">
-      <offset>22</offset>
+    <column name="Hotspotx" type="INT16">
+      <offset>32</offset>
+    </column>
+    <column name="Hotspoty" type="INT16">
+      <offset>34</offset>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>24</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

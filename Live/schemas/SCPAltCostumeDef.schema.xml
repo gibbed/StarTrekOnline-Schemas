@@ -14,16 +14,20 @@
       </flags>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="ContinuingPlayerFX" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Continuingplayerfx" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
       <dictionary_name>DynFxInfo</dictionary_name>
     </column>
-    <column name="DisplayMsg" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+    <column name="Displaymsg" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Level" type="INT">
-      <offset>20</offset>
+      <offset>40</offset>
     </column>
     <column name="Level" type="IGNORE" />
     <column name="}" type="END" />

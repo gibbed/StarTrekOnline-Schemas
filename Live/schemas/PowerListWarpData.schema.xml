@@ -13,33 +13,33 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MapDisplayName" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>UNKNOWN_32</flag>
-      </flags>
-    </column>
-    <column name="PowerDisplayName" type="STRING">
+    <column name="Mapdisplayname" type="STRING">
       <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Powerdisplayname" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Power" type="STRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="PowerListWarpPowerData" />
     </column>
-    <column name="ShortestCooldown" type="F32">
-      <offset>16</offset>
+    <column name="Shortestcooldown" type="F32">
+      <offset>32</offset>
     </column>
-    <column name="NumActivatable" type="INT">
-      <offset>20</offset>
+    <column name="Numactivatable" type="INT">
+      <offset>36</offset>
     </column>
-    <column name="NumPowers" type="INT">
-      <offset>24</offset>
+    <column name="Numpowers" type="INT">
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

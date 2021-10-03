@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="GameKillDef">
+  <table>
+    <column name="GameKillDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Rewardat" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Basereward" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Eventsallowed" type="STRINGARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Killvaluelist" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="GameKillValue" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

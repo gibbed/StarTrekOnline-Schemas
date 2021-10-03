@@ -7,38 +7,38 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BetIndex" type="INT64">
+    <column name="Betindex" type="INT64">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uSpinIndex" type="INT64">
+    <column name="Uspinindex" type="INT64">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>BetIndex</redundant_name>
+      <redundant_name>Betindex</redundant_name>
     </column>
-    <column name="iBetIndex" type="INT64">
+    <column name="Ibetindex" type="INT64">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>BetIndex</redundant_name>
+      <redundant_name>Betindex</redundant_name>
     </column>
-    <column name="pchNumeric" type="STRING">
+    <column name="Pchnumeric" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iBetAmount" type="INT">
-      <offset>12</offset>
+    <column name="Ibetamount" type="INT">
+      <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>

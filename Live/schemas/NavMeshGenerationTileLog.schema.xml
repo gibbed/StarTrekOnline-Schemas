@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="NavMeshGenerationTileLog">
+  <table>
+    <column name="NavMeshGenerationTileLog" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Tilex" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Tilez" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Min" type="F32FIXEDARRAY">
+      <offset>8</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Max" type="F32FIXEDARRAY">
+      <offset>20</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="TotalCount" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Peaobjects" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="NavMeshGenerationObjectLog" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

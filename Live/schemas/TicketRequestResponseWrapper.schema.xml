@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ListString" type="STRING">
+    <column name="Liststring" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="TPIString" type="STRING">
-      <offset>4</offset>
+    <column name="Tpistring" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="uCRC" type="INT">
-      <offset>8</offset>
+    <column name="Ucrc" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

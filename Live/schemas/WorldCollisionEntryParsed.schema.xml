@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="base_data" type="EMBEDDEDSTRUCT">
+    <column name="Base_Data" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="WorldCellEntryParsed" />
     </column>
@@ -15,30 +15,40 @@
       <offset>72</offset>
       <subtable external="SplineParamsParsed" />
     </column>
-    <column name="model_idx" type="INT">
-      <offset>76</offset>
+    <column name="Model_Idx" type="INT">
+      <offset>80</offset>
       <default>-1</default>
     </column>
-    <column name="MaterialSwaps" type="STRINGARRAY">
-      <offset>80</offset>
+    <column name="Materialswaps" type="STRINGARRAY">
+      <offset>88</offset>
     </column>
-    <column name="filterBits" type="INT">
-      <offset>84</offset>
+    <column name="Filterbits" type="INT">
+      <offset>96</offset>
     </column>
     <column name="Scale" type="F32FIXEDARRAY">
-      <offset>88</offset>
-      <num_elements>3</num_elements>
-    </column>
-    <column name="collision_radius" type="F32">
       <offset>100</offset>
-    </column>
-    <column name="collision_min" type="F32FIXEDARRAY">
-      <offset>104</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="collision_max" type="F32FIXEDARRAY">
+    <column name="Collision_Radius" type="F32">
+      <offset>112</offset>
+    </column>
+    <column name="Collision_Min" type="F32FIXEDARRAY">
       <offset>116</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Collision_Max" type="F32FIXEDARRAY">
+      <offset>128</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Twosidedcollision" type="U8">
+      <offset>140</offset>
+      <default>1</default>
+    </column>
+    <column name="Fade_Group_Index" type="INT">
+      <offset>144</offset>
     </column>
     <column name="}" type="END" />
   </table>

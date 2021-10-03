@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="entriesFirst" type="STRUCT">
+    <column name="Entriesfirst" type="STRUCT">
       <offset>0</offset>
       <subtable external="PCLFileSpecEntry" />
     </column>
-    <column name="entriesSecond" type="STRUCT">
-      <offset>4</offset>
+    <column name="Entriessecond" type="STRUCT">
+      <offset>8</offset>
       <subtable external="PCLFileSpecEntry" />
     </column>
     <column name="}" type="END" />

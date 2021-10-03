@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="BlameRequestFlags">
+  <elements type="int">
+    <element name="BRF_GET_CORRECT_FILENAME_CASES">1</element>
+  </elements>
+</enum>

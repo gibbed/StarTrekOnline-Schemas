@@ -8,65 +8,65 @@
     </column>
     <column name="{" type="START" />
     <column name="Strength" type="F32">
-      <offset>8</offset>
-    </column>
-    <column name="float_1" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="float_2" type="F32">
       <offset>16</offset>
     </column>
-    <column name="float_3" type="F32">
+    <column name="Float_1" type="F32">
       <offset>20</offset>
     </column>
-    <column name="float_4" type="F32">
+    <column name="Float_2" type="F32">
       <offset>24</offset>
     </column>
-    <column name="float_5" type="F32">
+    <column name="Float_3" type="F32">
       <offset>28</offset>
     </column>
-    <column name="float_6" type="F32">
+    <column name="Float_4" type="F32">
       <offset>32</offset>
     </column>
-    <column name="float_7" type="F32">
+    <column name="Float_5" type="F32">
       <offset>36</offset>
     </column>
-    <column name="int_1" type="INT">
+    <column name="Float_6" type="F32">
       <offset>40</offset>
     </column>
-    <column name="int_2" type="INT">
+    <column name="Float_7" type="F32">
       <offset>44</offset>
     </column>
-    <column name="bool_1" type="U8">
+    <column name="Int_1" type="INT">
       <offset>48</offset>
     </column>
-    <column name="bool_2" type="U8">
-      <offset>49</offset>
+    <column name="Int_2" type="INT">
+      <offset>52</offset>
     </column>
-    <column name="bool_3" type="U8">
-      <offset>50</offset>
+    <column name="Bool_1" type="U8">
+      <offset>56</offset>
     </column>
-    <column name="bool_4" type="U8">
-      <offset>51</offset>
+    <column name="Bool_2" type="U8">
+      <offset>57</offset>
+    </column>
+    <column name="Bool_3" type="U8">
+      <offset>58</offset>
+    </column>
+    <column name="Bool_4" type="U8">
+      <offset>59</offset>
     </column>
     <column name="Color_1" type="U8FIXEDARRAY">
-      <offset>52</offset>
+      <offset>60</offset>
       <num_elements>4</num_elements>
       <format>COLOR</format>
     </column>
     <column name="Color_2" type="U8FIXEDARRAY">
-      <offset>56</offset>
+      <offset>64</offset>
       <num_elements>4</num_elements>
       <format>COLOR</format>
     </column>
-    <column name="string_1" type="STRING">
-      <offset>60</offset>
+    <column name="String_1" type="STRING">
+      <offset>72</offset>
     </column>
-    <column name="string_2" type="STRING">
-      <offset>64</offset>
+    <column name="String_2" type="STRING">
+      <offset>80</offset>
     </column>
-    <column name="object_1" type="EMBEDDEDSTRUCT">
-      <offset>68</offset>
+    <column name="Object_1" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
       <subtable external="TerrainObjectRef" />
     </column>
     <column name="}" type="END" />

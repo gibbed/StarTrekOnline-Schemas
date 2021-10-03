@@ -7,5 +7,6 @@
     <element name="Actor">3</element>
     <element name="TeamSpokesman">4</element>
     <element name="NamedPet">5</element>
+    <element name="Indexed">6</element>
   </elements>
 </enum>

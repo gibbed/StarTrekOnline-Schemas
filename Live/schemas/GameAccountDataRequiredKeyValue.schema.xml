@@ -14,14 +14,14 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="SpecificStringValue" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="MinValue" type="INT">
+    <column name="Specificstringvalue" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="MaxValue" type="INT">
-      <offset>12</offset>
+    <column name="Minvalue" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Maxvalue" type="INT">
+      <offset>20</offset>
       <default>-1</default>
     </column>
     <column name="}" type="END" />

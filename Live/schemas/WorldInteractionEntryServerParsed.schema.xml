@@ -7,22 +7,34 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="base_data" type="EMBEDDEDSTRUCT">
+    <column name="Base_Data" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="WorldCellEntryParsed" />
     </column>
     <column name="UID" type="INT">
       <offset>72</offset>
     </column>
-    <column name="initial_selected_child" type="INT">
+    <column name="Initial_Selected_Child" type="INT">
       <offset>76</offset>
+      <default>-1</default>
     </column>
-    <column name="visible_child_count" type="INT">
+    <column name="Visible_Child_Count" type="INT">
       <offset>80</offset>
     </column>
-    <column name="full_interaction_properties" type="OPTIONALSTRUCT">
-      <offset>84</offset>
+    <column name="Full_Interaction_Properties" type="OPTIONALSTRUCT">
+      <offset>88</offset>
       <subtable external="WorldInteractionProperties" />
+    </column>
+    <column name="Scale" type="F32FIXEDARRAY">
+      <offset>96</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1.0, 1.0, 1.0</format_string>
+      </format_strings>
     </column>
     <column name="}" type="END" />
   </table>

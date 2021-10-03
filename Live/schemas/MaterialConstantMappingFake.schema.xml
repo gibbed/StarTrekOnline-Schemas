@@ -7,17 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="data_type" type="INT">
+    <column name="Data_Type" type="INT">
       <offset>0</offset>
     </column>
-    <column name="constant_index" type="INT">
+    <column name="Constant_Index" type="INT">
       <offset>4</offset>
     </column>
-    <column name="constant_subindex" type="INT">
+    <column name="Constant_Subindex" type="INT">
       <offset>8</offset>
     </column>
     <column name="Values" type="F32FIXEDARRAY">
-      <offset>20</offset>
+      <offset>16</offset>
       <num_elements>6</num_elements>
     </column>
     <column name="}" type="END" />

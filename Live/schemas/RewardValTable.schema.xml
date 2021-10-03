@@ -15,35 +15,42 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="Rank" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>STRUCTPARAM</flag>
-      </flags>
-    </column>
-    <column name="SubRank" type="STRING">
+    <column name="FileName" type="CURRENTFILE">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rank" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="ValType" type="INT">
-      <offset>12</offset>
+    <column name="Subrank" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Valtype" type="INT">
+      <offset>32</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <static_define_list external="RewardValueType" />
     </column>
-    <column name="shouldIndex" type="U8">
-      <offset>16</offset>
+    <column name="Shouldindex" type="U8">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Val" type="F32ARRAY">
-      <offset>20</offset>
+      <offset>40</offset>
     </column>
     <column name="Adj" type="F32ARRAY">
-      <offset>24</offset>
+      <offset>48</offset>
     </column>
     <column name="}" type="END" />
   </table>

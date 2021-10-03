@@ -10,8 +10,8 @@
     <column name="ContainerID" type="INT">
       <offset>0</offset>
     </column>
-    <column name="PetList" type="STRUCT">
-      <offset>4</offset>
+    <column name="Petlist" type="STRUCT">
+      <offset>8</offset>
       <subtable external="TeamInfoPet" />
     </column>
     <column name="}" type="END" />

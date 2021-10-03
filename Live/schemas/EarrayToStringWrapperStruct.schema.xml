@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="WrapperElements" type="STRUCT">
+    <column name="Wrapperelements" type="STRUCT">
       <offset>0</offset>
       <subtable external="EarrayToStringWrapperStruct_Dummy" />
     </column>

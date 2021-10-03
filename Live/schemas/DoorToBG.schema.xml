@@ -11,15 +11,15 @@
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="usepos" type="BIT">
+    <column name="Usepos" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="usefacing" type="BIT">
+    <column name="Usefacing" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="useroll" type="BIT">
+    <column name="Useroll" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>
@@ -29,10 +29,12 @@
     <column name="Position" type="F32FIXEDARRAY">
       <offset>8</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="pyFace" type="F32FIXEDARRAY">
+    <column name="Pyface" type="F32FIXEDARRAY">
       <offset>20</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

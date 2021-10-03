@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="LeaderboardIntervalType">
+  <elements type="int">
+    <element name="UNUSED">0</element>
+    <element name="Off">1</element>
+    <element name="Daily">2</element>
+    <element name="Weekly">3</element>
+    <element name="Seasonally">4</element>
+  </elements>
+</enum>

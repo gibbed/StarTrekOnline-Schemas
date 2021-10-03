@@ -15,41 +15,45 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="deps" type="STRUCT">
-      <offset>8</offset>
+    <column name="Deps" type="STRUCT">
+      <offset>16</offset>
       <subtable external="FileEntry" />
     </column>
     <column name="Version" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
-    <column name="DeprecatedMapNewMapName" type="STRING">
-      <offset>16</offset>
+    <column name="Deprecatedmapnewmapname" type="STRING">
+      <offset>32</offset>
     </column>
     <column name="Object" type="STRUCT">
-      <offset>20</offset>
+      <offset>40</offset>
       <subtable external="ZoneMapEncounterObjectInfo" />
     </column>
     <column name="Region" type="STRUCT">
-      <offset>24</offset>
+      <offset>48</offset>
       <subtable external="ZoneMapEncounterRegionInfo" />
     </column>
-    <column name="PlayableVolume" type="STRUCT">
-      <offset>28</offset>
+    <column name="Playablevolume" type="STRUCT">
+      <offset>56</offset>
       <subtable external="ZoneMapEncounterRoomInfo" />
     </column>
-    <column name="VolumeLogicalName" type="STRINGARRAY">
-      <offset>32</offset>
+    <column name="Volumelogicalname" type="STRINGARRAY">
+      <offset>64</offset>
     </column>
-    <column name="SecondaryMap" type="STRUCT">
-      <offset>36</offset>
+    <column name="Secondarymap" type="STRUCT">
+      <offset>72</offset>
       <subtable external="SecondaryZoneMap" />
     </column>
-    <column name="v2" type="IGNORE" />
+    <column name="Sendevents" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="ZoneMapEncounterVariableDef" />
+    </column>
+    <column name="V2" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

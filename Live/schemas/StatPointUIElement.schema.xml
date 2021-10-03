@@ -7,30 +7,30 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AttribType" type="INT">
+    <column name="Attribtype" type="INT">
       <offset>0</offset>
       <static_define_list external="AttribType" />
     </column>
-    <column name="AttribName" type="STRING">
-      <offset>4</offset>
+    <column name="Attribname" type="STRING">
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="DisplayName" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Description" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="CurrentValue" type="F32">
-      <offset>16</offset>
+    <column name="Currentvalue" type="F32">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

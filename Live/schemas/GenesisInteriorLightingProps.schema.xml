@@ -7,25 +7,28 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="child_light" type="IGNORE">
+    <column name="Child_Light" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">GroupDefRef</format_string>
+      </format_strings>
     </column>
     <column name="UID" type="INT">
       <offset>0</offset>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="InnerAngle" type="F32">
       <offset>8</offset>
     </column>
-    <column name="OuterAngle" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="NoLights" type="BIT">
+    <column name="Innerangle" type="F32">
       <offset>16</offset>
+    </column>
+    <column name="Outerangle" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Nolights" type="BIT">
+      <offset>24</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

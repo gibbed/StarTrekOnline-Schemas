@@ -16,96 +16,122 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Scope" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
-      <subtable external="DisplayMessage" />
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="displayNameMsg2" type="EMBEDDEDSTRUCT">
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
       <offset>24</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="descriptionMsg" type="EMBEDDEDSTRUCT">
-      <offset>36</offset>
+    <column name="Displaynamemsg2" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
       <subtable external="DisplayMessage" />
     </column>
+    <column name="Descriptionmsg" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Itempowertag" type="STRINGARRAY">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
     <column name="Icon" type="STRING">
-      <offset>48</offset>
+      <offset>104</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Notes" type="STRING">
-      <offset>52</offset>
+      <offset>112</offset>
     </column>
     <column name="Flags" type="INT">
-      <offset>56</offset>
+      <offset>120</offset>
       <static_define_list external="ItemPowerFlag" />
       <format>FLAGS</format>
     </column>
-    <column name="ExprEconomyPoints" type="OPTIONALSTRUCT">
-      <offset>60</offset>
+    <column name="Expreconomypoints" type="OPTIONALSTRUCT">
+      <offset>128</offset>
       <subtable external="Expression" />
     </column>
     <column name="Power" type="REFERENCE">
-      <offset>64</offset>
+      <offset>136</offset>
       <dictionary_name>PowerDef</dictionary_name>
     </column>
-    <column name="PowerReplace" type="REFERENCE">
-      <offset>68</offset>
+    <column name="Powerreplace" type="REFERENCE">
+      <offset>144</offset>
       <dictionary_name>PowerReplaceDef</dictionary_name>
     </column>
-    <column name="PowerSlot" type="REFERENCE">
-      <offset>68</offset>
+    <column name="Powerslot" type="REFERENCE">
+      <offset>144</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>PowerReplace</redundant_name>
+      <redundant_name>Powerreplace</redundant_name>
       <dictionary_name>PowerReplaceDef</dictionary_name>
     </column>
     <column name="Restriction" type="OPTIONALSTRUCT">
-      <offset>72</offset>
+      <offset>152</offset>
       <subtable external="UsageRestriction" />
     </column>
-    <column name="CraftRecipe" type="REFERENCE">
-      <offset>76</offset>
+    <column name="Craftrecipe" type="REFERENCE">
+      <offset>160</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="ValueRecipe" type="REFERENCE">
-      <offset>80</offset>
+    <column name="Valuerecipe" type="REFERENCE">
+      <offset>168</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="PowerConfig" type="OPTIONALSTRUCT">
-      <offset>84</offset>
+    <column name="Powerconfig" type="OPTIONALSTRUCT">
+      <offset>176</offset>
       <subtable external="CritterPowerConfig" />
     </column>
-    <column name="PointBuyCost" type="INT">
-      <offset>88</offset>
+    <column name="Pointbuycost" type="INT">
+      <offset>184</offset>
     </column>
-    <column name="ItemPowerCategory" type="INT">
-      <offset>92</offset>
+    <column name="Itempowercategory" type="INT">
+      <offset>188</offset>
       <static_define_list external="ItemPowerCategory" />
       <format>FLAGS</format>
     </column>
-    <column name="ArtCategory" type="INT">
-      <offset>96</offset>
+    <column name="Artcategory" type="INT">
+      <offset>192</offset>
       <static_define_list external="ItemPowerArtCategory" />
     </column>
-    <column name="FactorValue" type="INT">
-      <offset>100</offset>
+    <column name="Factorvalue" type="INT">
+      <offset>196</offset>
+    </column>
+    <column name="Randomizescalefactor" type="BIT">
+      <offset>200</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Allowscalefactorreroll" type="BIT">
+      <offset>200</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Minscalefactor" type="F32">
+      <offset>204</offset>
+    </column>
+    <column name="Maxscalefactor" type="F32">
+      <offset>208</offset>
+    </column>
+    <column name="Scalefactorrerollmin" type="F32">
+      <offset>212</offset>
+    </column>
+    <column name="Scalefactorrerollmax" type="F32">
+      <offset>216</offset>
     </column>
     <column name="Group" type="IGNORE" />
-    <column name="EconomyPoints" type="IGNORE" />
+    <column name="Economypoints" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

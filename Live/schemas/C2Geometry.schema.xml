@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="C2Geometry">
+  <table>
+    <column name="C2Geometry" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Geooptions" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
+      <subtable external="C2GeometryOptions" />
+    </column>
+    <column name="Childgeometry" type="STRUCT">
+      <offset>96</offset>
+      <subtable external="C2GeometryChild" />
+    </column>
+    <column name="Cbone" type="REFERENCE">
+      <offset>104</offset>
+      <dictionary_name>PCBoneDef</dictionary_name>
+    </column>
+    <column name="Restrictedto" type="U8">
+      <offset>112</offset>
+      <static_define_list external="PCRestriction" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Category" type="STRUCT">
+      <offset>120</offset>
+      <subtable external="PCCategoryRef" />
+    </column>
+    <column name="Appearance" type="OPTIONALSTRUCT">
+      <offset>128</offset>
+      <subtable external="C2Appearance" />
+    </column>
+    <column name="Colorsets" type="STRUCT">
+      <offset>136</offset>
+      <subtable external="C2ColorSetMapping" />
+    </column>
+    <column name="Texturechannelconfig" type="REFERENCE">
+      <offset>144</offset>
+      <dictionary_name>C2TextureChannelConfig</dictionary_name>
+    </column>
+    <column name="C2texturelibs" type="STRINGARRAY">
+      <offset>152</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>C2TextureLib</dictionary_name>
+    </column>
+    <column name="C2materials" type="STRINGARRAY">
+      <offset>160</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>C2Material</dictionary_name>
+    </column>
+    <column name="Unlockcache" type="OPTIONALSTRUCT">
+      <offset>168</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>UNOWNED</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <subtable external="PCCostumeUnlockCache" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

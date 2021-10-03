@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iContainerID" type="INT">
+    <column name="Icontainerid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
@@ -20,65 +20,65 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="OwnerAccountID" type="INT">
+    <column name="Owneraccountid" type="INT">
       <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iLangID" type="INT">
+    <column name="Ilangid" type="INT">
       <offset>12</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="recipientID" type="INT">
+    <column name="Recipientid" type="INT">
       <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
     <column name="Title" type="STRING">
-      <offset>20</offset>
-      <flags>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="Description" type="STRING">
       <offset>24</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="Price" type="INT">
-      <offset>28</offset>
+    <column name="Description" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pOptionalData" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+    <column name="Price" type="INT">
+      <offset>40</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Poptionaldata" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="AuctionLotOptionalData" />
     </column>
-    <column name="pBiddingInfo" type="OPTIONALSTRUCT">
-      <offset>36</offset>
+    <column name="Pbiddinginfo" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="AuctionBiddingInfo" />
     </column>
     <column name="State" type="INT">
-      <offset>40</offset>
+      <offset>64</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <static_define_list external="AuctionLotState" />
     </column>
     <column name="creationTime" type="INT">
-      <offset>44</offset>
+      <offset>68</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
@@ -86,8 +86,8 @@
         <format_string name="JSON_SECS_TO_RFC822">1</format_string>
       </format_strings>
     </column>
-    <column name="modifiedTime" type="INT">
-      <offset>48</offset>
+    <column name="Modifiedtime" type="INT">
+      <offset>72</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
@@ -95,8 +95,8 @@
         <format_string name="JSON_SECS_TO_RFC822">1</format_string>
       </format_strings>
     </column>
-    <column name="uExpireTime" type="INT">
-      <offset>52</offset>
+    <column name="Uexpiretime" type="INT">
+      <offset>76</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
@@ -104,61 +104,82 @@
         <format_string name="JSON_SECS_TO_RFC822">1</format_string>
       </format_strings>
     </column>
-    <column name="uPostingFee" type="INT">
-      <offset>56</offset>
+    <column name="Upostingfee" type="INT">
+      <offset>80</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="ppItemsV2" type="STRUCT">
-      <offset>60</offset>
+    <column name="Ppitemsv2" type="STRUCT">
+      <offset>88</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="AuctionSlot" />
     </column>
-    <column name="ppItemsV1_Deprecated" type="STRUCT">
-      <offset>64</offset>
+    <column name="Ppitemsv1_Deprecated" type="STRUCT">
+      <offset>96</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="AuctionSlotV1" />
     </column>
-    <column name="ppItems" type="STRUCT">
-      <offset>64</offset>
+    <column name="Ppitems" type="STRUCT">
+      <offset>96</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
         <flag>NO_INDEX</flag>
       </flags>
-      <redundant_name>ppItemsV1_Deprecated</redundant_name>
+      <redundant_name>Ppitemsv1_Deprecated</redundant_name>
       <subtable external="AuctionSlotV1" />
     </column>
-    <column name="auctionPetContainerIDs" type="INTARRAY">
-      <offset>68</offset>
+    <column name="Auctionpetcontainerids" type="INTARRAY">
+      <offset>104</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uVersion" type="INT">
-      <offset>72</offset>
+    <column name="Uversion" type="INT">
+      <offset>112</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="bWasPostedRemotely" type="BIT">
-      <offset>76</offset>
+    <column name="Ugamespecificversion" type="INT">
+      <offset>116</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Bwaspostedremotely" type="BIT">
+      <offset>120</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <bit_offset>65536</bit_offset>
     </column>
+    <column name="Bisridiculous" type="BIT">
+      <offset>120</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Blothasdeleteditems" type="BIT">
+      <offset>120</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+    </column>
     <column name="Apply Transaction" type="COMMAND">
       <offset>0</offset>
       <command_string>ServerMonTransactionOnEntity AuctionLot $FIELD(iContainerID) $STRING(Transaction String)$CONFIRM(Really apply this transaction?)</command_string>
     </column>
+    <column name="Usoldfee" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

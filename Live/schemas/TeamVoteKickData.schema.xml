@@ -7,23 +7,23 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="InstigatorID" type="INT">
+    <column name="Instigatorid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="KickTargetID" type="INT">
+    <column name="Kicktargetid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="eaiVoterIDs" type="INTARRAY">
+    <column name="Eaivoterids" type="INTARRAY">
       <offset>8</offset>
     </column>
-    <column name="eaiYesVoterIDs" type="INTARRAY">
-      <offset>12</offset>
-    </column>
-    <column name="eaiNoVoterIDs" type="INTARRAY">
+    <column name="Eaiyesvoterids" type="INTARRAY">
       <offset>16</offset>
     </column>
-    <column name="uVoteStartTime" type="INT">
-      <offset>20</offset>
+    <column name="Eainovoterids" type="INTARRAY">
+      <offset>24</offset>
+    </column>
+    <column name="Uvotestarttime" type="INT">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

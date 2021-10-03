@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RewardBags" type="STRUCT">
+    <column name="Rewardbags" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>NO_INDEX</flag>
@@ -15,7 +15,10 @@
       <subtable external="InventoryBag" />
     </column>
     <column name="Choices" type="STRINGARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
+    </column>
+    <column name="Dynamicitemindex" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -15,14 +15,18 @@
       </flags>
     </column>
     <column name="Settings" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="OptionSetting" />
     </column>
+    <column name="Hide" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
     <column name="DisplayName" type="REFERENCE">
-      <offset>8</offset>
+      <offset>32</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
     <column name="}" type="END" />

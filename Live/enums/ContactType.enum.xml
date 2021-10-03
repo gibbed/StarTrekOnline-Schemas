@@ -3,5 +3,6 @@
   <elements type="int">
     <element name="List">0</element>
     <element name="SingleDialog">1</element>
+    <element name="ActionContact">2</element>
   </elements>
 </enum>

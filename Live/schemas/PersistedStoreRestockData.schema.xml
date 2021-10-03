@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pchRestockDef" type="STRING">
+    <column name="Pchrestockdef" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -15,14 +15,14 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uNextReplenishTime" type="INT">
-      <offset>4</offset>
+    <column name="Unextreplenishtime" type="INT">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eCategory" type="IGNORE" />
+    <column name="Ecategory" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

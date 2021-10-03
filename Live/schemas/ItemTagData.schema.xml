@@ -14,18 +14,19 @@
       </flags>
       <static_define_list external="ItemTag" />
     </column>
-    <column name="esItemTagName" type="STRING">
-      <offset>4</offset>
+    <column name="Esitemtagname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="SkillType" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
       <static_define_list external="SkillType" />
     </column>
-    <column name="SpecializationRequired" type="U8">
-      <offset>12</offset>
+    <column name="Specializationrequired" type="U8">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemAssignmentDebugWeights">
+  <table>
+    <column name="ItemAssignmentDebugWeights" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Slotcount" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Outcome" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ItemAssignmentDebugOutcomeWeights" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

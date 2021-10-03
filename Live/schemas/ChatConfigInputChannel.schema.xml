@@ -7,39 +7,42 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SystemName" type="STRING">
+    <column name="Systemname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="DisplayName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="IsBuiltIn" type="BIT">
-      <offset>8</offset>
+    <column name="Isbuiltin" type="BIT">
+      <offset>16</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsSubscribed" type="BIT">
-      <offset>8</offset>
+    <column name="Issubscribed" type="BIT">
+      <offset>16</offset>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="PreventItemLinks" type="BIT">
-      <offset>8</offset>
+    <column name="Preventitemlinks" type="BIT">
+      <offset>16</offset>
       <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Color" type="INT">
-      <offset>12</offset>
+      <offset>20</offset>
     </column>
-    <column name="ColorHex" type="FIXEDSTRING">
-      <offset>16</offset>
+    <column name="Colorhex" type="FIXEDSTRING">
+      <offset>24</offset>
       <string_length>9</string_length>
     </column>
-    <column name="uLastUpdateTime" type="INT">
-      <offset>28</offset>
+    <column name="Ulastupdatetime" type="INT">
+      <offset>36</offset>
     </column>
     <column name="}" type="END" />
   </table>

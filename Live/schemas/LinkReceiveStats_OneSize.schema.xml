@@ -28,7 +28,7 @@
         <format_string name="HTML_TICKS_DURATION">1</format_string>
       </format_strings>
     </column>
-    <column name="AverageDuration" type="INT64">
+    <column name="Averageduration" type="INT64">
       <offset>32</offset>
       <format_strings>
         <format_string name="HTML_TICKS_DURATION">1</format_string>

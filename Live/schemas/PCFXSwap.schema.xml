@@ -6,23 +6,27 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="pcOldName" type="STRING">
+    <column name="Pcoldname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
+        <flag>GLOBAL_NAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
+      <dictionary_name>DynFXInfo</dictionary_name>
     </column>
-    <column name="pcNewName" type="STRING">
-      <offset>4</offset>
+    <column name="Pcnewname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
+        <flag>GLOBAL_NAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
+      <dictionary_name>DynFXInfo</dictionary_name>
     </column>
     <column name="&#xA;" type="END" />
   </table>

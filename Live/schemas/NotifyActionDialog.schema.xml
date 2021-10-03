@@ -12,11 +12,12 @@
       <dictionary_name>Message</dictionary_name>
     </column>
     <column name="Close" type="INTARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="NotifyType" />
     </column>
-    <column name="OnlyInUGC" type="U8">
-      <offset>8</offset>
+    <column name="Oklabel" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>Message</dictionary_name>
     </column>
     <column name="}" type="END" />
   </table>

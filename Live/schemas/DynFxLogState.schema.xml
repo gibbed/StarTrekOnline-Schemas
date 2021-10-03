@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="xform" type="EMBEDDEDSTRUCT">
+    <column name="Xform" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="DynTransform" />
     </column>

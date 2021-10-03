@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PowersAutoQueueConditionComparator">
+  <elements type="int">
+    <element name="Invalid">0</element>
+    <element name="GreaterThan">1</element>
+    <element name="GreaterThanOrEqual">2</element>
+    <element name="LessThan">4</element>
+    <element name="LessThanOrEqual">8</element>
+    <element name="Equals">16</element>
+    <element name="DoesNotEqual">32</element>
+  </elements>
+</enum>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="eSkeletonRelationshipType">
+  <elements type="int">
+    <element name="NotSet">0</element>
+    <element name="Family">1</element>
+    <element name="Glueup">2</element>
+  </elements>
+</enum>

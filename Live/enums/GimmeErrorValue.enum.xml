@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <enum name="GimmeErrorValue">
   <elements type="int">
+    <element name="ERROR_INVALID">-1</element>
     <element name="NO_ERROR">0</element>
     <element name="ERROR_COPY">1</element>
     <element name="ERROR_RULESFILE">2</element>
@@ -22,5 +23,7 @@
     <element name="ERROR_COMMANDLINE">18</element>
     <element name="ERROR_UNKNOWN">19</element>
     <element name="ERROR_BLOCKED">20</element>
+    <element name="ERROR_BAD_ARGS">21</element>
+    <element name="ERROR_DISABLED">22</element>
   </elements>
 </enum>

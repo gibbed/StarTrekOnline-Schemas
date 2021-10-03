@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NotificationType" type="STRING">
+    <column name="Notificationtype" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>

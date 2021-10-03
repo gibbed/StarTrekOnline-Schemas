@@ -13,8 +13,8 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="DurationScale" type="STRUCT">
-      <offset>4</offset>
+    <column name="Durationscale" type="STRUCT">
+      <offset>8</offset>
       <subtable external="ItemAssignmentDurationScale" />
     </column>
     <column name="}" type="END" />

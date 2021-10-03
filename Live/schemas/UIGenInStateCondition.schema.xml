@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="UIGenInStateCondition">
+  <table>
+    <column name="UIGenInStateCondition" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Gen" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>REQUIRED</flag>
+      </flags>
+    </column>
+    <column name="State" type="INTARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>REQUIRED</flag>
+      </flags>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="Hgen" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>UIGen</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

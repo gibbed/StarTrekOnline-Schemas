@@ -15,29 +15,29 @@
         <flag>REQUIRED</flag>
       </flags>
     </column>
-    <column name="KeyCode" type="INT">
-      <offset>4</offset>
+    <column name="Keycode" type="INT">
+      <offset>8</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>
     </column>
     <column name="X" type="INT16">
-      <offset>8</offset>
-    </column>
-    <column name="Y" type="INT16">
-      <offset>10</offset>
-    </column>
-    <column name="Width" type="INT16">
       <offset>12</offset>
     </column>
-    <column name="Height" type="INT16">
+    <column name="Y" type="INT16">
       <offset>14</offset>
     </column>
-    <column name="Char" type="STRING">
+    <column name="Width" type="INT16">
       <offset>16</offset>
     </column>
+    <column name="Height" type="INT16">
+      <offset>18</offset>
+    </column>
+    <column name="Char" type="STRING">
+      <offset>24</offset>
+    </column>
     <column name="Texture" type="STRING">
-      <offset>20</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>GLOBAL_NAME</flag>

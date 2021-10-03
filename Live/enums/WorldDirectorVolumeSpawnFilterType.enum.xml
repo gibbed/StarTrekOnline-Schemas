@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="WorldDirectorVolumeSpawnFilterType">
+  <elements type="int">
+    <element name="Require">0</element>
+    <element name="Exclude">1</element>
+    <element name="Count">2</element>
+  </elements>
+</enum>

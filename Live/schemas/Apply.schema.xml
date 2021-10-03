@@ -2,40 +2,45 @@
 <parser name="Apply">
   <table>
     <column type="LINENUM">
-      <offset>24</offset>
+      <offset>36</offset>
     </column>
     <column type="INT">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="DynOpType" />
     </column>
     <column type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
     <column type="F32">
-      <offset>8</offset>
-      <flags>
-        <flag>STRUCTPARAM</flag>
-      </flags>
-      <default>-1023</default>
-    </column>
-    <column type="F32">
-      <offset>12</offset>
-      <flags>
-        <flag>STRUCTPARAM</flag>
-      </flags>
-      <default>-1023</default>
-    </column>
-    <column type="F32">
       <offset>16</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <default>-1023</default>
+    </column>
+    <column type="F32">
+      <offset>20</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <default>-1023</default>
+    </column>
+    <column type="F32">
+      <offset>24</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <default>-1023</default>
+    </column>
+    <column type="F32">
+      <offset>28</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>

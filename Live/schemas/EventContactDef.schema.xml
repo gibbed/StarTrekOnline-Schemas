@@ -14,14 +14,20 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="DialogName" type="STRING">
-      <offset>4</offset>
+    <column name="Dialogname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Allegiance" type="STRINGARRAY">
-      <offset>8</offset>
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Excludeallegiance" type="STRINGARRAY">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

@@ -15,13 +15,11 @@
       <dictionary_name>UIStyleFont</dictionary_name>
     </column>
     <column name="Color" type="INT">
-      <offset>4</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <offset>8</offset>
+      <static_define_list external="Color" />
     </column>
     <column name="Shadow" type="INT">
-      <offset>8</offset>
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

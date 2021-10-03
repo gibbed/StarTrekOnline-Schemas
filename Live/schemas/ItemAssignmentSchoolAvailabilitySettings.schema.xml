@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemAssignmentSchoolAvailabilitySettings">
+  <table>
+    <column name="ItemAssignmentSchoolAvailabilitySettings" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Selectionalgorithm" type="INT">
+      <offset>0</offset>
+      <static_define_list external="ItemAssignmentAlgorithm" />
+    </column>
+    <column name="Persisted" type="U8">
+      <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Autofillemptyassignmentslots" type="U8">
+      <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allowassignmentstobedismissed" type="U8">
+      <offset>6</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dismissassignmentnumeric" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Dismissassignmentnumericcount" type="INT">
+      <offset>16</offset>
+      <default>1</default>
+    </column>
+    <column name="Refreshtimeminutes" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Availableassignmentslots" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Nextavailableassignmentslots" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Hazardchance" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

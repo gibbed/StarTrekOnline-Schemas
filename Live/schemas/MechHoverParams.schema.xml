@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MechHoverParams">
+  <table>
+    <column name="MechHoverParams" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Fuelcosthover" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Hoverinitialforce" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Hoversustainedforce" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

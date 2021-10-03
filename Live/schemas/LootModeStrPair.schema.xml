@@ -12,19 +12,19 @@
       <static_define_list external="LootMode" />
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Str" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Desc" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

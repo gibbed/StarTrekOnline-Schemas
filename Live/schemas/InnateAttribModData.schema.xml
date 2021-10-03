@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="InnateAttribMods" type="STRUCT">
+    <column name="Innateattribmods" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="InnateAttribMod" />
     </column>
-    <column name="dirtyBit" type="U8">
-      <offset>4</offset>
+    <column name="Dirtybit" type="U8">
+      <offset>8</offset>
       <flags>
         <flag>NO_NETSEND</flag>
         <flag>DIRTY_BIT</flag>

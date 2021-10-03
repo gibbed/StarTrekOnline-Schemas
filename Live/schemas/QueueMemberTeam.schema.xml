@@ -16,6 +16,10 @@
     <column name="TeamSize" type="INT">
       <offset>4</offset>
     </column>
+    <column name="Reputation" type="INT">
+      <offset>8</offset>
+      <static_define_list external="QueueReputation" />
+    </column>
     <column name="}" type="END" />
   </table>
 </parser>

@@ -4,5 +4,6 @@
     <element name="Accelerate">0</element>
     <element name="Linear">1</element>
     <element name="Sticky">2</element>
+    <element name="AccelerateVelocity">3</element>
   </elements>
 </enum>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MinicontactDef">
+  <table>
+    <column name="MinicontactDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Key" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Message" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="DisplayMessageWithVO" />
+    </column>
+    <column name="Minicontacttype" type="INT">
+      <offset>72</offset>
+      <static_define_list external="MinicontactType" />
+    </column>
+    <column name="Vocomments" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Strvocomments" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <redundant_name>Vocomments</redundant_name>
+    </column>
+    <column name="Conditionmessage" type="STRUCT">
+      <offset>88</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="MinicontactMessage" />
+    </column>
+    <column name="Style" type="EMBEDDEDSTRUCT">
+      <offset>96</offset>
+      <subtable external="WorldGameActionHeadshotProperties" />
+    </column>
+    <column name="Right" type="U8">
+      <offset>176</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Lastupdated" type="FIXEDSTRING">
+      <offset>177</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <string_length>128</string_length>
+    </column>
+    <column name="Usetexture" type="U8">
+      <offset>305</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Texture" type="STRING">
+      <offset>312</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Clientformatted" type="U8">
+      <offset>320</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Nametype" type="INT">
+      <offset>324</offset>
+      <static_define_list external="MinicontactNameType" />
+    </column>
+    <column name="Namemessage" type="EMBEDDEDSTRUCT">
+      <offset>328</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Namecritterdef" type="REFERENCE">
+      <offset>352</offset>
+      <dictionary_name>CritterDef</dictionary_name>
+    </column>
+    <column name="Namepetcontactlist" type="REFERENCE">
+      <offset>360</offset>
+      <dictionary_name>PetContactList</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="FX2PackageRef">
+  <table>
+    <column name="FX2PackageRef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Package" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>FX2Package</dictionary_name>
+    </column>
+    <column name="Uidinparent" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Uuidinparent" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Uidinparent</redundant_name>
+    </column>
+    <column name="Parameter" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="FX2ParameterKeyValue" />
+    </column>
+    <column name="Lodrange" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="FX2LODRange" />
+    </column>
+    <column name="Hidden" type="U8">
+      <offset>34</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Soloed" type="U8">
+      <offset>35</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uuidindoc" type="INT">
+      <offset>36</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>EDITOR_IGNORE</flag>
+        <flag>EDIT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -11,16 +11,17 @@
       <offset>0</offset>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="Preset" type="INT">
-      <offset>16</offset>
+      <offset>32</offset>
     </column>
-    <column name="IsCustomSpecies" type="U8">
-      <offset>20</offset>
+    <column name="Iscustomspecies" type="U8">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ConstCostume" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Constcostume" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="PlayerCostume" />
     </column>
     <column name="}" type="END" />

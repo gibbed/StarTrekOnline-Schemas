@@ -7,15 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SpawnAnimType" type="INT">
+    <column name="Spawnanimtype" type="INT">
       <offset>0</offset>
       <static_define_list external="EncounterTemplateOverrideType" />
     </column>
     <column name="SpawnAnim" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="SpawnLockdownTime" type="F32">
       <offset>8</offset>
+    </column>
+    <column name="Spawnlockdowntime" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Supportedworldspawntypes" type="INTARRAY">
+      <offset>24</offset>
+      <static_define_list external="CritterWorldSpawnAnimType" />
     </column>
     <column name="}" type="END" />
   </table>

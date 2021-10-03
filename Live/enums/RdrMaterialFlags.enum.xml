@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="RdrMaterialFlags">
+  <elements type="int">
+    <element name="NoBloom">0</element>
+    <element name="LowResAlpha">0</element>
+    <element name="NoOutlines">0</element>
+    <element name="DoubleSided">1</element>
+    <element name="NoZWrite">2</element>
+    <element name="NoZTest">4</element>
+    <element name="NoFog">8</element>
+    <element name="Backface">16</element>
+    <element name="NoTint">32</element>
+    <element name="DepthBias">128</element>
+    <element name="ForceFarDepth">256</element>
+    <element name="Decal">512</element>
+    <element name="DisableUvDensity">8192</element>
+    <element name="Transparent">16384</element>
+    <element name="Additive">32768</element>
+    <element name="Subtractive">49152</element>
+    <element name="BlendAdd">65536</element>
+    <element name="WorldTexCoordsXZ">131072</element>
+    <element name="WorldTexCoordsXY">262144</element>
+    <element name="WorldTexCoordsYZ">524288</element>
+    <element name="ScreenTexCoords">1048576</element>
+    <element name="StencilMode0">2097152</element>
+    <element name="StencilMode1">4194304</element>
+    <element name="StencilMode2">8388608</element>
+    <element name="NoColorWrite">33554432</element>
+    <element name="Unlit">134217728</element>
+    <element name="AlphaNoDOF">268435456</element>
+  </elements>
+</enum>

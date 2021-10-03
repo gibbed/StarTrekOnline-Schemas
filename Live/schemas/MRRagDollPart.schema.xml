@@ -7,70 +7,75 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ParentIndex" type="INT">
+    <column name="Parentindex" type="INT">
       <offset>0</offset>
     </column>
-    <column name="ParentAnchor" type="F32FIXEDARRAY">
+    <column name="Parentanchor" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="SelfAnchor" type="F32FIXEDARRAY">
+    <column name="Selfanchor" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="capsuleUniqueName" type="EMBEDDEDSTRUCT">
+    <column name="Capsuleuniquename" type="EMBEDDEDSTRUCT">
       <offset>28</offset>
       <subtable external="Capsule" />
     </column>
-    <column name="xyzSizeBox" type="F32FIXEDARRAY">
-      <offset>64</offset>
-      <num_elements>3</num_elements>
-    </column>
-    <column name="rot_matBox" type="MATPYR">
+    <column name="Xyzsizebox" type="F32FIXEDARRAY">
       <offset>76</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Rot_Matbox" type="MATPYR">
+      <offset>88</offset>
       <num_elements>9</num_elements>
     </column>
-    <column name="pos_matBox" type="F32FIXEDARRAY">
-      <offset>112</offset>
+    <column name="Pos_Matbox" type="F32FIXEDARRAY">
+      <offset>124</offset>
       <num_elements>3</num_elements>
     </column>
     <column name="Density" type="F32">
-      <offset>132</offset>
+      <offset>140</offset>
     </column>
     <column name="BoneName" type="STRING">
-      <offset>136</offset>
+      <offset>144</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="parentBoneName" type="STRING">
-      <offset>140</offset>
+    <column name="Parentbonename" type="STRING">
+      <offset>152</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Pos" type="F32FIXEDARRAY">
-      <offset>144</offset>
+      <offset>160</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Rot" type="QUATPYR">
-      <offset>156</offset>
-      <num_elements>4</num_elements>
-    </column>
-    <column name="pose_pos" type="F32FIXEDARRAY">
       <offset>172</offset>
-      <num_elements>3</num_elements>
-    </column>
-    <column name="pose_rot" type="QUATPYR">
-      <offset>184</offset>
       <num_elements>4</num_elements>
     </column>
-    <column name="pose" type="BIT">
-      <offset>204</offset>
+    <column name="Pose_Pos" type="F32FIXEDARRAY">
+      <offset>188</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Pose_Rot" type="QUATPYR">
+      <offset>200</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Pose" type="BIT">
+      <offset>224</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="isBox" type="BIT">
-      <offset>204</offset>
+    <column name="Isbox" type="BIT">
+      <offset>224</offset>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />

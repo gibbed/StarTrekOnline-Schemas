@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="QueuedEntry" type="OPTIONALSTRUCT">
+    <column name="Queuedentry" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="ComboTrackerEntry" />
     </column>
     <column name="Entries" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="ComboTrackerEntry" />
     </column>
     <column name="}" type="END" />

@@ -15,16 +15,18 @@
       </flags>
     </column>
     <column name="Frame" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="MovementBlendTrigger" type="F32">
       <offset>8</offset>
     </column>
-    <column name="MovementBlendTriggered" type="U8">
+    <column name="Movementblendtrigger" type="F32">
       <offset>12</offset>
     </column>
+    <column name="Movementblendtriggered" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
     <column name="Message" type="U8">
-      <offset>13</offset>
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

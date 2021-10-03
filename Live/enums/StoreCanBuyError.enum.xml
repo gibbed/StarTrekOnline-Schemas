@@ -21,5 +21,7 @@
     <element name="ItemUnique">17</element>
     <element name="PetAcquireLimit">18</element>
     <element name="NotCurrentlyAvailable">19</element>
+    <element name="BlockedByAutoSetting">20</element>
+    <element name="ItemDefGatePurchased">21</element>
   </elements>
 </enum>

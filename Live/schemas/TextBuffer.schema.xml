@@ -7,43 +7,45 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="UndoStackSize" type="INT">
+    <column name="Undostacksize" type="INT">
       <offset>0</offset>
       <default>20</default>
     </column>
     <column name="State" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ALWAYS_ALLOC</flag>
       </flags>
       <subtable external="TextBufferState" />
     </column>
     <column name="Undo" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="TextBufferState" />
     </column>
     <column name="Redo" type="STRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="TextBufferState" />
     </column>
     <column name="Clipboard" type="STRING">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
       <default_string />
     </column>
-    <column name="MaxLength" type="INT">
-      <offset>20</offset>
+    <column name="Maxlength" type="INT">
+      <offset>40</offset>
       <default>-1</default>
     </column>
-    <column name="PrivateClipboard" type="BIT">
-      <offset>36</offset>
+    <column name="Privateclipboard" type="BIT">
+      <offset>68</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="LastOpWasSimpleInsert" type="BIT">
-      <offset>36</offset>
+    <column name="Lastopwassimpleinsert" type="BIT">
+      <offset>68</offset>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

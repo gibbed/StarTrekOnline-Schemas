@@ -14,8 +14,8 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="friendCount" type="INT">
-      <offset>4</offset>
+    <column name="Friendcount" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

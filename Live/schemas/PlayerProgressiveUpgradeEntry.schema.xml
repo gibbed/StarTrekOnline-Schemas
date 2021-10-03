@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PlayerProgressiveUpgradeEntry">
+  <table>
+    <column name="PlayerProgressiveUpgradeEntry" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Requireditemdeftobuyupgrade" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ItemDefRef" />
+    </column>
+    <column name="Itemdeftoincrementonpurchase" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Playerprogressiveupgrademaxbagsizetoadd" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="PlayerProgressiveUpgradeMaxBagSizeToAdd" />
+    </column>
+    <column name="Classdisplaynameprefix" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Newpowerslotindexes" type="INTARRAY">
+      <offset>56</offset>
+    </column>
+    <column name="Playerprogressiveupgradeuidetailsrow" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="PlayerProgressiveUpgradeUIDetailsRow" />
+    </column>
+    <column name="Lockedtooltip" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

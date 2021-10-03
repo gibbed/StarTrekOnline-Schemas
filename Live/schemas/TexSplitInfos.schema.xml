@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TexSplitInfo" type="STRUCT">
+    <column name="Texsplitinfo" type="STRUCT">
       <offset>0</offset>
       <subtable external="TexSplitInfo" />
     </column>

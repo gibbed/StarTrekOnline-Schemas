@@ -11,10 +11,10 @@
       <offset>0</offset>
     </column>
     <column name="Dependencies" type="STRINGARRAY">
-      <offset>4</offset>
-    </column>
-    <column name="WritableAccounts" type="STRINGARRAY">
       <offset>8</offset>
+    </column>
+    <column name="Writableaccounts" type="STRINGARRAY">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -13,8 +13,8 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="MaxCount" type="INT">
-      <offset>4</offset>
+    <column name="Maxcount" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,36 +7,42 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PowerCategory" type="INT">
+    <column name="Powercategory" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="BasicAbs" type="F32">
+    <column name="Basicabs" type="F32">
       <offset>4</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>
     </column>
-    <column name="BasicPos" type="F32">
+    <column name="Basicpos" type="F32">
       <offset>8</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>
     </column>
-    <column name="BasicNeg" type="F32">
+    <column name="Basicneg" type="F32">
       <offset>12</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>
     </column>
-    <column name="Value" type="F32">
+    <column name="Basicbonus" type="F32">
       <offset>16</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Value" type="F32">
+      <offset>20</offset>
       <default>1</default>
     </column>
     <column name="Dirty" type="BIT">
-      <offset>20</offset>
+      <offset>24</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>

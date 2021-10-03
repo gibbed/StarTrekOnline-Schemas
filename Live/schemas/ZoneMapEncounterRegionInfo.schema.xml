@@ -14,22 +14,24 @@
       </flags>
     </column>
     <column name="Min" type="F32FIXEDARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Max" type="F32FIXEDARRAY">
-      <offset>16</offset>
+      <offset>20</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Rooms" type="STRUCT">
-      <offset>28</offset>
+      <offset>32</offset>
       <subtable external="ZoneMapEncounterRoomInfo" />
     </column>
-    <column name="GroundFocusHeight" type="F32">
-      <offset>32</offset>
+    <column name="Groundfocusheight" type="F32">
+      <offset>40</offset>
     </column>
     <column name="Type" type="INT">
-      <offset>36</offset>
+      <offset>44</offset>
       <static_define_list external="WorldRegionType" />
     </column>
     <column name="}" type="END" />

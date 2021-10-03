@@ -12,287 +12,337 @@
       <flags>
         <flag>POOL_STRING</flag>
         <flag>NO_WRITE</flag>
+        <flag>NO_TEXT_SAVE</flag>
         <flag>KEY</flag>
       </flags>
     </column>
     <column name="Texture" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="LifeSpan" type="F32">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
-    <column name="curvePath_0" type="EMBEDDEDSTRUCT">
-      <offset>20</offset>
+    <column name="Curvepath_0" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
       <subtable external="DynFxFastParticleCurveInfo" />
     </column>
-    <column name="curvePath_1" type="EMBEDDEDSTRUCT">
-      <offset>52</offset>
+    <column name="Curvepath_1" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
       <subtable external="DynFxFastParticleCurveInfo" />
     </column>
-    <column name="curvePath_2" type="EMBEDDEDSTRUCT">
-      <offset>84</offset>
+    <column name="Curvepath_2" type="EMBEDDEDSTRUCT">
+      <offset>96</offset>
       <subtable external="DynFxFastParticleCurveInfo" />
     </column>
-    <column name="curvePath_3" type="EMBEDDEDSTRUCT">
-      <offset>116</offset>
+    <column name="Curvepath_3" type="EMBEDDEDSTRUCT">
+      <offset>128</offset>
       <subtable external="DynFxFastParticleCurveInfo" />
     </column>
-    <column name="curveTime_0" type="EMBEDDEDSTRUCT">
-      <offset>148</offset>
+    <column name="Curvetime_0" type="EMBEDDEDSTRUCT">
+      <offset>160</offset>
       <subtable external="DynFxFastParticleCurveInfo" />
     </column>
-    <column name="curveTime_1" type="EMBEDDEDSTRUCT">
-      <offset>180</offset>
+    <column name="Curvetime_1" type="EMBEDDEDSTRUCT">
+      <offset>192</offset>
       <subtable external="DynFxFastParticleCurveInfo" />
     </column>
-    <column name="curveTime_2" type="EMBEDDEDSTRUCT">
-      <offset>212</offset>
+    <column name="Curvetime_2" type="EMBEDDEDSTRUCT">
+      <offset>224</offset>
       <subtable external="DynFxFastParticleCurveInfo" />
     </column>
-    <column name="curveTime_3" type="EMBEDDEDSTRUCT">
-      <offset>244</offset>
+    <column name="Curvetime_3" type="EMBEDDEDSTRUCT">
+      <offset>256</offset>
       <subtable external="DynFxFastParticleCurveInfo" />
     </column>
-    <column name="curveJitter_0" type="EMBEDDEDSTRUCT">
-      <offset>276</offset>
+    <column name="Curvejitter_0" type="EMBEDDEDSTRUCT">
+      <offset>288</offset>
       <subtable external="DynFxFastParticleCurveInfo" />
     </column>
-    <column name="curveJitter_1" type="EMBEDDEDSTRUCT">
-      <offset>308</offset>
+    <column name="Curvejitter_1" type="EMBEDDEDSTRUCT">
+      <offset>320</offset>
       <subtable external="DynFxFastParticleCurveInfo" />
     </column>
-    <column name="curveJitter_2" type="EMBEDDEDSTRUCT">
-      <offset>340</offset>
+    <column name="Curvejitter_2" type="EMBEDDEDSTRUCT">
+      <offset>352</offset>
       <subtable external="DynFxFastParticleCurveInfo" />
     </column>
-    <column name="curveJitter_3" type="EMBEDDEDSTRUCT">
-      <offset>372</offset>
+    <column name="Curvejitter_3" type="EMBEDDEDSTRUCT">
+      <offset>384</offset>
       <subtable external="DynFxFastParticleCurveInfo" />
     </column>
-    <column name="LoopHue" type="F32">
-      <offset>404</offset>
-    </column>
-    <column name="LoopSaturation" type="F32">
-      <offset>408</offset>
-    </column>
-    <column name="LoopValue" type="F32">
-      <offset>412</offset>
-    </column>
-    <column name="LoopAlpha" type="F32">
+    <column name="Loophue" type="F32">
       <offset>416</offset>
     </column>
-    <column name="LoopScaleX" type="F32">
+    <column name="Loopsaturation" type="F32">
       <offset>420</offset>
     </column>
-    <column name="LoopScaleY" type="F32">
+    <column name="Loopvalue" type="F32">
       <offset>424</offset>
     </column>
-    <column name="LoopRotation" type="F32">
+    <column name="Loopalpha" type="F32">
       <offset>428</offset>
     </column>
-    <column name="LoopSpin" type="F32">
+    <column name="Loopscalex" type="F32">
       <offset>432</offset>
     </column>
-    <column name="curveTimeScale" type="EMBEDDEDSTRUCT">
+    <column name="Loopscaley" type="F32">
       <offset>436</offset>
+    </column>
+    <column name="Looprotation" type="F32">
+      <offset>440</offset>
+    </column>
+    <column name="Loopspin" type="F32">
+      <offset>444</offset>
+    </column>
+    <column name="Emissiveexposure" type="F32">
+      <offset>448</offset>
+    </column>
+    <column name="Curvetimescale" type="EMBEDDEDSTRUCT">
+      <offset>452</offset>
       <subtable external="DynFxFastParticleCurveInfo" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>468</offset>
+      <offset>488</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Position" type="F32FIXEDARRAY">
-      <offset>952</offset>
-      <num_elements>3</num_elements>
-    </column>
-    <column name="PositionJitter" type="F32FIXEDARRAY">
-      <offset>964</offset>
-      <num_elements>3</num_elements>
-    </column>
-    <column name="PositionSphereJitter" type="F32FIXEDARRAY">
       <offset>976</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="Velocity" type="F32FIXEDARRAY">
+    <column name="Positionjitter" type="F32FIXEDARRAY">
       <offset>988</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="VelocityJitter" type="F32FIXEDARRAY">
+    <column name="Positionspherejitter" type="F32FIXEDARRAY">
       <offset>1000</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="Acceleration" type="F32FIXEDARRAY">
+    <column name="Velocity" type="F32FIXEDARRAY">
       <offset>1012</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="AccelerationJitter" type="F32FIXEDARRAY">
+    <column name="Velocityjitter" type="F32FIXEDARRAY">
       <offset>1024</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Acceleration" type="F32FIXEDARRAY">
+      <offset>1036</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Accelerationjitter" type="F32FIXEDARRAY">
+      <offset>1048</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Gravity" type="F32">
-      <offset>1036</offset>
-    </column>
-    <column name="GravityJitter" type="F32">
-      <offset>1040</offset>
-    </column>
-    <column name="VelocityUpdateRate" type="F32">
-      <offset>1044</offset>
-    </column>
-    <column name="AccelerationUpdateRate" type="F32">
-      <offset>1052</offset>
-    </column>
-    <column name="GoTo" type="F32">
       <offset>1060</offset>
     </column>
-    <column name="Magnetism" type="F32">
+    <column name="Gravityjitter" type="F32">
       <offset>1064</offset>
     </column>
-    <column name="VelocityOut" type="F32">
+    <column name="Velocityupdaterate" type="F32">
       <offset>1068</offset>
     </column>
-    <column name="KillRadius" type="F32">
-      <offset>1072</offset>
-    </column>
-    <column name="Rate" type="F32">
+    <column name="Accelerationupdaterate" type="F32">
       <offset>1076</offset>
     </column>
-    <column name="RateJitter" type="F32">
-      <offset>1080</offset>
-    </column>
-    <column name="RatePerFoot" type="F32">
+    <column name="Goto" type="F32">
       <offset>1084</offset>
     </column>
-    <column name="RatePerFootJitter" type="F32">
+    <column name="Magnetism" type="F32">
       <offset>1088</offset>
     </column>
-    <column name="MinSpeed" type="F32">
+    <column name="Velocityout" type="F32">
       <offset>1092</offset>
     </column>
-    <column name="Count" type="INT">
+    <column name="Killradius" type="F32">
       <offset>1096</offset>
     </column>
-    <column name="CountJitter" type="INT">
+    <column name="Rate" type="F32">
       <offset>1100</offset>
     </column>
-    <column name="CountPerFoot" type="F32">
+    <column name="Ratejitter" type="F32">
       <offset>1104</offset>
     </column>
-    <column name="CountPerFootJitter" type="F32">
+    <column name="Rateperfoot" type="F32">
       <offset>1108</offset>
     </column>
-    <column name="Drag" type="F32">
+    <column name="Rateperfootjitter" type="F32">
       <offset>1112</offset>
     </column>
-    <column name="DragJitter" type="F32">
+    <column name="Minspeed" type="F32">
       <offset>1116</offset>
     </column>
-    <column name="InheritVelocity" type="F32">
+    <column name="Count" type="INT">
       <offset>1120</offset>
     </column>
-    <column name="Stickiness" type="F32">
+    <column name="Countjitter" type="INT">
       <offset>1124</offset>
     </column>
-    <column name="ZBias" type="F32">
+    <column name="Countperfoot" type="F32">
       <offset>1128</offset>
     </column>
-    <column name="SortBias" type="F32">
+    <column name="Countperfootjitter" type="F32">
       <offset>1132</offset>
     </column>
-    <column name="Scroll" type="F32FIXEDARRAY">
+    <column name="Drag" type="F32">
+      <offset>1136</offset>
+    </column>
+    <column name="Dragjitter" type="F32">
       <offset>1140</offset>
-      <num_elements>2</num_elements>
     </column>
-    <column name="ScrollJitter" type="F32FIXEDARRAY">
+    <column name="Inheritvelocity" type="F32">
+      <offset>1144</offset>
+    </column>
+    <column name="Stickiness" type="F32">
       <offset>1148</offset>
-      <num_elements>2</num_elements>
     </column>
-    <column name="AnimParams" type="F32FIXEDARRAY">
+    <column name="Zbias" type="F32">
+      <offset>1152</offset>
+    </column>
+    <column name="Sortbias" type="F32">
       <offset>1156</offset>
-      <num_elements>2</num_elements>
     </column>
-    <column name="HFlipTex" type="BOOLFLAG">
+    <column name="Scroll" type="F32FIXEDARRAY">
       <offset>1164</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="VFlipTex" type="BOOLFLAG">
-      <offset>1165</offset>
-    </column>
-    <column name="QuadTex" type="BOOLFLAG">
-      <offset>1166</offset>
-    </column>
-    <column name="LinkScale" type="BOOLFLAG">
-      <offset>1167</offset>
-    </column>
-    <column name="RGBBlend" type="BOOLFLAG">
-      <offset>1168</offset>
-    </column>
-    <column name="Shell" type="BOOLFLAG">
-      <offset>1170</offset>
-    </column>
-    <column name="UniformJitter" type="BOOLFLAG">
-      <offset>1171</offset>
-    </column>
-    <column name="UniformLine" type="BOOLFLAG">
+    <column name="Scrolljitter" type="F32FIXEDARRAY">
       <offset>1172</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LockEnds" type="BOOLFLAG">
-      <offset>1173</offset>
+    <column name="Animparams" type="F32FIXEDARRAY">
+      <offset>1180</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="NoToneMap" type="BOOLFLAG">
-      <offset>1174</offset>
-    </column>
-    <column name="CountByDistance" type="BOOLFLAG">
-      <offset>1175</offset>
-    </column>
-    <column name="ConstantScreenSize" type="BOOLFLAG">
-      <offset>1176</offset>
-    </column>
-    <column name="OldestFirst" type="BOOLFLAG">
-      <offset>1177</offset>
-    </column>
-    <column name="LowRes" type="BOOLFLAG">
-      <offset>1178</offset>
-    </column>
-    <column name="AnimatedTexture" type="BOOLFLAG">
-      <offset>1179</offset>
-    </column>
-    <column name="SyncHue" type="BOOLFLAG">
-      <offset>1181</offset>
-    </column>
-    <column name="SyncSaturation" type="BOOLFLAG">
-      <offset>1182</offset>
-    </column>
-    <column name="SyncValue" type="BOOLFLAG">
-      <offset>1183</offset>
-    </column>
-    <column name="SyncAlpha" type="BOOLFLAG">
-      <offset>1184</offset>
-    </column>
-    <column name="SyncScaleX" type="BOOLFLAG">
-      <offset>1185</offset>
-    </column>
-    <column name="SyncScaleY" type="BOOLFLAG">
-      <offset>1186</offset>
-    </column>
-    <column name="SyncRotation" type="BOOLFLAG">
-      <offset>1187</offset>
-    </column>
-    <column name="SyncSpin" type="BOOLFLAG">
+    <column name="Animduration" type="F32">
       <offset>1188</offset>
     </column>
-    <column name="StreakMode" type="INT">
+    <column name="Hfliptex" type="BOOLFLAG">
       <offset>1192</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Vfliptex" type="BOOLFLAG">
+      <offset>1193</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Quadtex" type="BOOLFLAG">
+      <offset>1194</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Linkscale" type="BOOLFLAG">
+      <offset>1195</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Rgbblend" type="BOOLFLAG">
+      <offset>1196</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Shell" type="BOOLFLAG">
+      <offset>1198</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uniformjitter" type="BOOLFLAG">
+      <offset>1199</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uniformline" type="BOOLFLAG">
+      <offset>1200</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Lockends" type="BOOLFLAG">
+      <offset>1201</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Notonemap" type="BOOLFLAG">
+      <offset>1202</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ignorefog" type="BOOLFLAG">
+      <offset>1203</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Countbydistance" type="BOOLFLAG">
+      <offset>1204</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Constantscreensize" type="BOOLFLAG">
+      <offset>1205</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Oldestfirst" type="BOOLFLAG">
+      <offset>1206</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Lowres" type="BOOLFLAG">
+      <offset>1207</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Animatedtexture" type="BOOLFLAG">
+      <offset>1208</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Randomframes" type="BOOLFLAG">
+      <offset>1209</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Reverseanimation" type="BOOLFLAG">
+      <offset>1210</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Synchue" type="BOOLFLAG">
+      <offset>1212</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Syncsaturation" type="BOOLFLAG">
+      <offset>1213</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Syncvalue" type="BOOLFLAG">
+      <offset>1214</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Syncalpha" type="BOOLFLAG">
+      <offset>1215</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Syncscalex" type="BOOLFLAG">
+      <offset>1216</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Syncscaley" type="BOOLFLAG">
+      <offset>1217</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Syncrotation" type="BOOLFLAG">
+      <offset>1218</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Syncspin" type="BOOLFLAG">
+      <offset>1219</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Streakmode" type="INT">
+      <offset>1220</offset>
       <static_define_list external="DynFastStreakMode" />
     </column>
-    <column name="BlendMode" type="INT">
-      <offset>1196</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+    <column name="Blendmode" type="INT">
+      <offset>1224</offset>
+      <static_define_list external="DynBlendMode" />
     </column>
     <column name="}" type="END" />
   </table>

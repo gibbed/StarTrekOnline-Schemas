@@ -7,102 +7,102 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="baseMapDescription" type="EMBEDDEDSTRUCT">
+    <column name="Basemapdescription" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="MapDescription" />
     </column>
     <column name="PlayerType" type="INT">
-      <offset>76</offset>
+      <offset>104</offset>
       <static_define_list external="GlobalType" />
     </column>
     <column name="playerID" type="INT">
-      <offset>80</offset>
+      <offset>108</offset>
     </column>
     <column name="GuildID" type="INT">
-      <offset>84</offset>
+      <offset>112</offset>
     </column>
     <column name="TeamID" type="INT">
-      <offset>88</offset>
+      <offset>116</offset>
     </column>
     <column name="PlayerAccountID" type="INT">
-      <offset>92</offset>
+      <offset>120</offset>
     </column>
-    <column name="developerAllStatic" type="BIT">
-      <offset>96</offset>
+    <column name="Developerallstatic" type="BIT">
+      <offset>124</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="debugPosLogin" type="BIT">
-      <offset>96</offset>
+    <column name="Debugposlogin" type="BIT">
+      <offset>124</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="newCharacter" type="BIT">
-      <offset>96</offset>
+    <column name="Newcharacter" type="BIT">
+      <offset>124</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="ExpectedTrasferFromShardNS" type="BIT">
-      <offset>96</offset>
+    <column name="Expectedtransferfromshardns" type="BIT">
+      <offset>124</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="requestFallback" type="BIT">
-      <offset>96</offset>
+    <column name="Requestfallback" type="BIT">
+      <offset>124</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="overSoftCapOK" type="BIT">
-      <offset>96</offset>
+    <column name="Oversoftcapok" type="BIT">
+      <offset>124</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="safeLogin" type="BIT">
-      <offset>96</offset>
+    <column name="Safelogin" type="BIT">
+      <offset>124</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="NoNewOwned" type="BIT">
-      <offset>96</offset>
+    <column name="Nonewowned" type="BIT">
+      <offset>124</offset>
       <bit_offset>65543</bit_offset>
     </column>
     <column name="skipTutorial" type="BIT">
-      <offset>96</offset>
-      <bit_offset>65544</bit_offset>
+      <offset>125</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="AllVirtualShards" type="BIT">
-      <offset>96</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Allvirtualshards" type="BIT">
+      <offset>125</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="ShowFullMapsAsDisabled" type="BIT">
-      <offset>96</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Showfullmapsasdisabled" type="BIT">
+      <offset>125</offset>
+      <bit_offset>65538</bit_offset>
     </column>
     <column name="Flags" type="INT">
-      <offset>100</offset>
+      <offset>128</offset>
       <static_define_list external="enumMapSearchAndPossibilitiesFlags" />
     </column>
-    <column name="gameServerIDToExclude" type="INT">
-      <offset>104</offset>
+    <column name="Gameserveridtoexclude" type="INT">
+      <offset>132</offset>
     </column>
-    <column name="AccountPermissions" type="OPTIONALSTRUCT">
-      <offset>108</offset>
+    <column name="Accountpermissions" type="OPTIONALSTRUCT">
+      <offset>136</offset>
       <subtable external="AccountProxyKeyValueInfoList" />
     </column>
     <column name="AccessLevel" type="INT">
-      <offset>112</offset>
+      <offset>144</offset>
     </column>
-    <column name="UGCProjectID" type="INT">
-      <offset>116</offset>
-    </column>
-    <column name="UGCNameSpace" type="STRING">
-      <offset>120</offset>
-    </column>
-    <column name="SearchType" type="INT">
-      <offset>124</offset>
+    <column name="Searchtype" type="INT">
+      <offset>148</offset>
       <static_define_list external="MapSearchType" />
     </column>
     <column name="AccountName" type="STRING">
-      <offset>128</offset>
+      <offset>152</offset>
     </column>
     <column name="playerName" type="STRING">
-      <offset>132</offset>
+      <offset>160</offset>
     </column>
     <column name="Allegiance" type="STRING">
-      <offset>136</offset>
+      <offset>168</offset>
+    </column>
+    <column name="FactionGroup" type="STRING">
+      <offset>176</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

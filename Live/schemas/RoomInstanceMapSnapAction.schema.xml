@@ -9,22 +9,24 @@
     <column name="ActionType" type="U8">
       <offset>0</offset>
     </column>
-    <column name="minsel" type="F32FIXEDARRAY">
+    <column name="Minsel" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="maxsel" type="F32FIXEDARRAY">
+    <column name="Maxsel" type="F32FIXEDARRAY">
       <offset>12</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="nearplane" type="F32">
+    <column name="Nearplane" type="F32">
       <offset>20</offset>
     </column>
-    <column name="farplane" type="F32">
+    <column name="Farplane" type="F32">
       <offset>24</offset>
     </column>
     <column name="Points" type="F32ARRAY">
-      <offset>28</offset>
+      <offset>32</offset>
     </column>
     <column name="End" type="END" />
   </table>

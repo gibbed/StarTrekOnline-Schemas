@@ -7,17 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MyName" type="STRING">
+    <column name="Myname" type="STRING">
       <offset>0</offset>
     </column>
     <column name="Log" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Time" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

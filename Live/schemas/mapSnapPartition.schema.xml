@@ -11,10 +11,10 @@
       <offset>0</offset>
     </column>
     <column name="LayerName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="UniqueName" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Uniquename" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

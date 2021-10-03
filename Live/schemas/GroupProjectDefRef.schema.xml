@@ -6,7 +6,8 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="projectDef" type="REFERENCE">
+    <column name="{" type="START" />
+    <column name="Projectdef" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
@@ -14,6 +15,6 @@
       </flags>
       <dictionary_name>GroupProjectDef</dictionary_name>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

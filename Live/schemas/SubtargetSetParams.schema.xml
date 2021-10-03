@@ -12,11 +12,11 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1215</default>
+      <default>1329</default>
       <static_define_list external="AttribType" />
     </column>
     <column name="Category" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>PowerSubtargetCategory</dictionary_name>
     </column>
     <column name="}" type="END" />

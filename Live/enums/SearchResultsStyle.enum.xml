@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="SearchResultsStyle">
+  <elements type="int">
+    <element name="List">0</element>
+    <element name="Small">1</element>
+    <element name="Large">2</element>
+  </elements>
+</enum>

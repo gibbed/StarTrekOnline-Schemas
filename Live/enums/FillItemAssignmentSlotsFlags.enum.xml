@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FillItemAssignmentSlotsFlags">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="ExcludeInProgress">1</element>
+    <element name="ExcludeCompleted">2</element>
+    <element name="RestrictedCategory">4</element>
+    <element name="UnrestrictedCategories">8</element>
+    <element name="OnlyCompleteNow">16</element>
+    <element name="CompletedFirst">32</element>
+  </elements>
+</enum>

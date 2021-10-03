@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GvGStructureType">
+  <elements type="int">
+    <element name="Base">0</element>
+    <element name="Tower">1</element>
+  </elements>
+</enum>

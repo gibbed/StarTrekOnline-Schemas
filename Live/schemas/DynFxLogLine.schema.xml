@@ -7,32 +7,32 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiGuid" type="INT">
+    <column name="Uiguid" type="INT">
       <offset>0</offset>
     </column>
     <column name="Time" type="F32">
       <offset>4</offset>
     </column>
-    <column name="FXInfo" type="STRING">
+    <column name="Fxinfo" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="FXID" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
-    </column>
-    <column name="esLine" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
+    <column name="Esline" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
     <column name="State" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+      <offset>32</offset>
       <subtable external="DynFxLogState" />
     </column>
     <column name="}" type="END" />

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="mainRef" type="INT">
+    <column name="Mainref" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -18,7 +18,7 @@
         <format_string name="FIXUP_CONTAINER_TYPE">EntityPlayer</format_string>
       </format_strings>
     </column>
-    <column name="curID" type="INT">
+    <column name="Curid" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -29,7 +29,7 @@
         <format_string name="FIXUP_CONTAINER_TYPE">.curType</format_string>
       </format_strings>
     </column>
-    <column name="curType" type="INT">
+    <column name="Curtype" type="INT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -38,7 +38,7 @@
       </flags>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="curTempID" type="INT">
+    <column name="Curtempid" type="INT">
       <offset>12</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -46,28 +46,36 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="lastActiveID" type="INT">
+    <column name="Lastactiveid" type="INT">
       <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="expectedID" type="INT">
+    <column name="Expectedid" type="INT">
       <offset>20</offset>
     </column>
-    <column name="expectedType" type="INT">
+    <column name="Expectedtype" type="INT">
       <offset>24</offset>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="curPuppetName" type="STRING">
+    <column name="Mainpuppetid" type="INT">
       <offset>28</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_AND_TEAM_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Curpuppetname" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>PUPPET_NO_COPY</flag>
       </flags>
     </column>
-    <column name="ppPuppets" type="STRUCT">
-      <offset>32</offset>
+    <column name="Pppuppets" type="STRUCT">
+      <offset>40</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_AND_TEAM_ONLY</flag>
@@ -75,47 +83,83 @@
       </flags>
       <subtable external="PuppetEntity" />
     </column>
-    <column name="ppTempPuppets" type="STRUCT">
-      <offset>36</offset>
+    <column name="Pptemppuppets" type="STRUCT">
+      <offset>48</offset>
       <flags>
         <flag>SELF_AND_TEAM_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="TempPuppetEntity" />
     </column>
-    <column name="ppPuppetRequests" type="STRUCT">
-      <offset>40</offset>
+    <column name="Pppuppetrequests" type="STRUCT">
+      <offset>56</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="PuppetRequest" />
     </column>
-    <column name="hPreferredCategorySet" type="REFERENCE">
-      <offset>44</offset>
+    <column name="Pppuppettraydata" type="STRUCT">
+      <offset>64</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="PuppetTrayData" />
+    </column>
+    <column name="Eapetpowerchange" type="STRUCT">
+      <offset>72</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PetPowerIdChange" />
+    </column>
+    <column name="Hpreferredcategoryset" type="REFERENCE">
+      <offset>80</offset>
       <flags>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>CharClassCategorySet</dictionary_name>
     </column>
-    <column name="uPuppetSwapVersion" type="INT">
-      <offset>48</offset>
+    <column name="Pppetxptrackers" type="STRUCT">
+      <offset>88</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PetXPTracker" />
+    </column>
+    <column name="Ulastpuppetswaptime" type="INT">
+      <offset>96</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Upuppetswapversion" type="INT">
+      <offset>100</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uSavedModsVersion" type="INT">
-      <offset>52</offset>
+    <column name="Usavedmodsversion" type="INT">
+      <offset>104</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="bPuppetTransformFailed" type="BIT">
-      <offset>56</offset>
+    <column name="Bpuppettransformfailed" type="BIT">
+      <offset>108</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
@@ -123,12 +167,55 @@
       </flags>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="bPuppetSubscribeAll" type="BIT">
-      <offset>56</offset>
+    <column name="Bpuppetsubscribeall" type="BIT">
+      <offset>108</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
-      <bit_offset>65541</bit_offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Doingloadoutcopy" type="INT">
+      <offset>112</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>120</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Lastdrydocktime" type="INT">
+      <offset>128</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Numdrydock" type="INT">
+      <offset>132</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Maxdrydockid" type="INT">
+      <offset>136</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

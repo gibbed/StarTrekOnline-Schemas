@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="NotifyTypeActionList">
+  <table>
+    <column name="NotifyTypeActionList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Defaultimportance" type="INT">
+      <offset>0</offset>
+      <static_define_list external="NotifyImportance" />
+    </column>
+    <column name="Action" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="NotifyAction" />
+    </column>
+    <column name="Anyhaschat" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Anyhasqueue" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

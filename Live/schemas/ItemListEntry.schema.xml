@@ -17,7 +17,7 @@
     <column name="Item" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Item" />
     </column>

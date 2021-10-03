@@ -6,49 +6,49 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="PhysicalProperties" type="START" />
-    <column name="FN" type="CURRENTFILE">
+    <column name="Physicalproperties" type="START" />
+    <column name="Fn" type="CURRENTFILE">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="name_key" type="STRING">
-      <offset>4</offset>
+    <column name="Name_Key" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>NO_TEXT_SAVE</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="countAs" type="STRING">
-      <offset>8</offset>
+    <column name="Countas" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Reverb" type="F32">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
     <column name="Dampen" type="F32">
-      <offset>16</offset>
+      <offset>28</offset>
     </column>
     <column name="Restitution" type="F32">
-      <offset>20</offset>
+      <offset>32</offset>
       <default>-1</default>
     </column>
-    <column name="SFriction" type="F32">
-      <offset>24</offset>
+    <column name="Sfriction" type="F32">
+      <offset>36</offset>
       <default>-1</default>
     </column>
-    <column name="DFriction" type="F32">
-      <offset>28</offset>
+    <column name="Dfriction" type="F32">
+      <offset>40</offset>
       <default>-1</default>
     </column>
     <column name="Civilian" type="BIT">
-      <offset>32</offset>
+      <offset>44</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="EndPhysicalProperties" type="END" />
+    <column name="Endphysicalproperties" type="END" />
   </table>
 </parser>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PlayerMatchState">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="WAITING_FOR_ACCEPT">1</element>
+    <element name="WAITING_FOR_MAP">2</element>
+    <element name="IN_PROGRESS">3</element>
+    <element name="COMPLETE">4</element>
+  </elements>
+</enum>

@@ -6,29 +6,30 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="WaveCondition" type="OPTIONALSTRUCT">
+    <column name="Wavecondition" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="Expression" />
     </column>
-    <column name="WaveIntervalType" type="INT">
-      <offset>4</offset>
-      <static_define_list external="WorldEncounterWaveTimerType" />
-    </column>
-    <column name="WaveInterval" type="F32">
+    <column name="Waveintervaltype" type="INT">
       <offset>8</offset>
+      <static_define_list external="EncounterInstanceWaveTimerType" />
     </column>
-    <column name="WaveDelayType" type="INT">
+    <column name="Waveinterval" type="F32">
       <offset>12</offset>
-      <static_define_list external="WorldEncounterWaveDelayTimerType" />
     </column>
-    <column name="WaveDelayMin" type="F32">
+    <column name="Wavedelaytype" type="INT">
       <offset>16</offset>
+      <static_define_list external="EncounterInstanceWaveDelayTimerType" />
     </column>
-    <column name="WaveDelayMax" type="F32">
+    <column name="Wavedelaymin" type="F32">
       <offset>20</offset>
     </column>
-    <column name="OverrideParentValues" type="U8">
+    <column name="Wavedelaymax" type="F32">
       <offset>24</offset>
+    </column>
+    <column name="Overrideparentvalues" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

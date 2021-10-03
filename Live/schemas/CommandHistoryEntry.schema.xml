@@ -10,11 +10,12 @@
     <column name="Command" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="nonTemporary" type="U8">
-      <offset>4</offset>
+    <column name="Nontemporary" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="data" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="ChatData" />
     </column>
     <column name="}" type="END" />

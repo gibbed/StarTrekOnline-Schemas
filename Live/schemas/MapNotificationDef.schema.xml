@@ -16,7 +16,7 @@
       </flags>
     </column>
     <column name="LifeSpan" type="F32">
-      <offset>8</offset>
+      <offset>12</offset>
       <default>3</default>
     </column>
     <column name="}" type="END" />

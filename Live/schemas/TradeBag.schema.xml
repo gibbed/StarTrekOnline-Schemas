@@ -7,11 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="Finished" type="U8">
+    <column name="Cancelled" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="TradeSlots" type="STRUCT">
-      <offset>4</offset>
+    <column name="Finished" type="U8">
+      <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Escrowed" type="U8">
+      <offset>2</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Successful" type="U8">
+      <offset>3</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Tradeslots" type="STRUCT">
+      <offset>8</offset>
       <subtable external="TradeSlot" />
     </column>
     <column name="}" type="END" />

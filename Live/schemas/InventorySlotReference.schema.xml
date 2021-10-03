@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BagID" type="INT">
+    <column name="Bagid" type="INT">
       <offset>0</offset>
       <static_define_list external="InvBagIDs" />
     </column>

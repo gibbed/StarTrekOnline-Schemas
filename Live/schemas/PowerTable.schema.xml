@@ -15,40 +15,40 @@
       </flags>
     </column>
     <column name="Values" type="F32ARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="Tables" type="STRINGARRAY">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Numeric" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ValuesNegative" type="BIT">
-      <offset>16</offset>
+    <column name="Valuesnegative" type="BIT">
+      <offset>32</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="ValuesZero" type="BIT">
-      <offset>16</offset>
+    <column name="Valueszero" type="BIT">
+      <offset>32</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="UsePointsEarned" type="BIT">
-      <offset>16</offset>
+    <column name="Usepointsearned" type="BIT">
+      <offset>32</offset>
       <bit_offset>65538</bit_offset>
     </column>
     <column name="File" type="CURRENTFILE">
-      <offset>20</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

@@ -12,8 +12,12 @@
       <dictionary_name>ItemDef</dictionary_name>
     </column>
     <column name="Count" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <default>1</default>
+    </column>
+    <column name="Itemassignmentlink" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>ItemAssignmentDef</dictionary_name>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,39 +7,40 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DisplayNameMsgKey" type="STRING">
+    <column name="Displaynamemsgkey" type="STRING">
       <offset>0</offset>
     </column>
     <column name="MapType" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="ZoneMapType" />
     </column>
     <column name="Regions" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="WorldRegion" />
     </column>
-    <column name="GenesisData" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Genesisdata" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="GenesisZoneMapData" />
     </column>
-    <column name="GenesisInfo" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Genesisinfo" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="GenesisZoneMapInfo" />
     </column>
-    <column name="VarDefs" type="STRUCT">
-      <offset>20</offset>
+    <column name="Vardefs" type="STRUCT">
+      <offset>40</offset>
       <subtable external="WorldVariableDef" />
     </column>
-    <column name="RequiresExpr" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Requiresexpr" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="Expression" />
     </column>
-    <column name="PermissionExpr" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Permissionexpr" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <subtable external="Expression" />
     </column>
-    <column name="ConfirmPurchasesOnExit" type="U8">
-      <offset>32</offset>
+    <column name="Confirmpurchasesonexit" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

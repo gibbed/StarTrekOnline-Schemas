@@ -7,17 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uStartDate" type="INT">
+    <column name="Ustartdate" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uEndDate" type="INT">
+    <column name="Uenddate" type="INT">
       <offset>4</offset>
     </column>
-    <column name="TagsInclude" type="INTARRAY">
+    <column name="Tagsinclude" type="INTARRAY">
       <offset>8</offset>
     </column>
-    <column name="TagsExclude" type="INTARRAY">
-      <offset>12</offset>
+    <column name="Tagsexclude" type="INTARRAY">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

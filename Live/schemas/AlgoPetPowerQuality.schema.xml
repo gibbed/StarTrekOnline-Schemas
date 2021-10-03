@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ItemRarity" type="INT">
+    <column name="Itemrarity" type="INT">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <static_define_list external="ItemQuality" />
     </column>
-    <column name="SharedCategory" type="INTARRAY">
-      <offset>4</offset>
+    <column name="Sharedcategory" type="INTARRAY">
+      <offset>8</offset>
       <static_define_list external="AlgoCategory" />
     </column>
-    <column name="PowerChoice" type="STRUCT">
-      <offset>8</offset>
+    <column name="Powerchoice" type="STRUCT">
+      <offset>16</offset>
       <subtable external="AlgoPetPowerChoice" />
     </column>
     <column name="}" type="END" />

@@ -12,10 +12,10 @@
       <subtable external="ChatLink" />
     </column>
     <column name="Start" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="Length" type="INT">
-      <offset>8</offset>
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

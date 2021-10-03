@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ExcelXMLWorksheet">
+  <table>
+    <column name="ExcelXMLWorksheet" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Estrname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Rows" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ExcelXMLRow" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

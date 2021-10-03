@@ -10,61 +10,62 @@
     <column name="Mission" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Mission" />
     </column>
-    <column name="CompletedMission" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Completedmission" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="CompletedMission" />
     </column>
     <column name="Ent" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Entity" />
     </column>
     <column name="Type" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
       <static_define_list external="MissionListNodeType" />
     </column>
     <column name="Indent" type="INT">
-      <offset>16</offset>
-    </column>
-    <column name="ShadowMission" type="U8">
-      <offset>20</offset>
-    </column>
-    <column name="MissionNumber" type="INT">
-      <offset>24</offset>
-    </column>
-    <column name="Level" type="INT">
       <offset>28</offset>
     </column>
-    <column name="LevelDelta" type="INT">
+    <column name="Shadowmission" type="U8">
       <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="UIType" type="INT">
+    <column name="Missionnumber" type="INT">
       <offset>36</offset>
+    </column>
+    <column name="Level" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Leveldelta" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Uitype" type="INT">
+      <offset>48</offset>
       <static_define_list external="MissionUIType" />
     </column>
-    <column name="TranslatedUITypeName" type="STRING">
-      <offset>40</offset>
+    <column name="Translateduitypename" type="STRING">
+      <offset>56</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="IconName" type="STRING">
-      <offset>44</offset>
+      <offset>64</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Visibility" type="INT">
-      <offset>48</offset>
+      <offset>72</offset>
       <static_define_list external="MissionListNodeVisibility" />
     </column>
     <column name="}" type="END" />

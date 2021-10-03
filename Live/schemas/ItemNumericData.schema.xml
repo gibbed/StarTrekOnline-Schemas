@@ -11,8 +11,8 @@
       <offset>0</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="NumericValue" type="INT">
-      <offset>4</offset>
+    <column name="Numericvalue" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

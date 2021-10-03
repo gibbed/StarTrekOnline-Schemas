@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="VisSet" type="STRUCT">
+    <column name="Visset" type="STRUCT">
       <offset>0</offset>
       <subtable external="SkelBoneVisibilitySetInfo" />
     </column>

@@ -11,11 +11,11 @@
       <offset>0</offset>
     </column>
     <column name="Operation" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="TerrainBrushOp" />
     </column>
     <column name="FallOff" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="TerrainBrushFalloff" />
     </column>
     <column name="}" type="END" />

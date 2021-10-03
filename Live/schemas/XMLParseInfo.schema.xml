@@ -12,13 +12,13 @@
       <subtable external="XMLParseState" />
     </column>
     <column name="Error" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="clientname" type="STRING">
-      <offset>8</offset>
+    <column name="Clientname" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

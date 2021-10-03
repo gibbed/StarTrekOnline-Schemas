@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="HttpAPI_ConnectionInfo_Flags">
+  <elements type="int">
+    <element name="USE_SSL">1</element>
+    <element name="400S_ARE_EXPECTED">2</element>
+    <element name="USE_FULL_URL_IN_STATS_NAME">4</element>
+  </elements>
+</enum>

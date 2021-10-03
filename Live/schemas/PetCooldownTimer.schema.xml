@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PowerCategory" type="INT">
+    <column name="Powercategory" type="INT">
       <offset>0</offset>
     </column>
     <column name="Cooldown" type="F32">

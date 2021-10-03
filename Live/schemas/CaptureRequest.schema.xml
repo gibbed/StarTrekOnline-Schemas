@@ -7,26 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uAccountID" type="INT">
+    <column name="Uaccountid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uPurchaseID" type="INT">
+    <column name="Upurchaseid" type="INT">
       <offset>4</offset>
     </column>
     <column name="Proxy" type="STRING">
       <offset>8</offset>
     </column>
     <column name="RequestID" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="uLockContainerID" type="INT">
       <offset>16</offset>
     </column>
-    <column name="Capture" type="U8">
+    <column name="Ulockcontainerid" type="INT">
       <offset>20</offset>
     </column>
-    <column name="Orderid" type="STRING">
+    <column name="Capture" type="U8">
       <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Orderid" type="STRING">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

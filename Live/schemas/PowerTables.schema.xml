@@ -11,14 +11,14 @@
       <offset>0</offset>
       <subtable external="PowerTable" />
     </column>
-    <column name="stPowerTables" type="STASHTABLE">
-      <offset>4</offset>
+    <column name="Stpowertables" type="STASHTABLE">
+      <offset>8</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>
     </column>
-    <column name="BasicFactBonusHitPointsMax" type="BIT">
-      <offset>8</offset>
+    <column name="Basicfactbonushitpointsmax" type="BIT">
+      <offset>16</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

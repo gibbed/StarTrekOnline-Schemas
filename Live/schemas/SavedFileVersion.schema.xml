@@ -13,23 +13,23 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="modified" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="Size" type="INT">
+    <column name="Modified" type="INT">
       <offset>8</offset>
     </column>
-    <column name="checksum" type="INT">
+    <column name="Size" type="INT">
       <offset>12</offset>
     </column>
-    <column name="header_size" type="INT">
+    <column name="Checksum" type="INT">
       <offset>16</offset>
     </column>
-    <column name="header_checksum" type="INT">
+    <column name="Header_Size" type="INT">
       <offset>20</offset>
     </column>
-    <column name="Flags" type="INT">
+    <column name="Header_Checksum" type="INT">
       <offset>24</offset>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>28</offset>
     </column>
     <column name="}" type="END" />
   </table>

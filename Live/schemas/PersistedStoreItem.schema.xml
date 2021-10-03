@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pchRestockDef" type="STRING">
+    <column name="Pchrestockdef" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -16,35 +16,35 @@
       </flags>
     </column>
     <column name="UID" type="INT">
-      <offset>4</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="uSeed" type="INT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uExpireTime" type="INT">
+    <column name="Useed" type="INT">
       <offset>12</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iRewardIndex" type="INT">
+    <column name="Uexpiretime" type="INT">
       <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="hStoreItemDef" type="IGNORE" />
-    <column name="pchStoreItemName" type="IGNORE" />
+    <column name="Irewardindex" type="INT">
+      <offset>20</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Hstoreitemdef" type="IGNORE" />
+    <column name="Pchstoreitemname" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

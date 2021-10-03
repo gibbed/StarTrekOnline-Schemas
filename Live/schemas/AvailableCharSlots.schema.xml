@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="numTotalSlots" type="INT">
+    <column name="Numtotalslots" type="INT">
       <offset>0</offset>
     </column>
-    <column name="numUnrestrictedSlots" type="INT">
+    <column name="Numunrestrictedslots" type="INT">
       <offset>4</offset>
     </column>
-    <column name="SlotRestrictions" type="STRUCT">
+    <column name="Slotrestrictions" type="STRUCT">
       <offset>8</offset>
       <subtable external="CharSlotRestriction" />
     </column>

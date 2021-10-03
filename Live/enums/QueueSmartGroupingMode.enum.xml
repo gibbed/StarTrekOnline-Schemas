@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="QueueSmartGroupingMode">
+  <elements type="int">
+    <element name="Off">0</element>
+    <element name="TankHealer">1</element>
+    <element name="TwoOfClass">2</element>
+  </elements>
+</enum>

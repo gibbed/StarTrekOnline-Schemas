@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="TerrainControlMapMaterial">
+  <elements type="int">
+    <element name="2">2</element>
+    <element name="3">3</element>
+  </elements>
+</enum>

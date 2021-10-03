@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="setsNew" type="STRUCT">
+    <column name="Setsnew" type="STRUCT">
       <offset>0</offset>
       <subtable external="MREmoteSet" />
     </column>
-    <column name="handlesToDestroy" type="INTARRAY">
-      <offset>4</offset>
+    <column name="Handlestodestroy" type="INTARRAY">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

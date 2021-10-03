@@ -10,7 +10,7 @@
     <column name="ID" type="INT">
       <offset>0</offset>
     </column>
-    <column name="subid" type="INT">
+    <column name="Subid" type="INT">
       <offset>4</offset>
     </column>
     <column name="Type" type="INT">
@@ -20,89 +20,92 @@
     <column name="Source" type="INT">
       <offset>12</offset>
     </column>
-    <column name="apchBits_0" type="STRING">
+    <column name="Apchbits_0" type="STRING">
       <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="apchBits_1" type="STRING">
-      <offset>36</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="apchBits_2" type="STRING">
+    <column name="Apchbits_1" type="STRING">
       <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="apchBits_3" type="STRING">
-      <offset>44</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="ppchBitsOverflow" type="STRINGARRAY">
+    <column name="Apchbits_2" type="STRING">
       <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="timeStart" type="INT">
-      <offset>52</offset>
-    </column>
-    <column name="timeStop" type="INT">
+    <column name="Apchbits_3" type="STRING">
       <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Ppchbitsoverflow" type="STRINGARRAY">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Timestart" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Timestop" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Speed" type="F32">
+      <offset>80</offset>
     </column>
     <column name="Start" type="BIT">
-      <offset>60</offset>
+      <offset>84</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="stop" type="BIT">
-      <offset>60</offset>
+    <column name="Stop" type="BIT">
+      <offset>84</offset>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="Stopped" type="BIT">
-      <offset>60</offset>
+      <offset>84</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="flash" type="BIT">
-      <offset>60</offset>
+    <column name="Flash" type="BIT">
+      <offset>84</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="isKeyword" type="BIT">
-      <offset>60</offset>
+    <column name="Iskeyword" type="BIT">
+      <offset>84</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="isFlag" type="BIT">
-      <offset>60</offset>
+    <column name="Isflag" type="BIT">
+      <offset>84</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="assumeOwnership" type="BIT">
-      <offset>60</offset>
+    <column name="Assumeownership" type="BIT">
+      <offset>84</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="forceDetailFlag" type="BIT">
-      <offset>60</offset>
+    <column name="Forcedetailflag" type="BIT">
+      <offset>84</offset>
       <bit_offset>65543</bit_offset>
     </column>
     <column name="Trigger" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65544</bit_offset>
+      <offset>85</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="triggerIsEntityID" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Triggerisentityid" type="BIT">
+      <offset>85</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="triggerMultiHit" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Triggermultihit" type="BIT">
+      <offset>85</offset>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="toBG" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Tobg" type="BIT">
+      <offset>85</offset>
+      <bit_offset>65539</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

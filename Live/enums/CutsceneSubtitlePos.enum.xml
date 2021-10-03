@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CutsceneSubtitlePos">
+  <elements type="int">
+    <element name="Subtitle">0</element>
+    <element name="ChronoLine2">1</element>
+    <element name="ChronoLine1">2</element>
+  </elements>
+</enum>

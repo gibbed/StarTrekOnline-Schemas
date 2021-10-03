@@ -8,5 +8,6 @@
     <element name="ACCESS_DEBUG">9</element>
     <element name="ACCESS_CRASH">10</element>
     <element name="ACCESS_INTERNAL">11</element>
+    <element name="ACCESS_INVALID">9001</element>
   </elements>
 </enum>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="eType" type="INT">
+    <column name="Etype" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
@@ -15,7 +15,7 @@
       </flags>
       <static_define_list external="AttribType" />
     </column>
-    <column name="fMag" type="F32">
+    <column name="Fmag" type="F32">
       <offset>4</offset>
       <flags>
         <flag>PERSIST</flag>

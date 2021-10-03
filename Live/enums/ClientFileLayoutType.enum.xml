@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ClientFileLayoutType">
+  <elements type="int">
+    <element name="V1">0</element>
+    <element name="V2">1</element>
+  </elements>
+</enum>

@@ -7,32 +7,39 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MatchMembers" type="STRUCT">
+    <column name="Matchmembers" type="STRUCT">
       <offset>0</offset>
       <subtable external="QueueMatchMember" />
     </column>
-    <column name="puiInMapTeamIDs" type="INTARRAY">
-      <offset>4</offset>
+    <column name="Memberparticipation" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="QueueMemberParticipation" />
+    </column>
+    <column name="Puiinmapteamids" type="INTARRAY">
+      <offset>16</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>
     </column>
-    <column name="GroupIndex" type="INT">
-      <offset>8</offset>
+    <column name="Groupindex" type="INT">
+      <offset>24</offset>
       <default>-1</default>
     </column>
-    <column name="GroupSize" type="INT">
-      <offset>12</offset>
+    <column name="Groupsize" type="INT">
+      <offset>28</offset>
     </column>
-    <column name="LimboCount" type="INT">
-      <offset>16</offset>
+    <column name="Limbocount" type="INT">
+      <offset>32</offset>
     </column>
-    <column name="GroupDef" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Groupdef" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="QueueGroupDef" />
     </column>
-    <column name="uiTeamUpID" type="INT">
-      <offset>24</offset>
+    <column name="Uiteamupid" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Uguildid" type="INT">
+      <offset>52</offset>
     </column>
     <column name="}" type="END" />
   </table>

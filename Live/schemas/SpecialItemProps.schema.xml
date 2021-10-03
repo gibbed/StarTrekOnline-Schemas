@@ -16,10 +16,10 @@
       </flags>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="hCostumeRef" type="REFERENCE">
+    <column name="Hcostumeref" type="REFERENCE">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
@@ -27,8 +27,8 @@
       <redundant_name>Costume</redundant_name>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="pAlgoPet" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Palgopet" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -36,8 +36,8 @@
       </flags>
       <subtable external="AlgoPet" />
     </column>
-    <column name="pContainerInfo" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Pcontainerinfo" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -45,16 +45,16 @@
       </flags>
       <subtable external="ItemContainerInfo" />
     </column>
-    <column name="pDoorKey" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Pdoorkey" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="ItemDoorKey" />
     </column>
-    <column name="ppItemGemSlots" type="STRUCT">
-      <offset>16</offset>
+    <column name="Ppitemgemslots" type="STRUCT">
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -62,16 +62,26 @@
       </flags>
       <subtable external="ItemGemSlot" />
     </column>
-    <column name="pSuperCritterPet" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Ppgemslotsetpowers" type="STRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="Power" />
+    </column>
+    <column name="Psupercritterpet" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="SuperCritterPet" />
     </column>
-    <column name="pTransmutationProps" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Ptransmutationprops" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -79,8 +89,8 @@
       </flags>
       <subtable external="ItemTransmutationProps" />
     </column>
-    <column name="hIdentifiedItemDef" type="REFERENCE">
-      <offset>28</offset>
+    <column name="Hidentifieditemdef" type="REFERENCE">
+      <offset>64</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SERVER_ONLY</flag>
@@ -88,14 +98,87 @@
       </flags>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="fRewardPackScale" type="F32">
-      <offset>32</offset>
+    <column name="Frewardpackscale" type="F32">
+      <offset>72</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <default>1</default>
     </column>
+    <column name="Ucreationtimestamp" type="INT">
+      <offset>76</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uofflineduration" type="INT">
+      <offset>80</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uscheduledexpiration" type="INT">
+      <offset>84</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Uitemassignmentcooldown" type="INT">
+      <offset>88</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Fbatterychargeholder" type="F32">
+      <offset>92</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ppitempowerscalefactors" type="STRUCT">
+      <offset>96</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="ItemPowerScaleFactor" />
+    </column>
+    <column name="Ppslottableitempowerscalefactors" type="STRUCT">
+      <offset>104</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="ItemPowerScaleFactor" />
+    </column>
+    <column name="Eaiunlockeditempowerdefrefids" type="INTARRAY">
+      <offset>112</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eaislotteditempowerdefrefids" type="INTARRAY">
+      <offset>120</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Rewardpackoriginalsource" type="STRING">
+      <offset>128</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pdifficultyscalinginfo" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

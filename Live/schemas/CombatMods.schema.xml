@@ -12,15 +12,15 @@
       <subtable external="CombatMod" />
     </column>
     <column name="Lower" type="OPTIONALSTRUCT">
-      <offset>4</offset>
-      <subtable external="CombatMod" />
-    </column>
-    <column name="HigherPlayer" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <subtable external="CombatMod" />
     </column>
-    <column name="LowerPlayer" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Higherplayer" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="CombatMod" />
+    </column>
+    <column name="Lowerplayer" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="CombatMod" />
     </column>
     <column name="}" type="END" />

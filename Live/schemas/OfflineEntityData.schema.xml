@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiPetID" type="INT">
+    <column name="Uipetid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
@@ -16,19 +16,22 @@
     <column name="EntType" type="INT">
       <offset>4</offset>
     </column>
-    <column name="ClassType" type="STRING">
+    <column name="Classtype" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="uiLastUpdateTime" type="INT">
-      <offset>12</offset>
+    <column name="Uilastupdatetime" type="INT">
+      <offset>16</offset>
     </column>
     <column name="Pet" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+      <offset>24</offset>
       <subtable external="Entity" />
     </column>
-    <column name="hRequest" type="REFERENCE">
-      <offset>20</offset>
+    <column name="Hrequest" type="REFERENCE">
+      <offset>32</offset>
       <dictionary_name>CopyDict_ENTITYPLAYER</dictionary_name>
+    </column>
+    <column name="Uilastpositivefailuretime" type="INT">
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="done" type="BIT">
+    <column name="Done" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>

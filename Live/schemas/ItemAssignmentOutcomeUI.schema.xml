@@ -14,25 +14,38 @@
       </flags>
     </column>
     <column name="DisplayName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Description" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="OutcomePercentChance" type="F32">
-      <offset>12</offset>
+    <column name="Outcomepercentchance" type="F32">
+      <offset>24</offset>
     </column>
-    <column name="BasePercentChance" type="F32">
-      <offset>16</offset>
+    <column name="Basepercentchance" type="F32">
+      <offset>28</offset>
     </column>
-    <column name="QualityRewardBonus" type="F32">
-      <offset>20</offset>
+    <column name="Qualityrewardbonus" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Firstrewarditem" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="Item" />
+    </column>
+    <column name="Firstitemdisplayname" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Firstitemcount" type="INT">
+      <offset>56</offset>
     </column>
     <column name="}" type="END" />
   </table>

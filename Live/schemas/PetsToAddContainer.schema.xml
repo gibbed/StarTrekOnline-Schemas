@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pets" type="STRUCT">
+    <column name="Pets" type="STRUCT">
       <offset>0</offset>
       <subtable external="PetToAddToTeam" />
     </column>

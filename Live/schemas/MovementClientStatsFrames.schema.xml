@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="frames" type="EMBEDDEDSTRUCT">
+    <column name="Frames" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <flags>
         <flag>EARRAY</flag>
@@ -15,7 +15,7 @@
       <subtable external="MovementClientStatsFrame" />
     </column>
     <column name="Count" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -29,22 +29,22 @@
       </flags>
       <static_define_list external="DiaryEntryType" />
     </column>
-    <column name="titleSubstring" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="tagIncludeMask" type="INT64">
+    <column name="Titlesubstring" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="tagExcludeMask" type="INT64">
+    <column name="Tagincludemask" type="INT64">
       <offset>24</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Tagexcludemask" type="INT64">
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

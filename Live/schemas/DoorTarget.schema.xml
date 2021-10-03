@@ -14,22 +14,28 @@
       </flags>
     </column>
     <column name="SpawnTarget" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="QueueName" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MapContainerID" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="mapPartitionID" type="INT">
+    <column name="QueueName" type="STRING">
       <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Matchname" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="MapContainerID" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Mappartitionid" type="INT">
+      <offset>36</offset>
     </column>
     <column name="}" type="END" />
   </table>

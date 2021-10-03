@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="guidTarget" type="INT">
+    <column name="Guidtarget" type="INT">
       <offset>0</offset>
     </column>
     <column name="Range" type="F32">

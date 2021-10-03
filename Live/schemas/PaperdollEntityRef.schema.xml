@@ -14,10 +14,10 @@
     <column name="UID" type="INT">
       <offset>4</offset>
     </column>
-    <column name="refCount" type="INT">
+    <column name="Refcount" type="INT">
       <offset>8</offset>
     </column>
-    <column name="uChangedTime" type="INT">
+    <column name="Uchangedtime" type="INT">
       <offset>12</offset>
     </column>
     <column name="}" type="END" />

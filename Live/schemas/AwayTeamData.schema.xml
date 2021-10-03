@@ -9,22 +9,28 @@
     <column name="{" type="START" />
     <column name="IsReady" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Changed" type="U8">
       <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllInCircle" type="U8">
+    <column name="Allincircle" type="U8">
       <offset>2</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Timer" type="INT">
       <offset>4</offset>
     </column>
-    <column name="PlayerCount" type="INT">
+    <column name="Playercount" type="INT">
       <offset>8</offset>
     </column>
-    <column name="AwayTeamMembers" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Awayteammembers" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="AwayTeamMembers" />
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

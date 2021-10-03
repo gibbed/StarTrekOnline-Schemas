@@ -11,16 +11,16 @@
       <offset>0</offset>
       <dictionary_name>GenesisDetailKit</dictionary_name>
     </column>
-    <column name="DetailKit" type="REFERENCE">
+    <column name="Detailkit" type="REFERENCE">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Details</redundant_name>
       <dictionary_name>GenesisDetailKit</dictionary_name>
     </column>
-    <column name="DetailDensity" type="F32">
-      <offset>4</offset>
+    <column name="Detaildensity" type="F32">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

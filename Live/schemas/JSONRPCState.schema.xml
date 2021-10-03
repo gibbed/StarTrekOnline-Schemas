@@ -7,51 +7,57 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="host" type="STRING">
+    <column name="Host" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="port" type="INT">
-      <offset>4</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
-    </column>
-    <column name="Path" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="method" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
-    </column>
-    <column name="Error" type="STRING">
+    <column name="Path" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="errorDetails" type="OPTIONALSTRUCT">
-      <offset>20</offset>
-      <subtable external="JSONRPCErrorDetails" />
-    </column>
-    <column name="responseCode" type="INT">
-      <offset>44</offset>
-    </column>
-    <column name="rawRequest" type="STRING">
-      <offset>48</offset>
+    <column name="Method" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="rawResponse" type="STRING">
-      <offset>52</offset>
+    <column name="Error" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Basicauth" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Errordetails" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="JSONRPCErrorDetails" />
+    </column>
+    <column name="ResponseCode" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Rawrequest" type="STRING">
+      <offset>104</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Rawresponse" type="STRING">
+      <offset>112</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

@@ -7,14 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="entRef" type="INT">
+    <column name="Entref" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="AwaitingResponse" type="U8">
+    <column name="Awaitingresponse" type="U8">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

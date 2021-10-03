@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pchAttribute" type="STRING">
+    <column name="Pchattribute" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,8 +15,8 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pchValue" type="STRING">
-      <offset>4</offset>
+    <column name="Pchvalue" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

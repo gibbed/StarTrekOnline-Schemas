@@ -7,29 +7,44 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DefaultLevelRange" type="INT">
+    <column name="Defaultlevelrange" type="INT">
       <offset>0</offset>
     </column>
-    <column name="RankRange" type="F32">
+    <column name="Rankrange" type="F32">
       <offset>4</offset>
     </column>
-    <column name="RankTimeOut" type="F32">
+    <column name="Ranktimeout" type="F32">
       <offset>8</offset>
     </column>
-    <column name="LevelTimeOut" type="F32">
+    <column name="Leveltimeout" type="F32">
       <offset>12</offset>
     </column>
-    <column name="MapTimeOut" type="F32">
+    <column name="Maptimeout" type="F32">
       <offset>16</offset>
     </column>
-    <column name="RankMax" type="F32">
+    <column name="Rankmax" type="F32">
       <offset>20</offset>
     </column>
-    <column name="LevelMax" type="INT">
+    <column name="Levelmax" type="INT">
       <offset>24</offset>
     </column>
-    <column name="MatchMakingLeaderboard" type="STRING">
-      <offset>28</offset>
+    <column name="Matchmakingleaderboard" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Leaverpenalizingleaderboard" type="STRINGARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Leaverpenalizinglevel" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Leaverpenalizingmembercount" type="INT">
+      <offset>52</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -11,11 +11,11 @@
       <static_define_list external="ShaderInputDefaultType" />
     </column>
     <column name="Floats" type="F32ARRAY">
-      <offset>4</offset>
-    </column>
-    <column name="Strings" type="STRINGARRAY">
       <offset>8</offset>
     </column>
-    <column name="EndDefault" type="END" />
+    <column name="Strings" type="STRINGARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Enddefault" type="END" />
   </table>
 </parser>

@@ -7,13 +7,9 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="inputDirIsCurrent" type="BIT">
+    <column name="Hasdesiredposition" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
-    </column>
-    <column name="tryingToMove" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

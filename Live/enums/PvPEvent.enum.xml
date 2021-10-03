@@ -9,5 +9,6 @@
     <element name="DOM_CapturePoint">5</element>
     <element name="DOM_DefendPoint">6</element>
     <element name="DOM_AttackPoint">7</element>
+    <element name="DOM_MatchComplete">8</element>
   </elements>
 </enum>

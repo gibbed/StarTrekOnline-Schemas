@@ -10,29 +10,29 @@
     <column name="DisplayName" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Description" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="ToolTip" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Image" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="GroupProjectBonus" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Groupprojectbonus" type="REFERENCE">
+      <offset>32</offset>
       <dictionary_name>GroupProjectBonusDef</dictionary_name>
     </column>
     <column name="}" type="END" />

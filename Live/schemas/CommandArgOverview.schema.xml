@@ -13,14 +13,14 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="TypeName" type="STRING">
-      <offset>4</offset>
+    <column name="Typename" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="StructName" type="STRING">
-      <offset>8</offset>
+    <column name="Structname" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

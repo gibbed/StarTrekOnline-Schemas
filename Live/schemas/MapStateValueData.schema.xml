@@ -7,14 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="dirtyBit" type="U8">
+    <column name="Dirtybit" type="U8">
       <offset>0</offset>
       <flags>
+        <flag>NO_NETSEND</flag>
         <flag>DIRTY_BIT</flag>
       </flags>
     </column>
     <column name="Values" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="MapStateValue" />
     </column>
     <column name="}" type="END" />

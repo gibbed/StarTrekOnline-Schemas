@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SaltType" type="INT">
+    <column name="Salttype" type="INT">
       <offset>0</offset>
     </column>
     <column name="Salt" type="INT">
       <offset>4</offset>
     </column>
-    <column name="FixedSalt" type="FIXEDSTRING">
+    <column name="Fixedsalt" type="FIXEDSTRING">
       <offset>8</offset>
       <string_length>1024</string_length>
     </column>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iAccountID" type="INT">
+    <column name="Iaccountid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,28 +15,28 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="forSaleEscrowTC" type="INT">
+    <column name="Forsaleescrowtc" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="readyToClaimEscrowTC" type="INT">
+    <column name="Readytoclaimescrowtc" type="INT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="nextOrderID" type="INT">
+    <column name="Nextorderid" type="INT">
       <offset>12</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="openOrders" type="STRUCT">
+    <column name="Openorders" type="STRUCT">
       <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -44,15 +44,15 @@
       </flags>
       <subtable external="CurrencyExchangeOpenOrder" />
     </column>
-    <column name="logNext" type="INT">
-      <offset>20</offset>
+    <column name="Lognext" type="INT">
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="logEntries" type="STRUCT">
-      <offset>24</offset>
+    <column name="Logentries" type="STRUCT">
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

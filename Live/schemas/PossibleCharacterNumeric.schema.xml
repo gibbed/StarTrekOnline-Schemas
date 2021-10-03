@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NumericItemDef" type="STRING">
+    <column name="Numericitemdef" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="NumericValue" type="INT">
-      <offset>4</offset>
+    <column name="Numericvalue" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

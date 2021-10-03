@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PowersAutoQueueConditionChecksWhat">
+  <elements type="int">
+    <element name="AlwaysTrigger">0</element>
+    <element name="HealthPercent">1</element>
+    <element name="AverageShieldPercent">2</element>
+    <element name="AnyShieldPercent">3</element>
+    <element name="NumberOfAttribModsWithTags">4</element>
+    <element name="HasPowerModes">5</element>
+    <element name="CritterHasRank">6</element>
+    <element name="NeverTrigger">7</element>
+  </elements>
+</enum>

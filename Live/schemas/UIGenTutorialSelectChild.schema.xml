@@ -16,16 +16,16 @@
       <static_define_list external="UIGenTutorialSelectType" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="LineNumber" type="LINENUM">
-      <offset>8</offset>
+    <column name="Linenumber" type="LINENUM">
+      <offset>16</offset>
     </column>
-    <column name="Child" type="STRING">
-      <offset>12</offset>
+    <column name="Child" type="STRINGARRAY">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>

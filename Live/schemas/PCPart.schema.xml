@@ -16,7 +16,7 @@
       <dictionary_name>CostumeBone</dictionary_name>
     </column>
     <column name="Geometry" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
@@ -24,38 +24,14 @@
       <dictionary_name>CostumeGeometry</dictionary_name>
     </column>
     <column name="Material" type="REFERENCE">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>CostumeMaterial</dictionary_name>
     </column>
-    <column name="PatternTexture" type="REFERENCE">
-      <offset>12</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <dictionary_name>CostumeTexture</dictionary_name>
-    </column>
-    <column name="DetailTexture" type="REFERENCE">
-      <offset>16</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <dictionary_name>CostumeTexture</dictionary_name>
-    </column>
-    <column name="SpecularTexture" type="REFERENCE">
-      <offset>20</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <dictionary_name>CostumeTexture</dictionary_name>
-    </column>
-    <column name="DiffuseTexture" type="REFERENCE">
+    <column name="Patterntexture" type="REFERENCE">
       <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -63,8 +39,32 @@
       </flags>
       <dictionary_name>CostumeTexture</dictionary_name>
     </column>
+    <column name="DetailTexture" type="REFERENCE">
+      <offset>32</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Speculartexture" type="REFERENCE">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Diffusetexture" type="REFERENCE">
+      <offset>48</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
     <column name="Movable" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+      <offset>56</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
@@ -72,111 +72,115 @@
       <subtable external="PCMovableTextureInfo" />
     </column>
     <column name="Color_0" type="U8FIXEDARRAY">
-      <offset>32</offset>
+      <offset>64</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <num_elements>4</num_elements>
+      <format>COLOR</format>
     </column>
     <column name="Color_1" type="U8FIXEDARRAY">
-      <offset>36</offset>
+      <offset>68</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <num_elements>4</num_elements>
+      <format>COLOR</format>
     </column>
     <column name="Color_2" type="U8FIXEDARRAY">
-      <offset>40</offset>
+      <offset>72</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <num_elements>4</num_elements>
+      <format>COLOR</format>
     </column>
     <column name="Color_3" type="U8FIXEDARRAY">
-      <offset>44</offset>
+      <offset>76</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <num_elements>4</num_elements>
+      <format>COLOR</format>
     </column>
-    <column name="CustomColors" type="OPTIONALSTRUCT">
-      <offset>48</offset>
+    <column name="Customcolors" type="OPTIONALSTRUCT">
+      <offset>80</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="PCCustomColorInfo" />
     </column>
-    <column name="TextureValues" type="OPTIONALSTRUCT">
-      <offset>52</offset>
+    <column name="Texturevalues" type="OPTIONALSTRUCT">
+      <offset>88</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="PCTextureValueInfo" />
     </column>
-    <column name="ArtistData" type="OPTIONALSTRUCT">
-      <offset>56</offset>
+    <column name="Artistdata" type="OPTIONALSTRUCT">
+      <offset>96</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="PCArtistPartData" />
     </column>
-    <column name="ColorLink" type="U8">
-      <offset>60</offset>
+    <column name="Colorlink" type="U8">
+      <offset>104</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <static_define_list external="PCColorLink" />
     </column>
-    <column name="MaterialLink" type="U8">
-      <offset>61</offset>
+    <column name="Materiallink" type="U8">
+      <offset>105</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <static_define_list external="PCColorLink" />
     </column>
-    <column name="ControlledRandomLocks" type="INT">
-      <offset>64</offset>
+    <column name="Controlledrandomlocks" type="INT">
+      <offset>108</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <static_define_list external="PCControlledRandomLock" />
     </column>
-    <column name="BoneGroupIndex" type="INT">
-      <offset>68</offset>
+    <column name="Bonegroupindex" type="INT">
+      <offset>112</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <default>-1</default>
     </column>
-    <column name="iBoneGroupIndex" type="INT">
-      <offset>68</offset>
+    <column name="Ibonegroupindex" type="INT">
+      <offset>112</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>CLIENT_ONLY</flag>
       </flags>
-      <redundant_name>BoneGroupIndex</redundant_name>
+      <redundant_name>Bonegroupindex</redundant_name>
       <default>-1</default>
     </column>
     <column name="Cloth" type="OPTIONALSTRUCT">
-      <offset>72</offset>
+      <offset>120</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="PCPart" />
     </column>
-    <column name="pchOrigBone" type="STRING">
-      <offset>76</offset>
+    <column name="Pchorigbone" type="STRING">
+      <offset>128</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>NO_TEXT_SAVE</flag>
@@ -184,12 +188,16 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pchAnimNodeAliasList" type="STRING">
-      <offset>80</offset>
+    <column name="Pchanimnodealiaslist" type="STRING">
+      <offset>136</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
+    <column name="Uilinkeditemid" type="IGNORE" />
+    <column name="Ilinkeditemgemslot" type="IGNORE" />
+    <column name="Uilinkeditemsubid" type="IGNORE" />
+    <column name="Weaponactivefx" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

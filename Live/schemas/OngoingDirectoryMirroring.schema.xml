@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="OngoingDirectoryMirroring">
+  <table>
+    <column name="OngoingDirectoryMirroring" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Sikey" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Sourcedir" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Targetdir" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Operations" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="DirectoryContentsDeltaOperation" />
+    </column>
+    <column name="Numretries" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Waitingforfile" type="U8">
+      <offset>52</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Timestartedqueryableprocess" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Failurecode" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Failurestring" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

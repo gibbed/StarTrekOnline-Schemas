@@ -7,14 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DefineName" type="STRING">
+    <column name="Definename" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
       </flags>
     </column>
+    <column name="Maincomment" type="STRING">
+      <offset>8</offset>
+    </column>
     <column name="Fields" type="STRUCT">
-      <offset>4</offset>
+      <offset>16</offset>
       <subtable external="StaticDefineEntryForServerMon" />
     </column>
     <column name="}" type="END" />

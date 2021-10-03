@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ArgIndex" type="INT">
+    <column name="Argindex" type="INT">
       <offset>0</offset>
     </column>
-    <column name="NameListType" type="INT">
+    <column name="Namelisttype" type="INT">
       <offset>4</offset>
     </column>
     <column name="Names" type="STRINGARRAY">

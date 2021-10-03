@@ -6,6 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="Type" type="INT">
       <offset>0</offset>
       <flags>
@@ -14,11 +15,11 @@
       <static_define_list external="GenesisSkyType" />
     </column>
     <column name="Str" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

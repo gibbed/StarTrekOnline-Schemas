@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EntityMovementNavmeshSync">
+  <table>
+    <column name="EntityMovementNavmeshSync" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="InCombat" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Synctest" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Flourishtimer" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Turncustom" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="SurfaceMovementTurnDef" />
+    </column>
+    <column name="Turnoverride" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="SurfaceMovementTurnDef" />
+    </column>
+    <column name="Flagsmutable" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
+      <subtable external="EntityMovementNavmeshSyncFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

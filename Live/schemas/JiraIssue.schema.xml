@@ -14,21 +14,21 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="assignee" type="STRING">
-      <offset>4</offset>
+    <column name="Assignee" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
     <column name="Status" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="resolution" type="INT">
-      <offset>12</offset>
+    <column name="Resolution" type="INT">
+      <offset>20</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>

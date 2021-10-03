@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DCMKeyValuePair_Type">
+  <elements type="int">
+    <element name="NORMAL">0</element>
+    <element name="INTERNAL">1</element>
+    <element name="SHARDLAUNCHER_EXPECTED_VALUES">2</element>
+    <element name="TEMP_ONE_HOUR">3</element>
+    <element name="TEMP_ONE_DAY">4</element>
+    <element name="TEMP_ONE_WEEK">5</element>
+  </elements>
+</enum>

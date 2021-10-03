@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ErrorBox_Summary">
+  <table>
+    <column name="ErrorBox_Summary" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Ulastupdatess2000" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Ulasterrortimess2000" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Unumerrorslastminuteall" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Unumerrorslast15minutesall" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Ulasterrortimecurrentuserss2000" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Unumerrorslastminuteyou" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Unumerrorslast15minutesyou" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

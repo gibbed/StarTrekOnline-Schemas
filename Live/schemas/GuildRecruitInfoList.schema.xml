@@ -11,11 +11,11 @@
       <offset>0</offset>
       <subtable external="GuildRecruitInfo" />
     </column>
-    <column name="timeTaken" type="F32">
-      <offset>4</offset>
-    </column>
-    <column name="cooldownEnd" type="INT">
+    <column name="Timetaken" type="F32">
       <offset>8</offset>
+    </column>
+    <column name="Cooldownend" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

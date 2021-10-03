@@ -5,5 +5,7 @@
     <element name="Linear2">1</element>
     <element name="Hinge">2</element>
     <element name="Hinge2">3</element>
+    <element name="HingeNew">4</element>
+    <element name="HingeNew2">5</element>
   </elements>
 </enum>

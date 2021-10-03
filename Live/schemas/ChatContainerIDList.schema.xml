@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ContainerIDList" type="INTARRAY">
+    <column name="Containeridlist" type="INTARRAY">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

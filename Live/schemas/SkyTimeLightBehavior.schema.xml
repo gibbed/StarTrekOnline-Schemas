@@ -9,30 +9,30 @@
     <column name="Time" type="F32">
       <offset>0</offset>
     </column>
-    <column name="LightRange" type="F32">
+    <column name="Lightrange" type="F32">
       <offset>4</offset>
     </column>
-    <column name="LightAdaptation" type="F32">
+    <column name="Lightadaptation" type="F32">
       <offset>8</offset>
     </column>
-    <column name="LightAdaptationRate" type="F32">
+    <column name="Lightadaptationrate" type="F32">
       <offset>12</offset>
     </column>
     <column name="Exposure" type="F32">
       <offset>16</offset>
     </column>
-    <column name="BlueshiftMin" type="F32">
+    <column name="Blueshiftmin" type="F32">
       <offset>20</offset>
     </column>
-    <column name="BlueshiftMax" type="F32">
+    <column name="Blueshiftmax" type="F32">
       <offset>24</offset>
     </column>
-    <column name="BlueshiftHSV" type="F32FIXEDARRAY">
+    <column name="Blueshifthsv" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="bfParamsSpecified" type="INTFIXEDARRAY">
+    <column name="Bfparamsspecified" type="INTFIXEDARRAY">
       <offset>40</offset>
       <flags>
         <flag>USEDFIELD</flag>
@@ -40,9 +40,9 @@
       </flags>
       <num_elements>1</num_elements>
     </column>
-    <column name="ExposureMin" type="IGNORE" />
-    <column name="ExposureMax" type="IGNORE" />
-    <column name="LuminanceRange" type="IGNORE" />
-    <column name="EndSkyLightBehavior" type="END" />
+    <column name="Exposuremin" type="IGNORE" />
+    <column name="Exposuremax" type="IGNORE" />
+    <column name="Luminancerange" type="IGNORE" />
+    <column name="Endskylightbehavior" type="END" />
   </table>
 </parser>

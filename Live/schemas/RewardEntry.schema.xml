@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ChoiceType" type="INT">
+    <column name="Choicetype" type="INT">
       <offset>0</offset>
       <static_define_list external="RewardChoiceType" />
     </column>
@@ -15,7 +15,7 @@
       <offset>4</offset>
       <static_define_list external="RewardType" />
     </column>
-    <column name="numeric_op" type="INT">
+    <column name="Numeric_Op" type="INT">
       <offset>8</offset>
       <static_define_list external="NumericOp" />
     </column>
@@ -23,138 +23,229 @@
       <offset>12</offset>
       <default>1</default>
     </column>
-    <column name="Count" type="INT">
+    <column name="Weightexpression" type="OPTIONALSTRUCT">
       <offset>16</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Count" type="INT">
+      <offset>24</offset>
       <default>1</default>
     </column>
-    <column name="CountExpression" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Resultmultiplier" type="INT">
+      <offset>28</offset>
+      <default>1</default>
+    </column>
+    <column name="Countexpression" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Resultmultiplierexpression" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="Expression" />
     </column>
     <column name="ItemDef" type="REFERENCE">
-      <offset>24</offset>
+      <offset>48</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="hUnidentifiedResultDef" type="REFERENCE">
-      <offset>28</offset>
+    <column name="Hunidentifiedresultdef" type="REFERENCE">
+      <offset>56</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
     <column name="MinLevel" type="INT">
-      <offset>32</offset>
+      <offset>64</offset>
     </column>
     <column name="MaxLevel" type="INT">
-      <offset>36</offset>
+      <offset>68</offset>
     </column>
-    <column name="RewardTable" type="REFERENCE">
-      <offset>40</offset>
+    <column name="Rewardtable" type="REFERENCE">
+      <offset>72</offset>
       <flags>
         <flag>STRUCT_NORECURSE</flag>
       </flags>
       <dictionary_name>RewardTable</dictionary_name>
     </column>
-    <column name="RewardValTableOverride" type="REFERENCE">
-      <offset>44</offset>
+    <column name="Dyerewardtable" type="REFERENCE">
+      <offset>80</offset>
+      <flags>
+        <flag>STRUCT_NORECURSE</flag>
+      </flags>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Rewardvaltableoverride" type="REFERENCE">
+      <offset>88</offset>
       <dictionary_name>RewardValTable</dictionary_name>
     </column>
     <column name="Value" type="F32">
-      <offset>48</offset>
+      <offset>96</offset>
     </column>
     <column name="ItemPowerDef" type="REFERENCE">
-      <offset>52</offset>
+      <offset>104</offset>
       <dictionary_name>ItemPowerDef</dictionary_name>
     </column>
-    <column name="CostumeDef" type="REFERENCE">
-      <offset>56</offset>
+    <column name="Costumedef" type="REFERENCE">
+      <offset>112</offset>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="RequiresExpression" type="OPTIONALSTRUCT">
-      <offset>60</offset>
+    <column name="Requiresexpression" type="OPTIONALSTRUCT">
+      <offset>120</offset>
       <subtable external="Expression" />
     </column>
-    <column name="RequiredGamePermissionToken" type="STRINGARRAY">
-      <offset>64</offset>
+    <column name="Requiredgamepermissiontoken" type="STRINGARRAY">
+      <offset>128</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Dynamicitempowers" type="STRINGARRAY">
+      <offset>136</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Quality" type="INT">
-      <offset>68</offset>
+      <offset>144</offset>
       <static_define_list external="ItemQuality" />
     </column>
-    <column name="ActivityName" type="STRING">
-      <offset>76</offset>
+    <column name="Progressionlevel" type="INT">
+      <offset>148</offset>
+    </column>
+    <column name="Progressionlevelexpression" type="OPTIONALSTRUCT">
+      <offset>152</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Activityname" type="STRING">
+      <offset>168</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="RequiredActivity" type="STRING">
-      <offset>76</offset>
+    <column name="Requiredactivity" type="STRING">
+      <offset>168</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ActivityName</redundant_name>
+      <redundant_name>Activityname</redundant_name>
     </column>
-    <column name="ShardVariable" type="STRING">
-      <offset>80</offset>
+    <column name="Shardvariable" type="STRING">
+      <offset>176</offset>
     </column>
-    <column name="CharacterBasedIncludeType" type="INT">
-      <offset>84</offset>
+    <column name="Characterbasedincludetype" type="INT">
+      <offset>184</offset>
       <default>1</default>
       <static_define_list external="CharacterBasedIncludeType" />
     </column>
-    <column name="CharacterBasedIncludePrefix" type="STRING">
-      <offset>88</offset>
+    <column name="Characterbasedincludeprefix" type="STRING">
+      <offset>192</offset>
     </column>
-    <column name="BroadcastChatMessage" type="EMBEDDEDSTRUCT">
-      <offset>92</offset>
+    <column name="Broadcastchatmessage" type="EMBEDDEDSTRUCT">
+      <offset>200</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="RewardDiffPowerScaleMult" type="F32">
-      <offset>104</offset>
+    <column name="Rewardentrymsg" type="EMBEDDEDSTRUCT">
+      <offset>224</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Gamespecificdata" type="OPTIONALSTRUCT">
+      <offset>248</offset>
+      <subtable external="GameSpecificRewardEntryData" />
+    </column>
+    <column name="Rewarddiffpowerscalemult" type="F32">
+      <offset>256</offset>
       <default>1</default>
     </column>
-    <column name="ForceBind" type="BIT">
-      <offset>108</offset>
+    <column name="Forcebind" type="BIT">
+      <offset>260</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="BaseItemsOnly" type="BIT">
-      <offset>108</offset>
+    <column name="Forcebindtoaccount" type="BIT">
+      <offset>260</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="ScaleNumeric" type="BIT">
-      <offset>108</offset>
+    <column name="Baseitemsonly" type="BIT">
+      <offset>260</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="HideInUI" type="BIT">
-      <offset>108</offset>
+    <column name="Scalenumeric" type="BIT">
+      <offset>260</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="ResetGatedTable" type="BIT">
-      <offset>108</offset>
+    <column name="Scaleitemcount" type="BIT">
+      <offset>260</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="SpecialReward" type="INT">
-      <offset>112</offset>
+    <column name="Hideinui" type="BIT">
+      <offset>260</offset>
+      <bit_offset>65541</bit_offset>
     </column>
-    <column name="GatedForNumeric" type="INT">
-      <offset>116</offset>
+    <column name="Resetgatedtable" type="BIT">
+      <offset>260</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Giverewardifgateused" type="BIT">
+      <offset>260</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Giverewardifgateunused" type="BIT">
+      <offset>261</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Delayedrewardgivealways" type="BIT">
+      <offset>261</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Ignorerewardmodifiers" type="BIT">
+      <offset>261</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Setrewardleveltoplayerlevel" type="BIT">
+      <offset>261</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Alwaysshowinpreview" type="BIT">
+      <offset>261</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Numericoverflowcheck" type="BIT">
+      <offset>261</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Notifypartitiononreceipt" type="BIT">
+      <offset>261</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Givetosharedbank" type="BIT">
+      <offset>261</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Specialreward" type="INT">
+      <offset>264</offset>
+    </column>
+    <column name="Rewardgroup" type="INT">
+      <offset>268</offset>
+      <static_define_list external="RewardGroup" />
+    </column>
+    <column name="Gatedfornumeric" type="INT">
+      <offset>272</offset>
       <static_define_list external="RewardGatedType" />
     </column>
-    <column name="GatedPercentChange" type="INT">
-      <offset>120</offset>
+    <column name="Gatedpercentchange" type="INT">
+      <offset>276</offset>
     </column>
-    <column name="MaxGatedPercentChange" type="INT">
-      <offset>124</offset>
+    <column name="Maxgatedpercentchange" type="INT">
+      <offset>280</offset>
     </column>
     <column name="Scale" type="F32">
-      <offset>128</offset>
+      <offset>284</offset>
       <default>1</default>
     </column>
-    <column name="UnidentifiedResultLevel" type="INT">
-      <offset>132</offset>
+    <column name="Unidentifiedresultlevel" type="INT">
+      <offset>288</offset>
     </column>
-    <column name="DisableCostume" type="IGNORE" />
+    <column name="Forcerewardlevel" type="INT">
+      <offset>292</offset>
+    </column>
+    <column name="Disablecostume" type="IGNORE" />
     <column name="DisplayNameMsg" type="IGNORE" />
     <column name="}" type="END" />
   </table>

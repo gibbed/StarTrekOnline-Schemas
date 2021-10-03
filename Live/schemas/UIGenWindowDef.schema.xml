@@ -17,36 +17,42 @@
       </flags>
     </column>
     <column name="Clones" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="HideInState" type="INTARRAY">
       <offset>8</offset>
-      <static_define_list external="UIGenState" />
     </column>
-    <column name="RequireInState" type="INTARRAY">
-      <offset>12</offset>
-      <static_define_list external="UIGenState" />
-    </column>
-    <column name="AllowInState" type="INTARRAY">
+    <column name="Hideinstate" type="INTARRAY">
       <offset>16</offset>
       <static_define_list external="UIGenState" />
     </column>
-    <column name="Modal" type="U8">
-      <offset>20</offset>
-    </column>
-    <column name="PersistOpen" type="U8">
-      <offset>21</offset>
-    </column>
-    <column name="OnWindowAdded" type="OPTIONALSTRUCT">
+    <column name="Requireinstate" type="INTARRAY">
       <offset>24</offset>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="Allowinstate" type="INTARRAY">
+      <offset>32</offset>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="Dontaddinstate" type="INTARRAY">
+      <offset>40</offset>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="Modal" type="U8">
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Persistopen" type="U8">
+      <offset>49</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Onwindowadded" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <subtable external="UIGenAction" />
     </column>
-    <column name="OnWindowRemoved" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Onwindowremoved" type="OPTIONALSTRUCT">
+      <offset>64</offset>
       <subtable external="UIGenAction" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>32</offset>
+      <offset>72</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

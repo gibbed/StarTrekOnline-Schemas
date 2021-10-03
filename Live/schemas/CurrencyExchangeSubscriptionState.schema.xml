@@ -13,17 +13,17 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="subscriberID" type="INT">
+    <column name="Subscriberid" type="INT">
       <offset>8</offset>
     </column>
-    <column name="subscriberType" type="INT">
+    <column name="Subscribertype" type="INT">
       <offset>12</offset>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="lastUIDataRequestTime" type="INT">
+    <column name="Lastuidatarequesttime" type="INT">
       <offset>16</offset>
     </column>
-    <column name="lastUIDataUpdateTime" type="INT">
+    <column name="Lastuidataupdatetime" type="INT">
       <offset>20</offset>
     </column>
     <column name="}" type="END" />

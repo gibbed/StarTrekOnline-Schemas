@@ -13,14 +13,14 @@
     <column name="Slope" type="F32">
       <offset>4</offset>
     </column>
-    <column name="GroundMaterialName" type="STRING">
+    <column name="Groundmaterialname" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MaterialPhysicalProperty" type="STRING">
-      <offset>12</offset>
+    <column name="Materialphysicalproperty" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CrypticRPCRequestFlags">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="LOGEVERYTHING">1</element>
+    <element name="SLOWRESPONSE">2</element>
+    <element name="RECOVERED_FROM_DISK_AFTER_CRASH">4</element>
+  </elements>
+</enum>

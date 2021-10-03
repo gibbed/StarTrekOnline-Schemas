@@ -11,10 +11,10 @@
       <offset>0</offset>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="oldID" type="INT">
+    <column name="Oldid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="newID" type="INT">
+    <column name="Newid" type="INT">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

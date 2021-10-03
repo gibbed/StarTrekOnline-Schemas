@@ -7,70 +7,70 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ExprBlockHealth" type="OPTIONALSTRUCT">
+    <column name="Exprblockhealth" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="Expression" />
     </column>
-    <column name="TableHealth" type="STRING">
-      <offset>4</offset>
+    <column name="Tablehealth" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Pool" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="CombatPoolDef" />
     </column>
     <column name="Proportion" type="F32">
-      <offset>20</offset>
-    </column>
-    <column name="ScaleIn" type="REFERENCE">
-      <offset>24</offset>
-      <dictionary_name>FragileScaleSet</dictionary_name>
-    </column>
-    <column name="ScaleOut" type="REFERENCE">
-      <offset>28</offset>
-      <dictionary_name>FragileScaleSet</dictionary_name>
-    </column>
-    <column name="TagsExclude" type="EMBEDDEDSTRUCT">
       <offset>32</offset>
+    </column>
+    <column name="Scalein" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>FragileScaleSet</dictionary_name>
+    </column>
+    <column name="Scaleout" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>FragileScaleSet</dictionary_name>
+    </column>
+    <column name="Tagsexclude" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
       <subtable external="PowerTagsStruct" />
     </column>
-    <column name="MagnitudeIsHealth" type="BIT">
-      <offset>36</offset>
+    <column name="Magnitudeishealth" type="BIT">
+      <offset>64</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="SourceOnlyIn" type="BIT">
-      <offset>36</offset>
+    <column name="Sourceonlyin" type="BIT">
+      <offset>64</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="SourceOnlyOut" type="BIT">
-      <offset>36</offset>
+    <column name="Sourceonlyout" type="BIT">
+      <offset>64</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="UseResistIn" type="BIT">
-      <offset>36</offset>
+    <column name="Useresistin" type="BIT">
+      <offset>64</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="UseResistOut" type="BIT">
-      <offset>36</offset>
+    <column name="Useresistout" type="BIT">
+      <offset>64</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="FragileWhileDelayed" type="BIT">
-      <offset>36</offset>
+    <column name="Fragilewhiledelayed" type="BIT">
+      <offset>64</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="FragileToSameApply" type="BIT">
-      <offset>36</offset>
+    <column name="Fragiletosameapply" type="BIT">
+      <offset>64</offset>
       <bit_offset>65542</bit_offset>
     </column>
     <column name="Unkillable" type="BIT">
-      <offset>36</offset>
+      <offset>64</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="ReplaceKeepsHealth" type="BIT">
-      <offset>36</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Replacekeepshealth" type="BIT">
+      <offset>65</offset>
+      <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

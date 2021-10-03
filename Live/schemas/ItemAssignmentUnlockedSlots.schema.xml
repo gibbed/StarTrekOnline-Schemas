@@ -7,8 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="Slots" type="INTARRAY">
+    <column name="Slotsset" type="STRING">
       <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Slots" type="INTARRAY">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

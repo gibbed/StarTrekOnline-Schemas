@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ContactDialogSortType">
+  <elements type="int">
+    <element name="Name">0</element>
+    <element name="Quest">1</element>
+    <element name="Level">2</element>
+    <element name="COUNT">3</element>
+  </elements>
+</enum>

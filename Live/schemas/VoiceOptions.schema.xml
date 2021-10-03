@@ -7,36 +7,40 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SpeakerVolume" type="INT">
+    <column name="Speakervolume" type="INT">
       <offset>0</offset>
       <default>40</default>
     </column>
-    <column name="MuteInactive" type="INT">
+    <column name="Muteinactive" type="INT">
       <offset>4</offset>
     </column>
-    <column name="MicLevel" type="INT">
+    <column name="Miclevel" type="INT">
       <offset>8</offset>
       <default>40</default>
     </column>
-    <column name="OpenMic" type="INT">
+    <column name="Openmic" type="INT">
       <offset>12</offset>
     </column>
-    <column name="NoVoice" type="INT">
+    <column name="Novoice" type="INT">
       <offset>16</offset>
     </column>
-    <column name="MultiMode" type="INT">
+    <column name="Multimode" type="INT">
       <offset>20</offset>
       <static_define_list external="MultiChannelMode" />
     </column>
-    <column name="DuckPercent" type="F32">
+    <column name="Duckpercent" type="F32">
       <offset>24</offset>
       <default>1056964608</default>
     </column>
-    <column name="InputDev" type="INT">
+    <column name="Duckonchat" type="INT">
       <offset>28</offset>
+      <default>100</default>
     </column>
-    <column name="OutputDev" type="INT">
+    <column name="Inputdev" type="INT">
       <offset>32</offset>
+    </column>
+    <column name="Outputdev" type="INT">
+      <offset>36</offset>
     </column>
     <column name="}" type="END" />
   </table>

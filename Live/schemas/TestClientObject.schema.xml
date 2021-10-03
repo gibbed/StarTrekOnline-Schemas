@@ -14,29 +14,33 @@
       </flags>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Ref" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
     </column>
     <column name="Pos" type="F32FIXEDARRAY">
-      <offset>12</offset>
+      <offset>20</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Distance" type="F32">
-      <offset>24</offset>
+      <offset>32</offset>
     </column>
     <column name="Destructible" type="U8">
-      <offset>28</offset>
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Clickable" type="U8">
-      <offset>29</offset>
+      <offset>37</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Door" type="U8">
-      <offset>30</offset>
+      <offset>38</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

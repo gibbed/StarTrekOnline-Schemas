@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="GuildAllianceRewardTier">
+  <table>
+    <column name="GuildAllianceRewardTier" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Minguildalliancelevel" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Maxguildalliancelevel" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Perdepthdiscounts" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="DonationTaskDiscountDefRef" />
+    </column>
+    <column name="Perdepthbonusamounts" type="F32ARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Levelmultipliedperdepthdiscounts" type="F32ARRAY">
+      <offset>24</offset>
+    </column>
+    <column name="Levelmultipliedperdepthbonusamounts" type="F32ARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

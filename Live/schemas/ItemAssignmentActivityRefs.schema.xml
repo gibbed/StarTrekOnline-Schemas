@@ -15,7 +15,7 @@
       </flags>
     </column>
     <column name="Refs" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="ItemAssignmentDefRef" />
     </column>
     <column name="}" type="END" />

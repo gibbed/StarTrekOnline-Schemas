@@ -7,20 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hog_file" type="STRING">
+    <column name="Hog_File" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="FileName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
-    </column>
-    <column name="isSnap" type="U8">
-      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

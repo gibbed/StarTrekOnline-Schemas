@@ -7,11 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uStartDate" type="INT">
+    <column name="Index" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uEndDate" type="INT">
+    <column name="Uinterval" type="INT">
       <offset>4</offset>
+    </column>
+    <column name="Ustartdate" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Uenddate" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,32 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiID" type="INT">
+    <column name="Memberentityinfo" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
+      <subtable external="QueueMemberEntityInfo" />
     </column>
-    <column name="uiTeamID" type="INT">
-      <offset>4</offset>
+    <column name="Mapkey" type="INT64">
+      <offset>96</offset>
     </column>
-    <column name="MapKey" type="INT64">
-      <offset>8</offset>
+    <column name="Joinmapkey" type="INT64">
+      <offset>104</offset>
     </column>
-    <column name="JoinMapKey" type="INT64">
-      <offset>16</offset>
-    </column>
-    <column name="GroupIndex" type="INT">
-      <offset>24</offset>
-    </column>
-    <column name="Level" type="INT">
-      <offset>28</offset>
-    </column>
-    <column name="Rank" type="INT">
-      <offset>32</offset>
+    <column name="Groupindex" type="INT">
+      <offset>112</offset>
     </column>
     <column name="State" type="INT">
-      <offset>36</offset>
+      <offset>116</offset>
     </column>
-    <column name="hEntity" type="REFERENCE">
-      <offset>40</offset>
+    <column name="Hentity" type="REFERENCE">
+      <offset>120</offset>
       <dictionary_name>CopyDict_ENTITYPLAYER</dictionary_name>
     </column>
     <column name="}" type="END" />

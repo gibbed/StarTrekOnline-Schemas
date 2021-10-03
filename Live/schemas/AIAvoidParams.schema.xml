@@ -12,13 +12,13 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1161</default>
+      <default>1263</default>
       <static_define_list external="AttribType" />
     </column>
     <column name="Radius" type="F32">
       <offset>4</offset>
     </column>
-    <column name="VolumeType" type="INT">
+    <column name="Volumetype" type="INT">
       <offset>8</offset>
       <static_define_list external="AIAvoidVolumeType" />
     </column>

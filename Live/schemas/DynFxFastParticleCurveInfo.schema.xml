@@ -10,6 +10,7 @@
     <column name="Color" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Rot" type="F32">
       <offset>16</offset>
@@ -20,6 +21,7 @@
     <column name="Scale" type="F32FIXEDARRAY">
       <offset>24</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

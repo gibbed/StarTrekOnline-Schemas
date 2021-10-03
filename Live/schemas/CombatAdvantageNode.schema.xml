@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="erEntity" type="INT">
+    <column name="Erentity" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uApplyID" type="INT">
+    <column name="Uapplyid" type="INT">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

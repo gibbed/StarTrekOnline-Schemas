@@ -7,20 +7,23 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CurrentSlot" type="EMBEDDEDSTRUCT">
+    <column name="Ucurrentitemid" type="INT64">
       <offset>0</offset>
-      <subtable external="InventorySlotReference" />
     </column>
-    <column name="CurrentItem" type="OPTIONALSTRUCT">
+    <column name="Currentitem" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Item" />
     </column>
-    <column name="GemSlots" type="STRUCT">
-      <offset>16</offset>
+    <column name="Gemslots" type="STRUCT">
+      <offset>24</offset>
       <subtable external="GemSlotUIGemSlot" />
+    </column>
+    <column name="Petinspect" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

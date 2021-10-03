@@ -11,32 +11,32 @@
       <offset>0</offset>
     </column>
     <column name="ToolTip" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="ValueName" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="UIType" type="INT">
-      <offset>12</offset>
+    <column name="Uitype" type="INT">
+      <offset>24</offset>
       <static_define_list external="TerrainUIType" />
     </column>
-    <column name="MinVal" type="F32">
-      <offset>16</offset>
-    </column>
-    <column name="MaxVal" type="F32">
-      <offset>20</offset>
-    </column>
-    <column name="Step" type="F32">
-      <offset>24</offset>
-    </column>
-    <column name="Bias" type="F32">
+    <column name="Minval" type="F32">
       <offset>28</offset>
     </column>
-    <column name="BiasOffset" type="F32">
+    <column name="Maxval" type="F32">
       <offset>32</offset>
+    </column>
+    <column name="Step" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Bias" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Biasoffset" type="F32">
+      <offset>44</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,32 +7,32 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="tex_count" type="INT16">
-      <offset>20</offset>
+    <column name="Tex_Count" type="INT16">
+      <offset>40</offset>
     </column>
-    <column name="const_count" type="INT16">
-      <offset>22</offset>
+    <column name="Const_Count" type="INT16">
+      <offset>42</offset>
     </column>
-    <column name="const_mapping_count" type="INT16">
-      <offset>24</offset>
+    <column name="Const_Mapping_Count" type="INT16">
+      <offset>44</offset>
     </column>
-    <column name="has_swaps" type="U8">
-      <offset>26</offset>
+    <column name="Has_Swaps" type="U8">
+      <offset>46</offset>
     </column>
-    <column name="is_occluder" type="U8">
-      <offset>27</offset>
+    <column name="Is_Occluder" type="U8">
+      <offset>47</offset>
     </column>
-    <column name="ref_count" type="INT">
-      <offset>28</offset>
+    <column name="Ref_Count" type="INT">
+      <offset>48</offset>
     </column>
     <column name="UID" type="INT">
-      <offset>32</offset>
+      <offset>52</offset>
     </column>
-    <column name="hash" type="INT">
-      <offset>36</offset>
+    <column name="Hash" type="INT">
+      <offset>56</offset>
     </column>
-    <column name="hash_debug" type="INT16FIXEDARRAY">
-      <offset>40</offset>
+    <column name="Hash_Debug" type="INT16FIXEDARRAY">
+      <offset>60</offset>
       <num_elements>4</num_elements>
     </column>
     <column name="}" type="END" />

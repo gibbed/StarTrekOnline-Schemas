@@ -10,33 +10,40 @@
     <column name="Offset" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="PYR" type="F32FIXEDARRAY">
       <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="actor_params" type="EMBEDDEDSTRUCT">
+    <column name="Actor_Params" type="EMBEDDEDSTRUCT">
       <offset>24</offset>
       <subtable external="GenesisPlacementActorParams" />
     </column>
-    <column name="is_actor" type="BIT">
-      <offset>40</offset>
+    <column name="Is_Actor" type="BIT">
+      <offset>56</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="AbsolutePosition" type="U8">
-      <offset>44</offset>
+    <column name="Absoluteposition" type="U8">
+      <offset>60</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SnapRayCast" type="U8">
-      <offset>45</offset>
+    <column name="Snapraycast" type="U8">
+      <offset>61</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SnapToGeo" type="U8">
-      <offset>46</offset>
+    <column name="Snaptogeo" type="U8">
+      <offset>62</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SnapNormal" type="U8">
-      <offset>47</offset>
+    <column name="Snapnormal" type="U8">
+      <offset>63</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="LegacyHeightCheck" type="U8">
-      <offset>48</offset>
+    <column name="Legacyheightcheck" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

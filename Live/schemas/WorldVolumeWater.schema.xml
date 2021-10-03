@@ -15,33 +15,33 @@
       </flags>
     </column>
     <column name="MaterialName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <default_string>WaterVolume_default</default_string>
     </column>
-    <column name="refractMin" type="F32">
-      <offset>8</offset>
+    <column name="Refractmin" type="F32">
+      <offset>16</offset>
       <default>1056964608</default>
     </column>
-    <column name="refractMax" type="F32">
-      <offset>12</offset>
+    <column name="Refractmax" type="F32">
+      <offset>20</offset>
       <default>6</default>
     </column>
-    <column name="rippleMin" type="F32">
-      <offset>16</offset>
+    <column name="Ripplemin" type="F32">
+      <offset>24</offset>
       <default>1</default>
     </column>
-    <column name="rippleMax" type="F32">
-      <offset>20</offset>
+    <column name="Ripplemax" type="F32">
+      <offset>28</offset>
       <default>12</default>
     </column>
     <column name="DOFValues" type="EMBEDDEDSTRUCT">
-      <offset>24</offset>
+      <offset>32</offset>
       <subtable external="DOFValues" />
     </column>
-    <column name="LowEnd" type="EMBEDDEDSTRUCT">
-      <offset>128</offset>
+    <column name="Lowend" type="EMBEDDEDSTRUCT">
+      <offset>136</offset>
       <subtable external="WorldVolumeWaterLowEnd" />
     </column>
-    <column name="EndWater" type="END" />
+    <column name="Endwater" type="END" />
   </table>
 </parser>

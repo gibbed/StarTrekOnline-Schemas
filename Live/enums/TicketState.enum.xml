@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="TicketState">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="PWAccountInfoQuery">1</element>
+    <element name="ArcAccountInfoQuery">2</element>
+    <element name="ZendeskUserInfoQuery">3</element>
+    <element name="ZendeskUserCreate">4</element>
+    <element name="ZendeskTicketCreate">5</element>
+  </elements>
+</enum>

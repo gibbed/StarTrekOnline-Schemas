@@ -2,5 +2,17 @@
 <enum name="ItemTag">
   <elements type="int">
     <element name="None">0</element>
+    <element name="Minor">2</element>
+    <element name="Major">3</element>
+    <element name="Critical">4</element>
+    <element name="Fleet_Ship">5</element>
+    <element name="Tier_6_Ship">6</element>
+    <element name="Tier_6_Fleet_Ship">7</element>
+    <element name="Tier_5_Ship">8</element>
+    <element name="Common">9</element>
+    <element name="Uncommon">10</element>
+    <element name="Rare">11</element>
+    <element name="VeryRare">12</element>
+    <element name="UltraRare">13</element>
   </elements>
 </enum>

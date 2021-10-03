@@ -7,38 +7,38 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CategoryName" type="STRING">
+    <column name="Categoryname" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="CategoryNameWithoutPrefix" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>UNKNOWN_32</flag>
-      </flags>
-    </column>
-    <column name="CategoryNamePrefix" type="STRING">
+    <column name="Categorynamewithoutprefix" type="STRING">
       <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Categorynameprefix" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="DisplayName" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Category" type="INT">
-      <offset>16</offset>
+      <offset>32</offset>
       <static_define_list external="ItemCategory" />
     </column>
-    <column name="CategoryData" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Categorydata" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="ItemCategoryInfo" />
     </column>

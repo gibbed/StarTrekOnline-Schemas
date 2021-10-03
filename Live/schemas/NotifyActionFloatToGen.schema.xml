@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="InterpType" type="INT">
+    <column name="Interptype" type="INT">
       <offset>0</offset>
       <static_define_list external="ENotifyFloatToInterp" />
     </column>
     <column name="Gen" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>NON_NULL_REF</flag>
@@ -20,14 +20,14 @@
       <dictionary_name>UIGen</dictionary_name>
     </column>
     <column name="Fallback" type="REFERENCE">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>NON_NULL_REF</flag>
       </flags>
       <dictionary_name>UIGen</dictionary_name>
     </column>
     <column name="Font" type="REFERENCE">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>NON_NULL_REF</flag>
@@ -35,101 +35,102 @@
       <dictionary_name>UIStyleFont</dictionary_name>
     </column>
     <column name="Lifetime" type="F32">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <default>1075838976</default>
     </column>
-    <column name="DisplayStringOverride" type="OPTIONALSTRUCT">
-      <offset>20</offset>
-      <subtable external="Expression" />
-    </column>
-    <column name="ExprDisplayStringOverride" type="OPTIONALSTRUCT">
-      <offset>20</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>DisplayStringOverride</redundant_name>
-      <subtable external="Expression_StructParam" />
-    </column>
-    <column name="ShowFloatTo" type="OPTIONALSTRUCT">
-      <offset>24</offset>
-      <subtable external="Expression" />
-    </column>
-    <column name="ExprShowFloatTo" type="OPTIONALSTRUCT">
-      <offset>24</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>ShowFloatTo</redundant_name>
-      <subtable external="Expression_StructParam" />
-    </column>
-    <column name="OnExpire" type="OPTIONALSTRUCT">
-      <offset>28</offset>
-      <subtable external="Expression" />
-    </column>
-    <column name="ExprOnExpire" type="OPTIONALSTRUCT">
-      <offset>28</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>OnExpire</redundant_name>
-      <subtable external="Expression_StructParam" />
-    </column>
-    <column name="OffsetMagnitude" type="F32">
-      <offset>32</offset>
-    </column>
-    <column name="OffsetYaw" type="F32">
-      <offset>36</offset>
-    </column>
-    <column name="TextScale" type="F32">
+    <column name="Displaystringoverride" type="OPTIONALSTRUCT">
       <offset>40</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprdisplaystringoverride" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Displaystringoverride</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Showfloatto" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Exprshowfloatto" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Showfloatto</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Onexpire" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Expronexpire" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Onexpire</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Offsetmagnitude" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Offsetyaw" type="F32">
+      <offset>68</offset>
+    </column>
+    <column name="Textscale" type="F32">
+      <offset>72</offset>
       <default>1</default>
     </column>
-    <column name="StartX" type="F32">
-      <offset>44</offset>
+    <column name="Startx" type="F32">
+      <offset>76</offset>
       <default>1056964608</default>
     </column>
-    <column name="StartY" type="F32">
-      <offset>48</offset>
+    <column name="Starty" type="F32">
+      <offset>80</offset>
       <default>1056964608</default>
     </column>
     <column name="IconName" type="STRING">
-      <offset>52</offset>
+      <offset>88</offset>
       <flags>
         <flag>NON_NULL_REF</flag>
       </flags>
     </column>
-    <column name="IconWidth" type="F32">
-      <offset>56</offset>
+    <column name="Iconwidth" type="F32">
+      <offset>96</offset>
     </column>
-    <column name="IconHeight" type="F32">
-      <offset>60</offset>
+    <column name="Iconheight" type="F32">
+      <offset>100</offset>
     </column>
-    <column name="AttachedFX" type="STRING">
-      <offset>64</offset>
+    <column name="Attachedfx" type="STRING">
+      <offset>104</offset>
     </column>
-    <column name="SplineInfo" type="OPTIONALSTRUCT">
-      <offset>68</offset>
+    <column name="Splineinfo" type="OPTIONALSTRUCT">
+      <offset>112</offset>
       <subtable external="NotifyFloatToSplineDef" />
     </column>
-    <column name="ScaleInNormTime" type="F32">
-      <offset>72</offset>
+    <column name="Scaleinnormtime" type="F32">
+      <offset>120</offset>
       <default>1048576000</default>
     </column>
-    <column name="ScaleOutNormTime" type="F32">
-      <offset>76</offset>
+    <column name="Scaleoutnormtime" type="F32">
+      <offset>124</offset>
       <default>1048576000</default>
     </column>
-    <column name="FadeInNormTime" type="F32">
-      <offset>80</offset>
+    <column name="Fadeinnormtime" type="F32">
+      <offset>128</offset>
     </column>
-    <column name="FadeOutNormTime" type="F32">
-      <offset>84</offset>
+    <column name="Fadeoutnormtime" type="F32">
+      <offset>132</offset>
     </column>
-    <column name="AnchorToWorld" type="U8">
-      <offset>88</offset>
+    <column name="Anchortoworld" type="U8">
+      <offset>136</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

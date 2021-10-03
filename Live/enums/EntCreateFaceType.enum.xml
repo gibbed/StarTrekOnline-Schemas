@@ -6,5 +6,6 @@
     <element name="RelativeToTarget">2</element>
     <element name="FaceCreator">3</element>
     <element name="FaceTarget">4</element>
+    <element name="FaceTargetLocation">5</element>
   </elements>
 </enum>

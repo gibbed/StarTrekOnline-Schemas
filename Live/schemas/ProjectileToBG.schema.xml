@@ -7,46 +7,48 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="minHold" type="INT">
+    <column name="Vel" type="F32FIXEDARRAY">
       <offset>0</offset>
-    </column>
-    <column name="vel" type="F32FIXEDARRAY">
-      <offset>4</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Target" type="F32FIXEDARRAY">
-      <offset>16</offset>
+      <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Timer" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Impacttimer" type="F32">
       <offset>28</offset>
     </column>
-    <column name="impactTimer" type="F32">
+    <column name="Getuptimer" type="F32">
       <offset>32</offset>
     </column>
-    <column name="getupTimer" type="F32">
+    <column name="Magnitudescale" type="F32">
       <offset>36</offset>
     </column>
-    <column name="spcStart" type="INT">
+    <column name="Spcstart" type="INT">
       <offset>40</offset>
     </column>
-    <column name="useTarget" type="BIT">
+    <column name="Usetarget" type="BIT">
       <offset>44</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="lowAngle" type="BIT">
+    <column name="Lowangle" type="BIT">
       <offset>44</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="isInFlight" type="BIT">
+    <column name="Isinflight" type="BIT">
       <offset>44</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="proneAtEnd" type="BIT">
+    <column name="Proneatend" type="BIT">
       <offset>44</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="NearDeath" type="BIT">
+    <column name="Neardeath" type="BIT">
       <offset>44</offset>
       <bit_offset>65540</bit_offset>
     </column>
@@ -54,13 +56,21 @@
       <offset>44</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="IgnoreTravelTime" type="BIT">
+    <column name="Ignoretraveltime" type="BIT">
       <offset>44</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="resetAnimBits" type="BIT">
+    <column name="Resetanimbits" type="BIT">
       <offset>44</offset>
       <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Resetadditivevel" type="BIT">
+      <offset>45</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Isoverridetacticalknock" type="BIT">
+      <offset>45</offset>
+      <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

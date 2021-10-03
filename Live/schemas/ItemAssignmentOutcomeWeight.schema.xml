@@ -16,13 +16,13 @@
       </flags>
     </column>
     <column name="Value" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="ItemAssignmentWeightType" />
     </column>
     <column name="Weight" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Value</redundant_name>
       <static_define_list external="ItemAssignmentWeightType" />

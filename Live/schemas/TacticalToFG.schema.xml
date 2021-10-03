@@ -7,28 +7,28 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="spcRunningStart" type="INT">
+    <column name="Spcrunningstart" type="INT">
       <offset>0</offset>
     </column>
-    <column name="maxRunDurationSeconds" type="F32">
+    <column name="Maxrundurationseconds" type="F32">
       <offset>4</offset>
     </column>
-    <column name="runFuel" type="F32">
+    <column name="Runfuel" type="F32">
       <offset>8</offset>
     </column>
-    <column name="spcCooldownStart" type="INT">
+    <column name="Spccooldownstart" type="INT">
       <offset>12</offset>
     </column>
-    <column name="spcAimCooldownStart" type="INT">
+    <column name="Spcaimcooldownstart" type="INT">
       <offset>16</offset>
     </column>
-    <column name="runCooldownSeconds" type="F32">
+    <column name="Runcooldownseconds" type="F32">
       <offset>20</offset>
     </column>
-    <column name="rollCooldownSeconds" type="F32">
+    <column name="Rollcooldownseconds" type="F32">
       <offset>24</offset>
     </column>
-    <column name="aimCooldownSeconds" type="F32">
+    <column name="Aimcooldownseconds" type="F32">
       <offset>28</offset>
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">

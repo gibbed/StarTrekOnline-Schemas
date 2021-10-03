@@ -11,31 +11,50 @@
       <offset>0</offset>
       <static_define_list external="ControlSchemeRegionType" />
     </column>
-    <column name="NotifyAudioMode" type="INT">
+    <column name="Notifyaudiomode" type="INT">
       <offset>4</offset>
       <default>1</default>
       <static_define_list external="PlayerNotifyAudioMode" />
     </column>
-    <column name="ShowOverhead" type="EMBEDDEDSTRUCT">
+    <column name="Showoverhead" type="EMBEDDEDSTRUCT">
       <offset>8</offset>
       <subtable external="PlayerShowOverhead" />
     </column>
-    <column name="TrayMode" type="U8">
+    <column name="Buffsortorder" type="INT">
+      <offset>56</offset>
+      <static_define_list external="BuffSortOrder" />
+    </column>
+    <column name="Buffscalehud" type="F32">
+      <offset>60</offset>
+      <default>1</default>
+    </column>
+    <column name="Traymode" type="INT">
       <offset>64</offset>
     </column>
-    <column name="PowerLevelsMode" type="U8">
-      <offset>65</offset>
-    </column>
-    <column name="HideTrayTooltips" type="U8">
-      <offset>66</offset>
-    </column>
-    <column name="MapIconFlags" type="INT">
+    <column name="Powerlevelsmode" type="U8">
       <offset>68</offset>
+    </column>
+    <column name="Hidetraytooltips" type="U8">
+      <offset>69</offset>
+    </column>
+    <column name="Showminimap" type="U8">
+      <offset>70</offset>
+      <default>1</default>
+    </column>
+    <column name="Showlowlevelcontactindicator" type="U8">
+      <offset>71</offset>
+      <default>1</default>
+    </column>
+    <column name="Showsmallhud" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Mapiconflags" type="INT">
+      <offset>76</offset>
       <default>-1</default>
       <static_define_list external="MapIconInfoType" />
     </column>
     <column name="Version" type="INT">
-      <offset>72</offset>
+      <offset>80</offset>
     </column>
     <column name="}" type="END" />
   </table>

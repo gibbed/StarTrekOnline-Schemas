@@ -11,119 +11,187 @@
       <offset>0</offset>
       <subtable external="RewardModifications" />
     </column>
-    <column name="MissionMods" type="EMBEDDEDSTRUCT">
-      <offset>40</offset>
+    <column name="Missionmods" type="EMBEDDEDSTRUCT">
+      <offset>80</offset>
       <subtable external="MissionMods" />
     </column>
-    <column name="TeamMods" type="EMBEDDEDSTRUCT">
-      <offset>68</offset>
+    <column name="Teammods" type="EMBEDDEDSTRUCT">
+      <offset>112</offset>
       <subtable external="TeamMods" />
     </column>
-    <column name="RecruitMods" type="EMBEDDEDSTRUCT">
-      <offset>88</offset>
+    <column name="Recruitmods" type="EMBEDDEDSTRUCT">
+      <offset>132</offset>
       <subtable external="RecruitMods" />
     </column>
-    <column name="UGCRewardConfig" type="EMBEDDEDSTRUCT">
-      <offset>96</offset>
-      <subtable external="UGCRewardConfig" />
-    </column>
-    <column name="UGCNonQualifyingRewardConfig" type="EMBEDDEDSTRUCT">
-      <offset>112</offset>
-      <subtable external="UGCNonQualifyingRewardConfig" />
-    </column>
-    <column name="OriginMappings" type="EMBEDDEDSTRUCT">
-      <offset>128</offset>
+    <column name="Originmappings" type="EMBEDDEDSTRUCT">
+      <offset>144</offset>
       <subtable external="OriginToPickupTypeMappings" />
     </column>
-    <column name="TypeCostumeMappings" type="EMBEDDEDSTRUCT">
-      <offset>132</offset>
+    <column name="Typecostumemappings" type="EMBEDDEDSTRUCT">
+      <offset>152</offset>
       <subtable external="TypeToCostumeMappings" />
     </column>
-    <column name="IgnoreSubRank" type="U8">
-      <offset>148</offset>
+    <column name="Ignoresubrank" type="U8">
+      <offset>184</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ComputeRewardQuality" type="U8">
-      <offset>149</offset>
+    <column name="Computerewardquality" type="U8">
+      <offset>185</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="lifetimeRewards" type="EMBEDDEDSTRUCT">
-      <offset>152</offset>
+    <column name="Computelingertimebyquality" type="U8">
+      <offset>186</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Lifetimerewards" type="EMBEDDEDSTRUCT">
+      <offset>192</offset>
       <subtable external="LifetimeRewardsInfo" />
     </column>
-    <column name="LifetimeRewardsList" type="STRUCT">
-      <offset>156</offset>
+    <column name="Lifetimerewardslist" type="STRUCT">
+      <offset>200</offset>
       <subtable external="LifetimeRewardsInfo" />
     </column>
-    <column name="NumericsNotGivenToWholeTeam" type="STRINGARRAY">
-      <offset>160</offset>
+    <column name="Numericsnotgiventowholeteam" type="STRINGARRAY">
+      <offset>208</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="GiftData" type="EMBEDDEDSTRUCT">
-      <offset>164</offset>
-      <subtable external="ExperienceGift" />
-    </column>
-    <column name="RewardGateInfo" type="STRUCT">
-      <offset>176</offset>
+    <column name="Rewardgateinfo" type="STRUCT">
+      <offset>216</offset>
       <subtable external="RewardGatedInfo" />
     </column>
-    <column name="BlockRegionTables" type="STRUCT">
-      <offset>180</offset>
-      <subtable external="RewardBlockRegionTable" />
+    <column name="Blockregiontables" type="OPTIONALSTRUCT">
+      <offset>224</offset>
+      <subtable external="RewardBlockRegionTables" />
     </column>
-    <column name="RewardModifier" type="STRUCT">
-      <offset>184</offset>
+    <column name="Rewardmodifier" type="STRUCT">
+      <offset>232</offset>
       <subtable external="GlobalRewardModifier" />
     </column>
-    <column name="GatewaySuperCritterPetXP" type="REFERENCE">
-      <offset>188</offset>
+    <column name="Supercritterpetxp" type="REFERENCE">
+      <offset>240</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="RewardCostumeByMaps" type="STRUCT">
-      <offset>192</offset>
+    <column name="Puppetxp" type="REFERENCE">
+      <offset>248</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Rewardcostumebymaps" type="STRUCT">
+      <offset>256</offset>
       <subtable external="RewardMapCostume" />
     </column>
-    <column name="RoundRobinEachKill" type="BIT">
-      <offset>196</offset>
+    <column name="Roundrobineachkill" type="BIT">
+      <offset>264</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="ShareLootedNumericsWithTeamMembers" type="BIT">
-      <offset>196</offset>
+    <column name="Sharelootednumericswithteammembers" type="BIT">
+      <offset>264</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="BlockRewardPackClientSend" type="BIT">
-      <offset>196</offset>
+    <column name="Blockrewardpackclientsend" type="BIT">
+      <offset>264</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="NoDeathPenaltyInPowerHouse" type="BIT">
-      <offset>196</offset>
+    <column name="Nodeathpenaltyinpowerhouse" type="BIT">
+      <offset>264</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="LootEntsAlwaysAutoLoot" type="BIT">
-      <offset>196</offset>
+    <column name="Lootentsalwaysautoloot" type="BIT">
+      <offset>264</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="UseEntryWeightsOnly" type="BIT">
-      <offset>196</offset>
+    <column name="Useentryweightsonly" type="BIT">
+      <offset>264</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="CheckMinMaxLevelForAllEntries" type="BIT">
-      <offset>196</offset>
+    <column name="Checkminmaxlevelforallentries" type="BIT">
+      <offset>264</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="UseUGCRewardConfig" type="BIT">
-      <offset>196</offset>
+    <column name="Resetstoredrewardsdeathpenalty" type="BIT">
+      <offset>264</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="UseNonQualifyingUGCRewardConfig" type="BIT">
-      <offset>196</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Userewardgatingmissions" type="BIT">
+      <offset>265</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="UseRewardGatingMissions" type="BIT">
-      <offset>196</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Useteamkickblockedfromitemquality" type="BIT">
+      <offset>265</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="AllowOneItemNoWeightTable" type="IGNORE" />
+    <column name="Alllootdropsarerolloversonconsole" type="BIT">
+      <offset>265</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Rewardpackchecksfornumericoverflow" type="BIT">
+      <offset>265</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Teamkickblockedfromitemquality" type="INT">
+      <offset>268</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Rewardgatedcooldownclear" type="STRUCT">
+      <offset>272</offset>
+      <subtable external="ItemCooldownClearRewardGated" />
+    </column>
+    <column name="Delayedrewardexpiretimeseconds" type="INT">
+      <offset>280</offset>
+    </column>
+    <column name="Delayedrewardrerollnumeric" type="REFERENCE">
+      <offset>288</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Numericbasedonlevel" type="REFERENCE">
+      <offset>296</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Numericstartsatlevel" type="INT">
+      <offset>304</offset>
+    </column>
+    <column name="Numericbasedonlevelmax" type="INT">
+      <offset>308</offset>
+    </column>
+    <column name="Rewardsignorecombatlevel" type="INT">
+      <offset>312</offset>
+    </column>
+    <column name="Numberofinteractrewardplayers" type="INT">
+      <offset>316</offset>
+    </column>
+    <column name="Partitionnotifymessage" type="EMBEDDEDSTRUCT">
+      <offset>320</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Storedrewardslockevery" type="INT">
+      <offset>344</offset>
+    </column>
+    <column name="Storedrewardslockmanually" type="BIT">
+      <offset>348</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Storedrewardslockondisconnect" type="BIT">
+      <offset>348</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Storedrewardslockoncontact" type="BIT">
+      <offset>348</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Allowoneitemnoweighttable" type="IGNORE" />
+    <column name="Useugcrewardconfig" type="IGNORE" />
+    <column name="Usenonqualifyingugcrewardconfig" type="IGNORE" />
+    <column name="Ugcrewardconfig" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="Ugcnonqualifyingrewardconfig" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
     <column name="}" type="END" />
   </table>
 </parser>

@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="typeofwidget" type="INT">
+    <column name="Typeofwidget" type="INT">
       <offset>0</offset>
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
     </column>
-    <column name="red" type="INT">
+    <column name="Red" type="INT">
       <offset>4</offset>
     </column>
-    <column name="blue" type="INT">
+    <column name="Blue" type="INT">
       <offset>8</offset>
     </column>
-    <column name="green" type="INT">
+    <column name="Green" type="INT">
       <offset>12</offset>
     </column>
     <column name="}" type="END" />

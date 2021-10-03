@@ -7,21 +7,22 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PakID" type="INT">
+    <column name="Pakid" type="INT">
       <offset>0</offset>
     </column>
     <column name="Full" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="MapState" />
     </column>
     <column name="Diff" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Delete" type="U8">
-      <offset>12</offset>
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

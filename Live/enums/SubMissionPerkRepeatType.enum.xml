@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="SubMissionPerkRepeatType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="Last">1</element>
+    <element name="AnyRank">2</element>
+    <element name="AllRanks">3</element>
+  </elements>
+</enum>

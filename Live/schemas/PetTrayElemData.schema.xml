@@ -7,26 +7,30 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="erOwner" type="INT">
+    <column name="Erowner" type="INT">
       <offset>0</offset>
     </column>
     <column name="Power" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="AiState" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="TimerRecharge" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="TimerRechargeBase" type="F32">
+    <column name="Aistate" type="STRING">
       <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Timerrecharge" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Timerrechargebase" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Hactivateddef" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>PowerDef</dictionary_name>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="optionText" type="EMBEDDEDSTRUCT">
+    <column name="Optiontext" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Condition" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="Expression" />
     </column>
-    <column name="LoreItem" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Loreitem" type="REFERENCE">
+      <offset>32</offset>
       <flags>
         <flag>NON_NULL_REF__ERROR_ONLY</flag>
       </flags>

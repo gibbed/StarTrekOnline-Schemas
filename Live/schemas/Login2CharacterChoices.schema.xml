@@ -10,14 +10,14 @@
     <column name="AccountID" type="INT">
       <offset>0</offset>
     </column>
-    <column name="missingShardNames" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Missingshardnames" type="STRINGARRAY">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="characterChoices" type="STRUCT">
-      <offset>8</offset>
+    <column name="Characterchoices" type="STRUCT">
+      <offset>16</offset>
       <subtable external="Login2CharacterChoice" />
     </column>
     <column name="}" type="END" />

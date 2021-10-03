@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ShipScalingDef">
+  <table>
+    <column name="ShipScalingDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Shipscalingspeciallist" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="ShipScalingSpecial" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

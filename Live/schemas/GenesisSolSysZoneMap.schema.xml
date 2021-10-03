@@ -7,25 +7,26 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LayoutName" type="STRING">
+    <column name="Layoutname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="LayoutSeed" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="TransmogrifyVersion" type="INT">
+    <column name="Layoutseed" type="INT">
       <offset>8</offset>
     </column>
-    <column name="Backdrop" type="OPTIONALSTRUCT">
+    <column name="Transmogrifyversion" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Backdrop" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="GenesisBackdrop" />
     </column>
     <column name="Shoebox" type="EMBEDDEDSTRUCT">
-      <offset>16</offset>
+      <offset>24</offset>
       <subtable external="GenesisShoebox" />
     </column>
-    <column name="NoSharingDetail" type="U8">
-      <offset>100</offset>
+    <column name="Nosharingdetail" type="U8">
+      <offset>120</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

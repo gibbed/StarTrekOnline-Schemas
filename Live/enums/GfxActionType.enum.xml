@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GfxActionType">
+  <elements type="int">
+    <element name="Unspecified">0</element>
+    <element name="Primary">1</element>
+    <element name="Headshot">2</element>
+    <element name="ImpostorAtlas">3</element>
+    <element name="CubemapCapture">4</element>
+    <element name="SpecularProbeCapture">5</element>
+    <element name="DiffuseProbeCapture">6</element>
+    <element name="TexProjection">7</element>
+    <element name="MAX">8</element>
+  </elements>
+</enum>

@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ppchMissionDefs" type="STRINGARRAY">
+    <column name="Ppchmissionrefstrings" type="STRINGARRAY">
       <offset>0</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
+    </column>
+    <column name="Pbgetprimaryrewards" type="INTARRAY">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

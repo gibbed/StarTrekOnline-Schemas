@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="XboxPriceInfo">
+  <table>
+    <column name="XboxPriceInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Estrname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Estrdescription" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Consumablequanitity" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Estrcurrencycode" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Estrdisplayprice" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Estrdisplaylistprice" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Price" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Listprice" type="F32">
+      <offset>52</offset>
+    </column>
+    <column name="Xboxsignedoffer_Autofree" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ShipJailRestriction">
+  <table>
+    <column name="ShipJailRestriction" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Powercategory" type="INTARRAY">
+      <offset>0</offset>
+      <static_define_list external="PowerCategory" />
+    </column>
+    <column name="Bagid" type="INTARRAY">
+      <offset>8</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Worldregion" type="INTARRAY">
+      <offset>16</offset>
+      <static_define_list external="WorldRegionType" />
+    </column>
+    <column name="Requireflighttacticalmovement" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Slotcount" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Showwhilebecomecrittered" type="U8">
+      <offset>32</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="AccountNetStruct_ToAccountServerLoginPlatform">
+  <table>
+    <column name="AccountNetStruct_ToAccountServerLoginPlatform" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Login" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">AccountNetStruct_ToAccountServerLogin</format_string>
+      </format_strings>
+    </column>
+    <column name="Hashedcrypticpassword" type="FIXEDSTRING">
+      <offset>0</offset>
+      <string_length>128</string_length>
+    </column>
+    <column name="Hashedpwpassword" type="FIXEDSTRING">
+      <offset>128</offset>
+      <string_length>128</string_length>
+    </column>
+    <column name="AccountName" type="FIXEDSTRING">
+      <offset>256</offset>
+      <string_length>128</string_length>
+    </column>
+    <column name="Logintype" type="INT">
+      <offset>384</offset>
+    </column>
+    <column name="MachineID" type="FIXEDSTRING">
+      <offset>388</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="Hashedpwpasswordfixedsalt" type="FIXEDSTRING">
+      <offset>644</offset>
+      <string_length>128</string_length>
+    </column>
+    <column name="Keyversion" type="INT">
+      <offset>772</offset>
+    </column>
+    <column name="Encryptedpassword" type="FIXEDSTRING">
+      <offset>776</offset>
+      <string_length>173</string_length>
+    </column>
+    <column name="Localeid" type="INT">
+      <offset>952</offset>
+      <default>-1</default>
+    </column>
+    <column name="Loginenvironmentid" type="INT">
+      <offset>956</offset>
+    </column>
+    <column name="Ticketsrequested" type="INT">
+      <offset>960</offset>
+      <default>1</default>
+    </column>
+    <column name="Accountguardotc" type="FIXEDSTRING">
+      <offset>964</offset>
+      <string_length>6</string_length>
+    </column>
+    <column name="Uaccountid" type="INT">
+      <offset>972</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

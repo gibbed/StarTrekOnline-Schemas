@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="TexWordLoadInfo">
+  <table>
+    <column name="TexWordLoadInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Data_Size" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Mipmap_Data_Size" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Rdr_Format" type="INT">
+      <offset>28</offset>
+      <static_define_list external="RdrResourceFormat" />
+    </column>
+    <column name="Actualsizex" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Actualsizey" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Sizex" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Sizey" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Reduce_Mip_Setting" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>52</offset>
+      <static_define_list external="TexFlags" />
+    </column>
+  </table>
+</parser>

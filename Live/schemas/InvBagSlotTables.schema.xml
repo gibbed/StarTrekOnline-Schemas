@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BagSlotTable" type="STRUCT">
+    <column name="Bagslottable" type="STRUCT">
       <offset>0</offset>
       <subtable external="InvBagSlotTable" />
     </column>

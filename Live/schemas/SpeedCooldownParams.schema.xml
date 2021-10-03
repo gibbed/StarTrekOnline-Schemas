@@ -12,10 +12,10 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1214</default>
+      <default>1328</default>
       <static_define_list external="AttribType" />
     </column>
-    <column name="PowerCategory" type="INT">
+    <column name="Powercategory" type="INT">
       <offset>4</offset>
       <static_define_list external="PowerCategory" />
     </column>

@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="FlashBits" type="STRINGARRAY">
+    <column name="Flashbits" type="STRINGARRAY">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="PowerCooldownCategory" type="STRING">
-      <offset>4</offset>
+    <column name="Powercooldowncategory" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="CooldownTime" type="F32">
-      <offset>8</offset>
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="TexWordFontSize">
+  <elements type="int">
+    <element name="Auto">0</element>
+    <element name="8">8</element>
+    <element name="12">12</element>
+    <element name="16">16</element>
+    <element name="24">24</element>
+    <element name="32">32</element>
+    <element name="48">48</element>
+    <element name="64">64</element>
+    <element name="96">96</element>
+    <element name="128">128</element>
+    <element name="192">192</element>
+    <element name="256">256</element>
+    <element name="384">384</element>
+    <element name="512">512</element>
+  </elements>
+</enum>

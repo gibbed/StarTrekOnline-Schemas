@@ -14,16 +14,16 @@
       </flags>
     </column>
     <column name="DisplayName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="uAccessLevel" type="INT">
-      <offset>8</offset>
+    <column name="Uaccesslevel" type="INT">
+      <offset>16</offset>
     </column>
     <column name="Status" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

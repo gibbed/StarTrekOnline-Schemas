@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="AnalyticsTag">
+  <elements type="int">
+    <element name="DEFAULT">0</element>
+    <element name="LIKES_MOUNTS">1</element>
+  </elements>
+</enum>

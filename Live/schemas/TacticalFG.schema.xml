@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="toBG" type="EMBEDDEDSTRUCT">
+    <column name="Tobg" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="TacticalToBG" />
     </column>
-    <column name="fromBG" type="EMBEDDEDSTRUCT">
-      <offset>28</offset>
+    <column name="Frombg" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
       <subtable external="TacticalFGFromBG" />
     </column>
     <column name="Overrides" type="STRUCT">
-      <offset>32</offset>
+      <offset>40</offset>
       <subtable external="TacticalOverrides" />
     </column>
     <column name="}" type="END" />

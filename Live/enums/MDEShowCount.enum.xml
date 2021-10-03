@@ -6,5 +6,8 @@
     <element name="Only_Count">2</element>
     <element name="Count_Down">3</element>
     <element name="Percent">4</element>
+    <element name="Percent_Down">5</element>
+    <element name="Count_Down_Total">6</element>
+    <element name="Internal_Count">7</element>
   </elements>
 </enum>

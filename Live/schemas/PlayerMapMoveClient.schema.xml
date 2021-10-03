@@ -11,22 +11,22 @@
       <offset>0</offset>
       <static_define_list external="PlayerMapMoveType" />
     </column>
-    <column name="MTRefs" type="STRUCT">
-      <offset>4</offset>
+    <column name="Mtrefs" type="STRUCT">
+      <offset>8</offset>
       <subtable external="MicroTransactionRef" />
     </column>
-    <column name="hDisplayName" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Hdisplayname" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="RequestingEnt" type="STRING">
-      <offset>12</offset>
+    <column name="Requestingent" type="STRING">
+      <offset>24</offset>
     </column>
-    <column name="uiTimeStart" type="INT">
-      <offset>16</offset>
+    <column name="Uitimestart" type="INT">
+      <offset>32</offset>
     </column>
-    <column name="uiTimeToConfirm" type="INT">
-      <offset>20</offset>
+    <column name="Uitimetoconfirm" type="INT">
+      <offset>36</offset>
     </column>
     <column name="}" type="END" />
   </table>

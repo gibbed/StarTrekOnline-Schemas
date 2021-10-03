@@ -7,17 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="OnVolumeEntered" type="U8">
+    <column name="Onvolumeentered" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="PowerName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="EmitterChallenge" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="TargetChallenge" type="STRING">
-      <offset>12</offset>
+    <column name="Emitterchallenge" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Targetchallenge" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

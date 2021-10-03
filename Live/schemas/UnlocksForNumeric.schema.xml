@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="numericDef" type="REFERENCE">
+    <column name="Numericdef" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
       <dictionary_name>GroupProjectNumericDef</dictionary_name>
     </column>
-    <column name="unlocks" type="STRUCT">
-      <offset>4</offset>
+    <column name="Unlocks" type="STRUCT">
+      <offset>8</offset>
       <subtable external="GroupProjectUnlockDefRef" />
     </column>
     <column name="}" type="END" />

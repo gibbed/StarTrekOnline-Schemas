@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ColorIndex" type="INT">
+    <column name="Colorindex" type="INT">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

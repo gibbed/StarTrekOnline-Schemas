@@ -12,29 +12,30 @@
       <static_define_list external="TestServerGlobalValueType" />
     </column>
     <column name="Label" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="IntVal" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="BoolVal" type="U8">
-      <offset>12</offset>
-    </column>
-    <column name="FloatVal" type="F32">
+    <column name="Intval" type="INT">
       <offset>16</offset>
     </column>
-    <column name="StringVal" type="STRING">
+    <column name="Boolval" type="U8">
       <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Floatval" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Stringval" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="RefVal" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Refval" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="TestServerGlobalReference" />
     </column>
     <column name="}" type="END" />

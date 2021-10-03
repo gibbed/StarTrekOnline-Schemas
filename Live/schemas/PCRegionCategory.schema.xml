@@ -6,7 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="PCRegion" type="REFERENCE">
+    <column name="Pcregion" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
@@ -15,19 +15,30 @@
       </flags>
       <dictionary_name>CostumeRegion</dictionary_name>
     </column>
-    <column name="hRegion" type="REFERENCE">
+    <column name="Hregion" type="REFERENCE">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>PCRegion</redundant_name>
+      <redundant_name>Pcregion</redundant_name>
       <dictionary_name>CostumeRegion</dictionary_name>
     </column>
-    <column name="PCCategory" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hregion" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Pcregion</redundant_name>
+      <dictionary_name>CostumeRegion</dictionary_name>
+    </column>
+    <column name="Pccategory" type="REFERENCE">
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>SUBSCRIBE</flag>
@@ -35,15 +46,26 @@
       </flags>
       <dictionary_name>CostumeCategory</dictionary_name>
     </column>
-    <column name="hCategory" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hcategory" type="REFERENCE">
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>PCCategory</redundant_name>
+      <redundant_name>Pccategory</redundant_name>
+      <dictionary_name>CostumeCategory</dictionary_name>
+    </column>
+    <column name="Hcategory" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Pccategory</redundant_name>
       <dictionary_name>CostumeCategory</dictionary_name>
     </column>
     <column name="&#xA;" type="END" />

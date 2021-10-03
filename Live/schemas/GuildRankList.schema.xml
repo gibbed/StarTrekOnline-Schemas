@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GuildRank" type="STRUCT">
+    <column name="Guildrank" type="STRUCT">
       <offset>0</offset>
       <subtable external="GuildRank" />
     </column>

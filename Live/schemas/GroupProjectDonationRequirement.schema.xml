@@ -15,76 +15,95 @@
       </flags>
     </column>
     <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="descriptionMsg" type="EMBEDDEDSTRUCT">
-      <offset>16</offset>
+    <column name="Descriptionmsg" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Type" type="INT">
-      <offset>28</offset>
+      <offset>56</offset>
       <static_define_list external="GroupProjectDonationSpecType" />
     </column>
     <column name="Count" type="INT">
-      <offset>32</offset>
+      <offset>60</offset>
     </column>
-    <column name="RequiredItem" type="REFERENCE">
-      <offset>36</offset>
+    <column name="Requireditem" type="REFERENCE">
+      <offset>64</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="RequireItem" type="REFERENCE">
-      <offset>36</offset>
+    <column name="Requireitem" type="REFERENCE">
+      <offset>64</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>RequiredItem</redundant_name>
+      <redundant_name>Requireditem</redundant_name>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="allowedItemExpr" type="OPTIONALSTRUCT">
-      <offset>40</offset>
+    <column name="Voucheritem" type="REFERENCE">
+      <offset>72</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Coffernumeric" type="REFERENCE">
+      <offset>80</offset>
+      <dictionary_name>GroupProjectCofferNumericDef</dictionary_name>
+    </column>
+    <column name="Alloweditemexpr" type="OPTIONALSTRUCT">
+      <offset>88</offset>
       <subtable external="Expression" />
     </column>
-    <column name="allowedItemExpr" type="OPTIONALSTRUCT">
-      <offset>40</offset>
+    <column name="Alloweditemexpr" type="OPTIONALSTRUCT">
+      <offset>88</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>allowedItemExpr</redundant_name>
+      <redundant_name>Alloweditemexpr</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="RequiredItemCategory" type="INTARRAY">
-      <offset>44</offset>
+    <column name="Requireditemcategory" type="INTARRAY">
+      <offset>96</offset>
       <static_define_list external="ItemCategory" />
     </column>
-    <column name="RestrictItemCategory" type="INTARRAY">
-      <offset>48</offset>
+    <column name="Restrictitemcategory" type="INTARRAY">
+      <offset>104</offset>
       <static_define_list external="ItemCategory" />
     </column>
-    <column name="contributionConstant" type="STRING">
-      <offset>52</offset>
+    <column name="Contributionconstant" type="STRING">
+      <offset>112</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="tooltipMsg" type="EMBEDDEDSTRUCT">
-      <offset>56</offset>
+    <column name="Tooltipmsg" type="EMBEDDEDSTRUCT">
+      <offset>120</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Icon" type="STRING">
-      <offset>68</offset>
+      <offset>144</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="donationIncrement" type="INT">
-      <offset>72</offset>
+    <column name="Donationincrement" type="INT">
+      <offset>152</offset>
     </column>
     <column name="Discount" type="STRINGARRAY">
-      <offset>76</offset>
+      <offset>160</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
+    </column>
+    <column name="Quality" type="INT">
+      <offset>168</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Progressionlevel" type="INT">
+      <offset>172</offset>
+    </column>
+    <column name="Allowemptycount" type="U8">
+      <offset>176</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

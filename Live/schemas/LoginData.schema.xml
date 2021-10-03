@@ -7,38 +7,35 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uAccountID" type="INT">
+    <column name="Uaccountid" type="INT">
       <offset>0</offset>
     </column>
     <column name="AccessLevel" type="INT">
       <offset>4</offset>
     </column>
-    <column name="uAccountPlayerType" type="INT">
+    <column name="Uaccountplayertype" type="INT">
       <offset>8</offset>
     </column>
     <column name="AccountName" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="pwAccountName" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="DisplayName" type="STRING">
-      <offset>20</offset>
-    </column>
-    <column name="ShardInfoString" type="STRING">
+    <column name="Pwaccountname" type="STRING">
       <offset>24</offset>
     </column>
-    <column name="ShardClusterName" type="STRING">
-      <offset>28</offset>
-    </column>
-    <column name="UgcShardName" type="STRING">
+    <column name="DisplayName" type="STRING">
       <offset>32</offset>
     </column>
-    <column name="uiLastTermsOfUse" type="INT">
-      <offset>36</offset>
-    </column>
-    <column name="uiServerTimeSS2000" type="INT">
+    <column name="Shardinfostring" type="STRING">
       <offset>40</offset>
+    </column>
+    <column name="Shardclustername" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Uilasttermsofuse" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Uiservertimess2000" type="INT">
+      <offset>60</offset>
     </column>
     <column name="}" type="END" />
   </table>

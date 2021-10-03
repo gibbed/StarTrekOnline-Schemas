@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RefreshRate" type="INT">
+    <column name="Refreshrate" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>

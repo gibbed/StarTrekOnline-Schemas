@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="UUID_t">
+  <table>
+    <column name="UUID_t" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Version" type="U8">
+      <offset>0</offset>
+    </column>
+    <column name="Bytes" type="U8FIXEDARRAY">
+      <offset>1</offset>
+      <num_elements>16</num_elements>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

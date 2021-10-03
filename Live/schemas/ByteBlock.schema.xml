@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="StartByteOffset" type="INT">
+    <column name="Startbyteoffset" type="INT">
       <offset>0</offset>
     </column>
     <column name="Size" type="INT">

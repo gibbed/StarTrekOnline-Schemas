@@ -2,5 +2,26 @@
 <enum name="MissionWarpCostType">
   <elements type="int">
     <element name="None">0</element>
+    <element name="Alpha_Quadrant">1</element>
+    <element name="Beta_Quadrant">2</element>
+    <element name="Bre_FS001">3</element>
+    <element name="Brg_FS001">4</element>
+    <element name="Crd_FS001">5</element>
+    <element name="Crd_FS002">6</element>
+    <element name="Crd_FS003">7</element>
+    <element name="Delta_Quadrant">8</element>
+    <element name="Dlt_FS001">9</element>
+    <element name="Dlt_FS002">10</element>
+    <element name="Gamma_Quadrant">11</element>
+    <element name="Kfr_FS001">12</element>
+    <element name="Kfr_FS002">13</element>
+    <element name="Kfr_FS003">14</element>
+    <element name="Klg_FS001">15</element>
+    <element name="Neu_FS001">16</element>
+    <element name="Rom_FS001">17</element>
+    <element name="Rom_FS002">18</element>
+    <element name="Rom_FS003">19</element>
+    <element name="Rom_FS004">20</element>
+    <element name="Und_FS001">21</element>
   </elements>
 </enum>

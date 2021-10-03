@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="EffectAmount" type="F32">
+    <column name="Effectamount" type="F32">
       <offset>0</offset>
       <default>1</default>
     </column>
     <column name="Bendiness" type="F32">
       <offset>4</offset>
     </column>
-    <column name="PivotOffset" type="F32">
+    <column name="Pivotoffset" type="F32">
       <offset>8</offset>
     </column>
     <column name="Rustling" type="F32">

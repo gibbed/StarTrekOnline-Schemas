@@ -14,156 +14,141 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="bf" type="INTFIXEDARRAY">
-      <offset>4</offset>
+    <column name="Bf" type="INTFIXEDARRAY">
+      <offset>8</offset>
       <flags>
         <flag>USEDFIELD</flag>
       </flags>
       <num_elements>1</num_elements>
     </column>
-    <column name="BorrowFrom" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Borrowfrom" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>UIStyleFont</dictionary_name>
     </column>
     <column name="Face" type="REFERENCE">
-      <offset>12</offset>
-      <default_string>Default</default_string>
+      <offset>24</offset>
       <dictionary_name>GfxFont</dictionary_name>
     </column>
-    <column name="TopLeftColor" type="INT">
-      <offset>16</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
-      <format>COLOR</format>
-    </column>
-    <column name="TopRightColor" type="INT">
-      <offset>20</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
-      <format>COLOR</format>
-    </column>
-    <column name="BottomLeftColor" type="INT">
-      <offset>24</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
-      <format>COLOR</format>
-    </column>
-    <column name="BottomRightColor" type="INT">
-      <offset>28</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
-      <format>COLOR</format>
-    </column>
-    <column name="TopLeftSelectedColor" type="INT">
+    <column name="Topleftcolor" type="INT">
       <offset>32</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
       <format>COLOR</format>
     </column>
-    <column name="TopRightSelectedColor" type="INT">
+    <column name="Toprightcolor" type="INT">
       <offset>36</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
       <format>COLOR</format>
     </column>
-    <column name="BottomLeftSelectedColor" type="INT">
+    <column name="Bottomleftcolor" type="INT">
       <offset>40</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
       <format>COLOR</format>
     </column>
-    <column name="BottomRightSelectedColor" type="INT">
+    <column name="Bottomrightcolor" type="INT">
       <offset>44</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
       <format>COLOR</format>
     </column>
-    <column name="TopLeftInactiveColor" type="INT">
+    <column name="Topleftselectedcolor" type="INT">
       <offset>48</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
       <format>COLOR</format>
     </column>
-    <column name="TopRightInactiveColor" type="INT">
+    <column name="Toprightselectedcolor" type="INT">
       <offset>52</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
       <format>COLOR</format>
     </column>
-    <column name="BottomLeftInactiveColor" type="INT">
+    <column name="Bottomleftselectedcolor" type="INT">
       <offset>56</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
       <format>COLOR</format>
     </column>
-    <column name="BottomRightInactiveColor" type="INT">
+    <column name="Bottomrightselectedcolor" type="INT">
       <offset>60</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Topleftinactivecolor" type="INT">
+      <offset>64</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Toprightinactivecolor" type="INT">
+      <offset>68</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Bottomleftinactivecolor" type="INT">
+      <offset>72</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Bottomrightinactivecolor" type="INT">
+      <offset>76</offset>
+      <static_define_list external="Color" />
       <format>COLOR</format>
     </column>
     <column name="Color" type="INT">
-      <offset>64</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
-      <format>COLOR</format>
-    </column>
-    <column name="SelectedColor" type="INT">
-      <offset>68</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
-      <format>COLOR</format>
-    </column>
-    <column name="OutlineColor" type="INT">
-      <offset>72</offset>
-      <default>255</default>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
-      <format>COLOR</format>
-    </column>
-    <column name="DropShadowColor" type="INT">
-      <offset>76</offset>
-      <default>255</default>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
-      <format>COLOR</format>
-    </column>
-    <column name="OutlineWidth" type="U8">
       <offset>80</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
     </column>
-    <column name="ShadowOffset" type="U8">
-      <offset>81</offset>
-    </column>
-    <column name="Italic" type="U8">
-      <offset>82</offset>
-    </column>
-    <column name="Bold" type="U8">
-      <offset>83</offset>
-    </column>
-    <column name="DontSnapToPixels" type="U8">
+    <column name="Selectedcolor" type="INT">
       <offset>84</offset>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
     </column>
-    <column name="NoAutomaticColors" type="U8">
-      <offset>85</offset>
+    <column name="Outlinecolor" type="INT">
+      <offset>88</offset>
+      <default>255</default>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Dropshadowcolor" type="INT">
+      <offset>92</offset>
+      <default>255</default>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="Outlinewidth" type="U8">
+      <offset>96</offset>
+    </column>
+    <column name="Shadowoffset" type="U8">
+      <offset>97</offset>
+    </column>
+    <column name="Italic" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bold" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Upcase" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dontsnaptopixels" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Noautomaticcolors" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Erroredaboutfontscaling" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>88</offset>
+      <offset>104</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

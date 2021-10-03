@@ -6,6 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="Name" type="STRING">
       <offset>0</offset>
       <flags>
@@ -14,25 +15,77 @@
       </flags>
     </column>
     <column name="Orientation" type="INT">
-      <offset>4</offset>
-      <flags>
-        <flag>STRUCTPARAM</flag>
-      </flags>
-      <static_define_list external="UIDirection" />
-    </column>
-    <column name="Alignment" type="INT">
       <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <static_define_list external="UIDirection" />
     </column>
-    <column name="Offset" type="INT">
+    <column name="Alignment" type="INT">
       <offset>12</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
+      <static_define_list external="UIDirection" />
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="Offsetlegacy" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Horizontaloffset" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Verticaloffset" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Constrain" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Insetleft" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Leftinset" type="INT">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Insetleft</redundant_name>
+    </column>
+    <column name="Insettop" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Topinset" type="INT">
+      <offset>44</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Insettop</redundant_name>
+    </column>
+    <column name="Insetright" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Rightinset" type="INT">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Insetright</redundant_name>
+    </column>
+    <column name="Insetbottom" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Bottominset" type="INT">
+      <offset>52</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Insetbottom</redundant_name>
+    </column>
+    <column name="}" type="END" />
   </table>
 </parser>

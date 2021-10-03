@@ -7,31 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ContainerDerefString" type="STRING">
+    <column name="Containerderefstring" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="LockType" type="INT">
-      <offset>4</offset>
+    <column name="Locktype" type="INT">
+      <offset>8</offset>
       <static_define_list external="enumLockType" />
     </column>
-    <column name="IndexType" type="INT">
-      <offset>8</offset>
+    <column name="Indextype" type="INT">
+      <offset>12</offset>
       <static_define_list external="enumEarrayIndexType" />
     </column>
     <column name="Val" type="INT">
-      <offset>12</offset>
+      <offset>16</offset>
     </column>
     <column name="SVal" type="STRING">
-      <offset>16</offset>
+      <offset>24</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Comment" type="STRING">
-      <offset>20</offset>
+      <offset>32</offset>
       <flags>
         <flag>USEROPTIONBIT_1</flag>
       </flags>

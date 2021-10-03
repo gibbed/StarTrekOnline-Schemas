@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EpisodicMissionListMissionRow">
+  <table>
+    <column name="EpisodicMissionListMissionRow" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Progressiondata" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <subtable external="ProgressionMissionData" />
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="MinLevel" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Missionnumber" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Completed" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Candrop" type="U8">
+      <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Locked" type="U8">
+      <offset>26</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

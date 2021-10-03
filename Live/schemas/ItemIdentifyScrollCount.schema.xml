@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemIdentifyScrollCount">
+  <table>
+    <column name="ItemIdentifyScrollCount" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Scrolldef" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="ItemDef" />
+    </column>
+    <column name="Uscrollid" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Count" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Level" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

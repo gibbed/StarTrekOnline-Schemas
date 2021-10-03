@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ErrorHubEntry">
+  <table>
+    <column name="ErrorHubEntry" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uniqueid" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="ErrorString" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Filterexpression" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="StartTime" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="EndTime" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Whocreated" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Type" type="INT">
+      <offset>40</offset>
+      <static_define_list external="ErrorHubEntryType" />
+    </column>
+    <column name="Comment" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Emailrecipients" type="STRINGARRAY">
+      <offset>56</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

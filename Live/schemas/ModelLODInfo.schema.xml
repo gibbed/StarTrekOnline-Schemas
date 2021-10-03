@@ -13,32 +13,29 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="AutoLOD" type="STRUCT">
-      <offset>4</offset>
+    <column name="Autolod" type="STRUCT">
+      <offset>8</offset>
       <subtable external="AutoLOD" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="LODTemplate" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Lodtemplate" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>ModelLODTemplate</dictionary_name>
     </column>
-    <column name="ForceAutomatic" type="BIT">
-      <offset>16</offset>
+    <column name="Forceautomatic" type="BIT">
+      <offset>32</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="HighDetailHighLod" type="BIT">
-      <offset>16</offset>
+    <column name="Highdetailhighlod" type="BIT">
+      <offset>32</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="PreventClustering" type="BIT">
-      <offset>16</offset>
-      <bit_offset>65538</bit_offset>
-    </column>
+    <column name="Preventclustering" type="IGNORE" />
     <column name="End" type="END" />
   </table>
 </parser>

@@ -16,35 +16,48 @@
       </flags>
     </column>
     <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Order" type="F32">
-      <offset>20</offset>
+      <offset>40</offset>
     </column>
-    <column name="RandomWeight" type="F32">
-      <offset>24</offset>
+    <column name="Randomweight" type="F32">
+      <offset>44</offset>
     </column>
     <column name="Hidden" type="U8">
-      <offset>28</offset>
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RequiredBone" type="STRUCT">
-      <offset>32</offset>
+    <column name="Global" type="U8">
+      <offset>49</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Type" type="INT">
+      <offset>52</offset>
+      <static_define_list external="PCCategoryType" />
+    </column>
+    <column name="Requiredbone" type="STRUCT">
+      <offset>56</offset>
       <subtable external="PCBoneRef" />
     </column>
-    <column name="ExcludedBone" type="STRUCT">
-      <offset>36</offset>
+    <column name="Excludedbone" type="STRUCT">
+      <offset>64</offset>
       <subtable external="PCBoneRef" />
     </column>
-    <column name="ExcludedCategory" type="STRUCT">
-      <offset>40</offset>
+    <column name="Excludedcategory" type="STRUCT">
+      <offset>72</offset>
       <subtable external="PCCategoryRef" />
+    </column>
+    <column name="Cbone" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="PCBoneRef" />
     </column>
     <column name="}" type="END" />
   </table>

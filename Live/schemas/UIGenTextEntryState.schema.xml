@@ -12,63 +12,76 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>7</default>
+      <default>8</default>
       <static_define_list external="UIGenType" />
     </column>
     <column name="Buffer" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ALWAYS_ALLOC</flag>
       </flags>
       <subtable external="TextBuffer" />
     </column>
     <column name="ChatData" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="ChatData" />
     </column>
-    <column name="CursorBundle" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
+    <column name="Cursorbundle" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
       <subtable external="UIGenBundleTextureState" />
     </column>
-    <column name="TextOffset" type="F32">
-      <offset>24</offset>
+    <column name="Textoffset" type="F32">
+      <offset>48</offset>
     </column>
     <column name="Timer" type="F32">
-      <offset>28</offset>
+      <offset>52</offset>
     </column>
     <column name="Selecting" type="U8">
-      <offset>32</offset>
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="String" type="STRING">
-      <offset>36</offset>
+      <offset>64</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="SelectionStart" type="INT">
-      <offset>40</offset>
+    <column name="Printedstring" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
     </column>
-    <column name="SelectionEnd" type="INT">
-      <offset>44</offset>
+    <column name="Stringformat" type="INT">
+      <offset>80</offset>
+      <static_define_list external="UIGenTextInputDisplayFormat" />
+    </column>
+    <column name="Selectionstart" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Selectionend" type="INT">
+      <offset>88</offset>
     </column>
     <column name="Cursor" type="INT">
-      <offset>48</offset>
+      <offset>92</offset>
     </column>
-    <column name="BufferFilled" type="U8">
-      <offset>52</offset>
+    <column name="Bufferfilled" type="U8">
+      <offset>96</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Truncate" type="EMBEDDEDSTRUCT">
-      <offset>56</offset>
+      <offset>104</offset>
       <subtable external="UIGenBundleTruncateState" />
     </column>
-    <column name="v2TextSize" type="F32FIXEDARRAY">
-      <offset>68</offset>
+    <column name="V2textsize" type="F32FIXEDARRAY">
+      <offset>144</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="TextFont" type="OPTIONALSTRUCT">
-      <offset>76</offset>
+    <column name="Textfont" type="OPTIONALSTRUCT">
+      <offset>152</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="UIStyleFont" />
     </column>

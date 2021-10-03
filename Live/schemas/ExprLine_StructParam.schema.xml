@@ -10,7 +10,7 @@
       <offset>0</offset>
     </column>
     <column name="OrigStr" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>

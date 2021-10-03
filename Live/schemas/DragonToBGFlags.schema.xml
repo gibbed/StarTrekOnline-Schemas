@@ -7,49 +7,49 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SpeedUpdate" type="BIT">
+    <column name="Speedupdate" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="FrictionUpdate" type="BIT">
+    <column name="Frictionupdate" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="TractionUpdate" type="BIT">
+    <column name="Tractionupdate" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="UpdatedMovementDef" type="BIT">
+    <column name="Updatedmovementdef" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="FaceTargetUpdate" type="BIT">
+    <column name="Facetargetupdate" type="BIT">
       <offset>0</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="OverrideTargetUpdate" type="BIT">
+    <column name="Overridetargetupdate" type="BIT">
       <offset>0</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="OverridePosUpdate" type="BIT">
+    <column name="Overrideposupdate" type="BIT">
       <offset>0</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="OverrideFacingUpdate" type="BIT">
+    <column name="Overridefacingupdate" type="BIT">
       <offset>0</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="OverrideHeadToBodyFacing" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Overrideheadtobodyfacing" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="OverrideRotateToFacingUpdate" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Overriderotatetofacingupdate" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="OverrideBodyToHeadFacing" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Overridebodytoheadfacing" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

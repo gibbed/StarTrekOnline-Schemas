@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="AdventureStatus">
+  <elements type="int">
+    <element name="Available">0</element>
+    <element name="Locked">1</element>
+    <element name="InProgress">2</element>
+    <element name="ReadyToClaim">3</element>
+    <element name="Complete">4</element>
+  </elements>
+</enum>

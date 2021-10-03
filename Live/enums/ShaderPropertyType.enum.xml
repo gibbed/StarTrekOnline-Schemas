@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ShaderPropertyType">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="FLOAT">1</element>
+    <element name="INT">2</element>
+    <element name="UINT">3</element>
+    <element name="BOOL">4</element>
+  </elements>
+</enum>

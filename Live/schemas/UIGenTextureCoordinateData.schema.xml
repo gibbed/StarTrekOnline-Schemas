@@ -7,17 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="OffsetU" type="F32">
+    <column name="Offsetu" type="F32">
       <offset>0</offset>
     </column>
-    <column name="OffsetV" type="F32">
+    <column name="Offsetv" type="F32">
       <offset>4</offset>
     </column>
-    <column name="ScaleU" type="F32">
+    <column name="Scaleu" type="F32">
       <offset>8</offset>
       <default>1</default>
     </column>
-    <column name="ScaleV" type="F32">
+    <column name="Scalev" type="F32">
       <offset>12</offset>
       <default>1</default>
     </column>

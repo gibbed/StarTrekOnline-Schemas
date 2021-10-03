@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <enum name="GuildRankPermissions">
   <elements type="int">
+    <element name="CofferToProject">-2147483648</element>
     <element name="Invite">1</element>
     <element name="Remove">2</element>
     <element name="PromoteBelowRank">4</element>
@@ -30,5 +31,7 @@
     <element name="DonateToProjects">67108864</element>
     <element name="BuyProvisioned">134217728</element>
     <element name="ChangeAllegiance">268435456</element>
+    <element name="DonateToCoffers">536870912</element>
+    <element name="AllianceSettings">1073741824</element>
   </elements>
 </enum>

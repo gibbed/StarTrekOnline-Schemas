@@ -12,20 +12,20 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>18</default>
+      <default>19</default>
       <static_define_list external="UIGenType" />
     </column>
     <column name="W" type="F32">
-      <offset>8</offset>
-    </column>
-    <column name="H" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="LastWebSite" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="Hidden" type="BIT">
+    <column name="H" type="F32">
       <offset>20</offset>
+    </column>
+    <column name="Lastwebsite" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Hidden" type="BIT">
+      <offset>32</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

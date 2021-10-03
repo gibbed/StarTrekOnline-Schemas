@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GfxCollType">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="NORMAL">1</element>
+    <element name="MOVEMENT">2</element>
+    <element name="CAMERA_BLOCKING">3</element>
+    <element name="CAMERA_FADE">4</element>
+    <element name="CAMERA_VANISH">5</element>
+    <element name="POWERS_BLOCKING">6</element>
+    <element name="TARGET_BLOCKING">7</element>
+    <element name="FX_SPLAT">8</element>
+    <element name="TERRAIN">9</element>
+    <element name="VOLUME">10</element>
+    <element name="PLAYABLE_VOLUME">11</element>
+    <element name="DYN_CREATED">12</element>
+    <element name="ONE_SIDED">13</element>
+  </elements>
+</enum>

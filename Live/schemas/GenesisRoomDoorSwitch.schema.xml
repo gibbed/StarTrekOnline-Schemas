@@ -13,7 +13,7 @@
     <column name="Selected" type="INT">
       <offset>4</offset>
     </column>
-    <column name="astrScopePath" type="STRING">
+    <column name="Astrscopepath" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>

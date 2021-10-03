@@ -7,36 +7,36 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DictName" type="STRING">
+    <column name="Dictname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="ResourceName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="ActionType" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
       <static_define_list external="ResourceActionType" />
     </column>
-    <column name="estrActionDetails" type="STRING">
-      <offset>12</offset>
+    <column name="Estractiondetails" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="estrResultString" type="STRING">
-      <offset>16</offset>
+    <column name="Estrresultstring" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Result" type="INT">
-      <offset>20</offset>
+      <offset>40</offset>
       <static_define_list external="ResourceActionResult" />
     </column>
     <column name="}" type="END" />

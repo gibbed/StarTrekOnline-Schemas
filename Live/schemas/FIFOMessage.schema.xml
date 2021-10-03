@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="FIFOMessage">
+  <table>
+    <column name="FIFOMessage" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ID" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Initialrequesttime" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Request" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Sentchunkheader" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Cancelrequested" type="U8">
+      <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bytessent" type="INT64">
+      <offset>32</offset>
+    </column>
+    <column name="timeout" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

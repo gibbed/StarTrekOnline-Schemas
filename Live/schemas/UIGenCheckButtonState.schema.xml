@@ -12,23 +12,25 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>6</default>
+      <default>7</default>
       <static_define_list external="UIGenType" />
     </column>
     <column name="String" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Checked" type="U8">
-      <offset>8</offset>
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Inconsistent" type="U8">
-      <offset>9</offset>
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Truncate" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="UIGenBundleTruncateState" />
     </column>
     <column name="}" type="END" />

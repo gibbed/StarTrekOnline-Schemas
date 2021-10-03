@@ -10,8 +10,9 @@
     <column name="Path" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="recurse" type="U8">
-      <offset>4</offset>
+    <column name="Recurse" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

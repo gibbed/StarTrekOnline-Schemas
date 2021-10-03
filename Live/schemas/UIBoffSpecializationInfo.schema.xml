@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="UIBoffSpecializationInfo">
+  <table>
+    <column name="UIBoffSpecializationInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Specializationinfo" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="PowerSpecializationInfo" />
+    </column>
+    <column name="Owned" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hasmanual" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Manualcount" type="INT">
+      <offset>12</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Hasmanual</redundant_name>
+    </column>
+    <column name="Firstunowned" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Active" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Itemdefmanual" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="ItemDef" />
+    </column>
+    <column name="Invkeymanual" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

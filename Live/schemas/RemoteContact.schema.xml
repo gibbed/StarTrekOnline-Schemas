@@ -14,42 +14,58 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="hDisplayNameMsg" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hdisplaynamemsg" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
+    <column name="Flags1" type="INT">
+      <offset>16</offset>
+      <static_define_list external="ContactFlags1" />
+      <format>FLAGS</format>
+    </column>
     <column name="Flags" type="INT">
-      <offset>8</offset>
-      <static_define_list external="ContactFlags" />
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Flags1</redundant_name>
+      <static_define_list external="ContactFlags1" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Flags2" type="INT">
+      <offset>20</offset>
+      <static_define_list external="ContactFlags2" />
       <format>FLAGS</format>
     </column>
     <column name="Priority" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
     <column name="Headshot" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+      <offset>32</offset>
       <subtable external="ContactHeadshotData" />
     </column>
-    <column name="HeadshotRequested" type="U8">
-      <offset>24</offset>
+    <column name="Headshotrequested" type="U8">
+      <offset>40</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsNew" type="U8">
-      <offset>25</offset>
+    <column name="Isnew" type="U8">
+      <offset>41</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="estrFormattedContactName" type="STRING">
-      <offset>28</offset>
+    <column name="Estrformattedcontactname" type="STRING">
+      <offset>48</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Options" type="STRUCT">
-      <offset>32</offset>
+      <offset>56</offset>
       <subtable external="RemoteContactOption" />
     </column>
     <column name="}" type="END" />

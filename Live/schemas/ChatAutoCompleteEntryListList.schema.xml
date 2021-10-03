@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AutoCompleteList" type="STRUCT">
+    <column name="Autocompletelist" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>REQUIRED</flag>

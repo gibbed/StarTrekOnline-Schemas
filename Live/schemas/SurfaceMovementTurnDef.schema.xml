@@ -7,14 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="FaceMinTurnRate" type="F32">
+    <column name="Faceminturnrate" type="F32">
       <offset>0</offset>
     </column>
-    <column name="FaceMaxTurnRate" type="F32">
+    <column name="Facemaxturnrate" type="F32">
       <offset>4</offset>
     </column>
-    <column name="FaceTurnRate" type="F32">
+    <column name="Faceturnrate" type="F32">
       <offset>8</offset>
+    </column>
+    <column name="Facemovementrestricted" type="BOOLFLAG">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

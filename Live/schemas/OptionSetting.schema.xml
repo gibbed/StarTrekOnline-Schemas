@@ -15,79 +15,81 @@
       </flags>
     </column>
     <column name="Type" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="OptionSettingType" />
     </column>
     <column name="DisplayName" type="REFERENCE">
-      <offset>8</offset>
-      <dictionary_name>Message</dictionary_name>
-    </column>
-    <column name="ToolTip" type="REFERENCE">
-      <offset>12</offset>
-      <dictionary_name>Message</dictionary_name>
-    </column>
-    <column name="DisabledTooltip" type="REFERENCE">
       <offset>16</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
+    <column name="ToolTip" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Disabledtooltip" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
     <column name="IntValue" type="INT">
-      <offset>20</offset>
+      <offset>48</offset>
     </column>
     <column name="FloatValue" type="F32">
-      <offset>20</offset>
+      <offset>48</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
     </column>
-    <column name="OrigIntValue" type="INT">
-      <offset>24</offset>
+    <column name="Origintvalue" type="INT">
+      <offset>52</offset>
     </column>
-    <column name="OrigFloatValue" type="F32">
-      <offset>24</offset>
+    <column name="Origfloatvalue" type="F32">
+      <offset>52</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
     </column>
     <column name="StringValue" type="STRING">
-      <offset>28</offset>
+      <offset>56</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Min" type="F32">
-      <offset>32</offset>
+      <offset>64</offset>
     </column>
     <column name="Max" type="F32">
-      <offset>36</offset>
+      <offset>68</offset>
     </column>
     <column name="Increment" type="F32">
-      <offset>40</offset>
+      <offset>72</offset>
     </column>
-    <column name="ComboBoxOptions" type="STRUCT">
-      <offset>44</offset>
+    <column name="Comboboxoptions" type="STRUCT">
+      <offset>80</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="OptionSettingComboChoice" />
     </column>
-    <column name="ComboChoice" type="OPTIONALSTRUCT">
-      <offset>48</offset>
+    <column name="Combochoice" type="OPTIONALSTRUCT">
+      <offset>88</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="OptionSettingComboChoice" />
     </column>
-    <column name="ComboDefault" type="STRING">
-      <offset>52</offset>
+    <column name="Combodefault" type="STRING">
+      <offset>96</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Enabled" type="U8">
-      <offset>84</offset>
+      <offset>160</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Hide" type="U8">
-      <offset>85</offset>
+      <offset>161</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

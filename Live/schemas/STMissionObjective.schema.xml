@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="STMissionObjective">
+  <table>
+    <column name="STMissionObjective" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="MissionName" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Notifylifetime" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Lasttime" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Alwaysdisplay" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Wasalwaysdisplayed" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Newlifetime" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Updatedlifetime" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Countvalue" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Targetvalue" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="State" type="INT">
+      <offset>36</offset>
+      <static_define_list external="MissionState" />
+    </column>
+    <column name="Missionexpiretime" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Hastimer" type="U8">
+      <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uistring" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Countstring" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Timeremaining" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

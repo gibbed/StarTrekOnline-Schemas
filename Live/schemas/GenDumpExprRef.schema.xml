@@ -15,7 +15,7 @@
       </flags>
     </column>
     <column name="Project" type="STRINGARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

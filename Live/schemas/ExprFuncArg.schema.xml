@@ -11,20 +11,20 @@
       <offset>0</offset>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="staticCheckType" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="allowNULLPtr" type="INT">
+    <column name="Staticchecktype" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="scTypeCategory" type="INT">
-      <offset>20</offset>
+    <column name="Allownullptr" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Sctypecategory" type="INT">
+      <offset>36</offset>
       <static_define_list external="ExprStaticCheckCategory" />
     </column>
-    <column name="ptrTypeName" type="STRING">
-      <offset>24</offset>
+    <column name="Ptrtypename" type="STRING">
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

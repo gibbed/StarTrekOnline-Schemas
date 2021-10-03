@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FIFOLinkState">
+  <elements type="int">
+    <element name="FIFO">0</element>
+    <element name="CREATING">1</element>
+    <element name="REQUESTSENT">2</element>
+    <element name="DOING_CHUNKED_STREAM">3</element>
+  </elements>
+</enum>

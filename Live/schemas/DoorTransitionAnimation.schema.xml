@@ -7,27 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AnimationListName" type="REFERENCE">
+    <column name="Animationlistname" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <dictionary_name>AIAnimList</dictionary_name>
     </column>
-    <column name="FreezeDuration" type="F32">
-      <offset>4</offset>
+    <column name="Freezeduration" type="F32">
+      <offset>8</offset>
       <default>-1</default>
     </column>
     <column name="Duration" type="F32">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>FreezeDuration</redundant_name>
+      <redundant_name>Freezeduration</redundant_name>
       <default>-1</default>
     </column>
-    <column name="PreDelay" type="F32">
-      <offset>8</offset>
+    <column name="Predelay" type="F32">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

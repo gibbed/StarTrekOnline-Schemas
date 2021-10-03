@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="InvRestrictAction">
+  <elements type="int">
+    <element name="Nodes">0</element>
+    <element name="ItemAssignments">1</element>
+    <element name="MissionTurnIn">2</element>
+    <element name="BankWithdrawal">3</element>
+    <element name="Queue">4</element>
+    <element name="AuctionBid">5</element>
+    <element name="AuctionBuy">6</element>
+    <element name="MissionAccept">7</element>
+    <element name="LeaveSocialZone">8</element>
+    <element name="AuctionPost">9</element>
+    <element name="WarningOnItemReceived">10</element>
+    <element name="OpenRewardPack">11</element>
+    <element name="DryDockSavedPet">12</element>
+    <element name="StorePurchase">13</element>
+  </elements>
+</enum>

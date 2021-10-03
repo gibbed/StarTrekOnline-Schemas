@@ -7,77 +7,93 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AllowGlow0" type="U8">
+    <column name="Allowglow0" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowGlow1" type="U8">
+    <column name="Allowglow1" type="U8">
       <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowGlow2" type="U8">
+    <column name="Allowglow2" type="U8">
       <offset>2</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowGlow3" type="U8">
+    <column name="Allowglow3" type="U8">
       <offset>3</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowReflect0" type="U8">
+    <column name="Allowreflect0" type="U8">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowReflect1" type="U8">
+    <column name="Allowreflect1" type="U8">
       <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowReflect2" type="U8">
+    <column name="Allowreflect2" type="U8">
       <offset>6</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowReflect3" type="U8">
+    <column name="Allowreflect3" type="U8">
       <offset>7</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DefaultReflect0" type="F32">
+    <column name="Defaultreflect0" type="F32">
       <offset>8</offset>
     </column>
-    <column name="DefaultReflect1" type="F32">
+    <column name="Defaultreflect1" type="F32">
       <offset>12</offset>
     </column>
-    <column name="DefaultReflect2" type="F32">
+    <column name="Defaultreflect2" type="F32">
       <offset>16</offset>
     </column>
-    <column name="DefaultReflect3" type="F32">
+    <column name="Defaultreflect3" type="F32">
       <offset>20</offset>
     </column>
-    <column name="AllowSpecular0" type="U8">
+    <column name="Allowspecular0" type="U8">
       <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowSpecular1" type="U8">
+    <column name="Allowspecular1" type="U8">
       <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowSpecular2" type="U8">
+    <column name="Allowspecular2" type="U8">
       <offset>26</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowSpecular3" type="U8">
+    <column name="Allowspecular3" type="U8">
       <offset>27</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DefaultSpecular0" type="F32">
+    <column name="Defaultspecular0" type="F32">
       <offset>28</offset>
     </column>
-    <column name="DefaultSpecular1" type="F32">
+    <column name="Defaultspecular1" type="F32">
       <offset>32</offset>
     </column>
-    <column name="DefaultSpecular2" type="F32">
+    <column name="Defaultspecular2" type="F32">
       <offset>36</offset>
     </column>
-    <column name="DefaultSpecular3" type="F32">
+    <column name="Defaultspecular3" type="F32">
       <offset>40</offset>
     </column>
-    <column name="CustomMuscle0" type="U8">
+    <column name="Custommuscle0" type="U8">
       <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CustomMuscle1" type="U8">
+    <column name="Custommuscle1" type="U8">
       <offset>45</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CustomMuscle2" type="U8">
+    <column name="Custommuscle2" type="U8">
       <offset>46</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CustomMuscle3" type="U8">
+    <column name="Custommuscle3" type="U8">
       <offset>47</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

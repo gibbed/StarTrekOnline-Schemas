@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ConsignmentGameSpecificData">
+  <table>
+    <column name="ConsignmentGameSpecificData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Poolname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Translatednames" type="STRINGARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Stringsearchvalues" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="ConsignmentObjSearchStringValue" />
+    </column>
+    <column name="Intsearchvalues" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="ConsignmentObjSearchIntValue" />
+    </column>
+    <column name="Priceconfigtype" type="INT">
+      <offset>32</offset>
+      <static_define_list external="ConsignmentPriceConfigType" />
+    </column>
+    <column name="Itemsperbundle" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Itemhaslevels" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

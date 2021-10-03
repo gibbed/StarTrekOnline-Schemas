@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ByteOffset" type="INT">
+    <column name="Byteoffset" type="INT">
       <offset>0</offset>
     </column>
     <column name="Mask" type="U8">

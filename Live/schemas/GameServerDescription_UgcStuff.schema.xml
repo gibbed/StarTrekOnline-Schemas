@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="UgcUUID" type="FIXEDSTRING">
+    <column name="Ugcuuid" type="FIXEDSTRING">
       <offset>0</offset>
       <string_length>40</string_length>
     </column>
-    <column name="OwnerAccountID" type="INT">
+    <column name="Owneraccountid" type="INT">
       <offset>40</offset>
     </column>
-    <column name="OwnerAccountName" type="STRING">
-      <offset>44</offset>
+    <column name="Owneraccountname" type="STRING">
+      <offset>48</offset>
     </column>
     <column name="}" type="END" />
   </table>

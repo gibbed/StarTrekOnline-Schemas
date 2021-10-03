@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="deps" type="STRUCT">
+    <column name="Deps" type="STRUCT">
       <offset>0</offset>
       <subtable external="WorldDependenciesParsed" />
     </column>

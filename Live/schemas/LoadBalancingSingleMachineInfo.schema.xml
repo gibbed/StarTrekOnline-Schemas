@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MachineName" type="STRING">
+    <column name="Machinename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="CPU" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="CPU60" type="INT">
+    <column name="Cpu" type="INT">
       <offset>8</offset>
     </column>
-    <column name="FreeMegs" type="INT">
+    <column name="Cpu60" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Freemegs" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

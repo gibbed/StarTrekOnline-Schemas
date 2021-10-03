@@ -10,8 +10,8 @@
     <column name="ContainerID" type="INT">
       <offset>0</offset>
     </column>
-    <column name="PowerElem" type="STRUCT">
-      <offset>4</offset>
+    <column name="Powerelem" type="STRUCT">
+      <offset>8</offset>
       <subtable external="TeamInfoPowerElem" />
     </column>
     <column name="}" type="END" />

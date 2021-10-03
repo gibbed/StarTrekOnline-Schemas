@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="LaunchResult">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="WAITING_FOR_SENTRY">1</element>
+    <element name="RUNNING">2</element>
+    <element name="COMPLETED">3</element>
+    <element name="FAILED_ON_SENTRY">4</element>
+    <element name="NOT_VALIDATED">5</element>
+    <element name="NOT_ALLOWED">6</element>
+    <element name="UNKNOWN_MACHINE">7</element>
+    <element name="LAUNCH_TIMEOUT">8</element>
+  </elements>
+</enum>

@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ContactName" type="STRING">
+    <column name="Contactname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MissionOffer" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Missionoffer" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="ContactMissionOffer" />
     </column>
     <column name="}" type="END" />

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="QueuedXboxSessionType">
+  <elements type="int">
+    <element name="GroupSession">0</element>
+    <element name="QueueSession">1</element>
+  </elements>
+</enum>

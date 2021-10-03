@@ -7,9 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="checkins" type="STRUCT">
+    <column name="Checkins" type="STRUCT">
       <offset>0</offset>
       <subtable external="CheckinInfo" />
+    </column>
+    <column name="Endcheckin" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="EndTime" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Endcheckin</redundant_name>
     </column>
     <column name="}" type="END" />
   </table>

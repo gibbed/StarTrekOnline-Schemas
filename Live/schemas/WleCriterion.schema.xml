@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="propertyName" type="STRING">
+    <column name="Propertyname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="allConds" type="INTARRAY">
-      <offset>4</offset>
+    <column name="Allconds" type="INTARRAY">
+      <offset>8</offset>
       <static_define_list external="WleCriterionCond" />
     </column>
-    <column name="possibleValues" type="STRINGARRAY">
-      <offset>8</offset>
+    <column name="Possiblevalues" type="STRINGARRAY">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

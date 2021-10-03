@@ -8,6 +8,7 @@
     <element name="DEAF">8</element>
     <element name="HIDDEN">16</element>
     <element name="FRIENDSONLY">32</element>
+    <element name="BUSY">64</element>
     <element name="AUTOAFK">4194304</element>
     <element name="XMPP">8388608</element>
   </elements>

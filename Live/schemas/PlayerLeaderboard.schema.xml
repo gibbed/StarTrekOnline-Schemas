@@ -13,10 +13,10 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="LastTimeOnMap" type="INT">
+    <column name="Lasttimeonmap" type="INT">
       <offset>4</offset>
     </column>
-    <column name="OnMap" type="BIT">
+    <column name="Onmap" type="BIT">
       <offset>8</offset>
       <bit_offset>65536</bit_offset>
     </column>

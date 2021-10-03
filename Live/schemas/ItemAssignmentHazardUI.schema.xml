@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemAssignmentHazardUI">
+  <table>
+    <column name="ItemAssignmentHazardUI" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="hDef" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>ItemAssignmentHazard</dictionary_name>
+    </column>
+    <column name="DisplayName" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Description" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Engadjustment" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Tacadjustment" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Sciadjustment" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

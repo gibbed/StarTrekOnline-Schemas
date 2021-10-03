@@ -13,34 +13,34 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="ExprBlockWeightModifier" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Exprblockweightmodifier" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="Expression" />
     </column>
-    <column name="WeightModifier" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Weightmodifier" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ExprBlockWeightModifier</redundant_name>
+      <redundant_name>Exprblockweightmodifier</redundant_name>
       <subtable external="Expression" />
     </column>
-    <column name="ExprWeightModifer" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Exprweightmodifer" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ExprBlockWeightModifier</redundant_name>
+      <redundant_name>Exprblockweightmodifier</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="AffectedOutcome" type="STRINGARRAY">
-      <offset>8</offset>
+    <column name="Affectedoutcome" type="STRINGARRAY">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DependentOutcome" type="STRING">
-      <offset>12</offset>
+    <column name="Dependentoutcome" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

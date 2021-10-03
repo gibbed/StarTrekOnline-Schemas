@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="WindowsLookupTypes">
+  <elements type="int">
+    <element name="noType">0</element>
+    <element name="void">1</element>
+    <element name="char">2</element>
+    <element name="wchar">3</element>
+    <element name="int">6</element>
+    <element name="uint">7</element>
+    <element name="float">8</element>
+    <element name="bcd">9</element>
+    <element name="bool">10</element>
+    <element name="long">13</element>
+    <element name="ulong">14</element>
+    <element name="currency">25</element>
+    <element name="date">26</element>
+    <element name="variant">27</element>
+    <element name="complex">28</element>
+    <element name="bit">29</element>
+    <element name="bstr">30</element>
+    <element name="hresult">31</element>
+    <element name="char16">32</element>
+    <element name="char32">33</element>
+  </elements>
+</enum>

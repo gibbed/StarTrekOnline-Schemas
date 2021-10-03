@@ -7,63 +7,67 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ActivateTime" type="INT">
+    <column name="Activatetime" type="INT">
       <offset>0</offset>
     </column>
-    <column name="EventTime" type="INT">
+    <column name="Eventtime" type="INT">
       <offset>4</offset>
     </column>
     <column name="Message" type="EMBEDDEDSTRUCT">
       <offset>8</offset>
       <subtable external="BulletinMessage" />
     </column>
-    <column name="CategoryMessage" type="EMBEDDEDSTRUCT">
-      <offset>20</offset>
-      <subtable external="BulletinMessage" />
-    </column>
-    <column name="EventMessage" type="EMBEDDEDSTRUCT">
+    <column name="Categorymessage" type="EMBEDDEDSTRUCT">
       <offset>32</offset>
       <subtable external="BulletinMessage" />
     </column>
-    <column name="MicroTransactionDef" type="REFERENCE">
-      <offset>44</offset>
+    <column name="Eventmessage" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
+      <subtable external="BulletinMessage" />
+    </column>
+    <column name="Microtransactiondef" type="REFERENCE">
+      <offset>80</offset>
       <dictionary_name>MicroTransactionDef</dictionary_name>
     </column>
-    <column name="MicroTransactionID" type="INT">
-      <offset>48</offset>
+    <column name="Microtransactionid" type="INT">
+      <offset>88</offset>
     </column>
     <column name="Link" type="STRING">
-      <offset>52</offset>
+      <offset>96</offset>
     </column>
-    <column name="EventTexture" type="STRING">
-      <offset>56</offset>
+    <column name="Eventtexture" type="STRING">
+      <offset>104</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CategoryTexture" type="STRING">
-      <offset>60</offset>
+    <column name="Categorytexture" type="STRING">
+      <offset>112</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CategoryName" type="STRING">
-      <offset>64</offset>
+    <column name="Categoryname" type="STRING">
+      <offset>120</offset>
     </column>
     <column name="Category" type="INT">
-      <offset>68</offset>
+      <offset>128</offset>
     </column>
-    <column name="IsHeader" type="U8">
-      <offset>72</offset>
+    <column name="Isheader" type="U8">
+      <offset>132</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="HasEventTakenPlace" type="U8">
-      <offset>73</offset>
+    <column name="Haseventtakenplace" type="U8">
+      <offset>133</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MissionComplete" type="U8">
-      <offset>74</offset>
+    <column name="Missioncomplete" type="U8">
+      <offset>134</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MostRecentCategory" type="U8">
-      <offset>75</offset>
+    <column name="Mostrecentcategory" type="U8">
+      <offset>135</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

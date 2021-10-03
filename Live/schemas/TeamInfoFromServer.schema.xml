@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PlayerList" type="STRUCT">
+    <column name="Playerlist" type="STRUCT">
       <offset>0</offset>
       <subtable external="TeamInfoPlayer" />
     </column>

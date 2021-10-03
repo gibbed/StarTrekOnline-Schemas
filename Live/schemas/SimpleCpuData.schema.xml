@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MaxCyclesFor30Fps" type="F32">
+    <column name="Maxcyclesfor30fps" type="F32">
       <offset>0</offset>
     </column>
-    <column name="NextFrameIndex" type="INT">
+    <column name="Nextframeindex" type="INT">
       <offset>4</offset>
     </column>
-    <column name="SimpleCpuFrameData" type="STRUCT">
+    <column name="Simplecpuframedata" type="STRUCT">
       <offset>8</offset>
       <subtable external="SimpleCpuFrameData" />
     </column>

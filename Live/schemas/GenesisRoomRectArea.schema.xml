@@ -11,10 +11,10 @@
       <offset>0</offset>
       <static_define_list external="GenesisRoomRectAreaType" />
     </column>
-    <column name="GridX" type="INT">
+    <column name="Gridx" type="INT">
       <offset>4</offset>
     </column>
-    <column name="GridZ" type="INT">
+    <column name="Gridz" type="INT">
       <offset>8</offset>
     </column>
     <column name="Width" type="INT">

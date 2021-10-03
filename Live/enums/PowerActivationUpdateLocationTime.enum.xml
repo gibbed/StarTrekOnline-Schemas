@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PowerActivationUpdateLocationTime">
+  <elements type="int">
+    <element name="Default">0</element>
+    <element name="Queue">1</element>
+    <element name="ChargeStart">2</element>
+    <element name="ChargePartial">3</element>
+    <element name="ChargeEnd">4</element>
+    <element name="Activated">5</element>
+  </elements>
+</enum>

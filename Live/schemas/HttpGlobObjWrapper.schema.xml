@@ -14,7 +14,7 @@
       </flags>
     </column>
     <column name="Struct" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="HttpGlobObjWrapper" />
     </column>
     <column name="}" type="END" />

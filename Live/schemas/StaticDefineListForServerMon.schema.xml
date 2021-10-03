@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="StaticDefines" type="STRUCT">
+    <column name="Staticdefines" type="STRUCT">
       <offset>0</offset>
       <subtable external="StaticDefineNameAndLink" />
     </column>

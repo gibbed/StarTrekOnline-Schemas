@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiNumBones" type="INT">
+    <column name="Uinumbones" type="INT">
       <offset>0</offset>
     </column>
     <column name="Transforms" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DynTransform" />
     </column>
-    <column name="stBoneTable" type="STASHTABLE">
-      <offset>8</offset>
+    <column name="Stbonetable" type="STASHTABLE">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

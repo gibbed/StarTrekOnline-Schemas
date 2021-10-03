@@ -18,17 +18,17 @@
     <column name="Hit" type="BIT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
       <redundant_name>Success</redundant_name>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="bSuccess" type="BIT">
+    <column name="Bsuccess" type="BIT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
@@ -42,10 +42,10 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="fRoll" type="F32">
+    <column name="Froll" type="F32">
       <offset>4</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
@@ -58,10 +58,10 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="fThreshold" type="F32">
+    <column name="Fthreshold" type="F32">
       <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
@@ -74,10 +74,10 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="fSeverity" type="F32">
+    <column name="Fseverity" type="F32">
       <offset>12</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>

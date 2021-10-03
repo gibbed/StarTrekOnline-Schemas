@@ -6,7 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="InteractAnim" type="REFERENCE">
+    <column name="Interactanim" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>AIAnimList</dictionary_name>
     </column>

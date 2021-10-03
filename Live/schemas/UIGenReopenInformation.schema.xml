@@ -16,15 +16,16 @@
       </flags>
     </column>
     <column name="DisplayName" type="FIXEDSTRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <string_length>128</string_length>
     </column>
-    <column name="loginCharacterName" type="FIXEDSTRING">
-      <offset>132</offset>
+    <column name="Logincharactername" type="FIXEDSTRING">
+      <offset>136</offset>
       <string_length>128</string_length>
     </column>
     <column name="Jailed" type="U8">
-      <offset>260</offset>
+      <offset>264</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,17 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MachineName" type="STRING">
+    <column name="Machinename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="RemoteFileName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="CRCQueryHandle" type="INT">
+    <column name="Remotefilename" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Crcqueryhandle" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

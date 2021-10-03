@@ -25,7 +25,7 @@
     <column name="Roll" type="F32">
       <offset>20</offset>
     </column>
-    <column name="FOV" type="F32">
+    <column name="Fov" type="F32">
       <offset>24</offset>
     </column>
     <column name="}" type="END" />

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PowersExternalInnate" type="STRUCT">
+    <column name="Powersexternalinnate" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>NO_INDEX</flag>

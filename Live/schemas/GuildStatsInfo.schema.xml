@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiVersion" type="INT">
+    <column name="Uiversion" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eaGuildStats" type="STRUCT">
-      <offset>4</offset>
+    <column name="Eaguildstats" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

@@ -14,55 +14,57 @@
       </flags>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="vid_mem" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="sys_mem_packed" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="sys_mem_unpacked" type="INT">
+    <column name="Vid_Mem" type="INT">
       <offset>16</offset>
     </column>
-    <column name="total_mem" type="INT">
+    <column name="Sys_Mem_Packed" type="INT">
       <offset>20</offset>
     </column>
-    <column name="verts" type="INT">
+    <column name="Sys_Mem_Unpacked" type="INT">
       <offset>24</offset>
     </column>
-    <column name="tris" type="INT">
+    <column name="Total_Mem" type="INT">
       <offset>28</offset>
     </column>
-    <column name="sub_objects" type="INT">
+    <column name="Verts" type="INT">
       <offset>32</offset>
     </column>
-    <column name="countInScene" type="INT">
+    <column name="Tris" type="INT">
       <offset>36</offset>
     </column>
-    <column name="uniqueInScene" type="INT">
+    <column name="Sub_Objects" type="INT">
       <offset>40</offset>
     </column>
-    <column name="trisInScene" type="INT">
+    <column name="Countinscene" type="INT">
       <offset>44</offset>
     </column>
-    <column name="far_dist" type="INT">
+    <column name="Uniqueinscene" type="INT">
       <offset>48</offset>
     </column>
-    <column name="uv_density" type="F32">
+    <column name="Trisinscene" type="INT">
       <offset>52</offset>
     </column>
-    <column name="recent" type="U8">
+    <column name="Far_Dist" type="INT">
       <offset>56</offset>
     </column>
-    <column name="Shared" type="U8">
-      <offset>57</offset>
-    </column>
-    <column name="lod_template_name" type="STRING">
+    <column name="Uv_Density" type="F32">
       <offset>60</offset>
+    </column>
+    <column name="Recent" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Shared" type="U8">
+      <offset>65</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Lod_Template_Name" type="STRING">
+      <offset>72</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

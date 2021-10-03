@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="GroupProjectInformationEditor">
+  <table>
+    <column name="GroupProjectInformationEditor" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>KEY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="GroupProjectInformationType" />
+    </column>
+    <column name="Etype" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Type</redundant_name>
+      <static_define_list external="GroupProjectInformationType" />
+    </column>
+    <column name="ID" type="INT">
+      <offset>4</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="UID" type="INT">
+      <offset>4</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>ID</redundant_name>
+    </column>
+    <column name="DisplayName" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pcdisplayname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>DisplayName</redundant_name>
+    </column>
+    <column name="Noteditedbyuser" type="U8">
+      <offset>16</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bnoteditedbyuser" type="U8">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Noteditedbyuser</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

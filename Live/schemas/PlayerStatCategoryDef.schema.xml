@@ -16,13 +16,13 @@
       </flags>
     </column>
     <column name="IconName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="File" type="CURRENTFILE">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

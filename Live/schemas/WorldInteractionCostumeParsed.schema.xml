@@ -7,22 +7,26 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hand_pivot_idx" type="INT">
+    <column name="Hand_Pivot_Idx" type="INT">
       <offset>0</offset>
     </column>
-    <column name="mass_pivot_idx" type="INT">
+    <column name="Mass_Pivot_Idx" type="INT">
       <offset>4</offset>
     </column>
-    <column name="carry_anim_bit_string_idx" type="INT">
+    <column name="Carry_Anim_Bit_String_Idx" type="INT">
       <offset>8</offset>
       <default>-1</default>
     </column>
-    <column name="costume_parts" type="STRUCT">
-      <offset>12</offset>
+    <column name="Costume_Parts" type="STRUCT">
+      <offset>16</offset>
       <subtable external="WorldInteractionCostumePartParsed" />
     </column>
-    <column name="interaction_uids" type="INTARRAY">
-      <offset>16</offset>
+    <column name="Interaction_Uids" type="INTARRAY">
+      <offset>24</offset>
+    </column>
+    <column name="Use_Character_Lighting" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,18 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="compressor_threshold" type="F32">
+    <column name="Compressor_Threshold" type="F32">
       <offset>0</offset>
     </column>
-    <column name="compressor_attack" type="F32">
+    <column name="Compressor_Attack" type="F32">
       <offset>4</offset>
       <default>50</default>
     </column>
-    <column name="compressor_release" type="F32">
+    <column name="Compressor_Release" type="F32">
       <offset>8</offset>
       <default>50</default>
     </column>
-    <column name="compressor_gainmakeup" type="F32">
+    <column name="Compressor_Gainmakeup" type="F32">
       <offset>12</offset>
     </column>
     <column name="}" type="END" />

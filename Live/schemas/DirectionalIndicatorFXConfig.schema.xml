@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ArrowFX" type="STRING">
+    <column name="Arrowfx" type="STRING">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

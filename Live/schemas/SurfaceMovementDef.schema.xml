@@ -14,8 +14,8 @@
       </flags>
       <static_define_list external="MovementRequesterType" />
     </column>
-    <column name="turn" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Turn" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="SurfaceMovementTurnDef" />
     </column>
     <column name="}" type="END" />

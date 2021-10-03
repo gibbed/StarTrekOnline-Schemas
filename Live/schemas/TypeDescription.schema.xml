@@ -14,13 +14,13 @@
       </flags>
     </column>
     <column name="Type" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Fields" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="TypeDescription" />
     </column>
     <column name="}" type="END" />

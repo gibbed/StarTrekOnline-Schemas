@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uAccountID" type="INT">
+    <column name="Uaccountid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uIp" type="INT">
+    <column name="Uip" type="INT">
       <offset>4</offset>
     </column>
-    <column name="uTicketID" type="INT">
+    <column name="Uticketid" type="INT">
       <offset>8</offset>
     </column>
-    <column name="CmdID" type="INT">
+    <column name="Cmdid" type="INT">
       <offset>12</offset>
     </column>
     <column name="}" type="END" />

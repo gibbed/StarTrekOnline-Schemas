@@ -18,6 +18,6 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="EndTimeBlock" type="END" />
+    <column name="Endtimeblock" type="END" />
   </table>
 </parser>

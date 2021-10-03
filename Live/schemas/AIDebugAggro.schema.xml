@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="defAggro" type="F32">
+    <column name="Defaggro" type="F32">
       <offset>0</offset>
     </column>
-    <column name="defAware" type="F32">
+    <column name="Defaware" type="F32">
       <offset>4</offset>
     </column>
-    <column name="defSocPrim" type="F32">
+    <column name="Defsocprim" type="F32">
       <offset>8</offset>
     </column>
-    <column name="defSocSec" type="F32">
+    <column name="Defsocsec" type="F32">
       <offset>12</offset>
     </column>
-    <column name="socialEnabled" type="BIT">
+    <column name="Socialenabled" type="BIT">
       <offset>16</offset>
       <bit_offset>65536</bit_offset>
     </column>

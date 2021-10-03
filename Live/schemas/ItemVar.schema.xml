@@ -16,11 +16,11 @@
     <column name="Value" type="MULTIVAL">
       <offset>8</offset>
     </column>
-    <column name="hVarHandle" type="INT">
+    <column name="Hvarhandle" type="INT">
       <offset>24</offset>
     </column>
     <column name="File" type="CURRENTFILE">
-      <offset>28</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="RdrDrawContextMetric">
+  <elements type="int">
+    <element name="MaterialTextureSetSwitch">0</element>
+    <element name="LightTextureSetSwitch">1</element>
+    <element name="ShadowBufferSwitch">2</element>
+    <element name="PSTexturesSwitch">3</element>
+    <element name="TextureLookup">4</element>
+    <element name="TextureSwitch">5</element>
+    <element name="ResourceBufferSwitch">6</element>
+    <element name="ResolveSurfaceToTexture">7</element>
+    <element name="BindSurfaceAsTexture">8</element>
+    <element name="VSTexturesSwitch">9</element>
+    <element name="RDCM_Count">10</element>
+  </elements>
+</enum>

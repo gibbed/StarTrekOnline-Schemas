@@ -13,35 +13,40 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="FN" type="CURRENTFILE">
-      <offset>4</offset>
+    <column name="Fn" type="CURRENTFILE">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ShaderGraph" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+    <column name="Shadergraph" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
       <subtable external="ShaderGraph" />
     </column>
     <column name="Guide" type="STRUCT">
-      <offset>56</offset>
+      <offset>128</offset>
       <subtable external="ShaderGuide" />
     </column>
-    <column name="ShaderTemplateLink" type="STRUCT">
-      <offset>60</offset>
-      <subtable external="ShaderTemplateLink" />
+    <column name="Isautosave" type="U8">
+      <offset>136</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsAutosave" type="U8">
-      <offset>64</offset>
-    </column>
-    <column name="score" type="INT">
-      <offset>68</offset>
+    <column name="Score" type="INT">
+      <offset>140</offset>
       <default>-1</default>
     </column>
-    <column name="ShaderTemplateLOD" type="IGNORE" />
-    <column name="EndShaderTemplateLOD" type="IGNORE" />
+    <column name="Function_Inputs_Initialized" type="BIT">
+      <offset>144</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Shadertemplatelod" type="IGNORE" />
+    <column name="Endshadertemplatelod" type="IGNORE" />
     <column name="FarDist" type="IGNORE" />
-    <column name="FarFade" type="IGNORE" />
-    <column name="EndShaderTemplate" type="END" />
+    <column name="Farfade" type="IGNORE" />
+    <column name="Shadertemplatelink" type="IGNORE" />
+    <column name="Endshadertemplate" type="END" />
   </table>
 </parser>

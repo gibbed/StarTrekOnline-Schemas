@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="i" type="INT">
+    <column name="I" type="INT">
       <offset>0</offset>
     </column>
     <column name="F" type="F32">
       <offset>4</offset>
     </column>
-    <column name="aint" type="INTARRAY">
+    <column name="Aint" type="INTARRAY">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

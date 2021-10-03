@@ -2,19 +2,17 @@
 <parser name="Interp">
   <table>
     <column type="LINENUM">
-      <offset>8</offset>
+      <offset>16</offset>
     </column>
     <column type="INT">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="DynInterpType" />
     </column>
     <column type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>

@@ -12,16 +12,18 @@
     <column name="Speed" type="F32">
       <offset>4</offset>
     </column>
-    <column name="SpeedVariation" type="F32">
+    <column name="Speedvariation" type="F32">
       <offset>8</offset>
     </column>
     <column name="Direction" type="F32FIXEDARRAY">
       <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="DirectionVariation" type="F32FIXEDARRAY">
+    <column name="Directionvariation" type="F32FIXEDARRAY">
       <offset>24</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Turbulence" type="F32">
       <offset>36</offset>
@@ -30,15 +32,15 @@
     <column name="Turbulance" type="F32">
       <offset>36</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Turbulence</redundant_name>
       <default>1056964608</default>
     </column>
-    <column name="variationScale" type="F32">
+    <column name="Variationscale" type="F32">
       <offset>40</offset>
       <default>1022739087</default>
     </column>
-    <column name="EndWind" type="END" />
+    <column name="Endwind" type="END" />
   </table>
 </parser>

@@ -6,24 +6,25 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="ArgName" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="ArgTypeName" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>STRUCTPARAM</flag>
-      </flags>
-    </column>
-    <column name="ArgTypeStructName" type="STRING">
+    <column name="Argtypename" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="Argtypestructname" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
   </table>
 </parser>

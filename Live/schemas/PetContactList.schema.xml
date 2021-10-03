@@ -15,22 +15,22 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="PetContact" type="STRUCT">
-      <offset>4</offset>
+    <column name="Petcontact" type="STRUCT">
+      <offset>8</offset>
       <subtable external="PetContact" />
     </column>
-    <column name="DefaultCritter" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Defaultcritter" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>CritterDef</dictionary_name>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Tags" type="IGNORE" />
-    <column name="UGCProperties" type="IGNORE">
+    <column name="Ugcproperties" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>

@@ -7,28 +7,28 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="FallbackPromptText" type="STRING">
+    <column name="Fallbackprompttext" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="VariableDef" type="STRUCT">
-      <offset>4</offset>
+    <column name="Variabledef" type="STRUCT">
+      <offset>8</offset>
       <subtable external="WorldVariableDef" />
     </column>
-    <column name="VistaThickness" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="VistaHoleSize" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="BoundsSkyFade" type="OPTIONALSTRUCT">
+    <column name="Vistathickness" type="INT">
       <offset>16</offset>
+    </column>
+    <column name="Vistaholesize" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Boundsskyfade" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="WorldSkyVolumeProperties" />
     </column>
-    <column name="CheckedAttrib" type="STRUCT">
-      <offset>20</offset>
+    <column name="Checkedattrib" type="STRUCT">
+      <offset>32</offset>
       <subtable external="GenesisConfigCheckedAttrib" />
     </column>
-    <column name="WarpActionCategory" type="IGNORE" />
+    <column name="Warpactioncategory" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

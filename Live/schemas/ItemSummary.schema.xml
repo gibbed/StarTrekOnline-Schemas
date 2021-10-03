@@ -11,13 +11,14 @@
       <offset>0</offset>
     </column>
     <column name="Algo" type="U8">
-      <offset>4</offset>
-    </column>
-    <column name="NumericValue" type="INT">
       <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Numericvalue" type="INT">
+      <offset>12</offset>
     </column>
     <column name="Quality" type="INT">
-      <offset>12</offset>
+      <offset>16</offset>
       <static_define_list external="ItemQuality" />
     </column>
     <column name="}" type="END" />

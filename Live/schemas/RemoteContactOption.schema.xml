@@ -14,40 +14,42 @@
       </flags>
     </column>
     <column name="Description1" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="Description2" type="STRING">
       <offset>8</offset>
     </column>
+    <column name="Description2" type="STRING">
+      <offset>16</offset>
+    </column>
     <column name="Option" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="ContactDialogOption" />
     </column>
-    <column name="hMissionDisplayName" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Hmissiondisplayname" type="REFERENCE">
+      <offset>32</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="hMissionCategory" type="REFERENCE">
-      <offset>20</offset>
+    <column name="Hmissioncategory" type="REFERENCE">
+      <offset>40</offset>
       <dictionary_name>MissionCategory</dictionary_name>
     </column>
     <column name="MissionName" type="STRING">
-      <offset>24</offset>
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="New" type="U8">
-      <offset>28</offset>
+      <offset>56</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DescriptionRequested" type="U8">
-      <offset>29</offset>
+    <column name="Descriptionrequested" type="U8">
+      <offset>57</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

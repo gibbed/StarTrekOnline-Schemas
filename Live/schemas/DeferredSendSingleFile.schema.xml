@@ -7,33 +7,35 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LocalFileName" type="STRING">
+    <column name="Localfilename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
     <column name="Targets" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DeferredSendSingleTarget" />
     </column>
-    <column name="QueriesOutstanding" type="INT">
-      <offset>8</offset>
+    <column name="Queriesoutstanding" type="INT">
+      <offset>16</offset>
     </column>
-    <column name="CRC" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="Zipping" type="U8">
+    <column name="Crc" type="INT">
       <offset>20</offset>
     </column>
-    <column name="ZippingFailed" type="U8">
-      <offset>21</offset>
-    </column>
-    <column name="ZippedBufferSize" type="INT">
-      <offset>28</offset>
-    </column>
-    <column name="UnzippedBufferSize" type="INT">
+    <column name="Zipping" type="U8">
       <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Zippingfailed" type="U8">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Zippedbuffersize" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Unzippedbuffersize" type="INT">
+      <offset>52</offset>
     </column>
     <column name="}" type="END" />
   </table>

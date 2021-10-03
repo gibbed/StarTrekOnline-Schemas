@@ -15,133 +15,161 @@
       </flags>
     </column>
     <column name="File" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="DisplayName" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Header1" type="EMBEDDEDSTRUCT">
-      <offset>20</offset>
+      <offset>40</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Header2" type="EMBEDDEDSTRUCT">
-      <offset>32</offset>
+      <offset>64</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Header3" type="EMBEDDEDSTRUCT">
-      <offset>44</offset>
+      <offset>88</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Description" type="EMBEDDEDSTRUCT">
-      <offset>56</offset>
+      <offset>112</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Description1" type="EMBEDDEDSTRUCT">
-      <offset>56</offset>
+      <offset>112</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Description</redundant_name>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Description2" type="EMBEDDEDSTRUCT">
-      <offset>68</offset>
+      <offset>136</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Description3" type="EMBEDDEDSTRUCT">
-      <offset>80</offset>
+      <offset>160</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="FlavorText" type="EMBEDDEDSTRUCT">
-      <offset>92</offset>
+    <column name="Flavortext" type="EMBEDDEDSTRUCT">
+      <offset>184</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="IconName" type="STRING">
-      <offset>104</offset>
+      <offset>208</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="LargeImage" type="STRING">
-      <offset>108</offset>
+    <column name="Largeimage" type="STRING">
+      <offset>216</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="ExprRequiresBlock" type="OPTIONALSTRUCT">
-      <offset>112</offset>
+      <offset>224</offset>
       <subtable external="Expression" />
     </column>
     <column name="ExprRequires" type="OPTIONALSTRUCT">
-      <offset>112</offset>
+      <offset>224</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>ExprRequiresBlock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="PowerTree" type="REFERENCE">
-      <offset>116</offset>
+    <column name="Activityrequired" type="STRING">
+      <offset>232</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Powertree" type="REFERENCE">
+      <offset>240</offset>
       <dictionary_name>PowerTreeDef</dictionary_name>
     </column>
-    <column name="SuggestedPurchase" type="STRUCT">
-      <offset>120</offset>
+    <column name="Suggestedpurchase" type="STRUCT">
+      <offset>248</offset>
       <subtable external="CharacterPathSuggestedPurchase" />
     </column>
     <column name="Purchase" type="STRUCT">
-      <offset>120</offset>
+      <offset>248</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>SuggestedPurchase</redundant_name>
+      <redundant_name>Suggestedpurchase</redundant_name>
       <subtable external="CharacterPathSuggestedPurchase" />
     </column>
-    <column name="AssignedStat" type="STRUCT">
-      <offset>124</offset>
+    <column name="Assignedstat" type="STRUCT">
+      <offset>256</offset>
       <subtable external="AssignedStats" />
     </column>
-    <column name="GrantItem" type="STRUCT">
-      <offset>128</offset>
+    <column name="Grantitem" type="STRUCT">
+      <offset>264</offset>
       <subtable external="DefaultItemDef" />
     </column>
-    <column name="RequiredClass" type="STRUCT">
-      <offset>132</offset>
+    <column name="Requiredclass" type="STRUCT">
+      <offset>272</offset>
       <subtable external="CharacterClassRef" />
     </column>
-    <column name="PreviewItem" type="STRUCT">
-      <offset>136</offset>
+    <column name="Previewitem" type="STRUCT">
+      <offset>280</offset>
       <subtable external="ItemDefRef" />
     </column>
     <column name="Hue" type="F32">
-      <offset>140</offset>
+      <offset>288</offset>
     </column>
     <column name="Type" type="INT">
-      <offset>144</offset>
+      <offset>292</offset>
       <default>-1</default>
       <static_define_list external="CharacterPathType" />
     </column>
-    <column name="GamePermissionValue" type="STRING">
-      <offset>148</offset>
+    <column name="Role" type="INT">
+      <offset>296</offset>
+      <static_define_list external="CharacterRole" />
     </column>
-    <column name="FreeRetrainItems" type="STRUCT">
-      <offset>152</offset>
+    <column name="Gamepermissionvalue" type="STRING">
+      <offset>304</offset>
+    </column>
+    <column name="Gameaccountkey" type="STRING">
+      <offset>312</offset>
+    </column>
+    <column name="Freeretrainitems" type="STRUCT">
+      <offset>320</offset>
       <subtable external="DefaultItemDef" />
     </column>
     <column name="Costume" type="STRUCT">
-      <offset>156</offset>
+      <offset>328</offset>
       <subtable external="PlayerDefaultCostumeRef" />
     </column>
-    <column name="PlayerPathDevRestricted" type="BIT">
-      <offset>160</offset>
+    <column name="Costumecategory" type="REFERENCE">
+      <offset>336</offset>
+      <dictionary_name>PCCategory</dictionary_name>
+    </column>
+    <column name="Gamespecificcharacterpath" type="OPTIONALSTRUCT">
+      <offset>344</offset>
+      <subtable external="GameSpecificCharacterPath" />
+    </column>
+    <column name="Combatreactivepowerdef" type="STRING">
+      <offset>352</offset>
+    </column>
+    <column name="Playerpathdevrestricted" type="BIT">
+      <offset>360</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="HideIfCantUse" type="BIT">
-      <offset>160</offset>
+    <column name="Hideifcantuse" type="BIT">
+      <offset>360</offset>
       <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Disablecharacterbasedinclude" type="BIT">
+      <offset>360</offset>
+      <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

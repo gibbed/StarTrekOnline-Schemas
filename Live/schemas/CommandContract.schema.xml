@@ -7,34 +7,34 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LineNum" type="LINENUM">
+    <column name="Linenum" type="LINENUM">
       <offset>0</offset>
     </column>
-    <column name="CommandName" type="STRING">
-      <offset>4</offset>
+    <column name="Commandname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>KEY</flag>
       </flags>
     </column>
     <column name="Arg" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="CommandContractArg" />
     </column>
-    <column name="RetVal" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Retval" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="CommandContractRetVal" />
     </column>
-    <column name="DependentStructs_Unprocessed" type="STRUCT">
-      <offset>16</offset>
+    <column name="Dependentstructs_Unprocessed" type="STRUCT">
+      <offset>32</offset>
       <subtable external="CommandContractDependency" />
     </column>
-    <column name="DependentStructs_Processed" type="STRUCT">
-      <offset>20</offset>
+    <column name="Dependentstructs_Processed" type="STRUCT">
+      <offset>40</offset>
       <subtable external="CommandContractDependency" />
     </column>
-    <column name="DependentStaticDefines" type="STRUCT">
-      <offset>24</offset>
+    <column name="Dependentstaticdefines" type="STRUCT">
+      <offset>48</offset>
       <subtable external="CommandContractDependency" />
     </column>
     <column name="}" type="END" />

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="AccountProxyPlatformLinkResult">
+  <elements type="int">
+    <element name="NOT_FOUND">0</element>
+    <element name="INVALID_ACCOUNT">1</element>
+    <element name="INVALID_EMAIL">2</element>
+    <element name="INVALID_OTC">3</element>
+    <element name="LINK_FAILED">4</element>
+    <element name="OTC_SENT">5</element>
+    <element name="SUCCESS">6</element>
+  </elements>
+</enum>

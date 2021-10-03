@@ -15,7 +15,7 @@
       <static_define_list external="GlobalType" />
     </column>
     <column name="Servers" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="ClusterServerStatus" />
     </column>
     <column name="}" type="END" />

@@ -7,77 +7,83 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="vel" type="F32FIXEDARRAY">
+    <column name="Vel" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="velAdditive" type="F32FIXEDARRAY">
+    <column name="Veladditive" type="F32FIXEDARRAY">
       <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="velConstantPush" type="F32FIXEDARRAY">
+    <column name="Velconstantpush" type="F32FIXEDARRAY">
       <offset>24</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="surfaceNormalMutable" type="F32FIXEDARRAY">
+    <column name="Surfacenormalmutable" type="F32FIXEDARRAY">
       <offset>36</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="yawFaceTarget" type="F32">
+    <column name="Yawfacetarget" type="F32">
       <offset>48</offset>
     </column>
-    <column name="rotTarget" type="QUATPYR">
+    <column name="Rottarget" type="QUATPYR">
       <offset>52</offset>
       <num_elements>4</num_elements>
     </column>
-    <column name="onGroundVelY" type="F32">
+    <column name="Ongroundvely" type="F32">
       <offset>68</offset>
     </column>
-    <column name="minOnSteepSlopeY" type="F32">
+    <column name="Minonsteepslopey" type="F32">
       <offset>72</offset>
     </column>
-    <column name="stuckOnSteepSlopePos" type="F32FIXEDARRAY">
+    <column name="Stuckonsteepslopepos" type="F32FIXEDARRAY">
       <offset>76</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="stuckOnSteepSlopeCount" type="INT">
+    <column name="Stuckonsteepslopecount" type="INT">
       <offset>88</offset>
     </column>
-    <column name="speedPenalty" type="F32">
+    <column name="InputMoveYaw" type="F32">
       <offset>92</offset>
     </column>
-    <column name="airFrictionMultOverride" type="F32">
+    <column name="InputFaceYaw" type="F32">
       <offset>96</offset>
     </column>
-    <column name="inputMoveYaw" type="F32">
+    <column name="Stickingframecount" type="INT">
       <offset>100</offset>
     </column>
-    <column name="inputFaceYaw" type="F32">
+    <column name="Storedspeed" type="F32">
       <offset>104</offset>
     </column>
-    <column name="stickingFrameCount" type="INT">
+    <column name="Yawstoredspeed" type="F32">
       <offset>108</offset>
     </column>
-    <column name="storedSpeed" type="F32">
+    <column name="Spcstoredspeed" type="INT">
       <offset>112</offset>
     </column>
-    <column name="yawStoredSpeed" type="F32">
+    <column name="Spclastongroundupdate" type="INT">
       <offset>116</offset>
     </column>
-    <column name="spcStoredSpeed" type="INT">
+    <column name="Spcplayedflourishanim" type="INT">
       <offset>120</offset>
     </column>
-    <column name="spcLastOnGroundUpdate" type="INT">
+    <column name="Pitchdiffinterpscale" type="F32">
       <offset>124</offset>
     </column>
-    <column name="spcPlayedFlourishAnim" type="INT">
+    <column name="Facemovementrestricteddot" type="F32">
       <offset>128</offset>
     </column>
-    <column name="pitchDiffInterpScale" type="F32">
+    <column name="Speedadjust" type="EMBEDDEDSTRUCT">
       <offset>132</offset>
+      <subtable external="RequesterSpeedAdjustBG" />
     </column>
-    <column name="flagsMutable" type="EMBEDDEDSTRUCT">
-      <offset>136</offset>
+    <column name="Flagsmutable" type="EMBEDDEDSTRUCT">
+      <offset>144</offset>
       <subtable external="SurfaceBGFlags" />
     </column>
     <column name="}" type="END" />

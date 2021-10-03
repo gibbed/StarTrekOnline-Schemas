@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="WebMessageBoxFlags">
+  <elements type="int">
+    <element name="BackButton">1</element>
+    <element name="Error">2</element>
+  </elements>
+</enum>

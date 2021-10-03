@@ -11,11 +11,12 @@
       <offset>0</offset>
       <subtable external="StateBasedAlert" />
     </column>
-    <column name="CheckFrequency" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="TimedCallbackAdded" type="U8">
+    <column name="Checkfrequency" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Timedcallbackadded" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -16,19 +16,19 @@
       </flags>
     </column>
     <column name="File" type="CURRENTFILE">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="PowerTableName" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ValidAttrib" type="STRUCT">
-      <offset>12</offset>
+    <column name="Powertablename" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Validattrib" type="STRUCT">
+      <offset>24</offset>
       <subtable external="StatPointDef" />
     </column>
     <column name="}" type="END" />

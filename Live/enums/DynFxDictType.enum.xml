@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DynFxDictType">
+  <elements type="int">
+    <element name="Material">0</element>
+    <element name="Geometry">1</element>
+    <element name="Texture">2</element>
+    <element name="ClothInfo">3</element>
+    <element name="ClothCollisionInfo">4</element>
+    <element name="None">5</element>
+  </elements>
+</enum>

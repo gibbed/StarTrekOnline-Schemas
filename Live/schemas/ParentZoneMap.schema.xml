@@ -14,7 +14,7 @@
       </flags>
     </column>
     <column name="SpawnPoint" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

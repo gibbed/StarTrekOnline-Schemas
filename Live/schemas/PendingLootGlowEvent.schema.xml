@@ -7,17 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="erEnt" type="INT">
+    <column name="Erent" type="INT">
       <offset>0</offset>
     </column>
-    <column name="FXStart" type="STRING">
-      <offset>4</offset>
+    <column name="Fxstart" type="STRING">
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="uiTimeExpire" type="INT">
-      <offset>8</offset>
+    <column name="Uitimeexpire" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

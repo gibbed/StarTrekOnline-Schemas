@@ -4,6 +4,7 @@
     <element name="None">0</element>
     <element name="Event">1</element>
     <element name="Queue">2</element>
+    <element name="Match">2</element>
     <element name="StoryNode">3</element>
     <element name="ZoneRewards">4</element>
   </elements>

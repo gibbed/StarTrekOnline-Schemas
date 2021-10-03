@@ -16,19 +16,19 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Scope" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="TransitionSequence" type="STRUCT">
-      <offset>12</offset>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Transitionsequence" type="STRUCT">
+      <offset>24</offset>
       <subtable external="DoorTransitionSequence" />
     </column>
     <column name="}" type="END" />

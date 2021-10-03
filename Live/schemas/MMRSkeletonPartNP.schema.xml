@@ -7,31 +7,34 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="cap" type="EMBEDDEDSTRUCT">
+    <column name="Cap" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="Capsule" />
     </column>
-    <column name="xyzSizeBox" type="F32FIXEDARRAY">
-      <offset>36</offset>
-      <num_elements>3</num_elements>
-    </column>
-    <column name="posBox" type="F32FIXEDARRAY">
+    <column name="Xyzsizebox" type="F32FIXEDARRAY">
       <offset>48</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="pyrBox" type="F32FIXEDARRAY">
+    <column name="Posbox" type="F32FIXEDARRAY">
       <offset>60</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="bodyIndex" type="INT">
+    <column name="Pyrbox" type="F32FIXEDARRAY">
       <offset>72</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="isBox" type="BIT">
-      <offset>76</offset>
+    <column name="Bodyindex" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Isbox" type="BIT">
+      <offset>88</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="isBody" type="BIT">
-      <offset>76</offset>
+    <column name="Isbody" type="BIT">
+      <offset>88</offset>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />

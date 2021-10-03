@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MechSprintMovementDef">
+  <table>
+    <column name="MechSprintMovementDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Minimumsprinttime" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Sprintcooldowntime" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Sprintactivationtime" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="TurnRate" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Timetofullspeed" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Disablesweapons" type="BOOLFLAG">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Sprintforward" type="BOOLFLAG">
+      <offset>21</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Sprintfx" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

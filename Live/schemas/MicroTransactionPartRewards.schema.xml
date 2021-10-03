@@ -14,8 +14,8 @@
       </flags>
       <subtable external="InventoryBag" />
     </column>
-    <column name="PartIndex" type="INT">
-      <offset>4</offset>
+    <column name="Partindex" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

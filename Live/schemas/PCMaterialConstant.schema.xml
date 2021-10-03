@@ -6,7 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="pcName" type="STRING">
+    <column name="Pcname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -16,13 +16,14 @@
       </flags>
     </column>
     <column name="Values" type="F32FIXEDARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="&#xA;" type="END" />
   </table>

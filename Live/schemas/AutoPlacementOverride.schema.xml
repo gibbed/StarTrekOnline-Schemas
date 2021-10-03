@@ -10,16 +10,16 @@
       <offset>0</offset>
     </column>
     <column name="ResourceName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="OverrideResourceID" type="INT">
-      <offset>8</offset>
+    <column name="Overrideresourceid" type="INT">
+      <offset>16</offset>
     </column>
-    <column name="OverrideResourceName" type="STRING">
-      <offset>12</offset>
+    <column name="Overrideresourcename" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

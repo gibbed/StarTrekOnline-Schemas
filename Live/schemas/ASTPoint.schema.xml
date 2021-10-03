@@ -7,11 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="p" type="F32FIXEDARRAY">
+    <column name="P" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="c" type="INT">
+    <column name="C" type="INT">
       <offset>12</offset>
     </column>
     <column name="}" type="END" />

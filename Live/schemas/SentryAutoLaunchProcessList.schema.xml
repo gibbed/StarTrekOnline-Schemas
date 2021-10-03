@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SentryAutoLaunchProcessList">
+  <table>
+    <column name="SentryAutoLaunchProcessList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Nothingchanged" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="TimeStamp" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Process" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="SentryAutoLaunchProcess" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

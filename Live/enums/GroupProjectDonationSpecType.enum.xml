@@ -4,5 +4,8 @@
     <element name="None">0</element>
     <element name="Item">1</element>
     <element name="Expression">2</element>
+    <element name="ShardValue">3</element>
+    <element name="Coffer">4</element>
+    <element name="CofferOrItem">5</element>
   </elements>
 </enum>

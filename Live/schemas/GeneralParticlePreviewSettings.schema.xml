@@ -7,22 +7,25 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="UpdateRate" type="F32">
+    <column name="Updaterate" type="F32">
       <offset>0</offset>
     </column>
-    <column name="TestVelocity" type="F32FIXEDARRAY">
+    <column name="Testvelocity" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="TestMagnetPos" type="F32FIXEDARRAY">
+    <column name="Testmagnetpos" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="TestEmitTargetPos" type="F32FIXEDARRAY">
+    <column name="Testemittargetpos" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="GraphHeight" type="F32">
+    <column name="Graphheight" type="F32">
       <offset>40</offset>
     </column>
     <column name="Opacity" type="F32">
@@ -31,64 +34,74 @@
     <column name="Axes" type="F32">
       <offset>48</offset>
     </column>
-    <column name="GridSize" type="F32">
+    <column name="Gridsize" type="F32">
       <offset>52</offset>
     </column>
-    <column name="GridAlpha" type="F32">
+    <column name="Gridalpha" type="F32">
       <offset>56</offset>
     </column>
-    <column name="HueShift" type="F32">
+    <column name="Hueshift" type="F32">
       <offset>60</offset>
     </column>
-    <column name="SaturationShift" type="F32">
+    <column name="Saturationshift" type="F32">
       <offset>64</offset>
     </column>
-    <column name="ValueShift" type="F32">
+    <column name="Valueshift" type="F32">
       <offset>68</offset>
     </column>
-    <column name="ScaleFactor" type="F32">
+    <column name="Scalefactor" type="F32">
       <offset>72</offset>
     </column>
-    <column name="TestHueShift" type="BOOLFLAG">
+    <column name="Testhueshift" type="BOOLFLAG">
       <offset>76</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="GridXZ" type="BOOLFLAG">
+    <column name="Gridxz" type="BOOLFLAG">
       <offset>77</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="GridXY" type="BOOLFLAG">
+    <column name="Gridxy" type="BOOLFLAG">
       <offset>78</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="GridYZ" type="BOOLFLAG">
+    <column name="Gridyz" type="BOOLFLAG">
       <offset>79</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DrawWorld" type="BOOLFLAG">
+    <column name="Drawworld" type="BOOLFLAG">
       <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsInScreenSpace" type="BOOLFLAG">
+    <column name="Isinscreenspace" type="BOOLFLAG">
       <offset>81</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RebuildUI" type="U8">
+    <column name="Rebuildui" type="U8">
       <offset>82</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DropNode" type="U8">
+    <column name="Dropnode" type="U8">
       <offset>83</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ResetSet" type="U8">
+    <column name="Resetset" type="U8">
       <offset>84</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AutoSave" type="U8">
+    <column name="Autosave" type="U8">
       <offset>85</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="TestNode" type="OPTIONALSTRUCT">
+    <column name="Testnode" type="OPTIONALSTRUCT">
       <offset>88</offset>
       <subtable external="DynNode" />
     </column>
-    <column name="TestMagnetNode" type="OPTIONALSTRUCT">
-      <offset>92</offset>
+    <column name="Testmagnetnode" type="OPTIONALSTRUCT">
+      <offset>96</offset>
       <subtable external="DynNode" />
     </column>
-    <column name="TestEmitTargetNode" type="OPTIONALSTRUCT">
-      <offset>96</offset>
+    <column name="Testemittargetnode" type="OPTIONALSTRUCT">
+      <offset>104</offset>
       <subtable external="DynNode" />
     </column>
     <column name="}" type="END" />

@@ -7,27 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TypeFilter" type="INTARRAY">
+    <column name="Typefilter" type="INTARRAY">
       <offset>0</offset>
       <static_define_list external="ChatLogEntryType" />
     </column>
-    <column name="TypeInclusion" type="INT">
-      <offset>4</offset>
+    <column name="Typeinclusion" type="INT">
+      <offset>8</offset>
       <static_define_list external="ChatLogFilterEnum" />
     </column>
-    <column name="NameFilter" type="STRUCT">
-      <offset>8</offset>
+    <column name="Namefilter" type="STRUCT">
+      <offset>16</offset>
       <subtable external="ChatUserInfo" />
     </column>
-    <column name="NameInclusion" type="INT">
-      <offset>12</offset>
+    <column name="Nameinclusion" type="INT">
+      <offset>24</offset>
       <static_define_list external="ChatLogFilterEnum" />
     </column>
-    <column name="uStartTime" type="INT">
-      <offset>16</offset>
+    <column name="Ustarttime" type="INT">
+      <offset>28</offset>
     </column>
-    <column name="uEndTime" type="INT">
-      <offset>20</offset>
+    <column name="Uendtime" type="INT">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

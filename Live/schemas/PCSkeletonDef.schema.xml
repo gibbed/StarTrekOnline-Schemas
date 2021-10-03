@@ -16,286 +16,325 @@
       </flags>
     </column>
     <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Skeleton" type="STRING">
-      <offset>20</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Region" type="STRUCT">
-      <offset>24</offset>
-      <subtable external="PCRegionRef" />
-    </column>
-    <column name="RequiredBone" type="STRUCT">
-      <offset>28</offset>
-      <subtable external="PCBoneRef" />
-    </column>
-    <column name="OptionalBone" type="STRUCT">
-      <offset>32</offset>
-      <subtable external="PCBoneRef" />
-    </column>
-    <column name="BoneGroup" type="STRUCT">
-      <offset>36</offset>
-      <subtable external="PCBoneGroup" />
-    </column>
-    <column name="DefaultStance" type="STRING">
       <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="Stance" type="STRUCT">
-      <offset>44</offset>
-      <subtable external="PCStanceInfo" />
-    </column>
-    <column name="ImpactTime_Push" type="F32">
+    <column name="Region" type="STRUCT">
       <offset>48</offset>
+      <subtable external="PCRegionRef" />
     </column>
-    <column name="ImpactTime_Knock" type="F32">
-      <offset>52</offset>
-    </column>
-    <column name="GetupTime" type="F32">
+    <column name="Requiredbone" type="STRUCT">
       <offset>56</offset>
+      <subtable external="PCBoneRef" />
     </column>
-    <column name="MountRiderScaleBlend" type="F32">
-      <offset>60</offset>
-      <default>-1</default>
-    </column>
-    <column name="MountClothCollisionInfo" type="STRING">
+    <column name="Optionalbone" type="STRUCT">
       <offset>64</offset>
+      <subtable external="PCBoneRef" />
+    </column>
+    <column name="Bonegroup" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="PCBoneGroup" />
+    </column>
+    <column name="Defaultstance" type="STRING">
+      <offset>80</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="TerrainTiltApply" type="BOOLFLAG">
-      <offset>68</offset>
-    </column>
-    <column name="TerrainTiltModifyRoot" type="BOOLFLAG">
-      <offset>69</offset>
-    </column>
-    <column name="TerrainTiltBaseLength" type="F32">
-      <offset>72</offset>
-    </column>
-    <column name="TerrainTiltStrength" type="F32">
-      <offset>76</offset>
-      <default>1</default>
-    </column>
-    <column name="TerrainTiltMaxBlendAngle" type="F32">
-      <offset>80</offset>
-    </column>
-    <column name="FlourishTimer" type="F32">
-      <offset>84</offset>
-      <default>3</default>
-    </column>
-    <column name="DisableBanking" type="U8">
+    <column name="Stance" type="STRUCT">
       <offset>88</offset>
+      <subtable external="PCStanceInfo" />
     </column>
-    <column name="BankRateFlying" type="F32">
-      <offset>92</offset>
-    </column>
-    <column name="BankMaxAngleFlying" type="F32">
+    <column name="Impacttime_Push" type="F32">
       <offset>96</offset>
     </column>
-    <column name="HeightMin" type="F32">
+    <column name="Impacttime_Knock" type="F32">
       <offset>100</offset>
     </column>
-    <column name="HeightBase" type="F32">
+    <column name="Getuptime" type="F32">
       <offset>104</offset>
     </column>
-    <column name="HeightMax" type="F32">
+    <column name="Ridertech" type="INT">
       <offset>108</offset>
+      <static_define_list external="PCRiderTech" />
     </column>
-    <column name="HeightAnimBitRange" type="STRUCT">
+    <column name="Attachablebones" type="INT">
       <offset>112</offset>
-      <subtable external="PCAnimBitRange" />
     </column>
-    <column name="AnimBitRange" type="STRUCT">
-      <offset>112</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>HeightAnimBitRange</redundant_name>
-      <subtable external="PCAnimBitRange" />
-    </column>
-    <column name="DefaultHeight" type="F32">
+    <column name="Mountriderscaleblend" type="F32">
       <offset>116</offset>
+      <default>-1</default>
     </column>
-    <column name="PlayerMinHeight" type="F32">
+    <column name="Mountclothcollisioninfo" type="STRING">
       <offset>120</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="PlayerMaxHeight" type="F32">
-      <offset>124</offset>
-    </column>
-    <column name="MinTailorCamDist" type="F32">
+    <column name="Terraintiltapply" type="BOOLFLAG">
       <offset>128</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MaxTailorCamDist" type="F32">
+    <column name="Terraintiltmodifyroot" type="BOOLFLAG">
+      <offset>129</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Terraintiltbaselength" type="F32">
       <offset>132</offset>
     </column>
-    <column name="AutoAdjustTailorCamDistance" type="U8">
+    <column name="Terraintiltbasewidth" type="F32">
       <offset>136</offset>
     </column>
-    <column name="NoMuscle" type="U8">
-      <offset>137</offset>
-    </column>
-    <column name="DefaultMuscle" type="F32">
+    <column name="Terraintiltstrength" type="F32">
       <offset>140</offset>
+      <default>1</default>
     </column>
-    <column name="PlayerMinMuscle" type="F32">
+    <column name="Terraintiltmaxblendangle" type="F32">
       <offset>144</offset>
     </column>
-    <column name="PlayerMaxMuscle" type="F32">
+    <column name="Terraintiltblendrate" type="F32">
       <offset>148</offset>
+      <default>180</default>
     </column>
-    <column name="BodyScale" type="STRUCT">
+    <column name="Flourishtimer" type="F32">
       <offset>152</offset>
-      <subtable external="PCBodyScaleInfo" />
+      <default>3</default>
     </column>
-    <column name="DefaultBodyScale" type="F32ARRAY">
+    <column name="Disablebanking" type="U8">
       <offset>156</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="PlayerMinBodyScale" type="F32ARRAY">
+    <column name="Bankrateflying" type="F32">
       <offset>160</offset>
     </column>
-    <column name="PlayerMaxBodyScale" type="F32ARRAY">
+    <column name="Bankmaxangleflying" type="F32">
       <offset>164</offset>
     </column>
-    <column name="ScaleGroup" type="STRUCT">
+    <column name="Heightmin" type="F32">
       <offset>168</offset>
+    </column>
+    <column name="Heightbase" type="F32">
+      <offset>172</offset>
+    </column>
+    <column name="Heightmax" type="F32">
+      <offset>176</offset>
+    </column>
+    <column name="Heightanimbitrange" type="STRUCT">
+      <offset>184</offset>
+      <subtable external="PCAnimBitRange" />
+    </column>
+    <column name="Animbitrange" type="STRUCT">
+      <offset>184</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Heightanimbitrange</redundant_name>
+      <subtable external="PCAnimBitRange" />
+    </column>
+    <column name="Defaultheight" type="F32">
+      <offset>192</offset>
+    </column>
+    <column name="Playerminheight" type="F32">
+      <offset>196</offset>
+    </column>
+    <column name="Playermaxheight" type="F32">
+      <offset>200</offset>
+    </column>
+    <column name="Mintailorcamdist" type="F32">
+      <offset>204</offset>
+    </column>
+    <column name="Maxtailorcamdist" type="F32">
+      <offset>208</offset>
+    </column>
+    <column name="Autoadjusttailorcamdistance" type="U8">
+      <offset>212</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Cameradistancepresetoverrides" type="F32FIXEDARRAY">
+      <offset>216</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Nomuscle" type="U8">
+      <offset>228</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Defaultmuscle" type="F32">
+      <offset>232</offset>
+    </column>
+    <column name="Playerminmuscle" type="F32">
+      <offset>236</offset>
+    </column>
+    <column name="Playermaxmuscle" type="F32">
+      <offset>240</offset>
+    </column>
+    <column name="Bodyscale" type="STRUCT">
+      <offset>248</offset>
+      <subtable external="PCBodyScaleInfo" />
+    </column>
+    <column name="Defaultbodyscale" type="F32ARRAY">
+      <offset>256</offset>
+    </column>
+    <column name="Playerminbodyscale" type="F32ARRAY">
+      <offset>264</offset>
+    </column>
+    <column name="Playermaxbodyscale" type="F32ARRAY">
+      <offset>272</offset>
+    </column>
+    <column name="Scalegroup" type="STRUCT">
+      <offset>280</offset>
       <subtable external="PCScaleInfoGroup" />
     </column>
     <column name="Scale" type="STRUCT">
-      <offset>172</offset>
+      <offset>288</offset>
       <subtable external="PCScaleInfo" />
     </column>
-    <column name="ScalePreset" type="STRUCT">
-      <offset>176</offset>
+    <column name="Scalepreset" type="STRUCT">
+      <offset>296</offset>
       <subtable external="PCPresetScaleValueGroup" />
     </column>
     <column name="Preset" type="STRUCT">
-      <offset>176</offset>
+      <offset>296</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ScalePreset</redundant_name>
+      <redundant_name>Scalepreset</redundant_name>
       <subtable external="PCPresetScaleValueGroup" />
     </column>
-    <column name="DefaultSkinColor" type="F32FIXEDARRAY">
-      <offset>180</offset>
+    <column name="Presetchoice" type="STRUCT">
+      <offset>304</offset>
+      <subtable external="PCCostumePresetValueChoice" />
+    </column>
+    <column name="Defaultskincolor" type="F32FIXEDARRAY">
+      <offset>312</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="SkinColorSet" type="REFERENCE">
-      <offset>196</offset>
+    <column name="Skincolorset" type="REFERENCE">
+      <offset>328</offset>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="BodyColorSet0" type="REFERENCE">
-      <offset>200</offset>
+    <column name="Bodycolorset0" type="REFERENCE">
+      <offset>336</offset>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="BodyColorSet" type="REFERENCE">
-      <offset>200</offset>
+    <column name="Bodycolorset" type="REFERENCE">
+      <offset>336</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>BodyColorSet0</redundant_name>
+      <redundant_name>Bodycolorset0</redundant_name>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="BodyColorSet1" type="REFERENCE">
-      <offset>204</offset>
+    <column name="Bodycolorset1" type="REFERENCE">
+      <offset>344</offset>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="BodyColorSet2" type="REFERENCE">
-      <offset>208</offset>
+    <column name="Bodycolorset2" type="REFERENCE">
+      <offset>352</offset>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="BodyColorSet3" type="REFERENCE">
-      <offset>212</offset>
+    <column name="Bodycolorset3" type="REFERENCE">
+      <offset>360</offset>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="DefaultBodyColorQuad" type="OPTIONALSTRUCT">
-      <offset>216</offset>
+    <column name="Defaultbodycolorquad" type="OPTIONALSTRUCT">
+      <offset>368</offset>
       <subtable external="PCColorQuad" />
     </column>
-    <column name="ColorQuadSet" type="REFERENCE">
-      <offset>220</offset>
+    <column name="Colorquadset" type="REFERENCE">
+      <offset>376</offset>
       <dictionary_name>CostumeColorQuads</dictionary_name>
     </column>
+    <column name="Halsomatchskeleton" type="REFERENCE">
+      <offset>384</offset>
+      <dictionary_name>PCSkeletonDef</dictionary_name>
+    </column>
     <column name="FX" type="STRUCT">
-      <offset>224</offset>
+      <offset>392</offset>
       <subtable external="PCFX" />
     </column>
+    <column name="Fxswap" type="STRUCT">
+      <offset>400</offset>
+      <subtable external="PCFXSwap" />
+    </column>
+    <column name="Soundpack" type="REFERENCE">
+      <offset>408</offset>
+      <dictionary_name>DynSoundPack</dictionary_name>
+    </column>
     <column name="Stump" type="STRUCT">
-      <offset>228</offset>
+      <offset>416</offset>
       <subtable external="PCStump" />
     </column>
     <column name="Gender" type="INT">
-      <offset>232</offset>
+      <offset>424</offset>
       <static_define_list external="Gender" />
     </column>
-    <column name="RestrictedTo" type="INT">
-      <offset>236</offset>
+    <column name="Restrictedto" type="INT">
+      <offset>428</offset>
       <static_define_list external="PCRestriction" />
       <format>FLAGS</format>
     </column>
     <column name="Order" type="F32">
-      <offset>240</offset>
+      <offset>432</offset>
     </column>
     <column name="Capsule" type="STRUCT">
-      <offset>244</offset>
+      <offset>440</offset>
       <subtable external="Capsule" />
     </column>
-    <column name="CollRadius" type="F32">
-      <offset>248</offset>
+    <column name="Collradius" type="F32">
+      <offset>448</offset>
     </column>
-    <column name="DamageFxInfo" type="REFERENCE">
-      <offset>252</offset>
+    <column name="Damagefxinfo" type="REFERENCE">
+      <offset>456</offset>
       <dictionary_name>DynFxDamageInfo</dictionary_name>
     </column>
-    <column name="AutoGlueUp" type="BIT">
-      <offset>256</offset>
+    <column name="Autoglueup" type="BIT">
+      <offset>464</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="ShieldGeometry" type="STRING">
-      <offset>260</offset>
+    <column name="Shieldgeometry" type="STRING">
+      <offset>472</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ShieldScale" type="F32FIXEDARRAY">
-      <offset>264</offset>
+    <column name="Shieldscale" type="F32FIXEDARRAY">
+      <offset>480</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="ShieldAttachBone" type="STRING">
-      <offset>276</offset>
+    <column name="Shieldattachbone" type="STRING">
+      <offset>496</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CopyName" type="BIT">
-      <offset>280</offset>
+    <column name="Copyname" type="BIT">
+      <offset>504</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="CopySubName" type="BIT">
-      <offset>280</offset>
+    <column name="Copysubname" type="BIT">
+      <offset>504</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="TorsoPointing" type="BIT">
-      <offset>280</offset>
+    <column name="Torsopointing" type="BIT">
+      <offset>504</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="UseCapsuleBoundsForTargeting" type="INT">
-      <offset>284</offset>
-    </column>
-    <column name="NoHeightScaling" type="IGNORE" />
+    <column name="Noheightscaling" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

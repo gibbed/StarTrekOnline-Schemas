@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uAccountID" type="INT">
+    <column name="Uaccountid" type="INT">
       <offset>0</offset>
     </column>
     <column name="Recruits" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="RecruitContainer" />
     </column>
     <column name="Recruiters" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="RecruiterContainer" />
     </column>
     <column name="}" type="END" />

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="UIGenKeyActionBehavior">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="CaptureWithFilter">1</element>
+    <element name="Capture">1</element>
+    <element name="RunAction">2</element>
+    <element name="RunInput">4</element>
+    <element name="RunFocusInput">8</element>
+    <element name="DefaultKeyAction">16</element>
+    <element name="Continue">32</element>
+    <element name="CaptureNoFilter">64</element>
+    <element name="RunFocusCommand">128</element>
+  </elements>
+</enum>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="WorldDrawableEntryVertexPaintColorSetParsed">
+  <table>
+    <column name="WorldDrawableEntryVertexPaintColorSetParsed" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Ref_Count" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Lod_Vertex_Paint_Colors" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="WorldDrawableEntryVertexPaintColorsParsed" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

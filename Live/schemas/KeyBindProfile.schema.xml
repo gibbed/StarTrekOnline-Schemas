@@ -9,59 +9,71 @@
     <column name="Name" type="STRING">
       <offset>0</offset>
       <flags>
+        <flag>POOL_STRING</flag>
         <flag>REQUIRED</flag>
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="KeyboardLocale" type="INT">
-      <offset>8</offset>
+    <column name="Keyboardlocale" type="INT">
+      <offset>16</offset>
       <default>67699721</default>
       <static_define_list external="KeyboardLocale" />
     </column>
     <column name="KeyBind" type="STRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="KeyBind" />
     </column>
-    <column name="TrickleKeys" type="U8">
-      <offset>16</offset>
+    <column name="Tricklekeys" type="U8">
+      <offset>32</offset>
       <default>1</default>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="TrickleCommands" type="U8">
-      <offset>17</offset>
+    <column name="Tricklecommands" type="U8">
+      <offset>33</offset>
       <default>1</default>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Priority" type="INT">
-      <offset>28</offset>
+      <offset>56</offset>
       <static_define_list external="KeyBindPriority" />
     </column>
-    <column name="hNameMsg" type="REFERENCE">
-      <offset>32</offset>
+    <column name="Hnamemsg" type="REFERENCE">
+      <offset>64</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
     <column name="DisplayName" type="REFERENCE">
-      <offset>32</offset>
+      <offset>64</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>hNameMsg</redundant_name>
+      <redundant_name>Hnamemsg</redundant_name>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="UserSelectable" type="U8">
-      <offset>36</offset>
+    <column name="Userselectable" type="U8">
+      <offset>72</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Joystick" type="U8">
-      <offset>37</offset>
+      <offset>73</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="EntityBinds" type="U8">
-      <offset>38</offset>
+    <column name="Entitybinds" type="U8">
+      <offset>74</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SchemeRegion" type="STRINGARRAY">
-      <offset>40</offset>
+    <column name="Schemeregion" type="STRINGARRAY">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Parentprofile" type="STRING">
+      <offset>88</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

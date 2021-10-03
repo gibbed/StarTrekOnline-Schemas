@@ -14,34 +14,34 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="RewardTable" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Rewardtable" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>RewardTable</dictionary_name>
     </column>
-    <column name="ItemLevel" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="Category" type="INT">
-      <offset>12</offset>
-      <static_define_list external="StoreCategory" />
-    </column>
-    <column name="MinReplenishTime" type="INT">
+    <column name="Itemlevel" type="INT">
       <offset>16</offset>
     </column>
-    <column name="MaxReplenishTime" type="INT">
+    <column name="Category" type="INT">
       <offset>20</offset>
+      <static_define_list external="StoreCategory" />
     </column>
-    <column name="MinExpireTime" type="INT">
+    <column name="Minreplenishtime" type="INT">
       <offset>24</offset>
     </column>
-    <column name="MaxExpireTime" type="INT">
+    <column name="Maxreplenishtime" type="INT">
       <offset>28</offset>
     </column>
-    <column name="MinItemCount" type="INT">
+    <column name="Minexpiretime" type="INT">
       <offset>32</offset>
     </column>
-    <column name="MaxItemCount" type="INT">
+    <column name="Maxexpiretime" type="INT">
       <offset>36</offset>
+    </column>
+    <column name="Minitemcount" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Maxitemcount" type="INT">
+      <offset>44</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,39 +7,39 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PartitionIdx" type="INT">
+    <column name="Partitionidx" type="INT">
       <offset>0</offset>
     </column>
-    <column name="PetRef" type="INT">
+    <column name="Petref" type="INT">
       <offset>4</offset>
     </column>
-    <column name="curPetState" type="STRING">
+    <column name="Curpetstate" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="validStates" type="STRUCT">
-      <offset>12</offset>
+    <column name="Validstates" type="STRUCT">
+      <offset>16</offset>
       <subtable external="PetCommandNameInfo" />
     </column>
     <column name="Stances" type="STRUCT">
-      <offset>16</offset>
+      <offset>24</offset>
       <subtable external="PetStanceInfo" />
     </column>
-    <column name="PowerStates" type="STRUCT">
-      <offset>20</offset>
+    <column name="Powerstates" type="STRUCT">
+      <offset>32</offset>
       <subtable external="PetPowerState" />
     </column>
-    <column name="CooldownTimers" type="STRUCT">
-      <offset>24</offset>
+    <column name="Cooldowntimers" type="STRUCT">
+      <offset>40</offset>
       <subtable external="PetCooldownTimer" />
     </column>
-    <column name="AttribSpeedRecharge" type="F32">
-      <offset>28</offset>
+    <column name="Attribspeedrecharge" type="F32">
+      <offset>48</offset>
     </column>
-    <column name="AttribSpeedCooldown" type="F32">
-      <offset>32</offset>
+    <column name="Attribspeedcooldown" type="F32">
+      <offset>52</offset>
     </column>
     <column name="}" type="END" />
   </table>

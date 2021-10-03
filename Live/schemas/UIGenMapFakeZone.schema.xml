@@ -17,18 +17,18 @@
       </flags>
     </column>
     <column name="DisplayName" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="MapFormat" type="STRING">
-      <offset>8</offset>
+    <column name="Mapformat" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>REQUIRED</flag>
       </flags>
     </column>
-    <column name="SmallMap" type="STRING">
-      <offset>12</offset>
+    <column name="Smallmap" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>REQUIRED</flag>
@@ -36,26 +36,29 @@
       </flags>
       <dictionary_name>Texture</dictionary_name>
     </column>
-    <column name="TileCount" type="INT16FIXEDARRAY">
-      <offset>16</offset>
+    <column name="Tilecount" type="INT16FIXEDARRAY">
+      <offset>32</offset>
       <num_elements>2</num_elements>
     </column>
-    <column name="WorldSize" type="F32FIXEDARRAY">
-      <offset>20</offset>
+    <column name="Worldsize" type="F32FIXEDARRAY">
+      <offset>36</offset>
       <flags>
         <flag>REQUIRED</flag>
       </flags>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="WorldOffset" type="F32FIXEDARRAY">
-      <offset>28</offset>
+    <column name="Worldoffset" type="F32FIXEDARRAY">
+      <offset>44</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="ShowIcons" type="U8">
-      <offset>36</offset>
+    <column name="Showicons" type="U8">
+      <offset>52</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Highlights" type="OPTIONALSTRUCT">
-      <offset>40</offset>
+      <offset>56</offset>
       <subtable external="UIGenMapFakeZoneHighlights" />
     </column>
     <column name="}" type="END" />

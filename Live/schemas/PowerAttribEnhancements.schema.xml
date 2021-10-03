@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AttribIdx" type="INT">
+    <column name="Attribidx" type="INT">
       <offset>0</offset>
     </column>
-    <column name="puiEnhancementIDs" type="INTARRAY">
-      <offset>4</offset>
-    </column>
-    <column name="puiExpirationEnhancementIDs" type="INTARRAY">
+    <column name="Puienhancementids" type="INTARRAY">
       <offset>8</offset>
+    </column>
+    <column name="Puiexpirationenhancementids" type="INTARRAY">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

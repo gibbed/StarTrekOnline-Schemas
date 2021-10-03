@@ -16,22 +16,28 @@
       </flags>
     </column>
     <column name="DisplayName" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="ClassType" type="INT">
-      <offset>8</offset>
+    <column name="RegionType" type="INT">
+      <offset>16</offset>
+      <static_define_list external="PCRegionType" />
+    </column>
+    <column name="Classtype" type="INT">
+      <offset>20</offset>
       <static_define_list external="CharClassTypes" />
     </column>
     <column name="Category" type="INTARRAY">
-      <offset>12</offset>
+      <offset>24</offset>
       <static_define_list external="CharClassCategory" />
     </column>
-    <column name="AllowDeletionWhileActive" type="BOOLFLAG">
-      <offset>16</offset>
+    <column name="Allowdeletionwhileactive" type="BOOLFLAG">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DefaultPreferredSet" type="BOOLFLAG">
-      <offset>17</offset>
+    <column name="Defaultpreferredset" type="BOOLFLAG">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

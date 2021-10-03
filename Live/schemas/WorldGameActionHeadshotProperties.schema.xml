@@ -7,50 +7,50 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="HeadshotStyleDef" type="STRING">
+    <column name="Headshotstyledef" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Type" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="WorldGameActionHeadshotType" />
     </column>
     <column name="Costume" type="REFERENCE">
-      <offset>8</offset>
+      <offset>16</offset>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="PetContactList" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Petcontactlist" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>PetContactList</dictionary_name>
     </column>
-    <column name="CritterGroupType" type="INT">
-      <offset>16</offset>
+    <column name="Crittergrouptype" type="INT">
+      <offset>32</offset>
       <static_define_list external="WorldHeadshotMapVarOverrideType" />
     </column>
-    <column name="CostumeCritterGroup" type="REFERENCE">
-      <offset>20</offset>
+    <column name="Costumecrittergroup" type="REFERENCE">
+      <offset>40</offset>
       <dictionary_name>CritterGroup</dictionary_name>
     </column>
-    <column name="CritterGroupMapVar" type="STRING">
-      <offset>24</offset>
+    <column name="Crittergroupmapvar" type="STRING">
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CritterGroupIdentifier" type="STRING">
-      <offset>28</offset>
+    <column name="Crittergroupidentifier" type="STRING">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="HeadshotStyleOverrides" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+    <column name="Headshotstyleoverrides" type="OPTIONALSTRUCT">
+      <offset>64</offset>
       <subtable external="WorldGameActionHeadshotStyleOverrides" />
     </column>
-    <column name="HeadshotBorderFrame" type="STRING">
-      <offset>36</offset>
+    <column name="Headshotborderframe" type="STRING">
+      <offset>72</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

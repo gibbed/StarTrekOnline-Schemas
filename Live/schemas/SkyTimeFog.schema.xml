@@ -9,60 +9,66 @@
     <column name="Time" type="F32">
       <offset>0</offset>
     </column>
-    <column name="FogColorHSV" type="F32FIXEDARRAY">
+    <column name="Fogcolorhsv" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="HighFogColorHSV" type="F32FIXEDARRAY">
+    <column name="Highfogcolorhsv" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="ClipFogColorHSV" type="F32FIXEDARRAY">
+    <column name="Clipfogcolorhsv" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="ClipBackgroundColorHSV" type="F32FIXEDARRAY">
+    <column name="Clipbackgroundcolorhsv" type="F32FIXEDARRAY">
       <offset>40</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="ClipFogDistanceAdjust" type="F32">
+    <column name="Clipfogdistanceadjust" type="F32">
       <offset>52</offset>
     </column>
-    <column name="FogDist" type="F32FIXEDARRAY">
+    <column name="Fogdist" type="F32FIXEDARRAY">
       <offset>56</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="HighFogDist" type="F32FIXEDARRAY">
+    <column name="Highfogdist" type="F32FIXEDARRAY">
       <offset>64</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="FogMax" type="F32">
+    <column name="Fogmax" type="F32">
       <offset>72</offset>
     </column>
-    <column name="HighFogMax" type="F32">
+    <column name="Highfogmax" type="F32">
       <offset>76</offset>
     </column>
-    <column name="FogHeight" type="F32FIXEDARRAY">
+    <column name="Fogheight" type="F32FIXEDARRAY">
       <offset>80</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="FogDensity" type="F32FIXEDARRAY">
+    <column name="Fogdensity" type="F32FIXEDARRAY">
       <offset>88</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="VolumeFogPos" type="F32FIXEDARRAY">
+    <column name="Volumefogpos" type="F32FIXEDARRAY">
       <offset>96</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="VolumeFogScale" type="F32FIXEDARRAY">
+    <column name="Volumefogscale" type="F32FIXEDARRAY">
       <offset>108</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="bfParamsSpecified" type="INTFIXEDARRAY">
+    <column name="Bfparamsspecified" type="INTFIXEDARRAY">
       <offset>120</offset>
       <flags>
         <flag>USEDFIELD</flag>
@@ -70,6 +76,6 @@
       </flags>
       <num_elements>1</num_elements>
     </column>
-    <column name="EndSkyFog" type="END" />
+    <column name="Endskyfog" type="END" />
   </table>
 </parser>

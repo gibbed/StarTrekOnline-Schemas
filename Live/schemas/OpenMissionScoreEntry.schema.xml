@@ -14,35 +14,45 @@
       </flags>
     </column>
     <column name="playerName" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
-    </column>
-    <column name="AccountName" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
+    <column name="AccountName" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
     <column name="Costume" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <subtable external="PlayerCostume" />
     </column>
     <column name="Points" type="F32">
-      <offset>16</offset>
+      <offset>32</offset>
     </column>
     <column name="Rank" type="INT">
-      <offset>20</offset>
+      <offset>36</offset>
     </column>
-    <column name="RewardTier" type="INT">
-      <offset>24</offset>
+    <column name="Lastscoretime" type="F32">
+      <offset>40</offset>
     </column>
-    <column name="IsHeader" type="U8">
-      <offset>28</offset>
+    <column name="Scoredecreases" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Rewardtier" type="INT">
+      <offset>48</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Isheader" type="U8">
+      <offset>52</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

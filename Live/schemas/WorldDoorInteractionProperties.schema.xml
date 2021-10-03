@@ -6,84 +6,101 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="DoorType" type="INT">
+    <column name="Doortype" type="INT">
       <offset>0</offset>
       <default>1</default>
       <static_define_list external="WorldDoorType" />
     </column>
-    <column name="QueueDef" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Queuedef" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>QueueDef</dictionary_name>
     </column>
-    <column name="DoorDest" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+    <column name="Matchdef" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>MatchDef</dictionary_name>
+    </column>
+    <column name="Doordest" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
       <subtable external="WorldVariableDef" />
     </column>
     <column name="Variable" type="STRUCT">
-      <offset>68</offset>
+      <offset>136</offset>
       <subtable external="WorldVariable" />
     </column>
-    <column name="VariableDef" type="STRUCT">
-      <offset>72</offset>
+    <column name="Variabledef" type="STRUCT">
+      <offset>144</offset>
       <subtable external="WorldVariableDef" />
     </column>
-    <column name="PerPlayer" type="U8">
-      <offset>76</offset>
+    <column name="Perplayer" type="U8">
+      <offset>152</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SinglePlayer" type="U8">
-      <offset>77</offset>
+    <column name="Singleplayer" type="U8">
+      <offset>153</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IncludeTeammates" type="U8">
-      <offset>78</offset>
+    <column name="Includeteammates" type="U8">
+      <offset>154</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CollectDestinationStatus" type="U8">
-      <offset>79</offset>
+    <column name="Collectdestinationstatus" type="U8">
+      <offset>155</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DestinationSameOwner" type="U8">
-      <offset>80</offset>
+    <column name="Destinationsameowner" type="U8">
+      <offset>156</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="UseChoiceTable" type="U8">
-      <offset>81</offset>
+    <column name="Issecretdoor" type="U8">
+      <offset>157</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usechoicetable" type="U8">
+      <offset>158</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="MapName" type="STRING">
-      <offset>84</offset>
+      <offset>160</offset>
     </column>
-    <column name="SpawnTargetName" type="STRING">
-      <offset>88</offset>
+    <column name="Spawntargetname" type="STRING">
+      <offset>168</offset>
     </column>
-    <column name="ChoiceTable" type="REFERENCE">
-      <offset>92</offset>
+    <column name="Choicetable" type="REFERENCE">
+      <offset>176</offset>
       <dictionary_name>ChoiceTable</dictionary_name>
     </column>
-    <column name="ChoiceName" type="STRING">
-      <offset>96</offset>
+    <column name="Choicename" type="STRING">
+      <offset>184</offset>
     </column>
-    <column name="TransitionOverride" type="REFERENCE">
-      <offset>100</offset>
+    <column name="Transitionoverride" type="REFERENCE">
+      <offset>192</offset>
       <dictionary_name>DoorTransitionSequenceDef</dictionary_name>
     </column>
-    <column name="DoorIdentifier" type="STRING">
-      <offset>104</offset>
+    <column name="Dooridentifier" type="STRING">
+      <offset>200</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DoorKey" type="STRING">
-      <offset>108</offset>
+    <column name="Doorkey" type="STRING">
+      <offset>208</offset>
     </column>
-    <column name="CustomMotion" type="U8">
-      <offset>112</offset>
+    <column name="Custommotion" type="U8">
+      <offset>216</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Rotation" type="F32FIXEDARRAY">
-      <offset>116</offset>
+      <offset>220</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Postion" type="F32FIXEDARRAY">
-      <offset>128</offset>
+      <offset>232</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="TranslationTime" type="F32">
-      <offset>140</offset>
+    <column name="Translationtime" type="F32">
+      <offset>244</offset>
     </column>
     <column name="End" type="END" />
   </table>

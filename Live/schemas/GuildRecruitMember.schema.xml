@@ -13,23 +13,23 @@
     <column name="Level" type="INT">
       <offset>4</offset>
     </column>
-    <column name="OfficerRank" type="INT">
+    <column name="Officerrank" type="INT">
       <offset>8</offset>
     </column>
     <column name="Name" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="Account" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="Rank" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="RankName" type="STRING">
+    <column name="Account" type="STRING">
       <offset>24</offset>
     </column>
-    <column name="DefaultRankName" type="STRING">
-      <offset>28</offset>
+    <column name="Rank" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Rankname" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Defaultrankname" type="STRING">
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

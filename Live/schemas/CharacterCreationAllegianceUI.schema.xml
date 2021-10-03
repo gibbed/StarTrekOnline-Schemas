@@ -14,37 +14,52 @@
       </flags>
     </column>
     <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="TextureName" type="STRING">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Creatable" type="U8">
-      <offset>20</offset>
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Selected" type="U8">
-      <offset>21</offset>
+      <offset>41</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CurrentSpecies" type="STRING">
-      <offset>24</offset>
+    <column name="Currentspecies" type="STRING">
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="Species" type="STRUCT">
-      <offset>28</offset>
+    <column name="Currentclass" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Charactercreationspeciesui" type="STRUCT">
+      <offset>64</offset>
       <subtable external="CharacterCreationSpeciesUI" />
     </column>
-    <column name="AllegianceDef" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+    <column name="Classes" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="CharacterCreationClassUI" />
+    </column>
+    <column name="Allegiancedef" type="OPTIONALSTRUCT">
+      <offset>80</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="AllegianceDef" />
+    </column>
+    <column name="Sortorder" type="INT">
+      <offset>88</offset>
     </column>
     <column name="}" type="END" />
   </table>

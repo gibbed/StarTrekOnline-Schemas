@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SpecificExposedFile">
+  <table>
+    <column name="SpecificExposedFile" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Shortfilename" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Longfilename" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="ExpirationTime" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

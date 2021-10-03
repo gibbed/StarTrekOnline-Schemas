@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pProductInternalName" type="STRING">
+    <column name="Pproductinternalname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,15 +15,15 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uAccountID" type="INT">
-      <offset>4</offset>
+    <column name="Uaccountid" type="INT">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uAcceptedTimeSS2000" type="INT">
-      <offset>8</offset>
+    <column name="Uacceptedtimess2000" type="INT">
+      <offset>12</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

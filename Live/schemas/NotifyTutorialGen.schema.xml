@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TutorialGen" type="REFERENCE">
+    <column name="Tutorialgen" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
@@ -15,28 +15,28 @@
       </flags>
       <dictionary_name>UIGen</dictionary_name>
     </column>
-    <column name="PopupDirection" type="INT">
-      <offset>4</offset>
+    <column name="Popupdirection" type="INT">
+      <offset>8</offset>
       <static_define_list external="UIDirection" />
     </column>
-    <column name="VerticalPopupTemplate" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Verticalpopuptemplate" type="REFERENCE">
+      <offset>16</offset>
       <flags>
         <flag>NON_NULL_REF</flag>
       </flags>
       <dictionary_name>UIGen</dictionary_name>
     </column>
-    <column name="PopupTemplate" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Popuptemplate" type="REFERENCE">
+      <offset>16</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>NON_NULL_REF</flag>
       </flags>
-      <redundant_name>VerticalPopupTemplate</redundant_name>
+      <redundant_name>Verticalpopuptemplate</redundant_name>
       <dictionary_name>UIGen</dictionary_name>
     </column>
-    <column name="HorizontalPopupTemplate" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Horizontalpopuptemplate" type="REFERENCE">
+      <offset>24</offset>
       <flags>
         <flag>NON_NULL_REF</flag>
       </flags>

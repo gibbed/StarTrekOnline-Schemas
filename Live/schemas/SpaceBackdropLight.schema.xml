@@ -7,24 +7,29 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LightDiffuseHSV" type="F32FIXEDARRAY">
+    <column name="Lightdiffusehsv" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LightSecondaryDiffuseHSV" type="F32FIXEDARRAY">
+    <column name="Lightsecondarydiffusehsv" type="F32FIXEDARRAY">
       <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LightSpecularHSV" type="F32FIXEDARRAY">
+    <column name="Lightspecularhsv" type="F32FIXEDARRAY">
       <offset>24</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LightAmbientHSV" type="F32FIXEDARRAY">
+    <column name="Lightambienthsv" type="F32FIXEDARRAY">
       <offset>36</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="CastShadows" type="U8">
+    <column name="Castshadows" type="U8">
       <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

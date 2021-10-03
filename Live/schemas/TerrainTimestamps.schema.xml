@@ -10,12 +10,12 @@
     <column name="Version" type="F32">
       <offset>0</offset>
     </column>
-    <column name="deplist" type="STRUCT">
-      <offset>4</offset>
+    <column name="Deplist" type="STRUCT">
+      <offset>8</offset>
       <subtable external="TerrainTimestamp" />
     </column>
-    <column name="bin_time" type="INT">
-      <offset>8</offset>
+    <column name="Bin_Time" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <enum name="ItemAssignmentCategoryUIFlags">
   <elements type="int">
-    <element name="lItemAssignmentCategoryUIFlags_RankHeaders">1</element>
+    <element name="RankHeaders">1</element>
+    <element name="FilterBySlotSet">2</element>
+    <element name="SortByName">4</element>
+    <element name="UseSortOrder">8</element>
   </elements>
 </enum>

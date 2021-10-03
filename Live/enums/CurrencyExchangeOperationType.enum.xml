@@ -11,5 +11,6 @@
     <element name="EscrowMTC">7</element>
     <element name="EscrowTC">8</element>
     <element name="ExcessTCReturn">9</element>
+    <element name="CreateSeedOrder">10</element>
   </elements>
 </enum>

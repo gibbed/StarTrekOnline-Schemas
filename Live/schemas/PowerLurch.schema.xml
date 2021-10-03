@@ -7,53 +7,67 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SlideFrameStart" type="INT">
+    <column name="Slideframestart" type="INT">
       <offset>0</offset>
     </column>
-    <column name="MovementFrameStart" type="INT">
+    <column name="Movementframestart" type="INT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>SlideFrameStart</redundant_name>
+      <redundant_name>Slideframestart</redundant_name>
     </column>
-    <column name="SlideFrameCount" type="INT">
+    <column name="Slideframecount" type="INT">
       <offset>4</offset>
     </column>
-    <column name="MovementFrameCount" type="INT">
+    <column name="Movementframecount" type="INT">
       <offset>4</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>SlideFrameCount</redundant_name>
+      <redundant_name>Slideframecount</redundant_name>
     </column>
-    <column name="SlideDistance" type="F32">
+    <column name="Slidedistance" type="F32">
       <offset>8</offset>
     </column>
-    <column name="MovementDistance" type="F32">
+    <column name="Movementdistance" type="F32">
       <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>SlideDistance</redundant_name>
+      <redundant_name>Slidedistance</redundant_name>
     </column>
-    <column name="MovementSpeed" type="F32">
+    <column name="Slidedistanceside" type="F32">
       <offset>12</offset>
     </column>
-    <column name="LurchCapsuleBufferRadius" type="F32">
+    <column name="Movementdistanceside" type="F32">
+      <offset>12</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Slidedistanceside</redundant_name>
+    </column>
+    <column name="Movementspeed" type="F32">
       <offset>16</offset>
     </column>
-    <column name="MovementGraph" type="REFERENCE">
+    <column name="Lurchcapsulebufferradius" type="F32">
       <offset>20</offset>
+    </column>
+    <column name="Movementgraph" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>DynAnimGraph</dictionary_name>
     </column>
-    <column name="LurchIgnoreCollision" type="BIT">
-      <offset>24</offset>
+    <column name="Scalemovementgraphwithheight" type="BIT">
+      <offset>32</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="LurchSlideInMovementDirection" type="BIT">
-      <offset>24</offset>
+    <column name="Lurchignorecollision" type="BIT">
+      <offset>32</offset>
       <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Lurchslideinmovementdirection" type="BIT">
+      <offset>32</offset>
+      <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

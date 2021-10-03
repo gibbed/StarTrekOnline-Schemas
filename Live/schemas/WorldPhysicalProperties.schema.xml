@@ -11,85 +11,92 @@
       <offset>0</offset>
       <default>1</default>
     </column>
-    <column name="BuildingGenBottomOffset" type="F32">
+    <column name="Buildinggenbottomoffset" type="F32">
       <offset>4</offset>
     </column>
-    <column name="BuildingGenTopOffset" type="F32">
+    <column name="Buildinggentopoffset" type="F32">
       <offset>8</offset>
     </column>
-    <column name="CurveLength" type="F32">
+    <column name="Curvelength" type="F32">
       <offset>12</offset>
     </column>
-    <column name="TagID" type="INT">
+    <column name="Tagid" type="INT">
       <offset>16</offset>
     </column>
-    <column name="WeldInstances" type="INT">
+    <column name="Weldinstances" type="INT">
       <offset>20</offset>
     </column>
-    <column name="ChildSelectIdx" type="INT">
+    <column name="Childselectidx" type="INT">
       <offset>24</offset>
     </column>
-    <column name="ChildSelectParameter" type="STRING">
-      <offset>28</offset>
+    <column name="Childselectparameter" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="OccluderFaces" type="INT">
-      <offset>32</offset>
+    <column name="Occluderfaces" type="INT">
+      <offset>40</offset>
       <default>63</default>
     </column>
-    <column name="CarryAnimationBit" type="INT">
-      <offset>36</offset>
+    <column name="Carryanimationbit" type="INT">
+      <offset>44</offset>
       <static_define_list external="WorldCarryAnimationMode" />
     </column>
-    <column name="CameraCollType" type="INT">
-      <offset>40</offset>
+    <column name="Cameracolltype" type="INT">
+      <offset>48</offset>
       <static_define_list external="WLCameraCollisionType" />
     </column>
-    <column name="GameCollType" type="INT">
-      <offset>44</offset>
+    <column name="Gamecolltype" type="INT">
+      <offset>52</offset>
       <static_define_list external="WLGameCollisionType" />
     </column>
-    <column name="oLodProps" type="IGNORE">
+    <column name="Olodprops" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">WorldLODProperties</format_string>
+      </format_strings>
     </column>
     <column name="LODScale" type="F32">
-      <offset>48</offset>
+      <offset>56</offset>
       <default>1</default>
     </column>
-    <column name="ShowPanel" type="BIT">
-      <offset>52</offset>
+    <column name="Showpanel" type="BIT">
+      <offset>60</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="LowDetail" type="BIT">
-      <offset>52</offset>
+    <column name="Lowdetail" type="BIT">
+      <offset>60</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="HighDetail" type="BIT">
-      <offset>52</offset>
+    <column name="Highdetail" type="BIT">
+      <offset>60</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="HighFillDetail" type="BIT">
-      <offset>52</offset>
+    <column name="Highfilldetail" type="BIT">
+      <offset>60</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="FadeNode" type="BIT">
-      <offset>52</offset>
+    <column name="Fadenode" type="BIT">
+      <offset>60</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="IgnoreLODOverride" type="BIT">
-      <offset>52</offset>
+    <column name="Ignorelodoverride" type="BIT">
+      <offset>60</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="ClusteringOverride" type="INT">
-      <offset>56</offset>
-      <static_define_list external="WleClusterOverride" />
+    <column name="Ignorelegacytemplatescaling" type="BIT">
+      <offset>60</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Drawpriority" type="INT">
+      <offset>64</offset>
+      <default>100</default>
     </column>
     <column name="Visible" type="BIT">
-      <offset>60</offset>
+      <offset>68</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -98,8 +105,8 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="PhysicalCollision" type="BIT">
-      <offset>60</offset>
+    <column name="Physicalcollision" type="BIT">
+      <offset>68</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -108,8 +115,8 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="SplatsCollision" type="BIT">
-      <offset>60</offset>
+    <column name="Twosidedcollision" type="BIT">
+      <offset>68</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -118,156 +125,175 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="HeadshotVisible" type="BIT">
-      <offset>60</offset>
+    <column name="Fadegroup" type="BIT">
+      <offset>68</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="AxisCameraFacing" type="BIT">
-      <offset>60</offset>
+    <column name="Splatscollision" type="BIT">
+      <offset>68</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
       <bit_offset>65540</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
     </column>
-    <column name="CameraFacing" type="BIT">
-      <offset>60</offset>
+    <column name="Headshotvisible" type="BIT">
+      <offset>68</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="CastCloseShadowsOnly" type="BIT">
-      <offset>60</offset>
+    <column name="Axiscamerafacing" type="BIT">
+      <offset>68</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="IsDebris" type="BIT">
-      <offset>60</offset>
+    <column name="Camerafacing" type="BIT">
+      <offset>68</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="DontCastShadows" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65544</bit_offset>
-    </column>
-    <column name="DontReceiveShadows" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65545</bit_offset>
-    </column>
-    <column name="DoubleSidedOccluder" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65546</bit_offset>
-    </column>
-    <column name="HideOnPlace" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65547</bit_offset>
-    </column>
-    <column name="HandPivot" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65548</bit_offset>
-    </column>
-    <column name="MassPivot" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65549</bit_offset>
-    </column>
-    <column name="InstanceOnPlace" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65550</bit_offset>
-    </column>
-    <column name="MapSnapHidden" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65551</bit_offset>
-    </column>
-    <column name="MapSnapFade" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65552</bit_offset>
-    </column>
-    <column name="NamedPoint" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65553</bit_offset>
-    </column>
-    <column name="RoomExcluded" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65554</bit_offset>
-    </column>
-    <column name="NoOcclusion" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65555</bit_offset>
-    </column>
-    <column name="NoVertexLighting" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65556</bit_offset>
-    </column>
-    <column name="UseCharacterLighting" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65557</bit_offset>
-    </column>
-    <column name="OcclusionOnly" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65558</bit_offset>
-    </column>
-    <column name="OnlyAVolume" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65559</bit_offset>
-    </column>
-    <column name="RandomSelect" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65560</bit_offset>
-    </column>
-    <column name="SubObjectEditOnPlace" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65561</bit_offset>
-    </column>
-    <column name="CivilianGenerator" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65562</bit_offset>
-    </column>
-    <column name="ForceTrunkWind" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65563</bit_offset>
-    </column>
-    <column name="IsDebrisFieldCont" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65564</bit_offset>
-    </column>
-    <column name="IsChildSelect" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65565</bit_offset>
-    </column>
-    <column name="NoChildOcclusion" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65566</bit_offset>
-    </column>
-    <column name="DummyGroup" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65567</bit_offset>
-    </column>
-    <column name="ForbiddenPosition" type="BIT">
-      <offset>64</offset>
+    <column name="Castcloseshadowsonly" type="BIT">
+      <offset>69</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="EditorVisibleOnly" type="BIT">
-      <offset>64</offset>
+    <column name="Isdebris" type="BIT">
+      <offset>69</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="AlwaysCollide" type="BIT">
-      <offset>64</offset>
+    <column name="Dontcastshadows" type="BIT">
+      <offset>69</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="NoCollision" type="BIT">
-      <offset>64</offset>
+    <column name="Dontreceiveshadows" type="BIT">
+      <offset>69</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="FullCollision" type="BIT">
-      <offset>64</offset>
+    <column name="Doublesidedoccluder" type="BIT">
+      <offset>69</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="CameraCollision" type="BIT">
-      <offset>64</offset>
+    <column name="Hideonplace" type="BIT">
+      <offset>69</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="TranslucentWhenCameraCollides" type="BIT">
-      <offset>64</offset>
+    <column name="Handpivot" type="BIT">
+      <offset>69</offset>
       <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Masspivot" type="BIT">
+      <offset>69</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Instanceonplace" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Mapsnaphidden" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Mapsnapfade" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Namedpoint" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Roomexcluded" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Noocclusion" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Novertexlighting" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Useperobjectdiffuseprobes" type="BIT">
+      <offset>70</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Usecharacterlighting" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Occlusiononly" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Onlyavolume" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Randomselect" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Subobjecteditonplace" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Civiliangenerator" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Forcetrunkwind" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Isdebrisfieldcont" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Ischildselect" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Nochildocclusion" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Dummygroup" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Forbiddenposition" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Editorvisibleonly" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Alwayscollide" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Nocollision" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Fullcollision" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Cameracollision" type="BIT">
+      <offset>73</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Translucentwhencameracollides" type="BIT">
+      <offset>73</offset>
+      <bit_offset>65537</bit_offset>
     </column>
     <column name="Permeable" type="BIT">
-      <offset>64</offset>
-      <bit_offset>65543</bit_offset>
+      <offset>73</offset>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="AmbientJobLocation" type="IGNORE" />
-    <column name="CombatJobLocation" type="IGNORE" />
+    <column name="Ambientjoblocation" type="IGNORE" />
+    <column name="Combatjoblocation" type="IGNORE" />
+    <column name="Clusteringoverride" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

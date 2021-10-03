@@ -6,6 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="Key" type="STRING">
       <offset>0</offset>
       <flags>
@@ -15,19 +16,19 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="ObjPath" type="STRING">
-      <offset>4</offset>
+    <column name="Objpath" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>REQUIRED</flag>
       </flags>
     </column>
     <column name="Value" type="MULTIVAL">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

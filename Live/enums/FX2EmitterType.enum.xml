@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FX2EmitterType">
+  <elements type="int">
+    <element name="Particles">0</element>
+    <element name="Screen">1</element>
+    <element name="Camera">2</element>
+    <element name="Costume">3</element>
+    <element name="Gamepad">4</element>
+    <element name="Light">5</element>
+    <element name="Sky">6</element>
+    <element name="Entity">7</element>
+    <element name="Audio">8</element>
+    <element name="Controller">9</element>
+  </elements>
+</enum>

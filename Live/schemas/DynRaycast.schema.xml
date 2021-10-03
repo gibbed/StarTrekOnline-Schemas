@@ -14,40 +14,49 @@
       </flags>
     </column>
     <column name="BoneName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="OrientToNormal" type="U8">
-      <offset>8</offset>
+    <column name="Orienttonormal" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="UseParentRotation" type="U8">
-      <offset>9</offset>
+    <column name="Useparentrotation" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Range" type="F32">
-      <offset>12</offset>
+      <offset>20</offset>
     </column>
     <column name="Filter" type="INT">
-      <offset>16</offset>
+      <offset>24</offset>
       <default>1</default>
       <static_define_list external="eDynRaycastFilter" />
       <format>FLAGS</format>
     </column>
     <column name="Update" type="U8">
-      <offset>20</offset>
-    </column>
-    <column name="ForceDown" type="BOOLFLAG">
-      <offset>21</offset>
-    </column>
-    <column name="CopyScale" type="BOOLFLAG">
-      <offset>22</offset>
-    </column>
-    <column name="UpdatePeriod" type="F32">
-      <offset>24</offset>
-    </column>
-    <column name="HitEvent" type="STRUCT">
       <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forcedown" type="BOOLFLAG">
+      <offset>29</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Copyscale" type="BOOLFLAG">
+      <offset>30</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uifakefloor" type="BOOLFLAG">
+      <offset>31</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Updateperiod" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Hitevent" type="STRUCT">
+      <offset>40</offset>
       <subtable external="DynRaycastHitEvent" />
     </column>
     <column name="End" type="END" />

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LifetimeReward" type="STRUCT">
+    <column name="Lifetimereward" type="STRUCT">
       <offset>0</offset>
       <subtable external="LifetimeRewardStruct" />
     </column>

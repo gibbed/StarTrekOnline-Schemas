@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pchName" type="STRING">
+    <column name="Pchname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -18,8 +18,8 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pItem" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Pitem" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -27,17 +27,8 @@
       </flags>
       <subtable external="Item" />
     </column>
-    <column name="hSlotType" type="REFERENCE">
-      <offset>8</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>LOGIN_SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <dictionary_name>InventorySlotIDDef</dictionary_name>
-    </column>
-    <column name="bHideCostumes" type="BIT">
-      <offset>12</offset>
+    <column name="Bhidecostumes" type="BIT">
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -45,6 +36,7 @@
       </flags>
       <bit_offset>65536</bit_offset>
     </column>
+    <column name="Hslottype" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

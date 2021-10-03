@@ -12,10 +12,10 @@
       <static_define_list external="Language" />
     </column>
     <column name="Title" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="MessageBody" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Messagebody" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

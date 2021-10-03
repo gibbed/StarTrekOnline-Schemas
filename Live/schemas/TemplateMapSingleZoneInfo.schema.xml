@@ -7,28 +7,28 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ZoneMinX" type="INT">
+    <column name="Zoneminx" type="INT">
       <offset>0</offset>
     </column>
-    <column name="ZoneMaxX" type="INT">
+    <column name="Zonemaxx" type="INT">
       <offset>4</offset>
     </column>
-    <column name="ZoneMinZ" type="INT">
+    <column name="Zoneminz" type="INT">
       <offset>8</offset>
     </column>
-    <column name="ZoneMaxZ" type="INT">
+    <column name="Zonemaxz" type="INT">
       <offset>12</offset>
     </column>
-    <column name="MapMinX" type="INT">
+    <column name="Mapminx" type="INT">
       <offset>16</offset>
     </column>
-    <column name="MapMaxX" type="INT">
+    <column name="Mapmaxx" type="INT">
       <offset>20</offset>
     </column>
-    <column name="MapMinY" type="INT">
+    <column name="Mapminy" type="INT">
       <offset>24</offset>
     </column>
-    <column name="MapMaxY" type="INT">
+    <column name="Mapmaxy" type="INT">
       <offset>28</offset>
     </column>
     <column name="ZoneName" type="STRING">

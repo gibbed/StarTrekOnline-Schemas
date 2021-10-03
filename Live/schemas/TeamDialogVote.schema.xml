@@ -10,8 +10,8 @@
     <column name="EntID" type="INT">
       <offset>0</offset>
     </column>
-    <column name="DialogKey" type="STRING">
-      <offset>4</offset>
+    <column name="Dialogkey" type="STRING">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

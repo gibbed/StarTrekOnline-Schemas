@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="UIGenOptimizationFlags">
+  <elements type="int">
+    <element name="ScriptTop">1</element>
+    <element name="SpriteCache">2</element>
+    <element name="InvalidateOnAllStates">4</element>
+    <element name="StableUpdatePeriod">8</element>
+    <element name="Off">16</element>
+    <element name="On">32</element>
+    <element name="Keybinds">64</element>
+    <element name="Static">128</element>
+    <element name="NoDrawCull">256</element>
+    <element name="DrawCull">512</element>
+  </elements>
+</enum>

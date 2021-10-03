@@ -7,23 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="dirtyBit" type="U8">
+    <column name="Dirtybit" type="U8">
       <offset>0</offset>
       <flags>
         <flag>NO_NETSEND</flag>
         <flag>DIRTY_BIT</flag>
       </flags>
     </column>
-    <column name="ppchCompletedNodes" type="STRINGARRAY">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>LOGIN_SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="ppchWindBackMissions" type="STRINGARRAY">
+    <column name="Ppchcompletednodes" type="STRINGARRAY">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -32,8 +23,8 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="ppchSkippedMissions" type="STRINGARRAY">
-      <offset>12</offset>
+    <column name="Ppchwindbackmissions" type="STRINGARRAY">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SUBSCRIBE</flag>
@@ -41,8 +32,17 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eaReplayData" type="STRUCT">
-      <offset>16</offset>
+    <column name="Ppchskippedmissions" type="STRINGARRAY">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eareplaydata" type="STRUCT">
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -50,8 +50,8 @@
       </flags>
       <subtable external="ReplayProgressionData" />
     </column>
-    <column name="pTeamData" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Pteamdata" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -59,15 +59,15 @@
       </flags>
       <subtable external="TeamProgressionData" />
     </column>
-    <column name="eaTrackingData" type="STRUCT">
-      <offset>24</offset>
+    <column name="Eatrackingdata" type="STRUCT">
+      <offset>48</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="ProgressionTrackingData" />
     </column>
-    <column name="hMostRecentlyPlayedNode" type="REFERENCE">
-      <offset>28</offset>
+    <column name="Hmostrecentlyplayednode" type="REFERENCE">
+      <offset>56</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -75,11 +75,23 @@
       </flags>
       <dictionary_name>GameProgressionNodeDef</dictionary_name>
     </column>
-    <column name="ppchUnlockedNodes" type="IGNORE" />
-    <column name="hCurrentProgressionNode" type="IGNORE" />
-    <column name="ppStoryTrackingData" type="IGNORE" />
-    <column name="pStoryTrackingDataOverride" type="IGNORE" />
-    <column name="ppchCompletedMissions" type="IGNORE" />
+    <column name="Autotimestamp" type="INT64">
+      <offset>72</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Ppchunlockednodes" type="IGNORE" />
+    <column name="Hcurrentprogressionnode" type="IGNORE" />
+    <column name="Ppstorytrackingdata" type="IGNORE" />
+    <column name="Pstorytrackingdataoverride" type="IGNORE" />
+    <column name="Ppchcompletedmissions" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

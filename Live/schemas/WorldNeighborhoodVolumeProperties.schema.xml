@@ -11,7 +11,7 @@
       <subtable external="DisplayMessage" />
     </column>
     <column name="SoundEffect" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
     <column name="End" type="END" />
   </table>

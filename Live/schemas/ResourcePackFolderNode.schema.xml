@@ -11,11 +11,11 @@
       <offset>0</offset>
     </column>
     <column name="Folders" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="ResourcePackFolderNode" />
     </column>
     <column name="Files" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="ResourcePackFileNode" />
     </column>
     <column name="}" type="END" />

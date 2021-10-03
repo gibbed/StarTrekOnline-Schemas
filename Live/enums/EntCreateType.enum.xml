@@ -3,6 +3,7 @@
   <elements type="int">
     <element name="Critter">0</element>
     <element name="CritterOfGroup">1</element>
-    <element name="Nemesis">2</element>
+    <element name="CritterTag">2</element>
+    <element name="Nemesis">3</element>
   </elements>
 </enum>

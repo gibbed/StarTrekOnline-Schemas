@@ -14,17 +14,17 @@
       </flags>
     </column>
     <column name="DisplayName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="MicroTransactionID" type="INT">
       <offset>8</offset>
     </column>
+    <column name="Microtransactionid" type="INT">
+      <offset>16</offset>
+    </column>
     <column name="Product" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="MicroTransactionUIProduct" />
     </column>
     <column name="IsOwned" type="BIT">
-      <offset>16</offset>
+      <offset>32</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

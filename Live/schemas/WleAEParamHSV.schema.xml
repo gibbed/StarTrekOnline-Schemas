@@ -7,10 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="is_specified" type="BOOLFLAG">
+    <column name="Is_Specified" type="BOOLFLAG">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="hsvvalue" type="F32FIXEDARRAY">
+    <column name="Hsvvalue" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>4</num_elements>
       <format>HSV</format>

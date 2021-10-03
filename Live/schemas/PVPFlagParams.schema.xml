@@ -12,38 +12,38 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1207</default>
+      <default>1320</default>
       <static_define_list external="AttribType" />
     </column>
     <column name="GroupName" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="SubGroupName" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="Radius" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="AllowHeal" type="BIT">
+    <column name="Subgroupname" type="STRING">
       <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Radius" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Allowheal" type="BIT">
+      <offset>28</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="TeamHeal" type="BIT">
-      <offset>16</offset>
+    <column name="Teamheal" type="BIT">
+      <offset>28</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="AllowExternCombat" type="BIT">
-      <offset>16</offset>
+    <column name="Allowexterncombat" type="BIT">
+      <offset>28</offset>
       <bit_offset>65538</bit_offset>
     </column>
     <column name="Global" type="BIT">
-      <offset>16</offset>
+      <offset>28</offset>
       <bit_offset>65539</bit_offset>
     </column>
     <column name="}" type="END" />

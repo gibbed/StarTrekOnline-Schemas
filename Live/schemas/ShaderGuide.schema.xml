@@ -6,14 +6,16 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="TL" type="F32FIXEDARRAY">
+    <column name="Tl" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="BR" type="F32FIXEDARRAY">
+    <column name="Br" type="F32FIXEDARRAY">
       <offset>8</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="EndGuide" type="END" />
+    <column name="Endguide" type="END" />
   </table>
 </parser>

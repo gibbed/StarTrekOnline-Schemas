@@ -15,10 +15,10 @@
       <offset>2</offset>
       <static_define_list external="UISize" />
     </column>
-    <column name="PercentX" type="F32">
+    <column name="Percentx" type="F32">
       <offset>4</offset>
     </column>
-    <column name="PercentY" type="F32">
+    <column name="Percenty" type="F32">
       <offset>8</offset>
     </column>
     <column name="Width" type="EMBEDDEDSTRUCT">
@@ -29,35 +29,35 @@
       <offset>20</offset>
       <subtable external="UISizeSpec" />
     </column>
-    <column name="MinimumWidth" type="EMBEDDEDSTRUCT">
+    <column name="Minimumwidth" type="EMBEDDEDSTRUCT">
       <offset>28</offset>
       <subtable external="UISizeSpec" />
     </column>
-    <column name="MinimumHeight" type="EMBEDDEDSTRUCT">
+    <column name="Minimumheight" type="EMBEDDEDSTRUCT">
       <offset>36</offset>
       <subtable external="UISizeSpec" />
     </column>
-    <column name="MaximumWidth" type="EMBEDDEDSTRUCT">
+    <column name="Maximumwidth" type="EMBEDDEDSTRUCT">
       <offset>44</offset>
       <subtable external="UISizeSpec" />
     </column>
-    <column name="MaximumHeight" type="EMBEDDEDSTRUCT">
+    <column name="Maximumheight" type="EMBEDDEDSTRUCT">
       <offset>52</offset>
       <subtable external="UISizeSpec" />
     </column>
-    <column name="LeftMargin" type="INT16">
+    <column name="Leftmargin" type="INT16">
       <offset>60</offset>
       <static_define_list external="UISize" />
     </column>
-    <column name="RightMargin" type="INT16">
+    <column name="Rightmargin" type="INT16">
       <offset>62</offset>
       <static_define_list external="UISize" />
     </column>
-    <column name="TopMargin" type="INT16">
+    <column name="Topmargin" type="INT16">
       <offset>64</offset>
       <static_define_list external="UISize" />
     </column>
-    <column name="BottomMargin" type="INT16">
+    <column name="Bottommargin" type="INT16">
       <offset>66</offset>
       <static_define_list external="UISize" />
     </column>
@@ -70,39 +70,47 @@
       <default>10</default>
       <static_define_list external="UIDirection" />
     </column>
-    <column name="ScaleNoGrow" type="BIT">
-      <offset>72</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Scalenogrow" type="BIT">
+      <offset>73</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ScaleNoShrink" type="BIT">
-      <offset>72</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Scalenoshrink" type="BIT">
+      <offset>73</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ScaleAsIfWithGlobal" type="BIT">
-      <offset>72</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Scaleasifwithglobal" type="BIT">
+      <offset>73</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ResetScale" type="BIT">
-      <offset>72</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Resetscale" type="BIT">
+      <offset>73</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ClipToParent" type="BIT">
-      <offset>72</offset>
-      <bit_offset>65548</bit_offset>
+    <column name="Cliptoparent" type="BIT">
+      <offset>73</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ClipToScreen" type="BIT">
-      <offset>72</offset>
-      <bit_offset>65549</bit_offset>
+    <column name="Cliptoscreen" type="BIT">
+      <offset>73</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="PositionOnScreen" type="BIT">
-      <offset>72</offset>
-      <bit_offset>65550</bit_offset>
+    <column name="Positiononscreen" type="BIT">
+      <offset>73</offset>
+      <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IgnoreParentPadding" type="BIT">
-      <offset>72</offset>
-      <bit_offset>65551</bit_offset>
+    <column name="Ignoreparentpadding" type="BIT">
+      <offset>73</offset>
+      <bit_offset>65543</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ScaleAsIf" type="INT16FIXEDARRAY">
+    <column name="Scaleasif" type="INT16FIXEDARRAY">
       <offset>74</offset>
       <num_elements>2</num_elements>
     </column>

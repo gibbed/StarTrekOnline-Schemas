@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CritterFactionType" type="INT">
+    <column name="Critterfactiontype" type="INT">
       <offset>0</offset>
       <static_define_list external="EncounterTemplateOverrideType" />
     </column>
     <column name="CritterFaction" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>CritterFaction</dictionary_name>
     </column>
-    <column name="CritterGang" type="INT">
-      <offset>8</offset>
+    <column name="Crittergang" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -10,7 +10,7 @@
     <column name="Slots" type="STRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="InventorySlot" />
     </column>

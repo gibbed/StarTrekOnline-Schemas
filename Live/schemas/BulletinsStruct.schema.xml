@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uVersion" type="INT">
+    <column name="Uversion" type="INT">
       <offset>0</offset>
     </column>
     <column name="Bulletin" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="BulletinDef" />
     </column>
     <column name="Category" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="BulletinCategory" />
     </column>
     <column name="}" type="END" />

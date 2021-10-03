@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="loading_stages">
+  <table>
+    <column name="loading_stages" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Stages" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="loading_stage" />
+    </column>
+    <column name="Anim_Sequence" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="loading_stage" />
+    </column>
+    <column name="Background_Filename" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Ignore_Loading_Widget_2" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

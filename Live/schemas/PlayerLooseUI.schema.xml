@@ -7,31 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SavedCartPowers" type="STRUCT">
+    <column name="Savedcartpowers" type="STRUCT">
       <offset>0</offset>
       <subtable external="SavedCartPower" />
     </column>
-    <column name="PersistedWindow" type="STRUCT">
-      <offset>4</offset>
+    <column name="Persistedwindow" type="STRUCT">
+      <offset>8</offset>
       <subtable external="UIPersistedWindow" />
     </column>
-    <column name="PlayingStyles" type="STRING">
-      <offset>8</offset>
+    <column name="Playingstyles" type="STRING">
+      <offset>16</offset>
     </column>
-    <column name="HUDOptions" type="STRUCT">
-      <offset>12</offset>
+    <column name="Hudoptions" type="STRUCT">
+      <offset>24</offset>
       <subtable external="PlayerHUDOptions" />
     </column>
-    <column name="PetCommandOrder" type="STRUCT">
-      <offset>16</offset>
+    <column name="Petcommandorder" type="STRUCT">
+      <offset>32</offset>
       <subtable external="PlayerPetPersistedOrder" />
     </column>
-    <column name="LockTray" type="BIT">
-      <offset>20</offset>
+    <column name="Locktray" type="BIT">
+      <offset>40</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="AutoSideKick" type="BIT">
-      <offset>20</offset>
+    <column name="Autosidekick" type="BIT">
+      <offset>40</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -40,18 +40,18 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="ShowAstrometrics" type="BIT">
-      <offset>20</offset>
+    <column name="Showastrometrics" type="BIT">
+      <offset>40</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
       <bit_offset>65538</bit_offset>
       <format_strings>
-        <format_string name="SPECIAL_DEFAULT">1</format_string>
+        <format_string name="SPECIAL_DEFAULT">0</format_string>
       </format_strings>
     </column>
-    <column name="ShowDistantSystems" type="BIT">
-      <offset>20</offset>
+    <column name="Showdistantsystems" type="BIT">
+      <offset>40</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -60,8 +60,8 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="ShowNearSystems" type="BIT">
-      <offset>20</offset>
+    <column name="Shownearsystems" type="BIT">
+      <offset>40</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -70,8 +70,8 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="ShowNearSystemTooltips" type="BIT">
-      <offset>20</offset>
+    <column name="Shownearsystemtooltips" type="BIT">
+      <offset>40</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -80,22 +80,22 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="eNotifyAudioMode" type="INT">
-      <offset>24</offset>
+    <column name="Enotifyaudiomode" type="INT">
+      <offset>44</offset>
       <default>1</default>
       <static_define_list external="PlayerNotifyAudioMode" />
     </column>
-    <column name="ShowOverhead" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Showoverhead" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="PlayerShowOverhead" />
     </column>
-    <column name="uiTrayMode" type="U8">
-      <offset>32</offset>
+    <column name="Uitraymode" type="U8">
+      <offset>56</offset>
     </column>
-    <column name="uiPowerLevelsMode" type="U8">
-      <offset>33</offset>
+    <column name="Uipowerlevelsmode" type="U8">
+      <offset>57</offset>
     </column>
-    <column name="ShowMapChoice" type="IGNORE" />
+    <column name="Showmapchoice" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

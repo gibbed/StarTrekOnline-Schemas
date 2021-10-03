@@ -7,41 +7,42 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GlobObjType" type="STRING">
+    <column name="Globobjtype" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="ExpressionString" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="CheckFrequency" type="INT">
+    <column name="Expressionstring" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Checkfrequency" type="INT">
+      <offset>16</offset>
       <default>5</default>
     </column>
     <column name="LifeSpan" type="INT">
-      <offset>12</offset>
+      <offset>20</offset>
     </column>
-    <column name="TimeBeforeTriggering" type="INT">
-      <offset>16</offset>
+    <column name="Timebeforetriggering" type="INT">
+      <offset>24</offset>
     </column>
     <column name="Level" type="INT">
-      <offset>20</offset>
+      <offset>28</offset>
       <static_define_list external="enumAlertLevel" />
     </column>
     <column name="Category" type="INT">
-      <offset>24</offset>
+      <offset>32</offset>
       <static_define_list external="enumAlertCategory" />
     </column>
-    <column name="AlertKey" type="STRING">
-      <offset>28</offset>
+    <column name="Alertkey" type="STRING">
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
       </flags>
     </column>
-    <column name="AlertString" type="STRING">
-      <offset>32</offset>
+    <column name="Alertstring" type="STRING">
+      <offset>48</offset>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>56</offset>
+      <offset>96</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

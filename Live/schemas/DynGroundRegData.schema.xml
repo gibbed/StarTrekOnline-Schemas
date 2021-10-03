@@ -14,34 +14,45 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="HipsNode" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="HeightFixupNode" type="STRING">
-      <offset>12</offset>
+    <column name="Hipsnode" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="FloorDeltaNear" type="F32">
-      <offset>16</offset>
+    <column name="Heightfixupnode" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Floordeltanear" type="F32">
+      <offset>32</offset>
       <default>1045220557</default>
     </column>
-    <column name="FloorDeltaFar" type="F32">
-      <offset>20</offset>
+    <column name="Floordeltafar" type="F32">
+      <offset>36</offset>
       <default>1072064102</default>
     </column>
-    <column name="DynGroundRegDataLimb" type="STRUCT">
-      <offset>24</offset>
+    <column name="Hipsdisplacementrate" type="F32">
+      <offset>40</offset>
+      <default>1232348144</default>
+    </column>
+    <column name="Riderhipsoffset" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Dyngroundregdatalimb" type="STRUCT">
+      <offset>48</offset>
       <subtable external="DynGroundRegDataLimb" />
+    </column>
+    <column name="Useraycastcollision" type="BOOLFLAG">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

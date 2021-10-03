@@ -7,38 +7,38 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="StickyStanceWords" type="STRINGARRAY">
+    <column name="Stickystancewords" type="STRINGARRAY">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="PreactivateFX" type="STRINGARRAY">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="PreactivateAnimKeyword" type="STRINGARRAY">
+    <column name="Preactivatefx" type="STRINGARRAY">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ActivateKeyword" type="STRINGARRAY">
-      <offset>12</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="ActivateStickyFX" type="STRINGARRAY">
+    <column name="Preactivateanimkeyword" type="STRINGARRAY">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="BlockFX" type="STRINGARRAY">
-      <offset>20</offset>
+    <column name="Activatekeyword" type="STRINGARRAY">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Activatestickyfx" type="STRINGARRAY">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Blockfx" type="STRINGARRAY">
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

@@ -7,38 +7,41 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="layer_idx" type="INT">
+    <column name="Layer_Idx" type="INT">
       <offset>0</offset>
     </column>
-    <column name="def_name" type="STRING">
-      <offset>4</offset>
+    <column name="Def_Name" type="STRING">
+      <offset>8</offset>
     </column>
     <column name="Partitions" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="RoomPartitionParsed" />
     </column>
-    <column name="portals" type="STRUCT">
-      <offset>12</offset>
+    <column name="Portals" type="STRUCT">
+      <offset>24</offset>
       <subtable external="RoomPortalParsed" />
     </column>
-    <column name="bounds_min" type="F32FIXEDARRAY">
-      <offset>16</offset>
+    <column name="Bounds_Min" type="F32FIXEDARRAY">
+      <offset>32</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="bounds_max" type="F32FIXEDARRAY">
-      <offset>28</offset>
+    <column name="Bounds_Max" type="F32FIXEDARRAY">
+      <offset>44</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="bounds_mid" type="F32FIXEDARRAY">
-      <offset>40</offset>
+    <column name="Bounds_Mid" type="F32FIXEDARRAY">
+      <offset>56</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="server_volume" type="EMBEDDEDSTRUCT">
-      <offset>52</offset>
+    <column name="Server_Volume" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
       <subtable external="GroupVolumePropertiesServer" />
     </column>
-    <column name="volume_type_strings" type="STRINGARRAY">
-      <offset>104</offset>
+    <column name="Volume_Type_Strings" type="STRINGARRAY">
+      <offset>224</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PCCostumeUnlockCache">
+  <table>
+    <column name="PCCostumeUnlockCache" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Unlockingcostumes" type="STRINGARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Hdesigndata" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>PCCostumeDesignDataDef</dictionary_name>
+    </column>
+    <column name="Hunlockmicrotrans" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>MicroTrans2Def</dictionary_name>
+    </column>
+    <column name="Hunlockmission" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>MissionDef</dictionary_name>
+    </column>
+    <column name="Hunlockitem" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Unlocked" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="New" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Gamespecificflag0" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Gamespecificflag1" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Gamespecificflag2" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Gamespecificflag3" type="BIT">
+      <offset>48</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -18,30 +18,33 @@
       <offset>132</offset>
       <string_length>128</string_length>
     </column>
-    <column name="pwAccountName" type="STRING">
-      <offset>260</offset>
-    </column>
-    <column name="uExpirationTime" type="INT">
+    <column name="Pwaccountname" type="STRING">
       <offset>264</offset>
     </column>
-    <column name="Permissions" type="STRUCT">
-      <offset>268</offset>
-      <subtable external="AccountPermissionStruct" />
-    </column>
-    <column name="uSalt" type="INT">
+    <column name="Uexpirationtime" type="INT">
       <offset>272</offset>
     </column>
-    <column name="InvalidDisplayName" type="U8">
-      <offset>276</offset>
-    </column>
-    <column name="MachineRestricted" type="U8">
-      <offset>277</offset>
-    </column>
-    <column name="SavingNext" type="U8">
-      <offset>278</offset>
-    </column>
-    <column name="LoginType" type="INT">
+    <column name="Permissions" type="STRUCT">
       <offset>280</offset>
+      <subtable external="AccountPermissionStruct" />
+    </column>
+    <column name="Usalt" type="INT">
+      <offset>288</offset>
+    </column>
+    <column name="Invaliddisplayname" type="U8">
+      <offset>292</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Machinerestricted" type="U8">
+      <offset>293</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Savingnext" type="U8">
+      <offset>294</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Logintype" type="INT">
+      <offset>296</offset>
       <static_define_list external="AccountLoginType" />
     </column>
     <column name="}" type="END" />

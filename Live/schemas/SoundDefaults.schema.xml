@@ -14,48 +14,57 @@
       </flags>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="SndMainVolume" type="F32">
-      <offset>8</offset>
+    <column name="Sndmainvolume" type="F32">
+      <offset>16</offset>
       <default>1062836634</default>
     </column>
-    <column name="SndAmbientVolume" type="F32">
-      <offset>12</offset>
-      <default>1060320051</default>
-    </column>
-    <column name="SndFxVolume" type="F32">
-      <offset>16</offset>
-      <default>1060320051</default>
-    </column>
-    <column name="SndMusicVolume" type="F32">
+    <column name="Sndambientvolume" type="F32">
       <offset>20</offset>
       <default>1060320051</default>
     </column>
-    <column name="SndVoiceVolume" type="F32">
+    <column name="Sndfxvolume" type="F32">
       <offset>24</offset>
-      <default>1</default>
+      <default>1060320051</default>
     </column>
-    <column name="SndUIVolume" type="F32">
+    <column name="Sndmusicvolume" type="F32">
       <offset>28</offset>
       <default>1060320051</default>
     </column>
-    <column name="SndNotificationVolume" type="F32">
+    <column name="Sndvoicevolume" type="F32">
       <offset>32</offset>
+      <default>1</default>
+    </column>
+    <column name="Snduivolume" type="F32">
+      <offset>36</offset>
       <default>1060320051</default>
     </column>
-    <column name="SndVideoVolume" type="F32">
-      <offset>36</offset>
+    <column name="Sndnotificationvolume" type="F32">
+      <offset>40</offset>
+      <default>1060320051</default>
+    </column>
+    <column name="Sndvideovolume" type="F32">
+      <offset>44</offset>
       <default>1061997773</default>
     </column>
-    <column name="SndMuteVO" type="U8">
-      <offset>40</offset>
+    <column name="Sndperformervolume" type="F32">
+      <offset>48</offset>
+      <default>1060320051</default>
+    </column>
+    <column name="Sndperformervolumeself" type="F32">
+      <offset>52</offset>
+      <default>1060320051</default>
+    </column>
+    <column name="Sndmutevo" type="U8">
+      <offset>56</offset>
       <default>1</default>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

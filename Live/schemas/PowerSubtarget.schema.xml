@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="cpchName" type="STRING">
+    <column name="Cpchname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -16,11 +16,11 @@
       </flags>
     </column>
     <column name="Category" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>PowerSubtargetCategory</dictionary_name>
     </column>
     <column name="File" type="CURRENTFILE">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>EDIT_ONLY</flag>

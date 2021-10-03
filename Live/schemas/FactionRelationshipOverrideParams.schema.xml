@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="FactionRelationshipOverrideParams">
+  <table>
+    <column name="FactionRelationshipOverrideParams" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>1299</default>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Outgoing" type="U8">
+      <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usesourcefaction" type="U8">
+      <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usetargetfaction" type="U8">
+      <offset>6</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Faction" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>CritterFaction</dictionary_name>
+    </column>
+    <column name="Relationship" type="INT">
+      <offset>16</offset>
+      <static_define_list external="EntityRelation" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

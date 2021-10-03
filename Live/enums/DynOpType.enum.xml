@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DynOpType">
+  <elements type="int">
+    <element name="Jitter">1</element>
+    <element name="JitterSphere">2</element>
+    <element name="JitterSphereShell">3</element>
+    <element name="Inherit">4</element>
+    <element name="Add">5</element>
+    <element name="Multiply">6</element>
+    <element name="Min">7</element>
+    <element name="Max">8</element>
+  </elements>
+</enum>

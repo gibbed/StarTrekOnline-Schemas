@@ -7,18 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BackdropSpecifier" type="INT">
+    <column name="Backdropspecifier" type="INT">
       <offset>0</offset>
       <static_define_list external="GenesisTagOrName" />
     </column>
-    <column name="BackdropTags2" type="STRINGARRAY">
-      <offset>4</offset>
-    </column>
-    <column name="BackdropTags" type="STRING">
+    <column name="Backdroptags2" type="STRINGARRAY">
       <offset>8</offset>
     </column>
+    <column name="Backdroptags" type="STRING">
+      <offset>16</offset>
+    </column>
     <column name="Backdrop" type="REFERENCE">
-      <offset>12</offset>
+      <offset>24</offset>
       <dictionary_name>GenesisBackdrop</dictionary_name>
     </column>
     <column name="}" type="END" />

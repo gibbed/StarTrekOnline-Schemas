@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="send" type="EMBEDDEDSTRUCT">
+    <column name="Send" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="LinkDir" />
     </column>
-    <column name="recv" type="EMBEDDEDSTRUCT">
+    <column name="Recv" type="EMBEDDEDSTRUCT">
       <offset>32</offset>
       <subtable external="LinkDir" />
     </column>
-    <column name="history_idx" type="INT">
-      <offset>2112</offset>
+    <column name="History_Idx" type="INT">
+      <offset>2624</offset>
     </column>
-    <column name="last_recv_idx" type="INT">
-      <offset>2116</offset>
+    <column name="Last_Recv_Idx" type="INT">
+      <offset>2628</offset>
     </column>
     <column name="}" type="END" />
   </table>

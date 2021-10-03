@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PromptName" type="STRING">
+    <column name="Promptname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="BlockName" type="STRING">
-      <offset>4</offset>
+    <column name="Blockname" type="STRING">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

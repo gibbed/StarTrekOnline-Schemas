@@ -15,11 +15,11 @@
       </flags>
     </column>
     <column name="Item" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
     <column name="Choice" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="ItemAliasDisplay" />
     </column>
     <column name="}" type="END" />

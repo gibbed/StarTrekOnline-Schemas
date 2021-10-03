@@ -12,17 +12,19 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="BlendInTime" type="F32">
-      <offset>4</offset>
-    </column>
-    <column name="BlendOutTime" type="F32">
+    <column name="Blendintime" type="F32">
       <offset>8</offset>
     </column>
-    <column name="PlayBlendOutDuringMove" type="BOOLFLAG">
+    <column name="Blendouttime" type="F32">
       <offset>12</offset>
     </column>
-    <column name="StartFullyBlended" type="BOOLFLAG">
-      <offset>13</offset>
+    <column name="Playblendoutduringmove" type="BOOLFLAG">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Startfullyblended" type="BOOLFLAG">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

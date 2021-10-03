@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SimpleProjectileCreateParams">
+  <table>
+    <column name="SimpleProjectileCreateParams" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>1319</default>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Projectiledef" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>SimpleProjectileDef</dictionary_name>
+    </column>
+    <column name="Createdistanceforward" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Createdistanceright" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Createdistanceup" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Directionyawoffset" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Directionpitchoffset" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -16,31 +16,31 @@
       </flags>
     </column>
     <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="descriptionMsg" type="EMBEDDEDSTRUCT">
-      <offset>16</offset>
+    <column name="Descriptionmsg" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Image" type="STRING">
-      <offset>28</offset>
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="CostumeName" type="REFERENCE">
-      <offset>32</offset>
+      <offset>64</offset>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="SlotType" type="STRINGARRAY">
-      <offset>36</offset>
+    <column name="Slottype" type="STRINGARRAY">
+      <offset>72</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Order" type="F32">
-      <offset>40</offset>
+      <offset>80</offset>
     </column>
     <column name="}" type="END" />
   </table>

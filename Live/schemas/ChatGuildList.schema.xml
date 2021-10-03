@@ -7,8 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GuildList" type="STRUCT">
+    <column name="Page" type="INT">
       <offset>0</offset>
+    </column>
+    <column name="Islastpage" type="U8">
+      <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Guildlist" type="STRUCT">
+      <offset>8</offset>
       <subtable external="ChatGuild" />
     </column>
     <column name="}" type="END" />

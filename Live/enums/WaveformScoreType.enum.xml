@@ -3,5 +3,6 @@
   <elements type="int">
     <element name="Matching">0</element>
     <element name="Time">1</element>
+    <element name="Score">2</element>
   </elements>
 </enum>

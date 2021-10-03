@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="VolumeName" type="STRING">
+    <column name="Volumename" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="VolumePositions" type="F32ARRAY">
-      <offset>4</offset>
+    <column name="Volumepositions" type="F32ARRAY">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

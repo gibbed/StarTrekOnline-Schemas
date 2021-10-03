@@ -2,5 +2,8 @@
 <enum name="QueueDifficulty">
   <elements type="int">
     <element name="None">0</element>
+    <element name="Easy">1</element>
+    <element name="Moderate">2</element>
+    <element name="Difficult">3</element>
   </elements>
 </enum>

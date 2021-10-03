@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DebugMessage_ToApp">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="DEBUG">1</element>
+    <element name="IGNORE">2</element>
+    <element name="READY_FOR_APP_UI">3</element>
+    <element name="DEBUG_NOWAIT">4</element>
+  </elements>
+</enum>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SkillDefault" type="STRUCT">
+    <column name="Skilldefault" type="STRUCT">
       <offset>0</offset>
       <subtable external="ItemDeconstructSkillDefault" />
     </column>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EntityMovementNavmeshToFG">
+  <table>
+    <column name="EntityMovementNavmeshToFG" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Ignores" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="EntityMovementNavmeshIgnoreInput" />
+    </column>
+    <column name="Checkonnavmesh" type="BIT">
+      <offset>8</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Updated" type="EMBEDDEDSTRUCT">
+      <offset>9</offset>
+      <subtable external="EntityMovementNavmeshMovementUpdate" />
+    </column>
+    <column name="Flagsmutable" type="EMBEDDEDSTRUCT">
+      <offset>12</offset>
+      <subtable external="EntityMovementNavmeshMovementFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

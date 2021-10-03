@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EncounterInstanceSpawnProperties">
+  <table>
+    <column name="EncounterInstanceSpawnProperties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Spawnconditiontype" type="INT">
+      <offset>0</offset>
+      <static_define_list external="EncounterInstanceSpawnCondType" />
+    </column>
+    <column name="Spawncondition" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Spawnradiustype" type="INT">
+      <offset>16</offset>
+      <static_define_list external="EncounterInstanceRadiusType" />
+    </column>
+    <column name="Spawnradius" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Respawntimertype" type="INT">
+      <offset>24</offset>
+      <static_define_list external="EncounterInstanceTimerType" />
+    </column>
+    <column name="Respawntimer" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Dynamicspawntype" type="INT">
+      <offset>32</offset>
+      <static_define_list external="EncounterInstanceDynamicSpawnType" />
+    </column>
+    <column name="Spawndelay" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Spawnchance" type="F32">
+      <offset>40</offset>
+      <default>100</default>
+    </column>
+    <column name="Despawncondition" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Waveproperites" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="EncounterWaveProperties" />
+    </column>
+    <column name="Lockoutradius" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="ForceTeamSize" type="INT">
+      <offset>68</offset>
+      <static_define_list external="EncounterInstanceSpawnTeamSize" />
+    </column>
+    <column name="Mastermindspawntype" type="INT">
+      <offset>72</offset>
+      <static_define_list external="EncounterInstanceMastermindSpawnType" />
+    </column>
+    <column name="Spawntag" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Nodespawn" type="U8">
+      <offset>88</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Snaptoground" type="U8">
+      <offset>89</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Difficultyoffset" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="Disableaggrodelay" type="U8">
+      <offset>96</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Randomlystaggeractorspawntimes" type="U8">
+      <offset>97</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Actorstaggeredspawnrange" type="F32">
+      <offset>100</offset>
+      <default>2</default>
+    </column>
+    <column name="End" type="END" />
+  </table>
+</parser>

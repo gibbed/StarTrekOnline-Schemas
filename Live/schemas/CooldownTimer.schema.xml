@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iPowerCategory" type="INT">
+    <column name="Ipowercategory" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
@@ -15,14 +15,14 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="fCooldown" type="F32">
+    <column name="Fcooldown" type="F32">
       <offset>4</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="pchCategory" type="STRING">
+    <column name="Pchcategory" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>

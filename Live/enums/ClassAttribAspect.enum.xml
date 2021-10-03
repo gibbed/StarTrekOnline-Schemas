@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ClassAttribAspect">
+  <elements type="int">
+    <element name="Basic">24</element>
+    <element name="Str">32</element>
+    <element name="Res">40</element>
+  </elements>
+</enum>

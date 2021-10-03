@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CraftingCountAdjust" type="STRUCT">
+    <column name="Craftingcountadjust" type="STRUCT">
       <offset>0</offset>
       <subtable external="CraftingCountAdjustDef" />
     </column>
-    <column name="ComponentCountTableEntry" type="STRUCT">
-      <offset>4</offset>
+    <column name="Componentcounttableentry" type="STRUCT">
+      <offset>8</offset>
       <subtable external="ComponentCountTableEntry" />
     </column>
-    <column name="AlgoItemLevels" type="STRUCT">
-      <offset>8</offset>
+    <column name="Algoitemlevels" type="STRUCT">
+      <offset>16</offset>
       <subtable external="AlgoItemLevelsDef" />
     </column>
     <column name="}" type="END" />

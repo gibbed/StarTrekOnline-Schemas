@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="FX2BinnedData">
+  <table>
+    <column name="FX2BinnedData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Propertyname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Structname" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Structpropertyname" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Propertytype" type="INT">
+      <offset>32</offset>
+      <static_define_list external="FX2ModuleParameterType" />
+    </column>
+    <column name="Structtype" type="INT">
+      <offset>36</offset>
+      <static_define_list external="FX2ModuleParameterType" />
+    </column>
+    <column name="Type" type="INT">
+      <offset>40</offset>
+      <static_define_list external="FX2BinnedDataType" />
+    </column>
+    <column name="Source" type="INT">
+      <offset>44</offset>
+      <static_define_list external="FX2BinnedDataSource" />
+    </column>
+    <column name="Index" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Slot" type="U8">
+      <offset>52</offset>
+    </column>
+    <column name="Swizzlestart" type="U8">
+      <offset>53</offset>
+    </column>
+    <column name="Swizzlecount" type="U8">
+      <offset>54</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

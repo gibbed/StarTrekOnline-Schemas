@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="Fx2SplatType">
+  <elements type="int">
+    <element name="Box">0</element>
+    <element name="Sphere">1</element>
+    <element name="Cylinder">2</element>
+  </elements>
+</enum>

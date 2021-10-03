@@ -7,21 +7,21 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="echo_delay" type="F32">
+    <column name="Echo_Delay" type="F32">
       <offset>0</offset>
       <default>500</default>
     </column>
-    <column name="echo_decayratio" type="F32">
+    <column name="Echo_Decayratio" type="F32">
       <offset>4</offset>
     </column>
-    <column name="echo_maxchannels" type="F32">
+    <column name="Echo_Maxchannels" type="F32">
       <offset>8</offset>
     </column>
-    <column name="echo_drymix" type="F32">
+    <column name="Echo_Drymix" type="F32">
       <offset>12</offset>
       <default>1</default>
     </column>
-    <column name="echo_wetmix" type="F32">
+    <column name="Echo_Wetmix" type="F32">
       <offset>16</offset>
       <default>1</default>
     </column>

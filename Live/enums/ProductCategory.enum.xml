@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <enum name="ProductCategory">
   <elements type="int">
+    <element name="Unknown">-1</element>
     <element name="ActionFigure">0</element>
     <element name="AdventurePack">1</element>
     <element name="Archetype">2</element>
@@ -20,21 +21,30 @@
     <element name="Service">16</element>
     <element name="Title">17</element>
     <element name="Token">18</element>
-    <element name="Healing">19</element>
-    <element name="Buff">20</element>
-    <element name="ResurrectionScroll">21</element>
-    <element name="Identification">22</element>
-    <element name="Booster">23</element>
-    <element name="Skillcraft">24</element>
-    <element name="Skin">25</element>
-    <element name="Inscription">26</element>
-    <element name="CompanionBuff">27</element>
-    <element name="Mount">28</element>
-    <element name="CraftingTier1">29</element>
-    <element name="CraftingTier2">30</element>
-    <element name="CraftingTier3">31</element>
-    <element name="Enchanting">32</element>
-    <element name="Bag">33</element>
-    <element name="Dye">34</element>
+    <element name="Bag">19</element>
+    <element name="Booster">20</element>
+    <element name="Buff">21</element>
+    <element name="CompanionBuff">22</element>
+    <element name="CraftingTier1">23</element>
+    <element name="CraftingTier2">24</element>
+    <element name="CraftingTier3">25</element>
+    <element name="Dye">26</element>
+    <element name="Enchanting">27</element>
+    <element name="Healing">28</element>
+    <element name="Identification">29</element>
+    <element name="Inscription">30</element>
+    <element name="Mount">31</element>
+    <element name="Pack">32</element>
+    <element name="ResurrectionScroll">33</element>
+    <element name="Skillcheck">34</element>
+    <element name="Skin">35</element>
+    <element name="Battlepass">36</element>
+    <element name="Infusion">37</element>
+    <element name="Class">38</element>
+    <element name="Artifact">39</element>
+    <element name="Spell">40</element>
+    <element name="Trait">41</element>
+    <element name="Zen">42</element>
+    <element name="PointBuy">42</element>
   </elements>
 </enum>

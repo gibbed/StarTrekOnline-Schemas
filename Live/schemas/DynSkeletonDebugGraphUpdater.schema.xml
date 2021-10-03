@@ -11,17 +11,25 @@
       <offset>0</offset>
       <subtable external="DynSkeletonDebugKeyword" />
     </column>
+    <column name="Rejectedkeywords" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="DynSkeletonDebugKeyword" />
+    </column>
     <column name="Flags" type="STRUCT">
-      <offset>4</offset>
+      <offset>16</offset>
       <subtable external="DynSkeletonDebugFlag" />
     </column>
     <column name="Nodes" type="STRUCT">
-      <offset>8</offset>
+      <offset>24</offset>
       <subtable external="DynSkeletonDebugGraphNode" />
     </column>
     <column name="FX" type="STRUCT">
-      <offset>12</offset>
+      <offset>32</offset>
       <subtable external="DynSkeletonDebugFX" />
+    </column>
+    <column name="Drawinanimdebug" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

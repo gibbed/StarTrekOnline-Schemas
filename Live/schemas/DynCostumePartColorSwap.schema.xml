@@ -13,8 +13,11 @@
       </flags>
     </column>
     <column name="Value" type="INTFIXEDARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
       <num_elements>4</num_elements>
+    </column>
+    <column name="Glow" type="U8">
+      <offset>24</offset>
     </column>
     <column name="End" type="END" />
   </table>

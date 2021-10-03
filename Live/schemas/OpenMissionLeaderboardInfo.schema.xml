@@ -7,40 +7,47 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="OpenMissionDisplayName" type="STRING">
+    <column name="Openmissiondisplayname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Leaders" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="OpenMissionScoreEntry" />
     </column>
-    <column name="TotalParticipants" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="PlayerIndex" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="RewardTier" type="INT">
+    <column name="Totalparticipants" type="INT">
       <offset>16</offset>
     </column>
-    <column name="RelatedEvent" type="STRING">
+    <column name="Playerindex" type="INT">
       <offset>20</offset>
+    </column>
+    <column name="Rewardtier" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Relatedevent" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="hRelatedEvent" type="REFERENCE">
-      <offset>24</offset>
+    <column name="Hrelatedevent" type="REFERENCE">
+      <offset>40</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
       <dictionary_name>EventDef</dictionary_name>
     </column>
-    <column name="IsRelatedEventActive" type="U8">
-      <offset>28</offset>
+    <column name="Isrelatedeventactive" type="U8">
+      <offset>48</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

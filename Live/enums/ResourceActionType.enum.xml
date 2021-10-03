@@ -7,5 +7,6 @@
     <element name="Modify">3</element>
     <element name="Commit">4</element>
     <element name="Revert">5</element>
+    <element name="Validate">6</element>
   </elements>
 </enum>

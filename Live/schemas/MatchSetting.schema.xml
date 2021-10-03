@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MatchSetting">
+  <table>
+    <column name="MatchSetting" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Worldvariablename" type="STRINGARRAY">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Minvalue" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Maxvalue" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Rewardminvalue" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

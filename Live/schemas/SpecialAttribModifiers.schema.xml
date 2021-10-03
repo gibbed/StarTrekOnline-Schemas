@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="KnockProneModifier" type="INT">
+    <column name="Knockpronemodifier" type="INT">
       <offset>0</offset>
       <static_define_list external="AttribType" />
     </column>
-    <column name="CriticalAttrib" type="STRUCT">
-      <offset>4</offset>
+    <column name="Criticalattrib" type="STRUCT">
+      <offset>8</offset>
       <subtable external="SpecialCriticalAttribs" />
     </column>
     <column name="}" type="END" />

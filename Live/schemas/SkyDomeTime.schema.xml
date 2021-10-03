@@ -19,7 +19,7 @@
     <column name="Angle" type="F32">
       <offset>12</offset>
     </column>
-    <column name="TintHSV" type="F32FIXEDARRAY">
+    <column name="Tinthsv" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
@@ -27,26 +27,33 @@
     <column name="Position" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="AmbientHSV" type="F32FIXEDARRAY">
+    <column name="Ambienthsv" type="F32FIXEDARRAY">
       <offset>40</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="AmbientWeight" type="F32">
+    <column name="Ambientweight" type="F32">
       <offset>52</offset>
     </column>
-    <column name="MaterialProperty" type="STRUCT">
+    <column name="Materialproperty" type="STRUCT">
       <offset>56</offset>
       <subtable external="MaterialNamedConstant" />
     </column>
-    <column name="bfParamsSpecified" type="INTFIXEDARRAY">
-      <offset>60</offset>
+    <column name="Lowmaxfog" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Highmaxfog" type="F32">
+      <offset>68</offset>
+    </column>
+    <column name="Bfparamsspecified" type="INTFIXEDARRAY">
+      <offset>72</offset>
       <flags>
         <flag>USEDFIELD</flag>
       </flags>
       <num_elements>1</num_elements>
     </column>
-    <column name="EndSkyDomeTime" type="END" />
+    <column name="Endskydometime" type="END" />
   </table>
 </parser>

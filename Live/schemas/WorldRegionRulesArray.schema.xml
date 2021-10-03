@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="WorldRegionRules" type="STRUCT">
+    <column name="Worldregionrules" type="STRUCT">
       <offset>0</offset>
       <subtable external="WorldRegionRules" />
     </column>

@@ -8,10 +8,13 @@
     </column>
     <column name="EntryType" type="INT">
       <offset>0</offset>
+      <flags>
+        <flag>STRUCT_NORECURSE</flag>
+      </flags>
       <static_define_list external="ActivityLogEntryType" />
     </column>
     <column name="ArgString" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="End" type="END" />

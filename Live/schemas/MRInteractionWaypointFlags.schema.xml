@@ -7,37 +7,29 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="snapToWaypoint" type="BIT">
+    <column name="Snaptowaypoint" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="releaseOnInput" type="BIT">
+    <column name="Releaseoninput" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="moveToOnRail" type="BIT">
+    <column name="Movetoonrail" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="playAnimDuringMove" type="BIT">
+    <column name="Forceanimduringmove" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="forceAnimDuringMove" type="BIT">
+    <column name="Notifywhenreached" type="BIT">
       <offset>0</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="jumpHereOnRailFail" type="BIT">
+    <column name="Waithereuntiltriggered" type="BIT">
       <offset>0</offset>
       <bit_offset>65541</bit_offset>
-    </column>
-    <column name="notifyWhenReached" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65542</bit_offset>
-    </column>
-    <column name="waitHereUntilTriggered" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65543</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -10,14 +10,14 @@
     <column name="Ints" type="INTARRAY">
       <offset>0</offset>
       <format_strings>
-        <format_string name="MAX_ARRAY_SIZE">3000000</format_string>
+        <format_string name="MAX_ARRAY_SIZE">4000000</format_string>
       </format_strings>
     </column>
-    <column name="ActualByteSize" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="SizeBeforeZipping" type="INT">
+    <column name="Actualbytesize" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Sizebeforezipping" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="motivation" type="INT">
+    <column name="Motivation" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,7 +15,7 @@
       </flags>
       <static_define_list external="NemesisMotivation" />
     </column>
-    <column name="personality" type="INT">
+    <column name="Personality" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -23,7 +23,7 @@
       </flags>
       <static_define_list external="NemesisPersonality" />
     </column>
-    <column name="pchPowerSet" type="STRING">
+    <column name="Pchpowerset" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -31,15 +31,7 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pchMinionPowerSet" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pchMinionCostumeSet" type="STRING">
+    <column name="Pchminionpowerset" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -47,15 +39,23 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="fPowerHue" type="F32">
-      <offset>20</offset>
+    <column name="Pchminioncostumeset" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Fpowerhue" type="F32">
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="fMinionPowerHue" type="F32">
-      <offset>24</offset>
+    <column name="Fminionpowerhue" type="F32">
+      <offset>36</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

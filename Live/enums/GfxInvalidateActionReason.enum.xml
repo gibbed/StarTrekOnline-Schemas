@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GfxInvalidateActionReason">
+  <elements type="int">
+    <element name="IsValid">0</element>
+    <element name="DrawListResources">1</element>
+    <element name="ShaderLoading">2</element>
+    <element name="ModelLoading">3</element>
+    <element name="TextureLoading">4</element>
+  </elements>
+</enum>

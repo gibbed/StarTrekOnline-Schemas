@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EntVoiceGenderDef">
+  <table>
+    <column name="EntVoiceGenderDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Gender" type="INT">
+      <offset>0</offset>
+      <static_define_list external="Gender" />
+    </column>
+    <column name="Notes" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Combatentermsg" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="DisplayMessageWithVO" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

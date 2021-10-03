@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="AlertThrottleType">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="CHANGE_CATEGORY_OR_LEVEL">1</element>
+    <element name="X_WITHIN_Y_SECONDS">2</element>
+    <element name="FAILURE_PERCENT">3</element>
+  </elements>
+</enum>

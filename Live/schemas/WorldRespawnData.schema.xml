@@ -7,17 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MinTime" type="INT">
+    <column name="Respawnmode" type="INT">
       <offset>0</offset>
+      <static_define_list external="WorldRespawnMode" />
     </column>
-    <column name="MaxTime" type="INT">
+    <column name="Mintime" type="INT">
       <offset>4</offset>
     </column>
-    <column name="Increment" type="INT">
+    <column name="Maxtime" type="INT">
       <offset>8</offset>
     </column>
-    <column name="AttritionTime" type="INT">
+    <column name="Increment" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Attritiontime" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Incrementperiod" type="INT">
+      <offset>20</offset>
     </column>
     <column name="}" type="END" />
   </table>

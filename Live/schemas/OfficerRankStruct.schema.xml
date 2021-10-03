@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="OfficerRankDef" type="STRUCT">
+    <column name="Officerrankdef" type="STRUCT">
       <offset>0</offset>
       <subtable external="OfficerRankDef" />
     </column>

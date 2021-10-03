@@ -7,51 +7,53 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CombatValueLevelTable" type="STRING">
+    <column name="Combatvalueleveltable" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ModifyByDifficulty" type="U8">
-      <offset>4</offset>
-    </column>
-    <column name="ItemRewardModificationTable" type="STRING">
+    <column name="Modifybydifficulty" type="U8">
       <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Itemrewardmodificationtable" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="UseGenericDifficultyPowerScaling" type="U8">
-      <offset>12</offset>
+    <column name="Usegenericdifficultypowerscaling" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RewardExtraAlgoNumerics" type="STRUCT">
-      <offset>16</offset>
+    <column name="Rewardextraalgonumerics" type="STRUCT">
+      <offset>32</offset>
       <subtable external="RewardGenericNumeric" />
     </column>
-    <column name="StaticMapRewardTableName" type="STRING">
-      <offset>20</offset>
+    <column name="Staticmaprewardtablename" type="STRING">
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="StaticMapRewardTableLevelDiffMax" type="INT">
-      <offset>24</offset>
+    <column name="Staticmaprewardtableleveldiffmax" type="INT">
+      <offset>48</offset>
     </column>
-    <column name="StaticMapRewardTableShardVariable" type="STRING">
-      <offset>28</offset>
+    <column name="Staticmaprewardtableshardvariable" type="STRING">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="StaticMapRewardTableShardValue" type="INT">
-      <offset>32</offset>
+    <column name="Staticmaprewardtableshardvalue" type="INT">
+      <offset>64</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DirectRewardNotifyMessageKey" type="STRING">
-      <offset>36</offset>
+    <column name="Directrewardnotifymessagekey" type="STRING">
+      <offset>72</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

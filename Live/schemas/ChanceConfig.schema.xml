@@ -7,55 +7,55 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AttribChancePos" type="INT">
+    <column name="Attribchancepos" type="INT">
       <offset>0</offset>
       <static_define_list external="AttribType" />
     </column>
-    <column name="AttribHit" type="INT">
+    <column name="Attribhit" type="INT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>AttribChancePos</redundant_name>
+      <redundant_name>Attribchancepos</redundant_name>
       <static_define_list external="AttribType" />
     </column>
-    <column name="AttribChanceNeg" type="INT">
+    <column name="Attribchanceneg" type="INT">
       <offset>4</offset>
       <static_define_list external="AttribType" />
     </column>
-    <column name="AttribMiss" type="INT">
+    <column name="Attribmiss" type="INT">
       <offset>4</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>AttribChanceNeg</redundant_name>
+      <redundant_name>Attribchanceneg</redundant_name>
       <static_define_list external="AttribType" />
     </column>
-    <column name="AttribMag" type="INT">
+    <column name="Attribmag" type="INT">
       <offset>8</offset>
       <static_define_list external="AttribType" />
     </column>
-    <column name="ChanceNeutral" type="F32">
+    <column name="Chanceneutral" type="F32">
       <offset>12</offset>
     </column>
-    <column name="ChanceMin" type="F32">
+    <column name="Chancemin" type="F32">
       <offset>16</offset>
     </column>
-    <column name="ChanceMax" type="F32">
+    <column name="Chancemax" type="F32">
       <offset>20</offset>
     </column>
     <column name="Flag" type="INT">
       <offset>24</offset>
       <static_define_list external="CombatTrackerFlag" />
     </column>
-    <column name="PowerCategory" type="INT">
+    <column name="Powercategory" type="INT">
       <offset>28</offset>
       <static_define_list external="PowerCategory" />
     </column>
-    <column name="CritChanceOverflowMulti" type="F32">
+    <column name="Critchanceoverflowmulti" type="F32">
       <offset>32</offset>
     </column>
-    <column name="CritSeverityOverflowMulti" type="F32">
+    <column name="Critseverityoverflowmulti" type="F32">
       <offset>36</offset>
     </column>
     <column name="Arc" type="F32">
@@ -69,17 +69,13 @@
       <offset>44</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="DamageOnly" type="BIT">
+    <column name="Onetimecancelonmiss" type="BIT">
       <offset>44</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="OneTimeCancelOnMiss" type="BIT">
-      <offset>44</offset>
-      <bit_offset>65539</bit_offset>
-    </column>
     <column name="Overflow" type="BIT">
       <offset>44</offset>
-      <bit_offset>65540</bit_offset>
+      <bit_offset>65539</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -11,16 +11,16 @@
       <offset>0</offset>
       <dictionary_name>FSM</dictionary_name>
     </column>
-    <column name="aiFSMName" type="REFERENCE">
+    <column name="Aifsmname" type="REFERENCE">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>FSM</redundant_name>
       <dictionary_name>FSM</dictionary_name>
     </column>
     <column name="Variable" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="OldEncounterVariable" />
     </column>
     <column name="}" type="END" />

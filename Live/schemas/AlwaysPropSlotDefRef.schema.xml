@@ -12,10 +12,10 @@
       <dictionary_name>AlwaysPropSlotDef</dictionary_name>
     </column>
     <column name="Count" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="uiPuppetID" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Uipuppetid" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

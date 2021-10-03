@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ZoneMapTerrainLayerParsed">
+  <table>
+    <column name="ZoneMapTerrainLayerParsed" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Layer_Timestamp" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Non_Playable" type="U8">
+      <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Material_Table" type="STRINGARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Object_Table" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="TerrainObjectEntry" />
+    </column>
+    <column name="Blocks" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="TerrainBlockRange" />
+    </column>
+    <column name="Occlusionexclusions" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="TerrainOccExcl" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

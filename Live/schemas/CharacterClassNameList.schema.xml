@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CharacterClassNameList" type="STRINGARRAY">
+    <column name="Characterclassnamelist" type="STRINGARRAY">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

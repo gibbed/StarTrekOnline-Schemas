@@ -32,6 +32,14 @@
     <element name="PLAYED_TIME">38</element>
     <element name="ACCOUNT_DATA">39</element>
     <element name="NUM_CHARACTERS">40</element>
-    <element name="MAX">41</element>
+    <element name="LOGIN_NOTIFICATION">41</element>
+    <element name="ANTI_ADDICTION_QUERY">42</element>
+    <element name="FRAUD_PROBATION_STATUS">43</element>
+    <element name="ACTIVATE_PRODUCT">44</element>
+    <element name="UPLOAD_MICROTRANSACTIONS">45</element>
+    <element name="AL_MICRO_TRANS2_REQUEST">46</element>
+    <element name="CHAT_NAUGHTY">47</element>
+    <element name="PLATFORM_LINK">48</element>
+    <element name="MAX">49</element>
   </elements>
 </enum>

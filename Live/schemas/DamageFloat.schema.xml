@@ -7,95 +7,105 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="OffsetFrom" type="INT">
+    <column name="Erowner" type="INT">
       <offset>0</offset>
     </column>
-    <column name="MaxLifetime" type="F32">
+    <column name="Ersource" type="INT">
       <offset>4</offset>
     </column>
-    <column name="Lifetime" type="F32">
+    <column name="Worldstartpos" type="F32FIXEDARRAY">
       <offset>8</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="OffsetFrom" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Maxlifetime" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Lifetime" type="F32">
+      <offset>28</offset>
     </column>
     <column name="Delay" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="v2Pos" type="F32FIXEDARRAY">
-      <offset>16</offset>
-      <num_elements>2</num_elements>
-    </column>
-    <column name="v2Velocity" type="F32FIXEDARRAY">
-      <offset>24</offset>
-      <num_elements>2</num_elements>
-    </column>
-    <column name="v2DestPos" type="F32FIXEDARRAY">
       <offset>32</offset>
+    </column>
+    <column name="V2pos" type="F32FIXEDARRAY">
+      <offset>36</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V2velocity" type="F32FIXEDARRAY">
+      <offset>44</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V2destpos" type="F32FIXEDARRAY">
+      <offset>52</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="V2acceleration" type="F32FIXEDARRAY">
+      <offset>60</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Color" type="INT">
-      <offset>40</offset>
+      <offset>68</offset>
     </column>
     <column name="Color2" type="INT">
-      <offset>44</offset>
-    </column>
-    <column name="Scale" type="F32">
-      <offset>48</offset>
-    </column>
-    <column name="MaxPopout" type="F32">
-      <offset>52</offset>
-    </column>
-    <column name="Priority" type="F32">
-      <offset>56</offset>
-    </column>
-    <column name="Message" type="STRING">
-      <offset>60</offset>
-    </column>
-    <column name="Angle" type="F32">
-      <offset>64</offset>
-    </column>
-    <column name="IconOffsetFrom" type="INT">
       <offset>72</offset>
     </column>
-    <column name="v2IconPos" type="F32FIXEDARRAY">
+    <column name="Scale" type="F32">
       <offset>76</offset>
-      <num_elements>2</num_elements>
     </column>
-    <column name="v2IconPosOffset" type="F32FIXEDARRAY">
+    <column name="Maxpopout" type="F32">
+      <offset>80</offset>
+    </column>
+    <column name="Priority" type="F32">
       <offset>84</offset>
-      <num_elements>2</num_elements>
     </column>
-    <column name="IconColor" type="INT">
-      <offset>92</offset>
+    <column name="Message" type="STRING">
+      <offset>88</offset>
     </column>
-    <column name="IconScale" type="F32">
+    <column name="Angle" type="F32">
       <offset>96</offset>
     </column>
-    <column name="IconFade" type="F32">
+    <column name="Keyframegroupindex" type="INT">
       <offset>100</offset>
     </column>
-    <column name="hFont" type="REFERENCE">
+    <column name="Icon" type="STRUCT">
       <offset>104</offset>
+      <subtable external="DamageFloatIcon" />
+    </column>
+    <column name="Hfont" type="REFERENCE">
+      <offset>112</offset>
       <dictionary_name>UIStyleFont</dictionary_name>
     </column>
-    <column name="v2PosOffset" type="F32FIXEDARRAY">
-      <offset>108</offset>
+    <column name="V2posoffset" type="F32FIXEDARRAY">
+      <offset>120</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="v2VelocityBase" type="F32FIXEDARRAY">
-      <offset>116</offset>
+    <column name="V2velocitybase" type="F32FIXEDARRAY">
+      <offset>128</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="v2Size" type="F32FIXEDARRAY">
-      <offset>124</offset>
-      <num_elements>2</num_elements>
-    </column>
-    <column name="uiPowID" type="INT">
-      <offset>132</offset>
-    </column>
-    <column name="combatTrackerFlags" type="INT">
+    <column name="V2size" type="F32FIXEDARRAY">
       <offset>136</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Uipowid" type="INT">
+      <offset>144</offset>
+    </column>
+    <column name="Combattrackerflags" type="INT">
+      <offset>148</offset>
     </column>
     <column name="Crit" type="U8">
-      <offset>140</offset>
+      <offset>152</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

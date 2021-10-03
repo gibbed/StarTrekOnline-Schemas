@@ -7,28 +7,34 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RequireContact" type="U8">
+    <column name="Requirecontact" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="KeyPermissions" type="STRUCT">
-      <offset>4</offset>
+    <column name="Fullaccessalways" type="U8">
+      <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Keypermissions" type="STRUCT">
+      <offset>8</offset>
       <subtable external="SharedBankKeys" />
     </column>
-    <column name="uMaximumSlots" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="SharedBankNumerics" type="STRUCT">
-      <offset>12</offset>
-      <subtable external="SharedBankNumeric" />
-    </column>
-    <column name="CanAlwaysBuy" type="U8">
+    <column name="Umaximumslots" type="INT">
       <offset>16</offset>
     </column>
-    <column name="uMaxInboxSize" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="uMaxInboxAttachments" type="INT">
+    <column name="Sharedbanknumerics" type="STRUCT">
       <offset>24</offset>
+      <subtable external="SharedBankNumeric" />
+    </column>
+    <column name="Canalwaysbuy" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Umaxinboxsize" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Umaxinboxattachments" type="INT">
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="Fx2DebugObjectType">
+  <elements type="int">
+    <element name="Region">0</element>
+    <element name="Owner">1</element>
+    <element name="Fx2">2</element>
+  </elements>
+</enum>

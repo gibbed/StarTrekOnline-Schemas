@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemAssignmentSchool">
+  <table>
+    <column name="ItemAssignmentSchool" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hschooldef" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <dictionary_name>ItemAssignmentSchoolDef</dictionary_name>
+    </column>
+    <column name="Assignmentbuckets" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="ItemAssignmentSchoolBucket" />
+    </column>
+    <column name="Unextupdatetime" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="NavMeshPath">
+  <table>
+    <column name="NavMeshPath" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Waypoints" type="STRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <subtable external="NavMeshPathWaypoint" />
+    </column>
+    <column name="Debugwaypoints" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="NavMeshPathWaypoint" />
+    </column>
+    <column name="Currentwaypoint" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Iscircular" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Ispingpong" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Ispingpongrev" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Isflightpath" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

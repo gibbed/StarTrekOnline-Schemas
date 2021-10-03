@@ -7,16 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="bodyIndex" type="INT">
+    <column name="Bodyindex" type="INT">
       <offset>0</offset>
     </column>
-    <column name="isShell" type="BIT">
+    <column name="Isshell" type="BIT">
       <offset>4</offset>
       <bit_offset>65536</bit_offset>
-    </column>
-    <column name="hasOneWayCollision" type="BIT">
-      <offset>4</offset>
-      <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

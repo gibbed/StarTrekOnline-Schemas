@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ReductionTestCase">
+  <table>
+    <column name="ReductionTestCase" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Before" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="String1" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Before</redundant_name>
+    </column>
+    <column name="After" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="String2" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>After</redundant_name>
+    </column>
+    <column name="Equals" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

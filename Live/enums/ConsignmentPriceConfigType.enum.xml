@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ConsignmentPriceConfigType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="ObjectNameAsConfig">1</element>
+    <element name="ObjectNameAsGroup">1</element>
+    <element name="PoolNameAsConfig">2</element>
+    <element name="PoolNameAsGroup">2</element>
+    <element name="PoolNameAndLevelAsConfig">3</element>
+  </elements>
+</enum>

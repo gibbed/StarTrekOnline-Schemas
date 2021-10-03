@@ -11,8 +11,8 @@
       <offset>0</offset>
       <subtable external="RoomServerParsed" />
     </column>
-    <column name="outdoor_portals" type="STRUCT">
-      <offset>4</offset>
+    <column name="Outdoor_Portals" type="STRUCT">
+      <offset>8</offset>
       <subtable external="RoomPortalParsed" />
     </column>
     <column name="}" type="END" />

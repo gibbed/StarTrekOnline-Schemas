@@ -10,20 +10,20 @@
     <column name="Seed" type="INT">
       <offset>0</offset>
     </column>
-    <column name="ActualSize" type="INT">
+    <column name="Actualsize" type="INT">
       <offset>4</offset>
     </column>
-    <column name="DrawSize" type="INT">
+    <column name="Drawsize" type="INT">
       <offset>8</offset>
     </column>
     <column name="Offset" type="F32">
       <offset>12</offset>
     </column>
-    <column name="PathIdx" type="INT">
+    <column name="Pathidx" type="INT">
       <offset>16</offset>
     </column>
-    <column name="StaticObject" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Staticobject" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="GenesisObject" />
     </column>
     <column name="}" type="END" />

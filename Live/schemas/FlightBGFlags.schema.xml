@@ -7,41 +7,77 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="onGround" type="BIT">
+    <column name="Onground" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="hasAdditiveVel" type="BIT">
+    <column name="Hasadditivevel" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="hasConstantForceVel" type="BIT">
+    <column name="Hasconstantforcevel" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="setRepelAnim" type="BIT">
+    <column name="Setrepelanim" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="setJumpAnim" type="BIT">
+    <column name="Setjumpanim" type="BIT">
       <offset>0</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="isTurning" type="BIT">
+    <column name="Isturning" type="BIT">
       <offset>0</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="isJumping" type="BIT">
+    <column name="Isjumping" type="BIT">
       <offset>0</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="turnBecomesStrafe" type="BIT">
+    <column name="Turnbecomesstrafe" type="BIT">
       <offset>0</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="hasStanceMask" type="BIT">
-      <offset>0</offset>
-      <bit_offset>262152</bit_offset>
+    <column name="Isrolling" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Startrolling" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Rolldisablethrottle" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Rolldisableturning" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Rollbuttonisdown" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Flightrollforward" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Flightrollbackward" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Flightrollleft" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Flightrollright" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Hasstancemask" type="BIT">
+      <offset>2</offset>
+      <bit_offset>589825</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

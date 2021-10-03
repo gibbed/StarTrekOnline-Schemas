@@ -7,23 +7,23 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="offAttrib" type="INT">
+    <column name="Offattrib" type="INT">
       <offset>0</offset>
     </column>
-    <column name="offAspect" type="INT">
+    <column name="Offaspect" type="INT">
       <offset>4</offset>
     </column>
-    <column name="StackGroup" type="INT">
+    <column name="Stackgroup" type="INT">
       <offset>8</offset>
     </column>
-    <column name="ModNetIdxBest" type="INT">
+    <column name="Modnetidxbest" type="INT">
       <offset>12</offset>
     </column>
-    <column name="MagnitudeBest" type="INT">
+    <column name="Magnitudebest" type="INT">
       <offset>16</offset>
     </column>
-    <column name="ModNetIndices" type="INTARRAY">
-      <offset>20</offset>
+    <column name="Modnetindices" type="INTARRAY">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

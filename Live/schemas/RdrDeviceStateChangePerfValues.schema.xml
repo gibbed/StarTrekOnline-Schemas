@@ -6,101 +6,38 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="vertex_shader" type="INT">
+    <column name="Vertex_Stream" type="INT">
       <offset>0</offset>
-      <default>-1</default>
     </column>
-    <column name="vertex_texture" type="INT">
+    <column name="Vertex_Shader" type="INT">
       <offset>4</offset>
-      <default>-1</default>
     </column>
-    <column name="vertex_texture_sampler_state" type="INT">
+    <column name="Hull_Shader" type="INT">
       <offset>8</offset>
-      <default>-1</default>
     </column>
-    <column name="vertex_declaration" type="INT">
+    <column name="Domain_Shader" type="INT">
       <offset>12</offset>
-      <default>-1</default>
     </column>
-    <column name="vertex_stream" type="INT">
+    <column name="Compute_Shader" type="INT">
       <offset>16</offset>
-      <default>-1</default>
     </column>
-    <column name="vertex_stream_frequency" type="INT">
+    <column name="Pixel_Shader" type="INT">
       <offset>20</offset>
-      <default>-1</default>
     </column>
-    <column name="vertex_stream_comb" type="INT">
+    <column name="Viewport" type="INT">
       <offset>24</offset>
-      <default>-1</default>
     </column>
-    <column name="vs_constants" type="INT">
+    <column name="Scissor_Rect" type="INT">
       <offset>28</offset>
-      <default>-1</default>
     </column>
-    <column name="hull_shader" type="INT">
+    <column name="Rasterizer" type="INT">
       <offset>32</offset>
-      <default>-1</default>
-    </column>
-    <column name="domain_shader" type="INT">
-      <offset>36</offset>
-      <default>-1</default>
-    </column>
-    <column name="index_buffer" type="INT">
-      <offset>40</offset>
-      <default>-1</default>
-    </column>
-    <column name="indices_comb" type="INT">
-      <offset>44</offset>
-      <default>-1</default>
-    </column>
-    <column name="pixel_shader" type="INT">
-      <offset>48</offset>
-      <default>-1</default>
-    </column>
-    <column name="Texture" type="INT">
-      <offset>52</offset>
-      <default>-1</default>
-    </column>
-    <column name="texture_sampler_state" type="INT">
-      <offset>56</offset>
-      <default>-1</default>
-    </column>
-    <column name="ps_constants" type="INT">
-      <offset>60</offset>
-      <default>-1</default>
-    </column>
-    <column name="ps_bool_constants" type="INT">
-      <offset>64</offset>
-      <default>-1</default>
-    </column>
-    <column name="hull_texture_sampler_state" type="INT">
-      <offset>68</offset>
-      <default>-1</default>
-    </column>
-    <column name="domain_texture_sampler_state" type="INT">
-      <offset>72</offset>
-      <default>-1</default>
-    </column>
-    <column name="viewport" type="INT">
-      <offset>76</offset>
-      <default>-1</default>
-    </column>
-    <column name="scissor_rect" type="INT">
-      <offset>80</offset>
-      <default>-1</default>
-    </column>
-    <column name="rasterizer" type="INT">
-      <offset>84</offset>
-      <default>-1</default>
     </column>
     <column name="Blend" type="INT">
-      <offset>88</offset>
-      <default>-1</default>
+      <offset>36</offset>
     </column>
-    <column name="depth_stencil" type="INT">
-      <offset>92</offset>
-      <default>-1</default>
+    <column name="Depth_Stencil" type="INT">
+      <offset>40</offset>
     </column>
     <column name=" " type="END" />
   </table>

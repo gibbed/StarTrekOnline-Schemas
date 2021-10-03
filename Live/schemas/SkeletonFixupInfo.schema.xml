@@ -11,7 +11,7 @@
       <offset>0</offset>
     </column>
     <column name="Override" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="SkeletonFixupOverride" />
     </column>
     <column name="}" type="END" />

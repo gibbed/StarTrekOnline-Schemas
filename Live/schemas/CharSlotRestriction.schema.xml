@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="numSlots" type="INT">
+    <column name="Numslots" type="INT">
       <offset>0</offset>
     </column>
     <column name="Flags" type="INT">
@@ -18,7 +18,7 @@
       <offset>8</offset>
     </column>
     <column name="AllegianceName" type="STRING">
-      <offset>12</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

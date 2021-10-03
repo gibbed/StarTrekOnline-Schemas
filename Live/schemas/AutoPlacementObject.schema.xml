@@ -13,37 +13,37 @@
       </flags>
     </column>
     <column name="ResourceID" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="Weight" type="F32">
       <offset>8</offset>
     </column>
-    <column name="PlacementConditionBlock" type="OPTIONALSTRUCT">
+    <column name="Weight" type="F32">
       <offset>12</offset>
-      <subtable external="Expression" />
     </column>
-    <column name="PlacementCondition" type="OPTIONALSTRUCT">
-      <offset>12</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>PlacementConditionBlock</redundant_name>
-      <subtable external="Expression_StructParam" />
-    </column>
-    <column name="RequiredConditionBlock" type="OPTIONALSTRUCT">
+    <column name="Placementconditionblock" type="OPTIONALSTRUCT">
       <offset>16</offset>
       <subtable external="Expression" />
     </column>
-    <column name="RequiredCondition" type="OPTIONALSTRUCT">
+    <column name="Placementcondition" type="OPTIONALSTRUCT">
       <offset>16</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>RequiredConditionBlock</redundant_name>
+      <redundant_name>Placementconditionblock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="SnapToSlope" type="INT">
-      <offset>20</offset>
+    <column name="Requiredconditionblock" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Requiredcondition" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Requiredconditionblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Snaptoslope" type="INT">
+      <offset>32</offset>
     </column>
     <column name="End" type="END" />
   </table>

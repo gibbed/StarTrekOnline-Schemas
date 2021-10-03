@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PCCostumePresetValueChoice">
+  <table>
+    <column name="PCCostumePresetValueChoice" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Costumevalueextract" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>REQUIRED</flag>
+      </flags>
+      <dictionary_name>PCCostumeValueExtract</dictionary_name>
+    </column>
+    <column name="Presetcostume" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>REQUIRED</flag>
+      </flags>
+      <dictionary_name>PlayerCostume</dictionary_name>
+    </column>
+    <column name="Order" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Commonname" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Texture" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Color" type="U8FIXEDARRAY">
+      <offset>64</offset>
+      <num_elements>4</num_elements>
+      <format>COLOR</format>
+    </column>
+    <column name="Uistring" type="STRING">
+      <offset>72</offset>
+    </column>
+    <column name="Unlockcache" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>UNOWNED</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <subtable external="PCCostumeUnlockCache" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

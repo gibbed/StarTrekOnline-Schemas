@@ -7,32 +7,32 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="InteriorKitSpecifier" type="INT">
+    <column name="Interiorkitspecifier" type="INT">
       <offset>0</offset>
       <static_define_list external="GenesisTagOrName" />
     </column>
-    <column name="InteriorKitTags2" type="STRINGARRAY">
-      <offset>4</offset>
-    </column>
-    <column name="InteriorKitTags" type="STRING">
+    <column name="Interiorkittags2" type="STRINGARRAY">
       <offset>8</offset>
     </column>
-    <column name="InteriorKit" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Interiorkittags" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Interiorkit" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>GenesisInteriorKit</dictionary_name>
     </column>
-    <column name="LightKitSpecifier" type="INT">
-      <offset>16</offset>
+    <column name="Lightkitspecifier" type="INT">
+      <offset>32</offset>
       <static_define_list external="GenesisTagOrName" />
     </column>
-    <column name="LightKitTags2" type="STRINGARRAY">
-      <offset>20</offset>
+    <column name="Lightkittags2" type="STRINGARRAY">
+      <offset>40</offset>
     </column>
-    <column name="LightKitTags" type="STRING">
-      <offset>24</offset>
+    <column name="Lightkittags" type="STRING">
+      <offset>48</offset>
     </column>
-    <column name="LightKit" type="REFERENCE">
-      <offset>28</offset>
+    <column name="Lightkit" type="REFERENCE">
+      <offset>56</offset>
       <dictionary_name>GenesisInteriorKit</dictionary_name>
     </column>
     <column name="}" type="END" />

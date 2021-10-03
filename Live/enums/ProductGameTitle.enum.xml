@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ProductGameTitle">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="ChampionsOnline">1</element>
+    <element name="StarTrekOnline">2</element>
+    <element name="Neverwinter">3</element>
+    <element name="Magic">4</element>
+  </elements>
+</enum>

@@ -3,5 +3,6 @@
   <elements type="int">
     <element name="Default">0</element>
     <element name="FauxTreasureChest">1</element>
+    <element name="RewardPackConfirmation">2</element>
   </elements>
 </enum>

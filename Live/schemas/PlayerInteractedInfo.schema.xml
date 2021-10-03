@@ -11,8 +11,8 @@
       <offset>0</offset>
       <subtable external="InteractionInfo" />
     </column>
-    <column name="uRetireTime" type="INT">
-      <offset>4</offset>
+    <column name="Uretiretime" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

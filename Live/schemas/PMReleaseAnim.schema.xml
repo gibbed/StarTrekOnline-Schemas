@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="spc" type="INT">
+    <column name="Spc" type="INT">
       <offset>0</offset>
     </column>
     <column name="ID" type="INT">

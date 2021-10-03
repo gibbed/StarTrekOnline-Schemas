@@ -7,33 +7,34 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hItemDef" type="REFERENCE">
+    <column name="Hitemdef" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="PriceAccountKeyValue" type="STRING">
-      <offset>4</offset>
+    <column name="Priceaccountkeyvalue" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Count" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="OriginalCount" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="AvailableCount" type="INT">
       <offset>16</offset>
     </column>
-    <column name="ppchDiscounts" type="STRINGARRAY">
+    <column name="OriginalCount" type="INT">
       <offset>20</offset>
+    </column>
+    <column name="Availablecount" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Ppchdiscounts" type="STRINGARRAY">
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="TooExpensive" type="U8">
-      <offset>24</offset>
+    <column name="Tooexpensive" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

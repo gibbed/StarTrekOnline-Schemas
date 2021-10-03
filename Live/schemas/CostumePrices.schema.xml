@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="StorageType" type="INT">
+    <column name="Storagetype" type="INT">
       <offset>0</offset>
       <static_define_list external="PCCostumeStorageType" />
     </column>
@@ -50,15 +50,14 @@
     <column name="SkinColor" type="INT">
       <offset>52</offset>
     </column>
-    <column name="BodyScale" type="INT">
+    <column name="Bodyscale" type="INT">
       <offset>56</offset>
     </column>
-    <column name="BoneScale" type="INT">
+    <column name="Bonescale" type="INT">
       <offset>60</offset>
     </column>
-    <column name="LevelMultipliers" type="F32FIXEDARRAY">
+    <column name="Levelmultipliers" type="F32ARRAY">
       <offset>64</offset>
-      <num_elements>70</num_elements>
     </column>
     <column name="}" type="END" />
   </table>

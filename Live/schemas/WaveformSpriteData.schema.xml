@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TotalWidth" type="INT">
+    <column name="Totalwidth" type="INT">
       <offset>0</offset>
     </column>
-    <column name="TotalHeight" type="INT">
+    <column name="Totalheight" type="INT">
       <offset>4</offset>
     </column>
     <column name="Width" type="INT">
@@ -25,19 +25,19 @@
     <column name="Y" type="INT16">
       <offset>18</offset>
     </column>
-    <column name="ScrollPhaseSpeed" type="F32">
+    <column name="Scrollphasespeed" type="F32">
       <offset>20</offset>
     </column>
-    <column name="InterpSpeed" type="F32">
+    <column name="Interpspeed" type="F32">
       <offset>24</offset>
     </column>
-    <column name="OffsetU" type="F32">
+    <column name="Offsetu" type="F32">
       <offset>28</offset>
     </column>
-    <column name="ScrollOffsetU" type="F32">
+    <column name="Scrolloffsetu" type="F32">
       <offset>32</offset>
     </column>
-    <column name="ScaleU" type="F32">
+    <column name="Scaleu" type="F32">
       <offset>36</offset>
     </column>
     <column name="Mode" type="INT">
@@ -46,8 +46,9 @@
     </column>
     <column name="Init" type="U8">
       <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RadiationData" type="EMBEDDEDSTRUCT">
+    <column name="Radiationdata" type="EMBEDDEDSTRUCT">
       <offset>48</offset>
       <subtable external="WaveformRadiationData" />
     </column>

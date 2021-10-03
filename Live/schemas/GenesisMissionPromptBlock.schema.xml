@@ -7,75 +7,78 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BlockName" type="STRING">
+    <column name="Blockname" type="STRING">
       <offset>0</offset>
     </column>
     <column name="Costume2" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">GenesisMissionCostume</format_string>
+      </format_strings>
     </column>
-    <column name="CostumeType" type="INT">
-      <offset>4</offset>
+    <column name="Costumetype" type="INT">
+      <offset>8</offset>
       <static_define_list external="GenesisMissionCostumeType" />
     </column>
-    <column name="UsePetCostume" type="INT">
-      <offset>4</offset>
+    <column name="Usepetcostume" type="INT">
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>CostumeType</redundant_name>
+      <redundant_name>Costumetype</redundant_name>
       <static_define_list external="GenesisMissionCostumeType" />
     </column>
     <column name="Costume" type="REFERENCE">
-      <offset>8</offset>
+      <offset>16</offset>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="PetCostume" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Petcostume" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>PetContactList</dictionary_name>
     </column>
-    <column name="CostumeCritterGroupType" type="INT">
-      <offset>16</offset>
+    <column name="Costumecrittergrouptype" type="INT">
+      <offset>32</offset>
       <static_define_list external="ContactMapVarOverrideType" />
     </column>
-    <column name="CostumeCritterGroup" type="REFERENCE">
-      <offset>20</offset>
+    <column name="Costumecrittergroup" type="REFERENCE">
+      <offset>40</offset>
       <dictionary_name>CritterGroup</dictionary_name>
     </column>
-    <column name="CostumeMapVar" type="STRING">
-      <offset>24</offset>
-    </column>
-    <column name="CostumeIdentifier" type="STRING">
-      <offset>28</offset>
-    </column>
-    <column name="HeadshotStyle" type="STRING">
-      <offset>32</offset>
-    </column>
-    <column name="CutsceneDef" type="REFERENCE">
-      <offset>36</offset>
-      <dictionary_name>CutsceneDef</dictionary_name>
-    </column>
-    <column name="AnimList" type="REFERENCE">
-      <offset>40</offset>
-      <dictionary_name>AIAnimList</dictionary_name>
-    </column>
-    <column name="TitleText" type="STRING">
-      <offset>44</offset>
-    </column>
-    <column name="BodyText" type="STRINGARRAY">
+    <column name="Costumemapvar" type="STRING">
       <offset>48</offset>
     </column>
-    <column name="Phrase" type="STRING">
-      <offset>52</offset>
-    </column>
-    <column name="DialogFlags" type="INT">
+    <column name="Costumeidentifier" type="STRING">
       <offset>56</offset>
+    </column>
+    <column name="Headshotstyle" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="CutsceneDef" type="REFERENCE">
+      <offset>72</offset>
+      <dictionary_name>CutsceneDef</dictionary_name>
+    </column>
+    <column name="Animlist" type="REFERENCE">
+      <offset>80</offset>
+      <dictionary_name>AIAnimList</dictionary_name>
+    </column>
+    <column name="Titletext" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Bodytext" type="STRINGARRAY">
+      <offset>96</offset>
+    </column>
+    <column name="Phrase" type="STRING">
+      <offset>104</offset>
+    </column>
+    <column name="Dialogflags" type="INT">
+      <offset>112</offset>
       <static_define_list external="SpecialDialogFlags" />
       <format>FLAGS</format>
     </column>
     <column name="Action" type="STRUCT">
-      <offset>60</offset>
+      <offset>120</offset>
       <subtable external="GenesisMissionPromptAction" />
     </column>
     <column name="}" type="END" />

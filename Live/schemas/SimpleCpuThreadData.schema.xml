@@ -11,7 +11,7 @@
       <offset>0</offset>
       <static_define_list external="SimpleCpuUsageThread" />
     </column>
-    <column name="TimerCpuTicks64" type="INT64">
+    <column name="Timercputicks64" type="INT64">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

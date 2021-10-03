@@ -13,27 +13,31 @@
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="EmoteKey" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
-    </column>
-    <column name="Description" type="STRING">
+    <column name="Emotekey" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="FailsRequirements" type="STRING">
-      <offset>12</offset>
+    <column name="Description" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="CanUse" type="BIT">
-      <offset>16</offset>
+    <column name="Failsrequirements" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Canuse" type="BIT">
+      <offset>32</offset>
       <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Validregion" type="BIT">
+      <offset>32</offset>
+      <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

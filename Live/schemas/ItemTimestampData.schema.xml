@@ -10,19 +10,19 @@
     <column name="Ent" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Entity" />
     </column>
     <column name="ItemDef" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="ItemDef" />
     </column>
-    <column name="uiTime" type="INT">
-      <offset>8</offset>
+    <column name="Uitime" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

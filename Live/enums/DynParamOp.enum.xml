@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DynParamOp">
+  <elements type="int">
+    <element name="Copy">1</element>
+    <element name="Add">2</element>
+    <element name="Multiply">3</element>
+  </elements>
+</enum>

@@ -12,14 +12,14 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="InputMapping" type="STRUCT">
-      <offset>4</offset>
+    <column name="Inputmapping" type="STRUCT">
+      <offset>8</offset>
       <subtable external="ShaderInputMapping" />
     </column>
-    <column name="OperationValue" type="STRUCT">
-      <offset>8</offset>
+    <column name="Operationvalue" type="STRUCT">
+      <offset>16</offset>
       <subtable external="ShaderOperationValues" />
     </column>
-    <column name="EndFallback" type="END" />
+    <column name="Endfallback" type="END" />
   </table>
 </parser>

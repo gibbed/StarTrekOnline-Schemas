@@ -13,42 +13,48 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MinigameType" type="INT">
-      <offset>4</offset>
+    <column name="Minigametype" type="INT">
+      <offset>8</offset>
       <static_define_list external="MinigameType" />
     </column>
-    <column name="PayoutCategory" type="STRUCT">
-      <offset>8</offset>
+    <column name="Payoutcategory" type="STRUCT">
+      <offset>16</offset>
       <subtable external="DaboPayoutCategory" />
     </column>
-    <column name="CostData" type="STRUCT">
-      <offset>12</offset>
+    <column name="Costdata" type="STRUCT">
+      <offset>24</offset>
       <subtable external="DaboCostData" />
     </column>
-    <column name="AllowedWheelIndexBet" type="INTARRAY">
-      <offset>16</offset>
-    </column>
-    <column name="PeriodicSpinTime" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="BetExpirationTime" type="INT">
-      <offset>24</offset>
-    </column>
-    <column name="MaxBetCountPerSpin" type="INT">
-      <offset>28</offset>
-      <default>1</default>
-    </column>
-    <column name="SpinBetTime" type="INT">
+    <column name="Allowedwheelindexbet" type="INTARRAY">
       <offset>32</offset>
     </column>
-    <column name="SpinResultTime" type="INT">
-      <offset>36</offset>
-    </column>
-    <column name="PayoutTime" type="INT">
+    <column name="Periodicspintime" type="INT">
       <offset>40</offset>
     </column>
-    <column name="VolumeName" type="STRING">
+    <column name="Betexpirationtime" type="INT">
       <offset>44</offset>
+    </column>
+    <column name="Maxbetcountperspin" type="INT">
+      <offset>48</offset>
+      <default>1</default>
+    </column>
+    <column name="Spinbettime" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Spinresulttime" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Payouttime" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Volumename" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Spectatorrequiredmapnames" type="STRINGARRAY">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

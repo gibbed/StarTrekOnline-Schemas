@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uchActID" type="U8">
+    <column name="Uchactid" type="U8">
       <offset>0</offset>
     </column>
     <column name="Hit" type="BIT">

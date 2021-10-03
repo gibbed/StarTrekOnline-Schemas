@@ -4,7 +4,8 @@
     <element name="None">0</element>
     <element name="MapMove">1</element>
     <element name="QueuedInstance">2</element>
-    <element name="JoinTeammate">3</element>
-    <element name="Keyed">5</element>
+    <element name="MatchedInstance">3</element>
+    <element name="JoinTeammate">4</element>
+    <element name="Keyed">6</element>
   </elements>
 </enum>

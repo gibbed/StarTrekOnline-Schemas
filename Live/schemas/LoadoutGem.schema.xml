@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="LoadoutGem">
+  <table>
+    <column name="LoadoutGem" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hslotteditem" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Uprogressionxp" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

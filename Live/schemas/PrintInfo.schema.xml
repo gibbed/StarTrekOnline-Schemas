@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PrintInfo">
+  <table>
+    <column name="PrintInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="User_Id" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Vendor_Url" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Access_Token" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemToIdentify">
+  <table>
+    <column name="ItemToIdentify" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ItemDef" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="ItemDef" />
+    </column>
+    <column name="Bagid" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="SlotIdx" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Level" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

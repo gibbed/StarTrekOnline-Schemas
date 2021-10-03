@@ -11,16 +11,20 @@
       <offset>0</offset>
     </column>
     <column name="Key1" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>
     </column>
     <column name="Key2" type="INT">
-      <offset>8</offset>
+      <offset>12</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>
+    </column>
+    <column name="Hold" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

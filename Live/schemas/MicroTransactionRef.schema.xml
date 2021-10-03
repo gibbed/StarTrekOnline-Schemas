@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hMTDef" type="REFERENCE">
+    <column name="Hmtdef" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>MicroTransactionDef</dictionary_name>
     </column>

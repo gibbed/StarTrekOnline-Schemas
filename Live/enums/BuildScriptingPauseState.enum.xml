@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="BuildScriptingPauseState">
+  <elements type="int">
+    <element name="NOT_PAUSED">0</element>
+    <element name="PAUSE_REQUESTED">1</element>
+    <element name="PAUSED">2</element>
+  </elements>
+</enum>

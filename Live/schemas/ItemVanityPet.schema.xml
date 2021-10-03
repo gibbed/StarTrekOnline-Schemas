@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="VanityPet" type="REFERENCE">
+    <column name="Vanitypet" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>PowerDef</dictionary_name>
     </column>

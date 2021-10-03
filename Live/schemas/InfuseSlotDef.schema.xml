@@ -16,25 +16,25 @@
       </flags>
     </column>
     <column name="Option" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="InfuseOption" />
     </column>
-    <column name="msgDisplayName" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+    <column name="Msgdisplayname" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="msgDescription" type="EMBEDDEDSTRUCT">
-      <offset>20</offset>
+    <column name="Msgdescription" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Icon" type="STRING">
-      <offset>32</offset>
+      <offset>64</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>36</offset>
+      <offset>72</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

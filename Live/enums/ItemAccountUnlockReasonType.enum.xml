@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ItemAccountUnlockReasonType">
+  <elements type="int">
+    <element name="Free">1</element>
+    <element name="BP">2</element>
+    <element name="MT">3</element>
+    <element name="Zen">4</element>
+    <element name="Dev">5</element>
+    <element name="CS">6</element>
+  </elements>
+</enum>

@@ -10,33 +10,38 @@
     <column name="Name" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="estrOwnedName" type="STRING">
-      <offset>4</offset>
+    <column name="Estrownedname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="UIColor" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
-    <column name="v3Location" type="F32FIXEDARRAY">
-      <offset>16</offset>
+    <column name="V3location" type="F32FIXEDARRAY">
+      <offset>28</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Visible" type="U8">
-      <offset>44</offset>
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Hover" type="U8">
-      <offset>45</offset>
+      <offset>57</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Upwards" type="U8">
-      <offset>46</offset>
+      <offset>58</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Downwards" type="U8">
-      <offset>47</offset>
+      <offset>59</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

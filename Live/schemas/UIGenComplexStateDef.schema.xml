@@ -7,163 +7,68 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ConditionBlock" type="OPTIONALSTRUCT">
+    <column name="Conditionblock" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="Expression" />
     </column>
     <column name="Condition" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ConditionBlock</redundant_name>
+      <redundant_name>Conditionblock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="IntCondition" type="STRUCT">
-      <offset>4</offset>
+    <column name="Intcondition" type="STRUCT">
+      <offset>8</offset>
       <subtable external="UIGenIntCondition" />
     </column>
-    <column name="FloatCondition" type="STRUCT">
-      <offset>8</offset>
+    <column name="Floatcondition" type="STRUCT">
+      <offset>16</offset>
       <subtable external="UIGenFloatCondition" />
     </column>
-    <column name="StringCondition" type="STRUCT">
-      <offset>12</offset>
+    <column name="Stringcondition" type="STRUCT">
+      <offset>24</offset>
       <subtable external="UIGenStringCondition" />
     </column>
-    <column name="IntCondition2" type="STRUCT">
-      <offset>16</offset>
-      <subtable external="UIGenCondition2" />
-    </column>
-    <column name="FloatCondition2" type="STRUCT">
-      <offset>20</offset>
-      <subtable external="UIGenCondition2" />
-    </column>
-    <column name="StringCondition2" type="STRUCT">
-      <offset>24</offset>
-      <subtable external="UIGenCondition2" />
-    </column>
-    <column name="InState" type="INTARRAY">
-      <offset>28</offset>
-      <static_define_list external="UIGenState" />
-    </column>
-    <column name="NotInState" type="INTARRAY">
+    <column name="Intcondition2" type="STRUCT">
       <offset>32</offset>
+      <subtable external="UIGenCondition2" />
+    </column>
+    <column name="Floatcondition2" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="UIGenCondition2" />
+    </column>
+    <column name="Stringcondition2" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="UIGenCondition2" />
+    </column>
+    <column name="Instate" type="INTARRAY">
+      <offset>56</offset>
       <static_define_list external="UIGenState" />
+    </column>
+    <column name="Notinstate" type="INTARRAY">
+      <offset>64</offset>
+      <static_define_list external="UIGenState" />
+    </column>
+    <column name="GenInState" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="UIGenInStateCondition" />
+    </column>
+    <column name="Gennotinstate" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="UIGenInStateCondition" />
     </column>
     <column name="Override" type="OPTIONALPOLYMORPH">
-      <offset>36</offset>
-      <subtable>
-        <table>
-          <column name="UIGenChatLog" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenChatLog" />
-          </column>
-          <column name="UIGenCompass" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenCompass" />
-          </column>
-          <column name="UIGenEntity" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenEntity" />
-          </column>
-          <column name="UIGenList" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenList" />
-          </column>
-          <column name="UIGenListColumn" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListColumn" />
-          </column>
-          <column name="UIGenListRow" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenListRow" />
-          </column>
-          <column name="UIGenMap" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenMap" />
-          </column>
-          <column name="UIGenObject" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenObject" />
-          </column>
-          <column name="UIGenPaperdoll" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenPaperdoll" />
-          </column>
-          <column name="UIGenWaypoint" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenWaypoint" />
-          </column>
-          <column name="UIGenBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenBox" />
-          </column>
-          <column name="UIGenButton" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenButton" />
-          </column>
-          <column name="UIGenCheckButton" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenCheckButton" />
-          </column>
-          <column name="UIGenColorChooser" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenColorChooser" />
-          </column>
-          <column name="UIGenLayoutBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenLayoutBox" />
-          </column>
-          <column name="UIGenMovableBox" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenMovableBox" />
-          </column>
-          <column name="UIGenSMF" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSMF" />
-          </column>
-          <column name="UIGenScrollView" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenScrollView" />
-          </column>
-          <column name="UIGenSlider" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSlider" />
-          </column>
-          <column name="UIGenSprite" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenSprite" />
-          </column>
-          <column name="UIGenTabGroup" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTabGroup" />
-          </column>
-          <column name="UIGenText" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenText" />
-          </column>
-          <column name="UIGenTextArea" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextArea" />
-          </column>
-          <column name="UIGenTextEntry" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenTextEntry" />
-          </column>
-          <column name="UIGenWebView" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="UIGenWebView" />
-          </column>
-        </table>
-      </subtable>
+      <offset>88</offset>
+      <subtable external="_PolyTable_UIGenInternal" />
     </column>
-    <column name="OnEnter" type="OPTIONALSTRUCT">
-      <offset>40</offset>
+    <column name="Onenter" type="OPTIONALSTRUCT">
+      <offset>96</offset>
       <subtable external="UIGenAction" />
     </column>
-    <column name="OnExit" type="OPTIONALSTRUCT">
-      <offset>44</offset>
+    <column name="Onexit" type="OPTIONALSTRUCT">
+      <offset>104</offset>
       <subtable external="UIGenAction" />
     </column>
     <column name="}" type="END" />

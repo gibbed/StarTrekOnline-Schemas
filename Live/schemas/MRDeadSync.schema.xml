@@ -7,14 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="stanceBits" type="INTARRAY">
+    <column name="Stancebits" type="INTARRAY">
       <offset>0</offset>
     </column>
-    <column name="directionBit" type="INT">
-      <offset>4</offset>
+    <column name="Keywordbit" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Impactbit" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Directionbit" type="INT">
+      <offset>16</offset>
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+      <offset>20</offset>
       <subtable external="MRDeadSyncFlags" />
     </column>
     <column name="}" type="END" />

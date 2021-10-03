@@ -11,11 +11,11 @@
       <offset>0</offset>
       <subtable external="AccountProxyProduct" />
     </column>
-    <column name="uTimestamp" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="uVersion" type="INT">
+    <column name="Utimestamp" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Uversion" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

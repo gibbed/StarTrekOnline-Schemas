@@ -7,8 +7,9 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="Team" type="INTARRAY">
+    <column name="Teammember" type="STRUCT">
       <offset>0</offset>
+      <subtable external="LeaderboardTeamMember" />
     </column>
     <column name="}" type="END" />
   </table>

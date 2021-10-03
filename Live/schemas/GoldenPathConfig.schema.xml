@@ -7,20 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GoldenPathFX" type="STRING">
+    <column name="Goldenpathfx" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="GoldenPathObstructedFX" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="GoldenPathAreaFX" type="STRING">
+    <column name="Goldenpathobstructedfx" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="GoldenPathAreaDeathFX" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="VerticalPathOffset" type="F32">
+    <column name="Goldenpathareafx" type="STRING">
       <offset>16</offset>
+    </column>
+    <column name="Goldenpathareadeathfx" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Verticalpathoffset" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Missioncategorytoignore" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="GPMissionCategoryRef" />
+    </column>
+    <column name="Missiontagtoignore" type="INTARRAY">
+      <offset>48</offset>
+      <static_define_list external="MissionTag" />
+    </column>
+    <column name="Updatetargetvariant" type="STRING">
+      <offset>56</offset>
     </column>
     <column name="}" type="END" />
   </table>

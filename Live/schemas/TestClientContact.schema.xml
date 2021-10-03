@@ -10,14 +10,17 @@
     <column name="Ref" type="INT">
       <offset>0</offset>
     </column>
-    <column name="IsImportant" type="U8">
+    <column name="Isimportant" type="U8">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="HasMission" type="U8">
+    <column name="Hasmission" type="U8">
       <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="HasMissionComplete" type="U8">
+    <column name="Hasmissioncomplete" type="U8">
       <offset>6</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="Fx2MaterialTimerSource">
+  <elements type="int">
+    <element name="Global">0</element>
+    <element name="Package">1</element>
+    <element name="Emitter">2</element>
+    <element name="EmitterState">3</element>
+    <element name="Particle">4</element>
+  </elements>
+</enum>

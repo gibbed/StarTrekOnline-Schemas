@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="interiorUnlocks" type="STRUCT">
+    <column name="Interiorunlocks" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>

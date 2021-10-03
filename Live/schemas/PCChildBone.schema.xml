@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ChildBone" type="REFERENCE">
+    <column name="Childbone" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>CostumeBone</dictionary_name>
     </column>
-    <column name="ChildLayer" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Childlayer" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>CostumeLayer</dictionary_name>
     </column>
-    <column name="ChildLayerBack" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Childlayerback" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>CostumeLayer</dictionary_name>
     </column>
     <column name="}" type="END" />

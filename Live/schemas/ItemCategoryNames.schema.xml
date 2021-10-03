@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ItemCategory" type="STRUCT">
+    <column name="Itemcategory" type="STRUCT">
       <offset>0</offset>
       <subtable external="ItemCategoryInfo" />
     </column>

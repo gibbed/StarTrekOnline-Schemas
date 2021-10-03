@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PCCategoryType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="Gender">1</element>
+    <element name="Species">2</element>
+    <element name="CharacterPath">3</element>
+    <element name="Visibility">4</element>
+    <element name="Exclude">5</element>
+  </elements>
+</enum>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CritterRanks">
+  <elements type="int">
+    <element name="Neophyte">0</element>
+    <element name="Ensign">1</element>
+    <element name="Lieutenant">2</element>
+    <element name="Commander">3</element>
+    <element name="Captain">4</element>
+    <element name="Monster">5</element>
+    <element name="Fighter">6</element>
+    <element name="Frigate">7</element>
+    <element name="Cruiser">8</element>
+    <element name="Battleship">9</element>
+    <element name="Dreadnought">10</element>
+    <element name="Capital">11</element>
+    <element name="Missionreward">12</element>
+    <element name="Henchman">13</element>
+    <element name="Villain">14</element>
+    <element name="Mastervillain">15</element>
+    <element name="Supervillain">16</element>
+    <element name="Legendary">17</element>
+    <element name="Cosmic">18</element>
+  </elements>
+</enum>

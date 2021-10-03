@@ -2,5 +2,10 @@
 <enum name="QueueCategory">
   <elements type="int">
     <element name="None">0</element>
+    <element name="FleetAction">1</element>
+    <element name="STF">2</element>
+    <element name="Event">3</element>
+    <element name="New">4</element>
+    <element name="Featured">5</element>
   </elements>
 </enum>

@@ -6,6 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="Command" type="STRING">
       <offset>0</offset>
       <flags>
@@ -14,44 +15,47 @@
       </flags>
     </column>
     <column name="AccessLevel" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="HasPlayerArgument" type="BIT">
-      <offset>8</offset>
+    <column name="Hasplayerargument" type="BIT">
+      <offset>12</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
       <format_strings>
         <format_string name="SPECIAL_DEFAULT">0</format_string>
       </format_strings>
     </column>
-    <column name="UseCommaForPlayerName" type="BIT">
-      <offset>8</offset>
+    <column name="Usecommaforplayername" type="BIT">
+      <offset>12</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
       <format_strings>
         <format_string name="SPECIAL_DEFAULT">0</format_string>
       </format_strings>
     </column>
-    <column name="HasNoArguments" type="BIT">
-      <offset>8</offset>
+    <column name="Hasnoarguments" type="BIT">
+      <offset>12</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
       <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
       <format_strings>
         <format_string name="SPECIAL_DEFAULT">0</format_string>
       </format_strings>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

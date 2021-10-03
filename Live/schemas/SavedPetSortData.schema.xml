@@ -7,11 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SortFirst" type="INTARRAY">
+    <column name="Sortfirst" type="INTARRAY">
       <offset>0</offset>
     </column>
-    <column name="SortLast" type="INTARRAY">
-      <offset>4</offset>
+    <column name="Sortlast" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Sortactive" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

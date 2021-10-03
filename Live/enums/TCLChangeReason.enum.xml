@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="TCLChangeReason">
+  <elements type="int">
+    <element name="CTcL">0</element>
+    <element name="CMTcL">1</element>
+    <element name="GADTcL">2</element>
+    <element name="HWM">3</element>
+  </elements>
+</enum>

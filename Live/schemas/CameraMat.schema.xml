@@ -10,11 +10,11 @@
     <column name="Time" type="F32">
       <offset>0</offset>
     </column>
-    <column name="rot_mat" type="MATPYR">
+    <column name="Rot_Mat" type="MATPYR">
       <offset>4</offset>
       <num_elements>9</num_elements>
     </column>
-    <column name="pos_mat" type="F32FIXEDARRAY">
+    <column name="Pos_Mat" type="F32FIXEDARRAY">
       <offset>40</offset>
       <num_elements>3</num_elements>
     </column>

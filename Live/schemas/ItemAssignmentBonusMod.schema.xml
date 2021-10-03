@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemAssignmentBonusMod">
+  <table>
+    <column name="ItemAssignmentBonusMod" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <static_define_list external="ItemAssignmentBonusModType" />
+    </column>
+    <column name="DisplayName" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Attributeparams" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="ItemAssignmentBonusModAttributeParams" />
+    </column>
+    <column name="Aloneparams" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="ItemAssignmentBonusModAloneParams" />
+    </column>
+    <column name="Bonusmultiplierparams" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <subtable external="ItemAssignmentBonusModBonusMultiplierParams" />
+    </column>
+    <column name="Hazardbonusmultiplierparams" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="ItemAssignmentBonusModHazardBonusMultiplierParams" />
+    </column>
+    <column name="Nullifyhazardattributeparams" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="ItemAssignmentBonusModNullifyHazardAttributeParams" />
+    </column>
+    <column name="Cooldownreductionparams" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="ItemAssignmentBonusModCooldownReductionParams" />
+    </column>
+    <column name="Attributetableparams" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="ItemAssignmentBonusModTableParams" />
+    </column>
+    <column name="Requiredtag" type="INT">
+      <offset>88</offset>
+      <static_define_list external="ItemAssignmentTag" />
+    </column>
+    <column name="Requiredcategory" type="INT">
+      <offset>92</offset>
+      <static_define_list external="ItemAssignmentCategory" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -10,7 +10,7 @@
     <column name="Value" type="F32">
       <offset>0</offset>
     </column>
-    <column name="hardness" type="F32">
+    <column name="Hardness" type="F32">
       <offset>4</offset>
     </column>
     <column name="Restitution" type="F32">

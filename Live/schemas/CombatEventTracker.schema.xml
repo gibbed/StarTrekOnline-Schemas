@@ -11,31 +11,35 @@
       <offset>0</offset>
       <static_define_list external="CombatEvent" />
     </column>
-    <column name="erOther" type="INT">
+    <column name="Erother" type="INT">
       <offset>4</offset>
     </column>
-    <column name="PowerDef" type="OPTIONALSTRUCT">
+    <column name="Flags" type="INT">
       <offset>8</offset>
+      <static_define_list external="CombatTrackerFlag" />
+    </column>
+    <column name="PowerDef" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="PowerDef" />
     </column>
-    <column name="AttribModDef" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Attribmoddef" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="AttribModDef" />
     </column>
     <column name="Mag" type="F32">
-      <offset>16</offset>
+      <offset>32</offset>
     </column>
-    <column name="MagPreResist" type="F32">
-      <offset>20</offset>
+    <column name="Magpreresist" type="F32">
+      <offset>36</offset>
     </column>
-    <column name="AngleToSource" type="F32">
-      <offset>24</offset>
+    <column name="Angletosource" type="F32">
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

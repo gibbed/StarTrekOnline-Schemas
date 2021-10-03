@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MatchDifficulties">
+  <table>
+    <column name="MatchDifficulties" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Difficulty" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="MatchDifficultyData" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

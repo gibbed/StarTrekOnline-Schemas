@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="Fx2RenderMode">
+  <elements type="int">
+    <element name="Off">0</element>
+    <element name="Sprite">1</element>
+    <element name="Geometry">2</element>
+    <element name="Decal">3</element>
+    <element name="Ribbon">4</element>
+    <element name="Skeleton">5</element>
+    <element name="Cloth">6</element>
+  </elements>
+</enum>

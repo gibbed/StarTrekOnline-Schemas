@@ -10,33 +10,62 @@
     <column name="Name" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="refDataTable" type="IGNORE">
+    <column name="Refdatatable" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">StashTableOverview</format_string>
+      </format_strings>
     </column>
-    <column name="refDataNumEntries" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="refDataSize" type="INT">
+    <column name="Refdatanumentries" type="INT">
       <offset>8</offset>
     </column>
-    <column name="refDataWasted" type="INT">
+    <column name="Refdatasize" type="INT">
       <offset>12</offset>
     </column>
-    <column name="refPreviousTable" type="IGNORE">
+    <column name="Refdatawasted" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Refprevioustable" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">StashTableOverview</format_string>
+      </format_strings>
     </column>
-    <column name="refPreviousNumEntries" type="INT">
-      <offset>16</offset>
-    </column>
-    <column name="refPreviousSize" type="INT">
+    <column name="Refpreviousnumentries" type="INT">
       <offset>20</offset>
     </column>
-    <column name="refPreviousWasted" type="INT">
+    <column name="Refprevioussize" type="INT">
       <offset>24</offset>
+    </column>
+    <column name="Refpreviouswasted" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Sethandles" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">StashTableOverview</format_string>
+      </format_strings>
+    </column>
+    <column name="Sethandlesnumentries" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Sethandlessize" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Sethandleswasted" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Umissingreferents" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Uabsenthandles" type="INT">
+      <offset>48</offset>
     </column>
     <column name="}" type="END" />
   </table>

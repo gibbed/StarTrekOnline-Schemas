@@ -6,14 +6,14 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="StancePriority" type="F32">
+    <column name="Stancepriority" type="F32">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
@@ -21,29 +21,29 @@
       </flags>
     </column>
     <column name="Tag" type="STRING">
-      <offset>8</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>STRUCTPARAM</flag>
-      </flags>
-    </column>
-    <column name="BoneVisSet" type="INT">
-      <offset>12</offset>
-      <flags>
-        <flag>STRUCTPARAM</flag>
-      </flags>
-      <default>-1</default>
-      <static_define_list external="SkelBoneVisibilitySet" />
-    </column>
-    <column name="BankingNodeOverride" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
+    <column name="Bonevisset" type="INT">
+      <offset>24</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <default>-1</default>
+      <static_define_list external="SkelBoneVisibilitySet" />
+    </column>
+    <column name="Bankingnodeoverride" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>20</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

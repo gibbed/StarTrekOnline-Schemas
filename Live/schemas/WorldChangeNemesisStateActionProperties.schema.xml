@@ -6,7 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="NewNemesisState" type="INT">
+    <column name="Newnemesisstate" type="INT">
       <offset>0</offset>
       <static_define_list external="NemesisState" />
     </column>

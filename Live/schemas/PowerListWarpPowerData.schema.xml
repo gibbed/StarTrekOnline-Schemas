@@ -10,29 +10,30 @@
     <column name="Power" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Power" />
     </column>
     <column name="ItemDef" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="ItemData" type="STRUCT">
-      <offset>8</offset>
+    <column name="Itemdata" type="STRUCT">
+      <offset>16</offset>
       <subtable external="PowerListWarpItemData" />
     </column>
-    <column name="ChargesLeft" type="INT">
-      <offset>12</offset>
+    <column name="Chargesleft" type="INT">
+      <offset>24</offset>
     </column>
-    <column name="StackCount" type="INT">
-      <offset>16</offset>
+    <column name="Stackcount" type="INT">
+      <offset>28</offset>
     </column>
     <column name="Cooldown" type="F32">
-      <offset>20</offset>
+      <offset>32</offset>
     </column>
-    <column name="CanActivate" type="U8">
-      <offset>24</offset>
+    <column name="Canactivate" type="U8">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

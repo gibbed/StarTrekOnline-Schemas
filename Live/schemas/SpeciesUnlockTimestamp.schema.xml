@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SpeciesUnlockTimestamp">
+  <table>
+    <column name="SpeciesUnlockTimestamp" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uunlocktimestamp" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Ushardregion" type="INT">
+      <offset>4</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <static_define_list external="ShardRegion" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

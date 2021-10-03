@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="LeaderboardIntervalStat">
+  <table>
+    <column name="LeaderboardIntervalStat" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_DEF_FIELDS_TO_SHOW">astrStatName, eInterval, createSS2000, astrLevelBand, createSeason</format_string>
+      </format_strings>
+    </column>
+    <column name="{" type="START" />
+    <column name="ID" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Astrstatname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Einterval" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="LeaderboardIntervalType" />
+    </column>
+    <column name="Astrlevelband" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Createss2000" type="INT">
+      <offset>32</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Createseason" type="INT">
+      <offset>36</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eaentries" type="STRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="LeaderboardStatEntry" />
+    </column>
+    <column name="Ihighlevel" type="IGNORE" />
+    <column name="Ilowlevel" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parser>

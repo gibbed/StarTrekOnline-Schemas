@@ -7,33 +7,33 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AuthUserName" type="STRING">
+    <column name="Authusername" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="AuthStringCRC" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="ticket" type="STRING">
+    <column name="Authstringcrc" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Ticket" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="SessionStructs" type="STRUCT">
-      <offset>12</offset>
+    <column name="Sessionstructs" type="STRUCT">
+      <offset>24</offset>
       <subtable external="HttpSessionStruct" />
     </column>
     <column name="port" type="INT">
-      <offset>16</offset>
+      <offset>32</offset>
     </column>
-    <column name="access_level" type="INT">
-      <offset>20</offset>
+    <column name="Access_Level" type="INT">
+      <offset>36</offset>
     </column>
-    <column name="time_last_used" type="INT">
-      <offset>24</offset>
+    <column name="Time_Last_Used" type="INT">
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

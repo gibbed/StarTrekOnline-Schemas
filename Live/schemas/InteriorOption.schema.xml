@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hOption" type="REFERENCE">
+    <column name="Hoption" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -16,8 +16,8 @@
       </flags>
       <dictionary_name>InteriorOptionDef</dictionary_name>
     </column>
-    <column name="hChoice" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hchoice" type="REFERENCE">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

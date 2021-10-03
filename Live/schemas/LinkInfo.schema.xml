@@ -11,19 +11,20 @@
       <offset>0</offset>
     </column>
     <column name="port" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="Project" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="Branch" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="no_upload" type="U8">
+    <column name="Project" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="mirrors" type="STRUCT">
-      <offset>20</offset>
+    <column name="Branch" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="No_Upload" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mirrors" type="STRUCT">
+      <offset>32</offset>
       <subtable external="MirrorFolder" />
     </column>
     <column name="}" type="END" />

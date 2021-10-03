@@ -7,44 +7,35 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="dirtyBit" type="U8">
+    <column name="Dirtybit" type="U8">
       <offset>0</offset>
       <flags>
         <flag>NO_NETSEND</flag>
         <flag>DIRTY_BIT</flag>
       </flags>
     </column>
-    <column name="activeCostumeType" type="U8">
+    <column name="Activecostumetype" type="U8">
       <offset>1</offset>
       <flags>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="activePrimaryCostume" type="U8">
+    <column name="Activeprimarycostume" type="U8">
       <offset>2</offset>
       <flags>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="activeSecondaryCostume" type="U8">
+    <column name="Activesecondarycostume" type="U8">
       <offset>3</offset>
       <flags>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eaPrimaryCostumes" type="STRUCT">
-      <offset>4</offset>
-      <flags>
-        <flag>SELF_ONLY</flag>
-        <flag>PERSIST</flag>
-        <flag>NO_INDEX</flag>
-      </flags>
-      <subtable external="PlayerCostumeV0" />
-    </column>
-    <column name="eaSecondaryCostumes" type="STRUCT">
+    <column name="Eaprimarycostumes" type="STRUCT">
       <offset>8</offset>
       <flags>
         <flag>SELF_ONLY</flag>
@@ -53,8 +44,17 @@
       </flags>
       <subtable external="PlayerCostumeV0" />
     </column>
-    <column name="eaUnlockedCostumeRefs" type="STRUCT">
-      <offset>12</offset>
+    <column name="Easecondarycostumes" type="STRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="PlayerCostumeV0" />
+    </column>
+    <column name="Eaunlockedcostumerefs" type="STRUCT">
+      <offset>24</offset>
       <flags>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>

@@ -10,8 +10,16 @@
     <column name="Gemtype" type="STRINGARRAY">
       <offset>0</offset>
     </column>
-    <column name="UnslotCost" type="STRUCT">
-      <offset>4</offset>
+    <column name="Metagemtype" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ItemGemTypeConfig" />
+    </column>
+    <column name="Nounslotcost" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Unslotcost" type="STRUCT">
+      <offset>24</offset>
       <subtable external="ItemGemUnslotCost" />
     </column>
     <column name="}" type="END" />

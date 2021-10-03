@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DonationTaskAvailability">
+  <elements type="int">
+    <element name="DefaultFalse">0</element>
+    <element name="DefaultTrue">1</element>
+    <element name="UseTaskAvailableExpr">2</element>
+  </elements>
+</enum>

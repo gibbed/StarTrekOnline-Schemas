@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hSlottedItem" type="REFERENCE">
+    <column name="Hslotteditem" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -16,8 +16,8 @@
       </flags>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="ppPowers" type="STRUCT">
-      <offset>4</offset>
+    <column name="Pppowers" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -26,8 +26,17 @@
       </flags>
       <subtable external="Power" />
     </column>
-    <column name="pRollData" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Pptablecontrolledslots" type="STRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="ItemGemSlotSubSlot" />
+    </column>
+    <column name="Prolldata" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -35,7 +44,64 @@
       </flags>
       <subtable external="ItemGemSlotRollData" />
     </column>
-    <column name="pSlottedItem" type="IGNORE">
+    <column name="Iprogressiontier" type="INT">
+      <offset>32</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uprogressionxp" type="INT">
+      <offset>36</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uprogressionlevel" type="INT">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ustreakcount" type="INT">
+      <offset>44</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Iitemquality" type="INT">
+      <offset>48</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Uslottedgemitemflags" type="INT16">
+      <offset>52</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Timedaccountbound" type="INT">
+      <offset>56</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pslotteditem" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>

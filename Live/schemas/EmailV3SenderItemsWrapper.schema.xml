@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ItemsFromPlayer" type="STRUCT">
+    <column name="Itemsfromplayer" type="STRUCT">
       <offset>0</offset>
       <subtable external="EmailV3SenderItem" />
     </column>

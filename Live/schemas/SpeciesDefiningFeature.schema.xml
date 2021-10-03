@@ -16,66 +16,66 @@
       </flags>
     </column>
     <column name="Scope" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="FileName" type="CURRENTFILE">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MatchName" type="STRING">
-      <offset>12</offset>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Matchname" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Type" type="INT">
-      <offset>16</offset>
+      <offset>32</offset>
       <static_define_list external="SpeciesDefiningType" />
     </column>
-    <column name="ExcludeOption" type="REFERENCE">
-      <offset>20</offset>
+    <column name="Excludeoption" type="REFERENCE">
+      <offset>40</offset>
       <dictionary_name>CostumeBone</dictionary_name>
     </column>
     <column name="Skeleton" type="REFERENCE">
-      <offset>24</offset>
+      <offset>48</offset>
       <dictionary_name>CostumeSkeleton</dictionary_name>
     </column>
-    <column name="SpeciesDefault" type="REFERENCE">
-      <offset>28</offset>
+    <column name="Speciesdefault" type="REFERENCE">
+      <offset>56</offset>
       <dictionary_name>Species</dictionary_name>
     </column>
-    <column name="AllowedCategory" type="STRUCT">
-      <offset>32</offset>
+    <column name="Allowedcategory" type="STRUCT">
+      <offset>64</offset>
       <subtable external="CategoryLimits" />
     </column>
-    <column name="AllowedGeometry" type="STRUCT">
-      <offset>36</offset>
+    <column name="Allowedgeometry" type="STRUCT">
+      <offset>72</offset>
       <subtable external="GeometryLimits" />
     </column>
-    <column name="BodyScaleLimits" type="STRUCT">
-      <offset>40</offset>
+    <column name="Bodyscalelimits" type="STRUCT">
+      <offset>80</offset>
       <subtable external="BodyScaleLimit" />
     </column>
-    <column name="BoneScaleLimits" type="STRUCT">
-      <offset>44</offset>
+    <column name="Bonescalelimits" type="STRUCT">
+      <offset>88</offset>
       <subtable external="BoneScaleLimit" />
     </column>
-    <column name="MinHeight" type="F32">
-      <offset>48</offset>
+    <column name="Minheight" type="F32">
+      <offset>96</offset>
     </column>
-    <column name="MaxHeight" type="F32">
-      <offset>52</offset>
+    <column name="Maxheight" type="F32">
+      <offset>100</offset>
     </column>
-    <column name="MinMuscle" type="F32">
-      <offset>56</offset>
+    <column name="Minmuscle" type="F32">
+      <offset>104</offset>
     </column>
-    <column name="MaxMuscle" type="F32">
-      <offset>60</offset>
+    <column name="Maxmuscle" type="F32">
+      <offset>108</offset>
     </column>
     <column name="}" type="END" />
   </table>

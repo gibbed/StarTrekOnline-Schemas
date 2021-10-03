@@ -16,15 +16,15 @@
       </flags>
     </column>
     <column name="DisplayName" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Description" type="EMBEDDEDSTRUCT">
-      <offset>16</offset>
+      <offset>32</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>28</offset>
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

@@ -14,33 +14,37 @@
       </flags>
     </column>
     <column name="DisplayName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="SubSkeleton" type="STRING">
-      <offset>20</offset>
+    <column name="Subskeleton" type="STRING">
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="PlayerMin" type="F32">
-      <offset>24</offset>
+    <column name="Playermin" type="F32">
+      <offset>48</offset>
     </column>
-    <column name="PlayerMax" type="F32">
-      <offset>28</offset>
+    <column name="Playermax" type="F32">
+      <offset>52</offset>
     </column>
     <column name="Affects" type="STRUCT">
-      <offset>32</offset>
+      <offset>56</offset>
       <subtable external="PCScaleEntry" />
     </column>
-    <column name="RestrictedTo" type="INT">
-      <offset>36</offset>
+    <column name="Affectsrotation" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="PCScaleEntry" />
+    </column>
+    <column name="Restrictedto" type="INT">
+      <offset>72</offset>
       <static_define_list external="PCRestriction" />
       <format>FLAGS</format>
     </column>

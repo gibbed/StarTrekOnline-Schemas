@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="Fx2SortMode">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="View_Distance">1</element>
+    <element name="View_Depth">2</element>
+    <element name="Oldest_First">3</element>
+    <element name="Newest_First">4</element>
+  </elements>
+</enum>

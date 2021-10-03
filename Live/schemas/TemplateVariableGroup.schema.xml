@@ -14,29 +14,32 @@
       </flags>
     </column>
     <column name="Variable" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="TemplateVariable" />
     </column>
-    <column name="subGroups" type="STRUCT">
-      <offset>8</offset>
+    <column name="Subgroups" type="STRUCT">
+      <offset>16</offset>
       <subtable external="TemplateVariableGroup" />
     </column>
-    <column name="instructions" type="STRING">
-      <offset>12</offset>
+    <column name="Instructions" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="List" type="U8">
-      <offset>16</offset>
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="listPrototype" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Listprototype" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="TemplateVariableGroup" />
     </column>
-    <column name="startsOpen" type="U8">
-      <offset>24</offset>
+    <column name="Startsopen" type="U8">
+      <offset>48</offset>
       <default>1</default>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Hidden" type="U8">
-      <offset>25</offset>
+      <offset>49</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

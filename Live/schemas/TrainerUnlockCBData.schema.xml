@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiTrainerType" type="INT">
+    <column name="Uitrainertype" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uiTrainerID" type="INT">
+    <column name="Uitrainerid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="hNodeDef" type="REFERENCE">
+    <column name="Hnodedef" type="REFERENCE">
       <offset>8</offset>
       <dictionary_name>PTNodeDef</dictionary_name>
     </column>

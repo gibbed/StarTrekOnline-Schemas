@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CrypticRPCSettingFlags">
+  <elements type="int">
+    <element name="CRSF_FAIL_IF_SHARD_SERVER_NOT_ALREADY_ACTIVE">1</element>
+  </elements>
+</enum>

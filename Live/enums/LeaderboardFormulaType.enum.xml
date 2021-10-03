@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="LeaderboardFormulaType">
+  <elements type="int">
+    <element name="Sum">0</element>
+    <element name="CrypticSkill">1</element>
+  </elements>
+</enum>

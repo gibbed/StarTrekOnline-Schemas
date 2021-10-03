@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CxTimeZone">
+  <table>
+    <column name="CxTimeZone" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Standardname" type="FIXEDSTRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+      <string_length>4</string_length>
+    </column>
+    <column name="Daylightname" type="FIXEDSTRING">
+      <offset>4</offset>
+      <string_length>4</string_length>
+    </column>
+    <column name="Redirectname" type="FIXEDSTRING">
+      <offset>4</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Daylightname</redundant_name>
+      <string_length>4</string_length>
+    </column>
+    <column name="Standardbiasminutes" type="INT16">
+      <offset>8</offset>
+    </column>
+    <column name="Daylightbiasminutes" type="INT16">
+      <offset>10</offset>
+    </column>
+    <column name="Standard" type="EMBEDDEDSTRUCT">
+      <offset>12</offset>
+      <subtable external="CxTimeZoneDateBegin" />
+    </column>
+    <column name="Daylight" type="EMBEDDEDSTRUCT">
+      <offset>17</offset>
+      <subtable external="CxTimeZoneDateBegin" />
+    </column>
+    <column name="Kind" type="INT">
+      <offset>24</offset>
+      <static_define_list external="CxTimeZoneKind" />
+    </column>
+    <column name="Southernhemisphere" type="BIT">
+      <offset>28</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

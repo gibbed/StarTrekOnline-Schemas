@@ -12,7 +12,7 @@
       <dictionary_name>CritterDef</dictionary_name>
     </column>
     <column name="Count" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

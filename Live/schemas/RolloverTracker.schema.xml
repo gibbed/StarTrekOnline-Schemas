@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="erRef" type="INT">
+    <column name="Erref" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uiNextPickupAttemptTime" type="INT">
+    <column name="Uinextpickupattempttime" type="INT">
       <offset>4</offset>
     </column>
-    <column name="attemptCount" type="U8">
+    <column name="Attemptcount" type="U8">
       <offset>8</offset>
     </column>
-    <column name="WasInProximity" type="BIT">
+    <column name="Wasinproximity" type="BIT">
       <offset>12</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="LockedAttempts" type="BIT">
+    <column name="Lockedattempts" type="BIT">
       <offset>12</offset>
       <bit_offset>65537</bit_offset>
     </column>

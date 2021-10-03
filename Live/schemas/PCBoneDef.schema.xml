@@ -16,161 +16,178 @@
       </flags>
     </column>
     <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="geometryFieldDispName" type="EMBEDDEDSTRUCT">
-      <offset>20</offset>
+    <column name="Geometryfielddispname" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="materialFieldDispName" type="EMBEDDEDSTRUCT">
-      <offset>32</offset>
+    <column name="Materialfielddispname" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="patternFieldDispName" type="EMBEDDEDSTRUCT">
-      <offset>44</offset>
+    <column name="Patternfielddispname" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="detailFieldDisplayName" type="EMBEDDEDSTRUCT">
-      <offset>56</offset>
+    <column name="Detailfielddisplayname" type="EMBEDDEDSTRUCT">
+      <offset>112</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="specularFieldDisplayName" type="EMBEDDEDSTRUCT">
-      <offset>68</offset>
+    <column name="Specularfielddisplayname" type="EMBEDDEDSTRUCT">
+      <offset>136</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="diffuseFieldDisplayName" type="EMBEDDEDSTRUCT">
-      <offset>80</offset>
+    <column name="Diffusefielddisplayname" type="EMBEDDEDSTRUCT">
+      <offset>160</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="movableFieldDisplayName" type="EMBEDDEDSTRUCT">
-      <offset>92</offset>
+    <column name="Movablefielddisplayname" type="EMBEDDEDSTRUCT">
+      <offset>184</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Region" type="REFERENCE">
-      <offset>104</offset>
+      <offset>208</offset>
       <dictionary_name>CostumeRegion</dictionary_name>
     </column>
     <column name="BoneName" type="STRING">
-      <offset>108</offset>
+      <offset>216</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ClickBoneName" type="STRING">
-      <offset>112</offset>
+    <column name="Clickbonename" type="STRING">
+      <offset>224</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DefaultGeo" type="REFERENCE">
-      <offset>116</offset>
+    <column name="Defaultgeo" type="REFERENCE">
+      <offset>232</offset>
       <dictionary_name>CostumeGeometry</dictionary_name>
     </column>
-    <column name="MirrorBone" type="REFERENCE">
-      <offset>120</offset>
+    <column name="Mirrorbone" type="REFERENCE">
+      <offset>240</offset>
       <dictionary_name>CostumeBone</dictionary_name>
     </column>
-    <column name="SelfLayer" type="REFERENCE">
-      <offset>124</offset>
+    <column name="Selflayer" type="REFERENCE">
+      <offset>248</offset>
       <dictionary_name>CostumeLayer</dictionary_name>
     </column>
-    <column name="MergeLayer" type="REFERENCE">
-      <offset>128</offset>
+    <column name="Mergelayer" type="REFERENCE">
+      <offset>256</offset>
       <dictionary_name>CostumeLayer</dictionary_name>
     </column>
-    <column name="mergeNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>132</offset>
+    <column name="Mergenamemsg" type="EMBEDDEDSTRUCT">
+      <offset>264</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="ChildBoneEntry" type="STRUCT">
-      <offset>144</offset>
+    <column name="Childboneentry" type="STRUCT">
+      <offset>288</offset>
       <subtable external="PCChildBone" />
     </column>
-    <column name="IsChildBone" type="U8">
-      <offset>148</offset>
+    <column name="Ischildbone" type="U8">
+      <offset>296</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsGuildEmblemBone" type="U8">
-      <offset>149</offset>
+    <column name="Isguildemblembone" type="U8">
+      <offset>297</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MainLayer" type="REFERENCE">
-      <offset>152</offset>
+    <column name="Mainlayer" type="REFERENCE">
+      <offset>304</offset>
       <dictionary_name>CostumeLayer</dictionary_name>
     </column>
-    <column name="MainLayerBack" type="REFERENCE">
-      <offset>156</offset>
+    <column name="Mainlayerback" type="REFERENCE">
+      <offset>312</offset>
       <dictionary_name>CostumeLayer</dictionary_name>
     </column>
-    <column name="MainLayerBoth" type="REFERENCE">
-      <offset>160</offset>
+    <column name="Mainlayerboth" type="REFERENCE">
+      <offset>320</offset>
       <dictionary_name>CostumeLayer</dictionary_name>
     </column>
-    <column name="BodyColorSet0" type="REFERENCE">
-      <offset>164</offset>
+    <column name="Bodycolorset0" type="REFERENCE">
+      <offset>328</offset>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="BodyColorSet" type="REFERENCE">
-      <offset>164</offset>
+    <column name="Bodycolorset" type="REFERENCE">
+      <offset>328</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>BodyColorSet0</redundant_name>
+      <redundant_name>Bodycolorset0</redundant_name>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="BodyColorSet1" type="REFERENCE">
-      <offset>168</offset>
+    <column name="Bodycolorset1" type="REFERENCE">
+      <offset>336</offset>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="BodyColorSet2" type="REFERENCE">
-      <offset>172</offset>
+    <column name="Bodycolorset2" type="REFERENCE">
+      <offset>344</offset>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="BodyColorSet3" type="REFERENCE">
-      <offset>176</offset>
+    <column name="Bodycolorset3" type="REFERENCE">
+      <offset>352</offset>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="ColorChoices" type="INT">
-      <offset>180</offset>
+    <column name="Defaultcolorlink" type="INT">
+      <offset>360</offset>
+      <static_define_list external="PCColorLink" />
+    </column>
+    <column name="Defaultmateriallink" type="INT">
+      <offset>364</offset>
+      <static_define_list external="PCColorLink" />
+    </column>
+    <column name="Colorchoices" type="INT">
+      <offset>368</offset>
       <default>15</default>
       <static_define_list external="PCColorFlags" />
       <format>FLAGS</format>
     </column>
-    <column name="DefaultBoneColorQuad" type="OPTIONALSTRUCT">
-      <offset>184</offset>
+    <column name="Defaultbonecolorquad" type="OPTIONALSTRUCT">
+      <offset>376</offset>
       <subtable external="PCColorQuad" />
     </column>
-    <column name="ColorQuadSet" type="REFERENCE">
-      <offset>188</offset>
+    <column name="Colorquadset" type="REFERENCE">
+      <offset>384</offset>
       <dictionary_name>CostumeColorQuads</dictionary_name>
     </column>
     <column name="Order" type="F32">
-      <offset>192</offset>
+      <offset>392</offset>
     </column>
-    <column name="RandomChance" type="F32">
-      <offset>196</offset>
+    <column name="Randomchance" type="F32">
+      <offset>396</offset>
     </column>
     <column name="LOD" type="INT">
-      <offset>200</offset>
+      <offset>400</offset>
       <default>10</default>
       <static_define_list external="CostumeLODLevel" />
     </column>
-    <column name="RestrictedTo" type="INT">
-      <offset>204</offset>
+    <column name="Restrictedto" type="INT">
+      <offset>404</offset>
       <static_define_list external="PCRestriction" />
       <format>FLAGS</format>
     </column>
-    <column name="PowerFX" type="U8">
-      <offset>208</offset>
+    <column name="Powerfx" type="U8">
+      <offset>408</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Raycastable" type="U8">
-      <offset>209</offset>
+      <offset>409</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
+    <column name="Addgeocategory" type="STRUCT">
+      <offset>416</offset>
+      <subtable external="PCCategoryRef" />
+    </column>
+    <column name="Bautomirrorgeometry" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

@@ -6,11 +6,8 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="device_id" type="STRING">
-      <offset>0</offset>
-    </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>0</offset>
     </column>
     <column name="FileName" type="CURRENTFILE">
       <offset>8</offset>
@@ -19,14 +16,15 @@
       </flags>
     </column>
     <column name="Text" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="perlight" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="lightshadowbuffer" type="STRING">
-      <offset>20</offset>
+    <column name="Lightshadowbuffer" type="STRING">
+      <offset>24</offset>
     </column>
-    <column name="EndLightingModel" type="END" />
+    <column name="Requireslightassembly" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Endlightingmodel" type="END" />
   </table>
 </parser>

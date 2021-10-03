@@ -4,5 +4,7 @@
     <element name="Unspecified">0</element>
     <element name="Arrival">1</element>
     <element name="Departure">2</element>
+    <element name="PuppetSwap_Start">3</element>
+    <element name="PuppetSwap_End">4</element>
   </elements>
 </enum>

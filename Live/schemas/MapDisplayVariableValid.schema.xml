@@ -7,11 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LowValue" type="F32">
+    <column name="Lowvalue" type="F32">
       <offset>0</offset>
     </column>
-    <column name="HighValue" type="F32">
+    <column name="Highvalue" type="F32">
       <offset>4</offset>
+    </column>
+    <column name="Validationignorevalidoverlap" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

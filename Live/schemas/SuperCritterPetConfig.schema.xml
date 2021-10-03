@@ -7,81 +7,112 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TrainingDuration" type="OPTIONALSTRUCT">
+    <column name="Trainingduration" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="Expression" />
     </column>
-    <column name="PetUnbindCost" type="OPTIONALSTRUCT">
-      <offset>4</offset>
-      <subtable external="Expression" />
-    </column>
-    <column name="GemUnslotCost" type="OPTIONALSTRUCT">
+    <column name="Requiredxptable" type="REFERENCE">
       <offset>8</offset>
-      <subtable external="Expression" />
-    </column>
-    <column name="RequiredXPTable" type="REFERENCE">
-      <offset>12</offset>
       <dictionary_name>RewardValTable</dictionary_name>
     </column>
-    <column name="hRushTrainingCurrency" type="REFERENCE">
+    <column name="Hrushtrainingcurrency" type="REFERENCE">
       <offset>16</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="RushCostPerTrainingSecond" type="F32">
-      <offset>20</offset>
-    </column>
-    <column name="MinRushTrainingCost" type="INT">
+    <column name="Rushcostpertrainingsecond" type="F32">
       <offset>24</offset>
     </column>
-    <column name="RenameCost" type="INT">
+    <column name="Minrushtrainingcost" type="INT">
       <offset>28</offset>
     </column>
-    <column name="hRenamingCurrency" type="REFERENCE">
+    <column name="Renamecost" type="INT">
       <offset>32</offset>
-      <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="hUnbindingCurrency" type="REFERENCE">
-      <offset>36</offset>
-      <dictionary_name>ItemDef</dictionary_name>
-    </column>
-    <column name="hGemUnslottingCurrency" type="REFERENCE">
+    <column name="Hrenamingcurrency" type="REFERENCE">
       <offset>40</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="MaxLevelsPerQuality" type="INTARRAY">
-      <offset>44</offset>
-    </column>
-    <column name="CostToUpgradeQuality" type="F32ARRAY">
+    <column name="Maxlevelsperquality" type="INTARRAY">
       <offset>48</offset>
     </column>
-    <column name="QualityModifiers" type="F32ARRAY">
-      <offset>52</offset>
-    </column>
-    <column name="MaxUpgradeQuality" type="INT">
+    <column name="Costtoupgradequality" type="F32ARRAY">
       <offset>56</offset>
     </column>
-    <column name="LevelScalingStartsAtPlayerLevel" type="F32">
-      <offset>60</offset>
-    </column>
-    <column name="LevelsPerPlayerLevel" type="F32">
+    <column name="Hupgradetoken" type="REFERENCE">
       <offset>64</offset>
-      <default>1</default>
+      <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="PetXPGainMultiplier" type="F32">
-      <offset>68</offset>
-      <default>1</default>
-    </column>
-    <column name="GemSlotUnlockLevels" type="INTARRAY">
+    <column name="Tokencosttoupgradequality" type="F32ARRAY">
       <offset>72</offset>
     </column>
-    <column name="EquipSlotUnlockLevels" type="INTARRAY">
-      <offset>76</offset>
-    </column>
-    <column name="CostumeUnlockLevels" type="INTARRAY">
+    <column name="Qualitymodifiers" type="F32ARRAY">
       <offset>80</offset>
     </column>
-    <column name="FakeEntStatsPassiveCategories" type="INTARRAY">
-      <offset>84</offset>
+    <column name="Maxupgradequality" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Levelscalingstartsatplayerlevel" type="F32">
+      <offset>92</offset>
+    </column>
+    <column name="Levelsperplayerlevel" type="F32">
+      <offset>96</offset>
+      <default>1</default>
+    </column>
+    <column name="Petxpgainmultiplier" type="F32">
+      <offset>100</offset>
+      <default>1</default>
+    </column>
+    <column name="Gemslotunlocklevels" type="INTARRAY">
+      <offset>104</offset>
+    </column>
+    <column name="Equipslotunlocklevels" type="INTARRAY">
+      <offset>112</offset>
+    </column>
+    <column name="Costumeunlocklevels" type="INTARRAY">
+      <offset>120</offset>
+    </column>
+    <column name="Globaldisallowequipcategories" type="INTARRAY">
+      <offset>128</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Activebonuspowerbag" type="INT">
+      <offset>136</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Equipbag" type="INT">
+      <offset>140</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Gembag" type="INT">
+      <offset>144</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Petenhancementslotcount" type="INT">
+      <offset>148</offset>
+    </column>
+    <column name="Categories" type="STRINGARRAY">
+      <offset>152</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Bolsterbonusatquality" type="F32ARRAY">
+      <offset>160</offset>
+    </column>
+    <column name="Maxbolstercount" type="INT">
+      <offset>168</offset>
+    </column>
+    <column name="Rank" type="STRUCT">
+      <offset>176</offset>
+      <subtable external="SuperCritterPetRankDef" />
+    </column>
+    <column name="Defaultrankquality" type="INT">
+      <offset>184</offset>
+      <default>-1</default>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Fakeentstatspassivecategories" type="INTARRAY">
+      <offset>192</offset>
       <static_define_list external="PowerCategory" />
     </column>
     <column name="}" type="END" />

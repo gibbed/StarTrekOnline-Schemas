@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SaveLoadoutCBData">
+  <table>
+    <column name="SaveLoadoutCBData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uientref" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Petid" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Loadoutindex" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Activepuppet" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

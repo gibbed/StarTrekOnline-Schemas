@@ -10,11 +10,11 @@
     <column name="Interpolation" type="F32">
       <offset>0</offset>
     </column>
-    <column name="EaseIn" type="INT">
+    <column name="Easein" type="INT">
       <offset>4</offset>
       <static_define_list external="eEaseType" />
     </column>
-    <column name="EaseOut" type="INT">
+    <column name="Easeout" type="INT">
       <offset>8</offset>
       <static_define_list external="eEaseType" />
     </column>

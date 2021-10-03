@@ -14,5 +14,20 @@
     <element name="Banned">10</element>
     <element name="NewMachineID">11</element>
     <element name="CrypticDisabled">12</element>
+    <element name="AULoginFailure">13</element>
+    <element name="AULoginTimeout">14</element>
+    <element name="XSTSTokenVerificationFailure">15</element>
+    <element name="XboxError">15</element>
+    <element name="XSTSUserPermissionDenied">16</element>
+    <element name="IPBanned">17</element>
+    <element name="InvalidDisplayName">18</element>
+    <element name="PSNError">19</element>
+    <element name="ArcError">20</element>
+    <element name="SteamError">21</element>
+    <element name="UnlinkedPlatformAccount">22</element>
+    <element name="PWAccountAlreadyLinked">23</element>
+    <element name="DisabledLoginType">24</element>
+    <element name="EpicError">25</element>
+    <element name="Last">26</element>
   </elements>
 </enum>

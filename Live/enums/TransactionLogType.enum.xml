@@ -8,5 +8,10 @@
     <element name="Exchange">4</element>
     <element name="CustomerService">5</element>
     <element name="FoundryTips">6</element>
+    <element name="Recognition">7</element>
+    <element name="GameAction">8</element>
+    <element name="AccountPromoItems">9</element>
+    <element name="XboxVC">10</element>
+    <element name="XboxProduct">11</element>
   </elements>
 </enum>

@@ -16,84 +16,90 @@
       </flags>
     </column>
     <column name="Scope" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="FileName" type="CURRENTFILE">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
-      <subtable external="DisplayMessage" />
-    </column>
-    <column name="Material" type="STRING">
-      <offset>24</offset>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DefaultPattern" type="REFERENCE">
-      <offset>28</offset>
-      <dictionary_name>CostumeTexture</dictionary_name>
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="DisplayMessage" />
     </column>
-    <column name="DefaultDetail" type="REFERENCE">
-      <offset>32</offset>
-      <dictionary_name>CostumeTexture</dictionary_name>
-    </column>
-    <column name="DefaultSpecular" type="REFERENCE">
-      <offset>36</offset>
-      <dictionary_name>CostumeTexture</dictionary_name>
-    </column>
-    <column name="DefaultDiffuse" type="REFERENCE">
-      <offset>40</offset>
-      <dictionary_name>CostumeTexture</dictionary_name>
-    </column>
-    <column name="DefaultMovable" type="REFERENCE">
-      <offset>44</offset>
-      <dictionary_name>CostumeTexture</dictionary_name>
-    </column>
-    <column name="RestrictedTo" type="U8">
+    <column name="Material" type="STRING">
       <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Defaultpattern" type="REFERENCE">
+      <offset>56</offset>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Defaultdetail" type="REFERENCE">
+      <offset>64</offset>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Defaultspecular" type="REFERENCE">
+      <offset>72</offset>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Defaultdiffuse" type="REFERENCE">
+      <offset>80</offset>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Defaultmovable" type="REFERENCE">
+      <offset>88</offset>
+      <dictionary_name>CostumeTexture</dictionary_name>
+    </column>
+    <column name="Restrictedto" type="U8">
+      <offset>96</offset>
       <static_define_list external="PCRestriction" />
       <format>FLAGS</format>
     </column>
-    <column name="ColorChoices" type="U8">
-      <offset>49</offset>
+    <column name="Colorchoices" type="U8">
+      <offset>97</offset>
       <default>15</default>
       <static_define_list external="PCColorFlags" />
       <format>FLAGS</format>
     </column>
-    <column name="HasSkin" type="BIT">
-      <offset>48</offset>
-      <bit_offset>65552</bit_offset>
+    <column name="Hasskin" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RequiresPattern" type="BIT">
-      <offset>48</offset>
-      <bit_offset>65553</bit_offset>
+    <column name="Requirespattern" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RequiresDetail" type="BIT">
-      <offset>48</offset>
-      <bit_offset>65554</bit_offset>
+    <column name="Requiresdetail" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RequiresSpecular" type="BIT">
-      <offset>48</offset>
-      <bit_offset>65555</bit_offset>
+    <column name="Requiresspecular" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RequiresDiffuse" type="BIT">
-      <offset>48</offset>
-      <bit_offset>65556</bit_offset>
+    <column name="Requiresdiffuse" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RequiresMovable" type="BIT">
-      <offset>48</offset>
-      <bit_offset>65557</bit_offset>
+    <column name="Requiresmovable" type="BIT">
+      <offset>98</offset>
+      <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Texture" type="STRINGARRAY">
-      <offset>52</offset>
+      <offset>104</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>GLOBAL_NAME</flag>
@@ -101,78 +107,18 @@
       <dictionary_name>CostumeTexture</dictionary_name>
     </column>
     <column name="Order" type="F32">
-      <offset>56</offset>
+      <offset>112</offset>
     </column>
-    <column name="RandomWeight" type="F32">
-      <offset>60</offset>
+    <column name="Randomweight" type="F32">
+      <offset>116</offset>
     </column>
-    <column name="ColorOptions" type="OPTIONALSTRUCT">
-      <offset>64</offset>
+    <column name="Coloroptions" type="OPTIONALSTRUCT">
+      <offset>120</offset>
       <subtable external="PCMaterialColorOptions" />
     </column>
-    <column name="deprecated_ColorOptions" type="IGNORE">
-      <flags>
-        <flag>FLATEMBED</flag>
-      </flags>
-    </column>
-    <column name="AllowGlow" type="U8FIXEDARRAY">
-      <offset>68</offset>
-      <num_elements>4</num_elements>
-    </column>
-    <column name="AllowReflection" type="U8FIXEDARRAY">
-      <offset>72</offset>
-      <num_elements>4</num_elements>
-    </column>
-    <column name="AllowSpecularity" type="U8FIXEDARRAY">
-      <offset>76</offset>
-      <num_elements>4</num_elements>
-    </column>
-    <column name="SuppressMuscle" type="U8FIXEDARRAY">
-      <offset>80</offset>
-      <num_elements>4</num_elements>
-    </column>
-    <column name="CustomReflection" type="U8">
-      <offset>84</offset>
-    </column>
-    <column name="CustomSpecularity" type="U8">
-      <offset>85</offset>
-    </column>
-    <column name="defaultReflection" type="U8FIXEDARRAY">
-      <offset>86</offset>
-      <num_elements>4</num_elements>
-    </column>
-    <column name="defaultSpecularity" type="U8FIXEDARRAY">
-      <offset>90</offset>
-      <num_elements>4</num_elements>
-    </column>
     <column name="Options" type="OPTIONALSTRUCT">
-      <offset>96</offset>
+      <offset>128</offset>
       <subtable external="PCMaterialOptions" />
-    </column>
-    <column name="deprecated_Options" type="IGNORE">
-      <flags>
-        <flag>FLATEMBED</flag>
-      </flags>
-    </column>
-    <column name="ExtraColor" type="STRUCT">
-      <offset>100</offset>
-      <subtable external="PCMaterialDefColor" />
-    </column>
-    <column name="ExtraValue" type="STRUCT">
-      <offset>104</offset>
-      <subtable external="PCMaterialDefConstant" />
-    </column>
-    <column name="FXSwap" type="STRUCT">
-      <offset>108</offset>
-      <subtable external="PCFXSwap" />
-    </column>
-    <column name="CostumeGroups" type="STRINGARRAY">
-      <offset>112</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>GLOBAL_NAME</flag>
-      </flags>
-      <dictionary_name>CostumeGroupDict</dictionary_name>
     </column>
     <column name="Style" type="IGNORE" />
     <column name="}" type="END" />

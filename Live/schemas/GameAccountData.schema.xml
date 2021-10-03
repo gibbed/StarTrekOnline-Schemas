@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iAccountID" type="INT">
+    <column name="Iaccountid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,252 +15,548 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eaKeys" type="STRUCT">
-      <offset>4</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <subtable external="AttribValuePair" />
-    </column>
-    <column name="eaVanityPets" type="STRINGARRAY">
+    <column name="Eaumaincharacterids" type="INTARRAY">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eaCostumeKeys" type="STRUCT">
-      <offset>12</offset>
+    <column name="Bsortmainfirst" type="U8">
+      <offset>16</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Esortstyle" type="INT">
+      <offset>20</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="CharacterSelectionSortStyle" />
+    </column>
+    <column name="Eakeys" type="STRUCT">
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="AttribValuePair" />
     </column>
-    <column name="eaAllPurchases" type="STRUCT">
-      <offset>16</offset>
+    <column name="Eavanitypets" type="STRINGARRAY">
+      <offset>32</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eacostumekeys" type="STRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="AttribValuePair" />
+    </column>
+    <column name="Eaallpurchases" type="STRUCT">
+      <offset>48</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="MicroTransaction" />
     </column>
-    <column name="eaPermissions" type="STRUCT">
-      <offset>20</offset>
+    <column name="Eapermissions" type="STRUCT">
+      <offset>56</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="GamePermission" />
     </column>
-    <column name="eaTokens" type="STRUCT">
-      <offset>24</offset>
+    <column name="Eatokens" type="STRUCT">
+      <offset>64</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="GameToken" />
     </column>
-    <column name="pchVoiceUsername" type="STRING">
-      <offset>28</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pchVoicePassword" type="STRING">
-      <offset>32</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>SELF_ONLY</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="iVoiceAccountID" type="INT">
-      <offset>36</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="iVersion" type="INT">
-      <offset>40</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="iDaysSubscribed" type="INT">
-      <offset>44</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="fLongPlayTime" type="F32">
-      <offset>48</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="uFirstPlayedTime" type="INT">
-      <offset>52</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="uTotalPlayedTime" type="INT">
-      <offset>56</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="uTotalPlayedTime_AccountServer" type="INT">
-      <offset>56</offset>
-      <flags>
-        <flag>ALIAS</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <redundant_name>uTotalPlayedTime</redundant_name>
-    </column>
-    <column name="uLastRefreshTime" type="INT">
-      <offset>60</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="bLifetimeSubscription" type="BIT">
-      <offset>64</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <bit_offset>65536</bit_offset>
-    </column>
-    <column name="bPress" type="BIT">
-      <offset>64</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <bit_offset>65537</bit_offset>
-    </column>
-    <column name="bLinkedAccount" type="BIT">
-      <offset>64</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <bit_offset>65538</bit_offset>
-    </column>
-    <column name="bShadowAccount" type="BIT">
-      <offset>64</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <bit_offset>65539</bit_offset>
-    </column>
-    <column name="bBilled" type="BIT">
-      <offset>64</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <bit_offset>65540</bit_offset>
-    </column>
-    <column name="ChatConfig" type="EMBEDDEDSTRUCT">
-      <offset>68</offset>
-      <flags>
-        <flag>PERSIST</flag>
-      </flags>
-      <subtable external="ChatConfig" />
-    </column>
-    <column name="iLastChatAccessLevel" type="INT">
-      <offset>128</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="eaRecruiters" type="STRUCT">
-      <offset>132</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <subtable external="RecruiterContainer" />
-    </column>
-    <column name="eaRecruits" type="STRUCT">
-      <offset>136</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <subtable external="RecruitContainer" />
-    </column>
-    <column name="bUGCAccountCreated" type="U8">
-      <offset>140</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="iFoundryTipBalance" type="INT">
-      <offset>144</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="eaTipRecords" type="STRUCT">
-      <offset>148</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <subtable external="FoundryTipRecord" />
-    </column>
-    <column name="eaAccountKeyValues" type="STRUCT">
-      <offset>152</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <subtable external="AccountProxyKeyValueInfoContainer" />
-    </column>
-    <column name="uMaxCharacterLevelCached" type="INT">
-      <offset>156</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="cachedGamePermissionsFromAccountPermissions" type="STRINGARRAY">
-      <offset>160</offset>
+    <column name="Eaplaytimetokens" type="STRINGARRAY">
+      <offset>72</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uGameSpecficGameAccountDataVersion" type="INT">
-      <offset>164</offset>
+    <column name="Pchvoiceusername" type="STRING">
+      <offset>80</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="bLevelUnrestricted" type="IGNORE" />
-    <column name="bTradePermitted" type="IGNORE" />
-    <column name="bSocialPermitted" type="IGNORE" />
-    <column name="bAllBasicZones" type="IGNORE" />
+    <column name="Pchvoicepassword" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ivoiceaccountid" type="INT">
+      <offset>96</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Iversion" type="INT">
+      <offset>100</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Idayssubscribed" type="INT">
+      <offset>104</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Flongplaytime" type="F32">
+      <offset>108</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ufirstplayedtime" type="INT">
+      <offset>112</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Utotalplayedtime" type="INT">
+      <offset>116</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Utotalplayedtime_Accountserver" type="INT">
+      <offset>116</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Utotalplayedtime</redundant_name>
+    </column>
+    <column name="Ulastrefreshtime" type="INT">
+      <offset>120</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Blifetimesubscription" type="BIT">
+      <offset>124</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Bpress" type="BIT">
+      <offset>124</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Blinkedaccount" type="BIT">
+      <offset>124</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Bshadowaccount" type="BIT">
+      <offset>124</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Bbilled" type="BIT">
+      <offset>124</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Benforceantiaddiction" type="BIT">
+      <offset>124</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Bfraudprobation" type="BIT">
+      <offset>124</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Bfraudprobationdirty" type="BIT">
+      <offset>124</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Bvip" type="BIT">
+      <offset>125</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Btempvip" type="BIT">
+      <offset>125</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Brenown" type="BIT">
+      <offset>125</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Bistradeshowdemoaccount" type="BIT">
+      <offset>125</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Bautofireonforallcharacters" type="BIT">
+      <offset>125</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Bisdevnoal" type="BIT">
+      <offset>125</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="ChatConfig" type="EMBEDDEDSTRUCT">
+      <offset>128</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="ChatConfig" />
+    </column>
+    <column name="Ilastchataccesslevel" type="INT">
+      <offset>224</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Earecruiters" type="STRUCT">
+      <offset>232</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="RecruiterContainer" />
+    </column>
+    <column name="Earecruits" type="STRUCT">
+      <offset>240</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="RecruitContainer" />
+    </column>
+    <column name="Bugcaccountcreated" type="U8">
+      <offset>248</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ifoundrytipbalance" type="INT">
+      <offset>252</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eatiprecords" type="STRUCT">
+      <offset>256</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="FoundryTipRecord" />
+    </column>
+    <column name="Eaaccountkeyvalues" type="STRUCT">
+      <offset>264</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="AccountProxyKeyValueInfoContainer" />
+    </column>
+    <column name="Eaaccountproducts" type="STRUCT">
+      <offset>272</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="AccountProxyProductInfoContainer" />
+    </column>
+    <column name="Umaxcharacterlevelcached" type="INT">
+      <offset>280</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Cachedgamepermissionsfromaccountpermissions" type="STRINGARRAY">
+      <offset>288</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ugamespecficgameaccountdataversion" type="INT">
+      <offset>296</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Timecurrencylimit" type="INT">
+      <offset>300</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Timecurrencyexchangewatermark" type="INT">
+      <offset>304</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Itimeoffirstsuspicioussale" type="INT">
+      <offset>308</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Isuspiciousitemssold" type="INT">
+      <offset>312</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Fhumanity" type="F32">
+      <offset>316</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Micro_Trans2_Purchase" type="STRUCT">
+      <offset>320</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="MicroTrans2PurchaseInfo" />
+    </column>
+    <column name="Eamicrotrans2purchases" type="STRUCT">
+      <offset>320</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Micro_Trans2_Purchase</redundant_name>
+      <subtable external="MicroTrans2PurchaseInfo" />
+    </column>
+    <column name="Pbattlepasssaveddata" type="OPTIONALSTRUCT">
+      <offset>328</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="MT2BattlepassSavedData" />
+    </column>
+    <column name="Targeted_Marketing_Data" type="OPTIONALSTRUCT">
+      <offset>336</offset>
+      <flags>
+        <flag>ALWAYS_ALLOC</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="TargetedMarketingData" />
+    </column>
+    <column name="Ptargetedmarketingdata" type="OPTIONALSTRUCT">
+      <offset>336</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>ALWAYS_ALLOC</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Targeted_Marketing_Data</redundant_name>
+      <subtable external="TargetedMarketingData" />
+    </column>
+    <column name="Eanumericconversionstates" type="STRUCT">
+      <offset>344</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="NumericConversionState" />
+    </column>
+    <column name="Eatimedgrantstates" type="STRUCT">
+      <offset>352</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="TimedGrantState" />
+    </column>
+    <column name="Eaplatformids" type="STRUCT">
+      <offset>360</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PCPlatformID" />
+    </column>
+    <column name="Reacquiretimestamp" type="INT">
+      <offset>368</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Reacquiredurationgone" type="INT">
+      <offset>372</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Reacquirenumtimes" type="INT">
+      <offset>376</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uinpublicmatchcharacterid" type="INT">
+      <offset>380</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Groupprojectdiscountdefnames" type="STRINGARRAY">
+      <offset>384</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Groupprojectbonusdefnames" type="STRINGARRAY">
+      <offset>392</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eaanalyticstags" type="INTARRAY">
+      <offset>400</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="AnalyticsTag" />
+    </column>
+    <column name="Gamespecificfixuponeperaccount" type="INTARRAY">
+      <offset>408</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ss2kfraudupdaterequest" type="INT">
+      <offset>416</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Blevelunrestricted" type="IGNORE" />
+    <column name="Btradepermitted" type="IGNORE" />
+    <column name="Bsocialpermitted" type="IGNORE" />
+    <column name="Ballbasiczones" type="IGNORE" />
+    <column name="Imaincharacterid" type="IGNORE" />
+    <column name="Usteamid" type="IGNORE" />
+    <column name="Eaitemunlocks" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
     <column name="}" type="END" />
   </table>
 </parser>

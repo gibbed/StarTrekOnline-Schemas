@@ -10,37 +10,37 @@
     <column name="Tween" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="UIStyleColorPaletteTween" />
     </column>
-    <column name="TweenTime" type="F32">
-      <offset>4</offset>
-    </column>
-    <column name="InitialPalette" type="EMBEDDEDSTRUCT">
+    <column name="Tweentime" type="F32">
       <offset>8</offset>
+    </column>
+    <column name="Initialpalette" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
       <subtable external="UIStyleColorPalette" />
     </column>
     <column name="Initial" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+      <offset>48</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="UIStyleColorPalette" />
     </column>
-    <column name="FinalPalette" type="EMBEDDEDSTRUCT">
-      <offset>28</offset>
+    <column name="Finalpalette" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
       <subtable external="UIStyleColorPalette" />
     </column>
     <column name="Final" type="OPTIONALSTRUCT">
-      <offset>44</offset>
+      <offset>88</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="UIStyleColorPalette" />
     </column>
     <column name="Output" type="OPTIONALSTRUCT">
-      <offset>48</offset>
+      <offset>96</offset>
       <subtable external="UIStyleColorPalette" />
     </column>
     <column name="}" type="END" />

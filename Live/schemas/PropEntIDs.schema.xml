@@ -7,8 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="eauiPropEntIDs" type="INTARRAY">
+    <column name="Eauipropentids" type="INTARRAY">
       <offset>0</offset>
+    </column>
+    <column name="Initialpropslots" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="AlwaysPropSlot" />
     </column>
     <column name="}" type="END" />
   </table>

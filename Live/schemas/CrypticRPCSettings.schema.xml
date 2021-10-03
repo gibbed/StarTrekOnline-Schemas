@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CrypticRPCSettings">
+  <table>
+    <column name="CrypticRPCSettings" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Containertypeinshard" type="INT">
+      <offset>0</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Containeridinshard" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="timeout" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Destroythisstructafterusing" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requestidautocallbackuid" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>20</offset>
+      <static_define_list external="CrypticRPCSettingFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

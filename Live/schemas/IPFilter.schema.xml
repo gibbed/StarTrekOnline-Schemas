@@ -11,17 +11,20 @@
       <offset>0</offset>
       <static_define_list external="IPFilterType" />
     </column>
-    <column name="uIP1" type="INT">
+    <column name="Ip1" type="INT">
       <offset>4</offset>
+      <format>IP</format>
     </column>
-    <column name="uIP2" type="INT">
+    <column name="Ip2" type="INT">
       <offset>8</offset>
+      <format>IP</format>
     </column>
     <column name="Group" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="reloadable" type="U8">
       <offset>16</offset>
+    </column>
+    <column name="Reloadable" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

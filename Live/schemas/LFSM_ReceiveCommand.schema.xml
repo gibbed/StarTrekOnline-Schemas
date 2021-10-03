@@ -10,8 +10,8 @@
     <column name="cmd" type="INT">
       <offset>0</offset>
     </column>
-    <column name="RootDir" type="STRING">
-      <offset>4</offset>
+    <column name="Rootdir" type="STRING">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

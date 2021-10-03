@@ -7,37 +7,56 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AuctionLots" type="STRUCT">
+    <column name="Auctionlots" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="AuctionLot" />
     </column>
-    <column name="AuctionLotsCounts" type="INTARRAY">
-      <offset>4</offset>
+    <column name="Auctionlotscounts" type="INTARRAY">
+      <offset>8</offset>
     </column>
     <column name="Result" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
       <static_define_list external="AuctionSearchResult" />
     </column>
-    <column name="asrhc" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="realHitcount" type="INT">
-      <offset>16</offset>
-    </column>
-    <column name="maxResults" type="INT">
+    <column name="Asrhc" type="INT">
       <offset>20</offset>
     </column>
-    <column name="timeTaken" type="F32">
+    <column name="Realhitcount" type="INT">
       <offset>24</offset>
     </column>
-    <column name="cooldownEnd" type="INT">
+    <column name="Maxresults" type="INT">
       <offset>28</offset>
     </column>
-    <column name="eaiNonExistingAuctionLotContainerIDs" type="INTARRAY">
+    <column name="Timetaken" type="F32">
       <offset>32</offset>
+    </column>
+    <column name="Cooldownend" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Eainonexistingauctionlotcontainerids" type="INTARRAY">
+      <offset>40</offset>
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>48</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Filterready" type="U8">
+      <offset>56</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

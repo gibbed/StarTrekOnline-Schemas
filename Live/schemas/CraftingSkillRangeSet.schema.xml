@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CraftingSkillRange" type="STRUCT">
+    <column name="Craftingskillrange" type="STRUCT">
       <offset>0</offset>
       <subtable external="CraftingSkillRange" />
     </column>

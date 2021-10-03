@@ -14,17 +14,17 @@
       </flags>
     </column>
     <column name="Value" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Segments" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="MIMEHeaderLineSegment" />
     </column>
     <column name="Errors" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

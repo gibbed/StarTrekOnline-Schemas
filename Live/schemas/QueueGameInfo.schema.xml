@@ -7,29 +7,33 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="QueueDef" type="STRING">
+    <column name="Queuedef" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="LevelBand" type="INT">
-      <offset>4</offset>
+    <column name="Levelband" type="INT">
+      <offset>8</offset>
       <default>-1</default>
     </column>
-    <column name="GameType" type="INT">
-      <offset>8</offset>
+    <column name="Gametype" type="INT">
+      <offset>12</offset>
       <static_define_list external="PVPGameType" />
     </column>
-    <column name="BolsterType" type="INT">
-      <offset>12</offset>
+    <column name="Bolstertype" type="INT">
+      <offset>16</offset>
       <static_define_list external="BolsterType" />
     </column>
-    <column name="BolsterLevel" type="INT">
-      <offset>16</offset>
-    </column>
-    <column name="LeaverPenaltyDuration" type="INT">
+    <column name="Bolsterlevel" type="INT">
       <offset>20</offset>
+    </column>
+    <column name="Leaverpenaltyduration" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Isprivate" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

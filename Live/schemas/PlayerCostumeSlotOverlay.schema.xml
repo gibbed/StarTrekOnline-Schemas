@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PlayerCostumeSlotOverlay">
+  <table>
+    <column name="PlayerCostumeSlotOverlay" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Overlaytype" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pcoverlaytype" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Overlaytype</redundant_name>
+    </column>
+    <column name="Costume" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_AND_TEAM_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PlayerCostume" />
+    </column>
+    <column name="Pcostume" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_AND_TEAM_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Costume</redundant_name>
+      <subtable external="PlayerCostume" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -7,24 +7,35 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uAccountID" type="INT">
+    <column name="Uaccountid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uCharacterID" type="INT">
+    <column name="Ucharacterid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="RelayIPString" type="STRING">
+    <column name="Eairelayips" type="INTARRAY">
       <offset>8</offset>
     </column>
-    <column name="uRelayPort" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="uSecretValue" type="INT">
+    <column name="Urelayport" type="INT">
       <offset>16</offset>
     </column>
-    <column name="userLoginData" type="EMBEDDEDSTRUCT">
+    <column name="Usecretvalue" type="INT">
       <offset>20</offset>
+    </column>
+    <column name="Userlogindata" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
       <subtable external="ChatLoginData" />
+    </column>
+    <column name="Chatrelaylink" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="NetLink" />
+      <format_strings>
+        <format_string name="HTML_SKIP_IN_TABLE">1</format_string>
+        <format_string name="HTML_WRITE_UNOWNED">1</format_string>
+      </format_strings>
     </column>
     <column name="}" type="END" />
   </table>

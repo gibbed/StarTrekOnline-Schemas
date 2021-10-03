@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="TUICurvePoint">
+  <table>
+    <column name="TUICurvePoint" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Center" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="TUICurveControlPoint" />
+    </column>
+    <column name="Controlprev" type="EMBEDDEDSTRUCT">
+      <offset>20</offset>
+      <subtable external="TUICurveControlPoint" />
+    </column>
+    <column name="Controlnext" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
+      <subtable external="TUICurveControlPoint" />
+    </column>
+    <column name="Randomrange" type="F32">
+      <offset>60</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

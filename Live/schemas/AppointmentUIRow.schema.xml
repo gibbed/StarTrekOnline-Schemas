@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="AppointmentUIRow">
+  <table>
+    <column name="AppointmentUIRow" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Appointmentdef" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>AppointmentDef</dictionary_name>
+    </column>
+    <column name="Sortorder" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Canclaim" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

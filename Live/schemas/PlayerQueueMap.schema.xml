@@ -13,15 +13,23 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="MapState" type="INT">
+    <column name="Mapstate" type="INT">
       <offset>8</offset>
       <static_define_list external="QueueMapState" />
     </column>
-    <column name="uMapLaunchTime" type="INT">
+    <column name="Umaplaunchtime" type="INT">
       <offset>12</offset>
     </column>
-    <column name="GroupPlayerCounts" type="INTARRAY">
+    <column name="Groupplayercounts" type="INTARRAY">
       <offset>16</offset>
+    </column>
+    <column name="Acceptingnewmembers" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Mapfull" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

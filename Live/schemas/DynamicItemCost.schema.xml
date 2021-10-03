@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DynamicItemCost">
+  <table>
+    <column name="DynamicItemCost" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Progressionlevel" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Costs" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="DynamicItemInputs" />
+    </column>
+    <column name="Overrideassignment" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Timetocompleteseconds" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Difficultyrating" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

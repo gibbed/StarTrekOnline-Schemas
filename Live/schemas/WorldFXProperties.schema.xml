@@ -14,32 +14,34 @@
       </flags>
     </column>
     <column name="Condition" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="Params" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="Faction" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="Hue" type="F32">
+    <column name="Params" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="HasTarget" type="BIT">
-      <offset>20</offset>
+    <column name="Faction" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Hue" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Hastarget" type="BIT">
+      <offset>36</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="TargetNoAnim" type="BIT">
-      <offset>20</offset>
+    <column name="Targetnoanim" type="BIT">
+      <offset>36</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="targetPos" type="F32FIXEDARRAY">
-      <offset>24</offset>
+    <column name="Targetpos" type="F32FIXEDARRAY">
+      <offset>40</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="TargetPYR" type="F32FIXEDARRAY">
-      <offset>36</offset>
+    <column name="Targetpyr" type="F32FIXEDARRAY">
+      <offset>52</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hNode" type="REFERENCE">
+    <column name="Hnode" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>InteractionDictionary</dictionary_name>
     </column>

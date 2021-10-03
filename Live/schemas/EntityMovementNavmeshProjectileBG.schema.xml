@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EntityMovementNavmeshProjectileBG">
+  <table>
+    <column name="EntityMovementNavmeshProjectileBG" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Speed" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Speedvertical" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="LastPos" type="F32FIXEDARRAY">
+      <offset>8</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Vel" type="F32FIXEDARRAY">
+      <offset>20</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Surfacenormal" type="F32FIXEDARRAY">
+      <offset>32</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Issettled" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Moving" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Onground" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Isignoringgravity" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Playdeathkeyword" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Knockdata" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="EntityMovementNavmeshProjectileKnockData" />
+    </column>
+    <column name="Hasknockdata" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Knockstart" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Impact" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Slidingprone" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Prone" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Gettingup" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Playknockstartanim" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Playimpactanim" type="BIT">
+      <offset>132</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Playedfallinganim" type="BIT">
+      <offset>133</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Playproneanim" type="BIT">
+      <offset>133</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Playgetupanim" type="BIT">
+      <offset>133</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Flagsmutable" type="EMBEDDEDSTRUCT">
+      <offset>134</offset>
+      <subtable external="EntityMovementNavmeshProjectileFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

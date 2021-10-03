@@ -7,187 +7,200 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ChoiceType" type="INT">
+    <column name="Choicetype" type="INT">
       <offset>0</offset>
       <static_define_list external="MapChoiceType" />
     </column>
-    <column name="NumPlayers" type="INT">
+    <column name="Numplayers" type="INT">
       <offset>4</offset>
     </column>
-    <column name="saturation" type="BIT">
+    <column name="Saturation" type="BIT">
       <offset>8</offset>
       <bit_offset>524288</bit_offset>
       <static_define_list external="enumMapSaturation" />
     </column>
-    <column name="LastMap" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Lastmap" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="DebugLogin" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Debuglogin" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="NewMap" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Newmap" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="EditMap" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Editmap" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65539</bit_offset>
     </column>
-    <column name="MapIsLoading" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65548</bit_offset>
+    <column name="Mapisloading" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65540</bit_offset>
     </column>
-    <column name="NotALegalChoice" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65549</bit_offset>
+    <column name="Guildmap" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65541</bit_offset>
     </column>
-    <column name="YourTeamLeaderIsThere" type="BIT">
-      <offset>8</offset>
+    <column name="Notalegalchoice" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Yourteamleaderisthere" type="BIT">
+      <offset>9</offset>
       <flags>
         <flag>USEROPTIONBIT_1</flag>
       </flags>
-      <bit_offset>65550</bit_offset>
+      <bit_offset>65543</bit_offset>
     </column>
-    <column name="PossiblyNewStatic" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65551</bit_offset>
+    <column name="Possiblynewstatic" type="BIT">
+      <offset>10</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="NewCharacterSpawn" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65552</bit_offset>
+    <column name="Newcharacterspawn" type="BIT">
+      <offset>10</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="GoWhereATeammateRecentlyWentInsteadIfPossible" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65553</bit_offset>
+    <column name="Gowhereateammaterecentlywentinsteadifpossible" type="BIT">
+      <offset>10</offset>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="IsHardFull" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65554</bit_offset>
+    <column name="Ishardfull" type="BIT">
+      <offset>10</offset>
+      <bit_offset>65539</bit_offset>
     </column>
-    <column name="IsSoftFull" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65555</bit_offset>
+    <column name="Issoftfull" type="BIT">
+      <offset>10</offset>
+      <bit_offset>65540</bit_offset>
     </column>
     <column name="isCurrent" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65556</bit_offset>
+      <offset>10</offset>
+      <bit_offset>65541</bit_offset>
     </column>
-    <column name="NumTeamMembersThere" type="INT">
+    <column name="Score" type="INT">
       <offset>12</offset>
       <flags>
         <flag>USEROPTIONBIT_1</flag>
       </flags>
     </column>
-    <column name="NumGuildMembersThere" type="INT">
+    <column name="Numteammembersthere" type="INT">
       <offset>16</offset>
       <flags>
         <flag>USEROPTIONBIT_1</flag>
       </flags>
     </column>
-    <column name="NumFriendsThere" type="INT">
+    <column name="Numguildmembersthere" type="INT">
       <offset>20</offset>
       <flags>
         <flag>USEROPTIONBIT_1</flag>
       </flags>
     </column>
-    <column name="baseMapDescription" type="IGNORE">
+    <column name="Numfriendsthere" type="INT">
+      <offset>24</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+    </column>
+    <column name="Basemapdescription" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">MapDescription</format_string>
+      </format_strings>
     </column>
     <column name="MapType" type="U8">
-      <offset>24</offset>
+      <offset>32</offset>
       <static_define_list external="ZoneMapType" />
     </column>
     <column name="OwnerType" type="U8">
-      <offset>25</offset>
+      <offset>33</offset>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="SpawnPosSkipBeaconCheck" type="U8">
-      <offset>26</offset>
+    <column name="Spawnposskipbeaconcheck" type="U8">
+      <offset>34</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="MapDescription" type="STRING">
-      <offset>28</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="mapDetail" type="STRING">
-      <offset>32</offset>
+    <column name="Mapdetail" type="STRING">
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="MapVariables" type="STRING">
-      <offset>36</offset>
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="mapInstanceIndex" type="INT">
-      <offset>40</offset>
+    <column name="Difficultymode" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Mapinstanceindex" type="INT">
+      <offset>72</offset>
     </column>
     <column name="OwnerID" type="INT">
-      <offset>44</offset>
+      <offset>76</offset>
     </column>
-    <column name="spawnPos" type="F32FIXEDARRAY">
-      <offset>48</offset>
+    <column name="Spawnpos" type="F32FIXEDARRAY">
+      <offset>80</offset>
       <flags>
         <flag>USEROPTIONBIT_1</flag>
       </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="spawnPYR" type="F32FIXEDARRAY">
-      <offset>60</offset>
+    <column name="Spawnpyr" type="F32FIXEDARRAY">
+      <offset>92</offset>
       <flags>
         <flag>USEROPTIONBIT_1</flag>
       </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="SpawnPoint" type="STRING">
-      <offset>72</offset>
+      <offset>104</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>USEROPTIONBIT_1</flag>
       </flags>
     </column>
     <column name="ContainerID" type="INT">
-      <offset>76</offset>
-    </column>
-    <column name="UGC" type="U8">
-      <offset>84</offset>
-    </column>
-    <column name="UGCEdit" type="U8">
-      <offset>85</offset>
-    </column>
-    <column name="UGCProjectID" type="INT">
-      <offset>88</offset>
+      <offset>112</offset>
     </column>
     <column name="VirtualShardID" type="INT">
-      <offset>92</offset>
+      <offset>128</offset>
     </column>
     <column name="PartitionID" type="INT">
-      <offset>96</offset>
+      <offset>132</offset>
     </column>
-    <column name="uPartitionID" type="INT">
-      <offset>96</offset>
+    <column name="Upartitionid" type="INT">
+      <offset>132</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>PartitionID</redundant_name>
     </column>
-    <column name="newMapReason" type="FIXEDSTRING">
-      <offset>100</offset>
+    <column name="Newmapreason" type="FIXEDSTRING">
+      <offset>136</offset>
       <string_length>256</string_length>
     </column>
-    <column name="notLegalChoiceReason" type="FIXEDSTRING">
-      <offset>356</offset>
+    <column name="Notlegalchoicereason" type="FIXEDSTRING">
+      <offset>392</offset>
       <string_length>256</string_length>
     </column>
     <column name="PatchInfo" type="OPTIONALSTRUCT">
-      <offset>612</offset>
+      <offset>648</offset>
       <subtable external="DynamicPatchInfo" />
     </column>
     <column name="}" type="END" />

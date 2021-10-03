@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="GearPreview">
+  <table>
+    <column name="GearPreview" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Recentitems" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="Item" />
+    </column>
+    <column name="Itemstodestroynextframe" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="Item" />
+    </column>
+    <column name="Equippedbags" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="InventoryBag" />
+    </column>
+    <column name="Ent" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="Entity" />
+    </column>
+    <column name="Estrgentogetmessages" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Lastframeitemsaddedtodeletelist" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Costumesetindex" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Costumesetoflastitemequipped" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Previewitemsonly" type="BIT">
+      <offset>60</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Costumedirty" type="BIT">
+      <offset>60</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

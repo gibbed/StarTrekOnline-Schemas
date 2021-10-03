@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MechSyncPublic">
+  <table>
+    <column name="MechSyncPublic" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Gravity" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Sprintspeed" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="MaxSpeed" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Maxairspeed" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

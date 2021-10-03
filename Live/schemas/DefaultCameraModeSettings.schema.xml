@@ -7,36 +7,47 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AimSettings" type="OPTIONALSTRUCT">
+    <column name="Ea32validshardplatforms" type="INTARRAY">
       <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <static_define_list external="ShardPlatform" />
+    </column>
+    <column name="Aimsettings" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="AimCameraSettings" />
     </column>
-    <column name="ShooterSettings" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Shootersettings" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="ShooterCameraSettings" />
     </column>
-    <column name="ChaseSettings" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Chasesettings" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="ChaseCameraSettings" />
     </column>
-    <column name="TargetLockSettings" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Targetlocksettings" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="TargetLockCameraSettings" />
     </column>
-    <column name="AutoTargetSettings" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Autotargetsettings" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="AutoTargetSettings" />
     </column>
-    <column name="TweenTargetSettings" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Tweentargetsettings" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="TweenCameraSettings" />
     </column>
-    <column name="GiganticSettings" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Giganticsettings" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <subtable external="GiganticCameraSettings" />
     </column>
-    <column name="SmoothSettings" type="EMBEDDEDSTRUCT">
-      <offset>28</offset>
+    <column name="Isometricsettings" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="IsometricCameraSettings" />
+    </column>
+    <column name="Smoothsettings" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
       <subtable external="SmoothCameraSettings" />
     </column>
     <column name="}" type="END" />

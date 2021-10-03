@@ -10,80 +10,80 @@
     <column name="Key" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="UnlockNumeric" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Unlocknumeric" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="GroupProjectNumericUI" />
     </column>
-    <column name="NumericUnlock" type="OPTIONALSTRUCT">
-      <offset>8</offset>
-      <subtable external="GroupProjectUnlockUI" />
-    </column>
-    <column name="ManualUnlock" type="OPTIONALSTRUCT">
-      <offset>12</offset>
-      <subtable external="GroupProjectUnlockUI" />
-    </column>
-    <column name="NumericProgress" type="INT">
+    <column name="Numericunlock" type="OPTIONALSTRUCT">
       <offset>16</offset>
+      <subtable external="GroupProjectUnlockUI" />
     </column>
-    <column name="RequiredProgress" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="StatusNumber" type="INT">
+    <column name="Manualunlock" type="OPTIONALSTRUCT">
       <offset>24</offset>
+      <subtable external="GroupProjectUnlockUI" />
+    </column>
+    <column name="Numericprogress" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Requiredprogress" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Statusnumber" type="INT">
+      <offset>40</offset>
       <static_define_list external="GroupProjectLevelTreeNodeStatus" />
     </column>
-    <column name="StatusName" type="STRING">
-      <offset>28</offset>
+    <column name="Statusname" type="STRING">
+      <offset>48</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Style" type="STRING">
-      <offset>32</offset>
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Image" type="STRING">
-      <offset>36</offset>
+      <offset>64</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Icon" type="STRING">
-      <offset>40</offset>
+      <offset>72</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="LevelMessage" type="STRING">
-      <offset>44</offset>
+    <column name="Levelmessage" type="STRING">
+      <offset>80</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="XPMessage" type="STRING">
-      <offset>48</offset>
+    <column name="Xpmessage" type="STRING">
+      <offset>88</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="XPUnlockMessage" type="STRING">
-      <offset>52</offset>
+    <column name="Xpunlockmessage" type="STRING">
+      <offset>96</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="NumericStarted" type="BIT">
-      <offset>56</offset>
+    <column name="Numericstarted" type="BIT">
+      <offset>104</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="NumericUnlocked" type="BIT">
-      <offset>56</offset>
+    <column name="Numericunlocked" type="BIT">
+      <offset>104</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="ManualUnlocked" type="BIT">
-      <offset>56</offset>
+    <column name="Manualunlocked" type="BIT">
+      <offset>104</offset>
       <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />

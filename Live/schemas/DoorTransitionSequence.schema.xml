@@ -7,35 +7,44 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TransitionType" type="INT">
+    <column name="Transitiontype" type="INT">
       <offset>0</offset>
       <static_define_list external="DoorTransitionType" />
     </column>
     <column name="Allegiance" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>Allegiance</dictionary_name>
     </column>
-    <column name="SourceRegionType" type="INTARRAY">
-      <offset>8</offset>
-      <static_define_list external="WorldRegionType" />
-    </column>
-    <column name="DestinationRegionType" type="INTARRAY">
-      <offset>12</offset>
-      <static_define_list external="WorldRegionType" />
-    </column>
-    <column name="PlayAnimationList" type="OPTIONALSTRUCT">
+    <column name="Samemap" type="U8">
       <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requiresexpr" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Sourceregiontype" type="INTARRAY">
+      <offset>32</offset>
+      <static_define_list external="WorldRegionType" />
+    </column>
+    <column name="Destinationregiontype" type="INTARRAY">
+      <offset>40</offset>
+      <static_define_list external="WorldRegionType" />
+    </column>
+    <column name="Playanimationlist" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="DoorTransitionAnimation" />
     </column>
-    <column name="PlayCutscene" type="REFERENCE">
-      <offset>20</offset>
+    <column name="Playcutscene" type="REFERENCE">
+      <offset>56</offset>
       <dictionary_name>Cutscene</dictionary_name>
     </column>
-    <column name="PlayMovie" type="STRING">
-      <offset>24</offset>
+    <column name="Playmovie" type="STRING">
+      <offset>64</offset>
     </column>
-    <column name="OrientToMapExit" type="U8">
-      <offset>28</offset>
+    <column name="Orienttomapexit" type="U8">
+      <offset>72</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

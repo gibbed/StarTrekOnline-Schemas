@@ -10,6 +10,8 @@
     <element name="Soil_Depth">6</element>
     <element name="Selection">7</element>
     <element name="Shadow">8</element>
-    <element name="DesignAttr">9</element>
+    <element name="Color">9</element>
+    <element name="PigmentMap">10</element>
+    <element name="ControlMapWarnings">11</element>
   </elements>
 </enum>

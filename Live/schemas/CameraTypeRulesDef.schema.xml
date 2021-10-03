@@ -11,13 +11,14 @@
       <offset>0</offset>
       <static_define_list external="CameraType" />
     </column>
-    <column name="ModeRegion" type="STRUCT">
-      <offset>4</offset>
+    <column name="Moderegion" type="STRUCT">
+      <offset>8</offset>
       <subtable external="CameraModeRegion" />
     </column>
-    <column name="UserSelectable" type="U8">
-      <offset>8</offset>
+    <column name="Userselectable" type="U8">
+      <offset>16</offset>
       <default>1</default>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

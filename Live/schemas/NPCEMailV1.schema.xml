@@ -7,32 +7,33 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iLastUsedID" type="INT">
+    <column name="Ilastusedid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="mail" type="STRUCT">
-      <offset>4</offset>
+    <column name="Mail" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="NPCEMailDataV1" />
     </column>
-    <column name="uLastSyncTime" type="INT">
-      <offset>8</offset>
+    <column name="Ulastsynctime" type="INT">
+      <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="bReadAll" type="U8">
-      <offset>12</offset>
+    <column name="Breadall" type="U8">
+      <offset>20</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

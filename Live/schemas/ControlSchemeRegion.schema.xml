@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="eType" type="INT">
+    <column name="Etype" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
@@ -16,15 +16,19 @@
       </flags>
       <static_define_list external="ControlSchemeRegionType" />
     </column>
-    <column name="pchScheme" type="STRING">
+    <column name="Eplat" type="INT">
       <offset>4</offset>
+      <static_define_list external="ShardPlatform" />
+    </column>
+    <column name="Pchscheme" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="iRegion" type="IGNORE" />
+    <column name="Iregion" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

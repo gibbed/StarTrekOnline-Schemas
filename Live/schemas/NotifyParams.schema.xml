@@ -12,11 +12,11 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1201</default>
+      <default>1313</default>
       <static_define_list external="AttribType" />
     </column>
     <column name="MessageKey" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

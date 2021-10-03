@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AvailableAssignments" type="STRUCT">
+    <column name="Availableassignments" type="STRUCT">
       <offset>0</offset>
       <subtable external="ItemAssignmentDefRef" />
     </column>

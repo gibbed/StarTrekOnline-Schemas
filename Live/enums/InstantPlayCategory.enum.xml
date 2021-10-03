@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="InstantPlayCategory">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="All">1</element>
+    <element name="Beta">2</element>
+    <element name="Delta">3</element>
+    <element name="Kcw">4</element>
+    <element name="Event_First_Contact_Day">5</element>
+  </elements>
+</enum>

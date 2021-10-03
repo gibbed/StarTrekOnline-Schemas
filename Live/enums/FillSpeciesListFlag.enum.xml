@@ -8,5 +8,6 @@
     <element name="OnlyIncludeGenderFemale">32</element>
     <element name="OnlyIncludeGenderMale">64</element>
     <element name="HideBetaSpecies">128</element>
+    <element name="SortUnlocked">256</element>
   </elements>
 </enum>

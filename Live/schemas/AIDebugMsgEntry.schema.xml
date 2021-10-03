@@ -11,16 +11,16 @@
       <offset>0</offset>
     </column>
     <column name="timeSince" type="F32">
-      <offset>4</offset>
-    </column>
-    <column name="Count" type="INT">
       <offset>8</offset>
     </column>
-    <column name="Sources" type="STRING">
+    <column name="Count" type="INT">
       <offset>12</offset>
     </column>
-    <column name="attachedEnts" type="STRING">
+    <column name="Sources" type="STRING">
       <offset>16</offset>
+    </column>
+    <column name="Attachedents" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

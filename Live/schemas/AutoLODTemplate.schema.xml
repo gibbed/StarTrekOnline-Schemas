@@ -12,11 +12,12 @@
     <column name="LODFar" type="F32">
       <offset>4</offset>
     </column>
-    <column name="NoFade" type="U8">
+    <column name="Nofade" type="U8">
       <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="LodNearFade" type="IGNORE" />
-    <column name="LodFarFade" type="IGNORE" />
+    <column name="Lodnearfade" type="IGNORE" />
+    <column name="Lodfarfade" type="IGNORE" />
     <column name="End" type="END" />
   </table>
 </parser>

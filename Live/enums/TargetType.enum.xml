@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <enum name="TargetType">
+  <parent>FightClubTargetType</parent>
   <elements type="int">
     <element name="Alive">1</element>
     <element name="Self">2</element>
@@ -20,6 +21,7 @@
     <element name="NearDeath">65536</element>
     <element name="Ridable">131072</element>
     <element name="Critterpet">262144</element>
-    <element name="kTargetType_PlaceHolder">524288</element>
+    <element name="AttachedEnt">524288</element>
+    <element name="OwnersOwned">1048576</element>
   </elements>
 </enum>

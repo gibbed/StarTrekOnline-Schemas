@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pVal" type="STRING">
+    <column name="Pval" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
@@ -17,8 +17,8 @@
         <format_string name="XML_ENCODE_BASE64">1</format_string>
       </format_strings>
     </column>
-    <column name="uCount" type="INT">
-      <offset>4</offset>
+    <column name="Ucount" type="INT">
+      <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>

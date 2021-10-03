@@ -7,18 +7,41 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="_internal_SubdividedAmount" type="INT64">
+    <column name="Subdivided_Amount" type="INT64">
       <offset>0</offset>
       <flags>
+        <flag>STRUCTPARAM</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="_internal_Currency" type="STRING">
-      <offset>8</offset>
+    <column name="_Internal_Subdividedamount" type="INT64">
+      <offset>0</offset>
       <flags>
-        <flag>ESTRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
         <flag>PERSIST</flag>
       </flags>
+      <redundant_name>Subdivided_Amount</redundant_name>
+    </column>
+    <column name="Currency" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>PERSIST</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="_Internal_Currency" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>PERSIST</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+      <redundant_name>Currency</redundant_name>
     </column>
     <column name="}" type="END" />
   </table>

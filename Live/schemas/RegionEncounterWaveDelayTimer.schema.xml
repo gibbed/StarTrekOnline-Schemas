@@ -6,25 +6,26 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="Type" type="INT">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <static_define_list external="WorldEncounterWaveTimerType" />
+      <static_define_list external="EncounterInstanceWaveDelayTimerType" />
     </column>
-    <column name="MinValue" type="INT64">
+    <column name="Minvalue" type="INT64">
       <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="MaxValue" type="INT64">
+    <column name="Maxvalue" type="INT64">
       <offset>16</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

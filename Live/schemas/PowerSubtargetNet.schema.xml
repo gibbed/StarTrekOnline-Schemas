@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="cpchName" type="STRING">
+    <column name="Cpchname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Health" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="HealthMax" type="INT">
       <offset>8</offset>
     </column>
-    <column name="Category" type="BIT">
+    <column name="Healthmax" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Category" type="BIT">
+      <offset>16</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

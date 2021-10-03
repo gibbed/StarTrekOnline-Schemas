@@ -16,27 +16,27 @@
       </flags>
     </column>
     <column name="DisplayName" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="IconName" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="availableExpression" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Availableexpression" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="Expression" />
     </column>
     <column name="Value" type="INT">
-      <offset>20</offset>
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

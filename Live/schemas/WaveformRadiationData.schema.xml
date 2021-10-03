@@ -10,19 +10,19 @@
     <column name="Repetitions" type="INT">
       <offset>0</offset>
     </column>
-    <column name="MinHeight" type="INT">
+    <column name="Minheight" type="INT">
       <offset>4</offset>
     </column>
-    <column name="MaxHeight" type="INT">
+    <column name="Maxheight" type="INT">
       <offset>8</offset>
     </column>
-    <column name="MinWidth" type="INT">
+    <column name="Minwidth" type="INT">
       <offset>12</offset>
     </column>
-    <column name="MaxWidth" type="INT">
+    <column name="Maxwidth" type="INT">
       <offset>16</offset>
     </column>
-    <column name="TweenTime" type="F32">
+    <column name="Tweentime" type="F32">
       <offset>20</offset>
     </column>
     <column name="}" type="END" />

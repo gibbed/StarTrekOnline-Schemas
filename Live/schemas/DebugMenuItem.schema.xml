@@ -7,21 +7,21 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="displayText" type="STRING">
+    <column name="Displaytext" type="STRING">
       <offset>0</offset>
     </column>
     <column name="CommandString" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="rolloverText" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="subItems" type="STRUCT">
+    <column name="Rollovertext" type="STRING">
       <offset>16</offset>
+    </column>
+    <column name="Subitems" type="STRUCT">
+      <offset>32</offset>
       <subtable external="DebugMenuItem" />
     </column>
     <column name="Open" type="BIT">
-      <offset>20</offset>
+      <offset>40</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemProgressionCatalystSortData">
+  <table>
+    <column name="ItemProgressionCatalystSortData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Catalystbag" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Catalystslot" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Uxp" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Ustreakcount" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Count" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Item" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="Item" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

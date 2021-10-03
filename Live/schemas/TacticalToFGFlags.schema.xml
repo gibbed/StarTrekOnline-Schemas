@@ -11,69 +11,69 @@
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="runningUpdated" type="BIT">
+    <column name="Runningupdated" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="isRunning" type="BIT">
+    <column name="Isrunning" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="runUsesFuel" type="BIT">
+    <column name="Runusesfuel" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="aimingUpdated" type="BIT">
+    <column name="Aimingupdated" type="BIT">
       <offset>0</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="isAiming" type="BIT">
+    <column name="Isaiming" type="BIT">
       <offset>0</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="aimWhenAvailable" type="BIT">
+    <column name="Aimwhenavailable" type="BIT">
       <offset>0</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="crouchUpdated" type="BIT">
+    <column name="Crouchupdated" type="BIT">
       <offset>0</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="isCrouching" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Iscrouching" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="crouchWhenAvailable" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Crouchwhenavailable" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="rollingUpdated" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Rollingupdated" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="isRolling" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Isrolling" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65539</bit_offset>
     </column>
-    <column name="waitingToRoll" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65548</bit_offset>
+    <column name="Waitingtoroll" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65540</bit_offset>
     </column>
-    <column name="waitingToRollUpdated" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65549</bit_offset>
+    <column name="Waitingtorollupdated" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65541</bit_offset>
     </column>
-    <column name="cooldownUpdated" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65550</bit_offset>
+    <column name="Cooldownupdated" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65542</bit_offset>
     </column>
-    <column name="cooldownIsFromRunning" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65551</bit_offset>
+    <column name="Cooldownisfromrunning" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65543</bit_offset>
     </column>
-    <column name="cooldownIsFromAiming" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65552</bit_offset>
+    <column name="Cooldownisfromaiming" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

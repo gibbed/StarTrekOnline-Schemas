@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hParent" type="REFERENCE">
+    <column name="Hparent" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>PowerTreeDef</dictionary_name>
     </column>
-    <column name="hDependant" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hdependant" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>PowerTreeDef</dictionary_name>
     </column>
     <column name="}" type="END" />

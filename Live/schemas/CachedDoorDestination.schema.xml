@@ -11,11 +11,11 @@
       <offset>0</offset>
       <subtable external="WorldInteractionPropertyEntry" />
     </column>
-    <column name="uiExpireTime" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="DoorKey" type="STRING">
+    <column name="Uiexpiretime" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Doorkey" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -6,42 +6,51 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="TimeOffset" type="F32">
+    <column name="Timeoffset" type="F32">
       <offset>0</offset>
     </column>
-    <column name="SwayAngle" type="F32FIXEDARRAY">
+    <column name="Swayangle" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="SwayTime" type="F32FIXEDARRAY">
+    <column name="Swaytime" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="RotationTime" type="F32FIXEDARRAY">
+    <column name="Rotationtime" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="ScaleAmount" type="F32FIXEDARRAY">
+    <column name="Scaleamount" type="F32FIXEDARRAY">
       <offset>40</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="ScaleTime" type="F32FIXEDARRAY">
+    <column name="Scaletime" type="F32FIXEDARRAY">
       <offset>52</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="TranslationAmount" type="F32FIXEDARRAY">
+    <column name="Translationamount" type="F32FIXEDARRAY">
       <offset>64</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="TranslationTime" type="F32FIXEDARRAY">
+    <column name="Translationtime" type="F32FIXEDARRAY">
       <offset>76</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="TranslationLoop" type="U8">
+    <column name="Translationloop" type="U8">
       <offset>88</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="LocalSpace" type="U8">
+    <column name="Localspace" type="U8">
       <offset>89</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

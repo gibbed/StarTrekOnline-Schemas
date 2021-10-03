@@ -10,18 +10,18 @@
     <column name="UID" type="INT">
       <offset>0</offset>
     </column>
-    <column name="mail" type="STRUCT">
-      <offset>4</offset>
+    <column name="Mail" type="STRUCT">
+      <offset>8</offset>
       <subtable external="WebRequestChatMailStruct" />
     </column>
-    <column name="uTotalMail" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="uPage" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="uPageSize" type="INT">
+    <column name="Utotalmail" type="INT">
       <offset>16</offset>
+    </column>
+    <column name="Upage" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Upagesize" type="INT">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

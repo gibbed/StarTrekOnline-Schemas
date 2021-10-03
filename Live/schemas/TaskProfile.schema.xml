@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="totalTaskTime" type="EMBEDDEDSTRUCT">
+    <column name="Totaltasktime" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="TaskProfileTime" />
     </column>
     <column name="BytesRead" type="INT64">
       <offset>16</offset>
     </column>
-    <column name="bytesWrite" type="INT64">
+    <column name="Byteswrite" type="INT64">
       <offset>24</offset>
     </column>
     <column name="}" type="END" />

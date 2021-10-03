@@ -13,8 +13,8 @@
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="i" type="INT">
-      <offset>4</offset>
+    <column name="I" type="INT">
+      <offset>8</offset>
       <flags>
         <flag>KEY</flag>
       </flags>

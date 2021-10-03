@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DynamicItemLevelTableDef">
+  <table>
+    <column name="DynamicItemLevelTableDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Tablename" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+    </column>
+    <column name="Itemlevels" type="INTARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Minreqlevels" type="INTARRAY">
+      <offset>24</offset>
+    </column>
+    <column name="Usagerestrictioncategories" type="INTARRAY">
+      <offset>32</offset>
+      <static_define_list external="UsageRestrictionCategory" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

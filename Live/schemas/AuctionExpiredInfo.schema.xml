@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="esAuctionExpiredFromName" type="STRING">
+    <column name="Esauctionexpiredfromname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="esAuctionExpiredBody" type="STRING">
-      <offset>4</offset>
+    <column name="Esauctionexpiredbody" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="esAuctionExpiredSubject" type="STRING">
-      <offset>8</offset>
+    <column name="Esauctionexpiredsubject" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

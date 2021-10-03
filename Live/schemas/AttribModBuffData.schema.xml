@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ModNetIdx" type="INTARRAY">
+    <column name="Modnetidx" type="INTARRAY">
       <offset>0</offset>
     </column>
-    <column name="StackGroup" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Stackgroup" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="UIStackGroupData" />
     </column>

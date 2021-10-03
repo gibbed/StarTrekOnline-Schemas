@@ -4,8 +4,8 @@
     <element name="MULTIPLEX">220</element>
     <element name="MULTIPLEX_REQUESTS_LINK">221</element>
     <element name="FILESENDINGMODE">222</element>
-    <element name="UNUSED_223">223</element>
-    <element name="UNUSED_224">224</element>
+    <element name="CRYPTICRPC">223</element>
+    <element name="GUARANTEED_DELIVERY">224</element>
     <element name="UNUSED_225">225</element>
     <element name="UNUSED_226">226</element>
     <element name="UNUSED_227">227</element>

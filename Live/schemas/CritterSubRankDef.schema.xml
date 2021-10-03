@@ -14,20 +14,21 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="IsDefault" type="U8">
-      <offset>4</offset>
-    </column>
-    <column name="ClassInfoType" type="STRING">
+    <column name="Isdefault" type="U8">
       <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Classinfotype" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Order" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
-    <column name="ConModifier" type="INT">
-      <offset>16</offset>
+    <column name="Conmodifier" type="INT">
+      <offset>28</offset>
     </column>
     <column name="}" type="END" />
   </table>

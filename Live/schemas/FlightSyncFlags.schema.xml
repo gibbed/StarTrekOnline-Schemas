@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="fakeroll" type="BIT">
+    <column name="Fakeroll" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
@@ -15,21 +15,49 @@
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="useThrottle" type="BIT">
+    <column name="Usethrottle" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="useOffsetRotation" type="BIT">
+    <column name="Useoffsetrotation" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="isGravitySet" type="BIT">
+    <column name="Isgravityset" type="BIT">
       <offset>0</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="isGlidingSet" type="BIT">
+    <column name="Isglidingset" type="BIT">
       <offset>0</offset>
       <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Isflightrollset" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Doubletapdoesroll" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Flightrollforward" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Flightrollbackward" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Flightrollleft" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Flightrollright" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Flightrolldisabled" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65540</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

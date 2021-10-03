@@ -7,37 +7,45 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="param0" type="F32FIXEDARRAY">
+    <column name="Param0" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="param1" type="F32FIXEDARRAY">
+    <column name="Param1" type="F32FIXEDARRAY">
       <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="param2" type="F32FIXEDARRAY">
+    <column name="Param2" type="F32FIXEDARRAY">
       <offset>24</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="param3" type="F32FIXEDARRAY">
+    <column name="Param3" type="F32FIXEDARRAY">
       <offset>36</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="param4" type="F32FIXEDARRAY">
+    <column name="Param4" type="F32FIXEDARRAY">
       <offset>48</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="param5" type="F32FIXEDARRAY">
+    <column name="Param5" type="F32FIXEDARRAY">
       <offset>60</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="param6" type="F32FIXEDARRAY">
+    <column name="Param6" type="F32FIXEDARRAY">
       <offset>72</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="param7" type="F32FIXEDARRAY">
+    <column name="Param7" type="F32FIXEDARRAY">
       <offset>84</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

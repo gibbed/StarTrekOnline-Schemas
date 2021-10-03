@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="LoadoutSearchGem">
+  <table>
+    <column name="LoadoutSearchGem" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hitemdef" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Progressionxp" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Count" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="EntID" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Bagid" type="INT">
+      <offset>20</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Supercritterpetidx" type="INT">
+      <offset>24</offset>
+      <default>-1</default>
+    </column>
+    <column name="SlotIdx" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Gemslotidx" type="INT">
+      <offset>32</offset>
+      <default>-1</default>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

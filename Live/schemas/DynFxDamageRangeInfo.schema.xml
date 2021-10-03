@@ -6,21 +6,22 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="MinHitPoints" type="F32">
+    <column name="Minhitpoints" type="F32">
       <offset>0</offset>
     </column>
-    <column name="MaxHitPoints" type="F32">
+    <column name="Maxhitpoints" type="F32">
       <offset>4</offset>
     </column>
-    <column name="UseAbsoluteValues" type="U8">
+    <column name="Useabsolutevalues" type="U8">
       <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DamageFx" type="STRUCT">
-      <offset>12</offset>
+    <column name="Damagefx" type="STRUCT">
+      <offset>16</offset>
       <subtable external="DynFxDamageRangeInfoFxRef" />
     </column>
-    <column name="DamageFxAlpha" type="STRUCT">
-      <offset>16</offset>
+    <column name="Damagefxalpha" type="STRUCT">
+      <offset>24</offset>
       <subtable external="DynFxDamageRangeInfoFxRef" />
     </column>
     <column name="End" type="END" />

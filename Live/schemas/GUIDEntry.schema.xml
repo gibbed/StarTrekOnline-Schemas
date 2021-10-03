@@ -13,7 +13,7 @@
       </flags>
     </column>
     <column name="UID" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>

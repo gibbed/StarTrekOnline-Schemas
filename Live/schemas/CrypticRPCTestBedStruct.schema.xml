@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CrypticRPCTestBedStruct">
+  <table>
+    <column name="CrypticRPCTestBedStruct" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="X" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="F" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Str" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Int32array" type="INTARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Int64array" type="INT64">
+      <offset>24</offset>
+      <flags>
+        <flag>EARRAY</flag>
+      </flags>
+    </column>
+    <column name="F32array" type="F32ARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

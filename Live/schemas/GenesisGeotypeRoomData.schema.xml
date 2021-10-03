@@ -7,24 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="OffsetFromWater" type="F32">
+    <column name="Offsetfromwater" type="F32">
       <offset>0</offset>
     </column>
-    <column name="MaxRoadAngle" type="F32">
+    <column name="Maxroadangle" type="F32">
       <offset>4</offset>
     </column>
-    <column name="MaxNatureAngle" type="F32">
+    <column name="Maxnatureangle" type="F32">
       <offset>8</offset>
     </column>
-    <column name="NoMountains" type="BIT">
+    <column name="Nomountains" type="BIT">
       <offset>12</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="NoChasms" type="BIT">
+    <column name="Nochasms" type="BIT">
       <offset>12</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="NoPlains" type="BIT">
+    <column name="Noplains" type="BIT">
       <offset>12</offset>
       <bit_offset>65538</bit_offset>
     </column>

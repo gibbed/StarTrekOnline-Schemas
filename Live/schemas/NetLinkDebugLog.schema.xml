@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="NetLinkDebugLog">
+  <table>
+    <column name="NetLinkDebugLog" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_DEF_FIELDS_TO_SHOW">LinkDebugName, LastActivityTime</format_string>
+      </format_strings>
+    </column>
+    <column name="{" type="START" />
+    <column name="ID" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Linkdebugname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Lastactivitytime" type="INT">
+      <offset>16</offset>
+      <format_strings>
+        <format_string name="HTML_SECS_AGO">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Debugloggingstarttime" type="INT">
+      <offset>20</offset>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Entries" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="NetLinkDebugLogEntry" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="testMask">
+  <elements type="int">
+    <element name="flagOne">1</element>
+    <element name="flagTwo">2</element>
+    <element name="flagFour">4</element>
+  </elements>
+</enum>

@@ -6,33 +6,45 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="CritterGroupType" type="INT">
+    <column name="Crittergrouptype" type="INT">
       <offset>0</offset>
       <static_define_list external="EncounterSharedCritterGroupSource" />
     </column>
     <column name="CritterGroup" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>CritterGroup</dictionary_name>
     </column>
-    <column name="CritterGroupMapVar" type="STRING">
-      <offset>8</offset>
+    <column name="Crittergroupmapvar" type="STRING">
+      <offset>16</offset>
     </column>
-    <column name="CritterFactionType" type="INT">
-      <offset>12</offset>
+    <column name="Crittertagtype" type="INT">
+      <offset>24</offset>
+      <static_define_list external="EncounterSharedCritterTagSource" />
+    </column>
+    <column name="Crittertag" type="INTARRAY">
+      <offset>32</offset>
+      <static_define_list external="CritterTag" />
+    </column>
+    <column name="Crittertagmapvar" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Critterfactiontype" type="INT">
+      <offset>48</offset>
       <static_define_list external="EncounterCritterOverrideType" />
     </column>
     <column name="CritterFaction" type="REFERENCE">
-      <offset>16</offset>
+      <offset>56</offset>
       <dictionary_name>CritterFaction</dictionary_name>
     </column>
-    <column name="OverrideSendDistance" type="F32">
-      <offset>20</offset>
+    <column name="Overridesenddistance" type="F32">
+      <offset>64</offset>
     </column>
     <column name="Gang" type="INT">
-      <offset>24</offset>
+      <offset>68</offset>
     </column>
-    <column name="OverrideParentValues" type="U8">
-      <offset>28</offset>
+    <column name="Overrideparentvalues" type="U8">
+      <offset>72</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

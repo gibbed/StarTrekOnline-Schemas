@@ -16,14 +16,34 @@
       </flags>
     </column>
     <column name="DisplayName" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Icon" type="STRING">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
+    </column>
+    <column name="Contactindicatoravailable" type="INT">
+      <offset>40</offset>
+      <static_define_list external="ContactIndicator" />
+    </column>
+    <column name="Contactindicatorcompleted" type="INT">
+      <offset>44</offset>
+      <static_define_list external="ContactIndicator" />
+    </column>
+    <column name="Contactindicatorinprogress" type="INT">
+      <offset>48</offset>
+      <static_define_list external="ContactIndicator" />
+    </column>
+    <column name="Contactindicatorblockedbyrequirements" type="INT">
+      <offset>52</offset>
+      <static_define_list external="ContactIndicator" />
+    </column>
+    <column name="Visiblecondition" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="Expression" />
     </column>
     <column name="}" type="END" />
   </table>

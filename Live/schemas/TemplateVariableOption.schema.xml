@@ -12,14 +12,14 @@
       <subtable external="TemplateVariable" />
     </column>
     <column name="Weight" type="F32">
-      <offset>40</offset>
+      <offset>48</offset>
       <default>1</default>
     </column>
     <column name="MinLevel" type="INT">
-      <offset>44</offset>
+      <offset>52</offset>
     </column>
     <column name="MaxLevel" type="INT">
-      <offset>48</offset>
+      <offset>56</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NumEntries" type="INT">
+    <column name="Numentries" type="INT">
       <offset>0</offset>
     </column>
     <column name="Size" type="INT">

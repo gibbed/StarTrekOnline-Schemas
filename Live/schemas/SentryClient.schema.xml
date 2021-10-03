@@ -12,36 +12,36 @@
       <flags>
         <flag>KEY</flag>
       </flags>
-      <string_length>260</string_length>
+      <string_length>521</string_length>
     </column>
-    <column name="first_heard" type="INT">
-      <offset>260</offset>
+    <column name="First_Heard" type="INT">
+      <offset>524</offset>
     </column>
-    <column name="last_heard" type="INT">
-      <offset>264</offset>
+    <column name="Last_Heard" type="INT">
+      <offset>528</offset>
     </column>
     <column name="Stats" type="STRUCT">
-      <offset>268</offset>
+      <offset>536</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>
       <subtable external="Stat" />
     </column>
     <column name="Machine" type="OPTIONALSTRUCT">
-      <offset>280</offset>
+      <offset>560</offset>
       <subtable external="SentryServerMachine" />
     </column>
-    <column name="local_ip" type="INT">
-      <offset>288</offset>
+    <column name="Local_Ip" type="INT">
+      <offset>572</offset>
     </column>
-    <column name="public_ip" type="INT">
-      <offset>292</offset>
+    <column name="Public_Ip" type="INT">
+      <offset>576</offset>
     </column>
     <column name="Tag" type="INT">
-      <offset>296</offset>
+      <offset>580</offset>
     </column>
-    <column name="done_patching" type="BIT">
-      <offset>300</offset>
+    <column name="Done_Patching" type="BIT">
+      <offset>584</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

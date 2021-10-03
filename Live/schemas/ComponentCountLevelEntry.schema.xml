@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ComponentCountQualityEntry" type="STRUCT">
+    <column name="Componentcountqualityentry" type="STRUCT">
       <offset>0</offset>
       <subtable external="ComponentCountQualityEntry" />
     </column>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DefaultTray" type="STRING">
+    <column name="Defaulttray" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
@@ -15,17 +15,17 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="TrayElem" type="STRUCT">
-      <offset>8</offset>
+    <column name="Trayelem" type="STRUCT">
+      <offset>16</offset>
       <subtable external="DefaultTrayElemDef" />
     </column>
-    <column name="BorrowFromTray" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Borrowfromtray" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>DefaultTray</dictionary_name>
     </column>
     <column name="}" type="END" />

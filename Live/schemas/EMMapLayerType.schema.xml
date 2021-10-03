@@ -7,17 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="layer_name" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="layer_type" type="STRING">
+    <column name="Layer_Name" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="Visible" type="U8">
-      <offset>12</offset>
-    </column>
-    <column name="menu_item_names" type="STRINGARRAY">
+    <column name="Layer_Type" type="STRING">
       <offset>16</offset>
+    </column>
+    <column name="Visible" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Menu_Item_Names" type="STRINGARRAY">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

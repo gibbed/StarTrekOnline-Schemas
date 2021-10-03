@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CharacterAttribs" type="EMBEDDEDSTRUCT">
+    <column name="Characterattribs" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="AttribAccrualSetBasic" />
     </column>
-    <column name="SpeedCooldown" type="STRUCT">
-      <offset>17400</offset>
+    <column name="Speedcooldown" type="STRUCT">
+      <offset>22680</offset>
       <subtable external="CooldownRateModifier" />
     </column>
-    <column name="dirtyBit" type="U8">
-      <offset>17404</offset>
+    <column name="Dirtybit" type="U8">
+      <offset>22688</offset>
       <flags>
         <flag>NO_NETSEND</flag>
         <flag>DIRTY_BIT</flag>

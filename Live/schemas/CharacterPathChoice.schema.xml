@@ -11,8 +11,8 @@
       <offset>0</offset>
       <subtable external="CharacterPathSuggestedNode" />
     </column>
-    <column name="PowerTree" type="STRUCT">
-      <offset>4</offset>
+    <column name="Powertree" type="STRUCT">
+      <offset>8</offset>
       <subtable external="PowerTreeDefRef" />
     </column>
     <column name="}" type="END" />

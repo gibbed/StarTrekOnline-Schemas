@@ -7,100 +7,102 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="StartLayout" type="STRING">
+    <column name="Startlayout" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="StartRoom" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="HasEntryDoor" type="U8">
+    <column name="Startroom" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="StartPosOverride" type="F32ARRAY">
-      <offset>12</offset>
-    </column>
-    <column name="StartTransitionOverride" type="REFERENCE">
+    <column name="Hasentrydoor" type="U8">
       <offset>16</offset>
-      <dictionary_name>DoorTransitionSequenceDef</dictionary_name>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ExitFrom" type="INT">
-      <offset>20</offset>
-      <static_define_list external="GenesisMissionExitFrom" />
-    </column>
-    <column name="ExitLayout" type="STRING">
+    <column name="Startposoverride" type="F32ARRAY">
       <offset>24</offset>
     </column>
-    <column name="ExitRoom" type="STRING">
-      <offset>28</offset>
-    </column>
-    <column name="ExitChallenge" type="STRING">
+    <column name="Starttransitionoverride" type="REFERENCE">
       <offset>32</offset>
-    </column>
-    <column name="ExitTransitionOverride" type="REFERENCE">
-      <offset>36</offset>
       <dictionary_name>DoorTransitionSequenceDef</dictionary_name>
     </column>
-    <column name="ExitPromptCostume2" type="EMBEDDEDSTRUCT">
+    <column name="Exitfrom" type="INT">
       <offset>40</offset>
+      <static_define_list external="GenesisMissionExitFrom" />
+    </column>
+    <column name="Exitlayout" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Exitroom" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Exitchallenge" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Exittransitionoverride" type="REFERENCE">
+      <offset>72</offset>
+      <dictionary_name>DoorTransitionSequenceDef</dictionary_name>
+    </column>
+    <column name="Exitpromptcostume2" type="EMBEDDEDSTRUCT">
+      <offset>80</offset>
       <subtable external="GenesisMissionCostume" />
     </column>
     <column name="Continue" type="U8">
-      <offset>68</offset>
+      <offset>136</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ContinueFrom" type="INT">
-      <offset>72</offset>
+    <column name="Continuefrom" type="INT">
+      <offset>140</offset>
       <static_define_list external="GenesisMissionExitFrom" />
     </column>
-    <column name="ContinueLayout" type="STRING">
-      <offset>76</offset>
-    </column>
-    <column name="ContinueRoom" type="STRING">
-      <offset>80</offset>
-    </column>
-    <column name="ContinueChallenge" type="STRING">
-      <offset>84</offset>
-    </column>
-    <column name="ContinueMap" type="STRING">
-      <offset>88</offset>
-    </column>
-    <column name="ContinueVariable" type="STRUCT">
-      <offset>92</offset>
-      <subtable external="WorldVariable" />
-    </column>
-    <column name="ContinueTransitionOverride" type="REFERENCE">
-      <offset>96</offset>
-      <dictionary_name>DoorTransitionSequenceDef</dictionary_name>
-    </column>
-    <column name="ContinuePromptCostume2" type="EMBEDDEDSTRUCT">
-      <offset>100</offset>
-      <subtable external="GenesisMissionCostume" />
-    </column>
-    <column name="ContinuePromptButtonText" type="STRING">
-      <offset>128</offset>
-    </column>
-    <column name="ContinuePromptCategoryName" type="STRING">
-      <offset>132</offset>
-    </column>
-    <column name="ContinuePromptPriority" type="INT">
-      <offset>136</offset>
-      <static_define_list external="WorldOptionalActionPriority" />
-    </column>
-    <column name="ContinuePromptTitleText" type="STRING">
-      <offset>140</offset>
-    </column>
-    <column name="ContinuePromptBodyText" type="STRINGARRAY">
+    <column name="Continuelayout" type="STRING">
       <offset>144</offset>
     </column>
-    <column name="EntryFromMapName" type="STRING">
-      <offset>148</offset>
-    </column>
-    <column name="EntryFromInteractableName" type="STRING">
+    <column name="Continueroom" type="STRING">
       <offset>152</offset>
     </column>
-    <column name="ReturnPromptCostume" type="IGNORE" />
-    <column name="ExitPromptCostume" type="IGNORE" />
-    <column name="ContinuePromptCostume" type="IGNORE" />
-    <column name="ExitWhen" type="IGNORE" />
+    <column name="Continuechallenge" type="STRING">
+      <offset>160</offset>
+    </column>
+    <column name="Continuemap" type="STRING">
+      <offset>168</offset>
+    </column>
+    <column name="Continuevariable" type="STRUCT">
+      <offset>176</offset>
+      <subtable external="WorldVariable" />
+    </column>
+    <column name="Continuetransitionoverride" type="REFERENCE">
+      <offset>184</offset>
+      <dictionary_name>DoorTransitionSequenceDef</dictionary_name>
+    </column>
+    <column name="Continuepromptcostume2" type="EMBEDDEDSTRUCT">
+      <offset>192</offset>
+      <subtable external="GenesisMissionCostume" />
+    </column>
+    <column name="Continuepromptbuttontext" type="STRING">
+      <offset>248</offset>
+    </column>
+    <column name="Continuepromptcategoryname" type="STRING">
+      <offset>256</offset>
+    </column>
+    <column name="Continuepromptpriority" type="INT">
+      <offset>264</offset>
+      <static_define_list external="WorldOptionalActionPriority" />
+    </column>
+    <column name="Continueprompttitletext" type="STRING">
+      <offset>272</offset>
+    </column>
+    <column name="Continuepromptbodytext" type="STRINGARRAY">
+      <offset>280</offset>
+    </column>
+    <column name="Entryfrommapname" type="STRING">
+      <offset>288</offset>
+    </column>
+    <column name="Entryfrominteractablename" type="STRING">
+      <offset>296</offset>
+    </column>
+    <column name="Returnpromptcostume" type="IGNORE" />
+    <column name="Exitpromptcostume" type="IGNORE" />
+    <column name="Continuepromptcostume" type="IGNORE" />
+    <column name="Exitwhen" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

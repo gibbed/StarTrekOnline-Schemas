@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="AsyncMultiPartContext_Part">
+  <table>
+    <column name="AsyncMultiPartContext_Part" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Partname" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Partfilename" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="ContentType" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Datasize" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

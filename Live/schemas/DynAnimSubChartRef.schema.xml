@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ChartName" type="REFERENCE">
+    <column name="Chartname" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>REQUIRED</flag>

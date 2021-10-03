@@ -12,10 +12,10 @@
       <subtable external="CutscenePath" />
     </column>
     <column name="MapName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="BlendRate" type="F32">
       <offset>8</offset>
+    </column>
+    <column name="Blendrate" type="F32">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

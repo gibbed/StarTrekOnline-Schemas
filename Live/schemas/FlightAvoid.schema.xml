@@ -10,11 +10,12 @@
     <column name="Pos" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="radiusMin" type="F32">
+    <column name="Radiusmin" type="F32">
       <offset>12</offset>
     </column>
-    <column name="radiusMax" type="F32">
+    <column name="Radiusmax" type="F32">
       <offset>16</offset>
     </column>
     <column name="}" type="END" />

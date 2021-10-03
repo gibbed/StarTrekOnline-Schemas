@@ -14,11 +14,12 @@
       </flags>
     </column>
     <column name="Members" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="PVPTeamMember" />
     </column>
-    <column name="TeamDead" type="U8">
-      <offset>8</offset>
+    <column name="Teamdead" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

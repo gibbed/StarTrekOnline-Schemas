@@ -10,11 +10,11 @@
       <offset>0</offset>
       <static_define_list external="GenesisChallengeType" />
     </column>
-    <column name="CompleteName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="SpawnName" type="STRING">
+    <column name="Completename" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Spawnname" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="End" type="END" />
   </table>

@@ -7,15 +7,45 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uProductID" type="INT">
+    <column name="Uproductid" type="INT">
       <offset>0</offset>
     </column>
+    <column name="Microtrans2name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Steamtranslatedname" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="ThirdPartyProductId" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="ProductName" type="STRING">
+      <offset>32</offset>
+    </column>
     <column name="Price" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>40</offset>
       <subtable external="Money" />
     </column>
-    <column name="uOverridePercentageDiscount" type="INT">
-      <offset>8</offset>
+    <column name="Mt2discounttype" type="INT">
+      <offset>48</offset>
+      <static_define_list external="MicroTrans2_DiscountType" />
+    </column>
+    <column name="Discountname" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Uoverridepercentagediscount" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Umicrotrans2timetouse" type="INT">
+      <offset>68</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -13,33 +13,43 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="SmallMin" type="F32FIXEDARRAY">
-      <offset>4</offset>
+    <column name="Smallmin" type="F32FIXEDARRAY">
+      <offset>8</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="SmallMax" type="F32FIXEDARRAY">
-      <offset>16</offset>
+    <column name="Smallmax" type="F32FIXEDARRAY">
+      <offset>20</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LargeMin" type="F32FIXEDARRAY">
-      <offset>28</offset>
+    <column name="Largemin" type="F32FIXEDARRAY">
+      <offset>32</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LargeMax" type="F32FIXEDARRAY">
-      <offset>40</offset>
+    <column name="Largemax" type="F32FIXEDARRAY">
+      <offset>44</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="CounterScale" type="STRINGARRAY">
-      <offset>52</offset>
+    <column name="Counterscale" type="STRINGARRAY">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Universal" type="BOOLFLAG">
-      <offset>56</offset>
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Translation" type="BOOLFLAG">
-      <offset>57</offset>
+      <offset>65</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Rotation" type="BOOLFLAG">
+      <offset>66</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

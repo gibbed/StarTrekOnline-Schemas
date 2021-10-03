@@ -14,16 +14,16 @@
       </flags>
     </column>
     <column name="ID" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="classnum" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="sub" type="OPTIONALSTRUCT">
+    <column name="Classnum" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Sub" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="OITestSubElement" />
     </column>
     <column name="}" type="END" />

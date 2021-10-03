@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="STRecruitAvailableTaskCount">
+  <elements type="int">
+    <element name="Max">0</element>
+    <element name="Claimed">1</element>
+    <element name="Ready">2</element>
+    <element name="ReadyOrClaimed">3</element>
+    <element name="Discovered">4</element>
+  </elements>
+</enum>

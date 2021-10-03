@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="Sensitivity">
+  <elements type="int">
+    <element name="Halfavoid">0</element>
+    <element name="Halfres">1</element>
+    <element name="Halfstr">2</element>
+    <element name="No_Immune">3</element>
+    <element name="No_Res_Only">4</element>
+    <element name="Noavoid">5</element>
+    <element name="Nocombatmods">6</element>
+    <element name="Nocurve">7</element>
+    <element name="Nores">8</element>
+    <element name="Noshield">9</element>
+    <element name="Nostr">10</element>
+    <element name="Quarterstr">11</element>
+    <element name="Shieldpenetrate_100">12</element>
+    <element name="Shieldpenetrate_20">13</element>
+    <element name="Shieldpenetrate_40">14</element>
+    <element name="Shieldpenetrate_50">15</element>
+    <element name="Shieldpenetrate_80">16</element>
+    <element name="Weakavoid">17</element>
+    <element name="Weakres">18</element>
+    <element name="Weakstr">19</element>
+  </elements>
+</enum>

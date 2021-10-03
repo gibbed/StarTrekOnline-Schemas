@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iNPCEMailID" type="INT">
+    <column name="Inpcemailid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="sentTime" type="INT">
+    <column name="Senttime" type="INT">
       <offset>4</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="fromName" type="STRING">
+    <column name="FromName" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
@@ -27,32 +27,33 @@
       </flags>
     </column>
     <column name="Subject" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>ESTRING</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="Body" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="ppItemSlot" type="STRUCT">
-      <offset>20</offset>
+    <column name="Body" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ppitemslot" type="STRUCT">
+      <offset>32</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="InventorySlotV1" />
     </column>
-    <column name="bRead" type="U8">
-      <offset>24</offset>
+    <column name="Bread" type="U8">
+      <offset>40</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

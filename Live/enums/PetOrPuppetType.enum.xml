@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PetOrPuppetType">
+  <elements type="int">
+    <element name="Unknown">0</element>
+    <element name="Pet">1</element>
+    <element name="Puppet">2</element>
+  </elements>
+</enum>

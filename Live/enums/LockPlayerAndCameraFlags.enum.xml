@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="LockPlayerAndCameraFlags">
+  <elements type="int">
+    <element name="MANUAL">1</element>
+    <element name="UI_GAMEMENU">2</element>
+    <element name="UI_MODAL">4</element>
+    <element name="UI_FULLSCREEN">8</element>
+    <element name="UI_HUD">16</element>
+    <element name="CUTSCENE">64</element>
+    <element name="CONTACT">128</element>
+    <element name="ENTDEBUG">256</element>
+    <element name="MOUSESUSPEND">512</element>
+    <element name="POWERWHEEL">1024</element>
+    <element name="DEATH">2048</element>
+    <element name="MINIGAME">4096</element>
+    <element name="UI_CHAT">8192</element>
+    <element name="UI_TARGETINTERACTS">16384</element>
+    <element name="FMV">32768</element>
+  </elements>
+</enum>

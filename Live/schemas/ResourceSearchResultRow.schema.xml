@@ -11,13 +11,13 @@
       <offset>0</offset>
     </column>
     <column name="Type" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="ExtraData" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="ResRef" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Extradata" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Resref" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="SearchItemDefRef" />
     </column>
     <column name="}" type="END" />

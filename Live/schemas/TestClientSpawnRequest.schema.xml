@@ -7,32 +7,33 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="cScriptName" type="FIXEDSTRING">
+    <column name="Cscriptname" type="FIXEDSTRING">
       <offset>0</offset>
-      <string_length>260</string_length>
+      <string_length>521</string_length>
     </column>
-    <column name="cMapName" type="FIXEDSTRING">
-      <offset>260</offset>
+    <column name="Cmapname" type="FIXEDSTRING">
+      <offset>521</offset>
       <string_length>1024</string_length>
     </column>
-    <column name="InstanceIndex" type="INT">
-      <offset>1284</offset>
+    <column name="Instanceindex" type="INT">
+      <offset>1548</offset>
     </column>
-    <column name="spawnPos" type="F32FIXEDARRAY">
-      <offset>1288</offset>
+    <column name="Spawnpos" type="F32FIXEDARRAY">
+      <offset>1552</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="OwnerID" type="INT">
-      <offset>1300</offset>
+      <offset>1564</offset>
     </column>
     <column name="NumToSpawn" type="INT">
-      <offset>1304</offset>
+      <offset>1568</offset>
     </column>
-    <column name="SpawnDelay" type="F32">
-      <offset>1308</offset>
+    <column name="Spawndelay" type="F32">
+      <offset>1572</offset>
     </column>
-    <column name="CmdLine" type="STRING">
-      <offset>1316</offset>
+    <column name="Cmdline" type="STRING">
+      <offset>1584</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

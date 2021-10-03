@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="UIGenFocusSource">
+  <elements type="int">
+    <element name="Unknown">0</element>
+    <element name="Direction">1</element>
+    <element name="Cycle">2</element>
+    <element name="FocusBehavior">3</element>
+    <element name="Action">4</element>
+    <element name="Always">5</element>
+    <element name="ByDefault">6</element>
+    <element name="OnCreate">7</element>
+    <element name="OnClick">8</element>
+    <element name="PassFocusToChildren">9</element>
+    <element name="Reset">10</element>
+    <element name="CmdGenSetFocus">11</element>
+    <element name="ExprGenSetFocus">12</element>
+    <element name="ExprGenUnsetFocus">13</element>
+    <element name="ExprGenSetFocusToPathFromGen">14</element>
+    <element name="ExprGenSetFocusToPath">15</element>
+    <element name="ExprGenSetDefaultFocus">16</element>
+    <element name="ExprGenSetDefaultFocusToPath">17</element>
+    <element name="GenTickEarlyWebView">18</element>
+    <element name="UISetFocusEx">19</element>
+    <element name="GenQueueResetChildren">20</element>
+    <element name="GenOncePerFrameEarly">21</element>
+    <element name="GenOncePerFrameLate">22</element>
+    <element name="GenStealFocus">23</element>
+    <element name="ExprGenTextEntrySendEnter">24</element>
+    <element name="ExprGenListSetFocusedRowFilter">25</element>
+    <element name="ExprSetFocusToCurrentChatTextEntryWindow">26</element>
+  </elements>
+</enum>

@@ -7,18 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="dirtyBit" type="U8">
+    <column name="Dirtybit" type="U8">
       <offset>0</offset>
       <flags>
         <flag>NO_NETSEND</flag>
         <flag>DIRTY_BIT</flag>
       </flags>
     </column>
-    <column name="displayNameOverride" type="STRING">
-      <offset>4</offset>
+    <column name="Displaynameoverride" type="STRING">
+      <offset>8</offset>
     </column>
     <column name="CritterDef" type="REFERENCE">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SERVER_ONLY</flag>
@@ -27,7 +27,7 @@
       <dictionary_name>CritterDef</dictionary_name>
     </column>
     <column name="PetDef" type="REFERENCE">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
@@ -36,227 +36,325 @@
       <dictionary_name>PetDef</dictionary_name>
     </column>
     <column name="CritterOverrideDef" type="REFERENCE">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <dictionary_name>CritterOverrideDef</dictionary_name>
     </column>
-    <column name="fNumericRewardScale" type="F32">
-      <offset>20</offset>
+    <column name="Addedcrittertags" type="INTARRAY">
+      <offset>40</offset>
+      <static_define_list external="CritterTag" />
+    </column>
+    <column name="Eaiappliedcrittertags" type="INTARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Addedcrittertags</redundant_name>
+      <static_define_list external="CritterTag" />
+    </column>
+    <column name="Eaiadditionalcrittertags" type="INTARRAY">
+      <offset>48</offset>
+      <static_define_list external="CritterTag" />
+    </column>
+    <column name="Fnumericrewardscale" type="F32">
+      <offset>56</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <default>1</default>
     </column>
-    <column name="eaAdditionalRewards" type="STRUCT">
-      <offset>24</offset>
+    <column name="Eaadditionalrewards" type="STRUCT">
+      <offset>64</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="RewardTableRef" />
     </column>
-    <column name="eRewardType" type="INT">
-      <offset>28</offset>
+    <column name="Erewardtype" type="INT">
+      <offset>72</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
-      <static_define_list external="WorldEncounterRewardType" />
+      <static_define_list external="EncounterInstanceRewardType" />
     </column>
-    <column name="eRewardLevelType" type="INT">
-      <offset>32</offset>
+    <column name="Erewardleveltype" type="INT">
+      <offset>76</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
-      <static_define_list external="WorldEncounterRewardLevelType" />
+      <static_define_list external="EncounterInstanceRewardLevelType" />
     </column>
-    <column name="iRewardLevel" type="INT">
-      <offset>36</offset>
+    <column name="Irewardlevel" type="INT">
+      <offset>80</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="fOverrideSendDistance" type="F32">
-      <offset>48</offset>
+    <column name="Rewardtable" type="REFERENCE">
+      <offset>88</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Hrewardtable" type="REFERENCE">
+      <offset>88</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <redundant_name>Rewardtable</redundant_name>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Addrewardtable" type="REFERENCE">
+      <offset>96</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Haddrewardtable" type="REFERENCE">
+      <offset>96</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <redundant_name>Addrewardtable</redundant_name>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="Foverridesenddistance" type="F32">
+      <offset>112</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
     <column name="EncounterData" type="EMBEDDEDSTRUCT">
-      <offset>52</offset>
+      <offset>120</offset>
       <subtable external="CritterEncounterData" />
     </column>
-    <column name="hSavedPet" type="REFERENCE">
-      <offset>116</offset>
+    <column name="Hsavedpet" type="REFERENCE">
+      <offset>216</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <dictionary_name>CopyDict_EntitySavedPet</dictionary_name>
     </column>
-    <column name="hSavedPetOwner" type="REFERENCE">
-      <offset>120</offset>
+    <column name="Hsavedpetowner" type="REFERENCE">
+      <offset>224</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <dictionary_name>CopyDict_EntitySavedPet</dictionary_name>
     </column>
-    <column name="uiEntCreatePowerID" type="INT">
-      <offset>124</offset>
+    <column name="Uientcreatepowerid" type="INT">
+      <offset>232</offset>
     </column>
-    <column name="uiEntCreateAttribModDefIdx" type="INT">
-      <offset>128</offset>
+    <column name="Uientcreateattribmoddefidx" type="INT">
+      <offset>236</offset>
     </column>
-    <column name="hDisplayNameMsg" type="REFERENCE">
-      <offset>132</offset>
+    <column name="Hdisplaynamemsg" type="REFERENCE">
+      <offset>240</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="hDisplaySubNameMsg" type="REFERENCE">
-      <offset>136</offset>
+    <column name="Hdisplaysubnamemsg" type="REFERENCE">
+      <offset>248</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="hGroupDisplayNameMsg" type="REFERENCE">
-      <offset>140</offset>
+    <column name="Hgroupdisplaynamemsg" type="REFERENCE">
+      <offset>256</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="pcGroupIcon" type="STRING">
-      <offset>144</offset>
+    <column name="Pcgroupicon" type="STRING">
+      <offset>264</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="voiceSet" type="STRING">
-      <offset>148</offset>
+    <column name="Voiceset" type="STRING">
+      <offset>272</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="iEncounterKey" type="INT">
-      <offset>152</offset>
+    <column name="Iencounterkey" type="INT">
+      <offset>280</offset>
     </column>
-    <column name="hYoursCostumeRef" type="REFERENCE">
-      <offset>156</offset>
+    <column name="Hyourscostumeref" type="REFERENCE">
+      <offset>288</offset>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="hNotYoursCostumeRef" type="REFERENCE">
-      <offset>160</offset>
+    <column name="Hnotyourscostumeref" type="REFERENCE">
+      <offset>296</offset>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="eaLootBags" type="STRUCT">
-      <offset>164</offset>
+    <column name="Ealootbags" type="STRUCT">
+      <offset>304</offset>
       <subtable external="InventoryBag" />
     </column>
-    <column name="pcLootGlowFX" type="STRING">
-      <offset>168</offset>
+    <column name="Pclootglowfx" type="STRING">
+      <offset>312</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
-    <column name="StanceWords" type="STRINGARRAY">
-      <offset>172</offset>
+    <column name="Stancewords" type="STRINGARRAY">
+      <offset>320</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ppchStanceWords" type="STRINGARRAY">
-      <offset>172</offset>
+    <column name="Ppchstancewords" type="STRINGARRAY">
+      <offset>320</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>StanceWords</redundant_name>
+      <redundant_name>Stancewords</redundant_name>
     </column>
-    <column name="eaRolloverTrackers" type="STRUCT">
-      <offset>176</offset>
+    <column name="Earollovertrackers" type="STRUCT">
+      <offset>328</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="RolloverTracker" />
     </column>
-    <column name="bDoNotAutoSetLootCostume" type="BIT">
-      <offset>180</offset>
-      <bit_offset>65537</bit_offset>
-    </column>
-    <column name="bKilled" type="BIT">
-      <offset>180</offset>
+    <column name="Blootnotrewardgated" type="BIT">
+      <offset>336</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Bdonotautosetlootcostume" type="BIT">
+      <offset>336</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="bIsInteractable" type="BIT">
-      <offset>180</offset>
-      <bit_offset>65539</bit_offset>
-    </column>
-    <column name="bRidable" type="BIT">
-      <offset>180</offset>
-      <bit_offset>65540</bit_offset>
-    </column>
-    <column name="bPseudoPlayer" type="BIT">
-      <offset>180</offset>
-      <bit_offset>65541</bit_offset>
-    </column>
-    <column name="bDeathRewardsGiven" type="BIT">
-      <offset>180</offset>
+    <column name="Bkilled" type="BIT">
+      <offset>336</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
-      <bit_offset>65544</bit_offset>
+      <bit_offset>65539</bit_offset>
     </column>
-    <column name="bIgnoreExternalAnimBits" type="BIT">
-      <offset>180</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Bisinteractable" type="BIT">
+      <offset>336</offset>
+      <bit_offset>65540</bit_offset>
     </column>
-    <column name="bUseCapsuleForPowerArcChecks" type="BIT">
-      <offset>180</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Bridable" type="BIT">
+      <offset>336</offset>
+      <bit_offset>65541</bit_offset>
     </column>
-    <column name="bUseClosestPowerAnimNode" type="BIT">
-      <offset>180</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Bpseudoplayer" type="BIT">
+      <offset>336</offset>
+      <bit_offset>65542</bit_offset>
     </column>
-    <column name="bAutoLootMe" type="BIT">
-      <offset>180</offset>
-      <bit_offset>65548</bit_offset>
+    <column name="Bisdestructible" type="BIT">
+      <offset>336</offset>
+      <bit_offset>65543</bit_offset>
     </column>
-    <column name="bSetSpawnAnim" type="BIT">
-      <offset>180</offset>
-      <bit_offset>65549</bit_offset>
+    <column name="Bdonotshowselectedfx" type="BIT">
+      <offset>337</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="pcRank" type="STRING">
-      <offset>184</offset>
+    <column name="Bdeathrewardsgiven" type="BIT">
+      <offset>337</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Bignoreexternalanimbits" type="BIT">
+      <offset>337</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Busecapsuleforpowerarcchecks" type="BIT">
+      <offset>337</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Buseclosestpoweranimnode" type="BIT">
+      <offset>337</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Bautolootme" type="BIT">
+      <offset>337</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Bsetspawnanim" type="BIT">
+      <offset>338</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Bhidenameforinteract" type="BIT">
+      <offset>338</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Bvisibletocreatoronly" type="BIT">
+      <offset>338</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Bprocesstriggeronspawn" type="BIT">
+      <offset>338</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Pccrittergroup" type="STRING">
+      <offset>344</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="pcSubRank" type="STRING">
-      <offset>188</offset>
+    <column name="Pcrank" type="STRING">
+      <offset>352</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="eInteractionFlag" type="INT">
-      <offset>192</offset>
+    <column name="Pcsubrank" type="STRING">
+      <offset>360</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Einteractionflag" type="INT">
+      <offset>368</offset>
       <static_define_list external="kCritterOverrideFlag" />
       <format>FLAGS</format>
     </column>
-    <column name="fMass" type="F32">
-      <offset>196</offset>
+    <column name="Fmass" type="F32">
+      <offset>372</offset>
     </column>
-    <column name="uInteractDist" type="INT">
-      <offset>200</offset>
+    <column name="Uinteractdist" type="INT">
+      <offset>376</offset>
     </column>
-    <column name="eCritterSubType" type="INT">
-      <offset>204</offset>
+    <column name="Ecrittersubtype" type="INT">
+      <offset>380</offset>
       <static_define_list external="CritterSubType" />
       <format>FLAGS</format>
     </column>
-    <column name="pcNemesisMinionCostumeSet" type="STRING">
-      <offset>208</offset>
+    <column name="Pcnemesisminioncostumeset" type="STRING">
+      <offset>384</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
+    </column>
+    <column name="Eoverridegender" type="INT">
+      <offset>392</offset>
+      <static_define_list external="Gender" />
+    </column>
+    <column name="Paimbotstate" type="OPTIONALSTRUCT">
+      <offset>400</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="NullStruct" />
     </column>
     <column name="}" type="END" />
   </table>

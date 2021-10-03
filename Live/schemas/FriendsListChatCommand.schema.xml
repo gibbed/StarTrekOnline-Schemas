@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="allFriends" type="STRUCT">
+    <column name="Allfriends" type="STRUCT">
       <offset>0</offset>
       <subtable external="FriendChatCommand" />
     </column>
-    <column name="pendingFriends" type="STRUCT">
-      <offset>4</offset>
+    <column name="Pendingfriends" type="STRUCT">
+      <offset>8</offset>
       <subtable external="FriendChatCommand" />
     </column>
-    <column name="incomingFriends" type="STRUCT">
-      <offset>8</offset>
+    <column name="Incomingfriends" type="STRUCT">
+      <offset>16</offset>
       <subtable external="FriendChatCommand" />
     </column>
     <column name="}" type="END" />

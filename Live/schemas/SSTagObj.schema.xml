@@ -7,17 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="oldTags" type="STRING">
+    <column name="Oldtags" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
     <column name="Tags" type="STRINGARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="Offset" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="SSOffset" />
     </column>
     <column name="}" type="END" />

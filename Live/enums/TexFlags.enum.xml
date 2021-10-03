@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="TexFlags">
+  <elements type="int">
+    <element name="EX_NONE">0</element>
+    <element name="EX_ALPHA">1</element>
+    <element name="EX_CRUNCH">2</element>
+    <element name="EX_JPEG">4</element>
+    <element name="EX_VOLATILE_TEXGEN">8</element>
+    <element name="EX_TEXGEN">16</element>
+    <element name="EX_DYNAMIC_TEXWORD">32</element>
+    <element name="EX_SCRATCH">64</element>
+    <element name="EX_REVERSED_MIPS">128</element>
+    <element name="exFlags_MAX">129</element>
+  </elements>
+</enum>

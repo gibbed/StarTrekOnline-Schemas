@@ -12,12 +12,12 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="LogicalGroupData" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Logicalgroupdata" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="LogicalGroupProperties" />
     </column>
-    <column name="ChildName" type="STRINGARRAY">
-      <offset>8</offset>
+    <column name="Childname" type="STRINGARRAY">
+      <offset>16</offset>
     </column>
     <column name="End" type="END" />
   </table>

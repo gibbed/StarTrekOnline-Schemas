@@ -13,11 +13,11 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MajorSkill" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="MinorSkill" type="INT">
+    <column name="Majorskill" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Minorskill" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

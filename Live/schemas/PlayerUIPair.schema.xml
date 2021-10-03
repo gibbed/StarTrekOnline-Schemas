@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pchKey" type="STRING">
+    <column name="Pchkey" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
@@ -15,15 +15,15 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="pchValue" type="STRING">
-      <offset>4</offset>
+    <column name="Pchvalue" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="uiTime" type="INT">
-      <offset>8</offset>
+    <column name="Uitime" type="INT">
+      <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DynParentFlags">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="ScaleToOnce">4</element>
+    <element name="OrientToOnce">8</element>
+    <element name="LocalPosition">32</element>
+    <element name="AttachAfterOrient">64</element>
+    <element name="OrientToLockToPlane">128</element>
+  </elements>
+</enum>

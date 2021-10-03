@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="bcn" type="INT">
+    <column name="Bcn" type="INT">
       <offset>4</offset>
     </column>
     <column name="Block" type="INT">

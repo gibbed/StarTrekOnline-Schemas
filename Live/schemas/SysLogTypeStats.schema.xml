@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SysLogTypeStats">
+  <table>
+    <column name="SysLogTypeStats" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <format_strings>
+        <format_string name="HTML_SKIP_IN_TABLE">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Type" type="INT">
+      <offset>8</offset>
+      <static_define_list external="SysLogType" />
+    </column>
+    <column name="Redirect_To" type="INT">
+      <offset>12</offset>
+      <static_define_list external="SysLogType" />
+    </column>
+    <column name="Chain_To" type="INT">
+      <offset>16</offset>
+      <static_define_list external="SysLogType" />
+    </column>
+    <column name="Enabled" type="U8">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Max_Per_Min" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Count" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="reset" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogReset "$FIELD(Name)" $FIELD(Type) $NOCONFIRM $NORETURN</command_string>
+    </column>
+    <column name="Throttle" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogThrottle "$FIELD(Name)" $FIELD(Type) $INT(Max per minute; 0=No Throttle) $NORETURN</command_string>
+    </column>
+    <column name="Redirect" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogRedirect "$FIELD(Name)" $FIELD(Type) $SELECT(Redirect to type|ENUM_SysLogType) $NORETURN</command_string>
+    </column>
+    <column name="Chain" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogChain "$FIELD(Name)" $FIELD(Type) $SELECT(Chain to type|ENUM_SysLogType) $NORETURN</command_string>
+    </column>
+    <column name="Disable" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogDisable "$FIELD(Name)" $FIELD(Type) $NOCONFIRM $NORETURN</command_string>
+    </column>
+    <column name="Enable" type="COMMAND">
+      <offset>0</offset>
+      <command_string>SysLogEnable "$FIELD(Name)" $FIELD(Type) $NOCONFIRM $NORETURN</command_string>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

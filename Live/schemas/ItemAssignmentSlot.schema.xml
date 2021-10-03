@@ -7,29 +7,36 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RequiredItemCategory" type="INTARRAY">
+    <column name="Requireditemcategory" type="INTARRAY">
       <offset>0</offset>
       <static_define_list external="ItemCategory" />
     </column>
-    <column name="RestrictItemCategory" type="INTARRAY">
-      <offset>4</offset>
+    <column name="Restrictitemcategory" type="INTARRAY">
+      <offset>8</offset>
       <static_define_list external="ItemCategory" />
     </column>
-    <column name="OutcomeModifier" type="STRINGARRAY">
-      <offset>8</offset>
+    <column name="Outcomemodifier" type="STRINGARRAY">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Icon" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="IsOptional" type="BIT">
-      <offset>16</offset>
+    <column name="Requiredgearscoretier" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Isoptional" type="BIT">
+      <offset>36</offset>
       <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Isconsumable" type="BIT">
+      <offset>36</offset>
+      <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -15,17 +15,17 @@
       <subtable external="InventoryBag" />
     </column>
     <column name="Litebags" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="InventoryBagLite" />
     </column>
-    <column name="_cur" type="INT">
-      <offset>8</offset>
+    <column name="_Cur" type="INT">
+      <offset>16</offset>
     </column>
-    <column name="_bag" type="INT">
-      <offset>12</offset>
+    <column name="_Bag" type="INT">
+      <offset>20</offset>
     </column>
     <column name="}" type="END" />
   </table>

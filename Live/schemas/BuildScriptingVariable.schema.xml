@@ -9,12 +9,22 @@
     <column name="{" type="START" />
     <column name="varName" type="STRING">
       <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
     </column>
     <column name="varValue" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="Comment" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
+    </column>
+    <column name="Behavior" type="INT">
+      <offset>24</offset>
+      <static_define_list external="VariableBehavior" />
+    </column>
+    <column name="Setindex" type="INT">
+      <offset>28</offset>
     </column>
     <column name="}" type="END" />
   </table>

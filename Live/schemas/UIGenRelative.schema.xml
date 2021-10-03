@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TopFrom" type="EMBEDDEDSTRUCT">
+    <column name="Topfrom" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="UIGenRelativeAtom" />
     </column>
-    <column name="BottomFrom" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
-      <subtable external="UIGenRelativeAtom" />
-    </column>
-    <column name="LeftFrom" type="EMBEDDEDSTRUCT">
+    <column name="Bottomfrom" type="EMBEDDEDSTRUCT">
       <offset>16</offset>
       <subtable external="UIGenRelativeAtom" />
     </column>
-    <column name="RightFrom" type="EMBEDDEDSTRUCT">
-      <offset>24</offset>
+    <column name="Leftfrom" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="UIGenRelativeAtom" />
+    </column>
+    <column name="Rightfrom" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
       <subtable external="UIGenRelativeAtom" />
     </column>
     <column name="}" type="END" />

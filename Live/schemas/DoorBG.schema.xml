@@ -15,15 +15,15 @@
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="usepos" type="BIT">
+    <column name="Usepos" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="usefacing" type="BIT">
+    <column name="Usefacing" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="useroll" type="BIT">
+    <column name="Useroll" type="BIT">
       <offset>0</offset>
       <bit_offset>65540</bit_offset>
     </column>
@@ -33,17 +33,20 @@
     <column name="Position" type="F32FIXEDARRAY">
       <offset>8</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="pyStart" type="F32FIXEDARRAY">
+    <column name="Pystart" type="F32FIXEDARRAY">
       <offset>20</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="pyEnd" type="F32FIXEDARRAY">
+    <column name="Pyend" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Timer" type="INT">
-      <offset>48</offset>
+      <offset>56</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MessageTo">
+  <elements type="int">
+    <element name="Self">1</element>
+    <element name="Children">2</element>
+    <element name="Parent">4</element>
+    <element name="Near">8</element>
+    <element name="Entity">16</element>
+    <element name="Siblings">32</element>
+  </elements>
+</enum>

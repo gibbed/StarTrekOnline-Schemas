@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ProductInternalName" type="STRING">
+    <column name="Productinternalname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="uAccountID" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="uTotalSecondEstimate" type="INT">
+    <column name="Uaccountid" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Utotalsecondestimate" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

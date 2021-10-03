@@ -7,29 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BagID" type="INT">
+    <column name="Bagid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
       <static_define_list external="InvBagIDs" />
     </column>
-    <column name="Slots" type="STRUCT">
-      <offset>4</offset>
-      <flags>
-        <flag>UNKNOWN_32</flag>
-      </flags>
-      <subtable external="InventorySlot" />
-    </column>
-    <column name="SlotLites" type="STRUCT">
+    <column name="Slotcounts" type="STRUCT">
       <offset>8</offset>
-      <flags>
-        <flag>UNKNOWN_32</flag>
-      </flags>
-      <subtable external="InventorySlotLite" />
+      <subtable external="UIItemSlotCount" />
     </column>
     <column name="Count" type="INT">
-      <offset>12</offset>
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

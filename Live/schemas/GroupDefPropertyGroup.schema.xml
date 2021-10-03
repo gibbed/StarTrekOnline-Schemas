@@ -13,8 +13,8 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="props" type="STRUCT">
-      <offset>4</offset>
+    <column name="Props" type="STRUCT">
+      <offset>8</offset>
       <subtable external="GroupProperties" />
     </column>
     <column name="}" type="END" />

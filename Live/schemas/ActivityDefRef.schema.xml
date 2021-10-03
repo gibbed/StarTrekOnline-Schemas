@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ActivityName" type="STRING">
+    <column name="Activityname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -15,11 +15,11 @@
         <flag>REQUIRED</flag>
       </flags>
     </column>
-    <column name="uDelayStart" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="uEarlyEnd" type="INT">
+    <column name="Udelaystart" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Uearlyend" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

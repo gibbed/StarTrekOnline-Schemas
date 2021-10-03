@@ -10,32 +10,32 @@
     <column name="UID" type="INT">
       <offset>0</offset>
     </column>
-    <column name="LinkName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="Handle" type="INT">
+    <column name="Linkname" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="cmd" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="LocalFileName" type="STRING">
+    <column name="Handle" type="INT">
       <offset>16</offset>
     </column>
-    <column name="RemoteFileName" type="STRING">
+    <column name="cmd" type="INT">
       <offset>20</offset>
     </column>
-    <column name="BytesPerTick" type="INT">
+    <column name="Localfilename" type="STRING">
       <offset>24</offset>
     </column>
-    <column name="FileSize" type="INT64">
+    <column name="Remotefilename" type="STRING">
       <offset>32</offset>
     </column>
-    <column name="BytesSent" type="INT64">
+    <column name="Bytespertick" type="INT">
       <offset>40</offset>
     </column>
+    <column name="Filesize" type="INT64">
+      <offset>56</offset>
+    </column>
+    <column name="Bytessent" type="INT64">
+      <offset>64</offset>
+    </column>
     <column name="Flags" type="INT">
-      <offset>48</offset>
+      <offset>72</offset>
       <static_define_list external="ManagedSendFlags" />
     </column>
     <column name="}" type="END" />

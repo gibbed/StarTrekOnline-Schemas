@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ClientMultiplexerToClientMessage">
+  <parent>ServerToClientMsg</parent>
+  <elements type="int">
+    <element name="CLIENTMULTIPLEXER_CONNECTED_TO_GS">88</element>
+    <element name="CLIENTMULTIPLEXER_GS_DISCONNECTED_FOR_TRANSFER">89</element>
+    <element name="PACKET_FROM_GAMESERVER">90</element>
+  </elements>
+</enum>

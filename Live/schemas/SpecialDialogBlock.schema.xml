@@ -13,146 +13,164 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="displayNameMesg" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+    <column name="Displaynamemesg" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="DisplayNameFormatter" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Displaynameformatter" type="REFERENCE">
+      <offset>32</offset>
       <dictionary_name>ContactDialogFormatterDef</dictionary_name>
     </column>
     <column name="DialogBlock" type="STRUCT">
-      <offset>20</offset>
+      <offset>40</offset>
       <subtable external="DialogBlock" />
     </column>
     <column name="Indicator" type="INT">
-      <offset>24</offset>
+      <offset>48</offset>
       <static_define_list external="SpecialDialogIndicator" />
     </column>
-    <column name="costumePrefs" type="IGNORE">
+    <column name="Costumeprefs" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">ContactCostume</format_string>
+      </format_strings>
     </column>
-    <column name="CostumeType" type="INT">
-      <offset>28</offset>
+    <column name="Costumetype" type="INT">
+      <offset>56</offset>
       <static_define_list external="ContactCostumeType" />
     </column>
-    <column name="CostumeOverride" type="REFERENCE">
-      <offset>32</offset>
+    <column name="Costumeoverride" type="REFERENCE">
+      <offset>64</offset>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="UsePetCostume" type="REFERENCE">
-      <offset>36</offset>
+    <column name="Usepetcostume" type="REFERENCE">
+      <offset>72</offset>
       <dictionary_name>PetContactList</dictionary_name>
     </column>
-    <column name="CostumeCritterGroupType" type="INT">
-      <offset>40</offset>
+    <column name="Costumecrittergrouptype" type="INT">
+      <offset>80</offset>
       <static_define_list external="ContactMapVarOverrideType" />
     </column>
-    <column name="CostumeCritterGroup" type="REFERENCE">
-      <offset>44</offset>
+    <column name="Costumecrittergroup" type="REFERENCE">
+      <offset>88</offset>
       <dictionary_name>CritterGroup</dictionary_name>
     </column>
-    <column name="CostumeMapVar" type="STRING">
-      <offset>48</offset>
+    <column name="Costumemapvar" type="STRING">
+      <offset>96</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CostumeIdentifier" type="STRING">
-      <offset>52</offset>
+    <column name="Costumeidentifier" type="STRING">
+      <offset>104</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="HeadshotStyleDef" type="STRING">
-      <offset>56</offset>
+    <column name="Headshotstyledef" type="STRING">
+      <offset>112</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="HeadshotStyleOverride" type="STRING">
-      <offset>56</offset>
+    <column name="Headshotstyleoverride" type="STRING">
+      <offset>112</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>HeadshotStyleDef</redundant_name>
+      <redundant_name>Headshotstyledef</redundant_name>
     </column>
-    <column name="CostumeStyleOverrides" type="OPTIONALSTRUCT">
-      <offset>60</offset>
+    <column name="Costumestyleoverrides" type="OPTIONALSTRUCT">
+      <offset>120</offset>
       <subtable external="ContactCostumeStyle" />
     </column>
-    <column name="HeadshotBorderFrame" type="STRING">
-      <offset>64</offset>
+    <column name="Headshotborderframe" type="STRING">
+      <offset>128</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ExtraCostume" type="STRUCT">
-      <offset>68</offset>
+    <column name="Petcontainerid" type="INT">
+      <offset>136</offset>
+    </column>
+    <column name="Extracostume" type="STRUCT">
+      <offset>144</offset>
       <subtable external="ContactCostume" />
     </column>
     <column name="CutsceneDef" type="REFERENCE">
-      <offset>72</offset>
+      <offset>152</offset>
       <dictionary_name>CutScene</dictionary_name>
     </column>
     <column name="Flags" type="INT">
-      <offset>76</offset>
+      <offset>160</offset>
       <static_define_list external="SpecialDialogFlags" />
       <format>FLAGS</format>
     </column>
-    <column name="DelayIfInCombat" type="BOOLFLAG">
-      <offset>80</offset>
+    <column name="Delayifincombat" type="BOOLFLAG">
+      <offset>164</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="dialogActions" type="STRUCT">
-      <offset>84</offset>
+    <column name="Dialogactions" type="STRUCT">
+      <offset>168</offset>
       <subtable external="SpecialDialogAction" />
     </column>
-    <column name="SpecialDialogAppendName" type="STRING">
-      <offset>88</offset>
+    <column name="Specialdialogappendname" type="STRING">
+      <offset>176</offset>
     </column>
-    <column name="UsesLocalCondExpression" type="U8">
-      <offset>92</offset>
+    <column name="Usechestinteractinfo" type="U8">
+      <offset>184</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Useslocalcondexpression" type="U8">
+      <offset>185</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Condition" type="OPTIONALSTRUCT">
-      <offset>96</offset>
+      <offset>192</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="Expression" />
     </column>
     <column name="Condition:" type="OPTIONALSTRUCT">
-      <offset>96</offset>
+      <offset>192</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
       <redundant_name>Condition</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="SourceType" type="INT">
-      <offset>100</offset>
+    <column name="Sourcetype" type="INT">
+      <offset>200</offset>
       <static_define_list external="ContactSourceType" />
     </column>
-    <column name="SourceName" type="STRING">
-      <offset>104</offset>
+    <column name="Sourcename" type="STRING">
+      <offset>208</offset>
     </column>
-    <column name="SourceSecondaryName" type="STRING">
-      <offset>108</offset>
+    <column name="Sourcesecondaryname" type="STRING">
+      <offset>216</offset>
     </column>
-    <column name="SortOrder" type="INT">
-      <offset>112</offset>
+    <column name="Sourceskyoverride" type="STRING">
+      <offset>224</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="overridingMissionDef" type="REFERENCE">
-      <offset>116</offset>
+    <column name="Sortorder" type="INT">
+      <offset>232</offset>
+    </column>
+    <column name="Overridingmissiondef" type="REFERENCE">
+      <offset>240</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <dictionary_name>MissionDef</dictionary_name>
     </column>
-    <column name="FlavorDialog" type="IGNORE" />
+    <column name="Flavordialog" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

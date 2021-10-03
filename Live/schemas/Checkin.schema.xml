@@ -20,17 +20,20 @@
       <offset>8</offset>
     </column>
     <column name="SandBox" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="IncrementalFrom" type="INT">
       <offset>16</offset>
+    </column>
+    <column name="Incrementalfrom" type="INT">
+      <offset>24</offset>
       <default>-2</default>
     </column>
     <column name="Author" type="STRING">
-      <offset>20</offset>
+      <offset>32</offset>
     </column>
     <column name="Comment" type="STRING">
-      <offset>24</offset>
+      <offset>40</offset>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>48</offset>
     </column>
     <column name="}" type="END" />
   </table>

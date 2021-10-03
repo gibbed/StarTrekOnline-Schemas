@@ -14,20 +14,20 @@
       </flags>
     </column>
     <column name="Value" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="GameTitle" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="Type" type="INT">
-      <offset>12</offset>
-      <static_define_list external="MicroItemType" />
-    </column>
-    <column name="ItemIdent" type="STRING">
+    <column name="Gametitle" type="STRING">
       <offset>16</offset>
     </column>
+    <column name="Type" type="INT">
+      <offset>24</offset>
+      <static_define_list external="MicroItemType" />
+    </column>
+    <column name="Itemident" type="STRING">
+      <offset>32</offset>
+    </column>
     <column name="Count" type="INT">
-      <offset>20</offset>
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

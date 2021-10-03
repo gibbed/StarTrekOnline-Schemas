@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PlayerMatchRequestGroupMember">
+  <table>
+    <column name="PlayerMatchRequestGroupMember" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="EntID" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="EntID" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>EntID</redundant_name>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Name</redundant_name>
+    </column>
+    <column name="Handle" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchhandle" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Handle</redundant_name>
+    </column>
+    <column name="Class" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchclass" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Class</redundant_name>
+    </column>
+    <column name="Role" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchrole" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Role</redundant_name>
+    </column>
+    <column name="Explevel" type="INT">
+      <offset>40</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uexplevel" type="INT">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Explevel</redundant_name>
+    </column>
+    <column name="Gearrating" type="INT">
+      <offset>44</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Igearrating" type="INT">
+      <offset>44</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Gearrating</redundant_name>
+    </column>
+    <column name="Alternategearrating" type="INT">
+      <offset>48</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ialternategearrating" type="INT">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Alternategearrating</redundant_name>
+    </column>
+    <column name="Uncompletedmatchdefnamescount" type="INT">
+      <offset>52</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Iuncompletedmatchdefnamescount" type="INT">
+      <offset>52</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Uncompletedmatchdefnamescount</redundant_name>
+    </column>
+    <column name="Winlossmodifier" type="F32">
+      <offset>56</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Fwinlossmodifier" type="F32">
+      <offset>56</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Winlossmodifier</redundant_name>
+    </column>
+    <column name="Alternatewinlossmodifier" type="F32">
+      <offset>60</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Falternatewinlossmodifier" type="F32">
+      <offset>60</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Alternatewinlossmodifier</redundant_name>
+    </column>
+    <column name="Badreputation" type="U8">
+      <offset>64</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bbadreputation" type="U8">
+      <offset>64</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Badreputation</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Overflowrestricted" type="U8">
+      <offset>65</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Boverflowrestricted" type="U8">
+      <offset>65</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Overflowrestricted</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="GuildID" type="INT">
+      <offset>68</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uguildid" type="INT">
+      <offset>68</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>GuildID</redundant_name>
+    </column>
+    <column name="Guildname" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchguildname" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Guildname</redundant_name>
+    </column>
+    <column name="State" type="INT">
+      <offset>80</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="PlayerMatchRequestPlayerState" />
+    </column>
+    <column name="Estate" type="INT">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>State</redundant_name>
+      <static_define_list external="PlayerMatchRequestPlayerState" />
+    </column>
+    <column name="Permissionlevel" type="INT">
+      <offset>84</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="MatchRequestPlayerPermissionLevel" />
+    </column>
+    <column name="Epermissionlevel" type="INT">
+      <offset>84</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Permissionlevel</redundant_name>
+      <static_define_list external="MatchRequestPlayerPermissionLevel" />
+    </column>
+    <column name="Timeleaverpenaltyexpires" type="INT">
+      <offset>88</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Utimeleaverpenaltyexpires" type="INT">
+      <offset>88</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Timeleaverpenaltyexpires</redundant_name>
+    </column>
+    <column name="Timeafkpenaltyexpires" type="INT">
+      <offset>92</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Utimeafkpenaltyexpires" type="INT">
+      <offset>92</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Timeafkpenaltyexpires</redundant_name>
+    </column>
+    <column name="Timefirstseenonline" type="INT">
+      <offset>96</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Utimefirstseenoffline" type="INT">
+      <offset>96</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Timefirstseenonline</redundant_name>
+    </column>
+    <column name="Timeofflinereckoning" type="INT">
+      <offset>100</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Utimeofflinereckoning" type="INT">
+      <offset>100</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Timeofflinereckoning</redundant_name>
+    </column>
+    <column name="Invalidmatchdefname" type="STRINGARRAY">
+      <offset>104</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eainvalidmatchdefnames" type="STRINGARRAY">
+      <offset>104</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Invalidmatchdefname</redundant_name>
+    </column>
+    <column name="Invalidmatchdefreason" type="INTARRAY">
+      <offset>112</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="PlayerInvalidForMatchReason" />
+    </column>
+    <column name="Ea32invalidmatchdefreasons" type="INTARRAY">
+      <offset>112</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Invalidmatchdefreason</redundant_name>
+      <static_define_list external="PlayerInvalidForMatchReason" />
+    </column>
+    <column name="Invalidmatchdefreasonmessagekeys" type="STRINGARRAY">
+      <offset>120</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eainvalidmatchdefreasonmessagekeys" type="STRINGARRAY">
+      <offset>120</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Invalidmatchdefreasonmessagekeys</redundant_name>
+    </column>
+    <column name="Privatematchsubgroupidx" type="INT">
+      <offset>128</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Iprivatematchsubgroupidx" type="INT">
+      <offset>128</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Privatematchsubgroupidx</redundant_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

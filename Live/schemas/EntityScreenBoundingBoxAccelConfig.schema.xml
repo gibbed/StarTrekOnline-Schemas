@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BaseRate" type="F32">
+    <column name="Baserate" type="F32">
       <offset>0</offset>
     </column>
-    <column name="MaxRate" type="F32">
+    <column name="Maxrate" type="F32">
       <offset>4</offset>
     </column>
-    <column name="AccelerateStartThreshold" type="F32">
+    <column name="Acceleratestartthreshold" type="F32">
       <offset>8</offset>
     </column>
-    <column name="AccelerateStopThreshold" type="F32">
+    <column name="Acceleratestopthreshold" type="F32">
       <offset>12</offset>
     </column>
     <column name="Acceleration" type="F32">

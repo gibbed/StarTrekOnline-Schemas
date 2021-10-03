@@ -14,19 +14,19 @@
       </flags>
     </column>
     <column name="FileName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="Args" type="STRUCT">
-      <offset>40</offset>
+      <offset>80</offset>
       <subtable external="ATRContainerArgDef" />
     </column>
-    <column name="HelperFuncWhichReturnsLogging" type="STRING">
-      <offset>44</offset>
+    <column name="Helperfuncwhichreturnslogging" type="STRING">
+      <offset>88</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="Get ATR_LOCKS string" type="COMMAND">
+    <column name="Get Atr_Locks String" type="COMMAND">
       <offset>0</offset>
       <command_string>GetATRLocksString $FIELD(FuncName)</command_string>
     </column>

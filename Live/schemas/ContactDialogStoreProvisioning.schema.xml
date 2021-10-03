@@ -7,35 +7,36 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GroupProjectType" type="INT">
+    <column name="Groupprojecttype" type="INT">
       <offset>0</offset>
     </column>
-    <column name="GroupProjectDef" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="GroupProjectNumericDef" type="STRING">
+    <column name="Groupprojectdef" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="NumericName" type="STRING">
-      <offset>12</offset>
+    <column name="Groupprojectnumericdef" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Numericname" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="NumericValue" type="INT">
-      <offset>16</offset>
+    <column name="Numericvalue" type="INT">
+      <offset>32</offset>
     </column>
-    <column name="StoreGuildMapOwnerMembersOnly" type="U8">
-      <offset>20</offset>
+    <column name="Storeguildmapownermembersonly" type="U8">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="eapchStores" type="STRINGARRAY">
-      <offset>24</offset>
+    <column name="Eapchstores" type="STRINGARRAY">
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

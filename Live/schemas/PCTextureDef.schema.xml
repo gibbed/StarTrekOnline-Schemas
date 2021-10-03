@@ -16,189 +16,97 @@
       </flags>
     </column>
     <column name="Scope" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="FileName" type="CURRENTFILE">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
     <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="ColorChoices" type="U8">
-      <offset>24</offset>
+    <column name="Colorchoices" type="U8">
+      <offset>48</offset>
       <static_define_list external="PCColorFlags" />
       <format>FLAGS</format>
     </column>
-    <column name="RestrictedTo" type="U8">
-      <offset>25</offset>
+    <column name="Restrictedto" type="U8">
+      <offset>49</offset>
       <static_define_list external="PCRestriction" />
       <format>FLAGS</format>
     </column>
-    <column name="TypeFlags" type="U8">
-      <offset>26</offset>
+    <column name="Typeflags" type="U8">
+      <offset>50</offset>
       <static_define_list external="PCTextureType" />
       <format>FLAGS</format>
     </column>
-    <column name="HasSkin" type="BIT">
-      <offset>24</offset>
-      <bit_offset>65560</bit_offset>
+    <column name="Texwordscaps" type="BIT">
+      <offset>51</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="TexWordsCaps" type="BIT">
-      <offset>24</offset>
-      <bit_offset>65561</bit_offset>
-    </column>
-    <column name="TexWordsKey" type="STRING">
-      <offset>28</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="OrigTexture" type="STRING">
-      <offset>32</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="NewTexture" type="STRING">
-      <offset>36</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="ExtraTexture" type="STRUCT">
-      <offset>40</offset>
-      <subtable external="PCExtraTexture" />
-    </column>
-    <column name="Order" type="F32">
-      <offset>44</offset>
-    </column>
-    <column name="RandomWeight" type="F32">
-      <offset>48</offset>
-    </column>
-    <column name="ColorSwap0" type="U8">
-      <offset>52</offset>
-    </column>
-    <column name="ColorSwap1" type="U8">
-      <offset>53</offset>
-      <default>1</default>
-    </column>
-    <column name="ColorSwap2" type="U8">
-      <offset>54</offset>
-      <default>2</default>
-    </column>
-    <column name="ColorSwap3" type="U8">
-      <offset>55</offset>
-      <default>3</default>
-    </column>
-    <column name="ColorOptions" type="OPTIONALSTRUCT">
+    <column name="Texwordskey" type="STRING">
       <offset>56</offset>
-      <subtable external="PCTextureColorOptions" />
-    </column>
-    <column name="ValueOptions" type="OPTIONALSTRUCT">
-      <offset>60</offset>
-      <subtable external="PCTextureValueOptions" />
-    </column>
-    <column name="deprecated_ValueOptions" type="IGNORE">
       <flags>
-        <flag>FLATEMBED</flag>
+        <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ValueConstant" type="STRING">
+    <column name="Origtexture" type="STRING">
       <offset>64</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ConstValueIndex" type="INT">
-      <offset>68</offset>
-    </column>
-    <column name="ConstValueDefault" type="F32">
+    <column name="Newtexture" type="STRING">
       <offset>72</offset>
-    </column>
-    <column name="ConstValueMin" type="F32">
-      <offset>76</offset>
-    </column>
-    <column name="ConstValueMax" type="F32">
-      <offset>80</offset>
-    </column>
-    <column name="MovableOptions" type="OPTIONALSTRUCT">
-      <offset>84</offset>
-      <subtable external="PCTextureMovableOptions" />
-    </column>
-    <column name="deprecated_MovableOptions" type="IGNORE">
-      <flags>
-        <flag>FLATEMBED</flag>
-      </flags>
-    </column>
-    <column name="MovableMinX" type="F32">
-      <offset>88</offset>
-    </column>
-    <column name="MovableMaxX" type="F32">
-      <offset>92</offset>
-    </column>
-    <column name="MovableDefaultX" type="F32">
-      <offset>96</offset>
-    </column>
-    <column name="MovableMinY" type="F32">
-      <offset>100</offset>
-    </column>
-    <column name="MovableMaxY" type="F32">
-      <offset>104</offset>
-    </column>
-    <column name="MovableDefaultY" type="F32">
-      <offset>108</offset>
-    </column>
-    <column name="MovableMinScaleX" type="F32">
-      <offset>112</offset>
-      <default>1</default>
-    </column>
-    <column name="MovableMaxScaleX" type="F32">
-      <offset>116</offset>
-      <default>1</default>
-    </column>
-    <column name="MovableDefaultScaleX" type="F32">
-      <offset>120</offset>
-      <default>1</default>
-    </column>
-    <column name="MovableMinScaleY" type="F32">
-      <offset>124</offset>
-      <default>1</default>
-    </column>
-    <column name="MovableMaxScaleY" type="F32">
-      <offset>128</offset>
-      <default>1</default>
-    </column>
-    <column name="MovableDefaultScaleY" type="F32">
-      <offset>132</offset>
-      <default>1</default>
-    </column>
-    <column name="MovableDefaultRotation" type="F32">
-      <offset>136</offset>
-    </column>
-    <column name="MovableCanEditPosition" type="U8">
-      <offset>140</offset>
-    </column>
-    <column name="MovableCanEditRotation" type="U8">
-      <offset>141</offset>
-    </column>
-    <column name="MovableCanEditScale" type="U8">
-      <offset>142</offset>
-    </column>
-    <column name="CostumeGroups" type="STRINGARRAY">
-      <offset>144</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>GLOBAL_NAME</flag>
       </flags>
-      <dictionary_name>CostumeGroupDict</dictionary_name>
     </column>
+    <column name="Extratexture" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="PCExtraTexture" />
+    </column>
+    <column name="Order" type="F32">
+      <offset>88</offset>
+    </column>
+    <column name="Randomweight" type="F32">
+      <offset>92</offset>
+    </column>
+    <column name="Colorswap0" type="U8">
+      <offset>96</offset>
+    </column>
+    <column name="Colorswap1" type="U8">
+      <offset>97</offset>
+      <default>1</default>
+    </column>
+    <column name="Colorswap2" type="U8">
+      <offset>98</offset>
+      <default>2</default>
+    </column>
+    <column name="Colorswap3" type="U8">
+      <offset>99</offset>
+      <default>3</default>
+    </column>
+    <column name="Coloroptions" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <subtable external="PCTextureColorOptions" />
+    </column>
+    <column name="Valueoptions" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <subtable external="PCTextureValueOptions" />
+    </column>
+    <column name="Movableoptions" type="OPTIONALSTRUCT">
+      <offset>120</offset>
+      <subtable external="PCTextureMovableOptions" />
+    </column>
+    <column name="Hasskin" type="IGNORE" />
     <column name="Group" type="IGNORE" />
     <column name="Style" type="IGNORE" />
     <column name="}" type="END" />

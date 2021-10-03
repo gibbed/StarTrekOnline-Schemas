@@ -7,17 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ContactName" type="STRING">
+    <column name="Contactname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="PromptName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="EncounterName" type="STRING">
+    <column name="Promptname" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="EncounterMapName" type="STRING">
-      <offset>12</offset>
+    <column name="Encountername" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Encountermapname" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

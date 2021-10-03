@@ -16,30 +16,30 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Scope" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
     <column name="Mass" type="F32">
-      <offset>12</offset>
+      <offset>24</offset>
       <default>-1</default>
     </column>
     <column name="Comment" type="STRING">
-      <offset>16</offset>
+      <offset>32</offset>
     </column>
     <column name="OnDeathPower" type="STRUCT">
-      <offset>20</offset>
+      <offset>40</offset>
       <subtable external="ref_PowerDef" />
     </column>
     <column name="Flags" type="INT">
-      <offset>24</offset>
+      <offset>48</offset>
       <default>1</default>
       <static_define_list external="kCritterOverrideFlag" />
       <format>FLAGS</format>

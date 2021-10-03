@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TableSize" type="STRUCT">
+    <column name="Tablesize" type="STRUCT">
       <offset>0</offset>
       <subtable external="NamedStashTableSize" />
     </column>

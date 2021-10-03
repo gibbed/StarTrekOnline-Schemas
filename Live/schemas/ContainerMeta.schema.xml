@@ -11,11 +11,11 @@
       <offset>0</offset>
       <static_define_list external="ContainerState" />
     </column>
-    <column name="containerOwnerType" type="INT">
+    <column name="Containerownertype" type="INT">
       <offset>4</offset>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="containerOwnerID" type="INT">
+    <column name="Containerownerid" type="INT">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

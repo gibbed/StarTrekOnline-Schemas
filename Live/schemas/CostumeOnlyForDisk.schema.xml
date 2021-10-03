@@ -11,8 +11,8 @@
       <offset>0</offset>
       <subtable external="PlayerCostumeV0" />
     </column>
-    <column name="CostumeV5" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Costumev5" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="PlayerCostume" />
     </column>
     <column name="}" type="END" />

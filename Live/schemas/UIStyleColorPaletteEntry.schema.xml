@@ -17,25 +17,24 @@
       </flags>
     </column>
     <column name="Color" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>REQUIRED</flag>
+        <flag>STRUCT_NORECURSE</flag>
       </flags>
       <default>-1</default>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
       <format>COLOR</format>
     </column>
-    <column name="PaletteIndex" type="INT">
-      <offset>8</offset>
+    <column name="Paletteindex" type="INT">
+      <offset>12</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>
     </column>
-    <column name="CustomColor" type="INT">
-      <offset>12</offset>
+    <column name="Customcolor" type="INT">
+      <offset>16</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>

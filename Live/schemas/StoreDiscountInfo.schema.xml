@@ -15,20 +15,30 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="hDisplayName" type="REFERENCE">
-      <offset>4</offset>
-      <dictionary_name>Message</dictionary_name>
-    </column>
-    <column name="hDescription" type="REFERENCE">
+    <column name="Hdisplayname" type="REFERENCE">
       <offset>8</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="DiscountPercent" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="DiscountCostItem" type="REFERENCE">
+    <column name="Hdescription" type="REFERENCE">
       <offset>16</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="IconName" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="DiscountPercent" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Discountcostitem" type="REFERENCE">
+      <offset>40</offset>
       <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Applytoitemcategory" type="INT">
+      <offset>48</offset>
+      <static_define_list external="ItemCategory" />
     </column>
     <column name="}" type="END" />
   </table>

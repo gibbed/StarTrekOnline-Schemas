@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="RPCLoggingFlags">
+  <elements type="int">
+    <element name="FROM_DEFAULT">1</element>
+    <element name="SECURE">2</element>
+    <element name="COMPLEX_STRUCT">4</element>
+    <element name="NULL_STRUCT">8</element>
+    <element name="SLOW_RESPONSE">16</element>
+    <element name="ALWAYS_LOG">32</element>
+  </elements>
+</enum>

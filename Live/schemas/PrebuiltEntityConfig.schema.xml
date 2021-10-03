@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PrebuiltEntityConfig">
+  <table>
+    <column name="PrebuiltEntityConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Requirescharacterlevel" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Copyinventory" type="U8">
+      <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Copypowertrees" type="U8">
+      <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Copymissions" type="U8">
+      <offset>6</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Copyprogression" type="U8">
+      <offset>7</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Copyownedcontainers" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Copycharacterpaths" type="U8">
+      <offset>9</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Copypowertreeslots" type="U8">
+      <offset>10</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Copypowerslots" type="U8">
+      <offset>11</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Copysavednames" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Copycostumes" type="U8">
+      <offset>13</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Groupprojectsetdata" type="U8">
+      <offset>14</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Copyui" type="U8">
+      <offset>15</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Puppetcopyclasstype" type="INT">
+      <offset>16</offset>
+      <static_define_list external="CharClassTypes" />
+    </column>
+    <column name="Petcopyclasstype" type="INTARRAY">
+      <offset>24</offset>
+      <static_define_list external="CharClassTypes" />
+    </column>
+    <column name="Copypowertree" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="PowerTreeDefRef" />
+    </column>
+    <column name="Directpurchasemicrotransaction" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>MicroTransactionDef</dictionary_name>
+    </column>
+    <column name="Tokenpurchasemicrotransaction" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>MicroTrans2Def</dictionary_name>
+    </column>
+    <column name="Tokenspendmicrotransaction" type="REFERENCE">
+      <offset>56</offset>
+      <dictionary_name>MicroTransactionDef</dictionary_name>
+    </column>
+    <column name="Directpurchasenoslotmicrotransaction" type="REFERENCE">
+      <offset>64</offset>
+      <dictionary_name>MicroTransactionDef</dictionary_name>
+    </column>
+    <column name="Tokenpurchasenoslotmicrotransaction" type="REFERENCE">
+      <offset>72</offset>
+      <dictionary_name>MicroTrans2Def</dictionary_name>
+    </column>
+    <column name="Extracharslotaccountkey" type="STRING">
+      <offset>80</offset>
+    </column>
+    <column name="Maxnumextracharslots" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Previewbagid" type="INTARRAY">
+      <offset>96</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Overridestartingmap" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <subtable external="SavedMapDescription" />
+    </column>
+    <column name="Groupprojectautotask" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="PrebuiltEntityGroupProjectAutoTask" />
+    </column>
+    <column name="Prebuiltentitydetails" type="STRUCT">
+      <offset>120</offset>
+      <subtable external="PrebuiltEntityDetails" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

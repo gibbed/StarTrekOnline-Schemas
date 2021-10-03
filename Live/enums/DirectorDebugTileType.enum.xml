@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DirectorDebugTileType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="Spawnable_Visited">1</element>
+    <element name="Spawnable_NeverVisited">2</element>
+    <element name="NotSpawnable_HeightEliminated">3</element>
+    <element name="NotSpawnable_Visible">4</element>
+  </elements>
+</enum>

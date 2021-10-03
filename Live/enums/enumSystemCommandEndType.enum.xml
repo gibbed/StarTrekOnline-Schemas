@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="enumSystemCommandEndType">
+  <elements type="int">
+    <element name="NORMAL">0</element>
+    <element name="TIMEOUT">1</element>
+    <element name="INTERRUPTED">2</element>
+    <element name="ONGOING">3</element>
+    <element name="LAUNCHFAILED">4</element>
+  </elements>
+</enum>

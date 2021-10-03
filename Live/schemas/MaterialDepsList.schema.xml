@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parser name="MaterialDepsList">
   <table>
-    <column name="MaterialDeps" type="STRUCT">
+    <column name="Materialdeps" type="STRUCT">
       <offset>0</offset>
       <subtable external="MaterialDeps" />
     </column>

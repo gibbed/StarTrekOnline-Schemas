@@ -10,11 +10,11 @@
       <offset>0</offset>
       <default>-1</default>
     </column>
-    <column name="SFriction" type="F32">
+    <column name="Sfriction" type="F32">
       <offset>4</offset>
       <default>-1</default>
     </column>
-    <column name="DFriction" type="F32">
+    <column name="Dfriction" type="F32">
       <offset>8</offset>
       <default>-1</default>
     </column>
@@ -26,62 +26,69 @@
       <offset>16</offset>
       <default>-1</default>
     </column>
-    <column name="ForceImmunity" type="F32">
+    <column name="Forceimmunity" type="F32">
       <offset>20</offset>
     </column>
     <column name="Type" type="INT">
       <offset>24</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="DynPhysType" />
     </column>
-    <column name="PhysicalProperty" type="STRING">
-      <offset>28</offset>
+    <column name="Physicalproperty" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Debris" type="BOOLFLAG">
-      <offset>32</offset>
-    </column>
-    <column name="StartAsleep" type="BOOLFLAG">
-      <offset>33</offset>
-    </column>
-    <column name="NoCollide" type="U8">
-      <offset>34</offset>
-    </column>
-    <column name="PhysicsAttached" type="BOOLFLAG">
-      <offset>35</offset>
-    </column>
-    <column name="KinematicActor" type="BOOLFLAG">
-      <offset>36</offset>
-    </column>
-    <column name="ParentAttachPoint" type="F32FIXEDARRAY">
       <offset>40</offset>
-      <num_elements>3</num_elements>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ChildAttachPoint" type="F32FIXEDARRAY">
-      <offset>52</offset>
-      <num_elements>3</num_elements>
+    <column name="Startasleep" type="BOOLFLAG">
+      <offset>41</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="jointAxis" type="INT">
-      <offset>64</offset>
+    <column name="Nocollide" type="U8">
+      <offset>42</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Physicsattached" type="BOOLFLAG">
+      <offset>43</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Kinematicactor" type="BOOLFLAG">
+      <offset>44</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Parentattachpoint" type="F32FIXEDARRAY">
+      <offset>48</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Childattachpoint" type="F32FIXEDARRAY">
+      <offset>60</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Jointaxis" type="INT">
+      <offset>72</offset>
       <static_define_list external="eJointAxis" />
     </column>
-    <column name="RevoluteJoint" type="BOOLFLAG">
-      <offset>68</offset>
-    </column>
-    <column name="LimitJoint" type="BOOLFLAG">
-      <offset>69</offset>
-    </column>
-    <column name="JointMin" type="F32">
-      <offset>72</offset>
-    </column>
-    <column name="JointMax" type="F32">
+    <column name="Revolutejoint" type="BOOLFLAG">
       <offset>76</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="JointSpringiness" type="F32">
+    <column name="Limitjoint" type="BOOLFLAG">
+      <offset>77</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Jointmin" type="F32">
       <offset>80</offset>
+    </column>
+    <column name="Jointmax" type="F32">
+      <offset>84</offset>
+    </column>
+    <column name="Jointspringiness" type="F32">
+      <offset>88</offset>
     </column>
     <column name="End" type="END" />
   </table>

@@ -11,58 +11,61 @@
       <offset>0</offset>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
-    </column>
-    <column name="InternalName" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="Currency" type="STRING">
-      <offset>12</offset>
+    <column name="Internalname" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="uPercentageDiscount" type="INT">
-      <offset>16</offset>
+    <column name="Currency" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Upercentagediscount" type="INT">
+      <offset>32</offset>
     </column>
     <column name="Enabled" type="U8">
-      <offset>20</offset>
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="uStartSS2000" type="INT">
-      <offset>24</offset>
+    <column name="Ustartss2000" type="INT">
+      <offset>40</offset>
     </column>
-    <column name="uEndSS2000" type="INT">
-      <offset>28</offset>
+    <column name="Uendss2000" type="INT">
+      <offset>44</offset>
     </column>
     <column name="Prerequisites" type="STRINGARRAY">
-      <offset>32</offset>
+      <offset>48</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Products" type="STRINGARRAY">
-      <offset>36</offset>
+      <offset>56</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="BlacklistProducts" type="U8">
-      <offset>40</offset>
+    <column name="Blacklistproducts" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Categories" type="STRINGARRAY">
-      <offset>44</offset>
+      <offset>72</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="BlacklistCategories" type="U8">
-      <offset>48</offset>
+    <column name="Blacklistcategories" type="U8">
+      <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

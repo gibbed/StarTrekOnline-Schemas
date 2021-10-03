@@ -14,8 +14,12 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="RarityCount" type="INTARRAY">
-      <offset>4</offset>
+    <column name="Volume" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ItemAssignmentVolumeSettings" />
+    </column>
+    <column name="Raritycount" type="INTARRAY">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

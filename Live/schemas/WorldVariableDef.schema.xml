@@ -15,53 +15,61 @@
       </flags>
     </column>
     <column name="Type" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="WorldVariableType" />
     </column>
-    <column name="DefaultType" type="INT">
-      <offset>8</offset>
+    <column name="Defaulttype" type="INT">
+      <offset>12</offset>
       <static_define_list external="WorldVariableDefaultValueType" />
     </column>
     <column name="SpecificValue" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+      <offset>16</offset>
       <subtable external="WorldVariable" />
     </column>
-    <column name="ChoiceTable" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Choicetable" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>ChoiceTable</dictionary_name>
     </column>
-    <column name="ChoiceName" type="STRING">
-      <offset>20</offset>
+    <column name="Choicename" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="ChoiceIndex" type="INT">
-      <offset>24</offset>
+    <column name="Choiceindex" type="INT">
+      <offset>40</offset>
       <default>1</default>
     </column>
-    <column name="MapVariable" type="STRING">
-      <offset>28</offset>
-    </column>
-    <column name="MissionRefString" type="STRING">
-      <offset>32</offset>
-    </column>
-    <column name="MissionVariable" type="STRING">
-      <offset>36</offset>
-    </column>
-    <column name="Expression" type="OPTIONALSTRUCT">
-      <offset>40</offset>
-      <subtable external="Expression" />
-    </column>
-    <column name="ActivityName" type="STRING">
-      <offset>44</offset>
-    </column>
-    <column name="ActivityVariable" type="STRING">
+    <column name="Mapvariable" type="STRING">
       <offset>48</offset>
     </column>
-    <column name="ActivityDefaultValue" type="OPTIONALSTRUCT">
-      <offset>52</offset>
+    <column name="MissionRefString" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Missionvariable" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Expression" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Activityname" type="STRING">
+      <offset>80</offset>
+    </column>
+    <column name="Activityvariable" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Activitydefaultvalue" type="OPTIONALSTRUCT">
+      <offset>96</offset>
       <subtable external="WorldVariable" />
     </column>
-    <column name="IsPublic" type="U8">
-      <offset>56</offset>
+    <column name="Ispublic" type="U8">
+      <offset>104</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Israndom" type="U8">
+      <offset>105</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="APAccessLevelMicroTrans2Request">
+  <table>
+    <column name="APAccessLevelMicroTrans2Request" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <static_define_list external="APAccessLevelMicroTrans2RequestType" />
+    </column>
+    <column name="AccountID" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Micro_Trans2_Name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Time_To_Use" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Mt_Category" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Shard_Category" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+      <redundant_name>Mt_Category</redundant_name>
+    </column>
+    <column name="Unconsumed_Amount" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Uncosnuemd_Amount" type="INT">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Unconsumed_Amount</redundant_name>
+    </column>
+    <column name="Total_Amount" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

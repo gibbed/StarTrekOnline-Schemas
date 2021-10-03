@@ -8,23 +8,23 @@
     </column>
     <column name="{" type="START" />
     <column name="State" type="INT">
-      <offset>8</offset>
+      <offset>12</offset>
       <static_define_list external="PVPDuelEntityState" />
     </column>
-    <column name="failed_reason" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>SELF_ONLY</flag>
-      </flags>
-    </column>
-    <column name="requester_name" type="STRING">
+    <column name="Failed_Reason" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
     </column>
+    <column name="Requester_Name" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+    </column>
     <column name="Members" type="INTARRAY">
-      <offset>20</offset>
+      <offset>32</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>

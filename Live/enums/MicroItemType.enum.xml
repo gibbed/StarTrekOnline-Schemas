@@ -17,5 +17,6 @@
     <element name="Other">6</element>
     <element name="CostumeRef">7</element>
     <element name="Species">8</element>
+    <element name="ItemUnlock">9</element>
   </elements>
 </enum>

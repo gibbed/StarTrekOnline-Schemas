@@ -2,5 +2,24 @@
 <enum name="MissionTag">
   <elements type="int">
     <element name="None">0</element>
+    <element name="Allied_Found_Msn">1</element>
+    <element name="Arc_Fe_Breen">2</element>
+    <element name="Arc_Fe_Devidians">3</element>
+    <element name="Arc_Fe_Dominion">4</element>
+    <element name="Arc_Fe_Romulan">5</element>
+    <element name="Contested_Found_Msn">6</element>
+    <element name="Dlt_Kobali_Az_Found_Mission">7</element>
+    <element name="Dlt_Kobali_Az_Main">8</element>
+    <element name="Endeavor">9</element>
+    <element name="New_Romulus_Alert">10</element>
+    <element name="Patrol">11</element>
+    <element name="Patrol_Dlt">12</element>
+    <element name="Patrol_Dsc">13</element>
+    <element name="Patrol_Kcw">14</element>
+    <element name="Patrol_Rom">15</element>
+    <element name="Personal_Endeavor">16</element>
+    <element name="Pvp">17</element>
+    <element name="Queue">18</element>
+    <element name="Risa_Explore_Prk">19</element>
   </elements>
 </enum>

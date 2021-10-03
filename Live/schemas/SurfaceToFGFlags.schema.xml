@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="doCameraShake" type="BIT">
+    <column name="Docamerashake" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="hasOnGround" type="BIT">
+    <column name="Hasonground" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="onGround" type="BIT">
+    <column name="Onground" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>

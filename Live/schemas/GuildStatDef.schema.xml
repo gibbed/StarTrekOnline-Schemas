@@ -16,19 +16,19 @@
       </flags>
     </column>
     <column name="DisplayName" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="ValidOperations" type="INT">
-      <offset>16</offset>
+    <column name="Validoperations" type="INT">
+      <offset>32</offset>
       <static_define_list external="GuildStatUpdateOperation" />
       <format>FLAGS</format>
     </column>
-    <column name="InitialValue" type="INT">
-      <offset>20</offset>
+    <column name="Initialvalue" type="INT">
+      <offset>36</offset>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>24</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

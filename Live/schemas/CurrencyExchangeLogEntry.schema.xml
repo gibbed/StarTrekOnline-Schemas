@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="logType" type="INT">
+    <column name="Logtype" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,7 +15,7 @@
       </flags>
       <static_define_list external="CurrencyExchangeOperationType" />
     </column>
-    <column name="orderType" type="INT">
+    <column name="Ordertype" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -30,14 +30,14 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="quantityMTC" type="INT">
+    <column name="Quantitymtc" type="INT">
       <offset>12</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="quantityTC" type="INT">
+    <column name="Quantitytc" type="INT">
       <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>

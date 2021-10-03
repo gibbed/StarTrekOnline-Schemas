@@ -14,20 +14,20 @@
       </flags>
     </column>
     <column name="Command" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="uTime" type="INT">
-      <offset>8</offset>
+    <column name="Utime" type="INT">
+      <offset>16</offset>
     </column>
     <column name="Power" type="BIT">
-      <offset>12</offset>
+      <offset>20</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="AiState" type="BIT">
-      <offset>12</offset>
+    <column name="Aistate" type="BIT">
+      <offset>20</offset>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />

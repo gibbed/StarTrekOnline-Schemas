@@ -10,16 +10,16 @@
     <column name="Speed" type="F32">
       <offset>0</offset>
     </column>
-    <column name="cooldownSeconds" type="F32">
+    <column name="Cooldownseconds" type="F32">
       <offset>4</offset>
     </column>
-    <column name="maxDurationSeconds" type="F32">
+    <column name="Maxdurationseconds" type="F32">
       <offset>8</offset>
     </column>
-    <column name="fuelRefillRate" type="F32">
+    <column name="Fuelrefillrate" type="F32">
       <offset>12</offset>
     </column>
-    <column name="fuelRefillDelay" type="F32">
+    <column name="Fuelrefilldelay" type="F32">
       <offset>16</offset>
     </column>
     <column name="}" type="END" />

@@ -19,24 +19,27 @@
     <column name="Time" type="INT">
       <offset>12</offset>
     </column>
-    <column name="DisplayMessage" type="REFERENCE">
+    <column name="Displaymessage" type="REFERENCE">
       <offset>16</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="uRemoved" type="INT">
-      <offset>20</offset>
+    <column name="Uremoved" type="INT">
+      <offset>24</offset>
     </column>
     <column name="Hit" type="BIT">
-      <offset>24</offset>
+      <offset>28</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Miss" type="BIT">
-      <offset>24</offset>
+      <offset>28</offset>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Predict" type="BIT">
-      <offset>24</offset>
+      <offset>28</offset>
       <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

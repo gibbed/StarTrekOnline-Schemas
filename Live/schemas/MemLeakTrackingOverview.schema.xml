@@ -16,40 +16,31 @@
         <format_string name="HTML_PREFORMATTED">1</format_string>
       </format_strings>
     </column>
-    <column name="NumAlertsGenerated" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="CheckFrequency" type="INT">
+    <column name="Numalertsgenerated" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Checkfrequency" type="INT">
+      <offset>12</offset>
       <format_strings>
         <format_string name="HTML_SECS_DURATION">1</format_string>
       </format_strings>
     </column>
-    <column name="IncreaseAmountThatIsALeak" type="INT64">
+    <column name="Increaseamountthatisaleak" type="INT64">
       <offset>16</offset>
       <format_strings>
         <format_string name="HTML_BYTES">1</format_string>
       </format_strings>
     </column>
-    <column name="FirstIncreaseAllowance" type="INT64">
+    <column name="Firstincreaseallowance" type="INT64">
       <offset>24</offset>
       <format_strings>
         <format_string name="HTML_BYTES">1</format_string>
       </format_strings>
     </column>
-    <column name="AlertKeyPrefix" type="STRING">
+    <column name="Alertkeyprefix" type="STRING">
       <offset>32</offset>
     </column>
-    <column name="MostRecentAnalysis" type="STRING">
-      <offset>36</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-      <format_strings>
-        <format_string name="HTML_PREFORMATTED">1</format_string>
-      </format_strings>
-    </column>
-    <column name="AllocationsToIgnore" type="STRING">
+    <column name="Mostrecentanalysis" type="STRING">
       <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -58,8 +49,17 @@
         <format_string name="HTML_PREFORMATTED">1</format_string>
       </format_strings>
     </column>
-    <column name="ForceAnalysisNow" type="STRING">
-      <offset>44</offset>
+    <column name="Allocationstoignore" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_PREFORMATTED">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Forceanalysisnow" type="STRING">
+      <offset>56</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
@@ -67,8 +67,8 @@
         <format_string name="command">1</format_string>
       </format_strings>
     </column>
-    <column name="BeginMemLeakTracking" type="STRING">
-      <offset>48</offset>
+    <column name="Beginmemleaktracking" type="STRING">
+      <offset>64</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="GuildBankLogExportList">
+  <table>
+    <column name="GuildBankLogExportList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Banklog" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="PlayerGuildLog" />
+    </column>
+    <column name="Exportfile" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

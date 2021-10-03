@@ -7,23 +7,23 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uAccountID" type="INT">
+    <column name="Uaccountid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uChannelID" type="INT">
+    <column name="Uchannelid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="targetHandle" type="STRING">
+    <column name="Targethandle" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="uAddFlags" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="uRemoveFlags" type="INT">
+    <column name="Uaddflags" type="INT">
       <offset>16</offset>
     </column>
-    <column name="PermissionLevel" type="INT">
+    <column name="Uremoveflags" type="INT">
       <offset>20</offset>
+    </column>
+    <column name="Permissionlevel" type="INT">
+      <offset>24</offset>
       <static_define_list external="ChannelUserLevel" />
     </column>
     <column name="}" type="END" />

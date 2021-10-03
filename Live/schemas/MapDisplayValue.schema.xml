@@ -19,22 +19,30 @@
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="IsInt" type="BIT">
-      <offset>12</offset>
+    <column name="Isint" type="BIT">
+      <offset>16</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsFloat" type="BIT">
-      <offset>12</offset>
+    <column name="Isfloat" type="BIT">
+      <offset>16</offset>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsString" type="BIT">
-      <offset>12</offset>
+    <column name="Isstring" type="BIT">
+      <offset>16</offset>
       <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Usecustomtimer" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Display" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+      <offset>24</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="MapDisplayVariable" />
     </column>

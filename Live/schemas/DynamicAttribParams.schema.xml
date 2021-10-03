@@ -12,18 +12,19 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1224</default>
+      <default>1294</default>
       <static_define_list external="AttribType" />
     </column>
-    <column name="ExprAttribType" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Exprattribtype" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="Expression" />
     </column>
-    <column name="AttribMessageKey" type="STRING">
-      <offset>8</offset>
+    <column name="Attribmessagekey" type="STRING">
+      <offset>16</offset>
     </column>
-    <column name="DoNoCache" type="U8">
-      <offset>12</offset>
+    <column name="Donocache" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

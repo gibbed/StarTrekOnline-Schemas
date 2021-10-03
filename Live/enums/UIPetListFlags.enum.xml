@@ -7,12 +7,12 @@
     <element name="Critters">2</element>
     <element name="TrainingPets">4</element>
     <element name="NotTrainingPets">8</element>
+    <element name="AllPets">15</element>
     <element name="CurrentAndActivePuppets">16</element>
     <element name="ActivePuppets">32</element>
     <element name="InactivePuppets">64</element>
+    <element name="AllPuppets">112</element>
     <element name="ExtraPets">128</element>
     <element name="ExtraPuppets">256</element>
-    <element name="AllPets">15</element>
-    <element name="AllPuppets">112</element>
   </elements>
 </enum>

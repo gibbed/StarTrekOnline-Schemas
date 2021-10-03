@@ -13,107 +13,110 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CritterName" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="CritterGroupName" type="STRING">
+    <column name="Crittername" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CritterTags" type="INTARRAY">
-      <offset>12</offset>
-      <flags>
-        <flag>UNKNOWN_32</flag>
-      </flags>
-    </column>
-    <column name="EncounterName" type="STRING">
+    <column name="Crittergroupname" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ObjectName" type="STRING">
-      <offset>28</offset>
+    <column name="CritterTags" type="INTARRAY">
+      <offset>24</offset>
       <flags>
-        <flag>POOL_STRING</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="Rank" type="STRING">
+    <column name="Encountername" type="STRING">
       <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="RegionType" type="INT">
-      <offset>36</offset>
-      <default>-1</default>
-      <static_define_list external="WorldRegionType" />
-    </column>
-    <column name="NemesisType" type="STRING">
-      <offset>40</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="IsPlayer" type="U8">
-      <offset>44</offset>
-    </column>
-    <column name="FactionName" type="STRING">
-      <offset>48</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="AllegianceName" type="STRING">
-      <offset>52</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="ClassName" type="STRING">
+    <column name="Objectname" type="STRING">
       <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="HasCredit" type="U8">
-      <offset>60</offset>
-    </column>
-    <column name="CreditPercentage" type="F32">
+    <column name="Rank" type="STRING">
       <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="HasTeamCredit" type="U8">
-      <offset>68</offset>
-    </column>
-    <column name="TeamCreditPercentage" type="F32">
+    <column name="RegionType" type="INT">
       <offset>72</offset>
+      <default>-1</default>
+      <static_define_list external="WorldRegionType" />
+    </column>
+    <column name="Nemesistype" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="IsPlayer" type="U8">
+      <offset>88</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="FactionName" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="AllegianceName" type="STRING">
+      <offset>104</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="className" type="STRING">
+      <offset>112</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Hascredit" type="U8">
+      <offset>120</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Creditpercentage" type="F32">
+      <offset>124</offset>
+    </column>
+    <column name="Hasteamcredit" type="U8">
+      <offset>128</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Teamcreditpercentage" type="F32">
+      <offset>132</offset>
     </column>
     <column name="ContainerType" type="INT">
-      <offset>76</offset>
+      <offset>136</offset>
       <static_define_list external="GlobalType" />
     </column>
     <column name="ContainerID" type="INT">
-      <offset>80</offset>
+      <offset>140</offset>
     </column>
     <column name="DebugName" type="STRING">
-      <offset>84</offset>
+      <offset>144</offset>
     </column>
     <column name="AccountName" type="STRING">
-      <offset>88</offset>
+      <offset>152</offset>
     </column>
-    <column name="LogString" type="STRING">
-      <offset>92</offset>
+    <column name="Logstring" type="STRING">
+      <offset>160</offset>
     </column>
-    <column name="LevelReal" type="INT">
-      <offset>96</offset>
+    <column name="Levelreal" type="INT">
+      <offset>168</offset>
     </column>
-    <column name="LevelCombat" type="INT">
-      <offset>100</offset>
+    <column name="Levelcombat" type="INT">
+      <offset>172</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,20 +7,21 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ContactName" type="STRING">
+    <column name="Contactname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="OptionKey" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="HeaderDisplayString" type="STRING">
+    <column name="Optionkey" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="IsHeader" type="U8">
-      <offset>12</offset>
+    <column name="Headerdisplaystring" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Isheader" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

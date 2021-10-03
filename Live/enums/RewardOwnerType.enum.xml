@@ -7,5 +7,6 @@
     <element name="AllPlayers">4</element>
     <element name="AllEnts">5</element>
     <element name="Enemies">6</element>
+    <element name="MatchGroup">7</element>
   </elements>
 </enum>

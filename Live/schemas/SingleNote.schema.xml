@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NoteName" type="STRING">
+    <column name="Notename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
@@ -15,15 +15,15 @@
       </flags>
     </column>
     <column name="Global" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="SingleNote_Internal" />
     </column>
     <column name="Product" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="SingleNote_Internal" />
     </column>
     <column name="System" type="EMBEDDEDSTRUCT">
-      <offset>20</offset>
+      <offset>40</offset>
       <subtable external="SingleNote_Internal" />
     </column>
     <column name="}" type="END" />

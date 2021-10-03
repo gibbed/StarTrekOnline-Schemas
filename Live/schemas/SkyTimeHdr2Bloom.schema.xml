@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SkyTimeHdr2Bloom">
+  <table>
+    <column name="SkyTimeHdr2Bloom" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="Time" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Bloomfraction" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Bloomnoisethreshold" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Bloomblurweighthigh" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Bloomblurweightmed" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Bloomblurweightlow" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Endhdr2bloom" type="END" />
+  </table>
+</parser>

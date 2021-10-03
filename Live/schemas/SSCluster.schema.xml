@@ -7,21 +7,21 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ClusterObject" type="STRUCT">
+    <column name="Clusterobject" type="STRUCT">
       <offset>0</offset>
       <subtable external="SSClusterObject" />
     </column>
     <column name="Height" type="F32">
-      <offset>4</offset>
-    </column>
-    <column name="Radius" type="F32">
       <offset>8</offset>
     </column>
-    <column name="MinDist" type="F32">
+    <column name="Radius" type="F32">
       <offset>12</offset>
     </column>
-    <column name="MaxDist" type="F32">
+    <column name="Mindist" type="F32">
       <offset>16</offset>
+    </column>
+    <column name="MaxDist" type="F32">
+      <offset>20</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,17 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CategoryDisplayName" type="STRING">
+    <column name="Categorydisplayname" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Category" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="PenaltyTimeLeft" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Penaltytimeleft" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

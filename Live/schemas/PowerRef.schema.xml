@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiID" type="INT">
+    <column name="Uiid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,7 +15,7 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="iIdxSub" type="INT">
+    <column name="Iidxsub" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -23,14 +23,14 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="uiSrcEquipSlot" type="INT16">
+    <column name="Uisrcequipslot" type="INT16">
       <offset>8</offset>
     </column>
-    <column name="iLinkedSub" type="INT16">
+    <column name="Ilinkedsub" type="INT16">
       <offset>10</offset>
     </column>
     <column name="hDef" type="REFERENCE">
-      <offset>12</offset>
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

@@ -8,17 +8,18 @@
     </column>
     <column name="Global" type="BOOLFLAG">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CyclePeriod" type="F32">
+    <column name="Cycleperiod" type="F32">
       <offset>4</offset>
     </column>
-    <column name="CyclePeriodJitter" type="F32">
+    <column name="Cycleperiodjitter" type="F32">
       <offset>8</offset>
     </column>
     <column name="Distance" type="F32">
       <offset>12</offset>
     </column>
-    <column name="DistanceJitter" type="F32">
+    <column name="Distancejitter" type="F32">
       <offset>16</offset>
     </column>
     <column name="LODNear" type="F32">
@@ -30,59 +31,106 @@
     <column name="LifeSpan" type="F32">
       <offset>28</offset>
     </column>
-    <column name="childCallCollection" type="IGNORE">
+    <column name="Childcallcollection" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">DynChildCallCollection</format_string>
+      </format_strings>
     </column>
-    <column name="CallParam" type="STRUCT">
+    <column name="Callparam" type="STRUCT">
       <offset>32</offset>
       <subtable external="DynChildCall" />
     </column>
     <column name="Call" type="STRUCT">
       <offset>32</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>CallParam</redundant_name>
+      <redundant_name>Callparam</redundant_name>
       <subtable external="Call" />
     </column>
-    <column name="CallList" type="STRUCT">
-      <offset>36</offset>
+    <column name="Calllist" type="STRUCT">
+      <offset>40</offset>
       <subtable external="DynChildCallList" />
     </column>
-    <column name="SendMessage" type="STRUCT">
-      <offset>40</offset>
+    <column name="Sendmessage" type="STRUCT">
+      <offset>48</offset>
       <subtable external="DynFxMessage" />
     </column>
-    <column name="SelfMessage" type="STRUCT">
-      <offset>40</offset>
+    <column name="Selfmessage" type="STRUCT">
+      <offset>48</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>SendMessage</redundant_name>
-      <subtable external="SelfMessage" />
+      <redundant_name>Sendmessage</redundant_name>
+      <subtable>
+        <table>
+          <column name="DynFxMessage" type="IGNORE">
+            <flags>
+              <flag>PARSETABLE_INFO</flag>
+            </flags>
+          </column>
+          <column name="Messagetype" type="STRING">
+            <offset>0</offset>
+            <flags>
+              <flag>POOL_STRING</flag>
+              <flag>STRUCTPARAM</flag>
+            </flags>
+          </column>
+          <column name="Sendto" type="INT">
+            <offset>8</offset>
+            <default>1</default>
+            <static_define_list external="MessageTo" />
+          </column>
+          <column name="&#xA;" type="END" />
+        </table>
+      </subtable>
     </column>
     <column name="Message" type="STRUCT">
-      <offset>40</offset>
+      <offset>48</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>SendMessage</redundant_name>
-      <subtable external="SelfMessage" />
+      <redundant_name>Sendmessage</redundant_name>
+      <subtable>
+        <table>
+          <column name="DynFxMessage" type="IGNORE">
+            <flags>
+              <flag>PARSETABLE_INFO</flag>
+            </flags>
+          </column>
+          <column name="Messagetype" type="STRING">
+            <offset>0</offset>
+            <flags>
+              <flag>POOL_STRING</flag>
+              <flag>STRUCTPARAM</flag>
+            </flags>
+          </column>
+          <column name="Sendto" type="INT">
+            <offset>8</offset>
+            <default>1</default>
+            <static_define_list external="MessageTo" />
+          </column>
+          <column name="&#xA;" type="END" />
+        </table>
+      </subtable>
     </column>
     <column name="Name" type="STRING">
-      <offset>44</offset>
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="GroupTextures" type="BOOLFLAG">
-      <offset>48</offset>
+    <column name="Grouptextures" type="BOOLFLAG">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SortAsBlock" type="BOOLFLAG">
-      <offset>49</offset>
+    <column name="Sortasblock" type="BOOLFLAG">
+      <offset>65</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

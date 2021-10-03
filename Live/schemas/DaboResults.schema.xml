@@ -7,19 +7,21 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ResultIndex" type="STRUCT">
+    <column name="Resultindex" type="STRUCT">
       <offset>0</offset>
       <subtable external="DaboResultIndex" />
     </column>
-    <column name="RingIndices" type="INTFIXEDARRAY">
-      <offset>4</offset>
+    <column name="Ringindices" type="INTFIXEDARRAY">
+      <offset>8</offset>
       <num_elements>3</num_elements>
     </column>
-    <column name="HasResults" type="U8">
-      <offset>16</offset>
+    <column name="Hasresults" type="U8">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="HasPayouts" type="U8">
-      <offset>17</offset>
+    <column name="Haspayouts" type="U8">
+      <offset>21</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

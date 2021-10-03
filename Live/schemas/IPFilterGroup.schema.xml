@@ -14,11 +14,26 @@
       </flags>
     </column>
     <column name="filters" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="IPFilter" />
     </column>
     <column name="ip" type="STRINGARRAY">
-      <offset>8</offset>
+      <offset>16</offset>
+    </column>
+    <column name="Trustedaccesslevel" type="INT">
+      <offset>24</offset>
+      <default>-1</default>
+    </column>
+    <column name="Allowedcommandcategory" type="STRINGARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="Allowedcommandcategories_All" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allowedcommandcategories_None" type="U8">
+      <offset>41</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,59 +7,62 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MovableMinX" type="F32">
+    <column name="Movableminx" type="F32">
       <offset>0</offset>
     </column>
-    <column name="MovableMaxX" type="F32">
+    <column name="Movablemaxx" type="F32">
       <offset>4</offset>
     </column>
-    <column name="MovableDefaultX" type="F32">
+    <column name="Movabledefaultx" type="F32">
       <offset>8</offset>
     </column>
-    <column name="MovableMinY" type="F32">
+    <column name="Movableminy" type="F32">
       <offset>12</offset>
     </column>
-    <column name="MovableMaxY" type="F32">
+    <column name="Movablemaxy" type="F32">
       <offset>16</offset>
     </column>
-    <column name="MovableDefaultY" type="F32">
+    <column name="Movabledefaulty" type="F32">
       <offset>20</offset>
     </column>
-    <column name="MovableMinScaleX" type="F32">
+    <column name="Movableminscalex" type="F32">
       <offset>24</offset>
       <default>1</default>
     </column>
-    <column name="MovableMaxScaleX" type="F32">
+    <column name="Movablemaxscalex" type="F32">
       <offset>28</offset>
       <default>1</default>
     </column>
-    <column name="MovableDefaultScaleX" type="F32">
+    <column name="Movabledefaultscalex" type="F32">
       <offset>32</offset>
       <default>1</default>
     </column>
-    <column name="MovableMinScaleY" type="F32">
+    <column name="Movableminscaley" type="F32">
       <offset>36</offset>
       <default>1</default>
     </column>
-    <column name="MovableMaxScaleY" type="F32">
+    <column name="Movablemaxscaley" type="F32">
       <offset>40</offset>
       <default>1</default>
     </column>
-    <column name="MovableDefaultScaleY" type="F32">
+    <column name="Movabledefaultscaley" type="F32">
       <offset>44</offset>
       <default>1</default>
     </column>
-    <column name="MovableDefaultRotation" type="F32">
+    <column name="Movabledefaultrotation" type="F32">
       <offset>48</offset>
     </column>
-    <column name="MovableCanEditPosition" type="U8">
+    <column name="Movablecaneditposition" type="U8">
       <offset>52</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MovableCanEditRotation" type="U8">
+    <column name="Movablecaneditrotation" type="U8">
       <offset>53</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MovableCanEditScale" type="U8">
+    <column name="Movablecaneditscale" type="U8">
       <offset>54</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

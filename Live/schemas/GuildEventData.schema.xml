@@ -7,44 +7,44 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiID" type="INT">
+    <column name="Uiid" type="INT">
       <offset>0</offset>
     </column>
     <column name="Title" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="Description" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="StartTimeTime" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="Duration" type="INT">
+    <column name="Description" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="RecurType" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="RecurrenceCount" type="INT">
+    <column name="Starttimetime" type="INT">
       <offset>24</offset>
     </column>
-    <column name="MinGuildRank" type="INT">
+    <column name="Duration" type="INT">
       <offset>28</offset>
     </column>
-    <column name="MinGuildEditRank" type="INT">
+    <column name="Recurtype" type="INT">
       <offset>32</offset>
     </column>
-    <column name="MinLevel" type="INT">
+    <column name="Recurrencecount" type="INT">
       <offset>36</offset>
     </column>
-    <column name="MaxLevel" type="INT">
+    <column name="Minguildrank" type="INT">
       <offset>40</offset>
     </column>
-    <column name="MinAccepts" type="INT">
+    <column name="Minguildeditrank" type="INT">
       <offset>44</offset>
     </column>
-    <column name="MaxAccepts" type="INT">
+    <column name="MinLevel" type="INT">
       <offset>48</offset>
+    </column>
+    <column name="MaxLevel" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Minaccepts" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Maxaccepts" type="INT">
+      <offset>60</offset>
     </column>
     <column name="}" type="END" />
   </table>

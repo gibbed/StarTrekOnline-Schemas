@@ -10,11 +10,12 @@
     <column name="MaxSpeed" type="F32">
       <offset>0</offset>
     </column>
-    <column name="vel" type="F32FIXEDARRAY">
+    <column name="Vel" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="useVel" type="BIT">
+    <column name="Usevel" type="BIT">
       <offset>16</offset>
       <bit_offset>65536</bit_offset>
     </column>

@@ -22,18 +22,18 @@
     <column name="MieScattering" type="F32">
       <offset>16</offset>
     </column>
-    <column name="MiePhaseAsymmetry" type="F32">
+    <column name="Miephaseasymmetry" type="F32">
       <offset>20</offset>
     </column>
     <column name="IntensityMultiplier" type="F32">
       <offset>24</offset>
     </column>
-    <column name="ParticleHSV" type="F32FIXEDARRAY">
+    <column name="Particlehsv" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="AerosolParticleHSV" type="F32FIXEDARRAY">
+    <column name="Aerosolparticlehsv" type="F32FIXEDARRAY">
       <offset>40</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
@@ -41,10 +41,10 @@
     <column name="NormalizedViewHeight" type="F32">
       <offset>52</offset>
     </column>
-    <column name="TextureSize" type="INT">
+    <column name="Texturesize" type="INT">
       <offset>56</offset>
     </column>
-    <column name="SourceFiles" type="IGNORE" />
+    <column name="Sourcefiles" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

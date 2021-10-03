@@ -15,23 +15,21 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="ReplaceSet" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="HideBone" type="STRINGARRAY">
+    <column name="Replaceset" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="OverrideAlways" type="U8">
-      <offset>12</offset>
+    <column name="Hidebone" type="STRINGARRAY">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="Overlay" type="U8">
-      <offset>13</offset>
+    <column name="Overlay" type="BOOLFLAG">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

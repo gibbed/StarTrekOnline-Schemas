@@ -7,17 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MachineName" type="STRING">
+    <column name="Machinename" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="QueryID" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="Succeeded" type="U8">
+    <column name="Queryid" type="INT">
       <offset>8</offset>
     </column>
-    <column name="Processes" type="STRUCT">
+    <column name="Succeeded" type="U8">
       <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Processes" type="STRUCT">
+      <offset>16</offset>
       <subtable external="SentryProcess_FromSimpleQuery" />
     </column>
     <column name="}" type="END" />

@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="triggerHappened" type="BIT">
+    <column name="Triggerhappened" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="timedOut" type="BIT">
+    <column name="Timedout" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="dirBitName" type="STRING">
-      <offset>4</offset>
+    <column name="Dirbitname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

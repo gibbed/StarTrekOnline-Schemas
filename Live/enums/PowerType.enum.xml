@@ -9,5 +9,6 @@
     <element name="Passive">5</element>
     <element name="Innate">6</element>
     <element name="Enhancement">7</element>
+    <element name="ClickEnhancement">8</element>
   </elements>
 </enum>

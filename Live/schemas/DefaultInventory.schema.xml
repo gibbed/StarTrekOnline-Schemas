@@ -7,19 +7,25 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="InventoryName" type="STRING">
+    <column name="Inventoryname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="InventoryBags" type="STRUCT">
-      <offset>4</offset>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Inventorybags" type="STRUCT">
+      <offset>16</offset>
       <subtable external="InvBagDef" />
     </column>
-    <column name="GrantItem" type="STRUCT">
-      <offset>8</offset>
+    <column name="Grantitem" type="STRUCT">
+      <offset>24</offset>
       <subtable external="DefaultItemDef" />
     </column>
     <column name="}" type="END" />

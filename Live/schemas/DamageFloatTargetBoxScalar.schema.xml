@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="HeightPercentThreshold" type="F32">
+    <column name="Heightpercentthreshold" type="F32">
       <offset>0</offset>
     </column>
-    <column name="ScaleMin" type="F32">
+    <column name="Scalemin" type="F32">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

@@ -7,17 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="estrBranch" type="STRING">
+    <column name="Estrbranch" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="ImediateChildCount" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="VisibleChildCount" type="INT">
+    <column name="Imediatechildcount" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Visiblechildcount" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

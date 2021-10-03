@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CBVariableSetType">
+  <elements type="int">
+    <element name="ROOT">0</element>
+    <element name="MY_CONTEXT">1</element>
+    <element name="PARENT_CONTEXT">2</element>
+  </elements>
+</enum>

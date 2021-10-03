@@ -14,26 +14,29 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="IsDefault" type="U8">
-      <offset>4</offset>
+    <column name="Isdefault" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsMissionRewardDefault" type="U8">
-      <offset>5</offset>
+    <column name="Ismissionrewarddefault" type="U8">
+      <offset>9</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IgnoresFallingDamage" type="U8">
-      <offset>6</offset>
+    <column name="Ignoresfallingdamage" type="U8">
+      <offset>10</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Order" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="ConModifier" type="INT">
       <offset>12</offset>
     </column>
-    <column name="LevelDifficultyMod" type="F32">
+    <column name="Conmodifier" type="INT">
       <offset>16</offset>
     </column>
-    <column name="DifficultyValue" type="STRUCT">
+    <column name="Leveldifficultymod" type="F32">
       <offset>20</offset>
+    </column>
+    <column name="Difficultyvalue" type="STRUCT">
+      <offset>24</offset>
       <subtable external="CritterRankDifficulty" />
     </column>
     <column name="}" type="END" />

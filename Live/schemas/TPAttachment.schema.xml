@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="TPAttachment">
+  <table>
+    <column name="TPAttachment" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Estrbase64data" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="ContentType" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="DataLen" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

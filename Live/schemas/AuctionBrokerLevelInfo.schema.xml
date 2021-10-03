@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LevelStart" type="INT">
+    <column name="Levelstart" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="LevelEnd" type="INT">
+    <column name="Levelend" type="INT">
       <offset>4</offset>
     </column>
     <column name="Item" type="STRUCT">

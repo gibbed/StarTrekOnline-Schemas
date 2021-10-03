@@ -7,22 +7,23 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LineNum" type="LINENUM">
+    <column name="Linenum" type="LINENUM">
       <offset>0</offset>
     </column>
-    <column name="StructName" type="STRING">
-      <offset>4</offset>
+    <column name="Structname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>KEY</flag>
       </flags>
     </column>
     <column name="Field" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="StructContractField" />
     </column>
     <column name="Errors" type="U8">
-      <offset>12</offset>
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

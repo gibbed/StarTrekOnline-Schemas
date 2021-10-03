@@ -7,38 +7,42 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="FlourishTimer" type="F32">
+    <column name="Flourishtimer" type="F32">
       <offset>0</offset>
     </column>
     <column name="Traction" type="F32">
       <offset>4</offset>
     </column>
-    <column name="backScale" type="F32">
+    <column name="Backscale" type="F32">
       <offset>8</offset>
     </column>
-    <column name="pitchDiffMult" type="F32">
+    <column name="Pitchdiffmult" type="F32">
       <offset>12</offset>
     </column>
-    <column name="TurnRateScale" type="F32">
+    <column name="Turnratescale" type="F32">
       <offset>16</offset>
     </column>
-    <column name="turnRateScaleFast" type="F32">
+    <column name="Turnratescalefast" type="F32">
       <offset>20</offset>
     </column>
-    <column name="jump" type="EMBEDDEDSTRUCT">
+    <column name="Jump" type="EMBEDDEDSTRUCT">
       <offset>24</offset>
       <subtable external="SurfaceSyncJump" />
     </column>
-    <column name="test" type="EMBEDDEDSTRUCT">
+    <column name="Test" type="EMBEDDEDSTRUCT">
       <offset>44</offset>
       <subtable external="SurfaceSyncTest" />
     </column>
-    <column name="turn" type="EMBEDDEDSTRUCT">
+    <column name="Turncustom" type="EMBEDDEDSTRUCT">
       <offset>108</offset>
       <subtable external="SurfaceMovementTurnDef" />
     </column>
+    <column name="Turnoverride" type="EMBEDDEDSTRUCT">
+      <offset>124</offset>
+      <subtable external="SurfaceMovementTurnDef" />
+    </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">
-      <offset>120</offset>
+      <offset>140</offset>
       <subtable external="SurfaceSyncFlags" />
     </column>
     <column name="}" type="END" />

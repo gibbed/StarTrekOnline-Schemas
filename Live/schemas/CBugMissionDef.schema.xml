@@ -7,20 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="missionDefName" type="STRING">
+    <column name="Missiondefname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="IsCompleted" type="U8">
-      <offset>4</offset>
+    <column name="Iscompleted" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="DisplayString" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
-    </column>
-    <column name="UGCProjectID" type="INT">
-      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

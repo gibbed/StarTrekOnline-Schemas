@@ -11,13 +11,13 @@
       <offset>0</offset>
       <static_define_list external="TeamRequestCheckStatus" />
     </column>
-    <column name="uiRequesterID" type="INT">
+    <column name="Uirequesterid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="uiRequestedID" type="INT">
+    <column name="Uirequestedid" type="INT">
       <offset>8</offset>
     </column>
-    <column name="uiTeamID" type="INT">
+    <column name="Uiteamid" type="INT">
       <offset>12</offset>
     </column>
     <column name="}" type="END" />

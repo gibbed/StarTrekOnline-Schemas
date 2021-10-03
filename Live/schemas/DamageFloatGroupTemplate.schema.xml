@@ -15,6 +15,31 @@
       <offset>4</offset>
       <static_define_list external="DamageFloatMotion" />
     </column>
+    <column name="Showonscreen" type="U8">
+      <offset>8</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showoffscreen" type="U8">
+      <offset>9</offset>
+      <default>1</default>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Pointbyspatialangle" type="U8">
+      <offset>10</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Pointbyscreenangle" type="U8">
+      <offset>11</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Gencontainer" type="REFERENCE">
+      <offset>16</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UIGen</dictionary_name>
+    </column>
     <column name="}" type="END" />
   </table>
 </parser>

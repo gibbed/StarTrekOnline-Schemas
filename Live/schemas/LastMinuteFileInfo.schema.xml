@@ -10,8 +10,8 @@
     <column name="FileName" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="FileData" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Filedata" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="TextParserBinaryBlock" />
     </column>
     <column name="}" type="END" />

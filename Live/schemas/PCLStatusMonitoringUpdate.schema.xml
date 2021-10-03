@@ -10,42 +10,43 @@
       </format_strings>
     </column>
     <column name="{" type="START" />
-    <column name="internalStatus" type="EMBEDDEDSTRUCT">
+    <column name="Internalstatus" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="PCLStatusMonitoringUpdate_Internal" />
     </column>
-    <column name="TimeBegan" type="INT">
-      <offset>32</offset>
+    <column name="Timebegan" type="INT">
+      <offset>576</offset>
       <format_strings>
         <format_string name="HTML_SECS_AGO">1</format_string>
       </format_strings>
     </column>
-    <column name="MostRecentUpdateTime" type="INT">
-      <offset>36</offset>
+    <column name="Mostrecentupdatetime" type="INT">
+      <offset>580</offset>
       <format_strings>
         <format_string name="HTML_SECS_AGO">1</format_string>
       </format_strings>
     </column>
-    <column name="SucceededOrFailedTime" type="INT">
-      <offset>40</offset>
+    <column name="Succeededorfailedtime" type="INT">
+      <offset>584</offset>
       <format_strings>
         <format_string name="HTML_SECS_AGO">1</format_string>
       </format_strings>
     </column>
-    <column name="NumUpdatesReceived" type="INT">
-      <offset>44</offset>
+    <column name="Numupdatesreceived" type="INT">
+      <offset>588</offset>
     </column>
-    <column name="TimeoutLength" type="INT">
-      <offset>48</offset>
+    <column name="Timeoutlength" type="INT">
+      <offset>592</offset>
       <format_strings>
         <format_string name="HTML_SECS_DURATION">1</format_string>
       </format_strings>
     </column>
-    <column name="TimeoutIndex" type="INT">
-      <offset>52</offset>
+    <column name="Timeoutindex" type="INT">
+      <offset>596</offset>
     </column>
-    <column name="DestroyRequested" type="U8">
-      <offset>56</offset>
+    <column name="Destroyrequested" type="U8">
+      <offset>600</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

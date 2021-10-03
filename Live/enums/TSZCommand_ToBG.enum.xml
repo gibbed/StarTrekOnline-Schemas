@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="TSZCommand_ToBG">
+  <elements type="int">
+    <element name="START_NEW_STREAM">0</element>
+    <element name="CANCEL">1</element>
+    <element name="DATA">2</element>
+    <element name="DATA_AND_CLOSE">3</element>
+  </elements>
+</enum>

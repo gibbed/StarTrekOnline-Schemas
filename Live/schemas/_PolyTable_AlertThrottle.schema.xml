@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="_PolyTable_AlertThrottle">
+  <table>
+    <column name="_PolyTable_AlertThrottle" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="AlertThrottle_ChangeCategoryOrLevel" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AlertThrottle_ChangeCategoryOrLevel" />
+    </column>
+    <column name="AlertThrottle_FailurePercent" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AlertThrottle_FailurePercent" />
+    </column>
+    <column name="AlertThrottle_XWithinY" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AlertThrottle_XWithinY" />
+    </column>
+  </table>
+</parser>

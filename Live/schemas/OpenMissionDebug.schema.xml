@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="OpenMissionDebug">
+  <table>
+    <column name="OpenMissionDebug" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Currentparticipants" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="OpenMissionParticipantDebug" />
+    </column>
+    <column name="Submissioneventcounters" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="OpenMissionEventsDebug" />
+    </column>
+    <column name="Hmissiondef" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>MissionDef</dictionary_name>
+    </column>
+    <column name="Faileddirectorrequirements" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Directorchance" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Active" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Directorcontrolled" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Failsdirectorrequirements" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Dirty" type="U8">
+      <offset>48</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -12,11 +12,12 @@
       <subtable external="PVPTeam" />
     </column>
     <column name="Origin" type="F32FIXEDARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="FlagCritter" type="INT">
-      <offset>16</offset>
+    <column name="Flagcritter" type="INT">
+      <offset>20</offset>
     </column>
     <column name="}" type="END" />
   </table>

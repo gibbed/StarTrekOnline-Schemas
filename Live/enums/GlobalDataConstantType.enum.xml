@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GlobalDataConstantType">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="INT">1</element>
+    <element name="FLOAT">2</element>
+    <element name="STRING">3</element>
+  </elements>
+</enum>

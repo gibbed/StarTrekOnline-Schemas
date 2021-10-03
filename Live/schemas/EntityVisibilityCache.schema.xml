@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiLastCheckTimeMs" type="INT">
+    <column name="Uilastchecktimems" type="INT">
       <offset>0</offset>
     </column>
     <column name="State" type="INT">

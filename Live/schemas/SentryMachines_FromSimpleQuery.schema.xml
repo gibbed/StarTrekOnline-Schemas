@@ -7,11 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="QueryID" type="INT">
+    <column name="Queryid" type="INT">
       <offset>0</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
     </column>
     <column name="Machines" type="STRINGARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

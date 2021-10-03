@@ -9,10 +9,15 @@
     <column name="{" type="START" />
     <column name="Attrib" type="INT">
       <offset>0</offset>
+      <default>-1</default>
       <static_define_list external="AttribType" />
     </column>
-    <column name="FilterNegativeMagnitude" type="BIT">
-      <offset>4</offset>
+    <column name="Power" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Filternegativemagnitude" type="BIT">
+      <offset>16</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -21,8 +26,8 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="FilterPositiveMagnitude" type="BIT">
-      <offset>4</offset>
+    <column name="Filterpositivemagnitude" type="BIT">
+      <offset>16</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>

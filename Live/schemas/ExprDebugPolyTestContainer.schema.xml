@@ -7,20 +7,9 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="polyType" type="OPTIONALPOLYMORPH">
+    <column name="Polytype" type="OPTIONALPOLYMORPH">
       <offset>0</offset>
-      <subtable>
-        <table>
-          <column name="ExprDebugPolyTestFloat" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="ExprDebugPolyTestFloat" />
-          </column>
-          <column name="ExprDebugPolyTestInt" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="ExprDebugPolyTestInt" />
-          </column>
-        </table>
-      </subtable>
+      <subtable external="_PolyTable_ExprDebugPolyTestBase" />
     </column>
     <column name="}" type="END" />
   </table>

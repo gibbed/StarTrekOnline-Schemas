@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pchLeaderboard" type="STRING">
+    <column name="Pchleaderboard" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -16,26 +16,24 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="fPoints" type="F32">
-      <offset>4</offset>
-      <flags>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
-    </column>
-    <column name="sRank" type="EMBEDDEDSTRUCT">
+    <column name="Iscore" type="INT">
       <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
-      <subtable external="LeaderboardRank" />
     </column>
-    <column name="iLastTimestamp" type="INT">
-      <offset>16</offset>
+    <column name="Ilasttimestamp" type="INT">
+      <offset>12</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Fpoints" type="IGNORE" />
+    <column name="Srank" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
       </flags>
     </column>
     <column name="}" type="END" />

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FX2ModuleFunctionInputType">
+  <elements type="int">
+    <element name="ModuleParameter">0</element>
+    <element name="Property">1</element>
+    <element name="Internal">2</element>
+    <element name="DynamicModuleParameter">3</element>
+  </elements>
+</enum>

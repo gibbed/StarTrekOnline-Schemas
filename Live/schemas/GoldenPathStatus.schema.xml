@@ -7,59 +7,74 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GoldenPathFX" type="STRING">
+    <column name="Goldenpathfx" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="GoldenPathObstructedFX" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="GoldenPathAreaFX" type="STRING">
+    <column name="Goldenpathobstructedfx" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="GoldenPathAreaDeathFX" type="STRING">
-      <offset>12</offset>
+    <column name="Goldenpathareafx" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="FoundPath" type="U8">
-      <offset>16</offset>
+    <column name="Goldenpathareadeathfx" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="HasArrived" type="U8">
-      <offset>17</offset>
+    <column name="Foundpath" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="TargetWaypoint" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Hasarrived" type="U8">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Targetwaypoint" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="MinimapWaypoint" />
     </column>
-    <column name="FXStartPoint" type="INT">
-      <offset>24</offset>
+    <column name="Utargetwaypointcrc" type="INT">
+      <offset>48</offset>
     </column>
-    <column name="IsPathObstructed" type="U8">
-      <offset>28</offset>
+    <column name="Fxstartpoint" type="INT">
+      <offset>52</offset>
     </column>
-    <column name="VerticalPathOffset" type="F32">
-      <offset>32</offset>
+    <column name="Ispathobstructed" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FirstNodeInArea" type="OPTIONALSTRUCT">
-      <offset>36</offset>
+    <column name="Verticalpathoffset" type="F32">
+      <offset>60</offset>
+    </column>
+    <column name="Firstnodeinarea" type="OPTIONALSTRUCT">
+      <offset>64</offset>
       <subtable external="GoldenPathNode" />
     </column>
-    <column name="PathFX" type="STRUCT">
-      <offset>40</offset>
+    <column name="Pathfx" type="STRUCT">
+      <offset>72</offset>
       <subtable external="GoldenPathFXConnection" />
     </column>
-    <column name="FXHidden" type="U8">
-      <offset>44</offset>
+    <column name="Fxhidden" type="U8">
+      <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Targetchangedthisframe" type="U8">
+      <offset>81</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hmostrecentmissioncategory" type="REFERENCE">
+      <offset>96</offset>
+      <dictionary_name>MissionCategory</dictionary_name>
     </column>
     <column name="}" type="END" />
   </table>

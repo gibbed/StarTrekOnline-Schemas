@@ -7,66 +7,66 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="received" type="INT64">
+    <column name="Received" type="INT64">
       <offset>0</offset>
     </column>
     <column name="Total" type="INT64">
       <offset>8</offset>
     </column>
-    <column name="received_files" type="INT">
+    <column name="Received_Files" type="INT">
       <offset>16</offset>
     </column>
-    <column name="total_files" type="INT">
+    <column name="Total_Files" type="INT">
       <offset>20</offset>
     </column>
-    <column name="xfers" type="INT">
+    <column name="Xfers" type="INT">
       <offset>24</offset>
     </column>
-    <column name="buffered" type="INT">
+    <column name="Buffered" type="INT">
       <offset>28</offset>
     </column>
-    <column name="actual_transferred" type="INT64">
+    <column name="Actual_Transferred" type="INT64">
       <offset>32</offset>
     </column>
-    <column name="overlay_bytes" type="INT64">
+    <column name="Overlay_Bytes" type="INT64">
       <offset>40</offset>
     </column>
-    <column name="written_bytes" type="INT64">
+    <column name="Written_Bytes" type="INT64">
       <offset>48</offset>
     </column>
-    <column name="http_actual_transferred" type="INT64">
+    <column name="Http_Actual_Transferred" type="INT64">
       <offset>56</offset>
     </column>
-    <column name="http_errors" type="INT64">
+    <column name="Http_Errors" type="INT64">
       <offset>64</offset>
     </column>
-    <column name="http_header_bytes" type="INT64">
+    <column name="Http_Header_Bytes" type="INT64">
       <offset>72</offset>
     </column>
-    <column name="http_mime_bytes" type="INT64">
+    <column name="Http_Mime_Bytes" type="INT64">
       <offset>80</offset>
     </column>
-    <column name="http_body_bytes" type="INT64">
+    <column name="Http_Body_Bytes" type="INT64">
       <offset>88</offset>
     </column>
-    <column name="http_extra_bytes" type="INT64">
+    <column name="Http_Extra_Bytes" type="INT64">
       <offset>96</offset>
     </column>
-    <column name="seconds" type="INT">
+    <column name="Seconds" type="INT">
       <offset>104</offset>
     </column>
-    <column name="loops" type="INT64">
+    <column name="Loops" type="INT64">
       <offset>112</offset>
     </column>
-    <column name="state_info" type="STRUCT">
+    <column name="State_Info" type="STRUCT">
       <offset>120</offset>
       <subtable external="XferStateInfo" />
     </column>
-    <column name="elapsed" type="F32">
-      <offset>124</offset>
+    <column name="Elapsed" type="F32">
+      <offset>128</offset>
     </column>
     <column name="Error" type="INT">
-      <offset>128</offset>
+      <offset>132</offset>
       <static_define_list external="PCL_ErrorCode" />
     </column>
     <column name="}" type="END" />

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MinicontactNameType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="DisplayName">1</element>
+    <element name="CritterDef">2</element>
+    <element name="PetContact">3</element>
+  </elements>
+</enum>

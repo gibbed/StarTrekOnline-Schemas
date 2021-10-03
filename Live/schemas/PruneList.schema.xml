@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="incrementals" type="STRUCT">
+    <column name="Incrementals" type="STRUCT">
       <offset>0</offset>
       <subtable external="PruneFile" />
     </column>
-    <column name="snapshots" type="STRUCT">
-      <offset>4</offset>
-      <subtable external="PruneFile" />
-    </column>
-    <column name="Logs" type="STRUCT">
+    <column name="Snapshots" type="STRUCT">
       <offset>8</offset>
       <subtable external="PruneFile" />
     </column>
-    <column name="offlines" type="STRUCT">
-      <offset>12</offset>
+    <column name="Logs" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="PruneFile" />
+    </column>
+    <column name="Offlines" type="STRUCT">
+      <offset>24</offset>
       <subtable external="PruneFile" />
     </column>
     <column name="}" type="END" />

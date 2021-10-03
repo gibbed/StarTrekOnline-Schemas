@@ -10,14 +10,15 @@
     <column name="Name" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="uiPetID" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="ID" type="INT">
+    <column name="Uipetid" type="INT">
       <offset>8</offset>
     </column>
-    <column name="IsEmpty" type="U8">
+    <column name="ID" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Isempty" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

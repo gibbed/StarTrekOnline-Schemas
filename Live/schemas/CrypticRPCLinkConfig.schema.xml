@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CrypticRPCLinkConfig">
+  <table>
+    <column name="CrypticRPCLinkConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Systemoriptoconnectto" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="port" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Accesslevelforcommandsfromthislink" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Secondsinactivitybeforedormant" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Requestedlinktype" type="INT">
+      <offset>20</offset>
+      <static_define_list external="LinkType" />
+    </column>
+    <column name="Iamephemeral" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Nonetcompress" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Allowconfigchange" type="BIT">
+      <offset>24</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Suppressconfigchangealerts" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

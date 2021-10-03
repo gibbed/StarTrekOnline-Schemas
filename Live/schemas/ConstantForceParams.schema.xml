@@ -12,16 +12,23 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1180</default>
+      <default>1287</default>
       <static_define_list external="AttribType" />
     </column>
-    <column name="ExprBlockYawOffset" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Exprblockyawoffset" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="Expression" />
     </column>
-    <column name="ModOwnerRelative" type="BIT">
-      <offset>8</offset>
+    <column name="Modownerrelative" type="BIT">
+      <offset>16</offset>
       <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Facetargettowardsource" type="BIT">
+      <offset>16</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Facetargettowardsourceduration" type="F32">
+      <offset>20</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,11 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="is_specified" type="BOOLFLAG">
+    <column name="Is_Specified" type="BOOLFLAG">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="refvalue" type="STRING">
-      <offset>4</offset>
+    <column name="Refvalue" type="STRING">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

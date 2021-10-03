@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="StartLine" type="INT">
+    <column name="Startline" type="INT">
       <offset>0</offset>
     </column>
-    <column name="StopLine" type="INT">
+    <column name="Stopline" type="INT">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

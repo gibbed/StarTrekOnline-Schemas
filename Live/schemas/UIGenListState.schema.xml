@@ -12,98 +12,136 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>9</default>
+      <default>10</default>
       <static_define_list external="UIGenType" />
     </column>
-    <column name="SelectedRow" type="INT">
+    <column name="Selectedrow" type="INT">
       <offset>4</offset>
       <default>-1</default>
     </column>
-    <column name="ResizeCol" type="INT16">
+    <column name="Managedfocusindex" type="INT">
       <offset>8</offset>
       <default>-1</default>
     </column>
-    <column name="MoveCol" type="INT16">
-      <offset>10</offset>
-      <default>-1</default>
-    </column>
-    <column name="DestCol" type="INT16">
+    <column name="Preferredcolumnfocus" type="INT">
       <offset>12</offset>
       <default>-1</default>
     </column>
-    <column name="SortCol" type="INT16">
-      <offset>14</offset>
+    <column name="Resizecol" type="INT16">
+      <offset>16</offset>
       <default>-1</default>
     </column>
-    <column name="SortMode" type="INT">
-      <offset>16</offset>
-      <static_define_list external="UISortType" />
+    <column name="Mostrecentresizecol" type="INT16">
+      <offset>18</offset>
+      <default>-1</default>
     </column>
-    <column name="MouseInsideRow" type="INT">
+    <column name="Movecol" type="INT16">
       <offset>20</offset>
+      <default>-1</default>
     </column>
-    <column name="MouseInsideCol" type="INT16">
+    <column name="Destcol" type="INT16">
+      <offset>22</offset>
+      <default>-1</default>
+    </column>
+    <column name="Mousedownx" type="INT">
       <offset>24</offset>
     </column>
-    <column name="LastMouseInsideRow" type="INT">
+    <column name="Mousedowny" type="INT">
       <offset>28</offset>
-      <default>-1</default>
     </column>
-    <column name="LastMouseInsideCol" type="INT16">
+    <column name="Mouselastx" type="INT">
       <offset>32</offset>
     </column>
-    <column name="SortAscIndicatorBundleTexture" type="EMBEDDEDSTRUCT">
+    <column name="Mouselasty" type="INT">
       <offset>36</offset>
+    </column>
+    <column name="Mouseinsiderow" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Mouseinsidecol" type="INT16">
+      <offset>44</offset>
+    </column>
+    <column name="Lastmouseinsiderow" type="INT">
+      <offset>48</offset>
+      <default>-1</default>
+    </column>
+    <column name="Lastmouseinsidecol" type="INT16">
+      <offset>52</offset>
+    </column>
+    <column name="Sortcol" type="INT16">
+      <offset>54</offset>
+      <default>-1</default>
+    </column>
+    <column name="Sortfieldindex" type="INT">
+      <offset>56</offset>
+      <default>-1</default>
+    </column>
+    <column name="Sortmode" type="INT">
+      <offset>60</offset>
+      <static_define_list external="UISortType" />
+    </column>
+    <column name="Sorttokeninterpretation" type="INT">
+      <offset>64</offset>
+      <static_define_list external="UIGenTokenInterpretation" />
+    </column>
+    <column name="Sortfieldname" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Sortascindicatorbundletexture" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
       <subtable external="UIGenBundleTexture" />
     </column>
-    <column name="SortDesIndicatorBundleTexture" type="EMBEDDEDSTRUCT">
-      <offset>112</offset>
+    <column name="Sortdesindicatorbundletexture" type="EMBEDDEDSTRUCT">
+      <offset>184</offset>
       <subtable external="UIGenBundleTexture" />
     </column>
-    <column name="SortAscIndicatorBundle" type="EMBEDDEDSTRUCT">
-      <offset>188</offset>
+    <column name="Sortascindicatorbundle" type="EMBEDDEDSTRUCT">
+      <offset>280</offset>
       <subtable external="UIGenBundleTextureState" />
     </column>
-    <column name="SortDesIndicatorBundle" type="EMBEDDEDSTRUCT">
-      <offset>200</offset>
+    <column name="Sortdesindicatorbundle" type="EMBEDDEDSTRUCT">
+      <offset>304</offset>
       <subtable external="UIGenBundleTextureState" />
     </column>
     <column name="Scrollbar" type="EMBEDDEDSTRUCT">
-      <offset>212</offset>
+      <offset>328</offset>
       <subtable external="UIGenScrollbarState" />
     </column>
-    <column name="BadTemplateNames" type="STRINGARRAY">
-      <offset>240</offset>
+    <column name="Badtemplatenames" type="STRINGARRAY">
+      <offset>480</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Rows" type="STRUCT">
-      <offset>244</offset>
+      <offset>488</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
         <flag>STRUCT_NORECURSE</flag>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="UIGen" />
     </column>
-    <column name="OwnedRows" type="STRUCT">
-      <offset>248</offset>
+    <column name="Ownedrows" type="STRUCT">
+      <offset>496</offset>
       <flags>
         <flag>STRUCT_NORECURSE</flag>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="UIGen" />
     </column>
-    <column name="TemplateGens" type="STRUCT">
-      <offset>252</offset>
+    <column name="Templategens" type="STRUCT">
+      <offset>504</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="UIGenChild" />
     </column>
-    <column name="ColumnOrder" type="STRUCT">
-      <offset>256</offset>
+    <column name="Columnorder" type="STRUCT">
+      <offset>512</offset>
       <flags>
         <flag>STRUCT_NORECURSE</flag>
         <flag>NO_INDEX</flag>
@@ -111,27 +149,49 @@
       <subtable external="UIColumn" />
     </column>
     <column name="Cols" type="STRUCT">
-      <offset>260</offset>
+      <offset>520</offset>
       <flags>
         <flag>STRUCT_NORECURSE</flag>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="UIGen" />
     </column>
-    <column name="DestDrawHigh" type="U8">
-      <offset>264</offset>
+    <column name="Layoutfixedcolumnpercentage" type="F32">
+      <offset>528</offset>
     </column>
-    <column name="ForceShowSelectedRow" type="U8">
-      <offset>265</offset>
+    <column name="Layoutunfixedcolumnpercentage" type="F32">
+      <offset>532</offset>
     </column>
-    <column name="SelectedRowNotSelected" type="U8">
-      <offset>266</offset>
+    <column name="Layoutstretchycolumnpercentage" type="F32">
+      <offset>536</offset>
+    </column>
+    <column name="Layoutplayercolumnpercentage" type="F32">
+      <offset>540</offset>
+    </column>
+    <column name="Layouttotalstretchyratio" type="F32">
+      <offset>544</offset>
+    </column>
+    <column name="Layouttotalplayerpercentage" type="F32">
+      <offset>548</offset>
+    </column>
+    <column name="Destdrawhigh" type="U8">
+      <offset>552</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forceshowselectedrow" type="U8">
+      <offset>553</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Selectedrownotselected" type="U8">
+      <offset>554</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Unselected" type="U8">
-      <offset>267</offset>
+      <offset>555</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DesiredRowSelection" type="INT">
-      <offset>268</offset>
+    <column name="Desiredrowselection" type="INT">
+      <offset>556</offset>
       <default>-1</default>
     </column>
     <column name="}" type="END" />

@@ -16,20 +16,20 @@
       </flags>
     </column>
     <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Bits" type="STRING">
-      <offset>16</offset>
+      <offset>32</offset>
     </column>
     <column name="Order" type="F32">
-      <offset>20</offset>
+      <offset>40</offset>
     </column>
-    <column name="RandomWeight" type="F32">
-      <offset>24</offset>
+    <column name="Randomweight" type="F32">
+      <offset>44</offset>
     </column>
-    <column name="RestrictedTo" type="INT">
-      <offset>28</offset>
+    <column name="Restrictedto" type="INT">
+      <offset>48</offset>
       <static_define_list external="PCRestriction" />
       <format>FLAGS</format>
     </column>

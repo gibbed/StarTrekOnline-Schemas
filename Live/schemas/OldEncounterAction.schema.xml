@@ -14,8 +14,8 @@
       </flags>
       <static_define_list external="EncounterState" />
     </column>
-    <column name="ActionBlock" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Actionblock" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="Expression" />
     </column>
     <column name="}" type="END" />

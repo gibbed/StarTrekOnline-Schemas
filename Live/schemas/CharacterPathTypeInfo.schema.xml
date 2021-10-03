@@ -13,12 +13,12 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="MaxNumberOwned" type="INT">
-      <offset>4</offset>
+    <column name="Maxnumberowned" type="INT">
+      <offset>8</offset>
       <default>1</default>
     </column>
     <column name="MinLevel" type="INT">
-      <offset>8</offset>
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hInterior" type="REFERENCE">
+    <column name="Hinterior" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MSTeamsServerButtonBehavior">
+  <elements type="int">
+    <element name="NORMAL">0</element>
+    <element name="ONCE">1</element>
+    <element name="EXCLUSIVE">2</element>
+  </elements>
+</enum>

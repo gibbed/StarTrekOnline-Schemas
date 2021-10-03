@@ -10,10 +10,10 @@
     <column name="FPS" type="F32">
       <offset>0</offset>
     </column>
-    <column name="rendererPerf" type="F32">
+    <column name="Rendererperf" type="F32">
       <offset>4</offset>
     </column>
-    <column name="ping" type="INT">
+    <column name="Ping" type="INT">
       <offset>8</offset>
     </column>
     <column name="ip" type="INT">

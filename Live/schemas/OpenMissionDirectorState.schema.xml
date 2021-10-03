@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="OpenMissionDirectorState">
+  <table>
+    <column name="OpenMissionDirectorState" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Partitionidx" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Hmissionzonesettings" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>MissionDirectorMapSettingsDef</dictionary_name>
+    </column>
+    <column name="Zonehistory" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <subtable external="MissionHistoryState" />
+    </column>
+    <column name="Pointcounters" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="MissionPointCounter" />
+    </column>
+    <column name="Divisions" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="MissionDivisionState" />
+    </column>
+    <column name="Activitiescache" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="ActiveActivity" />
+    </column>
+    <column name="Eapchcleanupinstances" type="STRINGARRAY">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Ea32debuggerentities" type="INTARRAY">
+      <offset>72</offset>
+    </column>
+    <column name="Senddebugdata" type="U8">
+      <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Unextdebugupdatetime" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

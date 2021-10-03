@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="SentryAutoLaunchProcessState">
+  <elements type="int">
+    <element name="UNKNOWN">0</element>
+    <element name="RUNNING">1</element>
+    <element name="WAITING_FOR_EXE">2</element>
+    <element name="LAUNCH_ATTEMPTED">3</element>
+  </elements>
+</enum>

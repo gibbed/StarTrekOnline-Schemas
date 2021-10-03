@@ -6,101 +6,107 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="FN" type="CURRENTFILE">
+    <column name="Fn" type="CURRENTFILE">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="N" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="graphic_props" type="IGNORE">
-      <flags>
-        <flag>FLATEMBED</flag>
-      </flags>
-    </column>
-    <column name="default_fallback" type="IGNORE">
-      <flags>
-        <flag>FLATEMBED</flag>
-      </flags>
-    </column>
-    <column name="Template" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="InputMapping" type="STRUCT">
-      <offset>12</offset>
-      <subtable external="ShaderInputMapping" />
-    </column>
-    <column name="OperationValue" type="STRUCT">
-      <offset>16</offset>
-      <subtable external="ShaderOperationValues" />
-    </column>
-    <column name="Fallback" type="STRUCT">
-      <offset>24</offset>
-      <subtable external="MaterialFallback" />
-    </column>
-    <column name="FallbacksOverriden" type="U8">
-      <offset>28</offset>
-    </column>
-    <column name="GfxFlags" type="INT">
-      <offset>40</offset>
-      <min_bits>5</min_bits>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
-      <format>FLAGS</format>
-    </column>
-    <column name="UnlitContribution" type="F32">
-      <offset>44</offset>
-      <float_rounding>HUNDREDTHS</float_rounding>
-    </column>
-    <column name="DiffuseContribution" type="F32">
-      <offset>48</offset>
-      <float_rounding>HUNDREDTHS</float_rounding>
-    </column>
-    <column name="SpecularContribution" type="F32">
-      <offset>52</offset>
-      <float_rounding>HUNDREDTHS</float_rounding>
-    </column>
-    <column name="MaxReflectResolution" type="BIT">
-      <offset>56</offset>
-      <bit_offset>262144</bit_offset>
-    </column>
-    <column name="world_props" type="IGNORE">
+    <column name="Gfx" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">ShadingMaterialData</format_string>
+      </format_strings>
     </column>
-    <column name="PhysicalProperties" type="REFERENCE">
-      <offset>60</offset>
-      <dictionary_name>PhysicalProperties</dictionary_name>
-    </column>
-    <column name="SoundProfile" type="REFERENCE">
-      <offset>60</offset>
+    <column name="Default_Fallback" type="IGNORE">
       <flags>
-        <flag>ALIAS</flag>
+        <flag>FLATEMBED</flag>
       </flags>
-      <redundant_name>PhysicalProperties</redundant_name>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">MaterialFallback</format_string>
+      </format_strings>
+    </column>
+    <column name="Template" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Inputmapping" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="ShaderInputMapping" />
+    </column>
+    <column name="Operationvalue" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="ShaderOperationValues" />
+    </column>
+    <column name="Fallback" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="MaterialFallback" />
+    </column>
+    <column name="Fallbacksoverriden" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Palette" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Gfxflags" type="INT">
+      <offset>72</offset>
+      <min_bits>5</min_bits>
+      <static_define_list external="RdrMaterialFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Maxreflectresolution" type="BIT">
+      <offset>76</offset>
+      <bit_offset>262144</bit_offset>
+    </column>
+    <column name="World" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">WorldMaterialData</format_string>
+      </format_strings>
+    </column>
+    <column name="Physicalproperties" type="REFERENCE">
+      <offset>80</offset>
       <dictionary_name>PhysicalProperties</dictionary_name>
     </column>
-    <column name="IsAutosave" type="U8">
-      <offset>64</offset>
+    <column name="Soundprofile" type="REFERENCE">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Physicalproperties</redundant_name>
+      <dictionary_name>PhysicalProperties</dictionary_name>
     </column>
-    <column name="OldName" type="IGNORE">
+    <column name="Isautosave" type="U8">
+      <offset>88</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Oldname" type="IGNORE">
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="has_validation_error" type="IGNORE" />
-    <column name="bad_material_is_mine" type="IGNORE" />
-    <column name="disallowed_features" type="IGNORE" />
-    <column name="EndMaterial" type="END" />
+    <column name="Has_Validation_Error" type="IGNORE" />
+    <column name="Bad_Material_Is_Mine" type="IGNORE" />
+    <column name="Disallowed_Features" type="IGNORE" />
+    <column name="Unlitcontribution" type="IGNORE" />
+    <column name="Diffusecontribution" type="IGNORE" />
+    <column name="Specularcontribution" type="IGNORE" />
+    <column name="Endmaterial" type="END" />
   </table>
 </parser>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ClampType" type="INT">
+    <column name="Clamptype" type="INT">
       <offset>0</offset>
       <static_define_list external="MissionLevelClampType" />
     </column>
@@ -17,14 +17,14 @@
     <column name="MaxLevel" type="INT">
       <offset>8</offset>
     </column>
-    <column name="ClampOffsetMin" type="INT">
+    <column name="Clampoffsetmin" type="INT">
       <offset>12</offset>
     </column>
-    <column name="ClampOffsetMax" type="INT">
+    <column name="Clampoffsetmax" type="INT">
       <offset>16</offset>
     </column>
-    <column name="ClampMapVariable" type="STRING">
-      <offset>20</offset>
+    <column name="Clampmapvariable" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

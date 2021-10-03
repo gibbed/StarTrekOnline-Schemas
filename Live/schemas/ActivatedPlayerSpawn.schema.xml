@@ -14,8 +14,8 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="spawnPointName" type="STRING">
-      <offset>4</offset>
+    <column name="Spawnpointname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING_DB</flag>
         <flag>PERSIST</flag>

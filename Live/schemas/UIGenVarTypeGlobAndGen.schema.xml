@@ -7,12 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="glob" type="IGNORE">
+    <column name="Glob" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">UIGenVarTypeGlob</format_string>
+      </format_strings>
     </column>
-    <column name="GlobName" type="STRING">
+    <column name="Globname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -21,35 +24,43 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="State" type="INT">
-      <offset>4</offset>
+    <column name="Contextconstant" type="INT">
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
+      <static_define_list external="UIGenContextIntConstants" />
+    </column>
+    <column name="State" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Contextconstant</redundant_name>
       <static_define_list external="UIGenState" />
     </column>
     <column name="Int" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>State</redundant_name>
+      <redundant_name>Contextconstant</redundant_name>
     </column>
     <column name="Float" type="F32">
-      <offset>8</offset>
+      <offset>12</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
     <column name="String" type="STRING">
-      <offset>12</offset>
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="hTarget" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Htarget" type="REFERENCE">
+      <offset>24</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>

@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="FX2EmitterSky">
+  <table>
+    <column name="FX2EmitterSky" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Type" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>6</default>
+      <static_define_list external="FX2EmitterType" />
+    </column>
+    <column name="Emitteruserproperty" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="FX2Property" />
+    </column>
+    <column name="Event" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="FX2EmitterEvent" />
+    </column>
+    <column name="Events" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Event</redundant_name>
+      <subtable external="FX2EmitterEvent" />
+    </column>
+    <column name="State" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="FX2EmitterState" />
+    </column>
+    <column name="States" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>State</redundant_name>
+      <subtable external="FX2EmitterState" />
+    </column>
+    <column name="Uidinparent" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Uuidinparent" type="INT">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Uidinparent</redundant_name>
+    </column>
+    <column name="Binnedemitterdata" type="STRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <subtable external="FX2BinnedData" />
+    </column>
+    <column name="Ubinnedemitterdatasize" type="INT">
+      <offset>56</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+    </column>
+    <column name="Lodrange" type="EMBEDDEDSTRUCT">
+      <offset>60</offset>
+      <subtable external="FX2LODRange" />
+    </column>
+    <column name="Oemittercost" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <subtable external="FX2EmitterCost" />
+    </column>
+    <column name="Hidden" type="U8">
+      <offset>84</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Soloed" type="U8">
+      <offset>85</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hascpuonlymodules" type="U8">
+      <offset>86</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hasgpuonlymodules" type="U8">
+      <offset>87</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Supportsphysics" type="U8">
+      <offset>88</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Applyowneralpha" type="U8">
+      <offset>89</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uuidindoc" type="INT">
+      <offset>92</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>EDITOR_IGNORE</flag>
+        <flag>EDIT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Previewstate" type="INT">
+      <offset>104</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>EDITOR_IGNORE</flag>
+        <flag>EDIT_ONLY</flag>
+      </flags>
+      <default>-1</default>
+    </column>
+    <column name="Previewdirty" type="U8">
+      <offset>108</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>EDITOR_IGNORE</flag>
+        <flag>EDIT_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Boundscentertype" type="INT">
+      <offset>112</offset>
+      <default>3</default>
+      <static_define_list external="Fx2BoundsCenterType" />
+    </column>
+    <column name="Secondaryboundscentertype" type="INT">
+      <offset>116</offset>
+      <default>5</default>
+      <static_define_list external="Fx2BoundsCenterType" />
+    </column>
+    <column name="Boundsusernode" type="STRING">
+      <offset>120</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Secondaryboundsusernode" type="STRING">
+      <offset>128</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Boundsshapetype" type="INT">
+      <offset>136</offset>
+      <static_define_list external="Fx2BoundsShapeType" />
+    </column>
+    <column name="Secondaryboundsshapetype" type="INT">
+      <offset>140</offset>
+      <static_define_list external="Fx2BoundsShapeType" />
+    </column>
+    <column name="Outerboundsshapetype" type="INT">
+      <offset>144</offset>
+      <default>1</default>
+      <static_define_list external="Fx2BoundsShapeType" />
+    </column>
+    <column name="Boundsradius" type="F32">
+      <offset>148</offset>
+    </column>
+    <column name="Boundsscalemultiplier" type="F32">
+      <offset>152</offset>
+      <default>1</default>
+    </column>
+    <column name="Boundsscalepadding" type="F32">
+      <offset>156</offset>
+    </column>
+    <column name="Boundsboxmin" type="F32FIXEDARRAY">
+      <offset>160</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Boundsboxmax" type="F32FIXEDARRAY">
+      <offset>172</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Secondaryboundsradius" type="F32">
+      <offset>184</offset>
+    </column>
+    <column name="Secondaryboundsboxmin" type="F32FIXEDARRAY">
+      <offset>188</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Secondaryboundsboxmax" type="F32FIXEDARRAY">
+      <offset>200</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Geomodelnameinemitter" type="STRING">
+      <offset>216</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+    </column>
+    <column name="Fx2getemitfromgeomodelfromworld" type="U8">
+      <offset>224</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Visibilityboundsmodelname" type="STRING">
+      <offset>232</offset>
+    </column>
+    <column name="Materialtimersource" type="INT">
+      <offset>240</offset>
+      <static_define_list external="Fx2MaterialTimerSource" />
+    </column>
+    <column name="Boundswidth" type="F32">
+      <offset>244</offset>
+    </column>
+    <column name="Boundsheight" type="F32">
+      <offset>248</offset>
+    </column>
+    <column name="Boundsdepth" type="F32">
+      <offset>252</offset>
+    </column>
+    <column name="Sourcefiltertype" type="INT">
+      <offset>256</offset>
+      <static_define_list external="FX2FilterType" />
+    </column>
+    <column name="Targetfiltertype" type="INT">
+      <offset>260</offset>
+      <static_define_list external="FX2FilterType" />
+    </column>
+    <column name="Allowshadows" type="BIT">
+      <offset>264</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Scaleboundswithcenter" type="BIT">
+      <offset>264</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Getvisibilityboundsmodelfromworld" type="BIT">
+      <offset>264</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Secondaryscaleboundswithcenter" type="BIT">
+      <offset>264</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Devonly" type="BIT">
+      <offset>264</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Skyname" type="STRING">
+      <offset>272</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Linearfalloff" type="U8">
+      <offset>280</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

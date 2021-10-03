@@ -10,8 +10,8 @@
     <column name="portNum" type="INT">
       <offset>0</offset>
     </column>
-    <column name="IPStats" type="STRUCT">
-      <offset>4</offset>
+    <column name="Ipstats" type="STRUCT">
+      <offset>8</offset>
       <subtable external="HttpIPStats_Internal" />
     </column>
     <column name="}" type="END" />

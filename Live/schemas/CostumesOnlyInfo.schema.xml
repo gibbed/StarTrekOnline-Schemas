@@ -7,43 +7,46 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ConstPlayerCostume" type="OPTIONALSTRUCT">
+    <column name="Constplayercostume" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="PlayerCostume" />
     </column>
     <column name="Texture" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="BasicTexture" />
     </column>
     <column name="Species" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="CharacterName" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="AnimKeyword" type="STRING">
-      <offset>156</offset>
+    <column name="Animkeyword" type="STRING">
+      <offset>1072</offset>
     </column>
     <column name="Initialized" type="U8">
-      <offset>160</offset>
+      <offset>1080</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="HeadShotFinal" type="U8">
-      <offset>161</offset>
+    <column name="Headshotfinal" type="U8">
+      <offset>1081</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Width" type="F32">
-      <offset>164</offset>
+      <offset>1084</offset>
     </column>
     <column name="Height" type="F32">
-      <offset>168</offset>
+      <offset>1088</offset>
     </column>
-    <column name="SendToServer" type="U8">
-      <offset>172</offset>
+    <column name="Sendtoserver" type="U8">
+      <offset>1092</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

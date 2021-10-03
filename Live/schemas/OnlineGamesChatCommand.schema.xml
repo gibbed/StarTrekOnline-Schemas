@@ -10,17 +10,17 @@
     <column name="CharacterName" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="characterContainerID" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="ProductName" type="STRING">
+    <column name="Charactercontainerid" type="INT">
       <offset>8</offset>
     </column>
+    <column name="ProductName" type="STRING">
+      <offset>16</offset>
+    </column>
     <column name="MapName" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
     <column name="shardName" type="STRING">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pathVersionReceived" type="INT">
+    <column name="Pathversionreceived" type="INT">
       <offset>0</offset>
     </column>
-    <column name="reachedWaypointIndex" type="INT">
+    <column name="Reachedwaypointindex" type="INT">
       <offset>4</offset>
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">

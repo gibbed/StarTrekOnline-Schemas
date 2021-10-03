@@ -11,34 +11,34 @@
       <offset>0</offset>
     </column>
     <column name="State" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="bytes_requested" type="INT">
       <offset>8</offset>
     </column>
-    <column name="start_ticks" type="INT64">
+    <column name="Bytes_Requested" type="INT">
       <offset>16</offset>
     </column>
-    <column name="blocks_so_far" type="INT">
+    <column name="Start_Ticks" type="INT64">
       <offset>24</offset>
     </column>
-    <column name="blocks_total" type="INT">
-      <offset>28</offset>
-    </column>
-    <column name="block_size" type="INT">
+    <column name="Blocks_So_Far" type="INT">
       <offset>32</offset>
     </column>
-    <column name="cum_bytes_requested" type="INT">
+    <column name="Blocks_Total" type="INT">
       <offset>36</offset>
     </column>
-    <column name="total_bytes_sent" type="INT">
+    <column name="Block_Size" type="INT">
       <offset>40</offset>
     </column>
-    <column name="total_bytes_received" type="INT">
+    <column name="Cum_Bytes_Requested" type="INT">
       <offset>44</offset>
     </column>
-    <column name="filedata_size" type="INT">
+    <column name="Total_Bytes_Sent" type="INT">
       <offset>48</offset>
+    </column>
+    <column name="Total_Bytes_Received" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Filedata_Size" type="INT">
+      <offset>56</offset>
     </column>
     <column name="}" type="END" />
   </table>

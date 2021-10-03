@@ -5,24 +5,27 @@
       <flags>
         <flag>PARSETABLE_INFO</flag>
       </flags>
+      <format_strings>
+        <format_string name="__VERSION">1</format_string>
+      </format_strings>
     </column>
     <column name="{" type="START" />
-    <column name="globalStringTable" type="STRINGARRAY">
+    <column name="Globalstringtable" type="STRINGARRAY">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="method" type="INT">
-      <offset>4</offset>
+    <column name="Method" type="INT">
+      <offset>8</offset>
       <static_define_list external="StructPackMethod" />
     </column>
     <column name="Flags" type="INT">
-      <offset>8</offset>
+      <offset>12</offset>
       <static_define_list external="StructPackFlags" />
     </column>
-    <column name="binary_block" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Binary_Block" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="TextParserBinaryBlock" />
     </column>
     <column name="}" type="END" />

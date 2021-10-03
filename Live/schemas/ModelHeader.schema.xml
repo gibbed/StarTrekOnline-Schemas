@@ -15,58 +15,66 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="AltPivot" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="AltPivot" />
     </column>
-    <column name="bone_names" type="STRINGARRAY">
-      <offset>12</offset>
+    <column name="Bone_Names" type="STRINGARRAY">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="attachment_bone" type="STRING">
-      <offset>16</offset>
+    <column name="Attachment_Bone" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Radius" type="F32">
-      <offset>20</offset>
+      <offset>40</offset>
     </column>
     <column name="Min" type="F32FIXEDARRAY">
-      <offset>24</offset>
+      <offset>44</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Max" type="F32FIXEDARRAY">
-      <offset>36</offset>
+      <offset>56</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="tri_count" type="INT">
-      <offset>48</offset>
+    <column name="Tri_Count" type="INT">
+      <offset>68</offset>
     </column>
-    <column name="has_verts2" type="BIT">
-      <offset>52</offset>
+    <column name="Vert_Count" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Tri_Hash" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Has_Verts2" type="BIT">
+      <offset>80</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="high_detail_high_lod" type="BIT">
-      <offset>52</offset>
+    <column name="High_Detail_High_Lod" type="BIT">
+      <offset>80</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="missing_data" type="BIT">
-      <offset>52</offset>
+    <column name="Missing_Data" type="BIT">
+      <offset>80</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="has_reductions" type="IGNORE" />
-    <column name="AutoLOD_Dists" type="IGNORE" />
+    <column name="Has_Reductions" type="IGNORE" />
+    <column name="Autolod_Dists" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ESndDuckSmoothing">
+  <elements type="int">
+    <element name="Linear">0</element>
+    <element name="Smooth">1</element>
+    <element name="Smoother">2</element>
+    <element name="SmoothingCount">3</element>
+  </elements>
+</enum>

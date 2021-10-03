@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="RPCLoggingCategory">
+  <elements type="int">
+    <element name="LOCALCOMMANDS">0</element>
+    <element name="REMOTECOMMANDS">1</element>
+    <element name="MANAGERSTATE">2</element>
+  </elements>
+</enum>

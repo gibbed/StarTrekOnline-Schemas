@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RequiredPowers" type="STRUCT">
+    <column name="Requiredpowers" type="STRUCT">
       <offset>0</offset>
       <subtable external="RequiredPower" />
     </column>

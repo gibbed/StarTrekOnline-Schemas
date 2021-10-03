@@ -7,35 +7,107 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ChangeCooldown" type="INT">
+    <column name="Changecooldown" type="INT">
       <offset>0</offset>
     </column>
     <column name="Prices" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="CostumePrices" />
     </column>
-    <column name="MountRiderScaleBlend" type="F32">
-      <offset>8</offset>
+    <column name="Mountriderscaleblend" type="F32">
+      <offset>16</offset>
       <default>-1</default>
     </column>
-    <column name="DisablePlayerActiveChange" type="BIT">
-      <offset>12</offset>
+    <column name="Disableplayeractivechange" type="BIT">
+      <offset>20</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="InvalidCostumesAreFreeToChange" type="BIT">
-      <offset>12</offset>
+    <column name="Invalidcostumesarefreetochange" type="BIT">
+      <offset>20</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="EnableItemCategoryAddedBones" type="BIT">
-      <offset>12</offset>
+    <column name="Enableitemcategoryaddedbones" type="BIT">
+      <offset>20</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="CostumeGenderPrefixes" type="STRUCT">
-      <offset>16</offset>
-      <subtable external="CostumeGenderPrefix" />
-    </column>
-    <column name="bfParamsSpecified" type="INTFIXEDARRAY">
+    <column name="Allowemptyplayercreatedcostumes" type="BIT">
       <offset>20</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Rejectcostumeparts" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Allowcostume2parts" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Allowanycostumescales" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Emptycostumesassumecostume1" type="BIT">
+      <offset>20</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Ignoreskincolor" type="BIT">
+      <offset>21</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Playercanchangeskeleton" type="BIT">
+      <offset>21</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Standardplayercapsuleradius" type="F32">
+      <offset>24</offset>
+      <default>1069547520</default>
+    </column>
+    <column name="Standardplayercapsuleheight" type="F32">
+      <offset>28</offset>
+      <default>6</default>
+    </column>
+    <column name="Gender" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="CostumeGenderConfig" />
+    </column>
+    <column name="Linkgroup" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="CostumeLinkGroup" />
+    </column>
+    <column name="Cepartcostume" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="CostumeCEPartCostumeConfig" />
+    </column>
+    <column name="Additionalcolorlinkconst" type="STRINGARRAY">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Scalepresettag" type="STRINGARRAY">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Scalepresetskeleton" type="STRINGARRAY">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Costumedesigndatalabelbone" type="STRINGARRAY">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Extractchannel" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="CostumeExtractChannelConfig" />
+    </column>
+    <column name="Bfparamsspecified" type="INTFIXEDARRAY">
+      <offset>96</offset>
       <flags>
         <flag>USEDFIELD</flag>
       </flags>

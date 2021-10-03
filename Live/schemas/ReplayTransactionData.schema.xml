@@ -13,14 +13,14 @@
     <column name="TimeStamp" type="INT">
       <offset>8</offset>
     </column>
-    <column name="estrTransaction" type="STRING">
-      <offset>12</offset>
+    <column name="Estrtransaction" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="estrBufferedLine" type="STRING">
-      <offset>16</offset>
+    <column name="Estrbufferedline" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

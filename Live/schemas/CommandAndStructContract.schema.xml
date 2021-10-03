@@ -12,11 +12,11 @@
       <subtable external="CommandContract" />
     </column>
     <column name="Struct" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="StructContract" />
     </column>
-    <column name="StaticDefine" type="STRUCT">
-      <offset>8</offset>
+    <column name="Staticdefine" type="STRUCT">
+      <offset>16</offset>
       <subtable external="StaticDefineContract" />
     </column>
     <column name="}" type="END" />

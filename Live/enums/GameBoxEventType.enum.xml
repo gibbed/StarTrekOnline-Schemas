@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GameBoxEventType">
+  <elements type="int">
+    <element name="EnemyKilled">0</element>
+    <element name="MissionCompleted">1</element>
+    <element name="ItemGained">2</element>
+    <element name="BagGetsItem">3</element>
+    <element name="Poke">4</element>
+    <element name="LevelUp">5</element>
+    <element name="OfficerPromotion">6</element>
+  </elements>
+</enum>

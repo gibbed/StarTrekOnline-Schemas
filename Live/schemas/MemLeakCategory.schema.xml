@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CategoryName__" type="STRING">
+    <column name="Categoryname__" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="MemberNames__" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Membernames__" type="STRINGARRAY">
+      <offset>8</offset>
       <format_strings>
         <format_string name="DEFAULT_FIELD">1</format_string>
       </format_strings>
     </column>
-    <column name="ReportString__" type="STRING">
-      <offset>16</offset>
+    <column name="Reportstring__" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -12,8 +12,24 @@
       <dictionary_name>ItemAssignmentDef</dictionary_name>
     </column>
     <column name="Outcomes" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="ItemAssignmentOutcomeRewardRequest" />
+    </column>
+    <column name="Uassignmentid" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Uprogressionlevel" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Uupdatetime" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Ulastrequesttime" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Rewardsfinal" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

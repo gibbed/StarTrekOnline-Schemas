@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ConsignmentSearchComponent">
+  <table>
+    <column name="ConsignmentSearchComponent" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Operation" type="INT">
+      <offset>0</offset>
+      <static_define_list external="ConsignmentSearchOp" />
+    </column>
+    <column name="ValueName" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Stringoperand" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Intoperand1" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Intoperand2" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

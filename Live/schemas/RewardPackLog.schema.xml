@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="EntityName" type="STRING">
+    <column name="Entityname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="RewardPackName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="RewardPackItems" type="STRUCT">
+    <column name="Rewardpackname" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Rewardpackitems" type="STRUCT">
+      <offset>16</offset>
       <subtable external="RewardPackItem" />
     </column>
     <column name="}" type="END" />

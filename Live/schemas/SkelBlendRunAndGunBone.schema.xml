@@ -13,10 +13,11 @@
       </flags>
     </column>
     <column name="Secondary" type="BOOLFLAG">
-      <offset>4</offset>
-    </column>
-    <column name="LimitAngle" type="F32">
       <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Limitangle" type="F32">
+      <offset>12</offset>
     </column>
     <column name="End" type="END" />
   </table>

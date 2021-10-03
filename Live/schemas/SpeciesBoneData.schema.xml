@@ -17,39 +17,14 @@
       <dictionary_name>CostumeBone</dictionary_name>
     </column>
     <column name="Requires" type="U8">
-      <offset>4</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="BodyColorSet0" type="REFERENCE">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <dictionary_name>CostumeColors</dictionary_name>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="BodyColorSet" type="REFERENCE">
-      <offset>8</offset>
-      <flags>
-        <flag>ALIAS</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <redundant_name>BodyColorSet0</redundant_name>
-      <dictionary_name>CostumeColors</dictionary_name>
-    </column>
-    <column name="BodyColorSet1" type="REFERENCE">
-      <offset>12</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <dictionary_name>CostumeColors</dictionary_name>
-    </column>
-    <column name="BodyColorSet2" type="REFERENCE">
+    <column name="Bodycolorset0" type="REFERENCE">
       <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -57,16 +32,42 @@
       </flags>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="BodyColorSet3" type="REFERENCE">
-      <offset>20</offset>
+    <column name="Bodycolorset" type="REFERENCE">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Bodycolorset0</redundant_name>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Bodycolorset1" type="REFERENCE">
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="ColorQuadSet" type="REFERENCE">
-      <offset>24</offset>
+    <column name="Bodycolorset2" type="REFERENCE">
+      <offset>32</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Bodycolorset3" type="REFERENCE">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Colorquadset" type="REFERENCE">
+      <offset>48</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

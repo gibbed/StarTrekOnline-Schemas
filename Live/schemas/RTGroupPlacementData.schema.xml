@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="target_group" type="OPTIONALSTRUCT">
+    <column name="Target_Group" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="TrackerHandle" />
     </column>
-    <column name="papLogicalNamesList" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Paplogicalnameslist" type="STRINGARRAY">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

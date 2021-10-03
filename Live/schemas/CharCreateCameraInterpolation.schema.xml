@@ -26,23 +26,23 @@
       <subtable external="CharCreateCameraPolynomial" />
     </column>
     <column name="Y" type="STRUCT">
-      <offset>52</offset>
-      <subtable external="CharCreateCameraPolynomial" />
-    </column>
-    <column name="Z" type="STRUCT">
       <offset>56</offset>
       <subtable external="CharCreateCameraPolynomial" />
     </column>
-    <column name="Pitch" type="STRUCT">
-      <offset>60</offset>
-      <subtable external="CharCreateCameraPolynomial" />
-    </column>
-    <column name="Yaw" type="STRUCT">
+    <column name="Z" type="STRUCT">
       <offset>64</offset>
       <subtable external="CharCreateCameraPolynomial" />
     </column>
+    <column name="Pitch" type="STRUCT">
+      <offset>72</offset>
+      <subtable external="CharCreateCameraPolynomial" />
+    </column>
+    <column name="Yaw" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="CharCreateCameraPolynomial" />
+    </column>
     <column name="Roll" type="STRUCT">
-      <offset>68</offset>
+      <offset>88</offset>
       <subtable external="CharCreateCameraPolynomial" />
     </column>
     <column name="}" type="END" />

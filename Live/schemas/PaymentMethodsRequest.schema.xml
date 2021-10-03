@@ -7,17 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uAccountID" type="INT">
+    <column name="Uaccountid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uSteamID" type="INT64">
+    <column name="Usteamid" type="INT64">
       <offset>8</offset>
     </column>
     <column name="Proxy" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="CmdID" type="INT">
-      <offset>20</offset>
+    <column name="Cmdid" type="INT">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

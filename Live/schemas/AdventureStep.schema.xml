@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="AdventureStep">
+  <table>
+    <column name="AdventureStep" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Mission" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>Mission</dictionary_name>
+    </column>
+    <column name="Contact" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>Contact</dictionary_name>
+    </column>
+    <column name="Map" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Contactname" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

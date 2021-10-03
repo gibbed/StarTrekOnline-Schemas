@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="STNotifyType">
+  <elements type="int">
+    <element name="InteractionNotify">305</element>
+    <element name="LogoutTimerNotify">306</element>
+  </elements>
+</enum>

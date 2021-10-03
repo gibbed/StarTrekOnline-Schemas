@@ -13,18 +13,18 @@
       <static_define_list external="ChoiceValueType" />
     </column>
     <column name="Value" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="WorldVariable" />
     </column>
-    <column name="ChoiceTable" type="REFERENCE">
-      <offset>60</offset>
+    <column name="Choicetable" type="REFERENCE">
+      <offset>128</offset>
       <dictionary_name>ChoiceTable</dictionary_name>
     </column>
-    <column name="ChoiceName" type="STRING">
-      <offset>64</offset>
+    <column name="Choicename" type="STRING">
+      <offset>136</offset>
     </column>
-    <column name="ChoiceIndex" type="INT">
-      <offset>68</offset>
+    <column name="Choiceindex" type="INT">
+      <offset>144</offset>
     </column>
     <column name="}" type="END" />
   </table>

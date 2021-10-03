@@ -7,33 +7,33 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hItemDef" type="REFERENCE">
+    <column name="Hitemdef" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
     <column name="Item" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Item" />
     </column>
-    <column name="OwnedItem" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Owneditem" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="Item" />
     </column>
-    <column name="CheapestLot" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Cheapestlot" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="AuctionLot" />
     </column>
-    <column name="CheapestPrice" type="INT">
-      <offset>16</offset>
+    <column name="Cheapestprice" type="INT">
+      <offset>32</offset>
     </column>
-    <column name="LotCountAtAnyPrice" type="INT">
-      <offset>20</offset>
+    <column name="Lotcountatanyprice" type="INT">
+      <offset>36</offset>
     </column>
-    <column name="WhereFrom" type="STRING">
-      <offset>24</offset>
+    <column name="Wherefrom" type="STRING">
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EntityLoadoutTray">
+  <table>
+    <column name="EntityLoadoutTray" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Iloadoutindex" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Loadouttray" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">SavedTray</format_string>
+      </format_strings>
+    </column>
+    <column name="Piuitrayindex" type="INTARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Puinoslotpowerids" type="INTARRAY">
+      <offset>16</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Pptrayelems" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="TrayElem" />
+    </column>
+    <column name="Ppautoattackelems" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="TrayElem" />
+    </column>
+    <column name="Binitialized" type="U8">
+      <offset>40</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bmanualautofireon" type="U8">
+      <offset>41</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

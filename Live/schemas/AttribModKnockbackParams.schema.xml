@@ -12,20 +12,31 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>336</default>
+      <default>388</default>
       <static_define_list external="AttribType" />
     </column>
     <column name="InstantFacePlant" type="U8">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="OmitProne" type="U8">
+    <column name="Omitprone" type="U8">
       <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Timer" type="F32">
       <offset>8</offset>
     </column>
-    <column name="IgnoreTravelTime" type="U8">
+    <column name="Ignoretraveltime" type="U8">
       <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Resetadditivevel" type="U8">
+      <offset>13</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Overridestactical" type="U8">
+      <offset>14</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

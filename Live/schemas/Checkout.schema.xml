@@ -11,13 +11,13 @@
       <offset>0</offset>
     </column>
     <column name="Time" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="SandBox" type="STRING">
       <offset>8</offset>
     </column>
+    <column name="SandBox" type="STRING">
+      <offset>16</offset>
+    </column>
     <column name="Branch" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

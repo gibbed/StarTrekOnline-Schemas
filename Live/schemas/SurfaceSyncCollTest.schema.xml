@@ -7,16 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="flagBits" type="INT">
+    <column name="Flagbits" type="INT">
       <offset>0</offset>
     </column>
-    <column name="loOffset" type="F32FIXEDARRAY">
+    <column name="Looffset" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="hiOffset" type="F32FIXEDARRAY">
+    <column name="Hioffset" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Radius" type="F32">
       <offset>28</offset>

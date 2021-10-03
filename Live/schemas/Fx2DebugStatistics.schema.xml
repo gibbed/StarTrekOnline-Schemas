@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="Fx2DebugStatistics">
+  <table>
+    <column name="Fx2DebugStatistics" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Omax" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="Fx2GlobalStatistics" />
+    </column>
+    <column name="Ocur" type="EMBEDDEDSTRUCT">
+      <offset>180</offset>
+      <subtable external="Fx2GlobalStatistics" />
+    </column>
+    <column name="Utimer" type="INT">
+      <offset>360</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

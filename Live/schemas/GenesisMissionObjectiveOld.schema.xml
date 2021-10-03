@@ -12,32 +12,32 @@
       <default>12</default>
       <static_define_list external="GenesisWhenType" />
     </column>
-    <column name="CompleteChallenge" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Completechallenge" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="GenesisMissionObjectiveOld_CompleteChallenge" />
     </column>
-    <column name="ReachLocation" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Reachlocation" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="GenesisMissionObjectiveOld_ReachLocation" />
     </column>
-    <column name="KillCritter" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Killcritter" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="GenesisMissionObjectiveOld_KillCritter" />
     </column>
-    <column name="KillCritterGroup" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Killcrittergroup" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="GenesisMissionObjectiveOld_KillCritterGroup" />
     </column>
-    <column name="TalkToContact" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Talktocontact" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="GenesisMissionObjectiveOld_TalkToContact" />
     </column>
-    <column name="CollectItems" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Collectitems" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="GenesisMissionObjectiveOld_CollectItems" />
     </column>
-    <column name="PromptComplete" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Promptcomplete" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <subtable external="GenesisMissionObjectiveOld_PromptComplete" />
     </column>
     <column name="}" type="END" />

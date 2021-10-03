@@ -9,37 +9,39 @@
     <column name="Time" type="F32">
       <offset>0</offset>
     </column>
-    <column name="OutlineHSV" type="F32FIXEDARRAY">
+    <column name="Outlinehsv" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="OutlineAlpha" type="F32">
+    <column name="Outlinealpha" type="F32">
       <offset>16</offset>
     </column>
-    <column name="OutlineFade" type="F32FIXEDARRAY">
+    <column name="Outlinefade" type="F32FIXEDARRAY">
       <offset>20</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="OutlineLuminance1" type="F32">
+    <column name="Outlineluminance1" type="F32">
       <offset>36</offset>
     </column>
-    <column name="OutlineLuminance2" type="F32">
+    <column name="Outlineluminance2" type="F32">
       <offset>40</offset>
     </column>
-    <column name="OutlineHSV2" type="F32FIXEDARRAY">
+    <column name="Outlinehsv2" type="F32FIXEDARRAY">
       <offset>44</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="OutlineThickness" type="F32">
+    <column name="Outlinethickness" type="F32">
       <offset>56</offset>
       <default>1</default>
     </column>
-    <column name="UseZ" type="U8">
+    <column name="Usez" type="U8">
       <offset>60</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="bfParamsSpecified" type="INTFIXEDARRAY">
+    <column name="Bfparamsspecified" type="INTFIXEDARRAY">
       <offset>64</offset>
       <flags>
         <flag>USEDFIELD</flag>
@@ -47,10 +49,10 @@
       </flags>
       <num_elements>1</num_elements>
     </column>
-    <column name="OutlineAdaptFadeOffset" type="IGNORE" />
-    <column name="OutlineAdaptFadeScale" type="IGNORE" />
-    <column name="OutlineAdaptFadeMin" type="IGNORE" />
-    <column name="OutlineAdaptFadeSaturation" type="IGNORE" />
-    <column name="EndSkyOutline" type="END" />
+    <column name="Outlineadaptfadeoffset" type="IGNORE" />
+    <column name="Outlineadaptfadescale" type="IGNORE" />
+    <column name="Outlineadaptfademin" type="IGNORE" />
+    <column name="Outlineadaptfadesaturation" type="IGNORE" />
+    <column name="Endskyoutline" type="END" />
   </table>
 </parser>

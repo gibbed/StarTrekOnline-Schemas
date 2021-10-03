@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ActiveActivity">
+  <table>
+    <column name="ActiveActivity" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Activityname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Activitydef" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="ActivityDef" />
+    </column>
+    <column name="Utimestart" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Utimeend" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

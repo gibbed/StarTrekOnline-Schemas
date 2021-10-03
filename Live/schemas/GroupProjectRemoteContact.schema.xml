@@ -15,14 +15,14 @@
       </flags>
     </column>
     <column name="ContactDef" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="RequiredUnlock" type="STRUCT">
-      <offset>8</offset>
+    <column name="Requiredunlock" type="STRUCT">
+      <offset>16</offset>
       <subtable external="GroupProjectUnlockDefRef" />
     </column>
     <column name="}" type="END" />

@@ -4,5 +4,6 @@
     <element name="NONE">0</element>
     <element name="SIMPLE">1</element>
     <element name="CUBEMAP">2</element>
+    <element name="CUBEMAP_ARRAY">3</element>
   </elements>
 </enum>

@@ -9,15 +9,15 @@
     <element name="BEGIN_CLIENT_ONLY">5</element>
     <element name="SOUND">6</element>
     <element name="LIGHT">7</element>
-    <element name="FX">8</element>
-    <element name="ANIMATION">9</element>
-    <element name="WIND_SOURCE">10</element>
-    <element name="BEGIN_DRAWABLES">11</element>
-    <element name="MODEL">12</element>
-    <element name="MODELINSTANCED">13</element>
-    <element name="SPLINE">14</element>
-    <element name="OCCLUSION">15</element>
-    <element name="MODELCLUSTER">16</element>
+    <element name="LIGHT2">8</element>
+    <element name="FX">9</element>
+    <element name="ANIMATION">10</element>
+    <element name="WIND_SOURCE">11</element>
+    <element name="BEGIN_DRAWABLES">12</element>
+    <element name="MODEL">13</element>
+    <element name="MODELINSTANCED">14</element>
+    <element name="SPLINE">15</element>
+    <element name="OCCLUSION">16</element>
     <element name="COUNT">17</element>
   </elements>
 </enum>

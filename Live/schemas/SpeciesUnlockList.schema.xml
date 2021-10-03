@@ -7,9 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SpeciesUnlocks" type="STRUCT">
+    <column name="Speciesunlocksbydefname" type="STRUCT">
       <offset>0</offset>
       <subtable external="SpeciesUnlock" />
+    </column>
+    <column name="Speciesunlocksbycode" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="SpeciesUnlockByCode" />
     </column>
     <column name="}" type="END" />
   </table>

@@ -20,7 +20,7 @@
       <offset>24</offset>
     </column>
     <column name="Message" type="EMBEDDEDSTRUCT">
-      <offset>28</offset>
+      <offset>32</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>

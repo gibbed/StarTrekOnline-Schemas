@@ -7,83 +7,87 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LayoutName" type="STRING">
+    <column name="Layoutname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="LayoutSeed" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="TransmogrifyVersion" type="INT">
+    <column name="Layoutseed" type="INT">
       <offset>8</offset>
     </column>
-    <column name="Backdrop" type="OPTIONALSTRUCT">
+    <column name="Transmogrifyversion" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Backdrop" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="GenesisBackdrop" />
     </column>
     <column name="GeoType" type="REFERENCE">
-      <offset>16</offset>
+      <offset>24</offset>
       <dictionary_name>GenesisGeotype</dictionary_name>
     </column>
     <column name="Ecosystem" type="REFERENCE">
-      <offset>20</offset>
+      <offset>32</offset>
       <dictionary_name>GenesisEcosystem</dictionary_name>
     </column>
-    <column name="ColorShift" type="F32">
-      <offset>24</offset>
+    <column name="Colorshift" type="F32">
+      <offset>40</offset>
     </column>
-    <column name="PlayAreaMin" type="F32FIXEDARRAY">
-      <offset>28</offset>
-      <num_elements>2</num_elements>
-    </column>
-    <column name="PlayAreaMax" type="F32FIXEDARRAY">
-      <offset>36</offset>
-      <num_elements>2</num_elements>
-    </column>
-    <column name="PlayAreaBuffer" type="F32">
+    <column name="Playareamin" type="F32FIXEDARRAY">
       <offset>44</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="IsVistaTerrain" type="U8">
-      <offset>48</offset>
-    </column>
-    <column name="VertDir" type="INT">
+    <column name="Playareamax" type="F32FIXEDARRAY">
       <offset>52</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Playareabuffer" type="F32">
+      <offset>60</offset>
+    </column>
+    <column name="Isvistaterrain" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Vertdir" type="INT">
+      <offset>68</offset>
       <static_define_list external="GenesisVertDir" />
     </column>
     <column name="Shape" type="INT">
-      <offset>56</offset>
+      <offset>72</offset>
       <static_define_list external="GenesisExteriorShape" />
     </column>
-    <column name="MaxRoadAngle" type="F32">
-      <offset>60</offset>
+    <column name="Maxroadangle" type="F32">
+      <offset>76</offset>
     </column>
-    <column name="VistaMap" type="STRING">
-      <offset>64</offset>
+    <column name="Vistamap" type="STRING">
+      <offset>80</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="StartRoom" type="STRING">
-      <offset>68</offset>
+    <column name="Startroom" type="STRING">
+      <offset>88</offset>
     </column>
-    <column name="EndRoom" type="STRING">
-      <offset>72</offset>
+    <column name="Endroom" type="STRING">
+      <offset>96</offset>
     </column>
     <column name="Room" type="STRUCT">
-      <offset>76</offset>
+      <offset>104</offset>
       <subtable external="GenesisZoneMapRoom" />
     </column>
     <column name="Path" type="STRUCT">
-      <offset>80</offset>
+      <offset>112</offset>
       <subtable external="GenesisZoneMapPath" />
     </column>
     <column name="Constraint" type="STRUCT">
-      <offset>84</offset>
+      <offset>120</offset>
       <subtable external="GenesisRoomConstraint" />
     </column>
-    <column name="NoSharingDetail" type="U8">
-      <offset>88</offset>
+    <column name="Nosharingdetail" type="U8">
+      <offset>128</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DetailKit" type="IGNORE" />
+    <column name="Detailkit" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

@@ -12,12 +12,16 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1196</default>
+      <default>1306</default>
       <static_define_list external="AttribType" />
     </column>
     <column name="KillType" type="INT">
       <offset>4</offset>
       <static_define_list external="KillType" />
+    </column>
+    <column name="Killsunkillable" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,15 +7,21 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GlobalType" type="INT">
+    <column name="Globaltype" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="MaxContainerID" type="INT">
+    <column name="Firstlegalcontainerid" type="INT">
       <offset>4</offset>
+    </column>
+    <column name="Lastlegalcontainerid" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Maxcontainerid" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

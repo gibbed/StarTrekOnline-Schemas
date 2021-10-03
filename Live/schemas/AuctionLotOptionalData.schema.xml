@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pchOwnerName" type="FIXEDSTRING">
+    <column name="Pchownername" type="FIXEDSTRING">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <string_length>128</string_length>
     </column>
-    <column name="pchOwnerHandle" type="FIXEDSTRING">
+    <column name="Pchownerhandle" type="FIXEDSTRING">
       <offset>128</offset>
       <flags>
         <flag>PERSIST</flag>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RarityCount" type="STRUCT">
+    <column name="Raritycount" type="STRUCT">
       <offset>0</offset>
       <subtable external="ItemAssignmentRarityCount" />
     </column>

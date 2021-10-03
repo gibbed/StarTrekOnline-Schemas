@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ScaledAttribSetting">
+  <table>
+    <column name="ScaledAttribSetting" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Attribtype" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Attribscaletype" type="INT">
+      <offset>4</offset>
+      <static_define_list external="AttribScaleType" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

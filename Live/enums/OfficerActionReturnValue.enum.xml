@@ -15,5 +15,6 @@
     <element name="ActionAlreadyQueued">11</element>
     <element name="InCombat">12</element>
     <element name="BeingTraded">13</element>
+    <element name="MaxRank">14</element>
   </elements>
 </enum>

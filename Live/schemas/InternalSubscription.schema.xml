@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="InternalSubscription">
+  <table>
+    <column name="InternalSubscription" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="UID" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uaccountid" type="INT">
+      <offset>4</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Psubinternalname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uexpiration" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ucreated" type="INT">
+      <offset>20</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uproductid" type="INT">
+      <offset>24</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Apply Transaction" type="COMMAND">
+      <offset>0</offset>
+      <command_string>AccountServerMonTransactionOnEntity AccountServerInternalSubscription $FIELD(UID) $STRING(Transaction String)$CONFIRM(This will crit-alert!)</command_string>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

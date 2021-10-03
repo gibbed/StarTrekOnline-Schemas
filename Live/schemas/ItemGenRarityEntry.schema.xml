@@ -11,8 +11,8 @@
       <offset>0</offset>
       <static_define_list external="ItemGenRarity" />
     </column>
-    <column name="NumChoices" type="INT">
-      <offset>4</offset>
+    <column name="Numchoices" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

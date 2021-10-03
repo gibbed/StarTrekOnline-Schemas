@@ -7,26 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pointName" type="STRING">
+    <column name="Pointname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="loc" type="F32FIXEDARRAY">
-      <offset>4</offset>
+    <column name="Loc" type="F32FIXEDARRAY">
+      <offset>8</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="rot_Location" type="MATPYR">
-      <offset>16</offset>
+    <column name="Rot_Location" type="MATPYR">
+      <offset>20</offset>
       <num_elements>9</num_elements>
     </column>
-    <column name="pos_Location" type="F32FIXEDARRAY">
-      <offset>52</offset>
+    <column name="Pos_Location" type="F32FIXEDARRAY">
+      <offset>56</offset>
       <num_elements>3</num_elements>
     </column>
     <column name="ID" type="INT">
-      <offset>116</offset>
+      <offset>120</offset>
       <default>-1</default>
     </column>
     <column name="}" type="END" />

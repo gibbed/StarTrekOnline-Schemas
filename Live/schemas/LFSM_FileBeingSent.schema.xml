@@ -13,13 +13,13 @@
     <column name="cmd" type="INT">
       <offset>4</offset>
     </column>
-    <column name="RemoteFileName" type="STRING">
+    <column name="Remotefilename" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="FileSize" type="INT64">
+    <column name="Filesize" type="INT64">
       <offset>16</offset>
     </column>
-    <column name="BytesAlreadySent" type="INT64">
+    <column name="Bytesalreadysent" type="INT64">
       <offset>24</offset>
     </column>
     <column name="}" type="END" />

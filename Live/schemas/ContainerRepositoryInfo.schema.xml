@@ -7,29 +7,54 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LastSequenceNumber" type="INT64">
+    <column name="Lastsequencenumber" type="INT64">
       <offset>0</offset>
     </column>
-    <column name="LastTimeStamp" type="INT">
+    <column name="Firstsequencenumber" type="INT64">
       <offset>8</offset>
     </column>
-    <column name="CurrentSequenceNumber" type="INT64">
+    <column name="Lasttimestamp" type="INT">
       <offset>16</offset>
     </column>
-    <column name="CurrentTimeStamp" type="INT">
+    <column name="Currentsequencenumber" type="INT64">
       <offset>24</offset>
     </column>
-    <column name="BaseContainerID" type="INT">
-      <offset>28</offset>
-    </column>
-    <column name="MaxContainerID" type="INT">
+    <column name="Currenttimestamp" type="INT">
       <offset>32</offset>
     </column>
-    <column name="RepositoryTypeInfo" type="STRUCT">
+    <column name="Firstbasecontainerid" type="INT">
       <offset>36</offset>
+    </column>
+    <column name="Basecontainerid" type="INT">
+      <offset>36</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Firstbasecontainerid</redundant_name>
+    </column>
+    <column name="Lastbasecontainerid" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Maxcontainerid" type="INT">
+      <offset>40</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Lastbasecontainerid</redundant_name>
+    </column>
+    <column name="Repositorytypeinfo" type="STRUCT">
+      <offset>48</offset>
       <subtable external="ContainerRepositoryTypeInfo" />
     </column>
-    <column name="DeletedContainers" type="IGNORE">
+    <column name="Offlinekey" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <subtable external="UUID_t" />
+    </column>
+    <column name="Poisoned" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Deletedcontainers" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>

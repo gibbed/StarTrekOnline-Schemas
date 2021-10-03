@@ -12,22 +12,22 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>216</default>
+      <default>232</default>
       <static_define_list external="AttribType" />
     </column>
-    <column name="DisableFakeRoll" type="BIT">
+    <column name="Disablefakeroll" type="BIT">
       <offset>4</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="IgnorePitch" type="BIT">
+    <column name="Ignorepitch" type="BIT">
       <offset>4</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="UseJumpBit" type="BIT">
+    <column name="Usejumpbit" type="BIT">
       <offset>4</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="ConstantFoward" type="BIT">
+    <column name="Constantfoward" type="BIT">
       <offset>4</offset>
       <bit_offset>65539</bit_offset>
     </column>

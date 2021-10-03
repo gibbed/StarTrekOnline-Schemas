@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ZoneMapEncounterActorInfo">
+  <table>
+    <column name="ZoneMapEncounterActorInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Fsmvariabledef" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="ZoneMapEncounterVariableDef" />
+    </column>
+    <column name="ContactDef" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>Contact</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

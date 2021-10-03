@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MouseDamp" type="F32">
+    <column name="Mousedamp" type="F32">
       <offset>0</offset>
     </column>
-    <column name="OuterAngleThreshold" type="F32">
+    <column name="Outeranglethreshold" type="F32">
       <offset>4</offset>
     </column>
-    <column name="InnerAngleThreshold" type="F32">
+    <column name="Inneranglethreshold" type="F32">
       <offset>8</offset>
     </column>
-    <column name="SecondsPostActivation" type="F32">
+    <column name="Secondspostactivation" type="F32">
       <offset>12</offset>
     </column>
     <column name="}" type="END" />

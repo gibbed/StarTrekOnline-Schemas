@@ -7,49 +7,49 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iOwnerAccountID" type="INT">
+    <column name="Iowneraccountid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iMinimumBid" type="INT">
+    <column name="Iminimumbid" type="INT">
       <offset>4</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iNumBids" type="INT">
+    <column name="Inumbids" type="INT">
       <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iCurrentBid" type="INT">
+    <column name="Icurrentbid" type="INT">
       <offset>12</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iBiddingPlayerContainerID" type="INT">
+    <column name="Ibiddingplayercontainerid" type="INT">
       <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iBiddingPlayerAccountID" type="INT">
+    <column name="Ibiddingplayeraccountid" type="INT">
       <offset>20</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iBiddingPlayerLangID" type="INT">
+    <column name="Ibiddingplayerlangid" type="INT">
       <offset>24</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iNumFailedCloseOperations" type="INT">
+    <column name="Inumfailedcloseoperations" type="INT">
       <offset>28</offset>
       <flags>
         <flag>SERVER_ONLY</flag>

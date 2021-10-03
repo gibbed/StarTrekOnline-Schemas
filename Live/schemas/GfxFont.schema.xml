@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SizeIsPixels" type="BIT">
+    <column name="Sizeispixels" type="BIT">
       <offset>0</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
@@ -37,7 +37,7 @@
         <format_string name="SPECIAL_DEFAULT">0</format_string>
       </format_strings>
     </column>
-    <column name="DropShadow" type="BIT">
+    <column name="Upcase" type="BIT">
       <offset>0</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
@@ -47,7 +47,7 @@
         <format_string name="SPECIAL_DEFAULT">0</format_string>
       </format_strings>
     </column>
-    <column name="SoftShadow" type="BIT">
+    <column name="Dropshadow" type="BIT">
       <offset>0</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
@@ -57,7 +57,7 @@
         <format_string name="SPECIAL_DEFAULT">0</format_string>
       </format_strings>
     </column>
-    <column name="Outline" type="BIT">
+    <column name="Softshadow" type="BIT">
       <offset>0</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
@@ -67,60 +67,67 @@
         <format_string name="SPECIAL_DEFAULT">0</format_string>
       </format_strings>
     </column>
-    <column name="SnapToPixels" type="BIT">
+    <column name="Outline" type="BIT">
       <offset>0</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
       <bit_offset>65542</bit_offset>
       <format_strings>
+        <format_string name="SPECIAL_DEFAULT">0</format_string>
+      </format_strings>
+    </column>
+    <column name="Snaptopixels" type="BIT">
+      <offset>0</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65543</bit_offset>
+      <format_strings>
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="OutlineWidth" type="U8">
+    <column name="Outlinewidth" type="U8">
       <offset>1</offset>
       <default>1</default>
     </column>
-    <column name="SoftShadowSpread" type="U8">
+    <column name="Softshadowspread" type="U8">
       <offset>2</offset>
       <default>2</default>
     </column>
-    <column name="RenderSize" type="F32">
+    <column name="Rendersize" type="F32">
       <offset>4</offset>
       <default>16</default>
     </column>
-    <column name="DropShadowOffset" type="INTFIXEDARRAY">
+    <column name="Dropshadowoffset" type="INTFIXEDARRAY">
       <offset>8</offset>
       <num_elements>2</num_elements>
+      <format_raw>15</format_raw>
     </column>
     <column name="Color" type="EMBEDDEDSTRUCT">
       <offset>16</offset>
       <subtable external="Color4" />
     </column>
-    <column name="OutlineColor" type="INT">
+    <column name="Outlinecolor" type="INT">
       <offset>32</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
     </column>
-    <column name="DropShadowColor" type="INT">
+    <column name="Dropshadowcolor" type="INT">
       <offset>36</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
     </column>
-    <column name="AspectRatio" type="F32">
+    <column name="Aspectratio" type="F32">
       <offset>40</offset>
       <default>1</default>
     </column>
     <column name="Font" type="STRING">
-      <offset>44</offset>
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

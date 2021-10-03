@@ -10,18 +10,19 @@
     <column name="Pos" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Reason" type="STRING">
-      <offset>12</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Error" type="INT">
-      <offset>16</offset>
+      <offset>24</offset>
     </column>
-    <column name="ProblemAreaSize" type="F32">
-      <offset>20</offset>
+    <column name="Problemareasize" type="F32">
+      <offset>28</offset>
     </column>
     <column name="}" type="END" />
   </table>

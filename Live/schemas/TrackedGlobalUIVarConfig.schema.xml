@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="TrackedGlobalUIVarConfig">
+  <table>
+    <column name="TrackedGlobalUIVarConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Affectedbypower" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="TrackedGlobalUIVar" />
+    </column>
+    <column name="Affectedbypowertag" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="TrackedGlobalUIVar" />
+    </column>
+    <column name="Includeinnates" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

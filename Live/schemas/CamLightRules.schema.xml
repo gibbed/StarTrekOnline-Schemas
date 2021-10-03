@@ -9,33 +9,35 @@
     <column name="{" type="START" />
     <column name="Enabled" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="keyOverride" type="U8">
+    <column name="Keyoverride" type="U8">
       <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Offset" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
     </column>
-    <column name="AmbientHSV" type="F32FIXEDARRAY">
+    <column name="Ambienthsv" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="DiffuseHSV" type="F32FIXEDARRAY">
+    <column name="Diffusehsv" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="SpecularHSV" type="F32FIXEDARRAY">
+    <column name="Specularhsv" type="F32FIXEDARRAY">
       <offset>40</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="innerRadius" type="F32">
+    <column name="Innerradius" type="F32">
       <offset>52</offset>
     </column>
-    <column name="outerRadius" type="F32">
+    <column name="Outerradius" type="F32">
       <offset>56</offset>
     </column>
     <column name="}" type="END" />

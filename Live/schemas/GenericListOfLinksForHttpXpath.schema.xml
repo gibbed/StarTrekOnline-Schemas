@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ListName" type="FIXEDSTRING">
+    <column name="Listname" type="FIXEDSTRING">
       <offset>0</offset>
       <string_length>256</string_length>
     </column>
@@ -17,13 +17,13 @@
         <format_string name="HTML_SVR_PARAM">1</format_string>
       </format_strings>
     </column>
-    <column name="limit" type="INT">
+    <column name="Limit" type="INT">
       <offset>260</offset>
       <format_strings>
         <format_string name="HTML_SVR_PARAM">1</format_string>
       </format_strings>
     </column>
-    <column name="more" type="INT">
+    <column name="More" type="INT">
       <offset>264</offset>
       <format_strings>
         <format_string name="HTML_SVR_PARAM">1</format_string>
@@ -43,7 +43,7 @@
       </format_strings>
     </column>
     <column name="Comment" type="STRING">
-      <offset>276</offset>
+      <offset>280</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
@@ -52,8 +52,8 @@
         <format_string name="HTML_NO_HEADER">1</format_string>
       </format_strings>
     </column>
-    <column name="ExtraCommand" type="STRING">
-      <offset>280</offset>
+    <column name="Extracommand" type="STRING">
+      <offset>288</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
@@ -61,8 +61,17 @@
         <format_string name="command">1</format_string>
       </format_strings>
     </column>
-    <column name="ExtraLink" type="STRING">
-      <offset>284</offset>
+    <column name="Extracommand2" type="STRING">
+      <offset>296</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+      <format_strings>
+        <format_string name="command">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Extralink" type="STRING">
+      <offset>304</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

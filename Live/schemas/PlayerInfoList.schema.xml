@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AccountIDs" type="INTARRAY">
+    <column name="Accountids" type="INTARRAY">
       <offset>0</offset>
     </column>
-    <column name="PlayerNames" type="STRUCT">
-      <offset>4</offset>
+    <column name="Playernames" type="STRUCT">
+      <offset>8</offset>
       <subtable external="PlayerExtraInfo" />
     </column>
-    <column name="PlayerInfos" type="STRUCT">
-      <offset>8</offset>
+    <column name="Playerinfos" type="STRUCT">
+      <offset>16</offset>
       <subtable external="PlayerInfoStruct" />
     </column>
     <column name="}" type="END" />

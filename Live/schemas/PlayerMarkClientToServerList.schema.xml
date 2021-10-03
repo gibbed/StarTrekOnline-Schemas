@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PlayerMarkClientToServerList">
+  <table>
+    <column name="PlayerMarkClientToServerList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Playeridlist" type="INTARRAY">
+      <offset>0</offset>
+    </column>
+    <column name="Currentindex" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Playermarkdata" type="INT64">
+      <offset>16</offset>
+    </column>
+    <column name="Playermarkname" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Accountwide" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

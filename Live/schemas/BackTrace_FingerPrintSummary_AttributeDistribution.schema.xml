@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="BackTrace_FingerPrintSummary_AttributeDistribution">
+  <table>
+    <column name="BackTrace_FingerPrintSummary_AttributeDistribution" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Attribute" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Counts" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="BackTrace_FingerPrintSummary_AttributeDistributionCount" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

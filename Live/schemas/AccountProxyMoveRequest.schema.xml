@@ -13,32 +13,32 @@
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="uSrcAccountID" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="SrcKey" type="STRING">
+    <column name="Usrcaccountid" type="INT">
       <offset>8</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
     </column>
-    <column name="uDestAccountID" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="DestKey" type="STRING">
+    <column name="Srckey" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="Value" type="INT64">
+    <column name="Udestaccountid" type="INT">
       <offset>24</offset>
     </column>
-    <column name="uRequestID" type="INT">
+    <column name="Destkey" type="STRING">
       <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
     </column>
-    <column name="uLockContainerID" type="INT">
-      <offset>36</offset>
+    <column name="Value" type="INT64">
+      <offset>40</offset>
+    </column>
+    <column name="Urequestid" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Ulockcontainerid" type="INT">
+      <offset>52</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,11 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MaxSize" type="INT">
+    <column name="Maxsize" type="INT">
       <offset>0</offset>
     </column>
     <column name="Sorted" type="U8">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Vals" type="F32ARRAY">
       <offset>8</offset>

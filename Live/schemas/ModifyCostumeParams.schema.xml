@@ -12,7 +12,7 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1200</default>
+      <default>1311</default>
       <static_define_list external="AttribType" />
     </column>
     <column name="Area" type="INT">
@@ -26,10 +26,10 @@
     <column name="Value" type="F32">
       <offset>12</offset>
     </column>
-    <column name="MinValue" type="F32">
+    <column name="Minvalue" type="F32">
       <offset>16</offset>
     </column>
-    <column name="MaxValue" type="F32">
+    <column name="Maxvalue" type="F32">
       <offset>20</offset>
     </column>
     <column name="Priority" type="INT">

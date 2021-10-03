@@ -9,17 +9,17 @@
       </flags>
     </column>
     <column name="Description" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="_FloatDefault" type="INT">
-      <offset>8</offset>
+    <column name="_Floatdefault" type="INT">
+      <offset>16</offset>
       <default>4</default>
     </column>
-    <column name="_TypeDefault" type="INT">
-      <offset>12</offset>
+    <column name="_Typedefault" type="INT">
+      <offset>20</offset>
     </column>
     <column name="&#xA;" type="END" />
   </table>

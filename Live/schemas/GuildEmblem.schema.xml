@@ -6,6 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="Name" type="REFERENCE">
       <offset>0</offset>
       <flags>
@@ -14,24 +15,24 @@
       <dictionary_name>CostumeTexture</dictionary_name>
     </column>
     <column name="Background" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <default>1</default>
     </column>
     <column name="Detail" type="INT">
-      <offset>8</offset>
-      <flags>
-        <flag>STRUCTPARAM</flag>
-      </flags>
-    </column>
-    <column name="False" type="INT">
       <offset>12</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="False" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
   </table>
 </parser>

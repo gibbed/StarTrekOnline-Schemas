@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="stanceHandles" type="INTFIXEDARRAY">
+    <column name="Stancehandles" type="INTFIXEDARRAY">
       <offset>0</offset>
       <num_elements>4</num_elements>
     </column>
-    <column name="stanceHandlesOverflow" type="INTARRAY">
+    <column name="Stancehandlesoverflow" type="INTARRAY">
       <offset>16</offset>
     </column>
     <column name="}" type="END" />

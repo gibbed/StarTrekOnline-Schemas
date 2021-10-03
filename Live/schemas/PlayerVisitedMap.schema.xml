@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pchMapName" type="STRING">
+    <column name="Pchmapname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -15,8 +15,8 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eaMapVariables" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Eamapvariables" type="STRINGARRAY">
+      <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>

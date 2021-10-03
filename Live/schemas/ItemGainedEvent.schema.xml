@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ItemName" type="STRING">
+    <column name="Itemname" type="STRING">
       <offset>0</offset>
     </column>
     <column name="Count" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

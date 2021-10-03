@@ -4,5 +4,7 @@
     <element name="Normal">0</element>
     <element name="Base">1</element>
     <element name="Premium">2</element>
+    <element name="VIP">3</element>
+    <element name="Renown">4</element>
   </elements>
 </enum>

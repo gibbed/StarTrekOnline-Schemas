@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="OriginToPickupType" type="STRUCT">
+    <column name="Origintopickuptype" type="STRUCT">
       <offset>0</offset>
       <subtable external="OriginPickupTypeStruct" />
     </column>

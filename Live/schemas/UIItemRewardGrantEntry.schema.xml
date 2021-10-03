@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GrantData" type="EMBEDDEDSTRUCT">
+    <column name="Grantdata" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="InvRewardGrantData" />
     </column>
     <column name="Item" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>40</offset>
       <subtable external="Item" />
     </column>
     <column name="}" type="END" />

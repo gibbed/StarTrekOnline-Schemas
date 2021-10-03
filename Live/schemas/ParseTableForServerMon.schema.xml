@@ -7,15 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TableName" type="STRING">
+    <column name="Tablename" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>POOL_STRING</flag>
+        <flag>ESTRING</flag>
+        <flag>KEY</flag>
       </flags>
     </column>
+    <column name="Maincomment" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Categories" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Numcolumns" type="INT">
+      <offset>24</offset>
+    </column>
     <column name="Fields" type="STRUCT">
-      <offset>4</offset>
+      <offset>32</offset>
       <subtable external="ParseTableFieldForServerMon" />
+    </column>
+    <column name="Polyparenttype" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Polychildtypes" type="STRINGARRAY">
+      <offset>48</offset>
     </column>
     <column name="}" type="END" />
   </table>

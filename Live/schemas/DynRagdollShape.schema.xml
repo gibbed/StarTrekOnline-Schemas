@@ -14,100 +14,127 @@
       </flags>
     </column>
     <column name="Parent" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="JointTarget" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
+    <column name="Jointtarget" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
     <column name="Shape" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
       <static_define_list external="eRagdollShape" />
     </column>
     <column name="Offset" type="F32FIXEDARRAY">
-      <offset>16</offset>
+      <offset>28</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Rotation" type="QUATPYR">
-      <offset>28</offset>
+      <offset>40</offset>
       <num_elements>4</num_elements>
     </column>
     <column name="Min" type="F32FIXEDARRAY">
-      <offset>44</offset>
-      <num_elements>3</num_elements>
-    </column>
-    <column name="Max" type="F32FIXEDARRAY">
       <offset>56</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="HeightMin" type="F32">
+    <column name="Max" type="F32FIXEDARRAY">
       <offset>68</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="HeightMax" type="F32">
-      <offset>72</offset>
-    </column>
-    <column name="Radius" type="F32">
-      <offset>76</offset>
-    </column>
-    <column name="Density" type="F32">
+    <column name="Heightmin" type="F32">
       <offset>80</offset>
     </column>
-    <column name="UseCustomJointAxis" type="BOOLFLAG">
+    <column name="Heightmax" type="F32">
       <offset>84</offset>
     </column>
-    <column name="tuning" type="IGNORE">
+    <column name="Radius" type="F32">
+      <offset>88</offset>
+    </column>
+    <column name="Density" type="F32">
+      <offset>92</offset>
+    </column>
+    <column name="Usecustomjointaxis" type="BOOLFLAG">
+      <offset>96</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Tuning" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">DynJointTuning</format_string>
+      </format_strings>
     </column>
-    <column name="jointType" type="INT">
-      <offset>88</offset>
+    <column name="Jointtype" type="INT">
+      <offset>100</offset>
       <static_define_list external="eJointType" />
     </column>
-    <column name="axis" type="INT">
-      <offset>92</offset>
+    <column name="Axis" type="INT">
+      <offset>104</offset>
       <static_define_list external="eJointAxis" />
     </column>
-    <column name="spring" type="EMBEDDEDSTRUCT">
-      <offset>96</offset>
+    <column name="Customjointorientation" type="QUATPYR">
+      <offset>108</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Spring" type="EMBEDDEDSTRUCT">
+      <offset>124</offset>
       <subtable external="DynJointSpring" />
     </column>
-    <column name="limitLow" type="EMBEDDEDSTRUCT">
-      <offset>104</offset>
+    <column name="Limitlow" type="EMBEDDEDSTRUCT">
+      <offset>132</offset>
       <subtable external="DynJointLimit" />
     </column>
-    <column name="limitHigh" type="EMBEDDEDSTRUCT">
-      <offset>116</offset>
+    <column name="Limithigh" type="EMBEDDEDSTRUCT">
+      <offset>144</offset>
       <subtable external="DynJointLimit" />
     </column>
-    <column name="swingSpring" type="EMBEDDEDSTRUCT">
-      <offset>128</offset>
+    <column name="Swingspring" type="EMBEDDEDSTRUCT">
+      <offset>156</offset>
       <subtable external="DynJointSpring" />
     </column>
-    <column name="swingLimit" type="EMBEDDEDSTRUCT">
-      <offset>136</offset>
+    <column name="Swinglimit" type="EMBEDDEDSTRUCT">
+      <offset>164</offset>
       <subtable external="DynJointLimit" />
     </column>
-    <column name="springEnabled" type="BIT">
-      <offset>148</offset>
+    <column name="Linearlimit" type="EMBEDDEDSTRUCT">
+      <offset>176</offset>
+      <subtable external="DynJointLimit" />
+    </column>
+    <column name="Springenabled" type="BIT">
+      <offset>188</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="limitEnabled" type="BIT">
-      <offset>148</offset>
+    <column name="Limitenabled" type="BIT">
+      <offset>188</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="swingSpringEnabled" type="BIT">
-      <offset>148</offset>
+    <column name="Swingspringenabled" type="BIT">
+      <offset>188</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="swingLimitEnabled" type="BIT">
-      <offset>148</offset>
+    <column name="Swinglimitenabled" type="BIT">
+      <offset>188</offset>
       <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Linearlimitxenabled" type="BIT">
+      <offset>188</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Linearlimityenabled" type="BIT">
+      <offset>188</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Linearlimitzenabled" type="BIT">
+      <offset>188</offset>
+      <bit_offset>65542</bit_offset>
     </column>
     <column name="End" type="END" />
   </table>

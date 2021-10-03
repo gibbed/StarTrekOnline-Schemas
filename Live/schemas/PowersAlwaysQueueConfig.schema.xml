@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CurrentPowerForceCancel" type="BIT">
+    <column name="Currentpowerforcecancel" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="CurrentPowerRefundCost" type="BIT">
+    <column name="Currentpowerrefundcost" type="BIT">
       <offset>0</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
@@ -21,7 +21,7 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="CurrentPowerRechargePower" type="BIT">
+    <column name="Currentpowerrechargepower" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>

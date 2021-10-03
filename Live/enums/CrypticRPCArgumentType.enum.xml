@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CrypticRPCArgumentType">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="INT">1</element>
+    <element name="FLOAT">2</element>
+    <element name="STRING">3</element>
+    <element name="STRUCT">4</element>
+    <element name="VOIDSTAR">5</element>
+    <element name="VOIDSTAR_SIZE">6</element>
+  </elements>
+</enum>

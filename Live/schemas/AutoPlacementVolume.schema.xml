@@ -10,24 +10,28 @@
     <column name="Pos" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Min" type="F32FIXEDARRAY">
       <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Max" type="F32FIXEDARRAY">
       <offset>24</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="qInvRot" type="QUATPYR">
+    <column name="Qinvrot" type="QUATPYR">
       <offset>36</offset>
       <num_elements>4</num_elements>
     </column>
     <column name="Radius" type="F32">
       <offset>52</offset>
     </column>
-    <column name="AsCube" type="U8">
-      <offset>60</offset>
+    <column name="Ascube" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

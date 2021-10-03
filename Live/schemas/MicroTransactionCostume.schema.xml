@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hCostume" type="REFERENCE">
+    <column name="Hcostume" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
@@ -15,17 +15,24 @@
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
     <column name="Sources" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="MicroTransactionCostumeSource" />
     </column>
     <column name="Hidden" type="U8">
-      <offset>8</offset>
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Owned" type="U8">
-      <offset>9</offset>
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="New" type="U8">
-      <offset>10</offset>
+      <offset>18</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Setunlockedparts" type="U8">
+      <offset>19</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

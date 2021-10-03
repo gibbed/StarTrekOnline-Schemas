@@ -15,7 +15,7 @@
       </flags>
     </column>
     <column name="Command" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

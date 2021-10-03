@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SubStructs" type="STRUCT">
+    <column name="Substructs" type="STRUCT">
       <offset>0</offset>
       <subtable external="inhTestSubStruct" />
     </column>
     <column name="Inheritance" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>INHERITANCE_STRUCT</flag>
       </flags>
       <subtable external="InheritanceData" />
     </column>
-    <column name="OptionalStruct" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Optionalstruct" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="inhTestSubStruct" />
     </column>
     <column name="}" type="END" />

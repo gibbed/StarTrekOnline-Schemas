@@ -7,25 +7,25 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="WheelIndex" type="INT">
+    <column name="Wheelindex" type="INT">
       <offset>0</offset>
     </column>
-    <column name="PayoutPercent" type="F32">
+    <column name="Payoutpercent" type="F32">
       <offset>4</offset>
     </column>
-    <column name="MatchedColor" type="INT">
+    <column name="Matchedcolor" type="INT">
       <offset>8</offset>
     </column>
-    <column name="MatchedShape" type="INT">
+    <column name="Matchedshape" type="INT">
       <offset>12</offset>
     </column>
-    <column name="MatchedCount" type="INT">
+    <column name="Matchedcount" type="INT">
       <offset>16</offset>
     </column>
     <column name="Quarks" type="INT">
       <offset>20</offset>
     </column>
-    <column name="DS9s" type="INT">
+    <column name="Ds9s" type="INT">
       <offset>24</offset>
     </column>
     <column name="Wilds" type="INT">
@@ -33,12 +33,14 @@
     </column>
     <column name="Dabo" type="U8">
       <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="HasResults" type="U8">
+    <column name="Hasresults" type="U8">
       <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="BetInfo" type="STRUCT">
-      <offset>36</offset>
+    <column name="Betinfo" type="STRUCT">
+      <offset>40</offset>
       <subtable external="DaboSpectatorBetInfo" />
     </column>
     <column name="}" type="END" />

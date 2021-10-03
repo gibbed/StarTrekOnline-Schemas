@@ -10,11 +10,21 @@
       <offset>0</offset>
       <dictionary_name>Contact</dictionary_name>
     </column>
-    <column name="DialogName" type="STRING">
-      <offset>4</offset>
+    <column name="Dialogname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
+    </column>
+    <column name="Cameraoverridepreset" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Cameravolume" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="WorldCameraOverrideProperties" />
     </column>
     <column name="End" type="END" />
   </table>

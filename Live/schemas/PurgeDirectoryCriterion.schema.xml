@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NameToMatch" type="STRING">
+    <column name="Nametomatch" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="SecondsOld" type="INT">
-      <offset>4</offset>
+    <column name="Secondsold" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

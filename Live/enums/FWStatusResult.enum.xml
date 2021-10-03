@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FWStatusResult">
+  <elements type="int">
+    <element name="CONNECT_FAILED">-3</element>
+    <element name="LAUNCH_FAILED">-2</element>
+    <element name="LAUNCHED_CONNECT_FAILED">-1</element>
+    <element name="DISABLED">0</element>
+    <element name="RUNNING">1</element>
+    <element name="LAUNCHED">2</element>
+  </elements>
+</enum>

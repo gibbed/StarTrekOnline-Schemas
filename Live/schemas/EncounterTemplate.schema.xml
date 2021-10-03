@@ -16,88 +16,93 @@
       </flags>
     </column>
     <column name="Scope" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ParentEncounter" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Parentencounter" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>EncounterTemplate</dictionary_name>
     </column>
-    <column name="LevelProperties" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Levelproperties" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="EncounterLevelProperties" />
     </column>
-    <column name="SpawnProperties" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Spawnproperties" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="EncounterSpawnProperties" />
     </column>
-    <column name="DifficultyProperties" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Difficultyproperties" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="EncounterDifficultyProperties" />
     </column>
-    <column name="WaveProperties" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Waveproperties" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <subtable external="EncounterWaveProperties" />
     </column>
-    <column name="ActorSharedProperties" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+    <column name="Actorsharedproperties" type="OPTIONALSTRUCT">
+      <offset>64</offset>
       <subtable external="EncounterActorSharedProperties" />
     </column>
-    <column name="SharedAIProperties" type="OPTIONALSTRUCT">
-      <offset>36</offset>
+    <column name="Sharedaiproperties" type="OPTIONALSTRUCT">
+      <offset>72</offset>
       <subtable external="EncounterAIProperties" />
     </column>
-    <column name="RewardProperties" type="OPTIONALSTRUCT">
-      <offset>40</offset>
+    <column name="Rewardproperties" type="OPTIONALSTRUCT">
+      <offset>80</offset>
       <subtable external="EncounterRewardProperties" />
     </column>
-    <column name="JobProperties" type="STRUCT">
-      <offset>44</offset>
+    <column name="Jobproperties" type="STRUCT">
+      <offset>88</offset>
       <subtable external="AIJobDesc" />
     </column>
     <column name="Actor" type="STRUCT">
-      <offset>48</offset>
+      <offset>96</offset>
       <subtable external="EncounterActorProperties" />
     </column>
     <column name="Point" type="STRUCT">
-      <offset>52</offset>
+      <offset>104</offset>
       <subtable external="EncounterPointProperties" />
     </column>
-    <column name="TrackedEvents" type="STRUCT">
-      <offset>56</offset>
+    <column name="Trackedevents" type="STRUCT">
+      <offset>112</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="GameEvent" />
     </column>
-    <column name="TrackedEventsSinceSpawn" type="STRUCT">
-      <offset>60</offset>
+    <column name="Trackedeventssincespawn" type="STRUCT">
+      <offset>120</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="GameEvent" />
     </column>
-    <column name="TrackedEventsSinceComplete" type="STRUCT">
-      <offset>64</offset>
+    <column name="Trackedeventssincecomplete" type="STRUCT">
+      <offset>128</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="GameEvent" />
     </column>
-    <column name="OneOff" type="U8">
-      <offset>68</offset>
+    <column name="Oneoff" type="U8">
+      <offset>136</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Lastupdated" type="FIXEDSTRING">
+      <offset>137</offset>
+      <string_length>128</string_length>
     </column>
     <column name="}" type="END" />
   </table>

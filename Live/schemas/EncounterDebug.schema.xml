@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="EncBeacons" type="STRUCT">
+    <column name="Encbeacons" type="STRUCT">
       <offset>0</offset>
       <subtable external="EncounterDebugBeacon" />
     </column>

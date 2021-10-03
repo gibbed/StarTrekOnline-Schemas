@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="taskSlotNum" type="INT">
+    <column name="Taskslotnum" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,7 +15,7 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="taskSlotType" type="INT">
+    <column name="Taskslottype" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -23,7 +23,7 @@
       </flags>
       <static_define_list external="GroupProjectTaskSlotType" />
     </column>
-    <column name="taskDef" type="REFERENCE">
+    <column name="Taskdef" type="REFERENCE">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -31,8 +31,8 @@
       </flags>
       <dictionary_name>DonationTaskDef</dictionary_name>
     </column>
-    <column name="nextTaskDef" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Nexttaskdef" type="REFERENCE">
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
@@ -40,7 +40,7 @@
       <dictionary_name>DonationTaskDef</dictionary_name>
     </column>
     <column name="State" type="INT">
-      <offset>16</offset>
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
@@ -48,46 +48,100 @@
       <static_define_list external="DonationTaskState" />
     </column>
     <column name="Buckets" type="STRUCT">
-      <offset>20</offset>
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="DonationTaskBucketData" />
     </column>
-    <column name="finalizedTime" type="INT">
-      <offset>24</offset>
+    <column name="Finalizedtime" type="INT">
+      <offset>40</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="completionTime" type="INT">
-      <offset>28</offset>
+    <column name="CompletionTime" type="INT">
+      <offset>44</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
     <column name="StartTime" type="INT">
-      <offset>32</offset>
+      <offset>48</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="completedBuckets" type="INT">
-      <offset>36</offset>
+    <column name="Completedbuckets" type="INT">
+      <offset>52</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="finalizationRequestedAt" type="INT">
-      <offset>40</offset>
+    <column name="Instancedpropertiesnameparameter" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
     </column>
-    <column name="completionRequested" type="U8">
-      <offset>44</offset>
+    <column name="Typeofgarrisontask" type="INT">
+      <offset>64</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="GarrisonTaskType" />
+    </column>
+    <column name="Structuredef" type="REFERENCE">
+      <offset>72</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>GarrisonStructureDef</dictionary_name>
+    </column>
+    <column name="Prevstructuredef" type="REFERENCE">
+      <offset>80</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>GarrisonStructureDef</dictionary_name>
+    </column>
+    <column name="Currentstructurelevel" type="INT">
+      <offset>88</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Finalizationrequestedat" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="Tasknamewhenfinalizationrequested" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Completionrequested" type="U8">
+      <offset>104</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bwasforcecompleted" type="U8">
+      <offset>105</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

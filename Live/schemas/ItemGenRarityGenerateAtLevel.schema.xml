@@ -14,11 +14,15 @@
       </flags>
     </column>
     <column name="Costume" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="ItemCostume" />
     </column>
     <column name="Icon" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
+    </column>
+    <column name="Requiredlevel" type="INT">
+      <offset>24</offset>
+      <default>-1</default>
     </column>
     <column name="}" type="END" />
   </table>

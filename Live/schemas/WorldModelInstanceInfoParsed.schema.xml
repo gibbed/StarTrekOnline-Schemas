@@ -7,41 +7,41 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="world_matrix_x" type="F32FIXEDARRAY">
+    <column name="World_Matrix_X" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="world_matrix_y" type="F32FIXEDARRAY">
+    <column name="World_Matrix_Y" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="world_matrix_z" type="F32FIXEDARRAY">
+    <column name="World_Matrix_Z" type="F32FIXEDARRAY">
       <offset>32</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="tint_color" type="F32FIXEDARRAY">
+    <column name="Tint_Color" type="F32FIXEDARRAY">
       <offset>48</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="local_mid_idx" type="INT">
+    <column name="Local_Mid_Idx" type="INT">
       <offset>64</offset>
       <default>-1</default>
     </column>
-    <column name="inst_radius" type="BIT">
+    <column name="Inst_Radius" type="BIT">
       <offset>68</offset>
       <bit_offset>1966080</bit_offset>
     </column>
-    <column name="camera_facing" type="BIT">
-      <offset>68</offset>
-      <bit_offset>65566</bit_offset>
+    <column name="Camera_Facing" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65542</bit_offset>
     </column>
-    <column name="axis_camera_facing" type="BIT">
-      <offset>68</offset>
-      <bit_offset>65567</bit_offset>
-    </column>
-    <column name="instance_param_list_idx" type="INT">
-      <offset>72</offset>
-      <default>-1</default>
+    <column name="Axis_Camera_Facing" type="BIT">
+      <offset>71</offset>
+      <bit_offset>65543</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

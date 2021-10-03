@@ -14,41 +14,43 @@
       </flags>
     </column>
     <column name="hDef" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>MicroTransactionDef</dictionary_name>
     </column>
     <column name="Def" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="MicroTransactionDef" />
     </column>
     <column name="Product" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="AccountProxyProduct" />
     </column>
-    <column name="ppchCategories" type="STRINGARRAY">
-      <offset>16</offset>
+    <column name="Ppchcategories" type="STRINGARRAY">
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="uAPPrerequisitesMetUpdateTime" type="INT">
-      <offset>20</offset>
+    <column name="Uapprerequisitesmetupdatetime" type="INT">
+      <offset>40</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
-    <column name="APPrerequisitesMet" type="U8">
-      <offset>24</offset>
+    <column name="Apprerequisitesmet" type="U8">
+      <offset>44</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FreeForPremiumMembers" type="BIT">
-      <offset>24</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Freeforpremiummembers" type="BIT">
+      <offset>45</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

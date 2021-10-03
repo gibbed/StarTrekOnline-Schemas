@@ -8,17 +8,17 @@
     </column>
     <column name="{" type="START" />
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="mvValue" type="MULTIVAL">
-      <offset>8</offset>
+    <column name="Mvvalue" type="MULTIVAL">
+      <offset>16</offset>
     </column>
-    <column name="GameEvent" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Gameevent" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>

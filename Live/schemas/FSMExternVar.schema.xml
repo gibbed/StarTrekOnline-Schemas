@@ -11,22 +11,22 @@
       <offset>0</offset>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="enabler" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="Type" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="scType" type="STRING">
+    <column name="Enabler" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="scTypeCategory" type="INT">
-      <offset>20</offset>
+    <column name="Type" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Sctype" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Sctypecategory" type="INT">
+      <offset>40</offset>
     </column>
     <column name="LimitName" type="STRING">
-      <offset>24</offset>
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

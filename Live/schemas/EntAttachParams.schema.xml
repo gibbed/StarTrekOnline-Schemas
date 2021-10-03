@@ -12,21 +12,21 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1186</default>
+      <default>1295</default>
       <static_define_list external="AttribType" />
     </column>
     <column name="CostumeName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>GLOBAL_NAME</flag>
       </flags>
       <dictionary_name>PlayerCostumetity</dictionary_name>
     </column>
-    <column name="AttachBone" type="STRING">
-      <offset>8</offset>
+    <column name="Attachbone" type="STRING">
+      <offset>16</offset>
     </column>
-    <column name="ExtraBit" type="STRING">
-      <offset>12</offset>
+    <column name="Extrabit" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

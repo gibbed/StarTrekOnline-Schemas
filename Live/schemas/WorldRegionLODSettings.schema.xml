@@ -7,17 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NumLevels" type="INT">
+    <column name="Numlevels" type="INT">
       <offset>0</offset>
     </column>
-    <column name="BodysockLevel" type="INT">
+    <column name="Bodysocklevel" type="INT">
       <offset>4</offset>
     </column>
-    <column name="Distances" type="F32ARRAY">
-      <offset>16</offset>
+    <column name="Iklevel" type="INT">
+      <offset>8</offset>
+      <default>2</default>
     </column>
-    <column name="PerLevelMax" type="INTARRAY">
-      <offset>20</offset>
+    <column name="Windlevel" type="INT">
+      <offset>12</offset>
+      <default>2</default>
+    </column>
+    <column name="Distances" type="F32FIXEDARRAY">
+      <offset>16</offset>
+      <num_elements>6</num_elements>
+    </column>
+    <column name="Perlevelmax" type="INTFIXEDARRAY">
+      <offset>40</offset>
+      <num_elements>6</num_elements>
     </column>
     <column name="}" type="END" />
   </table>

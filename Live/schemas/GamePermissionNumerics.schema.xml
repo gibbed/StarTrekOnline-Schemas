@@ -15,26 +15,27 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pchKey" type="STRING">
+    <column name="Pchkey" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
       <redundant_name>Key</redundant_name>
     </column>
-    <column name="iValue" type="INT">
-      <offset>4</offset>
-      <flags>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="bIsNumeric" type="U8">
+    <column name="Ivalue" type="INT">
       <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
+    </column>
+    <column name="Bisnumeric" type="U8">
+      <offset>12</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

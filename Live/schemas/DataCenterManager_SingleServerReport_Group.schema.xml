@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DataCenterManager_SingleServerReport_Group">
+  <table>
+    <column name="DataCenterManager_SingleServerReport_Group" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="GroupName" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Grouptype" type="INT">
+      <offset>8</offset>
+      <static_define_list external="DCM_GroupType" />
+    </column>
+    <column name="Nummembers" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

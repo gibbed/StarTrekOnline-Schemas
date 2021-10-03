@@ -11,11 +11,11 @@
       <offset>0</offset>
       <subtable external="KeyboardLayout" />
     </column>
-    <column name="ListedKeyboard" type="STRUCT">
-      <offset>4</offset>
+    <column name="Listedkeyboard" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>NO_WRITE</flag>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="KeyboardLayout" />
     </column>

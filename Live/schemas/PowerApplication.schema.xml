@@ -8,74 +8,102 @@
     </column>
     <column name="{" type="START" />
     <column name="PowerDef" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="PowerDef" />
     </column>
     <column name="Level" type="INT">
-      <offset>56</offset>
+      <offset>96</offset>
     </column>
-    <column name="IdxMulti" type="INT">
-      <offset>84</offset>
+    <column name="Idxmulti" type="INT">
+      <offset>128</offset>
     </column>
-    <column name="TableScale" type="F32">
-      <offset>88</offset>
+    <column name="Tablescale" type="F32">
+      <offset>132</offset>
+    </column>
+    <column name="Vectargetentpos" type="F32FIXEDARRAY">
+      <offset>192</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Vectargetfxpos" type="F32FIXEDARRAY">
+      <offset>204</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Subtarget" type="OPTIONALSTRUCT">
-      <offset>136</offset>
+      <offset>216</offset>
       <subtable external="PowerSubtargetChoice" />
     </column>
-    <column name="NumTargets" type="INT">
-      <offset>160</offset>
+    <column name="Numtargets" type="INT">
+      <offset>252</offset>
     </column>
     <column name="Activation" type="OPTIONALSTRUCT">
-      <offset>172</offset>
+      <offset>264</offset>
       <subtable external="PowerActivation" />
     </column>
     <column name="Critical" type="EMBEDDEDSTRUCT">
-      <offset>176</offset>
+      <offset>272</offset>
       <subtable external="PACritical" />
     </column>
     <column name="Avoidance" type="EMBEDDEDSTRUCT">
-      <offset>192</offset>
+      <offset>288</offset>
       <subtable external="PAAvoidance" />
     </column>
-    <column name="DamageTrigger" type="EMBEDDEDSTRUCT">
-      <offset>208</offset>
+    <column name="Damagetrigger" type="EMBEDDEDSTRUCT">
+      <offset>304</offset>
       <subtable external="PATrigger" />
     </column>
     <column name="Random" type="F32">
-      <offset>224</offset>
+      <offset>328</offset>
     </column>
     <column name="Period" type="INT">
-      <offset>256</offset>
+      <offset>376</offset>
     </column>
-    <column name="AngleToTarget" type="F32">
-      <offset>272</offset>
+    <column name="Angletotarget" type="F32">
+      <offset>392</offset>
     </column>
-    <column name="AngleToSource" type="F32">
-      <offset>276</offset>
+    <column name="Angletosource" type="F32">
+      <offset>396</offset>
     </column>
-    <column name="AngleToTargetVertical" type="F32">
-      <offset>280</offset>
+    <column name="Angletotargetvertical" type="F32">
+      <offset>400</offset>
     </column>
-    <column name="AngleToSourceVertical" type="F32">
-      <offset>284</offset>
+    <column name="Angletosourcevertical" type="F32">
+      <offset>404</offset>
     </column>
-    <column name="PrimaryTarget" type="BIT">
-      <offset>288</offset>
+    <column name="Powermagnitudemodifier" type="F32">
+      <offset>408</offset>
+    </column>
+    <column name="Timeractivateoffset" type="F32">
+      <offset>412</offset>
+    </column>
+    <column name="Primarytarget" type="BIT">
+      <offset>416</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="Glancing" type="BIT">
-      <offset>288</offset>
+      <offset>416</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="MissMods" type="BIT">
-      <offset>288</offset>
+    <column name="Missmods" type="BIT">
+      <offset>416</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="CountModsAsPostApplied" type="BIT">
-      <offset>288</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Countmodsaspostapplied" type="BIT">
+      <offset>417</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Locationtargeting" type="BIT">
+      <offset>417</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Usevolumeentspecificapplycond" type="BIT">
+      <offset>417</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Evalcritchancewithoutpower" type="BIT">
+      <offset>417</offset>
+      <bit_offset>65541</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

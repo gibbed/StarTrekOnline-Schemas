@@ -7,31 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SecondaryXPScale" type="F32">
+    <column name="Secondaryxpscale" type="F32">
       <offset>0</offset>
       <default>1</default>
     </column>
-    <column name="SecondaryRPScale" type="F32">
+    <column name="Secondaryrpscale" type="F32">
       <offset>4</offset>
       <default>1</default>
     </column>
-    <column name="SecondaryResourceScale" type="F32">
+    <column name="Secondaryresourcescale" type="F32">
       <offset>8</offset>
       <default>1</default>
     </column>
-    <column name="SecondaryStarsScale" type="F32">
+    <column name="Secondarystarsscale" type="F32">
       <offset>12</offset>
       <default>1</default>
     </column>
-    <column name="SecondarySPScale" type="F32">
+    <column name="Secondaryspscale" type="F32">
       <offset>16</offset>
       <default>1</default>
     </column>
-    <column name="SecondaryOSPScale" type="F32">
+    <column name="Secondaryospscale" type="F32">
       <offset>20</offset>
       <default>1</default>
     </column>
-    <column name="ScalingData" type="STRUCT">
+    <column name="Scalingdata" type="STRUCT">
       <offset>24</offset>
       <subtable external="MissionModsScalingData" />
     </column>

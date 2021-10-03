@@ -7,81 +7,83 @@
       </flags>
     </column>
     <column name="First" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="Last" type="INT">
       <offset>8</offset>
     </column>
-    <column name="uiFirstFrame" type="INT">
+    <column name="Last" type="INT">
       <offset>12</offset>
-      <flags>
-        <flag>NO_TEXT_SAVE</flag>
-      </flags>
     </column>
-    <column name="uiLastFrame" type="INT">
+    <column name="Uifirstframe" type="INT">
       <offset>16</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
     </column>
-    <column name="StartOffsetFirst" type="INT">
+    <column name="Uilastframe" type="INT">
       <offset>20</offset>
-    </column>
-    <column name="StartOffsetLast" type="INT">
-      <offset>24</offset>
-    </column>
-    <column name="uiStartOffsetFirstFrame" type="INT">
-      <offset>28</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
     </column>
-    <column name="uiStartOffsetLastFrame" type="INT">
+    <column name="Startoffsetfirst" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Startoffsetlast" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Uistartoffsetfirstframe" type="INT">
       <offset>32</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
     </column>
-    <column name="Offset" type="INT">
+    <column name="Uistartoffsetlastframe" type="INT">
       <offset>36</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
     </column>
-    <column name="frameSnapshot" type="EMBEDDEDSTRUCT">
+    <column name="Offset" type="INT">
       <offset>40</offset>
+    </column>
+    <column name="Framesnapshot" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <subtable external="DynAnimFrameSnapshot" />
     </column>
-    <column name="NonInterpFrames" type="STRUCT">
-      <offset>48</offset>
+    <column name="Noninterpframes" type="STRUCT">
+      <offset>64</offset>
       <subtable external="DynMoveFrameRange" />
     </column>
-    <column name="BoneOffset" type="STRUCT">
-      <offset>52</offset>
+    <column name="Boneoffset" type="STRUCT">
+      <offset>72</offset>
       <subtable external="DynMoveBoneOffset" />
     </column>
-    <column name="BoneRotation" type="STRUCT">
-      <offset>56</offset>
+    <column name="Bonerotation" type="STRUCT">
+      <offset>80</offset>
       <subtable external="DynMoveBoneRotOffset" />
     </column>
-    <column name="NoInterp" type="U8">
-      <offset>60</offset>
+    <column name="Nointerp" type="U8">
+      <offset>88</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AnimTrackName" type="STRING">
-      <offset>64</offset>
+    <column name="Animtrackname" type="STRING">
+      <offset>96</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
     <column name="Verified" type="U8">
-      <offset>68</offset>
+      <offset>104</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

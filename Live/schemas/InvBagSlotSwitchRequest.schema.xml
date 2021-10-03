@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BagID" type="INT">
+    <column name="Bagid" type="INT">
       <offset>0</offset>
       <static_define_list external="InvBagIDs" />
     </column>
     <column name="Index" type="INT">
       <offset>4</offset>
     </column>
-    <column name="NewActiveSlot" type="INT">
+    <column name="Newactiveslot" type="INT">
       <offset>8</offset>
     </column>
-    <column name="uRequestID" type="INT">
+    <column name="Urequestid" type="INT">
       <offset>12</offset>
     </column>
-    <column name="uTime" type="INT">
+    <column name="Utime" type="INT">
       <offset>16</offset>
     </column>
     <column name="Delay" type="F32">
@@ -29,11 +29,13 @@
     <column name="Timer" type="F32">
       <offset>24</offset>
     </column>
-    <column name="HasChangedSlot" type="U8">
+    <column name="Haschangedslot" type="U8">
       <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="HasHandledMoveEvents" type="U8">
+    <column name="Hashandledmoveevents" type="U8">
       <offset>29</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

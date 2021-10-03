@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BodySockGeo" type="STRING">
+    <column name="Bodysockgeo" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -15,69 +15,73 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pcBodySockGeo" type="STRING">
+    <column name="Pcbodysockgeo" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>BodySockGeo</redundant_name>
+      <redundant_name>Bodysockgeo</redundant_name>
     </column>
-    <column name="BodySockPose" type="STRING">
-      <offset>4</offset>
+    <column name="Bodysockpose" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pcBodySockPose" type="STRING">
-      <offset>4</offset>
+    <column name="Pcbodysockpose" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>BodySockPose</redundant_name>
+      <redundant_name>Bodysockpose</redundant_name>
     </column>
-    <column name="BodySockMin" type="F32FIXEDARRAY">
-      <offset>8</offset>
+    <column name="Bodysockmin" type="F32FIXEDARRAY">
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="vBodySockMin" type="F32FIXEDARRAY">
-      <offset>8</offset>
+    <column name="Vbodysockmin" type="F32FIXEDARRAY">
+      <offset>16</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>BodySockMin</redundant_name>
+      <redundant_name>Bodysockmin</redundant_name>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="BodySockMax" type="F32FIXEDARRAY">
-      <offset>20</offset>
+    <column name="Bodysockmax" type="F32FIXEDARRAY">
+      <offset>28</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="vBodySockMax" type="F32FIXEDARRAY">
-      <offset>20</offset>
+    <column name="Vbodysockmax" type="F32FIXEDARRAY">
+      <offset>28</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>BodySockMax</redundant_name>
+      <redundant_name>Bodysockmax</redundant_name>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

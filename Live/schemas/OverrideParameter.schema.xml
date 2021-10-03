@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="int_value" type="INT">
+    <column name="Int_Value" type="INT">
       <offset>0</offset>
     </column>
-    <column name="string_value" type="STRING">
-      <offset>4</offset>
+    <column name="String_Value" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

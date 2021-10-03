@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uItemID" type="INT64">
+    <column name="Uitemid" type="INT64">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
@@ -16,7 +16,7 @@
     <column name="Item" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Item" />
     </column>

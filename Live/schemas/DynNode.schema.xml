@@ -7,41 +7,33 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="qWorldSpaceRot_DNODE" type="QUATPYR">
+    <column name="Qworldspacerot_Dnode" type="QUATPYR">
       <offset>0</offset>
       <num_elements>4</num_elements>
     </column>
-    <column name="vWorldSpacePos_DNODE" type="F32FIXEDARRAY">
+    <column name="Worldspacepos_Dnode" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="vWorldSpaceScale_DNODE" type="F32FIXEDARRAY">
+    <column name="Worldspacescale_Dnode" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="qRot_DNODE" type="QUATPYR">
+    <column name="Qrot_Dnode" type="QUATPYR">
       <offset>48</offset>
-      <flags>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
       <num_elements>4</num_elements>
     </column>
-    <column name="vPos_DNODE" type="F32FIXEDARRAY">
+    <column name="Pos_Dnode" type="F32FIXEDARRAY">
       <offset>64</offset>
-      <flags>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="vScale_DNODE" type="F32FIXEDARRAY">
+    <column name="Scale_Dnode" type="F32FIXEDARRAY">
       <offset>76</offset>
-      <flags>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

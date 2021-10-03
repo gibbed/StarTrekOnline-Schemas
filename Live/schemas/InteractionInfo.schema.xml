@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="InteractableName" type="STRING">
+    <column name="Interactablename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="VolumeName" type="STRING">
-      <offset>4</offset>
+    <column name="Volumename" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="erTarget" type="INT">
-      <offset>8</offset>
+    <column name="Ertarget" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

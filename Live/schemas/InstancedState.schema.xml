@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="stateName" type="FIXEDSTRING">
+    <column name="Statename" type="FIXEDSTRING">
       <offset>0</offset>
       <string_length>64</string_length>
     </column>
-    <column name="MachinesInState" type="INT">
-      <offset>100</offset>
+    <column name="Machinesinstate" type="INT">
+      <offset>136</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ObjLibModelVertexColorsBak">
+  <table>
+    <column name="ObjLibModelVertexColorsBak" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Eaupath" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="ModelName" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Umodelhash" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Estrcolors" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Isundo" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

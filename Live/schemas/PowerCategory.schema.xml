@@ -14,63 +14,82 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="PreferredTray" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="TimeCooldown" type="F32">
+    <column name="Preferredtray" type="INT">
       <offset>8</offset>
     </column>
-    <column name="TimeCooldownOutOfCombat" type="F32">
+    <column name="Timecooldown" type="F32">
       <offset>12</offset>
+    </column>
+    <column name="Timecooldownoutofcombat" type="F32">
+      <offset>16</offset>
       <default>-1</default>
     </column>
-    <column name="RequiredItemCategories" type="INTARRAY">
-      <offset>16</offset>
+    <column name="Requireditemcategories" type="INTARRAY">
+      <offset>24</offset>
       <static_define_list external="ItemCategory" />
     </column>
-    <column name="SortGroup" type="INT">
-      <offset>20</offset>
+    <column name="Classrequirements" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="ClassRequiredItemCategory" />
     </column>
-    <column name="MatchTacticalMode" type="INT">
-      <offset>24</offset>
+    <column name="Sortgroup" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Matchtacticalmode" type="INT">
+      <offset>44</offset>
       <static_define_list external="PowerTacticalMovementMode" />
       <format>FLAGS</format>
     </column>
-    <column name="SlottingRequired" type="BIT">
-      <offset>28</offset>
+    <column name="Msgpurposesuffix" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Requiredownerrank" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Slottingrequired" type="BIT">
+      <offset>76</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="ToggleExclusive" type="BIT">
-      <offset>28</offset>
+    <column name="Toggleexclusive" type="BIT">
+      <offset>76</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="AutoAttackServer" type="BIT">
-      <offset>28</offset>
+    <column name="Autoattackserver" type="BIT">
+      <offset>76</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="AutoAttackEnabler" type="BIT">
-      <offset>28</offset>
+    <column name="Autoattackenabler" type="BIT">
+      <offset>76</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="AutoAttackDisabler" type="BIT">
-      <offset>28</offset>
+    <column name="Autoattackdisabler" type="BIT">
+      <offset>76</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="WeaponBased" type="BIT">
-      <offset>28</offset>
+    <column name="Weaponbased" type="BIT">
+      <offset>76</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="HasAutoSlotPriority" type="BIT">
-      <offset>28</offset>
+    <column name="Hasautoslotpriority" type="BIT">
+      <offset>76</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="IgnoreTargetPitch" type="BIT">
-      <offset>28</offset>
+    <column name="Ignoretargetpitch" type="BIT">
+      <offset>76</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="DisplayAttribModsAsBaseStat" type="BIT">
-      <offset>28</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Displayattribmodsasbasestat" type="BIT">
+      <offset>77</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Displayattribmodsasitemstat" type="BIT">
+      <offset>77</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Defaultactiveweapon" type="BIT">
+      <offset>77</offset>
+      <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

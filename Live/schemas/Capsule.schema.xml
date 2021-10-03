@@ -10,19 +10,21 @@
     <column name="Start" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Dir" type="F32FIXEDARRAY">
       <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Length" type="F32">
-      <offset>24</offset>
+      <offset>36</offset>
     </column>
     <column name="Radius" type="F32">
-      <offset>28</offset>
+      <offset>40</offset>
     </column>
     <column name="Type" type="INT">
-      <offset>32</offset>
+      <offset>44</offset>
     </column>
     <column name="}" type="END" />
   </table>

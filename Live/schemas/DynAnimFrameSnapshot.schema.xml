@@ -11,8 +11,8 @@
       <offset>0</offset>
       <subtable external="DynAnimFrameSnapshotBone" />
     </column>
-    <column name="BonesRotOnly" type="STRUCT">
-      <offset>4</offset>
+    <column name="Bonesrotonly" type="STRUCT">
+      <offset>8</offset>
       <subtable external="DynAnimFrameSnapshotBoneRotationOnly" />
     </column>
     <column name="}" type="END" />

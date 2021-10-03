@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DetailObject" type="STRUCT">
+    <column name="Detailobject" type="STRUCT">
       <offset>0</offset>
       <subtable external="SSLibObj" />
     </column>
-    <column name="DetailObjectTags" type="STRUCT">
-      <offset>4</offset>
+    <column name="Detailobjecttags" type="STRUCT">
+      <offset>8</offset>
       <subtable external="SSTagObj" />
     </column>
-    <column name="PointList" type="STRUCT">
-      <offset>8</offset>
+    <column name="Pointlist" type="STRUCT">
+      <offset>16</offset>
       <subtable external="ShoeboxPointList" />
     </column>
     <column name="Name" type="IGNORE" />
-    <column name="OrbitTreeSpecifier" type="IGNORE" />
+    <column name="Orbittreespecifier" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

@@ -12,24 +12,41 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>11</default>
+      <default>12</default>
       <static_define_list external="UIGenType" />
     </column>
     <column name="Scrollbar" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="UIGenScrollbarState" />
     </column>
-    <column name="StaticString" type="STRING">
-      <offset>28</offset>
+    <column name="Staticstring" type="STRING">
+      <offset>152</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Text" type="STRING">
-      <offset>32</offset>
+      <offset>160</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
+    </column>
+    <column name="Selectedanchorindex" type="INT">
+      <offset>184</offset>
+      <default>-1</default>
+    </column>
+    <column name="Lastframeselectedchanged" type="INT">
+      <offset>188</offset>
+    </column>
+    <column name="Anchorblocks" type="NO_AST_EARRAY">
+      <offset>192</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+      </flags>
+    </column>
+    <column name="Lastselectedanchorindex" type="INT">
+      <offset>256</offset>
+      <default>-1</default>
     </column>
     <column name="}" type="END" />
   </table>

@@ -11,19 +11,19 @@
       <offset>0</offset>
       <static_define_list external="WorldRoomType" />
     </column>
-    <column name="LimitLights" type="BIT">
+    <column name="Limitlights" type="BIT">
       <offset>4</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="occluder" type="BIT">
+    <column name="Occluder" type="BIT">
       <offset>4</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="UseModels" type="BIT">
+    <column name="Usemodels" type="BIT">
       <offset>4</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="RoomInstanceData" type="OPTIONALSTRUCT">
+    <column name="Roominstancedata" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <subtable external="RoomInstanceData" />
     </column>

@@ -7,18 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="typeofwidget" type="INT">
+    <column name="Typeofwidget" type="INT">
       <offset>0</offset>
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
       <default>1</default>
     </column>
-    <column name="firststring" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="secondstring" type="STRING">
+    <column name="Firststring" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Secondstring" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

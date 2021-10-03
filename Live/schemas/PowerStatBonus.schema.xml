@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SourceAttrib" type="INT">
+    <column name="Sourceattrib" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SELF_ONLY</flag>
@@ -16,7 +16,7 @@
       <static_define_list external="AttribType" />
     </column>
     <column name="Entries" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>

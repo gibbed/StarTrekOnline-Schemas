@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CrashType">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="CRASH">1</element>
+    <element name="ASSERT">2</element>
+    <element name="FATAL_ERROR">3</element>
+    <element name="REQUESTED_DUMP">4</element>
+    <element name="MANUAL_DUMP">5</element>
+  </elements>
+</enum>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="SimpleProjectileMovementType">
+  <elements type="int">
+    <element name="SelfPropelled">0</element>
+    <element name="Ballistic">1</element>
+  </elements>
+</enum>

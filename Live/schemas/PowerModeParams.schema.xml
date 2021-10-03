@@ -12,14 +12,14 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1203</default>
+      <default>1315</default>
       <static_define_list external="AttribType" />
     </column>
     <column name="PowerMode" type="INT">
       <offset>4</offset>
       <static_define_list external="PowerMode" />
     </column>
-    <column name="MissionEvent" type="BIT">
+    <column name="Missionevent" type="BIT">
       <offset>8</offset>
       <bit_offset>65536</bit_offset>
     </column>

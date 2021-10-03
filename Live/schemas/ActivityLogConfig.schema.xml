@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="maxGuildLogSize" type="INT">
+    <column name="Maxguildlogsize" type="INT">
       <offset>0</offset>
     </column>
-    <column name="EntryTypeConfig" type="STRUCT">
-      <offset>4</offset>
+    <column name="Entrytypeconfig" type="STRUCT">
+      <offset>8</offset>
       <subtable external="ActivityLogEntryTypeConfig" />
     </column>
-    <column name="PetEventConfig" type="STRUCT">
-      <offset>8</offset>
+    <column name="Peteventconfig" type="STRUCT">
+      <offset>16</offset>
       <subtable external="ActivityLogPetEventConfig" />
     </column>
     <column name="}" type="END" />

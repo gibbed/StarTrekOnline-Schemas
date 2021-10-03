@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="AccountServerMicroTrans2Override">
+  <table>
+    <column name="AccountServerMicroTrans2Override" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Overrideid" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Humanname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Def_Name" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Deftype" type="INT">
+      <offset>24</offset>
+      <static_define_list external="MicroTrans2OverrideDefType" />
+    </column>
+    <column name="Activetype" type="INT">
+      <offset>28</offset>
+      <static_define_list external="MicroTrans2OverrideActiveType" />
+    </column>
+    <column name="Deftext" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="EndTime" type="STRING">
+      <offset>40</offset>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Defversion" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

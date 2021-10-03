@@ -7,50 +7,52 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BagID" type="INT">
+    <column name="Bagid" type="INT">
       <offset>0</offset>
       <static_define_list external="InvBagIDs" />
     </column>
     <column name="Slot" type="INT">
       <offset>4</offset>
     </column>
-    <column name="hItemArt" type="REFERENCE">
+    <column name="Hitemart" type="REFERENCE">
       <offset>8</offset>
       <dictionary_name>ItemArt</dictionary_name>
     </column>
-    <column name="ppchBits" type="STRINGARRAY">
-      <offset>12</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>UNKNOWN_32</flag>
-      </flags>
-    </column>
-    <column name="ppchFXNames" type="STRINGARRAY">
+    <column name="Ppchbits" type="STRINGARRAY">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Ppchfxnames" type="STRINGARRAY">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Bone" type="STRING">
-      <offset>20</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="GeoOverride" type="STRING">
-      <offset>24</offset>
+    <column name="Geooverride" type="STRING">
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Pos" type="F32FIXEDARRAY">
-      <offset>28</offset>
+      <offset>48</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Rot" type="F32FIXEDARRAY">
-      <offset>40</offset>
+      <offset>60</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

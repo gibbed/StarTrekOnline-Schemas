@@ -6,30 +6,30 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="depfilename" type="CURRENTFILE">
+    <column name="Depfilename" type="CURRENTFILE">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="GeoFile" type="FILENAME">
-      <offset>4</offset>
+    <column name="Geofile" type="FILENAME">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MaterialDep" type="FIXEDFILENAME">
-      <offset>8</offset>
+    <column name="Materialdep" type="FIXEDFILENAME">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>EARRAY</flag>
         <flag>INDIRECT</flag>
       </flags>
     </column>
-    <column name="MaterialModelDep" type="STRUCT">
-      <offset>12</offset>
+    <column name="Materialmodeldep" type="STRUCT">
+      <offset>24</offset>
       <subtable external="MaterialModelDep" />
     </column>
-    <column name="EndMaterialDeps" type="END" />
+    <column name="Endmaterialdeps" type="END" />
   </table>
 </parser>

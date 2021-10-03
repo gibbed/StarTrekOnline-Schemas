@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="TPTicket">
+  <table>
+    <column name="TPTicket" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Subject" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Description" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Label" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Category" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="MainCategory" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Character" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
+      <subtable external="TPCharacterInfo" />
+    </column>
+    <column name="clientLanguage" type="INT">
+      <offset>104</offset>
+      <static_define_list external="Language" />
+    </column>
+    <column name="Tags" type="STRINGARRAY">
+      <offset>112</offset>
+    </column>
+    <column name="Attachments" type="STRUCT">
+      <offset>120</offset>
+      <subtable external="TPAttachment" />
+    </column>
+    <column name="User" type="EMBEDDEDSTRUCT">
+      <offset>128</offset>
+      <subtable external="TPEndUser" />
+    </column>
+    <column name="ProductName" type="STRING">
+      <offset>160</offset>
+    </column>
+    <column name="shardName" type="STRING">
+      <offset>168</offset>
+    </column>
+    <column name="tType" type="INT">
+      <offset>176</offset>
+      <static_define_list external="TicketType" />
+    </column>
+    <column name="ChatLog" type="EMBEDDEDSTRUCT">
+      <offset>184</offset>
+      <subtable external="TPChatLog" />
+    </column>
+    <column name="Platform" type="INT">
+      <offset>192</offset>
+    </column>
+    <column name="ClientIP" type="INT">
+      <offset>196</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

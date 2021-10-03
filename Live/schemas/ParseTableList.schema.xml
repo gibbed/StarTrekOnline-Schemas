@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ParseTables" type="STRUCT">
+    <column name="Parsetables" type="STRUCT">
       <offset>0</offset>
       <subtable external="ParseTableNameAndLink" />
     </column>

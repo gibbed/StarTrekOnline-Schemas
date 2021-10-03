@@ -7,29 +7,29 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DaboBets" type="STRUCT">
+    <column name="Dabobets" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="DaboBet" />
     </column>
-    <column name="pDaboBet" type="STRUCT">
+    <column name="Pdabobet" type="STRUCT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>DaboBets</redundant_name>
+      <redundant_name>Dabobets</redundant_name>
       <subtable external="DaboBet" />
     </column>
-    <column name="eaDaboBets" type="STRUCT">
+    <column name="Eadabobets" type="STRUCT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>DaboBets</redundant_name>
+      <redundant_name>Dabobets</redundant_name>
       <subtable external="DaboBet" />
     </column>
     <column name="}" type="END" />

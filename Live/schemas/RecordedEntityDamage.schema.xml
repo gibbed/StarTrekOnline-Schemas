@@ -13,7 +13,7 @@
     <column name="HP" type="F32">
       <offset>4</offset>
     </column>
-    <column name="MaxHP" type="F32">
+    <column name="Maxhp" type="F32">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

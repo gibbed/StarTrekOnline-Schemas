@@ -6,5 +6,6 @@
     <element name="Replace_Match">2</element>
     <element name="Replace_Always">3</element>
     <element name="Unlock">4</element>
+    <element name="Replace_Matching_Parts">5</element>
   </elements>
 </enum>

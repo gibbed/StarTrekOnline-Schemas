@@ -15,39 +15,35 @@
       </flags>
     </column>
     <column name="FileName" type="FILENAME">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="StanceWords" type="STRINGARRAY">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ChartPriority" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="hMovementSet" type="REFERENCE">
+    <column name="Stancewords" type="STRINGARRAY">
       <offset>16</offset>
-      <dictionary_name>DynMovementSet</dictionary_name>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="DefaultChances" type="STRUCT">
-      <offset>20</offset>
+    <column name="Chartpriority" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Defaultchances" type="STRUCT">
+      <offset>32</offset>
       <subtable external="DynAnimGraphChanceRef" />
     </column>
-    <column name="GraphRefs" type="STRUCT">
-      <offset>24</offset>
+    <column name="Movedefaultchances" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="DynAnimGraphChanceRef" />
+    </column>
+    <column name="Graphrefs" type="STRUCT">
+      <offset>48</offset>
       <subtable external="DynAnimChartGraphRefRunTime" />
     </column>
-    <column name="MoveRefs" type="STRUCT">
-      <offset>28</offset>
-      <subtable external="DynAnimChartMoveRefRunTime" />
-    </column>
-    <column name="MoveTransitions" type="STRUCT">
-      <offset>32</offset>
-      <subtable external="DynMoveTransition" />
+    <column name="Movegraphrefs" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="DynAnimChartGraphRefRunTime" />
     </column>
     <column name="}" type="END" />
   </table>

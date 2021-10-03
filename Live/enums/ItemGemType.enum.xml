@@ -1,7 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <enum name="ItemGemType">
   <elements type="int">
-    <element name="None">0</element>
     <element name="Any">-1</element>
+    <element name="None">0</element>
+    <element name="Kit_Tactical">1</element>
+    <element name="Kit_Engineering">2</element>
+    <element name="Kit_Science">4</element>
+    <element name="Kit_Research">8</element>
+    <element name="Kit_Medical">16</element>
+    <element name="Kit_Security">32</element>
+    <element name="Kit_Assault">64</element>
+    <element name="Kit_Fabrication">128</element>
+    <element name="Kit_Operations">256</element>
+    <element name="Kit_Universal">512</element>
   </elements>
 </enum>

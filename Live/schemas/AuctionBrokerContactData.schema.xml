@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="optionText" type="EMBEDDEDSTRUCT">
+    <column name="Optiontext" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="AuctionBrokerDef" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Auctionbrokerdef" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>AuctionBroker</dictionary_name>
     </column>
     <column name="}" type="END" />

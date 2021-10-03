@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EventCounterDataForServerMon_DataPoints">
+  <table>
+    <column name="EventCounterDataForServerMon_DataPoints" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Mostrecentdatapoint" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Interval" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Total" type="INT64">
+      <offset>16</offset>
+    </column>
+    <column name="data" type="INT64">
+      <offset>24</offset>
+      <flags>
+        <flag>EARRAY</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

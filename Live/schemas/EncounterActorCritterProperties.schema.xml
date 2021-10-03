@@ -7,41 +7,59 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CritterType" type="INT">
+    <column name="Crittertype" type="INT">
       <offset>0</offset>
       <static_define_list external="ActorCritterType" />
     </column>
     <column name="CritterDef" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>CritterDef</dictionary_name>
     </column>
     <column name="CritterGroup" type="REFERENCE">
-      <offset>8</offset>
+      <offset>16</offset>
       <dictionary_name>CritterGroup</dictionary_name>
     </column>
+    <column name="Costume" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>PlayerCostume</dictionary_name>
+    </column>
     <column name="CritterRank" type="STRING">
-      <offset>12</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="CritterSubRank" type="STRING">
-      <offset>16</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="LevelOffset" type="INT">
-      <offset>20</offset>
+    <column name="Leveloffset" type="INT">
+      <offset>48</offset>
     </column>
-    <column name="CritterMapVariable" type="STRING">
-      <offset>24</offset>
+    <column name="Bossbardistance" type="F32">
+      <offset>52</offset>
     </column>
-    <column name="NemesisLeaderTeam" type="U8">
-      <offset>28</offset>
+    <column name="Bossbarvieworder" type="INT">
+      <offset>56</offset>
     </column>
-    <column name="NemesisTeamIndex" type="INT">
-      <offset>32</offset>
+    <column name="Bossbarnoncombat" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Crittermapvariable" type="STRING">
+      <offset>64</offset>
+    </column>
+    <column name="Nemesisleaderteam" type="U8">
+      <offset>72</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Nemesisteamindex" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Crittertag" type="INTARRAY">
+      <offset>80</offset>
+      <static_define_list external="CritterTag" />
     </column>
     <column name="}" type="END" />
   </table>

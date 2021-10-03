@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="respecTreeDef" type="REFERENCE">
+    <column name="Respectreedef" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>PowerTreeDef</dictionary_name>
     </column>

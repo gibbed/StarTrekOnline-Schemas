@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BlockedItems" type="STRUCT">
+    <column name="Blockeditems" type="STRUCT">
       <offset>0</offset>
       <subtable external="AuctionBlockedItem" />
     </column>

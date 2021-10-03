@@ -15,61 +15,61 @@
       </flags>
     </column>
     <column name="Upper" type="REFERENCE">
-      <offset>4</offset>
-      <flags>
-        <flag>NON_NULL_REF</flag>
-      </flags>
-      <dictionary_name>UITextureAssembly</dictionary_name>
-    </column>
-    <column name="Bottom" type="REFERENCE">
       <offset>8</offset>
       <flags>
         <flag>NON_NULL_REF</flag>
       </flags>
       <dictionary_name>UITextureAssembly</dictionary_name>
     </column>
-    <column name="BottomWithoutTail" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Bottom" type="REFERENCE">
+      <offset>16</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+      </flags>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Bottomwithouttail" type="REFERENCE">
+      <offset>24</offset>
       <flags>
         <flag>NON_NULL_REF</flag>
       </flags>
       <dictionary_name>UITextureAssembly</dictionary_name>
     </column>
     <column name="Font" type="REFERENCE">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>NON_NULL_REF</flag>
       </flags>
       <dictionary_name>UIStyleFont</dictionary_name>
     </column>
-    <column name="FadeOutTime" type="F32">
-      <offset>20</offset>
+    <column name="Fadeouttime" type="F32">
+      <offset>40</offset>
       <default>1056964608</default>
     </column>
-    <column name="MoveUpTime" type="F32">
-      <offset>24</offset>
+    <column name="Moveuptime" type="F32">
+      <offset>44</offset>
       <default>1050253722</default>
     </column>
-    <column name="FadeInTime" type="F32">
-      <offset>28</offset>
+    <column name="Fadeintime" type="F32">
+      <offset>48</offset>
       <default>1050253722</default>
     </column>
-    <column name="MinWidth" type="F32">
-      <offset>32</offset>
+    <column name="Minwidth" type="F32">
+      <offset>52</offset>
     </column>
-    <column name="MaxWidth" type="F32">
-      <offset>36</offset>
+    <column name="Maxwidth" type="F32">
+      <offset>56</offset>
       <default>200</default>
     </column>
-    <column name="MinHeight" type="F32">
-      <offset>40</offset>
+    <column name="Minheight" type="F32">
+      <offset>60</offset>
     </column>
     <column name="Colors" type="EMBEDDEDSTRUCT">
-      <offset>44</offset>
+      <offset>64</offset>
       <subtable external="Color4" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>60</offset>
+      <offset>80</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

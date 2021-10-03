@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="EntCreateAt">
+  <elements type="int">
+    <element name="AffectedEntityPos">0</element>
+    <element name="SourceEntityPos">0</element>
+    <element name="TargetEntityPos">1</element>
+    <element name="TargetPos">2</element>
+  </elements>
+</enum>

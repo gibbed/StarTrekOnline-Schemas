@@ -7,46 +7,48 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LayoutName" type="STRING">
+    <column name="Layoutname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="LayoutSeed" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="TransmogrifyVersion" type="INT">
+    <column name="Layoutseed" type="INT">
       <offset>8</offset>
     </column>
-    <column name="Backdrop" type="OPTIONALSTRUCT">
+    <column name="Transmogrifyversion" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Backdrop" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="GenesisBackdrop" />
     </column>
-    <column name="InteriorKit" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Interiorkit" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>GenesisInteriorKit</dictionary_name>
     </column>
-    <column name="LightKit" type="REFERENCE">
-      <offset>20</offset>
+    <column name="Lightkit" type="REFERENCE">
+      <offset>32</offset>
       <dictionary_name>GenesisInteriorKit</dictionary_name>
     </column>
     <column name="Room" type="STRUCT">
-      <offset>24</offset>
+      <offset>40</offset>
       <subtable external="GenesisZoneMapRoom" />
     </column>
     <column name="Path" type="STRUCT">
-      <offset>28</offset>
+      <offset>48</offset>
       <subtable external="GenesisZoneMapPath" />
     </column>
-    <column name="OverridePositions" type="U8">
-      <offset>32</offset>
+    <column name="Overridepositions" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="VertDir" type="INT">
-      <offset>36</offset>
+    <column name="Vertdir" type="INT">
+      <offset>60</offset>
       <static_define_list external="GenesisVertDir" />
     </column>
-    <column name="NoSharingDetail" type="U8">
-      <offset>40</offset>
+    <column name="Nosharingdetail" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DetailKit" type="IGNORE" />
+    <column name="Detailkit" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

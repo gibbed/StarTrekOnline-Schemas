@@ -13,24 +13,25 @@
     <column name="Pos" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="job_name" type="STRING">
+    <column name="Job_Name" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="critter_name" type="STRING">
-      <offset>20</offset>
-    </column>
-    <column name="role_name" type="STRING">
+    <column name="Critter_Name" type="STRING">
       <offset>24</offset>
     </column>
-    <column name="combatTokens" type="F32">
-      <offset>28</offset>
-    </column>
-    <column name="combatTokenRateSelf" type="F32">
+    <column name="Role_Name" type="STRING">
       <offset>32</offset>
     </column>
-    <column name="combatTokenRateSocial" type="F32">
-      <offset>36</offset>
+    <column name="Combattokens" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Combattokenrateself" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Combattokenratesocial" type="F32">
+      <offset>48</offset>
     </column>
     <column name="}" type="END" />
   </table>

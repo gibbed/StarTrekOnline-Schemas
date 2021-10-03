@@ -7,17 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uEntID" type="INT">
+    <column name="Uentid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uTeamID" type="INT">
+    <column name="Uteamid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="Level" type="INT">
+    <column name="Prefs" type="OPTIONALSTRUCT">
       <offset>8</offset>
-    </column>
-    <column name="Rank" type="INT">
-      <offset>12</offset>
+      <subtable external="QueueMemberPrefs" />
     </column>
     <column name="Affiliation" type="STRING">
       <offset>16</offset>

@@ -7,16 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="IsInCooldown" type="U8">
+    <column name="Isincooldown" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsInCooldownBlock" type="U8">
+    <column name="Isincooldownblock" type="U8">
       <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="uCooldownSecondsLeft" type="INT">
+    <column name="Ucooldownsecondsleft" type="INT">
       <offset>4</offset>
     </column>
-    <column name="uRepeatCount" type="INT">
+    <column name="Urepeatcount" type="INT">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

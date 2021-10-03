@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ABTestGroup">
+  <elements type="int">
+    <element name="PlayerOnboarding">0</element>
+    <element name="SaleVisibility">1</element>
+    <element name="ENUM_MAX">2</element>
+  </elements>
+</enum>

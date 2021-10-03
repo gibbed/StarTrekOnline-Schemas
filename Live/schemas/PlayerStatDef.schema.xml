@@ -16,84 +16,99 @@
       </flags>
     </column>
     <column name="Scope" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Notes" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
     <column name="Rank" type="INT">
-      <offset>16</offset>
+      <offset>32</offset>
     </column>
     <column name="IconName" type="STRING">
-      <offset>20</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Category" type="INT">
-      <offset>24</offset>
+      <offset>48</offset>
       <static_define_list external="PlayerStatCategory" />
     </column>
     <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>28</offset>
+      <offset>56</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="descriptionMsg" type="EMBEDDEDSTRUCT">
-      <offset>40</offset>
+    <column name="Descriptionmsg" type="EMBEDDEDSTRUCT">
+      <offset>80</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Event" type="STRUCT">
-      <offset>52</offset>
+      <offset>104</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="GameEvent" />
     </column>
-    <column name="EventData" type="STRUCT">
-      <offset>52</offset>
+    <column name="Eventdata" type="STRUCT">
+      <offset>104</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
       <redundant_name>Event</redundant_name>
       <subtable external="GameEvent" />
     </column>
-    <column name="UpdateType" type="INT">
-      <offset>56</offset>
+    <column name="Updatetype" type="INT">
+      <offset>112</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <static_define_list external="PlayerStatUpdateType" />
     </column>
-    <column name="EditorData" type="STRUCT">
-      <offset>60</offset>
+    <column name="Editordata" type="STRUCT">
+      <offset>120</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <subtable external="PlayerStatEventsEditorData" />
     </column>
-    <column name="PlayerStatTag" type="INTARRAY">
-      <offset>64</offset>
+    <column name="Playerstattag" type="INTARRAY">
+      <offset>128</offset>
       <static_define_list external="PlayerStatTag" />
     </column>
-    <column name="PlayerPerMatchStat" type="U8">
-      <offset>68</offset>
+    <column name="Requiresexpression" type="OPTIONALSTRUCT">
+      <offset>136</offset>
+      <subtable external="Expression" />
     </column>
-    <column name="NotifyPlayerOnChange" type="U8">
-      <offset>69</offset>
+    <column name="Playerpermatchstat" type="U8">
+      <offset>144</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Notifyplayeronchange" type="U8">
+      <offset>145</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Skipupdateforprivatematch" type="U8">
+      <offset>146</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Notifyplayernotifytype" type="INT">
+      <offset>148</offset>
+      <default>71</default>
+      <static_define_list external="NotifyType" />
     </column>
     <column name="}" type="END" />
   </table>

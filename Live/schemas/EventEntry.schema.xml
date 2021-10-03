@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pchEventName" type="STRING">
+    <column name="Pcheventname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -16,22 +16,22 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uLastTimeStarted" type="INT">
-      <offset>4</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="iTimingIndex" type="INT">
+    <column name="Ulasttimestarted" type="INT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iEventRunMode" type="INT">
+    <column name="Itimingindex" type="INT">
       <offset>12</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ieventrunmode" type="INT">
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

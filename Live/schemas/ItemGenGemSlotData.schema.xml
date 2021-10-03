@@ -14,9 +14,9 @@
       </flags>
       <default>1</default>
     </column>
-    <column name="SlotType" type="INTARRAY">
-      <offset>4</offset>
-      <static_define_list external="ItemGemType" />
+    <column name="Slottype" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ItemGemSlotDef" />
     </column>
     <column name="}" type="END" />
   </table>

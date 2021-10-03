@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="LightCacheType">
+  <elements type="int">
+    <element name="WORLD">0</element>
+    <element name="WORLD_EDITOR">1</element>
+    <element name="VERTEX_LIGHT_BINNING">2</element>
+    <element name="DIFFUSE_PROBE_BINNING">3</element>
+    <element name="TERRAIN">4</element>
+    <element name="CHARACTER">5</element>
+    <element name="INTERACTION_ENTITY">6</element>
+    <element name="FX">7</element>
+    <element name="SPECULAR_PROBE_LOCAL_ONLY">8</element>
+    <element name="SPECULAR_PROBE_GLOBAL_ONLY">9</element>
+    <element name="DIFFUSE_PROBE_ONLY">10</element>
+    <element name="VERTEX_PAINT">11</element>
+  </elements>
+</enum>

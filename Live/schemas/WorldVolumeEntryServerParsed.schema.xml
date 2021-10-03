@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="base_data" type="EMBEDDEDSTRUCT">
+    <column name="Base_Data" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="WorldCellEntryParsed" />
     </column>
@@ -15,27 +15,27 @@
       <offset>72</offset>
       <subtable external="WorldVolumeElement" />
     </column>
-    <column name="volume_type_string_idxs" type="INTARRAY">
-      <offset>76</offset>
-    </column>
-    <column name="indoor" type="BIT">
+    <column name="Volume_Type_String_Idxs" type="INTARRAY">
       <offset>80</offset>
+    </column>
+    <column name="Indoor" type="BIT">
+      <offset>88</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="occluder" type="BIT">
-      <offset>80</offset>
+    <column name="Occluder" type="BIT">
+      <offset>88</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="attached_to_parent" type="BIT">
-      <offset>80</offset>
+    <column name="Attached_To_Parent" type="BIT">
+      <offset>88</offset>
       <bit_offset>65538</bit_offset>
     </column>
     <column name="Properties" type="EMBEDDEDSTRUCT">
-      <offset>84</offset>
+      <offset>96</offset>
       <subtable external="GroupVolumePropertiesServer" />
     </column>
-    <column name="named_volume_id" type="INT">
-      <offset>136</offset>
+    <column name="Named_Volume_Id" type="INT">
+      <offset>248</offset>
     </column>
     <column name="}" type="END" />
   </table>

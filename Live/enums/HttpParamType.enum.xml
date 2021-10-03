@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="HttpParamType">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="QUERY">1</element>
+    <element name="GET">1</element>
+    <element name="POST">2</element>
+    <element name="MULTIPART">3</element>
+    <element name="HEADER">4</element>
+    <element name="CONTENT">5</element>
+    <element name="CONTENT_ESTR">6</element>
+    <element name="CONTENT_BINARY">7</element>
+    <element name="LOG_OBJ">8</element>
+    <element name="LOG_PAIR">9</element>
+    <element name="COUNT">10</element>
+  </elements>
+</enum>

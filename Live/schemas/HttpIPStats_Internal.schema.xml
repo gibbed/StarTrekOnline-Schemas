@@ -10,21 +10,21 @@
     <column name="ip" type="INT">
       <offset>0</offset>
     </column>
-    <column name="TotalSentOnClosedLinks" type="INT64">
+    <column name="Totalsentonclosedlinks" type="INT64">
       <offset>8</offset>
     </column>
     <column name="Ring" type="INT64FIXEDARRAY">
       <offset>16</offset>
       <num_elements>15</num_elements>
     </column>
-    <column name="RingSum" type="INT64">
+    <column name="Ringsum" type="INT64">
       <offset>136</offset>
     </column>
-    <column name="LastTimeProcessed" type="INT">
+    <column name="Lasttimeprocessed" type="INT">
       <offset>144</offset>
     </column>
-    <column name="LinkTrackers" type="STRUCT">
-      <offset>148</offset>
+    <column name="Linktrackers" type="STRUCT">
+      <offset>152</offset>
       <subtable external="HttpLinkStatsTracker" />
     </column>
     <column name="}" type="END" />

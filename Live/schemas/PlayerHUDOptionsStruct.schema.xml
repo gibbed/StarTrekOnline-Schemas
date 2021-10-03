@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="HUDOptions" type="STRUCT">
+    <column name="Hudoptions" type="STRUCT">
       <offset>0</offset>
       <subtable external="PlayerHUDOptions" />
     </column>
-    <column name="PowerModeOptions" type="STRUCT">
-      <offset>4</offset>
+    <column name="Powermodeoptions" type="STRUCT">
+      <offset>8</offset>
       <subtable external="PlayerHUDOptionsPowerMode" />
     </column>
     <column name="}" type="END" />

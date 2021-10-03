@@ -11,44 +11,56 @@
       <offset>0</offset>
       <subtable external="WorldScope" />
     </column>
-    <column name="encounter_hacks" type="STRUCT">
-      <offset>44</offset>
+    <column name="Encounter_Hacks" type="STRUCT">
+      <offset>96</offset>
       <subtable external="WorldEncounterHack" />
     </column>
-    <column name="encounters" type="STRUCT">
-      <offset>48</offset>
+    <column name="Encounters" type="STRUCT">
+      <offset>104</offset>
       <subtable external="WorldEncounter" />
     </column>
-    <column name="interactables" type="STRUCT">
-      <offset>52</offset>
+    <column name="Interactables" type="STRUCT">
+      <offset>112</offset>
       <subtable external="WorldNamedInteractable" />
     </column>
-    <column name="spawn_points" type="STRUCT">
-      <offset>56</offset>
+    <column name="Spawn_Points" type="STRUCT">
+      <offset>120</offset>
       <subtable external="WorldSpawnPoint" />
     </column>
-    <column name="patrol_routes" type="STRUCT">
-      <offset>60</offset>
+    <column name="Patrol_Routes" type="STRUCT">
+      <offset>128</offset>
       <subtable external="WorldPatrolRoute" />
     </column>
-    <column name="named_points" type="STRUCT">
-      <offset>64</offset>
+    <column name="Named_Points" type="STRUCT">
+      <offset>136</offset>
       <subtable external="WorldNamedPoint" />
     </column>
-    <column name="named_volumes" type="STRUCT">
-      <offset>68</offset>
+    <column name="Named_Volumes" type="STRUCT">
+      <offset>144</offset>
       <subtable external="WorldNamedVolume" />
     </column>
-    <column name="trigger_conditions" type="STRUCT">
-      <offset>72</offset>
+    <column name="Trigger_Conditions" type="STRUCT">
+      <offset>152</offset>
       <subtable external="WorldTriggerCondition" />
     </column>
-    <column name="layer_fsms" type="STRUCT">
-      <offset>76</offset>
+    <column name="Layer_Fsms" type="STRUCT">
+      <offset>160</offset>
       <subtable external="WorldLayerFSM" />
     </column>
+    <column name="Navmesh_Markers" type="STRUCT">
+      <offset>168</offset>
+      <subtable external="WorldNavMeshMarker" />
+    </column>
+    <column name="Director_Markers" type="STRUCT">
+      <offset>176</offset>
+      <subtable external="WorldDirectorMarker" />
+    </column>
+    <column name="Navmesh_Areas" type="STRUCT">
+      <offset>184</offset>
+      <subtable external="WorldNavMeshArea" />
+    </column>
     <column name="Groups" type="STRUCT">
-      <offset>80</offset>
+      <offset>192</offset>
       <subtable external="WorldLogicalGroup" />
     </column>
     <column name="}" type="END" />

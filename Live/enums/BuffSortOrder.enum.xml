@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="BuffSortOrder">
+  <elements type="int">
+    <element name="RemainingDur_Descending">0</element>
+    <element name="RemainingDur_Ascending">1</element>
+    <element name="ApplicationTime_Descending">2</element>
+    <element name="ApplicationTime_Ascending">3</element>
+    <element name="ReapplicationTime_Descending">4</element>
+    <element name="ReapplicationTime_Ascending">5</element>
+  </elements>
+</enum>

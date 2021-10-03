@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parser name="parse_filespec_exclude">
   <table>
-    <column name="doInclude" type="BOOL">
+    <column name="Doinclude" type="BOOL">
       <offset>0</offset>
     </column>
     <column name="FileSpec" type="FILENAME">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>

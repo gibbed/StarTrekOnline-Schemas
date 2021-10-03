@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="OngoingFileSend">
+  <table>
+    <column name="OngoingFileSend" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Localkey" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Remotekey" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Localfullpath" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Filesize" type="INT64">
+      <offset>16</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Bytessent" type="INT64">
+      <offset>24</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Waitingforconfirmation" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Cancelled" type="U8">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Managerremotesessionid" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Silasttickprocessed" type="INT64">
+      <offset>64</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

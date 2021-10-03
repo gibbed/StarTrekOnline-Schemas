@@ -10,8 +10,9 @@
     <column name="EntityRef" type="INT">
       <offset>0</offset>
     </column>
-    <column name="NoFade" type="U8">
+    <column name="Nofade" type="U8">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

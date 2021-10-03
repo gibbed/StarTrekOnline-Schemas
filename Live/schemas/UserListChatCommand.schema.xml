@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="allUsers" type="STRUCT">
+    <column name="Allusers" type="STRUCT">
       <offset>0</offset>
       <subtable external="FriendChatCommand" />
     </column>

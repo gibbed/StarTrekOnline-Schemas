@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ClassName" type="STRING">
+    <column name="className" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -16,31 +16,34 @@
       </flags>
     </column>
     <column name="Min" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="Max" type="INT">
       <offset>8</offset>
     </column>
-    <column name="MinRand" type="INT">
+    <column name="Max" type="INT">
       <offset>12</offset>
     </column>
-    <column name="MaxRand" type="INT">
+    <column name="Minrand" type="INT">
       <offset>16</offset>
     </column>
-    <column name="ZeroPadTo" type="INT">
+    <column name="Maxrand" type="INT">
       <offset>20</offset>
     </column>
-    <column name="NumberWidth" type="INT">
+    <column name="Zeropadto" type="INT">
       <offset>24</offset>
     </column>
-    <column name="Exclusive" type="U8">
+    <column name="Numberwidth" type="INT">
       <offset>28</offset>
     </column>
-    <column name="NoLetter" type="U8">
-      <offset>29</offset>
+    <column name="Exclusive" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="NoDefaultPrefix" type="U8">
-      <offset>30</offset>
+    <column name="Noletter" type="U8">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Nodefaultprefix" type="U8">
+      <offset>34</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

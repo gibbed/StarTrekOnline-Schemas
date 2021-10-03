@@ -7,76 +7,82 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CursorName" type="STRING">
+    <column name="Cursorname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="TargetReticleFxName" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="FxParamNameScale" type="STRING">
+    <column name="Targetreticlefxname" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="FxParamNameColor" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="GroundHeightAdjustment" type="F32">
+    <column name="Fxparamnamescale" type="STRING">
       <offset>16</offset>
-    </column>
-    <column name="KeybindName" type="STRING">
-      <offset>20</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="FxKillMessage" type="STRING">
+    <column name="Fxparamnamecolor" type="STRING">
       <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="OutOfRangeColor" type="F32FIXEDARRAY">
-      <offset>28</offset>
-      <num_elements>3</num_elements>
+    <column name="Groundheightadjustment" type="F32">
+      <offset>32</offset>
     </column>
-    <column name="InRangeColor" type="F32FIXEDARRAY">
+    <column name="Keybindname" type="STRING">
       <offset>40</offset>
-      <num_elements>3</num_elements>
-    </column>
-    <column name="cursorX" type="INT">
-      <offset>52</offset>
-    </column>
-    <column name="cursorY" type="INT">
-      <offset>56</offset>
-    </column>
-    <column name="CursorTexture2" type="STRING">
-      <offset>60</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ClampToMaxDistance" type="BIT">
-      <offset>64</offset>
+    <column name="Fxkillmessage" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Outofrangecolor" type="F32FIXEDARRAY">
+      <offset>56</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Inrangecolor" type="F32FIXEDARRAY">
+      <offset>68</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Cursorx" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Cursory" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Cursortexture2" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Clamptomaxdistance" type="BIT">
+      <offset>96</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="TestPowerRequirementsOnUpdate" type="BIT">
-      <offset>64</offset>
+    <column name="Testpowerrequirementsonupdate" type="BIT">
+      <offset>96</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="ShowOnCursor" type="BIT">
-      <offset>64</offset>
+    <column name="Showoncursor" type="BIT">
+      <offset>96</offset>
       <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Activemaintainpowerslockreticle" type="BIT">
+      <offset>96</offset>
+      <bit_offset>65539</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -14,8 +14,8 @@
         <format_string name="MAX_ARRAY_SIZE">2000000</format_string>
       </format_strings>
     </column>
-    <column name="sLookupTable" type="STASHTABLE">
-      <offset>4</offset>
+    <column name="Slookuptable" type="STASHTABLE">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

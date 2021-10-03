@@ -14,13 +14,14 @@
       </flags>
     </column>
     <column name="ID" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="Attack" type="U8">
       <offset>8</offset>
     </column>
-    <column name="Range" type="F32">
+    <column name="Attack" type="U8">
       <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Range" type="F32">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

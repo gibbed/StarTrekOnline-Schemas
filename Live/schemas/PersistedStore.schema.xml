@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uContainerID" type="INT">
+    <column name="Ucontainerid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,52 +15,52 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="hStoreDef" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hstoredef" type="REFERENCE">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>StoreDef</dictionary_name>
     </column>
-    <column name="uNextUpdateTime" type="INT">
-      <offset>8</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="uVersion" type="INT">
-      <offset>12</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="uMaxID" type="INT">
+    <column name="Unextupdatetime" type="INT">
       <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eaInventory" type="STRUCT">
+    <column name="Uversion" type="INT">
       <offset>20</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Umaxid" type="INT">
+      <offset>24</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eainventory" type="STRUCT">
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="PersistedStoreItem" />
     </column>
-    <column name="eaRestockData" type="STRUCT">
-      <offset>24</offset>
+    <column name="Earestockdata" type="STRUCT">
+      <offset>40</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="PersistedStoreRestockData" />
     </column>
-    <column name="eaCategories" type="IGNORE" />
+    <column name="Eacategories" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

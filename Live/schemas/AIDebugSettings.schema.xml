@@ -11,27 +11,27 @@
       <offset>0</offset>
       <static_define_list external="AIDebugFlags" />
     </column>
-    <column name="logSettings" type="INTFIXEDARRAY">
+    <column name="Logsettings" type="INTFIXEDARRAY">
       <offset>4</offset>
       <num_elements>5</num_elements>
     </column>
-    <column name="debugEntRef" type="INT">
+    <column name="Debugentref" type="INT">
       <offset>24</offset>
     </column>
-    <column name="layerFSMName" type="STRING">
-      <offset>28</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="pfsmName" type="STRING">
+    <column name="LayerFSMName" type="STRING">
       <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="updateSelected" type="BIT">
-      <offset>36</offset>
+    <column name="Pfsmname" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Updateselected" type="BIT">
+      <offset>48</offset>
       <bit_offset>131072</bit_offset>
     </column>
     <column name="}" type="END" />

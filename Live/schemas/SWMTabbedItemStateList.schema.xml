@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SWMTabbedItemStateList">
+  <table>
+    <column name="SWMTabbedItemStateList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Tabid" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Mintop" type="INT">
+      <offset>4</offset>
+      <default>1000000</default>
+    </column>
+    <column name="States" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+      </flags>
+      <subtable external="SWMTabbedItemState" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

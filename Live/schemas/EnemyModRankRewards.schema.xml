@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EnemyModRankRewards">
+  <table>
+    <column name="EnemyModRankRewards" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Rank" type="INT">
+      <offset>0</offset>
+      <static_define_list external="CritterRanks" />
+    </column>
+    <column name="Hrewardtable" type="REFERENCE">
+      <offset>8</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <dictionary_name>RewardTable</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

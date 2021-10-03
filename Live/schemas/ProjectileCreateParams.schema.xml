@@ -12,35 +12,47 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1206</default>
+      <default>1318</default>
       <static_define_list external="AttribType" />
     </column>
-    <column name="ProjectileDef" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Projectiledef" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>ProjectileEntityDef</dictionary_name>
     </column>
-    <column name="CreateDistanceForward" type="F32">
-      <offset>8</offset>
-    </column>
-    <column name="CreateDistanceRight" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="CreateDistanceUp" type="F32">
+    <column name="Createdistanceforward" type="F32">
       <offset>16</offset>
     </column>
-    <column name="DirectionYawOffset" type="F32">
+    <column name="Createdistanceright" type="F32">
       <offset>20</offset>
     </column>
-    <column name="DirectionPitchOffset" type="F32">
+    <column name="Createdistanceup" type="F32">
       <offset>24</offset>
     </column>
-    <column name="SnapToGroundOnCreate" type="BIT">
+    <column name="Directionyawoffset" type="F32">
       <offset>28</offset>
+    </column>
+    <column name="Directionpitchoffset" type="F32">
+      <offset>32</offset>
+    </column>
+    <column name="Snaptogroundoncreate" type="BIT">
+      <offset>36</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="UseAimingTrajectory" type="BIT">
-      <offset>28</offset>
+    <column name="Initialdirectionclamppitch" type="BIT">
+      <offset>36</offset>
       <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Useaimingtrajectory" type="BIT">
+      <offset>36</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Starting" type="INT">
+      <offset>40</offset>
+      <static_define_list external="ProjCreateStarting" />
+    </column>
+    <column name="Initialdirection" type="INT">
+      <offset>44</offset>
+      <static_define_list external="ProjCreateInitialDirection" />
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ThreadedStreamZipStatus">
+  <elements type="int">
+    <element name="OK">0</element>
+    <element name="DONE">1</element>
+    <element name="CANCELLED">2</element>
+  </elements>
+</enum>

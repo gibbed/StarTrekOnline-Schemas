@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ShipJailKnownFlagMacros">
+  <elements type="int">
+    <element name="Position">6</element>
+    <element name="AllWidth">56</element>
+    <element name="Size">72</element>
+    <element name="AllHeight">448</element>
+    <element name="AllSize">504</element>
+    <element name="Box">510</element>
+  </elements>
+</enum>

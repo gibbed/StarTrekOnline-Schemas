@@ -16,40 +16,43 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="IgnoreLayer" type="U8">
-      <offset>8</offset>
+    <column name="Ignorelayer" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="UseLockout" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Uselockout" type="BIT">
+      <offset>17</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Visible" type="U8">
-      <offset>10</offset>
+      <offset>18</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Level:" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="ForceTeamSize" type="INT">
-      <offset>16</offset>
-    </column>
-    <column name="NextClickableUniqueID" type="INT">
       <offset>20</offset>
     </column>
-    <column name="StaticEncRoot" type="EMBEDDEDSTRUCT">
+    <column name="ForceTeamSize" type="INT">
       <offset>24</offset>
+    </column>
+    <column name="Nextclickableuniqueid" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Staticencroot" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
       <subtable external="OldStaticEncounterGroup" />
     </column>
-    <column name="NamedRoute" type="STRUCT">
-      <offset>52</offset>
+    <column name="Namedroute" type="STRUCT">
+      <offset>80</offset>
       <subtable external="OldPatrolRoute" />
     </column>
-    <column name="MissionOnly" type="IGNORE" />
-    <column name="needsRefresh" type="IGNORE" />
+    <column name="Missiononly" type="IGNORE" />
+    <column name="Needsrefresh" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

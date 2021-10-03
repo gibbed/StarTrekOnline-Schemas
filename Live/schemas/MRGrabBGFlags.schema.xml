@@ -7,17 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="doLockedAnim" type="BIT">
+    <column name="Dolockedanim" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="receivedAck" type="BIT">
+    <column name="Receivedack" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="sentReady" type="BIT">
+    <column name="Sentready" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Firstpositionchange" type="BIT">
+      <offset>0</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
     </column>
     <column name="}" type="END" />
   </table>

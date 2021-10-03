@@ -7,33 +7,33 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DescStr" type="STRING">
+    <column name="Descstr" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="DescStr:" type="STRING">
+    <column name="Descstr:" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>DescStr</redundant_name>
+      <redundant_name>Descstr</redundant_name>
     </column>
     <column name="Description:" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>DescStr</redundant_name>
+      <redundant_name>Descstr</redundant_name>
     </column>
     <column name="OrigStr" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="OrigStr:" type="STRING">
-      <offset>4</offset>
+    <column name="Origstr:" type="STRING">
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
       <redundant_name>OrigStr</redundant_name>

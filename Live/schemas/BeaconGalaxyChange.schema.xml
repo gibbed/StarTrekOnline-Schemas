@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="galaxySet" type="INT">
+    <column name="Galaxyset" type="INT">
       <offset>4</offset>
     </column>
-    <column name="blockIdx" type="INT">
+    <column name="Blockidx" type="INT">
       <offset>8</offset>
     </column>
-    <column name="galaxyIdx" type="INT">
+    <column name="Galaxyidx" type="INT">
       <offset>12</offset>
     </column>
     <column name="}" type="END" />

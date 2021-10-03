@@ -7,20 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uItemID" type="INT64">
+    <column name="Uitemid" type="INT64">
       <offset>0</offset>
     </column>
-    <column name="BagID" type="INT">
+    <column name="Hitemdef" type="REFERENCE">
       <offset>8</offset>
+      <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="Slot" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="Cost" type="INT">
+    <column name="Bagid" type="INT">
       <offset>16</offset>
     </column>
-    <column name="Count" type="INT">
+    <column name="Slot" type="INT">
       <offset>20</offset>
+    </column>
+    <column name="Cost" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Count" type="INT">
+      <offset>28</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -15,11 +15,11 @@
       <dictionary_name>Message</dictionary_name>
     </column>
     <column name="Input" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="JoystickLogicalIdentifier" />
     </column>
     <column name="Category" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="JoystickConfig" />
     </column>
     <column name="}" type="END" />

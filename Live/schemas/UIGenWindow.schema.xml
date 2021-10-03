@@ -11,22 +11,24 @@
       <offset>0</offset>
       <dictionary_name>UIGenWindowDef</dictionary_name>
     </column>
-    <column name="hTemplate" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Htemplate" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>UIGen</dictionary_name>
     </column>
     <column name="Instance" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="UIGen" />
     </column>
-    <column name="chClone" type="U8">
-      <offset>12</offset>
+    <column name="Chclone" type="U8">
+      <offset>24</offset>
     </column>
     <column name="Visible" type="U8">
-      <offset>13</offset>
+      <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SetPosition" type="U8">
-      <offset>14</offset>
+    <column name="Setposition" type="U8">
+      <offset>26</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

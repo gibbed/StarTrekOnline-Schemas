@@ -12,12 +12,16 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1189</default>
+      <default>1298</default>
       <static_define_list external="AttribType" />
     </column>
     <column name="Faction" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>CritterFaction</dictionary_name>
+    </column>
+    <column name="Usesourcefaction" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -15,76 +15,76 @@
       <offset>1</offset>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="SpawnPosSkipBeaconCheck" type="U8">
+    <column name="Spawnposskipbeaconcheck" type="U8">
       <offset>2</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="MapDescription" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="mapDetail" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MapVariables" type="STRING">
-      <offset>12</offset>
+    <column name="Mapdetail" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="mapInstanceIndex" type="INT">
-      <offset>16</offset>
-    </column>
-    <column name="OwnerID" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="spawnPos" type="F32FIXEDARRAY">
+    <column name="MapVariables" type="STRING">
       <offset>24</offset>
       <flags>
-        <flag>USEROPTIONBIT_1</flag>
+        <flag>POOL_STRING</flag>
       </flags>
-      <num_elements>3</num_elements>
     </column>
-    <column name="spawnPYR" type="F32FIXEDARRAY">
-      <offset>36</offset>
+    <column name="Difficultymode" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Mapinstanceindex" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="OwnerID" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Spawnpos" type="F32FIXEDARRAY">
+      <offset>48</offset>
       <flags>
         <flag>USEROPTIONBIT_1</flag>
       </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Spawnpyr" type="F32FIXEDARRAY">
+      <offset>60</offset>
+      <flags>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="SpawnPoint" type="STRING">
-      <offset>48</offset>
+      <offset>72</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>USEROPTIONBIT_1</flag>
       </flags>
     </column>
     <column name="ContainerID" type="INT">
-      <offset>52</offset>
-    </column>
-    <column name="UGC" type="U8">
-      <offset>60</offset>
-    </column>
-    <column name="UGCEdit" type="U8">
-      <offset>61</offset>
-    </column>
-    <column name="UGCProjectID" type="INT">
-      <offset>64</offset>
+      <offset>80</offset>
     </column>
     <column name="VirtualShardID" type="INT">
-      <offset>68</offset>
+      <offset>96</offset>
     </column>
     <column name="PartitionID" type="INT">
-      <offset>72</offset>
+      <offset>100</offset>
     </column>
-    <column name="uPartitionID" type="INT">
-      <offset>72</offset>
+    <column name="Upartitionid" type="INT">
+      <offset>100</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>PartitionID</redundant_name>
     </column>

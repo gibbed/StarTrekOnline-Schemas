@@ -15,16 +15,16 @@
       </flags>
     </column>
     <column name="Normal" type="STRINGARRAY">
-      <offset>4</offset>
-    </column>
-    <column name="Weak" type="STRINGARRAY">
       <offset>8</offset>
     </column>
+    <column name="Weak" type="STRINGARRAY">
+      <offset>16</offset>
+    </column>
     <column name="Tough" type="STRINGARRAY">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
     <column name="File" type="CURRENTFILE">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

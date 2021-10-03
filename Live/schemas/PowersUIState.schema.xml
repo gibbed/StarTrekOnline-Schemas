@@ -7,99 +7,113 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiFrameLastUpdate" type="INT">
+    <column name="Uiframelastupdate" type="INT">
       <offset>0</offset>
     </column>
-    <column name="UICategories" type="STRUCT">
-      <offset>4</offset>
-      <subtable external="PowersUICategoryNode" />
-    </column>
-    <column name="HiddenCategoryNode" type="OPTIONALSTRUCT">
+    <column name="Uicategories" type="STRUCT">
       <offset>8</offset>
       <subtable external="PowersUICategoryNode" />
     </column>
-    <column name="PurposeListNodes" type="STRUCT">
-      <offset>12</offset>
+    <column name="Hiddencategorynode" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="PowersUICategoryNode" />
+    </column>
+    <column name="Purposelistnodes" type="STRUCT">
+      <offset>24</offset>
       <subtable external="PowersUIPurposeNode" />
     </column>
-    <column name="DependantTreeNodes" type="STRUCT">
-      <offset>16</offset>
+    <column name="Dependanttreenodes" type="STRUCT">
+      <offset>32</offset>
       <subtable external="PowersUIDependentTreeNode" />
     </column>
-    <column name="TalentTrees" type="STRUCT">
-      <offset>20</offset>
+    <column name="Talenttrees" type="STRUCT">
+      <offset>40</offset>
       <subtable external="TalentsUITree" />
     </column>
-    <column name="SelectedPower" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Selectedpower" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="PowerListNode" />
     </column>
-    <column name="SelectedPowerNode" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Selectedpowernode" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="PTNodeDef" />
     </column>
-    <column name="TreeDefRefs" type="STRUCT">
-      <offset>32</offset>
+    <column name="Treedefrefs" type="STRUCT">
+      <offset>64</offset>
       <subtable external="PowerTreeDefRef" />
     </column>
-    <column name="PTGroupDefRefs" type="STRUCT">
-      <offset>36</offset>
+    <column name="Ptgroupdefrefs" type="STRUCT">
+      <offset>72</offset>
       <subtable external="PTGroupDefRef" />
     </column>
-    <column name="CombatPowerStatePowerListNodes" type="STRUCT">
-      <offset>40</offset>
+    <column name="Combatpowerstatepowerlistnodes" type="STRUCT">
+      <offset>80</offset>
       <subtable external="PowerListNode" />
     </column>
-    <column name="statePowerListNodesHash" type="STASHTABLE">
-      <offset>44</offset>
+    <column name="Statepowerlistnodeshash" type="STASHTABLE">
+      <offset>88</offset>
     </column>
-    <column name="FilterText" type="STRING">
-      <offset>48</offset>
+    <column name="Powerdefrefs" type="STRUCT">
+      <offset>96</offset>
+      <subtable external="PowerDefRef" />
+    </column>
+    <column name="Filtertext" type="STRING">
+      <offset>104</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="FilterModList" type="STRING">
-      <offset>52</offset>
+    <column name="Filtermodlist" type="STRING">
+      <offset>112</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="ShowOwned" type="U8">
-      <offset>56</offset>
+    <column name="Showowned" type="U8">
+      <offset>120</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ShowAvailable" type="U8">
-      <offset>57</offset>
+    <column name="Showavailable" type="U8">
+      <offset>121</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ShowUnavailable" type="U8">
-      <offset>58</offset>
+    <column name="Showunavailable" type="U8">
+      <offset>122</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FilterOwnedByComparisonEntity" type="U8">
-      <offset>59</offset>
+    <column name="Filterownedbycomparisonentity" type="U8">
+      <offset>123</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AddAvailableForComparisonEntity" type="U8">
-      <offset>60</offset>
+    <column name="Addavailableforcomparisonentity" type="U8">
+      <offset>124</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="uiCategoryUpdateNum" type="INT">
-      <offset>64</offset>
+    <column name="Uicategoryupdatenum" type="INT">
+      <offset>128</offset>
     </column>
-    <column name="ExpandOwnedOnLoad" type="U8">
-      <offset>68</offset>
+    <column name="Expandownedonload" type="U8">
+      <offset>132</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="NumPurposes" type="INT">
-      <offset>72</offset>
+    <column name="Talenttreesusepowerspurpose" type="U8">
+      <offset>133</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MaxPowerLevelInPurposeNodes" type="INT">
-      <offset>76</offset>
+    <column name="Numpurposes" type="INT">
+      <offset>136</offset>
     </column>
-    <column name="PurposeListPowerSortingMethod" type="INT">
-      <offset>80</offset>
+    <column name="Maxpowerlevelinpurposenodes" type="INT">
+      <offset>140</offset>
+    </column>
+    <column name="Purposelistpowersortingmethod" type="INT">
+      <offset>144</offset>
       <static_define_list external="PurposeListPowerSortingMethod" />
     </column>
     <column name="}" type="END" />

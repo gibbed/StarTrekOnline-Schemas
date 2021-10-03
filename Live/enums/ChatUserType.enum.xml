@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ChatUserType">
+  <elements type="int">
+    <element name="NONE">-1</element>
+    <element name="PC">0</element>
+    <element name="XBOXONE">1</element>
+    <element name="PS4">2</element>
+  </elements>
+</enum>

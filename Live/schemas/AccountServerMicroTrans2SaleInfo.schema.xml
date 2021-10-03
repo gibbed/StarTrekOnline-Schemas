@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="AccountServerMicroTrans2SaleInfo">
+  <table>
+    <column name="AccountServerMicroTrans2SaleInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Def_Version" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Sale_Type" type="INT">
+      <offset>12</offset>
+      <static_define_list external="MicroTrans2SaleType" />
+    </column>
+    <column name="Start_Time" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="End_Time" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="EventName" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Currency" type="STRINGARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Discount_Percentage" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Mt_Category" type="STRINGARRAY">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Shard_Category" type="STRINGARRAY">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+      <redundant_name>Mt_Category</redundant_name>
+    </column>
+    <column name="Category" type="STRINGARRAY">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Mt2_Def" type="STRINGARRAY">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Blacklist_Mt2_Def" type="STRINGARRAY">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Apply_To_All" type="U8">
+      <offset>88</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

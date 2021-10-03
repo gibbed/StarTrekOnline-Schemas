@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MicroTrans2SaleType">
+  <elements type="int">
+    <element name="OFF">0</element>
+    <element name="ON">1</element>
+    <element name="TimeBased">2</element>
+    <element name="EventBased">3</element>
+  </elements>
+</enum>

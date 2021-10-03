@@ -11,13 +11,15 @@
       <offset>0</offset>
       <subtable external="MMRSkeletonPartNP" />
     </column>
-    <column name="posOffsetToAnimRoot" type="F32FIXEDARRAY">
-      <offset>4</offset>
+    <column name="Posoffsettoanimroot" type="F32FIXEDARRAY">
+      <offset>8</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="pyrOffsetToAnimRoot" type="F32FIXEDARRAY">
-      <offset>16</offset>
+    <column name="Pyroffsettoanimroot" type="F32FIXEDARRAY">
+      <offset>20</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

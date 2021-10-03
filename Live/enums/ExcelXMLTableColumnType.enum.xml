@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ExcelXMLTableColumnType">
+  <elements type="int">
+    <element name="Empty">0</element>
+    <element name="String">1</element>
+    <element name="Int">2</element>
+    <element name="Formula">3</element>
+    <element name="U64">4</element>
+    <element name="Float">5</element>
+    <element name="Currency">6</element>
+  </elements>
+</enum>

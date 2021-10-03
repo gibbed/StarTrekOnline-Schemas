@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemAssignmentStateUI">
+  <table>
+    <column name="ItemAssignmentStateUI" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Assignment" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="ItemAssignmentUI" />
+    </column>
+    <column name="Category" type="EMBEDDEDSTRUCT">
+      <offset>472</offset>
+      <subtable external="ItemAssignmentCategoryUI" />
+    </column>
+    <column name="Slots" type="STRUCT">
+      <offset>576</offset>
+      <subtable external="ItemAssignmentSlotUI" />
+    </column>
+    <column name="Slotssize" type="INT">
+      <offset>584</offset>
+    </column>
+    <column name="Requiredslotssize" type="INT">
+      <offset>588</offset>
+    </column>
+    <column name="Optionalslotssize" type="INT">
+      <offset>592</offset>
+    </column>
+    <column name="Slotteditems" type="STRUCT">
+      <offset>600</offset>
+      <subtable external="ItemAssignmentSlottedItem" />
+    </column>
+    <column name="Costsspent" type="STRUCT">
+      <offset>608</offset>
+      <subtable external="ItemAssignmentSlottedItem" />
+    </column>
+    <column name="Filledslotssize" type="INT">
+      <offset>616</offset>
+    </column>
+    <column name="Filledrequiredslotssize" type="INT">
+      <offset>620</offset>
+    </column>
+    <column name="Filledoptionalslotssize" type="INT">
+      <offset>624</offset>
+    </column>
+    <column name="Outcomes" type="STRUCT">
+      <offset>632</offset>
+      <subtable external="ItemAssignmentOutcomeUI" />
+    </column>
+    <column name="Outcomessize" type="INT">
+      <offset>640</offset>
+    </column>
+    <column name="Hspecialnumericcostitem" type="REFERENCE">
+      <offset>648</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Specialnumericcostvalue" type="INT">
+      <offset>656</offset>
+    </column>
+    <column name="Itemcosts" type="STRUCT">
+      <offset>664</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="ItemAssignmentItemCost" />
+    </column>
+    <column name="Itemcostssize" type="INT">
+      <offset>672</offset>
+    </column>
+    <column name="Satisfieditemcostssize" type="INT">
+      <offset>676</offset>
+    </column>
+    <column name="Satisfiedspecialnumericcost" type="U8">
+      <offset>680</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Missingbuyableitemcosttotal" type="INT">
+      <offset>684</offset>
+    </column>
+    <column name="Validitems" type="STRUCT">
+      <offset>688</offset>
+      <subtable external="ItemAssignmentInventorySlotReferenceUI" />
+    </column>
+    <column name="Validitemssize" type="INT">
+      <offset>696</offset>
+    </column>
+    <column name="Validprogressionlevels" type="STRUCT">
+      <offset>704</offset>
+      <subtable external="ItemAssignmentProgressionLevelUI" />
+    </column>
+    <column name="Validprogressionlevelssize" type="INT">
+      <offset>712</offset>
+    </column>
+    <column name="Rewards" type="STRUCT">
+      <offset>720</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="InventorySlot" />
+    </column>
+    <column name="Rewardssize" type="INT">
+      <offset>728</offset>
+    </column>
+    <column name="Progressionxpgrants" type="STRUCT">
+      <offset>736</offset>
+      <subtable external="ItemAssignmentSlotProgressionXPGrant" />
+    </column>
+    <column name="Progressionlevel" type="INT">
+      <offset>744</offset>
+    </column>
+    <column name="Successchance" type="F32">
+      <offset>748</offset>
+    </column>
+    <column name="Difficultyrating" type="INT">
+      <offset>752</offset>
+    </column>
+    <column name="Duration" type="INT">
+      <offset>756</offset>
+    </column>
+    <column name="Completionexperience" type="INT">
+      <offset>760</offset>
+    </column>
+    <column name="Minimumvalidprogressionlevel" type="INT">
+      <offset>764</offset>
+    </column>
+    <column name="Maximumvalidprogressionlevel" type="INT">
+      <offset>768</offset>
+    </column>
+    <column name="Quantityoverride" type="INT">
+      <offset>772</offset>
+    </column>
+    <column name="Results" type="OPTIONALSTRUCT">
+      <offset>776</offset>
+      <subtable external="ItemAssignmentEvaluationResults" />
+    </column>
+    <column name="Perequiredcategories" type="INTARRAY">
+      <offset>784</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Requiredcategoriessize" type="INT">
+      <offset>792</offset>
+    </column>
+    <column name="Perestrictedcategories" type="INTARRAY">
+      <offset>800</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Restrictedcategoriessize" type="INT">
+      <offset>808</offset>
+    </column>
+    <column name="Peaffectedcategories" type="INTARRAY">
+      <offset>816</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Affectedcategoriessize" type="INT">
+      <offset>824</offset>
+    </column>
+    <column name="Debugweights" type="OPTIONALSTRUCT">
+      <offset>832</offset>
+      <subtable external="ItemAssignmentDebugWeights" />
+    </column>
+    <column name="Assignmentdef" type="STRING">
+      <offset>840</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Uassignmentid" type="INT">
+      <offset>848</offset>
+    </column>
+    <column name="Outcometosortvaliditems" type="STRING">
+      <offset>856</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Eapchsamplerewardoutcome" type="STRINGARRAY">
+      <offset>864</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Scaninventory" type="BIT">
+      <offset>872</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Recommendationweights" type="STRUCT">
+      <offset>880</offset>
+      <subtable external="ItemAssignmentOutcomeRecommendationWeight" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

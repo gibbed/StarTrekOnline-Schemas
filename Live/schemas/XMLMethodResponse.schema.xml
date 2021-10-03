@@ -11,12 +11,12 @@
       <offset>0</offset>
       <subtable external="XMLParam" />
     </column>
-    <column name="fault" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Fault" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="XMLFault" />
     </column>
-    <column name="slowID" type="INT">
-      <offset>8</offset>
+    <column name="Slowid" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

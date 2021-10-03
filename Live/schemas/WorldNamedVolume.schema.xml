@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="common_data" type="EMBEDDEDSTRUCT">
+    <column name="Common_Data" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="WorldEncounterObject" />
     </column>
-    <column name="entry_id" type="INT">
-      <offset>48</offset>
+    <column name="Entry_Id" type="INT">
+      <offset>80</offset>
     </column>
-    <column name="def_name" type="IGNORE" />
+    <column name="Def_Name" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

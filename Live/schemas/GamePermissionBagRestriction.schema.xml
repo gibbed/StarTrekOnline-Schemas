@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BagID" type="INT">
+    <column name="Bagid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
@@ -15,10 +15,11 @@
       <static_define_list external="InvBagIDs" />
     </column>
     <column name="Value" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="CanBuyBag" type="U8">
       <offset>8</offset>
+    </column>
+    <column name="Canbuybag" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

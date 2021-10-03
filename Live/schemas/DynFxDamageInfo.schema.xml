@@ -6,7 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="DynFxDamageInfo" type="STRING">
+    <column name="Dynfxdamageinfo" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -15,13 +15,13 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DamageRange" type="STRUCT">
-      <offset>8</offset>
+    <column name="Damagerange" type="STRUCT">
+      <offset>16</offset>
       <subtable external="DynFxDamageRangeInfo" />
     </column>
     <column name="End" type="END" />

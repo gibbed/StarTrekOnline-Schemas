@@ -11,22 +11,21 @@
       <offset>0</offset>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="UGCShard" type="U8">
       <offset>8</offset>
     </column>
     <column name="Disabled" type="U8">
-      <offset>9</offset>
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Available" type="U8">
-      <offset>10</offset>
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="NumCharacterSlotsLeft" type="INT">
-      <offset>12</offset>
+    <column name="Numcharacterslotsleft" type="INT">
+      <offset>20</offset>
     </column>
-    <column name="NumCharacterSlotsExtra" type="INT">
-      <offset>16</offset>
+    <column name="Numcharacterslotsextra" type="INT">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CombinedString" type="STRING">
+    <column name="Combinedstring" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="MessageKeys" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Messagekeys" type="STRINGARRAY">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

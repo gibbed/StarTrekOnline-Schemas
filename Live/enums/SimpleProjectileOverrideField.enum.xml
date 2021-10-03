@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="SimpleProjectileOverrideField">
+  <elements type="int">
+    <element name="MovementType">1</element>
+    <element name="Acceleration">2</element>
+    <element name="Velocity">4</element>
+    <element name="GravityMultiplier">8</element>
+    <element name="DoNotCollideWithOwner">16</element>
+    <element name="DoNotCollideWithEnts">32</element>
+    <element name="TrackTarget">64</element>
+    <element name="PowerOnWorldCollide">128</element>
+    <element name="PowerOnEntCollide">256</element>
+  </elements>
+</enum>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NodeDef" type="REFERENCE">
+    <column name="Nodedef" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>

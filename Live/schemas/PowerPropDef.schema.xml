@@ -7,11 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PropPower" type="U8">
+    <column name="Proppower" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CharacterType" type="INTARRAY">
-      <offset>4</offset>
+    <column name="Charactertype" type="INTARRAY">
+      <offset>8</offset>
       <static_define_list external="CharClassTypes" />
     </column>
     <column name="}" type="END" />

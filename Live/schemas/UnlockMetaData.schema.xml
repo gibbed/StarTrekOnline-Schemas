@@ -11,37 +11,42 @@
       <offset>0</offset>
       <dictionary_name>CostumeGeometry</dictionary_name>
     </column>
-    <column name="Material" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Shadingmaterial" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>CostumeMaterial</dictionary_name>
     </column>
     <column name="Texture" type="REFERENCE">
-      <offset>8</offset>
+      <offset>16</offset>
       <dictionary_name>CostumeTexture</dictionary_name>
     </column>
     <column name="Costumes" type="STRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="PlayerCostumeRef" />
     </column>
-    <column name="Owned" type="U8">
-      <offset>16</offset>
-    </column>
-    <column name="MicroTransactionID" type="INT">
-      <offset>20</offset>
-    </column>
     <column name="Product" type="OPTIONALSTRUCT">
-      <offset>24</offset>
-      <subtable external="MicroTransactionUIProduct" />
-    </column>
-    <column name="FullProductList" type="STRUCT">
-      <offset>28</offset>
-      <subtable external="MicroTransactionUIProduct" />
-    </column>
-    <column name="MinimumProductPrice" type="INT64">
       <offset>32</offset>
+      <subtable external="MicroTransactionUIProduct" />
     </column>
-    <column name="MaximumProductPrice" type="INT64">
+    <column name="Fullproductlist" type="STRUCT">
       <offset>40</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="MicroTransactionUIProduct" />
+    </column>
+    <column name="Minimumproductprice" type="INT64">
+      <offset>48</offset>
+    </column>
+    <column name="Maximumproductprice" type="INT64">
+      <offset>56</offset>
+    </column>
+    <column name="Microtransactionid" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Owned" type="BIT">
+      <offset>68</offset>
+      <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

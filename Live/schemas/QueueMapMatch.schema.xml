@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MapKey" type="INT64">
+    <column name="Mapkey" type="INT64">
       <offset>0</offset>
     </column>
     <column name="Match" type="OPTIONALSTRUCT">

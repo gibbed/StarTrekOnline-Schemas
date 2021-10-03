@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="sides" type="INT">
+    <column name="Sides" type="INT">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
@@ -15,8 +15,8 @@
       <static_define_list external="GenesisInteriorConnectionSide" />
       <format>FLAGS</format>
     </column>
-    <column name="AllowTag" type="STRUCT">
-      <offset>4</offset>
+    <column name="Allowtag" type="STRUCT">
+      <offset>8</offset>
       <subtable external="GenesisInteriorTagRelation" />
     </column>
     <column name="}" type="END" />

@@ -7,35 +7,51 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SearchTitle" type="STRING">
+    <column name="Searchtitle" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="Description" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="filterType" type="INT">
+    <column name="Ft" type="INT">
       <offset>8</offset>
       <static_define_list external="SearchFilterType" />
     </column>
-    <column name="FilterString" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="yScroll" type="F32">
+    <column name="Filter" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="Small" type="U8">
-      <offset>20</offset>
-    </column>
-    <column name="ShowCostumes" type="U8">
-      <offset>21</offset>
-      <default>1</default>
-    </column>
-    <column name="Request" type="EMBEDDEDSTRUCT">
+    <column name="Resultstyle" type="INT">
       <offset>24</offset>
-      <subtable external="ResourceSearchRequest" />
+      <static_define_list external="SearchResultsStyle" />
     </column>
     <column name="Result" type="EMBEDDEDSTRUCT">
-      <offset>60</offset>
+      <offset>32</offset>
+      <subtable external="ResourceSearchResult" />
+    </column>
+    <column name="Selectedrowdict" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Selectedrowresource" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Eaiselectedrows" type="INTARRAY">
+      <offset>64</offset>
+    </column>
+    <column name="Types" type="STRINGARRAY">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Sub Searches" type="STRUCT">
+      <offset>80</offset>
+      <subtable external="SearchStatusSubSearch" />
+    </column>
+    <column name="Typesresult" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
       <subtable external="ResourceSearchResult" />
     </column>
     <column name="}" type="END" />

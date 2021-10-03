@@ -7,14 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ppRollResults" type="STRUCT">
+    <column name="Fcurrentrollvalue" type="F32">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <subtable external="ItemGemSlotRollResult" />
+    </column>
+    <column name="Eaunlockeddata" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="ItemGemRollDataUnlockedDef" />
+    </column>
+    <column name="Pprollresults" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

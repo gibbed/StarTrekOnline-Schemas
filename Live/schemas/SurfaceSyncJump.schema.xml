@@ -16,10 +16,10 @@
     <column name="Traction" type="F32">
       <offset>8</offset>
     </column>
-    <column name="upGravity" type="F32">
+    <column name="Upgravity" type="F32">
       <offset>12</offset>
     </column>
-    <column name="downGravity" type="F32">
+    <column name="Downgravity" type="F32">
       <offset>16</offset>
     </column>
     <column name="}" type="END" />

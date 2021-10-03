@@ -15,19 +15,21 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="UIGen" type="STRING">
-      <offset>4</offset>
+    <column name="Uigen" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="HorizontalAlignment" type="BIT">
-      <offset>8</offset>
+    <column name="Horizontalalignment" type="BIT">
+      <offset>16</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="VerticalAlignment" type="BIT">
-      <offset>8</offset>
+    <column name="Verticalalignment" type="BIT">
+      <offset>16</offset>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

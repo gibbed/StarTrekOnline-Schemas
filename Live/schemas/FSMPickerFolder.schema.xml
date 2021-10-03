@@ -10,19 +10,19 @@
     <column name="FolderName" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="folderPath" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="fsmFolders" type="STRUCT">
+    <column name="Folderpath" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Fsmfolders" type="STRUCT">
+      <offset>16</offset>
       <subtable external="FSMPickerFolder" />
     </column>
-    <column name="rootGroup" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Rootgroup" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="FSMGroup" />
     </column>
     <column name="FSMs" type="STRUCT">
-      <offset>16</offset>
+      <offset>32</offset>
       <subtable external="FSM" />
     </column>
     <column name="}" type="END" />

@@ -14,8 +14,8 @@
       </flags>
       <subtable external="PowerTreeClientInfo" />
     </column>
-    <column name="dirtyBit" type="U8">
-      <offset>4</offset>
+    <column name="Dirtybit" type="U8">
+      <offset>8</offset>
       <flags>
         <flag>NO_NETSEND</flag>
         <flag>DIRTY_BIT</flag>

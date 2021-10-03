@@ -14,64 +14,68 @@
       </flags>
     </column>
     <column name="Ents" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="TestClientEntity" />
     </column>
     <column name="Objects" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="TestClientObject" />
     </column>
     <column name="Powers" type="STRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="TestClientPower" />
     </column>
     <column name="ID" type="INT">
-      <offset>16</offset>
+      <offset>32</offset>
     </column>
     <column name="MyRef" type="INT">
-      <offset>20</offset>
+      <offset>36</offset>
     </column>
-    <column name="STOSpaceshipMovement" type="U8">
-      <offset>28</offset>
+    <column name="Stospaceshipmovement" type="U8">
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="MapName" type="STRING">
-      <offset>32</offset>
+      <offset>56</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="InstanceIndex" type="INT">
-      <offset>36</offset>
+    <column name="Instanceindex" type="INT">
+      <offset>64</offset>
     </column>
-    <column name="IsTeamed" type="U8">
-      <offset>40</offset>
+    <column name="Isteamed" type="U8">
+      <offset>68</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsInvited" type="U8">
-      <offset>41</offset>
+    <column name="Isinvited" type="U8">
+      <offset>69</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsRequested" type="U8">
-      <offset>42</offset>
+    <column name="Isrequested" type="U8">
+      <offset>70</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="NumMembers" type="INT">
-      <offset>44</offset>
+    <column name="Nummembers" type="INT">
+      <offset>72</offset>
     </column>
-    <column name="NumRequests" type="INT">
-      <offset>48</offset>
+    <column name="Numrequests" type="INT">
+      <offset>76</offset>
     </column>
-    <column name="MyMissions" type="STRUCT">
-      <offset>52</offset>
+    <column name="Mymissions" type="STRUCT">
+      <offset>80</offset>
       <subtable external="TestClientMission" />
     </column>
     <column name="Interacts" type="STRUCT">
-      <offset>56</offset>
+      <offset>88</offset>
       <subtable external="TestClientInteract" />
     </column>
     <column name="Contacts" type="STRUCT">
-      <offset>60</offset>
+      <offset>96</offset>
       <subtable external="TestClientContact" />
     </column>
-    <column name="ContactDialog" type="OPTIONALSTRUCT">
-      <offset>64</offset>
+    <column name="Contactdialog" type="OPTIONALSTRUCT">
+      <offset>104</offset>
       <subtable external="TestClientContactDialog" />
     </column>
     <column name="}" type="END" />

@@ -13,8 +13,21 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="CanAffectCostume" type="U8">
-      <offset>4</offset>
+    <column name="Canaffectcostume" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Countstowardsaverageitemlevel" type="U8">
+      <offset>9</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disallowasmoveorswapsrc" type="U8">
+      <offset>10</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disallowremoval" type="U8">
+      <offset>11</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

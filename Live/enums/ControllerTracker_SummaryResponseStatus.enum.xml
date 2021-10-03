@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ControllerTracker_SummaryResponseStatus">
+  <elements type="int">
+    <element name="OK">0</element>
+    <element name="UNKNOWN">1</element>
+    <element name="DOWN">2</element>
+  </elements>
+</enum>

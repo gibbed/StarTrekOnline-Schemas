@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GroupProjectCampaignItemType">
+  <elements type="int">
+    <element name="Campaign">0</element>
+    <element name="Mission">1</element>
+    <element name="CompletedMission">2</element>
+    <element name="CampaignCategory">3</element>
+  </elements>
+</enum>

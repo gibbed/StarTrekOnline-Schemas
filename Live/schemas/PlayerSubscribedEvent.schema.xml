@@ -17,10 +17,10 @@
       </flags>
       <dictionary_name>EventDef</dictionary_name>
     </column>
-    <column name="hEvent" type="REFERENCE">
+    <column name="Hevent" type="REFERENCE">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
@@ -28,25 +28,7 @@
       <redundant_name>Event</redundant_name>
       <dictionary_name>EventDef</dictionary_name>
     </column>
-    <column name="EventStartTime" type="INT">
-      <offset>4</offset>
-      <flags>
-        <flag>SELF_ONLY</flag>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
-    </column>
-    <column name="uEventStartTime" type="INT">
-      <offset>4</offset>
-      <flags>
-        <flag>ALIAS</flag>
-        <flag>SELF_ONLY</flag>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
-      <redundant_name>EventStartTime</redundant_name>
-    </column>
-    <column name="EventEndTime" type="INT">
+    <column name="Eventstarttime" type="INT">
       <offset>8</offset>
       <flags>
         <flag>SELF_ONLY</flag>
@@ -54,23 +36,42 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="uEventEndTime" type="INT">
+    <column name="Ueventstarttime" type="INT">
       <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
-      <redundant_name>EventEndTime</redundant_name>
+      <redundant_name>Eventstarttime</redundant_name>
     </column>
-    <column name="bPreEventNotificationSent" type="U8">
+    <column name="Eventendtime" type="INT">
       <offset>12</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Ueventendtime" type="INT">
+      <offset>12</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Eventendtime</redundant_name>
+    </column>
+    <column name="Bpreeventnotificationsent" type="U8">
+      <offset>16</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

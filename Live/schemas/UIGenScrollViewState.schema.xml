@@ -12,12 +12,40 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>17</default>
+      <default>18</default>
       <static_define_list external="UIGenType" />
     </column>
-    <column name="Scrollbar" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+    <column name="Horizontalscrollbar" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
       <subtable external="UIGenScrollbarState" />
+    </column>
+    <column name="Verticalscrollbar" type="EMBEDDEDSTRUCT">
+      <offset>152</offset>
+      <subtable external="UIGenScrollbarState" />
+    </column>
+    <column name="Scrollbar" type="EMBEDDEDSTRUCT">
+      <offset>152</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Verticalscrollbar</redundant_name>
+      <subtable external="UIGenScrollbarState" />
+    </column>
+    <column name="Edgescrollup" type="U8">
+      <offset>312</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Edgescrolldown" type="U8">
+      <offset>313</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Edgescrollleft" type="U8">
+      <offset>314</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Edgescrollright" type="U8">
+      <offset>315</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

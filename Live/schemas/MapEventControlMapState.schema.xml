@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MapEventControlMapState">
+  <table>
+    <column name="MapEventControlMapState" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Dirtybit" type="U8">
+      <offset>0</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+        <flag>DIRTY_BIT</flag>
+      </flags>
+    </column>
+    <column name="Mapeventcontrollist" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="MapEventControlMapStateEvent" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

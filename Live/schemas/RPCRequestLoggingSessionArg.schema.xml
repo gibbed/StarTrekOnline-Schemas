@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="RPCRequestLoggingSessionArg">
+  <table>
+    <column name="RPCRequestLoggingSessionArg" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ArgName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Type" type="INT">
+      <offset>8</offset>
+      <static_define_list external="RPCArgTypeForLogging" />
+    </column>
+    <column name="Flag_Fromdefault" type="BIT">
+      <offset>12</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Flag_Secure" type="BIT">
+      <offset>12</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Flag_Complexstruct" type="BIT">
+      <offset>12</offset>
+      <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Flag_Nullstruct" type="BIT">
+      <offset>12</offset>
+      <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Intval" type="INT64">
+      <offset>16</offset>
+    </column>
+    <column name="Floatval" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Strval" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Structtypename" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Struct_Json" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Simplestructfields" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="NameValuePair" />
+    </column>
+    <column name="Voidstarsize" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

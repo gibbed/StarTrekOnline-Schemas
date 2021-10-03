@@ -14,8 +14,8 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="MapDisplayName" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Mapdisplayname" type="REFERENCE">
+      <offset>8</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
         <flag>CLIENT_ONLY</flag>
@@ -23,11 +23,12 @@
       <dictionary_name>Message</dictionary_name>
     </column>
     <column name="Var" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="WorldVariable" />
     </column>
-    <column name="HideGotoString" type="U8">
-      <offset>12</offset>
+    <column name="Hidegotostring" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

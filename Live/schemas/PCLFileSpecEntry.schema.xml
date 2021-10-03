@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="doInclude" type="INT">
+    <column name="Doinclude" type="INT">
       <offset>0</offset>
     </column>
-    <column name="isAbsolute" type="INT">
+    <column name="Isabsolute" type="INT">
       <offset>4</offset>
     </column>
     <column name="FileSpec" type="STRING">

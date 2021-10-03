@@ -12,86 +12,106 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>22</default>
+      <default>24</default>
       <static_define_list external="UIGenType" />
     </column>
     <column name="Scrollbar" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="UIGenScrollbarState" />
     </column>
-    <column name="ActiveLink" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Activelink" type="OPTIONALSTRUCT">
+      <offset>152</offset>
       <subtable external="ChatLink" />
     </column>
-    <column name="ActiveLinkID" type="INT">
-      <offset>32</offset>
+    <column name="Activelinkid" type="INT">
+      <offset>160</offset>
     </column>
-    <column name="SelectionStart" type="EMBEDDEDSTRUCT">
-      <offset>36</offset>
+    <column name="Selectionstart" type="EMBEDDEDSTRUCT">
+      <offset>164</offset>
       <subtable external="UIGenChatLogEntryPoint" />
     </column>
-    <column name="SelectionEnd" type="EMBEDDEDSTRUCT">
-      <offset>48</offset>
+    <column name="Selectionend" type="EMBEDDEDSTRUCT">
+      <offset>176</offset>
       <subtable external="UIGenChatLogEntryPoint" />
     </column>
-    <column name="MouseOver" type="EMBEDDEDSTRUCT">
-      <offset>60</offset>
+    <column name="Focusedentry" type="EMBEDDEDSTRUCT">
+      <offset>188</offset>
       <subtable external="UIGenChatLogEntryPoint" />
     </column>
-    <column name="FirstEntryID" type="INT">
-      <offset>72</offset>
+    <column name="Lastfocusedentryy" type="F32">
+      <offset>200</offset>
     </column>
-    <column name="ScanEntryID" type="INT">
-      <offset>76</offset>
+    <column name="Mouseover" type="EMBEDDEDSTRUCT">
+      <offset>204</offset>
+      <subtable external="UIGenChatLogEntryPoint" />
+    </column>
+    <column name="Firstentryid" type="INT">
+      <offset>216</offset>
+    </column>
+    <column name="Scanentryid" type="INT">
+      <offset>220</offset>
     </column>
     <column name="Channel" type="STRING">
-      <offset>80</offset>
+      <offset>224</offset>
     </column>
-    <column name="ChannelType" type="INT">
-      <offset>84</offset>
+    <column name="Channeltype" type="INT">
+      <offset>232</offset>
       <static_define_list external="ChatLogEntryType" />
     </column>
     <column name="Tab" type="STRING">
-      <offset>88</offset>
+      <offset>240</offset>
     </column>
-    <column name="uTabCRC" type="INT">
-      <offset>92</offset>
+    <column name="Utabcrc" type="INT">
+      <offset>248</offset>
     </column>
-    <column name="PMHandle" type="STRING">
-      <offset>96</offset>
+    <column name="Pmhandle" type="STRING">
+      <offset>256</offset>
     </column>
-    <column name="EntryLayouts" type="STRUCT">
-      <offset>100</offset>
+    <column name="Penotifytypes" type="INTARRAY">
+      <offset>264</offset>
+      <static_define_list external="NotifyType" />
+    </column>
+    <column name="Pechanneltypes" type="INTARRAY">
+      <offset>272</offset>
+      <static_define_list external="ChatLogEntryType" />
+    </column>
+    <column name="Entrylayouts" type="STRUCT">
+      <offset>280</offset>
       <subtable external="UIGenChatLogEntryLayout" />
     </column>
-    <column name="ChatLogVersion" type="INT">
-      <offset>104</offset>
+    <column name="Chatlogversion" type="INT">
+      <offset>288</offset>
     </column>
-    <column name="LayoutVersion" type="INT">
-      <offset>108</offset>
+    <column name="Chatlogupdateversion" type="INT">
+      <offset>292</offset>
     </column>
-    <column name="FilterTab" type="INT">
-      <offset>148</offset>
+    <column name="Layoutversion" type="INT">
+      <offset>296</offset>
     </column>
-    <column name="FramesSinceLastCompletedResize" type="INT">
-      <offset>152</offset>
+    <column name="Filtertab" type="INT">
+      <offset>344</offset>
     </column>
-    <column name="LastWidth" type="F32">
-      <offset>156</offset>
+    <column name="Framessincelastcompletedresize" type="INT">
+      <offset>348</offset>
     </column>
-    <column name="LastHeight" type="F32">
-      <offset>160</offset>
+    <column name="Lastwidth" type="F32">
+      <offset>352</offset>
     </column>
-    <column name="LastFontScale" type="F32">
-      <offset>164</offset>
+    <column name="Lastheight" type="F32">
+      <offset>356</offset>
+    </column>
+    <column name="Lastfontscale" type="F32">
+      <offset>360</offset>
     </column>
     <column name="Selecting" type="BIT">
-      <offset>168</offset>
+      <offset>364</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="LastTextFading" type="BIT">
-      <offset>168</offset>
+    <column name="Lasttextfading" type="BIT">
+      <offset>364</offset>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

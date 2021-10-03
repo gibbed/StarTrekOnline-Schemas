@@ -10,7 +10,7 @@
     <column name="Rank" type="INT">
       <offset>0</offset>
     </column>
-    <column name="NumUnlockedSlots" type="INT">
+    <column name="Numunlockedslots" type="INT">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

@@ -7,23 +7,26 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="fread_count" type="INT">
+    <column name="Fread_Count" type="INT">
       <offset>0</offset>
     </column>
-    <column name="fwrite_count" type="INT">
+    <column name="Fwrite_Count" type="INT">
       <offset>4</offset>
     </column>
-    <column name="fopen_count" type="INT">
+    <column name="Fopen_Count" type="INT">
       <offset>8</offset>
     </column>
-    <column name="pig_reads" type="INT">
+    <column name="Pig_Reads" type="INT">
       <offset>12</offset>
     </column>
-    <column name="pig_unzips" type="INT">
+    <column name="Pig_Unzips" type="INT">
       <offset>16</offset>
     </column>
-    <column name="fileloader_queues" type="INT">
+    <column name="Pig_Header_Unzips" type="INT">
       <offset>20</offset>
+    </column>
+    <column name="Fileloader_Queues" type="INT">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

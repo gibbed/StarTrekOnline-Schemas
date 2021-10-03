@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="materialdraw_idxs" type="INTARRAY">
+    <column name="Materialdraw_Idxs" type="INTARRAY">
       <offset>0</offset>
     </column>
-    <column name="modeldraw_idx" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="subobject_idx" type="U8">
+    <column name="Modeldraw_Idx" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Subobject_Idx" type="U8">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

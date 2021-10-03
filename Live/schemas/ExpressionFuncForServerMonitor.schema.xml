@@ -17,7 +17,7 @@
       </flags>
     </column>
     <column name="Notes" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
@@ -26,49 +26,49 @@
       </format_strings>
     </column>
     <column name="ReturnType" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Tags" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
-    </column>
-    <column name="FuncTables" type="STRINGARRAY">
-      <offset>16</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Args" type="STRINGARRAY">
-      <offset>20</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
-    </column>
-    <column name="Location" type="STRING">
       <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="Comment" type="STRING">
-      <offset>28</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="SourceFile" type="STRING">
+    <column name="Functables" type="STRINGARRAY">
       <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="LineNum" type="INT">
-      <offset>36</offset>
+    <column name="Args" type="STRINGARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Location" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Comment" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Sourcefile" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Linenum" type="INT">
+      <offset>72</offset>
     </column>
     <column name="}" type="END" />
   </table>

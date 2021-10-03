@@ -12,19 +12,19 @@
       <subtable external="PhonemeSet" />
     </column>
     <column name="Weight" type="F32">
-      <offset>4</offset>
+      <offset>8</offset>
       <default>1</default>
     </column>
     <column name="Belong" type="INT">
-      <offset>8</offset>
-      <default>-1</default>
-    </column>
-    <column name="Restrict" type="INT">
       <offset>12</offset>
       <default>-1</default>
     </column>
-    <column name="AutoCaps" type="BIT">
+    <column name="Restrict" type="INT">
       <offset>16</offset>
+      <default>-1</default>
+    </column>
+    <column name="Autocaps" type="BIT">
+      <offset>20</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -32,6 +32,10 @@
       <format_strings>
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
+    </column>
+    <column name="Language" type="INT">
+      <offset>24</offset>
+      <static_define_list external="Language" />
     </column>
     <column name="}" type="END" />
   </table>

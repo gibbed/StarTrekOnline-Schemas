@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ExtraColor" type="STRUCT">
+    <column name="Extracolor" type="STRUCT">
       <offset>0</offset>
       <subtable external="PCMaterialDefColor" />
     </column>
-    <column name="ExtraValue" type="STRUCT">
-      <offset>4</offset>
+    <column name="Extravalue" type="STRUCT">
+      <offset>8</offset>
       <subtable external="PCMaterialDefConstant" />
     </column>
-    <column name="FXSwap" type="STRUCT">
-      <offset>8</offset>
+    <column name="Fxswap" type="STRUCT">
+      <offset>16</offset>
       <subtable external="PCFXSwap" />
     </column>
     <column name="}" type="END" />

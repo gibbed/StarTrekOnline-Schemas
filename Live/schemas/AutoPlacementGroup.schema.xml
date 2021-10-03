@@ -13,34 +13,34 @@
       </flags>
     </column>
     <column name="Weight" type="F32">
-      <offset>4</offset>
-    </column>
-    <column name="ObjectList" type="STRUCT">
       <offset>8</offset>
+    </column>
+    <column name="Objectlist" type="STRUCT">
+      <offset>16</offset>
       <subtable external="AutoPlacementObject" />
     </column>
-    <column name="PlacementConditionBlock" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Placementconditionblock" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="Expression" />
     </column>
-    <column name="PlacementCondition" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Placementcondition" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>PlacementConditionBlock</redundant_name>
+      <redundant_name>Placementconditionblock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="RequiredConditionBlock" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Requiredconditionblock" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="Expression" />
     </column>
-    <column name="RequiredCondition" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Requiredcondition" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>RequiredConditionBlock</redundant_name>
+      <redundant_name>Requiredconditionblock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
     <column name="End" type="END" />

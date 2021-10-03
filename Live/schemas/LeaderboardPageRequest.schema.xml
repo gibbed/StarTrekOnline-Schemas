@@ -7,23 +7,39 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LeaderboardKey" type="STRING">
+    <column name="Leaderboardkey" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="Interval" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="RankingsPerPage" type="INT">
+    <column name="EventName" type="STRING">
       <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="PageSearch" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="PlayerSearch" type="INT">
+    <column name="Cxdatetime" type="INT">
       <offset>16</offset>
+    </column>
+    <column name="Level" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Rankingsperpage" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Pagesearch" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Playersearch" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Playerhandle" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Reverse" type="U8">
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

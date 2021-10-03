@@ -11,5 +11,6 @@
     <element name="START_GAME_SPECIFIC">17</element>
     <element name="READY_FOR_GENERAL_UPDATES">18</element>
     <element name="CLIENT_PATCHING_WORLD">19</element>
+    <element name="CLIENT_LOADING_DEBUG_STRING">20</element>
   </elements>
 </enum>

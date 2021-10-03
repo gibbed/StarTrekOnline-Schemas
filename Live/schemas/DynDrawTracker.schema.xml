@@ -14,17 +14,17 @@
       </flags>
     </column>
     <column name="Type" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="eDynFxType" />
     </column>
-    <column name="uiNum" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="uiSubObjects" type="INT">
+    <column name="Uinum" type="INT">
       <offset>12</offset>
     </column>
-    <column name="Priority" type="INT">
+    <column name="Uisubobjects" type="INT">
       <offset>16</offset>
+    </column>
+    <column name="Priority" type="INT">
+      <offset>20</offset>
       <static_define_list external="eDynPriority" />
     </column>
     <column name="}" type="END" />

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="AppointmentCategory">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="Special">1</element>
+    <element name="Featured">2</element>
+    <element name="Seasonal">3</element>
+    <element name="FeaturedDefault">4</element>
+    <element name="SeasonalDefault">5</element>
+    <element name="Meta">6</element>
+  </elements>
+</enum>

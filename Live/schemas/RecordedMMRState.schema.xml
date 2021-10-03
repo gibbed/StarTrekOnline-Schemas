@@ -10,7 +10,7 @@
     <column name="Type" type="INT">
       <offset>0</offset>
     </column>
-    <column name="processCount" type="INT">
+    <column name="Processcount" type="INT">
       <offset>4</offset>
     </column>
     <column name="State" type="STRING">

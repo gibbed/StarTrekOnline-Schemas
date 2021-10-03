@@ -6,6 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="Name" type="STRING">
       <offset>0</offset>
       <flags>
@@ -13,12 +14,12 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="atime" type="INT64">
+    <column name="Atime" type="INT">
       <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

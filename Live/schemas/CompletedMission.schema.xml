@@ -16,48 +16,61 @@
       </flags>
       <dictionary_name>Mission</dictionary_name>
     </column>
-    <column name="bHidden" type="U8">
-      <offset>4</offset>
-      <flags>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="completedTime" type="INT">
+    <column name="Bhidden" type="U8">
       <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="StartTime" type="INT">
+    <column name="Completedtime" type="INT">
       <offset>12</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iRepeatCooldownCount" type="INT">
+    <column name="StartTime" type="INT">
       <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="Stats" type="STRUCT">
+    <column name="Irepeatcooldowncount" type="INT">
       <offset>20</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ucooldowncleartime" type="INT">
+      <offset>24</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Stats" type="STRUCT">
+      <offset>32</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="CompletedMissionStats" />
     </column>
-    <column name="eaStats" type="STRUCT">
-      <offset>20</offset>
+    <column name="Eastats" type="STRUCT">
+      <offset>32</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
       <redundant_name>Stats</redundant_name>
       <subtable external="CompletedMissionStats" />
     </column>
-    <column name="dirtyBit" type="U8">
-      <offset>24</offset>
+    <column name="Umissiondeflastupdatedtime" type="INT">
+      <offset>40</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Dirtybit" type="U8">
+      <offset>44</offset>
       <flags>
         <flag>NO_NETSEND</flag>
         <flag>DIRTY_BIT</flag>

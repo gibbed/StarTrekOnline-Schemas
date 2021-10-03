@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EnemyModEntry">
+  <table>
+    <column name="EnemyModEntry" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Weight" type="F32">
+      <offset>0</offset>
+      <default>1</default>
+    </column>
+    <column name="Power" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="PowerDefRef" />
+    </column>
+    <column name="Subtableapplications" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Subtable" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>EnemyModEntry</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

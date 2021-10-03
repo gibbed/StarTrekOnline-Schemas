@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DynamicItemPowerTablePowers">
+  <table>
+    <column name="DynamicItemPowerTablePowers" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Quality" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <default>-1</default>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Itempower" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="DynamicItemPower" />
+    </column>
+    <column name="Requireditempower" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="DynamicItemPower" />
+    </column>
+    <column name="Replace" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="DynamicItemPowerReplace" />
+    </column>
+    <column name="Bucket" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="DynamicItemPowerBucket" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="eEntType" type="INT">
+    <column name="Eenttype" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,14 +15,14 @@
       </flags>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="iEntID" type="INT">
+    <column name="Ientid" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uiCritterPetID" type="INT">
+    <column name="Uicritterpetid" type="INT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>

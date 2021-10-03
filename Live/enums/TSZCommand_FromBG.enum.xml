@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="TSZCommand_FromBG">
+  <elements type="int">
+    <element name="DATA">0</element>
+    <element name="DATA_AND_CLOSE">1</element>
+    <element name="CANCEL">2</element>
+  </elements>
+</enum>

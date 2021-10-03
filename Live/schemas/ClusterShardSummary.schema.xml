@@ -16,26 +16,29 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="shardType" type="INT">
-      <offset>4</offset>
-      <static_define_list external="ClusterShardType" />
-    </column>
-    <column name="ControllerHostName" type="STRING">
+    <column name="shardDisplayName" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="ControllerIP" type="INT">
-      <offset>12</offset>
+    <column name="shardType" type="INT">
+      <offset>16</offset>
+      <static_define_list external="ClusterShardType" />
+    </column>
+    <column name="Controllerhostname" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Controllerip" type="INT">
+      <offset>32</offset>
     </column>
     <column name="State" type="INT">
-      <offset>16</offset>
+      <offset>36</offset>
       <static_define_list external="ClusterShardState" />
     </column>
-    <column name="MostRecentStatus" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Mostrecentstatus" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="ClusterShardStatus" />
     </column>
-    <column name="LocalNameValuePairs" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Localnamevaluepairs" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>

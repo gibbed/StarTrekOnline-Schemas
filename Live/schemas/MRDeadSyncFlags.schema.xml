@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="isDead" type="BIT">
+    <column name="Isdead" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="fromNearDeath" type="BIT">
+    <column name="Fromneardeath" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="fromKnockback" type="BIT">
+    <column name="Fromknockback" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>

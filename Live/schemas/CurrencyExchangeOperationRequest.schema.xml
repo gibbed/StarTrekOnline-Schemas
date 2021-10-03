@@ -14,39 +14,39 @@
     <column name="AccountID" type="INT">
       <offset>4</offset>
     </column>
-    <column name="characterID" type="INT">
+    <column name="Characterid" type="INT">
       <offset>8</offset>
     </column>
-    <column name="CharacterName" type="STRING">
+    <column name="Sharedbankcontainerid" type="INT">
       <offset>12</offset>
     </column>
-    <column name="Orderid" type="INT">
+    <column name="CharacterName" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="orderType" type="INT">
-      <offset>20</offset>
-      <static_define_list external="CurrencyExchangeOrderType" />
-    </column>
-    <column name="quantity" type="INT">
+    <column name="Orderid" type="INT">
       <offset>24</offset>
     </column>
-    <column name="Price" type="INT">
+    <column name="Ordertype" type="INT">
       <offset>28</offset>
+      <static_define_list external="CurrencyExchangeOrderType" />
     </column>
-    <column name="arrivalTime" type="INT">
+    <column name="Quantity" type="INT">
       <offset>32</offset>
     </column>
-    <column name="mtcTransferID" type="INT">
+    <column name="Price" type="INT">
       <offset>36</offset>
     </column>
-    <column name="DebugName" type="STRING">
+    <column name="Arrivaltime" type="INT">
       <offset>40</offset>
     </column>
-    <column name="gameSpecificLogInfo" type="STRING">
+    <column name="Mtctransferid" type="INT">
       <offset>44</offset>
     </column>
-    <column name="uNotifyGatewayServerID" type="INT">
-      <offset>52</offset>
+    <column name="DebugName" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Gamespecificloginfo" type="STRING">
+      <offset>56</offset>
     </column>
     <column name="}" type="END" />
   </table>

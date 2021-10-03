@@ -10,46 +10,47 @@
     <column name="Seed" type="INT">
       <offset>0</offset>
     </column>
-    <column name="DetailSeed" type="INT">
+    <column name="Detailseed" type="INT">
       <offset>4</offset>
     </column>
-    <column name="MapTrackingEnabled" type="U8">
+    <column name="Maptrackingenabled" type="U8">
       <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SolarSystem" type="STRUCT">
-      <offset>12</offset>
+    <column name="Solarsystem" type="STRUCT">
+      <offset>16</offset>
       <subtable external="GenesisSolSysZoneMap" />
     </column>
-    <column name="GenesisInterior" type="STRUCT">
-      <offset>16</offset>
+    <column name="Genesisinterior" type="STRUCT">
+      <offset>24</offset>
       <subtable external="GenesisZoneInterior" />
     </column>
-    <column name="GenesisExterior" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Genesisexterior" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="GenesisZoneExterior" />
     </column>
-    <column name="GenesisExteriorNodes" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Genesisexteriornodes" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="GenesisZoneNodeLayout" />
     </column>
-    <column name="GenesisMission" type="STRUCT">
-      <offset>28</offset>
+    <column name="Genesismission" type="STRUCT">
+      <offset>48</offset>
       <subtable external="GenesisZoneMission" />
     </column>
-    <column name="GenesisSharedChallenge" type="STRUCT">
-      <offset>32</offset>
+    <column name="Genesissharedchallenge" type="STRUCT">
+      <offset>56</offset>
       <subtable external="GenesisMissionZoneChallenge" />
     </column>
-    <column name="EncounterOverride" type="STRUCT">
-      <offset>36</offset>
+    <column name="Encounteroverride" type="STRUCT">
+      <offset>64</offset>
       <subtable external="GenesisProceduralEncounterProperties" />
     </column>
     <column name="MapDescription" type="OPTIONALSTRUCT">
-      <offset>40</offset>
+      <offset>72</offset>
       <subtable external="GenesisMapDescription" />
     </column>
     <column name="Type" type="IGNORE" />
-    <column name="NoSharingDetail" type="IGNORE" />
+    <column name="Nosharingdetail" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uEntID" type="INT">
+    <column name="Uentid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="uLastUpdateFrame" type="INT">
+    <column name="Ulastupdateframe" type="INT">
       <offset>4</offset>
     </column>
-    <column name="StackGroupData" type="STRUCT">
+    <column name="Stackgroupdata" type="STRUCT">
       <offset>8</offset>
       <subtable external="UIStackGroupData" />
     </column>

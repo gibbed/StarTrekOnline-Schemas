@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="erEnt" type="INT">
+    <column name="Erent" type="INT">
       <offset>0</offset>
     </column>
     <column name="Count" type="INT">
@@ -22,28 +22,30 @@
     <column name="Position" type="F32">
       <offset>16</offset>
     </column>
-    <column name="DistanceIndex" type="INT">
+    <column name="Distanceindex" type="INT">
       <offset>20</offset>
     </column>
     <column name="Type" type="INT">
       <offset>24</offset>
       <static_define_list external="OffscreenType" />
     </column>
-    <column name="EncData" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Encdata" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="EncounterUIData" />
     </column>
     <column name="Same" type="U8">
-      <offset>32</offset>
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Encounter" type="U8">
-      <offset>33</offset>
+      <offset>41</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="GenName" type="STRING">
-      <offset>36</offset>
+    <column name="Genname" type="STRING">
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

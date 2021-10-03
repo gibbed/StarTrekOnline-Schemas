@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="FlightMovementDef">
+  <table>
+    <column name="FlightMovementDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <default>3</default>
+      <static_define_list external="MovementRequesterType" />
+    </column>
+    <column name="MaxSpeed" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="TurnRate" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Bankrate" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Maxpitch" type="F32">
+      <offset>16</offset>
+      <default>60</default>
+    </column>
+    <column name="Maxbank" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Glidedescent" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Enablefakeroll" type="BOOLFLAG">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enableglide" type="BOOLFLAG">
+      <offset>29</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enablethrottle" type="BOOLFLAG">
+      <offset>30</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enablestrafing" type="BOOLFLAG">
+      <offset>31</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Rollondoubletap" type="BOOLFLAG">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Rolldef" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="FlightRequesterRollDef" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

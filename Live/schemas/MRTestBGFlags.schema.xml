@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="createFxServer" type="BIT">
+    <column name="Createfxserver" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="createFxClient" type="BIT">
+    <column name="Createfxclient" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="hasRunDisabled" type="BIT">
+    <column name="Hasrundisabled" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="playedFlag" type="BIT">
+    <column name="Playedflag" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DynKeyFrameType">
+  <elements type="int">
+    <element name="Create">0</element>
+    <element name="Destroy">1</element>
+    <element name="Recreate">2</element>
+    <element name="Update">3</element>
+  </elements>
+</enum>

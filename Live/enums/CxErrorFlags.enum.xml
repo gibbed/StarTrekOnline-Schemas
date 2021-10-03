@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CxErrorFlags">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="BLAME_REQUESTED">1</element>
+    <element name="DEFERRED">2</element>
+    <element name="DEFERRED_AUTO">4</element>
+    <element name="MODIFIED_BY_FIXUP">8</element>
+    <element name="FORCE_INCLUDE_CALLSTACK">16</element>
+    <element name="INVALID_DATA">32</element>
+    <element name="FATAL">64</element>
+    <element name="ASSERT">128</element>
+    <element name="MORE_THAN_ONE_DATA_FILE">256</element>
+    <element name="CALLSTACK_ATTEMPTED">512</element>
+    <element name="ASSERT_DUE_TO_ERRORHUB">1024</element>
+    <element name="CALLED_FROM_WRAPPED_FATAL_MACRO">2048</element>
+    <element name="WAS_DEFERRED">4096</element>
+    <element name="RESCUED_DV_ERROR">8192</element>
+    <element name="CALLSTACK_VERBOSE">32768</element>
+  </elements>
+</enum>

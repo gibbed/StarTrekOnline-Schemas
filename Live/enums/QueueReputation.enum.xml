@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="QueueReputation">
+  <elements type="int">
+    <element name="Good">0</element>
+    <element name="Bad">1</element>
+  </elements>
+</enum>

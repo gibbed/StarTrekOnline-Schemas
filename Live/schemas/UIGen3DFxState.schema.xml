@@ -13,9 +13,11 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="hFX" type="REFERENCE">
-      <offset>4</offset>
-      <dictionary_name>DynFx</dictionary_name>
+    <column name="hFX" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Hfx2" type="INT64">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

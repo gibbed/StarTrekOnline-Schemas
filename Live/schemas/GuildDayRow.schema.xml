@@ -10,7 +10,7 @@
     <column name="Day" type="INT">
       <offset>0</offset>
     </column>
-    <column name="WeekDay" type="INT">
+    <column name="Weekday" type="INT">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

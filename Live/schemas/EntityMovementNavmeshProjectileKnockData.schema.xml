@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EntityMovementNavmeshProjectileKnockData">
+  <table>
+    <column name="EntityMovementNavmeshProjectileKnockData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Knocktarget" type="F32FIXEDARRAY">
+      <offset>0</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Orientation" type="F32FIXEDARRAY">
+      <offset>12</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Knockmagnitude" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Slidemagnitude" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="StartTime" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Arcstartingheight" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Arcverticalstepdelta" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Initialspeedvertical" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Knocktimetotal" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Isknockup" type="U8">
+      <offset>52</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isknockdown" type="U8">
+      <offset>53</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Knockforward" type="U8">
+      <offset>54</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Orientaway" type="U8">
+      <offset>55</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="InstantFacePlant" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Proneatend" type="U8">
+      <offset>57</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Moving" type="U8">
+      <offset>58</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Pronetimer" type="F32">
+      <offset>60</offset>
+    </column>
+    <column name="Impactpc" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Pronepc" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Frameselapsed" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Speed" type="F32">
+      <offset>76</offset>
+    </column>
+    <column name="Debugcolor" type="INT16">
+      <offset>80</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MaxOffset" type="F32">
+    <column name="Maxoffset" type="F32">
       <offset>0</offset>
     </column>
-    <column name="AdjustSpeed" type="F32">
+    <column name="Adjustspeed" type="F32">
       <offset>4</offset>
     </column>
-    <column name="TargetLockOffset" type="F32">
+    <column name="Targetlockoffset" type="F32">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

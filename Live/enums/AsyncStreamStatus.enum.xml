@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="AsyncStreamStatus">
+  <elements type="int">
+    <element name="INITTED">0</element>
+    <element name="READING">1</element>
+    <element name="COMPLETE">2</element>
+  </elements>
+</enum>

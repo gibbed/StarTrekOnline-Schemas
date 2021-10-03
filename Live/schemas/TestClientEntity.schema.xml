@@ -13,71 +13,76 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="RefIfTeamed" type="INT">
+    <column name="Refifteamed" type="INT">
       <offset>4</offset>
     </column>
     <column name="Key" type="STRING">
       <offset>8</offset>
     </column>
     <column name="ID" type="INT">
-      <offset>12</offset>
+      <offset>16</offset>
     </column>
     <column name="Name" type="STRING">
-      <offset>16</offset>
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="MapName" type="STRING">
-      <offset>20</offset>
+      <offset>32</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="HP" type="F32">
-      <offset>24</offset>
+      <offset>40</offset>
     </column>
-    <column name="MaxHP" type="F32">
-      <offset>28</offset>
+    <column name="Maxhp" type="F32">
+      <offset>44</offset>
     </column>
     <column name="Shields" type="F32FIXEDARRAY">
-      <offset>32</offset>
+      <offset>48</offset>
       <num_elements>4</num_elements>
     </column>
     <column name="Level" type="INT">
-      <offset>48</offset>
+      <offset>64</offset>
     </column>
     <column name="Pos" type="F32FIXEDARRAY">
-      <offset>52</offset>
+      <offset>68</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="PYR" type="F32FIXEDARRAY">
-      <offset>64</offset>
+      <offset>80</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Distance" type="F32">
-      <offset>76</offset>
-    </column>
-    <column name="Dead" type="U8">
-      <offset>80</offset>
-    </column>
-    <column name="Hostile" type="U8">
-      <offset>81</offset>
-    </column>
-    <column name="Casting" type="U8">
-      <offset>82</offset>
-    </column>
-    <column name="Target" type="INT">
-      <offset>84</offset>
-    </column>
-    <column name="NearbyFriends" type="INTARRAY">
-      <offset>88</offset>
-    </column>
-    <column name="NearbyHostiles" type="INTARRAY">
       <offset>92</offset>
     </column>
-    <column name="NearbyObjects" type="STRINGARRAY">
+    <column name="Dead" type="U8">
       <offset>96</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hostile" type="U8">
+      <offset>97</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Casting" type="U8">
+      <offset>98</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Target" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="Nearbyfriends" type="INTARRAY">
+      <offset>104</offset>
+    </column>
+    <column name="Nearbyhostiles" type="INTARRAY">
+      <offset>112</offset>
+    </column>
+    <column name="Nearbyobjects" type="STRINGARRAY">
+      <offset>120</offset>
     </column>
     <column name="}" type="END" />
   </table>

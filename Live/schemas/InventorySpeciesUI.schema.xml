@@ -10,11 +10,11 @@
     <column name="DisplayName" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="SpeciesListPct" type="STRING">
-      <offset>4</offset>
+    <column name="Specieslistpct" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

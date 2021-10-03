@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DonateCofferItemConversion">
+  <table>
+    <column name="DonateCofferItemConversion" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Item" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Batchsize" type="INT">
+      <offset>8</offset>
+      <default>1</default>
+    </column>
+    <column name="Valueperbatch" type="INT">
+      <offset>12</offset>
+      <default>1</default>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

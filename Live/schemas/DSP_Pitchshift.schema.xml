@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pitchshift_pitch" type="F32">
+    <column name="Pitchshift_Pitch" type="F32">
       <offset>0</offset>
       <default>1</default>
     </column>
-    <column name="pitchshift_fftsize" type="F32">
+    <column name="Pitchshift_Fftsize" type="F32">
       <offset>4</offset>
       <default>1024</default>
     </column>
-    <column name="pitchshift_maxchannels" type="F32">
+    <column name="Pitchshift_Maxchannels" type="F32">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="eaiAuctionsBid" type="INTARRAY">
+    <column name="Eaiauctionsbid" type="INTARRAY">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>

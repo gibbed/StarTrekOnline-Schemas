@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FolderCacheForServerMonFlags">
+  <elements type="int">
+    <element name="WRITEABLE">1</element>
+    <element name="HIDDEN">2</element>
+    <element name="SYSTEM">4</element>
+    <element name="NEEDS_PATCHING">8</element>
+    <element name="STARTED_PATCHING">16</element>
+    <element name="SEEN_IN_FS">32</element>
+    <element name="IN_HASH_TABLE">64</element>
+    <element name="DELETE_IF_ABSENT">128</element>
+    <element name="SEEN_IN_PIGGS">256</element>
+    <element name="HAS_MASTER_DISK">512</element>
+    <element name="WAS_MASTER_DISK">1024</element>
+  </elements>
+</enum>

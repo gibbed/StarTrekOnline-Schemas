@@ -7,28 +7,28 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="bin" type="STRING">
+    <column name="Bin" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="lastDigits" type="STRING">
-      <offset>4</offset>
+    <column name="Lastdigits" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="numDigits" type="INT">
-      <offset>8</offset>
+    <column name="Numdigits" type="INT">
+      <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="expireDate" type="STRING">
-      <offset>12</offset>
+    <column name="Expiredate" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>PERSIST</flag>

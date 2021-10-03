@@ -7,32 +7,38 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="handleTable" type="IGNORE">
+    <column name="Handletable" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">StashTableOverview</format_string>
+      </format_strings>
     </column>
-    <column name="handleTableNumEntries" type="INT">
+    <column name="Handletablenumentries" type="INT">
       <offset>0</offset>
     </column>
-    <column name="handleTableSize" type="INT">
+    <column name="Handletablesize" type="INT">
       <offset>4</offset>
     </column>
-    <column name="handleTableWasted" type="INT">
+    <column name="Handletablewasted" type="INT">
       <offset>8</offset>
     </column>
-    <column name="referentTable" type="IGNORE">
+    <column name="Referenttable" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">StashTableOverview</format_string>
+      </format_strings>
     </column>
-    <column name="referentTableNumEntries" type="INT">
+    <column name="Referenttablenumentries" type="INT">
       <offset>12</offset>
     </column>
-    <column name="referentTableSize" type="INT">
+    <column name="Referenttablesize" type="INT">
       <offset>16</offset>
     </column>
-    <column name="referentTableWasted" type="INT">
+    <column name="Referenttablewasted" type="INT">
       <offset>20</offset>
     </column>
     <column name="Dictionaries" type="STRUCT">

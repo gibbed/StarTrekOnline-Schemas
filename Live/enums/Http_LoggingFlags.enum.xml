@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="Http_LoggingFlags">
+  <elements type="int">
+    <element name="INVALID">0</element>
+    <element name="DEFAULT">0</element>
+    <element name="Flag_VALID">2</element>
+    <element name="NONE">2</element>
+    <element name="Flag_MINIMAL">4</element>
+    <element name="Flag_REQUEST">8</element>
+    <element name="Flag_REQUEST_FULL">16</element>
+    <element name="Flag_RESPONSE">32</element>
+    <element name="Flag_RESPONSE_FULL">64</element>
+    <element name="Flag_SHORT_ARGS">64</element>
+    <element name="MINIMAL">70</element>
+    <element name="INOUT">106</element>
+    <element name="FULL">122</element>
+  </elements>
+</enum>

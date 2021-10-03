@@ -7,42 +7,49 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="layer_bounds" type="STRUCT">
+    <column name="Layer_Bounds" type="STRUCT">
       <offset>0</offset>
       <subtable external="LayerBounds" />
     </column>
-    <column name="layer_names" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Layer_Names" type="STRINGARRAY">
+      <offset>8</offset>
     </column>
-    <column name="zmap_scope_data_offset" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="region_data_offsets" type="INTARRAY">
-      <offset>16</offset>
-    </column>
-    <column name="fx_entry_id_counter" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="animation_entry_id_counter" type="INT">
+    <column name="Zmap_Scope_Data_Offset" type="INT">
       <offset>24</offset>
     </column>
-    <column name="group_id_counter" type="INT">
-      <offset>28</offset>
-    </column>
-    <column name="has_errors" type="U8">
+    <column name="Region_Data_Offsets" type="INTARRAY">
       <offset>32</offset>
     </column>
-    <column name="parse_table_crcs" type="INT">
-      <offset>36</offset>
-    </column>
-    <column name="cell_size" type="F32">
+    <column name="Fx_Entry_Id_Counter" type="INT">
       <offset>40</offset>
     </column>
-    <column name="bin_version_number" type="INT">
+    <column name="Animation_Entry_Id_Counter" type="INT">
       <offset>44</offset>
     </column>
-    <column name="packed_data_serialize" type="OPTIONALSTRUCT">
+    <column name="Group_Id_Counter" type="INT">
       <offset>48</offset>
+    </column>
+    <column name="Vertex_Painting_Sharing_Id_Counter" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Has_Errors" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Wc_Core_Crc" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Wc_Dynamic_Crc" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Cell_Size" type="F32">
+      <offset>68</offset>
+    </column>
+    <column name="Bin_Version_Number" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Packed_Data_Serialize" type="OPTIONALSTRUCT">
+      <offset>80</offset>
       <subtable external="SerializablePackedStructStream" />
     </column>
     <column name="}" type="END" />

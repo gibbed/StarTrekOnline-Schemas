@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="StoryIntroNotification" type="EMBEDDEDSTRUCT">
+    <column name="Storyintronotification" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="AllowReplay" type="BIT">
-      <offset>12</offset>
+    <column name="Allowreplay" type="BIT">
+      <offset>24</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -21,8 +21,8 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="EnableTeamProgressionTracking" type="BIT">
-      <offset>12</offset>
+    <column name="Enableteamprogressiontracking" type="BIT">
+      <offset>24</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -31,20 +31,20 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="ValidateProgression" type="BIT">
-      <offset>12</offset>
+    <column name="Validateprogression" type="BIT">
+      <offset>24</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="AutoGrantMissionOnSetProgression" type="BIT">
-      <offset>12</offset>
+    <column name="Autograntmissiononsetprogression" type="BIT">
+      <offset>24</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="SendStoryIntroNotificationOnMapEnter" type="BIT">
-      <offset>12</offset>
+    <column name="Sendstoryintronotificationonmapenter" type="BIT">
+      <offset>24</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="MustMeetRequirementsToSkipMissions" type="BIT">
-      <offset>12</offset>
+    <column name="Mustmeetrequirementstoskipmissions" type="BIT">
+      <offset>24</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -53,11 +53,11 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="StoreMostRecentlyPlayedNode" type="BIT">
-      <offset>12</offset>
+    <column name="Storemostrecentlyplayednode" type="BIT">
+      <offset>24</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="ValidateMaps" type="IGNORE" />
+    <column name="Validatemaps" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

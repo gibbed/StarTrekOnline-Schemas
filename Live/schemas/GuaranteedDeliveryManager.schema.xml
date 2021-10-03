@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="GuaranteedDeliveryManager">
+  <table>
+    <column name="GuaranteedDeliveryManager" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Linkglobalname" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Packagetypename" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Compositename" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Localsessionid" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Highestconfirmedindex" type="INT64">
+      <offset>136</offset>
+    </column>
+    <column name="Nextsendindex" type="INT64">
+      <offset>144</offset>
+    </column>
+    <column name="Remotesessionid" type="INT">
+      <offset>152</offset>
+    </column>
+    <column name="Ourpresumedcopyofsendershighestconfirmedindex" type="INT64">
+      <offset>160</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

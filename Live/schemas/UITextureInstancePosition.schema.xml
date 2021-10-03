@@ -6,6 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="Relative" type="STRING">
       <offset>0</offset>
       <flags>
@@ -14,18 +15,18 @@
       </flags>
     </column>
     <column name="Direction" type="INT16">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <static_define_list external="UIDirection" />
     </column>
     <column name="Offset" type="F32">
-      <offset>8</offset>
+      <offset>12</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

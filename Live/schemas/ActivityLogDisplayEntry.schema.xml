@@ -7,20 +7,30 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="entryID" type="INT">
+    <column name="Entryid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="Time" type="INT">
+    <column name="Type" type="INT">
       <offset>4</offset>
+      <static_define_list external="ActivityLogEntryType" />
+    </column>
+    <column name="Time" type="INT">
+      <offset>8</offset>
     </column>
     <column name="Text" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
+    </column>
+    <column name="Subjectid" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Extraid" type="INT">
+      <offset>28</offset>
     </column>
     <column name="}" type="END" />
   </table>

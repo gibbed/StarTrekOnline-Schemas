@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MasterDiskFileLocation">
+  <table>
+    <column name="MasterDiskFileLocation" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Node" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FolderNode" />
+    </column>
+    <column name="Path" type="FILENAME">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Offset" type="INT64">
+      <offset>72</offset>
+    </column>
+    <column name="Packed_Size" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Clump_Index" type="INT">
+      <offset>84</offset>
+      <default>-1</default>
+    </column>
+    <column name="Pig_Index" type="INT">
+      <offset>84</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Clump_Index</redundant_name>
+      <default>-1</default>
+    </column>
+    <column name="Checksum" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Next_Index" type="INT">
+      <offset>92</offset>
+      <default>-1</default>
+    </column>
+    <column name="Prev_Index" type="INT">
+      <offset>96</offset>
+      <default>-1</default>
+    </column>
+    <column name="Contents_Index" type="INT">
+      <offset>100</offset>
+      <default>-1</default>
+    </column>
+    <column name="Contents_Tail_Index" type="INT">
+      <offset>104</offset>
+      <default>-1</default>
+    </column>
+    <column name="Parent_Index" type="INT">
+      <offset>108</offset>
+      <default>-1</default>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

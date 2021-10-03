@@ -7,47 +7,47 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="model_draw_list" type="STRUCT">
-      <offset>20</offset>
+    <column name="Model_Draw_List" type="STRUCT">
+      <offset>40</offset>
       <subtable external="ModelDraw" />
     </column>
-    <column name="subobject_list" type="STRUCT">
-      <offset>24</offset>
+    <column name="Subobject_List" type="STRUCT">
+      <offset>48</offset>
       <subtable external="WorldDrawableSubobject" />
     </column>
-    <column name="material_draw_list" type="STRUCT">
-      <offset>28</offset>
+    <column name="Material_Draw_List" type="STRUCT">
+      <offset>56</offset>
       <subtable external="MaterialDraw" />
     </column>
-    <column name="total_material_draw_count" type="INT">
-      <offset>32</offset>
-    </column>
-    <column name="total_model_draw_count" type="INT">
-      <offset>36</offset>
-    </column>
-    <column name="total_subobject_count" type="INT">
-      <offset>40</offset>
-    </column>
-    <column name="total_draw_list_count" type="INT">
-      <offset>44</offset>
-    </column>
-    <column name="total_instance_data_count" type="INT">
-      <offset>48</offset>
-    </column>
-    <column name="material_draw_uid_counter" type="INT">
-      <offset>52</offset>
-    </column>
-    <column name="model_draw_uid_counter" type="INT">
-      <offset>56</offset>
-    </column>
-    <column name="subobject_uid_counter" type="INT">
-      <offset>60</offset>
-    </column>
-    <column name="draw_list_uid_counter" type="INT">
+    <column name="Total_Material_Draw_Count" type="INT">
       <offset>64</offset>
     </column>
-    <column name="instance_data_uid_counter" type="INT">
+    <column name="Total_Model_Draw_Count" type="INT">
       <offset>68</offset>
+    </column>
+    <column name="Total_Subobject_Count" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Total_Draw_List_Count" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Total_Instance_Data_Count" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Material_Draw_Uid_Counter" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Model_Draw_Uid_Counter" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="Subobject_Uid_Counter" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Draw_List_Uid_Counter" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="Instance_Data_Uid_Counter" type="INT">
+      <offset>104</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CameraMode" type="INT">
+    <column name="Cameramode" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>

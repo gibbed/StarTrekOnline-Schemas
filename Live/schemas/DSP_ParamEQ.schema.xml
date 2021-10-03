@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="parameq_center" type="F32">
+    <column name="Parameq_Center" type="F32">
       <offset>0</offset>
       <default>1174011904</default>
     </column>
-    <column name="parameq_bandwidth" type="F32">
+    <column name="Parameq_Bandwidth" type="F32">
       <offset>4</offset>
       <default>1</default>
     </column>
-    <column name="parameq_gain" type="F32">
+    <column name="Parameq_Gain" type="F32">
       <offset>8</offset>
       <default>1</default>
     </column>

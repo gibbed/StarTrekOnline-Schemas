@@ -6,11 +6,11 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
       <format_strings>
-        <format_string name="HTTP_HEADER_COMMAND">GetEntityHTMLHeader</format_string>
+        <format_string name="HTML_HEADER_COMMAND">GetEntityHTMLHeader</format_string>
       </format_strings>
     </column>
     <column name="{" type="START" />
-    <column name="myContainerID" type="INT">
+    <column name="Mycontainerid" type="INT">
       <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -19,7 +19,7 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="myEntityType" type="INT">
+    <column name="Myentitytype" type="INT">
       <offset>20</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -28,7 +28,7 @@
       </flags>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="myCodeEntityFlags" type="INT">
+    <column name="Mycodeentityflags" type="INT">
       <offset>24</offset>
       <flags>
         <flag>NO_NETSEND</flag>
@@ -37,7 +37,7 @@
       <static_define_list external="GlobalEntityFlags" />
       <format>FLAGS</format>
     </column>
-    <column name="myDataEntityFlags" type="INT">
+    <column name="Mydataentityflags" type="INT">
       <offset>28</offset>
       <flags>
         <flag>NO_NETSEND</flag>
@@ -46,7 +46,7 @@
       <static_define_list external="GlobalEntityFlags" />
       <format>FLAGS</format>
     </column>
-    <column name="myEntityFlags" type="INT">
+    <column name="Myentityflags" type="INT">
       <offset>32</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
@@ -54,35 +54,36 @@
       <static_define_list external="GlobalEntityFlags" />
       <format>FLAGS</format>
     </column>
-    <column name="mySendFlags" type="INT">
+    <column name="Mysendflags" type="INT">
       <offset>36</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="ServerClientSentThisFrame" type="INT">
+    <column name="Serverclientsentthisframe" type="INT">
       <offset>40</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="iPartitionIdx_UseAccessor" type="INT">
+    <column name="Ipartitionidx_Useaccessor" type="INT">
       <offset>44</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="pos_use_accessor" type="F32FIXEDARRAY">
-      <offset>72</offset>
+    <column name="Pos_Use_Accessor" type="F32FIXEDARRAY">
+      <offset>88</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="rot_use_accessor" type="QUATPYR">
-      <offset>84</offset>
+    <column name="Rot_Use_Accessor" type="QUATPYR">
+      <offset>100</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
@@ -90,8 +91,8 @@
       </flags>
       <num_elements>4</num_elements>
     </column>
-    <column name="invisible" type="BIT">
-      <offset>116</offset>
+    <column name="Invisible" type="BIT">
+      <offset>132</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
@@ -99,25 +100,25 @@
       </flags>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="isInvisiblePersistent" type="BIT">
-      <offset>116</offset>
+    <column name="Isinvisiblepersistent" type="BIT">
+      <offset>132</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
-      <redundant_name>invisible</redundant_name>
+      <redundant_name>Invisible</redundant_name>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="astrRegion" type="STRING">
-      <offset>120</offset>
+    <column name="Astrregion" type="STRING">
+      <offset>136</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="DebugName" type="FIXEDSTRING">
-      <offset>124</offset>
+      <offset>144</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -125,8 +126,8 @@
       </flags>
       <string_length>128</string_length>
     </column>
-    <column name="pPlayer" type="OPTIONALSTRUCT">
-      <offset>252</offset>
+    <column name="Pplayer" type="OPTIONALSTRUCT">
+      <offset>272</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -134,16 +135,16 @@
       </flags>
       <subtable external="Player" />
     </column>
-    <column name="pChar" type="OPTIONALSTRUCT">
-      <offset>256</offset>
+    <column name="Pchar" type="OPTIONALSTRUCT">
+      <offset>280</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="Character" />
     </column>
-    <column name="pSaved" type="OPTIONALSTRUCT">
-      <offset>260</offset>
+    <column name="Psaved" type="OPTIONALSTRUCT">
+      <offset>288</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -151,20 +152,20 @@
       </flags>
       <subtable external="SavedEntityData" />
     </column>
-    <column name="pAttach" type="OPTIONALSTRUCT">
-      <offset>264</offset>
+    <column name="Pattach" type="OPTIONALSTRUCT">
+      <offset>296</offset>
       <subtable external="EntityAttach" />
     </column>
-    <column name="pCritter" type="OPTIONALSTRUCT">
-      <offset>268</offset>
+    <column name="Pcritter" type="OPTIONALSTRUCT">
+      <offset>304</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="Critter" />
     </column>
-    <column name="pNemesis" type="OPTIONALSTRUCT">
-      <offset>272</offset>
+    <column name="Pnemesis" type="OPTIONALSTRUCT">
+      <offset>312</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
@@ -172,8 +173,8 @@
       </flags>
       <subtable external="Nemesis" />
     </column>
-    <column name="pInventoryV2" type="OPTIONALSTRUCT">
-      <offset>276</offset>
+    <column name="Pinventoryv2" type="OPTIONALSTRUCT">
+      <offset>320</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
@@ -182,8 +183,12 @@
       </flags>
       <subtable external="Inventory" />
     </column>
-    <column name="pInventoryV1_Deprecated" type="OPTIONALSTRUCT">
-      <offset>280</offset>
+    <column name="Spublicinventoryextract" type="EMBEDDEDSTRUCT">
+      <offset>328</offset>
+      <subtable external="InventoryExtract" />
+    </column>
+    <column name="Pinventoryv1_Deprecated" type="OPTIONALSTRUCT">
+      <offset>352</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
@@ -192,49 +197,48 @@
       </flags>
       <subtable external="InventoryV1" />
     </column>
-    <column name="pInventory" type="OPTIONALSTRUCT">
-      <offset>280</offset>
+    <column name="Pinventory" type="OPTIONALSTRUCT">
+      <offset>352</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>pInventoryV1_Deprecated</redundant_name>
+      <redundant_name>Pinventoryv1_Deprecated</redundant_name>
       <subtable external="InventoryV1" />
     </column>
     <column name="Inventory" type="OPTIONALSTRUCT">
-      <offset>280</offset>
+      <offset>352</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>pInventoryV1_Deprecated</redundant_name>
+      <redundant_name>Pinventoryv1_Deprecated</redundant_name>
       <subtable external="InventoryV1" />
     </column>
-    <column name="pSharedBankData" type="OPTIONALSTRUCT">
-      <offset>284</offset>
+    <column name="Psharedbankdata" type="OPTIONALSTRUCT">
+      <offset>360</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
-        <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="SharedBankData" />
     </column>
-    <column name="ItemIDMax" type="INT">
-      <offset>288</offset>
+    <column name="Itemidmax" type="INT">
+      <offset>368</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pTeam" type="OPTIONALSTRUCT">
-      <offset>292</offset>
+    <column name="Pteam" type="OPTIONALSTRUCT">
+      <offset>376</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -242,56 +246,47 @@
       </flags>
       <subtable external="PlayerTeam" />
     </column>
-    <column name="pEmailV3" type="OPTIONALSTRUCT">
-      <offset>296</offset>
+    <column name="Pemailv3" type="OPTIONALSTRUCT">
+      <offset>384</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="EmailV3" />
     </column>
-    <column name="pTeamUpRequest" type="OPTIONALSTRUCT">
-      <offset>300</offset>
+    <column name="Pteamuprequest" type="OPTIONALSTRUCT">
+      <offset>392</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="TeamUpRequest" />
     </column>
-    <column name="hFaction" type="REFERENCE">
-      <offset>304</offset>
+    <column name="Hfaction" type="REFERENCE">
+      <offset>400</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>CritterFaction</dictionary_name>
     </column>
-    <column name="hSubFaction" type="REFERENCE">
-      <offset>308</offset>
+    <column name="Hsubfaction" type="REFERENCE">
+      <offset>408</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>CritterFaction</dictionary_name>
     </column>
-    <column name="hFactionOverride" type="REFERENCE">
-      <offset>312</offset>
+    <column name="Hfactionoverride" type="REFERENCE">
+      <offset>416</offset>
       <dictionary_name>CritterFaction</dictionary_name>
     </column>
-    <column name="hPowerFactionOverride" type="REFERENCE">
-      <offset>316</offset>
+    <column name="Hpowerfactionoverride" type="REFERENCE">
+      <offset>424</offset>
       <dictionary_name>CritterFaction</dictionary_name>
     </column>
-    <column name="hAllegiance" type="REFERENCE">
-      <offset>320</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>LOGIN_SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <dictionary_name>Allegiance</dictionary_name>
-    </column>
-    <column name="hSubAllegiance" type="REFERENCE">
-      <offset>324</offset>
+    <column name="Hallegiance" type="REFERENCE">
+      <offset>432</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -299,15 +294,24 @@
       </flags>
       <dictionary_name>Allegiance</dictionary_name>
     </column>
-    <column name="hWLCostume" type="REFERENCE">
-      <offset>328</offset>
+    <column name="Hsuballegiance" type="REFERENCE">
+      <offset>440</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>Allegiance</dictionary_name>
+    </column>
+    <column name="Hwlcostume" type="REFERENCE">
+      <offset>448</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>
       <dictionary_name>WLCostume</dictionary_name>
     </column>
     <column name="CostumeRef" type="EMBEDDEDSTRUCT">
-      <offset>332</offset>
+      <offset>456</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
@@ -315,7 +319,7 @@
       <subtable external="CostumeRef" />
     </column>
     <column name="Gender" type="INT">
-      <offset>384</offset>
+      <offset>592</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -323,10 +327,10 @@
       </flags>
       <static_define_list external="Gender" />
     </column>
-    <column name="eGender" type="INT">
-      <offset>384</offset>
+    <column name="Egender" type="INT">
+      <offset>592</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
@@ -334,213 +338,220 @@
       <redundant_name>Gender</redundant_name>
       <static_define_list external="Gender" />
     </column>
-    <column name="fHue" type="F32">
-      <offset>388</offset>
+    <column name="Fhue" type="F32">
+      <offset>596</offset>
     </column>
-    <column name="pEquippedArt" type="OPTIONALSTRUCT">
-      <offset>392</offset>
+    <column name="Pequippedart" type="OPTIONALSTRUCT">
+      <offset>600</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="EquippedArt" />
     </column>
-    <column name="UIVars" type="STRUCT">
-      <offset>396</offset>
+    <column name="Uivars" type="STRUCT">
+      <offset>608</offset>
       <subtable external="UIVar" />
     </column>
-    <column name="erCreator" type="INT">
-      <offset>604</offset>
+    <column name="Ercreator" type="INT">
+      <offset>1040</offset>
     </column>
-    <column name="erOwner" type="INT">
-      <offset>608</offset>
+    <column name="Erowner" type="INT">
+      <offset>1044</offset>
     </column>
-    <column name="hCreatorNode" type="REFERENCE">
-      <offset>612</offset>
+    <column name="Erowneroverride" type="INT">
+      <offset>1048</offset>
+    </column>
+    <column name="Hcreatornode" type="REFERENCE">
+      <offset>1056</offset>
       <dictionary_name>WorldInteractionNode</dictionary_name>
     </column>
-    <column name="erCreatorTarget" type="INT">
-      <offset>616</offset>
+    <column name="Ercreatortarget" type="INT">
+      <offset>1064</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="Neighborhood" type="OPTIONALSTRUCT">
-      <offset>620</offset>
+    <column name="Neighborhood" type="STRUCT">
+      <offset>1072</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="CurrentHood" />
     </column>
-    <column name="currentNeighborhood" type="OPTIONALSTRUCT">
-      <offset>620</offset>
+    <column name="Currentneighborhoods" type="STRUCT">
+      <offset>1072</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SELF_ONLY</flag>
       </flags>
       <redundant_name>Neighborhood</redundant_name>
       <subtable external="CurrentHood" />
     </column>
-    <column name="pGameEventInfo" type="OPTIONALSTRUCT">
-      <offset>624</offset>
+    <column name="Pgameeventinfo" type="OPTIONALSTRUCT">
+      <offset>1080</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="GameEventParticipant" />
     </column>
-    <column name="aibase" type="OPTIONALSTRUCT">
-      <offset>628</offset>
+    <column name="Aibase" type="OPTIONALSTRUCT">
+      <offset>1088</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
-      <subtable>
-        <table>
-          <column name="{" type="START" />
-          <column name="}" type="END" />
-        </table>
-      </subtable>
+      <subtable external="NullStruct" />
     </column>
     <column name="AI" type="OPTIONALSTRUCT">
-      <offset>628</offset>
+      <offset>1088</offset>
       <flags>
-        <flag>ALIAS</flag>
-        <flag>UNKNOWN_32</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>UNOWNED</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
-      <redundant_name>aibase</redundant_name>
-      <subtable>
-        <table>
-          <column name="{" type="START" />
-          <column name="}" type="END" />
-        </table>
-      </subtable>
+      <redundant_name>Aibase</redundant_name>
+      <subtable external="NullStruct" />
     </column>
-    <column name="uiPowerReplaceIDMax" type="INT">
-      <offset>632</offset>
+    <column name="Uipowerreplaceidmax" type="INT">
+      <offset>1096</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
     </column>
-    <column name="ppPowerReplaces" type="STRUCT">
-      <offset>636</offset>
+    <column name="Pppowerreplaces" type="STRUCT">
+      <offset>1104</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="PowerReplace" />
     </column>
-    <column name="externalInnate" type="OPTIONALSTRUCT">
-      <offset>640</offset>
+    <column name="Externalinnate" type="OPTIONALSTRUCT">
+      <offset>1112</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="EntityExternalInnate" />
     </column>
-    <column name="iAICombatTeamID" type="INT64">
-      <offset>648</offset>
+    <column name="Iaicombatteamid" type="INT64">
+      <offset>1120</offset>
     </column>
-    <column name="uiUpdateInactiveEntUI" type="INT">
-      <offset>656</offset>
+    <column name="Uiupdateinactiveentui" type="INT">
+      <offset>1128</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
-    <column name="pEntUI" type="OPTIONALSTRUCT">
-      <offset>660</offset>
+    <column name="Pentui" type="OPTIONALSTRUCT">
+      <offset>1136</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <subtable external="EntityUI" />
     </column>
-    <column name="fEntitySendDistance" type="F32">
-      <offset>664</offset>
+    <column name="Fentitysenddistance" type="F32">
+      <offset>1144</offset>
     </column>
-    <column name="fEntityMinSeeAtDistance" type="F32">
-      <offset>668</offset>
+    <column name="Fentityminseeatdistance" type="F32">
+      <offset>1148</offset>
     </column>
-    <column name="bFadeOutAndThenRemove" type="BIT">
-      <offset>672</offset>
+    <column name="Bfadeoutandthenremove" type="BIT">
+      <offset>1152</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="bNoInterpAlpha" type="BIT">
-      <offset>672</offset>
+    <column name="Bnointerpalpha" type="BIT">
+      <offset>1152</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="bNoInterpAlphaOnSpawn" type="BIT">
-      <offset>672</offset>
+    <column name="Bnointerpalphaonspawn" type="BIT">
+      <offset>1152</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="bPreserveAlpha" type="BIT">
-      <offset>672</offset>
+    <column name="Bpreservealpha" type="BIT">
+      <offset>1152</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="bImperceptible" type="BIT">
-      <offset>672</offset>
+    <column name="Bimperceptible" type="BIT">
+      <offset>1152</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="bForceFadeOut" type="BIT">
-      <offset>672</offset>
+    <column name="Bforcefadeout" type="BIT">
+      <offset>1152</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="bInCutscene" type="BIT">
-      <offset>672</offset>
+    <column name="Bincutscene" type="BIT">
+      <offset>1152</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="bDeadBodyFaded" type="BIT">
-      <offset>672</offset>
+    <column name="Bdeadbodyfaded" type="BIT">
+      <offset>1153</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
-      <bit_offset>65544</bit_offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="bDeathPredicted" type="BIT">
-      <offset>672</offset>
+    <column name="Bdeathpredicted" type="BIT">
+      <offset>1153</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
-      <bit_offset>65545</bit_offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="factionDirtiedCount" type="U8">
-      <offset>676</offset>
+    <column name="Bshowmountspawnanim" type="BIT">
+      <offset>1153</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="fAlpha" type="F32">
-      <offset>680</offset>
+    <column name="Bshowclientspawnanim" type="BIT">
+      <offset>1153</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Factiondirtiedcount" type="U8">
+      <offset>1156</offset>
+    </column>
+    <column name="Falpha" type="F32">
+      <offset>1160</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
-    <column name="fHideTime" type="F32">
-      <offset>684</offset>
+    <column name="Fhidetime" type="F32">
+      <offset>1164</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
-    <column name="fCameraCollisionFade" type="F32">
-      <offset>688</offset>
+    <column name="Fcameracollisionfade" type="F32">
+      <offset>1168</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
       <default>1</default>
     </column>
-    <column name="astrMissionToGrant" type="STRING">
-      <offset>692</offset>
+    <column name="Astrmissiontogrant" type="STRING">
+      <offset>1176</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SERVER_ONLY</flag>
@@ -548,64 +559,100 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="lastProjSpecificLogTime" type="INT">
-      <offset>696</offset>
+    <column name="Lastprojspecificlogtime" type="INT">
+      <offset>1184</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="estrProjSpecificLogString" type="STRING">
-      <offset>700</offset>
+    <column name="Estrprojspecificlogstring" type="STRING">
+      <offset>1192</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="iSeedNumber" type="INT">
-      <offset>704</offset>
+    <column name="Iseednumber" type="INT">
+      <offset>1200</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="iBoxNumber" type="INTFIXEDARRAY">
-      <offset>708</offset>
+    <column name="Iboxnumber" type="INTFIXEDARRAY">
+      <offset>1204</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <num_elements>3</num_elements>
     </column>
-    <column name="bNeedsChatMailFixup" type="BIT">
-      <offset>724</offset>
+    <column name="Bneedschatmailfixup" type="BIT">
+      <offset>1232</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="FixupVersion" type="INT">
-      <offset>728</offset>
+    <column name="Bprebuiltcharacter" type="BIT">
+      <offset>1232</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Bprebuiltcharacterneedsfixup" type="BIT">
+      <offset>1232</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Uprebuiltversiontimestamp" type="INT">
+      <offset>1236</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="dirtyBit" type="U8">
-      <offset>732</offset>
+    <column name="FixupVersion" type="INT">
+      <offset>1240</offset>
       <flags>
-        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Dirtybit" type="U8">
+      <offset>1244</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
         <flag>DIRTY_BIT</flag>
       </flags>
     </column>
-    <column name="Dump Container on Clone" type="COMMAND">
+    <column name="Autotimestamp" type="INT64">
+      <offset>1248</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Penemymoddata" type="OPTIONALSTRUCT">
+      <offset>1256</offset>
+      <subtable external="EnemyModInstance" />
+    </column>
+    <column name="Dump Container On Clone" type="COMMAND">
       <offset>0</offset>
       <command_string>ServerMonDumpEntity $FIELD(myEntityType) $FIELD(myContainerID)</command_string>
       <format_strings>
-        <format_string name="commandExpr">\q$SERVERTYPE\q = \qCloneObjectDB\q</format_string>
+        <format_string name="HTML_COMMAND_IF_EXPR">\q$SERVERTYPE\q = \qCloneObjectDB\q</format_string>
       </format_strings>
     </column>
     <column name="Dump Container" type="COMMAND">
       <offset>0</offset>
       <command_string>ServerMonDumpEntity $FIELD(myEntityType) $FIELD(myContainerID)</command_string>
       <format_strings>
-        <format_string name="commandExpr">\q$SERVERTYPE\q = \qObjectDB\q</format_string>
+        <format_string name="HTML_COMMAND_IF_EXPR">\q$SERVERTYPE\q = \qObjectDB\q</format_string>
       </format_strings>
     </column>
     <column name="Apply Transaction" type="COMMAND">
@@ -616,38 +663,38 @@
       <offset>0</offset>
       <command_string>BroadcastMessageToPlayer $FIELD(myContainerID) $STRING(Message To Send)$NORETURN</command_string>
       <format_strings>
-        <format_string name="commandExpr">\q$FIELD(myEntityType)\q = \qEntityPlayer\q</format_string>
+        <format_string name="HTML_COMMAND_IF_EXPR">\q$FIELD(myEntityType)\q = \qEntityPlayer\q</format_string>
       </format_strings>
     </column>
     <column name="Set Access Level" type="COMMAND">
       <offset>0</offset>
       <command_string>SetAccessLevelByContainerID $FIELD(myContainerID) $INT(New Access Level) $CONFIRM(Really set the access level?)</command_string>
       <format_strings>
-        <format_string name="commandExpr">\q$FIELD(myEntityType)\q = \qEntityPlayer\q AND \q$SERVERTYPE\q = \qGameServer\q</format_string>
+        <format_string name="HTML_COMMAND_IF_EXPR">\q$FIELD(myEntityType)\q = \qEntityPlayer\q AND \q$SERVERTYPE\q = \qGameServer\q</format_string>
       </format_strings>
     </column>
-    <column name="Boot player" type="COMMAND">
+    <column name="Boot Player" type="COMMAND">
       <offset>0</offset>
       <command_string>ForceLogout $FIELD(myEntityType) $FIELD(myContainerID) $CONFIRM(Really boot this player?)</command_string>
       <format_strings>
-        <format_string name="commandExpr">\q$FIELD(myEntityType)\q = \qEntityPlayer\q AND \q$SERVERTYPE\q = \qGameServer\q</format_string>
+        <format_string name="HTML_COMMAND_IF_EXPR">\q$FIELD(myEntityType)\q = \qEntityPlayer\q AND \q$SERVERTYPE\q = \qGameServer\q</format_string>
       </format_strings>
     </column>
     <column name="Check Container Location" type="COMMAND">
       <offset>0</offset>
       <command_string>DebugCheckContainerLoc $FIELD(myEntityType) $FIELD(myContainerID)</command_string>
       <format_strings>
-        <format_string name="commandExpr">\q$SERVERTYPE\q = \qObjectDB\q</format_string>
+        <format_string name="HTML_COMMAND_IF_EXPR">\q$SERVERTYPE\q = \qObjectDB\q</format_string>
       </format_strings>
     </column>
-    <column name="Get RAM Usage" type="COMMAND">
+    <column name="Get Ram Usage" type="COMMAND">
       <offset>0</offset>
       <command_string>ServerMonGetEntityRAMUsage $FIELD(myEntityType) $FIELD(myContainerID) $INT(Should allocate a bunch of extra copies then free them to test RAM reporting)</command_string>
       <format_strings>
-        <format_string name="commandExpr">\q$SERVERTYPE\q = \qObjectDB\q OR \q$SERVERTYPE\q = \qCloneObjectDB\q</format_string>
+        <format_string name="HTML_COMMAND_IF_EXPR">\q$SERVERTYPE\q = \qObjectDB\q OR \q$SERVERTYPE\q = \qCloneObjectDB\q</format_string>
       </format_strings>
     </column>
-    <column name="hAlignment" type="IGNORE" />
+    <column name="Halignment" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

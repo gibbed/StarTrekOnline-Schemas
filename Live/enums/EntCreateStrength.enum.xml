@@ -3,5 +3,6 @@
   <elements type="int">
     <element name="Locked">0</element>
     <element name="Independent">1</element>
+    <element name="Extension">2</element>
   </elements>
 </enum>

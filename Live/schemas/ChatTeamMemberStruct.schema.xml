@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="chatHandle" type="STRING">
+    <column name="Chathandle" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="onlinePlayerName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="PlayerLevel" type="INT">
+    <column name="Onlineplayername" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="PlayerRank" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="PlayingStyles" type="STRING">
+    <column name="Playerlevel" type="INT">
       <offset>16</offset>
+    </column>
+    <column name="Playerrank" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Playingstyles" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

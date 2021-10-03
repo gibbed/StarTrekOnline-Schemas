@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PowerPurposeName" type="STRINGARRAY">
+    <column name="Powerpurposename" type="STRINGARRAY">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

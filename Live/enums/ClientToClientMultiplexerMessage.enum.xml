@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ClientToClientMultiplexerMessage">
+  <parent>ClientToServerMsg</parent>
+  <elements type="int">
+    <element name="CLIENTMULTIPLEXER_CONNECT">21</element>
+    <element name="CLIENTMULTIPLEXER_GS_ID_FOR_TRANSFER">22</element>
+    <element name="PACKET_FOR_GAMESERVER">23</element>
+    <element name="PERIODIC_STATS">24</element>
+    <element name="NAMED_DATA_LIST">25</element>
+    <element name="NAMED_DATA_LIST_RARE">26</element>
+    <element name="MAYBE_INTENTIONAL_DISCONNECT_SOON">27</element>
+  </elements>
+</enum>

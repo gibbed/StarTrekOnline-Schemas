@@ -15,112 +15,130 @@
       </flags>
       <static_define_list external="ItemGenRarity" />
     </column>
-    <column name="PowerChoice" type="INTARRAY">
-      <offset>4</offset>
+    <column name="Powerchoice" type="INTARRAY">
+      <offset>8</offset>
       <static_define_list external="ItemGenRarity" />
     </column>
-    <column name="DisplaySuffix" type="STRING">
-      <offset>8</offset>
+    <column name="Displaysuffix" type="STRING">
+      <offset>16</offset>
     </column>
-    <column name="DisplayPrefix" type="STRING">
-      <offset>12</offset>
+    <column name="Displayprefix" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="Quality" type="INT">
-      <offset>16</offset>
+      <offset>32</offset>
       <static_define_list external="ItemQuality" />
     </column>
-    <column name="FlagsToAdd" type="INT">
-      <offset>20</offset>
+    <column name="Flagstoadd" type="INT">
+      <offset>36</offset>
       <static_define_list external="ItemDefFlag" />
       <format>FLAGS</format>
     </column>
-    <column name="FlagsToRemove" type="INT">
-      <offset>24</offset>
+    <column name="Flagstoremove" type="INT">
+      <offset>40</offset>
       <static_define_list external="ItemDefFlag" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Extendedflagstoadd" type="INT">
+      <offset>44</offset>
+      <static_define_list external="ItemDefExtendedFlag" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Extendedflagstoremove" type="INT">
+      <offset>48</offset>
+      <static_define_list external="ItemDefExtendedFlag" />
       <format>FLAGS</format>
     </column>
     <column name="Durability" type="F32">
-      <offset>28</offset>
+      <offset>52</offset>
       <default>-1</default>
     </column>
-    <column name="DurabilityTable" type="STRING">
-      <offset>32</offset>
+    <column name="Durabilitytable" type="STRING">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Icon" type="STRING">
-      <offset>36</offset>
+      <offset>64</offset>
     </column>
     <column name="Tag" type="INT">
-      <offset>40</offset>
+      <offset>72</offset>
       <static_define_list external="ItemTag" />
     </column>
     <column name="Categories" type="INTARRAY">
-      <offset>44</offset>
+      <offset>80</offset>
       <static_define_list external="ItemCategory" />
     </column>
-    <column name="ItemSet" type="STRUCT">
-      <offset>48</offset>
+    <column name="Itemset" type="STRUCT">
+      <offset>88</offset>
       <subtable external="ItemDefRef" />
     </column>
-    <column name="TrainableNode" type="STRUCT">
-      <offset>52</offset>
+    <column name="Trainablenode" type="STRUCT">
+      <offset>96</offset>
       <subtable external="PTNodeDefRef" />
     </column>
-    <column name="TrainableNodeRank" type="INT">
-      <offset>56</offset>
+    <column name="Trainablenoderank" type="INT">
+      <offset>104</offset>
       <default>1</default>
     </column>
     <column name="Art" type="REFERENCE">
-      <offset>60</offset>
+      <offset>112</offset>
       <dictionary_name>ItemArt</dictionary_name>
     </column>
-    <column name="RewardCostume" type="REFERENCE">
-      <offset>64</offset>
+    <column name="Rewardcostume" type="REFERENCE">
+      <offset>120</offset>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
     <column name="Subtarget" type="REFERENCE">
-      <offset>68</offset>
+      <offset>128</offset>
       <dictionary_name>PowerSubtarget</dictionary_name>
     </column>
     <column name="Costumes" type="STRUCT">
-      <offset>72</offset>
+      <offset>136</offset>
       <subtable external="ItemCostume" />
     </column>
-    <column name="CostumeRefs" type="STRUCT">
-      <offset>76</offset>
+    <column name="Costumerefs" type="STRUCT">
+      <offset>144</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <subtable external="CostumeRefEditor" />
     </column>
-    <column name="GenerateAtLevel" type="STRUCT">
-      <offset>80</offset>
+    <column name="Generateatlevel" type="STRUCT">
+      <offset>152</offset>
       <subtable external="ItemGenRarityGenerateAtLevel" />
     </column>
-    <column name="GemSlotSet" type="STRUCT">
-      <offset>84</offset>
+    <column name="Gemslotset" type="STRUCT">
+      <offset>160</offset>
       <subtable external="ItemGenGemSlotData" />
     </column>
     <column name="Suffix" type="EMBEDDEDSTRUCT">
-      <offset>88</offset>
+      <offset>168</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Prefix" type="EMBEDDEDSTRUCT">
-      <offset>100</offset>
+      <offset>192</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="PowerFactor" type="INT">
-      <offset>112</offset>
+    <column name="Powerfactor" type="INT">
+      <offset>216</offset>
       <default>-1</default>
     </column>
-    <column name="RequiresExpr" type="OPTIONALSTRUCT">
-      <offset>116</offset>
+    <column name="Requiresexpr" type="OPTIONALSTRUCT">
+      <offset>224</offset>
       <subtable external="Expression" />
     </column>
-    <column name="GenerateWithUnidentifiedWrappers" type="U8">
-      <offset>120</offset>
+    <column name="Generatewithunidentifiedwrappers" type="U8">
+      <offset>232</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Gemslottypes" type="INTARRAY">
+      <offset>240</offset>
+      <static_define_list external="ItemGemType" />
+    </column>
+    <column name="Weapondamagemultiplier" type="F32">
+      <offset>248</offset>
     </column>
     <column name="}" type="END" />
   </table>

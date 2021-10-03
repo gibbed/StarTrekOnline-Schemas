@@ -6,13 +6,12 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="{" type="START" />
-    <column name="fill" type="F32">
+    <column name="Fill" type="F32">
       <offset>0</offset>
     </column>
-    <column name="renderscale" type="F32">
+    <column name="Renderscale" type="F32">
       <offset>4</offset>
     </column>
-    <column name="EndRenderScale" type="END" />
+    <column name="Endrenderscale" type="END" />
   </table>
 </parser>

@@ -12,206 +12,251 @@
       <subtable external="DynNode" />
     </column>
     <column name="Velocity" type="F32FIXEDARRAY">
-      <offset>128</offset>
+      <offset>160</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Spin" type="F32FIXEDARRAY">
-      <offset>140</offset>
+      <offset>172</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Color" type="F32FIXEDARRAY">
-      <offset>152</offset>
-      <num_elements>4</num_elements>
-    </column>
-    <column name="HSVShift" type="F32FIXEDARRAY">
-      <offset>168</offset>
-      <num_elements>3</num_elements>
-    </column>
-    <column name="SpriteOrientation" type="F32">
-      <offset>180</offset>
-    </column>
-    <column name="SpriteSpin" type="F32">
       <offset>184</offset>
+      <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Hsvshift" type="F32FIXEDARRAY">
+      <offset>200</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Spriteorientation" type="F32">
+      <offset>212</offset>
+    </column>
+    <column name="Spritespin" type="F32">
+      <offset>216</offset>
     </column>
     <column name="Drag" type="F32">
-      <offset>188</offset>
+      <offset>220</offset>
     </column>
     <column name="Gravity" type="F32">
-      <offset>192</offset>
-    </column>
-    <column name="TightenUp" type="F32">
-      <offset>196</offset>
-    </column>
-    <column name="BlendMode" type="INT">
-      <offset>200</offset>
-    </column>
-    <column name="StreakScale" type="F32">
-      <offset>204</offset>
-    </column>
-    <column name="StreakMode" type="INT">
-      <offset>208</offset>
-    </column>
-    <column name="StreakDir" type="F32FIXEDARRAY">
-      <offset>212</offset>
-      <num_elements>3</num_elements>
-    </column>
-    <column name="Scale" type="F32FIXEDARRAY">
       <offset>224</offset>
-      <num_elements>3</num_elements>
     </column>
-    <column name="TexOffset" type="F32FIXEDARRAY">
+    <column name="Tightenup" type="F32">
+      <offset>228</offset>
+    </column>
+    <column name="Materialtimersource" type="INT">
+      <offset>232</offset>
+    </column>
+    <column name="Materialtimeroffsetmode" type="INT">
       <offset>236</offset>
-      <num_elements>2</num_elements>
     </column>
-    <column name="TexScale" type="F32FIXEDARRAY">
+    <column name="Materialtimeroffset" type="F32">
+      <offset>240</offset>
+    </column>
+    <column name="Blendmode" type="INT">
       <offset>244</offset>
-      <num_elements>2</num_elements>
     </column>
-    <column name="TextureName" type="STRING">
+    <column name="Streakscale" type="F32">
+      <offset>248</offset>
+    </column>
+    <column name="Streakmode" type="INT">
       <offset>252</offset>
     </column>
-    <column name="TextureName2" type="STRING">
+    <column name="Streakdir" type="F32FIXEDARRAY">
       <offset>256</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Scale" type="F32FIXEDARRAY">
+      <offset>268</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Texoffset" type="F32FIXEDARRAY">
+      <offset>280</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Texscale" type="F32FIXEDARRAY">
+      <offset>288</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="TextureName" type="STRING">
+      <offset>296</offset>
+    </column>
+    <column name="Texturename2" type="STRING">
+      <offset>304</offset>
     </column>
     <column name="MaterialName" type="STRING">
-      <offset>260</offset>
+      <offset>312</offset>
     </column>
-    <column name="GeoDissolveMaterialName" type="STRING">
-      <offset>264</offset>
+    <column name="Geodissolvematerialname" type="STRING">
+      <offset>320</offset>
     </column>
-    <column name="ppcGeoAddMaterialNames" type="STRINGARRAY">
-      <offset>268</offset>
+    <column name="Ppcgeoaddmaterialnames" type="STRINGARRAY">
+      <offset>328</offset>
     </column>
-    <column name="Material2Name" type="STRING">
-      <offset>272</offset>
+    <column name="Material2name" type="STRING">
+      <offset>336</offset>
     </column>
     <column name="ModelName" type="STRING">
-      <offset>276</offset>
+      <offset>344</offset>
     </column>
-    <column name="ClothName" type="STRING">
-      <offset>280</offset>
+    <column name="Clothname" type="STRING">
+      <offset>352</offset>
     </column>
-    <column name="ClothInfo" type="STRING">
-      <offset>284</offset>
+    <column name="Clothinfo" type="STRING">
+      <offset>360</offset>
     </column>
-    <column name="ClothCollisionInfo" type="STRING">
-      <offset>288</offset>
-    </column>
-    <column name="BoneForCostumeModelGrab" type="STRING">
-      <offset>292</offset>
-    </column>
-    <column name="UseSpriteSpin" type="U8">
+    <column name="Clothcollisioninfo" type="STRING">
       <offset>368</offset>
     </column>
-    <column name="BaseSkeleton" type="STRING">
-      <offset>412</offset>
+    <column name="Boneforcostumemodelgrab" type="STRING">
+      <offset>376</offset>
     </column>
-    <column name="GoToSpeed" type="F32">
-      <offset>420</offset>
+    <column name="Soundprefix" type="STRING">
+      <offset>384</offset>
     </column>
-    <column name="GoToGravity" type="F32">
-      <offset>424</offset>
+    <column name="Usespritespin" type="U8">
+      <offset>536</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="GoToGravityFalloff" type="F32">
-      <offset>428</offset>
+    <column name="Baseskeleton" type="STRING">
+      <offset>624</offset>
     </column>
-    <column name="GoToApproachSpeed" type="F32">
-      <offset>432</offset>
+    <column name="Gotospeed" type="F32">
+      <offset>640</offset>
     </column>
-    <column name="GoToSpringEquilibrium" type="F32">
-      <offset>436</offset>
+    <column name="Gotogravity" type="F32">
+      <offset>644</offset>
     </column>
-    <column name="GoToSpringConstant" type="F32">
-      <offset>440</offset>
+    <column name="Gotogravityfalloff" type="F32">
+      <offset>648</offset>
     </column>
-    <column name="ParentVelocityOffset" type="F32">
-      <offset>444</offset>
+    <column name="Gotoapproachspeed" type="F32">
+      <offset>652</offset>
     </column>
-    <column name="HueShift" type="F32">
-      <offset>448</offset>
+    <column name="Gotospringequilibrium" type="F32">
+      <offset>656</offset>
     </column>
-    <column name="SaturationShift" type="F32">
-      <offset>452</offset>
+    <column name="Gotospringconstant" type="F32">
+      <offset>660</offset>
     </column>
-    <column name="ValueShift" type="F32">
-      <offset>456</offset>
+    <column name="Parentvelocityoffset" type="F32">
+      <offset>664</offset>
+    </column>
+    <column name="Hueshift" type="F32">
+      <offset>668</offset>
+    </column>
+    <column name="Saturationshift" type="F32">
+      <offset>672</offset>
+    </column>
+    <column name="Valueshift" type="F32">
+      <offset>676</offset>
     </column>
     <column name="Color1" type="F32FIXEDARRAY">
-      <offset>460</offset>
+      <offset>680</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Color2" type="F32FIXEDARRAY">
-      <offset>476</offset>
+      <offset>696</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Color3" type="F32FIXEDARRAY">
-      <offset>492</offset>
+      <offset>712</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="EntLightMode" type="INT">
-      <offset>508</offset>
+    <column name="Entlightmode" type="INT">
+      <offset>728</offset>
     </column>
-    <column name="EntMaterial" type="INT">
-      <offset>512</offset>
+    <column name="Entmaterial" type="INT">
+      <offset>732</offset>
     </column>
-    <column name="EntTintMode" type="INT">
-      <offset>516</offset>
+    <column name="Enttintmode" type="INT">
+      <offset>736</offset>
     </column>
-    <column name="EntScaleMode" type="INT">
-      <offset>520</offset>
+    <column name="Entscalemode" type="INT">
+      <offset>740</offset>
     </column>
     <column name="Oriented" type="INT">
-      <offset>524</offset>
+      <offset>744</offset>
     </column>
-    <column name="HInvert" type="U8">
-      <offset>528</offset>
+    <column name="Hinvert" type="U8">
+      <offset>748</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="VInvert" type="U8">
-      <offset>529</offset>
+    <column name="Vinvert" type="U8">
+      <offset>749</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FixedAspectRatio" type="U8">
-      <offset>530</offset>
+    <column name="Fixedaspectratio" type="U8">
+      <offset>750</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="LocalOrientation" type="U8">
-      <offset>531</offset>
+    <column name="Localorientation" type="U8">
+      <offset>751</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="VelocityDriveOrientation" type="U8">
-      <offset>532</offset>
+    <column name="Velocitydriveorientation" type="U8">
+      <offset>752</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="StreakTile" type="U8">
-      <offset>533</offset>
+    <column name="Streaktile" type="U8">
+      <offset>753</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CastShadows" type="U8">
-      <offset>534</offset>
+    <column name="Castshadows" type="U8">
+      <offset>754</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ClothCollide" type="U8">
-      <offset>535</offset>
+    <column name="Clothcollide" type="U8">
+      <offset>755</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ClothCollideSelfOnly" type="U8">
-      <offset>536</offset>
+    <column name="Clothcollideselfonly" type="U8">
+      <offset>756</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ExplicitlyInstanceable" type="U8">
-      <offset>537</offset>
+    <column name="Explicitlyinstanceable" type="U8">
+      <offset>757</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="TexWords" type="STRING">
-      <offset>548</offset>
+    <column name="Geoonlyaddmaterials" type="U8">
+      <offset>758</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ClothWindOverride" type="F32FIXEDARRAY">
-      <offset>552</offset>
+    <column name="Texwords" type="STRING">
+      <offset>760</offset>
+    </column>
+    <column name="Clothwindoverride" type="F32FIXEDARRAY">
+      <offset>768</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="UseClothWindOverride" type="U8">
-      <offset>564</offset>
+    <column name="Useclothwindoverride" type="U8">
+      <offset>780</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="LightModulation" type="F32">
-      <offset>568</offset>
+    <column name="Lightmodulation" type="F32">
+      <offset>784</offset>
     </column>
-    <column name="ExtraTextureSwaps" type="STRINGARRAY">
-      <offset>572</offset>
+    <column name="Extratextureswaps" type="STRINGARRAY">
+      <offset>792</offset>
     </column>
-    <column name="DrawOffset" type="F32FIXEDARRAY">
-      <offset>580</offset>
+    <column name="Drawoffset" type="F32FIXEDARRAY">
+      <offset>804</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Printtype" type="INT">
+      <offset>832</offset>
+      <static_define_list external="eDynFxPrintType" />
     </column>
     <column name="}" type="END" />
   </table>

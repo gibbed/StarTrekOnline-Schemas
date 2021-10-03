@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uLastTimeSS2000" type="INT">
+    <column name="Ulasttimess2000" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uTokens" type="INT">
+    <column name="Utokens" type="INT">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

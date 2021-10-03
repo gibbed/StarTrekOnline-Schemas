@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GfxComputeShader">
+  <elements type="int">
+    <element name="Test">0</element>
+    <element name="VertexDiffuseProbeLighting">1</element>
+    <element name="VertexDiffuseProbeLightingHiNormals">2</element>
+    <element name="VertexDiffuseProbeLightingTerrain">3</element>
+    <element name="VertexDiffuseProbeLightingSpline">4</element>
+    <element name="VertexDiffuseProbeLightingSplineHiNormals">5</element>
+    <element name="ClusteredLightCulling">6</element>
+    <element name="GlobalDistanceFieldComposite">7</element>
+    <element name="GlobalDistanceFieldComposite_FlattenX">8</element>
+    <element name="GlobalDistanceFieldComposite_FlattenY">9</element>
+    <element name="GlobalDistanceFieldComposite_FlattenZ">10</element>
+    <element name="InitSortArgs">11</element>
+    <element name="Sort_512">12</element>
+    <element name="SortStep">13</element>
+    <element name="SortInner">14</element>
+    <element name="MultiSort_32">15</element>
+    <element name="MultiSort_64">16</element>
+    <element name="MultiSort_128">17</element>
+    <element name="MultiSort_256">18</element>
+    <element name="MultiSort_512">19</element>
+    <element name="Ribbon">20</element>
+    <element name="Ribbon_Camera">21</element>
+    <element name="SkinGeo">22</element>
+    <element name="SkinGeo_TwoBone">23</element>
+    <element name="CMAA2_EdgesColor2x2">24</element>
+    <element name="CMAA2_ProcessCandidates">25</element>
+    <element name="CMAA2_DeferredColorApply2x2">26</element>
+    <element name="CMAA2_ComputeDispatchArgs">27</element>
+    <element name="CMAA2_DebugDrawEdges">28</element>
+    <element name="Max">29</element>
+  </elements>
+</enum>

@@ -10,14 +10,14 @@
     <column name="ItemDef" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="ItemDef" />
     </column>
-    <column name="QueueItem" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Queueitem" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="NotifyQueueItem" />
     </column>

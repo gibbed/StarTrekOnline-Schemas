@@ -7,57 +7,57 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="inputDirIsCurrent" type="BIT">
+    <column name="Inputdiriscurrent" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="tryingToMove" type="BIT">
+    <column name="Hasdesiredposition" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="onGroundToFG" type="BIT">
+    <column name="Ongroundtofg" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="hasOverrideMaxSpeed" type="BIT">
+    <column name="Hasoverridemaxspeed" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="hitGroundDuringTranslate" type="BIT">
+    <column name="Hitgroundduringtranslate" type="BIT">
       <offset>0</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="autoRun" type="BIT">
+    <column name="Autorun" type="BIT">
       <offset>0</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="isJumpDisabledOverrideValue" type="BIT">
+    <column name="Isjumpdisabledoverridevalue" type="BIT">
       <offset>0</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="isJumpDisabled" type="BIT">
+    <column name="Isjumpdisabled" type="BIT">
       <offset>0</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="isStrafingOverride" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Isstrafingoverride" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="strafingOverrideEnabled" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Strafingoverrideenabled" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="scheduledIsStrafingOverride" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Scheduledisstrafingoverride" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="scheduledStrafingOverrideEnabled" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Scheduledstrafingoverrideenabled" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65539</bit_offset>
     </column>
-    <column name="scheduledDisableJump" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65548</bit_offset>
+    <column name="Scheduleddisablejump" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65540</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

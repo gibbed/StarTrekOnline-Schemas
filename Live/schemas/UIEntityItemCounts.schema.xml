@@ -7,18 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uLastUpdateTime" type="INT">
+    <column name="Ulastupdatetime" type="INT">
       <offset>0</offset>
     </column>
     <column name="Ent" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Entity" />
     </column>
-    <column name="stItems" type="STASHTABLE">
-      <offset>8</offset>
+    <column name="Stitems" type="STASHTABLE">
+      <offset>16</offset>
+    </column>
+    <column name="Stitemqualities" type="STASHTABLE">
+      <offset>24</offset>
+    </column>
+    <column name="Stitemcategories" type="STASHTABLE">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

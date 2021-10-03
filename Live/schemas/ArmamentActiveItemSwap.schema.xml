@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BagID" type="INT">
+    <column name="Bagid" type="INT">
       <offset>0</offset>
     </column>
     <column name="Index" type="INT">
       <offset>4</offset>
     </column>
-    <column name="ActiveSlot" type="INT">
+    <column name="Activeslot" type="INT">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

@@ -13,18 +13,18 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="rolloverText" type="STRING">
-      <offset>4</offset>
+    <column name="Rollovertext" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="subItem" type="STRUCT">
-      <offset>8</offset>
+    <column name="Subitem" type="STRUCT">
+      <offset>16</offset>
       <subtable external="DebugMenuOverrideItem" />
     </column>
     <column name="SubMenu" type="STRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="DebugMenuOverrideParent" />
     </column>
     <column name="}" type="END" />

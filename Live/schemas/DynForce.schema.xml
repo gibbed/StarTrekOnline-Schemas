@@ -22,9 +22,10 @@
     </column>
     <column name="Impulse" type="BOOLFLAG">
       <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Name" type="STRING">
-      <offset>20</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>

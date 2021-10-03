@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="XferSearchMethod">
+  <elements type="int">
+    <element name="DEFAULT">0</element>
+    <element name="UNSORTED_LLIST">1</element>
+    <element name="SORTED_LLIST">2</element>
+  </elements>
+</enum>

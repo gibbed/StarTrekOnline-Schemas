@@ -11,8 +11,8 @@
       <offset>0</offset>
       <subtable external="CombatPowerStatePower" />
     </column>
-    <column name="BasePower" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Basepower" type="REFERENCE">
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>

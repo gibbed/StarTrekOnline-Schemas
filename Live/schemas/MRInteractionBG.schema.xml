@@ -11,50 +11,56 @@
       <offset>0</offset>
       <subtable external="MRInteractionPath" />
     </column>
-    <column name="pathVersion" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="pathVersionStarted" type="INT">
+    <column name="Pathversion" type="INT">
       <offset>8</offset>
     </column>
-    <column name="targetWaypointIndexMutable" type="INT">
+    <column name="Pathversionstarted" type="INT">
       <offset>12</offset>
     </column>
-    <column name="triggeredWaypointIndex" type="INT">
+    <column name="Targetwaypointindexmutable" type="INT">
       <offset>16</offset>
     </column>
-    <column name="spcReachedWaypoint" type="INT">
+    <column name="Triggeredwaypointindex" type="INT">
       <offset>20</offset>
     </column>
-    <column name="spcLingering" type="INT">
+    <column name="Spcreachedwaypoint" type="INT">
       <offset>24</offset>
     </column>
-    <column name="minDistFromWP" type="F32">
+    <column name="Spclingering" type="INT">
       <offset>28</offset>
     </column>
-    <column name="spcMinDistChanged" type="INT">
+    <column name="Mindistfromwp" type="F32">
       <offset>32</offset>
     </column>
-    <column name="spcMoveOnRailStart" type="INT">
+    <column name="Spcmindistchanged" type="INT">
       <offset>36</offset>
     </column>
-    <column name="scaleMoveOnRail" type="F32">
+    <column name="Spcmoveonrailstart" type="INT">
       <offset>40</offset>
     </column>
-    <column name="posMoveOnRailStart" type="F32FIXEDARRAY">
+    <column name="Scalemoveonrail" type="F32">
       <offset>44</offset>
-      <num_elements>3</num_elements>
     </column>
-    <column name="rotMoveOnRailStart" type="QUATPYR">
-      <offset>56</offset>
+    <column name="Posmoveonrailstart" type="F32FIXEDARRAY">
+      <offset>48</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Rotmoveonrailstart" type="QUATPYR">
+      <offset>60</offset>
       <num_elements>4</num_elements>
     </column>
-    <column name="pyFaceMoveOnRailStart" type="F32FIXEDARRAY">
-      <offset>72</offset>
+    <column name="Pyfacemoveonrailstart" type="F32FIXEDARRAY">
+      <offset>76</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="flagsMutable" type="EMBEDDEDSTRUCT">
-      <offset>80</offset>
+    <column name="Hasstancemask" type="BIT">
+      <offset>84</offset>
+      <bit_offset>262144</bit_offset>
+    </column>
+    <column name="Flagsmutable" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
       <subtable external="MRInteractionBGFlags" />
     </column>
     <column name="}" type="END" />

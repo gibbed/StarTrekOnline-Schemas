@@ -12,75 +12,70 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="GoTo" type="STRING">
-      <offset>4</offset>
+    <column name="Goto" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="To" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>GoTo</redundant_name>
+      <redundant_name>Goto</redundant_name>
     </column>
-    <column name="OrientTo" type="STRING">
-      <offset>8</offset>
+    <column name="Orientto" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Orient" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>OrientTo</redundant_name>
+      <redundant_name>Orientto</redundant_name>
     </column>
-    <column name="ScaleTo" type="STRING">
-      <offset>12</offset>
+    <column name="Scaleto" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Near" type="STRUCT">
-      <offset>16</offset>
+      <offset>32</offset>
       <subtable external="DynParentNearEvent" />
     </column>
     <column name="Inherit" type="INT">
-      <offset>20</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <offset>40</offset>
+      <static_define_list external="DynNodeXFormFlags" />
       <format>FLAGS</format>
     </column>
     <column name="Update" type="INT">
-      <offset>24</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <offset>44</offset>
+      <static_define_list external="DynNodeXFormFlags" />
       <format>FLAGS</format>
     </column>
-    <column name="SetFlags" type="INT">
-      <offset>28</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+    <column name="Setflags" type="INT">
+      <offset>48</offset>
+      <static_define_list external="DynParentFlags" />
       <format>FLAGS</format>
     </column>
     <column name="Param" type="STRUCT">
-      <offset>32</offset>
+      <offset>56</offset>
       <subtable external="DynApplyParam" />
     </column>
-    <column name="JitterList" type="STRUCT">
-      <offset>36</offset>
+    <column name="Jitterlist" type="STRUCT">
+      <offset>64</offset>
       <subtable external="DynJitterList" />
     </column>
-    <column name="SeverWithBone" type="BOOLFLAG">
-      <offset>40</offset>
+    <column name="Severwithbone" type="BOOLFLAG">
+      <offset>72</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

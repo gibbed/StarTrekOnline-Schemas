@@ -10,11 +10,12 @@
     <column name="Offset" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="assignee" type="INT">
+    <column name="Assignee" type="INT">
       <offset>12</offset>
     </column>
-    <column name="blocked" type="BIT">
+    <column name="Blocked" type="BIT">
       <offset>16</offset>
       <bit_offset>65536</bit_offset>
     </column>

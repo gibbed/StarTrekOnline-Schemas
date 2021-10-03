@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ModifyChance" type="F32">
+    <column name="Modifychance" type="F32">
       <offset>0</offset>
     </column>
-    <column name="MustOwnPower" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Mustownpower" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>PowerDef</dictionary_name>
     </column>
     <column name="}" type="END" />

@@ -10,12 +10,12 @@
     <column name="Quality" type="INT">
       <offset>0</offset>
     </column>
-    <column name="hMessage" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hmessage" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="hSimpleMessage" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Hsimplemessage" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
     <column name="}" type="END" />

@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="JitterType" type="INT">
+    <column name="Jittertype" type="INT">
       <offset>0</offset>
       <static_define_list external="GenesisEncounterJitterType" />
     </column>
-    <column name="EncPosJitter" type="F32">
+    <column name="Encposjitter" type="F32">
       <offset>4</offset>
     </column>
-    <column name="EncRotJitter" type="F32">
+    <column name="Encrotjitter" type="F32">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

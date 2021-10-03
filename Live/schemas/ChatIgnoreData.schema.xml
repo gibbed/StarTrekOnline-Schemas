@@ -7,20 +7,21 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uUserAccountID" type="INT">
+    <column name="Uuseraccountid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uTargetAccountID" type="INT">
+    <column name="Utargetaccountid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="targetHandle" type="STRING">
+    <column name="Targethandle" type="STRING">
       <offset>8</offset>
     </column>
     <column name="Spammer" type="U8">
-      <offset>12</offset>
-    </column>
-    <column name="SpamMessage" type="STRING">
       <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Spammessage" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

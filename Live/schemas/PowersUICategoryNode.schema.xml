@@ -14,15 +14,16 @@
       </flags>
     </column>
     <column name="Category" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="PowerTreeUICategory" />
     </column>
-    <column name="TreeNodes" type="STRUCT">
-      <offset>8</offset>
+    <column name="Treenodes" type="STRUCT">
+      <offset>16</offset>
       <subtable external="PowersUITreeNode" />
     </column>
     <column name="Expand" type="U8">
-      <offset>12</offset>
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

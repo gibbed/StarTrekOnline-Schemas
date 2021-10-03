@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EntityMovementNavmeshProjectileToBG">
+  <table>
+    <column name="EntityMovementNavmeshProjectileToBG" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Knockdata" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="EntityMovementNavmeshProjectileKnockData" />
+    </column>
+    <column name="Updated" type="EMBEDDEDSTRUCT">
+      <offset>84</offset>
+      <subtable external="EntityMovementNavmeshProjectileUpdate" />
+    </column>
+    <column name="Flagsmutable" type="EMBEDDEDSTRUCT">
+      <offset>85</offset>
+      <subtable external="EntityMovementNavmeshProjectileFlags" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

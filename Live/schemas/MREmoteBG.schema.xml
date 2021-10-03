@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="sets" type="STRUCT">
+    <column name="Sets" type="STRUCT">
       <offset>0</offset>
       <subtable external="MREmoteSet" />
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="MREmoteBGFlags" />
     </column>
-    <column name="handleLastStarted" type="INT">
-      <offset>8</offset>
+    <column name="Handlelaststarted" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

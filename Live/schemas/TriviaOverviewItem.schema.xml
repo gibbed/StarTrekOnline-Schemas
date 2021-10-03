@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pKey" type="STRING">
+    <column name="Pkey" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
@@ -15,8 +15,8 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="ppValues" type="STRUCT">
-      <offset>4</offset>
+    <column name="Ppvalues" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>

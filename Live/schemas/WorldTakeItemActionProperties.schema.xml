@@ -11,10 +11,19 @@
       <dictionary_name>ItemDef</dictionary_name>
     </column>
     <column name="Count" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="TakeAll" type="U8">
       <offset>8</offset>
+    </column>
+    <column name="Takeall" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Excludegemmeditems" type="U8">
+      <offset>13</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Excludebank" type="U8">
+      <offset>14</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

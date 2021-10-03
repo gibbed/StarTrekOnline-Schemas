@@ -14,27 +14,27 @@
       </flags>
       <static_define_list external="MissionCreditType" />
     </column>
-    <column name="XPScale" type="F32">
+    <column name="Xpscale" type="F32">
       <offset>4</offset>
       <default>1</default>
     </column>
-    <column name="RPScale" type="F32">
+    <column name="Rpscale" type="F32">
       <offset>8</offset>
       <default>1</default>
     </column>
-    <column name="ResourceScale" type="F32">
+    <column name="Resourcescale" type="F32">
       <offset>12</offset>
       <default>1</default>
     </column>
-    <column name="StarsScale" type="F32">
+    <column name="Starsscale" type="F32">
       <offset>16</offset>
       <default>1</default>
     </column>
-    <column name="SPScale" type="F32">
+    <column name="Spscale" type="F32">
       <offset>20</offset>
       <default>1</default>
     </column>
-    <column name="OSPScale" type="F32">
+    <column name="Ospscale" type="F32">
       <offset>24</offset>
       <default>1</default>
     </column>

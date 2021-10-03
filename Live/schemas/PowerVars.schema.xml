@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PowerVar" type="STRUCT">
+    <column name="Powervar" type="STRUCT">
       <offset>0</offset>
       <subtable external="PowerVar" />
     </column>
-    <column name="stPowerVars" type="STASHTABLE">
-      <offset>4</offset>
+    <column name="Stpowervars" type="STASHTABLE">
+      <offset>8</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>

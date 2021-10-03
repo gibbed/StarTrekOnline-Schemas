@@ -7,27 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="globalCooldownSeconds" type="F32">
+    <column name="Globalcooldownseconds" type="F32">
       <offset>0</offset>
     </column>
-    <column name="aim" type="EMBEDDEDSTRUCT">
+    <column name="Aim" type="EMBEDDEDSTRUCT">
       <offset>4</offset>
       <subtable external="TacticalRequesterAimDef" />
     </column>
-    <column name="crouch" type="EMBEDDEDSTRUCT">
-      <offset>24</offset>
+    <column name="Crouch" type="EMBEDDEDSTRUCT">
+      <offset>28</offset>
       <subtable external="TacticalSyncCrouch" />
     </column>
-    <column name="run" type="EMBEDDEDSTRUCT">
-      <offset>28</offset>
+    <column name="Run" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
       <subtable external="TacticalSyncRun" />
     </column>
     <column name="Roll" type="EMBEDDEDSTRUCT">
-      <offset>48</offset>
+      <offset>52</offset>
       <subtable external="TacticalRequesterRollDef" />
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">
-      <offset>84</offset>
+      <offset>88</offset>
       <subtable external="TacticalSyncFlags" />
     </column>
     <column name="}" type="END" />

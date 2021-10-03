@@ -14,11 +14,12 @@
       </flags>
     </column>
     <column name="Value" type="F32FIXEDARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="&#xA;" type="END" />
   </table>

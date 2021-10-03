@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CxErrorReportingBehavior">
+  <elements type="int">
+    <element name="UNSPECIFIED">0</element>
+    <element name="DONE">1</element>
+    <element name="CONTINUE">2</element>
+  </elements>
+</enum>

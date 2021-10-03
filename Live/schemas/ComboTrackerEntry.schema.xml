@@ -12,22 +12,24 @@
       <dictionary_name>PowerDef</dictionary_name>
     </column>
     <column name="IconName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="uchPowerActID" type="U8">
       <offset>8</offset>
     </column>
-    <column name="Queued" type="U8">
-      <offset>9</offset>
-    </column>
-    <column name="CanActivate" type="U8">
-      <offset>10</offset>
-    </column>
-    <column name="TraySlot" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="uiPowerID" type="INT">
+    <column name="Uchpoweractid" type="U8">
       <offset>16</offset>
+    </column>
+    <column name="Queued" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Canactivate" type="U8">
+      <offset>18</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Trayslot" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Uipowerid" type="INT">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

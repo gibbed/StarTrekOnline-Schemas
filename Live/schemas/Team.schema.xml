@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iContainerID" type="INT">
+    <column name="Icontainerid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,14 +15,14 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iCreatedOn" type="INT">
+    <column name="Icreatedon" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eaMembers" type="STRUCT">
+    <column name="Eamembers" type="STRUCT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -30,15 +30,7 @@
       </flags>
       <subtable external="TeamMember" />
     </column>
-    <column name="eaInvites" type="STRUCT">
-      <offset>12</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <subtable external="TeamMember" />
-    </column>
-    <column name="eaRequests" type="STRUCT">
+    <column name="Eainvites" type="STRUCT">
       <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -46,15 +38,7 @@
       </flags>
       <subtable external="TeamMember" />
     </column>
-    <column name="pLeader" type="OPTIONALSTRUCT">
-      <offset>20</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <subtable external="TeamMember" />
-    </column>
-    <column name="pChampion" type="OPTIONALSTRUCT">
+    <column name="Earequests" type="STRUCT">
       <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -62,82 +46,99 @@
       </flags>
       <subtable external="TeamMember" />
     </column>
-    <column name="eaAwayTeamPrefs" type="STRUCT">
-      <offset>28</offset>
+    <column name="Pleader" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="TeamMember" />
+    </column>
+    <column name="Pchampion" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="TeamMember" />
+    </column>
+    <column name="Eaawayteamprefs" type="STRUCT">
+      <offset>48</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="AwayTeamPrefs" />
     </column>
-    <column name="eaDisconnecteds" type="STRUCT">
-      <offset>32</offset>
+    <column name="Eadisconnecteds" type="STRUCT">
+      <offset>56</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="StubTeamMember" />
     </column>
-    <column name="eMode" type="INT">
-      <offset>36</offset>
+    <column name="Emode" type="INT">
+      <offset>64</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <static_define_list external="TeamMode" />
     </column>
-    <column name="iVersion" type="INT">
-      <offset>40</offset>
+    <column name="Iversion" type="INT">
+      <offset>68</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="bInviteAccepted" type="U8">
-      <offset>44</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="loot_mode" type="INT">
-      <offset>48</offset>
+    <column name="Loot_Mode" type="INT">
+      <offset>72</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <static_define_list external="LootMode" />
     </column>
-    <column name="loot_mode_quality" type="STRING">
-      <offset>52</offset>
+    <column name="Loot_Mode_Quality" type="STRING">
+      <offset>80</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iDifficulty" type="INT">
-      <offset>56</offset>
+    <column name="Idifficulty" type="INT">
+      <offset>88</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eCachedMode" type="INT">
-      <offset>68</offset>
+    <column name="Pqueueballotbox" type="OPTIONALSTRUCT">
+      <offset>112</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="TeamQueueBallotBox" />
+    </column>
+    <column name="Ecachedmode" type="INT">
+      <offset>120</offset>
       <static_define_list external="TeamMode" />
     </column>
-    <column name="iCachedMembers" type="INT">
-      <offset>72</offset>
+    <column name="Icachedmembers" type="INT">
+      <offset>124</offset>
     </column>
-    <column name="pchCachedStatusMessage" type="STRING">
-      <offset>76</offset>
+    <column name="Pchcachedstatusmessage" type="STRING">
+      <offset>128</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="pchPrimaryMission" type="STRING">
-      <offset>80</offset>
+    <column name="Pchprimarymission" type="STRING">
+      <offset>136</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SUBSCRIBE</flag>
@@ -145,120 +146,188 @@
       </flags>
     </column>
     <column name="Esprimarymission" type="STRING">
-      <offset>80</offset>
+      <offset>136</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>pchPrimaryMission</redundant_name>
+      <redundant_name>Pchprimarymission</redundant_name>
     </column>
-    <column name="pcAllegiance" type="STRING">
-      <offset>84</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pcSubAllegiance" type="STRING">
-      <offset>88</offset>
+    <column name="Pcallegiance" type="STRING">
+      <offset>144</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="bRequireSubAllegianceMatch" type="U8">
-      <offset>92</offset>
+    <column name="Pcsuballegiance" type="STRING">
+      <offset>152</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Brequiresuballegiancematch" type="U8">
+      <offset>160</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Iteamspokesmanentid" type="INT">
+      <offset>164</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pXSessionInfo" type="OPTIONALSTRUCT">
-      <offset>96</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <subtable external="CrypticXSessionInfo" />
-    </column>
-    <column name="iTeamSpokesmanEntID" type="INT">
-      <offset>100</offset>
+    <column name="Icurrentugcprojectid" type="INT">
+      <offset>168</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iCurrentUGCProjectID" type="INT">
-      <offset>104</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pchStatusMessage" type="STRING">
-      <offset>108</offset>
+    <column name="Pchstatusmessage" type="STRING">
+      <offset>176</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uBadLogoutTime" type="INT">
-      <offset>112</offset>
+    <column name="Ubadlogouttime" type="INT">
+      <offset>184</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iGameServerOwnerID" type="INT">
-      <offset>120</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>SERVER_ONLY</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="iGameServerOwnerPartition" type="INT">
-      <offset>124</offset>
+    <column name="Iautoteamgameserverid" type="INT">
+      <offset>200</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="bTeamMembersMustBeOnOwnerGameServer" type="U8">
-      <offset>128</offset>
+    <column name="Igameserverownerid" type="INT">
+      <offset>200</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Iautoteamgameserverid</redundant_name>
+    </column>
+    <column name="Iautoteamgameserverpartition" type="INT">
+      <offset>204</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="bVoteRequiredForKick" type="U8">
-      <offset>129</offset>
+    <column name="Igameserverownerpartition" type="INT">
+      <offset>204</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Iautoteamgameserverpartition</redundant_name>
+    </column>
+    <column name="Bautoteammembersmustbeongameserver" type="U8">
+      <offset>208</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bteammembersmustbeonownergameserver" type="U8">
+      <offset>208</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Bautoteammembersmustbeongameserver</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bvoterequiredforkick" type="U8">
+      <offset>209</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Inummembersrequiredtostartvotekick" type="INT">
+      <offset>212</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uiLocalTeamSyncRequestID" type="INT">
-      <offset>132</offset>
+    <column name="Uiautoteamsyncrequestid" type="INT">
+      <offset>216</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="bEnableOpenInstancing" type="IGNORE" />
-    <column name="iRewardIndex" type="IGNORE" />
-    <column name="iCompletedMissionsVersion" type="IGNORE" />
-    <column name="ppchCompletedMissions" type="IGNORE" />
-    <column name="hCurrentProgressionNode" type="IGNORE" />
-    <column name="bAllGameProgressionNodesUnlocked" type="IGNORE" />
+    <column name="Uilocalteamsyncrequestid" type="INT">
+      <offset>216</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Uiautoteamsyncrequestid</redundant_name>
+    </column>
+    <column name="Bnokickingallowed" type="U8">
+      <offset>220</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>240</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Benableopeninstancing" type="IGNORE" />
+    <column name="Irewardindex" type="IGNORE" />
+    <column name="Icompletedmissionsversion" type="IGNORE" />
+    <column name="Ppchcompletedmissions" type="IGNORE" />
+    <column name="Hcurrentprogressionnode" type="IGNORE" />
+    <column name="Ballgameprogressionnodesunlocked" type="IGNORE" />
+    <column name="Binviteaccepted" type="IGNORE" />
+    <column name="Pxsessioninfo" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
     <column name="}" type="END" />
   </table>
 </parser>

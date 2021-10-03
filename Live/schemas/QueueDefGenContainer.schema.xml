@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="QueueGen" type="STRUCT">
+    <column name="Queuegen" type="STRUCT">
       <offset>0</offset>
       <subtable external="QueueDefGen" />
     </column>

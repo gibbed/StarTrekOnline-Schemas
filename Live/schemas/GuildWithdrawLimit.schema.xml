@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="eBagID" type="INT">
+    <column name="Ebagid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -16,21 +16,21 @@
       </flags>
       <static_define_list external="InvBagIDs" />
     </column>
-    <column name="iTimestamp" type="INT">
+    <column name="Itimestamp" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iWithdrawn" type="INT">
+    <column name="Iwithdrawn" type="INT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iItemsWithdrawn" type="INT">
+    <column name="Iitemswithdrawn" type="INT">
       <offset>12</offset>
       <flags>
         <flag>SUBSCRIBE</flag>

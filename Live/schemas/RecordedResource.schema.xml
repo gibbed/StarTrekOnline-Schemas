@@ -13,20 +13,20 @@
     <column name="ID" type="INT">
       <offset>4</offset>
     </column>
-    <column name="constant" type="STRING">
+    <column name="Constant" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="constantNP" type="STRING">
-      <offset>12</offset>
+    <column name="Constantnp" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="States" type="STRUCT">
-      <offset>16</offset>
+      <offset>24</offset>
       <subtable external="RecordedMMRState" />
     </column>
     <column name="}" type="END" />

@@ -7,58 +7,58 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="resourceDict" type="STRING">
+    <column name="Resourcedict" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="ResourceName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="resourceLocation" type="STRING">
-      <offset>8</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="resourceDisplayName" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>GLOBAL_NAME</flag>
-      </flags>
-      <dictionary_name>Message</dictionary_name>
-    </column>
-    <column name="resourceScope" type="STRING">
+    <column name="Resourcelocation" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="resourceTags" type="STRING">
-      <offset>20</offset>
+    <column name="Resourcedisplayname" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Resourcescope" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="resourceNotes" type="STRING">
-      <offset>24</offset>
+    <column name="Resourcetags" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="resourceIcon" type="STRING">
-      <offset>28</offset>
+    <column name="Resourcenotes" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Resourceicon" type="STRING">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="ResourceID" type="INT">
-      <offset>32</offset>
+      <offset>64</offset>
     </column>
     <column name="Ref" type="STRUCT">
-      <offset>36</offset>
+      <offset>72</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>

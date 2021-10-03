@@ -6,26 +6,27 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="lookupString" type="STRING">
+    <column name="{" type="START" />
+    <column name="Lookupstring" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="pathString" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>STRUCTPARAM</flag>
-        <flag>UNKNOWN_32</flag>
-      </flags>
-    </column>
-    <column name="rootTpi" type="INT">
+    <column name="Pathstring" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="Roottpi" type="INT64">
+      <offset>16</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
   </table>
 </parser>

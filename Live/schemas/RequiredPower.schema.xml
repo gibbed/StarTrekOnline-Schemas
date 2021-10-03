@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RequiredPowerPurpose" type="STRING">
+    <column name="Requiredpowerpurpose" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="RequiredPowerCategory" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="NumberOfRequiredPower" type="INT">
+    <column name="Requiredpowercategory" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Numberofrequiredpower" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

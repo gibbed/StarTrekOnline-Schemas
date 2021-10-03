@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FileSystemPackageType">
+  <elements type="int">
+    <element name="Unitialized">0</element>
+    <element name="Loose">2</element>
+    <element name="Hogg">4</element>
+    <element name="DataHogg">8</element>
+    <element name="MasterDisk">16</element>
+    <element name="DevPackage">32</element>
+    <element name="RetailPackage">64</element>
+    <element name="QAPackage">128</element>
+  </elements>
+</enum>

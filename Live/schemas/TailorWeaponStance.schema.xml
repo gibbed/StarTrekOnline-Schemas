@@ -14,58 +14,56 @@
       </flags>
       <dictionary_name>PCBoneDef</dictionary_name>
     </column>
-    <column name="StanceStickyBits" type="STRINGARRAY">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="StanceStickyFX" type="STRINGARRAY">
+    <column name="Stancestickyfx" type="STRINGARRAY">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DefaultGeo" type="STRING">
-      <offset>12</offset>
+    <column name="Defaultgeo" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DefaultName" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Defaultname" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Color0" type="F32FIXEDARRAY">
-      <offset>20</offset>
+      <offset>32</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Color1" type="F32FIXEDARRAY">
-      <offset>32</offset>
+      <offset>44</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Color2" type="F32FIXEDARRAY">
-      <offset>48</offset>
+      <offset>60</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Color3" type="F32FIXEDARRAY">
-      <offset>64</offset>
+      <offset>76</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="StanceStickyFXParamBlock" type="STRUCT">
-      <offset>80</offset>
+    <column name="Stancestickyfxparamblock" type="STRUCT">
+      <offset>96</offset>
       <subtable external="PowerFXParam" />
     </column>
-    <column name="StanceStickyFXParam" type="STRUCT">
-      <offset>80</offset>
+    <column name="Stancestickyfxparam" type="STRUCT">
+      <offset>96</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>StanceStickyFXParamBlock</redundant_name>
+      <redundant_name>Stancestickyfxparamblock</redundant_name>
       <subtable external="PowerFXParam_StructParam" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>84</offset>
+      <offset>104</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

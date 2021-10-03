@@ -14,11 +14,11 @@
       </flags>
     </column>
     <column name="DisplayName" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="MaxItemCount" type="INT">
-      <offset>16</offset>
+    <column name="Maxitemcount" type="INT">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

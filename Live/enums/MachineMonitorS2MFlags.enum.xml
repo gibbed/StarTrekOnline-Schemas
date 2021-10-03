@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MachineMonitorS2MFlags">
+  <elements type="int">
+    <element name="RESEND_ON_RECONNECT">1</element>
+    <element name="SUCCESS">2</element>
+    <element name="EARLY_MALLOCED">4</element>
+    <element name="SPECIAL_REQUEST">8</element>
+  </elements>
+</enum>

@@ -14,24 +14,24 @@
       </flags>
     </column>
     <column name="Type" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="AVChangeType" />
     </column>
-    <column name="MinVal" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="MaxVal" type="INT">
+    <column name="Minval" type="INT">
       <offset>12</offset>
     </column>
-    <column name="Val" type="INT">
+    <column name="Maxval" type="INT">
       <offset>16</offset>
     </column>
-    <column name="ClampValues" type="BIT">
+    <column name="Val" type="INT">
       <offset>20</offset>
+    </column>
+    <column name="Clampvalues" type="BIT">
+      <offset>24</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="StringVal" type="STRING">
-      <offset>24</offset>
+    <column name="Stringval" type="STRING">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

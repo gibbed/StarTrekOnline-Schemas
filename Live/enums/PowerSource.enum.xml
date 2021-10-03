@@ -10,5 +10,9 @@
     <element name="Propagation">6</element>
     <element name="Species">7</element>
     <element name="Temporary">8</element>
+    <element name="SuperCritterPet">9</element>
+    <element name="GroupProject">10</element>
+    <element name="ProjSpecific">11</element>
+    <element name="Modifier">12</element>
   </elements>
 </enum>

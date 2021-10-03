@@ -11,8 +11,8 @@
       <offset>0</offset>
       <subtable external="Category" />
     </column>
-    <column name="MainCategoryNames" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Maincategorynames" type="STRINGARRAY">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

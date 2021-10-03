@@ -11,34 +11,41 @@
       <offset>0</offset>
     </column>
     <column name="X" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="Y" type="INT">
       <offset>8</offset>
     </column>
-    <column name="onEntryFExpOpen" type="U8">
+    <column name="Y" type="INT">
       <offset>12</offset>
     </column>
-    <column name="onEntryFFlavExpOpen" type="U8">
-      <offset>13</offset>
-    </column>
-    <column name="onEntryExpOpen" type="U8">
-      <offset>14</offset>
-    </column>
-    <column name="onEntryFlavExpOpen" type="U8">
-      <offset>15</offset>
-    </column>
-    <column name="actionExpOpen" type="U8">
+    <column name="Onentryfexpopen" type="U8">
       <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="actionFlavExpOpen" type="U8">
+    <column name="Onentryfflavexpopen" type="U8">
       <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="subFSMExpOpen" type="U8">
+    <column name="Onentryexpopen" type="U8">
       <offset>18</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="trans" type="STRUCT">
+    <column name="Onentryflavexpopen" type="U8">
+      <offset>19</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Actionexpopen" type="U8">
       <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Actionflavexpopen" type="U8">
+      <offset>21</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Subfsmexpopen" type="U8">
+      <offset>22</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Trans" type="STRUCT">
+      <offset>24</offset>
       <subtable external="FSMEditorSaveTrans" />
     </column>
     <column name="}" type="END" />

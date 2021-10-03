@@ -7,49 +7,69 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="jointType" type="INT">
+    <column name="Jointtype" type="INT">
       <offset>0</offset>
       <static_define_list external="eJointType" />
     </column>
-    <column name="axis" type="INT">
+    <column name="Axis" type="INT">
       <offset>4</offset>
       <static_define_list external="eJointAxis" />
     </column>
-    <column name="spring" type="EMBEDDEDSTRUCT">
+    <column name="Customjointorientation" type="QUATPYR">
       <offset>8</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Spring" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
       <subtable external="DynJointSpring" />
     </column>
-    <column name="limitLow" type="EMBEDDEDSTRUCT">
-      <offset>16</offset>
+    <column name="Limitlow" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
       <subtable external="DynJointLimit" />
     </column>
-    <column name="limitHigh" type="EMBEDDEDSTRUCT">
-      <offset>28</offset>
+    <column name="Limithigh" type="EMBEDDEDSTRUCT">
+      <offset>44</offset>
       <subtable external="DynJointLimit" />
     </column>
-    <column name="swingSpring" type="EMBEDDEDSTRUCT">
-      <offset>40</offset>
+    <column name="Swingspring" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
       <subtable external="DynJointSpring" />
     </column>
-    <column name="swingLimit" type="EMBEDDEDSTRUCT">
-      <offset>48</offset>
+    <column name="Swinglimit" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
       <subtable external="DynJointLimit" />
     </column>
-    <column name="springEnabled" type="BIT">
-      <offset>60</offset>
+    <column name="Linearlimit" type="EMBEDDEDSTRUCT">
+      <offset>76</offset>
+      <subtable external="DynJointLimit" />
+    </column>
+    <column name="Springenabled" type="BIT">
+      <offset>88</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="limitEnabled" type="BIT">
-      <offset>60</offset>
+    <column name="Limitenabled" type="BIT">
+      <offset>88</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="swingSpringEnabled" type="BIT">
-      <offset>60</offset>
+    <column name="Swingspringenabled" type="BIT">
+      <offset>88</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="swingLimitEnabled" type="BIT">
-      <offset>60</offset>
+    <column name="Swinglimitenabled" type="BIT">
+      <offset>88</offset>
       <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Linearlimitxenabled" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Linearlimityenabled" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Linearlimitzenabled" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65542</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

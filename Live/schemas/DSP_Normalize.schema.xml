@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="normalize_fadetime" type="F32">
+    <column name="Normalize_Fadetime" type="F32">
       <offset>0</offset>
       <default>1167867904</default>
     </column>
-    <column name="normalize_threshold" type="F32">
+    <column name="Normalize_Threshold" type="F32">
       <offset>4</offset>
     </column>
-    <column name="normalize_maxamp" type="F32">
+    <column name="Normalize_Maxamp" type="F32">
       <offset>8</offset>
       <default>20</default>
     </column>

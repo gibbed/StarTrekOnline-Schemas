@@ -12,18 +12,18 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>20</default>
+      <default>22</default>
       <static_define_list external="UIGenType" />
     </column>
     <column name="EntityRef" type="INT">
       <offset>4</offset>
     </column>
-    <column name="EntityFxState" type="STRUCT">
+    <column name="Entityfxstate" type="STRUCT">
       <offset>8</offset>
       <subtable external="UIGen3DFxState" />
     </column>
-    <column name="ScreenDist" type="F32">
-      <offset>12</offset>
+    <column name="Screendist" type="F32">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

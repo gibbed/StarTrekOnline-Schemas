@@ -7,23 +7,30 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RGBoneName" type="STRING">
+    <column name="Rgbonename" type="STRING">
       <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="RGParentBoneName" type="STRING">
-      <offset>4</offset>
+    <column name="Rgparentbonename" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
     <column name="Secondary" type="U8">
-      <offset>8</offset>
-    </column>
-    <column name="EnableAngle" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="LimitAngle" type="F32">
       <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="qPostRoot" type="QUATPYR">
+    <column name="Enableangle" type="F32">
       <offset>20</offset>
+    </column>
+    <column name="Limitangle" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Qpostroot" type="QUATPYR">
+      <offset>28</offset>
       <num_elements>4</num_elements>
     </column>
     <column name="}" type="END" />

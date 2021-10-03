@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="AsyncStreamZipConfig">
+  <table>
+    <column name="AsyncStreamZipConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Chunksize_Childstream" type="INT">
+      <offset>0</offset>
+      <default>500000</default>
+    </column>
+    <column name="Maxchildstreamrequests" type="INT">
+      <offset>4</offset>
+      <default>5</default>
+    </column>
+    <column name="Chunksize_Fromzip" type="INT">
+      <offset>8</offset>
+      <default>500000</default>
+    </column>
+    <column name="Zipasgzfile" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Zippedcachesize" type="INT">
+      <offset>16</offset>
+      <default>5000000</default>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

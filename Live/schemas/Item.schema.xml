@@ -15,7 +15,7 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="hItem" type="REFERENCE">
+    <column name="Hitem" type="REFERENCE">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -24,15 +24,15 @@
       </flags>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="pchDisplayName" type="STRING">
-      <offset>12</offset>
+    <column name="Pchdisplayname" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>NO_NETSEND</flag>
       </flags>
     </column>
-    <column name="pAlgoProps" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Palgoprops" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -40,8 +40,8 @@
       </flags>
       <subtable external="AlgoItemProps" />
     </column>
-    <column name="pSpecialProps" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Pspecialprops" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -49,8 +49,8 @@
       </flags>
       <subtable external="SpecialItemProps" />
     </column>
-    <column name="ppPowers" type="STRUCT">
-      <offset>24</offset>
+    <column name="Pppowers" type="STRUCT">
+      <offset>40</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
@@ -58,8 +58,36 @@
       </flags>
       <subtable external="Power" />
     </column>
-    <column name="Flags" type="U8">
-      <offset>28</offset>
+    <column name="Prewarddata" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="ItemRewardData" />
+    </column>
+    <column name="Count" type="INT">
+      <offset>56</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <default>1</default>
+    </column>
+    <column name="Owner" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Timedaccountbound" type="INT">
+      <offset>64</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Flags" type="INT16">
+      <offset>68</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -68,65 +96,44 @@
       <static_define_list external="ItemFlag" />
       <format>FLAGS</format>
     </column>
-    <column name="Count" type="INT">
-      <offset>32</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>LOGIN_SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <default>1</default>
+    <column name="Numeric_Op" type="U8">
+      <offset>70</offset>
     </column>
-    <column name="numeric_op" type="U8">
-      <offset>36</offset>
-    </column>
-    <column name="pRewardData" type="OPTIONALSTRUCT">
-      <offset>40</offset>
-      <flags>
-        <flag>SERVER_ONLY</flag>
-      </flags>
-      <subtable external="ItemRewardData" />
-    </column>
-    <column name="uSetCount" type="U8">
-      <offset>44</offset>
+    <column name="Usetcount" type="U8">
+      <offset>71</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
     </column>
-    <column name="hBroadcastChatMessage" type="REFERENCE">
-      <offset>48</offset>
-      <flags>
-        <flag>SERVER_ONLY</flag>
-      </flags>
-      <dictionary_name>Message</dictionary_name>
+    <column name="Ipendingtransactioncount" type="U8">
+      <offset>72</offset>
     </column>
-    <column name="owner" type="INT">
-      <offset>52</offset>
-    </column>
-    <column name="bWarpActive" type="BIT">
-      <offset>56</offset>
+    <column name="Bwarpactive" type="BIT">
+      <offset>73</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="bUnlootable" type="BIT">
-      <offset>56</offset>
+    <column name="Bunlootable" type="BIT">
+      <offset>73</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="bExemptFromLootMode" type="BIT">
-      <offset>56</offset>
+    <column name="Bexemptfromlootmode" type="BIT">
+      <offset>73</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="bTransactionPending" type="BIT">
-      <offset>56</offset>
+    <column name="Btransactionpending" type="BIT">
+      <offset>73</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="bForceBind" type="BIT">
-      <offset>56</offset>
+    <column name="Bforcebind" type="BIT">
+      <offset>73</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="iPendingTransactionCount" type="U8">
-      <offset>60</offset>
+    <column name="Bforcebindtoaccount" type="BIT">
+      <offset>73</offset>
+      <bit_offset>65541</bit_offset>
     </column>
-    <column name="bHide" type="IGNORE" />
+    <column name="Bhide" type="IGNORE" />
+    <column name="Iuitieroverride" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

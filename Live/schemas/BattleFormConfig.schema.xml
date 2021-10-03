@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TimerEnabled" type="INT">
+    <column name="Timerenabled" type="INT">
       <offset>0</offset>
     </column>
-    <column name="TimerDisabled" type="INT">
+    <column name="Timerdisabled" type="INT">
       <offset>4</offset>
     </column>
-    <column name="MapsOptional" type="STRINGARRAY">
+    <column name="Mapsoptional" type="STRINGARRAY">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>

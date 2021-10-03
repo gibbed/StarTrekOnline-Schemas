@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NumPlayers" type="INT">
+    <column name="Numplayers" type="INT">
       <offset>0</offset>
     </column>
-    <column name="NumGameServers" type="INT">
+    <column name="Numgameservers" type="INT">
       <offset>4</offset>
     </column>
-    <column name="NumInMainQueue" type="INT">
+    <column name="Numinmainqueue" type="INT">
       <offset>8</offset>
     </column>
-    <column name="NumInVIPQueue" type="INT">
+    <column name="Numinvipqueue" type="INT">
       <offset>12</offset>
     </column>
-    <column name="NumLoggingIn" type="INT">
+    <column name="Numloggingin" type="INT">
       <offset>16</offset>
     </column>
     <column name="}" type="END" />

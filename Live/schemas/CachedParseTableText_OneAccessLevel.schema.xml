@@ -13,8 +13,8 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="OutString" type="STRING">
-      <offset>4</offset>
+    <column name="Outstring" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

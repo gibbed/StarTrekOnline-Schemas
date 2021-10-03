@@ -6,29 +6,28 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="ParamName" type="STRING">
+    <column name="{" type="START" />
+    <column name="Paramname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="ParamType" type="INT">
-      <offset>4</offset>
-      <flags>
-        <flag>STRUCTPARAM</flag>
-      </flags>
-      <default>5</default>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
-    </column>
-    <column name="LineNum" type="LINENUM">
+    <column name="Paramtype" type="INT">
       <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
+      <default>5</default>
+      <static_define_list external="DynFxDictType" />
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="Linenum" type="LINENUM">
+      <offset>12</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
   </table>
 </parser>

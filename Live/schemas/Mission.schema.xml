@@ -16,24 +16,24 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="missionNameOrig" type="STRING">
+    <column name="Missionnameorig" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <redundant_name>MissionName</redundant_name>
     </column>
     <column name="Version" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
     <column name="Children" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>ALWAYS_ALLOC</flag>
         <flag>SUBSCRIBE</flag>
@@ -41,27 +41,27 @@
       </flags>
       <subtable external="Mission" />
     </column>
-    <column name="childFullMissions" type="STRINGARRAY">
-      <offset>12</offset>
+    <column name="Childfullmissions" type="STRINGARRAY">
+      <offset>24</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="displayOrder" type="INT">
-      <offset>16</offset>
+    <column name="Displayorder" type="INT">
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pchTemplateVarGroupOverride" type="STRING">
-      <offset>20</offset>
+    <column name="Pchtemplatevargroupoverride" type="STRING">
+      <offset>40</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eaMissionVariables" type="STRUCT">
-      <offset>24</offset>
+    <column name="Eamissionvariables" type="STRUCT">
+      <offset>48</offset>
       <flags>
         <flag>ALWAYS_ALLOC</flag>
         <flag>PERSIST</flag>
@@ -69,7 +69,7 @@
       <subtable external="WorldVariableContainer" />
     </column>
     <column name="State" type="INT">
-      <offset>28</offset>
+      <offset>56</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
@@ -77,167 +77,229 @@
       <static_define_list external="MissionState" />
     </column>
     <column name="StartTime" type="INT">
-      <offset>32</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="timerStartTime" type="INT">
-      <offset>36</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="EventCounts" type="STRUCT">
-      <offset>40</offset>
-      <flags>
-        <flag>ALWAYS_ALLOC</flag>
-        <flag>SERVER_ONLY</flag>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
-      <subtable external="MissionEventContainer" />
-    </column>
-    <column name="eaEventCounts" type="STRUCT">
-      <offset>40</offset>
-      <flags>
-        <flag>ALIAS</flag>
-        <flag>ALWAYS_ALLOC</flag>
-        <flag>SERVER_ONLY</flag>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
-      <redundant_name>EventCounts</redundant_name>
-      <subtable external="MissionEventContainer" />
-    </column>
-    <column name="CreditType" type="INT">
-      <offset>44</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <static_define_list external="MissionCreditType" />
-    </column>
-    <column name="eCreditType" type="INT">
-      <offset>44</offset>
-      <flags>
-        <flag>ALIAS</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <redundant_name>CreditType</redundant_name>
-      <static_define_list external="MissionCreditType" />
-    </column>
-    <column name="permaComplete" type="U8">
-      <offset>48</offset>
-      <flags>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="Tracking" type="U8">
-      <offset>49</offset>
-      <flags>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
-    </column>
-    <column name="bDiscovered" type="U8">
-      <offset>50</offset>
-      <flags>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
-    </column>
-    <column name="bChildFullMission" type="U8">
-      <offset>51</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="bHiddenFullChild" type="U8">
-      <offset>52</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="iLevel" type="U8">
-      <offset>53</offset>
-      <flags>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="bHidden" type="U8">
-      <offset>54</offset>
-      <flags>
-        <flag>SELF_ONLY</flag>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
-    </column>
-    <column name="TrackedMission" type="STRING">
-      <offset>56</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pchTrackedMission" type="STRING">
-      <offset>56</offset>
-      <flags>
-        <flag>ALIAS</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <redundant_name>TrackedMission</redundant_name>
-    </column>
-    <column name="pUGCMissionData" type="OPTIONALSTRUCT">
       <offset>60</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <subtable external="UGCMissionData" />
     </column>
-    <column name="rootDefOrig" type="REFERENCE">
+    <column name="Missionstarttime" type="INT">
+      <offset>60</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>StartTime</redundant_name>
+    </column>
+    <column name="Missionstarttime" type="INT">
+      <offset>60</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>StartTime</redundant_name>
+    </column>
+    <column name="Timerstarttime" type="INT">
       <offset>64</offset>
-      <dictionary_name>MissionDef</dictionary_name>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
     </column>
-    <column name="rootDefOverride" type="REFERENCE">
-      <offset>68</offset>
-      <dictionary_name>MissionDef</dictionary_name>
+    <column name="Missiontimerstarttime" type="INT">
+      <offset>64</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Timerstarttime</redundant_name>
     </column>
-    <column name="missionNameOverride" type="STRING">
+    <column name="Missiontimerstarttime" type="INT">
+      <offset>64</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Timerstarttime</redundant_name>
+    </column>
+    <column name="Eventcounts" type="STRUCT">
       <offset>72</offset>
+      <flags>
+        <flag>ALWAYS_ALLOC</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="MissionEventContainer" />
+    </column>
+    <column name="Eaeventcounts" type="STRUCT">
+      <offset>72</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>ALWAYS_ALLOC</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Eventcounts</redundant_name>
+      <subtable external="MissionEventContainer" />
+    </column>
+    <column name="Credittype" type="INT">
+      <offset>80</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="MissionCreditType" />
+    </column>
+    <column name="Ecredittype" type="INT">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Credittype</redundant_name>
+      <static_define_list external="MissionCreditType" />
+    </column>
+    <column name="Permacomplete" type="U8">
+      <offset>84</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Tracking" type="U8">
+      <offset>85</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bdiscovered" type="U8">
+      <offset>86</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bchildfullmission" type="U8">
+      <offset>87</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bhiddenfullchild" type="U8">
+      <offset>88</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ilevel" type="U8">
+      <offset>89</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Bhidden" type="U8">
+      <offset>90</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Trackedmission" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchtrackedmission" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Trackedmission</redundant_name>
+    </column>
+    <column name="Bfteammatesonmission" type="U8">
+      <offset>104</offset>
+    </column>
+    <column name="Bteamleaderprimarymission" type="U8">
+      <offset>105</offset>
+    </column>
+    <column name="Rootdeforig" type="REFERENCE">
+      <offset>112</offset>
+      <dictionary_name>MissionDef</dictionary_name>
+    </column>
+    <column name="Rootdefoverride" type="REFERENCE">
+      <offset>120</offset>
+      <dictionary_name>MissionDef</dictionary_name>
+    </column>
+    <column name="Missionnameoverride" type="STRING">
+      <offset>128</offset>
     </column>
     <column name="Count" type="INT">
-      <offset>76</offset>
+      <offset>136</offset>
     </column>
     <column name="Target" type="INT">
-      <offset>80</offset>
+      <offset>140</offset>
     </column>
-    <column name="expirationTime" type="INT">
-      <offset>84</offset>
+    <column name="ExpirationTime" type="INT">
+      <offset>144</offset>
     </column>
-    <column name="debugInfo" type="OPTIONALSTRUCT">
-      <offset>88</offset>
+    <column name="Missionexpirationtime" type="INT">
+      <offset>144</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>ExpirationTime</redundant_name>
+    </column>
+    <column name="Missionexpirationtime" type="INT">
+      <offset>144</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>ExpirationTime</redundant_name>
+    </column>
+    <column name="Missionexpirationpausetime" type="INT">
+      <offset>148</offset>
+    </column>
+    <column name="Debuginfo" type="OPTIONALSTRUCT">
+      <offset>152</offset>
       <subtable external="MissionDebug" />
     </column>
-    <column name="openChildren" type="BIT">
-      <offset>92</offset>
+    <column name="Openchildren" type="BIT">
+      <offset>160</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="Depth" type="INT">
-      <offset>96</offset>
+      <offset>164</offset>
     </column>
-    <column name="dirtyBit" type="U8">
-      <offset>100</offset>
+    <column name="Dirtybit" type="U8">
+      <offset>168</offset>
       <flags>
         <flag>NO_NETSEND</flag>
         <flag>DIRTY_BIT</flag>
+      </flags>
+    </column>
+    <column name="Pugcmissiondata" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
       </flags>
     </column>
     <column name="}" type="END" />

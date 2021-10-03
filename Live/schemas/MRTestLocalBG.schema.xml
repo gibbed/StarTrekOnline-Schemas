@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="movhRunDisabled" type="INT">
+    <column name="Movhrundisabled" type="INT">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

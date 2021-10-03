@@ -7,77 +7,85 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="camera_facing" type="BIT">
+    <column name="Camera_Facing" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="axis_camera_facing" type="BIT">
+    <column name="Axis_Camera_Facing" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="unlit" type="BIT">
+    <column name="Unlit" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="occluder" type="BIT">
+    <column name="Occluder" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="double_sided_occluder" type="BIT">
+    <column name="Double_Sided_Occluder" type="BIT">
       <offset>0</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="low_detail" type="BIT">
+    <column name="Low_Detail" type="BIT">
       <offset>0</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="high_detail" type="BIT">
+    <column name="High_Detail" type="BIT">
       <offset>0</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="high_fill_detail" type="BIT">
+    <column name="High_Fill_Detail" type="BIT">
       <offset>0</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="map_snap_hidden" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Map_Snap_Hidden" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="no_shadow_cast" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="No_Shadow_Cast" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="no_shadow_receive" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="No_Shadow_Receive" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="force_trunk_wind" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Force_Trunk_Wind" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65539</bit_offset>
     </column>
-    <column name="no_vertex_lighting" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65548</bit_offset>
+    <column name="No_Vertex_Lighting" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65540</bit_offset>
     </column>
-    <column name="use_character_lighting" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65549</bit_offset>
+    <column name="Use_Character_Lighting" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65541</bit_offset>
     </column>
-    <column name="future_flag2" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65550</bit_offset>
+    <column name="No_Splat_Collision" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65542</bit_offset>
     </column>
-    <column name="future_flag3" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65551</bit_offset>
+    <column name="Use_Distance_Field" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65543</bit_offset>
     </column>
-    <column name="future_flag4" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65552</bit_offset>
+    <column name="Use_Per_Object_Diffuse_Probes" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="future_flag5" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65553</bit_offset>
+    <column name="Future_Flag3" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Future_Flag4" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Future_Flag5" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65539</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

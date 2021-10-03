@@ -7,50 +7,54 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ChatWindowName" type="STRING">
+    <column name="Chatwindowname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="TabID" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="FilterDisplayName" type="STRING">
+    <column name="Tabid" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Filterdisplayname" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="FilterSystemName" type="STRING">
-      <offset>12</offset>
+    <column name="Filtersystemname" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="kMessageType" type="INT">
-      <offset>16</offset>
+    <column name="Kmessagetype" type="INT">
+      <offset>32</offset>
       <static_define_list external="ChatLogEntryType" />
     </column>
     <column name="Color" type="INT">
-      <offset>20</offset>
+      <offset>36</offset>
     </column>
-    <column name="ColorVec" type="F32FIXEDARRAY">
-      <offset>24</offset>
+    <column name="Colorvec" type="F32FIXEDARRAY">
+      <offset>40</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Filtered" type="BIT">
-      <offset>40</offset>
+      <offset>56</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MayUnsubscribe" type="BIT">
-      <offset>40</offset>
+    <column name="Mayunsubscribe" type="BIT">
+      <offset>56</offset>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsChannel" type="BIT">
-      <offset>40</offset>
+    <column name="Ischannel" type="BIT">
+      <offset>56</offset>
       <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

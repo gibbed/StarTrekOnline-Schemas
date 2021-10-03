@@ -7,65 +7,50 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ScoreboardName" type="STRING">
+    <column name="Scoreboardname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="State" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="ScoreboardState" />
     </column>
-    <column name="uCounterTime" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="Countdown" type="U8">
+    <column name="Ucountertime" type="INT">
       <offset>12</offset>
     </column>
-    <column name="Overtime" type="U8">
-      <offset>13</offset>
-    </column>
-    <column name="uTotalMatchTime" type="INT">
+    <column name="Countdown" type="U8">
       <offset>16</offset>
     </column>
-    <column name="GroupGameParams" type="POLYMORPH">
-      <offset>20</offset>
-      <subtable>
-        <table>
-          <column name="CTFGroupParams" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="CTFGroupParams" />
-          </column>
-          <column name="CUSGroupParams" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="CUSGroupParams" />
-          </column>
-          <column name="DMGroupParams" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="DMGroupParams" />
-          </column>
-          <column name="DOMGroupParams" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="DOMGroupParams" />
-          </column>
-          <column name="LMSGroupParams" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="LMSGroupParams" />
-          </column>
-          <column name="TDEGroupParams" type="EMBEDDEDSTRUCT">
-            <offset>0</offset>
-            <subtable external="TDEGroupParams" />
-          </column>
-        </table>
-      </subtable>
+    <column name="Overtime" type="U8">
+      <offset>17</offset>
     </column>
-    <column name="GameSpecific" type="STRUCT">
+    <column name="Utotalmatchtime" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Groupgameparams" type="POLYMORPH">
       <offset>24</offset>
+      <subtable external="_PolyTable_PVPGroupGameParams" />
+    </column>
+    <column name="Gamespecific" type="STRUCT">
+      <offset>32</offset>
       <subtable external="DOMControlPoint" />
     </column>
-    <column name="pvpRules" type="EMBEDDEDSTRUCT">
-      <offset>28</offset>
+    <column name="Lanepoint" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="LaneControlPoint" />
+    </column>
+    <column name="Unlockedpoint" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="UnlockedPvPPoint" />
+    </column>
+    <column name="Structurepoint" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="PvPStructurePoint" />
+    </column>
+    <column name="Pvprules" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
       <subtable external="PVPPublicGameRules" />
     </column>
     <column name="}" type="END" />

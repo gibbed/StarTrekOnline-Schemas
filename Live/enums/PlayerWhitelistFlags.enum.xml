@@ -5,5 +5,6 @@
     <element name="Invites">1</element>
     <element name="Trades">2</element>
     <element name="PvPInvites">4</element>
+    <element name="Email">8</element>
   </elements>
 </enum>

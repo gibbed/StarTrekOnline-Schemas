@@ -13,65 +13,69 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="DetailSeed" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="PathSpecifier" type="INT">
+    <column name="Detailseed" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Pathspecifier" type="INT">
+      <offset>12</offset>
       <static_define_list external="GenesisTagOrName" />
     </column>
-    <column name="PathTags2" type="STRINGARRAY">
-      <offset>12</offset>
-    </column>
-    <column name="PathTags" type="STRING">
+    <column name="Pathtags2" type="STRINGARRAY">
       <offset>16</offset>
     </column>
-    <column name="PathDef" type="REFERENCE">
-      <offset>20</offset>
+    <column name="Pathtags" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Pathdef" type="REFERENCE">
+      <offset>32</offset>
       <dictionary_name>GenesisPathDef</dictionary_name>
     </column>
-    <column name="detail_kit_1" type="IGNORE">
+    <column name="Detail_Kit_1" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">GenesisRoomDetailKitLayout</format_string>
+      </format_strings>
     </column>
-    <column name="DetailSpecifier" type="INT">
-      <offset>24</offset>
+    <column name="Detailspecifier" type="INT">
+      <offset>40</offset>
       <static_define_list external="GenesisTagNameDefault" />
     </column>
-    <column name="DetailTags2" type="STRINGARRAY">
-      <offset>28</offset>
+    <column name="Detailtags2" type="STRINGARRAY">
+      <offset>48</offset>
     </column>
-    <column name="DetailTags" type="STRING">
-      <offset>32</offset>
+    <column name="Detailtags" type="STRING">
+      <offset>56</offset>
     </column>
-    <column name="DetailKit" type="REFERENCE">
-      <offset>36</offset>
+    <column name="Detailkit" type="REFERENCE">
+      <offset>64</offset>
       <dictionary_name>GenesisDetailKit</dictionary_name>
     </column>
-    <column name="DetailDensityOverride" type="U8">
-      <offset>40</offset>
-    </column>
-    <column name="DetailDensity" type="F32">
-      <offset>44</offset>
-    </column>
-    <column name="Detail2" type="EMBEDDEDSTRUCT">
-      <offset>48</offset>
-      <subtable external="GenesisRoomDetailKitLayout" />
-    </column>
-    <column name="MinLength" type="INT">
+    <column name="Detaildensityoverride" type="U8">
       <offset>72</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MaxLength" type="INT">
+    <column name="Detaildensity" type="F32">
       <offset>76</offset>
     </column>
-    <column name="StartRoom" type="STRINGARRAY">
+    <column name="Detail2" type="EMBEDDEDSTRUCT">
       <offset>80</offset>
+      <subtable external="GenesisRoomDetailKitLayout" />
     </column>
-    <column name="EndRoom" type="STRINGARRAY">
-      <offset>84</offset>
+    <column name="Minlength" type="INT">
+      <offset>120</offset>
     </column>
-    <column name="LightDetail" type="IGNORE">
+    <column name="Maxlength" type="INT">
+      <offset>124</offset>
+    </column>
+    <column name="Startroom" type="STRINGARRAY">
+      <offset>128</offset>
+    </column>
+    <column name="Endroom" type="STRINGARRAY">
+      <offset>136</offset>
+    </column>
+    <column name="Lightdetail" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>

@@ -16,19 +16,19 @@
       </flags>
     </column>
     <column name="DisplayName" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Description" type="EMBEDDEDSTRUCT">
-      <offset>16</offset>
+      <offset>32</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="NotifyType" type="INTARRAY">
-      <offset>28</offset>
+    <column name="Notifytype" type="INTARRAY">
+      <offset>56</offset>
       <static_define_list external="NotifyType" />
     </column>
     <column name="Flags" type="INT">
-      <offset>32</offset>
+      <offset>64</offset>
       <static_define_list external="NotifySettingFlags" />
       <format>FLAGS</format>
     </column>

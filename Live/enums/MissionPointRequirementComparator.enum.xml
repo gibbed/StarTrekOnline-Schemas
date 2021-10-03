@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MissionPointRequirementComparator">
+  <elements type="int">
+    <element name="Equals">0</element>
+    <element name="NotEqual">1</element>
+    <element name="LessThan">2</element>
+    <element name="LessThanOrEqual">3</element>
+    <element name="GreaterThan">4</element>
+    <element name="GreaterThanOrEqual">5</element>
+  </elements>
+</enum>

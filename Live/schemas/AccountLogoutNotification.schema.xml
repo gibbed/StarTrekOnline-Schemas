@@ -7,26 +7,35 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uPlayTime" type="INT">
+    <column name="Uplaytime" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uAccountID" type="INT">
+    <column name="Uaccountid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="ProductName" type="STRING">
+    <column name="Ucharacterid" type="INT">
       <offset>8</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
     </column>
-    <column name="ShardCategory" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
-    </column>
-    <column name="uLevel" type="INT">
+    <column name="ProductName" type="STRING">
       <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Shardcategory" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Ulevel" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Reason" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

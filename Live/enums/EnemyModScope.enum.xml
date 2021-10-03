@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="EnemyModScope">
+  <elements type="int">
+    <element name="Common">0</element>
+    <element name="Legendary">1</element>
+    <element name="Encounter">2</element>
+    <element name="Static">3</element>
+    <element name="Boss">4</element>
+  </elements>
+</enum>

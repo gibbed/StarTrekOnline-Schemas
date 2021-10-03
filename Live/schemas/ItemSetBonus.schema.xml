@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemSetBonus">
+  <table>
+    <column name="ItemSetBonus" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Setcount" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Active" type="U8">
+      <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Innatepowerdef" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="PowerDef" />
+    </column>
+    <column name="Innatescale" type="F32ARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Itempowerdefref" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="ItemPowerDefRef" />
+    </column>
+    <column name="PowerDef" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="PowerDef" />
+    </column>
+    <column name="Power" type="STRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="Power" />
+    </column>
+    <column name="Autodesc" type="STRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="AutoDescPower" />
+    </column>
+    <column name="Innatedescription" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Powersdescription" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

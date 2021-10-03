@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SpecializationDef">
+  <table>
+    <column name="SpecializationDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Powertree" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>Texture</dictionary_name>
+    </column>
+    <column name="Spectype" type="INT">
+      <offset>16</offset>
+      <static_define_list external="SpecializationType" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Reward" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="SpecializationPointsSpentReward" />
+    </column>
+    <column name="Powernodereward" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="SpecializationPowerNodeReward" />
+    </column>
+    <column name="Rewardchoice" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="SpecializationRewardChoice" />
+    </column>
+    <column name="Ultimatechoice" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="SpecializationUltimateChoice" />
+    </column>
+    <column name="Hpowertreedef" type="REFERENCE">
+      <offset>56</offset>
+      <flags>
+        <flag>NON_NULL_REF</flag>
+        <flag>NO_WRITE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <dictionary_name>PowerTreeDef</dictionary_name>
+    </column>
+    <column name="Hidden" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Useuisort" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Useuisortpc" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Hastierrewards" type="BIT">
+      <offset>64</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65539</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Filterbyplayerclass" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

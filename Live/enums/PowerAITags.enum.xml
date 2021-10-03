@@ -13,6 +13,19 @@
     <element name="AreaEffect">1024</element>
     <element name="OutOfCombat">2048</element>
     <element name="UseTargetPos">4096</element>
-    <element name="UseWithinPreferredMax">8192</element>
+    <element name="UseTargetPosAtFeet">8192</element>
+    <element name="UseWithinPreferredMax">16384</element>
+    <element name="Tactical">32768</element>
+    <element name="Soldier">65536</element>
+    <element name="Security">131072</element>
+    <element name="Special_Forces">262144</element>
+    <element name="Engineering">524288</element>
+    <element name="Combat_Engineering">1048576</element>
+    <element name="Technician">2097152</element>
+    <element name="Fabrication_Engineering">4194304</element>
+    <element name="Science">8388608</element>
+    <element name="Scientist">16777216</element>
+    <element name="Researcher">33554432</element>
+    <element name="Doctor">67108864</element>
   </elements>
 </enum>

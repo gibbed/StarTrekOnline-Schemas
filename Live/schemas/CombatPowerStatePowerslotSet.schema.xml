@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PowerSlot" type="STRUCT">
+    <column name="Powerslot" type="STRUCT">
       <offset>0</offset>
       <subtable external="CombatPowerStatePowerSlot" />
     </column>
-    <column name="BasePowerSlot" type="INT">
-      <offset>4</offset>
+    <column name="Basepowerslot" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

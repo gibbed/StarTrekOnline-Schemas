@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ItemMoveSlotFlag">
+  <elements type="int">
+    <element name="MoveRestricted">1</element>
+    <element name="InUnaccessibleBags">2</element>
+    <element name="AlreadyInBag">4</element>
+    <element name="AlreadyInSlot">8</element>
+    <element name="SubscribeContainers">16</element>
+    <element name="InSavedPets">32</element>
+    <element name="InPuppets">64</element>
+    <element name="InSharedBank">128</element>
+    <element name="InGuildBank">256</element>
+    <element name="InOverflow">512</element>
+    <element name="InEquipment">1024</element>
+    <element name="CheckNearbyContacts">4096</element>
+    <element name="CheckDestinationOnly">8192</element>
+  </elements>
+</enum>

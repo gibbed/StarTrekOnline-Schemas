@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MTCostumeListReferenceType">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="MicroTransactionDef">1</element>
+    <element name="PlayerCostume">2</element>
+    <element name="ItemDef">3</element>
+    <element name="CostumeSet">4</element>
+    <element name="MicroTrans2Def">5</element>
+    <element name="Generic">6</element>
+    <element name="COUNT">7</element>
+  </elements>
+</enum>

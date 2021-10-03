@@ -7,27 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iAccountID" type="INT">
+    <column name="Iaccountid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iVersion" type="INT">
+    <column name="Iversion" type="INT">
       <offset>4</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eaPendingKeys" type="STRUCT">
+    <column name="Eapendingkeys" type="STRUCT">
       <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="AttribValuePair" />
     </column>
-    <column name="hData" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Hdata" type="REFERENCE">
+      <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
@@ -36,40 +36,57 @@
         <format_string name="EXPORT_CONTAINER_TYPE">GameAccountData</format_string>
       </format_strings>
     </column>
-    <column name="hTempData" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Htempdata" type="REFERENCE">
+      <offset>24</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>
       <dictionary_name>CopyDict_GameAccountData</dictionary_name>
     </column>
-    <column name="eaGamePermissionMaxValueNumerics" type="STRUCT">
-      <offset>20</offset>
+    <column name="Eagamepermissionmaxvaluenumerics" type="STRUCT">
+      <offset>32</offset>
       <flags>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="GamePermissionNumerics" />
     </column>
-    <column name="uExtractLastUpdated" type="INT">
-      <offset>24</offset>
+    <column name="Uextractlastupdated" type="INT">
+      <offset>40</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>
     </column>
-    <column name="pExtract" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Pextract" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>
       <subtable external="GameAccountDataExtract" />
     </column>
-    <column name="bSteamLogin" type="BIT">
-      <offset>32</offset>
+    <column name="Bsteamlogin" type="BIT">
+      <offset>56</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>
       <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Barclogin" type="BIT">
+      <offset>56</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Ppendingkeyvalueoperations" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="Easavedgamepermissionmaxvaluenumerics" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

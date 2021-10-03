@@ -7,35 +7,37 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="Ctrl1_AngleOffset" type="F32">
+    <column name="Ctrl1_Angleoffset" type="F32">
       <offset>0</offset>
     </column>
-    <column name="Ctrl1_AngleOffsetMax" type="F32">
+    <column name="Ctrl1_Angleoffsetmax" type="F32">
       <offset>4</offset>
     </column>
-    <column name="Ctrl1_DistanceMin" type="F32">
+    <column name="Ctrl1_Distancemin" type="F32">
       <offset>8</offset>
     </column>
-    <column name="Ctrl1_DistanceMax" type="F32">
+    <column name="Ctrl1_Distancemax" type="F32">
       <offset>12</offset>
     </column>
-    <column name="Ctrl2_AngleOffset" type="F32">
+    <column name="Ctrl2_Angleoffset" type="F32">
       <offset>16</offset>
     </column>
-    <column name="Ctrl2_AngleOffsetMax" type="F32">
+    <column name="Ctrl2_Angleoffsetmax" type="F32">
       <offset>20</offset>
     </column>
-    <column name="Ctrl2_DistanceMin" type="F32">
+    <column name="Ctrl2_Distancemin" type="F32">
       <offset>24</offset>
     </column>
-    <column name="Ctrl2_DistanceMax" type="F32">
+    <column name="Ctrl2_Distancemax" type="F32">
       <offset>28</offset>
     </column>
-    <column name="Ctrl1_AllowMirror" type="U8">
+    <column name="Ctrl1_Allowmirror" type="U8">
       <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="Ctrl2_AllowMirror" type="U8">
+    <column name="Ctrl2_Allowmirror" type="U8">
       <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

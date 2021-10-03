@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GroupProjectInformationType">
+  <elements type="int">
+    <element name="Name">0</element>
+    <element name="Message">1</element>
+  </elements>
+</enum>

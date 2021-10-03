@@ -11,19 +11,19 @@
       <offset>0</offset>
     </column>
     <column name="Connection" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="GenesisNodeConnection" />
     </column>
-    <column name="SideTrail" type="BIT">
-      <offset>8</offset>
+    <column name="Sidetrail" type="BIT">
+      <offset>16</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="Mission" type="STRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="GenesisNodeMission" />
     </column>
-    <column name="SourceContext" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Sourcecontext" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="GenesisRuntimeErrorContext" />
     </column>
     <column name="}" type="END" />

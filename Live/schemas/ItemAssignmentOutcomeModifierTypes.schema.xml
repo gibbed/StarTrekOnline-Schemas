@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ModifierType" type="STRUCT">
+    <column name="Modifiertype" type="STRUCT">
       <offset>0</offset>
       <subtable external="ItemAssignmentOutcomeModifierTypeData" />
     </column>

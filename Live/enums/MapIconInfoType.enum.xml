@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <enum name="MapIconInfoType">
   <elements type="int">
+    <element name="All">-1</element>
     <element name="None">0</element>
     <element name="Self">1</element>
     <element name="Pet">2</element>
     <element name="Team">4</element>
     <element name="Guild">8</element>
     <element name="Player">16</element>
+    <element name="PlayerCharacter">28</element>
     <element name="Foe">32</element>
     <element name="NPC">64</element>
     <element name="Contact">128</element>
@@ -26,6 +28,9 @@
     <element name="MissionContactRepeatable">2097152</element>
     <element name="MissionContactUnavailable">4194304</element>
     <element name="MissionContactLowLevel">8388608</element>
+    <element name="AnyMissionContact">15728640</element>
+    <element name="AnyContact">16743296</element>
+    <element name="Entity">16743356</element>
     <element name="OpenMission">16777216</element>
     <element name="MissionWaypoint">33554432</element>
     <element name="Landmark">67108864</element>
@@ -33,10 +38,5 @@
     <element name="SavedWaypoint">268435456</element>
     <element name="HarvestNode">536870912</element>
     <element name="Camera">1073741824</element>
-    <element name="PlayerCharacter">28</element>
-    <element name="AnyMissionContact">15728640</element>
-    <element name="AnyContact">16743296</element>
-    <element name="Entity">16743356</element>
-    <element name="All">-1</element>
   </elements>
 </enum>

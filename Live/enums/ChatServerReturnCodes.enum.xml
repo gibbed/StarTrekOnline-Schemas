@@ -20,17 +20,18 @@
     <element name="CHANNEL_NOTMEMBER">15</element>
     <element name="CHANNEL_DNE">16</element>
     <element name="USER_IGNORING">17</element>
-    <element name="INVALIDMSG">18</element>
-    <element name="UNKNOWN_COMMAND">19</element>
-    <element name="PROFANITY_NOT_ALLOWED">20</element>
-    <element name="CHANNEL_ALREADYINVITED">21</element>
-    <element name="MAILBOX_FULL">22</element>
-    <element name="NAME_LENGTH_LONG">23</element>
-    <element name="NAME_LENGTH_SHORT">24</element>
-    <element name="CHANNEL_MOTD_LENGTH_LONG">25</element>
-    <element name="CHANNEL_DESCRIPTION_LENGTH_LONG">26</element>
-    <element name="COUNT">27</element>
-    <element name="TIMEOUT">28</element>
-    <element name="DISCONNECTED">29</element>
+    <element name="USER_AUTOREJECTING">18</element>
+    <element name="INVALIDMSG">19</element>
+    <element name="UNKNOWN_COMMAND">20</element>
+    <element name="PROFANITY_NOT_ALLOWED">21</element>
+    <element name="CHANNEL_ALREADYINVITED">22</element>
+    <element name="MAILBOX_FULL">23</element>
+    <element name="NAME_LENGTH_LONG">24</element>
+    <element name="NAME_LENGTH_SHORT">25</element>
+    <element name="CHANNEL_MOTD_LENGTH_LONG">26</element>
+    <element name="CHANNEL_DESCRIPTION_LENGTH_LONG">27</element>
+    <element name="COUNT">28</element>
+    <element name="TIMEOUT">29</element>
+    <element name="DISCONNECTED">30</element>
   </elements>
 </enum>

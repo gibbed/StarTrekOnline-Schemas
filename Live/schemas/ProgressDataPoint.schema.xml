@@ -10,7 +10,7 @@
     <column name="BytesRead" type="INT64">
       <offset>0</offset>
     </column>
-    <column name="TimePassed" type="F32">
+    <column name="Timepassed" type="F32">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

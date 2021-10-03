@@ -11,8 +11,8 @@
       <offset>0</offset>
       <subtable external="AwayTeamMember" />
     </column>
-    <column name="MaxTeamSize" type="INT">
-      <offset>4</offset>
+    <column name="Maxteamsize" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

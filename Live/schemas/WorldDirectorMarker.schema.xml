@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="WorldDirectorMarker">
+  <table>
+    <column name="WorldDirectorMarker" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Common_Data" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="WorldEncounterObject" />
+    </column>
+    <column name="Properties" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="WorldDirectorMarkerProperties" />
+    </column>
+    <column name="Marker_Pos" type="F32FIXEDARRAY">
+      <offset>88</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Marker_Rot" type="QUATPYR">
+      <offset>100</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

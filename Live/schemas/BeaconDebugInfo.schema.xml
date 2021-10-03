@@ -12,21 +12,23 @@
       <subtable external="BeaconDebugPath" />
     </column>
     <column name="EndPos" type="F32FIXEDARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="StartPos" type="F32FIXEDARRAY">
-      <offset>16</offset>
+      <offset>20</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="pathJumpHeight" type="F32">
-      <offset>28</offset>
-    </column>
-    <column name="entHeight" type="F32">
+    <column name="Pathjumpheight" type="F32">
       <offset>32</offset>
     </column>
-    <column name="sendPath" type="BIT">
+    <column name="Entheight" type="F32">
       <offset>36</offset>
+    </column>
+    <column name="Sendpath" type="BIT">
+      <offset>40</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

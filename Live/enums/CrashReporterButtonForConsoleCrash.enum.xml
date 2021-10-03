@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CrashReporterButtonForConsoleCrash">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="STARTUP">1</element>
+    <element name="ACTIVE">2</element>
+    <element name="IGNORE">3</element>
+    <element name="DEBUG">4</element>
+    <element name="TERMINATE">5</element>
+  </elements>
+</enum>

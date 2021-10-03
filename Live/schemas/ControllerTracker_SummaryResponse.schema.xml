@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ControllerTracker_SummaryResponse">
+  <table>
+    <column name="ControllerTracker_SummaryResponse" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Entries" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="ControllerTracker_SummaryResponseEntry" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -7,24 +7,23 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hJail" type="REFERENCE">
+    <column name="Hjail" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>UIGenJailDef</dictionary_name>
     </column>
     <column name="Cells" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="UIGenJailCell" />
     </column>
-    <column name="bfStates" type="INTFIXEDARRAY">
-      <offset>8</offset>
-      <num_elements>7</num_elements>
+    <column name="Pbfstates" type="INTARRAY">
+      <offset>24</offset>
     </column>
-    <column name="bfComplexStates" type="INTFIXEDARRAY">
-      <offset>36</offset>
-      <num_elements>7</num_elements>
+    <column name="Bfcomplexstates" type="INTFIXEDARRAY">
+      <offset>32</offset>
+      <num_elements>6</num_elements>
     </column>
     <column name="Scale" type="F32">
-      <offset>64</offset>
+      <offset>56</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -13,13 +13,13 @@
     <column name="Aggro" type="F32">
       <offset>4</offset>
     </column>
-    <column name="aware" type="F32">
+    <column name="Aware" type="F32">
       <offset>8</offset>
     </column>
-    <column name="socPrim" type="F32">
+    <column name="Socprim" type="F32">
       <offset>12</offset>
     </column>
-    <column name="socSec" type="F32">
+    <column name="Socsec" type="F32">
       <offset>16</offset>
     </column>
     <column name="}" type="END" />

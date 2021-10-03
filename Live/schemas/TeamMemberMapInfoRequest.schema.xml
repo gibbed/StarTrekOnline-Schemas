@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uMemberID" type="INT">
+    <column name="Umemberid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uRequesterID" type="INT">
+    <column name="Urequesterid" type="INT">
       <offset>4</offset>
     </column>
     <column name="MapName" type="STRING">
@@ -19,8 +19,8 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MapDisplayName" type="STRING">
-      <offset>12</offset>
+    <column name="Mapdisplayname" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MicroTrans2LogicalCategoryType">
+  <elements type="int">
+    <element name="NotInCategory">0</element>
+    <element name="AlwaysInCategory">1</element>
+    <element name="InCategoryWhenFirstAvailable">2</element>
+    <element name="TimeBased">3</element>
+  </elements>
+</enum>

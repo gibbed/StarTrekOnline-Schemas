@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ShipJailConfig">
+  <table>
+    <column name="ShipJailConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Celltemplate" type="STRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="ShipJailTemplate" />
+    </column>
+    <column name="Horizontalpadding" type="INT">
+      <offset>8</offset>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Verticalpadding" type="INT">
+      <offset>12</offset>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Horizontalpaddingcompact" type="INT">
+      <offset>16</offset>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Verticalpaddingcompact" type="INT">
+      <offset>20</offset>
+      <static_define_list external="UISize" />
+    </column>
+    <column name="Scaleasif" type="INT16FIXEDARRAY">
+      <offset>24</offset>
+      <num_elements>2</num_elements>
+    </column>
+    <column name="Scalenoshrink" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Scalenogrow" type="U8">
+      <offset>29</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

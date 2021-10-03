@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GCLBillingEnvironment">
+  <elements type="int">
+    <element name="Default">0</element>
+    <element name="MailRU">1</element>
+    <element name="Mail.RU">1</element>
+  </elements>
+</enum>

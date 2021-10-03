@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ItemDefExtendedFlag">
+  <elements type="int">
+    <element name="CantMove">1</element>
+    <element name="AutoAcceptMission">2</element>
+    <element name="DynamicItem">4</element>
+    <element name="ExemptFromAuctionHouseSpendingLimits">8</element>
+    <element name="RewardPackOpenManyOnEquip">16</element>
+    <element name="Levelless">32</element>
+    <element name="ShowSilentRewardPreview">64</element>
+    <element name="ShowRewardPackUI">128</element>
+    <element name="ShowRewardPackInGearPreview">256</element>
+    <element name="BlockItemProgressionEventBonus">512</element>
+    <element name="RemoveOnFailUse">1024</element>
+    <element name="LockToRestrictBagOrBanks">2048</element>
+    <element name="CantAuction">4096</element>
+    <element name="CantMail">8192</element>
+    <element name="DynamicItemFixedPowers">16384</element>
+    <element name="PreferRestrictBag">32768</element>
+    <element name="ItemRemoveOnMapMove">65536</element>
+    <element name="ItemOneStackOnlyNoFail">131072</element>
+    <element name="TimedAccountBoundSpecial">262144</element>
+    <element name="PowerTreeUnlock">524288</element>
+    <element name="CantRemoveLastItem">1048576</element>
+    <element name="CantBuyFromAuctionUnlessOwned">2097152</element>
+    <element name="ProgressionFoodBindsItemToCharacterOnUpgrade">4194304</element>
+    <element name="ProgressionFoodBindsItemToAccountOnUpgrade">8388608</element>
+    <element name="TransFailOnAddItemToOverflow">16777216</element>
+    <element name="AddToSharedBank">33554432</element>
+    <element name="PowersAutoBuy">67108864</element>
+  </elements>
+</enum>

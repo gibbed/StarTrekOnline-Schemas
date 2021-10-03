@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="eRecruitState" type="INT">
+    <column name="Erecruitstate" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,46 +15,46 @@
       </flags>
       <static_define_list external="RecruitState" />
     </column>
-    <column name="pProductKey" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pEmailAddress" type="STRING">
+    <column name="Pproductkey" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pProductInternalName" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="uCreatedTimeSS2000" type="INT">
+    <column name="Pemailaddress" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uOfferedTimeSS2000" type="INT">
-      <offset>20</offset>
-      <flags>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="uAccountID" type="INT">
+    <column name="Pproductinternalname" type="STRING">
       <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uAcceptedTimeSS2000" type="INT">
-      <offset>28</offset>
+    <column name="Ucreatedtimess2000" type="INT">
+      <offset>32</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uofferedtimess2000" type="INT">
+      <offset>36</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uaccountid" type="INT">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uacceptedtimess2000" type="INT">
+      <offset>44</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

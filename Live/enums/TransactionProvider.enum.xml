@@ -4,5 +4,8 @@
     <element name="AccountServer">0</element>
     <element name="Steam">1</element>
     <element name="PerfectWorld">2</element>
+    <element name="Xbox">3</element>
+    <element name="Psn">4</element>
+    <element name="Epic">5</element>
   </elements>
 </enum>

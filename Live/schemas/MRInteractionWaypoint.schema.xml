@@ -9,22 +9,23 @@
     <column name="{" type="START" />
     <column name="Pos" type="F32FIXEDARRAY">
       <offset>0</offset>
+      <flags>
+        <flag>WORLD_POSITION</flag>
+      </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Rot" type="QUATPYR">
       <offset>12</offset>
       <num_elements>4</num_elements>
     </column>
-    <column name="seconds" type="F32">
+    <column name="Seconds" type="F32">
       <offset>28</offset>
     </column>
-    <column name="animBitHandles" type="INTARRAY">
+    <column name="Animbithandles" type="INTARRAY">
       <offset>32</offset>
     </column>
-    <column name="animToStart" type="INT">
-      <offset>36</offset>
-    </column>
-    <column name="Stances" type="INTARRAY">
+    <column name="Animtostart" type="INT">
       <offset>40</offset>
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">

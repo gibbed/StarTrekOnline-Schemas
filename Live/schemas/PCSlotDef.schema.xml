@@ -10,49 +10,49 @@
     <column name="ID" type="INT">
       <offset>0</offset>
     </column>
-    <column name="DescriptionMessage" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+    <column name="Descriptionmessage" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="LockedDescriptionMessage" type="EMBEDDEDSTRUCT">
-      <offset>16</offset>
+    <column name="Lockeddescriptionmessage" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="UnlockExpressionBlock" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Unlockexpressionblock" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <subtable external="Expression" />
     </column>
-    <column name="UnlockExpression" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Unlockexpression" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>UnlockExpressionBlock</redundant_name>
+      <redundant_name>Unlockexpressionblock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="UnhideExpressionBlock" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+    <column name="Unhideexpressionblock" type="OPTIONALSTRUCT">
+      <offset>64</offset>
       <subtable external="Expression" />
     </column>
-    <column name="UnhideExpression" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+    <column name="Unhideexpression" type="OPTIONALSTRUCT">
+      <offset>64</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>UnhideExpressionBlock</redundant_name>
+      <redundant_name>Unhideexpressionblock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="SlotType" type="STRING">
-      <offset>36</offset>
+    <column name="Slottype" type="STRING">
+      <offset>72</offset>
     </column>
-    <column name="OptionalSlotType" type="STRINGARRAY">
-      <offset>44</offset>
+    <column name="Optionalslottype" type="STRINGARRAY">
+      <offset>88</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CreateCharacter" type="INT">
-      <offset>48</offset>
+    <column name="Createcharacter" type="INT">
+      <offset>96</offset>
       <static_define_list external="PCCharacterCreateSlot" />
     </column>
     <column name="}" type="END" />

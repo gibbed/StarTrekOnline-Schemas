@@ -14,6 +14,9 @@
     <element name="MAP_POINT">9</element>
     <element name="ITEM_DEF">10</element>
     <element name="MISSION_DEF">11</element>
-    <element name="PLAYER">12</element>
+    <element name="MINICONTACT_DEF">12</element>
+    <element name="PLAYER">13</element>
+    <element name="ALLMISSIONS">14</element>
+    <element name="GAMEEVENT">15</element>
   </elements>
 </enum>

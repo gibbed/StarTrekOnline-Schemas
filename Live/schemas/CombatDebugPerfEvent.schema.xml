@@ -10,23 +10,23 @@
     <column name="Event" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="uiCount" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="ulTime" type="INT64">
+    <column name="Uicount" type="INT">
       <offset>8</offset>
     </column>
-    <column name="ulTimeSub" type="INT64">
+    <column name="Ultime" type="INT64">
       <offset>16</offset>
     </column>
-    <column name="ulTimePerEvent" type="INT64">
+    <column name="Ultimesub" type="INT64">
       <offset>24</offset>
+    </column>
+    <column name="Ultimeperevent" type="INT64">
+      <offset>32</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="PercentUsage" type="F32">
-      <offset>32</offset>
+    <column name="Percentusage" type="F32">
+      <offset>40</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>

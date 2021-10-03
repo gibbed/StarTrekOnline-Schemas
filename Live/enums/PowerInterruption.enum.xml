@@ -9,5 +9,7 @@
     <element name="Interact">32</element>
     <element name="ContactInteract">64</element>
     <element name="NonContactInteract">128</element>
+    <element name="Repel">256</element>
+    <element name="ConstantForce">512</element>
   </elements>
 </enum>

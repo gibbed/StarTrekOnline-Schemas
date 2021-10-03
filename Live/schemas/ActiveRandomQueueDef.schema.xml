@@ -11,11 +11,11 @@
       <offset>0</offset>
       <dictionary_name>QueueDef</dictionary_name>
     </column>
-    <column name="uTimeExpire" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="uInstancesRemaining" type="INT">
+    <column name="Utimeexpire" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Uinstancesremaining" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

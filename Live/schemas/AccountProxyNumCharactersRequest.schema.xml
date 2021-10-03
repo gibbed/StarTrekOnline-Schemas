@@ -7,20 +7,21 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uAccountID" type="INT">
+    <column name="Uaccountid" type="INT">
       <offset>0</offset>
     </column>
     <column name="Product" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="Category" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="uNumCharacters" type="INT">
-      <offset>12</offset>
+    <column name="Category" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Unumcharacters" type="INT">
+      <offset>24</offset>
     </column>
     <column name="Change" type="U8">
-      <offset>16</offset>
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

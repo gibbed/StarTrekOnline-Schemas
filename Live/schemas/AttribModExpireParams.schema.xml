@@ -12,16 +12,20 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1170</default>
+      <default>1272</default>
       <static_define_list external="AttribType" />
     </column>
     <column name="Order" type="INT">
       <offset>4</offset>
       <static_define_list external="AttribModExpireOrder" />
     </column>
-    <column name="GroupByApplication" type="BIT">
+    <column name="Groupbyapplication" type="BIT">
       <offset>8</offset>
       <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Expirependingmods" type="BIT">
+      <offset>8</offset>
+      <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

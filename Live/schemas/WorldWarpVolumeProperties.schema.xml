@@ -6,41 +6,46 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="WarpDest" type="EMBEDDEDSTRUCT">
+    <column name="Warpdest" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="WorldVariableDef" />
     </column>
-    <column name="WarpCondition" type="OPTIONALSTRUCT">
-      <offset>60</offset>
+    <column name="Warpcondition" type="OPTIONALSTRUCT">
+      <offset>112</offset>
       <subtable external="Expression" />
     </column>
-    <column name="UseChoiceTable" type="U8">
-      <offset>64</offset>
+    <column name="Usechoicetable" type="U8">
+      <offset>120</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="MapName" type="STRING">
-      <offset>68</offset>
+      <offset>128</offset>
     </column>
-    <column name="SpawnTargetName" type="STRING">
-      <offset>72</offset>
+    <column name="Spawntargetname" type="STRING">
+      <offset>136</offset>
     </column>
-    <column name="ChoiceTable" type="REFERENCE">
-      <offset>76</offset>
+    <column name="Choicetable" type="REFERENCE">
+      <offset>144</offset>
       <dictionary_name>ChoiceTable</dictionary_name>
     </column>
-    <column name="ChoiceName" type="STRING">
-      <offset>80</offset>
+    <column name="Choicename" type="STRING">
+      <offset>152</offset>
     </column>
-    <column name="TransitionOverride" type="REFERENCE">
-      <offset>84</offset>
+    <column name="Transitionoverride" type="REFERENCE">
+      <offset>160</offset>
       <dictionary_name>DoorTransitionSequenceDef</dictionary_name>
     </column>
     <column name="Variable" type="STRUCT">
-      <offset>88</offset>
+      <offset>168</offset>
       <subtable external="WorldVariable" />
     </column>
-    <column name="VariableDef" type="STRUCT">
-      <offset>92</offset>
+    <column name="Variabledef" type="STRUCT">
+      <offset>176</offset>
       <subtable external="WorldVariableDef" />
+    </column>
+    <column name="Issecretdoor" type="U8">
+      <offset>184</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

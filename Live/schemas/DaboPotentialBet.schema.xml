@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="WheelIndex" type="INT">
+    <column name="Wheelindex" type="INT">
       <offset>0</offset>
     </column>
-    <column name="BetAmount" type="INT">
+    <column name="Betamount" type="INT">
       <offset>4</offset>
     </column>
     <column name="Numeric" type="STRING">

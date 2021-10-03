@@ -7,61 +7,87 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uAccountID" type="INT">
+    <column name="Uaccountid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="CmdID" type="INT">
+    <column name="Cmdid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="PaymentMethodID" type="STRING">
+    <column name="Paymentmethodid" type="STRING">
       <offset>8</offset>
     </column>
     <column name="Currency" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="Proxy" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="ip" type="STRING">
-      <offset>20</offset>
-    </column>
-    <column name="BankName" type="STRING">
+    <column name="Proxy" type="STRING">
       <offset>24</offset>
     </column>
+    <column name="ip" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Bankname" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Shardcategory" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
     <column name="Items" type="STRUCT">
-      <offset>28</offset>
+      <offset>56</offset>
       <subtable external="TransactionItem" />
     </column>
     <column name="RequestID" type="INT">
-      <offset>32</offset>
-    </column>
-    <column name="AuthOnly" type="U8">
-      <offset>36</offset>
-    </column>
-    <column name="VerifyPrice" type="U8">
-      <offset>37</offset>
-    </column>
-    <column name="uLockContainerID" type="INT">
-      <offset>40</offset>
-    </column>
-    <column name="uSteamID" type="INT64">
-      <offset>48</offset>
-    </column>
-    <column name="LocCode" type="STRING">
-      <offset>56</offset>
-    </column>
-    <column name="Category" type="STRING">
-      <offset>60</offset>
-    </column>
-    <column name="Orderid" type="STRING">
       <offset>64</offset>
     </column>
-    <column name="TransactionID" type="STRING">
+    <column name="Authonly" type="U8">
       <offset>68</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Verifyprice" type="U8">
+      <offset>69</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ulockcontainerid" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Usteamid" type="INT64">
+      <offset>80</offset>
+    </column>
+    <column name="Loccode" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Category" type="STRING">
+      <offset>96</offset>
+    </column>
+    <column name="Orderid" type="STRING">
+      <offset>104</offset>
     </column>
     <column name="Provider" type="INT">
-      <offset>72</offset>
+      <offset>112</offset>
       <static_define_list external="TransactionProvider" />
+    </column>
+    <column name="Requestservertype" type="INT">
+      <offset>116</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Urequestserverid" type="INT">
+      <offset>120</offset>
+    </column>
+    <column name="Userproductid" type="STRING">
+      <offset>128</offset>
+    </column>
+    <column name="Transactionid" type="STRING">
+      <offset>136</offset>
+    </column>
+    <column name="Uservalue" type="INT64">
+      <offset>144</offset>
+    </column>
+    <column name="Pcplatformtype" type="INT">
+      <offset>152</offset>
+      <static_define_list external="PCPlatformType" />
     </column>
     <column name="}" type="END" />
   </table>

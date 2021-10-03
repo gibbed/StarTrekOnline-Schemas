@@ -7,22 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="IsCloth" type="U8">
+    <column name="Iscloth" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="HasClothBack" type="U8">
+    <column name="Hasclothback" type="U8">
       <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ClothInfo" type="STRING">
-      <offset>4</offset>
+    <column name="Clothinfo" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>GLOBAL_NAME</flag>
       </flags>
       <dictionary_name>DynClothInfo</dictionary_name>
     </column>
-    <column name="ClothCollision" type="STRING">
-      <offset>8</offset>
+    <column name="Clothcollision" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>GLOBAL_NAME</flag>

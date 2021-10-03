@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="AttribScaleType">
+  <elements type="int">
+    <element name="Basic">0</element>
+    <element name="Utility">1</element>
+    <element name="Weapon">2</element>
+    <element name="Health">3</element>
+  </elements>
+</enum>

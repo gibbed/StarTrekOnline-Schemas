@@ -12,19 +12,19 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1174</default>
+      <default>1278</default>
       <static_define_list external="AttribType" />
     </column>
     <column name="Aspect" type="INT">
       <offset>4</offset>
       <static_define_list external="AttribModShareAspect" />
     </column>
-    <column name="ExprBlockShare" type="OPTIONALSTRUCT">
+    <column name="Exprblockshare" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <subtable external="Expression" />
     </column>
-    <column name="ExprBlockContribution" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Exprblockcontribution" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="Expression" />
     </column>
     <column name="}" type="END" />

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TempAttributes" type="OPTIONALSTRUCT">
+    <column name="Tempattributes" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="TempAttributes" />
     </column>

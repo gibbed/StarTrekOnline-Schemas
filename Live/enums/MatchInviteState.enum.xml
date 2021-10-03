@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MatchInviteState">
+  <elements type="int">
+    <element name="Error">0</element>
+    <element name="NotLeader">1</element>
+    <element name="InPublicMatch">2</element>
+    <element name="InQueue">3</element>
+    <element name="TargetInMRG">4</element>
+    <element name="CanInvite">5</element>
+  </elements>
+</enum>

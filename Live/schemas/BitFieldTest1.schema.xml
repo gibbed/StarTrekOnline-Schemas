@@ -7,18 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="v" type="INT">
+    <column name="V" type="INT">
       <offset>0</offset>
     </column>
-    <column name="s1" type="BIT">
+    <column name="S1" type="BIT">
       <offset>4</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="u1" type="BIT">
+    <column name="U1" type="BIT">
       <offset>4</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="u2" type="BIT">
+    <column name="U2" type="BIT">
       <offset>4</offset>
       <bit_offset>131074</bit_offset>
     </column>

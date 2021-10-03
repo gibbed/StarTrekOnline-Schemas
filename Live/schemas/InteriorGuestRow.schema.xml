@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="guestName" type="STRING">
+    <column name="Guestname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="guestRef" type="INT">
-      <offset>4</offset>
+    <column name="Guestref" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

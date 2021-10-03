@@ -13,15 +13,15 @@
       </flags>
       <dictionary_name>SkyInfo</dictionary_name>
     </column>
-    <column name="OverrideTime" type="BIT">
-      <offset>4</offset>
+    <column name="Overridetime" type="BIT">
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="Time" type="F32">
-      <offset>8</offset>
+      <offset>12</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>

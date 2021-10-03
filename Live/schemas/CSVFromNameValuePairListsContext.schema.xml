@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CSVFromNameValuePairListsContext">
+  <table>
+    <column name="CSVFromNameValuePairListsContext" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Columnsinorder" type="STRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="CSVFromNameValuePairLists_Column" />
+    </column>
+    <column name="Scolumnsbyname" type="STASHTABLE">
+      <offset>8</offset>
+    </column>
+    <column name="Numelements" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

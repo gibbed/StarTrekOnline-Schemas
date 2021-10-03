@@ -1,4 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <enum name="StoreHighlightCategory">
-  <elements type="int" />
+  <elements type="int">
+    <element name="NewItem">0</element>
+    <element name="Lockbox">1</element>
+    <element name="LimitedTime">2</element>
+    <element name="Discount">3</element>
+    <element name="Discount15">4</element>
+    <element name="Discount40">5</element>
+    <element name="CostumeUnlock">6</element>
+    <element name="PromoLimited">7</element>
+  </elements>
 </enum>

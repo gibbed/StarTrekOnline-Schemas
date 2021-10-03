@@ -7,81 +7,87 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="inheritAnims" type="STRINGARRAY">
+    <column name="Inheritanims" type="STRINGARRAY">
       <offset>0</offset>
       <flags>
         <flag>INHERITANCE_STRUCT</flag>
       </flags>
     </column>
-    <column name="InheritAnim:" type="STRINGARRAY">
+    <column name="Inheritanim:" type="STRINGARRAY">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>INHERITANCE_STRUCT</flag>
       </flags>
-      <redundant_name>inheritAnims</redundant_name>
+      <redundant_name>Inheritanims</redundant_name>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="AnimKeyword" type="STRING">
-      <offset>8</offset>
+    <column name="Animkeyword" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Bit" type="STRINGARRAY">
-      <offset>12</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="bitHandles" type="INTARRAY">
-      <offset>16</offset>
-      <flags>
-        <flag>NO_TEXT_SAVE</flag>
-      </flags>
-    </column>
-    <column name="FX" type="STRINGARRAY">
-      <offset>20</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="FlashFX" type="STRINGARRAY">
       <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ManuallyDestroyedFX" type="BIT">
-      <offset>28</offset>
-      <bit_offset>65536</bit_offset>
-    </column>
-    <column name="enableStance" type="BIT">
-      <offset>28</offset>
-      <bit_offset>65537</bit_offset>
-    </column>
-    <column name="FileName" type="CURRENTFILE">
+    <column name="Stance" type="STRINGARRAY">
       <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="usedFields" type="INTFIXEDARRAY">
-      <offset>36</offset>
+    <column name="Bithandles" type="INTARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+    </column>
+    <column name="FX" type="STRINGARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Flashfx" type="STRINGARRAY">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Manuallydestroyedfx" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Enablestance" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Usedfields" type="INTFIXEDARRAY">
+      <offset>80</offset>
       <flags>
         <flag>USEDFIELD</flag>
       </flags>
       <num_elements>1</num_elements>
     </column>
     <column name="Tags" type="IGNORE" />
-    <column name="UGCProperties" type="IGNORE">
+    <column name="Ugcproperties" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>

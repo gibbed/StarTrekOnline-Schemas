@@ -15,14 +15,15 @@
       </flags>
     </column>
     <column name="DisplayName" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="HideChoice" type="U8">
-      <offset>8</offset>
+    <column name="Hidechoice" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Index" type="INT">
-      <offset>12</offset>
+      <offset>20</offset>
     </column>
     <column name="}" type="END" />
   </table>

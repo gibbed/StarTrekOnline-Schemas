@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GroupInvalidForMatchReason">
+  <elements type="int">
+    <element name="NotChecked">-1</element>
+    <element name="Valid">0</element>
+    <element name="GroupLevelRange_TooWide">1</element>
+    <element name="Unknown">1</element>
+    <element name="GroupTooLarge">2</element>
+    <element name="GroupMoreThanTwoOfClass">4</element>
+    <element name="GroupCompInvalid_TooManyHealers">8</element>
+    <element name="GroupCompInvalid_TooManyTanks">16</element>
+    <element name="GroupCompInvalid_TooManyDPS">32</element>
+    <element name="GroupCompInvalid_NotEnoughHealers">64</element>
+    <element name="GroupCompInvalid_NotEnoughTanks">128</element>
+    <element name="GroupCompInvalid_NotEnoughDPS">256</element>
+  </elements>
+</enum>

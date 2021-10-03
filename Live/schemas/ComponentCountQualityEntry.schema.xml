@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CompCountEntry" type="STRUCT">
+    <column name="Compcountentry" type="STRUCT">
       <offset>0</offset>
       <subtable external="CompCountEntry" />
     </column>

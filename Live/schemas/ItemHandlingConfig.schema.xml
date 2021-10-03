@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AcquireOverride" type="STRUCT">
+    <column name="Acquireoverride" type="STRUCT">
       <offset>0</offset>
       <subtable external="ItemAcquireOverride" />
     </column>
-    <column name="TradeableBag" type="INTARRAY">
-      <offset>4</offset>
+    <column name="Tradeablebag" type="INTARRAY">
+      <offset>8</offset>
       <static_define_list external="InvBagIDs" />
     </column>
     <column name="}" type="END" />

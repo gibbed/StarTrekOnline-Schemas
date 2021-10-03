@@ -7,21 +7,25 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="local_min" type="F32FIXEDARRAY">
+    <column name="Local_Min" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="local_max" type="F32FIXEDARRAY">
+    <column name="Local_Max" type="F32FIXEDARRAY">
       <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="visible_geo_min" type="F32FIXEDARRAY">
+    <column name="Visible_Geo_Min" type="F32FIXEDARRAY">
       <offset>24</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="visible_geo_max" type="F32FIXEDARRAY">
+    <column name="Visible_Geo_Max" type="F32FIXEDARRAY">
       <offset>36</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

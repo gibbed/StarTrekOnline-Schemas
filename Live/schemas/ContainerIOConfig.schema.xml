@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MergerScript" type="FIXEDSTRING">
+    <column name="Mergerscript" type="FIXEDSTRING">
       <offset>0</offset>
       <string_length>1024</string_length>
     </column>
-    <column name="OfflineBackupScript" type="FIXEDSTRING">
+    <column name="Offlinebackupscript" type="FIXEDSTRING">
       <offset>1024</offset>
       <string_length>1024</string_length>
     </column>

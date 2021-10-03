@@ -11,14 +11,14 @@
       <offset>0</offset>
     </column>
     <column name="Msg" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="ChatMessage" />
     </column>
     <column name="TimeStamp" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
     </column>
     <column name="FormattedText" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
@@ -26,16 +26,16 @@
         <format_string name="XML_ENCODE_BASE64">1</format_string>
       </format_strings>
     </column>
-    <column name="FormatSpans" type="STRUCT">
-      <offset>16</offset>
+    <column name="Formatspans" type="STRUCT">
+      <offset>32</offset>
       <subtable external="ChatLogFormatSpan" />
     </column>
-    <column name="FromLink" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Fromlink" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="ChatLink" />
     </column>
-    <column name="ToLink" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Tolink" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="ChatLink" />
     </column>
     <column name="}" type="END" />

@@ -13,15 +13,16 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="rotOffset" type="F32FIXEDARRAY">
-      <offset>4</offset>
+    <column name="Rotoffset" type="F32FIXEDARRAY">
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="rotOffsetRuntime" type="QUATPYR">
-      <offset>16</offset>
+    <column name="Rotoffsetruntime" type="QUATPYR">
+      <offset>20</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>NO_TEXT_SAVE</flag>

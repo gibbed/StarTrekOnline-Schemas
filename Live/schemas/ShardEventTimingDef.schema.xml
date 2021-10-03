@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="EventTime" type="STRUCT">
+    <column name="Eventtime" type="STRUCT">
       <offset>0</offset>
       <subtable external="ShardEventTimingEntry" />
     </column>
-    <column name="TimingEntry" type="STRUCT">
+    <column name="Timingentry" type="STRUCT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>EventTime</redundant_name>
+      <redundant_name>Eventtime</redundant_name>
       <subtable external="ShardEventTimingEntry" />
     </column>
-    <column name="uSeedBase" type="INT">
-      <offset>4</offset>
+    <column name="Useedbase" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

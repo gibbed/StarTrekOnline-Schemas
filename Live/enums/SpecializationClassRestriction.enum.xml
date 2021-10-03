@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="SpecializationClassRestriction">
+  <elements type="int">
+    <element name="Any">-1</element>
+    <element name="Engineering">0</element>
+    <element name="Science">1</element>
+    <element name="Tactical">2</element>
+  </elements>
+</enum>

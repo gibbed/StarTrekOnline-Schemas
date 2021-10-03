@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CrypticRPCRequest">
+  <table>
+    <column name="CrypticRPCRequest" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Commandname" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="RequestID" type="INT64">
+      <offset>8</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Senderlocalid" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Requestedaccesslevel" type="INT">
+      <offset>20</offset>
+      <default>-1</default>
+    </column>
+    <column name="Settings" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="CrypticRPCSettings" />
+    </column>
+    <column name="Returnaddress" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="CrypticRPCReturnAddress" />
+    </column>
+    <column name="Flags" type="INT">
+      <offset>112</offset>
+      <static_define_list external="CrypticRPCRequestFlags" />
+    </column>
+    <column name="Args" type="STRUCT">
+      <offset>120</offset>
+      <subtable external="CrypticRPCArgument" />
+    </column>
+    <column name="Nonfatalerrors" type="STRUCT">
+      <offset>128</offset>
+      <subtable external="CrypticRPCError" />
+    </column>
+    <column name="Fatalerrors" type="STRUCT">
+      <offset>136</offset>
+      <subtable external="CrypticRPCError" />
+    </column>
+    <column name="Structargs" type="STRUCT">
+      <offset>144</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+      <subtable external="CrypticRPCStructArg" />
+    </column>
+    <column name="Voidstarargs" type="STRUCT">
+      <offset>152</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+      <subtable external="CrypticRPCVoidStarArg" />
+    </column>
+    <column name="Manager" type="OPTIONALSTRUCT">
+      <offset>160</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+        <flag>STRUCT_NORECURSE</flag>
+      </flags>
+      <subtable external="CrypticRPCManager" />
+    </column>
+    <column name="Remotename" type="STRING">
+      <offset>168</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

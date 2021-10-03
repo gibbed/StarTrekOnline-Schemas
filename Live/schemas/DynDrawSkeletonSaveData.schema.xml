@@ -7,8 +7,8 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SeveredBones" type="STRINGARRAY">
-      <offset>8</offset>
+    <column name="Severedbones" type="STRINGARRAY">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

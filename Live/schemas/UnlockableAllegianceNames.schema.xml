@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="UnlockableName" type="STRINGARRAY">
+    <column name="Unlockablename" type="STRINGARRAY">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

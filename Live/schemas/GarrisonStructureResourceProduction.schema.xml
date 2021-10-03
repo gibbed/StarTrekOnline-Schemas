@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="GarrisonStructureResourceProduction">
+  <table>
+    <column name="GarrisonStructureResourceProduction" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Coffernumeric" type="REFERENCE">
+      <offset>0</offset>
+      <dictionary_name>GroupProjectCofferNumericDef</dictionary_name>
+    </column>
+    <column name="Secondsperproduction" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="GarrisonRankBasedValues" />
+    </column>
+    <column name="Maxresoucestorage" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
+      <subtable external="GarrisonRankBasedValues" />
+    </column>
+    <column name="Resourcenumeric" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parser>

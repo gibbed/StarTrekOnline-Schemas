@@ -16,38 +16,49 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="ConnectionState" type="INT">
-      <offset>4</offset>
+    <column name="Connectionstate" type="INT">
+      <offset>8</offset>
       <static_define_list external="SimpleMonitoringState" />
     </column>
-    <column name="LastActivityTime" type="INT">
-      <offset>8</offset>
+    <column name="Lastactivitytime" type="INT">
+      <offset>12</offset>
       <format_strings>
         <format_string name="HTML_SECS_AGO">1</format_string>
       </format_strings>
     </column>
     <column name="Status" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
+      <offset>16</offset>
       <subtable external="StatusReporting_Wrapper" />
     </column>
+    <column name="Link" type="OPTIONALSTRUCT">
+      <offset>176</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="NetLink" />
+      <format_strings>
+        <format_string name="HTML_SKIP_IN_TABLE">1</format_string>
+        <format_string name="HTML_WRITE_UNOWNED">1</format_string>
+      </format_strings>
+    </column>
     <column name="ip" type="INT">
-      <offset>104</offset>
+      <offset>184</offset>
     </column>
-    <column name="AssumedMachineName" type="STRING">
-      <offset>108</offset>
+    <column name="Assumedmachinename" type="STRING">
+      <offset>192</offset>
     </column>
-    <column name="MyOverlord" type="STRING">
-      <offset>112</offset>
+    <column name="Myoverlord" type="STRING">
+      <offset>200</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Logs" type="STRUCT">
-      <offset>116</offset>
+      <offset>208</offset>
       <subtable external="SimpleMonitoringStatus_Log" />
     </column>
-    <column name="MachineNameForwardedFrom" type="STRING">
-      <offset>120</offset>
+    <column name="Machinenameforwardedfrom" type="STRING">
+      <offset>216</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>NO_NETSEND</flag>

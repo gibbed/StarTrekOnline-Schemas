@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="Light2Data">
+  <table>
+    <column name="Light2Data" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Light_Type" type="INT">
+      <offset>0</offset>
+      <static_define_list external="LightType2" />
+    </column>
+    <column name="Specular_Environment_Texture_Name" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Specularboundsmin" type="F32FIXEDARRAY">
+      <offset>16</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Specularboundsmax" type="F32FIXEDARRAY">
+      <offset>28</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Intensity" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Pbr_Falloff_Min_Radius" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Legacyforwardshaded" type="U8">
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Deferredshaded" type="U8">
+      <offset>49</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Globalspecularprobe" type="U8">
+      <offset>50</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Nulldiffuseprobe" type="U8">
+      <offset>51</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enablespecular" type="U8">
+      <offset>52</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

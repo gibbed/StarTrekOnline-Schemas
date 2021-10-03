@@ -12,45 +12,48 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>5</default>
+      <default>6</default>
       <static_define_list external="UIGenType" />
     </column>
     <column name="Value" type="F32">
       <offset>4</offset>
     </column>
-    <column name="DisplayValue" type="F32">
+    <column name="Tweenvalue" type="F32">
       <offset>8</offset>
     </column>
-    <column name="MovingOverlayAlpha" type="F32">
+    <column name="Wrapvalue" type="F32">
       <offset>12</offset>
     </column>
-    <column name="Delay" type="F32">
+    <column name="Movingoverlayalpha" type="F32">
       <offset>16</offset>
     </column>
-    <column name="Notch" type="F32">
+    <column name="Delay" type="F32">
       <offset>20</offset>
+    </column>
+    <column name="Notch" type="F32">
+      <offset>24</offset>
       <default>-1</default>
     </column>
     <column name="Max" type="F32">
-      <offset>24</offset>
+      <offset>28</offset>
       <default>1</default>
     </column>
-    <column name="TickCount" type="INT">
-      <offset>28</offset>
-    </column>
-    <column name="LastMousePosition" type="INT">
+    <column name="Tickcount" type="INT">
       <offset>32</offset>
     </column>
-    <column name="HandledMouseDown" type="BIT">
+    <column name="Lastmouseposition" type="INT">
       <offset>36</offset>
+    </column>
+    <column name="Handledmousedown" type="BIT">
+      <offset>40</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="Initialized" type="BIT">
-      <offset>36</offset>
+      <offset>40</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="hStyleBar" type="REFERENCE">
-      <offset>40</offset>
+    <column name="Hstylebar" type="REFERENCE">
+      <offset>48</offset>
       <dictionary_name>UIStyleBar</dictionary_name>
     </column>
     <column name="}" type="END" />

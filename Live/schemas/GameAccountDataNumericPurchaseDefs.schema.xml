@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GameAccountNumericPurchaseDef" type="STRUCT">
+    <column name="Gameaccountnumericpurchasedef" type="STRUCT">
       <offset>0</offset>
       <subtable external="GameAccountDataNumericPurchaseDef" />
     </column>

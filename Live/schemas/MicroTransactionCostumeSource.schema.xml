@@ -13,29 +13,25 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="Product" type="OPTIONALSTRUCT">
-      <offset>4</offset>
-      <flags>
-        <flag>UNKNOWN_32</flag>
-      </flags>
-      <subtable external="MicroTransactionProduct" />
-    </column>
-    <column name="hItem" type="REFERENCE">
+    <column name="Hitem" type="REFERENCE">
       <offset>8</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="hCostumeSet" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Hcostumeset" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>CostumeSet</dictionary_name>
     </column>
     <column name="Hidden" type="U8">
-      <offset>16</offset>
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Owned" type="U8">
-      <offset>17</offset>
+      <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="New" type="U8">
-      <offset>18</offset>
+      <offset>26</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

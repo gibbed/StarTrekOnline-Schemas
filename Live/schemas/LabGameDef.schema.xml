@@ -15,73 +15,99 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="MinigameType" type="INT">
-      <offset>4</offset>
+    <column name="Minigametype" type="INT">
+      <offset>8</offset>
       <static_define_list external="MinigameType" />
     </column>
-    <column name="AlwaysSendMinigameJackpotEvent" type="U8">
-      <offset>8</offset>
-    </column>
-    <column name="TimeoutTime" type="INT">
+    <column name="Alwayssendminigamejackpotevent" type="U8">
       <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="UIGen" type="STRING">
+    <column name="Timeouttime" type="INT">
       <offset>16</offset>
+    </column>
+    <column name="Uigen" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="GameTime" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="GameGenerations" type="INT">
-      <offset>24</offset>
-    </column>
-    <column name="GameSymbols" type="INT">
-      <offset>28</offset>
-    </column>
-    <column name="TargetTime" type="INT">
+    <column name="Gameboxuigen" type="STRING">
       <offset>32</offset>
-      <default>1000</default>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="GenerationTime" type="INT">
-      <offset>36</offset>
-      <default>1000</default>
-    </column>
-    <column name="BeatTime" type="INT">
+    <column name="Gametime" type="INT">
       <offset>40</offset>
     </column>
-    <column name="ChanceOfGap" type="F32">
+    <column name="Gamegenerations" type="INT">
       <offset>44</offset>
     </column>
-    <column name="ChanceOfDouble" type="F32">
+    <column name="Gamesymbols" type="INT">
       <offset>48</offset>
     </column>
-    <column name="ChanceOfTriple" type="F32">
+    <column name="Gamescoregoal" type="INT">
       <offset>52</offset>
     </column>
-    <column name="ChanceOfQuad" type="F32">
+    <column name="Targettime" type="INT">
       <offset>56</offset>
+      <default>1000</default>
     </column>
-    <column name="InputMethod" type="INT">
+    <column name="Generationtime" type="INT">
       <offset>60</offset>
+      <default>1000</default>
+    </column>
+    <column name="Beattime" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Chanceofgap" type="F32">
+      <offset>68</offset>
+    </column>
+    <column name="Chanceofdouble" type="F32">
+      <offset>72</offset>
+    </column>
+    <column name="Chanceoftriple" type="F32">
+      <offset>76</offset>
+    </column>
+    <column name="Chanceofquad" type="F32">
+      <offset>80</offset>
+    </column>
+    <column name="Inputmethod" type="INT">
+      <offset>84</offset>
       <static_define_list external="LabGameInputMethod" />
     </column>
-    <column name="CursorAdjustInterval" type="INT">
-      <offset>64</offset>
+    <column name="Cursoradjustinterval" type="INT">
+      <offset>88</offset>
       <default>100</default>
     </column>
-    <column name="CursorAdjustRate" type="INT">
-      <offset>68</offset>
+    <column name="Cursoradjustrate" type="INT">
+      <offset>92</offset>
       <default>1</default>
     </column>
-    <column name="CursorAcceptTolerance" type="INT">
-      <offset>72</offset>
+    <column name="Cursoraccepttolerance" type="INT">
+      <offset>96</offset>
       <default>100</default>
     </column>
-    <column name="score" type="STRUCT">
-      <offset>76</offset>
+    <column name="Score" type="STRUCT">
+      <offset>104</offset>
       <subtable external="LabGameAcceptScore" />
+    </column>
+    <column name="Hitscore" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="LabGameHitScore" />
+    </column>
+    <column name="Secondaryscore" type="STRUCT">
+      <offset>120</offset>
+      <subtable external="LabGameHitScore" />
+    </column>
+    <column name="Gamespeed" type="STRUCT">
+      <offset>128</offset>
+      <subtable external="LabGameSpeed" />
+    </column>
+    <column name="Generaterewardsforteam" type="U8">
+      <offset>136</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -14,7 +14,7 @@
     <element name="TOK_TIMESTAMP_X">10</element>
     <element name="TOK_LINENUM_X">11</element>
     <element name="TOK_BOOL_X">12</element>
-    <element name="TOK_UNUSED1_X">13</element>
+    <element name="TOK_NO_AST_X">13</element>
     <element name="TOK_BOOLFLAG_X">14</element>
     <element name="TOK_QUATPYR_X">15</element>
     <element name="TOK_MATPYR_X">16</element>

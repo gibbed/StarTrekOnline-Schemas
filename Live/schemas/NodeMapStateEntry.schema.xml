@@ -13,17 +13,19 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="uEntToWaitFor" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="Hidden" type="U8">
+    <column name="Uenttowaitfor" type="INT">
       <offset>8</offset>
     </column>
-    <column name="Disabled" type="U8">
-      <offset>9</offset>
-    </column>
-    <column name="WaitingForEnt" type="INT">
+    <column name="Hidden" type="U8">
       <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disabled" type="U8">
+      <offset>13</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Waitingforent" type="INT">
+      <offset>16</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>

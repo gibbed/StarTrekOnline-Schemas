@@ -14,16 +14,16 @@
       </flags>
       <static_define_list external="SkillType" />
     </column>
-    <column name="PrimaryRecipe" type="REFERENCE">
-      <offset>4</offset>
-      <dictionary_name>ItemDef</dictionary_name>
-    </column>
-    <column name="SecondaryRecipe" type="REFERENCE">
+    <column name="Primaryrecipe" type="REFERENCE">
       <offset>8</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="DeviceRecipe" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Secondaryrecipe" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Devicerecipe" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
     <column name="}" type="END" />

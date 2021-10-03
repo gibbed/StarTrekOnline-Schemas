@@ -6,149 +6,149 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="DynMoveSeq" type="STRING">
+    <column name="Dynmoveseq" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="DynAnimTrack" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+    <column name="Dynanimtrack" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
       <subtable external="DynMoveAnimTrack" />
     </column>
-    <column name="DynFxEvent" type="STRUCT">
-      <offset>80</offset>
+    <column name="Dynfxevent" type="STRUCT">
+      <offset>128</offset>
       <subtable external="DynMoveFxEvent" />
     </column>
-    <column name="MatchBaseSkelAnim" type="STRUCT">
-      <offset>84</offset>
+    <column name="Dynsyncpoint" type="STRUCT">
+      <offset>136</offset>
+      <subtable external="DynMoveSyncPoint" />
+    </column>
+    <column name="Matchbaseskelanim" type="STRUCT">
+      <offset>144</offset>
       <subtable external="DynMoveMatchBaseSkelAnim" />
     </column>
-    <column name="RagdollFrame" type="INT">
-      <offset>88</offset>
-    </column>
-    <column name="RagdollStartTime" type="F32">
-      <offset>92</offset>
-      <flags>
-        <flag>NO_TEXT_SAVE</flag>
-      </flags>
-    </column>
-    <column name="RagdollAdditionalGravity" type="F32">
-      <offset>96</offset>
-    </column>
-    <column name="DisableTorsoPointingTimeout" type="F32">
-      <offset>100</offset>
-    </column>
-    <column name="Speed" type="F32">
-      <offset>104</offset>
-      <default>1</default>
-    </column>
-    <column name="SpeedLow" type="F32">
-      <offset>104</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>Speed</redundant_name>
-      <default>1</default>
-    </column>
-    <column name="SpeedHigh" type="F32">
-      <offset>108</offset>
-    </column>
-    <column name="IKTarget" type="STRING">
-      <offset>112</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="IKTargetNodeLeft" type="STRING">
-      <offset>116</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="IKTargetNodeRight" type="STRING">
-      <offset>120</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="BankMaxAngle" type="F32">
-      <offset>124</offset>
-    </column>
-    <column name="BankScale" type="F32">
-      <offset>128</offset>
-    </column>
-    <column name="Distance" type="F32">
-      <offset>132</offset>
-    </column>
-    <column name="MinRate" type="F32">
-      <offset>136</offset>
-    </column>
-    <column name="MaxRate" type="F32">
-      <offset>140</offset>
-    </column>
-    <column name="BlendFrames" type="F32">
-      <offset>144</offset>
-      <default>1089470464</default>
-    </column>
-    <column name="BlendRate" type="F32">
-      <offset>148</offset>
-      <flags>
-        <flag>NO_TEXT_SAVE</flag>
-      </flags>
-    </column>
-    <column name="Length" type="F32">
+    <column name="Ragdollframe" type="INT">
       <offset>152</offset>
-      <flags>
-        <flag>NO_TEXT_SAVE</flag>
-      </flags>
     </column>
-    <column name="RandSpeed" type="U8">
+    <column name="Ragdollstarttime" type="F32">
       <offset>156</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
     </column>
-    <column name="Verified" type="U8">
-      <offset>157</offset>
+    <column name="Ragdolladditionalgravity" type="F32">
+      <offset>160</offset>
+    </column>
+    <column name="Disabletorsopointingtimeout" type="F32">
+      <offset>164</offset>
+    </column>
+    <column name="Speed" type="F32">
+      <offset>168</offset>
+      <default>1</default>
+    </column>
+    <column name="Speedlow" type="F32">
+      <offset>168</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Speed</redundant_name>
+      <default>1</default>
+    </column>
+    <column name="Speedhigh" type="F32">
+      <offset>172</offset>
+    </column>
+    <column name="Iktarget" type="STRING">
+      <offset>176</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Iktargetnodeleft" type="STRING">
+      <offset>184</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Iktargetnoderight" type="STRING">
+      <offset>192</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Bankmaxangle" type="F32">
+      <offset>200</offset>
+    </column>
+    <column name="Bankscale" type="F32">
+      <offset>204</offset>
+    </column>
+    <column name="Distance" type="F32">
+      <offset>208</offset>
+    </column>
+    <column name="Minrate" type="F32">
+      <offset>212</offset>
+    </column>
+    <column name="Maxrate" type="F32">
+      <offset>216</offset>
+    </column>
+    <column name="Blendframes" type="F32">
+      <offset>220</offset>
+      <default>1089470464</default>
+    </column>
+    <column name="Blendrate" type="F32">
+      <offset>224</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
     </column>
-    <column name="Ragdoll" type="BOOLFLAG">
-      <offset>158</offset>
-    </column>
-    <column name="IKBothHands" type="BOOLFLAG">
-      <offset>159</offset>
-    </column>
-    <column name="RegisterWep" type="BOOLFLAG">
-      <offset>160</offset>
-    </column>
-    <column name="IKMeleeMode" type="BOOLFLAG">
-      <offset>161</offset>
-    </column>
-    <column name="EnableIKSliding" type="BOOLFLAG">
-      <offset>162</offset>
-    </column>
-    <column name="DisableIKLeftWrist" type="BOOLFLAG">
-      <offset>163</offset>
-    </column>
-    <column name="DisableIKRightArm" type="BOOLFLAG">
-      <offset>164</offset>
-    </column>
-    <column name="PlayWhileStopped" type="BOOLFLAG">
-      <offset>165</offset>
-    </column>
-    <column name="ShowWhileStopped" type="BOOLFLAG">
-      <offset>165</offset>
+    <column name="Length" type="F32">
+      <offset>228</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>NO_TEXT_SAVE</flag>
       </flags>
-      <redundant_name>PlayWhileStopped</redundant_name>
     </column>
-    <column name="EnableTerrainTiltBlend" type="BOOLFLAG">
-      <offset>166</offset>
+    <column name="Randspeed" type="U8">
+      <offset>232</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Verified" type="U8">
+      <offset>233</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ragdoll" type="BOOLFLAG">
+      <offset>234</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Registerwep" type="BOOLFLAG">
+      <offset>235</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Playwhilestopped" type="BOOLFLAG">
+      <offset>236</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showwhilestopped" type="BOOLFLAG">
+      <offset>236</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Playwhilestopped</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enableterraintiltblend" type="BOOLFLAG">
+      <offset>237</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Enableslidespeedblend" type="BOOLFLAG">
+      <offset>238</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

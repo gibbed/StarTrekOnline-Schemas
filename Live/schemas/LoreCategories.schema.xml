@@ -7,9 +7,8 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LoreCategory" type="STRUCT">
+    <column name="Lorecategory" type="STRINGARRAY">
       <offset>0</offset>
-      <subtable external="LoreCategory" />
     </column>
     <column name="}" type="END" />
   </table>

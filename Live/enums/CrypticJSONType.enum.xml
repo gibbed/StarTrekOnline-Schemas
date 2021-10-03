@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CrypticJSONType">
+  <elements type="int">
+    <element name="NULL">0</element>
+    <element name="TRUE">1</element>
+    <element name="FALSE">2</element>
+    <element name="NUMBER">3</element>
+    <element name="STRING">4</element>
+    <element name="ARRAY">5</element>
+    <element name="OBJECT">6</element>
+  </elements>
+</enum>

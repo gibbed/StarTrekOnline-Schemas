@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DryDockConfig">
+  <table>
+    <column name="DryDockConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Basedrydock" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Lifetimedrydock" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Purchasedrydocknumeric" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Drydockcooldown" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

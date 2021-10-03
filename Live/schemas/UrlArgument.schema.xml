@@ -7,30 +7,53 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="Arg" type="STRING">
+    <column name="Type" type="INT">
       <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <static_define_list external="HttpParamType" />
     </column>
-    <column name="Value" type="STRING">
+    <column name="Content-length" type="INT">
       <offset>4</offset>
     </column>
-    <column name="value_ext" type="STRING">
+    <column name="Name" type="STRING">
       <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>ESTRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Value" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Arg_Shared" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Value_Shared" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="FileName" type="STRING">
-      <offset>12</offset>
+      <offset>40</offset>
     </column>
-    <column name="content_type" type="STRING">
-      <offset>16</offset>
-    </column>
-    <column name="Length" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="method" type="INT">
-      <offset>24</offset>
-      <static_define_list external="HttpMethod" />
+    <column name="Content-type" type="STRING">
+      <offset>48</offset>
     </column>
     <column name="}" type="END" />
   </table>

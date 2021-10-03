@@ -3,10 +3,12 @@
   <elements type="int">
     <element name="Bound">1</element>
     <element name="Unidentified">2</element>
-    <element name="Full">4</element>
+    <element name="AcquiredDuringProbation">4</element>
     <element name="BoundToAccount">8</element>
     <element name="TrainingFromItem">16</element>
     <element name="SlottedOnAssignment">32</element>
     <element name="Algo">64</element>
+    <element name="ProtectedItem">128</element>
+    <element name="DisableVFX">256</element>
   </elements>
 </enum>

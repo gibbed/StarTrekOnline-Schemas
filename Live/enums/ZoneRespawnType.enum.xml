@@ -3,5 +3,6 @@
   <elements type="int">
     <element name="Default">0</element>
     <element name="NearTeam">1</element>
+    <element name="RandomPoint">2</element>
   </elements>
 </enum>

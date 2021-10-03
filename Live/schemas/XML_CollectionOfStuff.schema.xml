@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ptrs" type="STRUCT">
+    <column name="Ptrs" type="STRUCT">
       <offset>0</offset>
       <subtable external="XML_TestStruct" />
     </column>

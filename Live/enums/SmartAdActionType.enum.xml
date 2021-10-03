@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="SmartAdActionType">
+  <elements type="int">
+    <element name="Match">0</element>
+    <element name="None">1</element>
+    <element name="GenShow">2</element>
+    <element name="RunCommand">3</element>
+    <element name="ZenMarketProduct">4</element>
+    <element name="ZenMarketCategory">5</element>
+    <element name="Transwarp">6</element>
+    <element name="TranswarpFree">7</element>
+    <element name="Contact">8</element>
+    <element name="ShipStore">9</element>
+    <element name="GameProgressionNode">4294967295</element>
+  </elements>
+</enum>

@@ -2,31 +2,31 @@
 <parser name="Event">
   <table>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="KeyFrame" type="STRUCT">
+    <column name="Keyframe" type="STRUCT">
       <offset>0</offset>
-      <subtable external="KeyFrame" />
+      <subtable external="Keyframe" />
     </column>
-    <column name="MatConstRename" type="STRUCT">
-      <offset>136</offset>
+    <column name="Matconstrename" type="STRUCT">
+      <offset>152</offset>
       <subtable external="DynMNCRename" />
     </column>
-    <column name="ContinuingFX" type="BOOLFLAG">
-      <offset>152</offset>
+    <column name="Continuingfx" type="BOOLFLAG">
+      <offset>176</offset>
     </column>
     <column name="Loop" type="BOOLFLAG">
-      <offset>155</offset>
+      <offset>179</offset>
     </column>
-    <column name="TriggerOnce" type="BOOLFLAG">
-      <offset>153</offset>
+    <column name="Triggeronce" type="BOOLFLAG">
+      <offset>177</offset>
     </column>
-    <column name="AutoTriggerTime" type="F32">
-      <offset>148</offset>
+    <column name="Autotriggertime" type="F32">
+      <offset>172</offset>
     </column>
     <column name="End" type="END" />
   </table>

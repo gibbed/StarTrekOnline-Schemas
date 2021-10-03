@@ -9,6 +9,7 @@
     <element name="CharacterCreator">4</element>
     <element name="Indoor">5</element>
     <element name="PvP">6</element>
-    <element name="COUNT">7</element>
+    <element name="TerrainDetail">7</element>
+    <element name="COUNT">8</element>
   </elements>
 </enum>

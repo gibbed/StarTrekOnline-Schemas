@@ -7,33 +7,41 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="HasDefaultColor0" type="U8">
+    <column name="Hasdefaultcolor0" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="HasDefaultColor1" type="U8">
+    <column name="Hasdefaultcolor1" type="U8">
       <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="HasDefaultColor2" type="U8">
+    <column name="Hasdefaultcolor2" type="U8">
       <offset>2</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="HasDefaultColor3" type="U8">
+    <column name="Hasdefaultcolor3" type="U8">
       <offset>3</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DefaultColor_0" type="U8FIXEDARRAY">
+    <column name="Defaultcolor_0" type="U8FIXEDARRAY">
       <offset>4</offset>
       <num_elements>4</num_elements>
+      <format>COLOR</format>
     </column>
-    <column name="DefaultColor_1" type="U8FIXEDARRAY">
+    <column name="Defaultcolor_1" type="U8FIXEDARRAY">
       <offset>8</offset>
       <num_elements>4</num_elements>
+      <format>COLOR</format>
     </column>
-    <column name="DefaultColor_2" type="U8FIXEDARRAY">
+    <column name="Defaultcolor_2" type="U8FIXEDARRAY">
       <offset>12</offset>
       <num_elements>4</num_elements>
+      <format>COLOR</format>
     </column>
-    <column name="DefaultColor_3" type="U8FIXEDARRAY">
+    <column name="Defaultcolor_3" type="U8FIXEDARRAY">
       <offset>16</offset>
       <num_elements>4</num_elements>
+      <format>COLOR</format>
     </column>
     <column name="}" type="END" />
   </table>

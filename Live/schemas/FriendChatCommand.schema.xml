@@ -11,25 +11,25 @@
       <offset>0</offset>
     </column>
     <column name="AccountName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="DisplayName" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="last_online_time" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="friend_request_send_date" type="INT">
+    <column name="DisplayName" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="online_status" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="status_message" type="STRING">
+    <column name="Last_Online_Time" type="INT">
       <offset>24</offset>
     </column>
-    <column name="OnlineGames" type="STRUCT">
+    <column name="Friend_Request_Send_Date" type="INT">
       <offset>28</offset>
+    </column>
+    <column name="Online_Status" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Status_Message" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Onlinegames" type="STRUCT">
+      <offset>48</offset>
       <subtable external="OnlineGamesChatCommand" />
     </column>
     <column name="}" type="END" />

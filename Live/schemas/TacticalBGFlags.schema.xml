@@ -7,161 +7,165 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="aimButtonIsDown" type="BIT">
+    <column name="Aimbuttonisdown" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="startAiming" type="BIT">
+    <column name="Startaiming" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="isAiming" type="BIT">
+    <column name="Isaiming" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="aimWhenAvailable" type="BIT">
+    <column name="Aimwhenavailable" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="aimHeldForMinDuration" type="BIT">
+    <column name="Aimheldforminduration" type="BIT">
       <offset>0</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="crouchButtonIsDown" type="BIT">
+    <column name="Crouchbuttonisdown" type="BIT">
       <offset>0</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="startCrouching" type="BIT">
+    <column name="Startcrouching" type="BIT">
       <offset>0</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="isCrouching" type="BIT">
+    <column name="Iscrouching" type="BIT">
       <offset>0</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="crouchWhenAvailable" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Crouchwhenavailable" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="runButtonIsDown" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Runbuttonisdown" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="hasRunMaxDuration" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Hasrunmaxduration" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="startRunning" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Startrunning" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65539</bit_offset>
     </column>
-    <column name="isRunning" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65548</bit_offset>
+    <column name="Isrunning" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65540</bit_offset>
     </column>
-    <column name="runIsDisabled" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65549</bit_offset>
+    <column name="Runisdisabled" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65541</bit_offset>
     </column>
-    <column name="runFuelNeedsRefill" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65550</bit_offset>
+    <column name="Runfuelneedsrefill" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65542</bit_offset>
     </column>
-    <column name="rollButtonIsDown" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65551</bit_offset>
+    <column name="Runstanceset" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65543</bit_offset>
     </column>
-    <column name="startRolling" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65552</bit_offset>
+    <column name="Rollbuttonisdown" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="waitingToRoll" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65553</bit_offset>
+    <column name="Startrolling" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="disableUpdateDirRoll" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65554</bit_offset>
+    <column name="Waitingtoroll" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="isRolling" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65555</bit_offset>
+    <column name="Disableupdatedirroll" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65539</bit_offset>
     </column>
-    <column name="startedRolling" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65556</bit_offset>
+    <column name="Isrolling" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65540</bit_offset>
     </column>
-    <column name="playedRollAnim" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65557</bit_offset>
+    <column name="Startedrolling" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65541</bit_offset>
     </column>
-    <column name="startedRollingInAir" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65558</bit_offset>
+    <column name="Playedrollanim" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65542</bit_offset>
     </column>
-    <column name="hasYawFaceTarget" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65559</bit_offset>
+    <column name="Startedrollinginair" type="BIT">
+      <offset>2</offset>
+      <bit_offset>65543</bit_offset>
     </column>
-    <column name="useToBGYawOverride" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65560</bit_offset>
+    <column name="Hasyawfacetarget" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="didLargeStepUp" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65561</bit_offset>
+    <column name="Usetobgyawoverride" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="onGroundRolling" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65562</bit_offset>
+    <column name="Didlargestepup" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="appliedRollFuelCost" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65563</bit_offset>
+    <column name="Ongroundrolling" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65539</bit_offset>
     </column>
-    <column name="cooldownIsFromRunning" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65564</bit_offset>
+    <column name="Appliedrollfuelcost" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65540</bit_offset>
     </column>
-    <column name="cooldownIsFromAiming" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65565</bit_offset>
+    <column name="Cooldownisfromrunning" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65541</bit_offset>
     </column>
-    <column name="disableRolling" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65566</bit_offset>
+    <column name="Cooldownisfromaiming" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65542</bit_offset>
     </column>
-    <column name="disableAiming" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65567</bit_offset>
+    <column name="Disablerolling" type="BIT">
+      <offset>3</offset>
+      <bit_offset>65543</bit_offset>
     </column>
-    <column name="disableCrouch" type="BIT">
+    <column name="Disableaiming" type="BIT">
       <offset>4</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="disableSprinting" type="BIT">
+    <column name="Disablecrouch" type="BIT">
       <offset>4</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="disableQueueRoll" type="BIT">
+    <column name="Disablesprinting" type="BIT">
       <offset>4</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="disableQueueAim" type="BIT">
+    <column name="Disablequeueroll" type="BIT">
       <offset>4</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="disableQueueCrouch" type="BIT">
+    <column name="Disablequeueaim" type="BIT">
       <offset>4</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="disableQueueSprint" type="BIT">
+    <column name="Disablequeuecrouch" type="BIT">
       <offset>4</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="powersBeingUsed" type="BIT">
+    <column name="Disablequeuesprint" type="BIT">
       <offset>4</offset>
       <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Powersbeingused" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65543</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

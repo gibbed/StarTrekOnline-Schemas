@@ -13,7 +13,7 @@
         <flag>STRUCTPARAM</flag>
         <flag>REQUIRED</flag>
       </flags>
-      <static_define_list external="UITweenType" />
+      <static_define_list external="TweenType" />
     </column>
     <column name="TotalTime" type="F32">
       <offset>4</offset>
@@ -22,14 +22,20 @@
         <flag>REQUIRED</flag>
       </flags>
     </column>
-    <column name="TimeBetweenCycles" type="F32">
+    <column name="Timebetweencycles" type="F32">
       <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="Mode" type="INT">
+    <column name="Initialdelay" type="F32">
       <offset>12</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Mode" type="INT">
+      <offset>16</offset>
       <static_define_list external="UIStyleColorPaletteTweenMode" />
     </column>
     <column name="}" type="END" />

@@ -11,33 +11,35 @@
       <offset>0</offset>
     </column>
     <column name="Style" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="NextPromptName" type="STRING">
-      <offset>8</offset>
+    <column name="Nextpromptname" type="STRING">
+      <offset>16</offset>
     </column>
-    <column name="GrantMission" type="U8">
-      <offset>12</offset>
+    <column name="Grantmission" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DismissAction" type="U8">
-      <offset>13</offset>
+    <column name="Dismissaction" type="U8">
+      <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Actions" type="EMBEDDEDSTRUCT">
-      <offset>16</offset>
+      <offset>32</offset>
       <subtable external="WorldGameActionBlock" />
     </column>
-    <column name="NextBlockName" type="STRING">
-      <offset>20</offset>
+    <column name="Nextblockname" type="STRING">
+      <offset>40</offset>
     </column>
     <column name="When" type="EMBEDDEDSTRUCT">
-      <offset>24</offset>
+      <offset>48</offset>
       <subtable external="GenesisWhen" />
     </column>
-    <column name="EnabledCheckedAttrib" type="OPTIONALSTRUCT">
-      <offset>112</offset>
+    <column name="Enabledcheckedattrib" type="OPTIONALSTRUCT">
+      <offset>216</offset>
       <subtable external="GenesisCheckedAttrib" />
     </column>
     <column name="}" type="END" />

@@ -10,20 +10,20 @@
     <column name="userID" type="INT">
       <offset>0</offset>
     </column>
-    <column name="UserHandle" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
-    </column>
-    <column name="Body" type="STRING">
+    <column name="Userhandle" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
+    <column name="Body" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
     <column name="Time" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

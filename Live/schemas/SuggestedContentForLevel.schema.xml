@@ -14,8 +14,8 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="ContentInfo" type="STRUCT">
-      <offset>4</offset>
+    <column name="Contentinfo" type="STRUCT">
+      <offset>8</offset>
       <subtable external="SuggestedContentNode" />
     </column>
     <column name="}" type="END" />

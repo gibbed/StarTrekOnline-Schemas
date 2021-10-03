@@ -12,7 +12,7 @@
       <static_define_list external="GenesisParamType" />
     </column>
     <column name="Value" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MicroTransactionCostumeUnlock">
+  <table>
+    <column name="MicroTransactionCostumeUnlock" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Hunlockedgeometry" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>PCGeometryDef</dictionary_name>
+    </column>
+    <column name="Hunlockedmaterial" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>PCMaterialDef</dictionary_name>
+    </column>
+    <column name="Hunlockedtexture" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>PCTextureDef</dictionary_name>
+    </column>
+    <column name="Costumes" type="STRINGARRAY">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Hidden" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Owned" type="U8">
+      <offset>41</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="New" type="U8">
+      <offset>42</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

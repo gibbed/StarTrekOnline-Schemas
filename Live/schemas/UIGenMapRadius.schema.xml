@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ClampRadius" type="F32">
+    <column name="Clampradius" type="F32">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
@@ -17,6 +17,7 @@
     <column name="Offset" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

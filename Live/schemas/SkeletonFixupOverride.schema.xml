@@ -6,14 +6,14 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="vrml_filename" type="STRING">
+    <column name="Vrml_Filename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="skeleton_name" type="STRING">
-      <offset>4</offset>
+    <column name="Skeleton_Name" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>

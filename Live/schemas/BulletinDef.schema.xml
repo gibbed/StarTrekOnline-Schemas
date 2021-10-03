@@ -7,37 +7,37 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uActivateTime" type="INT">
+    <column name="Uactivatetime" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uIgnoreTime" type="INT">
+    <column name="Uignoretime" type="INT">
       <offset>4</offset>
     </column>
-    <column name="DisplayDate" type="STRING">
+    <column name="Displaydate" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="IgnoreDate" type="STRING">
-      <offset>12</offset>
+    <column name="Ignoredate" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="Message" type="STRUCT">
-      <offset>16</offset>
+      <offset>24</offset>
       <subtable external="BulletinMessage" />
     </column>
     <column name="Event" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+      <offset>32</offset>
       <subtable external="BulletinEvent" />
     </column>
-    <column name="MicroTransactionDef" type="STRING">
-      <offset>24</offset>
+    <column name="Microtransactiondef" type="STRING">
+      <offset>40</offset>
     </column>
     <column name="Link" type="STRING">
-      <offset>28</offset>
+      <offset>48</offset>
     </column>
     <column name="Category" type="STRING">
-      <offset>32</offset>
+      <offset>56</offset>
     </column>
-    <column name="hMTDef" type="REFERENCE">
-      <offset>40</offset>
+    <column name="Hmtdef" type="REFERENCE">
+      <offset>72</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>

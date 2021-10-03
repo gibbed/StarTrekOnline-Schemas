@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FX2CostumeMaterialType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="Swap_Material">1</element>
+    <element name="Swap">1</element>
+    <element name="Overlay_Material">2</element>
+    <element name="Add">2</element>
+    <element name="Dissolve_Material">3</element>
+    <element name="Dissolve">3</element>
+    <element name="TextureSwap_Material">4</element>
+    <element name="TextureSwap">4</element>
+    <element name="Multiply_Color0">5</element>
+    <element name="Add_Color0">6</element>
+    <element name="Multiply_Ambient">7</element>
+    <element name="Add_Ambient">8</element>
+  </elements>
+</enum>

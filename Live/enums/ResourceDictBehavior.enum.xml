@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ResourceDictBehavior">
+  <elements type="int">
+    <element name="LOCAL">0</element>
+    <element name="REQUEST">1</element>
+    <element name="AUTO_REQUEST">2</element>
+  </elements>
+</enum>

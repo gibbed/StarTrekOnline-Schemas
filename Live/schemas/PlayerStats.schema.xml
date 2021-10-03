@@ -7,29 +7,29 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PointsLeft" type="INT">
+    <column name="Pointsleft" type="INT">
       <offset>0</offset>
     </column>
     <column name="XP" type="INT">
       <offset>4</offset>
     </column>
-    <column name="NextLevelXP" type="INT">
+    <column name="Nextlevelxp" type="INT">
       <offset>8</offset>
     </column>
     <column name="Reputation" type="INT">
       <offset>12</offset>
     </column>
-    <column name="PvPWins" type="INT">
+    <column name="Pvpwins" type="INT">
       <offset>16</offset>
     </column>
-    <column name="PvPLosses" type="INT">
+    <column name="Pvplosses" type="INT">
       <offset>20</offset>
     </column>
-    <column name="PvPGames" type="INT">
+    <column name="Pvpgames" type="INT">
       <offset>24</offset>
     </column>
     <column name="Stats" type="STRUCT">
-      <offset>28</offset>
+      <offset>32</offset>
       <subtable external="StatInfo" />
     </column>
     <column name="}" type="END" />

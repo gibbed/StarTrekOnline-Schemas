@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NumericValue" type="INT">
+    <column name="Numericvalue" type="INT">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="MaxSlots" type="INT">
+    <column name="Maxslots" type="INT">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

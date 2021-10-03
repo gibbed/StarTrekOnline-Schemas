@@ -7,18 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiSpawnBoxes" type="INTFIXEDARRAY">
+    <column name="Uispawnboxes" type="INTFIXEDARRAY">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <num_elements>3</num_elements>
     </column>
-    <column name="SpawnBoxSize" type="F32FIXEDARRAY">
+    <column name="Spawnboxsize" type="F32FIXEDARRAY">
       <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="AreaCheck" type="F32">
+    <column name="Areacheck" type="F32">
       <offset>24</offset>
     </column>
     <column name="}" type="END" />

@@ -7,18 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="base_data" type="EMBEDDEDSTRUCT">
+    <column name="Base_Data" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="WorldCellEntryParsed" />
     </column>
     <column name="ID" type="INT">
       <offset>72</offset>
     </column>
-    <column name="animation_properties" type="EMBEDDEDSTRUCT">
+    <column name="Animation_Properties" type="EMBEDDEDSTRUCT">
       <offset>76</offset>
       <subtable external="WorldAnimationProperties" />
     </column>
-    <column name="parent_animation_entry_id" type="INT">
+    <column name="Parent_Animation_Entry_Id" type="INT">
       <offset>168</offset>
     </column>
     <column name="}" type="END" />

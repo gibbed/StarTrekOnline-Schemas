@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pcEmblem" type="STRING">
+    <column name="Pcemblem" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -15,88 +15,88 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iEmblemColor0" type="INT">
-      <offset>4</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="iEmblemColor1" type="INT">
+    <column name="Iemblemcolor0" type="INT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="fEmblemRotation" type="F32">
+    <column name="Iemblemcolor1" type="INT">
       <offset>12</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pcEmblem2" type="STRING">
+    <column name="Femblemrotation" type="F32">
       <offset>16</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pcemblem2" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iEmblem2Color0" type="INT">
-      <offset>20</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="iEmblem2Color1" type="INT">
-      <offset>24</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="fEmblem2Rotation" type="F32">
-      <offset>28</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="fEmblem2X" type="F32">
+    <column name="Iemblem2color0" type="INT">
       <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="fEmblem2Y" type="F32">
+    <column name="Iemblem2color1" type="INT">
       <offset>36</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="fEmblem2ScaleX" type="F32">
+    <column name="Femblem2rotation" type="F32">
       <offset>40</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <default>1</default>
     </column>
-    <column name="fEmblem2ScaleY" type="F32">
+    <column name="Femblem2x" type="F32">
       <offset>44</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Femblem2y" type="F32">
+      <offset>48</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Femblem2scalex" type="F32">
+      <offset>52</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <default>1</default>
     </column>
-    <column name="pcEmblem3" type="STRING">
-      <offset>48</offset>
+    <column name="Femblem2scaley" type="F32">
+      <offset>56</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <default>1</default>
+    </column>
+    <column name="Pcemblem3" type="STRING">
+      <offset>64</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SUBSCRIBE</flag>

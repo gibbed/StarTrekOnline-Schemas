@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="AppointmentUIDetails">
+  <table>
+    <column name="AppointmentUIDetails" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Appointmentisactive" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Appointmentdef" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>AppointmentDef</dictionary_name>
+    </column>
+    <column name="Playercostume" type="REFERENCE">
+      <offset>16</offset>
+      <dictionary_name>PlayerCostume</dictionary_name>
+    </column>
+    <column name="Primarynumericcount" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Primarynumericmax" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Primaryspentnumericcount" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Itemdef_Primarynumeric" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Itemdef_Primaryspentnumeric" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Dailylimitrewardgatecount" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Dailylimitrewardgatemax" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Canclaim" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hasclaimed" type="U8">
+      <offset>65</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Showbuyout" type="U8">
+      <offset>66</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Currentdailybonusreward" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Nextdailybonusreward" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Canuselegacytokens" type="U8">
+      <offset>76</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Legacyitemcount" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Legacyitemmaxitemspossibletocontribute" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Candoalternativebuyout" type="U8">
+      <offset>88</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Alternativebuyoutcost" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="Itemdef_Rewarditem" type="REFERENCE">
+      <offset>96</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Itemdef_Dailybonusscalenumeric" type="REFERENCE">
+      <offset>104</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Itemdef_Legacycontributionitem" type="REFERENCE">
+      <offset>112</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Itemdef_Legacycontributionitemtoadditionalnumeric" type="REFERENCE">
+      <offset>120</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Itemdef_Alternativebuyoutitemdef" type="REFERENCE">
+      <offset>128</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

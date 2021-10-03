@@ -7,103 +7,150 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PetName" type="STRING">
+    <column name="Petname" type="STRING">
       <offset>0</offset>
       <flags>
+        <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
         <flag>KEY</flag>
       </flags>
     </column>
+    <column name="Scope" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="CritterDef" type="REFERENCE">
-      <offset>8</offset>
+      <offset>24</offset>
       <dictionary_name>CritterDef</dictionary_name>
     </column>
     <column name="DisplayName" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
+      <offset>32</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Allegiance" type="REFERENCE">
-      <offset>24</offset>
+      <offset>56</offset>
       <dictionary_name>Allegiance</dictionary_name>
     </column>
-    <column name="AlwaysPropSlot" type="STRUCT">
-      <offset>28</offset>
+    <column name="Alwayspropslot" type="STRUCT">
+      <offset>64</offset>
       <subtable external="AlwaysPropSlotRef" />
     </column>
-    <column name="EscrowPower" type="STRUCT">
-      <offset>32</offset>
+    <column name="Escrowpower" type="STRUCT">
+      <offset>72</offset>
       <subtable external="PTNodeDefRef" />
     </column>
-    <column name="InteriorDef" type="STRUCT">
-      <offset>36</offset>
+    <column name="Interiordef" type="STRUCT">
+      <offset>80</offset>
       <subtable external="InteriorDefRef" />
     </column>
-    <column name="TradeableItem" type="REFERENCE">
-      <offset>40</offset>
+    <column name="Tradeableitem" type="REFERENCE">
+      <offset>88</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="MinActivePuppetLevel" type="INT">
-      <offset>44</offset>
+    <column name="Minactivepuppetlevel" type="INT">
+      <offset>96</offset>
     </column>
-    <column name="CanBePuppet" type="BIT">
-      <offset>48</offset>
+    <column name="Canbepuppet" type="BIT">
+      <offset>100</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="CanRemove" type="BIT">
-      <offset>48</offset>
+    <column name="Canremove" type="BIT">
+      <offset>100</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="CritterPet" type="BIT">
-      <offset>48</offset>
+    <column name="Critterpet" type="BIT">
+      <offset>100</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="ChooseRandomName" type="BIT">
-      <offset>48</offset>
+    <column name="Chooserandomname" type="BIT">
+      <offset>100</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="IsUnique" type="BIT">
-      <offset>48</offset>
+    <column name="Defaultnameprefix" type="INT">
+      <offset>104</offset>
+      <static_define_list external="ePetNamePrefix" />
+    </column>
+    <column name="Nameprefix" type="INTARRAY">
+      <offset>112</offset>
+      <static_define_list external="ePetNamePrefix" />
+    </column>
+    <column name="Hassubname" type="BIT">
+      <offset>120</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Defaultsubnameprefix" type="INT">
+      <offset>124</offset>
+      <static_define_list external="ePetSubNamePrefix" />
+    </column>
+    <column name="Subnameprefix" type="INTARRAY">
+      <offset>128</offset>
+      <static_define_list external="ePetSubNamePrefix" />
+    </column>
+    <column name="Isunique" type="BIT">
+      <offset>136</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Autogrant" type="BIT">
+      <offset>136</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Permanentname" type="BIT">
+      <offset>136</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Alwayssubscribe" type="BIT">
+      <offset>136</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Usefirstinemptyslot" type="BIT">
+      <offset>136</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="AutoGrant" type="BIT">
-      <offset>48</offset>
+    <column name="Gainsexperiencewithowner" type="BIT">
+      <offset>136</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="DisableTrainingFromPet" type="BIT">
-      <offset>48</offset>
+    <column name="Allowduplicatenonpropnodes" type="BIT">
+      <offset>136</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="PermanentName" type="BIT">
-      <offset>48</offset>
-      <bit_offset>65543</bit_offset>
+    <column name="Xprequiredtable" type="REFERENCE">
+      <offset>144</offset>
+      <dictionary_name>RewardValTable</dictionary_name>
     </column>
-    <column name="AlwaysSubscribe" type="BIT">
-      <offset>48</offset>
-      <bit_offset>65544</bit_offset>
-    </column>
-    <column name="UseFirstInEmptySlot" type="BIT">
-      <offset>48</offset>
-      <bit_offset>65545</bit_offset>
-    </column>
-    <column name="PetDiag" type="REFERENCE">
-      <offset>52</offset>
-      <dictionary_name>PetDiag</dictionary_name>
-    </column>
-    <column name="CharacterClass" type="REFERENCE">
-      <offset>56</offset>
+    <column name="Characterclass" type="REFERENCE">
+      <offset>152</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
       <dictionary_name>CharacterClass</dictionary_name>
     </column>
-    <column name="AcquireLimit" type="INT">
-      <offset>60</offset>
+    <column name="Acquirelimit" type="INT">
+      <offset>160</offset>
       <static_define_list external="PetAcquireLimit" />
     </column>
+    <column name="Powerspecialization" type="INTARRAY">
+      <offset>168</offset>
+      <static_define_list external="PowerSpecialization" />
+    </column>
+    <column name="Itemlink" type="REFERENCE">
+      <offset>176</offset>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Swappableitemchoice" type="STRUCT">
+      <offset>184</offset>
+      <subtable external="SwappableItemChoice" />
+    </column>
     <column name="Type" type="IGNORE" />
+    <column name="Disabletrainingfrompet" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

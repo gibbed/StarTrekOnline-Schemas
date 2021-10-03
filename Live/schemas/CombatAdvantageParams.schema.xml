@@ -12,10 +12,10 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1179</default>
+      <default>1285</default>
       <static_define_list external="AttribType" />
     </column>
-    <column name="AdvantageType" type="INT">
+    <column name="Advantagetype" type="INT">
       <offset>4</offset>
       <static_define_list external="CombatAdvantageType" />
     </column>

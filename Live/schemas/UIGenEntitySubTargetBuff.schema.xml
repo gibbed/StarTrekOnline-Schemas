@@ -10,39 +10,39 @@
     <column name="Category" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="PowerSubtargetCategory" />
     </column>
     <column name="Icon" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DescShort" type="STRING">
-      <offset>8</offset>
-      <flags>
-        <flag>UNKNOWN_32</flag>
-      </flags>
-    </column>
-    <column name="DescLong" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>UNKNOWN_32</flag>
-      </flags>
-    </column>
-    <column name="DescVeryLong" type="STRING">
+    <column name="Descshort" type="STRING">
       <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="PercentHealth" type="F32">
-      <offset>20</offset>
+    <column name="Desclong" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Descverylong" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+    </column>
+    <column name="Percenthealth" type="F32">
+      <offset>40</offset>
     </column>
     <column name="Count" type="INT">
-      <offset>24</offset>
+      <offset>44</offset>
     </column>
     <column name="}" type="END" />
   </table>

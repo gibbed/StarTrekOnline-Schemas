@@ -11,10 +11,10 @@
       <offset>0</offset>
     </column>
     <column name="List" type="STRINGARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="Times" type="INTARRAY">
-      <offset>8</offset>
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

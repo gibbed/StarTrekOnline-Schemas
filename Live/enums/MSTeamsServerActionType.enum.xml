@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MSTeamsServerActionType">
+  <elements type="int">
+    <element name="OPENLINK">0</element>
+    <element name="COMMAND">1</element>
+    <element name="COMMAND_W_TEXT">2</element>
+  </elements>
+</enum>

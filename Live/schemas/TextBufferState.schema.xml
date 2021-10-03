@@ -14,17 +14,21 @@
       </flags>
       <default_string />
     </column>
-    <column name="ProfanityFilteredText" type="STRING">
-      <offset>4</offset>
+    <column name="Profanityfilteredtext" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+      <default_string />
     </column>
     <column name="Cursor" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="SelectionStart" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="SelectionEnd" type="INT">
       <offset>16</offset>
+    </column>
+    <column name="Selectionstart" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Selectionend" type="INT">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

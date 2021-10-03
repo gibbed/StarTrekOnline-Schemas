@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MissionTag" type="STRUCT">
+    <column name="Missiontag" type="STRUCT">
       <offset>0</offset>
       <subtable external="MissionTagData" />
     </column>

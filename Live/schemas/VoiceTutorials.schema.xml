@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="showFirstConnectTutorial" type="INT">
+    <column name="Showfirstconnecttutorial" type="INT">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

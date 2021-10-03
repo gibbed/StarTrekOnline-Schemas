@@ -12,15 +12,15 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1172</default>
+      <default>1274</default>
       <static_define_list external="AttribType" />
     </column>
-    <column name="ScaleIn" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Scalein" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>FragileScaleSet</dictionary_name>
     </column>
-    <column name="ScaleOut" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Scaleout" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>FragileScaleSet</dictionary_name>
     </column>
     <column name="}" type="END" />

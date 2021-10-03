@@ -11,15 +11,15 @@
       <offset>0</offset>
       <subtable external="SSLibObj" />
     </column>
-    <column name="LibObject" type="STRUCT">
+    <column name="Libobject" type="STRUCT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Sun</redundant_name>
       <subtable external="SSLibObj" />
     </column>
-    <column name="DoNotScale" type="IGNORE" />
+    <column name="Donotscale" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

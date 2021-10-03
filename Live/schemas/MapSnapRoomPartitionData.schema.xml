@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="image_name_list" type="FIXEDFILENAME">
+    <column name="Image_Name_List" type="FIXEDFILENAME">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -15,25 +15,27 @@
         <flag>INDIRECT</flag>
       </flags>
     </column>
-    <column name="overview_image_name" type="FILENAME">
-      <offset>4</offset>
+    <column name="Overview_Image_Name" type="FILENAME">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Min" type="F32FIXEDARRAY">
-      <offset>8</offset>
-      <num_elements>2</num_elements>
-    </column>
-    <column name="Max" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="image_width" type="INT">
+    <column name="Max" type="F32FIXEDARRAY">
       <offset>24</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="image_height" type="INT">
-      <offset>28</offset>
+    <column name="Image_Width" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Image_Height" type="INT">
+      <offset>36</offset>
     </column>
     <column name="}" type="END" />
   </table>

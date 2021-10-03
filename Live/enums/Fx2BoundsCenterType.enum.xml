@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="Fx2BoundsCenterType">
+  <elements type="int">
+    <element name="Owner">0</element>
+    <element name="Source">1</element>
+    <element name="Target">2</element>
+    <element name="Location">3</element>
+    <element name="UserNode">4</element>
+    <element name="None">5</element>
+  </elements>
+</enum>

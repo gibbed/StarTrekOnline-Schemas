@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DynBlendMode">
+  <elements type="int">
+    <element name="Normal">0</element>
+    <element name="Additive">1</element>
+    <element name="Subtractive">2</element>
+    <element name="BlendAdd">3</element>
+  </elements>
+</enum>

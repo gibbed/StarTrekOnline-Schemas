@@ -19,19 +19,19 @@
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
       <redundant_name>Name</redundant_name>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Material" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>GLOBAL_NAME</flag>
@@ -39,7 +39,7 @@
       <dictionary_name>CostumeMaterial</dictionary_name>
     </column>
     <column name="Texture" type="STRINGARRAY">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>GLOBAL_NAME</flag>

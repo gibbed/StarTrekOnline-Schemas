@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hNode" type="REFERENCE">
+    <column name="Hnode" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>WorldInteractionNode</dictionary_name>
     </column>
-    <column name="hOverrideDisplayTextMsg" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hoverridedisplaytextmsg" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
     <column name="}" type="END" />

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GarrisonTaskType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="Construct">1</element>
+    <element name="Upgrade">2</element>
+    <element name="Destroy">3</element>
+    <element name="Replace">4</element>
+    <element name="Max">5</element>
+  </elements>
+</enum>

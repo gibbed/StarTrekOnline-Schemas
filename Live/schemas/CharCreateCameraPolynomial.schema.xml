@@ -6,6 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="Coefficient" type="F32">
       <offset>0</offset>
       <flags>
@@ -20,6 +21,6 @@
         <flag>REQUIRED</flag>
       </flags>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

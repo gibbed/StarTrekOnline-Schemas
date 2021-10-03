@@ -7,30 +7,30 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ItemSortTypeCategory" type="STRUCT">
+    <column name="Itemsorttypecategory" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="ItemSortTypeCategory" />
     </column>
-    <column name="ItemSortType" type="STRUCT">
-      <offset>4</offset>
+    <column name="Itemsorttype" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="ItemSortType" />
     </column>
-    <column name="IndexedItemSortTypes" type="STRUCT">
-      <offset>8</offset>
+    <column name="Indexeditemsorttypes" type="STRUCT">
+      <offset>16</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
-        <flag>UNKNOWN_32</flag>
+        <flag>DEFAULT_FIELD</flag>
       </flags>
       <subtable external="ItemSortType" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

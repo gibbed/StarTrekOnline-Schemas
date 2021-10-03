@@ -11,11 +11,11 @@
       <offset>0</offset>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="ExpressionString" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="MaxToReturn" type="INT">
+    <column name="Expressionstring" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Maxtoreturn" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

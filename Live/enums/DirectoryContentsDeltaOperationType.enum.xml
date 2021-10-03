@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DirectoryContentsDeltaOperationType">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="PRUNE_DIR">1</element>
+    <element name="CREATE_DIR">2</element>
+    <element name="DELETE_FILE">3</element>
+    <element name="CREATE_FILE">4</element>
+    <element name="UPDATE_FILE">5</element>
+  </elements>
+</enum>

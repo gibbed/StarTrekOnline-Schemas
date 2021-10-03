@@ -16,85 +16,92 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>SERVER_ONLY</flag>
-      </flags>
-    </column>
-    <column name="Scope" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
     <column name="Icon" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="displayNameMesg" type="EMBEDDEDSTRUCT">
-      <offset>16</offset>
+    <column name="Displaynamemesg" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="descriptionMesg" type="EMBEDDEDSTRUCT">
-      <offset>28</offset>
+    <column name="Shortdescriptionmesg" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
       <subtable external="DisplayMessage" />
+    </column>
+    <column name="Descriptionmesg" type="EMBEDDEDSTRUCT">
+      <offset>80</offset>
+      <subtable external="DisplayMessageWithVO" />
     </column>
     <column name="Settings" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">QueueSettings</format_string>
+      </format_strings>
     </column>
-    <column name="LeaverPenaltyMinGroupMemberCount" type="INT">
-      <offset>40</offset>
+    <column name="Leaverpenaltymingroupmembercount" type="INT">
+      <offset>128</offset>
     </column>
-    <column name="PlayerLimboTimeout" type="INT">
-      <offset>44</offset>
+    <column name="Playerlimbotimeout" type="INT">
+      <offset>132</offset>
     </column>
-    <column name="PenaltyDuration" type="INT">
-      <offset>48</offset>
+    <column name="Penaltyduration" type="INT">
+      <offset>136</offset>
     </column>
-    <column name="MissionReturnLogoutTime" type="INT">
-      <offset>52</offset>
+    <column name="Missionreturnlogouttime" type="INT">
+      <offset>140</offset>
     </column>
-    <column name="KickLogoutTime" type="INT">
-      <offset>52</offset>
+    <column name="Kicklogouttime" type="INT">
+      <offset>140</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>MissionReturnLogoutTime</redundant_name>
+      <redundant_name>Missionreturnlogouttime</redundant_name>
     </column>
-    <column name="QueueKickLogoutTime" type="INT">
-      <offset>52</offset>
+    <column name="Queuekicklogouttime" type="INT">
+      <offset>140</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>MissionReturnLogoutTime</redundant_name>
+      <redundant_name>Missionreturnlogouttime</redundant_name>
     </column>
-    <column name="MaxAFKTime" type="INT">
-      <offset>56</offset>
+    <column name="Maxafktime" type="INT">
+      <offset>144</offset>
     </column>
     <column name="Public" type="BIT">
-      <offset>60</offset>
+      <offset>148</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="AlwaysCreate" type="BIT">
-      <offset>60</offset>
+    <column name="Alwayscreate" type="BIT">
+      <offset>148</offset>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="Debug" type="BIT">
-      <offset>60</offset>
+      <offset>148</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="StayInQueueOnMapLeave" type="BIT">
-      <offset>60</offset>
+    <column name="Stayinqueueonmapleave" type="BIT">
+      <offset>148</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="DestroyEmptyMaps" type="BIT">
-      <offset>60</offset>
+    <column name="Destroyemptymaps" type="BIT">
+      <offset>148</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
@@ -103,256 +110,329 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="RandomMap" type="BIT">
-      <offset>60</offset>
+    <column name="Randommap" type="BIT">
+      <offset>148</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="SplitTeams" type="BIT">
-      <offset>60</offset>
+    <column name="Splitteams" type="BIT">
+      <offset>148</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="IgnoreLevelBandsForTeams" type="BIT">
-      <offset>60</offset>
+    <column name="Ignorelevelbandsforteams" type="BIT">
+      <offset>148</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="EnableLeaverPenalty" type="BIT">
-      <offset>60</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Enableleaverpenalty" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="MapRules" type="IGNORE">
+    <column name="Maprules" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">QueueMapRules</format_string>
+      </format_strings>
     </column>
-    <column name="QGameRules" type="IGNORE">
+    <column name="Qgamerules" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">PVPGameRules</format_string>
+      </format_strings>
     </column>
-    <column name="publicRules" type="IGNORE">
+    <column name="Publicrules" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">PVPPublicGameRules</format_string>
+      </format_strings>
     </column>
-    <column name="GameType" type="INT">
-      <offset>64</offset>
+    <column name="Gametype" type="INT">
+      <offset>152</offset>
       <static_define_list external="PVPGameType" />
     </column>
-    <column name="PointMax" type="INT">
-      <offset>68</offset>
-    </column>
-    <column name="Scoreboard" type="STRING">
-      <offset>72</offset>
-    </column>
-    <column name="Leaderboard" type="STRINGARRAY">
-      <offset>76</offset>
-    </column>
-    <column name="DisableNaturalRespawn" type="U8">
-      <offset>80</offset>
-    </column>
-    <column name="SuicidePenality" type="U8">
-      <offset>81</offset>
-    </column>
-    <column name="RoundTime" type="F32">
-      <offset>84</offset>
-    </column>
-    <column name="IntervalTime" type="F32">
-      <offset>88</offset>
-    </column>
-    <column name="CaptureTime" type="F32">
-      <offset>92</offset>
-    </column>
-    <column name="RecycleTime" type="F32">
-      <offset>96</offset>
-    </column>
-    <column name="FriendlyBonus" type="F32">
-      <offset>100</offset>
-    </column>
-    <column name="PointTime" type="F32">
-      <offset>104</offset>
-    </column>
-    <column name="CaptureDistance" type="F32">
-      <offset>108</offset>
-    </column>
-    <column name="CapturePointName" type="STRING">
-      <offset>112</offset>
-    </column>
-    <column name="PointStatusFX" type="STRINGARRAY">
-      <offset>116</offset>
-    </column>
-    <column name="CapturePointFX" type="STRINGARRAY">
-      <offset>120</offset>
-    </column>
-    <column name="ContestedPointFX" type="STRINGARRAY">
-      <offset>124</offset>
-    </column>
-    <column name="MaxGameTime" type="F32">
-      <offset>128</offset>
-    </column>
-    <column name="MaxOvertime" type="F32">
-      <offset>132</offset>
-    </column>
-    <column name="MaxDropTime" type="F32">
-      <offset>136</offset>
-    </column>
-    <column name="FlagName" type="STRING">
-      <offset>140</offset>
-    </column>
-    <column name="FlagCritter" type="STRING">
-      <offset>144</offset>
-    </column>
-    <column name="FlagPower" type="STRINGARRAY">
-      <offset>148</offset>
-    </column>
-    <column name="FlagCarrierClass" type="REFERENCE">
-      <offset>152</offset>
-      <dictionary_name>CharacterClass</dictionary_name>
-    </column>
-    <column name="RechargePowerCategories" type="STRINGARRAY">
+    <column name="Pointmax" type="INT">
       <offset>156</offset>
     </column>
-    <column name="RequireOwnFlagToScore" type="BIT">
+    <column name="Minmembersallgroups" type="INT">
       <offset>160</offset>
-      <bit_offset>65536</bit_offset>
     </column>
-    <column name="FlagStackPowers" type="STRUCT">
+    <column name="Maxwaitfornextplayertime" type="INT">
       <offset>164</offset>
-      <subtable external="CTF_FlagPowerStack" />
     </column>
-    <column name="MatchMakingRules" type="OPTIONALSTRUCT">
+    <column name="Maxwaittimefromfirstjoin" type="INT">
       <offset>168</offset>
-      <subtable external="QueueMatchMakingRules" />
     </column>
-    <column name="MaxLocalTeamsPerGroup" type="INT">
-      <offset>172</offset>
-    </column>
-    <column name="NeutralFaction" type="REFERENCE">
+    <column name="Scoreboard" type="STRING">
       <offset>176</offset>
+    </column>
+    <column name="Leaderboard" type="STRINGARRAY">
+      <offset>184</offset>
+    </column>
+    <column name="Disablenaturalrespawn" type="U8">
+      <offset>192</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Neutralfaction" type="REFERENCE">
+      <offset>200</offset>
       <dictionary_name>CritterFaction</dictionary_name>
     </column>
-    <column name="EnableAutoTeam" type="BIT">
-      <offset>180</offset>
+    <column name="Hacknnoopenpvpdom" type="U8">
+      <offset>208</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Minimumpointsforreward" type="INT">
+      <offset>212</offset>
+    </column>
+    <column name="Queuerewardtables" type="STRUCT">
+      <offset>216</offset>
+      <subtable external="QueueRewardTable" />
+    </column>
+    <column name="Ignorematchdefleaderboard" type="BIT">
+      <offset>224</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="EnableTeamUp" type="BIT">
-      <offset>180</offset>
+    <column name="Addtomatchhistory" type="BIT">
+      <offset>224</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="AllowConcede" type="BIT">
-      <offset>180</offset>
+    <column name="Enableprematchprepscreen" type="BIT">
+      <offset>224</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="AllowVoteKick" type="BIT">
-      <offset>180</offset>
+    <column name="Suicidepenality" type="U8">
+      <offset>228</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Roundtime" type="F32">
+      <offset>232</offset>
+    </column>
+    <column name="Intervaltime" type="F32">
+      <offset>236</offset>
+    </column>
+    <column name="Capturepointnamedom" type="STRING">
+      <offset>240</offset>
+    </column>
+    <column name="Capturetime" type="F32">
+      <offset>248</offset>
+    </column>
+    <column name="Recycletime" type="F32">
+      <offset>252</offset>
+    </column>
+    <column name="Friendlybonus" type="F32">
+      <offset>256</offset>
+    </column>
+    <column name="Pointtime" type="F32">
+      <offset>260</offset>
+    </column>
+    <column name="Capturedistance" type="F32">
+      <offset>264</offset>
+    </column>
+    <column name="Pointstatusfx" type="STRINGARRAY">
+      <offset>272</offset>
+    </column>
+    <column name="Capturepointfx" type="STRINGARRAY">
+      <offset>280</offset>
+    </column>
+    <column name="Contestedpointfx" type="STRINGARRAY">
+      <offset>288</offset>
+    </column>
+    <column name="Capturepointnamegvg" type="STRING">
+      <offset>296</offset>
+    </column>
+    <column name="Unlockpointname" type="STRING">
+      <offset>304</offset>
+    </column>
+    <column name="Basestructurename" type="STRING">
+      <offset>312</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Towerstructurename" type="STRINGARRAY">
+      <offset>320</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Maxgametime" type="F32">
+      <offset>328</offset>
+    </column>
+    <column name="Maxovertime" type="F32">
+      <offset>332</offset>
+    </column>
+    <column name="Maxdroptime" type="F32">
+      <offset>336</offset>
+    </column>
+    <column name="Flagname" type="STRING">
+      <offset>344</offset>
+    </column>
+    <column name="Flagcritter" type="STRING">
+      <offset>352</offset>
+    </column>
+    <column name="Flagpower" type="STRINGARRAY">
+      <offset>360</offset>
+    </column>
+    <column name="Flagcarrierclass" type="REFERENCE">
+      <offset>368</offset>
+      <dictionary_name>CharacterClass</dictionary_name>
+    </column>
+    <column name="Rechargepowercategories" type="STRINGARRAY">
+      <offset>376</offset>
+    </column>
+    <column name="Requireownflagtoscore" type="BIT">
+      <offset>384</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Flagstackpowers" type="STRUCT">
+      <offset>392</offset>
+      <subtable external="CTF_FlagPowerStack" />
+    </column>
+    <column name="Leaverpenalizingleaderboard" type="STRINGARRAY">
+      <offset>400</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Matchmakingrules" type="OPTIONALSTRUCT">
+      <offset>408</offset>
+      <subtable external="QueueMatchMakingRules" />
+    </column>
+    <column name="Maxlocalteamspergroup" type="INT">
+      <offset>416</offset>
+    </column>
+    <column name="Smartgroupingmode" type="INT">
+      <offset>420</offset>
+      <static_define_list external="QueueSmartGroupingMode" />
+    </column>
+    <column name="Enableautoteam" type="BIT">
+      <offset>424</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Enableteamup" type="BIT">
+      <offset>424</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Allowvotekick" type="BIT">
+      <offset>424</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Ignorespvpattribmods" type="BIT">
+      <offset>424</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
       <bit_offset>65539</bit_offset>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1</format_string>
+      </format_strings>
     </column>
-    <column name="IgnoresPVPAttribMods" type="BIT">
-      <offset>180</offset>
-      <flags>
-        <flag>SPECIAL_DEFAULT</flag>
-      </flags>
+    <column name="Challengematch" type="BIT">
+      <offset>424</offset>
       <bit_offset>65540</bit_offset>
-      <format_strings>
-        <format_string name="SPECIAL_DEFAULT">1</format_string>
-      </format_strings>
     </column>
-    <column name="ChallengeMatch" type="BIT">
-      <offset>180</offset>
-      <bit_offset>65541</bit_offset>
-    </column>
-    <column name="PrivateMatch" type="BIT">
-      <offset>180</offset>
+    <column name="Privatematch" type="BIT">
+      <offset>424</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ChallengeMatch</redundant_name>
-      <bit_offset>65541</bit_offset>
+      <redundant_name>Challengematch</redundant_name>
+      <bit_offset>65540</bit_offset>
     </column>
-    <column name="DisableAutoBalance" type="BIT">
-      <offset>180</offset>
+    <column name="Disableautobalance" type="BIT">
+      <offset>424</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
-      <bit_offset>65542</bit_offset>
+      <bit_offset>65541</bit_offset>
       <format_strings>
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="DisableSmartGrouping" type="BIT">
-      <offset>180</offset>
-      <bit_offset>65543</bit_offset>
+    <column name="Nummembersrequiredtostartvotekick" type="INT">
+      <offset>428</offset>
+      <default>4</default>
     </column>
-    <column name="MapSettings" type="IGNORE">
+    <column name="Mapsettings" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">QueueMapSettings</format_string>
+      </format_strings>
     </column>
-    <column name="VarData" type="IGNORE">
+    <column name="Vardata" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">QueueVariables</format_string>
+      </format_strings>
     </column>
-    <column name="WorldVars" type="STRUCT">
-      <offset>184</offset>
+    <column name="Worldvars" type="STRUCT">
+      <offset>432</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="WorldVariable" />
     </column>
-    <column name="QueueVarData" type="STRUCT">
-      <offset>188</offset>
+    <column name="Queuevardata" type="STRUCT">
+      <offset>440</offset>
       <subtable external="QueueVariableData" />
     </column>
-    <column name="OverrideMapLevel" type="INT">
-      <offset>192</offset>
+    <column name="Overridemaplevel" type="INT">
+      <offset>448</offset>
     </column>
-    <column name="MapDifficulty" type="INT">
-      <offset>196</offset>
+    <column name="Mapdifficulty" type="INT">
+      <offset>452</offset>
     </column>
-    <column name="BolsterType" type="INT">
-      <offset>200</offset>
+    <column name="Bolstertype" type="INT">
+      <offset>456</offset>
       <default>1</default>
       <static_define_list external="BolsterType" />
     </column>
     <column name="MapType" type="INT">
-      <offset>204</offset>
+      <offset>460</offset>
       <default>5</default>
       <static_define_list external="ZoneMapType" />
     </column>
-    <column name="BolsterToMapLevel" type="BIT">
-      <offset>208</offset>
+    <column name="Bolstertomaplevel" type="BIT">
+      <offset>464</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="CheckOffersBeforeMapLaunch" type="BIT">
-      <offset>208</offset>
+    <column name="Checkoffersbeforemaplaunch" type="BIT">
+      <offset>464</offset>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="Limitations" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">QueueLimitations</format_string>
+      </format_strings>
     </column>
-    <column name="MinMembersAllGroups" type="INT">
-      <offset>212</offset>
+    <column name="Maxtimetowait" type="INT">
+      <offset>472</offset>
     </column>
-    <column name="MaxTimeToWait" type="INT">
-      <offset>216</offset>
+    <column name="Jointimelimit" type="INT">
+      <offset>476</offset>
     </column>
-    <column name="JoinTimeLimit" type="INT">
-      <offset>220</offset>
+    <column name="Privatemaxwaittime" type="INT">
+      <offset>480</offset>
     </column>
-    <column name="PrivateMaxWaitTime" type="INT">
-      <offset>224</offset>
+    <column name="Privateminmembersallgroups" type="INT">
+      <offset>484</offset>
     </column>
-    <column name="PrivateMinMembersAllGroups" type="INT">
-      <offset>228</offset>
-    </column>
-    <column name="UsePrivateSettings" type="BIT">
-      <offset>232</offset>
+    <column name="Useprivatesettings" type="BIT">
+      <offset>488</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="CooldownDef" type="STRING">
-      <offset>236</offset>
+    <column name="Cooldowndef" type="STRING">
+      <offset>496</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
@@ -361,169 +441,202 @@
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">QueueRequirements</format_string>
+      </format_strings>
     </column>
-    <column name="RequiredActivity" type="STRING">
-      <offset>240</offset>
+    <column name="Requiredactivity" type="STRING">
+      <offset>504</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="RequiredEvent" type="STRING">
-      <offset>244</offset>
+    <column name="Requiredevent" type="STRING">
+      <offset>512</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Requires" type="OPTIONALSTRUCT">
-      <offset>248</offset>
+      <offset>520</offset>
       <subtable external="Expression" />
     </column>
-    <column name="pRequires" type="OPTIONALSTRUCT">
-      <offset>248</offset>
+    <column name="Prequires" type="OPTIONALSTRUCT">
+      <offset>520</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Requires</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="RequiredMission" type="REFERENCE">
-      <offset>252</offset>
+    <column name="Requiredmission" type="REFERENCE">
+      <offset>528</offset>
       <dictionary_name>MissionDef</dictionary_name>
     </column>
-    <column name="MissionReqFlags" type="INT">
-      <offset>256</offset>
+    <column name="Missionreqflags" type="INT">
+      <offset>536</offset>
       <static_define_list external="QueueMissionReq" />
       <format>FLAGS</format>
     </column>
-    <column name="ClassRequired" type="STRUCT">
-      <offset>260</offset>
+    <column name="Classrequired" type="STRUCT">
+      <offset>544</offset>
       <subtable external="CharacterClassRef" />
     </column>
-    <column name="ClassCategoryRequired" type="INTARRAY">
-      <offset>264</offset>
+    <column name="Classcategoryrequired" type="INTARRAY">
+      <offset>552</offset>
       <static_define_list external="CharClassCategory" />
     </column>
-    <column name="RequiredGearRating" type="INT">
-      <offset>268</offset>
+    <column name="Requiredgearrating" type="INT">
+      <offset>560</offset>
     </column>
-    <column name="MissionReqNoAccess" type="BIT">
-      <offset>272</offset>
+    <column name="Requiredattrib" type="INT">
+      <offset>564</offset>
+      <default>-1</default>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Requiredattribvalue" type="F32">
+      <offset>568</offset>
+    </column>
+    <column name="Requiredattribrestrue" type="F32">
+      <offset>572</offset>
+    </column>
+    <column name="Missionreqnoaccess" type="BIT">
+      <offset>576</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="RequireSameGuild" type="BIT">
-      <offset>272</offset>
+    <column name="Requiresameguild" type="BIT">
+      <offset>576</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="RequireGuild" type="BIT">
-      <offset>272</offset>
+    <column name="Requireguild" type="BIT">
+      <offset>576</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>RequireSameGuild</redundant_name>
+      <redundant_name>Requiresameguild</redundant_name>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="RequireAnyGuild" type="BIT">
-      <offset>272</offset>
+    <column name="Requireanyguild" type="BIT">
+      <offset>576</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="UnteamedQueuingOnly" type="BIT">
-      <offset>272</offset>
+    <column name="Unteamedqueuingonly" type="BIT">
+      <offset>576</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="QueueMaps" type="IGNORE">
+    <column name="Queuemaps" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">QueueMapInfo</format_string>
+      </format_strings>
     </column>
     <column name="MapName" type="STRINGARRAY">
-      <offset>276</offset>
+      <offset>584</offset>
     </column>
-    <column name="pchMapName" type="STRINGARRAY">
-      <offset>276</offset>
+    <column name="Pchmapname" type="STRINGARRAY">
+      <offset>584</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>MapName</redundant_name>
     </column>
-    <column name="MapChoiceTable" type="REFERENCE">
-      <offset>280</offset>
+    <column name="Mapchoicetable" type="REFERENCE">
+      <offset>592</offset>
       <dictionary_name>ChoiceTable</dictionary_name>
     </column>
-    <column name="TableEntry" type="STRING">
-      <offset>284</offset>
+    <column name="Tableentry" type="STRING">
+      <offset>600</offset>
     </column>
-    <column name="QueueCustomMapData" type="STRUCT">
-      <offset>288</offset>
+    <column name="Queuecustommapdata" type="STRUCT">
+      <offset>608</offset>
       <subtable external="QueueCustomMapData" />
     </column>
-    <column name="QueueCustomMapType" type="STRUCT">
-      <offset>288</offset>
+    <column name="Queuecustommaptype" type="STRUCT">
+      <offset>608</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>QueueCustomMapData</redundant_name>
+      <redundant_name>Queuecustommapdata</redundant_name>
       <subtable external="QueueCustomMapData" />
     </column>
-    <column name="QueueMapType" type="STRUCT">
-      <offset>288</offset>
+    <column name="Queuemaptype" type="STRUCT">
+      <offset>608</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>QueueCustomMapData</redundant_name>
+      <redundant_name>Queuecustommapdata</redundant_name>
       <subtable external="QueueCustomMapData" />
     </column>
-    <column name="GroupDefs" type="STRUCT">
-      <offset>292</offset>
+    <column name="Groupdefs" type="STRUCT">
+      <offset>616</offset>
       <subtable external="QueueGroupDef" />
     </column>
     <column name="Category" type="INT">
-      <offset>296</offset>
+      <offset>624</offset>
+      <static_define_list external="QueueCategory" />
+    </column>
+    <column name="Secondarycategory" type="INTARRAY">
+      <offset>632</offset>
       <static_define_list external="QueueCategory" />
     </column>
     <column name="Reward" type="INT">
-      <offset>300</offset>
+      <offset>640</offset>
       <static_define_list external="QueueReward" />
     </column>
-    <column name="SecondaryReward" type="INTARRAY">
-      <offset>304</offset>
+    <column name="Secondaryreward" type="INTARRAY">
+      <offset>648</offset>
       <static_define_list external="QueueReward" />
     </column>
     <column name="Difficulty" type="INT">
-      <offset>308</offset>
+      <offset>656</offset>
       <static_define_list external="QueueDifficulty" />
     </column>
-    <column name="ExpectedGameTime" type="INT">
-      <offset>312</offset>
+    <column name="Expectedgametime" type="INT">
+      <offset>660</offset>
     </column>
-    <column name="LevelBand" type="STRUCT">
-      <offset>316</offset>
+    <column name="Levelband" type="STRUCT">
+      <offset>664</offset>
       <subtable external="QueueLevelBand" />
     </column>
-    <column name="TrackedEvent" type="STRUCT">
-      <offset>320</offset>
+    <column name="Trackedevent" type="STRUCT">
+      <offset>672</offset>
       <subtable external="QueueTrackedEvent" />
     </column>
-    <column name="QueueRewardTables" type="STRUCT">
-      <offset>324</offset>
-      <subtable external="QueueRewardTable" />
-    </column>
-    <column name="MinimumPointsForReward" type="INT">
-      <offset>328</offset>
-    </column>
-    <column name="EnableStrictTeamRules" type="BIT">
-      <offset>332</offset>
+    <column name="Enablestrictteamrules" type="BIT">
+      <offset>680</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="EditorData" type="STRUCT">
-      <offset>336</offset>
+    <column name="Hideinui" type="BIT">
+      <offset>680</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Memberswaitforguilddelayinseconds" type="INT">
+      <offset>684</offset>
+    </column>
+    <column name="Matchgroupsameguild" type="BIT">
+      <offset>688</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Matchgrouppreferguild" type="BIT">
+      <offset>688</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Editordata" type="STRUCT">
+      <offset>696</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <subtable external="QueueLevelBandEditorData" />
     </column>
+    <column name="Lastupdated" type="FIXEDSTRING">
+      <offset>704</offset>
+      <string_length>128</string_length>
+    </column>
     <column name="MinLevel" type="IGNORE" />
     <column name="MaxLevel" type="IGNORE" />
-    <column name="BolsterLevel" type="IGNORE" />
+    <column name="Bolsterlevel" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

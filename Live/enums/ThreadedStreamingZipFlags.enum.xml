@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ThreadedStreamingZipFlags">
+  <elements type="int">
+    <element name="COMPRESS_AS_GZIP_FILE">1</element>
+    <element name="CALLBACKS_FROM_BG_THREAD">2</element>
+  </elements>
+</enum>

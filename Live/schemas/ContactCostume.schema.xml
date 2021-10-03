@@ -7,61 +7,64 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CostumeType" type="INT">
+    <column name="Costumetype" type="INT">
       <offset>0</offset>
       <static_define_list external="ContactCostumeType" />
     </column>
-    <column name="CostumeOverride" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Costumeoverride" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="UsePetCostume" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Usepetcostume" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>PetContactList</dictionary_name>
     </column>
-    <column name="CostumeCritterGroupType" type="INT">
-      <offset>12</offset>
+    <column name="Costumecrittergrouptype" type="INT">
+      <offset>24</offset>
       <static_define_list external="ContactMapVarOverrideType" />
     </column>
-    <column name="CostumeCritterGroup" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Costumecrittergroup" type="REFERENCE">
+      <offset>32</offset>
       <dictionary_name>CritterGroup</dictionary_name>
     </column>
-    <column name="CostumeMapVar" type="STRING">
-      <offset>20</offset>
+    <column name="Costumemapvar" type="STRING">
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CostumeIdentifier" type="STRING">
-      <offset>24</offset>
+    <column name="Costumeidentifier" type="STRING">
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="HeadshotStyleDef" type="STRING">
-      <offset>28</offset>
+    <column name="Headshotstyledef" type="STRING">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="HeadshotStyleOverride" type="STRING">
-      <offset>28</offset>
+    <column name="Headshotstyleoverride" type="STRING">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>HeadshotStyleDef</redundant_name>
+      <redundant_name>Headshotstyledef</redundant_name>
     </column>
-    <column name="CostumeStyleOverrides" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+    <column name="Costumestyleoverrides" type="OPTIONALSTRUCT">
+      <offset>64</offset>
       <subtable external="ContactCostumeStyle" />
     </column>
-    <column name="HeadshotBorderFrame" type="STRING">
-      <offset>36</offset>
+    <column name="Headshotborderframe" type="STRING">
+      <offset>72</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
+    </column>
+    <column name="Petcontainerid" type="INT">
+      <offset>80</offset>
     </column>
     <column name="}" type="END" />
   </table>

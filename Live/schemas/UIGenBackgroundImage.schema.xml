@@ -6,6 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="Image" type="STRING">
       <offset>0</offset>
       <flags>
@@ -15,53 +16,45 @@
       </flags>
     </column>
     <column name="Type" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <default>3</default>
       <static_define_list external="UITextureMode" />
     </column>
-    <column name="TopLeft" type="INT">
-      <offset>8</offset>
-      <flags>
-        <flag>STRUCTPARAM</flag>
-      </flags>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
-      <format>COLOR</format>
-    </column>
-    <column name="BottomLeft" type="INT">
+    <column name="Topleft" type="INT">
       <offset>12</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
       <format>COLOR</format>
     </column>
-    <column name="TopRight" type="INT">
+    <column name="Bottomleft" type="INT">
       <offset>16</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
       <format>COLOR</format>
     </column>
-    <column name="BottomRight" type="INT">
+    <column name="Topright" type="INT">
       <offset>20</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
       <format>COLOR</format>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="Bottomright" type="INT">
+      <offset>24</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <static_define_list external="Color" />
+      <format>COLOR</format>
+    </column>
+    <column name="}" type="END" />
   </table>
 </parser>

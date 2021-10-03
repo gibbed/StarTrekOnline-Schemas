@@ -7,8 +7,9 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="unused" type="INT">
+    <column name="Stancehandle" type="INTFIXEDARRAY">
       <offset>0</offset>
+      <num_elements>4</num_elements>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TagsFor" type="STRUCT">
+    <column name="Tagsfor" type="STRUCT">
       <offset>0</offset>
       <subtable external="DictionaryTagNames" />
     </column>

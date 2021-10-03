@@ -10,7 +10,7 @@
     <column name="Price" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uiLastRequestTime" type="INT">
+    <column name="Uilastrequesttime" type="INT">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

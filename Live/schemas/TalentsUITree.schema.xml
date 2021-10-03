@@ -7,43 +7,43 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TreeName" type="STRING">
+    <column name="Treename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="hTreeDef" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Htreedef" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>PowerTreeDef</dictionary_name>
     </column>
-    <column name="TalentNodes" type="STRUCT">
-      <offset>8</offset>
+    <column name="Talentnodes" type="STRUCT">
+      <offset>16</offset>
       <subtable external="TalentsUITreeNode" />
     </column>
-    <column name="NumRows" type="U8">
-      <offset>12</offset>
-    </column>
-    <column name="NumCols" type="U8">
-      <offset>13</offset>
-    </column>
-    <column name="LowX" type="U8">
-      <offset>14</offset>
-    </column>
-    <column name="HighX" type="U8">
-      <offset>15</offset>
-    </column>
-    <column name="LowY" type="U8">
-      <offset>16</offset>
-    </column>
-    <column name="HighY" type="U8">
-      <offset>17</offset>
-    </column>
-    <column name="TextureBits" type="INTARRAY">
-      <offset>20</offset>
-    </column>
-    <column name="TextureBitsPathMode" type="INTARRAY">
+    <column name="Numrows" type="U8">
       <offset>24</offset>
+    </column>
+    <column name="Numcols" type="U8">
+      <offset>25</offset>
+    </column>
+    <column name="Lowx" type="U8">
+      <offset>26</offset>
+    </column>
+    <column name="Highx" type="U8">
+      <offset>27</offset>
+    </column>
+    <column name="Lowy" type="U8">
+      <offset>28</offset>
+    </column>
+    <column name="Highy" type="U8">
+      <offset>29</offset>
+    </column>
+    <column name="Texturebits" type="INTARRAY">
+      <offset>32</offset>
+    </column>
+    <column name="Texturebitspathmode" type="INTARRAY">
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

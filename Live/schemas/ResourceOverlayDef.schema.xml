@@ -17,53 +17,53 @@
       </flags>
     </column>
     <column name="Base" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>REQUIRED</flag>
       </flags>
     </column>
     <column name="Overlay" type="STRINGARRAY">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>REQUIRED</flag>
       </flags>
     </column>
     <column name="Overlays" type="STRINGARRAY">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Overlay</redundant_name>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="BinFile" type="STRING">
-      <offset>16</offset>
+    <column name="Binfile" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
     </column>
     <column name="Folders" type="STRING">
-      <offset>20</offset>
+      <offset>40</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
     </column>
     <column name="FileSpec" type="STRING">
-      <offset>24</offset>
+      <offset>48</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
     </column>
-    <column name="ParserLoadFlags" type="INT">
-      <offset>28</offset>
+    <column name="Parserloadflags" type="INT">
+      <offset>56</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>

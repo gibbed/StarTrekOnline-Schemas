@@ -6,229 +6,265 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="InternalName" type="STRING">
-      <offset>24</offset>
+    <column name="Internalname" type="STRING">
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>KEY</flag>
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>156</offset>
+      <offset>256</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="TS" type="TIMESTAMP">
-      <offset>160</offset>
+    <column name="Ts" type="TIMESTAMP">
+      <offset>264</offset>
     </column>
     <column name="Loop" type="STRUCT">
       <offset>0</offset>
       <subtable external="DynLoop" />
     </column>
     <column name="Emitter" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DynParticleEmitter" />
     </column>
     <column name="Raycast" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="DynRaycast" />
     </column>
-    <column name="ContactEvent" type="STRUCT">
-      <offset>20</offset>
+    <column name="Contactevent" type="STRUCT">
+      <offset>40</offset>
       <subtable external="DynContactEvent" />
     </column>
     <column name="Force" type="STRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="DynForce" />
     </column>
     <column name="List" type="STRUCT">
-      <offset>16</offset>
+      <offset>32</offset>
       <subtable external="DynList" />
     </column>
     <column name="Priority" type="INT">
-      <offset>52</offset>
+      <offset>112</offset>
       <default>2</default>
       <static_define_list external="eDynPriority" />
     </column>
-    <column name="DropPriority" type="INT">
-      <offset>56</offset>
+    <column name="Droppriority" type="INT">
+      <offset>116</offset>
       <default>4</default>
       <static_define_list external="eDynPriority" />
     </column>
-    <column name="MinDrawDistance" type="F32">
-      <offset>72</offset>
+    <column name="Mindrawdistance" type="F32">
+      <offset>132</offset>
     </column>
-    <column name="DrawDistance" type="F32">
-      <offset>60</offset>
-    </column>
-    <column name="Radius" type="F32">
-      <offset>76</offset>
-    </column>
-    <column name="PlaybackJitter" type="F32">
-      <offset>84</offset>
-    </column>
-    <column name="InheritPlaybackSpeed" type="BOOLFLAG">
-      <offset>135</offset>
-    </column>
-    <column name="SortAsBlock" type="BOOLFLAG">
-      <offset>154</offset>
-    </column>
-    <column name="ForwardMessages" type="BOOLFLAG">
-      <offset>125</offset>
-    </column>
-    <column name="DontDraw" type="BOOLFLAG">
-      <offset>117</offset>
-    </column>
-    <column name="EntNeedsAuxPass" type="BOOLFLAG">
-      <offset>133</offset>
-    </column>
-    <column name="DontHueShift" type="BOOLFLAG">
-      <offset>121</offset>
-    </column>
-    <column name="DontHueShiftChildren" type="BOOLFLAG">
-      <offset>122</offset>
-    </column>
-    <column name="DefaultHue" type="F32">
-      <offset>80</offset>
-    </column>
-    <column name="EntityFadeSpeedOverride" type="F32">
-      <offset>88</offset>
-    </column>
-    <column name="MovedTooFarMessageDistance" type="F32">
-      <offset>92</offset>
-    </column>
-    <column name="KillIfOrphaned" type="BOOLFLAG">
+    <column name="Drawdistance" type="F32">
       <offset>120</offset>
     </column>
-    <column name="SuppressionTag" type="STRING">
-      <offset>100</offset>
+    <column name="Radius" type="F32">
+      <offset>136</offset>
+    </column>
+    <column name="Playbackjitter" type="F32">
+      <offset>144</offset>
+    </column>
+    <column name="Inheritplaybackspeed" type="BOOLFLAG">
+      <offset>219</offset>
+    </column>
+    <column name="Sortasblock" type="BOOLFLAG">
+      <offset>250</offset>
+    </column>
+    <column name="Forwardmessages" type="BOOLFLAG">
+      <offset>209</offset>
+    </column>
+    <column name="Dontdraw" type="BOOLFLAG">
+      <offset>201</offset>
+    </column>
+    <column name="Entneedsauxpass" type="BOOLFLAG">
+      <offset>216</offset>
+    </column>
+    <column name="Entauxpasschannelmask" type="INT">
+      <offset>232</offset>
+      <default>15</default>
+      <static_define_list>
+        <!-- dynamic enum? 142508FF0 -->
+      </static_define_list>
+    </column>
+    <column name="Entusespotauxlighting" type="BOOLFLAG">
+      <offset>217</offset>
+    </column>
+    <column name="Donthueshift" type="BOOLFLAG">
+      <offset>205</offset>
+    </column>
+    <column name="Donthueshiftchildren" type="BOOLFLAG">
+      <offset>206</offset>
+    </column>
+    <column name="Defaulthue" type="F32">
+      <offset>140</offset>
+    </column>
+    <column name="Entityfadespeedoverride" type="F32">
+      <offset>148</offset>
+    </column>
+    <column name="Movedtoofarmessagedistance" type="F32">
+      <offset>152</offset>
+    </column>
+    <column name="Killiforphaned" type="BOOLFLAG">
+      <offset>204</offset>
+    </column>
+    <column name="Suppressiontag" type="STRING">
+      <offset>160</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ExclusionTag" type="STRING">
-      <offset>112</offset>
+    <column name="Exclusiontag" type="STRING">
+      <offset>192</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="IKTargetTag" type="STRING">
+    <column name="Iktargettag" type="STRING">
+      <offset>168</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Iktargetbone" type="STRING">
+      <offset>176</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Iktargetboneleft" type="STRING">
+      <offset>176</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Iktargetbone</redundant_name>
+    </column>
+    <column name="Iktargetboneright" type="STRING">
+      <offset>184</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Noalphainherit" type="BOOLFLAG">
+      <offset>210</offset>
+    </column>
+    <column name="Useskeletongeometryalpha" type="BOOLFLAG">
+      <offset>211</offset>
+    </column>
+    <column name="Unique" type="BOOLFLAG">
+      <offset>212</offset>
+    </column>
+    <column name="Debug" type="BOOLFLAG">
+      <offset>208</offset>
+    </column>
+    <column name="Force2d" type="BOOLFLAG">
+      <offset>213</offset>
+    </column>
+    <column name="Overrideforce2dfornonlocal" type="BOOLFLAG">
+      <offset>214</offset>
+    </column>
+    <column name="Localplayeronly" type="BOOLFLAG">
+      <offset>215</offset>
+    </column>
+    <column name="Dontleaktest" type="BOOLFLAG">
+      <offset>218</offset>
+    </column>
+    <column name="Playoncostumetag" type="STRING">
+      <offset>240</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Killonempty" type="BOOLFLAG">
+      <offset>249</offset>
+    </column>
+    <column name="Dontautokill" type="BOOLFLAG">
+      <offset>248</offset>
+    </column>
+    <column name="Hibernate" type="BOOLFLAG">
+      <offset>220</offset>
+    </column>
+    <column name="Requiresnode" type="BOOLFLAG">
+      <offset>221</offset>
+    </column>
+    <column name="Usemountnodealiases" type="BOOLFLAG">
+      <offset>222</offset>
+    </column>
+    <column name="Event" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="Event" />
+    </column>
+    <column name="Defaultparam" type="STRUCT">
+      <offset>272</offset>
+      <subtable external="DynDefineParam" />
+    </column>
+    <column name="Editorparam" type="STRUCT">
+      <offset>64</offset>
+      <subtable external="DynEditorParam" />
+    </column>
+    <column name="Peripheralcolorpriority" type="F32">
+      <offset>156</offset>
+    </column>
+    <column name="Nontargetversion" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Sourceplayerversion" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Targetplayerversion" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Enemyversion" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Samesourcetargetversion" type="STRING">
       <offset>104</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="IKTargetBone" type="STRINGARRAY">
-      <offset>108</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
+    <column name="Getmodelfromworld" type="BOOLFLAG">
+      <offset>224</offset>
     </column>
-    <column name="NoAlphaInherit" type="BOOLFLAG">
-      <offset>126</offset>
+    <column name="Getclothmodelfromworld" type="BOOLFLAG">
+      <offset>223</offset>
     </column>
-    <column name="UseSkeletonGeometryAlpha" type="BOOLFLAG">
-      <offset>127</offset>
+    <column name="Hideworldmodel" type="BOOLFLAG">
+      <offset>226</offset>
     </column>
-    <column name="Unique" type="BOOLFLAG">
-      <offset>128</offset>
+    <column name="Useworldmodelscale" type="BOOLFLAG">
+      <offset>225</offset>
     </column>
-    <column name="Debug" type="BOOLFLAG">
-      <offset>124</offset>
+    <column name="Allowworldmodelswitch" type="BOOLFLAG">
+      <offset>227</offset>
     </column>
-    <column name="Force2D" type="BOOLFLAG">
-      <offset>129</offset>
+    <column name="Propagatezeroalpha" type="BOOLFLAG">
+      <offset>236</offset>
     </column>
-    <column name="OverrideForce2DForNonLocal" type="BOOLFLAG">
-      <offset>130</offset>
+    <column name="Lateupdatefastparticles" type="BOOLFLAG">
+      <offset>228</offset>
     </column>
-    <column name="LocalPlayerOnly" type="BOOLFLAG">
-      <offset>131</offset>
+    <column name="Staggerupdates" type="BOOLFLAG">
+      <offset>237</offset>
     </column>
-    <column name="LowRes" type="BOOLFLAG">
-      <offset>132</offset>
-    </column>
-    <column name="DontLeakTest" type="BOOLFLAG">
-      <offset>134</offset>
-    </column>
-    <column name="PlayOnCostumeTag" type="STRING">
-      <offset>148</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="KillOnEmpty" type="BOOLFLAG">
-      <offset>153</offset>
-    </column>
-    <column name="DontAutoKill" type="BOOLFLAG">
-      <offset>152</offset>
-    </column>
-    <column name="Hibernate" type="BOOLFLAG">
-      <offset>136</offset>
-    </column>
-    <column name="RequiresNode" type="BOOLFLAG">
-      <offset>137</offset>
-    </column>
-    <column name="UseMountNodeAliases" type="BOOLFLAG">
-      <offset>138</offset>
-    </column>
-    <column name="Event" type="STRUCT">
-      <offset>28</offset>
-      <subtable external="Event" />
-    </column>
-    <column name="DefaultParam" type="STRUCT">
-      <offset>164</offset>
-      <subtable external="DynDefineParam" />
-    </column>
-    <column name="EditorParam" type="STRUCT">
-      <offset>32</offset>
-      <subtable external="DynEditorParam" />
-    </column>
-    <column name="AlienColorPriority" type="F32">
-      <offset>96</offset>
-    </column>
-    <column name="NonTargetVersion" type="STRING">
-      <offset>36</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="SourcePlayerVersion" type="STRING">
-      <offset>40</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="TargetPlayerVersion" type="STRING">
-      <offset>44</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="EnemyVersion" type="STRING">
-      <offset>48</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="GetModelFromWorld" type="BOOLFLAG">
-      <offset>140</offset>
-    </column>
-    <column name="GetClothModelFromWorld" type="BOOLFLAG">
-      <offset>139</offset>
-    </column>
-    <column name="HideWorldModel" type="BOOLFLAG">
-      <offset>142</offset>
-    </column>
-    <column name="UseWorldModelScale" type="BOOLFLAG">
-      <offset>141</offset>
-    </column>
-    <column name="AllowWorldModelSwitch" type="BOOLFLAG">
-      <offset>143</offset>
-    </column>
-    <column name="LateUpdateFastParticles" type="BOOLFLAG">
-      <offset>144</offset>
+    <column name="Usecharacterlightcache" type="BOOLFLAG">
+      <offset>229</offset>
     </column>
     <column name="End" type="END" />
   </table>

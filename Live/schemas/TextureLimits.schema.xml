@@ -16,71 +16,65 @@
       </flags>
       <dictionary_name>CostumeTexture</dictionary_name>
     </column>
-    <column name="OverrideConstValues" type="U8">
-      <offset>4</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="ConstValueMin" type="F32">
+    <column name="Overrideconstvalues" type="U8">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ConstValueMax" type="F32">
+    <column name="Constvaluemin" type="F32">
       <offset>12</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="OverrideMovableValues" type="U8">
+    <column name="Constvaluemax" type="F32">
       <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="MovableMinX" type="F32">
+    <column name="Overridemovablevalues" type="U8">
       <offset>20</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MovableMaxX" type="F32">
+    <column name="Movableminx" type="F32">
       <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="MovableMinY" type="F32">
+    <column name="Movablemaxx" type="F32">
       <offset>28</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="MovableMaxY" type="F32">
+    <column name="Movableminy" type="F32">
       <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="MovableMinScaleX" type="F32">
+    <column name="Movablemaxy" type="F32">
       <offset>36</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <default>1</default>
     </column>
-    <column name="MovableMaxScaleX" type="F32">
+    <column name="Movableminscalex" type="F32">
       <offset>40</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -88,7 +82,7 @@
       </flags>
       <default>1</default>
     </column>
-    <column name="MovableMinScaleY" type="F32">
+    <column name="Movablemaxscalex" type="F32">
       <offset>44</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -96,7 +90,7 @@
       </flags>
       <default>1</default>
     </column>
-    <column name="MovableMaxScaleY" type="F32">
+    <column name="Movableminscaley" type="F32">
       <offset>48</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -104,26 +98,37 @@
       </flags>
       <default>1</default>
     </column>
-    <column name="MovableCanEditPosition" type="U8">
+    <column name="Movablemaxscaley" type="F32">
       <offset>52</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
+      <default>1</default>
     </column>
-    <column name="MovableCanEditRotation" type="U8">
-      <offset>53</offset>
+    <column name="Movablecaneditposition" type="U8">
+      <offset>56</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MovableCanEditScale" type="U8">
-      <offset>54</offset>
+    <column name="Movablecaneditrotation" type="U8">
+      <offset>57</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Movablecaneditscale" type="U8">
+      <offset>58</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

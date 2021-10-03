@@ -14,7 +14,7 @@
       </flags>
     </column>
     <column name="Radius" type="F32">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>

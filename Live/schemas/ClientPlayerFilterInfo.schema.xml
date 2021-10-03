@@ -7,22 +7,22 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LevelFilters" type="STRUCT">
+    <column name="Levelfilters" type="STRUCT">
       <offset>0</offset>
       <subtable external="PlayerLevelFilterRange" />
     </column>
-    <column name="MapFilters" type="STRUCT">
-      <offset>4</offset>
+    <column name="Mapfilters" type="STRUCT">
+      <offset>8</offset>
       <subtable external="ClientChatMap" />
     </column>
-    <column name="PlayingStyles" type="STRINGARRAY">
-      <offset>8</offset>
+    <column name="Playingstyles" type="STRINGARRAY">
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="FilterString" type="STRING">
-      <offset>12</offset>
+    <column name="Filterstring" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

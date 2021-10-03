@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ActivityEventState">
+  <elements type="int">
+    <element name="UNKNOWN">-1</element>
+    <element name="OFF">0</element>
+    <element name="ON">1</element>
+  </elements>
+</enum>

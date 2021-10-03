@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EntityMovementNavmeshMovementUpdate">
+  <table>
+    <column name="EntityMovementNavmeshMovementUpdate" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Rotation" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Speed" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Input" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Knock" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Push" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Stun" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Combat" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Navmeshping" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Inputignores" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Stopmovement" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Isneardeath" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Wakeup" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

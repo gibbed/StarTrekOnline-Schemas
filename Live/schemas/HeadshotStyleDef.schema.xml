@@ -14,81 +14,85 @@
       </flags>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="BackgroundImage" type="STRING">
-      <offset>8</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="BackgroundColor" type="INT">
-      <offset>12</offset>
-      <default>-1</default>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
-    </column>
-    <column name="Sky" type="STRING">
+    <column name="Backgroundimage" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="Material" type="STRING">
-      <offset>20</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Frame" type="STRING">
+    <column name="Backgroundcolor" type="INT">
       <offset>24</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
+      <default>-1</default>
+      <static_define_list external="Color" />
     </column>
-    <column name="DefaultAnimBits" type="STRING">
-      <offset>28</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="AnimKeyword" type="STRING">
+    <column name="Sky" type="STRING">
       <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="Stance" type="STRING">
-      <offset>36</offset>
+    <column name="Material" type="STRING">
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="HeadshotFX" type="STRUCT">
-      <offset>40</offset>
+    <column name="Frame" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Defaultanimbits" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Animkeyword" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Stance" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Headshotfx" type="STRUCT">
+      <offset>80</offset>
       <subtable external="HeadshotStyleFX" />
     </column>
-    <column name="UseBackgroundOnly" type="U8">
-      <offset>44</offset>
+    <column name="Usebackgroundonly" type="U8">
+      <offset>88</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FOV" type="INT">
-      <offset>48</offset>
+    <column name="Fov" type="INT">
+      <offset>92</offset>
       <static_define_list external="HeadshotStyleFOV" />
     </column>
-    <column name="ContactCameraParams" type="OPTIONALSTRUCT">
-      <offset>52</offset>
+    <column name="Contactcameraparams" type="OPTIONALSTRUCT">
+      <offset>96</offset>
       <subtable external="HeadshotStyleContactCameraParams" />
     </column>
-    <column name="IgnoreFrame" type="U8">
-      <offset>56</offset>
+    <column name="Ignoreframe" type="U8">
+      <offset>104</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="OverrideFOV" type="IGNORE" />
+    <column name="Appearasremote" type="U8">
+      <offset>105</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Overridefov" type="IGNORE" />
     <column name="Forward" type="IGNORE" />
     <column name="Right" type="IGNORE" />
     <column name="Above" type="IGNORE" />
@@ -96,7 +100,7 @@
     <column name="Yaw" type="IGNORE" />
     <column name="Roll" type="IGNORE" />
     <column name="Tags" type="IGNORE" />
-    <column name="UGCProperties" type="IGNORE">
+    <column name="Ugcproperties" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>

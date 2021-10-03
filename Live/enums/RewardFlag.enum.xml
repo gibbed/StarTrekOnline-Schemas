@@ -11,5 +11,13 @@
     <element name="PlayerKillCreditAlways">128</element>
     <element name="AllBagsUseThisCostume">256</element>
     <element name="AlwaysRandom">512</element>
+    <element name="DelayedReward">1024</element>
+    <element name="FullNumericReward">2048</element>
+    <element name="BestOfItemOrPack">4096</element>
+    <element name="DontSetPlayerOwned">8192</element>
+    <element name="WaitForRerolls">16384</element>
+    <element name="CurrentlyOwnedItemsOnly">32768</element>
+    <element name="NoRewardIfNotCurrentlyOwned">65536</element>
+    <element name="TeamWideGateCheck">131072</element>
   </elements>
 </enum>

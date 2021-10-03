@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiKey" type="INT64">
+    <column name="Uikey" type="INT64">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,14 +15,14 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iMemberID" type="INT">
+    <column name="Imemberid" type="INT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eGuildEventReplyType" type="INT">
+    <column name="Eguildeventreplytype" type="INT">
       <offset>12</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -30,41 +30,53 @@
       </flags>
       <static_define_list external="GuildEventReplyType" />
     </column>
-    <column name="pcReplyMessage" type="STRING">
+    <column name="Pcreplymessage" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iStartTime" type="INT">
-      <offset>20</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="iLastRemindedTime" type="INT">
+    <column name="Istarttime" type="INT">
       <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="iReplyExpiresTime" type="INT">
+    <column name="Ilastremindedtime" type="INT">
       <offset>28</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="iRemoved" type="INT">
+    <column name="Ireplyexpirestime" type="INT">
       <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Iremoved" type="INT">
+      <offset>36</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Pchmembername" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Pchmemberatname" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
     <column name="}" type="END" />

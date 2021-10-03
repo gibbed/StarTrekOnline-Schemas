@@ -9,42 +9,49 @@
     <column name="{" type="START" />
     <column name="Valid" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="erDebugEnt" type="INT">
+    <column name="Erdebugent" type="INT">
       <offset>4</offset>
     </column>
-    <column name="TimerSleep" type="F32">
+    <column name="Timersleep" type="F32">
       <offset>8</offset>
     </column>
-    <column name="TimeSlept" type="F32">
+    <column name="Timeslept" type="F32">
       <offset>12</offset>
     </column>
-    <column name="Powers" type="STRUCT">
+    <column name="Totalmods" type="INT">
       <offset>16</offset>
+    </column>
+    <column name="Powers" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
       <subtable external="Power" />
     </column>
     <column name="Mods" type="STRUCT">
-      <offset>20</offset>
+      <offset>32</offset>
       <subtable external="AttribMod" />
     </column>
-    <column name="InnateMods" type="STRUCT">
-      <offset>24</offset>
+    <column name="Innatemods" type="STRUCT">
+      <offset>40</offset>
       <subtable external="AttribModDef" />
     </column>
-    <column name="pattrBasic" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Pattrbasic" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="pattrStr" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+    <column name="Pattrstr" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="pattrRes" type="OPTIONALSTRUCT">
-      <offset>36</offset>
+    <column name="Pattrres" type="OPTIONALSTRUCT">
+      <offset>64</offset>
       <subtable external="CharacterAttribs" />
     </column>
     <column name="pActivation" type="OPTIONALSTRUCT">
-      <offset>40</offset>
+      <offset>72</offset>
       <subtable external="PowerActivation" />
     </column>
     <column name="}" type="END" />

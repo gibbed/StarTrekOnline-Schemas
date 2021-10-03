@@ -11,105 +11,222 @@
       <offset>0</offset>
     </column>
     <column name="DisplayString" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="DialogFormatter" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Displaystring2" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Dialogformatter" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>ContactDialogFormatterDef</dictionary_name>
     </column>
     <column name="Type" type="INT">
-      <offset>12</offset>
+      <offset>32</offset>
       <static_define_list external="ContactIndicator" />
     </column>
-    <column name="NeedsConfirm" type="U8">
-      <offset>16</offset>
+    <column name="Needsconfirm" type="U8">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ConfirmHeader" type="STRING">
-      <offset>20</offset>
+    <column name="Confirmheader" type="STRING">
+      <offset>40</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="ConfirmText" type="STRING">
-      <offset>24</offset>
+    <column name="Confirmtext" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Tooltipheader" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Longdesc" type="STRING">
+      <offset>64</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="IconName" type="STRING">
-      <offset>28</offset>
+      <offset>72</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="XPos" type="F32">
-      <offset>32</offset>
+    <column name="Borderoverride" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
     </column>
-    <column name="YPos" type="F32">
-      <offset>36</offset>
+    <column name="Xpos" type="F32">
+      <offset>88</offset>
+    </column>
+    <column name="Ypos" type="F32">
+      <offset>92</offset>
+    </column>
+    <column name="Choicescale" type="F32">
+      <offset>96</offset>
+    </column>
+    <column name="Maplist" type="STRINGARRAY">
+      <offset>104</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
     <column name="EventName" type="STRING">
-      <offset>40</offset>
+      <offset>112</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="MapName" type="STRING">
-      <offset>44</offset>
+      <offset>120</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="YouAreHere" type="U8">
-      <offset>48</offset>
+    <column name="Youarehere" type="U8">
+      <offset>128</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="WaypointHere" type="U8">
-      <offset>49</offset>
+    <column name="Waypointhere" type="U8">
+      <offset>129</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="GoldenPathWaypointHere" type="U8">
-      <offset>50</offset>
+    <column name="Goldenpathwaypointhere" type="U8">
+      <offset>130</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Recommended" type="U8">
-      <offset>51</offset>
+      <offset>131</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ShowRewardChooser" type="U8">
-      <offset>52</offset>
+    <column name="Iscontact" type="U8">
+      <offset>132</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="uCooldownExpireTime" type="INT">
-      <offset>56</offset>
+    <column name="Excludefromtabs" type="U8">
+      <offset>133</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsDefaultBackOption" type="U8">
-      <offset>60</offset>
+    <column name="Optionidx" type="INT">
+      <offset>136</offset>
+    </column>
+    <column name="Showrewardchooser" type="U8">
+      <offset>140</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ucooldownexpiretime" type="INT">
+      <offset>144</offset>
+    </column>
+    <column name="Ureturnsattime" type="INT">
+      <offset>148</offset>
+    </column>
+    <column name="Isdefaultbackoption" type="U8">
+      <offset>152</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isrefreshoption" type="U8">
+      <offset>153</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Visited" type="U8">
-      <offset>61</offset>
+      <offset>154</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CannotChoose" type="U8">
-      <offset>62</offset>
+    <column name="Cannotchoose" type="U8">
+      <offset>155</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="WasAppended" type="U8">
-      <offset>63</offset>
+    <column name="Interactiondisabled" type="U8">
+      <offset>156</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="TeamMembersEligibleToSee" type="INTARRAY">
-      <offset>64</offset>
+    <column name="Interactiondisabledmsg" type="STRING">
+      <offset>160</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
     </column>
-    <column name="TeamMembersEligibleToInteract" type="INTARRAY">
-      <offset>68</offset>
+    <column name="Disabledaction" type="STRING">
+      <offset>168</offset>
+    </column>
+    <column name="Disabledactiontype" type="INT">
+      <offset>176</offset>
+      <static_define_list external="MissionDisabledActionType" />
+    </column>
+    <column name="Wasappended" type="U8">
+      <offset>180</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ugcoption" type="U8">
+      <offset>181</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Sorttotop" type="U8">
+      <offset>182</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isheaderitem" type="U8">
+      <offset>183</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hasunvieweditem" type="U8">
+      <offset>184</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Minimumlevel" type="INT">
+      <offset>188</offset>
+    </column>
+    <column name="Maximumlevel" type="INT">
+      <offset>192</offset>
+    </column>
+    <column name="Gearratingmintier" type="INT">
+      <offset>196</offset>
+    </column>
+    <column name="Gearratingmaxtier" type="INT">
+      <offset>200</offset>
+    </column>
+    <column name="Missiontag" type="INTARRAY">
+      <offset>208</offset>
+      <static_define_list external="MissionTag" />
+    </column>
+    <column name="Teammemberseligibletosee" type="INTARRAY">
+      <offset>216</offset>
+    </column>
+    <column name="Teammemberseligibletointeract" type="INTARRAY">
+      <offset>224</offset>
+    </column>
+    <column name="Uiminplayercount" type="INT">
+      <offset>232</offset>
+    </column>
+    <column name="Uimaxplayercount" type="INT">
+      <offset>236</offset>
+    </column>
+    <column name="Ischestopenoption" type="U8">
+      <offset>240</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="data" type="OPTIONALSTRUCT">
-      <offset>72</offset>
+      <offset>248</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>

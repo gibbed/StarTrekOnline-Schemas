@@ -3,6 +3,6 @@
   <elements type="int">
     <element name="UNDEFINED">0</element>
     <element name="NORMAL">1</element>
-    <element name="UGC">2</element>
+    <element name="_DEPRECATED_UGC">2</element>
   </elements>
 </enum>

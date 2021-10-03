@@ -11,7 +11,7 @@
       <offset>0</offset>
     </column>
     <column name="Value" type="F32">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

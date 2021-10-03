@@ -7,22 +7,22 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LurchAddedCapsuleRadius" type="F32">
+    <column name="Lurchaddedcapsuleradius" type="F32">
       <offset>0</offset>
     </column>
-    <column name="LurchDisable" type="BIT">
+    <column name="Lurchdisable" type="BIT">
       <offset>4</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="LurchStopOnEntityCollision" type="BIT">
+    <column name="Lurchstoponentitycollision" type="BIT">
       <offset>4</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="LurchDisableInAir" type="BIT">
+    <column name="Lurchdisableinair" type="BIT">
       <offset>4</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="LurchStopOnLedges" type="BIT">
+    <column name="Lurchstoponledges" type="BIT">
       <offset>4</offset>
       <bit_offset>65539</bit_offset>
     </column>

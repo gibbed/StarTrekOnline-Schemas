@@ -7,29 +7,30 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TempPacketIdxAfterCreation" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="TempPacketCmd" type="INT">
+    <column name="Temppacketidxaftercreation" type="INT">
       <offset>8</offset>
     </column>
-    <column name="Comment" type="STRING">
+    <column name="Temppacketcmd" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Comment" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="SendTime" type="INT">
-      <offset>16</offset>
-    </column>
-    <column name="TimeSentToServer" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="Alerted" type="U8">
+    <column name="Sendtime" type="INT">
       <offset>24</offset>
     </column>
-    <column name="Index" type="INT64">
+    <column name="Timesenttoserver" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Alerted" type="U8">
       <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Index" type="INT64">
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

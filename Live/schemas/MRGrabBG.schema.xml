@@ -7,18 +7,22 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="config" type="OPTIONALSTRUCT">
+    <column name="Config" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="MRGrabConfig" />
     </column>
-    <column name="spcStartApproach" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="spcStartHold" type="INT">
+    <column name="Spcstartapproach" type="INT">
       <offset>8</offset>
     </column>
-    <column name="Flags" type="EMBEDDEDSTRUCT">
+    <column name="Spcstarthold" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Hasstancemask" type="BIT">
+      <offset>16</offset>
+      <bit_offset>262144</bit_offset>
+    </column>
+    <column name="Flags" type="EMBEDDEDSTRUCT">
+      <offset>20</offset>
       <subtable external="MRGrabBGFlags" />
     </column>
     <column name="}" type="END" />

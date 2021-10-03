@@ -7,42 +7,46 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SpringFactor" type="F32">
+    <column name="Springfactor" type="F32">
       <offset>0</offset>
     </column>
     <column name="Dampening" type="F32">
       <offset>4</offset>
     </column>
-    <column name="SkeletonNode" type="STRING">
+    <column name="Skeletonnode" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="ppchAnimBits" type="STRINGARRAY">
-      <offset>12</offset>
+    <column name="Ppchanimbits" type="STRINGARRAY">
+      <offset>16</offset>
     </column>
     <column name="Position" type="F32FIXEDARRAY">
-      <offset>16</offset>
+      <offset>24</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LastPosition" type="F32FIXEDARRAY">
-      <offset>28</offset>
+    <column name="Lastposition" type="F32FIXEDARRAY">
+      <offset>36</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LastNodePosition" type="F32FIXEDARRAY">
-      <offset>40</offset>
+    <column name="Lastnodeposition" type="F32FIXEDARRAY">
+      <offset>48</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="UseOnlyTangentialMotion" type="U8">
-      <offset>52</offset>
-    </column>
-    <column name="HistorySampleTime" type="F32">
-      <offset>56</offset>
-    </column>
-    <column name="HistoryMultiplier" type="F32">
+    <column name="Useonlytangentialmotion" type="U8">
       <offset>60</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Historysampletime" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Historymultiplier" type="F32">
+      <offset>68</offset>
       <default>1</default>
     </column>
-    <column name="SmoothHistory" type="STRUCT">
-      <offset>64</offset>
+    <column name="Smoothhistory" type="STRUCT">
+      <offset>72</offset>
       <subtable external="CameraSmoothNode" />
     </column>
     <column name="}" type="END" />

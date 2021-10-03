@@ -8,47 +8,35 @@
     </column>
     <column name="{" type="START" />
     <column name="Input" type="STRING">
-      <offset>528</offset>
+      <offset>536</offset>
     </column>
-    <column name="stringResult" type="STRING">
-      <offset>532</offset>
+    <column name="Stringresult" type="STRING">
+      <offset>544</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="selfPtr" type="OPTIONALSTRUCT">
-      <offset>536</offset>
+    <column name="Selfptr" type="OPTIONALSTRUCT">
+      <offset>552</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Entity" />
     </column>
     <column name="FSMContext" type="OPTIONALSTRUCT">
-      <offset>544</offset>
+      <offset>568</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="FSMContext" />
     </column>
     <column name="Parent" type="OPTIONALSTRUCT">
-      <offset>900</offset>
+      <offset>1248</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
         <flag>STRUCT_NORECURSE</flag>
       </flags>
       <subtable external="ExprContext" />
-    </column>
-    <column name="exprFile" type="STRING">
-      <offset>916</offset>
-    </column>
-    <column name="ExprLine" type="INT">
-      <offset>920</offset>
-    </column>
-    <column name="exprContextFile" type="STRING">
-      <offset>924</offset>
-    </column>
-    <column name="exprContextLine" type="INT">
-      <offset>928</offset>
     </column>
     <column name="}" type="END" />
   </table>

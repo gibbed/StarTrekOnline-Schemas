@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="base_data" type="EMBEDDEDSTRUCT">
+    <column name="Base_Data" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="WorldCellEntryParsed" />
     </column>
-    <column name="mass_pivot" type="BIT">
+    <column name="Mass_Pivot" type="BIT">
       <offset>72</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="hand_pivot" type="BIT">
+    <column name="Hand_Pivot" type="BIT">
       <offset>72</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="carry_anim_bit_string_idx" type="INT">
+    <column name="Carry_Anim_Bit_String_Idx" type="INT">
       <offset>76</offset>
       <default>-1</default>
     </column>

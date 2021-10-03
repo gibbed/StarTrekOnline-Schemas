@@ -11,10 +11,10 @@
       <offset>0</offset>
       <string_length>64</string_length>
     </column>
-    <column name="StartingRAM" type="INT64">
+    <column name="Startingram" type="INT64">
       <offset>64</offset>
     </column>
-    <column name="EndingRAM" type="INT64">
+    <column name="Endingram" type="INT64">
       <offset>72</offset>
     </column>
     <column name="}" type="END" />

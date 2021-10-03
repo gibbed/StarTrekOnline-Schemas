@@ -4,8 +4,16 @@
     <element name="UNKNOWN">0</element>
     <element name="GET">1</element>
     <element name="POST">2</element>
-    <element name="MULTIPART">3</element>
-    <element name="HEADER">4</element>
-    <element name="JSON">5</element>
+    <element name="PUT">3</element>
+    <element name="PATCH">4</element>
+    <element name="DELETE">5</element>
+    <element name="COPY">6</element>
+    <element name="HEAD">7</element>
+    <element name="OPTIONS">8</element>
+    <element name="LINK">9</element>
+    <element name="UNLINK">10</element>
+    <element name="PURGE">11</element>
+    <element name="TRACE">12</element>
+    <element name="CONNECT">13</element>
   </elements>
 </enum>

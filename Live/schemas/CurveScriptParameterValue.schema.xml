@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="value_name" type="STRING">
+    <column name="Value_Name" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="value_enum" type="INT">
-      <offset>4</offset>
+    <column name="Value_Enum" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

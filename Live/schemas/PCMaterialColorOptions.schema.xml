@@ -7,33 +7,39 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AllowGlow" type="U8FIXEDARRAY">
+    <column name="Allowglow" type="U8FIXEDARRAY">
       <offset>0</offset>
       <num_elements>4</num_elements>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowReflection" type="U8FIXEDARRAY">
+    <column name="Allowreflection" type="U8FIXEDARRAY">
       <offset>4</offset>
       <num_elements>4</num_elements>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowSpecularity" type="U8FIXEDARRAY">
+    <column name="Allowspecularity" type="U8FIXEDARRAY">
       <offset>8</offset>
       <num_elements>4</num_elements>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SuppressMuscle" type="U8FIXEDARRAY">
+    <column name="Suppressmuscle" type="U8FIXEDARRAY">
       <offset>12</offset>
       <num_elements>4</num_elements>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CustomReflection" type="U8">
+    <column name="Customreflection" type="U8">
       <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CustomSpecularity" type="U8">
+    <column name="Customspecularity" type="U8">
       <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="defaultReflection" type="U8FIXEDARRAY">
+    <column name="Defaultreflection" type="U8FIXEDARRAY">
       <offset>18</offset>
       <num_elements>4</num_elements>
     </column>
-    <column name="defaultSpecularity" type="U8FIXEDARRAY">
+    <column name="Defaultspecularity" type="U8FIXEDARRAY">
       <offset>22</offset>
       <num_elements>4</num_elements>
     </column>

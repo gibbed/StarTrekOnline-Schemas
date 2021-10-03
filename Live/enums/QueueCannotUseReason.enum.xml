@@ -21,6 +21,7 @@
     <element name="RequiresUnteamed">17</element>
     <element name="MixedTeamAffiliation">18</element>
     <element name="GearRating">19</element>
-    <element name="Other">20</element>
+    <element name="RequiredAttrib">20</element>
+    <element name="Other">21</element>
   </elements>
 </enum>

@@ -12,7 +12,23 @@
       <subtable external="GroupDefRef" />
     </column>
     <column name="Seed" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
+    </column>
+    <column name="Materialbindings" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="TerrainObjectMaterial" />
+    </column>
+    <column name="Properties" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="WorldTerrainProperties" />
+    </column>
+    <column name="Overrideproperties" type="U8">
+      <offset>112</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Weldinstances" type="INT">
+      <offset>116</offset>
+      <default>-1</default>
     </column>
     <column name="}" type="END" />
   </table>

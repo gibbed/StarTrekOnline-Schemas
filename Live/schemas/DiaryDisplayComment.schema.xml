@@ -14,26 +14,27 @@
       </flags>
     </column>
     <column name="Comment" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="DiaryComment" />
     </column>
-    <column name="commentHeader" type="STRING">
-      <offset>8</offset>
+    <column name="Commentheader" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="FormattedText" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="isFirst" type="U8">
-      <offset>16</offset>
+    <column name="Isfirst" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

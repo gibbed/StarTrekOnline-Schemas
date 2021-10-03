@@ -7,151 +7,186 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="erTarget" type="INT">
+    <column name="Ertarget" type="INT">
       <offset>0</offset>
     </column>
-    <column name="hObjectNodeKey" type="REFERENCE">
+    <column name="Erlockedtarget" type="INT">
       <offset>4</offset>
+    </column>
+    <column name="Hobjectnodekey" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>WorldInteractionNode</dictionary_name>
     </column>
-    <column name="vecTarget" type="F32FIXEDARRAY">
-      <offset>8</offset>
+    <column name="Vectarget" type="F32FIXEDARRAY">
+      <offset>16</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="vecTargetSecondary" type="F32FIXEDARRAY">
-      <offset>20</offset>
+    <column name="Vectargetsecondary" type="F32FIXEDARRAY">
+      <offset>28</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="vecSourcePos" type="F32FIXEDARRAY">
-      <offset>32</offset>
+    <column name="Vecsourcepos" type="F32FIXEDARRAY">
+      <offset>40</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="vecSourceDir" type="F32FIXEDARRAY">
-      <offset>44</offset>
+    <column name="Vecsourcedir" type="F32FIXEDARRAY">
+      <offset>52</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="ivecTarget" type="INTFIXEDARRAY">
-      <offset>56</offset>
+    <column name="Ivectarget" type="INTFIXEDARRAY">
+      <offset>64</offset>
       <num_elements>3</num_elements>
+      <format_raw>15</format_raw>
     </column>
-    <column name="ivecTargetSecondary" type="INTFIXEDARRAY">
-      <offset>68</offset>
+    <column name="Ivectargetsecondary" type="INTFIXEDARRAY">
+      <offset>76</offset>
       <num_elements>3</num_elements>
+      <format_raw>15</format_raw>
     </column>
-    <column name="ivecSourcePos" type="INTFIXEDARRAY">
-      <offset>80</offset>
+    <column name="Ivecsourcepos" type="INTFIXEDARRAY">
+      <offset>88</offset>
       <num_elements>3</num_elements>
+      <format_raw>15</format_raw>
     </column>
-    <column name="ivecSourceDir" type="INTFIXEDARRAY">
-      <offset>92</offset>
+    <column name="Ivecsourcedir" type="INTFIXEDARRAY">
+      <offset>100</offset>
       <num_elements>3</num_elements>
+      <format_raw>15</format_raw>
     </column>
-    <column name="uiPowerID" type="INT">
-      <offset>104</offset>
-    </column>
-    <column name="PowerName" type="STRING">
-      <offset>108</offset>
-    </column>
-    <column name="uiTimeQueued" type="INT">
+    <column name="Uipowerid" type="INT">
       <offset>112</offset>
     </column>
-    <column name="uiTimeCurrented" type="INT">
-      <offset>116</offset>
-    </column>
-    <column name="uiTimeEnterStance" type="INT">
+    <column name="PowerName" type="STRING">
       <offset>120</offset>
     </column>
-    <column name="erTargetPicking" type="INT">
-      <offset>124</offset>
-    </column>
-    <column name="Activate" type="BIT">
+    <column name="Uitimequeued" type="INT">
       <offset>128</offset>
-      <bit_offset>65536</bit_offset>
     </column>
-    <column name="ToggleDeactivate" type="BIT">
-      <offset>128</offset>
-      <bit_offset>65537</bit_offset>
-    </column>
-    <column name="CancelExisting" type="BIT">
-      <offset>128</offset>
-      <bit_offset>65538</bit_offset>
-    </column>
-    <column name="UseVecTarget" type="BIT">
-      <offset>128</offset>
-      <bit_offset>65539</bit_offset>
-    </column>
-    <column name="UseVecSource" type="BIT">
-      <offset>128</offset>
-      <bit_offset>65540</bit_offset>
-    </column>
-    <column name="UseSourceDir" type="BIT">
-      <offset>128</offset>
-      <bit_offset>65541</bit_offset>
-    </column>
-    <column name="UseAimTrajectoryPos" type="BIT">
-      <offset>128</offset>
-      <bit_offset>65542</bit_offset>
-    </column>
-    <column name="AnimateNow" type="BIT">
-      <offset>128</offset>
-      <bit_offset>65543</bit_offset>
-    </column>
-    <column name="PrimaryPet" type="BIT">
-      <offset>128</offset>
-      <bit_offset>65544</bit_offset>
-    </column>
-    <column name="AutoCommit" type="BIT">
-      <offset>128</offset>
-      <bit_offset>65545</bit_offset>
-    </column>
-    <column name="Unpredicted" type="BIT">
-      <offset>128</offset>
-      <bit_offset>65546</bit_offset>
-    </column>
-    <column name="DontDelayTargeting" type="BIT">
-      <offset>128</offset>
-      <bit_offset>65547</bit_offset>
-    </column>
-    <column name="UpdateChargeVecTarget" type="BIT">
-      <offset>128</offset>
-      <bit_offset>65548</bit_offset>
-    </column>
-    <column name="InputDirectionBits" type="BIT">
+    <column name="Uitimecurrented" type="INT">
       <offset>132</offset>
-      <bit_offset>262144</bit_offset>
     </column>
-    <column name="uchActID" type="U8">
+    <column name="Uitimeenterstance" type="INT">
       <offset>136</offset>
     </column>
-    <column name="puiActIDsCanceled" type="INTARRAY">
+    <column name="Timeplayerinput" type="F32">
       <offset>140</offset>
     </column>
-    <column name="ModeDeactivate" type="INT">
+    <column name="Ertargetpicking" type="INT">
       <offset>144</offset>
     </column>
-    <column name="PredictedIdx" type="INT">
+    <column name="Activate" type="BIT">
       <offset>148</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="LungePrediction" type="INT">
+    <column name="Toggledeactivate" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Cancelexisting" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Usevectarget" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Usevecsource" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Usesourcedir" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Useaimtrajectorypos" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Animatenow" type="BIT">
+      <offset>148</offset>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Primarypet" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Autocommit" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Unpredicted" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Dontdelaytargeting" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Updatechargevectarget" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Updatechargevectargetsecondary" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Requestreload" type="BIT">
+      <offset>149</offset>
+      <bit_offset>65542</bit_offset>
+    </column>
+    <column name="Activationwasautomatic" type="BIT">
       <offset>152</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="uiSeq" type="INT">
+    <column name="Inputdirection" type="F32FIXEDARRAY">
       <offset>156</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="uiSeqReset" type="INT">
-      <offset>160</offset>
-    </column>
-    <column name="erConfuseTarget" type="INT">
-      <offset>164</offset>
-    </column>
-    <column name="perConfuseTargetList" type="INTARRAY">
+    <column name="Uchactid" type="U8">
       <offset>168</offset>
     </column>
-    <column name="uiConfuseSeed" type="INT">
-      <offset>172</offset>
-    </column>
-    <column name="erProximityAssistTarget" type="INT">
+    <column name="Puiactidscanceled" type="INTARRAY">
       <offset>176</offset>
+    </column>
+    <column name="Modedeactivate" type="INT">
+      <offset>184</offset>
+    </column>
+    <column name="Predictedidx" type="INT">
+      <offset>188</offset>
+    </column>
+    <column name="Lungeprediction" type="INT">
+      <offset>192</offset>
+    </column>
+    <column name="Uiseq" type="INT">
+      <offset>196</offset>
+    </column>
+    <column name="Uiseqreset" type="INT">
+      <offset>200</offset>
+    </column>
+    <column name="Erconfusetarget" type="INT">
+      <offset>204</offset>
+    </column>
+    <column name="Perconfusetargetlist" type="INTARRAY">
+      <offset>208</offset>
+    </column>
+    <column name="Uiconfuseseed" type="INT">
+      <offset>216</offset>
+    </column>
+    <column name="Erproximityassisttarget" type="INT">
+      <offset>220</offset>
+    </column>
+    <column name="Simpleprojectileids" type="STRUCT">
+      <offset>224</offset>
+      <subtable external="SimpleProjectileIDAssociation" />
+    </column>
+    <column name="Gamespecificparams" type="OPTIONALSTRUCT">
+      <offset>232</offset>
+      <subtable external="GameSpecificPowerParameters" />
     </column>
     <column name="}" type="END" />
   </table>

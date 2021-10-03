@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="InteractionType" type="INT">
+    <column name="Interactiontype" type="INT">
       <offset>0</offset>
       <static_define_list external="EncounterCritterOverrideType" />
     </column>

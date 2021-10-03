@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="speeds_0" type="EMBEDDEDSTRUCT">
+    <column name="Speeds_0" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="SurfaceSyncSpeedRange" />
     </column>
-    <column name="speeds_1" type="EMBEDDEDSTRUCT">
+    <column name="Speeds_1" type="EMBEDDEDSTRUCT">
       <offset>12</offset>
       <subtable external="SurfaceSyncSpeedRange" />
     </column>
-    <column name="speeds_2" type="EMBEDDEDSTRUCT">
+    <column name="Speeds_2" type="EMBEDDEDSTRUCT">
       <offset>24</offset>
       <subtable external="SurfaceSyncSpeedRange" />
     </column>
-    <column name="speeds_3" type="EMBEDDEDSTRUCT">
+    <column name="Speeds_3" type="EMBEDDEDSTRUCT">
       <offset>36</offset>
       <subtable external="SurfaceSyncSpeedRange" />
     </column>
@@ -28,6 +28,9 @@
     </column>
     <column name="Gravity" type="F32">
       <offset>52</offset>
+    </column>
+    <column name="Airfrictionxz" type="F32">
+      <offset>56</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="Fx2RibbonMode">
+  <elements type="int">
+    <element name="Camera_Oriented">0</element>
+    <element name="Direction_Oriented">1</element>
+    <element name="World_Oriented">2</element>
+    <element name="Cylinder">3</element>
+  </elements>
+</enum>

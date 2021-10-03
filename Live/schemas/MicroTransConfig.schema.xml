@@ -7,31 +7,37 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AutoImportFile" type="STRING">
+    <column name="Autoimportfile" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="SpecialKey" type="STRUCT">
-      <offset>4</offset>
+    <column name="Specialkey" type="STRUCT">
+      <offset>8</offset>
       <subtable external="SpecialKey" />
     </column>
-    <column name="GlobalPointBuyCategory" type="STRING">
-      <offset>8</offset>
-    </column>
-    <column name="PointBuyCategory" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="PointBuySteamCategory" type="STRING">
+    <column name="Globalpointbuycategory" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="PromoGameCurrencyWithdrawNumeric" type="STRING">
-      <offset>20</offset>
-    </column>
-    <column name="ShardConfig" type="STRUCT">
+    <column name="Pointbuycategory" type="STRING">
       <offset>24</offset>
+    </column>
+    <column name="Pointbuysteamcategory" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Promogamecurrencywithdrawnumeric" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Promotionalcostumecategory" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Shardconfig" type="STRUCT">
+      <offset>56</offset>
       <subtable external="MicroTrans_ShardConfig" />
     </column>
-    <column name="MaximumCouponDiscount" type="INT">
-      <offset>28</offset>
+    <column name="Maximumcoupondiscount" type="INT">
+      <offset>64</offset>
     </column>
     <column name="}" type="END" />
   </table>

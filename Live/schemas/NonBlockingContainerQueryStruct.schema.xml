@@ -7,14 +7,21 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ContainerIDs" type="INTARRAY">
-      <offset>4</offset>
-    </column>
-    <column name="ExpressionString" type="STRING">
+    <column name="Containerids" type="INTARRAY">
       <offset>8</offset>
     </column>
-    <column name="MaxToReturn" type="INT">
-      <offset>28</offset>
+    <column name="Expressionstring" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Maxtoreturn" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Summaryforservermon" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="NonBlockingContainerSearchOrQuerySummaryForServerMon" />
     </column>
     <column name="}" type="END" />
   </table>

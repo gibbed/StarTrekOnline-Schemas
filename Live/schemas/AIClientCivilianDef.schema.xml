@@ -7,32 +7,32 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="HeadlightTagName" type="STRING">
+    <column name="Headlighttagname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="BrakeLightsTagName" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="LeftTurningTagName" type="STRING">
+    <column name="Brakelightstagname" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="RightTurningTagName" type="STRING">
-      <offset>12</offset>
+    <column name="Leftturningtagname" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CivMapInfo" type="STRUCT">
-      <offset>16</offset>
+    <column name="Rightturningtagname" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Civmapinfo" type="STRUCT">
+      <offset>32</offset>
       <subtable external="AIClientCivilianMap" />
     </column>
     <column name="}" type="END" />

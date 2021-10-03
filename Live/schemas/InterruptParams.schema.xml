@@ -12,10 +12,10 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1194</default>
+      <default>1304</default>
       <static_define_list external="AttribType" />
     </column>
-    <column name="RechargePercent" type="BIT">
+    <column name="Rechargepercent" type="BIT">
       <offset>4</offset>
       <bit_offset>65536</bit_offset>
     </column>

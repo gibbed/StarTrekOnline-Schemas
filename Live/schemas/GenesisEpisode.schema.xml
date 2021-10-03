@@ -15,89 +15,101 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Scope" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="Comments" type="STRING">
-      <offset>12</offset>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="levelDef" type="IGNORE">
+    <column name="Comments" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Leveldef" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">MissionLevelDef</format_string>
+      </format_strings>
     </column>
-    <column name="LevelType" type="INT">
-      <offset>16</offset>
+    <column name="Leveltype" type="INT">
+      <offset>32</offset>
       <static_define_list external="MissionLevelType" />
     </column>
-    <column name="UsePlayerLevel" type="INT">
-      <offset>16</offset>
+    <column name="Useplayerlevel" type="INT">
+      <offset>32</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>LevelType</redundant_name>
+      <redundant_name>Leveltype</redundant_name>
       <static_define_list external="MissionLevelType" />
     </column>
     <column name="Level" type="INT">
-      <offset>20</offset>
+      <offset>36</offset>
       <default>1</default>
     </column>
     <column name="Level:" type="INT">
-      <offset>20</offset>
+      <offset>36</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Level</redundant_name>
       <default>1</default>
     </column>
-    <column name="MapVariableForLevel" type="STRING">
-      <offset>24</offset>
+    <column name="Mapvariableforlevel" type="STRING">
+      <offset>40</offset>
     </column>
-    <column name="LevelClamp" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Levelclamp" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="MissionLevelClamp" />
     </column>
-    <column name="RewardScale" type="F32">
-      <offset>32</offset>
+    <column name="EventName" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="RequiresBlock" type="OPTIONALSTRUCT">
-      <offset>36</offset>
+    <column name="Minleveloverride" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Rewardscale" type="F32">
+      <offset>72</offset>
+    </column>
+    <column name="Requiresblock" type="OPTIONALSTRUCT">
+      <offset>80</offset>
       <subtable external="Expression" />
     </column>
     <column name="DisplayName" type="STRING">
-      <offset>40</offset>
+      <offset>88</offset>
     </column>
-    <column name="UIString" type="STRING">
-      <offset>44</offset>
+    <column name="Uistring" type="STRING">
+      <offset>96</offset>
     </column>
     <column name="Summary" type="STRING">
-      <offset>48</offset>
+      <offset>104</offset>
     </column>
-    <column name="DescriptionText" type="STRING">
-      <offset>52</offset>
+    <column name="Descriptiontext" type="STRING">
+      <offset>112</offset>
     </column>
     <column name="Reward" type="REFERENCE">
-      <offset>56</offset>
+      <offset>120</offset>
       <dictionary_name>RewardTable</dictionary_name>
     </column>
     <column name="Category" type="REFERENCE">
-      <offset>60</offset>
+      <offset>128</offset>
       <dictionary_name>MissionCategory</dictionary_name>
     </column>
     <column name="Grant" type="EMBEDDEDSTRUCT">
-      <offset>64</offset>
+      <offset>136</offset>
       <subtable external="GenesisEpisodeGrantDescription" />
     </column>
     <column name="Part" type="STRUCT">
-      <offset>72</offset>
+      <offset>152</offset>
       <subtable external="GenesisEpisodePart" />
     </column>
     <column name="}" type="END" />

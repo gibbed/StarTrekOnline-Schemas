@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SentryAutoLaunchProcess">
+  <table>
+    <column name="SentryAutoLaunchProcess" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="TaskName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="Exename" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Crc" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Workingdir" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Commandline" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

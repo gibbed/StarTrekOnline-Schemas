@@ -6,6 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="Type" type="INT">
       <offset>0</offset>
       <flags>
@@ -14,19 +15,26 @@
       <static_define_list external="AdditionalCostumeBoneType" />
     </column>
     <column name="Old" type="REFERENCE">
-      <offset>4</offset>
-      <flags>
-        <flag>STRUCTPARAM</flag>
-      </flags>
-      <dictionary_name>PCBoneDef</dictionary_name>
-    </column>
-    <column name="New" type="REFERENCE">
       <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <dictionary_name>PCBoneDef</dictionary_name>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="New" type="REFERENCE">
+      <offset>16</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <dictionary_name>PCBoneDef</dictionary_name>
+    </column>
+    <column name="Requiredgemslot" type="U8">
+      <offset>24</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <default>-1</default>
+    </column>
+    <column name="}" type="END" />
   </table>
 </parser>

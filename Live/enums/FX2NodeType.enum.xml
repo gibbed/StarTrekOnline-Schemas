@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FX2NodeType">
+  <elements type="int">
+    <element name="Node">0</element>
+    <element name="RaycastResult">1</element>
+  </elements>
+</enum>

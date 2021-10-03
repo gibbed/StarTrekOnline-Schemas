@@ -7,38 +7,41 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ExcludeFilters" type="STRUCT">
+    <column name="Excludefilters" type="STRUCT">
       <offset>0</offset>
       <subtable external="FindFilterTokenStruct" />
     </column>
-    <column name="RequiredFilters" type="STRUCT">
-      <offset>4</offset>
+    <column name="Requiredfilters" type="STRUCT">
+      <offset>8</offset>
       <subtable external="FindFilterTokenStruct" />
     </column>
-    <column name="FilterString" type="STRING">
-      <offset>8</offset>
+    <column name="Filterstring" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="Language" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
       <static_define_list external="Language" />
     </column>
-    <column name="FindAnonymous" type="BIT">
-      <offset>16</offset>
+    <column name="Findanonymous" type="BIT">
+      <offset>28</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FindTeams" type="BIT">
-      <offset>16</offset>
+    <column name="Findteams" type="BIT">
+      <offset>28</offset>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FindSoloForTeam" type="BIT">
-      <offset>16</offset>
+    <column name="Findsoloforteam" type="BIT">
+      <offset>28</offset>
       <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MaxAccessLevel" type="INT">
-      <offset>20</offset>
+    <column name="Maxaccesslevel" type="INT">
+      <offset>32</offset>
     </column>
-    <column name="searchAccountID" type="INT">
-      <offset>24</offset>
+    <column name="Searchaccountid" type="INT">
+      <offset>36</offset>
     </column>
     <column name="}" type="END" />
   </table>

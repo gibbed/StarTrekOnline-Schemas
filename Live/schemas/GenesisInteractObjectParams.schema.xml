@@ -7,33 +7,32 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DisallowVolume" type="U8">
+    <column name="Disallowvolume" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsUGCDoor" type="U8">
+    <column name="Clickievisiblewhenperent" type="U8">
       <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ClickieVisibleWhenPerEnt" type="U8">
-      <offset>2</offset>
-    </column>
-    <column name="ClickieVisibleWhen" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Clickievisiblewhen" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="Expression" />
     </column>
     <column name="DisplayName" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="SucceedWhen" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Succeedwhen" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="Expression" />
     </column>
-    <column name="InteractWhen" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Interactwhen" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="Expression" />
     </column>
-    <column name="InteractionEntry" type="STRUCT">
-      <offset>28</offset>
+    <column name="Interactionentry" type="STRUCT">
+      <offset>56</offset>
       <subtable external="WorldInteractionPropertyEntry" />
     </column>
     <column name="}" type="END" />

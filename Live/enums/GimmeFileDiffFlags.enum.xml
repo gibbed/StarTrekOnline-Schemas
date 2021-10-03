@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GimmeFileDiffFlags">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="LINKWILLBREAK">1</element>
+    <element name="LINKISBROKEN">2</element>
+    <element name="BLOCKED">4</element>
+    <element name="CONFLICT">8</element>
+  </elements>
+</enum>

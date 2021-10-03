@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DynamicCamera">
+  <table>
+    <column name="DynamicCamera" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Camerasensors" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="DynamicCameraSensor" />
+    </column>
+    <column name="Camerabehaviors" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="DynamicCameraBehavior" />
+    </column>
+    <column name="Camerabehaviorrequests" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="DynamicCameraBehaviorRequest" />
+    </column>
+    <column name="Cameramemory" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="DynamicCameraMemory" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

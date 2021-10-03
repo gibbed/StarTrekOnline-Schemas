@@ -7,31 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="base_data" type="EMBEDDEDSTRUCT">
+    <column name="Base_Data" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="WorldCellEntryParsed" />
     </column>
-    <column name="event_name_idx" type="INT">
+    <column name="Event_Name_Idx" type="INT">
       <offset>72</offset>
       <default>-1</default>
     </column>
-    <column name="excluder_str_idx" type="INT">
+    <column name="Excluder_Str_Idx" type="INT">
       <offset>76</offset>
       <default>-1</default>
     </column>
-    <column name="dsp_str_idx" type="INT">
+    <column name="Dsp_Str_Idx" type="INT">
       <offset>80</offset>
       <default>-1</default>
     </column>
-    <column name="editor_group_str_idx" type="INT">
+    <column name="Editor_Group_Str_Idx" type="INT">
       <offset>84</offset>
       <default>-1</default>
     </column>
-    <column name="sound_group_str_idx" type="INT">
+    <column name="Sound_Group_Str_Idx" type="INT">
       <offset>88</offset>
       <default>-1</default>
     </column>
-    <column name="sound_group_ord_idx" type="INT">
+    <column name="Sound_Group_Ord_Idx" type="INT">
       <offset>92</offset>
       <default>-1</default>
     </column>

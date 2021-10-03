@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PowerAITag" type="STRINGARRAY">
+    <column name="Poweraitag" type="STRINGARRAY">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

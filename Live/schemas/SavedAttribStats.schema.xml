@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pchPresetName" type="STRING">
+    <column name="Pchpresetname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -15,8 +15,8 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="ppAssignedStats" type="STRUCT">
-      <offset>4</offset>
+    <column name="Ppassignedstats" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

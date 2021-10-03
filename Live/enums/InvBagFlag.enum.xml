@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <enum name="InvBagFlag">
   <elements type="int">
+    <element name="None">0</element>
     <element name="StorageOnly">1</element>
     <element name="EquipBag">2</element>
     <element name="WeaponBag">4</element>
@@ -22,5 +23,10 @@
     <element name="BoundPetStorage">524288</element>
     <element name="ShowInAllCostumeSets">1048576</element>
     <element name="RestrictedOnly">2097152</element>
+    <element name="DisallowClickPowers">4194304</element>
+    <element name="ApplyGemSlotSetBonuses">8388608</element>
+    <element name="VanityCostumeBag">16777216</element>
+    <element name="PlayerIgnoreRestrictBag">33554432</element>
+    <element name="DisableStacking">67108864</element>
   </elements>
 </enum>

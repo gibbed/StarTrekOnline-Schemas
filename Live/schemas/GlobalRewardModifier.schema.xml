@@ -14,17 +14,46 @@
       </flags>
     </column>
     <column name="Numeric" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="BonusValue" type="F32">
-      <offset>8</offset>
+    <column name="Item" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="ItemDefList" />
     </column>
-    <column name="RequiredActivity" type="STRING">
-      <offset>12</offset>
+    <column name="Bonusvalue" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Requiredactivity" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
+    </column>
+    <column name="Bonusitems" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="ItemDefList" />
+    </column>
+    <column name="Mapkillname" type="STRINGARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Mapnobonusname" type="STRINGARRAY">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Requiredlevelmapname" type="STRINGARRAY">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Requiredlevel" type="INT">
+      <offset>72</offset>
     </column>
     <column name="}" type="END" />
   </table>

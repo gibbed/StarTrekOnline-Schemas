@@ -4,12 +4,18 @@
     <element name="None">-1</element>
     <element name="Mission">0</element>
     <element name="OpenMission">1</element>
-    <element name="MissionReturnContact">2</element>
-    <element name="MissionRestartContact">3</element>
-    <element name="TrackedContact">4</element>
-    <element name="Landmark">5</element>
-    <element name="AreaLandmark">6</element>
-    <element name="SavedWaypoint">7</element>
-    <element name="TeamCorral">8</element>
+    <element name="OpenMissionHotspot">2</element>
+    <element name="OpenMissionHotspotUnowned">3</element>
+    <element name="MissionReturnContact">4</element>
+    <element name="MissionRestartContact">5</element>
+    <element name="TrackedContact">6</element>
+    <element name="Landmark">7</element>
+    <element name="AreaLandmark">8</element>
+    <element name="SavedWaypoint">9</element>
+    <element name="TeamCorral">10</element>
+    <element name="GoldenPath">11</element>
+    <element name="Garrison">12</element>
+    <element name="Neighborhood">13</element>
+    <element name="Adventure">14</element>
   </elements>
 </enum>

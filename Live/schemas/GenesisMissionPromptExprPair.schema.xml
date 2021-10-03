@@ -10,8 +10,8 @@
     <column name="Name" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="ExprText" type="STRING">
-      <offset>4</offset>
+    <column name="Exprtext" type="STRING">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -14,120 +14,121 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="EmptyAssembly" type="REFERENCE">
-      <offset>4</offset>
-      <dictionary_name>UITextureAssembly</dictionary_name>
-    </column>
-    <column name="FilledAssembly" type="REFERENCE">
+    <column name="Emptyassembly" type="REFERENCE">
       <offset>8</offset>
       <dictionary_name>UITextureAssembly</dictionary_name>
     </column>
-    <column name="MovingOverlayAssembly" type="REFERENCE">
-      <offset>12</offset>
-      <dictionary_name>UITextureAssembly</dictionary_name>
-    </column>
-    <column name="DynamicOverlayAssembly" type="REFERENCE">
-      <offset>12</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>MovingOverlayAssembly</redundant_name>
-      <dictionary_name>UITextureAssembly</dictionary_name>
-    </column>
-    <column name="StaticOverlayAssembly" type="REFERENCE">
+    <column name="Filledassembly" type="REFERENCE">
       <offset>16</offset>
       <dictionary_name>UITextureAssembly</dictionary_name>
     </column>
-    <column name="NotchAssembly" type="REFERENCE">
-      <offset>20</offset>
+    <column name="Movingoverlayassembly" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>UITextureAssembly</dictionary_name>
     </column>
-    <column name="FillFrom" type="INT">
+    <column name="Dynamicoverlayassembly" type="REFERENCE">
       <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Movingoverlayassembly</redundant_name>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Staticoverlayassembly" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Notchassembly" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Fillfrom" type="INT">
+      <offset>48</offset>
       <default>2</default>
       <static_define_list external="UIDirection" />
     </column>
-    <column name="NotchForceInside" type="U8">
-      <offset>28</offset>
+    <column name="Notchforceinside" type="U8">
+      <offset>52</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="MovingOverlayDirection" type="INT">
-      <offset>32</offset>
+    <column name="Movingoverlaydirection" type="INT">
+      <offset>56</offset>
       <static_define_list external="UIStyleBarDirection" />
     </column>
-    <column name="MovingOverlayFadeIn" type="F32">
-      <offset>36</offset>
+    <column name="Movingoverlayfadein" type="F32">
+      <offset>60</offset>
     </column>
-    <column name="MovingOverlayFadeOut" type="F32">
-      <offset>40</offset>
+    <column name="Movingoverlayfadeout" type="F32">
+      <offset>64</offset>
     </column>
     <column name="Tick" type="STRING">
-      <offset>44</offset>
+      <offset>72</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>GLOBAL_NAME</flag>
       </flags>
       <dictionary_name>Texture</dictionary_name>
     </column>
-    <column name="TickFilled" type="STRING">
-      <offset>48</offset>
+    <column name="Tickfilled" type="STRING">
+      <offset>80</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>GLOBAL_NAME</flag>
       </flags>
       <dictionary_name>Texture</dictionary_name>
     </column>
-    <column name="TickColor" type="INT">
-      <offset>52</offset>
+    <column name="Tickcolor" type="INT">
+      <offset>88</offset>
       <default>-1</default>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
       <format>COLOR</format>
     </column>
-    <column name="TickFilledColor" type="INT">
-      <offset>56</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+    <column name="Tickfilledcolor" type="INT">
+      <offset>92</offset>
+      <static_define_list external="Color" />
       <format>COLOR</format>
     </column>
-    <column name="TickCount" type="INT">
-      <offset>68</offset>
+    <column name="Tickcount" type="INT">
+      <offset>112</offset>
     </column>
     <column name="Font" type="REFERENCE">
-      <offset>72</offset>
+      <offset>120</offset>
       <dictionary_name>UIStyleFont</dictionary_name>
     </column>
-    <column name="ClipFilledArea" type="BIT">
-      <offset>76</offset>
+    <column name="Clipfilledarea" type="BIT">
+      <offset>128</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="TickSnapToPixel" type="BIT">
-      <offset>76</offset>
+    <column name="Ticksnaptopixel" type="BIT">
+      <offset>128</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
       <format_strings>
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="ScaleTick" type="BIT">
-      <offset>76</offset>
+    <column name="Scaletick" type="BIT">
+      <offset>128</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
       <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
       <format_strings>
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="StretchTick" type="BIT">
-      <offset>76</offset>
+    <column name="Stretchtick" type="BIT">
+      <offset>128</offset>
       <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>80</offset>
+      <offset>136</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

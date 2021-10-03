@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="WrappedCTEmail">
+  <table>
+    <column name="WrappedCTEmail" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="EmailType" type="INT">
+      <offset>0</offset>
+      <static_define_list external="enumCritSystemEmailType" />
+    </column>
+    <column name="Systemname" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Subject" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Body" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Alert" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="Alert" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="EntityTeamingRelation">
+  <elements type="int">
+    <element name="CannotTeam">-1</element>
+    <element name="Default">0</element>
+    <element name="CanTeam">1</element>
+    <element name="CanTeamSpecial">2</element>
+  </elements>
+</enum>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DCM_CommandCount_All">
+  <table>
+    <column name="DCM_CommandCount_All" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Servers" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="DCM_CommandCount_PerServerType" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

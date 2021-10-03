@@ -12,33 +12,33 @@
       <subtable external="ChatUserInfo" />
     </column>
     <column name="To" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="ChatUserInfo" />
     </column>
     <column name="Type" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
       <static_define_list external="ChatLogEntryType" />
     </column>
     <column name="Channel" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
-    </column>
-    <column name="ChannelDisplay" type="STRING">
-      <offset>16</offset>
-      <flags>
-        <flag>ESTRING</flag>
-      </flags>
-    </column>
-    <column name="InstanceIndex" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="uVirtualShardID" type="INT">
       <offset>24</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Channeldisplay" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Instanceindex" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Uvirtualshardid" type="INT">
+      <offset>44</offset>
     </column>
     <column name="Subject" type="STRING">
-      <offset>28</offset>
+      <offset>48</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
@@ -47,7 +47,7 @@
       </format_strings>
     </column>
     <column name="Text" type="STRING">
-      <offset>32</offset>
+      <offset>56</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
@@ -56,26 +56,27 @@
       </format_strings>
     </column>
     <column name="Thread" type="STRING">
-      <offset>36</offset>
+      <offset>64</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="ID" type="STRING">
-      <offset>40</offset>
+      <offset>72</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="data" type="OPTIONALSTRUCT">
-      <offset>44</offset>
+      <offset>80</offset>
       <subtable external="ChatData" />
     </column>
-    <column name="xmppType" type="INT">
-      <offset>48</offset>
+    <column name="Xmpptype" type="INT">
+      <offset>88</offset>
     </column>
-    <column name="BlacklistViolation" type="U8">
-      <offset>52</offset>
+    <column name="Blacklistviolation" type="U8">
+      <offset>92</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="StickerBookPointCacheByCollection">
+  <table>
+    <column name="StickerBookPointCacheByCollection" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Astrcollectionname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Pointcachedata" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="StickerBookPointCacheData" />
+    </column>
+    <column name="Pointcachebyset" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="StickerBookPointCacheBySet" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

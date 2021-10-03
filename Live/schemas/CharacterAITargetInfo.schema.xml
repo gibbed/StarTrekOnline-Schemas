@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="entRef" type="INT">
+    <column name="Entref" type="INT">
       <offset>0</offset>
     </column>
-    <column name="totalBaseDangerVal" type="F32">
+    <column name="Totalbasedangerval" type="F32">
       <offset>4</offset>
     </column>
-    <column name="relativeDangerVal" type="F32">
+    <column name="Relativedangerval" type="F32">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

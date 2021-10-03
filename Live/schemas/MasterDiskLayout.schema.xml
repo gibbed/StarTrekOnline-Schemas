@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MasterDiskLayout">
+  <table>
+    <column name="MasterDiskLayout" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Clump" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="MasterDiskClump" />
+    </column>
+    <column name="Hog_Or_Chunk_Name" type="FIXEDFILENAME">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>EARRAY</flag>
+        <flag>INDIRECT</flag>
+      </flags>
+    </column>
+    <column name="Hogorchunkname" type="FIXEDFILENAME">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>EARRAY</flag>
+        <flag>INDIRECT</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Hog_Or_Chunk_Name</redundant_name>
+    </column>
+    <column name="Loose_Dirs_Names" type="FIXEDFILENAME">
+      <offset>16</offset>
+      <flags>
+        <flag>EARRAY</flag>
+        <flag>INDIRECT</flag>
+      </flags>
+    </column>
+    <column name="Loosedirsnames" type="FIXEDFILENAME">
+      <offset>16</offset>
+      <flags>
+        <flag>EARRAY</flag>
+        <flag>INDIRECT</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Loose_Dirs_Names</redundant_name>
+    </column>
+    <column name="Loose_Dirs" type="FIXEDFILENAME">
+      <offset>24</offset>
+      <flags>
+        <flag>EARRAY</flag>
+        <flag>INDIRECT</flag>
+      </flags>
+    </column>
+    <column name="Loosedirs" type="FIXEDFILENAME">
+      <offset>24</offset>
+      <flags>
+        <flag>EARRAY</flag>
+        <flag>INDIRECT</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Loose_Dirs</redundant_name>
+    </column>
+    <column name="Files" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="MasterDiskFileLocation" />
+    </column>
+    <column name="Root_Head_Idx" type="INT">
+      <offset>40</offset>
+      <default>-1</default>
+    </column>
+    <column name="Root_Tail_Idx" type="INT">
+      <offset>44</offset>
+      <default>-1</default>
+    </column>
+    <column name="Chunk_Ids" type="INTARRAY">
+      <offset>48</offset>
+    </column>
+    <column name="Chunkids" type="INTARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Chunk_Ids</redundant_name>
+    </column>
+    <column name="Root" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="Root_Tail" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

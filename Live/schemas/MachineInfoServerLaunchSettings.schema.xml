@@ -9,17 +9,24 @@
     <column name="{" type="START" />
     <column name="ServerType" type="INT">
       <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
       <static_define_list external="GlobalType" />
     </column>
     <column name="Setting" type="INT">
       <offset>4</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <default>2</default>
       <static_define_list external="enumMachineCanLaunchServerSetting" />
     </column>
     <column name="Priority" type="INT">
       <offset>8</offset>
     </column>
     <column name="Categories" type="STRING">
-      <offset>12</offset>
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

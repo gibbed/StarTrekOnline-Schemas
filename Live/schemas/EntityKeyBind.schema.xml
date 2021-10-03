@@ -14,33 +14,49 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="pchKey" type="STRING">
+    <column name="Pchkey" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
       <redundant_name>Key</redundant_name>
     </column>
     <column name="Command" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="pchCommand" type="STRING">
-      <offset>4</offset>
+    <column name="Pchcommand" type="STRING">
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
       <redundant_name>Command</redundant_name>
     </column>
-    <column name="SchemeRegions" type="INT">
-      <offset>8</offset>
+    <column name="Holdcommand" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Pchholdcommand" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Holdcommand</redundant_name>
+    </column>
+    <column name="Schemeregions" type="INT">
+      <offset>24</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
@@ -48,29 +64,29 @@
       <static_define_list external="ControlSchemeRegionType" />
       <format>FLAGS</format>
     </column>
-    <column name="eSchemeRegions" type="INT">
-      <offset>8</offset>
+    <column name="Eschemeregions" type="INT">
+      <offset>24</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
-      <redundant_name>SchemeRegions</redundant_name>
+      <redundant_name>Schemeregions</redundant_name>
       <static_define_list external="ControlSchemeRegionType" />
       <format>FLAGS</format>
     </column>
     <column name="Secondary" type="BIT">
-      <offset>12</offset>
+      <offset>28</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="bSecondary" type="BIT">
-      <offset>12</offset>
+    <column name="Bsecondary" type="BIT">
+      <offset>28</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>

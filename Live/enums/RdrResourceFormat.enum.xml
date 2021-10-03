@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="RdrResourceFormat">
+  <elements type="int">
+    <element name="BGR_U8">0</element>
+    <element name="BGRA_U8">1</element>
+    <element name="RGBA_F16">2</element>
+    <element name="RGBA_F32">3</element>
+    <element name="unused_was_LA8">4</element>
+    <element name="DXT1">5</element>
+    <element name="DXT3">6</element>
+    <element name="DXT5">7</element>
+    <element name="R_F16">8</element>
+    <element name="R_F32">9</element>
+    <element name="BGRA_5551">10</element>
+    <element name="A_U8">11</element>
+    <element name="RGBA_U8">12</element>
+    <element name="BC5">13</element>
+    <element name="BC6H_S16">14</element>
+    <element name="BC6H_U16">15</element>
+    <element name="BC7">16</element>
+    <element name="BC4">17</element>
+    <element name="D_F32_S8">18</element>
+    <element name="D24S8">19</element>
+    <element name="G16R16F">20</element>
+    <element name="RG_U8">21</element>
+    <element name="R_UNORM8">22</element>
+    <element name="R_UNORM16">23</element>
+    <element name="R_U8">24</element>
+    <element name="R_U16">25</element>
+    <element name="R_U32">26</element>
+    <element name="INVALID_FORMAT">27</element>
+    <element name="MAX">28</element>
+    <element name="FIRST_INTERNAL_FORMAT">28</element>
+    <element name="NULL">28</element>
+    <element name="D_U16">29</element>
+    <element name="D_F32">30</element>
+    <element name="S_U8">31</element>
+    <element name="G16R16">32</element>
+    <element name="A16B16G16R16">33</element>
+    <element name="RGBA10">34</element>
+  </elements>
+</enum>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="toBG" type="EMBEDDEDSTRUCT">
+    <column name="Tobg" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="PushToBG" />
     </column>

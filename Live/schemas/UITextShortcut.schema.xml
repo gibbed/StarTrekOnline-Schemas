@@ -10,11 +10,11 @@
     <column name="Label" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="BeforeRegionText" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="AfterRegionText" type="STRING">
+    <column name="Beforeregiontext" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Afterregiontext" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,15 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SpeciesName" type="STRING">
+    <column name="Speciesname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="SpeciesUnlockCode" type="STRING">
-      <offset>4</offset>
+    <column name="Speciesunlockcode" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

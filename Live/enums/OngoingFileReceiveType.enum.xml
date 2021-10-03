@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="OngoingFileReceiveType">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="INTO_RAM">1</element>
+    <element name="INTO_FILE">2</element>
+  </elements>
+</enum>

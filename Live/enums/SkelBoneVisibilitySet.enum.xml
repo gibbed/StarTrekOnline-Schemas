@@ -2,5 +2,9 @@
 <enum name="SkelBoneVisibilitySet">
   <elements type="int">
     <element name="None">-1</element>
+    <element name="Hide_Lowerbod">0</element>
+    <element name="Hide_Tail">1</element>
+    <element name="Hide_Tzen_Death">2</element>
+    <element name="Hide_Weps_Tzen">3</element>
   </elements>
 </enum>

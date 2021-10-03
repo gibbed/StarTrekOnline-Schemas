@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="partStates" type="EMBEDDEDSTRUCT">
+    <column name="Partstates" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="MMRSkeletonPartStates" />
     </column>

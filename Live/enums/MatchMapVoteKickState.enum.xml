@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MatchMapVoteKickState">
+  <elements type="int">
+    <element name="SystemError">0</element>
+    <element name="NotMatchMap">1</element>
+    <element name="NotEnoughPlayer">2</element>
+    <element name="CantVoteKickInPVP">3</element>
+    <element name="MatchNotInProgress">4</element>
+    <element name="FillingDisabled">5</element>
+    <element name="SameMRG">6</element>
+    <element name="CanVoteKick">7</element>
+  </elements>
+</enum>

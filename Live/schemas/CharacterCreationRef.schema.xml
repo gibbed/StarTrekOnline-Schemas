@@ -7,24 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hPowerTreeDef" type="REFERENCE">
+    <column name="Hpowertreedef" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>PowerTreeDef</dictionary_name>
     </column>
-    <column name="hClass" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hclass" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>CharacterClass</dictionary_name>
     </column>
-    <column name="hPet" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Hpet" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>PetDef</dictionary_name>
     </column>
-    <column name="hSpecies" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Hspecies" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>SpeciesDef</dictionary_name>
     </column>
-    <column name="hCostume" type="REFERENCE">
-      <offset>16</offset>
+    <column name="Hcostume" type="REFERENCE">
+      <offset>32</offset>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
     <column name="}" type="END" />

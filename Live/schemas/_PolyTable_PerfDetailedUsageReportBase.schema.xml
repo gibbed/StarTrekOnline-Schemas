@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="_PolyTable_PerfDetailedUsageReportBase">
+  <table>
+    <column name="_PolyTable_PerfDetailedUsageReportBase" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="PerfDetailedGeoMemReport" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="PerfDetailedGeoMemReport" />
+    </column>
+    <column name="PerfDetailedTexMemReport" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="PerfDetailedTexMemReport" />
+    </column>
+  </table>
+</parser>

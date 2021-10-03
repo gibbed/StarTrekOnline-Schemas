@@ -10,32 +10,45 @@
     <column name="Speed" type="F32">
       <offset>0</offset>
     </column>
-    <column name="RangeMin" type="F32">
+    <column name="Rangemin" type="F32">
       <offset>4</offset>
     </column>
     <column name="Range" type="F32">
       <offset>8</offset>
     </column>
-    <column name="StopDistance" type="F32">
+    <column name="Stopdistance" type="F32">
       <offset>12</offset>
       <default>-1</default>
     </column>
-    <column name="FrameStart" type="INT">
+    <column name="Targetchasestopduration" type="F32">
       <offset>16</offset>
     </column>
-    <column name="FramesOfActivate" type="INT">
+    <column name="Targetchasestopdistance" type="F32">
       <offset>20</offset>
     </column>
-    <column name="Direction" type="INT">
+    <column name="Targetchaseovershootdistance" type="F32">
       <offset>24</offset>
-      <static_define_list external="PowerLungeDirection" />
     </column>
-    <column name="StrictFrameDuration" type="INT">
+    <column name="Framestart" type="INT">
       <offset>28</offset>
     </column>
-    <column name="UseRootDistance" type="BIT">
+    <column name="Framesofactivate" type="INT">
       <offset>32</offset>
+    </column>
+    <column name="Direction" type="INT">
+      <offset>36</offset>
+      <static_define_list external="PowerLungeDirection" />
+    </column>
+    <column name="Strictframeduration" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Userootdistance" type="BIT">
+      <offset>44</offset>
       <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Lungeignorecollision" type="BIT">
+      <offset>44</offset>
+      <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

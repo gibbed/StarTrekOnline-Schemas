@@ -7,132 +7,157 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="base_data" type="EMBEDDEDSTRUCT">
+    <column name="Base_Data" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="WorldCellEntryParsed" />
     </column>
-    <column name="fade_mid_idx" type="INT">
+    <column name="Fade_Mid_Idx" type="INT">
       <offset>72</offset>
       <default>-1</default>
     </column>
-    <column name="fade_radius" type="F32">
+    <column name="Fade_Radius" type="F32">
       <offset>76</offset>
       <float_rounding>ONES</float_rounding>
     </column>
     <column name="Color" type="F32FIXEDARRAY">
       <offset>80</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">1.0, 1.0, 1.0, 1.0</format_string>
+      </format_strings>
     </column>
-    <column name="draw_list_idx" type="INT">
+    <column name="Draw_List_Idx" type="INT">
       <offset>96</offset>
     </column>
-    <column name="instance_param_list_idx" type="INT">
+    <column name="Fx_Entry_Id" type="INT">
       <offset>100</offset>
     </column>
-    <column name="fx_entry_id" type="INT">
+    <column name="Animation_Entry_Id" type="INT">
       <offset>104</offset>
     </column>
-    <column name="animation_entry_id" type="INT">
+    <column name="Fade_Group_Index" type="INT">
       <offset>108</offset>
     </column>
-    <column name="is_near_fade" type="BIT">
+    <column name="Is_Near_Fade" type="BIT">
       <offset>112</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="is_clustered" type="BIT">
+    <column name="Undeclared" type="BIT">
       <offset>112</offset>
-      <bit_offset>65537</bit_offset>
+      <bit_offset>2031617</bit_offset>
     </column>
-    <column name="undeclared" type="BIT">
-      <offset>112</offset>
-      <bit_offset>1966082</bit_offset>
-    </column>
-    <column name="bitfield" type="IGNORE">
+    <column name="Bitfield" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">WorldDrawableBitfield</format_string>
+      </format_strings>
     </column>
-    <column name="camera_facing" type="BIT">
+    <column name="Camera_Facing" type="BIT">
       <offset>116</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="axis_camera_facing" type="BIT">
+    <column name="Axis_Camera_Facing" type="BIT">
       <offset>116</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="unlit" type="BIT">
+    <column name="Unlit" type="BIT">
       <offset>116</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="occluder" type="BIT">
+    <column name="Occluder" type="BIT">
       <offset>116</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="double_sided_occluder" type="BIT">
+    <column name="Double_Sided_Occluder" type="BIT">
       <offset>116</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="low_detail" type="BIT">
+    <column name="Low_Detail" type="BIT">
       <offset>116</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="high_detail" type="BIT">
+    <column name="High_Detail" type="BIT">
       <offset>116</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="high_fill_detail" type="BIT">
+    <column name="High_Fill_Detail" type="BIT">
       <offset>116</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="map_snap_hidden" type="BIT">
-      <offset>116</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Map_Snap_Hidden" type="BIT">
+      <offset>117</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="no_shadow_cast" type="BIT">
-      <offset>116</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="No_Shadow_Cast" type="BIT">
+      <offset>117</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="no_shadow_receive" type="BIT">
-      <offset>116</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="No_Shadow_Receive" type="BIT">
+      <offset>117</offset>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="force_trunk_wind" type="BIT">
-      <offset>116</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Force_Trunk_Wind" type="BIT">
+      <offset>117</offset>
+      <bit_offset>65539</bit_offset>
     </column>
-    <column name="no_vertex_lighting" type="BIT">
-      <offset>116</offset>
-      <bit_offset>65548</bit_offset>
+    <column name="No_Vertex_Lighting" type="BIT">
+      <offset>117</offset>
+      <bit_offset>65540</bit_offset>
     </column>
-    <column name="use_character_lighting" type="BIT">
-      <offset>116</offset>
-      <bit_offset>65549</bit_offset>
+    <column name="Use_Character_Lighting" type="BIT">
+      <offset>117</offset>
+      <bit_offset>65541</bit_offset>
     </column>
-    <column name="future_flag2" type="BIT">
-      <offset>116</offset>
-      <bit_offset>65550</bit_offset>
+    <column name="No_Splat_Collision" type="BIT">
+      <offset>117</offset>
+      <bit_offset>65542</bit_offset>
     </column>
-    <column name="future_flag3" type="BIT">
-      <offset>116</offset>
-      <bit_offset>65551</bit_offset>
+    <column name="Use_Distance_Field" type="BIT">
+      <offset>117</offset>
+      <bit_offset>65543</bit_offset>
     </column>
-    <column name="future_flag4" type="BIT">
-      <offset>116</offset>
-      <bit_offset>65552</bit_offset>
+    <column name="Use_Per_Object_Diffuse_Probes" type="BIT">
+      <offset>118</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="future_flag5" type="BIT">
-      <offset>116</offset>
-      <bit_offset>65553</bit_offset>
+    <column name="Future_Flag3" type="BIT">
+      <offset>118</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="bitfield_u32" type="INT">
+    <column name="Future_Flag4" type="BIT">
+      <offset>118</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Future_Flag5" type="BIT">
+      <offset>118</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Bitfield_U32" type="INT">
       <offset>116</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
     </column>
-    <column name="lod_vertex_light_colors" type="STRUCT">
+    <column name="Lod_Vertex_Paint_Colors_Idx" type="INT">
       <offset>120</offset>
+    </column>
+    <column name="Lod_Vertex_Light_Colors" type="STRUCT">
+      <offset>128</offset>
       <subtable external="WorldDrawableEntryVertexLightColorsParsed" />
+    </column>
+    <column name="Lod_Vertex_Diffuse_Probe_Colors" type="STRUCT">
+      <offset>136</offset>
+      <subtable external="WorldDrawableEntryVertexLightColorsParsed" />
+    </column>
+    <column name="Lod_Vertex_Paint_Colors_Cached" type="STRUCT">
+      <offset>144</offset>
+      <subtable external="WorldDrawableEntryVertexPaintColorsParsed" />
     </column>
     <column name="}" type="END" />
   </table>

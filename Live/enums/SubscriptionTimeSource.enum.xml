@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="SubscriptionTimeSource">
+  <elements type="int">
+    <element name="Invalid">0</element>
+    <element name="External">1</element>
+    <element name="Internal">2</element>
+    <element name="Product">3</element>
+    <element name="Extended">4</element>
+  </elements>
+</enum>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="EmployeeStatus">
+  <elements type="int">
+    <element name="NOT_EMPLOYEE">0</element>
+    <element name="NotEmployee">0</element>
+    <element name="INVALID_EMAIL_DOMAIN">1</element>
+    <element name="InvalidEmailDomain">1</element>
+    <element name="INVALID_PASSWORD">2</element>
+    <element name="InvalidPassword">2</element>
+    <element name="VALID">3</element>
+    <element name="Valid">3</element>
+  </elements>
+</enum>

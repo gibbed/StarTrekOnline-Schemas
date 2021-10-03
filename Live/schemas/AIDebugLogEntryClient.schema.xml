@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="timeInSec" type="F32">
+    <column name="Timeinsec" type="F32">
       <offset>0</offset>
     </column>
     <column name="Str" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

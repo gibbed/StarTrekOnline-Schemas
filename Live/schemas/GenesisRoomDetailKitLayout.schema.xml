@@ -7,25 +7,26 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DetailSpecifier" type="INT">
+    <column name="Detailspecifier" type="INT">
       <offset>0</offset>
       <static_define_list external="GenesisTagNameDefault" />
     </column>
-    <column name="DetailTags2" type="STRINGARRAY">
-      <offset>4</offset>
-    </column>
-    <column name="DetailTags" type="STRING">
+    <column name="Detailtags2" type="STRINGARRAY">
       <offset>8</offset>
     </column>
-    <column name="DetailKit" type="REFERENCE">
-      <offset>12</offset>
-      <dictionary_name>GenesisDetailKit</dictionary_name>
-    </column>
-    <column name="DetailDensityOverride" type="U8">
+    <column name="Detailtags" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="DetailDensity" type="F32">
-      <offset>20</offset>
+    <column name="Detailkit" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>GenesisDetailKit</dictionary_name>
+    </column>
+    <column name="Detaildensityoverride" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Detaildensity" type="F32">
+      <offset>36</offset>
     </column>
     <column name="}" type="END" />
   </table>

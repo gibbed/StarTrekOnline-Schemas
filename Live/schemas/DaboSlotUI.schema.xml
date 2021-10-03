@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SlotIndex" type="INT">
+    <column name="Slotindex" type="INT">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

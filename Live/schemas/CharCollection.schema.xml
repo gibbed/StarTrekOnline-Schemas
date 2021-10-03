@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CharCollection">
+  <table>
+    <column name="CharCollection" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Range" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="CharRange" />
+    </column>
+    <column name="Value" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="CharValue" />
+    </column>
+    <column name="Valuelist" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="CharList" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

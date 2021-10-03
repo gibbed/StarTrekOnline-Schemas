@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LevelType" type="INT">
+    <column name="Leveltype" type="INT">
       <offset>0</offset>
       <static_define_list external="MissionLevelType" />
     </column>
-    <column name="UsePlayerLevel" type="INT">
+    <column name="Useplayerlevel" type="INT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>LevelType</redundant_name>
+      <redundant_name>Leveltype</redundant_name>
       <static_define_list external="MissionLevelType" />
     </column>
     <column name="Level" type="INT">
@@ -26,17 +26,26 @@
     <column name="Level:" type="INT">
       <offset>4</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Level</redundant_name>
       <default>1</default>
     </column>
-    <column name="MapVariableForLevel" type="STRING">
+    <column name="Mapvariableforlevel" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="LevelClamp" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Levelclamp" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="MissionLevelClamp" />
+    </column>
+    <column name="EventName" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Minleveloverride" type="INT">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

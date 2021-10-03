@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="UIGenScrollbarStickResponse">
+  <elements type="int">
+    <element name="Linear">0</element>
+    <element name="Quadratic">1</element>
+  </elements>
+</enum>

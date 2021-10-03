@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="GuildAllianceRewardConfig">
+  <table>
+    <column name="GuildAllianceRewardConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Alliancelevelgroupprojectnumeric" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Alliancelevelgarrisonproject" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Alliancelevelgarrisonplot" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Alliancerewardbonusnumeric" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="ItemDefRef" />
+    </column>
+    <column name="Alliancerewardcoffernumeric" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="GroupProjectCofferNumericDefRef" />
+    </column>
+    <column name="Alliancerewardtiers" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="GuildAllianceRewardTier" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

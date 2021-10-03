@@ -1,12 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <enum name="GfxFeature">
   <elements type="int">
+    <element name="NONE">0</element>
     <element name="SHADOWS">1</element>
+    <element name="DISTANCE_FIELDS">2</element>
     <element name="POSTPROCESSING">4</element>
-    <element name="OUTLINING">8</element>
     <element name="LINEARLIGHTING">16</element>
     <element name="DOF">32</element>
     <element name="WATER">64</element>
     <element name="SCATTERING">128</element>
+    <element name="PHYSICALLY_BASED_RENDERING">512</element>
+    <element name="CLUSTERED_LIGHTING">1024</element>
+    <element name="LIGHT_PROBES">2048</element>
+    <element name="HDR2">4096</element>
+    <element name="LIGHTING2">7168</element>
+    <element name="GPU_PARTICLES">8192</element>
+    <element name="COMPUTE_SKINNING">32768</element>
   </elements>
 </enum>

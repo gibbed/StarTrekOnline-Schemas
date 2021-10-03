@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ItemGenRef" type="STRUCT">
+    <column name="Itemgenref" type="STRUCT">
       <offset>0</offset>
       <subtable external="ItemGenRef" />
     </column>

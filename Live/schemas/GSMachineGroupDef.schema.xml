@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PredefinedGroupName" type="STRING">
+    <column name="Predefinedgroupname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
     <column name="Machine" type="STRINGARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
-    <column name="MachineName" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Machinename" type="STRINGARRAY">
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Machine</redundant_name>
     </column>

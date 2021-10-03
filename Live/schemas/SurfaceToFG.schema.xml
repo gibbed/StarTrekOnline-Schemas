@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="surfaceImpactSpeed" type="F32">
+    <column name="Surfaceimpactspeed" type="F32">
       <offset>0</offset>
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">

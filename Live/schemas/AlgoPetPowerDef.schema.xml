@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PowerNode" type="REFERENCE">
+    <column name="Powernode" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
@@ -15,19 +15,19 @@
       <dictionary_name>PowerTreeNodeDef</dictionary_name>
     </column>
     <column name="Category" type="INTARRAY">
-      <offset>4</offset>
-      <static_define_list external="AlgoCategory" />
-    </column>
-    <column name="ExclusiveCategory" type="INTARRAY">
       <offset>8</offset>
       <static_define_list external="AlgoCategory" />
     </column>
+    <column name="Exclusivecategory" type="INTARRAY">
+      <offset>16</offset>
+      <static_define_list external="AlgoCategory" />
+    </column>
     <column name="Weight" type="F32">
-      <offset>12</offset>
+      <offset>24</offset>
       <default>1</default>
     </column>
-    <column name="ExprWeightMulti" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Exprweightmulti" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="Expression" />
     </column>
     <column name="}" type="END" />

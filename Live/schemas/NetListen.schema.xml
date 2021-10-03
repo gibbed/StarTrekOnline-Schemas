@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="NetListen">
+  <table>
+    <column name="NetListen" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="port" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="User_Data_Size" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Links" type="STRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="NetLink" />
+    </column>
+    <column name="Linkswithlaggedpackets" type="STRUCT">
+      <offset>64</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="NetLink" />
+    </column>
+    <column name="Required_Flags" type="INT">
+      <offset>72</offset>
+      <static_define_list external="LinkFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Unallowed_Flags" type="INT">
+      <offset>76</offset>
+      <static_define_list external="LinkFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Bound_Ip" type="INT">
+      <offset>80</offset>
+      <format>IP</format>
+    </column>
+    <column name="Linktype" type="INT">
+      <offset>84</offset>
+      <static_define_list external="LinkType" />
+    </column>
+    <column name="Creationfile" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Creationline" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Receivestats" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <subtable external="LinkReceiveStats" />
+    </column>
+    <column name="Do_Wsa_997_Timeouts" type="U8">
+      <offset>112</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Cleareduserptr" type="U8">
+      <offset>128</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Shuttingdown" type="U8">
+      <offset>129</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

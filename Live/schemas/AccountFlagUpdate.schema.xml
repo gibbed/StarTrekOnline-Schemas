@@ -10,33 +10,36 @@
     <column name="AccountName" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>DisplayName</redundant_name>
     </column>
     <column name="DisplayName" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="uFlags" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="uDuration" type="INT">
+    <column name="Uflags" type="INT">
       <offset>8</offset>
     </column>
-    <column name="ClearFlag" type="U8">
+    <column name="Uduration" type="INT">
       <offset>12</offset>
     </column>
-    <column name="Override" type="U8">
-      <offset>13</offset>
-    </column>
-    <column name="uCurrentExpiration" type="INT">
+    <column name="Clearflag" type="U8">
       <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="Success" type="U8">
+    <column name="Override" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ucurrentexpiration" type="INT">
       <offset>20</offset>
     </column>
-    <column name="ErrorString" type="STRING">
+    <column name="Success" type="U8">
       <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="ErrorString" type="STRING">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

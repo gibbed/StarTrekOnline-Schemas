@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="TeamMatchPreviousTeamInfo">
+  <table>
+    <column name="TeamMatchPreviousTeamInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uautoteamserverid" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Uautoteampartitionid" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Eaimemberids" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Uleaderid" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Mode" type="INT">
+      <offset>20</offset>
+      <static_define_list external="TeamMode" />
+    </column>
+    <column name="Loot_Mode" type="INT">
+      <offset>24</offset>
+      <static_define_list external="LootMode" />
+    </column>
+    <column name="Loot_Mode_Quality" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

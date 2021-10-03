@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="STSpecializationReward">
+  <table>
+    <column name="STSpecializationReward" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Utreeid" type="INT">
+      <offset>0</offset>
+      <default>-1</default>
+      <static_define_list external="SpecializationClassRestriction" />
+    </column>
+    <column name="Unlockpointsspent" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Rewardtype" type="INT">
+      <offset>8</offset>
+      <static_define_list external="STSpecializationRewardType" />
+    </column>
+    <column name="Power" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="PowerListNode" />
+    </column>
+    <column name="Powernodeowned" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <subtable external="PowerListNode" />
+    </column>
+    <column name="Rewardtree" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>PowerTreeDef</dictionary_name>
+    </column>
+    <column name="Rewardgroup" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>PTGroupDef</dictionary_name>
+    </column>
+    <column name="Rewardpower" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>PTNodeDef</dictionary_name>
+    </column>
+    <column name="Powerchoice2" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="PowerListNode" />
+    </column>
+    <column name="Powernodeownedchoice2" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <subtable external="PowerListNode" />
+    </column>
+    <column name="Rewardtreechoice2" type="REFERENCE">
+      <offset>72</offset>
+      <dictionary_name>PowerTreeDef</dictionary_name>
+    </column>
+    <column name="Rewardgroupchoice2" type="REFERENCE">
+      <offset>80</offset>
+      <dictionary_name>PTGroupDef</dictionary_name>
+    </column>
+    <column name="Rewardpowerchoice2" type="REFERENCE">
+      <offset>88</offset>
+      <dictionary_name>PTNodeDef</dictionary_name>
+    </column>
+    <column name="Powerchoice3" type="OPTIONALSTRUCT">
+      <offset>96</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="PowerListNode" />
+    </column>
+    <column name="Powernodeownedchoice3" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <subtable external="PowerListNode" />
+    </column>
+    <column name="Rewardtreechoice3" type="REFERENCE">
+      <offset>112</offset>
+      <dictionary_name>PowerTreeDef</dictionary_name>
+    </column>
+    <column name="Rewardgroupchoice3" type="REFERENCE">
+      <offset>120</offset>
+      <dictionary_name>PTGroupDef</dictionary_name>
+    </column>
+    <column name="Rewardpowerchoice3" type="REFERENCE">
+      <offset>128</offset>
+      <dictionary_name>PTNodeDef</dictionary_name>
+    </column>
+    <column name="Tier" type="OPTIONALSTRUCT">
+      <offset>136</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="STSpecializationTier" />
+    </column>
+    <column name="Rewardtier" type="INT">
+      <offset>144</offset>
+    </column>
+    <column name="MessageKey" type="STRING">
+      <offset>152</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Message" type="STRING">
+      <offset>160</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Selected" type="U8">
+      <offset>168</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uupdatedframe" type="INT">
+      <offset>172</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

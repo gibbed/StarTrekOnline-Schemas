@@ -7,35 +7,35 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SecondaryToolTip" type="STRUCT">
+    <column name="Secondarytooltip" type="STRUCT">
       <offset>0</offset>
       <subtable external="UIGenSecondaryTooltip" />
     </column>
     <column name="Orientation" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <default>6</default>
       <static_define_list external="UIDirection" />
     </column>
-    <column name="StackDirection" type="INT">
-      <offset>8</offset>
+    <column name="Stackdirection" type="INT">
+      <offset>12</offset>
       <default>9</default>
       <static_define_list external="UIDirection" />
     </column>
     <column name="Alignment" type="INT">
-      <offset>12</offset>
-      <static_define_list external="UIDirection" />
-    </column>
-    <column name="StackAlignment" type="INT">
       <offset>16</offset>
       <static_define_list external="UIDirection" />
     </column>
-    <column name="PrimarySpacing" type="INT16">
+    <column name="Stackalignment" type="INT">
       <offset>20</offset>
+      <static_define_list external="UIDirection" />
+    </column>
+    <column name="Primaryspacing" type="INT16">
+      <offset>24</offset>
       <default>4</default>
       <static_define_list external="UISize" />
     </column>
-    <column name="SecondarySpacing" type="INT16">
-      <offset>22</offset>
+    <column name="Secondaryspacing" type="INT16">
+      <offset>26</offset>
       <default>4</default>
       <static_define_list external="UISize" />
     </column>

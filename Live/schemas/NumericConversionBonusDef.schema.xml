@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="bonusQuantity" type="INT">
+    <column name="Bonusquantity" type="INT">
       <offset>0</offset>
     </column>
-    <column name="RequiredPermission" type="STRING">
-      <offset>4</offset>
+    <column name="Requiredpermission" type="STRING">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

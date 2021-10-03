@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ProcessName" type="STRING">
+    <column name="Processname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="ProcessPath" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="PID" type="INT">
+    <column name="Processpath" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Pid" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

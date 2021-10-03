@@ -7,10 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LimitedUse" type="U8">
+    <column name="Limiteduse" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="WarpChargesMax" type="INT">
+    <column name="Warpchargesmax" type="INT">
       <offset>4</offset>
     </column>
     <column name="Map" type="STRING">
@@ -20,21 +21,21 @@
       </flags>
     </column>
     <column name="Spawn" type="STRING">
-      <offset>12</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="uiTimeToConfirm" type="INT">
-      <offset>16</offset>
+    <column name="Uitimetoconfirm" type="INT">
+      <offset>24</offset>
     </column>
-    <column name="WarpType" type="BIT">
-      <offset>20</offset>
+    <column name="Warptype" type="BIT">
+      <offset>28</offset>
       <bit_offset>262144</bit_offset>
       <static_define_list external="ItemWarpType" />
     </column>
-    <column name="CanMapMove" type="BIT">
-      <offset>20</offset>
+    <column name="Canmapmove" type="BIT">
+      <offset>28</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>

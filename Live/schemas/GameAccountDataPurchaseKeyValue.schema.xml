@@ -14,11 +14,11 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="SetStringValue" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="AddIntValue" type="INT">
+    <column name="Setstringvalue" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Addintvalue" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -10,14 +10,16 @@
     <column name="GuildID" type="INT">
       <offset>0</offset>
     </column>
-    <column name="eaiMembers" type="INTARRAY">
-      <offset>4</offset>
-    </column>
-    <column name="CanGuildChat" type="U8">
+    <column name="Eaimembers" type="INTARRAY">
       <offset>8</offset>
     </column>
-    <column name="IsOfficer" type="U8">
-      <offset>9</offset>
+    <column name="Canguildchat" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isofficer" type="U8">
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

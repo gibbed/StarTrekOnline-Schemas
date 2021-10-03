@@ -7,93 +7,93 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RenameCost" type="INT">
+    <column name="Renamecost" type="INT">
       <offset>0</offset>
     </column>
-    <column name="RenameCostNumeric" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="ChangeSubNameCost" type="INT">
+    <column name="Renamecostnumeric" type="STRING">
       <offset>8</offset>
-    </column>
-    <column name="ChangeSubNameCostNumeric" type="STRING">
-      <offset>12</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="FreeNameChangeNumeric" type="STRING">
+    <column name="Changesubnamecost" type="INT">
       <offset>16</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
     </column>
-    <column name="FreeSubNameChangeNumeric" type="STRING">
-      <offset>20</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="FreeFlexSubNameChangeNumeric" type="STRING">
+    <column name="Changesubnamecostnumeric" type="STRING">
       <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="PotentialPetHeadshotStyle" type="STRING">
-      <offset>28</offset>
+    <column name="Freenamechangenumeric" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MaxCount" type="INT">
-      <offset>32</offset>
+    <column name="Freesubnamechangenumeric" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Freeflexsubnamechangenumeric" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Potentialpetheadshotstyle" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Maxcount" type="INT">
+      <offset>64</offset>
     </column>
     <column name="Type" type="INTARRAY">
-      <offset>36</offset>
+      <offset>72</offset>
       <static_define_list external="CharClassTypes" />
     </column>
-    <column name="MaxPuppets" type="INT">
-      <offset>40</offset>
+    <column name="Maxpuppets" type="INT">
+      <offset>80</offset>
     </column>
-    <column name="PuppetType" type="INTARRAY">
-      <offset>44</offset>
+    <column name="Puppettype" type="INTARRAY">
+      <offset>88</offset>
       <static_define_list external="CharClassTypes" />
     </column>
-    <column name="MaxSimultaneousTraining" type="INT">
-      <offset>48</offset>
+    <column name="Maxsimultaneoustraining" type="INT">
+      <offset>96</offset>
     </column>
-    <column name="RequiredPuppetRequestCount" type="INT">
-      <offset>52</offset>
+    <column name="Requiredpuppetrequestcount" type="INT">
+      <offset>100</offset>
     </column>
-    <column name="AllowedPuppetRequestChoice" type="STRUCT">
-      <offset>56</offset>
+    <column name="Allowedpuppetrequestchoice" type="STRUCT">
+      <offset>104</offset>
       <subtable external="PuppetRequestChoice" />
     </column>
-    <column name="RequiredPetRequestCount" type="INT">
-      <offset>60</offset>
+    <column name="Requiredpetrequestcount" type="INT">
+      <offset>112</offset>
     </column>
-    <column name="AllowedPetRequestChoice" type="STRUCT">
-      <offset>64</offset>
+    <column name="Allowedpetrequestchoice" type="STRUCT">
+      <offset>120</offset>
       <subtable external="PetRequestChoice" />
     </column>
-    <column name="PetIntroductionWarp" type="STRUCT">
-      <offset>68</offset>
+    <column name="Petintroductionwarp" type="STRUCT">
+      <offset>128</offset>
       <subtable external="PetIntroductionWarp" />
     </column>
-    <column name="PetAcquireLimit" type="STRUCT">
-      <offset>72</offset>
+    <column name="Petacquirelimit" type="STRUCT">
+      <offset>136</offset>
       <subtable external="PetAcquireLimitDef" />
     </column>
-    <column name="ExcludeLastActivePuppetClassCategory" type="INTARRAY">
-      <offset>76</offset>
+    <column name="Excludelastactivepuppetclasscategory" type="INTARRAY">
+      <offset>144</offset>
       <static_define_list external="CharClassCategory" />
     </column>
-    <column name="RequiredItemForDeceasedPets" type="STRING">
-      <offset>80</offset>
+    <column name="Requireditemfordeceasedpets" type="STRING">
+      <offset>152</offset>
     </column>
     <column name="}" type="END" />
   </table>

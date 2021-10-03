@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MechVelDynamicReason">
+  <elements type="int">
+    <element name="Brake">1</element>
+    <element name="Turn">2</element>
+    <element name="Hover">4</element>
+  </elements>
+</enum>

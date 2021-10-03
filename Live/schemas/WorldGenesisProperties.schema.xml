@@ -6,18 +6,18 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="GenesisCompleteName" type="STRING">
+    <column name="Genesiscompletename" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="NodeType" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="IsDetail" type="BIT">
+    <column name="Nodetype" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Isdetail" type="BIT">
+      <offset>12</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="IsNode" type="BIT">
-      <offset>8</offset>
+    <column name="Isnode" type="BIT">
+      <offset>12</offset>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="End" type="END" />

@@ -15,11 +15,20 @@
       <default>4</default>
       <static_define_list external="PVPGameType" />
     </column>
-    <column name="CTFScore" type="INT">
+    <column name="Ctfscore" type="INT">
       <offset>4</offset>
     </column>
-    <column name="NumMembers" type="INT">
+    <column name="Nummembers" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Nummembersalive" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Uiwavestarttimestamp" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Uicurrentwaveduration" type="INT">
+      <offset>20</offset>
     </column>
     <column name="}" type="END" />
   </table>

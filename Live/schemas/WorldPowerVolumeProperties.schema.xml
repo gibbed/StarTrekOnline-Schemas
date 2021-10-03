@@ -10,18 +10,26 @@
       <offset>0</offset>
       <dictionary_name>PowerDef</dictionary_name>
     </column>
+    <column name="Poweroverrideexpr" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="Expression" />
+    </column>
     <column name="Strength" type="INT">
-      <offset>4</offset>
+      <offset>16</offset>
       <static_define_list external="WorldPowerVolumeStrength" />
     </column>
     <column name="Level" type="INT">
-      <offset>8</offset>
+      <offset>20</offset>
     </column>
-    <column name="RepeatTime" type="F32">
-      <offset>12</offset>
+    <column name="Repeattime" type="F32">
+      <offset>24</offset>
     </column>
-    <column name="TriggerCondition" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Triggercondition" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Entspecificapplycondition" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="Expression" />
     </column>
     <column name="End" type="END" />

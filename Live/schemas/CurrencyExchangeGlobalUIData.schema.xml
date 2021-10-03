@@ -9,28 +9,29 @@
     <column name="{" type="START" />
     <column name="Enabled" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="maxMTCPrice" type="INT">
+    <column name="Maxmtcprice" type="INT">
       <offset>4</offset>
     </column>
-    <column name="minMTCPrice" type="INT">
+    <column name="Minmtcprice" type="INT">
       <offset>8</offset>
     </column>
-    <column name="maxPlayerOpenOrders" type="INT">
+    <column name="Maxplayeropenorders" type="INT">
       <offset>12</offset>
     </column>
-    <column name="maxQuantityPerOrder" type="INT">
+    <column name="Maxquantityperorder" type="INT">
       <offset>16</offset>
     </column>
-    <column name="minQuantityPerOrder" type="INT">
+    <column name="Minquantityperorder" type="INT">
       <offset>20</offset>
     </column>
-    <column name="sellPrices" type="STRUCT">
+    <column name="Sellprices" type="STRUCT">
       <offset>24</offset>
       <subtable external="CurrencyExchangePriceQuantity" />
     </column>
-    <column name="buyPrices" type="STRUCT">
-      <offset>28</offset>
+    <column name="Buyprices" type="STRUCT">
+      <offset>32</offset>
       <subtable external="CurrencyExchangePriceQuantity" />
     </column>
     <column name="}" type="END" />

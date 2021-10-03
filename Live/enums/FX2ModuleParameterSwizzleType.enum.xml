@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FX2ModuleParameterSwizzleType">
+  <elements type="int">
+    <element name="Input">0</element>
+    <element name="Output">1</element>
+    <element name="Dual">2</element>
+  </elements>
+</enum>

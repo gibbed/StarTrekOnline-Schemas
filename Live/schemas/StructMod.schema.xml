@@ -8,19 +8,19 @@
     </column>
     <column name="{" type="START" />
     <column name="Column" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
-    <column name="idx" type="INT">
-      <offset>12</offset>
+    <column name="Idx" type="INT">
+      <offset>24</offset>
     </column>
     <column name="ID" type="INT">
-      <offset>16</offset>
+      <offset>28</offset>
     </column>
     <column name="Val" type="STRING">
-      <offset>20</offset>
+      <offset>32</offset>
     </column>
     <column name="Name" type="STRING">
-      <offset>24</offset>
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

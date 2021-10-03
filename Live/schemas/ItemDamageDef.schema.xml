@@ -7,15 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ExprMagnitude" type="OPTIONALSTRUCT">
+    <column name="Exprmagnitude" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="Expression" />
     </column>
     <column name="Variance" type="F32">
-      <offset>4</offset>
-    </column>
-    <column name="TableName" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Multiplier" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Tablename" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

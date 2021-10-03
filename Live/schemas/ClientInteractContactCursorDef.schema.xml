@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ContactIndicator" type="INT">
+    <column name="Contactindicator" type="INT">
       <offset>0</offset>
       <static_define_list external="ContactIndicator" />
     </column>
     <column name="Cursor" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>UICursor</dictionary_name>
     </column>
-    <column name="CursorDisabled" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Cursordisabled" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>UICursor</dictionary_name>
     </column>
     <column name="}" type="END" />

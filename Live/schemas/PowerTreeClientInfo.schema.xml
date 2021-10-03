@@ -14,8 +14,8 @@
         <flag>SUBSCRIBE</flag>
       </flags>
     </column>
-    <column name="hDisplayMessage" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hdisplaymessage" type="REFERENCE">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>VITAL_REF</flag>

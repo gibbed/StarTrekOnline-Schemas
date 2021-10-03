@@ -12,11 +12,13 @@
     <column name="Parameters" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="LightColor" type="F32FIXEDARRAY">
+    <column name="Lightcolor" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="EndScattering" type="END" />
+    <column name="Endscattering" type="END" />
   </table>
 </parser>

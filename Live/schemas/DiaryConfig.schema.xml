@@ -7,28 +7,28 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DefaultTag" type="STRUCT">
+    <column name="Defaulttag" type="STRUCT">
       <offset>0</offset>
       <subtable external="DiaryTagString" />
     </column>
-    <column name="MissionTypeConfig" type="STRUCT">
-      <offset>4</offset>
+    <column name="Missiontypeconfig" type="STRUCT">
+      <offset>8</offset>
       <subtable external="DiaryMissionTypeConfig" />
     </column>
-    <column name="commentFormatMessage" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+    <column name="Commentformatmessage" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="missionHeaderFormatMessage" type="EMBEDDEDSTRUCT">
-      <offset>20</offset>
+    <column name="Missionheaderformatmessage" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="completedMissionHeaderFormatMessage" type="EMBEDDEDSTRUCT">
-      <offset>32</offset>
+    <column name="Completedmissionheaderformatmessage" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="repeatedMissionHeaderFormatMessage" type="EMBEDDEDSTRUCT">
-      <offset>44</offset>
+    <column name="Repeatedmissionheaderformatmessage" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="}" type="END" />

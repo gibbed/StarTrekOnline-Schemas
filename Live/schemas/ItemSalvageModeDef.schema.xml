@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemSalvageModeDef">
+  <table>
+    <column name="ItemSalvageModeDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Salvagemode" type="INT">
+      <offset>0</offset>
+      <static_define_list external="ItemSalvageMode" />
+    </column>
+    <column name="Salvagenumeric" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Numericsubjecttosalvagenumericbonus" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Itemqualities" type="INTARRAY">
+      <offset>24</offset>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Alloweditemcategories" type="INTARRAY">
+      <offset>32</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Excludeitemcategories" type="INTARRAY">
+      <offset>40</offset>
+      <static_define_list external="ItemCategory" />
+    </column>
+    <column name="Itemtypes" type="INTARRAY">
+      <offset>48</offset>
+      <static_define_list external="ItemType" />
+    </column>
+    <column name="Levelmin" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Levelmax" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Progressionlevelmin" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Progressionlevelmax" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Requiredpowermode" type="INT">
+      <offset>72</offset>
+      <default>-1</default>
+      <static_define_list external="PowerMode" />
+    </column>
+    <column name="Rewardvalue" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Useitemprogressionfoodxp" type="U8">
+      <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Givetosharedbank" type="U8">
+      <offset>81</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Disableallsalvage" type="U8">
+      <offset>82</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Itemsalvagerecipe" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="ItemSalvageRecipeDef" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

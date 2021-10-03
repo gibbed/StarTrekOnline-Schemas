@@ -15,8 +15,8 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="DisableFlag" type="INT">
-      <offset>4</offset>
+    <column name="Disableflag" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

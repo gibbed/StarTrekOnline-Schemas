@@ -11,7 +11,7 @@
       <offset>0</offset>
     </column>
     <column name="FileNames" type="FIXEDFILENAME">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>EARRAY</flag>

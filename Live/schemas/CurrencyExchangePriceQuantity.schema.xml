@@ -10,7 +10,7 @@
     <column name="Price" type="INT">
       <offset>0</offset>
     </column>
-    <column name="quantity" type="INT">
+    <column name="Quantity" type="INT">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

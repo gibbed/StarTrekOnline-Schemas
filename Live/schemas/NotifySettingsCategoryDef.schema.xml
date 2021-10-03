@@ -12,7 +12,7 @@
       <subtable external="DisplayMessage" />
     </column>
     <column name="Group" type="STRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>

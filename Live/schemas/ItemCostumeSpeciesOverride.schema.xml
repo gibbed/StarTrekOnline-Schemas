@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemCostumeSpeciesOverride">
+  <table>
+    <column name="ItemCostumeSpeciesOverride" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hspecies" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+      <dictionary_name>SpeciesDef</dictionary_name>
+    </column>
+    <column name="Costumenamesuffix" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Requiresuffixforbags" type="INTARRAY">
+      <offset>16</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

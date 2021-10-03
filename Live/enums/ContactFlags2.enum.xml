@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ContactFlags2">
+  <elements type="int">
+    <element name="GarrisonOverview">1</element>
+    <element name="GarrisonPlot">2</element>
+    <element name="GarrisonCoffer">4</element>
+    <element name="Match">8</element>
+    <element name="SecondaryItemProgression">16</element>
+    <element name="MapVarSetter">32</element>
+    <element name="ItemAssignmentsRepeatable">64</element>
+    <element name="ItemAssignmentsNonRepeatable">128</element>
+    <element name="ItemAssignmentsCollection">256</element>
+    <element name="ItemAssignmentsManagement">512</element>
+    <element name="ProxyMissionContact">1024</element>
+    <element name="SpellOffer">2048</element>
+    <element name="DemiplaneControl">4096</element>
+    <element name="EventBingoVendor">8192</element>
+    <element name="ConsignmentBroker">16384</element>
+  </elements>
+</enum>

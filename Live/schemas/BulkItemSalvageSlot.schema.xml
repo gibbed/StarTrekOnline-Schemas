@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="BulkItemSalvageSlot">
+  <table>
+    <column name="BulkItemSalvageSlot" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Hitemdef" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+      <dictionary_name>ItemDef</dictionary_name>
+    </column>
+    <column name="Uitemid" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Srcbagid" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Srcslot" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Count" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Basevalue" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Crits" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Noncrits" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Total" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Crittotal" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Index" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -6,22 +6,26 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="hOldFx" type="REFERENCE">
+    <column name="Oldfx" type="STRING">
       <offset>0</offset>
       <flags>
+        <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
         <flag>REQUIRED</flag>
+        <flag>GLOBAL_NAME</flag>
       </flags>
       <dictionary_name>DynFxInfo</dictionary_name>
     </column>
-    <column name="hNewFx" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Newfx" type="STRING">
+      <offset>8</offset>
       <flags>
+        <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
         <flag>REQUIRED</flag>
+        <flag>GLOBAL_NAME</flag>
       </flags>
       <dictionary_name>DynFxInfo</dictionary_name>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

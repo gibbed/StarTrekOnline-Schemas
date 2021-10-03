@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NodeDef" type="REFERENCE">
+    <column name="Nodedef" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
@@ -15,18 +15,18 @@
       </flags>
       <dictionary_name>PowerTreeNodeDef</dictionary_name>
     </column>
-    <column name="hNodeDef" type="REFERENCE">
+    <column name="Hnodedef" type="REFERENCE">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
-      <redundant_name>NodeDef</redundant_name>
+      <redundant_name>Nodedef</redundant_name>
       <dictionary_name>PowerTreeNodeDef</dictionary_name>
     </column>
-    <column name="iRank" type="INT">
-      <offset>4</offset>
+    <column name="Irank" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

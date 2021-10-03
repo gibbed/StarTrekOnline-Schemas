@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PlayerMatchVoteAbandonUIData">
+  <table>
+    <column name="PlayerMatchVoteAbandonUIData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Uinitiatorid" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Initiatordisplayname" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Utimeout" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Uplayerboottime" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Voteended" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

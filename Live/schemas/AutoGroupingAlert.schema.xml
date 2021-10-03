@@ -15,20 +15,20 @@
       </flags>
     </column>
     <column name="Count" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="FullString" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Fullstring" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Level" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
       <static_define_list external="enumAlertLevel" />
     </column>
     <column name="Category" type="INT">
-      <offset>16</offset>
+      <offset>28</offset>
       <static_define_list external="enumAlertCategory" />
     </column>
     <column name="}" type="END" />

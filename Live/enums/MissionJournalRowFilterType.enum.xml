@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MissionJournalRowFilterType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="ShowCompleted">1</element>
+    <element name="ShowLowLevel">2</element>
+    <element name="RepeatableOnly">4</element>
+    <element name="ReadyForTurnInOnly">8</element>
+    <element name="TeammatesHaveMission">16</element>
+    <element name="PriorityHigh">32</element>
+    <element name="PriorityHidden">64</element>
+  </elements>
+</enum>

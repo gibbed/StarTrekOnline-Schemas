@@ -7,27 +7,29 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DictName" type="STRING">
+    <column name="Dictname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DictCategoryName" type="STRING">
-      <offset>4</offset>
+    <column name="Dictcategoryname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Resource" type="STRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <subtable external="ResourceInfo" />
     </column>
     <column name="Browsable" type="U8">
-      <offset>16</offset>
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="NoLocation" type="U8">
-      <offset>17</offset>
+    <column name="Nolocation" type="U8">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

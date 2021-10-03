@@ -9,31 +9,37 @@
     <column name="{" type="START" />
     <column name="Timer" type="F32">
       <offset>0</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
     </column>
-    <column name="perHostileInteracts" type="INTARRAY">
+    <column name="Uideathtime" type="INT">
       <offset>4</offset>
     </column>
-    <column name="perFriendlyInteracts" type="INTARRAY">
+    <column name="Perhostileinteracts" type="INTARRAY">
       <offset>8</offset>
     </column>
-    <column name="erKiller" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="erKillerSource" type="INT">
+    <column name="Perfriendlyinteracts" type="INTARRAY">
       <offset>16</offset>
     </column>
-    <column name="hKillingBlowDef" type="REFERENCE">
-      <offset>20</offset>
-      <dictionary_name>PowerDef</dictionary_name>
-    </column>
-    <column name="KillingAttribMod" type="INT">
+    <column name="Erkiller" type="INT">
       <offset>24</offset>
     </column>
-    <column name="FatalDamageAmount" type="F32">
+    <column name="Erkillersource" type="INT">
       <offset>28</offset>
     </column>
-    <column name="FatalDamageAmountNoResist" type="F32">
+    <column name="Hkillingblowdef" type="REFERENCE">
       <offset>32</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Killingattribmod" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Fataldamageamount" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="Fataldamageamountnoresist" type="F32">
+      <offset>48</offset>
     </column>
     <column name="}" type="END" />
   </table>

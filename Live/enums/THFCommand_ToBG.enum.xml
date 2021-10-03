@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="THFCommand_ToBG">
+  <elements type="int">
+    <element name="NEW_FILE">0</element>
+    <element name="CANCEL">1</element>
+    <element name="READ">2</element>
+  </elements>
+</enum>

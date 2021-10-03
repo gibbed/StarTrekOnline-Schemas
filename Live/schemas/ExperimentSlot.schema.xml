@@ -10,28 +10,28 @@
     <column name="Item" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Item" />
     </column>
-    <column name="EPVal" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="RewardIndex" type="F32">
+    <column name="Epval" type="INT">
       <offset>8</offset>
     </column>
-    <column name="Components" type="STRUCT">
+    <column name="Rewardindex" type="F32">
       <offset>12</offset>
+    </column>
+    <column name="Components" type="STRUCT">
+      <offset>16</offset>
       <subtable external="ComponentSlot" />
     </column>
     <column name="Count" type="INT">
-      <offset>16</offset>
-    </column>
-    <column name="SrcBagId" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="SrcBagSlot" type="INT">
       <offset>24</offset>
+    </column>
+    <column name="Srcbagid" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Srcbagslot" type="INT">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

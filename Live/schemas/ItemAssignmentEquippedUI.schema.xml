@@ -7,18 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BagID" type="INT">
+    <column name="Bagid" type="INT">
       <offset>0</offset>
     </column>
     <column name="UID" type="INT64">
       <offset>8</offset>
     </column>
-    <column name="AssignmentUI" type="EMBEDDEDSTRUCT">
+    <column name="Assignmentui" type="EMBEDDEDSTRUCT">
       <offset>16</offset>
       <subtable external="ItemAssignmentUI" />
     </column>
-    <column name="cacheFlag" type="INT">
-      <offset>216</offset>
+    <column name="Cacheflag" type="INT">
+      <offset>488</offset>
     </column>
     <column name="}" type="END" />
   </table>

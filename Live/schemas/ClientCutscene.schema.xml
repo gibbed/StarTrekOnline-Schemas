@@ -11,8 +11,14 @@
       <offset>0</offset>
       <subtable external="CutsceneDef" />
     </column>
-    <column name="WorldVars" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Spokesmanid" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Eiindexedents" type="INTARRAY">
+      <offset>24</offset>
+    </column>
+    <column name="Worldvars" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="CutsceneWorldVars" />
     </column>
     <column name="}" type="END" />

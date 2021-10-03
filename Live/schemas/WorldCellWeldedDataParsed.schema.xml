@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="bins" type="STRUCT">
+    <column name="Bins" type="STRUCT">
       <offset>0</offset>
       <subtable external="WorldCellDrawableDataParsed" />
     </column>

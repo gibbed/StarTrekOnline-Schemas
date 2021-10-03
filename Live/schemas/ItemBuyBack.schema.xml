@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uBuyBackId" type="INT">
+    <column name="Ubuybackid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SELF_ONLY</flag>
@@ -15,27 +15,27 @@
       </flags>
     </column>
     <column name="Item" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="Item" />
     </column>
     <column name="Status" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <static_define_list external="ItemBuyBackStatus" />
     </column>
-    <column name="uBuyBackPrice" type="INT">
-      <offset>12</offset>
+    <column name="Ubuybackprice" type="INT">
+      <offset>20</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
     </column>
     <column name="Currency" type="STRING">
-      <offset>16</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SELF_ONLY</flag>

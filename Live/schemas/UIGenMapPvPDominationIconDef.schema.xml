@@ -7,39 +7,39 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="unowned" type="EMBEDDEDSTRUCT">
+    <column name="Unowned" type="STRUCT">
       <offset>0</offset>
       <subtable external="UIGenMapIconDef" />
     </column>
-    <column name="unownedContestedFriendly" type="EMBEDDEDSTRUCT">
-      <offset>124</offset>
+    <column name="Unownedcontestedfriendly" type="STRUCT">
+      <offset>8</offset>
       <subtable external="UIGenMapIconDef" />
     </column>
-    <column name="unownedContestedEnemy" type="EMBEDDEDSTRUCT">
-      <offset>248</offset>
+    <column name="Unownedcontestedenemy" type="STRUCT">
+      <offset>16</offset>
       <subtable external="UIGenMapIconDef" />
     </column>
-    <column name="ownedFriendly" type="EMBEDDEDSTRUCT">
-      <offset>372</offset>
+    <column name="Ownedfriendly" type="STRUCT">
+      <offset>24</offset>
       <subtable external="UIGenMapIconDef" />
     </column>
-    <column name="ownedEnemy" type="EMBEDDEDSTRUCT">
-      <offset>496</offset>
+    <column name="Ownedenemy" type="STRUCT">
+      <offset>32</offset>
       <subtable external="UIGenMapIconDef" />
     </column>
-    <column name="ownedFriendlyContested" type="EMBEDDEDSTRUCT">
-      <offset>620</offset>
+    <column name="Ownedfriendlycontested" type="STRUCT">
+      <offset>40</offset>
       <subtable external="UIGenMapIconDef" />
     </column>
-    <column name="ownedEnemyContested" type="EMBEDDEDSTRUCT">
-      <offset>744</offset>
+    <column name="Ownedenemycontested" type="STRUCT">
+      <offset>48</offset>
       <subtable external="UIGenMapIconDef" />
     </column>
-    <column name="Group1Faction" type="STRING">
-      <offset>868</offset>
+    <column name="Group1faction" type="STRING">
+      <offset>56</offset>
     </column>
-    <column name="Group2Faction" type="STRING">
-      <offset>872</offset>
+    <column name="Group2faction" type="STRING">
+      <offset>64</offset>
     </column>
     <column name="}" type="END" />
   </table>

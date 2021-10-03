@@ -10,6 +10,7 @@
     <column name="Pos" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="RegionType" type="INT">
       <offset>12</offset>
@@ -20,7 +21,7 @@
       <subtable external="KillEventParticipant" />
     </column>
     <column name="Targets" type="STRUCT">
-      <offset>20</offset>
+      <offset>24</offset>
       <subtable external="KillEventParticipant" />
     </column>
     <column name="}" type="END" />

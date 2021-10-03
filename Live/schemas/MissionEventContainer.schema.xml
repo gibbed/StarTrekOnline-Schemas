@@ -6,6 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="EventName" type="STRING">
       <offset>0</offset>
       <flags>
@@ -16,35 +17,35 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="pchEventName" type="STRING">
+    <column name="Pcheventname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
       <redundant_name>EventName</redundant_name>
     </column>
-    <column name="EventCount" type="INT">
-      <offset>4</offset>
+    <column name="Eventcount" type="INT">
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="iEventCount" type="INT">
-      <offset>4</offset>
+    <column name="Ieventcount" type="INT">
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
-      <redundant_name>EventCount</redundant_name>
+      <redundant_name>Eventcount</redundant_name>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

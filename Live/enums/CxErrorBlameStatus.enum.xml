@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CxErrorBlameStatus">
+  <elements type="int">
+    <element name="NOT_BLAMED">0</element>
+    <element name="BLAMING">1</element>
+    <element name="NO_GIMMEDLL">2</element>
+    <element name="FOLDER_NOT_SOURCE_CONTROLLED">3</element>
+    <element name="NOT_LATEST_VERSION">4</element>
+    <element name="FILE_NOT_SOURCE_CONTROLLED">5</element>
+    <element name="SERVER_CONNECTION_FAILED">6</element>
+    <element name="YOU_HAVE_FILE_CHECKED_OUT">7</element>
+    <element name="SUCCEEDED">8</element>
+    <element name="SUCCEEDED_LAST_MODIFIED_BY_YOU">9</element>
+  </elements>
+</enum>

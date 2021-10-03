@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="FrameList" type="STRUCT">
+    <column name="Framelist" type="STRUCT">
       <offset>0</offset>
       <subtable external="DynPowerMovementFrame" />
     </column>
-    <column name="SkipPreActivationPhase" type="BIT">
-      <offset>4</offset>
+    <column name="Skippreactivationphase" type="BIT">
+      <offset>8</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

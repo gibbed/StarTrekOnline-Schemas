@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PerfDetailedUsageReportType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="TexMem">1</element>
+    <element name="GeoMem">2</element>
+  </elements>
+</enum>

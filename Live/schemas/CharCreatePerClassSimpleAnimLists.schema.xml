@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ClassType" type="INT">
+    <column name="Classtype" type="INT">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
@@ -16,8 +16,8 @@
       </flags>
       <static_define_list external="CharClassTypes" />
     </column>
-    <column name="SimpleAnimList" type="STRUCT">
-      <offset>4</offset>
+    <column name="Simpleanimlist" type="STRUCT">
+      <offset>8</offset>
       <subtable external="CharCreateSimpleAnimList" />
     </column>
     <column name="}" type="END" />

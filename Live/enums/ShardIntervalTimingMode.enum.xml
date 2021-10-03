@@ -4,5 +4,7 @@
     <element name="Off">0</element>
     <element name="Daily">1</element>
     <element name="Weekly">2</element>
+    <element name="Hourly">3</element>
+    <element name="Fortnightly">4</element>
   </elements>
 </enum>

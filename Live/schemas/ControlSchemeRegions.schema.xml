@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SchemeRegion" type="STRUCT">
+    <column name="Schemeregion" type="STRUCT">
       <offset>0</offset>
       <subtable external="ControlSchemeRegionInfo" />
     </column>

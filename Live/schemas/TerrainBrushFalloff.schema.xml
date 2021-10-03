@@ -7,17 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="diameter_multi" type="F32">
+    <column name="Diameter_Multi" type="F32">
       <offset>0</offset>
     </column>
-    <column name="hardness_multi" type="F32">
+    <column name="Hardness_Multi" type="F32">
       <offset>4</offset>
     </column>
-    <column name="strength_multi" type="F32">
+    <column name="Strength_Multi" type="F32">
       <offset>8</offset>
     </column>
-    <column name="invert_filters" type="U8">
+    <column name="Invert_Filters" type="U8">
       <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

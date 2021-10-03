@@ -8,5 +8,6 @@
     <element name="Clickable">4</element>
     <element name="Choose">5</element>
     <element name="FromOrigin">6</element>
+    <element name="DynamicRollover">7</element>
   </elements>
 </enum>

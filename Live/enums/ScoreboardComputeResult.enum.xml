@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ScoreboardComputeResult">
+  <elements type="int">
+    <element name="SimpleValue">0</element>
+    <element name="Expression">1</element>
+    <element name="Divide">2</element>
+    <element name="DividePercent">3</element>
+    <element name="Sum">4</element>
+  </elements>
+</enum>

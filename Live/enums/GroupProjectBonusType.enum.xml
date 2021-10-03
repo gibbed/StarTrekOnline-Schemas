@@ -4,5 +4,6 @@
     <element name="None">0</element>
     <element name="Percentage">1</element>
     <element name="Absolute">2</element>
+    <element name="FinalizeTimeReduction">3</element>
   </elements>
 </enum>

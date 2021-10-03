@@ -7,37 +7,37 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PatternValue" type="F32">
+    <column name="Patternvalue" type="F32">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="fPatternValue" type="F32">
+    <column name="Fpatternvalue" type="F32">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>PatternValue</redundant_name>
+      <redundant_name>Patternvalue</redundant_name>
     </column>
-    <column name="DetailValue" type="F32">
+    <column name="Detailvalue" type="F32">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="fDetailValue" type="F32">
+    <column name="Fdetailvalue" type="F32">
       <offset>4</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>DetailValue</redundant_name>
+      <redundant_name>Detailvalue</redundant_name>
     </column>
     <column name="SpecularValue" type="F32">
       <offset>8</offset>
@@ -46,30 +46,30 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="fSpecularValue" type="F32">
+    <column name="Fspecularvalue" type="F32">
       <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <redundant_name>SpecularValue</redundant_name>
     </column>
-    <column name="DiffuseValue" type="F32">
+    <column name="Diffusevalue" type="F32">
       <offset>12</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="fDiffuseValue" type="F32">
+    <column name="Fdiffusevalue" type="F32">
       <offset>12</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>DiffuseValue</redundant_name>
+      <redundant_name>Diffusevalue</redundant_name>
     </column>
     <column name="}" type="END" />
   </table>

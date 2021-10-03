@@ -15,40 +15,40 @@
       </flags>
     </column>
     <column name="DisplayName" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Description" type="EMBEDDEDSTRUCT">
-      <offset>16</offset>
+      <offset>32</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="NumericItemDef" type="STRING">
-      <offset>28</offset>
+    <column name="Numericitemdef" type="STRING">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="NumericCost" type="INT">
-      <offset>32</offset>
+    <column name="Numericcost" type="INT">
+      <offset>64</offset>
     </column>
-    <column name="PurchaseKeyValue" type="STRUCT">
-      <offset>36</offset>
+    <column name="Purchasekeyvalue" type="STRUCT">
+      <offset>72</offset>
       <subtable external="GameAccountDataPurchaseKeyValue" />
     </column>
     <column name="Require" type="OPTIONALSTRUCT">
-      <offset>40</offset>
+      <offset>80</offset>
       <subtable external="GameAccountDataRequiredValues" />
     </column>
-    <column name="OrRequire" type="STRUCT">
-      <offset>44</offset>
+    <column name="Orrequire" type="STRUCT">
+      <offset>88</offset>
       <subtable external="GameAccountDataRequiredValues" />
     </column>
     <column name="Category" type="INT">
-      <offset>48</offset>
+      <offset>96</offset>
       <static_define_list external="GameAccountDataNumericPurchaseCategory" />
     </column>
-    <column name="ExtraHeaderID" type="INT">
-      <offset>52</offset>
+    <column name="Extraheaderid" type="INT">
+      <offset>100</offset>
     </column>
     <column name="}" type="END" />
   </table>

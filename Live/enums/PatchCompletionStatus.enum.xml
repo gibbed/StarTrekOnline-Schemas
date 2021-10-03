@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PatchCompletionStatus">
+  <elements type="int">
+    <element name="New">0</element>
+    <element name="Incomplete">1</element>
+    <element name="RequiredOnly">2</element>
+    <element name="Required">2</element>
+    <element name="AllFiles">3</element>
+    <element name="All">3</element>
+    <element name="Undefined">4</element>
+  </elements>
+</enum>

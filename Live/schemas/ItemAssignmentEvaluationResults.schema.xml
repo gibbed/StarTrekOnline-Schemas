@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ItemAssignmentEvaluationResults">
+  <table>
+    <column name="ItemAssignmentEvaluationResults" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Attributevaluetotals" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="ItemAssignmentAttributeValue" />
+    </column>
+    <column name="Attributevalueadjustments" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="ItemAssignmentAttributeValue" />
+    </column>
+    <column name="Attributerequirementadjustments" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="ItemAssignmentAttributeValue" />
+    </column>
+    <column name="Bonustotal" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Bonushazardadjustment" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Bonusadjustment" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Successchance" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Criticalchance" type="F32">
+      <offset>40</offset>
+    </column>
+    <column name="Itemcooldownadjustment" type="F32">
+      <offset>44</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

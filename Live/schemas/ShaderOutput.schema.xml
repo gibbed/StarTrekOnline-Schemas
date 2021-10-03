@@ -13,30 +13,34 @@
       </flags>
     </column>
     <column name="Description" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="Float" type="INT">
       <offset>8</offset>
     </column>
-    <column name="Type" type="INT">
-      <offset>12</offset>
-      <static_define_list external="ShaderDataType" />
-    </column>
-    <column name="AlphaModeAnd" type="U8">
+    <column name="Float" type="INT">
       <offset>16</offset>
     </column>
-    <column name="AlphaFrom" type="STRINGARRAY">
+    <column name="Type" type="INT">
       <offset>20</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
+      <static_define_list external="ShaderDataType" />
     </column>
-    <column name="AutoConnect" type="STRING">
+    <column name="Typename" type="STRING">
       <offset>24</offset>
+    </column>
+    <column name="Alphamodeand" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Alphafrom" type="STRINGARRAY">
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="EndOutput" type="END" />
+    <column name="Autoconnect" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Endoutput" type="END" />
   </table>
 </parser>

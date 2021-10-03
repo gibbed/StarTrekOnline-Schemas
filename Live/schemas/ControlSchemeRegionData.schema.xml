@@ -10,11 +10,11 @@
     <column name="Name" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="SchemeRegion" type="INT">
-      <offset>4</offset>
+    <column name="Schemeregion" type="INT">
+      <offset>8</offset>
       <static_define_list external="ControlSchemeRegionType" />
     </column>
     <column name="}" type="END" />

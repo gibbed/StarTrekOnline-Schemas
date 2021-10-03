@@ -9,9 +9,9 @@
       </flags>
     </column>
     <column name="Folder" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="parse_TreeTest" />
     </column>
-    <column name="EndFolder" type="END" />
+    <column name="Endfolder" type="END" />
   </table>
 </parser>

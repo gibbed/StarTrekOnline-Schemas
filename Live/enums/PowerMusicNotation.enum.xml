@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PowerMusicNotation">
+  <elements type="int">
+    <element name="C0">0</element>
+    <element name="D0">1</element>
+    <element name="E0">2</element>
+    <element name="F0">3</element>
+    <element name="G0">4</element>
+    <element name="A0">5</element>
+    <element name="B0">6</element>
+    <element name="C1">7</element>
+    <element name="D1">8</element>
+    <element name="E1">9</element>
+    <element name="F1">10</element>
+    <element name="G1">11</element>
+    <element name="A1">12</element>
+    <element name="B1">13</element>
+    <element name="C2">14</element>
+    <element name="D2">15</element>
+    <element name="E2">16</element>
+    <element name="F2">17</element>
+    <element name="G2">18</element>
+    <element name="A2">19</element>
+    <element name="B2">20</element>
+    <element name="C3">21</element>
+  </elements>
+</enum>

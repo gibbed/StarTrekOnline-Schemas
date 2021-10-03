@@ -8,116 +8,108 @@
     </column>
     <column name="{" type="START" />
     <column name="ObjType" type="INT">
-      <offset>0</offset>
+      <offset>16</offset>
       <static_define_list external="GlobalType" />
     </column>
     <column name="ObjID" type="INT">
-      <offset>4</offset>
+      <offset>20</offset>
     </column>
-    <column name="iownerID" type="INT">
-      <offset>8</offset>
+    <column name="Iownerid" type="INT">
+      <offset>24</offset>
     </column>
     <column name="ObjName" type="STRING">
-      <offset>12</offset>
+      <offset>32</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Location" type="F32FIXEDARRAY">
-      <offset>16</offset>
+      <offset>40</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="OwnerName" type="STRING">
-      <offset>28</offset>
+    <column name="Ownername" type="STRING">
+      <offset>56</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Action" type="STRING">
-      <offset>32</offset>
+      <offset>64</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ForceKept" type="U8">
-      <offset>36</offset>
+    <column name="Forcekept" type="U8">
+      <offset>72</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ProjSpecific" type="STRUCT">
-      <offset>40</offset>
+    <column name="Projspecific" type="STRUCT">
+      <offset>80</offset>
       <subtable external="ProjSpecificParsedLogObjInfo" />
     </column>
-    <column name="GameEvent" type="OPTIONALSTRUCT">
-      <offset>44</offset>
+    <column name="Gameevent" type="OPTIONALSTRUCT">
+      <offset>88</offset>
       <subtable external="GameEvent" />
     </column>
-    <column name="KillEvent" type="OPTIONALSTRUCT">
-      <offset>48</offset>
+    <column name="Killevent" type="OPTIONALSTRUCT">
+      <offset>96</offset>
       <subtable external="KillEvent" />
     </column>
-    <column name="ItemGainedEvent" type="OPTIONALSTRUCT">
-      <offset>52</offset>
+    <column name="Itemgainedevent" type="OPTIONALSTRUCT">
+      <offset>104</offset>
       <subtable external="ItemGainedEvent" />
     </column>
-    <column name="ShardPerf" type="OPTIONALSTRUCT">
-      <offset>56</offset>
+    <column name="Shardperf" type="OPTIONALSTRUCT">
+      <offset>112</offset>
       <subtable external="ShardInfo_Perf" />
     </column>
     <column name="LongTermData" type="OPTIONALSTRUCT">
-      <offset>60</offset>
-      <subtable>
-        <table>
-          <column name="{" type="START" />
-          <column name="}" type="END" />
-        </table>
-      </subtable>
+      <offset>120</offset>
+      <subtable external="NullStruct" />
     </column>
-    <column name="InventoryBagSummary" type="OPTIONALSTRUCT">
-      <offset>64</offset>
+    <column name="Inventorybagsummary" type="OPTIONALSTRUCT">
+      <offset>128</offset>
       <subtable external="InventoryBagSummary" />
     </column>
-    <column name="InventoryBag" type="OPTIONALSTRUCT">
-      <offset>68</offset>
+    <column name="Inventorybag" type="OPTIONALSTRUCT">
+      <offset>136</offset>
       <subtable external="InventoryBag" />
     </column>
-    <column name="SurveyMission" type="OPTIONALSTRUCT">
-      <offset>72</offset>
+    <column name="Surveymission" type="OPTIONALSTRUCT">
+      <offset>144</offset>
       <subtable external="IndexedPairs" />
     </column>
-    <column name="ClientPerf" type="OPTIONALSTRUCT">
-      <offset>76</offset>
+    <column name="Clientperf" type="OPTIONALSTRUCT">
+      <offset>152</offset>
       <subtable external="FrameCountsHistReported" />
     </column>
-    <column name="ControllerOverview" type="OPTIONALSTRUCT">
-      <offset>80</offset>
-      <subtable>
-        <table>
-          <column name="{" type="START" />
-          <column name="}" type="END" />
-        </table>
-      </subtable>
+    <column name="Controlleroverview" type="OPTIONALSTRUCT">
+      <offset>160</offset>
+      <subtable external="NullStruct" />
     </column>
-    <column name="StatusReport" type="OPTIONALSTRUCT">
-      <offset>84</offset>
+    <column name="Statusreport" type="OPTIONALSTRUCT">
+      <offset>168</offset>
       <subtable external="StatusReporting_Wrapper" />
     </column>
-    <column name="LoadBalancing" type="OPTIONALSTRUCT">
-      <offset>88</offset>
+    <column name="Loadbalancing" type="OPTIONALSTRUCT">
+      <offset>176</offset>
       <subtable external="LoadBalancingInfo" />
     </column>
-    <column name="PatchMsgPerf" type="OPTIONALSTRUCT">
-      <offset>92</offset>
+    <column name="Patchmsgperf" type="OPTIONALSTRUCT">
+      <offset>184</offset>
       <subtable external="PatchMsgPerfInfos" />
     </column>
-    <column name="MemTrackOps" type="OPTIONALSTRUCT">
-      <offset>96</offset>
+    <column name="Memtrackops" type="OPTIONALSTRUCT">
+      <offset>192</offset>
       <subtable external="MemTrackOpsInfo" />
     </column>
-    <column name="AccessLevelCommand" type="OPTIONALSTRUCT">
-      <offset>100</offset>
+    <column name="Accesslevelcommand" type="OPTIONALSTRUCT">
+      <offset>200</offset>
       <subtable external="AccessLevelCommandInfo" />
     </column>
-    <column name="GenericArray" type="EMBEDDEDSTRUCT">
-      <offset>104</offset>
+    <column name="Genericarray" type="EMBEDDEDSTRUCT">
+      <offset>208</offset>
       <subtable external="GenericArray" />
     </column>
     <column name="}" type="END" />

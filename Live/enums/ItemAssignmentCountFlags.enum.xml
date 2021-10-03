@@ -7,9 +7,11 @@
     <element name="ExcludeFilter">8</element>
     <element name="FilterCategory">16</element>
     <element name="Items">32</element>
-    <element name="Unread">192</element>
     <element name="RecentlyCompleted">64</element>
+    <element name="Unread">192</element>
     <element name="ChainHeaders">256</element>
     <element name="ExcludeFree">512</element>
+    <element name="ExcludeWithIncompleteOutcome">1024</element>
+    <element name="IgnoreSlotSet">2048</element>
   </elements>
 </enum>

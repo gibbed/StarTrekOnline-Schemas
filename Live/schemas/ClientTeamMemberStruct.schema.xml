@@ -14,19 +14,19 @@
       </flags>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="PlayerLevel" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="PlayerRank" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="PlayingStyles" type="STRING">
+    <column name="Playerlevel" type="INT">
       <offset>16</offset>
+    </column>
+    <column name="Playerrank" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Playingstyles" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MechMovementReverseDef">
+  <table>
+    <column name="MechMovementReverseDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Reverseenteranglethreshold" type="F32">
+      <offset>0</offset>
+    </column>
+    <column name="Reverseexitanglethreshold" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="Reversedeceleration" type="F32">
+      <offset>8</offset>
+    </column>
+    <column name="Turnaroundtime" type="F32">
+      <offset>12</offset>
+    </column>
+    <column name="Turnaroundslideamount" type="F32">
+      <offset>16</offset>
+    </column>
+    <column name="Turnaroundspeedloss" type="F32">
+      <offset>20</offset>
+    </column>
+    <column name="Turnaroundturnrate" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Turnaroundturnacceleration" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Reversegear_0" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="MechMovementGearDef" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

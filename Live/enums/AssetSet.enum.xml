@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="AssetSet">
+  <elements type="int">
+    <element name="DontCare">-1</element>
+    <element name="Default">0</element>
+  </elements>
+</enum>

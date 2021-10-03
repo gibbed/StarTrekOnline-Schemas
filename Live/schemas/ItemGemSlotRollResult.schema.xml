@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uItemPowerDefRefID" type="INT">
+    <column name="Uitempowerdefrefid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -16,13 +16,14 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="bSuccess" type="U8">
+    <column name="Bsuccess" type="U8">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

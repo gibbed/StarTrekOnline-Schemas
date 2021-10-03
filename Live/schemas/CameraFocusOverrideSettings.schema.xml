@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DistanceBasis" type="F32">
+    <column name="Distancebasis" type="F32">
       <offset>0</offset>
       <default>15</default>
     </column>
@@ -15,7 +15,7 @@
       <offset>4</offset>
       <default>30</default>
     </column>
-    <column name="MinSpeed" type="F32">
+    <column name="Minspeed" type="F32">
       <offset>8</offset>
     </column>
     <column name="MaxSpeed" type="F32">

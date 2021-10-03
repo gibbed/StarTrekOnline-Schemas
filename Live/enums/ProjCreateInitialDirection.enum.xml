@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ProjCreateInitialDirection">
+  <elements type="int">
+    <element name="ToTarget">0</element>
+    <element name="ToOwner">1</element>
+    <element name="OwnerFacing">2</element>
+    <element name="TargetFacing">3</element>
+    <element name="ToSecondaryTarget">4</element>
+  </elements>
+</enum>

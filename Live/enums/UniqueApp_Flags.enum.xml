@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="UniqueApp_Flags">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="ALLOW_CROSS_VERSION_LAUNCH">1</element>
+    <element name="ONLY_ONE_PIPE_AND_MUTEX_TRY">2</element>
+  </elements>
+</enum>

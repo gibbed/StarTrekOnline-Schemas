@@ -7,45 +7,46 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hTree" type="REFERENCE">
+    <column name="Htree" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>PowerTreeDef</dictionary_name>
     </column>
-    <column name="hNode" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hnode" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>PTNodeDef</dictionary_name>
     </column>
     <column name="Rank" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
     </column>
     <column name="Count" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="FailsRequirements" type="BIT">
-      <offset>16</offset>
-      <bit_offset>65536</bit_offset>
-    </column>
-    <column name="RequirementsText" type="STRING">
       <offset>20</offset>
+    </column>
+    <column name="Failsrequirements" type="BIT">
+      <offset>24</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requirementstext" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="StoreName" type="STRING">
-      <offset>24</offset>
+    <column name="Storename" type="STRING">
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Index" type="INT">
-      <offset>28</offset>
+      <offset>48</offset>
     </column>
-    <column name="CostInfo" type="STRUCT">
-      <offset>32</offset>
+    <column name="Costinfo" type="STRUCT">
+      <offset>56</offset>
       <subtable external="PowerStoreCostInfo" />
     </column>
-    <column name="TrainerType" type="INT">
-      <offset>36</offset>
+    <column name="Trainertype" type="INT">
+      <offset>64</offset>
       <static_define_list external="PowerStoreTrainerType" />
     </column>
     <column name="}" type="END" />

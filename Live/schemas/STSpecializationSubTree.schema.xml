@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="STSpecializationSubTree">
+  <table>
+    <column name="STSpecializationSubTree" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Noderows" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Nodecolumns" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Sortorder" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Rootnode" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Nodes" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="PowerListNode" />
+    </column>
+    <column name="Nodescount" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Unlockednodescount" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Availablenodescount" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Purchasablenodescount" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Lockednodescount" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Autotimestamptree" type="INT64">
+      <offset>56</offset>
+    </column>
+    <column name="Autotimestampinventory" type="INT64">
+      <offset>64</offset>
+    </column>
+    <column name="Stcanbuyptnode" type="STASHTABLE">
+      <offset>72</offset>
+    </column>
+    <column name="Stcanbuyptgroup" type="STASHTABLE">
+      <offset>80</offset>
+    </column>
+    <column name="Uupdatedframe" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

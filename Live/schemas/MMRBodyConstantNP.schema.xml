@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="asdf" type="INT">
+    <column name="Asdf" type="INT">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

@@ -7,30 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hNumericItemDef" type="REFERENCE">
+    <column name="Hnumericitemdef" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
     <column name="Payout" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="WheelIndex" type="INT">
       <offset>8</offset>
     </column>
-    <column name="HistoryIndex" type="INT">
+    <column name="Wheelindex" type="INT">
       <offset>12</offset>
     </column>
-    <column name="playerName" type="STRING">
+    <column name="Historyindex" type="INT">
       <offset>16</offset>
     </column>
-    <column name="IsHeader" type="U8">
-      <offset>20</offset>
-    </column>
-    <column name="uTimestamp" type="INT">
+    <column name="playerName" type="STRING">
       <offset>24</offset>
     </column>
-    <column name="NumberOfPayouts" type="INT">
-      <offset>28</offset>
+    <column name="Isheader" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Utimestamp" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Numberofpayouts" type="INT">
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

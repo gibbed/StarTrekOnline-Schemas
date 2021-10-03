@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MapNames" type="STRINGARRAY">
+    <column name="Mapnames" type="STRINGARRAY">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MapVars" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Mapvars" type="STRINGARRAY">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

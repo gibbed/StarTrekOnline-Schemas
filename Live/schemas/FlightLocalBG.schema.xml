@@ -7,19 +7,29 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="dirInput" type="F32FIXEDARRAY">
+    <column name="Dirinput" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="targetVel" type="F32FIXEDARRAY">
+    <column name="Targetvel" type="F32FIXEDARRAY">
       <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="curSpeed" type="F32">
+    <column name="Dirrelativeforroll" type="F32FIXEDARRAY">
       <offset>24</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Curspeed" type="F32">
+      <offset>36</offset>
+    </column>
+    <column name="Flightrollcurrentspeed" type="F32">
+      <offset>40</offset>
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">
-      <offset>44</offset>
+      <offset>80</offset>
       <subtable external="FlightLocalBGFlags" />
     </column>
     <column name="}" type="END" />

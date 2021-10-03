@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DynamicItemPowerTableDef">
+  <table>
+    <column name="DynamicItemPowerTableDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Key" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>USEROPTIONBIT_1</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Includetable" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="DynamicItemPowerTableDefRef" />
+    </column>
+    <column name="Progressionlevel" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="DynamicItemPowerTableIndex" />
+    </column>
+    <column name="Progressionleveldefault" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="DynamicItemPowerTableIndex" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

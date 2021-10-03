@@ -14,17 +14,17 @@
     <column name="OwnerID" type="INT">
       <offset>4</offset>
     </column>
-    <column name="OwnerName" type="STRING">
+    <column name="Ownername" type="STRING">
       <offset>8</offset>
     </column>
     <column name="PowerDef" type="REFERENCE">
-      <offset>12</offset>
+      <offset>16</offset>
       <dictionary_name>PowerDef</dictionary_name>
     </column>
     <column name="Power" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+      <offset>24</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Power" />
     </column>

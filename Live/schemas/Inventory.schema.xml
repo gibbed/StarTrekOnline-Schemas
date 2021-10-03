@@ -7,19 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="dirtyBit" type="U8">
+    <column name="Dirtybit" type="U8">
       <offset>0</offset>
       <flags>
         <flag>NO_NETSEND</flag>
         <flag>DIRTY_BIT</flag>
       </flags>
     </column>
-    <column name="inv_def" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Autotimestamp" type="INT64">
+      <offset>8</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Inv_Def" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>DefaultInventory</dictionary_name>
     </column>
-    <column name="ppInventoryBags" type="STRUCT">
-      <offset>8</offset>
+    <column name="Ppinventorybags" type="STRUCT">
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -27,8 +39,8 @@
       </flags>
       <subtable external="InventoryBag" />
     </column>
-    <column name="ppLiteBags" type="STRUCT">
-      <offset>12</offset>
+    <column name="Pplitebags" type="STRUCT">
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -36,30 +48,31 @@
       </flags>
       <subtable external="InventoryBagLite" />
     </column>
-    <column name="peaOwnedUniqueItems" type="STRUCT">
-      <offset>16</offset>
+    <column name="Peaowneduniqueitems" type="STRUCT">
+      <offset>40</offset>
       <flags>
+        <flag>PUPPET_NO_COPY</flag>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="OwnedUniqueItem" />
     </column>
-    <column name="ppSlotSwitchRequest" type="STRUCT">
-      <offset>20</offset>
+    <column name="Ppslotswitchrequest" type="STRUCT">
+      <offset>48</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>
       <subtable external="InvBagSlotSwitchRequest" />
     </column>
-    <column name="uiCurrentSlotSwitchID" type="INT">
-      <offset>24</offset>
+    <column name="Uicurrentslotswitchid" type="INT">
+      <offset>56</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
-    <column name="eaiNewItemIDs" type="STRUCT">
-      <offset>28</offset>
+    <column name="Eainewitemids" type="STRUCT">
+      <offset>64</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
@@ -67,6 +80,89 @@
       </flags>
       <subtable external="NewItemID" />
     </column>
+    <column name="Eainewpowerunlockitemids" type="STRUCT">
+      <offset>72</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="NewItemID" />
+    </column>
+    <column name="Eaitemexpirytrackers" type="STRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="ItemExpiryTracker" />
+    </column>
+    <column name="Eaitembatterytrackers" type="STRUCT">
+      <offset>88</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>READONLY_TRANSACT</flag>
+      </flags>
+      <subtable external="ItemBatteryChargeTracker" />
+    </column>
+    <column name="Eaitemprogressiontrackers" type="STRUCT">
+      <offset>96</offset>
+      <flags>
+        <flag>PUPPET_NO_COPY</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="ItemProgressionTracker" />
+    </column>
+    <column name="Eanumericdecaytrackers" type="STRUCT">
+      <offset>104</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="NumericDecayTracker" />
+    </column>
+    <column name="Eainventoryticktrackers" type="STRUCT">
+      <offset>112</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <subtable external="InventoryTickTracker" />
+    </column>
+    <column name="Utotalitemlevelcached" type="INT">
+      <offset>120</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Bagspowercontrolactivelist" type="INTARRAY">
+      <offset>128</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Bagspowercontrolplayerchosen" type="INT">
+      <offset>136</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Bagspowercontrolplayerautomaticused" type="U8">
+      <offset>140</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uscaleditemlevelcached" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

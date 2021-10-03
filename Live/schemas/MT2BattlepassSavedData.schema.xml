@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MT2BattlepassSavedData">
+  <table>
+    <column name="MT2BattlepassSavedData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Current" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>VITAL_REF</flag>
+        <flag>NON_NULL_REF__ERROR_ONLY</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+      <dictionary_name>MT2BattlepassDef</dictionary_name>
+    </column>
+    <column name="Hcurrentbattlepass" type="REFERENCE">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>VITAL_REF</flag>
+        <flag>NON_NULL_REF__ERROR_ONLY</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+      <redundant_name>Current</redundant_name>
+      <dictionary_name>MT2BattlepassDef</dictionary_name>
+    </column>
+    <column name="Previous" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="MT2PreviousBattlepassData" />
+    </column>
+    <column name="Eapreviousbattlepassdata" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Previous</redundant_name>
+      <subtable external="MT2PreviousBattlepassData" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

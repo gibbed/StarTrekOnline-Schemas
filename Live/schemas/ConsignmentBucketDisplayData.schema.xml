@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ConsignmentBucketDisplayData">
+  <table>
+    <column name="ConsignmentBucketDisplayData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="BucketID" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="LastUpdateTime" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Buckettype" type="INT">
+      <offset>8</offset>
+      <static_define_list external="ConsignmentBucketType" />
+    </column>
+    <column name="ObjName" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Objlevel" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Objhaslevels" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Itemprototype" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="Item" />
+    </column>
+    <column name="Totalunitsavailable" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Bestprices_0" type="EMBEDDEDSTRUCT">
+      <offset>44</offset>
+      <subtable external="ConsignmentPriceQuantity" />
+    </column>
+    <column name="Bestprices_1" type="EMBEDDEDSTRUCT">
+      <offset>52</offset>
+      <subtable external="ConsignmentPriceQuantity" />
+    </column>
+    <column name="Bestprices_2" type="EMBEDDEDSTRUCT">
+      <offset>60</offset>
+      <subtable external="ConsignmentPriceQuantity" />
+    </column>
+    <column name="Bestprices_3" type="EMBEDDEDSTRUCT">
+      <offset>68</offset>
+      <subtable external="ConsignmentPriceQuantity" />
+    </column>
+    <column name="Bestprices_4" type="EMBEDDEDSTRUCT">
+      <offset>76</offset>
+      <subtable external="ConsignmentPriceQuantity" />
+    </column>
+    <column name="Brokerbuyprice" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Brokerbuypricetime" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Brokersellprice" type="INT">
+      <offset>92</offset>
+    </column>
+    <column name="Brokersellpricetime" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Brokeraccumulatedbuypriceperday" type="INT64FIXEDARRAY">
+      <offset>104</offset>
+      <num_elements>7</num_elements>
+    </column>
+    <column name="Brokeraccumulatedsellpriceperday" type="INT64FIXEDARRAY">
+      <offset>160</offset>
+      <num_elements>7</num_elements>
+    </column>
+    <column name="Brokerbuyvolumeperday" type="INT64FIXEDARRAY">
+      <offset>216</offset>
+      <num_elements>7</num_elements>
+    </column>
+    <column name="Brokersellvolumeperday" type="INT64FIXEDARRAY">
+      <offset>272</offset>
+      <num_elements>7</num_elements>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

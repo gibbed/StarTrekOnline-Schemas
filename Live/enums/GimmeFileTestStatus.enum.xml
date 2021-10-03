@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GimmeFileTestStatus">
+  <elements type="int">
+    <element name="NEEDSTESTING">0</element>
+    <element name="DONTTEST">1</element>
+    <element name="TESTEDBAD">2</element>
+    <element name="NOTTESTED">3</element>
+    <element name="PRESUMEDGOOD">4</element>
+    <element name="TESTEXCLUDED">5</element>
+  </elements>
+</enum>

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EntityLoadoutConfig">
+  <table>
+    <column name="EntityLoadoutConfig" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Allowedclasstype" type="INTARRAY">
+      <offset>0</offset>
+      <static_define_list external="CharClassTypes" />
+    </column>
+    <column name="Entityloadoutcount" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Allowsaveentityloadout" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Maxentityloadoutcount" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Entitysavecooldown" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Entityloadcooldown" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Puppetloadoutcount" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Maxpuppetloadoutcount" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Refundpuppetnumeric" type="U8">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Puppetloadcooldown" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Puppetsavecooldown" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Maxowneritems" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Saveloadoutonswitch" type="U8">
+      <offset>52</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Grantinitialloadouts" type="U8">
+      <offset>53</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Pairpowertreebuilds" type="U8">
+      <offset>54</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Pairplayercostumeslots" type="U8">
+      <offset>55</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Buildcurrencies" type="STRINGARRAY">
+      <offset>56</offset>
+    </column>
+    <column name="Powermodesrequired" type="INTARRAY">
+      <offset>64</offset>
+      <static_define_list external="PowerMode" />
+    </column>
+    <column name="Powermodesdisallowed" type="INTARRAY">
+      <offset>72</offset>
+      <static_define_list external="PowerMode" />
+    </column>
+    <column name="Preserveemptyslots" type="U8">
+      <offset>80</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ignorebankbags" type="U8">
+      <offset>81</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Minexplevel" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Fillemptybagslotsfrombag" type="STRUCT">
+      <offset>88</offset>
+      <subtable external="LoadoutBagFillPair" />
+    </column>
+    <column name="Neverunequipfrombagids" type="INTARRAY">
+      <offset>96</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Includebagids" type="INTARRAY">
+      <offset>104</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Ignorebagids" type="INTARRAY">
+      <offset>112</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Alsosearchbagids" type="INTARRAY">
+      <offset>120</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Includegemsforbagids" type="INTARRAY">
+      <offset>128</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Petapplyallbagids" type="INTARRAY">
+      <offset>136</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Enablesuperpetcritterequipment" type="U8">
+      <offset>144</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Petinventorybag" type="INT">
+      <offset>148</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Loadoutbaggroup" type="STRUCT">
+      <offset>152</offset>
+      <subtable external="LoadoutBagGroup" />
+    </column>
+    <column name="Searchbynamebagids" type="INTARRAY">
+      <offset>160</offset>
+      <static_define_list external="InvBagIDs" />
+    </column>
+    <column name="Savepowertreeslot" type="INTARRAY">
+      <offset>168</offset>
+    </column>
+    <column name="Savepowerslot" type="INTARRAY">
+      <offset>176</offset>
+    </column>
+    <column name="Savecostumeslot" type="U8">
+      <offset>184</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Allowclearloadout" type="U8">
+      <offset>185</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Defaultloadoutname" type="REFERENCE">
+      <offset>192</offset>
+      <dictionary_name>Message</dictionary_name>
+    </column>
+    <column name="Extraloadoutcountattrib" type="STRING">
+      <offset>200</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

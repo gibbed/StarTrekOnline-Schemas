@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="_PolyTable_AttribModDefParams">
+  <table>
+    <column name="_PolyTable_AttribModDefParams" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="AIAggroTotalScaleParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AIAggroTotalScaleParams" />
+    </column>
+    <column name="AIAggroTransferParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AIAggroTransferParams" />
+    </column>
+    <column name="AIAvoidParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AIAvoidParams" />
+    </column>
+    <column name="AICommandParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AICommandParams" />
+    </column>
+    <column name="AISoftAvoidParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AISoftAvoidParams" />
+    </column>
+    <column name="ApplyCritterTagParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="ApplyCritterTagParams" />
+    </column>
+    <column name="ApplyPowerParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="ApplyPowerParams" />
+    </column>
+    <column name="AttribModDamageParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AttribModDamageParams" />
+    </column>
+    <column name="AttribModExpireParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AttribModExpireParams" />
+    </column>
+    <column name="AttribModFragilityScaleParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AttribModFragilityScaleParams" />
+    </column>
+    <column name="AttribModHealParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AttribModHealParams" />
+    </column>
+    <column name="AttribModKnockbackParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AttribModKnockbackParams" />
+    </column>
+    <column name="AttribModKnockupParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AttribModKnockupParams" />
+    </column>
+    <column name="AttribModRepelParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AttribModRepelParams" />
+    </column>
+    <column name="AttribModShareParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AttribModShareParams" />
+    </column>
+    <column name="AttribOverrideParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="AttribOverrideParams" />
+    </column>
+    <column name="BecomeCritterParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="BecomeCritterParams" />
+    </column>
+    <column name="ClickEnhancementParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="ClickEnhancementParams" />
+    </column>
+    <column name="CombatAdvantageParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="CombatAdvantageParams" />
+    </column>
+    <column name="CombatNotificationParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="CombatNotificationParams" />
+    </column>
+    <column name="ConstantForceParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="ConstantForceParams" />
+    </column>
+    <column name="DamageTriggerParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="DamageTriggerParams" />
+    </column>
+    <column name="DisableInteractParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="DisableInteractParams" />
+    </column>
+    <column name="DisableTacticalMovementParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="DisableTacticalMovementParams" />
+    </column>
+    <column name="DynamicAttribParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="DynamicAttribParams" />
+    </column>
+    <column name="EntAttachParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="EntAttachParams" />
+    </column>
+    <column name="EntCreateParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="EntCreateParams" />
+    </column>
+    <column name="EntCreateVanityParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="EntCreateVanityParams" />
+    </column>
+    <column name="FactionParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FactionParams" />
+    </column>
+    <column name="FactionRelationshipOverrideParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FactionRelationshipOverrideParams" />
+    </column>
+    <column name="FlagParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FlagParams" />
+    </column>
+    <column name="FlightParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="FlightParams" />
+    </column>
+    <column name="GrantPowerParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="GrantPowerParams" />
+    </column>
+    <column name="GrantRewardParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="GrantRewardParams" />
+    </column>
+    <column name="IncludeEnhancementParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="IncludeEnhancementParams" />
+    </column>
+    <column name="InterruptParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="InterruptParams" />
+    </column>
+    <column name="ItemDurabilityParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="ItemDurabilityParams" />
+    </column>
+    <column name="KeybindOverrideParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="KeybindOverrideParams" />
+    </column>
+    <column name="KillParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="KillParams" />
+    </column>
+    <column name="KillTriggerParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="KillTriggerParams" />
+    </column>
+    <column name="KnockToParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="KnockToParams" />
+    </column>
+    <column name="MessageParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="MessageParams" />
+    </column>
+    <column name="MissionEventParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="MissionEventParams" />
+    </column>
+    <column name="ModifyCostumeParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="ModifyCostumeParams" />
+    </column>
+    <column name="NotifyParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="NotifyParams" />
+    </column>
+    <column name="OverrideOwnerParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="OverrideOwnerParams" />
+    </column>
+    <column name="PlacateParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="PlacateParams" />
+    </column>
+    <column name="PowerModeParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="PowerModeParams" />
+    </column>
+    <column name="PowerRechargeParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="PowerRechargeParams" />
+    </column>
+    <column name="PowerShieldParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="PowerShieldParams" />
+    </column>
+    <column name="ProjectileCreateParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="ProjectileCreateParams" />
+    </column>
+    <column name="PVPFlagParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="PVPFlagParams" />
+    </column>
+    <column name="PVPSpecialActionParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="PVPSpecialActionParams" />
+    </column>
+    <column name="RememberedMusicParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="RememberedMusicParams" />
+    </column>
+    <column name="RemovePowerParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="RemovePowerParams" />
+    </column>
+    <column name="RewardModifierParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="RewardModifierParams" />
+    </column>
+    <column name="SetCostumeParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="SetCostumeParams" />
+    </column>
+    <column name="ShieldParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="ShieldParams" />
+    </column>
+    <column name="SimpleProjectileCreateParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="SimpleProjectileCreateParams" />
+    </column>
+    <column name="SpeedCooldownParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="SpeedCooldownParams" />
+    </column>
+    <column name="SubtargetSetParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="SubtargetSetParams" />
+    </column>
+    <column name="SwingingParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="SwingingParams" />
+    </column>
+    <column name="TeleportParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="TeleportParams" />
+    </column>
+    <column name="TeleThrowParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="TeleThrowParams" />
+    </column>
+    <column name="TriggerComplexParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="TriggerComplexParams" />
+    </column>
+    <column name="TriggerSimpleParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="TriggerSimpleParams" />
+    </column>
+    <column name="WarpToParams" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="WarpToParams" />
+    </column>
+  </table>
+</parser>

@@ -10,12 +10,12 @@
     <column name="Cooldown" type="F32">
       <offset>20</offset>
     </column>
-    <column name="hCombatPowerStateSwitchingDef" type="REFERENCE">
+    <column name="Hcombatpowerstateswitchingdef" type="REFERENCE">
       <offset>24</offset>
       <dictionary_name>CombatPowerStateSwitchingDef</dictionary_name>
     </column>
-    <column name="SpecialPowerSwitchedSlot" type="INT">
-      <offset>28</offset>
+    <column name="Specialpowerswitchedslot" type="INT">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

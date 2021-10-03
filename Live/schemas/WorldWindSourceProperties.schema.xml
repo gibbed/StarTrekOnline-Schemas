@@ -6,19 +6,20 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="EffectType" type="INT">
+    <column name="Effecttype" type="INT">
       <offset>0</offset>
       <static_define_list external="WorldWindEffectType" />
     </column>
     <column name="Speed" type="F32">
       <offset>4</offset>
     </column>
-    <column name="SpeedVariation" type="F32">
+    <column name="Speedvariation" type="F32">
       <offset>8</offset>
     </column>
-    <column name="DirectionVariation" type="F32FIXEDARRAY">
+    <column name="Directionvariation" type="F32FIXEDARRAY">
       <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Turbulence" type="F32">
       <offset>24</offset>
@@ -26,7 +27,7 @@
     <column name="Radius" type="F32">
       <offset>28</offset>
     </column>
-    <column name="RadiusInner" type="F32">
+    <column name="Radiusinner" type="F32">
       <offset>32</offset>
     </column>
     <column name="End" type="END" />

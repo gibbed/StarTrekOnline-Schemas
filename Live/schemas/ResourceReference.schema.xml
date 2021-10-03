@@ -7,26 +7,26 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="resourceDict" type="STRING">
+    <column name="Resourcedict" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="ResourceName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="referencePath" type="STRING">
-      <offset>8</offset>
+    <column name="Referencepath" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="ErrorString" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
-    <column name="referenceType" type="INT">
-      <offset>16</offset>
+    <column name="Referencetype" type="INT">
+      <offset>32</offset>
       <static_define_list external="ResourceReferenceType" />
     </column>
     <column name="}" type="END" />

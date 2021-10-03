@@ -16,78 +16,81 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="DisplayName" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="AllowedCategory" type="STRUCT">
-      <offset>20</offset>
+    <column name="Allowedcategory" type="STRUCT">
+      <offset>40</offset>
       <subtable external="PCCategoryRef" />
     </column>
-    <column name="UseCostumeSlotOverride" type="U8">
-      <offset>24</offset>
+    <column name="Usecostumeslotoverride" type="U8">
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="BodyScaleLimits" type="STRUCT">
-      <offset>28</offset>
+    <column name="Bodyscalelimits" type="STRUCT">
+      <offset>56</offset>
       <subtable external="SlotBodyScaleLimit" />
     </column>
-    <column name="BoneScaleLimits" type="STRUCT">
-      <offset>32</offset>
+    <column name="Bonescalelimits" type="STRUCT">
+      <offset>64</offset>
       <subtable external="SlotBoneScaleLimit" />
     </column>
-    <column name="NoHeightChange" type="U8">
-      <offset>36</offset>
-    </column>
-    <column name="MinHeight" type="F32">
-      <offset>40</offset>
-    </column>
-    <column name="MaxHeight" type="F32">
-      <offset>44</offset>
-    </column>
-    <column name="NoMuscle" type="U8">
-      <offset>48</offset>
-    </column>
-    <column name="MinMuscle" type="F32">
-      <offset>52</offset>
-    </column>
-    <column name="MaxMuscle" type="F32">
-      <offset>56</offset>
-    </column>
-    <column name="SkinColorSet" type="REFERENCE">
-      <offset>60</offset>
-      <dictionary_name>CostumeColors</dictionary_name>
-    </column>
-    <column name="BodyColorSet0" type="REFERENCE">
-      <offset>64</offset>
-      <dictionary_name>CostumeColors</dictionary_name>
-    </column>
-    <column name="BodyColorSet" type="REFERENCE">
-      <offset>64</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>BodyColorSet0</redundant_name>
-      <dictionary_name>CostumeColors</dictionary_name>
-    </column>
-    <column name="BodyColorSet1" type="REFERENCE">
-      <offset>68</offset>
-      <dictionary_name>CostumeColors</dictionary_name>
-    </column>
-    <column name="BodyColorSet2" type="REFERENCE">
+    <column name="Noheightchange" type="U8">
       <offset>72</offset>
-      <dictionary_name>CostumeColors</dictionary_name>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="BodyColorSet3" type="REFERENCE">
+    <column name="Minheight" type="F32">
       <offset>76</offset>
+    </column>
+    <column name="Maxheight" type="F32">
+      <offset>80</offset>
+    </column>
+    <column name="Nomuscle" type="U8">
+      <offset>84</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Minmuscle" type="F32">
+      <offset>88</offset>
+    </column>
+    <column name="Maxmuscle" type="F32">
+      <offset>92</offset>
+    </column>
+    <column name="Skincolorset" type="REFERENCE">
+      <offset>96</offset>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="SlotStances" type="STRUCT">
-      <offset>80</offset>
+    <column name="Bodycolorset0" type="REFERENCE">
+      <offset>104</offset>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Bodycolorset" type="REFERENCE">
+      <offset>104</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Bodycolorset0</redundant_name>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Bodycolorset1" type="REFERENCE">
+      <offset>112</offset>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Bodycolorset2" type="REFERENCE">
+      <offset>120</offset>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Bodycolorset3" type="REFERENCE">
+      <offset>128</offset>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Slotstances" type="STRUCT">
+      <offset>136</offset>
       <subtable external="PCSlotStanceStruct" />
     </column>
     <column name="}" type="END" />

@@ -20,6 +20,17 @@
       <offset>8</offset>
       <subtable external="WorldVariable" />
     </column>
+    <column name="Notes" type="STRING">
+      <offset>128</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Hidden" type="U8">
+      <offset>136</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
     <column name="Name" type="IGNORE" />
     <column name="Type" type="IGNORE" />
     <column name="Int" type="IGNORE" />

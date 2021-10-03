@@ -6,10 +6,10 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="CodePoint" type="INT16">
+    <column name="Codepoint" type="INT16">
       <offset>0</offset>
     </column>
-    <column name="TexPos" type="INT16FIXEDARRAY">
+    <column name="Texpos" type="INT16FIXEDARRAY">
       <offset>2</offset>
       <num_elements>2</num_elements>
     </column>
@@ -17,9 +17,9 @@
       <offset>6</offset>
       <num_elements>2</num_elements>
     </column>
-    <column name="XAdvance" type="INT16">
+    <column name="Xadvance" type="INT16">
       <offset>10</offset>
     </column>
-    <column name="EndGlyph" type="END" />
+    <column name="Endglyph" type="END" />
   </table>
 </parser>

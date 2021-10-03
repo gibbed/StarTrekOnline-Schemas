@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CrypticRPCStats_ErrorCounts">
+  <table>
+    <column name="CrypticRPCStats_ErrorCounts" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Fatalerrors" type="STRUCT">
+      <offset>0</offset>
+      <subtable external="CrypticRPCStats_ErrorCountEntry" />
+    </column>
+    <column name="Nonfatalerrors" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="CrypticRPCStats_ErrorCountEntry" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

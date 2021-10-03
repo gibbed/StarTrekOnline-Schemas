@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ForceFullMoonOff" type="INT">
+    <column name="Forcefullmoonoff" type="INT">
       <offset>0</offset>
     </column>
-    <column name="ForceFullMoonOn" type="INT">
+    <column name="Forcefullmoonon" type="INT">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

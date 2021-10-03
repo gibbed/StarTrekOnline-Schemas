@@ -15,26 +15,26 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pKey" type="STRING">
+    <column name="Pkey" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
       <redundant_name>Key</redundant_name>
     </column>
-    <column name="pKey" type="STRING">
+    <column name="Pkey" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
       <redundant_name>Key</redundant_name>
     </column>
     <column name="Val" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>STRUCTPARAM</flag>
@@ -44,11 +44,11 @@
         <format_string name="XML_ENCODE_BASE64">1</format_string>
       </format_strings>
     </column>
-    <column name="pVal" type="STRING">
-      <offset>4</offset>
+    <column name="Pval" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
         <flag>PERSIST</flag>
       </flags>
@@ -57,11 +57,11 @@
         <format_string name="XML_ENCODE_BASE64">1</format_string>
       </format_strings>
     </column>
-    <column name="pVal" type="STRING">
-      <offset>4</offset>
+    <column name="Pval" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
         <flag>PERSIST</flag>
       </flags>

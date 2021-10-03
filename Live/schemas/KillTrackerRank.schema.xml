@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="KillTrackerRank">
+  <table>
+    <column name="KillTrackerRank" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Rank" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Killcount" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Moddedkillcount" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Legendarykillcount" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

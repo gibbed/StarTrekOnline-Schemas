@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="EMailV3SendSuccessType">
+  <elements type="int">
+    <element name="Fail_NoUser">0</element>
+    <element name="Success">1</element>
+    <element name="Fail_Silenced">2</element>
+    <element name="Fail_Blacklist">3</element>
+    <element name="Fail_SpamDetected">4</element>
+  </elements>
+</enum>

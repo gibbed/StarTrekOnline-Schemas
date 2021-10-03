@@ -7,51 +7,51 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iVersion" type="INT">
+    <column name="Iversion" type="INT">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="pchCurrent" type="STRING">
-      <offset>4</offset>
+    <column name="Pchcurrent" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="SchemeRegion" type="STRUCT">
-      <offset>8</offset>
+    <column name="Schemeregion" type="STRUCT">
+      <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
       <subtable external="ControlSchemeRegion" />
     </column>
-    <column name="eaSchemeRegions" type="STRUCT">
-      <offset>8</offset>
+    <column name="Easchemeregions" type="STRUCT">
+      <offset>16</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
-      <redundant_name>SchemeRegion</redundant_name>
+      <redundant_name>Schemeregion</redundant_name>
       <subtable external="ControlSchemeRegion" />
     </column>
     <column name="Scheme" type="STRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
       <subtable external="ControlScheme" />
     </column>
-    <column name="eaSchemes" type="STRUCT">
-      <offset>12</offset>
+    <column name="Easchemes" type="STRUCT">
+      <offset>24</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>

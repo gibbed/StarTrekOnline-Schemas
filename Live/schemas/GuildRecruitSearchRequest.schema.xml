@@ -7,28 +7,28 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GuildIncludeSearchCat" type="STRUCT">
+    <column name="Guildincludesearchcat" type="STRUCT">
       <offset>0</offset>
       <subtable external="GuildRecruitSearchCat" />
     </column>
-    <column name="GuildExcludeSearchCat" type="STRUCT">
-      <offset>4</offset>
+    <column name="Guildexcludesearchcat" type="STRUCT">
+      <offset>8</offset>
       <subtable external="GuildRecruitSearchCat" />
     </column>
-    <column name="stringSearch" type="STRING">
-      <offset>8</offset>
-    </column>
-    <column name="RequesterAccountID" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="RequesterEntID" type="INT">
+    <column name="Stringsearch" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="RequesterLevel" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="RequesterVirtualShardID" type="INT">
+    <column name="Requesteraccountid" type="INT">
       <offset>24</offset>
+    </column>
+    <column name="Requesterentid" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Requesterlevel" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Requestervirtualshardid" type="INT">
+      <offset>36</offset>
     </column>
     <column name="}" type="END" />
   </table>

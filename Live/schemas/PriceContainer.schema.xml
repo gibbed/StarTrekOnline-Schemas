@@ -13,26 +13,26 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="fPrice" type="F32">
+    <column name="Fprice" type="F32">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
       <redundant_name>Price</redundant_name>
     </column>
     <column name="Currency" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pCurrency" type="STRING">
-      <offset>4</offset>
+    <column name="Pcurrency" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
       <redundant_name>Currency</redundant_name>

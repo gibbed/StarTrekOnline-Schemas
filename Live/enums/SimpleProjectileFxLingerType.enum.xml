@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="SimpleProjectileFxLingerType">
+  <elements type="int">
+    <element name="Static">0</element>
+    <element name="SimpleMotion">1</element>
+  </elements>
+</enum>

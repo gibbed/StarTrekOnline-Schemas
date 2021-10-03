@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TargetRank" type="STRING">
+    <column name="Targetrank" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="ItemSummaries" type="STRUCT">
-      <offset>4</offset>
+    <column name="Itemsummaries" type="STRUCT">
+      <offset>8</offset>
       <subtable external="ItemSummary" />
     </column>
     <column name="}" type="END" />

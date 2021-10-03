@@ -14,15 +14,15 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="hNodeDef" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hnodedef" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>GameProgressionNodeDef</dictionary_name>
     </column>
-    <column name="MissionIndex" type="INT">
-      <offset>8</offset>
+    <column name="Missionindex" type="INT">
+      <offset>16</offset>
     </column>
-    <column name="uTimestamp" type="INT">
-      <offset>12</offset>
+    <column name="Utimestamp" type="INT">
+      <offset>20</offset>
     </column>
     <column name="}" type="END" />
   </table>

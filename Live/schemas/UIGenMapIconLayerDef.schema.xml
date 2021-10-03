@@ -19,116 +19,128 @@
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>GLOBAL_NAME</flag>
       </flags>
       <redundant_name>Icon</redundant_name>
       <dictionary_name>Textures</dictionary_name>
     </column>
-    <column name="FormatIcon" type="STRING">
-      <offset>4</offset>
+    <column name="Formaticon" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>GLOBAL_NAME</flag>
       </flags>
       <dictionary_name>Textures</dictionary_name>
     </column>
-    <column name="FormatTexture" type="STRING">
-      <offset>4</offset>
+    <column name="Formattexture" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>GLOBAL_NAME</flag>
       </flags>
-      <redundant_name>FormatIcon</redundant_name>
+      <redundant_name>Formaticon</redundant_name>
       <dictionary_name>Textures</dictionary_name>
     </column>
     <column name="Color" type="INT">
-      <offset>8</offset>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <offset>16</offset>
+      <static_define_list external="Color" />
     </column>
-    <column name="FrameDuration" type="F32">
-      <offset>12</offset>
+    <column name="Frameduration" type="F32">
+      <offset>20</offset>
       <default>-1</default>
     </column>
-    <column name="FrameCount" type="INT">
-      <offset>16</offset>
+    <column name="Framecount" type="INT">
+      <offset>24</offset>
       <default>1</default>
     </column>
-    <column name="PercentX" type="F32">
-      <offset>20</offset>
+    <column name="Percentx" type="F32">
+      <offset>28</offset>
     </column>
-    <column name="PercentY" type="F32">
-      <offset>24</offset>
+    <column name="Percenty" type="F32">
+      <offset>32</offset>
     </column>
     <column name="OffsetFrom" type="INT">
-      <offset>28</offset>
+      <offset>36</offset>
       <static_define_list external="UIDirection" />
     </column>
-    <column name="AbovePlayer" type="F32">
-      <offset>32</offset>
+    <column name="Aboveplayer" type="F32">
+      <offset>40</offset>
       <default>-8388609</default>
     </column>
-    <column name="BelowPlayer" type="F32">
-      <offset>36</offset>
+    <column name="Belowplayer" type="F32">
+      <offset>44</offset>
       <default>2139095039</default>
     </column>
     <column name="Region" type="INT">
-      <offset>40</offset>
+      <offset>48</offset>
       <default>-1</default>
       <static_define_list external="WorldRegionType" />
     </column>
     <column name="Z" type="INT16">
-      <offset>44</offset>
+      <offset>52</offset>
     </column>
     <column name="Priority" type="INT16">
-      <offset>46</offset>
+      <offset>54</offset>
     </column>
-    <column name="LayerScale" type="F32">
-      <offset>48</offset>
+    <column name="Layerscale" type="F32">
+      <offset>56</offset>
       <default>1</default>
     </column>
-    <column name="ClampToEdge" type="BIT">
-      <offset>52</offset>
+    <column name="Rotation" type="EMBEDDEDSTRUCT">
+      <offset>60</offset>
+      <subtable external="UIAngle" />
+    </column>
+    <column name="Clamptoedge" type="BIT">
+      <offset>68</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Rotate" type="BIT">
-      <offset>52</offset>
+      <offset>68</offset>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Scale" type="BIT">
-      <offset>52</offset>
+      <offset>68</offset>
       <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ScaleToWorld" type="BIT">
-      <offset>52</offset>
+    <column name="Scaletoworld" type="BIT">
+      <offset>68</offset>
       <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Clip" type="BIT">
-      <offset>52</offset>
+      <offset>68</offset>
       <bit_offset>65540</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Pushable" type="BIT">
-      <offset>52</offset>
+      <offset>68</offset>
       <bit_offset>65541</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IgnoreWorldSize" type="BIT">
-      <offset>52</offset>
+    <column name="Ignoreworldsize" type="BIT">
+      <offset>68</offset>
       <bit_offset>65542</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SkinningOverride" type="BIT">
-      <offset>52</offset>
+    <column name="Skinningoverride" type="BIT">
+      <offset>68</offset>
       <bit_offset>65543</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ShowUpwardsAndDownwards" type="BIT">
-      <offset>52</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Showupwardsanddownwards" type="BIT">
+      <offset>69</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ShrinkToFit" type="BIT">
-      <offset>52</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Shrinktofit" type="BIT">
+      <offset>69</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

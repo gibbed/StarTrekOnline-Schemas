@@ -13,30 +13,30 @@
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="uAccountID" type="INT">
-      <offset>4</offset>
+    <column name="Uaccountid" type="INT">
+      <offset>8</offset>
     </column>
     <column name="Key" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Value" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="IntValue" type="INT64">
-      <offset>16</offset>
+      <offset>32</offset>
     </column>
     <column name="Operation" type="INT">
-      <offset>24</offset>
+      <offset>40</offset>
       <static_define_list external="AccountProxySetOperation" />
     </column>
     <column name="RequestID" type="INT">
-      <offset>28</offset>
+      <offset>44</offset>
     </column>
     <column name="}" type="END" />
   </table>

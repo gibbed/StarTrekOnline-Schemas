@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MachineMonitor_ToServer_CommandEnum">
+  <elements type="int">
+    <element name="KEYSTROKES">0</element>
+    <element name="COMMAND__DEPRECATED">1</element>
+    <element name="SHUTDOWN_GRACEFUL">2</element>
+    <element name="SHUTDOWN_IMMEDIATE">3</element>
+    <element name="EXECUTE_DEBUG_MENU_COMMAND">4</element>
+    <element name="DIALOG_RESULT">5</element>
+    <element name="HERE_IS_MACHINE_SUMMARY">6</element>
+    <element name="HERE_ARE_CRYPTIC_PROCESSES">7</element>
+    <element name="REQUEST_MEMDUMP">8</element>
+    <element name="CXERROR_FOR_ERRORBOX">9</element>
+    <element name="HERE_IS_QUERY_PROCESS_RESPONSE">10</element>
+    <element name="HERE_IS_MACHINELOCAL_DATA">11</element>
+    <element name="COMMAND_WINDOW_COMMAND">12</element>
+    <element name="CRASHREPORTER_BUTTON_PRESSED">13</element>
+    <element name="CRASHED_APP_NOW_CLOSED">14</element>
+    <element name="CRASH_COMPLETE">15</element>
+  </elements>
+</enum>

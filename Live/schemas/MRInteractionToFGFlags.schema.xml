@@ -11,19 +11,19 @@
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="failed" type="BIT">
+    <column name="Failed" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="reachedWaypoint" type="BIT">
+    <column name="Reachedwaypoint" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="waitingForTrigger" type="BIT">
+    <column name="Waitingfortrigger" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="hasPathVersion" type="BIT">
+    <column name="Haspathversion" type="BIT">
       <offset>0</offset>
       <bit_offset>65540</bit_offset>
     </column>

@@ -14,8 +14,12 @@
       </flags>
     </column>
     <column name="data" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="InvRewardRequest" />
+    </column>
+    <column name="Progressionxpgrants" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="ItemAssignmentSlotProgressionXPGrant" />
     </column>
     <column name="}" type="END" />
   </table>

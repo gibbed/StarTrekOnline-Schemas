@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="RebirthContainer">
+  <table>
+    <column name="RebirthContainer" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Entirecontainertext" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="TextParserBinaryBlock" />
+    </column>
+    <column name="Headersize" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="ContainerType" type="INT">
+      <offset>20</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="ContainerID" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Knownnondependentcontainer" type="U8">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

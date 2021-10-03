@@ -12,11 +12,11 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1192</default>
+      <default>1302</default>
       <static_define_list external="AttribType" />
     </column>
-    <column name="RewardTable" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Rewardtable" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>RewardTable</dictionary_name>
     </column>
     <column name="Level" type="IGNORE" />

@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="AutoPlacementVolumes" type="STRUCT">
+    <column name="Autoplacementvolumes" type="STRUCT">
       <offset>0</offset>
       <subtable external="AutoPlacementVolume" />
     </column>
-    <column name="PlacementProperties" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Placementproperties" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="AutoPlacementSet" />
     </column>
     <column name="}" type="END" />

@@ -7,55 +7,88 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="XPosition" type="F32">
+    <column name="Xposition" type="F32">
       <offset>0</offset>
     </column>
-    <column name="YPosition" type="F32">
+    <column name="Yposition" type="F32">
       <offset>4</offset>
     </column>
-    <column name="IconImage" type="STRING">
+    <column name="Scale" type="F32">
       <offset>8</offset>
+      <default>1</default>
+    </column>
+    <column name="Iconimage" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Borderoverride" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="EventName" type="STRING">
-      <offset>12</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Name" type="EMBEDDEDSTRUCT">
-      <offset>16</offset>
+      <offset>40</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="VisibleCondition" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="ToolTip" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Longdesc" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Visiblecondition" type="OPTIONALSTRUCT">
+      <offset>112</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="Expression" />
     </column>
-    <column name="RequiresCondition" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+    <column name="Requirescondition" type="OPTIONALSTRUCT">
+      <offset>120</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="Expression" />
     </column>
-    <column name="RecommendedCondition" type="OPTIONALSTRUCT">
-      <offset>36</offset>
+    <column name="Recommendedcondition" type="OPTIONALSTRUCT">
+      <offset>128</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="Expression" />
+    </column>
+    <column name="Minimumlevel" type="INT">
+      <offset>136</offset>
+    </column>
+    <column name="Maximumlevel" type="INT">
+      <offset>140</offset>
+    </column>
+    <column name="Sorttotop" type="U8">
+      <offset>144</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isheaderitem" type="U8">
+      <offset>145</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Excludefromtabs" type="U8">
+      <offset>146</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Action" type="OPTIONALSTRUCT">
-      <offset>40</offset>
+      <offset>152</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="WorldGameActionBlock" />
     </column>
-    <column name="overridingMissionDef" type="REFERENCE">
-      <offset>44</offset>
+    <column name="Overridingmissiondef" type="REFERENCE">
+      <offset>160</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>

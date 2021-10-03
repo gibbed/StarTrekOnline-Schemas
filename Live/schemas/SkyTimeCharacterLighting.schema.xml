@@ -9,52 +9,52 @@
     <column name="Time" type="F32">
       <offset>0</offset>
     </column>
-    <column name="AmbientHSVOffset" type="F32FIXEDARRAY">
+    <column name="Ambienthsvoffset" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
       <format_raw>6</format_raw>
     </column>
-    <column name="SkyLightHSVOffset" type="F32FIXEDARRAY">
+    <column name="Skylighthsvoffset" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>3</num_elements>
       <format_raw>6</format_raw>
     </column>
-    <column name="GroundLightHSVOffset" type="F32FIXEDARRAY">
+    <column name="Groundlighthsvoffset" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>3</num_elements>
       <format_raw>6</format_raw>
     </column>
-    <column name="SideLightHSVOffset" type="F32FIXEDARRAY">
+    <column name="Sidelighthsvoffset" type="F32FIXEDARRAY">
       <offset>40</offset>
       <num_elements>3</num_elements>
       <format_raw>6</format_raw>
     </column>
-    <column name="DiffuseHSVOffset" type="F32FIXEDARRAY">
+    <column name="Diffusehsvoffset" type="F32FIXEDARRAY">
       <offset>52</offset>
       <num_elements>3</num_elements>
       <format_raw>6</format_raw>
     </column>
-    <column name="SpecularHSVOffset" type="F32FIXEDARRAY">
+    <column name="Specularhsvoffset" type="F32FIXEDARRAY">
       <offset>64</offset>
       <num_elements>3</num_elements>
       <format_raw>6</format_raw>
     </column>
-    <column name="SecondaryDiffuseHSVOffset" type="F32FIXEDARRAY">
+    <column name="Secondarydiffusehsvoffset" type="F32FIXEDARRAY">
       <offset>76</offset>
       <num_elements>3</num_elements>
       <format_raw>6</format_raw>
     </column>
-    <column name="ShadowColorHSVOffset" type="F32FIXEDARRAY">
+    <column name="Shadowcolorhsvoffset" type="F32FIXEDARRAY">
       <offset>88</offset>
       <num_elements>3</num_elements>
       <format_raw>6</format_raw>
     </column>
-    <column name="BacklightHSV" type="F32FIXEDARRAY">
+    <column name="Backlighthsv" type="F32FIXEDARRAY">
       <offset>100</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="bfParamsSpecified" type="INTFIXEDARRAY">
+    <column name="Bfparamsspecified" type="INTFIXEDARRAY">
       <offset>112</offset>
       <flags>
         <flag>USEDFIELD</flag>
@@ -62,6 +62,6 @@
       </flags>
       <num_elements>1</num_elements>
     </column>
-    <column name="EndSkyCharacterLighting" type="END" />
+    <column name="Endskycharacterlighting" type="END" />
   </table>
 </parser>

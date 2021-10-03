@@ -6,35 +6,35 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="file_name" type="CURRENTFILE">
+    <column name="File_Name" type="CURRENTFILE">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="texture_name" type="STRING">
-      <offset>4</offset>
+    <column name="Texture_Name" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
     </column>
-    <column name="stretchableX" type="INT16FIXEDARRAY">
-      <offset>8</offset>
-      <num_elements>2</num_elements>
-    </column>
-    <column name="stretchableY" type="INT16FIXEDARRAY">
-      <offset>12</offset>
-      <num_elements>2</num_elements>
-    </column>
-    <column name="paddingX" type="INT16FIXEDARRAY">
+    <column name="Stretchablex" type="INT16FIXEDARRAY">
       <offset>16</offset>
       <num_elements>2</num_elements>
     </column>
-    <column name="paddingY" type="INT16FIXEDARRAY">
+    <column name="Stretchabley" type="INT16FIXEDARRAY">
       <offset>20</offset>
       <num_elements>2</num_elements>
     </column>
-    <column name="EndNinePatch" type="END" />
+    <column name="Paddingx" type="INT16FIXEDARRAY">
+      <offset>24</offset>
+      <num_elements>2</num_elements>
+    </column>
+    <column name="Paddingy" type="INT16FIXEDARRAY">
+      <offset>28</offset>
+      <num_elements>2</num_elements>
+    </column>
+    <column name="Endninepatch" type="END" />
   </table>
 </parser>

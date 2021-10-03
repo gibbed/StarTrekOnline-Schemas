@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="StickerBookPointCache">
+  <table>
+    <column name="StickerBookPointCache" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Pointcachedata" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="StickerBookPointCacheData" />
+    </column>
+    <column name="Pointcachebycollectiontype" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="StickerBookPointCacheByCollectionType" />
+    </column>
+    <column name="Pointcachebycollection" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="StickerBookPointCacheByCollection" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

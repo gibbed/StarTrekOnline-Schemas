@@ -17,7 +17,7 @@
     <column name="Key" type="INT">
       <offset>4</offset>
     </column>
-    <column name="duplicateField" type="INT">
+    <column name="Duplicatefield" type="INT">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

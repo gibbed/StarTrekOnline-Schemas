@@ -10,21 +10,22 @@
     <column name="ArgName" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="ArgIndex" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="AllowFullLock" type="U8">
+    <column name="Argindex" type="INT">
       <offset>8</offset>
     </column>
-    <column name="ExpectedLocks" type="STRING">
+    <column name="Allowfulllock" type="U8">
       <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Expectedlocks" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="Locks" type="STRUCT">
-      <offset>24</offset>
+      <offset>40</offset>
       <subtable external="ATRFixedUpLock" />
     </column>
-    <column name="EarrayUses" type="STRUCT">
-      <offset>28</offset>
+    <column name="Earrayuses" type="STRUCT">
+      <offset>48</offset>
       <subtable external="ATRFixedUpEarrayUse" />
     </column>
     <column name="}" type="END" />

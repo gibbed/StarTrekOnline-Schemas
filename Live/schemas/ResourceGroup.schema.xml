@@ -11,11 +11,11 @@
       <offset>0</offset>
     </column>
     <column name="Groups" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="ResourceGroup" />
     </column>
     <column name="Infos" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="ResourceInfo" />
     </column>
     <column name="}" type="END" />

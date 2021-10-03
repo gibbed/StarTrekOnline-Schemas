@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MissionListRequirementComparator">
+  <elements type="int">
+    <element name="InHistory">0</element>
+    <element name="NotInHistory">1</element>
+    <element name="InProgress">2</element>
+    <element name="NotInProgress">3</element>
+    <element name="HasEverSucceeded">4</element>
+    <element name="HasEverFailed">5</element>
+    <element name="LastTimeSucceeded">6</element>
+    <element name="LastTimeFailed">7</element>
+  </elements>
+</enum>

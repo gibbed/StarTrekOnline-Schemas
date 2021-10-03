@@ -6,7 +6,6 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="{" type="START" />
     <column name="Name" type="STRING">
       <offset>0</offset>
       <flags>
@@ -14,17 +13,17 @@
       </flags>
     </column>
     <column name="Size" type="F32">
-      <offset>4</offset>
-    </column>
-    <column name="SizeSecondary" type="F32">
       <offset>8</offset>
     </column>
+    <column name="Sizesecondary" type="F32">
+      <offset>12</offset>
+    </column>
     <column name="Stats" type="STRUCT">
-      <offset>60</offset>
+      <offset>16</offset>
       <subtable external="ModuleMemOperationStats" />
     </column>
     <column name="Budget" type="STRUCT">
-      <offset>64</offset>
+      <offset>24</offset>
       <subtable external="MemoryBudget" />
     </column>
     <column name="End" type="END" />

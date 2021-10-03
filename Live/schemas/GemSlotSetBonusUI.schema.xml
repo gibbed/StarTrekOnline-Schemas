@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="GemSlotSetBonusUI">
+  <table>
+    <column name="GemSlotSetBonusUI" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Gemtype" type="INTARRAY">
+      <offset>0</offset>
+      <static_define_list external="ItemGemType" />
+    </column>
+    <column name="PowerDef" type="REFERENCE">
+      <offset>8</offset>
+      <dictionary_name>PowerDef</dictionary_name>
+    </column>
+    <column name="Iscurrentpower" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -9,12 +9,14 @@
     <element name="Exploit">32</element>
     <element name="Miss">64</element>
     <element name="ShowPowerDisplayName">128</element>
-    <element name="Kill">256</element>
-    <element name="Pseudo">512</element>
-    <element name="ShowSpecial">1024</element>
-    <element name="NoFloater">2048</element>
-    <element name="SpecialMiss">4096</element>
-    <element name="ReactiveDodge">8192</element>
-    <element name="ReactiveBlock">16384</element>
+    <element name="ShieldBreak">256</element>
+    <element name="Kill">512</element>
+    <element name="Pseudo">1024</element>
+    <element name="ShowSpecial">2048</element>
+    <element name="NoFloater">4096</element>
+    <element name="SpecialMiss">8192</element>
+    <element name="ReactiveDodge">16384</element>
+    <element name="ReactiveBlock">32768</element>
+    <element name="CombatNotification">65536</element>
   </elements>
 </enum>

@@ -4,5 +4,7 @@
     <element name="UTC">0</element>
     <element name="PST">1</element>
     <element name="PDT">2</element>
+    <element name="RUS">3</element>
+    <element name="CHN">4</element>
   </elements>
 </enum>

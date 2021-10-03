@@ -7,24 +7,24 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="offAttrib" type="INT">
+    <column name="Offattrib" type="INT">
       <offset>0</offset>
       <static_define_list external="AttribType" />
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="Basic" type="F32">
       <offset>8</offset>
     </column>
-    <column name="Str" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="Res" type="F32">
+    <column name="Basic" type="F32">
       <offset>16</offset>
     </column>
-    <column name="Changed" type="F32">
+    <column name="Str" type="F32">
       <offset>20</offset>
+    </column>
+    <column name="Res" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Changed" type="F32">
+      <offset>28</offset>
     </column>
     <column name="}" type="END" />
   </table>

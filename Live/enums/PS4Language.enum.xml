@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PS4Language">
+  <elements type="int">
+    <element name="Language_Japanese">0</element>
+    <element name="Language_EnglishUS">1</element>
+    <element name="Language_FrenchFR">2</element>
+    <element name="Language_Spanish">3</element>
+    <element name="Language_German">4</element>
+    <element name="Language_Italian">5</element>
+    <element name="Language_Dutch">6</element>
+    <element name="Language_Portuguese_PT">7</element>
+    <element name="Language_Russian">8</element>
+    <element name="Language_Korean">9</element>
+    <element name="Language_ChineseTraditional">10</element>
+    <element name="Language_ChineseSimplified">11</element>
+    <element name="Language_Finnish">12</element>
+    <element name="Language_Swedish">13</element>
+    <element name="Language_Danish">14</element>
+    <element name="Language_Norwegian">15</element>
+    <element name="Language_Polish">16</element>
+    <element name="Language_Portuguese_Brazil">17</element>
+    <element name="Language_English_GB">18</element>
+    <element name="Language_Turkish">19</element>
+    <element name="Language_Spanish_LA">20</element>
+    <element name="Arabic">21</element>
+    <element name="Language_FrenchCA">22</element>
+  </elements>
+</enum>

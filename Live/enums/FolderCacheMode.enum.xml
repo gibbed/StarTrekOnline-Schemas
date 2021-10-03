@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FolderCacheMode">
+  <elements type="int">
+    <element name="DEVELOPMENT">0</element>
+    <element name="DEVELOPMENT_DYNAMIC">1</element>
+    <element name="FALL_BACK_TO_PIGS">2</element>
+    <element name="PIGS_ONLY">3</element>
+    <element name="FILESYSTEM_ONLY">4</element>
+  </elements>
+</enum>

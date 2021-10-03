@@ -6,5 +6,6 @@
     <element name="Lifetime">2</element>
     <element name="Modifier">4</element>
     <element name="GlobalModifier">8</element>
+    <element name="GuildAlliance">16</element>
   </elements>
 </enum>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MicroTransactionShardType">
+  <elements type="int">
+    <element name="ALL">0</element>
+    <element name="PC">1</element>
+    <element name="XBOX">2</element>
+    <element name="PS4">3</element>
+    <element name="CNX">4</element>
+    <element name="HK">5</element>
+  </elements>
+</enum>

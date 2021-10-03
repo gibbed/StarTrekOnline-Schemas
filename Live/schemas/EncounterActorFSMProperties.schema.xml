@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="FSMType" type="INT">
+    <column name="Fsmtype" type="INT">
       <offset>0</offset>
       <static_define_list external="EncounterTemplateOverrideType" />
     </column>
     <column name="FSM" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>FSM</dictionary_name>
     </column>
     <column name="}" type="END" />

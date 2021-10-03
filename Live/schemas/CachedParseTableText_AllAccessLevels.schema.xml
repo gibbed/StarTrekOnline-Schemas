@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CRC" type="INT">
+    <column name="Crc" type="INT">
       <offset>0</offset>
     </column>
-    <column name="StringsByAccessLevel" type="STRUCT">
-      <offset>4</offset>
+    <column name="Stringsbyaccesslevel" type="STRUCT">
+      <offset>8</offset>
       <subtable external="CachedParseTableText_OneAccessLevel" />
     </column>
     <column name="}" type="END" />

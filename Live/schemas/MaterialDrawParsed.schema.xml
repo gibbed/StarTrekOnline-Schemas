@@ -7,29 +7,29 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="material_name_idx" type="INT">
+    <column name="Material_Name_Idx" type="INT">
       <offset>0</offset>
     </column>
-    <column name="fallback_idx" type="BIT">
+    <column name="Fallback_Idx" type="BIT">
       <offset>4</offset>
       <bit_offset>393216</bit_offset>
     </column>
-    <column name="has_swaps" type="BIT">
+    <column name="Has_Swaps" type="BIT">
       <offset>4</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="is_occluder" type="BIT">
+    <column name="Is_Occluder" type="BIT">
       <offset>4</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="texture_idxs" type="INTARRAY">
+    <column name="Texture_Idxs" type="INTARRAY">
       <offset>8</offset>
     </column>
-    <column name="constants" type="F32ARRAY">
-      <offset>12</offset>
-    </column>
-    <column name="constant_mappings" type="STRUCT">
+    <column name="Constants" type="F32ARRAY">
       <offset>16</offset>
+    </column>
+    <column name="Constant_Mappings" type="STRUCT">
+      <offset>24</offset>
       <subtable external="MaterialConstantMappingFake" />
     </column>
     <column name="}" type="END" />

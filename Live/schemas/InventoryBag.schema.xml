@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BagID" type="INT">
+    <column name="Bagid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>REQUIRED</flag>
@@ -18,8 +18,8 @@
       </flags>
       <static_define_list external="InvBagIDs" />
     </column>
-    <column name="inv_def" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Inv_Def" type="REFERENCE">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -27,26 +27,26 @@
       </flags>
       <dictionary_name>DefaultInventory</dictionary_name>
     </column>
-    <column name="MaxSlots" type="INT">
-      <offset>8</offset>
+    <column name="Maxslots" type="INT">
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="n_additional_slots" type="INT">
-      <offset>8</offset>
+    <column name="N_Additional_Slots" type="INT">
+      <offset>16</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>MaxSlots</redundant_name>
+      <redundant_name>Maxslots</redundant_name>
     </column>
-    <column name="ppIndexedInventorySlots" type="STRUCT">
-      <offset>12</offset>
+    <column name="Ppindexedinventoryslots" type="STRUCT">
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SELF_ONLY</flag>
@@ -55,20 +55,20 @@
       </flags>
       <subtable external="InventorySlot" />
     </column>
-    <column name="pRewardBagInfo" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Prewardbaginfo" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="RewardBagInfo" />
     </column>
-    <column name="pGuildBankInfo" type="OPTIONALSTRUCT">
-      <offset>20</offset>
+    <column name="Pguildbankinfo" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="GuildBankTabInfo" />
     </column>
-    <column name="iActiveSlot" type="INTARRAY">
-      <offset>24</offset>
+    <column name="Iactiveslot" type="INTARRAY">
+      <offset>48</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -76,37 +76,64 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="eaiActiveSlots" type="INTARRAY">
-      <offset>24</offset>
+    <column name="Eaiactiveslots" type="INTARRAY">
+      <offset>48</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
-      <redundant_name>iActiveSlot</redundant_name>
+      <redundant_name>Iactiveslot</redundant_name>
     </column>
-    <column name="eaiPredictedActiveSlots" type="INTARRAY">
-      <offset>28</offset>
+    <column name="Eaipredictedactiveslots" type="INTARRAY">
+      <offset>56</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
-    <column name="uiTeamOwner" type="INT">
-      <offset>32</offset>
+    <column name="Uiteamowner" type="INT">
+      <offset>64</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="bHideCostumes" type="BIT">
-      <offset>36</offset>
+    <column name="Bhidecostumes" type="BIT">
+      <offset>68</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Newslotindexes" type="INTARRAY">
+      <offset>72</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eainewslotindexes" type="INTARRAY">
+      <offset>72</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Newslotindexes</redundant_name>
+    </column>
+    <column name="Dirtybit" type="U8">
+      <offset>80</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+        <flag>DIRTY_BIT</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ThreadedBlameBehavior">
+  <elements type="int">
+    <element name="REPORT_IN_BLAME_THREAD">0</element>
+    <element name="REPORT_IN_MAIN_THREAD">1</element>
+    <element name="CB_IN_BLAME_THREAD">2</element>
+    <element name="CB_IN_MAIN_THREAD">3</element>
+  </elements>
+</enum>

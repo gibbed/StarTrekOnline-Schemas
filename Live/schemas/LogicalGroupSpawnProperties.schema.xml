@@ -6,18 +6,18 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="RandomType" type="INT">
+    <column name="Randomtype" type="INT">
       <offset>0</offset>
       <static_define_list external="LogicalGroupRandomType" />
     </column>
-    <column name="SpawnAmountType" type="INT">
+    <column name="Spawnamounttype" type="INT">
       <offset>4</offset>
       <static_define_list external="LogicalGroupSpawnAmountType" />
     </column>
-    <column name="SpawnAmount" type="INT">
+    <column name="Spawnamount" type="INT">
       <offset>8</offset>
     </column>
-    <column name="LockoutRadius" type="F32">
+    <column name="Lockoutradius" type="F32">
       <offset>12</offset>
     </column>
     <column name="End" type="END" />

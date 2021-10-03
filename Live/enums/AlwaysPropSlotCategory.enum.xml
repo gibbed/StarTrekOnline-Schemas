@@ -2,5 +2,6 @@
 <enum name="AlwaysPropSlotCategory">
   <elements type="int">
     <element name="kAlwaysPropSlotCategory_Default">0</element>
+    <element name="DutyOfficer">1</element>
   </elements>
 </enum>

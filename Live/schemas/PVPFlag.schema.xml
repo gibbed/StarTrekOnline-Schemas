@@ -14,25 +14,25 @@
       </flags>
     </column>
     <column name="Group" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="subgroup" type="INT">
       <offset>8</offset>
     </column>
-    <column name="infectious" type="BIT">
-      <offset>16</offset>
+    <column name="Subgroup" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Infectious" type="BIT">
+      <offset>24</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="infect_push" type="BIT">
-      <offset>16</offset>
+    <column name="Infect_Push" type="BIT">
+      <offset>24</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="infect_heal" type="BIT">
-      <offset>16</offset>
+    <column name="Infect_Heal" type="BIT">
+      <offset>24</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="combat_out" type="BIT">
-      <offset>16</offset>
+    <column name="Combat_Out" type="BIT">
+      <offset>24</offset>
       <bit_offset>65539</bit_offset>
     </column>
     <column name="}" type="END" />

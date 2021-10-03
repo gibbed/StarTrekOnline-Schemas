@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="erPet" type="INT">
+    <column name="Erpet" type="INT">
       <offset>0</offset>
     </column>
     <column name="Type" type="INT">
       <offset>4</offset>
       <static_define_list external="PetTargetType" />
     </column>
-    <column name="erTarget" type="INT">
+    <column name="Ertarget" type="INT">
       <offset>8</offset>
     </column>
     <column name="Index" type="INT">

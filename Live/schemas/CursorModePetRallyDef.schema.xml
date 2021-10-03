@@ -7,61 +7,61 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CursorModeName" type="STRING">
+    <column name="Cursormodename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CursorModeName:" type="STRING">
+    <column name="Cursormodename:" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>CursorModeName</redundant_name>
+      <redundant_name>Cursormodename</redundant_name>
     </column>
-    <column name="CursorModeUnplaceableName" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="CursorModeUnplaceableName:" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>CursorModeUnplaceableName</redundant_name>
-    </column>
-    <column name="RallyDragPlacementFXName" type="STRING">
+    <column name="Cursormodeunplaceablename" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="RallyDragPlacementFXName:" type="STRING">
+    <column name="Cursormodeunplaceablename:" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>RallyDragPlacementFXName</redundant_name>
+      <redundant_name>Cursormodeunplaceablename</redundant_name>
     </column>
-    <column name="RallyPointFXBaseName" type="STRING">
-      <offset>12</offset>
+    <column name="Rallydragplacementfxname" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="RallyPointFXBaseName:" type="STRING">
-      <offset>12</offset>
+    <column name="Rallydragplacementfxname:" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>RallyPointFXBaseName</redundant_name>
+      <redundant_name>Rallydragplacementfxname</redundant_name>
+    </column>
+    <column name="Rallypointfxbasename" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rallypointfxbasename:" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Rallypointfxbasename</redundant_name>
     </column>
     <column name="}" type="END" />
   </table>

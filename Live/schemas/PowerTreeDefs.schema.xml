@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PowerTree" type="STRUCT">
+    <column name="Powertree" type="STRUCT">
       <offset>0</offset>
       <subtable external="PowerTreeDef" />
     </column>

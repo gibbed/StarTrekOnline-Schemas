@@ -10,32 +10,41 @@
     <column name="RequestID" type="INT">
       <offset>0</offset>
     </column>
-    <column name="TotalFileSize" type="INT64">
+    <column name="Linkid" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Totalfilesize" type="INT64">
       <offset>8</offset>
     </column>
-    <column name="BytesSent" type="INT64">
+    <column name="Bytessent" type="INT64">
       <offset>16</offset>
     </column>
-    <column name="ReadHead" type="INT64">
+    <column name="Readhead" type="INT64">
       <offset>32</offset>
     </column>
-    <column name="WriteHead" type="INT64">
+    <column name="Writehead" type="INT64">
       <offset>40</offset>
     </column>
-    <column name="UpdatesReceived" type="INT">
+    <column name="Updatesreceived" type="INT">
       <offset>48</offset>
     </column>
-    <column name="HeaderSent" type="U8">
+    <column name="Headersent" type="U8">
       <offset>52</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FirstRequestSent" type="U8">
+    <column name="Firstrequestsent" type="U8">
       <offset>53</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="FileName" type="STRING">
       <offset>56</offset>
     </column>
     <column name="ErrorString" type="STRING">
-      <offset>60</offset>
+      <offset>64</offset>
+    </column>
+    <column name="Urlargs" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="UrlArgumentList" />
     </column>
     <column name="}" type="END" />
   </table>

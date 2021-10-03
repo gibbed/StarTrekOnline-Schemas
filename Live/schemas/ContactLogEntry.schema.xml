@@ -14,36 +14,36 @@
       </flags>
     </column>
     <column name="Text" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="HeadshotStyleDef" type="STRING">
-      <offset>8</offset>
+    <column name="Headshotstyledef" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="hHeadshotCostumeRef" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Hheadshotcostumeref" type="REFERENCE">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="HeadshotCostume" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Headshotcostume" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <subtable external="PlayerCostume" />
     </column>
-    <column name="erHeadshotEntity" type="INT">
-      <offset>20</offset>
+    <column name="Erheadshotentity" type="INT">
+      <offset>40</offset>
     </column>
-    <column name="HeadshotPetID" type="INT">
-      <offset>24</offset>
+    <column name="Headshotpetid" type="INT">
+      <offset>44</offset>
     </column>
-    <column name="uiTimestamp" type="INT">
-      <offset>28</offset>
+    <column name="Uitimestamp" type="INT">
+      <offset>48</offset>
     </column>
     <column name="}" type="END" />
   </table>

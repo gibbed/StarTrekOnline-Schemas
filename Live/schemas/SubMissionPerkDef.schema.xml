@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SubMissionPerkDef">
+  <table>
+    <column name="SubMissionPerkDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Autogrant" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Repeattype" type="INT">
+      <offset>4</offset>
+      <static_define_list external="SubMissionPerkRepeatType" />
+    </column>
+    <column name="Rank" type="STRINGARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

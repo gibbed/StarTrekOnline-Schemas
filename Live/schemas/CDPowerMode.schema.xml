@@ -10,17 +10,17 @@
     <column name="PowerMode" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="erPersonal" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="PersonalName" type="STRING">
+    <column name="Erpersonal" type="INT">
       <offset>8</offset>
     </column>
-    <column name="PersonalDebugName" type="STRING">
-      <offset>12</offset>
+    <column name="Personalname" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Personaldebugname" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

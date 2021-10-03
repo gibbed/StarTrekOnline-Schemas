@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="entryID" type="INT">
+    <column name="Entryid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="displayTime" type="INT">
+    <column name="Displaytime" type="INT">
       <offset>4</offset>
     </column>
     <column name="Type" type="INT">
@@ -21,19 +21,19 @@
       <static_define_list external="DiaryEntryType" />
     </column>
     <column name="Title" type="STRING">
-      <offset>12</offset>
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="MissionName" type="STRING">
-      <offset>16</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="tagBits" type="INT64">
-      <offset>24</offset>
+    <column name="Tagbits" type="INT64">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

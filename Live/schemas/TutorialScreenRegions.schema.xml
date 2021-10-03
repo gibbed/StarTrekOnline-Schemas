@@ -7,9 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TutorialScreenRegion" type="STRUCT">
+    <column name="Tutorialscreenregion" type="STRUCT">
       <offset>0</offset>
       <subtable external="TutorialScreenRegionInfo" />
+    </column>
+    <column name="Validplatforms" type="INTARRAY">
+      <offset>8</offset>
+      <static_define_list external="ShardPlatform" />
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

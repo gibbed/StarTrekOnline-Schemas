@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <enum name="enumParserLoadFlags">
   <elements type="int">
+    <element name="NONE">0</element>
     <element name="INCLUDEHIDDEN">2</element>
     <element name="FORCEREBUILD">4</element>
     <element name="INTERNALLOAD">8</element>
@@ -18,11 +19,11 @@
     <element name="NOERROR_ONIGNORE">65536</element>
     <element name="DONTREBUILD">131072</element>
     <element name="HUGEBUFFERFORBINARYFILE">262144</element>
-    <element name="DEVMODE">524288</element>
-    <element name="IGNORE_EXTENSIONS">1048576</element>
+    <element name="BLOBBED_BIN_FORMAT">524288</element>
+    <element name="BLOBBED_BIN_VERIFY">1048576</element>
     <element name="NO_RELOAD">2097152</element>
     <element name="ALLOW_BINS_WITH_ERRORS_AND_RELOADING">4194304</element>
-    <element name="ONLY_LOAD_BIN_FILE_IF_IT_HAD_NO_ERRORS">8388608</element>
+    <element name="ONE_LINE_ONLY">8388608</element>
     <element name="LASTPLUSONE">8388609</element>
   </elements>
 </enum>

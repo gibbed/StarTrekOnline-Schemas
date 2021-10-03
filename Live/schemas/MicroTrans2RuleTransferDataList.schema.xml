@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MicroTrans2RuleTransferDataList">
+  <table>
+    <column name="MicroTrans2RuleTransferDataList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Ulastevaluationtime" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Microtrans2rulestransferdata" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="MicroTrans2RuleUIData" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -11,11 +11,11 @@
       <offset>0</offset>
       <static_define_list external="ItemQuality" />
     </column>
-    <column name="BaseItemRecipeName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="ItemPowerRecipes" type="STRINGARRAY">
+    <column name="Baseitemrecipename" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Itempowerrecipes" type="STRINGARRAY">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="GroupProjectCofferContributionUI">
+  <table>
+    <column name="GroupProjectCofferContributionUI" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Donationitemkey" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Donationitemdisplayname" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Donationitemiconname" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Maxdonationitemamount" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Totalowneddonationitemamount" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Maxdonateableamount" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Contributionitemamounttodonate" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Cancontribute" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ubatchsize" type="INT">
+      <offset>44</offset>
+      <default>1</default>
+    </column>
+    <column name="Rewarditemdisplayname" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rewarditemiconname" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rewarditemamount" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Totalrewarditemamountowned" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Numerickey" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Numericdescription" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Numericicon" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Amountofnumericincoffer" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Ucoffernumericamountperday" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

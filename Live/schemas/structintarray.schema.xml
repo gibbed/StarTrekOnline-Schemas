@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<parser name="structintarray">
+<parser name="Structintarray">
   <table>
     <column type="INTARRAY">
       <offset>0</offset>

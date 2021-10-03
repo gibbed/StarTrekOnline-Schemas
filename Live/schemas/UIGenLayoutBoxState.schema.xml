@@ -12,55 +12,61 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>12</default>
+      <default>13</default>
       <static_define_list external="UIGenType" />
     </column>
     <column name="Instances" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCT_NORECURSE</flag>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="UIGenLayoutBoxInstance" />
     </column>
-    <column name="TemplateGens" type="STRUCT">
-      <offset>12</offset>
+    <column name="Templategens" type="STRUCT">
+      <offset>24</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="UIGenChild" />
     </column>
-    <column name="Internals" type="STRUCT">
-      <offset>16</offset>
-      <subtable external="UIGenNamedInternal" />
+    <column name="Newinstances" type="INT">
+      <offset>36</offset>
     </column>
-    <column name="NewInstances" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="BadTemplateNames" type="STRINGARRAY">
-      <offset>28</offset>
+    <column name="Badtemplatenames" type="STRINGARRAY">
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="LayoutDirection" type="U8">
-      <offset>32</offset>
+    <column name="Layoutdirection" type="U8">
+      <offset>56</offset>
     </column>
     <column name="Selected" type="INT">
-      <offset>36</offset>
+      <offset>60</offset>
+      <default>-9999</default>
+    </column>
+    <column name="Managedfocusindex" type="INT">
+      <offset>64</offset>
       <default>-9999</default>
     </column>
     <column name="Rows" type="INT16">
-      <offset>40</offset>
+      <offset>68</offset>
     </column>
     <column name="Columns" type="INT16">
-      <offset>42</offset>
+      <offset>70</offset>
     </column>
-    <column name="BoundWidth" type="F32">
-      <offset>44</offset>
+    <column name="Boundwidth" type="F32">
+      <offset>72</offset>
     </column>
-    <column name="BoundHeight" type="F32">
-      <offset>48</offset>
+    <column name="Boundheight" type="F32">
+      <offset>76</offset>
+    </column>
+    <column name="Displayindexbegin" type="INT16">
+      <offset>80</offset>
+    </column>
+    <column name="Displayindexend" type="INT16">
+      <offset>82</offset>
     </column>
     <column name="}" type="END" />
   </table>

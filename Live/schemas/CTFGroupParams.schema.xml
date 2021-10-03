@@ -15,35 +15,46 @@
       <default>3</default>
       <static_define_list external="PVPGameType" />
     </column>
-    <column name="CTFScore" type="INT">
+    <column name="Ctfscore" type="INT">
       <offset>4</offset>
     </column>
-    <column name="NumMembers" type="INT">
+    <column name="Nummembers" type="INT">
       <offset>8</offset>
     </column>
-    <column name="FlagStatus" type="INT">
+    <column name="Nummembersalive" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Uiwavestarttimestamp" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Uicurrentwaveduration" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Flagstatus" type="INT">
+      <offset>24</offset>
       <static_define_list external="CTFFlagStatus" />
     </column>
-    <column name="TimeDropped" type="F32">
-      <offset>16</offset>
+    <column name="Timedropped" type="F32">
+      <offset>28</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="vecFlagLocation" type="F32FIXEDARRAY">
-      <offset>20</offset>
-      <flags>
-        <flag>SERVER_ONLY</flag>
-      </flags>
-      <num_elements>3</num_elements>
-    </column>
-    <column name="vecCapLocation" type="F32FIXEDARRAY">
+    <column name="Vecflaglocation" type="F32FIXEDARRAY">
       <offset>32</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="FlagHolder" type="INT">
+    <column name="Veccaplocation" type="F32FIXEDARRAY">
       <offset>44</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Flagholder" type="INT">
+      <offset>56</offset>
     </column>
     <column name="}" type="END" />
   </table>

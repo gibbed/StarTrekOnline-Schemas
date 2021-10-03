@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="esLoadScreens" type="STRUCT">
+    <column name="Esloadscreens" type="STRUCT">
       <offset>0</offset>
       <subtable external="LoadScreenPair" />
     </column>

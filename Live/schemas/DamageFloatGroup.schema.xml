@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DamageFloats" type="STRUCT">
+    <column name="Damagefloats" type="STRUCT">
       <offset>0</offset>
       <subtable external="DamageFloat" />
     </column>

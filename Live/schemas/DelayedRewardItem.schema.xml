@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DelayedRewardItem">
+  <table>
+    <column name="DelayedRewardItem" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Rewarditem" type="OPTIONALSTRUCT">
+      <offset>0</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="Item" />
+    </column>
+    <column name="Itemnumericop" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <static_define_list external="NumericOp" />
+    </column>
+    <column name="Earewarddataentries" type="STRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="DelayedRewardItemRewardData" />
+    </column>
+    <column name="Bforcebind" type="BIT">
+      <offset>24</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Bforcebindtoaccount" type="BIT">
+      <offset>24</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Pcrewardtedtypename" type="IGNORE" />
+    <column name="Rewardgatedfromtable" type="IGNORE" />
+    <column name="Therewardgatedtype" type="IGNORE" />
+    <column name="Therewardgatedtype" type="IGNORE" />
+    <column name="Urewardgatedvalue" type="IGNORE" />
+    <column name="Rewardgatedvalue" type="IGNORE" />
+    <column name="Rewardgatedisaccountgated" type="IGNORE" />
+    <column name="Rewardgatedsharedbanknumeric" type="IGNORE" />
+    <column name="Rewardgatedisaccountgated" type="IGNORE" />
+    <column name="Rewardtableusedaccount" type="IGNORE" />
+    <column name="Rewardtableusedcharacter" type="IGNORE" />
+    <column name="}" type="END" />
+  </table>
+</parser>

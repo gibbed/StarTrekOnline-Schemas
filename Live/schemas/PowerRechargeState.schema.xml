@@ -7,11 +7,9 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="puiIDs" type="INTARRAY">
+    <column name="Entries" type="STRUCT">
       <offset>0</offset>
-    </column>
-    <column name="pfTimes" type="F32ARRAY">
-      <offset>4</offset>
+      <subtable external="PowerRechargeStateEntry" />
     </column>
     <column name="}" type="END" />
   </table>

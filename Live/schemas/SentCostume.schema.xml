@@ -14,7 +14,7 @@
     <column name="ID" type="INT">
       <offset>4</offset>
     </column>
-    <column name="ConstCostume" type="OPTIONALSTRUCT">
+    <column name="Constcostume" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <subtable external="PlayerCostume" />
     </column>

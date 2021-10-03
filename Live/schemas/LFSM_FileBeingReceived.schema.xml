@@ -16,11 +16,11 @@
     <column name="FileName" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="ExpectedSize" type="INT64">
-      <offset>16</offset>
-    </column>
-    <column name="SizeReceived" type="INT64">
+    <column name="Expectedsize" type="INT64">
       <offset>24</offset>
+    </column>
+    <column name="Sizereceived" type="INT64">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

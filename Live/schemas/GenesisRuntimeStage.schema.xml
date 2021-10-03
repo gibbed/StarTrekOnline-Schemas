@@ -14,7 +14,7 @@
       </flags>
     </column>
     <column name="Error" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="GenesisRuntimeError" />
     </column>
     <column name="}" type="END" />

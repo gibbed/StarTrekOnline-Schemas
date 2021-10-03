@@ -7,23 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MinMembersAllGroups" type="INT">
+    <column name="Maxtimetowait" type="INT">
       <offset>0</offset>
     </column>
-    <column name="MaxTimeToWait" type="INT">
+    <column name="Jointimelimit" type="INT">
       <offset>4</offset>
     </column>
-    <column name="JoinTimeLimit" type="INT">
+    <column name="Privatemaxwaittime" type="INT">
       <offset>8</offset>
     </column>
-    <column name="PrivateMaxWaitTime" type="INT">
+    <column name="Privateminmembersallgroups" type="INT">
       <offset>12</offset>
     </column>
-    <column name="PrivateMinMembersAllGroups" type="INT">
+    <column name="Useprivatesettings" type="BIT">
       <offset>16</offset>
-    </column>
-    <column name="UsePrivateSettings" type="BIT">
-      <offset>20</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

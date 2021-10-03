@@ -9,36 +9,43 @@
     <column name="Time" type="F32">
       <offset>0</offset>
     </column>
-    <column name="WorldSampleRadius" type="F32">
+    <column name="Intensity" type="F32">
       <offset>4</offset>
+      <default>1</default>
     </column>
-    <column name="WorldSampleFalloff" type="F32">
+    <column name="Radius" type="F32">
       <offset>8</offset>
+      <default>5</default>
     </column>
-    <column name="WorldSampleScale" type="F32">
+    <column name="Bias" type="F32">
       <offset>12</offset>
+      <default>1036831949</default>
     </column>
-    <column name="OverallScale" type="F32">
+    <column name="Litamount" type="F32">
       <offset>16</offset>
-    </column>
-    <column name="OverallOffset" type="F32">
-      <offset>20</offset>
-    </column>
-    <column name="LitAmount" type="F32">
-      <offset>24</offset>
       <default>1056964608</default>
     </column>
-    <column name="bfParamsSpecified" type="INTFIXEDARRAY">
-      <offset>28</offset>
+    <column name="Tintcolorhsv" type="F32FIXEDARRAY">
+      <offset>20</offset>
+      <num_elements>3</num_elements>
+      <format>HSV</format>
+    </column>
+    <column name="Bfparamsspecified" type="INTFIXEDARRAY">
+      <offset>32</offset>
       <flags>
         <flag>USEDFIELD</flag>
         <flag>USEROPTIONBIT_1</flag>
       </flags>
       <num_elements>1</num_elements>
     </column>
-    <column name="PixelSampleRadius" type="IGNORE" />
-    <column name="PixelSampleFalloff" type="IGNORE" />
-    <column name="PixelSampleScale" type="IGNORE" />
-    <column name="EndAmbientOcclusion" type="END" />
+    <column name="Pixelsampleradius" type="IGNORE" />
+    <column name="Pixelsamplefalloff" type="IGNORE" />
+    <column name="Pixelsamplescale" type="IGNORE" />
+    <column name="Worldsampleradius" type="IGNORE" />
+    <column name="Worldsamplefalloff" type="IGNORE" />
+    <column name="Worldsamplescale" type="IGNORE" />
+    <column name="Overallscale" type="IGNORE" />
+    <column name="Overalloffset" type="IGNORE" />
+    <column name="Endambientocclusion" type="END" />
   </table>
 </parser>

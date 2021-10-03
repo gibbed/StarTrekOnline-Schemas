@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PerfMetricReport_F32">
+  <table>
+    <column name="PerfMetricReport_F32" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Type" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>OBJECTTYPE</flag>
+      </flags>
+      <static_define_list external="PerfMetricType" />
+    </column>
+    <column name="Eapcunitspecs" type="STRINGARRAY">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Metrics" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>EARRAY</flag>
+      </flags>
+      <subtable external="PerfMetricInfo_F32" />
+    </column>
+    <column name="Samples" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>EARRAY</flag>
+      </flags>
+      <subtable external="PerfMetricSample_F32" />
+    </column>
+    <column name="Budgets" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>EARRAY</flag>
+      </flags>
+      <subtable external="PerfMetricBudget_F32" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

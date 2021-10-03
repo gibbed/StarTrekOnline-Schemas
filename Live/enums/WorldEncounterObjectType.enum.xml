@@ -11,5 +11,9 @@
     <element name="LOGICAL_GROUP">7</element>
     <element name="TRIGGER_CONDITION">8</element>
     <element name="LAYER_FSM">9</element>
+    <element name="DESTRUCTIBLE2">10</element>
+    <element name="NAVMESH_MARKER">11</element>
+    <element name="DIRECTOR_MARKER">12</element>
+    <element name="NAVMESH_AREA">13</element>
   </elements>
 </enum>

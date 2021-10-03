@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MaxKills" type="INT">
+    <column name="Maxkills" type="INT">
       <offset>0</offset>
     </column>
-    <column name="TimePeriod" type="INT">
+    <column name="Timeperiod" type="INT">
       <offset>4</offset>
     </column>
-    <column name="UpdateRate" type="F32">
+    <column name="Updaterate" type="F32">
       <offset>8</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>

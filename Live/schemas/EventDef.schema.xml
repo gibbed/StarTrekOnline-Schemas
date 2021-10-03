@@ -16,132 +16,165 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Activity" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="ActivityDefRef" />
     </column>
-    <column name="ShardTimingDef" type="IGNORE">
+    <column name="Shardtimingdef" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">ShardEventTimingDef</format_string>
+      </format_strings>
     </column>
-    <column name="EventTime" type="STRUCT">
-      <offset>12</offset>
+    <column name="Eventtime" type="STRUCT">
+      <offset>24</offset>
       <subtable external="ShardEventTimingEntry" />
     </column>
-    <column name="TimingEntry" type="STRUCT">
-      <offset>12</offset>
+    <column name="Timingentry" type="STRUCT">
+      <offset>24</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>EventTime</redundant_name>
+      <redundant_name>Eventtime</redundant_name>
       <subtable external="ShardEventTimingEntry" />
     </column>
-    <column name="uSeedBase" type="INT">
-      <offset>16</offset>
-    </column>
-    <column name="msgDisplayName" type="EMBEDDEDSTRUCT">
-      <offset>20</offset>
-      <subtable external="DisplayMessage" />
-    </column>
-    <column name="msgDisplayShortDesc" type="EMBEDDEDSTRUCT">
+    <column name="Useedbase" type="INT">
       <offset>32</offset>
+    </column>
+    <column name="Msgdisplayname" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="msgDisplayLongDesc" type="EMBEDDEDSTRUCT">
-      <offset>44</offset>
+    <column name="Msgdisplayshortdesc" type="EMBEDDEDSTRUCT">
+      <offset>80</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Msgdisplaylongdesc" type="EMBEDDEDSTRUCT">
+      <offset>104</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Icon" type="STRING">
-      <offset>56</offset>
+      <offset>128</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Background" type="STRING">
-      <offset>60</offset>
+      <offset>136</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DisplayTag" type="INTARRAY">
-      <offset>64</offset>
+    <column name="Displaytagart" type="STRUCT">
+      <offset>144</offset>
+      <subtable external="EventTagArt" />
+    </column>
+    <column name="Mtsaleindicator" type="INT">
+      <offset>152</offset>
+      <static_define_list external="MicroTrans2SaleIndicator" />
+    </column>
+    <column name="Participationtoken" type="STRING">
+      <offset>160</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Maincontact" type="STRING">
+      <offset>168</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Buyoutitem" type="STRING">
+      <offset>176</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Displaytag" type="INTARRAY">
+      <offset>184</offset>
       <static_define_list external="ActivityDisplayTags" />
     </column>
-    <column name="IncludeMap" type="STRINGARRAY">
-      <offset>68</offset>
+    <column name="Includemap" type="STRINGARRAY">
+      <offset>192</offset>
     </column>
-    <column name="ExcludeMap" type="STRINGARRAY">
-      <offset>72</offset>
+    <column name="Excludemap" type="STRINGARRAY">
+      <offset>200</offset>
     </column>
-    <column name="SpawnMap" type="STRING">
-      <offset>76</offset>
+    <column name="Spawnmap" type="STRING">
+      <offset>208</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="SpawnPoint" type="STRING">
-      <offset>80</offset>
+      <offset>216</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="WarpRequiredLevel" type="INT">
-      <offset>84</offset>
+    <column name="Warprequiredlevel" type="INT">
+      <offset>224</offset>
     </column>
-    <column name="TransitionOverride" type="REFERENCE">
-      <offset>88</offset>
+    <column name="Transitionoverride" type="REFERENCE">
+      <offset>232</offset>
       <dictionary_name>DoorTransitionSequenceDef</dictionary_name>
     </column>
     <column name="Warp" type="STRUCT">
-      <offset>92</offset>
+      <offset>240</offset>
       <subtable external="EventWarpDef" />
     </column>
     <column name="Contact" type="STRUCT">
-      <offset>96</offset>
+      <offset>248</offset>
       <subtable external="EventContactDef" />
     </column>
     <column name="Bulletin" type="OPTIONALSTRUCT">
-      <offset>100</offset>
+      <offset>256</offset>
       <subtable external="EventBulletin" />
     </column>
-    <column name="Queue" type="REFERENCE">
-      <offset>104</offset>
-      <dictionary_name>QueueDef</dictionary_name>
+    <column name="Match" type="REFERENCE">
+      <offset>264</offset>
+      <dictionary_name>MatchDef</dictionary_name>
     </column>
-    <column name="ParentEvent" type="STRING">
-      <offset>108</offset>
-    </column>
-    <column name="EventRunMode" type="INT">
-      <offset>112</offset>
-    </column>
-    <column name="HideEventFromClient" type="BIT">
-      <offset>116</offset>
-      <bit_offset>65536</bit_offset>
-    </column>
-    <column name="uHideEventFromClient" type="BIT">
-      <offset>116</offset>
+    <column name="Parentevent" type="STRING">
+      <offset>272</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>GLOBAL_NAME</flag>
       </flags>
-      <redundant_name>HideEventFromClient</redundant_name>
+      <dictionary_name>EventDef</dictionary_name>
+    </column>
+    <column name="Eventrunmode" type="INT">
+      <offset>280</offset>
+    </column>
+    <column name="Hideeventfromclient" type="BIT">
+      <offset>284</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="HideFromExcludedMaps" type="BIT">
-      <offset>116</offset>
+    <column name="Uhideeventfromclient" type="BIT">
+      <offset>284</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Hideeventfromclient</redundant_name>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Hidefromexcludedmaps" type="BIT">
+      <offset>284</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="uHideFromExcludedMaps" type="BIT">
-      <offset>116</offset>
+    <column name="Uhidefromexcludedmaps" type="BIT">
+      <offset>284</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>HideFromExcludedMaps</redundant_name>
+      <redundant_name>Hidefromexcludedmaps</redundant_name>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />

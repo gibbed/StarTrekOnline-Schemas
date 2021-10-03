@@ -2,6 +2,7 @@
 <enum name="MicroTrans_ShardCategory">
   <elements type="int">
     <element name="Off">0</element>
+    <element name="IgnoreOff">0</element>
     <element name="Dev">1</element>
     <element name="Beta">2</element>
     <element name="PTS">3</element>
@@ -9,5 +10,17 @@
     <element name="RussiaBeta">5</element>
     <element name="RussiaPTS">6</element>
     <element name="RussiaLive">7</element>
+    <element name="ChinaBeta">8</element>
+    <element name="ChinaPTS">9</element>
+    <element name="ChinaLive">10</element>
+    <element name="XboxBeta">11</element>
+    <element name="XboxLive">12</element>
+    <element name="XboxChinaBeta">13</element>
+    <element name="XboxChinaLive">14</element>
+    <element name="XboxHongKongBeta">15</element>
+    <element name="XboxHongKongLive">16</element>
+    <element name="PSBeta">17</element>
+    <element name="PSLive">18</element>
+    <element name="PSHongKongLive">19</element>
   </elements>
 </enum>

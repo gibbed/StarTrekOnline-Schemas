@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MapTransferOverrideMissionFilter">
+  <table>
+    <column name="MapTransferOverrideMissionFilter" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="MissionRefString" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>AllMissionsIndex</dictionary_name>
+    </column>
+    <column name="CurrentState" type="INT">
+      <offset>8</offset>
+      <static_define_list external="MissionState" />
+    </column>
+    <column name="Notcurrentstate" type="U8">
+      <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

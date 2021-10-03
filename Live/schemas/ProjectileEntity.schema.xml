@@ -7,46 +7,59 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hProjectileDef" type="REFERENCE">
+    <column name="Hprojectiledef" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>ProjectileEntityDef</dictionary_name>
     </column>
-    <column name="erGotoEnt" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="NumEntitiesHit" type="INT">
+    <column name="Ergotoent" type="INT">
       <offset>8</offset>
     </column>
-    <column name="uiLastProcessHitTime" type="INT">
-      <offset>16</offset>
+    <column name="Numentitieshit" type="INT">
+      <offset>12</offset>
     </column>
-    <column name="TimeToLinger" type="F32">
-      <offset>20</offset>
-    </column>
-    <column name="muQueueDieTime" type="INT">
+    <column name="Uilastprocesshittime" type="INT">
       <offset>24</offset>
     </column>
-    <column name="mfResetHitEntsTime" type="F32">
+    <column name="Timetolinger" type="F32">
       <offset>28</offset>
     </column>
-    <column name="miOnExpireIndex" type="INT">
+    <column name="Muqueuedietime" type="INT">
       <offset>32</offset>
     </column>
-    <column name="miOnQueueDeathIndex" type="INT">
+    <column name="Mfresethitentstime" type="F32">
       <offset>36</offset>
     </column>
-    <column name="miOnCollideWorldIndex" type="INT">
+    <column name="Mionexpireindex" type="INT">
       <offset>40</offset>
     </column>
-    <column name="miOnHitEntityIndex" type="INT">
+    <column name="Mionqueuedeathindex" type="INT">
       <offset>44</offset>
     </column>
-    <column name="miOnHitGotoEnt" type="INT">
+    <column name="Mioncollideworldindex" type="INT">
       <offset>48</offset>
     </column>
-    <column name="QueuedDie" type="BIT">
+    <column name="Mionhitentityindex" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Mionhitgotoent" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Miontickindex" type="INT">
       <offset>60</offset>
+    </column>
+    <column name="Ticktimer" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Expiretimer" type="F32">
+      <offset>68</offset>
+    </column>
+    <column name="Queueddie" type="BIT">
+      <offset>88</offset>
       <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Hastickupdate" type="BIT">
+      <offset>88</offset>
+      <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

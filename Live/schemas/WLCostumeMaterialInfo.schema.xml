@@ -13,12 +13,12 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="TexSwap" type="STRUCT">
-      <offset>4</offset>
+    <column name="Texswap" type="STRUCT">
+      <offset>8</offset>
       <subtable external="CostumeTextureSwap" />
     </column>
     <column name="Set" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="MaterialNamedConstant" />
     </column>
     <column name="}" type="END" />

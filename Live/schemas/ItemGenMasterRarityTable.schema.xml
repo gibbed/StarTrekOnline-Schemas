@@ -13,12 +13,12 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="RewardCategory" type="INT">
-      <offset>4</offset>
+    <column name="Rewardcategory" type="INT">
+      <offset>8</offset>
       <static_define_list external="ItemGenRewardCategory" />
     </column>
     <column name="Entry" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="ItemGenRarityEntry" />
     </column>
     <column name="}" type="END" />

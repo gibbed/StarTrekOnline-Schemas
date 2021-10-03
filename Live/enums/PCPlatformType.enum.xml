@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PCPlatformType">
+  <elements type="int">
+    <element name="none">0</element>
+    <element name="steam">1</element>
+    <element name="epic">2</element>
+    <element name="last">3</element>
+  </elements>
+</enum>

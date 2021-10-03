@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ShaderPlatform">
+  <elements type="int">
+    <element name="TARGET_PC">0</element>
+    <element name="TARGET_XBOX_ONE">1</element>
+    <element name="TARGET_PS4">2</element>
+    <element name="TARGET_XBOX_ONE_GDK">3</element>
+    <element name="TARGET_SCARLETT">4</element>
+    <element name="_TARGET_MAX_TARGETS">5</element>
+  </elements>
+</enum>

@@ -13,58 +13,59 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="sent" type="INT">
+    <column name="Sent" type="INT">
       <offset>4</offset>
     </column>
-    <column name="fromID" type="INT">
+    <column name="Fromid" type="INT">
       <offset>8</offset>
     </column>
-    <column name="fromHandle" type="STRING">
-      <offset>12</offset>
+    <column name="FromHandle" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="shardName" type="STRING">
-      <offset>16</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Subject" type="STRING">
-      <offset>20</offset>
-    </column>
-    <column name="Body" type="STRING">
-      <offset>24</offset>
-    </column>
-    <column name="Read" type="BIT">
-      <offset>28</offset>
-      <bit_offset>65536</bit_offset>
-    </column>
-    <column name="uLotID" type="INT">
       <offset>32</offset>
     </column>
-    <column name="toName" type="STRING">
-      <offset>36</offset>
-    </column>
-    <column name="fromName" type="STRING">
+    <column name="Body" type="STRING">
       <offset>40</offset>
     </column>
-    <column name="TypeOfEmail" type="INT">
-      <offset>44</offset>
-      <static_define_list external="EMailType" />
-    </column>
-    <column name="toContainerID" type="INT">
+    <column name="Read" type="BIT">
       <offset>48</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="NPCEMailID" type="INT">
+    <column name="Ulotid" type="INT">
       <offset>52</offset>
     </column>
-    <column name="uTimeLeft" type="INT">
-      <offset>60</offset>
+    <column name="Toname" type="STRING">
+      <offset>56</offset>
     </column>
-    <column name="uTimeReceived" type="INT">
+    <column name="FromName" type="STRING">
       <offset>64</offset>
     </column>
-    <column name="uFutureSendTime" type="INT">
-      <offset>68</offset>
+    <column name="Typeofemail" type="INT">
+      <offset>72</offset>
+      <static_define_list external="EMailType" />
+    </column>
+    <column name="Tocontainerid" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Npcemailid" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Utimeleft" type="INT">
+      <offset>96</offset>
+    </column>
+    <column name="Utimereceived" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="Ufuturesendtime" type="INT">
+      <offset>104</offset>
     </column>
     <column name="}" type="END" />
   </table>

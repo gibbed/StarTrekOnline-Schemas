@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pchColName" type="STRING">
+    <column name="Pchcolname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="fPercentWidth" type="F32">
-      <offset>4</offset>
+    <column name="Fpercentwidth" type="F32">
+      <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>

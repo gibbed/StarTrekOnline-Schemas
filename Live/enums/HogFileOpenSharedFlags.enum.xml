@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="HogFileOpenSharedFlags">
+  <elements type="int">
+    <element name="EXACT_ERROR">1</element>
+    <element name="ANY_ERROR">2</element>
+    <element name="EXACT_MODE">4</element>
+    <element name="ANY_MODE">8</element>
+    <element name="RELOAD_FOR_MODE">16</element>
+    <element name="WAIT">32</element>
+    <element name="NO_CREATE">64</element>
+    <element name="SINGLE_APP_MODE">128</element>
+  </elements>
+</enum>

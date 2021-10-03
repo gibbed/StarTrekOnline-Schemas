@@ -11,11 +11,11 @@
       <offset>0</offset>
     </column>
     <column name="Groups" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="PEPowerDefGroup" />
     </column>
     <column name="Powers" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="PowerDef" />
     </column>
     <column name="}" type="END" />

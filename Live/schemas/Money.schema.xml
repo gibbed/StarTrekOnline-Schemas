@@ -9,7 +9,10 @@
     <column name="{" type="START" />
     <column name="Internal" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
-      <subtable external="MoneyContainer" />
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+      <subtable external="MoneyInternal" />
     </column>
     <column name="}" type="END" />
   </table>

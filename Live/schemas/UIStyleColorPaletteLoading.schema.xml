@@ -15,14 +15,14 @@
       <subtable external="UIStyleColorPaletteEntryDef" />
     </column>
     <column name="State" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
       <subtable external="UIStyleColorPaletteStateName" />
     </column>
     <column name="Palette" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="UIStyleColorPaletteDef" />
     </column>
     <column name="}" type="END" />

@@ -11,41 +11,42 @@
       <offset>0</offset>
     </column>
     <column name="CritterDef" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>CritterDef</dictionary_name>
     </column>
     <column name="CritterGroup" type="REFERENCE">
-      <offset>8</offset>
+      <offset>16</offset>
       <dictionary_name>CritterGroup</dictionary_name>
     </column>
-    <column name="NoNemesis" type="U8">
-      <offset>12</offset>
+    <column name="Nonemesis" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="NemesisCostumeSet" type="STRING">
-      <offset>16</offset>
+    <column name="Nemesiscostumeset" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="NemesisName" type="STRING">
-      <offset>20</offset>
+      <offset>40</offset>
     </column>
-    <column name="NemesisCostume" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Nemesiscostume" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="PlayerCostume" />
     </column>
-    <column name="NemesisType" type="STRING">
-      <offset>28</offset>
+    <column name="Nemesistype" type="STRING">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="motivation" type="INT">
-      <offset>32</offset>
+    <column name="Motivation" type="INT">
+      <offset>64</offset>
       <static_define_list external="NemesisMotivation" />
     </column>
-    <column name="personality" type="INT">
-      <offset>36</offset>
+    <column name="Personality" type="INT">
+      <offset>68</offset>
       <static_define_list external="NemesisPersonality" />
     </column>
     <column name="}" type="END" />

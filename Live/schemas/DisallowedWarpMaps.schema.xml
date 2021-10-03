@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="WarpRestriction" type="STRUCT">
+    <column name="Warprestriction" type="STRUCT">
       <offset>0</offset>
       <subtable external="DisallowedWarpMap" />
     </column>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="TranswarpUICategory">
+  <elements type="int">
+    <element name="kTranswarpUICategory_None">0</element>
+    <element name="Fleet">1</element>
+    <element name="Alpha">2</element>
+    <element name="Beta">3</element>
+    <element name="Delta">4</element>
+    <element name="Gamma">5</element>
+    <element name="Home">6</element>
+  </elements>
+</enum>

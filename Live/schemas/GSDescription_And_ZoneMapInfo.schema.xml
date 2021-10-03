@@ -11,9 +11,13 @@
       <offset>0</offset>
       <subtable external="GameServerExe_Description" />
     </column>
-    <column name="ZoneMapInfo" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Zonemapinfo" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="ZoneMapInfo" />
+    </column>
+    <column name="players" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="GSPlayerInfo" />
     </column>
     <column name="}" type="END" />
   </table>

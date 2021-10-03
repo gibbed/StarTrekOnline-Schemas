@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ePetNamePrefix">
+  <elements type="int">
+    <element name="Unset_Prefix">0</element>
+    <element name="AFS">1</element>
+    <element name="AKS">2</element>
+    <element name="ARW">4</element>
+    <element name="CDS">6</element>
+    <element name="CSS">7</element>
+    <element name="CUV">8</element>
+    <element name="DV">9</element>
+    <element name="DWS">11</element>
+    <element name="FDV">12</element>
+    <element name="GHS">13</element>
+    <element name="HHV">14</element>
+    <element name="IGS">15</element>
+    <element name="IGV">16</element>
+    <element name="IKS">17</element>
+    <element name="IRW">20</element>
+    <element name="ISS">21</element>
+    <element name="KDC">24</element>
+    <element name="LRS">25</element>
+    <element name="LSS">26</element>
+    <element name="NFV">27</element>
+    <element name="No_Prefix">28</element>
+    <element name="OSS">29</element>
+    <element name="RRW">30</element>
+    <element name="RXS">32</element>
+    <element name="SCS">33</element>
+    <element name="SS">34</element>
+    <element name="TSC">35</element>
+    <element name="USS">36</element>
+    <element name="VSS">39</element>
+    <element name="VSW">40</element>
+  </elements>
+</enum>

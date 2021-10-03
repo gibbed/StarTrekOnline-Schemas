@@ -7,17 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uOtherID" type="INT">
+    <column name="Uotherid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
     <column name="Cost" type="F32">
-      <offset>8</offset>
+      <offset>16</offset>
     </column>
-    <column name="IsTeleport" type="U8">
-      <offset>12</offset>
+    <column name="Isteleport" type="U8">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -14,47 +14,47 @@
       </flags>
     </column>
     <column name="Type" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="QueueVariableType" />
     </column>
-    <column name="FieldName" type="STRING">
-      <offset>8</offset>
+    <column name="Fieldname" type="STRING">
+      <offset>16</offset>
     </column>
-    <column name="WorldVariableName" type="STRINGARRAY">
-      <offset>12</offset>
+    <column name="Worldvariablename" type="STRINGARRAY">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CopyVariable" type="STRINGARRAY">
-      <offset>16</offset>
+    <column name="Copyvariable" type="STRINGARRAY">
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="StringValue" type="STRING">
-      <offset>20</offset>
+      <offset>40</offset>
     </column>
-    <column name="ApplyToCustomMapType" type="STRINGARRAY">
-      <offset>24</offset>
+    <column name="Applytocustommaptype" type="STRINGARRAY">
+      <offset>48</offset>
     </column>
-    <column name="ApplyToMapType" type="STRINGARRAY">
-      <offset>24</offset>
+    <column name="Applytomaptype" type="STRINGARRAY">
+      <offset>48</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ApplyToCustomMapType</redundant_name>
+      <redundant_name>Applytocustommaptype</redundant_name>
     </column>
-    <column name="SettingData" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Settingdata" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <subtable external="QueueSettingVarData" />
     </column>
-    <column name="ChallengeData" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Challengedata" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>SettingData</redundant_name>
+      <redundant_name>Settingdata</redundant_name>
       <subtable external="QueueSettingVarData" />
     </column>
     <column name="End" type="END" />

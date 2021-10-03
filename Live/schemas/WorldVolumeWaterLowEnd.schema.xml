@@ -6,16 +6,16 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="waterColorHSV" type="F32FIXEDARRAY">
+    <column name="Watercolorhsv" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="minPercent" type="F32">
+    <column name="Minpercent" type="F32">
       <offset>12</offset>
       <default>1058642330</default>
     </column>
-    <column name="maxPercent" type="F32">
+    <column name="Maxpercent" type="F32">
       <offset>16</offset>
       <default>1064514355</default>
     </column>
@@ -23,10 +23,10 @@
       <offset>20</offset>
       <default>100</default>
     </column>
-    <column name="materialNearSurface" type="STRING">
+    <column name="Materialnearsurface" type="STRING">
       <offset>24</offset>
       <default_string>WaterNearSurface_default</default_string>
     </column>
-    <column name="EndLowEnd" type="END" />
+    <column name="Endlowend" type="END" />
   </table>
 </parser>

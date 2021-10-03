@@ -13,11 +13,11 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="uPlayer" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="RewardData" type="EMBEDDEDSTRUCT">
+    <column name="Uplayer" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Rewarddata" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
       <subtable external="InvRewardRequest" />
     </column>
     <column name="}" type="END" />

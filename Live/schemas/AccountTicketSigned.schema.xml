@@ -7,26 +7,26 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ticketText" type="STRING">
+    <column name="Tickettext" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="uExpirationTime" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="strTicketTPI" type="STRING">
+    <column name="Uexpirationtime" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Strtickettpi" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="uTicketCRC" type="INT">
-      <offset>12</offset>
+    <column name="Uticketcrc" type="INT">
+      <offset>24</offset>
     </column>
-    <column name="ticketSignature" type="STRING">
-      <offset>16</offset>
+    <column name="Ticketsignature" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

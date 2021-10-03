@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="peasDisplayName" type="STRING">
+    <column name="Peasdisplayname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="uiRef" type="INT">
-      <offset>4</offset>
+    <column name="Uiref" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

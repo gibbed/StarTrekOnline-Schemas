@@ -7,28 +7,37 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MissionDef" type="STRING">
+    <column name="MissionRefString" type="STRING">
       <offset>0</offset>
       <flags>
-        <flag>POOL_STRING</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="RewardBags" type="STRUCT">
-      <offset>4</offset>
+    <column name="MissionDef" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Rewardbags" type="STRUCT">
+      <offset>16</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="InventoryBag" />
     </column>
-    <column name="uTime" type="INT">
-      <offset>8</offset>
+    <column name="Getprimaryreward" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Utime" type="INT">
+      <offset>28</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
     <column name="Update" type="BIT">
-      <offset>12</offset>
+      <offset>32</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>

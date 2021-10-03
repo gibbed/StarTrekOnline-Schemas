@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ErrorToBlame">
+  <table>
+    <column name="ErrorToBlame" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Error" type="OPTIONALSTRUCT">
+      <offset>16</offset>
+      <subtable external="CxError" />
+    </column>
+    <column name="Behavior" type="INT">
+      <offset>24</offset>
+      <static_define_list external="ThreadedBlameBehavior" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

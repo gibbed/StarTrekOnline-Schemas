@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="major_version" type="INT">
+    <column name="Major_Version" type="INT">
       <offset>0</offset>
     </column>
-    <column name="minor_version" type="INT">
+    <column name="Minor_Version" type="INT">
       <offset>4</offset>
     </column>
     <column name="Code" type="INT">
@@ -21,14 +21,14 @@
       <offset>12</offset>
       <string_length>256</string_length>
     </column>
-    <column name="headers" type="OPTIONALSTRUCT">
-      <offset>268</offset>
+    <column name="Headers" type="OPTIONALSTRUCT">
+      <offset>272</offset>
       <subtable external="NameValuePairList" />
     </column>
     <column name="Link" type="OPTIONALSTRUCT">
-      <offset>272</offset>
+      <offset>280</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="NetLink" />
     </column>

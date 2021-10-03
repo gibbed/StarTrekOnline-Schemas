@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RoomIndex" type="INT">
-      <offset>28</offset>
+    <column name="Roomindex" type="INT">
+      <offset>40</offset>
     </column>
-    <column name="DistFromCenterSq" type="F32">
-      <offset>32</offset>
+    <column name="Distfromcentersq" type="F32">
+      <offset>44</offset>
     </column>
     <column name="}" type="END" />
   </table>

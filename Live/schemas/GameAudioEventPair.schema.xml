@@ -7,26 +7,26 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="game_event" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Game_Event" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="GameEvent" />
     </column>
-    <column name="audio_event" type="STRING">
-      <offset>12</offset>
+    <column name="Audio_Event" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="one_shot" type="BIT">
-      <offset>16</offset>
+    <column name="One_Shot" type="BIT">
+      <offset>32</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="is_music" type="BIT">
-      <offset>16</offset>
+    <column name="Is_Music" type="BIT">
+      <offset>32</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="invalid" type="BIT">
-      <offset>16</offset>
+    <column name="Invalid" type="BIT">
+      <offset>32</offset>
       <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />

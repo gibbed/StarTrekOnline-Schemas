@@ -11,11 +11,11 @@
       <offset>0</offset>
     </column>
     <column name="Costume" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="CostumeRefV0" />
     </column>
-    <column name="CostumeV5" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+    <column name="Costumev5" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
       <subtable external="CostumeRef" />
     </column>
     <column name="}" type="END" />

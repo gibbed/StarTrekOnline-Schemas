@@ -10,11 +10,15 @@
     <column name="Species" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="ListNames" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="NameGroupIndex" type="INT">
+    <column name="Listnames" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Namegroupindex" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Language" type="INT">
+      <offset>16</offset>
+      <static_define_list external="Language" />
     </column>
     <column name="}" type="END" />
   </table>

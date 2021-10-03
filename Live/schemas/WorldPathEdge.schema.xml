@@ -7,21 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uOther" type="INT">
+    <column name="Uother" type="INT">
       <offset>0</offset>
     </column>
-    <column name="UGCGenerated" type="U8">
+    <column name="V3other" type="F32FIXEDARRAY">
       <offset>4</offset>
-    </column>
-    <column name="v3Other" type="F32FIXEDARRAY">
-      <offset>8</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Cost" type="F32">
-      <offset>20</offset>
+      <offset>16</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>

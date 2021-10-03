@@ -12,7 +12,7 @@
       <subtable external="ItemGenRarityDef" />
     </column>
     <column name="Tier" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="ItemGenTier" />
     </column>
     <column name="}" type="END" />

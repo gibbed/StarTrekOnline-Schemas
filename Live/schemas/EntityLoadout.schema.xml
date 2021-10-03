@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="EntityLoadout">
+  <table>
+    <column name="EntityLoadout" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Loadoutname" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pploadoutitems" type="STRUCT">
+      <offset>8</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="LoadoutItem" />
+    </column>
+    <column name="Ppownerloadoutitems" type="STRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="LoadoutItem" />
+    </column>
+    <column name="Ppsavedpropslots" type="STRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="AlwaysPropSlot" />
+    </column>
+    <column name="Ppsavedautoqueuesettings" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="LoadoutPowersAutoQueueSavedSetting" />
+    </column>
+    <column name="Ppfashiondata" type="STRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>LOGIN_SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="LoadoutSlotFashionData" />
+    </column>
+    <column name="Pppowertreeslots" type="STRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PowerTreeSlot" />
+    </column>
+    <column name="Ppowerslotset" type="OPTIONALSTRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="PowerSlotSetContainer" />
+    </column>
+    <column name="Entityloadouttray" type="IGNORE">
+      <flags>
+        <flag>FLATEMBED</flag>
+      </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">SavedTray</format_string>
+      </format_strings>
+    </column>
+    <column name="Piuitrayindex" type="INTARRAY">
+      <offset>64</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Puinoslotpowerids" type="INTARRAY">
+      <offset>72</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Pptrayelems" type="STRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="TrayElem" />
+    </column>
+    <column name="Ppautoattackelems" type="STRUCT">
+      <offset>88</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="TrayElem" />
+    </column>
+    <column name="Binitialized" type="U8">
+      <offset>96</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bmanualautofireon" type="U8">
+      <offset>97</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ipowertreebuild" type="INT">
+      <offset>104</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Isummonedsupercritterpet" type="INT">
+      <offset>108</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eaipetcostumes" type="INTARRAY">
+      <offset>112</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Icostumeslot" type="INT">
+      <offset>120</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pgamespecificdata" type="OPTIONALSTRUCT">
+      <offset>128</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <subtable external="GameSpecificEntityLoadoutData" />
+    </column>
+    <column name="Ilastloadtime" type="INT">
+      <offset>136</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ilastsavetime" type="INT">
+      <offset>140</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

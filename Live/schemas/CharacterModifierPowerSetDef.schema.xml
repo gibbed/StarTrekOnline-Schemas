@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CharacterModifierPowerSetDef">
+  <table>
+    <column name="CharacterModifierPowerSetDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Scope" type="STRING">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Power" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="PowerDefRef" />
+    </column>
+    <column name="EntityType" type="INT">
+      <offset>24</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Entityisfaction" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>CritterFaction</dictionary_name>
+    </column>
+    <column name="Entityisnotfaction" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>CritterFaction</dictionary_name>
+    </column>
+    <column name="Entityisclass" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>CharacterClass</dictionary_name>
+    </column>
+    <column name="Entityisnotclass" type="REFERENCE">
+      <offset>56</offset>
+      <dictionary_name>CharacterClass</dictionary_name>
+    </column>
+    <column name="Isplayerorplayerowned" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Isnotplayerorplayerowned" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Autoapply" type="BIT">
+      <offset>64</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -15,26 +15,39 @@
       </flags>
     </column>
     <column name="Tag" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Mood" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="Stance" type="STRING">
-      <offset>12</offset>
+    <column name="Mood" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ScaleValues" type="STRUCT">
-      <offset>16</offset>
+    <column name="Stance" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Order" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Scalevalues" type="STRUCT">
+      <offset>40</offset>
       <subtable external="PCScaleValue" />
+    </column>
+    <column name="Scalevaluesfromcostume" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>PlayerCostume</dictionary_name>
+    </column>
+    <column name="Copylinkgrouptextureset" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

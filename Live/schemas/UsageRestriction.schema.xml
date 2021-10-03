@@ -17,51 +17,60 @@
       <offset>8</offset>
       <static_define_list external="SkillType" />
     </column>
-    <column name="SkillLevel" type="INT">
+    <column name="Skilllevel" type="INT">
       <offset>12</offset>
     </column>
-    <column name="pRequiresBlock" type="OPTIONALSTRUCT">
+    <column name="Prequiresblock" type="OPTIONALSTRUCT">
       <offset>16</offset>
       <flags>
         <flag>USEROPTIONBIT_1</flag>
       </flags>
       <subtable external="Expression" />
     </column>
-    <column name="pRequires" type="OPTIONALSTRUCT">
+    <column name="Prequires" type="OPTIONALSTRUCT">
       <offset>16</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>USEROPTIONBIT_1</flag>
       </flags>
-      <redundant_name>pRequiresBlock</redundant_name>
+      <redundant_name>Prequiresblock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="UICategory" type="INT">
-      <offset>20</offset>
+    <column name="Uicategory" type="INT">
+      <offset>24</offset>
       <static_define_list external="UsageRestrictionCategory" />
     </column>
-    <column name="RequiredAllegiance" type="STRUCT">
-      <offset>24</offset>
+    <column name="Requiredallegiance" type="STRUCT">
+      <offset>32</offset>
       <subtable external="AllegianceRef" />
     </column>
-    <column name="RequireAllAllegiances" type="U8">
-      <offset>28</offset>
+    <column name="Requireallallegiances" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ClassAllowed" type="STRUCT">
-      <offset>32</offset>
+    <column name="Classallowed" type="STRUCT">
+      <offset>48</offset>
       <subtable external="CharacterClassRef" />
     </column>
-    <column name="ClassCategoryAllowed" type="INTARRAY">
-      <offset>36</offset>
+    <column name="Classcategoryallowed" type="INTARRAY">
+      <offset>56</offset>
       <static_define_list external="CharClassCategory" />
     </column>
-    <column name="PathAllowed" type="STRUCT">
-      <offset>40</offset>
+    <column name="Pathallowed" type="STRUCT">
+      <offset>64</offset>
       <subtable external="CharacterPathRef" />
     </column>
-    <column name="RequiredGemSlotType" type="INT">
-      <offset>44</offset>
+    <column name="Requiredgemslottype" type="INT">
+      <offset>72</offset>
       <static_define_list external="ItemGemType" />
+    </column>
+    <column name="Itemdefgatelength" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Itemdefgateinterval" type="INT">
+      <offset>80</offset>
+      <default>3</default>
+      <static_define_list external="ShardIntervalTimingMode" />
     </column>
     <column name="}" type="END" />
   </table>

@@ -14,15 +14,15 @@
       </flags>
     </column>
     <column name="Purpose" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="PowerPurpose" />
     </column>
-    <column name="PowerListNodes" type="STRUCT">
-      <offset>8</offset>
+    <column name="Powerlistnodes" type="STRUCT">
+      <offset>16</offset>
       <subtable external="PowerListNode" />
     </column>
     <column name="Size" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

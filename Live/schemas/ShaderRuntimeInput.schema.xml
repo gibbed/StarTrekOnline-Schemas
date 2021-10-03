@@ -7,26 +7,35 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="input_name" type="STRING">
+    <column name="Op_Name" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="input_register" type="U8">
-      <offset>4</offset>
-    </column>
-    <column name="input_swizzle_start" type="U8">
-      <offset>5</offset>
-    </column>
-    <column name="input_swizzle_count" type="U8">
-      <offset>6</offset>
-    </column>
-    <column name="input_instance_param" type="U8">
-      <offset>7</offset>
-    </column>
-    <column name="input_index" type="INT">
+    <column name="Input_Name" type="STRING">
       <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Parent_Name" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Input_Register" type="U8">
+      <offset>24</offset>
+    </column>
+    <column name="Input_Swizzle_Start" type="U8">
+      <offset>25</offset>
+    </column>
+    <column name="Input_Swizzle_Count" type="U8">
+      <offset>26</offset>
+    </column>
+    <column name="Input_Index" type="INT">
+      <offset>28</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,44 +7,53 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GrantRewardTable" type="REFERENCE">
+    <column name="Grantrewardtable" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>RewardTable</dictionary_name>
     </column>
-    <column name="NewAssignment" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Newassignment" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>ItemAssignmentDef</dictionary_name>
     </column>
-    <column name="NewAssignmentChance" type="F32">
-      <offset>8</offset>
+    <column name="Newassignmentchance" type="F32">
+      <offset>16</offset>
       <default>1</default>
     </column>
-    <column name="DestroyItemsOfQuality" type="INTARRAY">
-      <offset>12</offset>
+    <column name="Destroyitemsofquality" type="INTARRAY">
+      <offset>24</offset>
       <static_define_list external="ItemQuality" />
     </column>
-    <column name="DestroyItemsOfCategory" type="INTARRAY">
-      <offset>16</offset>
+    <column name="Destroyitemsofcategory" type="INTARRAY">
+      <offset>32</offset>
       <static_define_list external="ItemCategory" />
     </column>
-    <column name="DestroyChance" type="F32">
-      <offset>20</offset>
+    <column name="Destroychance" type="F32">
+      <offset>40</offset>
       <default>1</default>
     </column>
-    <column name="NewAssignmentDescription" type="EMBEDDEDSTRUCT">
-      <offset>24</offset>
-      <subtable external="DisplayMessage" />
-    </column>
-    <column name="DestroyDescription" type="EMBEDDEDSTRUCT">
-      <offset>36</offset>
-      <subtable external="DisplayMessage" />
-    </column>
-    <column name="SampleRewards" type="OPTIONALSTRUCT">
+    <column name="Newassignmentdescription" type="EMBEDDEDSTRUCT">
       <offset>48</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Destroydescription" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Samplerewards" type="OPTIONALSTRUCT">
+      <offset>96</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <subtable external="InvRewardRequest" />
+    </column>
+    <column name="Dynamicitemquality" type="INT">
+      <offset>104</offset>
+      <default>-1</default>
+      <static_define_list external="ItemQuality" />
+    </column>
+    <column name="Progressionxptable" type="REFERENCE">
+      <offset>112</offset>
+      <dictionary_name>RewardValTable</dictionary_name>
     </column>
     <column name="}" type="END" />
   </table>

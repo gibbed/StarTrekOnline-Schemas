@@ -15,14 +15,14 @@
       <subtable external="ObjectPathKey" />
     </column>
     <column name="Path" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="ObjectPathSegment" />
     </column>
-    <column name="hitcount" type="INT">
-      <offset>8</offset>
+    <column name="Hitcount" type="INT">
+      <offset>16</offset>
     </column>
-    <column name="rc" type="INT">
-      <offset>12</offset>
+    <column name="Rc" type="INT">
+      <offset>20</offset>
     </column>
     <column name="}" type="END" />
   </table>

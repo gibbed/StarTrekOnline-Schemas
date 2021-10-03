@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GfxPlatformHardware">
+  <elements type="int">
+    <element name="UNKNOWN">-1</element>
+    <element name="PC_TIER1">0</element>
+    <element name="PC_TIER2">1</element>
+    <element name="PC_TIER3">2</element>
+    <element name="PC_TIER4">3</element>
+    <element name="XBOX_ONE">4</element>
+    <element name="XBOX_ONE_S">5</element>
+    <element name="XBOX_ONE_X">6</element>
+    <element name="XBOX_SERIES_S">7</element>
+    <element name="XBOX_SERIES_X">8</element>
+    <element name="PLAYSTATION_4">9</element>
+    <element name="PLAYSTATION_4_PRO">10</element>
+    <element name="PLAYSTATION_5">11</element>
+    <element name="COUNT">12</element>
+  </elements>
+</enum>

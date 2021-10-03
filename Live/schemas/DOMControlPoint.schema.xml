@@ -7,49 +7,50 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PointNumber" type="INT">
+    <column name="Pointnumber" type="INT">
       <offset>0</offset>
     </column>
     <column name="Status" type="INT">
       <offset>4</offset>
       <static_define_list external="DOMPointStatus" />
     </column>
-    <column name="AttackingEnts" type="INTARRAY">
+    <column name="Attackingents" type="INTARRAY">
       <offset>8</offset>
     </column>
     <column name="Life" type="F32">
-      <offset>12</offset>
+      <offset>16</offset>
     </column>
     <column name="Location" type="F32FIXEDARRAY">
-      <offset>16</offset>
+      <offset>20</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Tick" type="F32">
-      <offset>28</offset>
+      <offset>32</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
-    <column name="AttackingGroup" type="INT">
-      <offset>32</offset>
-    </column>
-    <column name="OwningGroup" type="INT">
+    <column name="Attackinggroup" type="INT">
       <offset>36</offset>
     </column>
-    <column name="X" type="F32">
+    <column name="Owninggroup" type="INT">
       <offset>40</offset>
-      <flags>
-        <flag>CLIENT_ONLY</flag>
-      </flags>
     </column>
-    <column name="Y" type="F32">
+    <column name="X" type="F32">
       <offset>44</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
-    <column name="Message" type="OPTIONALSTRUCT">
+    <column name="Y" type="F32">
       <offset>48</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Message" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <subtable external="Message" />
     </column>
     <column name="}" type="END" />

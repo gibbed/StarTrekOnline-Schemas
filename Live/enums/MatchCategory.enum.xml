@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MatchCategory">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="FleetAction">1</element>
+    <element name="STF">2</element>
+    <element name="Event">3</element>
+    <element name="New">4</element>
+    <element name="Featured">5</element>
+    <element name="Difficulty_Normal">6</element>
+    <element name="Difficulty_Advanced">7</element>
+    <element name="Difficulty_Elite">8</element>
+    <element name="Region_Space">9</element>
+    <element name="Region_Ground">10</element>
+    <element name="Random_Exclude">11</element>
+  </elements>
+</enum>

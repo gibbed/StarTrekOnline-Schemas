@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ParserWriteCSVSession_Column">
+  <table>
+    <column name="ParserWriteCSVSession_Column" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Columnxpath" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Columnname" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Index" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Count" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Firstvalue" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Multiplevalues" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

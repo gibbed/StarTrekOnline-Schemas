@@ -15,34 +15,34 @@
       </flags>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="ItemID" type="INT64">
+    <column name="Itemid" type="INT64">
       <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uItemID" type="INT64">
+    <column name="Uitemid" type="INT64">
       <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>ItemID</redundant_name>
+      <redundant_name>Itemid</redundant_name>
     </column>
-    <column name="NewAssignment" type="BIT">
+    <column name="Newassignment" type="BIT">
       <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="bNewAssignment" type="BIT">
+    <column name="Bnewassignment" type="BIT">
       <offset>16</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>NewAssignment</redundant_name>
+      <redundant_name>Newassignment</redundant_name>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="Destroyed" type="BIT">
@@ -52,10 +52,10 @@
       </flags>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="bDestroyed" type="BIT">
+    <column name="Bdestroyed" type="BIT">
       <offset>16</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>PERSIST</flag>
       </flags>
       <redundant_name>Destroyed</redundant_name>

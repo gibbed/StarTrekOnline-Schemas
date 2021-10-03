@@ -7,72 +7,72 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NodeDef" type="REFERENCE">
+    <column name="Nodedef" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>GameProgressionNodeDef</dictionary_name>
     </column>
-    <column name="StoryArcNodeDef" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Storyarcnodedef" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>GameProgressionNodeDef</dictionary_name>
     </column>
     <column name="MissionDef" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MissionDisplayName" type="STRING">
-      <offset>12</offset>
+    <column name="Missiondisplayname" type="STRING">
+      <offset>24</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Description" type="STRING">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Image" type="STRING">
-      <offset>20</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Contact" type="STRING">
-      <offset>24</offset>
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ContactDisplayName" type="STRING">
-      <offset>28</offset>
+    <column name="Contactdisplayname" type="STRING">
+      <offset>56</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="ContactKey" type="STRING">
-      <offset>32</offset>
+    <column name="Contactkey" type="STRING">
+      <offset>64</offset>
     </column>
-    <column name="CreditType" type="STRING">
-      <offset>36</offset>
+    <column name="Credittype" type="STRING">
+      <offset>72</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="SecondaryLockoutTime" type="INT">
-      <offset>40</offset>
+    <column name="Secondarylockouttime" type="INT">
+      <offset>80</offset>
     </column>
     <column name="Available" type="BIT">
-      <offset>44</offset>
+      <offset>84</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="Optional" type="BIT">
-      <offset>44</offset>
+      <offset>84</offset>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="Skippable" type="BIT">
-      <offset>44</offset>
+      <offset>84</offset>
       <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />

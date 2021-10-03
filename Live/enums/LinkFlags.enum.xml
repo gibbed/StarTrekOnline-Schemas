@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <enum name="LinkFlags">
   <elements type="int">
+    <element name="NONE">0</element>
     <element name="RAW">1</element>
     <element name="PACKET_VERIFY">2</element>
     <element name="COMPRESS">4</element>
@@ -11,13 +12,17 @@
     <element name="NO_COMPRESS">128</element>
     <element name="CRC">256</element>
     <element name="HTTP">512</element>
-    <element name="ALLOW_XMLRPC">1024</element>
-    <element name="REPURPOSED_XMLRPC">2048</element>
     <element name="SMALL_LISTEN">4096</element>
     <element name="MEDIUM_LISTEN">8192</element>
     <element name="WAITING_FOR_SOCKS">16384</element>
     <element name="SENT_SOCKS_REQ">32768</element>
     <element name="CRAZY_DEBUGGING">65536</element>
     <element name="FLUSH_PING_ACKS">131072</element>
+    <element name="TLS">262144</element>
+    <element name="ENCRYPT2">524288</element>
+    <element name="MAYBE_REDIRECT_HTTP_TO_HTTPS">1048576</element>
+    <element name="SSL">2097152</element>
+    <element name="OVERRIDE_IP">4194304</element>
+    <element name="DONT_ALERT_PUBLIC_ACCESS">8388608</element>
   </elements>
 </enum>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BagID" type="INT">
+    <column name="Bagid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>REQUIRED</flag>
@@ -18,8 +18,8 @@
       </flags>
       <static_define_list external="InvBagIDs" />
     </column>
-    <column name="inv_def" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Inv_Def" type="REFERENCE">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -27,8 +27,8 @@
       </flags>
       <dictionary_name>DefaultInventory</dictionary_name>
     </column>
-    <column name="ppIndexedLiteSlots" type="STRUCT">
-      <offset>8</offset>
+    <column name="Ppindexedliteslots" type="STRUCT">
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -36,8 +36,8 @@
       </flags>
       <subtable external="InventorySlotLite" />
     </column>
-    <column name="pGuildBankInfo" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Pguildbankinfo" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

@@ -7,72 +7,83 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RequiredActivity" type="STRING">
+    <column name="Requiredactivity" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="RequiredEvent" type="STRING">
-      <offset>4</offset>
+    <column name="Requiredevent" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Requires" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="Expression" />
     </column>
-    <column name="pRequires" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Prequires" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Requires</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="RequiredMission" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Requiredmission" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>MissionDef</dictionary_name>
     </column>
-    <column name="MissionReqFlags" type="INT">
-      <offset>16</offset>
+    <column name="Missionreqflags" type="INT">
+      <offset>32</offset>
       <static_define_list external="QueueMissionReq" />
       <format>FLAGS</format>
     </column>
-    <column name="ClassRequired" type="STRUCT">
-      <offset>20</offset>
+    <column name="Classrequired" type="STRUCT">
+      <offset>40</offset>
       <subtable external="CharacterClassRef" />
     </column>
-    <column name="ClassCategoryRequired" type="INTARRAY">
-      <offset>24</offset>
+    <column name="Classcategoryrequired" type="INTARRAY">
+      <offset>48</offset>
       <static_define_list external="CharClassCategory" />
     </column>
-    <column name="RequiredGearRating" type="INT">
-      <offset>28</offset>
+    <column name="Requiredgearrating" type="INT">
+      <offset>56</offset>
     </column>
-    <column name="MissionReqNoAccess" type="BIT">
-      <offset>32</offset>
+    <column name="Requiredattrib" type="INT">
+      <offset>60</offset>
+      <default>-1</default>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Requiredattribvalue" type="F32">
+      <offset>64</offset>
+    </column>
+    <column name="Requiredattribrestrue" type="F32">
+      <offset>68</offset>
+    </column>
+    <column name="Missionreqnoaccess" type="BIT">
+      <offset>72</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="RequireSameGuild" type="BIT">
-      <offset>32</offset>
+    <column name="Requiresameguild" type="BIT">
+      <offset>72</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="RequireGuild" type="BIT">
-      <offset>32</offset>
+    <column name="Requireguild" type="BIT">
+      <offset>72</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>RequireSameGuild</redundant_name>
+      <redundant_name>Requiresameguild</redundant_name>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="RequireAnyGuild" type="BIT">
-      <offset>32</offset>
+    <column name="Requireanyguild" type="BIT">
+      <offset>72</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="UnteamedQueuingOnly" type="BIT">
-      <offset>32</offset>
+    <column name="Unteamedqueuingonly" type="BIT">
+      <offset>72</offset>
       <bit_offset>65539</bit_offset>
     </column>
     <column name="}" type="END" />

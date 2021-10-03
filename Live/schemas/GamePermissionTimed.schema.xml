@@ -7,26 +7,33 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GamePermissionHours" type="INT">
-      <offset>0</offset>
-    </column>
     <column name="Permission" type="STRUCT">
-      <offset>4</offset>
+      <offset>0</offset>
       <subtable external="GamePermissionDef" />
     </column>
-    <column name="GamePermissionDaysSubscribed" type="INT">
+    <column name="Gamepermissionhours" type="INT">
       <offset>8</offset>
     </column>
-    <column name="GamePermissionStartSeconds" type="INT">
+    <column name="Gamepermissiondayssubscribed" type="INT">
       <offset>12</offset>
     </column>
-    <column name="FromToDates" type="STRUCT">
+    <column name="Gamepermissionstartseconds" type="INT">
       <offset>16</offset>
+    </column>
+    <column name="Fromtodates" type="STRUCT">
+      <offset>24</offset>
       <subtable external="FromToDate" />
     </column>
-    <column name="LifetimeSubscriber" type="BIT">
-      <offset>20</offset>
+    <column name="Theshardplatform" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Lifetimesubscriber" type="BIT">
+      <offset>40</offset>
       <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Hasbeenbilled" type="BIT">
+      <offset>40</offset>
+      <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

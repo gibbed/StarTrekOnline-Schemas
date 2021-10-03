@@ -7,68 +7,73 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LayoutName" type="STRING">
+    <column name="Layoutname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="TransmogrifyVersion" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="Seed" type="INT">
+    <column name="Transmogrifyversion" type="INT">
       <offset>8</offset>
     </column>
-    <column name="IsVistaTerrain" type="U8">
+    <column name="Seed" type="INT">
       <offset>12</offset>
     </column>
-    <column name="Backdrop" type="OPTIONALSTRUCT">
+    <column name="Isvistaterrain" type="U8">
       <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Backdrop" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="GenesisBackdrop" />
     </column>
     <column name="GeoType" type="REFERENCE">
-      <offset>20</offset>
+      <offset>32</offset>
       <dictionary_name>GenesisGeotype</dictionary_name>
     </column>
     <column name="Ecosystem" type="REFERENCE">
-      <offset>24</offset>
+      <offset>40</offset>
       <dictionary_name>GenesisEcosystem</dictionary_name>
     </column>
-    <column name="ColorShift" type="F32">
-      <offset>28</offset>
-    </column>
-    <column name="PlayAreaMin" type="F32FIXEDARRAY">
-      <offset>32</offset>
-      <num_elements>2</num_elements>
-    </column>
-    <column name="PlayAreaMax" type="F32FIXEDARRAY">
-      <offset>40</offset>
-      <num_elements>2</num_elements>
-    </column>
-    <column name="PlayHeights" type="F32FIXEDARRAY">
+    <column name="Colorshift" type="F32">
       <offset>48</offset>
+    </column>
+    <column name="Playareamin" type="F32FIXEDARRAY">
+      <offset>52</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="PlayAreaBuffer" type="F32">
-      <offset>56</offset>
-    </column>
-    <column name="VistaMap" type="STRING">
+    <column name="Playareamax" type="F32FIXEDARRAY">
       <offset>60</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Playheights" type="F32FIXEDARRAY">
+      <offset>68</offset>
+      <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Playareabuffer" type="F32">
+      <offset>76</offset>
+    </column>
+    <column name="Vistamap" type="STRING">
+      <offset>80</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="GenesisNode" type="STRUCT">
-      <offset>68</offset>
+    <column name="Genesisnode" type="STRUCT">
+      <offset>96</offset>
       <subtable external="GenesisNode" />
     </column>
-    <column name="GenesisNodeConnectionGroup" type="STRUCT">
-      <offset>72</offset>
+    <column name="Genesisnodeconnectiongroup" type="STRUCT">
+      <offset>104</offset>
       <subtable external="GenesisNodeConnectionGroup" />
     </column>
-    <column name="NodeBorder" type="STRUCT">
-      <offset>76</offset>
+    <column name="Nodeborder" type="STRUCT">
+      <offset>112</offset>
       <subtable external="GenesisNodeBorder" />
     </column>
-    <column name="NoSharingDetail" type="U8">
-      <offset>80</offset>
+    <column name="Nosharingdetail" type="U8">
+      <offset>120</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

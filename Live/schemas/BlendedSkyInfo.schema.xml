@@ -7,125 +7,145 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="specified_values" type="INT">
+    <column name="Specified_Values" type="INT">
       <offset>0</offset>
     </column>
-    <column name="IgnoreFogClip" type="U8">
+    <column name="Ignorefogclip" type="U8">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FogClip" type="U8">
+    <column name="Fogclip" type="U8">
       <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IgnoreFogClipLow" type="U8">
+    <column name="Ignorefogcliplow" type="U8">
       <offset>6</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="FogClipLow" type="U8">
+    <column name="Fogcliplow" type="U8">
       <offset>7</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CloudShadowTexture" type="STRING">
+    <column name="Cloudshadowtexture" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DiffuseWarpTextureCharacter" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="DiffuseWarpTextureWorld" type="STRING">
+    <column name="Diffusewarptexturecharacter" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="AmbientCube" type="STRING">
-      <offset>20</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="ReflectionCube" type="STRING">
+    <column name="Diffusewarptextureworld" type="STRING">
       <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="SkySun" type="EMBEDDEDSTRUCT">
-      <offset>28</offset>
+    <column name="AmbientCube" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="ReflectionCube" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Colorgradinglut" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Skysun" type="EMBEDDEDSTRUCT">
+      <offset>84</offset>
       <subtable external="SkyTimeSun" />
     </column>
-    <column name="SkySecondarySun" type="EMBEDDEDSTRUCT">
-      <offset>168</offset>
+    <column name="Skysecondarysun" type="EMBEDDEDSTRUCT">
+      <offset>224</offset>
       <subtable external="SkyTimeSecondarySun" />
     </column>
-    <column name="SkyCharacterLighting" type="EMBEDDEDSTRUCT">
-      <offset>212</offset>
+    <column name="Skycharacterlighting" type="EMBEDDEDSTRUCT">
+      <offset>268</offset>
       <subtable external="SkyTimeCharacterLighting" />
     </column>
-    <column name="SkyCloudShadows" type="EMBEDDEDSTRUCT">
-      <offset>328</offset>
+    <column name="Skycloudshadows" type="EMBEDDEDSTRUCT">
+      <offset>384</offset>
       <subtable external="SkyTimeCloudShadows" />
     </column>
-    <column name="SkyShadowFade" type="EMBEDDEDSTRUCT">
-      <offset>368</offset>
+    <column name="Skyshadowfade" type="EMBEDDEDSTRUCT">
+      <offset>424</offset>
       <subtable external="SkyTimeShadowFade" />
     </column>
-    <column name="SkyColorCorrection" type="EMBEDDEDSTRUCT">
-      <offset>396</offset>
+    <column name="Skycolorcorrection" type="EMBEDDEDSTRUCT">
+      <offset>452</offset>
       <subtable external="SkyTimeColorCorrection" />
     </column>
-    <column name="SkyTint" type="EMBEDDEDSTRUCT">
-      <offset>864</offset>
+    <column name="Skytint" type="EMBEDDEDSTRUCT">
+      <offset>920</offset>
       <subtable external="SkyTimeTint" />
     </column>
-    <column name="SkyOutline" type="EMBEDDEDSTRUCT">
-      <offset>896</offset>
-      <subtable external="SkyTimeOutline" />
-    </column>
-    <column name="SkyFog" type="EMBEDDEDSTRUCT">
-      <offset>964</offset>
+    <column name="Skyfog" type="EMBEDDEDSTRUCT">
+      <offset>952</offset>
       <subtable external="SkyTimeFog" />
     </column>
-    <column name="SkyLightBehavior" type="EMBEDDEDSTRUCT">
-      <offset>1088</offset>
+    <column name="Skylightbehavior" type="EMBEDDEDSTRUCT">
+      <offset>1076</offset>
       <subtable external="SkyTimeLightBehavior" />
     </column>
-    <column name="SkyBloom" type="EMBEDDEDSTRUCT">
-      <offset>1132</offset>
+    <column name="Skybloom" type="EMBEDDEDSTRUCT">
+      <offset>1120</offset>
       <subtable external="SkyTimeBloom" />
     </column>
     <column name="DOFValues" type="EMBEDDEDSTRUCT">
-      <offset>1180</offset>
+      <offset>1164</offset>
       <subtable external="DOFValues" />
     </column>
-    <column name="AmbientOcclusion" type="EMBEDDEDSTRUCT">
-      <offset>1284</offset>
+    <column name="Ambientocclusion" type="EMBEDDEDSTRUCT">
+      <offset>1268</offset>
       <subtable external="SkyTimeAmbientOcclusion" />
     </column>
     <column name="Wind" type="EMBEDDEDSTRUCT">
-      <offset>1320</offset>
+      <offset>1308</offset>
       <subtable external="SkyTimeWind" />
     </column>
-    <column name="SkyScattering" type="EMBEDDEDSTRUCT">
-      <offset>1364</offset>
+    <column name="Skyscattering" type="EMBEDDEDSTRUCT">
+      <offset>1352</offset>
       <subtable external="SkyTimeScattering" />
     </column>
-    <column name="SkyShadows" type="EMBEDDEDSTRUCT">
-      <offset>1392</offset>
+    <column name="Skyshadows" type="EMBEDDEDSTRUCT">
+      <offset>1380</offset>
       <subtable external="ShadowRules" />
     </column>
-    <column name="outputWorldLightDir" type="F32FIXEDARRAY">
-      <offset>1564</offset>
-      <num_elements>3</num_elements>
+    <column name="Hdr2adaptation" type="EMBEDDEDSTRUCT">
+      <offset>1408</offset>
+      <subtable external="SkyTimeHdr2Adaptation" />
     </column>
-    <column name="outputWorldLightDir2" type="F32FIXEDARRAY">
-      <offset>1576</offset>
-      <num_elements>3</num_elements>
+    <column name="Hdr2bloom" type="EMBEDDEDSTRUCT">
+      <offset>1512</offset>
+      <subtable external="SkyTimeHdr2Bloom" />
     </column>
-    <column name="secondaryLightType2" type="INT">
-      <offset>1588</offset>
+    <column name="Lightprobes" type="EMBEDDEDSTRUCT">
+      <offset>1536</offset>
+      <subtable external="SkyTimeLightProbes" />
+    </column>
+    <column name="Outputworldlightdir" type="F32FIXEDARRAY">
+      <offset>2076</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Outputworldlightdir2" type="F32FIXEDARRAY">
+      <offset>2088</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Secondarylighttype2" type="INT">
+      <offset>2100</offset>
       <static_define_list external="LightAffectType" />
     </column>
     <column name="}" type="END" />

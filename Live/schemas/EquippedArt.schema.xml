@@ -7,35 +7,35 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="InvBagsReady" type="INTARRAY">
+    <column name="Invbagsready" type="INTARRAY">
       <offset>0</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>
     </column>
     <column name="State" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="ItemArtBagState" />
     </column>
     <column name="Active" type="BIT">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="CanUpdate" type="BIT">
-      <offset>8</offset>
+    <column name="Canupdate" type="BIT">
+      <offset>16</offset>
       <flags>
         <flag>NO_NETSEND</flag>
       </flags>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="dirtyBit" type="U8">
-      <offset>9</offset>
+    <column name="Dirtybit" type="U8">
+      <offset>17</offset>
       <flags>
         <flag>NO_NETSEND</flag>
         <flag>DIRTY_BIT</flag>

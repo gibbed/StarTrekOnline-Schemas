@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="APAccessLevelMicroTrans2RequestType">
+  <elements type="int">
+    <element name="GrantMicroTrans2">0</element>
+    <element name="ChangeMicroTrans2PurchaseCount">1</element>
+    <element name="SetMicroTrans2PurchaseCount">2</element>
+    <element name="ResetAllPurchases">3</element>
+  </elements>
+</enum>

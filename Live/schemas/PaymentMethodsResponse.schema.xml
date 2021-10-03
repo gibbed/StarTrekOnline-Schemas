@@ -7,21 +7,22 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uAccountID" type="INT">
+    <column name="Uaccountid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="CmdID" type="INT">
+    <column name="Cmdid" type="INT">
       <offset>4</offset>
     </column>
     <column name="Success" type="U8">
       <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="PaymentMethods" type="STRUCT">
-      <offset>12</offset>
+    <column name="Paymentmethods" type="STRUCT">
+      <offset>16</offset>
       <subtable external="CachedPaymentMethod" />
     </column>
-    <column name="DefaultCurrency" type="STRING">
-      <offset>16</offset>
+    <column name="Defaultcurrency" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

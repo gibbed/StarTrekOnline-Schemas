@@ -7,14 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="zmap_name" type="STRING">
+    <column name="Zmap_Name" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="layer_name" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="uids" type="INTARRAY">
+    <column name="Layer_Name" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Uids" type="INTARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Ukey" type="INT64">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

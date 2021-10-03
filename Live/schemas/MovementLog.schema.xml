@@ -11,11 +11,11 @@
       <offset>0</offset>
     </column>
     <column name="Lines" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="MovementLogLine" />
     </column>
-    <column name="bytesTotal" type="INT">
-      <offset>8</offset>
+    <column name="Bytestotal" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -14,24 +14,24 @@
       </flags>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="ExprBlockRequires" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Exprblockrequires" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="Expression" />
     </column>
     <column name="ExprRequiresBlock" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ExprBlockRequires</redundant_name>
+      <redundant_name>Exprblockrequires</redundant_name>
       <subtable external="Expression" />
     </column>
     <column name="ExprRequires" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ExprBlockRequires</redundant_name>
+      <redundant_name>Exprblockrequires</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
     <column name="}" type="END" />

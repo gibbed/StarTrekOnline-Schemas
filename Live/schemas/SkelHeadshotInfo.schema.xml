@@ -6,19 +6,19 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="HeadshotInfoName" type="STRING">
+    <column name="Headshotinfoname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="HeadShotFrame" type="STRUCT">
-      <offset>4</offset>
+    <column name="Headshotframe" type="STRUCT">
+      <offset>8</offset>
       <subtable external="HeadShotFrame" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

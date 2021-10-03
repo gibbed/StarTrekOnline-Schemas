@@ -14,7 +14,7 @@
       </flags>
     </column>
     <column name="Effect" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

@@ -10,8 +10,11 @@
     <column name="DisplayName" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="contribution" type="INT">
-      <offset>4</offset>
+    <column name="ContainerID" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Contribution" type="INT">
+      <offset>12</offset>
     </column>
     <column name="}" type="END" />
   </table>

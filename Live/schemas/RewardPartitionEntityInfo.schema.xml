@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="RewardPartitionEntityInfo">
+  <table>
+    <column name="RewardPartitionEntityInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Autotimestamp" type="INT64">
+      <offset>0</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="ContainerID" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Storedtablebags" type="STRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="InventoryBag" />
+    </column>
+    <column name="Lilasttickrewardswerelocked" type="INT64">
+      <offset>24</offset>
+    </column>
+    <column name="Lilasttickrewardswerereset" type="INT64">
+      <offset>32</offset>
+    </column>
+    <column name="Ulasttimerewardswerelocked" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Disallowupdates" type="U8">
+      <offset>44</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Forcegrantstoredrewards" type="U8">
+      <offset>45</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Accountrewardgateddata" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="RewardGatedTypeData" />
+    </column>
+    <column name="Rewardgatedmission" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="RewardGatedTypeData" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

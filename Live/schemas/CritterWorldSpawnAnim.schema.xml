@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CritterWorldSpawnAnim">
+  <table>
+    <column name="CritterWorldSpawnAnim" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Key" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Order" type="F32">
+      <offset>4</offset>
+    </column>
+    <column name="SpawnType" type="INT">
+      <offset>8</offset>
+      <static_define_list external="CritterWorldSpawnAnimType" />
+    </column>
+    <column name="SpawnAnim" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>AnimationLibrary</dictionary_name>
+    </column>
+    <column name="Spawntime" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

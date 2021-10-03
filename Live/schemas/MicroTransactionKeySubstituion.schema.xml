@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MicroTransactionKeySubstituion">
+  <table>
+    <column name="MicroTransactionKeySubstituion" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Shard" type="INT">
+      <offset>0</offset>
+      <static_define_list external="MicroTransactionShardType" />
+    </column>
+    <column name="Key" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

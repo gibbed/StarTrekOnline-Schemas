@@ -14,20 +14,20 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="SpecialDialogOverrides" type="STRUCT">
-      <offset>4</offset>
+    <column name="Specialdialogoverrides" type="STRUCT">
+      <offset>8</offset>
       <subtable external="SpecialDialogOverrideData" />
     </column>
-    <column name="SpecialActionBlockOverrides" type="STRUCT">
-      <offset>8</offset>
+    <column name="Specialactionblockoverrides" type="STRUCT">
+      <offset>16</offset>
       <subtable external="SpecialActionBlockOverrideData" />
     </column>
-    <column name="MissionOfferOverrides" type="STRUCT">
-      <offset>12</offset>
+    <column name="Missionofferoverrides" type="STRUCT">
+      <offset>24</offset>
       <subtable external="MissionOfferOverrideData" />
     </column>
-    <column name="ImageMenuItemOverrides" type="STRUCT">
-      <offset>16</offset>
+    <column name="Imagemenuitemoverrides" type="STRUCT">
+      <offset>32</offset>
       <subtable external="ImageMenuItemOverrideData" />
     </column>
     <column name="}" type="END" />

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DynSndEngineType">
+  <elements type="int">
+    <element name="Car">0</element>
+    <element name="Jet">1</element>
+    <element name="Generator">2</element>
+    <element name="Servo">3</element>
+    <element name="NumTypes">4</element>
+  </elements>
+</enum>

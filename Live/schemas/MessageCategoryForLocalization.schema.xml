@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CategoryName" type="STRING">
+    <column name="Categoryname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="FileNameSubString" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Filenamesubstring" type="STRINGARRAY">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

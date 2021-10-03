@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ActiveModdedEnemy">
+  <table>
+    <column name="ActiveModdedEnemy" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Erentity" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Type" type="INT">
+      <offset>4</offset>
+      <static_define_list external="EnemyModScope" />
+    </column>
+    <column name="Seen" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Delete" type="U8">
+      <offset>9</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

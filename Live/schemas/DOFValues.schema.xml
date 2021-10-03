@@ -9,63 +9,63 @@
     <column name="Time" type="F32">
       <offset>0</offset>
     </column>
-    <column name="nearDist" type="F32">
+    <column name="Neardist" type="F32">
       <offset>4</offset>
     </column>
-    <column name="nearValue" type="F32">
+    <column name="Nearvalue" type="F32">
       <offset>8</offset>
     </column>
-    <column name="focusDist" type="F32">
+    <column name="Focusdist" type="F32">
       <offset>12</offset>
     </column>
-    <column name="focusValue" type="F32">
+    <column name="Focusvalue" type="F32">
       <offset>16</offset>
     </column>
     <column name="FarDist" type="F32">
       <offset>20</offset>
     </column>
-    <column name="farValue" type="F32">
+    <column name="Farvalue" type="F32">
       <offset>24</offset>
     </column>
-    <column name="skyValue" type="F32">
+    <column name="Skyvalue" type="F32">
       <offset>28</offset>
     </column>
-    <column name="borderColorHSV" type="F32FIXEDARRAY">
+    <column name="Bordercolorhsv" type="F32FIXEDARRAY">
       <offset>32</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="borderColorScale" type="F32">
+    <column name="Bordercolorscale" type="F32">
       <offset>44</offset>
     </column>
-    <column name="borderRamp" type="F32">
+    <column name="Borderramp" type="F32">
       <offset>48</offset>
     </column>
-    <column name="borderBlur" type="F32">
+    <column name="Borderblur" type="F32">
       <offset>52</offset>
     </column>
-    <column name="depthAdjustFgHSV" type="F32FIXEDARRAY">
+    <column name="Depthadjustfghsv" type="F32FIXEDARRAY">
       <offset>56</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="depthAdjustBgHSV" type="F32FIXEDARRAY">
+    <column name="Depthadjustbghsv" type="F32FIXEDARRAY">
       <offset>68</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="depthAdjustSkyHSV" type="F32FIXEDARRAY">
+    <column name="Depthadjustskyhsv" type="F32FIXEDARRAY">
       <offset>80</offset>
       <num_elements>3</num_elements>
       <format>HSV</format>
     </column>
-    <column name="depthAdjustNearDist" type="F32">
+    <column name="Depthadjustneardist" type="F32">
       <offset>92</offset>
     </column>
-    <column name="depthAdjustFadeDist" type="F32">
+    <column name="Depthadjustfadedist" type="F32">
       <offset>96</offset>
     </column>
-    <column name="bfParamsSpecified" type="INTFIXEDARRAY">
+    <column name="Bfparamsspecified" type="INTFIXEDARRAY">
       <offset>100</offset>
       <flags>
         <flag>USEDFIELD</flag>
@@ -73,7 +73,7 @@
       </flags>
       <num_elements>1</num_elements>
     </column>
-    <column name="blurSize" type="IGNORE" />
-    <column name="EndDOFValues" type="END" />
+    <column name="Blursize" type="IGNORE" />
+    <column name="Enddofvalues" type="END" />
   </table>
 </parser>

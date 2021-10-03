@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="_PolyTable_PerfMetricReportBase">
+  <table>
+    <column name="_PolyTable_PerfMetricReportBase" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="PerfMetricReport_F32" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="PerfMetricReport_F32" />
+    </column>
+    <column name="PerfMetricReport_U32" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="PerfMetricReport_U32" />
+    </column>
+    <column name="PerfMetricReport_U64" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="PerfMetricReport_U64" />
+    </column>
+  </table>
+</parser>

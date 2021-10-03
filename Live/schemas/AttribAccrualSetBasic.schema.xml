@@ -7,64 +7,76 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="attrBasicAbs" type="EMBEDDEDSTRUCT">
+    <column name="Attrbasicabs" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="attrBasicFactPos" type="EMBEDDEDSTRUCT">
-      <offset>1160</offset>
+    <column name="Attrbasicfactpos" type="EMBEDDEDSTRUCT">
+      <offset>1260</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="attrBasicFactNeg" type="EMBEDDEDSTRUCT">
-      <offset>2320</offset>
+    <column name="Attrbasicfactneg" type="EMBEDDEDSTRUCT">
+      <offset>2520</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="attrStrBase" type="EMBEDDEDSTRUCT">
-      <offset>3480</offset>
+    <column name="Attrbasicfactbonus" type="EMBEDDEDSTRUCT">
+      <offset>3780</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="attrStrFactPos" type="EMBEDDEDSTRUCT">
-      <offset>4640</offset>
+    <column name="Attrstrbase" type="EMBEDDEDSTRUCT">
+      <offset>5040</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="attrStrFactNeg" type="EMBEDDEDSTRUCT">
-      <offset>5800</offset>
+    <column name="Attrstrfactpos" type="EMBEDDEDSTRUCT">
+      <offset>6300</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="attrStrFactBonus" type="EMBEDDEDSTRUCT">
-      <offset>6960</offset>
+    <column name="Attrstrfactneg" type="EMBEDDEDSTRUCT">
+      <offset>7560</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="attrStrMult" type="EMBEDDEDSTRUCT">
-      <offset>8120</offset>
+    <column name="Attrstrfactbonus" type="EMBEDDEDSTRUCT">
+      <offset>8820</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="attrStrAdd" type="EMBEDDEDSTRUCT">
-      <offset>9280</offset>
+    <column name="Attrstrmult" type="EMBEDDEDSTRUCT">
+      <offset>10080</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="attrResTrue" type="EMBEDDEDSTRUCT">
-      <offset>10440</offset>
+    <column name="Attrstradd" type="EMBEDDEDSTRUCT">
+      <offset>11340</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="attrResBase" type="EMBEDDEDSTRUCT">
-      <offset>11600</offset>
+    <column name="Attrrestrue" type="EMBEDDEDSTRUCT">
+      <offset>12600</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="attrResFactPos" type="EMBEDDEDSTRUCT">
-      <offset>12760</offset>
+    <column name="Attrresbase" type="EMBEDDEDSTRUCT">
+      <offset>13860</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="attrResFactNeg" type="EMBEDDEDSTRUCT">
-      <offset>13920</offset>
+    <column name="Attrresfactpos" type="EMBEDDEDSTRUCT">
+      <offset>15120</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="attrResFactBonus" type="EMBEDDEDSTRUCT">
-      <offset>15080</offset>
+    <column name="Attrresfactneg" type="EMBEDDEDSTRUCT">
+      <offset>16380</offset>
       <subtable external="CharacterAttribs" />
     </column>
-    <column name="attrImmunity" type="EMBEDDEDSTRUCT">
-      <offset>16240</offset>
+    <column name="Attrresmult" type="EMBEDDEDSTRUCT">
+      <offset>17640</offset>
+      <subtable external="CharacterAttribs" />
+    </column>
+    <column name="Attrresfactbonus" type="EMBEDDEDSTRUCT">
+      <offset>18900</offset>
+      <subtable external="CharacterAttribs" />
+    </column>
+    <column name="Attrimmunity" type="EMBEDDEDSTRUCT">
+      <offset>20160</offset>
+      <subtable external="CharacterAttribs" />
+    </column>
+    <column name="Attrresignore" type="EMBEDDEDSTRUCT">
+      <offset>21420</offset>
       <subtable external="CharacterAttribs" />
     </column>
     <column name="}" type="END" />

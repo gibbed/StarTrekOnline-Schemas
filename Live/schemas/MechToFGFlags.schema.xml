@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MechToFGFlags">
+  <table>
+    <column name="MechToFGFlags" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Weaponsdisable" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Weaponsenable" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Movementactionset" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Offgroundtypeset" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Landingthresholdmet" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Notifyinsufficientfuel" type="BIT">
+      <offset>0</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CameraTypeRules" type="STRUCT">
+    <column name="Cameratyperules" type="STRUCT">
       <offset>0</offset>
       <subtable external="CameraTypeRulesDef" />
     </column>

@@ -7,25 +7,25 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="createState" type="INT">
+    <column name="Createstate" type="INT">
       <offset>0</offset>
       <static_define_list external="RequestState" />
     </column>
     <column name="Handle" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="Channels" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="VoiceChannel" />
     </column>
     <column name="ID" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
-    <column name="recTime" type="INT">
-      <offset>16</offset>
+    <column name="Rectime" type="INT">
+      <offset>28</offset>
     </column>
     <column name="}" type="END" />
   </table>

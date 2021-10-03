@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PrivateInvalidForMatchReason">
+  <elements type="int">
+    <element name="MoreThanOneMatchGroup">-1</element>
+    <element name="Valid">0</element>
+    <element name="IncorrectGroupArrangement">1</element>
+    <element name="GroupSizeNotExact">2</element>
+    <element name="GroupSizeTooSmall">4</element>
+    <element name="GroupSizeTooLarge">8</element>
+    <element name="PublicMatchOnly">16</element>
+  </elements>
+</enum>

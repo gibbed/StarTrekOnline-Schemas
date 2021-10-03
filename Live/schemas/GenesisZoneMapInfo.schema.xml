@@ -13,52 +13,53 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="VistaMap" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="IsVistaTerrain" type="U8">
+    <column name="Vistamap" type="STRING">
       <offset>8</offset>
-    </column>
-    <column name="ExternalMap" type="STRING">
-      <offset>12</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MissionLevel" type="INT">
+    <column name="Isvistaterrain" type="U8">
       <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="LevelType" type="INT">
-      <offset>20</offset>
+    <column name="Externalmap" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Missionlevel" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Leveltype" type="INT">
+      <offset>36</offset>
       <static_define_list external="MissionLevelType" />
     </column>
-    <column name="EncounterOverride" type="STRUCT">
-      <offset>24</offset>
+    <column name="Encounteroverride" type="STRUCT">
+      <offset>40</offset>
       <subtable external="GenesisProceduralEncounterProperties" />
     </column>
-    <column name="SolSysLayerInfo" type="STRUCT">
-      <offset>28</offset>
+    <column name="Solsyslayerinfo" type="STRUCT">
+      <offset>48</offset>
       <subtable external="GenesisZoneMapInfoLayer" />
     </column>
-    <column name="InteriorLayerInfo" type="STRUCT">
-      <offset>32</offset>
+    <column name="Interiorlayerinfo" type="STRUCT">
+      <offset>56</offset>
       <subtable external="GenesisZoneMapInfoLayer" />
     </column>
-    <column name="ExteriorLayerInfo" type="STRUCT">
-      <offset>36</offset>
+    <column name="Exteriorlayerinfo" type="STRUCT">
+      <offset>64</offset>
       <subtable external="GenesisZoneMapInfoLayer" />
     </column>
     <column name="SkyGroup" type="OPTIONALSTRUCT">
-      <offset>40</offset>
+      <offset>72</offset>
       <subtable external="SkyInfoGroup" />
     </column>
     <column name="Type" type="IGNORE" />
-    <column name="ExternalRegion" type="IGNORE" />
-    <column name="OverrideCubeMap" type="IGNORE" />
-    <column name="SolarSystemShoeboxes" type="IGNORE" />
+    <column name="Externalregion" type="IGNORE" />
+    <column name="Overridecubemap" type="IGNORE" />
+    <column name="Solarsystemshoeboxes" type="IGNORE" />
     <column name="End" type="END" />
   </table>
 </parser>

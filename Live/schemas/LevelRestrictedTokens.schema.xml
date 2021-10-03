@@ -7,11 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MinAccountLevel" type="INT">
+    <column name="Minaccountlevel" type="INT">
       <offset>0</offset>
     </column>
-    <column name="AllowIfBilled" type="U8">
+    <column name="Allowifbilled" type="U8">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Token" type="STRUCT">
       <offset>8</offset>

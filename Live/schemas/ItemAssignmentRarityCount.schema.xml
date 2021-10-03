@@ -14,14 +14,14 @@
       </flags>
     </column>
     <column name="Weight" type="INTARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="ItemAssignmentWeightType" />
     </column>
-    <column name="AssignmentCount" type="INT">
-      <offset>8</offset>
+    <column name="Assignmentcount" type="INT">
+      <offset>16</offset>
     </column>
-    <column name="FeaturedAssignmentCount" type="INT">
-      <offset>12</offset>
+    <column name="Featuredassignmentcount" type="INT">
+      <offset>20</offset>
     </column>
     <column name="}" type="END" />
   </table>

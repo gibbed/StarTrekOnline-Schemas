@@ -16,148 +16,199 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Scope" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="Icon" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Image" type="STRING">
+    <column name="Scope" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="FeaturedActivity" type="STRING">
-      <offset>20</offset>
+    <column name="Icon" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Image" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Featuredactivity" type="STRING">
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="DisplayName" type="EMBEDDEDSTRUCT">
-      <offset>24</offset>
-      <subtable external="DisplayMessage" />
-    </column>
-    <column name="Description" type="EMBEDDEDSTRUCT">
-      <offset>36</offset>
-      <subtable external="DisplayMessage" />
-    </column>
-    <column name="AssignmentChainDisplayName" type="EMBEDDEDSTRUCT">
       <offset>48</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="AssignmentChainDescription" type="EMBEDDEDSTRUCT">
-      <offset>60</offset>
+    <column name="Description" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Assignmentchaindisplayname" type="EMBEDDEDSTRUCT">
+      <offset>96</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Assignmentchaindescription" type="EMBEDDEDSTRUCT">
+      <offset>120</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="Category" type="INT">
-      <offset>72</offset>
+      <offset>144</offset>
       <static_define_list external="ItemAssignmentCategory" />
     </column>
+    <column name="Itemassignmenttag" type="INTARRAY">
+      <offset>152</offset>
+      <static_define_list external="ItemAssignmentTag" />
+    </column>
     <column name="Duration" type="INT">
-      <offset>76</offset>
+      <offset>160</offset>
     </column>
-    <column name="MinimumSlottedItems" type="INT">
-      <offset>80</offset>
+    <column name="Durationincreasestep" type="INT">
+      <offset>164</offset>
+    </column>
+    <column name="Durationincreaserandcount" type="INT">
+      <offset>168</offset>
+    </column>
+    <column name="Forcecompletecost" type="INT">
+      <offset>172</offset>
+    </column>
+    <column name="Minimumslotteditems" type="INT">
+      <offset>176</offset>
       <default>1</default>
     </column>
-    <column name="AssignmentPointCost" type="INT">
-      <offset>84</offset>
+    <column name="Assignmentpointcost" type="INT">
+      <offset>180</offset>
       <default>1</default>
     </column>
-    <column name="CooldownAfterCompletion" type="INT">
-      <offset>88</offset>
+    <column name="Cooldownaftercompletion" type="INT">
+      <offset>184</offset>
     </column>
     <column name="Weight" type="INT">
-      <offset>92</offset>
+      <offset>188</offset>
       <static_define_list external="ItemAssignmentWeightType" />
     </column>
     <column name="Requirements" type="OPTIONALSTRUCT">
-      <offset>96</offset>
+      <offset>192</offset>
       <subtable external="ItemAssignmentRequirements" />
     </column>
     <column name="Outcome" type="STRUCT">
-      <offset>100</offset>
+      <offset>200</offset>
       <subtable external="ItemAssignmentOutcome" />
     </column>
-    <column name="CompletionExperience" type="INT">
-      <offset>104</offset>
+    <column name="Completionexperience" type="INT">
+      <offset>208</offset>
+    </column>
+    <column name="Completionexperiencepersecond" type="F32">
+      <offset>212</offset>
+    </column>
+    <column name="Itemassignmentschool" type="REFERENCE">
+      <offset>216</offset>
+      <dictionary_name>ItemAssignmentSchoolDef</dictionary_name>
     </column>
     <column name="Slot" type="STRUCT">
-      <offset>108</offset>
+      <offset>224</offset>
       <subtable external="ItemAssignmentSlot" />
     </column>
-    <column name="OutcomeModifier" type="STRUCT">
-      <offset>112</offset>
+    <column name="Outcomemodifier" type="STRUCT">
+      <offset>232</offset>
       <subtable external="ItemAssignmentOutcomeModifier" />
     </column>
-    <column name="NumericDurationScaleCategory" type="INT">
-      <offset>116</offset>
+    <column name="Numericdurationscalecategory" type="INT">
+      <offset>240</offset>
       <static_define_list external="ItemAssignmentDurationScaleCategory" />
     </column>
-    <column name="UniqueAssignmentCount" type="INT">
-      <offset>120</offset>
+    <column name="Attributerequirement" type="STRUCT">
+      <offset>248</offset>
+      <subtable external="ItemAssignmentAttributeRequirement" />
     </column>
-    <column name="SortOrder" type="INT">
-      <offset>124</offset>
+    <column name="Uniqueassignmentcount" type="INT">
+      <offset>256</offset>
     </column>
-    <column name="IsAbortable" type="BIT">
-      <offset>128</offset>
+    <column name="Difficultyrating" type="INT">
+      <offset>260</offset>
+    </column>
+    <column name="Sortorder" type="INT">
+      <offset>264</offset>
+    </column>
+    <column name="Isabortable" type="BIT">
+      <offset>268</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="Disabled" type="BIT">
-      <offset>128</offset>
+      <offset>268</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="AllowItemUnslotting" type="BIT">
-      <offset>128</offset>
+    <column name="Hidden" type="BIT">
+      <offset>268</offset>
       <bit_offset>65538</bit_offset>
     </column>
+    <column name="Disablesamplerewards" type="BIT">
+      <offset>268</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Allowitemunslotting" type="BIT">
+      <offset>268</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
     <column name="Repeatable" type="BIT">
-      <offset>128</offset>
+      <offset>268</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
       </flags>
-      <bit_offset>65539</bit_offset>
+      <bit_offset>65541</bit_offset>
       <format_strings>
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="CanStartRemotely" type="BIT">
-      <offset>128</offset>
-      <bit_offset>65540</bit_offset>
-    </column>
-    <column name="HasOptionalSlots" type="BIT">
-      <offset>128</offset>
-      <flags>
-        <flag>NO_TEXT_SAVE</flag>
-      </flags>
-      <bit_offset>65541</bit_offset>
-    </column>
-    <column name="HasRequiredSlots" type="BIT">
-      <offset>128</offset>
-      <flags>
-        <flag>NO_TEXT_SAVE</flag>
-      </flags>
+    <column name="Canstartremotely" type="BIT">
+      <offset>268</offset>
       <bit_offset>65542</bit_offset>
     </column>
+    <column name="Hasoptionalslots" type="BIT">
+      <offset>268</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65543</bit_offset>
+    </column>
+    <column name="Hasrequiredslots" type="BIT">
+      <offset>269</offset>
+      <flags>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Hasquantityoverride" type="BIT">
+      <offset>269</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Forceuseminimumslotteditems" type="BIT">
+      <offset>269</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Grantcompletionexperiencetoslotteditems" type="BIT">
+      <offset>269</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
     <column name="Dependencies" type="STRUCT">
-      <offset>132</offset>
+      <offset>272</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <subtable external="ItemAssignmentDefRef" />
+    </column>
+    <column name="Costfromitem" type="REFERENCE">
+      <offset>280</offset>
+      <dictionary_name>ItemDef</dictionary_name>
     </column>
     <column name="}" type="END" />
   </table>

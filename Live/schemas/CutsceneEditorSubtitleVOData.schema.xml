@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CutsceneEditorSubtitleVOData">
+  <table>
+    <column name="CutsceneEditorSubtitleVOData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Cuteditsubvoinitialized" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Cuteditsubvodocumentname" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Cuteditsubvoeasubtitles" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="CutsceneEditorSubtitleVOPoint" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

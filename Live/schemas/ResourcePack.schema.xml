@@ -11,7 +11,7 @@
       <offset>0</offset>
     </column>
     <column name="Folders" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="ResourcePackFolderNode" />
     </column>
     <column name="}" type="END" />

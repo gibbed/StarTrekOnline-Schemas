@@ -3,5 +3,6 @@
   <elements type="int">
     <element name="SET">0</element>
     <element name="INCREMENT">1</element>
+    <element name="EXTEND_DATETIME">2</element>
   </elements>
 </enum>

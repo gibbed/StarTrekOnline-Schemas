@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ConsignmentLotState">
+  <elements type="int">
+    <element name="Active">0</element>
+    <element name="Purchased">1</element>
+    <element name="Expired">2</element>
+    <element name="Broker">3</element>
+  </elements>
+</enum>

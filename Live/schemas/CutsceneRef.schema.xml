@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hCutsceneDef" type="REFERENCE">
+    <column name="Hcutscenedef" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>CutsceneDef</dictionary_name>
     </column>

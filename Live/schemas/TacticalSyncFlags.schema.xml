@@ -7,49 +7,45 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="runPlusCrouchDoesRoll" type="BIT">
+    <column name="Runpluscrouchdoesroll" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="doubleTapDoesRoll" type="BIT">
+    <column name="Doubletapdoesroll" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="runUsesFuel" type="BIT">
+    <column name="Runusesfuel" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="rollWhileAiming" type="BIT">
+    <column name="Rollwhileaiming" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="RollIgnoresGlobalCooldown" type="BIT">
+    <column name="Rollignoresglobalcooldown" type="BIT">
       <offset>0</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="SprintDisabled" type="BIT">
+    <column name="Sprintdisabled" type="BIT">
       <offset>0</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="AimIgnoresGlobalCooldown" type="BIT">
+    <column name="Aimignoresglobalcooldown" type="BIT">
       <offset>0</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="AutoSprint" type="BIT">
+    <column name="Autosprint" type="BIT">
       <offset>0</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="SprintToggles" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Aimdisablesjump" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="AimDisablesJump" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65545</bit_offset>
-    </column>
-    <column name="IgnoreInput" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Ignoreinput" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

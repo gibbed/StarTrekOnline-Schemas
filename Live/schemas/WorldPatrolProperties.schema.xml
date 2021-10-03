@@ -10,8 +10,8 @@
       <offset>0</offset>
       <static_define_list external="WorldPatrolRouteType" />
     </column>
-    <column name="PatrolPoint" type="STRUCT">
-      <offset>4</offset>
+    <column name="Patrolpoint" type="STRUCT">
+      <offset>8</offset>
       <subtable external="WorldPatrolPointProperties" />
     </column>
     <column name="End" type="END" />

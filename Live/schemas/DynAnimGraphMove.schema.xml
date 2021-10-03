@@ -15,19 +15,24 @@
       </flags>
       <dictionary_name>DynMove</dictionary_name>
     </column>
-    <column name="FxEvent" type="STRUCT">
-      <offset>4</offset>
+    <column name="Fxevent" type="STRUCT">
+      <offset>8</offset>
       <subtable external="DynAnimGraphFxEvent" />
     </column>
     <column name="Direction" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
+      <static_define_list external="DynMovementDirection" />
+    </column>
+    <column name="Lastdirection" type="INT">
+      <offset>20</offset>
       <static_define_list external="DynMovementDirection" />
     </column>
     <column name="Chance" type="F32">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
-    <column name="EditorPlaybackBias" type="BOOLFLAG">
-      <offset>16</offset>
+    <column name="Editorplaybackbias" type="BOOLFLAG">
+      <offset>28</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

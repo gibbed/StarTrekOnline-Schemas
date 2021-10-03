@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uEntID" type="INT">
+    <column name="Uentid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="QueueInstance" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Queueinstance" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="QueueInstance" />
     </column>
     <column name="}" type="END" />

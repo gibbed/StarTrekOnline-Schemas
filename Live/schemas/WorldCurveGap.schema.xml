@@ -10,12 +10,14 @@
     <column name="Position" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Radius" type="F32">
       <offset>12</offset>
     </column>
     <column name="Inherited" type="U8">
       <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

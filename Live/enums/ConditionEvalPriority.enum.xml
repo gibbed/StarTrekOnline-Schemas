@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ConditionEvalPriority">
+  <elements type="int">
+    <element name="DefaultBehavior">0</element>
+    <element name="ResetOnly">1</element>
+    <element name="SuccessOnly">2</element>
+    <element name="FailureOnly">3</element>
+  </elements>
+</enum>

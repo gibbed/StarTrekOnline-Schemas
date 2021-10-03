@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="DynInterpType">
+  <elements type="int">
+    <element name="Linear">0</element>
+    <element name="Step">1</element>
+    <element name="EaseIn">2</element>
+    <element name="EaseOut">3</element>
+    <element name="EaseInAndOut">4</element>
+  </elements>
+</enum>

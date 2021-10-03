@@ -5,5 +5,6 @@
     <element name="RaiseTo">1</element>
     <element name="LowerTo">2</element>
     <element name="SetTo">3</element>
+    <element name="Add_FailTransactionOnWaste">4</element>
   </elements>
 </enum>

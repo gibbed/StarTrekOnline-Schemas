@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CostInfo" type="STRUCT">
+    <column name="Costinfo" type="STRUCT">
       <offset>0</offset>
       <subtable external="StoreItemCostInfo" />
     </column>
-    <column name="StoreItemCount" type="INT">
-      <offset>4</offset>
+    <column name="Storeitemcount" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="NetLinkState">
+  <elements type="int">
+    <element name="Created">0</element>
+    <element name="Connected">1</element>
+    <element name="Connecting">2</element>
+    <element name="Disconnecting">3</element>
+    <element name="Disconnected">4</element>
+    <element name="Clearing">5</element>
+    <element name="Cleared">6</element>
+  </elements>
+</enum>

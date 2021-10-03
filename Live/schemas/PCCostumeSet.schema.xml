@@ -5,6 +5,9 @@
       <flags>
         <flag>PARSETABLE_INFO</flag>
       </flags>
+      <format_strings>
+        <format_string name="__VERSION">1</format_string>
+      </format_strings>
     </column>
     <column name="{" type="START" />
     <column name="Name" type="STRING">
@@ -16,47 +19,47 @@
       </flags>
     </column>
     <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CostumeType" type="INT">
-      <offset>20</offset>
+    <column name="Costumetype" type="INT">
+      <offset>40</offset>
       <default>4</default>
       <static_define_list external="PCCostumeType" />
     </column>
     <column name="Flags" type="INT">
-      <offset>24</offset>
+      <offset>44</offset>
       <static_define_list external="PCCostumeSetFlags" />
       <format>FLAGS</format>
     </column>
-    <column name="ExprBlockUnlock" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Exprblockunlock" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="Expression" />
     </column>
-    <column name="ExprUnlockBlock" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Exprunlockblock" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ExprBlockUnlock</redundant_name>
+      <redundant_name>Exprblockunlock</redundant_name>
       <subtable external="Expression" />
     </column>
-    <column name="ExprUnlock" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Exprunlock" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ExprBlockUnlock</redundant_name>
+      <redundant_name>Exprblockunlock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="PlayerCostume" type="STRUCT">
-      <offset>32</offset>
+    <column name="Playercostume" type="STRUCT">
+      <offset>56</offset>
       <subtable external="CostumeRefForSet" />
     </column>
     <column name="}" type="END" />

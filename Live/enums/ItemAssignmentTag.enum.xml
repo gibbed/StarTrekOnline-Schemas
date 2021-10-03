@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ItemAssignmentTag">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="Sc_Brg_01">1</element>
+    <element name="Sc_Crd_01">2</element>
+    <element name="Sc_Crd_02">3</element>
+    <element name="Sc_Crd_03">4</element>
+    <element name="Sc_Kfr_01">5</element>
+    <element name="Sc_Kfr_02">6</element>
+    <element name="Sc_Kfr_03">7</element>
+    <element name="Sc_Klg_01">8</element>
+    <element name="Sc_Klg_02">9</element>
+    <element name="Sc_Klg_03">10</element>
+    <element name="Sc_Klg_04">11</element>
+    <element name="Sc_Klg_05">12</element>
+    <element name="Sc_Rom_01">13</element>
+    <element name="Sc_Rom_02">14</element>
+    <element name="Sc_Rom_03">15</element>
+  </elements>
+</enum>

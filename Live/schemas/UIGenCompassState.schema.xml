@@ -12,19 +12,19 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>23</default>
+      <default>25</default>
       <static_define_list external="UIGenType" />
     </column>
     <column name="Icons" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="UIGenCompassIcon" />
     </column>
     <column name="Flagged" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="UIGenCompassFlagged" />
     </column>
     <column name="Offset" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

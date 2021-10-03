@@ -7,22 +7,29 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="fHealth" type="F32">
+    <column name="Fhealth" type="F32">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="fHealthMax" type="F32">
+    <column name="Fhealthmax" type="F32">
       <offset>4</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="fHealthOriginal" type="F32">
+    <column name="Fhealthoriginal" type="F32">
       <offset>8</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Flinkedattrib" type="F32">
+      <offset>12</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>

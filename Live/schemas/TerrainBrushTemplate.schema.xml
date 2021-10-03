@@ -11,19 +11,19 @@
       <offset>0</offset>
     </column>
     <column name="Function" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="TerrainFunctionName" />
     </column>
     <column name="Channel" type="INT">
-      <offset>8</offset>
+      <offset>12</offset>
       <static_define_list external="TerrainBrushChannel" />
     </column>
     <column name="Bucket" type="INT">
-      <offset>12</offset>
+      <offset>16</offset>
       <static_define_list external="TerrainBrushBucket" />
     </column>
     <column name="Param" type="STRUCT">
-      <offset>16</offset>
+      <offset>24</offset>
       <subtable external="TerrainBrushTemplateParam" />
     </column>
     <column name="}" type="END" />

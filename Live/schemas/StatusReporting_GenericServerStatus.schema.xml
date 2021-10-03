@@ -10,8 +10,8 @@
     <column name="FPS" type="F32">
       <offset>0</offset>
     </column>
-    <column name="RestartingCommand" type="STRING">
-      <offset>4</offset>
+    <column name="Restartingcommand" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
@@ -19,23 +19,23 @@
         <format_string name="HTML_SKIP">1</format_string>
       </format_strings>
     </column>
-    <column name="NumAlerts" type="INTFIXEDARRAY">
-      <offset>8</offset>
-      <num_elements>3</num_elements>
+    <column name="Numalerts" type="INTFIXEDARRAY">
+      <offset>16</offset>
+      <num_elements>4</num_elements>
       <format_strings>
         <format_string name="HTML_SKIP">1</format_string>
       </format_strings>
     </column>
     <column name="State" type="INT">
-      <offset>20</offset>
+      <offset>32</offset>
       <static_define_list external="StatusReporting_SelfReportedState" />
     </column>
-    <column name="NameValuePairs" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Namevaluepairs" type="OPTIONALSTRUCT">
+      <offset>40</offset>
       <subtable external="NameValuePairList" />
     </column>
-    <column name="PCLStatuses" type="STRUCT">
-      <offset>28</offset>
+    <column name="Pclstatuses" type="STRUCT">
+      <offset>48</offset>
       <subtable external="PCLStatusMonitoringUpdate" />
     </column>
     <column name="}" type="END" />

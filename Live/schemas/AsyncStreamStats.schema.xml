@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="AsyncStreamStats">
+  <table>
+    <column name="AsyncStreamStats" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Streamname" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Status" type="INT">
+      <offset>8</offset>
+      <static_define_list external="AsyncStreamStatus" />
+    </column>
+    <column name="BytesRead" type="INT64">
+      <offset>16</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Requestsfulfilled" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Readstarttime" type="INT">
+      <offset>28</offset>
+      <format_strings>
+        <format_string name="HTML_SECS_AGO">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Readrequestspending" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Otherfields" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="NameValuePair" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

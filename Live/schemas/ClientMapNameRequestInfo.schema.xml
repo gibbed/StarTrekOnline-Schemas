@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hMessage" type="REFERENCE">
+    <column name="Hmessage" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="uLastRequestTime" type="INT">
-      <offset>4</offset>
+    <column name="Ulastrequesttime" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

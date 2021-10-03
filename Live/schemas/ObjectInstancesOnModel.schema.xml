@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ObjectInstancesOnModel">
+  <table>
+    <column name="ObjectInstancesOnModel" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Objecttype" type="INT">
+      <offset>0</offset>
+    </column>
+    <column name="Path" type="INTARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="ModelName" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Inst" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>EARRAY</flag>
+      </flags>
+      <subtable external="ObjectPaintingObjectInstance" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

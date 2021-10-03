@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ItemExpiryType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="GameTime">1</element>
+    <element name="RealTime">2</element>
+    <element name="DateReference">3</element>
+    <element name="LastOfflineTime">4</element>
+    <element name="Daily">5</element>
+    <element name="Weekly">6</element>
+    <element name="ExpressionOnMapMove">7</element>
+  </elements>
+</enum>

@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SlotType" type="INT">
+    <column name="Slottype" type="INT">
       <offset>0</offset>
       <static_define_list external="DaboSlotType" />
     </column>
-    <column name="MatchCount" type="INT">
+    <column name="Matchcount" type="INT">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

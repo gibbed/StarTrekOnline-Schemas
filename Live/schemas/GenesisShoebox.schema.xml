@@ -7,17 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PointList" type="STRUCT">
+    <column name="Pointlist" type="STRUCT">
       <offset>0</offset>
       <subtable external="ShoeboxPointList" />
     </column>
-    <column name="DetailObject" type="STRUCT">
-      <offset>4</offset>
+    <column name="Detailobject" type="STRUCT">
+      <offset>8</offset>
       <subtable external="SSLibObj" />
     </column>
-    <column name="overview_pos" type="F32FIXEDARRAY">
-      <offset>8</offset>
+    <column name="Overview_Pos" type="F32FIXEDARRAY">
+      <offset>16</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

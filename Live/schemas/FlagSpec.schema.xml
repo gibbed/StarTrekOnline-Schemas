@@ -12,7 +12,7 @@
       <static_define_list external="FileSpecFlag" />
     </column>
     <column name="FileSpecs" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="FlagSpecLine" />
     </column>
     <column name="}" type="END" />

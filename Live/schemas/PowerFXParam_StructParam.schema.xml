@@ -6,7 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="cpchParam" type="STRING">
+    <column name="Cpchparam" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -14,14 +14,14 @@
       </flags>
     </column>
     <column name="Type" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <static_define_list external="PowerFXParamType" />
     </column>
     <column name="Expr" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>

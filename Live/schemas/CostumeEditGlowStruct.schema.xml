@@ -8,10 +8,10 @@
     </column>
     <column name="{" type="START" />
     <column name="Index" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="glow" type="INT">
       <offset>8</offset>
+    </column>
+    <column name="Glow" type="INT">
+      <offset>12</offset>
       <static_define_list external="CostumeEditGlow" />
     </column>
     <column name="}" type="END" />

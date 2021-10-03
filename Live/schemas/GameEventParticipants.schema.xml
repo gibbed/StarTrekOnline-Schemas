@@ -12,7 +12,7 @@
       <subtable external="GameEventParticipant" />
     </column>
     <column name="Targets" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="GameEventParticipant" />
     </column>
     <column name="}" type="END" />

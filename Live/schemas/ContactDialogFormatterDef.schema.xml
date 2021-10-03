@@ -16,20 +16,20 @@
       </flags>
     </column>
     <column name="Scope" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SERVER_ONLY</flag>
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DialogFormatMessage" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
+    <column name="Dialogformatmessage" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="}" type="END" />

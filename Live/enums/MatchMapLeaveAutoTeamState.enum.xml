@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MatchMapLeaveAutoTeamState">
+  <elements type="int">
+    <element name="SystemError">0</element>
+    <element name="NotMatchMap">1</element>
+    <element name="GroupSizeNoMoreThanMaxTeamSize">2</element>
+    <element name="NotOnAutoTeam">3</element>
+    <element name="CanLeave">4</element>
+  </elements>
+</enum>

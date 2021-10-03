@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="debugEventLog" type="STRUCT">
+    <column name="Debugeventlog" type="STRUCT">
       <offset>0</offset>
       <subtable external="MissionEventContainer" />
     </column>

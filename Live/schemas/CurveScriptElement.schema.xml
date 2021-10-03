@@ -12,11 +12,11 @@
       <subtable external="Spline" />
     </column>
     <column name="Parameters" type="STRUCT">
-      <offset>20</offset>
+      <offset>40</offset>
       <subtable external="CurveScriptParameter" />
     </column>
     <column name="Seed" type="INT">
-      <offset>24</offset>
+      <offset>48</offset>
     </column>
     <column name="}" type="END" />
   </table>

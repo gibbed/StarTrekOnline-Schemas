@@ -12,11 +12,11 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1210</default>
+      <default>1324</default>
       <static_define_list external="AttribType" />
     </column>
-    <column name="hNumeric" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hnumeric" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
     <column name="}" type="END" />

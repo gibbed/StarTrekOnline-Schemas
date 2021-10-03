@@ -7,29 +7,29 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="chorus_drymix" type="F32">
+    <column name="Chorus_Drymix" type="F32">
       <offset>0</offset>
     </column>
-    <column name="chorus_wetmix1" type="F32">
+    <column name="Chorus_Wetmix1" type="F32">
       <offset>4</offset>
     </column>
-    <column name="chorus_wetmix2" type="F32">
+    <column name="Chorus_Wetmix2" type="F32">
       <offset>8</offset>
     </column>
-    <column name="chorus_wetmix3" type="F32">
+    <column name="Chorus_Wetmix3" type="F32">
       <offset>12</offset>
     </column>
-    <column name="chorus_delay" type="F32">
+    <column name="Chorus_Delay" type="F32">
       <offset>16</offset>
       <default>40</default>
     </column>
-    <column name="chorus_rate" type="F32">
+    <column name="Chorus_Rate" type="F32">
       <offset>20</offset>
     </column>
-    <column name="chorus_depth" type="F32">
+    <column name="Chorus_Depth" type="F32">
       <offset>24</offset>
     </column>
-    <column name="chorus_feedback" type="F32">
+    <column name="Chorus_Feedback" type="F32">
       <offset>28</offset>
     </column>
     <column name="}" type="END" />

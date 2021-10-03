@@ -12,7 +12,7 @@
       <static_define_list external="GenesisConstraintFuncName" />
     </column>
     <column name="Param" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="GenesisConstraintParam" />
     </column>
     <column name="}" type="END" />

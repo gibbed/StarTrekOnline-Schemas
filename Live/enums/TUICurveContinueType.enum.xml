@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="TUICurveContinueType">
+  <elements type="int">
+    <element name="Constant">0</element>
+    <element name="Slope">1</element>
+    <element name="Repeat">2</element>
+  </elements>
+</enum>

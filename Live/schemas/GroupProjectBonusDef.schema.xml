@@ -16,45 +16,53 @@
       </flags>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Scope" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
-      <subtable external="DisplayMessage" />
-    </column>
-    <column name="descriptionMsg" type="EMBEDDEDSTRUCT">
-      <offset>24</offset>
-      <subtable external="DisplayMessage" />
-    </column>
-    <column name="tooltipMsg" type="EMBEDDEDSTRUCT">
-      <offset>36</offset>
-      <subtable external="DisplayMessage" />
-    </column>
-    <column name="Icon" type="STRING">
-      <offset>48</offset>
+    <column name="Scope" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="Numeric" type="REFERENCE">
-      <offset>52</offset>
-      <dictionary_name>GroupProjectNumericDef</dictionary_name>
+    <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
+      <offset>24</offset>
+      <subtable external="DisplayMessage" />
     </column>
-    <column name="bonusType" type="INT">
-      <offset>56</offset>
+    <column name="Descriptionmsg" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Tooltipmsg" type="EMBEDDEDSTRUCT">
+      <offset>72</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Icon" type="STRING">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Numeric" type="STRUCT">
+      <offset>104</offset>
+      <subtable external="GroupProjectNumericDefRef" />
+    </column>
+    <column name="Donationtaskname" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="DonationTaskDefRef" />
+    </column>
+    <column name="Bonustype" type="INT">
+      <offset>120</offset>
       <static_define_list external="GroupProjectBonusType" />
     </column>
     <column name="Value" type="F32">
-      <offset>60</offset>
+      <offset>124</offset>
+    </column>
+    <column name="Isaccountwide" type="U8">
+      <offset>128</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

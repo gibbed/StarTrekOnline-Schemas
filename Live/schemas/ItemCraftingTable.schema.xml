@@ -10,28 +10,28 @@
     <column name="Resource" type="INT">
       <offset>0</offset>
     </column>
-    <column name="ResultCount" type="INT">
+    <column name="Resultcount" type="INT">
       <offset>4</offset>
       <default>1</default>
     </column>
-    <column name="ItemResult" type="REFERENCE">
+    <column name="Itemresult" type="REFERENCE">
       <offset>8</offset>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
     <column name="Result" type="REFERENCE">
       <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ItemResult</redundant_name>
+      <redundant_name>Itemresult</redundant_name>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="ItemPowerResult" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Itempowerresult" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>ItemPowerDef</dictionary_name>
     </column>
     <column name="Part" type="STRUCT">
-      <offset>16</offset>
+      <offset>24</offset>
       <subtable external="ItemCraftingComponent" />
     </column>
     <column name="}" type="END" />

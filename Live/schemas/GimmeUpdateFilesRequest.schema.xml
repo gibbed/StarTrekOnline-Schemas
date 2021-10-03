@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="GimmeUpdateFilesRequest">
+  <table>
+    <column name="GimmeUpdateFilesRequest" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Base" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="GimmeRPCRequestBase" />
+    </column>
+    <column name="Paths" type="STRINGARRAY">
+      <offset>8</offset>
+    </column>
+    <column name="Branch" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Rev" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Sync" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>28</offset>
+      <static_define_list external="GimmeUpdateFlags" />
+    </column>
+    <column name="Extrafilespecentries" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="GimmeFileSpecEntry" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

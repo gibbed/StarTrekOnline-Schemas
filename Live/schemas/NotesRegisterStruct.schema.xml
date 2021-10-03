@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DomainName" type="STRING">
+    <column name="Domainname" type="STRING">
       <offset>0</offset>
     </column>
     <column name="ProductName" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="SystemName" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Systemname" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

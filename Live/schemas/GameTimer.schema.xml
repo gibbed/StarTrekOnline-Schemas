@@ -11,13 +11,14 @@
       <offset>0</offset>
     </column>
     <column name="Timer" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="durationSeconds" type="F32">
       <offset>8</offset>
     </column>
-    <column name="Visible" type="U8">
+    <column name="Durationseconds" type="F32">
       <offset>12</offset>
+    </column>
+    <column name="Visible" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

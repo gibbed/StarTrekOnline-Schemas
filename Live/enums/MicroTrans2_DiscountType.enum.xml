@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MicroTrans2_DiscountType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="Coupon">1</element>
+    <element name="Sale">2</element>
+    <element name="Rule">3</element>
+  </elements>
+</enum>

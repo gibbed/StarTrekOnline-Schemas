@@ -11,19 +11,19 @@
       <offset>0</offset>
     </column>
     <column name="Branch" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="SandBox" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="Rev" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="Comment" type="STRING">
+    <column name="SandBox" type="STRING">
       <offset>16</offset>
     </column>
+    <column name="Rev" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Comment" type="STRING">
+      <offset>32</offset>
+    </column>
     <column name="Expire" type="INT">
-      <offset>20</offset>
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

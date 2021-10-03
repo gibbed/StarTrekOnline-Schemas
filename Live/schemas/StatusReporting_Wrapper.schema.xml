@@ -7,63 +7,67 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MyName" type="STRING">
+    <column name="Myname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="MyType" type="INT">
-      <offset>4</offset>
+    <column name="Mytype" type="INT">
+      <offset>8</offset>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="MyID" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="MyProduct" type="STRING">
+    <column name="Myid" type="INT">
       <offset>12</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
     </column>
-    <column name="MyShortProduct" type="STRING">
+    <column name="Myproduct" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MyMainMonitoringPort" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="MyGenericMonitoringPort" type="INT">
+    <column name="Myshortproduct" type="STRING">
       <offset>24</offset>
-    </column>
-    <column name="MyMachineName" type="STRING">
-      <offset>28</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MyShardName" type="STRING">
+    <column name="Mymainmonitoringport" type="INT">
       <offset>32</offset>
     </column>
-    <column name="MyClusterName" type="STRING">
+    <column name="Mygenericmonitoringport" type="INT">
       <offset>36</offset>
     </column>
-    <column name="MyOverlord" type="STRING">
+    <column name="Mymachinename" type="STRING">
       <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MyPID" type="INT">
-      <offset>44</offset>
-    </column>
-    <column name="MyExeName" type="STRING">
+    <column name="Myshardname" type="STRING">
       <offset>48</offset>
     </column>
+    <column name="Myclustername" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Myoverlord" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="MyPID" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Myexename" type="STRING">
+      <offset>80</offset>
+    </column>
+    <column name="Fixednamevaluepairs" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="NameValuePairList" />
+    </column>
     <column name="Version" type="STRING">
-      <offset>52</offset>
+      <offset>96</offset>
     </column>
     <column name="Status" type="EMBEDDEDSTRUCT">
-      <offset>56</offset>
+      <offset>104</offset>
       <subtable external="StatusReporting_GenericServerStatus" />
     </column>
     <column name="}" type="END" />

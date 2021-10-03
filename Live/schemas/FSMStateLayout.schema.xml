@@ -13,17 +13,21 @@
     <column name="Y" type="INT">
       <offset>4</offset>
     </column>
-    <column name="onFirstEntryOpen" type="U8">
+    <column name="Onfirstentryopen" type="U8">
       <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="onEntryOpen" type="U8">
+    <column name="Onentryopen" type="U8">
       <offset>9</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="actionOpen" type="U8">
+    <column name="Actionopen" type="U8">
       <offset>10</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="subFSMOpen" type="U8">
+    <column name="Subfsmopen" type="U8">
       <offset>11</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

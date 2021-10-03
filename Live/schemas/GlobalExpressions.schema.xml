@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ItemEPValue" type="OPTIONALSTRUCT">
+    <column name="Itemepvalue" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="Expression" />
     </column>
-    <column name="StoreEPConversion" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Storeepconversion" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="Expression" />
     </column>
-    <column name="InteractGlowDistance" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Interactglowdistance" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="Expression" />
     </column>
     <column name="}" type="END" />

@@ -7,15 +7,32 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MachineName" type="STRING">
+    <column name="Machinename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
+        <flag>STRUCTPARAM</flag>
       </flags>
     </column>
+    <column name="Lowalertmachine" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
     <column name="Settings" type="STRUCT">
-      <offset>4</offset>
+      <offset>16</offset>
       <subtable external="MachineInfoServerLaunchSettings" />
+    </column>
+    <column name="Launch" type="STRUCT">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Settings</redundant_name>
+      <subtable external="MachineInfoServerLaunchSettings" />
+    </column>
+    <column name="Tag" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="NameValuePair" />
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="FromSpecies" type="REFERENCE">
+    <column name="Fromspecies" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>SpeciesDef</dictionary_name>
     </column>
-    <column name="ToSpecies" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Tospecies" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>SpeciesDef</dictionary_name>
     </column>
     <column name="}" type="END" />

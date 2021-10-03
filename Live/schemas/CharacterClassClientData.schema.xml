@@ -15,7 +15,7 @@
       </flags>
     </column>
     <column name="data" type="F32ARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ScaledItemLevelControl">
+  <table>
+    <column name="ScaledItemLevelControl" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Controlvolume" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Previouscontrolvolumes" type="STRINGARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Attribmodlevel" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Forcedlevel" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

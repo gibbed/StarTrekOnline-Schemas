@@ -11,18 +11,20 @@
       <offset>0</offset>
       <static_define_list external="WorldVolumeShape" />
     </column>
-    <column name="BoxMin" type="F32FIXEDARRAY">
+    <column name="Boxmin" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="BoxMax" type="F32FIXEDARRAY">
+    <column name="Boxmax" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="SphereRadius" type="F32">
+    <column name="Sphereradius" type="F32">
       <offset>28</offset>
     </column>
-    <column name="PowerProperties" type="OPTIONALSTRUCT">
+    <column name="Powerproperties" type="OPTIONALSTRUCT">
       <offset>32</offset>
       <subtable external="WorldPowerVolumeProperties" />
     </column>

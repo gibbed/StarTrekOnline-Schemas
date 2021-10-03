@@ -11,20 +11,20 @@
       <offset>0</offset>
       <static_define_list external="WorldEncounterObjectType" />
     </column>
-    <column name="unique_id" type="INT">
+    <column name="Unique_Id" type="INT">
       <offset>4</offset>
     </column>
-    <column name="layer_idx" type="INT">
+    <column name="Layer_Idx" type="INT">
       <offset>8</offset>
     </column>
-    <column name="parent_node_id" type="INT">
+    <column name="Parent_Node_Id" type="INT">
       <offset>12</offset>
     </column>
-    <column name="parent_node_child_idx" type="INT">
+    <column name="Parent_Node_Child_Idx" type="INT">
       <offset>16</offset>
     </column>
-    <column name="scope_names" type="STRUCT">
-      <offset>20</offset>
+    <column name="Scope_Names" type="STRUCT">
+      <offset>24</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>

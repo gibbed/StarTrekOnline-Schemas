@@ -16,40 +16,42 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="CurActiveBySeverity" type="INTFIXEDARRAY">
-      <offset>4</offset>
-      <num_elements>3</num_elements>
+    <column name="Curactivebylevel" type="INTFIXEDARRAY">
+      <offset>8</offset>
+      <num_elements>4</num_elements>
     </column>
-    <column name="TotalBySeverity" type="INTFIXEDARRAY">
-      <offset>16</offset>
-      <num_elements>3</num_elements>
+    <column name="Totalbylevel" type="INTFIXEDARRAY">
+      <offset>24</offset>
+      <num_elements>4</num_elements>
     </column>
     <column name="TotalCount" type="INT">
-      <offset>28</offset>
-    </column>
-    <column name="LastMinute" type="INT">
-      <offset>36</offset>
-    </column>
-    <column name="Last15Minutes" type="INT">
       <offset>40</offset>
     </column>
-    <column name="LastHour" type="INT">
-      <offset>44</offset>
+    <column name="Lastminute" type="INT">
+      <offset>56</offset>
     </column>
-    <column name="LastDay" type="INT">
-      <offset>48</offset>
+    <column name="Last15minutes" type="INT">
+      <offset>60</offset>
     </column>
-    <column name="ExtraStuff" type="OPTIONALSTRUCT">
-      <offset>52</offset>
-      <subtable>
-        <table>
-          <column name="{" type="START" />
-          <column name="}" type="END" />
-        </table>
-      </subtable>
+    <column name="Lasthour" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Lastday" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Extrastuff" type="OPTIONALSTRUCT">
+      <offset>72</offset>
+      <subtable external="NullStruct" />
     </column>
     <column name="Alerts" type="STRUCT">
-      <offset>56</offset>
+      <offset>80</offset>
+      <flags>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="Alert" />
+    </column>
+    <column name="Recentlyclosedstatedbasedalerts" type="STRUCT">
+      <offset>88</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>

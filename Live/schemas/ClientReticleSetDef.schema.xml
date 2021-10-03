@@ -9,10 +9,10 @@
     <column name="{" type="START" />
     <column name="Reticle" type="STRUCT">
       <offset>0</offset>
-      <subtable external="ClientReticleDef" />
+      <subtable external="ReticleDef" />
     </column>
-    <column name="DefaultDef" type="STRING">
-      <offset>4</offset>
+    <column name="Defaultdef" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

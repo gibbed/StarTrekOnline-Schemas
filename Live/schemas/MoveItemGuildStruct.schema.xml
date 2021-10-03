@@ -7,31 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SrcGuild" type="INT">
+    <column name="Srcguild" type="INT">
       <offset>0</offset>
     </column>
-    <column name="SrcSlotIdx" type="INT">
+    <column name="Srcslotidx" type="INT">
       <offset>4</offset>
     </column>
-    <column name="uSrcItemID" type="INT64">
+    <column name="Usrcitemid" type="INT64">
       <offset>8</offset>
     </column>
-    <column name="SrcEPValue" type="INT">
+    <column name="Srcepvalue" type="INT">
       <offset>16</offset>
     </column>
-    <column name="SrcCount" type="INT">
+    <column name="Srccount" type="INT">
       <offset>20</offset>
     </column>
-    <column name="DstGuild" type="INT">
+    <column name="Dstguild" type="INT">
       <offset>24</offset>
     </column>
-    <column name="DstSlotIdx" type="INT">
+    <column name="Dstslotidx" type="INT">
       <offset>28</offset>
     </column>
-    <column name="uDstItemID" type="INT64">
+    <column name="Udstitemid" type="INT64">
       <offset>32</offset>
     </column>
-    <column name="DstEPValue" type="INT">
+    <column name="Dstepvalue" type="INT">
       <offset>40</offset>
     </column>
     <column name="}" type="END" />

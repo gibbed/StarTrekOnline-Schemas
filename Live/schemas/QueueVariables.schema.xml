@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="WorldVars" type="STRUCT">
+    <column name="Worldvars" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="WorldVariable" />
     </column>
-    <column name="QueueVarData" type="STRUCT">
-      <offset>4</offset>
+    <column name="Queuevardata" type="STRUCT">
+      <offset>8</offset>
       <subtable external="QueueVariableData" />
     </column>
     <column name="}" type="END" />

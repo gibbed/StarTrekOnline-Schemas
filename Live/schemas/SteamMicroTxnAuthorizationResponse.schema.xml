@@ -7,10 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="authorized" type="U8">
+    <column name="Authorized" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="order_id" type="INT64">
+    <column name="Order_Id" type="INT64">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

@@ -10,18 +10,20 @@
     <column name="Anchor" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="vel" type="F32FIXEDARRAY">
+    <column name="Vel" type="F32FIXEDARRAY">
       <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="mmrDrawHandle" type="INT">
+    <column name="Mmrdrawhandle" type="INT">
       <offset>24</offset>
     </column>
-    <column name="mmrFxRope" type="INT">
+    <column name="Mmrfxrope" type="INT">
       <offset>28</offset>
     </column>
-    <column name="yawFace" type="F32">
+    <column name="Yawface" type="F32">
       <offset>32</offset>
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">

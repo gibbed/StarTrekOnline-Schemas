@@ -12,12 +12,13 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1202</default>
+      <default>1314</default>
       <static_define_list external="AttribType" />
     </column>
-    <column name="SteatlhPlacater" type="U8">
+    <column name="Steatlhplacater" type="U8">
       <offset>4</offset>
       <default>1</default>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

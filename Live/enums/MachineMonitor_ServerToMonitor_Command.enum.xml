@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="MachineMonitor_ServerToMonitor_Command">
+  <elements type="int">
+    <element name="PRINT">0</element>
+    <element name="SETCONSOLETITLE">1</element>
+    <element name="HERE_IS_DEBUG_MENU">2</element>
+    <element name="SET_AUTH_PROUDCTNAME">3</element>
+    <element name="CRYPTICERROR_DEPRECATED_4">4</element>
+    <element name="CRYPTICERROR_DEPRECATED_5">5</element>
+    <element name="CRYPTICERROR_DEPRECATED_6">6</element>
+    <element name="CRYPTICERROR_DEPRECATED_7">7</element>
+    <element name="HERE_IS_FPS">8</element>
+    <element name="POPUP_MESSAGE">9</element>
+    <element name="DIALOG">10</element>
+    <element name="CANCEL_DIALOG">11</element>
+    <element name="HERE_ARE_NAMEVALUEPAIRS">12</element>
+    <element name="REQUEST_MACHINE_SUMMARY">13</element>
+    <element name="REQUEST_CRYPTIC_PROCESS_LIST">14</element>
+    <element name="HERE_IS_MEMDUMP">15</element>
+    <element name="STARTUP_PRINTING_DONE">16</element>
+    <element name="WILL_SEND_STARTUP_PRINTING_DONE">17</element>
+    <element name="HERE_IS_MY_STAYUP_CHILD_PID">18</element>
+    <element name="HERE_ARE_MY_SERVERMONITORING_PORTS">19</element>
+    <element name="FLUSH">20</element>
+    <element name="EXPOSE_FILE_FOR_DOWNLOAD">21</element>
+    <element name="HERE_IS_CRASH_SUMMARY">22</element>
+    <element name="HERE_IS_ALERT">23</element>
+    <element name="CXERROR_HAPPENED">24</element>
+    <element name="I_AM_ERRORBOX">25</element>
+    <element name="QUERY_PROCESS">26</element>
+    <element name="HERE_IS_CXERROR_FOR_LOCAL_ERRORBOX__DEPRECATED">27</element>
+    <element name="HERE_IS_CXERROR_FOR_LOCAL_ERROROX_BY_TEXT">28</element>
+    <element name="STORE_MACHINELOCAL_DATA">29</element>
+    <element name="QUERY_MACHINELOCAL_DATA">30</element>
+    <element name="CMD_WINDOW_RESPONSE">31</element>
+    <element name="HERE_ARE_AUTO_COMPLETE_COMMAND_NAMES">32</element>
+    <element name="I_HAVE_CRASHED">33</element>
+    <element name="I_AM_CRASHREPORTER_FOR_CONSOLE_CRASH">34</element>
+    <element name="CRASHREPORTER_FOR_CONSOLE_CRASH__BUTTON_PRESSED">35</element>
+    <element name="MY_CRASH_COMPLETE">36</element>
+  </elements>
+</enum>

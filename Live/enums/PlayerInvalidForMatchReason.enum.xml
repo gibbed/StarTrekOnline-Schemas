@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PlayerInvalidForMatchReason">
+  <elements type="int">
+    <element name="NotChecked">-1</element>
+    <element name="Valid">0</element>
+    <element name="Unknown">1</element>
+    <element name="GearScoreTooLow">2</element>
+    <element name="GearScoreTooLowPrivate">4</element>
+    <element name="FailedExpressionToQueue">8</element>
+    <element name="MissingRequiredClass">16</element>
+    <element name="InCooldown">32</element>
+    <element name="NotInGuild">64</element>
+    <element name="IncorrectAffiliation">128</element>
+    <element name="FailedExpressionToShow">256</element>
+    <element name="FailedExpression">256</element>
+    <element name="TooLowLevel">512</element>
+    <element name="TooHighLevel">1024</element>
+    <element name="TutorialNotCompleted">2048</element>
+  </elements>
+</enum>

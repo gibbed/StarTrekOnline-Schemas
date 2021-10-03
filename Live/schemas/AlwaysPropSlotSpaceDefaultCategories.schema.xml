@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="AlwaysPropSlotSpaceDefaultCategories">
+  <table>
+    <column name="AlwaysPropSlotSpaceDefaultCategories" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Powercategories" type="INTARRAY">
+      <offset>0</offset>
+      <static_define_list external="PowerCategory" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -13,12 +13,12 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="PetTargetingInfo" type="STRUCT">
-      <offset>4</offset>
+    <column name="Pettargetinginfo" type="STRUCT">
+      <offset>8</offset>
       <subtable external="PetTargetingInfo" />
     </column>
-    <column name="uiCreatedTime" type="INT">
-      <offset>8</offset>
+    <column name="Uicreatedtime" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

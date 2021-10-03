@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="TicketCreateStatus">
+  <elements type="int">
+    <element name="Error">0</element>
+    <element name="Ok">1</element>
+    <element name="Pending">2</element>
+  </elements>
+</enum>

@@ -13,21 +13,22 @@
     <column name="Pos" type="F32FIXEDARRAY">
       <offset>4</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="myRegion" type="STRING">
+    <column name="Myregion" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="targetRegion" type="STRING">
-      <offset>20</offset>
+    <column name="Targetregion" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="timeUpdateRequested" type="INT">
-      <offset>24</offset>
+    <column name="Timeupdaterequested" type="INT">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

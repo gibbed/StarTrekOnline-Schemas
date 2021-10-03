@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="StickerBookPointCacheData">
+  <table>
+    <column name="StickerBookPointCacheData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Totalpointsvalid" type="U8">
+      <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Totalpoints" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Lastiteminfosize" type="INT">
+      <offset>8</offset>
+      <default>-1</default>
+    </column>
+    <column name="Points" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

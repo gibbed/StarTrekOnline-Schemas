@@ -17,84 +17,85 @@
       </flags>
     </column>
     <column name="DisplayName" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>NON_NULL_REF</flag>
         <flag>REQUIRED</flag>
       </flags>
       <dictionary_name>Message</dictionary_name>
     </column>
     <column name="Assembly" type="REFERENCE">
-      <offset>8</offset>
-      <dictionary_name>UITextureAssembly</dictionary_name>
-    </column>
-    <column name="GhostAssembly" type="REFERENCE">
-      <offset>12</offset>
-      <dictionary_name>UITextureAssembly</dictionary_name>
-    </column>
-    <column name="HoverAssembly" type="REFERENCE">
       <offset>16</offset>
       <dictionary_name>UITextureAssembly</dictionary_name>
     </column>
-    <column name="HoverGhostAssembly" type="REFERENCE">
-      <offset>20</offset>
+    <column name="Ghostassembly" type="REFERENCE">
+      <offset>24</offset>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Hoverassembly" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>UITextureAssembly</dictionary_name>
+    </column>
+    <column name="Hoverghostassembly" type="REFERENCE">
+      <offset>40</offset>
       <dictionary_name>UITextureAssembly</dictionary_name>
     </column>
     <column name="Font" type="REFERENCE">
-      <offset>24</offset>
+      <offset>48</offset>
       <dictionary_name>UIStyleFont</dictionary_name>
     </column>
-    <column name="HoverFont" type="REFERENCE">
-      <offset>28</offset>
+    <column name="Hoverfont" type="REFERENCE">
+      <offset>56</offset>
       <dictionary_name>UIStyleFont</dictionary_name>
     </column>
-    <column name="DefaultCells" type="INT">
-      <offset>32</offset>
+    <column name="Defaultcells" type="INT">
+      <offset>64</offset>
       <default>1</default>
     </column>
-    <column name="MaxCells" type="INT">
-      <offset>36</offset>
+    <column name="Maxcells" type="INT">
+      <offset>68</offset>
       <default>1</default>
     </column>
-    <column name="MinCells" type="INT">
-      <offset>40</offset>
+    <column name="Mincells" type="INT">
+      <offset>72</offset>
       <default>1</default>
     </column>
-    <column name="ResizeBorder" type="INT">
-      <offset>44</offset>
+    <column name="Resizeborder" type="INT">
+      <offset>76</offset>
       <default>8</default>
     </column>
-    <column name="ButtonAssembly" type="REFERENCE">
-      <offset>48</offset>
+    <column name="Buttonassembly" type="REFERENCE">
+      <offset>80</offset>
       <flags>
         <flag>NON_NULL_REF</flag>
       </flags>
       <dictionary_name>UITextureAssembly</dictionary_name>
     </column>
     <column name="Position" type="STRUCT">
-      <offset>52</offset>
+      <offset>88</offset>
       <flags>
         <flag>REQUIRED</flag>
       </flags>
       <subtable external="UIPosition" />
     </column>
-    <column name="DefaultGen" type="STRUCT">
-      <offset>56</offset>
+    <column name="Defaultgen" type="STRUCT">
+      <offset>96</offset>
       <subtable external="UIGenJailDefault" />
     </column>
     <column name="Resizable" type="INT">
-      <offset>60</offset>
+      <offset>104</offset>
       <static_define_list external="UIDirection" />
     </column>
-    <column name="AspectRatio" type="EMBEDDEDSTRUCT">
-      <offset>64</offset>
+    <column name="Aspectratio" type="EMBEDDEDSTRUCT">
+      <offset>108</offset>
       <subtable external="UIAspectRatio" />
     </column>
-    <column name="KeepDefaultCells" type="U8">
-      <offset>72</offset>
+    <column name="Keepdefaultcells" type="U8">
+      <offset>116</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RememberContents" type="U8">
-      <offset>73</offset>
+    <column name="Remembercontents" type="U8">
+      <offset>117</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

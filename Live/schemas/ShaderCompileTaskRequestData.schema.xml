@@ -7,27 +7,33 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="request_id" type="INT">
+    <column name="Request_Id" type="INT">
       <offset>0</offset>
     </column>
     <column name="Target" type="INT">
       <offset>4</offset>
-      <static_define_list external="ShaderTaskTarget" />
     </column>
-    <column name="programText" type="STRING">
+    <column name="Programtext" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="entryPointName" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="shaderModel" type="STRING">
+    <column name="Entrypointname" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="compilerFlags" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="otherFlags" type="INT">
+    <column name="Shadermodel" type="STRING">
       <offset>24</offset>
+    </column>
+    <column name="FileName" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Cached_Filename" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Compilerflags" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Tasktargetversion" type="INT">
+      <offset>52</offset>
+      <static_define_list external="ShaderTargetVersion" />
     </column>
     <column name="}" type="END" />
   </table>

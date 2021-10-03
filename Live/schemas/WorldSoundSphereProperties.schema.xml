@@ -12,27 +12,27 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="DSPName" type="STRING">
-      <offset>4</offset>
+    <column name="Dspname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Multiplier" type="F32">
-      <offset>8</offset>
+      <offset>16</offset>
       <default>1</default>
     </column>
     <column name="Priority" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="SoundGroup" type="STRING">
-      <offset>16</offset>
-    </column>
-    <column name="SoundGroupOrd" type="INT">
       <offset>20</offset>
     </column>
-    <column name="Exclude" type="BIT">
+    <column name="Soundgroup" type="STRING">
       <offset>24</offset>
+    </column>
+    <column name="Soundgroupord" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Exclude" type="BIT">
+      <offset>36</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="End" type="END" />

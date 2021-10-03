@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="TexWordBlendType">
+  <elements type="int">
+    <element name="Overlay">0</element>
+    <element name="Multiply">1</element>
+    <element name="Add">2</element>
+    <element name="Subtract">3</element>
+    <element name="Replace">4</element>
+  </elements>
+</enum>

@@ -7,30 +7,40 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MaxActiveAssignmentSlots" type="INT">
+    <column name="Maxactiveassignmentslots" type="INT">
       <offset>0</offset>
     </column>
-    <column name="InitialUnlockedSlots" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="RankNumeric" type="STRING">
+    <column name="Restrictedcategories" type="INTARRAY">
       <offset>8</offset>
+      <static_define_list external="ItemAssignmentCategory" />
     </column>
-    <column name="SlotUnlockSchedule" type="STRUCT">
-      <offset>12</offset>
-      <subtable external="ItemAssignmentSlotUnlockSchedule" />
-    </column>
-    <column name="AdditionalSlotsUnlockedNumeric" type="STRING">
+    <column name="Maxinprogressinrestrictedcategory" type="INT">
       <offset>16</offset>
     </column>
-    <column name="PerkUnlockSlots" type="STRINGARRAY">
+    <column name="Maxinprogressinremainingcategories" type="INT">
       <offset>20</offset>
+    </column>
+    <column name="Initialunlockedslots" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Ranknumeric" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Slotunlockschedule" type="STRUCT">
+      <offset>40</offset>
+      <subtable external="ItemAssignmentSlotUnlockSchedule" />
+    </column>
+    <column name="Additionalslotsunlockednumeric" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Perkunlockslots" type="STRINGARRAY">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="UnlockExpression" type="STRUCT">
-      <offset>24</offset>
+    <column name="Unlockexpression" type="STRUCT">
+      <offset>64</offset>
       <subtable external="ItemAssignmentSlotUnlockExpression" />
     </column>
     <column name="}" type="END" />

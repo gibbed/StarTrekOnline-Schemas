@@ -13,11 +13,12 @@
     <column name="Slot" type="INT">
       <offset>4</offset>
     </column>
-    <column name="uiPowID" type="INT">
+    <column name="Uipowid" type="INT">
       <offset>8</offset>
     </column>
-    <column name="AutoAttack" type="U8">
+    <column name="Autoattack" type="U8">
       <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

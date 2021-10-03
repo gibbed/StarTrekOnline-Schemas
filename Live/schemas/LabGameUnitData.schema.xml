@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PercentX" type="F32">
+    <column name="Percentx" type="F32">
       <offset>0</offset>
     </column>
     <column name="Hit" type="INT">
@@ -22,7 +22,7 @@
     <column name="Symbol" type="INT">
       <offset>16</offset>
     </column>
-    <column name="AcceptTime" type="INT">
+    <column name="Accepttime" type="INT">
       <offset>20</offset>
     </column>
     <column name="}" type="END" />

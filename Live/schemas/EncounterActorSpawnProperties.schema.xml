@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SpawnAtTeamSize" type="INT">
+    <column name="Spawnatteamsize" type="INT">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
@@ -15,7 +15,7 @@
       <static_define_list external="TeamSizeFlags" />
       <format>FLAGS</format>
     </column>
-    <column name="SpawnAtDifficulty" type="INT">
+    <column name="Spawnatdifficulty" type="INT">
       <offset>4</offset>
       <flags>
         <flag>KEY</flag>

@@ -13,14 +13,14 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="packname" type="STRING">
-      <offset>4</offset>
+    <column name="Packname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
     <column name="Folder" type="STRINGARRAY">
-      <offset>8</offset>
+      <offset>16</offset>
     </column>
     <column name="End" type="END" />
   </table>

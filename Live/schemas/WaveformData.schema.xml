@@ -7,86 +7,98 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uEntID" type="INT">
+    <column name="Uentid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="NodeCategory" type="STRING">
-      <offset>4</offset>
+    <column name="Nodecategory" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="uGameSeed" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="uGameStartTime" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="uVersion" type="INT">
+    <column name="Ugameseed" type="INT">
       <offset>16</offset>
     </column>
-    <column name="uPhaseStartTime" type="INT">
+    <column name="Ugamestarttime" type="INT">
       <offset>20</offset>
     </column>
-    <column name="uPhaseDuration" type="INT">
+    <column name="Uversion" type="INT">
       <offset>24</offset>
     </column>
-    <column name="Current" type="INTFIXEDARRAY">
+    <column name="Uphasestarttime" type="INT">
       <offset>28</offset>
+    </column>
+    <column name="Uphaseduration" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Current" type="INTFIXEDARRAY">
+      <offset>36</offset>
       <num_elements>5</num_elements>
     </column>
     <column name="Target" type="INTFIXEDARRAY">
-      <offset>48</offset>
+      <offset>56</offset>
       <num_elements>5</num_elements>
     </column>
-    <column name="uMatchStartTime" type="INT">
-      <offset>68</offset>
-    </column>
-    <column name="uScore" type="INT">
-      <offset>72</offset>
-    </column>
-    <column name="Success" type="U8">
+    <column name="Umatchstarttime" type="INT">
       <offset>76</offset>
     </column>
-    <column name="uScoreCorrection" type="INT">
+    <column name="Uscore" type="INT">
       <offset>80</offset>
     </column>
-    <column name="uClockCorrection" type="INT">
+    <column name="Success" type="U8">
       <offset>84</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="uReferenceClock" type="INT">
+    <column name="Uscorecorrection" type="INT">
       <offset>88</offset>
     </column>
-    <column name="uMatchStartCorrection" type="INT">
+    <column name="Uclockcorrection" type="INT">
       <offset>92</offset>
     </column>
-    <column name="hRewardTable" type="REFERENCE">
+    <column name="Ureferenceclock" type="INT">
       <offset>96</offset>
+    </column>
+    <column name="Umatchstartcorrection" type="INT">
+      <offset>100</offset>
+    </column>
+    <column name="Hrewardtable" type="REFERENCE">
+      <offset>104</offset>
       <dictionary_name>RewardTable</dictionary_name>
     </column>
     <column name="Interactable" type="STRING">
-      <offset>100</offset>
-    </column>
-    <column name="uRewardLevel" type="INT">
-      <offset>104</offset>
-    </column>
-    <column name="uLastClientTime" type="INT">
-      <offset>108</offset>
-    </column>
-    <column name="uLastClientScore" type="INT">
       <offset>112</offset>
     </column>
-    <column name="uLastClientMatch" type="INT">
-      <offset>116</offset>
-    </column>
-    <column name="RewindingClock" type="U8">
+    <column name="Ertarget" type="INT">
       <offset>120</offset>
     </column>
-    <column name="LastSuccess" type="U8">
-      <offset>121</offset>
+    <column name="Encounter" type="STRING">
+      <offset>128</offset>
+    </column>
+    <column name="Actor" type="STRING">
+      <offset>136</offset>
+    </column>
+    <column name="Urewardlevel" type="INT">
+      <offset>144</offset>
+    </column>
+    <column name="Ulastclienttime" type="INT">
+      <offset>148</offset>
+    </column>
+    <column name="Ulastclientscore" type="INT">
+      <offset>152</offset>
+    </column>
+    <column name="Ulastclientmatch" type="INT">
+      <offset>156</offset>
+    </column>
+    <column name="Rewindingclock" type="U8">
+      <offset>160</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Lastsuccess" type="U8">
+      <offset>161</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

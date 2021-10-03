@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ItemAssignmentAttribute">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="Tactical">0</element>
+    <element name="Success">1</element>
+    <element name="Quality">2</element>
+    <element name="LowMaterialQuality">3</element>
+    <element name="HighMaterialQuality">4</element>
+    <element name="Speed">5</element>
+    <element name="SpecialNumericCost">6</element>
+    <element name="NegateSpecialNumericCostChance">7</element>
+    <element name="RecycleChance">8</element>
+    <element name="InstantCompleteChance">9</element>
+    <element name="DoubleOutcomeChance">10</element>
+    <element name="WaiveItemSlotConsumptionChance">11</element>
+    <element name="XPMultiplier">12</element>
+    <element name="Engineering">14</element>
+    <element name="Science">15</element>
+  </elements>
+</enum>

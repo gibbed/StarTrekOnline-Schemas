@@ -10,15 +10,12 @@
     <column name="Time" type="INT">
       <offset>0</offset>
     </column>
-    <column name="Alerted" type="U8">
-      <offset>4</offset>
-    </column>
     <column name="Note" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <subtable external="SingleNote" />
     </column>
-    <column name="SettingComment" type="STRING">
-      <offset>12</offset>
+    <column name="Settingcomment" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

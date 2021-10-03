@@ -11,7 +11,9 @@
     <element name="NotEnoughMTC">7</element>
     <element name="DuplicateWithdrawal">8</element>
     <element name="QuantityOutOfRange">9</element>
-    <element name="PriceOutOfRange">10</element>
-    <element name="InProgress">11</element>
+    <element name="NoSharedBank">10</element>
+    <element name="PriceOutOfRange">11</element>
+    <element name="Probation">12</element>
+    <element name="InProgress">13</element>
   </elements>
 </enum>

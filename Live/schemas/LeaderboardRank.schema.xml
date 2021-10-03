@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="fMean" type="F32">
+    <column name="Fmean" type="F32">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="fDeviation" type="F32">
+    <column name="Fdeviation" type="F32">
       <offset>4</offset>
       <flags>
         <flag>PERSIST</flag>

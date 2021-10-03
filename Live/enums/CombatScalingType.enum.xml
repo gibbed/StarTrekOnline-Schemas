@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CombatScalingType">
+  <elements type="int">
+    <element name="Off">0</element>
+    <element name="Attrib">1</element>
+  </elements>
+</enum>

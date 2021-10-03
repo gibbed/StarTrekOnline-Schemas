@@ -11,33 +11,33 @@
       <offset>0</offset>
       <default>1</default>
     </column>
-    <column name="ShowPanel" type="BIT">
+    <column name="Showpanel" type="BIT">
       <offset>4</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="LowDetail" type="BIT">
+    <column name="Lowdetail" type="BIT">
       <offset>4</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="HighDetail" type="BIT">
+    <column name="Highdetail" type="BIT">
       <offset>4</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="HighFillDetail" type="BIT">
+    <column name="Highfilldetail" type="BIT">
       <offset>4</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="FadeNode" type="BIT">
+    <column name="Fadenode" type="BIT">
       <offset>4</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="IgnoreLODOverride" type="BIT">
+    <column name="Ignorelodoverride" type="BIT">
       <offset>4</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="ClusteringOverride" type="INT">
-      <offset>8</offset>
-      <static_define_list external="WleClusterOverride" />
+    <column name="Ignorelegacytemplatescaling" type="BIT">
+      <offset>4</offset>
+      <bit_offset>65542</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

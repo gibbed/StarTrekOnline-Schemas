@@ -11,8 +11,11 @@
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">InventorySlot</format_string>
+      </format_strings>
     </column>
-    <column name="pchName" type="STRING">
+    <column name="Pchname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -23,8 +26,8 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pItem" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Pitem" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -32,17 +35,8 @@
       </flags>
       <subtable external="Item" />
     </column>
-    <column name="hSlotType" type="REFERENCE">
-      <offset>8</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>LOGIN_SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <dictionary_name>InventorySlotIDDef</dictionary_name>
-    </column>
-    <column name="bHideCostumes" type="BIT">
-      <offset>12</offset>
+    <column name="Bhidecostumes" type="BIT">
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
@@ -50,60 +44,66 @@
       </flags>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="iItemSortType" type="INT">
-      <offset>16</offset>
-      <flags>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pchItemSortTypeCategoryName" type="STRING">
-      <offset>20</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="eUICategory" type="INT">
+    <column name="Iitemsorttype" type="INT">
       <offset>24</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
-      <static_define_list external="UsageRestrictionCategory" />
     </column>
-    <column name="ppTranslatedNames" type="STRINGARRAY">
-      <offset>28</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pchItemName" type="STRING">
+    <column name="Pchitemsorttypecategoryname" type="STRING">
       <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uiNumGemSlots" type="INT">
-      <offset>36</offset>
-      <flags>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="uiCachedMinLevel" type="INT">
+    <column name="Euicategory" type="INT">
       <offset>40</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
+      <static_define_list external="UsageRestrictionCategory" />
     </column>
-    <column name="ppSearchableAttribMagnitudes" type="STRUCT">
-      <offset>44</offset>
+    <column name="Pptranslatednames" type="STRINGARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchitemname" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uinumgemslots" type="INT">
+      <offset>64</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uicachedminlevel" type="INT">
+      <offset>68</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Uicacheditemlevel" type="INT">
+      <offset>72</offset>
+      <flags>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ppsearchableattribmagnitudes" type="STRUCT">
+      <offset>80</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="AuctionLotSearchableStat" />
     </column>
-    <column name="ppTranslatedTokens" type="IGNORE" />
+    <column name="Pptranslatedtokens" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

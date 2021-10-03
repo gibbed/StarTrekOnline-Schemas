@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="GfxFidelitySettings">
+  <table>
+    <column name="GfxFidelitySettings" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Shadows" type="INTFIXEDARRAY">
+      <offset>0</offset>
+      <num_elements>4</num_elements>
+      <static_define_list external="GfxFidelityBool" />
+    </column>
+    <column name="Poissonshadows" type="INTFIXEDARRAY">
+      <offset>16</offset>
+      <num_elements>4</num_elements>
+      <static_define_list external="GfxFidelityBool" />
+    </column>
+    <column name="Shadowresolution" type="INTFIXEDARRAY">
+      <offset>32</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Maxshadowedlights" type="INTFIXEDARRAY">
+      <offset>48</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Ssao" type="INTFIXEDARRAY">
+      <offset>64</offset>
+      <num_elements>4</num_elements>
+      <static_define_list external="GfxFidelityBool" />
+    </column>
+    <column name="Bloom" type="INTFIXEDARRAY">
+      <offset>80</offset>
+      <num_elements>4</num_elements>
+      <static_define_list external="GfxFidelityBool" />
+    </column>
+    <column name="Depthoffield" type="INTFIXEDARRAY">
+      <offset>96</offset>
+      <num_elements>4</num_elements>
+      <static_define_list external="GfxFidelityBool" />
+    </column>
+    <column name="Ssaosamplecount" type="INTFIXEDARRAY">
+      <offset>112</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Worlddetaillevel" type="F32FIXEDARRAY">
+      <offset>128</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Terraindetaillevel" type="F32FIXEDARRAY">
+      <offset>144</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Entitydetaillevel" type="F32FIXEDARRAY">
+      <offset>160</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Drawhighdetail" type="INTFIXEDARRAY">
+      <offset>176</offset>
+      <num_elements>4</num_elements>
+      <static_define_list external="GfxFidelityBool" />
+    </column>
+    <column name="Drawhighfilldetail" type="INTFIXEDARRAY">
+      <offset>192</offset>
+      <num_elements>4</num_elements>
+      <static_define_list external="GfxFidelityBool" />
+    </column>
+    <column name="ShaderQuality" type="INTFIXEDARRAY">
+      <offset>208</offset>
+      <num_elements>4</num_elements>
+      <static_define_list external="ShaderGraphQuality" />
+    </column>
+    <column name="Worldtexturelevel" type="F32FIXEDARRAY">
+      <offset>224</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Entitytexturelevel" type="F32FIXEDARRAY">
+      <offset>240</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Antialiasingmode" type="INTFIXEDARRAY">
+      <offset>256</offset>
+      <num_elements>4</num_elements>
+      <static_define_list external="GfxAntialiasingMode" />
+    </column>
+    <column name="Antialiasingsamplecount" type="INTFIXEDARRAY">
+      <offset>272</offset>
+      <num_elements>4</num_elements>
+    </column>
+    <column name="Dyn_Low" type="EMBEDDEDSTRUCT">
+      <offset>288</offset>
+      <subtable external="WorldRegionLODSettings" />
+    </column>
+    <column name="Dyn_Medium" type="EMBEDDEDSTRUCT">
+      <offset>352</offset>
+      <subtable external="WorldRegionLODSettings" />
+    </column>
+    <column name="Dyn_High" type="EMBEDDEDSTRUCT">
+      <offset>416</offset>
+      <subtable external="WorldRegionLODSettings" />
+    </column>
+    <column name="Dyn_Ultra" type="EMBEDDEDSTRUCT">
+      <offset>480</offset>
+      <subtable external="WorldRegionLODSettings" />
+    </column>
+    <column name="Target" type="STRUCT">
+      <offset>544</offset>
+      <subtable external="GfxFidelityTarget" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -6,7 +6,8 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="DefaultGen" type="REFERENCE">
+    <column name="{" type="START" />
+    <column name="Defaultgen" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
@@ -14,6 +15,6 @@
       </flags>
       <dictionary_name>UIGen</dictionary_name>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

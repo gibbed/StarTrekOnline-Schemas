@@ -11,17 +11,17 @@
       <offset>0</offset>
     </column>
     <column name="Files" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DeferredSendSingleFile" />
     </column>
     <column name="ErrorString" type="STRING">
-      <offset>20</offset>
+      <offset>40</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="ActiveFile" type="OPTIONALSTRUCT">
-      <offset>24</offset>
+    <column name="Activefile" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="DeferredSendSingleFile" />
     </column>
     <column name="}" type="END" />

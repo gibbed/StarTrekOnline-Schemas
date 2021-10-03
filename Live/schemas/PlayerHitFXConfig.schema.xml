@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ConditionalPlayerHitFX" type="STRUCT">
+    <column name="Conditionalplayerhitfx" type="STRUCT">
       <offset>0</offset>
       <subtable external="ConditionalPlayerHitFX" />
     </column>

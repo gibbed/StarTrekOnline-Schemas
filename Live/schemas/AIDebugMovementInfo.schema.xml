@@ -7,24 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="curPos" type="F32FIXEDARRAY">
+    <column name="Curpos" type="F32FIXEDARRAY">
       <offset>0</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="targetPos" type="F32FIXEDARRAY">
+    <column name="Targetpos" type="F32FIXEDARRAY">
       <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="curWp" type="INT">
+    <column name="Curwp" type="INT">
       <offset>24</offset>
     </column>
-    <column name="curPath" type="STRUCT">
-      <offset>28</offset>
+    <column name="Curpath" type="STRUCT">
+      <offset>32</offset>
       <subtable external="AIDebugWaypoint" />
     </column>
-    <column name="splineTarget" type="F32FIXEDARRAY">
-      <offset>32</offset>
+    <column name="Splinetarget" type="F32FIXEDARRAY">
+      <offset>40</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

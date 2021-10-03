@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="QueueRefs" type="STRUCT">
+    <column name="Queuerefs" type="STRUCT">
       <offset>0</offset>
       <subtable external="QueueRef" />
     </column>

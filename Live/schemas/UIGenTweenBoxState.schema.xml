@@ -12,11 +12,12 @@
       <subtable external="UIGenTweenInfo" />
     </column>
     <column name="ElapsedTime" type="F32">
-      <offset>4</offset>
+      <offset>8</offset>
       <default>-1</default>
     </column>
     <column name="Initialized" type="U8">
-      <offset>72</offset>
+      <offset>76</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -16,193 +16,197 @@
       </flags>
     </column>
     <column name="Scope" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="FileName" type="CURRENTFILE">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="AmbushEncounter" type="U8">
-      <offset>12</offset>
-    </column>
-    <column name="NemesisEncounter" type="U8">
-      <offset>12</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>AmbushEncounter</redundant_name>
-    </column>
-    <column name="OwnerMapVar" type="STRING">
+    <column name="FileName" type="CURRENTFILE">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
+    <column name="Ambushencounter" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Nemesisencounter" type="U8">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Ambushencounter</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ownermapvar" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
     <column name="MinLevel" type="INT">
-      <offset>20</offset>
+      <offset>40</offset>
     </column>
     <column name="MaxLevel" type="INT">
-      <offset>24</offset>
-    </column>
-    <column name="UsePlayerLevel" type="U8">
-      <offset>28</offset>
-    </column>
-    <column name="SpawnConditionBlock" type="OPTIONALSTRUCT">
-      <offset>32</offset>
-      <subtable external="Expression" />
-    </column>
-    <column name="SpawnCondition" type="OPTIONALSTRUCT">
-      <offset>32</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>SpawnConditionBlock</redundant_name>
-      <subtable external="Expression_StructParam" />
-    </column>
-    <column name="CheckSpawnCondPerPlayer" type="U8">
-      <offset>36</offset>
-    </column>
-    <column name="SuccessConditionBlock" type="OPTIONALSTRUCT">
-      <offset>40</offset>
-      <subtable external="Expression" />
-    </column>
-    <column name="SuccessCondition" type="OPTIONALSTRUCT">
-      <offset>40</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>SuccessConditionBlock</redundant_name>
-      <subtable external="Expression_StructParam" />
-    </column>
-    <column name="FailureConditionBlock" type="OPTIONALSTRUCT">
       <offset>44</offset>
+    </column>
+    <column name="Useplayerlevel" type="U8">
+      <offset>48</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Spawnconditionblock" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <subtable external="Expression" />
     </column>
-    <column name="FailureCondition" type="OPTIONALSTRUCT">
-      <offset>44</offset>
+    <column name="Spawncondition" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>FailureConditionBlock</redundant_name>
+      <redundant_name>Spawnconditionblock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
-    <column name="WaveConditionBlock" type="OPTIONALSTRUCT">
-      <offset>48</offset>
+    <column name="Checkspawncondperplayer" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Successconditionblock" type="OPTIONALSTRUCT">
+      <offset>72</offset>
       <subtable external="Expression" />
     </column>
-    <column name="WaveCondition" type="OPTIONALSTRUCT">
-      <offset>48</offset>
+    <column name="Successcondition" type="OPTIONALSTRUCT">
+      <offset>72</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>WaveConditionBlock</redundant_name>
+      <redundant_name>Successconditionblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Failureconditionblock" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Failurecondition" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Failureconditionblock</redundant_name>
+      <subtable external="Expression_StructParam" />
+    </column>
+    <column name="Waveconditionblock" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="Expression" />
+    </column>
+    <column name="Wavecondition" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Waveconditionblock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
     <column name="CritterGroup" type="REFERENCE">
-      <offset>52</offset>
+      <offset>96</offset>
       <flags>
         <flag>NON_NULL_REF__ERROR_ONLY</flag>
       </flags>
       <dictionary_name>CritterGroup</dictionary_name>
     </column>
     <column name="Faction" type="REFERENCE">
-      <offset>56</offset>
+      <offset>104</offset>
       <flags>
         <flag>NON_NULL_REF__ERROR_ONLY</flag>
       </flags>
       <dictionary_name>CritterFaction</dictionary_name>
     </column>
     <column name="SpawnAnim" type="STRING">
-      <offset>60</offset>
+      <offset>112</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="SpawnRadius" type="INT">
-      <offset>64</offset>
+    <column name="Spawnradius" type="INT">
+      <offset>120</offset>
       <default>300</default>
     </column>
-    <column name="SpawnChance" type="INT">
-      <offset>68</offset>
+    <column name="Spawnchance" type="INT">
+      <offset>124</offset>
       <default>100</default>
     </column>
-    <column name="RespawnTimer" type="INT">
-      <offset>72</offset>
+    <column name="Respawntimer" type="INT">
+      <offset>128</offset>
       <default>300</default>
     </column>
-    <column name="DynamicSpawnType" type="INT">
-      <offset>76</offset>
-      <static_define_list external="WorldEncounterDynamicSpawnType" />
+    <column name="Dynamicspawntype" type="INT">
+      <offset>132</offset>
+      <static_define_list external="EncounterInstanceDynamicSpawnType" />
     </column>
-    <column name="LockoutRadius" type="INT">
-      <offset>80</offset>
+    <column name="Lockoutradius" type="INT">
+      <offset>136</offset>
       <default>75</default>
     </column>
-    <column name="WaveInterval" type="INT">
-      <offset>84</offset>
+    <column name="Waveinterval" type="INT">
+      <offset>140</offset>
     </column>
-    <column name="WaveDelayMin" type="INT">
-      <offset>88</offset>
+    <column name="Wavedelaymin" type="INT">
+      <offset>144</offset>
     </column>
-    <column name="WaveDelayMax" type="INT">
-      <offset>92</offset>
+    <column name="Wavedelaymax" type="INT">
+      <offset>148</offset>
     </column>
-    <column name="gangID" type="INT">
-      <offset>96</offset>
+    <column name="Gangid" type="INT">
+      <offset>152</offset>
     </column>
     <column name="Action" type="STRUCT">
-      <offset>100</offset>
+      <offset>160</offset>
       <subtable external="OldEncounterAction" />
     </column>
-    <column name="AIJobDesc" type="STRUCT">
-      <offset>104</offset>
+    <column name="Aijobdesc" type="STRUCT">
+      <offset>168</offset>
       <subtable external="AIJobDesc" />
     </column>
     <column name="Actor" type="STRUCT">
-      <offset>108</offset>
+      <offset>176</offset>
       <subtable external="OldActor" />
     </column>
-    <column name="namedPoints" type="STRUCT">
-      <offset>112</offset>
+    <column name="Namedpoints" type="STRUCT">
+      <offset>184</offset>
       <subtable external="OldNamedPointInEncounter" />
     </column>
-    <column name="UnsharedTrackedEvents" type="STRUCT">
-      <offset>116</offset>
+    <column name="Unsharedtrackedevents" type="STRUCT">
+      <offset>192</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <subtable external="GameEvent" />
     </column>
-    <column name="UnsharedTrackedEventsSinceSpawn" type="STRUCT">
-      <offset>120</offset>
+    <column name="Unsharedtrackedeventssincespawn" type="STRUCT">
+      <offset>200</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <subtable external="GameEvent" />
     </column>
-    <column name="UnsharedTrackedEventsSinceComplete" type="STRUCT">
-      <offset>124</offset>
+    <column name="Unsharedtrackedeventssincecomplete" type="STRUCT">
+      <offset>208</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <subtable external="GameEvent" />
     </column>
-    <column name="TrackedEvents" type="IGNORE">
+    <column name="Trackedevents" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>
     </column>
-    <column name="TrackedEventsSinceSpawn" type="IGNORE">
+    <column name="Trackedeventssincespawn" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>
     </column>
-    <column name="TrackedEventsSinceComplete" type="IGNORE">
+    <column name="Trackedeventssincecomplete" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>

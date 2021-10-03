@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PS4TrophyGrade">
+  <elements type="int">
+    <element name="Platinum">0</element>
+    <element name="Gold">1</element>
+    <element name="Silver">2</element>
+    <element name="Bronze">3</element>
+  </elements>
+</enum>

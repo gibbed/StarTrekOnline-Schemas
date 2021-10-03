@@ -7,28 +7,28 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uiCompleteTime" type="INT">
+    <column name="Uicompletetime" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uiStartTime" type="INT">
+    <column name="Uistarttime" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uiBuyerType" type="INT">
+    <column name="Uibuyertype" type="INT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uiBuyerID" type="INT">
+    <column name="Uibuyerid" type="INT">
       <offset>12</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -42,7 +42,7 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="hNewNodeDef" type="REFERENCE">
+    <column name="Hnewnodedef" type="REFERENCE">
       <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -50,38 +50,38 @@
       </flags>
       <dictionary_name>PTNodeDef</dictionary_name>
     </column>
-    <column name="hOldNodeDef" type="REFERENCE">
-      <offset>28</offset>
+    <column name="Holdnodedef" type="REFERENCE">
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>PTNodeDef</dictionary_name>
     </column>
-    <column name="iNewNodeRank" type="INT">
-      <offset>32</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="iRefundAmount" type="INT">
-      <offset>36</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="pchRefundNumeric" type="STRING">
+    <column name="Inewnoderank" type="INT">
       <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Irefundamount" type="INT">
+      <offset>44</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Pchrefundnumeric" type="STRING">
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="eType" type="INT">
-      <offset>44</offset>
+    <column name="Etype" type="INT">
+      <offset>56</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

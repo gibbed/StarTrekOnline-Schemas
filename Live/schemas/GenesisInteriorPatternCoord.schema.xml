@@ -6,13 +6,15 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="coord" type="INTFIXEDARRAY">
+    <column name="{" type="START" />
+    <column name="Coord" type="INTFIXEDARRAY">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <num_elements>2</num_elements>
+      <format_raw>15</format_raw>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

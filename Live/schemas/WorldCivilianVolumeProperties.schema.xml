@@ -6,39 +6,48 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="DisableRoads" type="U8">
+    <column name="Disableroads" type="U8">
       <offset>0</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DisableSidewalks" type="U8">
+    <column name="Disablesidewalks" type="U8">
       <offset>1</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ForcedRoad" type="U8">
+    <column name="Forcedroad" type="U8">
       <offset>2</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ForcedRoadHasMedian" type="U8">
+    <column name="Forcedroadhasmedian" type="U8">
       <offset>3</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ForcedSidewalk" type="U8">
+    <column name="Forcedsidewalk" type="U8">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ForcedAsIs" type="U8">
+    <column name="Forcedasis" type="U8">
       <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ForcedIntersection" type="U8">
+    <column name="Forcedintersection" type="U8">
       <offset>6</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ForcedCrosswalk" type="U8">
+    <column name="Forcedcrosswalk" type="U8">
       <offset>7</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="PedestrianWanderArea" type="U8">
+    <column name="Pedestrianwanderarea" type="U8">
       <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CivilianCritterSpawns" type="STRUCT">
-      <offset>12</offset>
+    <column name="Civiliancritterspawns" type="STRUCT">
+      <offset>16</offset>
       <subtable external="CivilianCritterSpawn" />
     </column>
-    <column name="LegDefinition" type="STRING">
-      <offset>16</offset>
+    <column name="Legdefinition" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

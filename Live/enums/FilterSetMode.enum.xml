@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FilterSetMode">
+  <elements type="int">
+    <element name="Tokenized">0</element>
+    <element name="Exact">1</element>
+    <element name="Substring">2</element>
+  </elements>
+</enum>

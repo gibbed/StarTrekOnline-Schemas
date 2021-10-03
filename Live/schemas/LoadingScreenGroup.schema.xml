@@ -17,11 +17,21 @@
       </flags>
     </column>
     <column name="MapName" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="BackgroundTexture" type="STRING">
-      <offset>8</offset>
+    <column name="Prefermapdisplayname" type="U8">
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Wildcardmap" type="STRINGARRAY">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Backgroundtexture" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>GLOBAL_NAME</flag>
@@ -29,28 +39,27 @@
       <dictionary_name>Texture</dictionary_name>
     </column>
     <column name="Color" type="INT">
-      <offset>12</offset>
+      <offset>40</offset>
       <default>-1</default>
-      <static_define_list>
-        <!-- dynamic enum? -->
-      </static_define_list>
+      <static_define_list external="Color" />
     </column>
-    <column name="BackgroundMode" type="INT">
-      <offset>16</offset>
+    <column name="Backgroundmode" type="INT">
+      <offset>44</offset>
       <static_define_list external="UITextureMode" />
     </column>
     <column name="Screen" type="STRUCT">
-      <offset>20</offset>
-      <flags>
-        <flag>REQUIRED</flag>
-      </flags>
+      <offset>48</offset>
       <subtable external="LoadingScreen" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>24</offset>
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
+    </column>
+    <column name="Fixedrotateallscreensfromtopdown" type="U8">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

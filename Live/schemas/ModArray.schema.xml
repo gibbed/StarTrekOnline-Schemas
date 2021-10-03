@@ -11,39 +11,40 @@
       <offset>0</offset>
       <subtable external="AttribMod" />
     </column>
-    <column name="ppMods" type="STRUCT">
+    <column name="Ppmods" type="STRUCT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
       <redundant_name>Mods</redundant_name>
       <subtable external="AttribMod" />
     </column>
-    <column name="ppModsPending" type="STRUCT">
-      <offset>4</offset>
+    <column name="Ppmodspending" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
       </flags>
       <subtable external="AttribMod" />
     </column>
-    <column name="ppPowers" type="STRUCT">
-      <offset>16</offset>
+    <column name="Pppowers" type="STRUCT">
+      <offset>32</offset>
       <subtable external="Power" />
     </column>
-    <column name="ppModsSaved" type="STRUCT">
-      <offset>20</offset>
+    <column name="Ppmodssaved" type="STRUCT">
+      <offset>40</offset>
       <flags>
+        <flag>SUBSCRIBE</flag>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
       <subtable external="AttribMod" />
     </column>
-    <column name="bHasBasicDisableAffects" type="BIT">
-      <offset>28</offset>
+    <column name="Bhasbasicdisableaffects" type="BIT">
+      <offset>64</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="ppMods" type="IGNORE" />
+    <column name="Ppmods" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

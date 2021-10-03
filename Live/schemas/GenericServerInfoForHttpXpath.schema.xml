@@ -15,71 +15,101 @@
       <format_strings>
         <format_string name="HTML_NO_HEADER">1</format_string>
         <format_string name="HTML_CLASS">structheader</format_string>
+        <format_string name="HTML">1</format_string>
       </format_strings>
     </column>
     <column name="ServerType" type="FIXEDSTRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <string_length>256</string_length>
       <format_strings>
         <format_string name="HTML_SKIP">1</format_string>
       </format_strings>
     </column>
     <column name="ID" type="INT">
-      <offset>260</offset>
+      <offset>264</offset>
       <format_strings>
         <format_string name="HTML_SKIP">1</format_string>
       </format_strings>
     </column>
-    <column name="CommandLine" type="STRING">
-      <offset>264</offset>
+    <column name="Commandline" type="STRING">
+      <offset>272</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
+      <format_strings>
+        <format_string name="HTML">1</format_string>
+        <format_string name="HTML_CLASS">long-command-line</format_string>
+      </format_strings>
     </column>
-    <column name="DomainLinks" type="STRING">
-      <offset>268</offset>
+    <column name="Commandlineparsingerrors" type="STRING">
+      <offset>280</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
       <format_strings>
         <format_string name="HTML">1</format_string>
         <format_string name="HTML_NO_HEADER">1</format_string>
+        <format_string name="HTML_CLASS"> divRed</format_string>
       </format_strings>
     </column>
-    <column name="LoggingStatus" type="STRING">
-      <offset>272</offset>
+    <column name="Domainlinks" type="STRING">
+      <offset>288</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML">1</format_string>
+        <format_string name="HTML_NO_HEADER">1</format_string>
+        <format_string name="HTML_CLASS">AutoLink</format_string>
+      </format_strings>
+    </column>
+    <column name="Genericerrors" type="STRING">
+      <offset>296</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML">1</format_string>
+        <format_string name="HTML_NO_HEADER">1</format_string>
+        <format_string name="HTML_CLASS"> divRed</format_string>
+      </format_strings>
+    </column>
+    <column name="Loggingstatus" type="STRING">
+      <offset>304</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="CommandCategories" type="STRUCT">
-      <offset>276</offset>
-      <subtable external="CommandCategoryWrapper" />
+    <column name="Allcommands" type="STRING">
+      <offset>312</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
       <format_strings>
-        <format_string name="HTML_COLLAPSED_ARRAY">1</format_string>
+        <format_string name="HTML">1</format_string>
       </format_strings>
     </column>
-    <column name="MiscObjects" type="STRUCT">
-      <offset>280</offset>
+    <column name="Miscobjects" type="STRUCT">
+      <offset>320</offset>
       <subtable external="GlobObjWrapper" />
     </column>
-    <column name="SystemObjects" type="STRUCT">
-      <offset>284</offset>
+    <column name="Systemobjects" type="STRUCT">
+      <offset>328</offset>
       <subtable external="GlobObjWrapper" />
     </column>
     <column name="Containers" type="STRUCT">
-      <offset>288</offset>
+      <offset>336</offset>
       <subtable external="GlobObjWrapper" />
     </column>
-    <column name="RefDicts" type="STRUCT">
-      <offset>292</offset>
+    <column name="Refdicts" type="STRUCT">
+      <offset>344</offset>
       <subtable external="GlobObjWrapper" />
     </column>
-    <column name="ImplementedLocales" type="STRINGARRAY">
-      <offset>296</offset>
+    <column name="Implementedlocales" type="STRINGARRAY">
+      <offset>352</offset>
     </column>
     <column name="Command1" type="STRING">
-      <offset>300</offset>
+      <offset>360</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
@@ -88,7 +118,7 @@
       </format_strings>
     </column>
     <column name="Command2" type="STRING">
-      <offset>304</offset>
+      <offset>368</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
@@ -97,7 +127,7 @@
       </format_strings>
     </column>
     <column name="Command3" type="STRING">
-      <offset>308</offset>
+      <offset>376</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
@@ -106,7 +136,7 @@
       </format_strings>
     </column>
     <column name="Command4" type="STRING">
-      <offset>312</offset>
+      <offset>384</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
@@ -115,7 +145,7 @@
       </format_strings>
     </column>
     <column name="Command5" type="STRING">
-      <offset>316</offset>
+      <offset>392</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
@@ -124,7 +154,7 @@
       </format_strings>
     </column>
     <column name="Command6" type="STRING">
-      <offset>320</offset>
+      <offset>400</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
@@ -133,7 +163,7 @@
       </format_strings>
     </column>
     <column name="Command7" type="STRING">
-      <offset>324</offset>
+      <offset>408</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
@@ -142,7 +172,7 @@
       </format_strings>
     </column>
     <column name="Command8" type="STRING">
-      <offset>328</offset>
+      <offset>416</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

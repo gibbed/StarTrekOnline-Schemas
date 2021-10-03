@@ -6,19 +6,21 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
+    <column name="{" type="START" />
     <column name="Color" type="F32FIXEDARRAY">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="RandomWeight" type="F32">
+    <column name="Randomweight" type="F32">
       <offset>16</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="AccountIdentifierType">
+  <elements type="int">
+    <element name="default">-1</element>
+    <element name="server_defined">0</element>
+    <element name="cryptic_account_name">1</element>
+    <element name="pw_account_name">2</element>
+    <element name="cryptic_and_pw_account_name">3</element>
+    <element name="pwrd_account_name">4</element>
+    <element name="cryptic_account_id">5</element>
+    <element name="cryptic_display_name">6</element>
+    <element name="cryptic_email">7</element>
+    <element name="pw_forum_name">8</element>
+    <element name="pw_email">9</element>
+    <element name="microsoft_pairwise_id">10</element>
+    <element name="microsoft_xuid">11</element>
+    <element name="cryptic_guid">12</element>
+    <element name="sony_account_id">13</element>
+  </elements>
+</enum>

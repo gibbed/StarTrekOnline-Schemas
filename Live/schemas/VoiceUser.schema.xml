@@ -7,31 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="prefs" type="EMBEDDEDSTRUCT">
+    <column name="Prefs" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="VoiceUserPrefs" />
     </column>
     <column name="ID" type="INT">
       <offset>8</offset>
     </column>
-    <column name="externName" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="externURI" type="STRING">
+    <column name="Externname" type="STRING">
       <offset>16</offset>
     </column>
+    <column name="Externuri" type="STRING">
+      <offset>24</offset>
+    </column>
     <column name="Channels" type="STRUCT">
-      <offset>20</offset>
+      <offset>32</offset>
       <subtable external="VoiceChannelUser" />
     </column>
     <column name="Volume" type="INT">
-      <offset>24</offset>
+      <offset>40</offset>
     </column>
-    <column name="targetVolume" type="INT">
-      <offset>28</offset>
+    <column name="Targetvolume" type="INT">
+      <offset>44</offset>
     </column>
-    <column name="isMutedByMe" type="BIT">
-      <offset>32</offset>
+    <column name="Ismutedbyme" type="BIT">
+      <offset>48</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />

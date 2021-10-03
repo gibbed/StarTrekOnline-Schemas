@@ -16,54 +16,54 @@
       </flags>
     </column>
     <column name="Scope" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="FileName" type="CURRENTFILE">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="NumToGenerate" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="MaleSkeleton" type="REFERENCE">
+    <column name="FileName" type="CURRENTFILE">
       <offset>16</offset>
-      <dictionary_name>CostumeSkeleton</dictionary_name>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="FemaleSkeleton" type="REFERENCE">
-      <offset>20</offset>
-      <dictionary_name>CostumeSkeleton</dictionary_name>
-    </column>
-    <column name="DefaultMaleFeatures" type="REFERENCE">
+    <column name="Numtogenerate" type="INT">
       <offset>24</offset>
-      <dictionary_name>SpeciesFeature</dictionary_name>
     </column>
-    <column name="DefaultFemaleFeatures" type="REFERENCE">
-      <offset>28</offset>
-      <dictionary_name>SpeciesFeature</dictionary_name>
-    </column>
-    <column name="FeaturesToUse" type="STRUCT">
+    <column name="Maleskeleton" type="REFERENCE">
       <offset>32</offset>
+      <dictionary_name>CostumeSkeleton</dictionary_name>
+    </column>
+    <column name="Femaleskeleton" type="REFERENCE">
+      <offset>40</offset>
+      <dictionary_name>CostumeSkeleton</dictionary_name>
+    </column>
+    <column name="Defaultmalefeatures" type="REFERENCE">
+      <offset>48</offset>
+      <dictionary_name>SpeciesFeature</dictionary_name>
+    </column>
+    <column name="Defaultfemalefeatures" type="REFERENCE">
+      <offset>56</offset>
+      <dictionary_name>SpeciesFeature</dictionary_name>
+    </column>
+    <column name="Featurestouse" type="STRUCT">
+      <offset>64</offset>
       <subtable external="SpeciesDefiningFeatureRef" />
     </column>
-    <column name="UniformGroup" type="STRUCT">
-      <offset>36</offset>
+    <column name="Uniformgroup" type="STRUCT">
+      <offset>72</offset>
       <subtable external="UniformGroupGen" />
     </column>
-    <column name="GroupedCritterDef" type="STRUCT">
-      <offset>40</offset>
+    <column name="Groupedcritterdef" type="STRUCT">
+      <offset>80</offset>
       <subtable external="CritterGroupGen" />
     </column>
-    <column name="AllowedMaleVoice" type="STRUCT">
-      <offset>44</offset>
+    <column name="Allowedmalevoice" type="STRUCT">
+      <offset>88</offset>
       <subtable external="VoiceRef" />
     </column>
-    <column name="AllowedFemaleVoice" type="STRUCT">
-      <offset>48</offset>
+    <column name="Allowedfemalevoice" type="STRUCT">
+      <offset>96</offset>
       <subtable external="VoiceRef" />
     </column>
     <column name="}" type="END" />

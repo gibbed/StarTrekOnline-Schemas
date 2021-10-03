@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SimpleProjectile">
+  <table>
+    <column name="SimpleProjectile" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Key" type="INT64">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Partitionidx" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="hDef" type="REFERENCE">
+      <offset>16</offset>
+      <flags>
+        <flag>VITAL_REF</flag>
+      </flags>
+      <dictionary_name>SimpleProjectileDef</dictionary_name>
+    </column>
+    <column name="Uownerref" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="StartPos" type="F32FIXEDARRAY">
+      <offset>28</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Startrot" type="F32FIXEDARRAY">
+      <offset>40</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Targetpos" type="F32FIXEDARRAY">
+      <offset>52</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Targetoffset" type="F32FIXEDARRAY">
+      <offset>64</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Target" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Uitemid" type="INT64">
+      <offset>80</offset>
+    </column>
+    <column name="Itemgemslotidx" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Fxhue" type="F32">
+      <offset>92</offset>
+    </column>
+    <column name="Eaientshit" type="INTARRAY">
+      <offset>96</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Utotalentitieshit" type="INT">
+      <offset>104</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+    </column>
+    <column name="Powerlevel" type="INT64">
+      <offset>112</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="State" type="OPTIONALSTRUCT">
+      <offset>120</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+      </flags>
+      <subtable external="SimpleProjectileState" />
+    </column>
+    <column name="Sendpos" type="F32FIXEDARRAY">
+      <offset>128</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

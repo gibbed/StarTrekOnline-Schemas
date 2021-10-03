@@ -4,5 +4,7 @@
     <element name="Self">1</element>
     <element name="Target">2</element>
     <element name="SelfOnce">4</element>
+    <element name="SelfOwner">8</element>
+    <element name="SelfOnceOwner">16</element>
   </elements>
 </enum>

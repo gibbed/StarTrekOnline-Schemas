@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="TextureArtUsage">
+  <elements type="int">
+    <element name="COLOR_MAP">0</element>
+    <element name="BUMP_MAP">1</element>
+    <element name="NORMAL_MAP_XYZ">2</element>
+    <element name="NORMAL_MAP_XY">3</element>
+    <element name="PARAMETER_MAP">4</element>
+    <element name="ENV_CUBEMAP">5</element>
+    <element name="VOLUME_MAP">6</element>
+    <element name="SDF">7</element>
+  </elements>
+</enum>

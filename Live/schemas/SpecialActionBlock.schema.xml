@@ -13,12 +13,12 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="dialogActions" type="STRUCT">
-      <offset>4</offset>
+    <column name="Dialogactions" type="STRUCT">
+      <offset>8</offset>
       <subtable external="SpecialDialogAction" />
     </column>
-    <column name="overridingMissionDef" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Overridingmissiondef" type="REFERENCE">
+      <offset>16</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>

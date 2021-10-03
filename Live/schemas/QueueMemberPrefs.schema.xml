@@ -7,30 +7,41 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="fCurrentRank" type="F32">
+    <column name="Prank" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
+      <subtable external="QueueMemberRank" />
     </column>
-    <column name="ePreferredGameTypes" type="INTARRAY">
-      <offset>4</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="iPreferredMaps" type="INTARRAY">
+    <column name="Pmemberentityinfo" type="OPTIONALSTRUCT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
+      <subtable external="QueueMemberEntityInfo" />
     </column>
-    <column name="bFoundMatch" type="U8">
-      <offset>12</offset>
+    <column name="Epreferredgametypes" type="INTARRAY">
+      <offset>16</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
     </column>
+    <column name="Ipreferredmaps" type="INTARRAY">
+      <offset>24</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Bfoundmatch" type="U8">
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Fcurrentrank" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

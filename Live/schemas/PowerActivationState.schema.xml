@@ -15,43 +15,43 @@
       </flags>
       <subtable external="PowerRef" />
     </column>
-    <column name="uchID" type="U8">
-      <offset>16</offset>
-      <flags>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
-    </column>
-    <column name="uiPeriod" type="INT">
-      <offset>20</offset>
-      <flags>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
-    </column>
-    <column name="fTimerActivate" type="F32">
+    <column name="Uchid" type="U8">
       <offset>24</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="fTimeCharged" type="F32">
+    <column name="Uiperiod" type="INT">
       <offset>28</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="fTimeChargedTotal" type="F32">
+    <column name="Ftimeractivate" type="F32">
       <offset>32</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="fTimeActivating" type="F32">
+    <column name="Ftimecharged" type="F32">
       <offset>36</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Ftimechargedtotal" type="F32">
+      <offset>40</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Ftimeactivating" type="F32">
+      <offset>44</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>

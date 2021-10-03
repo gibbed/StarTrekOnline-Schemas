@@ -11,49 +11,57 @@
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="flourishEnabled" type="BIT">
+    <column name="Flourishenabled" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="Incombat" type="BIT">
+    <column name="InCombat" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="spawnedOnGround" type="BIT">
+    <column name="Spawnedonground" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="canStick" type="BIT">
+    <column name="Canstick" type="BIT">
       <offset>0</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="orientToSurface" type="BIT">
+    <column name="Orienttosurface" type="BIT">
       <offset>0</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="softGroundSnap" type="BIT">
+    <column name="Softgroundsnap" type="BIT">
       <offset>0</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="isDisabled" type="BIT">
+    <column name="IsDisabled" type="BIT">
       <offset>0</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="useSyncTurnDef" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Usesyncturncustom" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="allowPhysicsCheating" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Usesyncturnoverride" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="strafeOverride" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Forceforwardmovement" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65538</bit_offset>
     </column>
-    <column name="strafeOverrideEnabled" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65547</bit_offset>
+    <column name="Allowphysicscheating" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Strafeoverride" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Strafeoverrideenabled" type="BIT">
+      <offset>1</offset>
+      <bit_offset>65541</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

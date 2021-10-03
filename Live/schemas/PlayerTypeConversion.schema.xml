@@ -7,22 +7,22 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PlayerTypeNew" type="INT">
+    <column name="Playertypenew" type="INT">
       <offset>0</offset>
     </column>
-    <column name="CharacterPath" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="ConvertToFreeform" type="BIT">
+    <column name="Characterpath" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Converttofreeform" type="BIT">
+      <offset>16</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="SideConvert" type="BIT">
-      <offset>8</offset>
+    <column name="Sideconvert" type="BIT">
+      <offset>16</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="PayWithGADToken" type="BIT">
-      <offset>8</offset>
+    <column name="Paywithgadtoken" type="BIT">
+      <offset>16</offset>
       <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />

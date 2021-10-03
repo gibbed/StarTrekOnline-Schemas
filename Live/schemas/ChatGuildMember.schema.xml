@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uAccountID" type="INT">
+    <column name="Uaccountid" type="INT">
       <offset>0</offset>
     </column>
-    <column name="uCharacterID" type="INT">
+    <column name="Canchat" type="BIT">
       <offset>4</offset>
-    </column>
-    <column name="CanChat" type="BIT">
-      <offset>8</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IsOfficer" type="BIT">
-      <offset>8</offset>
+    <column name="Isofficer" type="BIT">
+      <offset>4</offset>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
+    <column name="Ucharacterid" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

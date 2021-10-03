@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MicroTrans2PurchaseInfo">
+  <table>
+    <column name="MicroTrans2PurchaseInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>KEY</flag>
+        <flag>PERSIST</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Name" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+      <redundant_name>Name</redundant_name>
+    </column>
+    <column name="Total_Purchases" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Totalpurchases" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Total_Purchases</redundant_name>
+    </column>
+    <column name="Unconsumed_Purchases" type="INT">
+      <offset>12</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Remaining_Unconsumed_Purchases" type="INT">
+      <offset>12</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Unconsumed_Purchases</redundant_name>
+    </column>
+    <column name="Unconsumedpurchases" type="INT">
+      <offset>12</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Unconsumed_Purchases</redundant_name>
+    </column>
+    <column name="First_Time_Purchased" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Firsttimepurchased" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>First_Time_Purchased</redundant_name>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Most_Recent_Time_Purchased" type="INT">
+      <offset>20</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Mostrecenttimepurchased" type="INT">
+      <offset>20</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Most_Recent_Time_Purchased</redundant_name>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

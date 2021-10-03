@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="optionText" type="EMBEDDEDSTRUCT">
+    <column name="Optiontext" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="dialogTitle" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
-      <subtable external="DisplayMessage" />
-    </column>
-    <column name="dialogText" type="EMBEDDEDSTRUCT">
+    <column name="Dialogtitle" type="EMBEDDEDSTRUCT">
       <offset>24</offset>
       <subtable external="DisplayMessage" />
     </column>
+    <column name="Dialogtext" type="EMBEDDEDSTRUCT">
+      <offset>48</offset>
+      <subtable external="DisplayMessage" />
+    </column>
     <column name="Location" type="STRING">
-      <offset>36</offset>
+      <offset>72</offset>
     </column>
     <column name="}" type="END" />
   </table>

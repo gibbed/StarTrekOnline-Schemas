@@ -16,12 +16,12 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="JailSet" type="STRUCT">
-      <offset>4</offset>
+    <column name="Jailset" type="STRUCT">
+      <offset>8</offset>
       <subtable external="UIGenPrisonJailSet" />
     </column>
-    <column name="DefaultJailSet" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Defaultjailset" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <subtable external="UIGenPrisonDefaultJailSet" />
     </column>
     <column name="}" type="END" />

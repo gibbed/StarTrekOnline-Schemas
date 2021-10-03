@@ -14,17 +14,18 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="rot_mat" type="MATPYR">
-      <offset>4</offset>
+    <column name="Rot_Mat" type="MATPYR">
+      <offset>8</offset>
       <num_elements>9</num_elements>
     </column>
-    <column name="pos_mat" type="F32FIXEDARRAY">
-      <offset>40</offset>
+    <column name="Pos_Mat" type="F32FIXEDARRAY">
+      <offset>44</offset>
       <num_elements>3</num_elements>
     </column>
     <column name="Scale" type="F32FIXEDARRAY">
-      <offset>52</offset>
+      <offset>56</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

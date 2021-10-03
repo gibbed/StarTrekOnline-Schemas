@@ -21,22 +21,14 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="nonPlayerEntityRef" type="INT">
+    <column name="Nonplayerentityref" type="INT">
       <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="pchName" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>ESTRING</flag>
-        <flag>PERSIST</flag>
-        <flag>NO_TRANSACT</flag>
-      </flags>
-    </column>
-    <column name="pchHandle" type="STRING">
+    <column name="Pchname" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
@@ -44,18 +36,34 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="bIsGM" type="U8">
-      <offset>20</offset>
+    <column name="Pchhandle" type="STRING">
+      <offset>24</offset>
       <flags>
+        <flag>ESTRING</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="bIsDev" type="U8">
-      <offset>21</offset>
+    <column name="Bisgm" type="U8">
+      <offset>32</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bisdev" type="U8">
+      <offset>33</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Thirdpartyid" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="}" type="END" />

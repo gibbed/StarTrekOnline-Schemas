@@ -7,39 +7,48 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="erEnt" type="INT">
+    <column name="Power" type="STRING">
       <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="CasterPos" type="F32FIXEDARRAY">
-      <offset>4</offset>
+    <column name="Erent" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Casterpos" type="F32FIXEDARRAY">
+      <offset>12</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Type" type="INT">
-      <offset>16</offset>
+      <offset>24</offset>
       <static_define_list external="EffectArea" />
     </column>
-    <column name="CastLoc" type="F32FIXEDARRAY">
-      <offset>20</offset>
+    <column name="Castloc" type="F32FIXEDARRAY">
+      <offset>28</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="TargetLoc" type="F32FIXEDARRAY">
-      <offset>32</offset>
+    <column name="Targetloc" type="F32FIXEDARRAY">
+      <offset>40</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Length" type="F32">
-      <offset>44</offset>
-    </column>
-    <column name="Radius" type="F32">
-      <offset>48</offset>
-    </column>
-    <column name="Arc" type="F32">
       <offset>52</offset>
     </column>
-    <column name="isClient" type="INT">
+    <column name="Radius" type="F32">
       <offset>56</offset>
     </column>
-    <column name="HitEnts" type="STRUCT">
+    <column name="Arc" type="F32">
       <offset>60</offset>
+    </column>
+    <column name="Isclient" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Hitents" type="STRUCT">
+      <offset>72</offset>
       <subtable external="AEPowersDebugHit" />
     </column>
     <column name="}" type="END" />

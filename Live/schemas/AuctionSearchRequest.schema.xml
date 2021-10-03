@@ -16,69 +16,76 @@
     <column name="ItemQuality" type="INT">
       <offset>8</offset>
     </column>
-    <column name="minUsageRestrictionCategory" type="INT">
+    <column name="Minusagerestrictioncategory" type="INT">
       <offset>12</offset>
       <static_define_list external="UsageRestrictionCategory" />
     </column>
-    <column name="maxUsageRestrictionCategory" type="INT">
+    <column name="Maxusagerestrictioncategory" type="INT">
       <offset>16</offset>
       <static_define_list external="UsageRestrictionCategory" />
     </column>
     <column name="OwnerID" type="INT">
       <offset>20</offset>
     </column>
-    <column name="ExcludeOwner" type="U8">
+    <column name="Excludeowner" type="U8">
       <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="sortType" type="INT">
+    <column name="Sorttype" type="INT">
       <offset>28</offset>
     </column>
-    <column name="ItemSortTypeCategoryName" type="STRING">
+    <column name="Itemsorttypecategoryname" type="STRING">
       <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="eaiAuctionLotContainerIDs" type="INTARRAY">
-      <offset>36</offset>
-    </column>
-    <column name="SortColumn" type="INT">
+    <column name="Eaiauctionlotcontainerids" type="INTARRAY">
       <offset>40</offset>
+    </column>
+    <column name="Sortcolumn" type="INT">
+      <offset>48</offset>
       <static_define_list external="AuctionSortColumn" />
     </column>
-    <column name="stringSearch" type="STRING">
-      <offset>44</offset>
+    <column name="Stringsearch" type="STRING">
+      <offset>56</offset>
     </column>
-    <column name="stringLanguage" type="INT">
-      <offset>48</offset>
+    <column name="Stringlanguage" type="INT">
+      <offset>64</offset>
     </column>
-    <column name="RequiredClass" type="STRING">
-      <offset>52</offset>
+    <column name="Requiredclass" type="STRING">
+      <offset>72</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="uiPetMinLevel" type="INT">
-      <offset>56</offset>
+    <column name="Uipetminlevel" type="INT">
+      <offset>80</offset>
     </column>
-    <column name="uiPetMaxLevel" type="INT">
-      <offset>60</offset>
+    <column name="Uipetmaxlevel" type="INT">
+      <offset>84</offset>
     </column>
-    <column name="uiNumGemSlots" type="INT">
-      <offset>64</offset>
+    <column name="Uinumgemslots" type="INT">
+      <offset>88</offset>
     </column>
-    <column name="RequiredGemType" type="INT">
-      <offset>68</offset>
+    <column name="Requiredgemtype" type="INT">
+      <offset>92</offset>
       <static_define_list external="ItemGemType" />
     </column>
-    <column name="eaiAttribs" type="INTARRAY">
-      <offset>72</offset>
+    <column name="Eaiattribs" type="INTARRAY">
+      <offset>96</offset>
     </column>
-    <column name="numResults" type="INT">
-      <offset>76</offset>
+    <column name="Minitemlevel" type="INT">
+      <offset>104</offset>
     </column>
-    <column name="AuctionBrokerSearchData" type="OPTIONALSTRUCT">
-      <offset>80</offset>
+    <column name="Maxitemlevel" type="INT">
+      <offset>108</offset>
+    </column>
+    <column name="Numresults" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="Auctionbrokersearchdata" type="OPTIONALSTRUCT">
+      <offset>120</offset>
       <subtable external="AuctionBrokerLevelInfo" />
     </column>
     <column name="}" type="END" />

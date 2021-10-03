@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CrashReporter_CrashSummary">
+  <table>
+    <column name="CrashReporter_CrashSummary" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Incidentid" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Crashevent" type="INT">
+      <offset>8</offset>
+      <static_define_list external="CrashEventType" />
+    </column>
+    <column name="Crashtime" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Pid" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Antizombificationcookie" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="Executablenameshort" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Machinename" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Executablemachinemonitorstarttime" type="INT64">
+      <offset>40</offset>
+    </column>
+    <column name="ContainerType" type="INT">
+      <offset>48</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="ContainerID" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Critsysname" type="STRING">
+      <offset>56</offset>
+    </column>
+    <column name="Crashtype" type="INT">
+      <offset>64</offset>
+      <static_define_list external="CrashType" />
+    </column>
+    <column name="Basedumpfilename" type="STRING">
+      <offset>72</offset>
+    </column>
+    <column name="Backtraceresponse" type="OPTIONALSTRUCT">
+      <offset>80</offset>
+      <subtable external="CrashReporter_BackTraceResponseSummary" />
+    </column>
+    <column name="Log" type="OPTIONALSTRUCT">
+      <offset>88</offset>
+      <subtable external="InstancedEventLog" />
+    </column>
+    <column name="Errortext" type="STRING">
+      <offset>96</offset>
+    </column>
+    <column name="Fingerprintsummary" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <subtable external="BackTrace_FingerPrintSummary" />
+    </column>
+    <column name="Fingerprintsummaryfailedorwontattempt" type="U8">
+      <offset>112</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Detailedcallstack" type="STRUCT">
+      <offset>120</offset>
+      <subtable external="Backtrace_DetailedStackTraceLine" />
+    </column>
+    <column name="Jirasummary" type="OPTIONALSTRUCT">
+      <offset>128</offset>
+      <subtable external="CrashReporter_JIRASummary" />
+    </column>
+    <column name="Dumprequestid" type="STRING">
+      <offset>136</offset>
+    </column>
+    <column name="Customtrivia" type="STRUCT">
+      <offset>152</offset>
+      <subtable external="NameValuePair" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

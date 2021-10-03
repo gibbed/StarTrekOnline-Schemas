@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="AccountFlag">
+  <elements type="int">
+    <element name="NOT_ACTIVATED">1</element>
+    <element name="INVALID_DISPLAYNAME">2</element>
+    <element name="AUTOSAVE_MACHINEID_CLIENT">4</element>
+    <element name="AUTOSAVE_MACHINEID_BROWSER">8</element>
+    <element name="AUTOSAVE_CLIENT_LOGIN">16</element>
+    <element name="AUTOSAVE_BROWSER_LOGIN">32</element>
+    <element name="LOGS_REBUCKETED">64</element>
+    <element name="DEPRECATED_LOGS_INDEXED">128</element>
+    <element name="LIFETIME_VALUE_CALCULATED">256</element>
+    <element name="LIFETIME_ZEN_NEEDS_FIXUP">512</element>
+  </elements>
+</enum>

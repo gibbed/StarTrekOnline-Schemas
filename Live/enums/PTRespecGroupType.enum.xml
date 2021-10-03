@@ -2,5 +2,9 @@
 <enum name="PTRespecGroupType">
   <elements type="int">
     <element name="kPTRespecGroup_ALL">0</element>
+    <element name="Skills">1</element>
+    <element name="SpeciesTraits">2</element>
+    <element name="Reputations">3</element>
+    <element name="CaptainSpec">4</element>
   </elements>
 </enum>

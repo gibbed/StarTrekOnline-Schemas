@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ParserLoadFilesOccurrenceList">
+  <table>
+    <column name="ParserLoadFilesOccurrenceList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ProductName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Branchnum" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Occurrences" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="ParserLoadFilesOccurrence" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

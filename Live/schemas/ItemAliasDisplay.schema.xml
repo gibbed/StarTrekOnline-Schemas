@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DisplayNameMessage" type="EMBEDDEDSTRUCT">
+    <column name="Displaynamemessage" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="RequiredAllegiance" type="REFERENCE">
-      <offset>12</offset>
+    <column name="Requiredallegiance" type="REFERENCE">
+      <offset>24</offset>
       <dictionary_name>AllegianceDef</dictionary_name>
     </column>
     <column name="}" type="END" />

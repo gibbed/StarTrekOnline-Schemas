@@ -7,35 +7,43 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="NameFilter" type="STRING">
+    <column name="Namefilter" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="DescriptionFilter" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="SlotType" type="INT">
+    <column name="Descriptionfilter" type="STRING">
       <offset>8</offset>
+    </column>
+    <column name="Slottype" type="INT">
+      <offset>16</offset>
       <static_define_list external="GroupProjectTaskSlotType" />
     </column>
-    <column name="peCategoryMask" type="INTARRAY">
-      <offset>12</offset>
+    <column name="Pecategorymask" type="INTARRAY">
+      <offset>24</offset>
       <static_define_list external="DonationTaskCategoryType" />
     </column>
-    <column name="SortByCategories" type="BIT">
-      <offset>16</offset>
+    <column name="Pecategoryunmask" type="INTARRAY">
+      <offset>32</offset>
+      <static_define_list external="DonationTaskCategoryType" />
+    </column>
+    <column name="Sortbycategories" type="BIT">
+      <offset>40</offset>
       <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AddCategoryHeaders" type="BIT">
-      <offset>16</offset>
+    <column name="Addcategoryheaders" type="BIT">
+      <offset>40</offset>
       <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IncludeUnavailableTasks" type="BIT">
-      <offset>16</offset>
+    <column name="Includeunavailabletasks" type="BIT">
+      <offset>40</offset>
       <bit_offset>65538</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RequireAvailableForNewProject" type="BIT">
-      <offset>16</offset>
+    <column name="Requireavailablefornewproject" type="BIT">
+      <offset>40</offset>
       <bit_offset>65539</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

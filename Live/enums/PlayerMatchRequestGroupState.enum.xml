@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PlayerMatchRequestGroupState">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="WaitingForResponses">1</element>
+    <element name="WaitingForLeader">2</element>
+    <element name="WaitingForMatchAlgo">3</element>
+    <element name="WaitingForAccept">4</element>
+    <element name="InMatch">5</element>
+  </elements>
+</enum>

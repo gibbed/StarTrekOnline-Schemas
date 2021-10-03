@@ -6,11 +6,11 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="InteractableSpawnProperties" type="EMBEDDEDSTRUCT">
+    <column name="Interactablespawnproperties" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="LogicalGroupSpawnProperties" />
     </column>
-    <column name="EncounterSpawnProperties" type="EMBEDDEDSTRUCT">
+    <column name="Encounterspawnproperties" type="EMBEDDEDSTRUCT">
       <offset>16</offset>
       <subtable external="LogicalGroupSpawnProperties" />
     </column>

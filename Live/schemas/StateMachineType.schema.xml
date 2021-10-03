@@ -7,15 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="stateMachineName" type="FIXEDSTRING">
+    <column name="Statemachinename" type="FIXEDSTRING">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
       <string_length>64</string_length>
     </column>
-    <column name="AllStateList" type="STRUCT">
-      <offset>68</offset>
+    <column name="Allstatelist" type="STRUCT">
+      <offset>72</offset>
       <subtable external="InstancedState" />
     </column>
     <column name="}" type="END" />

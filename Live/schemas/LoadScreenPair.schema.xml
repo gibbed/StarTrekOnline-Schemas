@@ -10,8 +10,8 @@
     <column name="Map" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="LoadScreen" type="STRING">
-      <offset>4</offset>
+    <column name="Loadscreen" type="STRING">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

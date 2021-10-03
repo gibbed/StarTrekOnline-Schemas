@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RawHTML" type="STRING">
+    <column name="Rawhtml" type="STRING">
       <offset>0</offset>
       <format_strings>
         <format_string name="HTML">1</format_string>

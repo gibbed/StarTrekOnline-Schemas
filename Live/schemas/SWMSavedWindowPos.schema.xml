@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="WindowType" type="INT">
+    <column name="Windowtype" type="INT">
       <offset>0</offset>
     </column>
-    <column name="UserIndex" type="INT">
+    <column name="Userindex" type="INT">
       <offset>4</offset>
     </column>
-    <column name="DlgResourceID" type="INT">
+    <column name="Dlgresourceid" type="INT">
       <offset>8</offset>
     </column>
     <column name="X" type="INT">
@@ -27,6 +27,10 @@
     </column>
     <column name="Height" type="INT">
       <offset>24</offset>
+    </column>
+    <column name="Sppextrasavedata" type="STRUCT">
+      <offset>32</offset>
+      <subtable external="NameValuePair" />
     </column>
     <column name="}" type="END" />
   </table>

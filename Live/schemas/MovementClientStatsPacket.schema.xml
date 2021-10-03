@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="msOffsetFromExpectedTime" type="INT">
+    <column name="Msoffsetfromexpectedtime" type="INT">
       <offset>0</offset>
     </column>
-    <column name="msLocalOffsetFromLastPacket" type="INT">
+    <column name="Mslocaloffsetfromlastpacket" type="INT">
       <offset>4</offset>
     </column>
     <column name="Size" type="INT">
       <offset>8</offset>
     </column>
-    <column name="spcOffset" type="INT">
+    <column name="Spcoffset" type="INT">
       <offset>12</offset>
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">

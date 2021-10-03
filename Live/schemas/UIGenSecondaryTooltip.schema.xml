@@ -7,28 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hTooltip" type="REFERENCE">
+    <column name="Htooltip" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
-        <flag>NON_NULL_REF</flag>
       </flags>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="TooltipBlock" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Tooltipblock" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="Expression" />
     </column>
-    <column name="TooltipExpr" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Tooltipexpr" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>TooltipBlock</redundant_name>
+      <redundant_name>Tooltipblock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
     <column name="Assembly" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>GLOBAL_NAME</flag>
@@ -36,31 +35,33 @@
       <default_string>Tooltip</default_string>
       <dictionary_name>UITextureAssembly</dictionary_name>
     </column>
-    <column name="MaxWidth" type="INT16">
-      <offset>12</offset>
+    <column name="Maxwidth" type="INT16">
+      <offset>24</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
       <default>350</default>
       <static_define_list external="UISize" />
     </column>
-    <column name="MaximumWidth" type="INT16">
-      <offset>12</offset>
+    <column name="Maximumwidth" type="INT16">
+      <offset>24</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
-      <redundant_name>MaxWidth</redundant_name>
+      <redundant_name>Maxwidth</redundant_name>
       <default>350</default>
       <static_define_list external="UISize" />
     </column>
-    <column name="SafeMode" type="BIT">
-      <offset>12</offset>
-      <bit_offset>65552</bit_offset>
+    <column name="Safemode" type="BIT">
+      <offset>26</offset>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="FilterProfanity" type="BIT">
-      <offset>12</offset>
-      <bit_offset>65553</bit_offset>
+      <offset>26</offset>
+      <bit_offset>65537</bit_offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

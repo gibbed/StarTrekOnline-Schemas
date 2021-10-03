@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ProductDistribution">
+  <elements type="int">
+    <element name="NONE">0</element>
+    <element name="Microtransaction">1</element>
+    <element name="Retail">2</element>
+    <element name="Promotional">3</element>
+    <element name="PreOrder">4</element>
+    <element name="Digital">5</element>
+    <element name="GameCard">6</element>
+    <element name="GameTime">7</element>
+  </elements>
+</enum>

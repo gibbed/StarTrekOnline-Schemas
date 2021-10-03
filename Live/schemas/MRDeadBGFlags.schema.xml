@@ -7,25 +7,21 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="isCollapsing" type="BIT">
+    <column name="Iscollapsing" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="isCollapsed" type="BIT">
+    <column name="Isstandingup" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="isStandingUp" type="BIT">
+    <column name="Playanimdeath" type="BIT">
       <offset>0</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="playAnimDeath" type="BIT">
+    <column name="Playanimrevive" type="BIT">
       <offset>0</offset>
       <bit_offset>65539</bit_offset>
-    </column>
-    <column name="playAnimRevive" type="BIT">
-      <offset>0</offset>
-      <bit_offset>65540</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

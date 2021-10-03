@@ -11,6 +11,10 @@
       <offset>0</offset>
       <subtable external="InteractOption" />
     </column>
+    <column name="Outofrangeoptions" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="InteractOption" />
+    </column>
     <column name="}" type="END" />
   </table>
 </parser>

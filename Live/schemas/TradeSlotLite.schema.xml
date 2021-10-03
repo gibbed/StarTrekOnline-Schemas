@@ -10,25 +10,25 @@
     <column name="Item" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="Item" />
     </column>
-    <column name="SrcBagId" type="INT">
-      <offset>4</offset>
+    <column name="Srcbagid" type="INT">
+      <offset>8</offset>
       <static_define_list external="InvBagIDs" />
     </column>
     <column name="Count" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="SrcSlot" type="INT">
       <offset>12</offset>
     </column>
-    <column name="SrcItemId" type="INT64">
+    <column name="Srcslot" type="INT">
       <offset>16</offset>
     </column>
-    <column name="tradeSlotPetID" type="INT">
+    <column name="Srcitemid" type="INT64">
       <offset>24</offset>
+    </column>
+    <column name="Tradeslotpetid" type="INT">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

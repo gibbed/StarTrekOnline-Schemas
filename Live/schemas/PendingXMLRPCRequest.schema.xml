@@ -7,23 +7,26 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RequestTimeClockTicks" type="INT64">
+    <column name="Requesttimeclockticks" type="INT64">
       <offset>0</offset>
     </column>
     <column name="RequestID" type="INT">
       <offset>8</offset>
     </column>
-    <column name="MCPID" type="INT">
+    <column name="Mcpid" type="INT">
       <offset>12</offset>
     </column>
-    <column name="iclientID" type="INT">
+    <column name="Iclientid" type="INT">
       <offset>16</offset>
     </column>
-    <column name="requestTimeout" type="F32">
+    <column name="Requesttimeout" type="F32">
       <offset>20</offset>
       <default>60</default>
     </column>
-    <column name="ErrorAsText" type="INT">
+    <column name="Linkid" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Errorastext" type="INT">
       <offset>28</offset>
     </column>
     <column name="}" type="END" />

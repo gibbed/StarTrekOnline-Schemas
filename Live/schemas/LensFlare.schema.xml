@@ -9,10 +9,10 @@
     <column name="Name" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="LensFlarePiece" type="STRUCT">
-      <offset>4</offset>
+    <column name="Lensflarepiece" type="STRUCT">
+      <offset>8</offset>
       <subtable external="LensFlarePiece" />
     </column>
-    <column name="EndLensFlare" type="END" />
+    <column name="Endlensflare" type="END" />
   </table>
 </parser>

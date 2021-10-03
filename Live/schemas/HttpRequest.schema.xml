@@ -7,42 +7,45 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="method" type="INT">
+    <column name="Method" type="INT">
       <offset>0</offset>
       <static_define_list external="HttpMethod" />
     </column>
-    <column name="major_version" type="INT">
+    <column name="Major_Version" type="INT">
       <offset>4</offset>
     </column>
-    <column name="minor_version" type="INT">
+    <column name="Minor_Version" type="INT">
       <offset>8</offset>
     </column>
     <column name="Path" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="headers" type="OPTIONALSTRUCT">
       <offset>16</offset>
-      <subtable external="NameValuePairList" />
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
     </column>
-    <column name="Vars" type="OPTIONALSTRUCT">
-      <offset>20</offset>
-      <subtable external="UrlArgumentList" />
-    </column>
-    <column name="Cookies" type="OPTIONALSTRUCT">
+    <column name="Headers" type="OPTIONALSTRUCT">
       <offset>24</offset>
       <subtable external="NameValuePairList" />
     </column>
+    <column name="Vars" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <subtable external="UrlArgumentList" />
+    </column>
+    <column name="Cookies" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="NameValuePairList" />
+    </column>
     <column name="Link" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+      <offset>48</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="NetLink" />
     </column>
-    <column name="legacy" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+    <column name="Legacy" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="HttpLegacySupport" />
     </column>

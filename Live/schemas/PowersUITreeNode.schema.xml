@@ -7,21 +7,23 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TreeName" type="STRING">
+    <column name="Treename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="hTreeDef" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Htreedef" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>PowerTreeDef</dictionary_name>
     </column>
     <column name="Selected" type="U8">
-      <offset>8</offset>
+      <offset>16</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Show" type="U8">
-      <offset>9</offset>
+      <offset>17</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

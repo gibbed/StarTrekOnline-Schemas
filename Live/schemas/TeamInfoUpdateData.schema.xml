@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="TeamInfoUpdateData">
+  <table>
+    <column name="TeamInfoUpdateData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="MapName" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Mapmsgkey" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Mapvars" type="STRING">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Mapinstancenumber" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="Status" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="className" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Explevel" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Officerrank" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Upartitionid" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="MapContainerID" type="INT">
+      <offset>60</offset>
+    </column>
+    <column name="Faction" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

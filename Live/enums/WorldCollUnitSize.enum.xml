@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="WorldCollUnitSize">
+  <elements type="int">
+    <element name="Default">0</element>
+    <element name="CapsuleSmall">1</element>
+    <element name="CapsuleMedium">2</element>
+    <element name="CapsuleLarge">3</element>
+    <element name="Custom">4</element>
+    <element name="CapsuleSmallCraft">5</element>
+  </elements>
+</enum>

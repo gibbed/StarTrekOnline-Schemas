@@ -7,71 +7,81 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="base_data" type="EMBEDDEDSTRUCT">
+    <column name="Base_Data" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="WorldCellEntryParsed" />
     </column>
     <column name="ID" type="INT">
       <offset>72</offset>
     </column>
-    <column name="fx_name_idx" type="INT">
+    <column name="Fx_Name_Idx" type="INT">
       <offset>76</offset>
       <default>-1</default>
     </column>
-    <column name="fx_hue" type="F32">
+    <column name="Fx_Hue" type="F32">
       <offset>80</offset>
       <float_rounding>HUNDREDTHS</float_rounding>
     </column>
-    <column name="fx_condition_idx" type="INT">
+    <column name="Fx_Condition_Idx" type="INT">
       <offset>84</offset>
       <default>-1</default>
     </column>
-    <column name="fx_params_idx" type="INT">
+    <column name="Fx_Params_Idx" type="INT">
       <offset>88</offset>
       <default>-1</default>
     </column>
-    <column name="fx_faction_idx" type="INT">
+    <column name="Fx_Faction_Idx" type="INT">
       <offset>92</offset>
       <default>-1</default>
     </column>
-    <column name="Debris" type="OPTIONALSTRUCT">
+    <column name="Fx_Scale" type="F32FIXEDARRAY">
       <offset>96</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Debris" type="OPTIONALSTRUCT">
+      <offset>112</offset>
       <subtable external="WorldFXDebrisParsed" />
     </column>
-    <column name="interaction_node_owned" type="BIT">
-      <offset>100</offset>
+    <column name="Interaction_Node_Owned" type="BIT">
+      <offset>120</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="low_detail" type="BIT">
-      <offset>100</offset>
+    <column name="Low_Detail" type="BIT">
+      <offset>120</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="high_detail" type="BIT">
-      <offset>100</offset>
+    <column name="High_Detail" type="BIT">
+      <offset>120</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="high_fill_detail" type="BIT">
-      <offset>100</offset>
+    <column name="High_Fill_Detail" type="BIT">
+      <offset>120</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="has_target_node" type="BIT">
-      <offset>100</offset>
+    <column name="Has_Target_Node" type="BIT">
+      <offset>120</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="target_no_anim" type="BIT">
-      <offset>100</offset>
+    <column name="Target_No_Anim" type="BIT">
+      <offset>120</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="rot_target_node_mat" type="MATPYR">
-      <offset>104</offset>
+    <column name="Rot_Target_Node_Mat" type="MATPYR">
+      <offset>124</offset>
       <num_elements>9</num_elements>
     </column>
-    <column name="pos_target_node_mat" type="F32FIXEDARRAY">
-      <offset>140</offset>
+    <column name="Pos_Target_Node_Mat" type="F32FIXEDARRAY">
+      <offset>160</offset>
       <num_elements>3</num_elements>
     </column>
-    <column name="animation_entry_id" type="INT">
-      <offset>152</offset>
+    <column name="Target_Scale" type="F32FIXEDARRAY">
+      <offset>172</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Animation_Entry_Id" type="INT">
+      <offset>184</offset>
     </column>
     <column name="}" type="END" />
   </table>

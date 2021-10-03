@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CertificateDef">
+  <table>
+    <column name="CertificateDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Encodedthumbprint" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Capabilities" type="INT">
+      <offset>8</offset>
+      <static_define_list external="CertificateCapability" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Comment" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="FileName" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Nickname" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Encryptionstatecount" type="INT">
+      <offset>112</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="PlayerMatchTempData">
+  <table>
+    <column name="PlayerMatchTempData" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Availablelastupdatess2000" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Uavailablelastupdatess2000" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Availablelastupdatess2000</redundant_name>
+    </column>
+    <column name="Lastsentdigestupdatess2000" type="INT">
+      <offset>4</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Ulastsentdigestupdatess2000" type="INT">
+      <offset>4</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Lastsentdigestupdatess2000</redundant_name>
+    </column>
+    <column name="Votekickavailabless2000" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Uvotekickavailabless2000" type="INT">
+      <offset>8</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Votekickavailabless2000</redundant_name>
+    </column>
+    <column name="Voteabandonavailabless2000" type="INT">
+      <offset>12</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Uvoteabandonavailabless2000" type="INT">
+      <offset>12</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Voteabandonavailabless2000</redundant_name>
+    </column>
+    <column name="Leaveautoteamstate" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <static_define_list external="MatchMapLeaveAutoTeamState" />
+    </column>
+    <column name="Eleaveautoteamstate" type="INT">
+      <offset>16</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Leaveautoteamstate</redundant_name>
+      <static_define_list external="MatchMapLeaveAutoTeamState" />
+    </column>
+    <column name="Playermatchpreviousteaminfo" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="PlayerMatchPreviousTeamInfo" />
+    </column>
+    <column name="Pplayermatchpreviousteaminfo" type="OPTIONALSTRUCT">
+      <offset>24</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Playermatchpreviousteaminfo</redundant_name>
+      <subtable external="PlayerMatchPreviousTeamInfo" />
+    </column>
+    <column name="Playermatchteamhistory" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="PlayerMatchTeamHistory" />
+    </column>
+    <column name="Pplayermatchteamhistory" type="OPTIONALSTRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Playermatchteamhistory</redundant_name>
+      <subtable external="PlayerMatchTeamHistory" />
+    </column>
+    <column name="Eaplayermatchrankings" type="STRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <subtable external="PlayerMatchRanking" />
+    </column>
+    <column name="Completedmatchdefname" type="STRINGARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Eacompletedmatchdefnames" type="STRINGARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Completedmatchdefname</redundant_name>
+    </column>
+    <column name="Playermatchdesc" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="PlayerMatchDesc" />
+    </column>
+    <column name="Eaplayermatchdescs" type="STRUCT">
+      <offset>56</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Playermatchdesc</redundant_name>
+      <subtable external="PlayerMatchDesc" />
+    </column>
+    <column name="Highestleaverpenaltytime" type="INT">
+      <offset>64</offset>
+    </column>
+    <column name="Uhighestleaverpenaltytime" type="INT">
+      <offset>64</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Highestleaverpenaltytime</redundant_name>
+    </column>
+    <column name="Playerofleaverpenalty" type="INT">
+      <offset>68</offset>
+    </column>
+    <column name="Uplayerofleaverpenalty" type="INT">
+      <offset>68</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Playerofleaverpenalty</redundant_name>
+    </column>
+    <column name="Highestafkpenaltytime" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Uhighestafkpenaltytime" type="INT">
+      <offset>72</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Highestafkpenaltytime</redundant_name>
+    </column>
+    <column name="Playerofafkpenalty" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Uplayerofafkpenalty" type="INT">
+      <offset>76</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Playerofafkpenalty</redundant_name>
+    </column>
+    <column name="Eamatchdefnamestoqueue" type="STRINGARRAY">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Eaadditionalmapdata" type="STRINGARRAY">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Eamatchdefnamestoqueue_Changecount" type="INT">
+      <offset>96</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Irandomqueueindextoqueue" type="INT">
+      <offset>100</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <default>-1</default>
+    </column>
+    <column name="Pplayermatchvotekickuidata" type="OPTIONALSTRUCT">
+      <offset>104</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PlayerMatchVoteKickUIData" />
+    </column>
+    <column name="Ematchmapvotekickstate" type="INT">
+      <offset>112</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <static_define_list external="MatchMapVoteKickState" />
+    </column>
+    <column name="Pplayermatchvoteabandonuidata" type="OPTIONALSTRUCT">
+      <offset>120</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PlayerMatchVoteAbandonUIData" />
+    </column>
+    <column name="Umatchmodeflags" type="INT">
+      <offset>128</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <default>4</default>
+    </column>
+    <column name="Pplayermatchhardcoremodeuidata" type="OPTIONALSTRUCT">
+      <offset>136</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="PlayerMatchHardcoreModeUIData" />
+    </column>
+    <column name="Eamatchrewards" type="STRUCT">
+      <offset>144</offset>
+      <flags>
+        <flag>SELF_ONLY</flag>
+      </flags>
+      <subtable external="InventoryMatchReward" />
+    </column>
+    <column name="Umatchchatid" type="INT">
+      <offset>152</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Umrgchatid" type="INT">
+      <offset>156</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Uchatchannellastchecked" type="INT">
+      <offset>160</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Uaccepttimerexpirestimestamp" type="INT">
+      <offset>164</offset>
+    </column>
+    <column name="Timeaskedforaccepttimer" type="INT">
+      <offset>168</offset>
+    </column>
+    <column name="Utimeaskedforaccepttimer" type="INT">
+      <offset>168</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Timeaskedforaccepttimer</redundant_name>
+    </column>
+    <column name="Isonorphanedmap" type="U8">
+      <offset>172</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Bisonorphanedmap" type="U8">
+      <offset>172</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Isonorphanedmap</redundant_name>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ifilterforprivatematches" type="INT">
+      <offset>176</offset>
+      <flags>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <default>-1</default>
+    </column>
+    <column name="Ulastautomaticdequeuetimess2000" type="INT">
+      <offset>180</offset>
+      <flags>
+        <flag>SERVER_ONLY</flag>
+      </flags>
+    </column>
+    <column name="Dirtybit" type="U8">
+      <offset>184</offset>
+      <flags>
+        <flag>NO_NETSEND</flag>
+        <flag>DIRTY_BIT</flag>
+      </flags>
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>192</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+        <flag>CLIENT_ONLY</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Lastmatchdefname" type="STRING">
+      <offset>200</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Lastmatchblockuntiltime" type="INT">
+      <offset>208</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+    </column>
+    <column name="Matchloadoutindex" type="INT">
+      <offset>212</offset>
+      <flags>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <default>-1</default>
+    </column>
+    <column name="Imatchloadoutindex" type="INT">
+      <offset>212</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>PERSIST</flag>
+        <flag>NO_TRANSACT</flag>
+      </flags>
+      <redundant_name>Matchloadoutindex</redundant_name>
+      <default>-1</default>
+    </column>
+    <column name="Myplayerinvalidmatchname" type="IGNORE" />
+    <column name="Myplayerinvalidmatchreason" type="IGNORE" />
+    <column name="Myplayerinvalidmatchmessagekeys" type="IGNORE" />
+    <column name="Groupinvalidmatchname" type="IGNORE" />
+    <column name="Groupinvalidmatchreason" type="IGNORE" />
+    <column name="Volitileinvalidmatchname" type="IGNORE" />
+    <column name="Volatileinvalidmatchreason" type="IGNORE" />
+    <column name="Privateinvalidmatchname" type="IGNORE" />
+    <column name="Privateinvalidmatchreason" type="IGNORE" />
+    <column name="Joinedmatchchannel" type="IGNORE" />
+    <column name="Playermatchgame" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

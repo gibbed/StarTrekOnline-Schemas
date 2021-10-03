@@ -14,7 +14,7 @@
       </flags>
     </column>
     <column name="Value" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="XMLValue" />
     </column>
     <column name="}" type="END" />

@@ -11,32 +11,43 @@
       <offset>0</offset>
       <subtable external="PlayerQueue" />
     </column>
-    <column name="FailsAllReqs" type="STRUCT">
-      <offset>4</offset>
+    <column name="Failsallreqs" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="QueueFailRequirementsData" />
     </column>
-    <column name="PenaltyData" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Penaltydata" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="PlayerQueuePenaltyData" />
     </column>
-    <column name="uLeaverPenaltyDuration" type="INT">
-      <offset>12</offset>
+    <column name="Uleaverpenaltyduration" type="INT">
+      <offset>24</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
     </column>
-    <column name="QueueInstantiationInfo" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Queueinstantiationinfo" type="OPTIONALSTRUCT">
+      <offset>32</offset>
       <flags>
         <flag>SELF_ONLY</flag>
       </flags>
       <subtable external="QueueInstantiationInfo" />
+    </column>
+    <column name="Autotimestamp" type="INT64">
+      <offset>56</offset>
+      <flags>
+        <flag>NO_WRITE</flag>
+        <flag>NO_NETSEND</flag>
+        <flag>NO_TEXT_SAVE</flag>
+      </flags>
+      <format_strings>
+        <format_string name="AUTO_RECEIVE_TIMESTAMP">1</format_string>
+      </format_strings>
     </column>
     <column name="}" type="END" />
   </table>

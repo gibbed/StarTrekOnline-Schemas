@@ -7,46 +7,48 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GrantType" type="INT">
+    <column name="Granttype" type="INT">
       <offset>0</offset>
       <static_define_list external="GenesisMissionGrantType" />
     </column>
-    <column name="GrantContact" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+    <column name="Grantcontact" type="OPTIONALSTRUCT">
+      <offset>8</offset>
       <subtable external="GenesisMissionGrant_Contact" />
     </column>
-    <column name="TurnInType" type="INT">
-      <offset>8</offset>
+    <column name="Turnintype" type="INT">
+      <offset>16</offset>
       <static_define_list external="GenesisMissionTurnInType" />
     </column>
-    <column name="TurnInContact" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+    <column name="Turnincontact" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="GenesisMissionTurnIn_Contact" />
     </column>
-    <column name="FailType" type="INT">
-      <offset>16</offset>
+    <column name="Failtype" type="INT">
+      <offset>32</offset>
       <static_define_list external="GenesisMissionFailType" />
     </column>
-    <column name="FailTimeoutSeconds" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="CanRepeat" type="U8">
-      <offset>24</offset>
-    </column>
-    <column name="RepeatCooldownHours" type="F32">
-      <offset>28</offset>
-    </column>
-    <column name="RepeatCooldownHoursFromStart" type="F32">
-      <offset>32</offset>
-    </column>
-    <column name="RepeatCooldownCount" type="INT">
+    <column name="Failtimeoutseconds" type="INT">
       <offset>36</offset>
     </column>
-    <column name="RepeatCooldownBlockTime" type="U8">
+    <column name="Canrepeat" type="U8">
       <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RequiresMission" type="STRINGARRAY">
+    <column name="Repeatcooldownhours" type="F32">
       <offset>44</offset>
+    </column>
+    <column name="Repeatcooldownhoursfromstart" type="F32">
+      <offset>48</offset>
+    </column>
+    <column name="Repeatcooldowncount" type="INT">
+      <offset>52</offset>
+    </column>
+    <column name="Repeatcooldownblocktime" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Requiresmission" type="STRINGARRAY">
+      <offset>64</offset>
     </column>
     <column name="}" type="END" />
   </table>

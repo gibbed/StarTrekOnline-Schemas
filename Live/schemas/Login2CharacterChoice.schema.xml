@@ -23,7 +23,7 @@
     <column name="OwnerID" type="INT">
       <offset>12</offset>
     </column>
-    <column name="createdTime" type="INT">
+    <column name="Createdtime" type="INT">
       <offset>16</offset>
     </column>
     <column name="Level" type="INT">
@@ -32,65 +32,79 @@
     <column name="FixupVersion" type="INT">
       <offset>24</offset>
     </column>
-    <column name="lastPlayedTime" type="INT">
+    <column name="Lastplayedtime" type="INT">
       <offset>28</offset>
     </column>
     <column name="VirtualShardID" type="INT">
       <offset>32</offset>
     </column>
     <column name="shardName" type="STRING">
-      <offset>36</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="pubAccountName" type="STRING">
-      <offset>40</offset>
-    </column>
-    <column name="privAccountName" type="STRING">
-      <offset>44</offset>
-    </column>
-    <column name="savedName" type="STRING">
+    <column name="shardDisplayName" type="STRING">
       <offset>48</offset>
     </column>
-    <column name="extraData1" type="STRING">
-      <offset>52</offset>
-    </column>
-    <column name="extraData2" type="STRING">
+    <column name="Pubaccountname" type="STRING">
       <offset>56</offset>
     </column>
-    <column name="extraData3" type="STRING">
-      <offset>60</offset>
-    </column>
-    <column name="extraData4" type="STRING">
+    <column name="Privaccountname" type="STRING">
       <offset>64</offset>
     </column>
-    <column name="extraData5" type="STRING">
-      <offset>68</offset>
-    </column>
-    <column name="oldBadName" type="STRING">
+    <column name="Savedname" type="STRING">
       <offset>72</offset>
     </column>
-    <column name="isOffline" type="U8">
-      <offset>76</offset>
-    </column>
-    <column name="isDeleted" type="U8">
-      <offset>77</offset>
-    </column>
-    <column name="isUGCEditAllowed" type="U8">
-      <offset>78</offset>
-    </column>
-    <column name="hasBadName" type="U8">
-      <offset>79</offset>
-    </column>
-    <column name="detailRequested" type="U8">
+    <column name="Extradata1" type="STRING">
       <offset>80</offset>
     </column>
-    <column name="detailReceived" type="U8">
-      <offset>81</offset>
+    <column name="Extradata2" type="STRING">
+      <offset>88</offset>
     </column>
-    <column name="isSaveLoginRecommended" type="U8">
-      <offset>82</offset>
+    <column name="Extradata3" type="STRING">
+      <offset>96</offset>
+    </column>
+    <column name="Extradata4" type="STRING">
+      <offset>104</offset>
+    </column>
+    <column name="Extradata5" type="STRING">
+      <offset>112</offset>
+    </column>
+    <column name="Oldbadname" type="STRING">
+      <offset>120</offset>
+    </column>
+    <column name="Isoffline" type="U8">
+      <offset>128</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isdeleted" type="U8">
+      <offset>129</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hasbadname" type="U8">
+      <offset>130</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Detailrequested" type="U8">
+      <offset>131</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Detailreceived" type="U8">
+      <offset>132</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ismain" type="U8">
+      <offset>133</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Issaveloginrecommended" type="U8">
+      <offset>134</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Isdeleterequested" type="U8">
+      <offset>135</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

@@ -15,7 +15,7 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="entityID" type="INT">
+    <column name="Entityid" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -33,14 +33,14 @@
       </flags>
     </column>
     <column name="Title" type="STRING">
-      <offset>12</offset>
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
     <column name="Text" type="STRING">
-      <offset>16</offset>
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>

@@ -7,25 +7,23 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="model_idx" type="INT">
+    <column name="Model_Idx" type="INT">
       <offset>0</offset>
       <default>-1</default>
     </column>
-    <column name="draw_list_idx" type="INT">
+    <column name="Draw_List_Idx" type="INT">
       <offset>4</offset>
       <default>-1</default>
     </column>
-    <column name="instance_param_list_idx" type="INT">
-      <offset>8</offset>
-      <default>-1</default>
-    </column>
     <column name="Scale" type="F32FIXEDARRAY">
-      <offset>12</offset>
+      <offset>8</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="tint_color" type="F32FIXEDARRAY">
-      <offset>24</offset>
+    <column name="Tint_Color" type="F32FIXEDARRAY">
+      <offset>20</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MapNotificationDef" type="STRUCT">
+    <column name="Mapnotificationdef" type="STRUCT">
       <offset>0</offset>
       <subtable external="MapNotificationDef" />
     </column>

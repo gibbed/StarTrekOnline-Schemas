@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="GuildMailType">
+  <elements type="int">
+    <element name="None">0</element>
+    <element name="DemotionPending">1</element>
+    <element name="Demoted">2</element>
+  </elements>
+</enum>

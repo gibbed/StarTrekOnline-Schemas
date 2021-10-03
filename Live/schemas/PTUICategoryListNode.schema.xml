@@ -13,18 +13,19 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="ShowCategory" type="U8">
-      <offset>4</offset>
-    </column>
-    <column name="TreeHolder" type="STRUCT">
+    <column name="Showcategory" type="U8">
       <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Treeholder" type="STRUCT">
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="PowerTreeHolder" />
     </column>
-    <column name="ListSize" type="INT">
-      <offset>12</offset>
+    <column name="Listsize" type="INT">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

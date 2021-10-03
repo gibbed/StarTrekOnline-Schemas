@@ -7,19 +7,19 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DelayDiscard" type="INT">
+    <column name="Delaydiscard" type="INT">
       <offset>0</offset>
     </column>
-    <column name="DelayDecay" type="INT">
+    <column name="Delaydecay" type="INT">
       <offset>4</offset>
     </column>
-    <column name="PercentDiscard" type="F32">
+    <column name="Percentdiscard" type="F32">
       <offset>8</offset>
     </column>
-    <column name="ScaleDecay" type="F32">
+    <column name="Scaledecay" type="F32">
       <offset>12</offset>
     </column>
-    <column name="RunEveryTick" type="BIT">
+    <column name="Runeverytick" type="BIT">
       <offset>16</offset>
       <bit_offset>65536</bit_offset>
     </column>

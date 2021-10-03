@@ -11,14 +11,14 @@
       <offset>0</offset>
       <subtable external="GenericArray" />
     </column>
-    <column name="integer" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="floating" type="F32">
+    <column name="Integer" type="INT">
       <offset>8</offset>
     </column>
-    <column name="String" type="STRING">
+    <column name="Floating" type="F32">
       <offset>12</offset>
+    </column>
+    <column name="String" type="STRING">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

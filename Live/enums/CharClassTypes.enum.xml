@@ -2,5 +2,32 @@
 <enum name="CharClassTypes">
   <elements type="int">
     <element name="CharClassTypes_None">0</element>
+    <element name="Space">1</element>
+    <element name="Ground">2</element>
+    <element name="Crewman">3</element>
+    <element name="Tactical_Team">4</element>
+    <element name="Engineering_Team">5</element>
+    <element name="Science_Team">6</element>
+    <element name="Klingon_Tactical_Team">7</element>
+    <element name="Klingon_Engineering_Team">8</element>
+    <element name="Klingon_Science_Team">9</element>
+    <element name="All_Team">10</element>
+    <element name="Klingon_All_Team">11</element>
+    <element name="Romulan_Tactical_Team">12</element>
+    <element name="Romulan_Engineering_Team">13</element>
+    <element name="Romulan_Science_Team">14</element>
+    <element name="Romulan_All_Team">15</element>
+    <element name="Dominion_Tactical_Team">16</element>
+    <element name="Dominion_Engineering_Team">17</element>
+    <element name="Dominion_Science_Team">18</element>
+    <element name="Dominion_All_Team">19</element>
+    <element name="TOS_Tactical_Team">20</element>
+    <element name="TOS_Engineering_Team">21</element>
+    <element name="TOS_Science_Team">22</element>
+    <element name="TOS_All_Team">23</element>
+    <element name="DSC_Tactical_Team">24</element>
+    <element name="DSC_Engineering_Team">25</element>
+    <element name="DSC_Science_Team">26</element>
+    <element name="DSC_All_Team">27</element>
   </elements>
 </enum>

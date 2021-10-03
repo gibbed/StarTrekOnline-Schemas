@@ -7,47 +7,49 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="movhMaxSpeed" type="INT">
+    <column name="Movhmaxspeed" type="INT">
       <offset>0</offset>
     </column>
-    <column name="hAutoSprint" type="INT">
+    <column name="Hautosprint" type="INT">
       <offset>4</offset>
     </column>
-    <column name="hAimStrafe" type="INT">
+    <column name="Haimstrafe" type="INT">
       <offset>8</offset>
     </column>
-    <column name="hAimJumpDisable" type="INT">
+    <column name="Haimjumpdisable" type="INT">
       <offset>12</offset>
     </column>
-    <column name="surfaceNormal" type="F32FIXEDARRAY">
+    <column name="Surfacenormal" type="F32FIXEDARRAY">
       <offset>16</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="dirRelativeForDoubleTap" type="F32FIXEDARRAY">
+    <column name="Dirrelativefordoubletap" type="F32FIXEDARRAY">
       <offset>28</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="overridesQueued" type="STRUCT">
+    <column name="Overridesqueued" type="STRUCT">
       <offset>40</offset>
       <subtable external="TacticalOverrides" />
     </column>
-    <column name="CurrentRollSpeed" type="F32">
-      <offset>44</offset>
-    </column>
-    <column name="stanceAiming" type="INT">
+    <column name="Currentrollspeed" type="F32">
       <offset>48</offset>
     </column>
-    <column name="stanceCrouching" type="INT">
+    <column name="Stanceaiming" type="INT">
       <offset>52</offset>
     </column>
-    <column name="stanceSprint" type="INT">
+    <column name="Stancecrouching" type="INT">
       <offset>56</offset>
     </column>
-    <column name="spcClearAllOverrides" type="INT">
+    <column name="Stancesprint" type="INT">
       <offset>60</offset>
     </column>
-    <column name="flagsMutable" type="EMBEDDEDSTRUCT">
+    <column name="Spcclearalloverrides" type="INT">
       <offset>64</offset>
+    </column>
+    <column name="Flagsmutable" type="EMBEDDEDSTRUCT">
+      <offset>68</offset>
       <subtable external="TacticalLocalBGFlags" />
     </column>
     <column name="}" type="END" />

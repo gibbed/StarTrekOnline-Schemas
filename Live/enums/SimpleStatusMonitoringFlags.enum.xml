@@ -3,5 +3,6 @@
   <elements type="int">
     <element name="FORWARD_STATUSES_TO_OVERLORD">1</element>
     <element name="LISTEN_FOR_FORWARDED_STATUSES_AS_OVERLORD">2</element>
+    <element name="ATTEMPT_TO_RESTART_CRASHED_SYSTEMS">4</element>
   </elements>
 </enum>

@@ -8,5 +8,6 @@
     <element name="FAILED">4</element>
     <element name="SUCCEEDED_WITH_ERRORS">5</element>
     <element name="ABORTED">6</element>
+    <element name="CANCELLED">7</element>
   </elements>
 </enum>

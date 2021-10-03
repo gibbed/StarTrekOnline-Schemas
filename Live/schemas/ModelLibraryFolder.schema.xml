@@ -14,11 +14,11 @@
       </flags>
     </column>
     <column name="Folders" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="ModelLibraryFolder" />
     </column>
     <column name="Files" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="ModelLibraryGeoFile" />
     </column>
     <column name="}" type="END" />

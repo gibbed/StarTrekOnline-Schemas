@@ -16,19 +16,19 @@
     <column name="Radius" type="F32">
       <offset>8</offset>
     </column>
-    <column name="PathPoint" type="STRUCT">
-      <offset>12</offset>
+    <column name="Pathpoint" type="STRUCT">
+      <offset>16</offset>
       <subtable external="GenesisNodePathPoint" />
     </column>
-    <column name="SplinePath" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+    <column name="Splinepath" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="Spline" />
     </column>
-    <column name="ToOffMap" type="BIT">
-      <offset>20</offset>
+    <column name="Tooffmap" type="BIT">
+      <offset>32</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="TerrainType" type="IGNORE">
+    <column name="Terraintype" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>

@@ -15,26 +15,30 @@
       </flags>
     </column>
     <column name="File" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Token" type="STRUCT">
-      <offset>8</offset>
-      <subtable external="GameTokenText" />
-    </column>
-    <column name="NotPresentToken" type="STRUCT">
-      <offset>12</offset>
-      <subtable external="GameTokenText" />
-    </column>
-    <column name="LevelRestrictedTokens" type="STRUCT">
       <offset>16</offset>
+      <subtable external="GameTokenText" />
+    </column>
+    <column name="Notpresenttoken" type="STRUCT">
+      <offset>24</offset>
+      <subtable external="GameTokenText" />
+    </column>
+    <column name="Levelrestrictedtokens" type="STRUCT">
+      <offset>32</offset>
       <subtable external="LevelRestrictedTokens" />
     </column>
     <column name="Type" type="INT">
-      <offset>20</offset>
+      <offset>40</offset>
       <static_define_list external="GamePermissionType" />
+    </column>
+    <column name="Vippointsrestrictedtokens" type="STRUCT">
+      <offset>48</offset>
+      <subtable external="VIPPointsRestrictedTokens" />
     </column>
     <column name="}" type="END" />
   </table>

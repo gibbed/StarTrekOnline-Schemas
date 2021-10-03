@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="TexWordParamLookup">
+  <elements type="int">
+    <element name="TexWordParam1">0</element>
+    <element name="TexWordParam2">1</element>
+    <element name="TexWordParam3">2</element>
+    <element name="TexWordParam4">3</element>
+    <element name="TexWordParam5">4</element>
+    <element name="TexWordParam6">5</element>
+    <element name="TexWordParam7">6</element>
+    <element name="TexWordParam8">7</element>
+    <element name="TexWordParam9">8</element>
+    <element name="TexWordParam10">9</element>
+  </elements>
+</enum>

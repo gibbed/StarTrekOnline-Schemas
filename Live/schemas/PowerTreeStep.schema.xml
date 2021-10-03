@@ -14,42 +14,38 @@
       </flags>
     </column>
     <column name="Node" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Enhancement" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="Rank" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="uiTimestamp" type="INT">
+    <column name="Enhancement" type="STRING">
       <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="uiOrderIndex" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="CostRespec" type="INT">
+    <column name="Rank" type="INT">
       <offset>24</offset>
     </column>
-    <column name="StepsImplied" type="INT">
+    <column name="Uitimestamp" type="INT">
       <offset>28</offset>
+    </column>
+    <column name="Uiorderindex" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Costrespec" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Stepsimplied" type="INT">
+      <offset>40</offset>
       <flags>
         <flag>CLIENT_ONLY</flag>
       </flags>
     </column>
-    <column name="Escrow" type="BIT">
-      <offset>32</offset>
+    <column name="Stepislocked" type="BIT">
+      <offset>44</offset>
       <bit_offset>65536</bit_offset>
-    </column>
-    <column name="StepIsLocked" type="BIT">
-      <offset>32</offset>
-      <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

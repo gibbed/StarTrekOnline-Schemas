@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hCostume" type="REFERENCE">
+    <column name="Hcostume" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>SELF_ONLY</flag>

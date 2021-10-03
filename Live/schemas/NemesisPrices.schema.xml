@@ -7,25 +7,25 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="personalityCost" type="INT">
+    <column name="Personalitycost" type="INT">
       <offset>0</offset>
     </column>
-    <column name="nemesisPowerSetCost" type="INT">
+    <column name="Nemesispowersetcost" type="INT">
       <offset>4</offset>
     </column>
-    <column name="nemesisPowerHueCost" type="INT">
+    <column name="Nemesispowerhuecost" type="INT">
       <offset>8</offset>
     </column>
-    <column name="minionPowerSetCost" type="INT">
+    <column name="Minionpowersetcost" type="INT">
       <offset>12</offset>
     </column>
-    <column name="minionPowerHueCost" type="INT">
+    <column name="Minionpowerhuecost" type="INT">
       <offset>16</offset>
     </column>
-    <column name="minionCostumeSetCost" type="INT">
+    <column name="Minioncostumesetcost" type="INT">
       <offset>20</offset>
     </column>
-    <column name="LevelMultipliers" type="F32ARRAY">
+    <column name="Levelmultipliers" type="F32ARRAY">
       <offset>24</offset>
     </column>
     <column name="}" type="END" />

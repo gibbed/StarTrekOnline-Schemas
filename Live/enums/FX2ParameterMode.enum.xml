@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FX2ParameterMode">
+  <elements type="int">
+    <element name="Literal">0</element>
+    <element name="Bind">1</element>
+    <element name="DynamicInput">2</element>
+  </elements>
+</enum>

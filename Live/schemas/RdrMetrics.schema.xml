@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="RdrMetrics">
+  <table>
+    <column name="RdrMetrics" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="State_Changes" type="EMBEDDEDSTRUCT">
+      <offset>0</offset>
+      <subtable external="RdrDeviceStateChangePerfValues" />
+    </column>
+    <column name="Operations" type="EMBEDDEDSTRUCT">
+      <offset>44</offset>
+      <subtable external="RdrDeviceOperationPerfValues" />
+    </column>
+    <column name="Shader_Stats" type="EMBEDDEDSTRUCT">
+      <offset>248</offset>
+      <subtable external="RdrDeviceShaderStagesStats" />
+    </column>
+    <column name="M_Combinedallbucketmetrics" type="EMBEDDEDSTRUCT">
+      <offset>2248</offset>
+      <subtable external="RdrDrawContextMetrics" />
+    </column>
+    <column name="M_Combinedvisualbucketmetrics" type="EMBEDDEDSTRUCT">
+      <offset>2504</offset>
+      <subtable external="RdrDrawContextMetrics" />
+    </column>
+    <column name="M_Combinedopaquebucketmetrics" type="EMBEDDEDSTRUCT">
+      <offset>2760</offset>
+      <subtable external="RdrDrawContextMetrics" />
+    </column>
+    <column name="M_Combinedalphabucketmetrics" type="EMBEDDEDSTRUCT">
+      <offset>3016</offset>
+      <subtable external="RdrDrawContextMetrics" />
+    </column>
+    <column name="M_Combinedshadowbucketmetrics" type="EMBEDDEDSTRUCT">
+      <offset>3272</offset>
+      <subtable external="RdrDrawContextMetrics" />
+    </column>
+    <column name="M_Combineddepthonlybucketmetrics" type="EMBEDDEDSTRUCT">
+      <offset>3528</offset>
+      <subtable external="RdrDrawContextMetrics" />
+    </column>
+    <column name="M_Numdrawops" type="INT">
+      <offset>14136</offset>
+    </column>
+    <column name="M_Numconstantbufferdestroys" type="INT">
+      <offset>14140</offset>
+    </column>
+    <column name="M_Numresourcesetdestroys" type="INT">
+      <offset>14144</offset>
+    </column>
+    <column name="M_Numgeodestroys" type="INT">
+      <offset>14148</offset>
+    </column>
+    <column name="M_Frametimems" type="F32">
+      <offset>14152</offset>
+    </column>
+    <column name="Mem" type="EMBEDDEDSTRUCT">
+      <offset>14160</offset>
+      <subtable external="RdrDeviceMemoryStats" />
+    </column>
+    <column name=" " type="END" />
+  </table>
+</parser>

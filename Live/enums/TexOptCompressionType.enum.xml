@@ -10,5 +10,9 @@
     <element name="U8">6</element>
     <element name="DXT5nm">7</element>
     <element name="TrueColor">8</element>
+    <element name="BC4">9</element>
+    <element name="BC5">10</element>
+    <element name="BC6">11</element>
+    <element name="BC7">12</element>
   </elements>
 </enum>

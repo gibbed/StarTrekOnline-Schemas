@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CoarseSummaryTreeList">
+  <table>
+    <column name="CoarseSummaryTreeList" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Listname" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="ServerType" type="INT">
+      <offset>8</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Serverid" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Machinename" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="MapName" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Pid" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Startss2000" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Endss2000" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Trees" type="STRUCT">
+      <offset>56</offset>
+      <subtable external="CoarseTimerSummaryTree" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

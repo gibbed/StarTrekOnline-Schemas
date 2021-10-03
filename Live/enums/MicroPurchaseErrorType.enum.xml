@@ -19,7 +19,23 @@
     <element name="PetAcquireLimit">15</element>
     <element name="NumericFull">16</element>
     <element name="AttribClamped">17</element>
-    <element name="ItemDoesNotExist">18</element>
-    <element name="RequiresCharacter">19</element>
+    <element name="BattlepassLevel">18</element>
+    <element name="BattlepassPaid">19</element>
+    <element name="ItemDoesNotExist">20</element>
+    <element name="RequiresCharacter">21</element>
+    <element name="NotAvailable">22</element>
+    <element name="NeedVIP">23</element>
+    <element name="OncePerAccount">24</element>
+    <element name="PurchaseConflicts">25</element>
+    <element name="NeedBattlepass">26</element>
+    <element name="NotEnabled">27</element>
+    <element name="Off">28</element>
+    <element name="MTCategory">29</element>
+    <element name="NotAvailable_StartTime">30</element>
+    <element name="NotAvailable_EndTime">31</element>
+    <element name="FailsVisibilityExpressionRequirement">32</element>
+    <element name="CodeDriven">33</element>
+    <element name="NoUICategory">34</element>
+    <element name="MAX">35</element>
   </elements>
 </enum>

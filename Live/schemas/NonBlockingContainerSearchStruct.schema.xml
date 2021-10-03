@@ -7,11 +7,18 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ContainerIDs" type="INTARRAY">
+    <column name="Containerids" type="INTARRAY">
       <offset>0</offset>
     </column>
-    <column name="MaxToReturn" type="INT">
-      <offset>20</offset>
+    <column name="Maxtoreturn" type="INT">
+      <offset>40</offset>
+    </column>
+    <column name="Summaryforservermon" type="OPTIONALSTRUCT">
+      <offset>64</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="NonBlockingContainerSearchOrQuerySummaryForServerMon" />
     </column>
     <column name="}" type="END" />
   </table>

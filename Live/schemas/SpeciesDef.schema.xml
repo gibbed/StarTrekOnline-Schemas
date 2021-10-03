@@ -18,73 +18,73 @@
       </flags>
     </column>
     <column name="Scope" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="FileName" type="CURRENTFILE">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
+    <column name="FileName" type="CURRENTFILE">
+      <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
     <column name="Type" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <static_define_list external="CharClassTypes" />
     </column>
-    <column name="SpeciesName" type="STRING">
-      <offset>16</offset>
+    <column name="Speciesname" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
     <column name="TextureName" type="STRING">
-      <offset>20</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Gender" type="INT">
-      <offset>24</offset>
+      <offset>48</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <static_define_list external="Gender" />
     </column>
-    <column name="SpeciesGroup" type="STRING">
-      <offset>28</offset>
+    <column name="Speciesgroup" type="STRING">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="DisplayNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>32</offset>
+      <offset>64</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="genderNameMsg" type="EMBEDDEDSTRUCT">
-      <offset>44</offset>
+    <column name="Gendernamemsg" type="EMBEDDEDSTRUCT">
+      <offset>88</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="descriptionMsg" type="EMBEDDEDSTRUCT">
-      <offset>56</offset>
+    <column name="Descriptionmsg" type="EMBEDDEDSTRUCT">
+      <offset>112</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="CostumeBits" type="STRING">
-      <offset>68</offset>
+    <column name="Costumebits" type="STRING">
+      <offset>136</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
     <column name="Skeleton" type="REFERENCE">
-      <offset>72</offset>
+      <offset>144</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
@@ -92,11 +92,11 @@
       <dictionary_name>PCSkeletonDef</dictionary_name>
     </column>
     <column name="CostumePreset" type="STRUCT">
-      <offset>76</offset>
+      <offset>152</offset>
       <subtable external="CostumePreset" />
     </column>
-    <column name="DefaultStance" type="STRING">
-      <offset>80</offset>
+    <column name="Defaultstance" type="STRING">
+      <offset>160</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SUBSCRIBE</flag>
@@ -104,282 +104,305 @@
       </flags>
     </column>
     <column name="Stance" type="STRUCT">
-      <offset>84</offset>
+      <offset>168</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="PCStanceInfo" />
     </column>
-    <column name="BoneData" type="STRUCT">
-      <offset>88</offset>
+    <column name="Bonedata" type="STRUCT">
+      <offset>176</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="SpeciesBoneData" />
     </column>
-    <column name="AllowedCategory" type="STRUCT">
-      <offset>92</offset>
+    <column name="Allowedcategory" type="STRUCT">
+      <offset>184</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="CategoryLimits" />
     </column>
-    <column name="AllowedGeometry" type="STRUCT">
-      <offset>96</offset>
+    <column name="Allowedgeometry" type="STRUCT">
+      <offset>192</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="GeometryLimits" />
     </column>
-    <column name="BodyScaleLimits" type="STRUCT">
-      <offset>100</offset>
+    <column name="Bodyscalelimits" type="STRUCT">
+      <offset>200</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="BodyScaleLimit" />
     </column>
-    <column name="BoneScaleLimits" type="STRUCT">
-      <offset>104</offset>
+    <column name="Bonescalelimits" type="STRUCT">
+      <offset>208</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="BoneScaleLimit" />
     </column>
-    <column name="NoHeightChange" type="U8">
-      <offset>108</offset>
+    <column name="Noheightchange" type="U8">
+      <offset>216</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Minheight" type="F32">
+      <offset>220</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="MinHeight" type="F32">
-      <offset>112</offset>
+    <column name="Maxheight" type="F32">
+      <offset>224</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="MaxHeight" type="F32">
-      <offset>116</offset>
+    <column name="Nomuscle" type="U8">
+      <offset>228</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Minmuscle" type="F32">
+      <offset>232</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="NoMuscle" type="U8">
-      <offset>120</offset>
+    <column name="Maxmuscle" type="F32">
+      <offset>236</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="MinMuscle" type="F32">
-      <offset>124</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="MaxMuscle" type="F32">
-      <offset>128</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="SkinColorSet" type="REFERENCE">
-      <offset>132</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <dictionary_name>CostumeColors</dictionary_name>
-    </column>
-    <column name="BodyColorSet0" type="REFERENCE">
-      <offset>136</offset>
+    <column name="Skincolorset" type="REFERENCE">
+      <offset>240</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="BodyColorSet" type="REFERENCE">
-      <offset>136</offset>
-      <flags>
-        <flag>ALIAS</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <redundant_name>BodyColorSet0</redundant_name>
-      <dictionary_name>CostumeColors</dictionary_name>
-    </column>
-    <column name="BodyColorSet1" type="REFERENCE">
-      <offset>140</offset>
+    <column name="Bodycolorset0" type="REFERENCE">
+      <offset>248</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="BodyColorSet2" type="REFERENCE">
-      <offset>144</offset>
+    <column name="Bodycolorset" type="REFERENCE">
+      <offset>248</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <redundant_name>Bodycolorset0</redundant_name>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Bodycolorset1" type="REFERENCE">
+      <offset>256</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="BodyColorSet3" type="REFERENCE">
-      <offset>148</offset>
+    <column name="Bodycolorset2" type="REFERENCE">
+      <offset>264</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>CostumeColors</dictionary_name>
     </column>
-    <column name="ColorQuadSet" type="REFERENCE">
-      <offset>152</offset>
+    <column name="Bodycolorset3" type="REFERENCE">
+      <offset>272</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+      <dictionary_name>CostumeColors</dictionary_name>
+    </column>
+    <column name="Colorquadset" type="REFERENCE">
+      <offset>280</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>CostumeColorQuads</dictionary_name>
     </column>
-    <column name="AllowAllVoices" type="U8">
-      <offset>156</offset>
+    <column name="Allowallvoices" type="U8">
+      <offset>288</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <default>1</default>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="AllowedVoice" type="STRUCT">
-      <offset>160</offset>
+    <column name="Allowedvoice" type="STRUCT">
+      <offset>296</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="VoiceRef" />
     </column>
-    <column name="UIPowerTree" type="STRING">
-      <offset>164</offset>
+    <column name="Uipowertree" type="STRING">
+      <offset>304</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="IsGenSpecies" type="U8">
-      <offset>168</offset>
+    <column name="Isgenspecies" type="U8">
+      <offset>312</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="HideInBeta" type="U8">
-      <offset>169</offset>
+    <column name="Hideinbeta" type="U8">
+      <offset>313</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="NameOrder" type="INT">
-      <offset>172</offset>
+    <column name="Unlockablespecies" type="U8">
+      <offset>314</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Nameorder" type="INT">
+      <offset>316</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <static_define_list external="NameOrder" />
     </column>
-    <column name="DefaultNamePrefix" type="STRING">
-      <offset>176</offset>
+    <column name="Defaultnameprefix" type="STRING">
+      <offset>320</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="DefaultSubNamePrefix" type="STRING">
-      <offset>180</offset>
+    <column name="Defaultsubnameprefix" type="STRING">
+      <offset>328</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="RandomNameRule" type="STRUCT">
-      <offset>184</offset>
+    <column name="Randomnamerule" type="STRUCT">
+      <offset>336</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="NameTemplateListRef" />
     </column>
-    <column name="FirstNameRule" type="STRUCT">
-      <offset>184</offset>
+    <column name="Firstnamerule" type="STRUCT">
+      <offset>336</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>RandomNameRule</redundant_name>
+      <redundant_name>Randomnamerule</redundant_name>
       <subtable external="NameTemplateListRef" />
     </column>
-    <column name="NickNameRule" type="STRUCT">
-      <offset>184</offset>
+    <column name="Nicknamerule" type="STRUCT">
+      <offset>336</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>RandomNameRule</redundant_name>
+      <redundant_name>Randomnamerule</redundant_name>
       <subtable external="NameTemplateListRef" />
     </column>
-    <column name="LastNameRule" type="STRUCT">
-      <offset>184</offset>
+    <column name="Lastnamerule" type="STRUCT">
+      <offset>336</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>RandomNameRule</redundant_name>
+      <redundant_name>Randomnamerule</redundant_name>
       <subtable external="NameTemplateListRef" />
     </column>
-    <column name="FXSwap" type="STRUCT">
-      <offset>188</offset>
+    <column name="Fxswap" type="STRUCT">
+      <offset>344</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="PCFXSwap" />
     </column>
     <column name="Order" type="F32">
-      <offset>192</offset>
+      <offset>352</offset>
     </column>
-    <column name="RestrictedTo" type="INT">
-      <offset>196</offset>
+    <column name="Restrictedto" type="INT">
+      <offset>356</offset>
       <static_define_list external="PCRestriction" />
       <format>FLAGS</format>
     </column>
-    <column name="UnlockCode" type="STRING">
-      <offset>200</offset>
+    <column name="Unlockcode" type="STRING">
+      <offset>360</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="UnlockTimestamp" type="INT">
-      <offset>204</offset>
+    <column name="Unlocktimestamp" type="STRUCT">
+      <offset>368</offset>
+      <subtable external="SpeciesUnlockTimestamp" />
     </column>
-    <column name="BonusTablePoints" type="STRUCT">
-      <offset>208</offset>
+    <column name="Unlockactivity" type="STRING">
+      <offset>376</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Unlockwebsite" type="STRUCT">
+      <offset>384</offset>
+      <subtable external="SpeciesUnlockWebsite" />
+    </column>
+    <column name="Bonustablepoints" type="STRUCT">
+      <offset>392</offset>
       <subtable external="SpeciesPowerTableBonus" />
     </column>
-    <column name="PowerSuggestions" type="STRUCT">
-      <offset>212</offset>
+    <column name="Powersuggestions" type="STRUCT">
+      <offset>400</offset>
       <subtable external="SpeciesPowerSuggestion" />
     </column>
-    <column name="PowerSuggestion" type="STRUCT">
-      <offset>212</offset>
+    <column name="Powersuggestion" type="STRUCT">
+      <offset>400</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>PowerSuggestions</redundant_name>
+      <redundant_name>Powersuggestions</redundant_name>
       <subtable external="SpeciesPowerSuggestion" />
     </column>
-    <column name="DefaultClassPath" type="STRING">
-      <offset>216</offset>
+    <column name="Defaultclasspath" type="STRING">
+      <offset>408</offset>
     </column>
-    <column name="IsCustomSpecies" type="IGNORE" />
+    <column name="Iscustomspecies" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

@@ -22,16 +22,16 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uClock" type="INT">
+    <column name="Uclock" type="INT">
       <offset>4</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <redundant_name>Clock</redundant_name>
     </column>
-    <column name="ShardVariable" type="STRUCT">
+    <column name="Shardvariable" type="STRUCT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -39,14 +39,14 @@
       </flags>
       <subtable external="WorldVariableContainer" />
     </column>
-    <column name="eaWorldVars" type="STRUCT">
+    <column name="Eaworldvars" type="STRUCT">
       <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>ShardVariable</redundant_name>
+      <redundant_name>Shardvariable</redundant_name>
       <subtable external="WorldVariableContainer" />
     </column>
     <column name="}" type="END" />

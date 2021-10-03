@@ -12,25 +12,27 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>4</default>
+      <default>5</default>
       <static_define_list external="UIGenType" />
     </column>
     <column name="String" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Pressed" type="U8">
-      <offset>12</offset>
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Truncate" type="EMBEDDEDSTRUCT">
-      <offset>16</offset>
+      <offset>32</offset>
       <subtable external="UIGenBundleTruncateState" />
     </column>
-    <column name="v2TextSize" type="F32FIXEDARRAY">
-      <offset>32</offset>
+    <column name="V2textsize" type="F32FIXEDARRAY">
+      <offset>80</offset>
       <num_elements>2</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

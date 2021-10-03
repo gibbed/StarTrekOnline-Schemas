@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="ParserLoadFilesOccurrence">
+  <table>
+    <column name="ParserLoadFilesOccurrence" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Dirs" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Mask" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Parsetablename" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Wasresourceloader" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

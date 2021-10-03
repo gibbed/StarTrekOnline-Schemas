@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="WrappedEventCounter">
+  <table>
+    <column name="WrappedEventCounter" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Total" type="INT64">
+      <offset>8</offset>
+    </column>
+    <column name="Lastminute" type="INT64">
+      <offset>16</offset>
+    </column>
+    <column name="Lasthour" type="INT64">
+      <offset>24</offset>
+    </column>
+    <column name="Lastday" type="INT64">
+      <offset>32</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

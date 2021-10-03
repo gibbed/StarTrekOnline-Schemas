@@ -12,63 +12,86 @@
       <static_define_list external="ItemAssignmentCategory" />
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="DisplayName" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="HeaderDisplayName" type="STRING">
-      <offset>12</offset>
+    <column name="Headerdisplayname" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Icon" type="STRING">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="EventName" type="STRING">
-      <offset>20</offset>
+      <offset>40</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
-    <column name="CurrentRank" type="INT">
-      <offset>24</offset>
+    <column name="Numeric" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
     </column>
-    <column name="NextRank" type="INT">
-      <offset>28</offset>
+    <column name="Numericreward" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
     </column>
-    <column name="CurrentXP" type="INT">
-      <offset>32</offset>
+    <column name="Costfromitemcategory" type="INT">
+      <offset>64</offset>
+      <static_define_list external="ItemCategory" />
     </column>
-    <column name="NextXP" type="INT">
-      <offset>36</offset>
+    <column name="Currentrank" type="INT">
+      <offset>68</offset>
     </column>
-    <column name="PercentageThroughCurrentLevel" type="F32">
-      <offset>40</offset>
+    <column name="Nextrank" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Currentxp" type="INT">
+      <offset>76</offset>
+    </column>
+    <column name="Nextxp" type="INT">
+      <offset>80</offset>
+    </column>
+    <column name="Currentrankxprequired" type="INT">
+      <offset>84</offset>
+    </column>
+    <column name="Percentagethroughcurrentlevel" type="F32">
+      <offset>88</offset>
     </column>
     <column name="Index" type="INT">
-      <offset>44</offset>
+      <offset>92</offset>
     </column>
-    <column name="SortOrder" type="INT">
-      <offset>48</offset>
+    <column name="Sortorder" type="INT">
+      <offset>96</offset>
     </column>
-    <column name="IsHeader" type="BIT">
-      <offset>52</offset>
+    <column name="Isheader" type="BIT">
+      <offset>100</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="IsAtMaxRank" type="BIT">
-      <offset>52</offset>
+    <column name="Isatmaxrank" type="BIT">
+      <offset>100</offset>
       <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Dirty" type="BIT">
+      <offset>100</offset>
+      <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

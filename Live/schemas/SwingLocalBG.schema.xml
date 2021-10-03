@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="rotTarget" type="QUATPYR">
+    <column name="Rottarget" type="QUATPYR">
       <offset>0</offset>
       <num_elements>4</num_elements>
     </column>
-    <column name="lastAnchorTimeStamp" type="INT">
+    <column name="Lastanchortimestamp" type="INT">
       <offset>16</offset>
     </column>
     <column name="}" type="END" />

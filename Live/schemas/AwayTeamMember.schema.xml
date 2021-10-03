@@ -14,11 +14,12 @@
     <column name="EntID" type="INT">
       <offset>4</offset>
     </column>
-    <column name="uiCritterPetID" type="INT">
+    <column name="Uicritterpetid" type="INT">
       <offset>8</offset>
     </column>
     <column name="IsReady" type="U8">
       <offset>12</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

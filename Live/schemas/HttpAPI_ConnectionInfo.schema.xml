@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="HttpAPI_ConnectionInfo">
+  <table>
+    <column name="HttpAPI_ConnectionInfo" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Flags" type="INT">
+      <offset>0</offset>
+      <static_define_list external="HttpAPI_ConnectionInfo_Flags" />
+    </column>
+    <column name="Hosturl" type="FIXEDSTRING">
+      <offset>4</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="Linkurl" type="FIXEDSTRING">
+      <offset>260</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="Linkport" type="INT">
+      <offset>516</offset>
+    </column>
+    <column name="Secretkey" type="FIXEDSTRING">
+      <offset>520</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="Customdata" type="FIXEDSTRING">
+      <offset>776</offset>
+      <string_length>256</string_length>
+    </column>
+    <column name="MaxConcurrentLinks" type="INT">
+      <offset>1032</offset>
+    </column>
+    <column name="Maxlinkcreationspersecond" type="INT">
+      <offset>1036</offset>
+    </column>
+    <column name="MaxRequestsPerLink" type="INT">
+      <offset>1040</offset>
+    </column>
+    <column name="MaxLinkLifespan" type="INT">
+      <offset>1044</offset>
+    </column>
+    <column name="LinkInactivityTimeout" type="INT">
+      <offset>1048</offset>
+    </column>
+    <column name="Clientflags" type="INT">
+      <offset>1052</offset>
+      <static_define_list external="HttpClientFlags" />
+    </column>
+    <column name="Loglevel" type="INT">
+      <offset>1056</offset>
+      <static_define_list external="Http_LoggingFlags" />
+    </column>
+    <column name="Group" type="STRING">
+      <offset>1064</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Request_Default_Timeout" type="INT">
+      <offset>1072</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

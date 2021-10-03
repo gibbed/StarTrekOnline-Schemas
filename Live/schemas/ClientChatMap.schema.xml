@@ -13,8 +13,8 @@
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="NeighborhoodName" type="STRING">
-      <offset>4</offset>
+    <column name="Neighborhoodname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>

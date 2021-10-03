@@ -10,55 +10,55 @@
     <column name="Name" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="MapDesc" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Mapdesc" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>GenesisMapDescription</dictionary_name>
     </column>
     <column name="MissionName" type="STRING">
-      <offset>8</offset>
-    </column>
-    <column name="ContinueFrom" type="INT">
-      <offset>12</offset>
-      <static_define_list external="GenesisMissionExitFrom" />
-    </column>
-    <column name="ContinueRoom" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="ContinueChallenge" type="STRING">
-      <offset>20</offset>
-    </column>
-    <column name="ContinueMissionText" type="STRING">
+    <column name="Continuefrom" type="INT">
       <offset>24</offset>
+      <static_define_list external="GenesisMissionExitFrom" />
     </column>
-    <column name="ContinuePromptCostume2" type="EMBEDDEDSTRUCT">
-      <offset>28</offset>
+    <column name="Continueroom" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Continuechallenge" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Continuemissiontext" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Continuepromptcostume2" type="EMBEDDEDSTRUCT">
+      <offset>56</offset>
       <subtable external="GenesisMissionCostume" />
     </column>
-    <column name="ContinuePromptButtonText" type="STRING">
-      <offset>56</offset>
+    <column name="Continuepromptbuttontext" type="STRING">
+      <offset>112</offset>
     </column>
-    <column name="ContinuePromptCategoryName" type="STRING">
-      <offset>60</offset>
+    <column name="Continuepromptcategoryname" type="STRING">
+      <offset>120</offset>
     </column>
-    <column name="ContinuePromptPriority" type="INT">
-      <offset>64</offset>
+    <column name="Continuepromptpriority" type="INT">
+      <offset>128</offset>
       <static_define_list external="WorldOptionalActionPriority" />
     </column>
-    <column name="ContinuePromptTitleText" type="STRING">
-      <offset>68</offset>
+    <column name="Continueprompttitletext" type="STRING">
+      <offset>136</offset>
     </column>
-    <column name="ContinuePromptBodyText" type="STRINGARRAY">
-      <offset>72</offset>
+    <column name="Continuepromptbodytext" type="STRINGARRAY">
+      <offset>144</offset>
     </column>
-    <column name="StartTransitionOverride" type="REFERENCE">
-      <offset>76</offset>
+    <column name="Starttransitionoverride" type="REFERENCE">
+      <offset>152</offset>
       <dictionary_name>DoorTransitionSequenceDef</dictionary_name>
     </column>
-    <column name="ContinueTransitionOverride" type="REFERENCE">
-      <offset>80</offset>
+    <column name="Continuetransitionoverride" type="REFERENCE">
+      <offset>160</offset>
       <dictionary_name>DoorTransitionSequenceDef</dictionary_name>
     </column>
-    <column name="ContinuePromptCostume" type="IGNORE" />
+    <column name="Continuepromptcostume" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

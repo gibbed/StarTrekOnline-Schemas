@@ -12,15 +12,15 @@
       <subtable external="CharCreateCameraPoint" />
     </column>
     <column name="Transition" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="CharCreateCameraTransition" />
     </column>
-    <column name="ClassAnimLists" type="STRUCT">
-      <offset>8</offset>
+    <column name="Classanimlists" type="STRUCT">
+      <offset>16</offset>
       <subtable external="CharCreatePerClassSimpleAnimLists" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DCM_CommandCount_PerServerType">
+  <table>
+    <column name="DCM_CommandCount_PerServerType" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ServerType" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>STRUCTPARAM</flag>
+        <flag>KEY</flag>
+      </flags>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="Counts" type="STRUCT">
+      <offset>8</offset>
+      <subtable external="DCM_CommandCount_PerCommand" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

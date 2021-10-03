@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TypeList" type="STRUCT">
+    <column name="Typelist" type="STRUCT">
       <offset>0</offset>
       <subtable external="ChatLogEntryTypeWrapper" />
     </column>

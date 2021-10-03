@@ -7,28 +7,31 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="actorSource" type="EMBEDDEDSTRUCT">
+    <column name="Actorsource" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="MRGrabActor" />
     </column>
-    <column name="actorTarget" type="EMBEDDEDSTRUCT">
-      <offset>28</offset>
+    <column name="Actortarget" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
       <subtable external="MRGrabActor" />
     </column>
-    <column name="maxSecondsToReachTarget" type="F32">
-      <offset>56</offset>
+    <column name="Maxsecondstoreachtarget" type="F32">
+      <offset>80</offset>
     </column>
-    <column name="secondsToHold" type="F32">
-      <offset>60</offset>
+    <column name="Secondstohold" type="F32">
+      <offset>84</offset>
     </column>
-    <column name="distanceToStartHold" type="F32">
-      <offset>64</offset>
+    <column name="Distancetostarthold" type="F32">
+      <offset>88</offset>
     </column>
-    <column name="distanceToHold" type="F32">
-      <offset>68</offset>
+    <column name="Distancetohold" type="F32">
+      <offset>92</offset>
+    </column>
+    <column name="Keepsourcemoving" type="INT">
+      <offset>96</offset>
     </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">
-      <offset>72</offset>
+      <offset>100</offset>
       <subtable external="MRGrabConfigFlags" />
     </column>
     <column name="}" type="END" />

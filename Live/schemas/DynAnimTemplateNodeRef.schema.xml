@@ -8,7 +8,7 @@
     </column>
     <column name="{" type="START" />
     <column name="Index" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <default>-1</default>
     </column>
     <column name="}" type="END" />

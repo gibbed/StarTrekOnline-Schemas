@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iMapKey" type="INT64">
+    <column name="Imapkey" type="INT64">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,21 +15,21 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iMapCreateTime" type="INT">
+    <column name="Imapcreatetime" type="INT">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iMapLaunchTime" type="INT">
+    <column name="Imaplaunchtime" type="INT">
       <offset>12</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pchMapName" type="STRING">
+    <column name="Pchmapname" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -37,59 +37,76 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uiMapCreateRequestID" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="eMapState" type="INT">
+    <column name="Uimapcreaterequestid" type="INT">
       <offset>24</offset>
+    </column>
+    <column name="Emapstate" type="INT">
+      <offset>28</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <static_define_list external="QueueMapState" />
     </column>
-    <column name="iStateEnteredTime" type="INT">
-      <offset>28</offset>
+    <column name="Istateenteredtime" type="INT">
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iLastServerUpdateTime" type="INT">
-      <offset>32</offset>
+    <column name="Eaileaverents" type="INTARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Eaigroupguildowners" type="INTARRAY">
+      <offset>48</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Ilastserverupdatetime" type="INT">
+      <offset>56</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="eaVariables" type="STRUCT">
-      <offset>36</offset>
+    <column name="Eavariables" type="STRUCT">
+      <offset>64</offset>
       <subtable external="WorldVariable" />
     </column>
-    <column name="uOfferValidationStartTime" type="INT">
-      <offset>40</offset>
+    <column name="Uoffervalidationstarttime" type="INT">
+      <offset>72</offset>
     </column>
-    <column name="eaOfferValidationMemberIDs" type="INTARRAY">
-      <offset>44</offset>
+    <column name="Eaoffervalidationmemberids" type="INTARRAY">
+      <offset>80</offset>
     </column>
-    <column name="bDirty" type="BIT">
-      <offset>48</offset>
+    <column name="Inumbadreputationmembers" type="INT">
+      <offset>88</offset>
+    </column>
+    <column name="Bdirty" type="BIT">
+      <offset>92</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="bGameServerDied" type="BIT">
-      <offset>48</offset>
+    <column name="Bgameserverdied" type="BIT">
+      <offset>92</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="bPendingActive" type="BIT">
-      <offset>48</offset>
+    <column name="Bpendingactive" type="BIT">
+      <offset>92</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="bPendingFinished" type="BIT">
-      <offset>48</offset>
+    <column name="Bpendingfinished" type="BIT">
+      <offset>92</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="iMapID" type="IGNORE" />
+    <column name="Imapid" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

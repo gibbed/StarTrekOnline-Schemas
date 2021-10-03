@@ -5,5 +5,6 @@
     <element name="FaceTarget">1</element>
     <element name="MatchTargetOrientation">2</element>
     <element name="Absolute">3</element>
+    <element name="Random">4</element>
   </elements>
 </enum>

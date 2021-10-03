@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SuperCritterPetDef" type="REFERENCE">
+    <column name="Supercritterpetdef" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,70 +15,53 @@
       </flags>
       <dictionary_name>SuperCritterPetDef</dictionary_name>
     </column>
-    <column name="hPetDef" type="REFERENCE">
+    <column name="Hpetdef" type="REFERENCE">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>SuperCritterPetDef</redundant_name>
+      <redundant_name>Supercritterpetdef</redundant_name>
       <dictionary_name>SuperCritterPetDef</dictionary_name>
     </column>
-    <column name="ClassDef" type="REFERENCE">
-      <offset>4</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <dictionary_name>CharacterClass</dictionary_name>
-    </column>
-    <column name="hClassDef" type="REFERENCE">
-      <offset>4</offset>
-      <flags>
-        <flag>ALIAS</flag>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-      <redundant_name>ClassDef</redundant_name>
-      <dictionary_name>CharacterClass</dictionary_name>
-    </column>
-    <column name="pchName" type="STRING">
+    <column name="Pchname" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uXP" type="INT">
-      <offset>12</offset>
-      <flags>
-        <flag>SUBSCRIBE</flag>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="uLevel" type="INT">
+    <column name="Uxp" type="INT">
       <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iCurrentSkin" type="U8">
+    <column name="Ulevel" type="INT">
       <offset>20</offset>
+      <flags>
+        <flag>SUBSCRIBE</flag>
+        <flag>PERSIST</flag>
+      </flags>
+    </column>
+    <column name="Icurrentskin" type="U8">
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <default>-1</default>
     </column>
-    <column name="bfFlags" type="U8">
-      <offset>21</offset>
+    <column name="Bfflags" type="U8">
+      <offset>25</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
+    <column name="Classdef" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

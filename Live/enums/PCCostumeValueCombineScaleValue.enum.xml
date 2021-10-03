@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="PCCostumeValueCombineScaleValue">
+  <elements type="int">
+    <element name="Set">0</element>
+    <element name="Sum">1</element>
+  </elements>
+</enum>

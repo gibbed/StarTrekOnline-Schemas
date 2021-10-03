@@ -7,25 +7,25 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SharerType" type="INT">
+    <column name="Sharertype" type="INT">
       <offset>0</offset>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="uSharerID" type="INT">
+    <column name="Usharerid" type="INT">
       <offset>4</offset>
     </column>
-    <column name="uTimerStartTime" type="INT">
+    <column name="Utimerstarttime" type="INT">
       <offset>8</offset>
     </column>
-    <column name="CreditType" type="INT">
+    <column name="Credittype" type="INT">
       <offset>12</offset>
       <static_define_list external="MissionCreditType" />
     </column>
-    <column name="ParentMission" type="STRING">
+    <column name="Parentmission" type="STRING">
       <offset>16</offset>
     </column>
-    <column name="ParentSubMission" type="STRING">
-      <offset>20</offset>
+    <column name="Parentsubmission" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

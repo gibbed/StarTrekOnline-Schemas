@@ -10,37 +10,47 @@
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
-        <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="Geometry" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="Model" type="STRING">
+    <column name="Clickedbonename" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="Material" type="STRING">
-      <offset>12</offset>
+    <column name="Geometry" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="TextureSwap" type="STRUCT">
-      <offset>16</offset>
+    <column name="Model" type="STRING">
+      <offset>24</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Material" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Clothdata" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="DynCostumeClothData" />
+    </column>
+    <column name="Textureswap" type="STRUCT">
+      <offset>48</offset>
       <subtable external="DynCostumePartTextureSwap" />
     </column>
-    <column name="UseColor" type="STRUCT">
-      <offset>20</offset>
+    <column name="Usecolor" type="STRUCT">
+      <offset>56</offset>
       <subtable external="DynCostumePartColorSwap" />
     </column>
-    <column name="UseAltParams" type="BOOLFLAG">
-      <offset>24</offset>
+    <column name="Usealtparams" type="BOOLFLAG">
+      <offset>64</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

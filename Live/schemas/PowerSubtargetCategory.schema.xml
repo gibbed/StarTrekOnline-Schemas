@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="cpchName" type="STRING">
+    <column name="Cpchname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -15,18 +15,18 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="msgDisplayName" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+    <column name="Msgdisplayname" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="IconName" type="STRING">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="File" type="CURRENTFILE">
-      <offset>20</offset>
+      <offset>40</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>EDIT_ONLY</flag>

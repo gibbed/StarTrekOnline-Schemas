@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="AutoWrappedEventCounterType">
+  <elements type="int">
+    <element name="NORMAL">0</element>
+    <element name="BYTES">1</element>
+  </elements>
+</enum>

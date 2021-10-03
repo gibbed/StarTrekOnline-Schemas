@@ -13,55 +13,72 @@
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="hJail" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hjail" type="REFERENCE">
+      <offset>8</offset>
       <dictionary_name>UIGenJailDef</dictionary_name>
     </column>
-    <column name="hGen" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Hgen" type="REFERENCE">
+      <offset>16</offset>
       <dictionary_name>UIGen</dictionary_name>
     </column>
     <column name="Block" type="OPTIONALSTRUCT">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="UIGenJailCellBlock" />
     </column>
     <column name="Jail" type="OPTIONALSTRUCT">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="UIGenJail" />
     </column>
     <column name="Parent" type="EMBEDDEDSTRUCT">
-      <offset>20</offset>
+      <offset>40</offset>
       <subtable external="UIGen" />
     </column>
     <column name="Index" type="INT">
-      <offset>308</offset>
+      <offset>672</offset>
     </column>
-    <column name="LastInteractTime" type="INT">
-      <offset>312</offset>
+    <column name="Lastinteracttime" type="INT64">
+      <offset>680</offset>
     </column>
-    <column name="GrabbedX" type="INT16">
-      <offset>316</offset>
+    <column name="Grabbedx" type="INT16">
+      <offset>688</offset>
       <default>-1</default>
     </column>
-    <column name="GrabbedY" type="INT16">
-      <offset>318</offset>
+    <column name="Grabbedy" type="INT16">
+      <offset>690</offset>
       <default>-1</default>
     </column>
-    <column name="AspectRatio" type="F32">
-      <offset>320</offset>
+    <column name="Aspectratio" type="F32">
+      <offset>692</offset>
     </column>
     <column name="Resize" type="INT">
-      <offset>324</offset>
+      <offset>696</offset>
       <static_define_list external="UIDirection" />
     </column>
     <column name="Save" type="U8">
-      <offset>328</offset>
+      <offset>700</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Hidejailframe" type="U8">
+      <offset>701</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Ghostjailframe" type="U8">
+      <offset>702</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dontuigendraw" type="U8">
+      <offset>703</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dontuigenlayout" type="U8">
+      <offset>704</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

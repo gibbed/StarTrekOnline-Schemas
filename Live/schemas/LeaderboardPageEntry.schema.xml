@@ -9,19 +9,13 @@
     <column name="{" type="START" />
     <column name="Rank" type="INT">
       <offset>0</offset>
-      <flags>
-        <flag>KEY</flag>
-      </flags>
     </column>
-    <column name="playerID" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="score" type="F32">
+    <column name="Value" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="PlayerData" type="STRUCT">
-      <offset>12</offset>
-      <subtable external="LeaderboardDataEntry" />
+    <column name="Playerdata" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
+      <subtable external="LeaderboardCachedEntity" />
     </column>
     <column name="}" type="END" />
   </table>

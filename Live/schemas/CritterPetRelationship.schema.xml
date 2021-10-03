@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hPetDef" type="REFERENCE">
+    <column name="Hpetdef" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>SELF_ONLY</flag>
@@ -16,8 +16,8 @@
       </flags>
       <dictionary_name>PetDef</dictionary_name>
     </column>
-    <column name="hCostume" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Hcostume" type="REFERENCE">
+      <offset>8</offset>
       <flags>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
@@ -25,8 +25,8 @@
       </flags>
       <dictionary_name>PlayerCostume</dictionary_name>
     </column>
-    <column name="hDisplayName" type="REFERENCE">
-      <offset>8</offset>
+    <column name="Hdisplayname" type="REFERENCE">
+      <offset>16</offset>
       <flags>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
@@ -34,17 +34,17 @@
       </flags>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="uiPetID" type="INT">
-      <offset>12</offset>
+    <column name="Uipetid" type="INT">
+      <offset>24</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="erPet" type="INT">
-      <offset>16</offset>
+    <column name="Erpet" type="INT">
+      <offset>28</offset>
     </column>
-    <column name="uiPetRef" type="IGNORE" />
+    <column name="Uipetref" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

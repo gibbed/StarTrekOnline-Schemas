@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="DataCenterManager_SingleServerReport_AutoFileDistribution">
+  <table>
+    <column name="DataCenterManager_SingleServerReport_AutoFileDistribution" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Fullfilepath" type="STRING">
+      <offset>0</offset>
+    </column>
+    <column name="Inactive" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

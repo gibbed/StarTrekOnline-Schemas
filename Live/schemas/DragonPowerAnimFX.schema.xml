@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RotateBodyToHeadOrientation" type="BIT">
+    <column name="Rotatebodytoheadorientation" type="BIT">
       <offset>0</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="RotateHeadToBodyOrientation" type="BIT">
+    <column name="Rotateheadtobodyorientation" type="BIT">
       <offset>0</offset>
       <bit_offset>65537</bit_offset>
     </column>

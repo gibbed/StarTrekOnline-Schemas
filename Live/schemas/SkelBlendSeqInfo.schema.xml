@@ -6,7 +6,7 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="SeqName" type="STRING">
+    <column name="Seqname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -14,33 +14,42 @@
       </flags>
     </column>
     <column name="Chart" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <dictionary_name>DynAnimChartRunTime</dictionary_name>
     </column>
-    <column name="MaxLOD" type="INT">
-      <offset>8</offset>
+    <column name="Maxlod" type="INT">
+      <offset>16</offset>
       <default>10</default>
     </column>
     <column name="Bone" type="STRINGARRAY">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Overlay" type="BOOLFLAG">
-      <offset>16</offset>
+      <offset>32</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="SubOverlay" type="BOOLFLAG">
-      <offset>17</offset>
+    <column name="Suboverlay" type="BOOLFLAG">
+      <offset>33</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="IgnoreMasterOverlay" type="BOOLFLAG">
-      <offset>18</offset>
+    <column name="Augmenter" type="BOOLFLAG">
+      <offset>34</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="NeverOverride" type="BOOLFLAG">
-      <offset>19</offset>
+    <column name="Ignoremasteroverlay" type="BOOLFLAG">
+      <offset>35</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Neveroverride" type="BOOLFLAG">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Movement" type="BOOLFLAG">
-      <offset>20</offset>
+      <offset>37</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="End" type="END" />
   </table>

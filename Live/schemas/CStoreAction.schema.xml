@@ -11,21 +11,43 @@
       <offset>0</offset>
       <static_define_list external="CStoreActionType" />
     </column>
-    <column name="ProductID" type="INT">
+    <column name="Productid" type="INT">
       <offset>4</offset>
     </column>
     <column name="Category" type="STRING">
       <offset>8</offset>
     </column>
-    <column name="PaymentID" type="STRING">
-      <offset>12</offset>
-    </column>
-    <column name="ExpectedPrice" type="OPTIONALSTRUCT">
+    <column name="Paymentid" type="STRING">
       <offset>16</offset>
+    </column>
+    <column name="Expectedprice" type="OPTIONALSTRUCT">
+      <offset>24</offset>
       <subtable external="Money" />
     </column>
     <column name="SteamID" type="INT64">
-      <offset>24</offset>
+      <offset>32</offset>
+    </column>
+    <column name="Currentdefsversion" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <subtable external="MicroTrans2DefsVersion" />
+    </column>
+    <column name="Mt2defname" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>CASE_SENSITIVE</flag>
+      </flags>
+    </column>
+    <column name="Acknowledgedprobationwarning" type="BIT">
+      <offset>56</offset>
+      <flags>
+        <flag>SPECIAL_DEFAULT</flag>
+      </flags>
+      <bit_offset>65536</bit_offset>
+      <format>INT_WAS_BOOL</format>
+      <format_strings>
+        <format_string name="SPECIAL_DEFAULT">0</format_string>
+      </format_strings>
     </column>
     <column name="}" type="END" />
   </table>

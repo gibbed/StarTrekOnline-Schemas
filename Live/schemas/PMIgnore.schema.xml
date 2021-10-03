@@ -14,17 +14,17 @@
       <offset>4</offset>
       <static_define_list external="PowerAnimFXType" />
     </column>
-    <column name="timeStart" type="INT">
+    <column name="Timestart" type="INT">
       <offset>8</offset>
     </column>
-    <column name="timeStop" type="INT">
+    <column name="Timestop" type="INT">
       <offset>12</offset>
     </column>
     <column name="Start" type="BIT">
       <offset>16</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="stop" type="BIT">
+    <column name="Stop" type="BIT">
       <offset>16</offset>
       <bit_offset>65537</bit_offset>
     </column>
@@ -32,12 +32,12 @@
       <offset>16</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="started" type="BIT">
+    <column name="Started" type="BIT">
       <offset>16</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="cause" type="STRING">
-      <offset>20</offset>
+    <column name="Cause" type="STRING">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

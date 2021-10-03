@@ -7,57 +7,73 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TeamDialogResponseQueueTime" type="F32">
+    <column name="Teamdialogresponsequeuetime" type="F32">
       <offset>0</offset>
       <default>1060320051</default>
     </column>
-    <column name="TeamDialogResponseTimeout" type="INT">
+    <column name="Teamdialogresponsetimeout" type="INT">
       <offset>4</offset>
       <default>30</default>
     </column>
-    <column name="IgnoreDistanceCheckForTeamDialogs" type="BIT">
+    <column name="Ignoredistancecheckforteamdialogs" type="BIT">
       <offset>8</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="ServerDecidesChoiceForTeamDialogs" type="BIT">
+    <column name="Serverdecideschoiceforteamdialogs" type="BIT">
       <offset>8</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="TeamDialogAllowRevote" type="BIT">
+    <column name="Teamdialogallowrevote" type="BIT">
       <offset>8</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="MissionOffersUseDedicatedScreenType" type="BIT">
+    <column name="Missionoffersusededicatedscreentype" type="BIT">
       <offset>8</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="MissionTurnInsUseDedicatedScreenType" type="BIT">
+    <column name="Missionturninsusededicatedscreentype" type="BIT">
       <offset>8</offset>
       <bit_offset>65540</bit_offset>
     </column>
-    <column name="CheckLastCompletedDialogInteractable" type="BIT">
+    <column name="Checklastcompleteddialoginteractable" type="BIT">
       <offset>8</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="UseReplayableMissionOfferIndicatorForDialogOptionsWhenAvailable" type="BIT">
+    <column name="Usereplayablemissionofferindicatorfordialogoptionswhenavailable" type="BIT">
       <offset>8</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="UseDifferentIndicatorForRepeatableMissionTurnIns" type="BIT">
+    <column name="Usedifferentindicatorforrepeatablemissionturnins" type="BIT">
       <offset>8</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="ShowRemoteContactsFromMissionSearch" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Showremotecontactsfrommissionsearch" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65536</bit_offset>
     </column>
-    <column name="IncludeMissionSearchResultContactsInRemoteContacts" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65545</bit_offset>
+    <column name="Includemissionsearchresultcontactsinremotecontacts" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65537</bit_offset>
     </column>
-    <column name="EnableLipSync" type="BIT">
-      <offset>8</offset>
-      <bit_offset>65546</bit_offset>
+    <column name="Enablelipsync" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Storecollectionshavedefaultbackoption" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65539</bit_offset>
+    </column>
+    <column name="Storebackisfarewell" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65540</bit_offset>
+    </column>
+    <column name="Inprogressmissionsaddcontactindicators" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65541</bit_offset>
+    </column>
+    <column name="Inprogressmoreimportantthanhasinfodialog" type="BIT">
+      <offset>9</offset>
+      <bit_offset>65542</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

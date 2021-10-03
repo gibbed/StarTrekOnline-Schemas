@@ -7,14 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="spcStartCollapsing" type="INT">
+    <column name="Spcstartstandingup" type="INT">
       <offset>0</offset>
     </column>
-    <column name="spcStartStandingUp" type="INT">
-      <offset>4</offset>
-    </column>
     <column name="Flags" type="EMBEDDEDSTRUCT">
-      <offset>8</offset>
+      <offset>4</offset>
       <subtable external="MRDeadBGFlags" />
     </column>
     <column name="}" type="END" />

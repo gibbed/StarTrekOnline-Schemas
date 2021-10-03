@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="OtherInvalidForMatchReason">
+  <elements type="int">
+    <element name="Valid">0</element>
+    <element name="NoTempData">1</element>
+    <element name="Overflow">2</element>
+    <element name="LeaverPenalty">4</element>
+    <element name="AFKPenalty">8</element>
+    <element name="AlreadyInMatch">16</element>
+    <element name="MatchMapLoading">32</element>
+  </elements>
+</enum>

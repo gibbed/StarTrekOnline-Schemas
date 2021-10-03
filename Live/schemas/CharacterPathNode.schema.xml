@@ -10,27 +10,29 @@
     <column name="Path" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="CharacterPath" />
     </column>
     <column name="ProductName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="estrError" type="STRING">
-      <offset>8</offset>
+    <column name="Estrerror" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="CanPurchase" type="U8">
-      <offset>12</offset>
+    <column name="Canpurchase" type="U8">
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CanUse" type="U8">
-      <offset>13</offset>
+    <column name="Canuse" type="U8">
+      <offset>25</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

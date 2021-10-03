@@ -15,61 +15,61 @@
       </flags>
     </column>
     <column name="Name" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="TimeCreated" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="AccountID" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="onlineCharacterID" type="INT">
+    <column name="Timecreated" type="INT">
       <offset>16</offset>
     </column>
-    <column name="uLoginServerID" type="INT">
+    <column name="AccountID" type="INT">
       <offset>20</offset>
     </column>
-    <column name="ClassName" type="STRING">
+    <column name="Onlinecharacterid" type="INT">
       <offset>24</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
     </column>
-    <column name="PathName" type="STRING">
+    <column name="Uloginserverid" type="INT">
       <offset>28</offset>
+    </column>
+    <column name="className" type="STRING">
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="LocationMessageKey" type="STRING">
-      <offset>32</offset>
+    <column name="Pathname" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Locationmessagekey" type="STRING">
+      <offset>48</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="PlayerLevel" type="INT">
-      <offset>36</offset>
+    <column name="Playerlevel" type="INT">
+      <offset>56</offset>
     </column>
-    <column name="PlayerTeam" type="INT">
-      <offset>40</offset>
+    <column name="Playerteam" type="INT">
+      <offset>60</offset>
     </column>
-    <column name="HasUnreadMessage" type="BIT">
-      <offset>44</offset>
+    <column name="Hasunreadmessage" type="BIT">
+      <offset>64</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="Minimized" type="BIT">
-      <offset>44</offset>
+      <offset>64</offset>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="Online" type="BIT">
-      <offset>44</offset>
+      <offset>64</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="DeleteOnNextFrame" type="BIT">
-      <offset>44</offset>
+    <column name="Deleteonnextframe" type="BIT">
+      <offset>64</offset>
       <bit_offset>65539</bit_offset>
     </column>
     <column name="}" type="END" />

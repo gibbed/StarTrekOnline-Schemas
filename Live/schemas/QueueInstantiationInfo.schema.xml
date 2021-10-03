@@ -7,35 +7,36 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="QueueDef" type="STRING">
+    <column name="Queuedef" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="MapName" type="STRING">
-      <offset>4</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="SpawnName" type="STRING">
       <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="MapKey" type="INT64">
+    <column name="Spawnname" type="STRING">
       <offset>16</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
-    <column name="uInstanceID" type="INT">
+    <column name="Mapkey" type="INT64">
       <offset>24</offset>
     </column>
-    <column name="OnCorrectMapPartition" type="U8">
-      <offset>28</offset>
-    </column>
-    <column name="GroupIndex" type="INT">
+    <column name="Uinstanceid" type="INT">
       <offset>32</offset>
+    </column>
+    <column name="Oncorrectmappartition" type="U8">
+      <offset>36</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Groupindex" type="INT">
+      <offset>40</offset>
     </column>
     <column name="}" type="END" />
   </table>

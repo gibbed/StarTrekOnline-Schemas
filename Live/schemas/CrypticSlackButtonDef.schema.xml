@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CrypticSlackButtonDef">
+  <table>
+    <column name="CrypticSlackButtonDef" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="ID" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Buttonname" type="STRING">
+      <offset>8</offset>
+    </column>
+    <column name="Callbackid" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Buttoncreationtime" type="INT">
+      <offset>20</offset>
+    </column>
+    <column name="timeout" type="INT">
+      <offset>24</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

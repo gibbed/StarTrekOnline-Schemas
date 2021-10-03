@@ -14,62 +14,69 @@
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
-    <column name="AssemblyRef" type="REFERENCE">
-      <offset>4</offset>
+    <column name="Assemblyref" type="REFERENCE">
+      <offset>8</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>
       <dictionary_name>UITextureAssembly</dictionary_name>
     </column>
-    <column name="uiFrameLastUpdate" type="INT">
-      <offset>8</offset>
+    <column name="Uiframelastupdate" type="INT">
+      <offset>16</offset>
       <flags>
         <flag>NO_WRITE</flag>
       </flags>
     </column>
     <column name="Colors" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
+      <offset>20</offset>
       <subtable external="Color4" />
     </column>
-    <column name="PaddingTop" type="U8">
-      <offset>28</offset>
+    <column name="Paddingtop" type="U8">
+      <offset>36</offset>
     </column>
-    <column name="TopPadding" type="U8">
-      <offset>28</offset>
+    <column name="Toppadding" type="U8">
+      <offset>36</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>PaddingTop</redundant_name>
+      <redundant_name>Paddingtop</redundant_name>
     </column>
-    <column name="PaddingBottom" type="U8">
-      <offset>29</offset>
+    <column name="Paddingbottom" type="U8">
+      <offset>37</offset>
     </column>
-    <column name="BottomPadding" type="U8">
-      <offset>29</offset>
+    <column name="Bottompadding" type="U8">
+      <offset>37</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>PaddingBottom</redundant_name>
+      <redundant_name>Paddingbottom</redundant_name>
     </column>
-    <column name="PaddingLeft" type="U8">
-      <offset>30</offset>
+    <column name="Paddingleft" type="U8">
+      <offset>38</offset>
     </column>
-    <column name="LeftPadding" type="U8">
-      <offset>30</offset>
+    <column name="Leftpadding" type="U8">
+      <offset>38</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>PaddingLeft</redundant_name>
+      <redundant_name>Paddingleft</redundant_name>
     </column>
-    <column name="PaddingRight" type="U8">
-      <offset>31</offset>
+    <column name="Paddingright" type="U8">
+      <offset>39</offset>
     </column>
-    <column name="RightPadding" type="U8">
-      <offset>31</offset>
+    <column name="Rightpadding" type="U8">
+      <offset>39</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>PaddingRight</redundant_name>
+      <redundant_name>Paddingright</redundant_name>
+    </column>
+    <column name="Bf" type="INTFIXEDARRAY">
+      <offset>40</offset>
+      <flags>
+        <flag>USEDFIELD</flag>
+      </flags>
+      <num_elements>1</num_elements>
     </column>
     <column name="}" type="END" />
   </table>

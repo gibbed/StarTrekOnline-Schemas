@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="CBRCapabilityValueType">
+  <elements type="int">
+    <element name="Scalar">0</element>
+    <element name="ScalarMin">1</element>
+    <element name="ScalarMax">2</element>
+    <element name="ScalarSum">3</element>
+    <element name="BitfieldAnd">4</element>
+    <element name="BitfieldOr">5</element>
+    <element name="BitfieldXor">6</element>
+  </elements>
+</enum>

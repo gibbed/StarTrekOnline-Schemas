@@ -7,39 +7,39 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DonatedItem" type="OPTIONALSTRUCT">
+    <column name="Donateditem" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="Item" />
     </column>
     <column name="ItemDef" type="REFERENCE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="BagID" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="Slot" type="INT">
-      <offset>12</offset>
-    </column>
-    <column name="RequestedDonation" type="INT">
+    <column name="Bagid" type="INT">
       <offset>16</offset>
     </column>
-    <column name="ActualDonation" type="INT">
+    <column name="Slot" type="INT">
       <offset>20</offset>
     </column>
-    <column name="SuccessfulDonation" type="BIT">
+    <column name="Requesteddonation" type="INT">
       <offset>24</offset>
+    </column>
+    <column name="Actualdonation" type="INT">
+      <offset>28</offset>
+    </column>
+    <column name="Successfuldonation" type="BIT">
+      <offset>32</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="partialDonation" type="BIT">
-      <offset>24</offset>
+    <column name="Partialdonation" type="BIT">
+      <offset>32</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="FailedDonation" type="BIT">
-      <offset>24</offset>
+    <column name="Faileddonation" type="BIT">
+      <offset>32</offset>
       <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />

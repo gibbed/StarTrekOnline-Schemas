@@ -7,14 +7,14 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="uTimeOfTip" type="INT">
+    <column name="Utimeoftip" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="uTipAuthorAccountID" type="INT">
+    <column name="Utipauthoraccountid" type="INT">
       <offset>4</offset>
       <flags>
         <flag>SUBSCRIBE</flag>

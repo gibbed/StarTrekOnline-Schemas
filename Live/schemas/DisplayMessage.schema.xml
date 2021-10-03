@@ -15,20 +15,23 @@
       </flags>
       <dictionary_name>Message</dictionary_name>
     </column>
-    <column name="EditorCopyIsServer" type="U8">
-      <offset>4</offset>
+    <column name="Editorcopyisserver" type="U8">
+      <offset>8</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
         <flag>USEROPTIONBIT_1</flag>
       </flags>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="EditorCopy" type="OPTIONALSTRUCT">
-      <offset>8</offset>
+    <column name="Editorcopy" type="OPTIONALSTRUCT">
+      <offset>16</offset>
       <flags>
         <flag>NO_TEXT_SAVE</flag>
       </flags>
       <subtable external="Message" />
     </column>
+    <column name="Legacyaudioevent" type="IGNORE" />
+    <column name="Hasvo" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

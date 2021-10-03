@@ -10,50 +10,50 @@
       </format_strings>
     </column>
     <column name="{" type="START" />
-    <column name="structSize" type="INT">
-      <offset>12</offset>
+    <column name="Structsize" type="INT64">
+      <offset>24</offset>
       <format_strings>
         <format_string name="HTML_BYTES">1</format_string>
       </format_strings>
     </column>
-    <column name="structsPerBlock" type="INT">
-      <offset>16</offset>
+    <column name="Structsperblock" type="INT64">
+      <offset>32</offset>
     </column>
     <column name="Alignment" type="INT">
-      <offset>20</offset>
-    </column>
-    <column name="allocationCount" type="INT">
-      <offset>24</offset>
-    </column>
-    <column name="totalStructCount" type="INT">
-      <offset>28</offset>
-    </column>
-    <column name="TotalBytes" type="INT">
-      <offset>32</offset>
-      <format_strings>
-        <format_string name="HTML_BYTES">1</format_string>
-      </format_strings>
-    </column>
-    <column name="UsedBytes" type="INT">
-      <offset>36</offset>
-      <format_strings>
-        <format_string name="HTML_BYTES">1</format_string>
-      </format_strings>
-    </column>
-    <column name="FreeBytes" type="INT">
       <offset>40</offset>
+    </column>
+    <column name="Allocationcount" type="INT">
+      <offset>44</offset>
+    </column>
+    <column name="Totalstructcount" type="INT">
+      <offset>48</offset>
+    </column>
+    <column name="Totalbytes" type="INT64">
+      <offset>56</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Usedbytes" type="INT64">
+      <offset>64</offset>
+      <format_strings>
+        <format_string name="HTML_BYTES">1</format_string>
+      </format_strings>
+    </column>
+    <column name="Freebytes" type="INT64">
+      <offset>72</offset>
       <format_strings>
         <format_string name="HTML_BYTES">1</format_string>
       </format_strings>
     </column>
     <column name="Name" type="STRING">
-      <offset>44</offset>
+      <offset>80</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
     <column name="Flags" type="INT">
-      <offset>48</offset>
+      <offset>88</offset>
       <static_define_list external="TSMPFlags" />
     </column>
     <column name="}" type="END" />

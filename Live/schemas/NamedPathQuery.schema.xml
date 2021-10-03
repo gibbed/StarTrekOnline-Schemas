@@ -7,21 +7,21 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="queryName" type="STRING">
+    <column name="Queryname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="queryString" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="queryDescription" type="STRING">
+    <column name="Querystring" type="STRING">
       <offset>8</offset>
     </column>
+    <column name="Querydescription" type="STRING">
+      <offset>16</offset>
+    </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

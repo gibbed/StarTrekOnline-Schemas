@@ -7,20 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PercentAttribs" type="INTARRAY">
+    <column name="Percentattribs" type="INTARRAY">
       <offset>0</offset>
       <static_define_list external="AttribType" />
     </column>
-    <column name="ScaledAttribs" type="INTARRAY">
-      <offset>4</offset>
+    <column name="Scaledattribs" type="INTARRAY">
+      <offset>8</offset>
       <static_define_list external="AttribType" />
     </column>
+    <column name="Innatepercentattribs" type="INTARRAY">
+      <offset>16</offset>
+      <static_define_list external="AttribType" />
+    </column>
+    <column name="Innatepercentdivisors" type="INTARRAY">
+      <offset>24</offset>
+    </column>
     <column name="Variance" type="BIT">
-      <offset>8</offset>
+      <offset>32</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="EntCreateLevelAdjustDown" type="BIT">
-      <offset>8</offset>
+    <column name="Entcreateleveladjustdown" type="BIT">
+      <offset>32</offset>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="}" type="END" />

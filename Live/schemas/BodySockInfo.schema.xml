@@ -7,25 +7,27 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="BodySockGeo" type="STRING">
+    <column name="Bodysockgeo" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="BodySockPose" type="STRING">
-      <offset>4</offset>
+    <column name="Bodysockpose" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="BodySockMin" type="F32FIXEDARRAY">
-      <offset>8</offset>
+    <column name="Bodysockmin" type="F32FIXEDARRAY">
+      <offset>16</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
-    <column name="BodySockMax" type="F32FIXEDARRAY">
-      <offset>20</offset>
+    <column name="Bodysockmax" type="F32FIXEDARRAY">
+      <offset>28</offset>
       <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="}" type="END" />
   </table>

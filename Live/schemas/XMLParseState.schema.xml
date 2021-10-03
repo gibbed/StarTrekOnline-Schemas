@@ -7,22 +7,26 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="methodCall" type="OPTIONALSTRUCT">
+    <column name="Methodcall" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="XMLMethodCall" />
     </column>
+    <column name="Methodresponse" type="OPTIONALSTRUCT">
+      <offset>8</offset>
+      <subtable external="XMLMethodResponse" />
+    </column>
     <column name="Path" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>16</offset>
       <subtable external="ObjectPath" />
     </column>
-    <column name="characters" type="STRING">
-      <offset>8</offset>
+    <column name="Characters" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
     <column name="Tags" type="INTARRAY">
-      <offset>12</offset>
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ClassRestrictDef" type="STRUCT">
+    <column name="Classrestrictdef" type="STRUCT">
       <offset>0</offset>
       <subtable external="AlwaysPropSlotClassRestrictDef" />
     </column>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MicrotransBannerEntry">
+  <table>
+    <column name="MicrotransBannerEntry" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Bannerimage" type="STRING">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Bannertitlemsgkey" type="EMBEDDEDSTRUCT">
+      <offset>8</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Bannerdescmsgkey" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="DisplayMessage" />
+    </column>
+    <column name="Name" type="IGNORE">
+      <flags>
+        <flag>STRUCTPARAM</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

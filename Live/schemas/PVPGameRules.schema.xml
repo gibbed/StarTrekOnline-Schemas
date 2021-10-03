@@ -7,95 +7,160 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="publicRules" type="IGNORE">
+    <column name="Publicrules" type="IGNORE">
       <flags>
         <flag>FLATEMBED</flag>
       </flags>
+      <format_strings>
+        <format_string name="EMBEDDED_STRUCT">PVPPublicGameRules</format_string>
+      </format_strings>
     </column>
-    <column name="GameType" type="INT">
+    <column name="Gametype" type="INT">
       <offset>0</offset>
       <static_define_list external="PVPGameType" />
     </column>
-    <column name="PointMax" type="INT">
+    <column name="Pointmax" type="INT">
       <offset>4</offset>
     </column>
-    <column name="Scoreboard" type="STRING">
+    <column name="Minmembersallgroups" type="INT">
       <offset>8</offset>
     </column>
-    <column name="Leaderboard" type="STRINGARRAY">
+    <column name="Maxwaitfornextplayertime" type="INT">
       <offset>12</offset>
     </column>
-    <column name="DisableNaturalRespawn" type="U8">
+    <column name="Maxwaittimefromfirstjoin" type="INT">
       <offset>16</offset>
     </column>
-    <column name="SuicidePenality" type="U8">
-      <offset>17</offset>
-    </column>
-    <column name="RoundTime" type="F32">
-      <offset>20</offset>
-    </column>
-    <column name="IntervalTime" type="F32">
+    <column name="Scoreboard" type="STRING">
       <offset>24</offset>
     </column>
-    <column name="CaptureTime" type="F32">
-      <offset>28</offset>
-    </column>
-    <column name="RecycleTime" type="F32">
+    <column name="Leaderboard" type="STRINGARRAY">
       <offset>32</offset>
     </column>
-    <column name="FriendlyBonus" type="F32">
-      <offset>36</offset>
-    </column>
-    <column name="PointTime" type="F32">
+    <column name="Disablenaturalrespawn" type="U8">
       <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CaptureDistance" type="F32">
-      <offset>44</offset>
-    </column>
-    <column name="CapturePointName" type="STRING">
+    <column name="Neutralfaction" type="REFERENCE">
       <offset>48</offset>
+      <dictionary_name>CritterFaction</dictionary_name>
     </column>
-    <column name="PointStatusFX" type="STRINGARRAY">
-      <offset>52</offset>
-    </column>
-    <column name="CapturePointFX" type="STRINGARRAY">
+    <column name="Hacknnoopenpvpdom" type="U8">
       <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="ContestedPointFX" type="STRINGARRAY">
+    <column name="Minimumpointsforreward" type="INT">
       <offset>60</offset>
     </column>
-    <column name="MaxGameTime" type="F32">
+    <column name="Queuerewardtables" type="STRUCT">
       <offset>64</offset>
+      <subtable external="QueueRewardTable" />
     </column>
-    <column name="MaxOvertime" type="F32">
-      <offset>68</offset>
-    </column>
-    <column name="MaxDropTime" type="F32">
+    <column name="Ignorematchdefleaderboard" type="BIT">
       <offset>72</offset>
-    </column>
-    <column name="FlagName" type="STRING">
-      <offset>76</offset>
-    </column>
-    <column name="FlagCritter" type="STRING">
-      <offset>80</offset>
-    </column>
-    <column name="FlagPower" type="STRINGARRAY">
-      <offset>84</offset>
-    </column>
-    <column name="FlagCarrierClass" type="REFERENCE">
-      <offset>88</offset>
-      <dictionary_name>CharacterClass</dictionary_name>
-    </column>
-    <column name="RechargePowerCategories" type="STRINGARRAY">
-      <offset>92</offset>
-    </column>
-    <column name="RequireOwnFlagToScore" type="BIT">
-      <offset>96</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="FlagStackPowers" type="STRUCT">
+    <column name="Addtomatchhistory" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65537</bit_offset>
+    </column>
+    <column name="Enableprematchprepscreen" type="BIT">
+      <offset>72</offset>
+      <bit_offset>65538</bit_offset>
+    </column>
+    <column name="Suicidepenality" type="U8">
+      <offset>76</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Roundtime" type="F32">
+      <offset>80</offset>
+    </column>
+    <column name="Intervaltime" type="F32">
+      <offset>84</offset>
+    </column>
+    <column name="Capturepointnamedom" type="STRING">
+      <offset>88</offset>
+    </column>
+    <column name="Capturetime" type="F32">
+      <offset>96</offset>
+    </column>
+    <column name="Recycletime" type="F32">
       <offset>100</offset>
+    </column>
+    <column name="Friendlybonus" type="F32">
+      <offset>104</offset>
+    </column>
+    <column name="Pointtime" type="F32">
+      <offset>108</offset>
+    </column>
+    <column name="Capturedistance" type="F32">
+      <offset>112</offset>
+    </column>
+    <column name="Pointstatusfx" type="STRINGARRAY">
+      <offset>120</offset>
+    </column>
+    <column name="Capturepointfx" type="STRINGARRAY">
+      <offset>128</offset>
+    </column>
+    <column name="Contestedpointfx" type="STRINGARRAY">
+      <offset>136</offset>
+    </column>
+    <column name="Capturepointnamegvg" type="STRING">
+      <offset>144</offset>
+    </column>
+    <column name="Unlockpointname" type="STRING">
+      <offset>152</offset>
+    </column>
+    <column name="Basestructurename" type="STRING">
+      <offset>160</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Towerstructurename" type="STRINGARRAY">
+      <offset>168</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Maxgametime" type="F32">
+      <offset>176</offset>
+    </column>
+    <column name="Maxovertime" type="F32">
+      <offset>180</offset>
+    </column>
+    <column name="Maxdroptime" type="F32">
+      <offset>184</offset>
+    </column>
+    <column name="Flagname" type="STRING">
+      <offset>192</offset>
+    </column>
+    <column name="Flagcritter" type="STRING">
+      <offset>200</offset>
+    </column>
+    <column name="Flagpower" type="STRINGARRAY">
+      <offset>208</offset>
+    </column>
+    <column name="Flagcarrierclass" type="REFERENCE">
+      <offset>216</offset>
+      <dictionary_name>CharacterClass</dictionary_name>
+    </column>
+    <column name="Rechargepowercategories" type="STRINGARRAY">
+      <offset>224</offset>
+    </column>
+    <column name="Requireownflagtoscore" type="BIT">
+      <offset>232</offset>
+      <bit_offset>65536</bit_offset>
+    </column>
+    <column name="Flagstackpowers" type="STRUCT">
+      <offset>240</offset>
       <subtable external="CTF_FlagPowerStack" />
+    </column>
+    <column name="Leaverpenalizingleaderboard" type="STRINGARRAY">
+      <offset>248</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

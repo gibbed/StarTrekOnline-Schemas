@@ -14,17 +14,18 @@
       </flags>
     </column>
     <column name="DisplayName" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="AuctionPostingFee" type="F32">
-      <offset>16</offset>
+    <column name="Auctionpostingfee" type="F32">
+      <offset>32</offset>
     </column>
-    <column name="AuctionSoldFee" type="F32">
-      <offset>20</offset>
+    <column name="Auctionsoldfee" type="F32">
+      <offset>36</offset>
     </column>
-    <column name="UIDefaultDuration" type="U8">
-      <offset>24</offset>
+    <column name="Uidefaultduration" type="U8">
+      <offset>40</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

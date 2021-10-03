@@ -10,26 +10,26 @@
     <column name="Title" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="ObjPath" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="ppchFixes" type="STRINGARRAY">
+    <column name="Objpath" type="STRING">
       <offset>8</offset>
     </column>
+    <column name="Ppchfixes" type="STRINGARRAY">
+      <offset>16</offset>
+    </column>
     <column name="Type" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
       <static_define_list external="CSVColumnType" />
     </column>
-    <column name="RemoveWhitespace" type="BIT">
-      <offset>16</offset>
+    <column name="Removewhitespace" type="BIT">
+      <offset>28</offset>
       <bit_offset>65536</bit_offset>
     </column>
     <column name="Prefix" type="BIT">
-      <offset>16</offset>
+      <offset>28</offset>
       <bit_offset>65537</bit_offset>
     </column>
     <column name="Tokens" type="BIT">
-      <offset>16</offset>
+      <offset>28</offset>
       <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />

@@ -6,22 +6,21 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="{" type="START" />
     <column name="W" type="INT">
       <offset>0</offset>
     </column>
     <column name="H" type="INT">
       <offset>4</offset>
     </column>
-    <column name="fill" type="F32">
+    <column name="Fill" type="F32">
       <offset>8</offset>
     </column>
-    <column name="fillIntel" type="F32">
+    <column name="Fillintel" type="F32">
       <offset>12</offset>
     </column>
-    <column name="renderscale" type="F32">
+    <column name="Renderscale" type="F32">
       <offset>16</offset>
     </column>
-    <column name="EndResolution" type="END" />
+    <column name="Endresolution" type="END" />
   </table>
 </parser>

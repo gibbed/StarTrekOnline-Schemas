@@ -15,7 +15,7 @@
       </flags>
     </column>
     <column name="Condition" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>REQUIRED</flag>
@@ -23,14 +23,14 @@
       <static_define_list external="UIGenCondition" />
     </column>
     <column name="Var2" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
         <flag>REQUIRED</flag>
       </flags>
     </column>
     <column name="Gen1" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
@@ -38,19 +38,19 @@
       <default_string>_Self</default_string>
     </column>
     <column name="Gen2" type="STRING">
-      <offset>16</offset>
+      <offset>32</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>STRUCTPARAM</flag>
       </flags>
       <default_string>_Self</default_string>
     </column>
-    <column name="hGen1" type="REFERENCE">
-      <offset>20</offset>
+    <column name="Hgen1" type="REFERENCE">
+      <offset>40</offset>
       <dictionary_name>UIGen</dictionary_name>
     </column>
-    <column name="hGen2" type="REFERENCE">
-      <offset>24</offset>
+    <column name="Hgen2" type="REFERENCE">
+      <offset>48</offset>
       <dictionary_name>UIGen</dictionary_name>
     </column>
     <column name="}" type="END" />

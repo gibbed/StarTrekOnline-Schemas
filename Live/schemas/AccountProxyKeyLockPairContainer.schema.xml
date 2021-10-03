@@ -7,18 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="pKey" type="STRING">
+    <column name="Pkey" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>ESTRING</flag>
+        <flag>STRUCTPARAM</flag>
         <flag>KEY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pLock" type="STRING">
-      <offset>4</offset>
+    <column name="Plock" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>ESTRING</flag>
+        <flag>STRUCTPARAM</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>

@@ -4,6 +4,7 @@
     <element name="SUCCEEDED">0</element>
     <element name="STILL_TRYING">1</element>
     <element name="FAILED">2</element>
-    <element name="DONE">3</element>
+    <element name="DOING_THREADED_IP_LOOKUP">3</element>
+    <element name="DONE">4</element>
   </elements>
 </enum>

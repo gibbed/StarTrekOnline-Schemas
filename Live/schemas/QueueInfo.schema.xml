@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="iContainerID" type="INT">
+    <column name="Icontainerid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,8 +15,8 @@
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="pchName" type="STRING">
-      <offset>4</offset>
+    <column name="Pchname" type="STRING">
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
         <flag>SUBSCRIBE</flag>
@@ -24,15 +24,15 @@
       </flags>
     </column>
     <column name="hDef" type="REFERENCE">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
       <dictionary_name>QueueDef</dictionary_name>
     </column>
-    <column name="eaInstances" type="STRUCT">
-      <offset>12</offset>
+    <column name="Eainstances" type="STRUCT">
+      <offset>24</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SERVER_ONLY</flag>
@@ -40,46 +40,46 @@
       </flags>
       <subtable external="QueueInstance" />
     </column>
-    <column name="uiCurrentID" type="INT">
-      <offset>16</offset>
+    <column name="Uicurrentid" type="INT">
+      <offset>32</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>SERVER_ONLY</flag>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="iNextFrameTime" type="INT">
-      <offset>20</offset>
+    <column name="Inextframetime" type="INT">
+      <offset>36</offset>
     </column>
-    <column name="iMinMapSize" type="INT">
-      <offset>24</offset>
+    <column name="Iminmapsize" type="INT">
+      <offset>40</offset>
     </column>
-    <column name="iMaxMapSize" type="INT">
-      <offset>28</offset>
+    <column name="Imaxmapsize" type="INT">
+      <offset>44</offset>
     </column>
-    <column name="bDirty" type="BIT">
-      <offset>32</offset>
+    <column name="Bdirty" type="BIT">
+      <offset>48</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="bUpdating" type="BIT">
-      <offset>32</offset>
+    <column name="Bupdating" type="BIT">
+      <offset>48</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="bAutoFill" type="BIT">
-      <offset>32</offset>
+    <column name="Bautofill" type="BIT">
+      <offset>48</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="bNeverLaunchMaps" type="BIT">
-      <offset>32</offset>
+    <column name="Bneverlaunchmaps" type="BIT">
+      <offset>48</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="iAverageWaitTime" type="IGNORE" />
-    <column name="eaOrderedMembers" type="IGNORE">
+    <column name="Iaveragewaittime" type="IGNORE" />
+    <column name="Eaorderedmembers" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>
     </column>
-    <column name="eaMaps" type="IGNORE">
+    <column name="Eamaps" type="IGNORE">
       <flags>
         <flag>IGNORE_STRUCT</flag>
       </flags>

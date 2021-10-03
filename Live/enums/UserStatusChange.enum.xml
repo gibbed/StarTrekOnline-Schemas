@@ -7,5 +7,7 @@
     <element name="BACK">3</element>
     <element name="AUTOAFK">4</element>
     <element name="REMOVE_AUTOAFK">5</element>
+    <element name="BUSY">6</element>
+    <element name="REMOVE_BUSY">7</element>
   </elements>
 </enum>

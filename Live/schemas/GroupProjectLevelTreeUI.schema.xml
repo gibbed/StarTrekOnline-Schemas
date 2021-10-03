@@ -7,49 +7,49 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="GrantedNumericNodes" type="INT">
+    <column name="Grantednumericnodes" type="INT">
       <offset>0</offset>
     </column>
-    <column name="GrantedManualNodes" type="INT">
+    <column name="Grantedmanualnodes" type="INT">
       <offset>4</offset>
     </column>
-    <column name="TotalNodes" type="INT">
+    <column name="Totalnodes" type="INT">
       <offset>8</offset>
     </column>
     <column name="Image" type="STRING">
-      <offset>12</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="LevelMessage" type="STRING">
       <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="XPMessage" type="STRING">
-      <offset>20</offset>
-      <flags>
-        <flag>POOL_STRING</flag>
-      </flags>
-    </column>
-    <column name="XPUnlockMessage" type="STRING">
+    <column name="Levelmessage" type="STRING">
       <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="GroupProject" type="OPTIONALSTRUCT">
-      <offset>28</offset>
+    <column name="Xpmessage" type="STRING">
+      <offset>32</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Xpunlockmessage" type="STRING">
+      <offset>40</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Groupproject" type="OPTIONALSTRUCT">
+      <offset>48</offset>
       <subtable external="GroupProjectUI" />
     </column>
-    <column name="UnlockNumeric" type="OPTIONALSTRUCT">
-      <offset>32</offset>
+    <column name="Unlocknumeric" type="OPTIONALSTRUCT">
+      <offset>56</offset>
       <subtable external="GroupProjectNumericUI" />
     </column>
-    <column name="TreeNodes" type="STRUCT">
-      <offset>36</offset>
+    <column name="Treenodes" type="STRUCT">
+      <offset>64</offset>
       <subtable external="GroupProjectLevelTreeNodeUI" />
     </column>
     <column name="}" type="END" />

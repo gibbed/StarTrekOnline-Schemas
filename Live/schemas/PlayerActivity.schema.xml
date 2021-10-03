@@ -14,15 +14,15 @@
       </flags>
       <subtable external="PlayerActivityEntry" />
     </column>
-    <column name="enrollment" type="STRUCT">
-      <offset>4</offset>
+    <column name="Enrollment" type="STRUCT">
+      <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
       <subtable external="PlayerActivityEnrollment" />
     </column>
-    <column name="verbosity" type="STRUCT">
-      <offset>8</offset>
+    <column name="Verbosity" type="STRUCT">
+      <offset>16</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>

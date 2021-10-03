@@ -10,12 +10,12 @@
     <column name="PowerDef" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="PowerDef" />
     </column>
-    <column name="PurchaseTime" type="INT">
-      <offset>4</offset>
+    <column name="Purchasetime" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

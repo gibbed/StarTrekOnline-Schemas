@@ -9,5 +9,34 @@
     <element name="GuildRankChange">5</element>
     <element name="GuildCreate">6</element>
     <element name="SimpleMissionComplete">7</element>
+    <element name="GuildPermEnable">8</element>
+    <element name="GuildPermDisable">9</element>
+    <element name="AllianceJoined">10</element>
+    <element name="AllianceKicked">11</element>
+    <element name="AllianceLeft">12</element>
+    <element name="PlayerAddOfficer">13</element>
+    <element name="PlayerDismissOfficer">14</element>
+    <element name="PlayerRenameOfficer">15</element>
+    <element name="OfficerRenameOfficer">16</element>
+    <element name="OfficerAddOfficer">17</element>
+    <element name="SourcePlayerTransferOfficer">18</element>
+    <element name="DestPlayerTransferOfficer">19</element>
+    <element name="OfficerTransferOfficer">20</element>
+    <element name="PlayerPromoteOfficer">21</element>
+    <element name="OfficerPromoteOfficer">22</element>
+    <element name="PlayerTrainOfficer">23</element>
+    <element name="OfficerTrainOfficer">24</element>
+    <element name="SourcePlayerTradeOfficer">25</element>
+    <element name="DestPlayerTradeOfficer">26</element>
+    <element name="OfficerTradeOfficer">27</element>
+    <element name="PlayerAddShip">28</element>
+    <element name="PlayerDismissShip">29</element>
+    <element name="PlayerRenameShip">30</element>
+    <element name="ShipRenameShip">31</element>
+    <element name="ShipAddShip">32</element>
+    <element name="SourcePlayerTransferShip">33</element>
+    <element name="DestPlayerTransferShip">34</element>
+    <element name="ShipTransferShip">35</element>
+    <element name="RankUp">36</element>
   </elements>
 </enum>

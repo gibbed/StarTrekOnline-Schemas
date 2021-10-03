@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ThisIsACategory" type="INT">
+    <column name="Thisisacategory" type="INT">
       <offset>0</offset>
     </column>
-    <column name="MyGuildInThisTag" type="INT">
+    <column name="Myguildinthistag" type="INT">
       <offset>4</offset>
     </column>
     <column name="Name" type="STRING">
@@ -20,10 +20,32 @@
       </flags>
     </column>
     <column name="DisplayNameMsg" type="STRING">
-      <offset>12</offset>
+      <offset>16</offset>
     </column>
     <column name="Order" type="F32">
-      <offset>16</offset>
+      <offset>24</offset>
+    </column>
+    <column name="Tags" type="STRUCT">
+      <offset>32</offset>
+      <flags>
+        <flag>DEFAULT_FIELD</flag>
+        <flag>NO_INDEX</flag>
+      </flags>
+      <subtable external="GuildRecruitCatData" />
+    </column>
+    <column name="Catdef" type="OPTIONALSTRUCT">
+      <offset>40</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="GuildRecruitCatDef" />
+    </column>
+    <column name="Tagdef" type="OPTIONALSTRUCT">
+      <offset>48</offset>
+      <flags>
+        <flag>UNOWNED</flag>
+      </flags>
+      <subtable external="GuildRecruitTagDef" />
     </column>
     <column name="}" type="END" />
   </table>

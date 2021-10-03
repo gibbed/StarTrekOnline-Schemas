@@ -7,21 +7,23 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ppSets" type="STRUCT">
+    <column name="Ppsets" type="STRUCT">
       <offset>0</offset>
       <flags>
+        <flag>PUPPET_NO_COPY</flag>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
-        <flag>SOMETIMES_TRANSACT</flag>
+        <flag>READONLY_TRANSACT</flag>
       </flags>
       <subtable external="PowerSlotSet" />
     </column>
-    <column name="uiIndex" type="INT">
-      <offset>4</offset>
+    <column name="Uiindex" type="INT">
+      <offset>8</offset>
       <flags>
+        <flag>PUPPET_NO_COPY</flag>
         <flag>SELF_ONLY</flag>
         <flag>PERSIST</flag>
-        <flag>SOMETIMES_TRANSACT</flag>
+        <flag>READONLY_TRANSACT</flag>
       </flags>
     </column>
     <column name="}" type="END" />

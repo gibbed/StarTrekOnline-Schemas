@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hCategory" type="REFERENCE">
+    <column name="Hcategory" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>PERSIST</flag>
@@ -15,8 +15,8 @@
       </flags>
       <dictionary_name>PowerSubtargetCategory</dictionary_name>
     </column>
-    <column name="fAccuracy" type="F32">
-      <offset>4</offset>
+    <column name="Faccuracy" type="F32">
+      <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>

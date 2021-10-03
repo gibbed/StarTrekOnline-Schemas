@@ -7,61 +7,69 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ListName" type="STRING">
+    <column name="Listname" type="STRING">
       <offset>0</offset>
     </column>
     <column name="Type" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <static_define_list external="SuggestedContentType" />
     </column>
     <column name="EventName" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="StoryName" type="STRING">
-      <offset>12</offset>
+    <column name="Storyname" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
+    </column>
+    <column name="Match" type="REFERENCE">
+      <offset>32</offset>
+      <dictionary_name>MatchDef</dictionary_name>
     </column>
     <column name="Queue" type="REFERENCE">
-      <offset>16</offset>
-      <dictionary_name>QueueDef</dictionary_name>
+      <offset>32</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Match</redundant_name>
+      <dictionary_name>MatchDef</dictionary_name>
     </column>
     <column name="DisplayName" type="STRING">
-      <offset>20</offset>
+      <offset>40</offset>
     </column>
     <column name="Summary" type="STRING">
-      <offset>24</offset>
+      <offset>48</offset>
     </column>
-    <column name="ArtFileName" type="STRING">
-      <offset>28</offset>
+    <column name="Artfilename" type="STRING">
+      <offset>56</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="uStartDate" type="INT">
-      <offset>32</offset>
+    <column name="Ustartdate" type="INT">
+      <offset>64</offset>
     </column>
-    <column name="uEndDate" type="INT">
-      <offset>36</offset>
+    <column name="Uenddate" type="INT">
+      <offset>68</offset>
     </column>
-    <column name="EventActive" type="BIT">
-      <offset>40</offset>
+    <column name="Eventactive" type="BIT">
+      <offset>72</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="EventIsValidForPlayer" type="BIT">
-      <offset>40</offset>
+    <column name="Eventisvalidforplayer" type="BIT">
+      <offset>72</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="CannotUseQueueReason" type="INT">
-      <offset>44</offset>
-      <static_define_list external="QueueCannotUseReason" />
+    <column name="Cannotusematchreason" type="INT">
+      <offset>76</offset>
+      <static_define_list external="PlayerInvalidForMatchReason" />
     </column>
-    <column name="CannotUseDisplayMessage" type="STRING">
-      <offset>48</offset>
+    <column name="Cannotusedisplaymessage" type="STRING">
+      <offset>80</offset>
     </column>
     <column name="}" type="END" />
   </table>

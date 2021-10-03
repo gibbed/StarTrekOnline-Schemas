@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MaxEquipCount" type="INT">
+    <column name="Maxequipcount" type="INT">
       <offset>0</offset>
     </column>
     <column name="Category" type="INT">

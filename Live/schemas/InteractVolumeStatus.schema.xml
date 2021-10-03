@@ -7,14 +7,15 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="VolumeName" type="STRING">
+    <column name="Volumename" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="InVolume" type="U8">
-      <offset>4</offset>
+    <column name="Involume" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

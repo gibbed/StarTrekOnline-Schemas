@@ -6,7 +6,8 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="AttribSource" type="INT">
+    <column name="{" type="START" />
+    <column name="Attribsource" type="INT">
       <offset>0</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
@@ -21,6 +22,6 @@
       </flags>
       <default>1</default>
     </column>
-    <column name="&#xA;" type="END" />
+    <column name="}" type="END" />
   </table>
 </parser>

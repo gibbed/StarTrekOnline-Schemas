@@ -14,20 +14,29 @@
       </flags>
     </column>
     <column name="Root" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DynNode" />
     </column>
-    <column name="stBoneTable" type="STASHTABLE">
-      <offset>8</offset>
-    </column>
-    <column name="HipsHeightAdjustmentFactor" type="F32">
-      <offset>12</offset>
-    </column>
-    <column name="uiNumBones" type="INT">
+    <column name="Stbonetable" type="STASHTABLE">
       <offset>16</offset>
     </column>
+    <column name="Hipsheightadjustmentfactor" type="F32">
+      <offset>24</offset>
+    </column>
+    <column name="Legheightadjustmentfactor" type="F32">
+      <offset>28</offset>
+    </column>
+    <column name="Uinumbones" type="INT">
+      <offset>32</offset>
+    </column>
+    <column name="Uinumboneids" type="INT">
+      <offset>36</offset>
+    </column>
+    <column name="Uireltype" type="INT">
+      <offset>40</offset>
+    </column>
     <column name="FileName" type="STRING">
-      <offset>20</offset>
+      <offset>48</offset>
     </column>
     <column name="}" type="END" />
   </table>

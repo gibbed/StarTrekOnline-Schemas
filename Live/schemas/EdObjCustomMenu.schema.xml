@@ -6,10 +6,10 @@
         <flag>PARSETABLE_INFO</flag>
       </flags>
     </column>
-    <column name="StartMenu" type="START" />
-    <column name="MenuItem" type="STRINGARRAY">
+    <column name="Startmenu" type="START" />
+    <column name="Menuitem" type="STRINGARRAY">
       <offset>0</offset>
     </column>
-    <column name="EndMenu" type="END" />
+    <column name="Endmenu" type="END" />
   </table>
 </parser>

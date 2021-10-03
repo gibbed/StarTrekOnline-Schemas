@@ -7,20 +7,20 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ExpressionBlock" type="STRUCT">
+    <column name="Expressionblock" type="STRUCT">
       <offset>0</offset>
       <subtable external="Expression" />
     </column>
     <column name="Expression" type="STRUCT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ExpressionBlock</redundant_name>
+      <redundant_name>Expressionblock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

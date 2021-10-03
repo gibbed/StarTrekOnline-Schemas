@@ -3,6 +3,7 @@
   <elements type="int">
     <element name="None">0</element>
     <element name="Cylinder">1</element>
-    <element name="Cone">2</element>
+    <element name="Sphere">2</element>
+    <element name="Box">3</element>
   </elements>
 </enum>

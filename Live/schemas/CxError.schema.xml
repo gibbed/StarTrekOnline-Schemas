@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="CxError">
+  <table>
+    <column name="CxError" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Key" type="INT">
+      <offset>16</offset>
+    </column>
+    <column name="Category" type="INT">
+      <offset>20</offset>
+      <static_define_list external="CxErrorCategory" />
+    </column>
+    <column name="TimeStamp" type="INT">
+      <offset>24</offset>
+      <format_strings>
+        <format_string name="HTML_SECS">1</format_string>
+      </format_strings>
+    </column>
+    <column name="ErrorString" type="STRING">
+      <offset>32</offset>
+    </column>
+    <column name="Flags" type="INT">
+      <offset>40</offset>
+      <static_define_list external="CxErrorFlags" />
+      <format>FLAGS</format>
+    </column>
+    <column name="Sourcefilename" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Sourcelinenum" type="INT">
+      <offset>56</offset>
+    </column>
+    <column name="Datafilename" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Datalinenum" type="INT">
+      <offset>72</offset>
+    </column>
+    <column name="Datafilename_Fullpath" type="STRING">
+      <offset>80</offset>
+    </column>
+    <column name="Blamestatus" type="INT">
+      <offset>88</offset>
+      <static_define_list external="CxErrorBlameStatus" />
+    </column>
+    <column name="Blamee" type="STRING">
+      <offset>96</offset>
+    </column>
+    <column name="Crc" type="INT">
+      <offset>104</offset>
+    </column>
+    <column name="Errorargs" type="STRUCT">
+      <offset>112</offset>
+      <subtable external="NameValuePair" />
+    </column>
+    <column name="Trivia" type="STRUCT">
+      <offset>120</offset>
+      <subtable external="NameValuePair" />
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

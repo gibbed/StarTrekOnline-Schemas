@@ -7,12 +7,25 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LootBags" type="STRUCT">
+    <column name="Lootbags" type="STRUCT">
       <offset>0</offset>
       <flags>
         <flag>NO_INDEX</flag>
       </flags>
       <subtable external="InventoryBag" />
+    </column>
+    <column name="Interactloot" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Owningplayer" type="INT">
+      <offset>12</offset>
+    </column>
+    <column name="Playerloot" type="STRUCT">
+      <offset>16</offset>
+      <subtable external="InteractionLootTrackerPlayer" />
+    </column>
+    <column name="Generatedbyplayer" type="INTARRAY">
+      <offset>24</offset>
     </column>
     <column name="}" type="END" />
   </table>

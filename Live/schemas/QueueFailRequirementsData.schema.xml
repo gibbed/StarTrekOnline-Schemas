@@ -13,7 +13,7 @@
     <column name="Reason" type="INT">
       <offset>4</offset>
     </column>
-    <column name="FailsAnyReqs" type="BIT">
+    <column name="Failsanyreqs" type="BIT">
       <offset>8</offset>
       <flags>
         <flag>SERVER_ONLY</flag>
@@ -24,7 +24,7 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="FailsAllReqs" type="BIT">
+    <column name="Failsallreqs" type="BIT">
       <offset>8</offset>
       <flags>
         <flag>SERVER_ONLY</flag>

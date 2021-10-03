@@ -11,13 +11,13 @@
       <offset>0</offset>
     </column>
     <column name="Size" type="INT">
-      <offset>4</offset>
-    </column>
-    <column name="Count" type="INT">
       <offset>8</offset>
     </column>
-    <column name="traffic" type="INT">
+    <column name="Count" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Traffic" type="INT">
+      <offset>16</offset>
     </column>
     <column name="}" type="END" />
   </table>

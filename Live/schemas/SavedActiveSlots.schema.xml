@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="eBagID" type="INT">
+    <column name="Ebagid" type="INT">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -15,23 +15,23 @@
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="ActiveSlot" type="INTARRAY">
-      <offset>4</offset>
+    <column name="Activeslot" type="INTARRAY">
+      <offset>8</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
     </column>
-    <column name="eaiActiveSlots" type="INTARRAY">
-      <offset>4</offset>
+    <column name="Eaiactiveslots" type="INTARRAY">
+      <offset>8</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
         <flag>NO_TRANSACT</flag>
       </flags>
-      <redundant_name>ActiveSlot</redundant_name>
+      <redundant_name>Activeslot</redundant_name>
     </column>
     <column name="}" type="END" />
   </table>

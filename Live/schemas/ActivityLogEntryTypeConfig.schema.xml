@@ -15,31 +15,40 @@
       </flags>
       <static_define_list external="ActivityLogEntryType" />
     </column>
-    <column name="addToPersonalLog" type="BOOLFLAG">
+    <column name="Addtopersonallog" type="BOOLFLAG">
       <offset>4</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="addToGuildLog" type="BOOLFLAG">
+    <column name="Addtoguildlog" type="BOOLFLAG">
       <offset>5</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="translateArg" type="BOOLFLAG">
+    <column name="Translatearg" type="BOOLFLAG">
       <offset>6</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="translateArg2" type="BOOLFLAG">
+    <column name="Translatearg2" type="BOOLFLAG">
       <offset>7</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="splitArgString" type="BOOLFLAG">
+    <column name="Splitargstring" type="BOOLFLAG">
       <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DiaryTitleDisplayString" type="EMBEDDEDSTRUCT">
-      <offset>12</offset>
+    <column name="Recoverfrommissingsubject" type="BOOLFLAG">
+      <offset>9</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Diarytitledisplaystring" type="EMBEDDEDSTRUCT">
+      <offset>16</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="DiaryBodyDisplayString" type="EMBEDDEDSTRUCT">
-      <offset>24</offset>
+    <column name="Diarybodydisplaystring" type="EMBEDDEDSTRUCT">
+      <offset>40</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="GuildLogDisplayString" type="EMBEDDEDSTRUCT">
-      <offset>36</offset>
+    <column name="Guildlogdisplaystring" type="EMBEDDEDSTRUCT">
+      <offset>64</offset>
       <subtable external="DisplayMessage" />
     </column>
     <column name="}" type="END" />

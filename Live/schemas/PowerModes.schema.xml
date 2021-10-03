@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PowerModes" type="INTARRAY">
+    <column name="Powermodes" type="INTARRAY">
       <offset>0</offset>
     </column>
     <column name="}" type="END" />

@@ -13,7 +13,7 @@
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="timeRequested" type="INT">
+    <column name="Timerequested" type="INT">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

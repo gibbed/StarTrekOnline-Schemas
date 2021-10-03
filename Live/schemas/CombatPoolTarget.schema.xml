@@ -11,25 +11,25 @@
       <offset>0</offset>
       <static_define_list external="CombatPoolPoint" />
     </column>
-    <column name="UnitTarget" type="INT">
+    <column name="Unittarget" type="INT">
       <offset>4</offset>
       <static_define_list external="CombatPoolUnit" />
     </column>
-    <column name="MagRegen" type="F32">
+    <column name="Magregen" type="F32">
       <offset>8</offset>
     </column>
-    <column name="UnitRegen" type="INT">
+    <column name="Unitregen" type="INT">
       <offset>12</offset>
       <static_define_list external="CombatPoolUnit" />
     </column>
-    <column name="MagDecay" type="F32">
+    <column name="Magdecay" type="F32">
       <offset>16</offset>
     </column>
-    <column name="UnitDecay" type="INT">
+    <column name="Unitdecay" type="INT">
       <offset>20</offset>
       <static_define_list external="CombatPoolUnit" />
     </column>
-    <column name="TimeTick" type="F32">
+    <column name="Timetick" type="F32">
       <offset>24</offset>
     </column>
     <column name="}" type="END" />

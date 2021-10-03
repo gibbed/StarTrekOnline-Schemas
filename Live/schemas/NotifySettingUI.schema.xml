@@ -14,35 +14,35 @@
       </flags>
     </column>
     <column name="DisplayName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Description" type="STRING">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
     </column>
     <column name="Flags" type="INT">
-      <offset>12</offset>
+      <offset>24</offset>
       <static_define_list external="NotifySettingFlags" />
     </column>
-    <column name="IsHeader" type="BIT">
-      <offset>16</offset>
+    <column name="Isheader" type="BIT">
+      <offset>28</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="HasChat" type="BIT">
-      <offset>16</offset>
+    <column name="Haschat" type="BIT">
+      <offset>28</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="HasQueue" type="BIT">
-      <offset>16</offset>
+    <column name="Hasqueue" type="BIT">
+      <offset>28</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="HasTutorialPopup" type="BIT">
-      <offset>16</offset>
+    <column name="Hastutorialpopup" type="BIT">
+      <offset>28</offset>
       <bit_offset>65539</bit_offset>
     </column>
     <column name="}" type="END" />

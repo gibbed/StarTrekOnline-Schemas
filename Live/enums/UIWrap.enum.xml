@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="UIWrap">
+  <elements type="int">
+    <element name="Clamp">0</element>
+    <element name="Repeat">1</element>
+  </elements>
+</enum>

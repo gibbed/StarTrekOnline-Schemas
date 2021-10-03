@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ManagedErrorPriority">
+  <elements type="int">
+    <element name="Callback">0</element>
+    <element name="SecondHand">1</element>
+    <element name="Immediate">2</element>
+  </elements>
+</enum>

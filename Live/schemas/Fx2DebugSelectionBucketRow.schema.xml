@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="Fx2DebugSelectionBucketRow">
+  <table>
+    <column name="Fx2DebugSelectionBucketRow" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Urow" type="INT">
+      <offset>0</offset>
+      <flags>
+        <flag>KEY</flag>
+      </flags>
+    </column>
+    <column name="Uownertypemask" type="INT16">
+      <offset>4</offset>
+    </column>
+    <column name="Ufx2typemask" type="INT16">
+      <offset>6</offset>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

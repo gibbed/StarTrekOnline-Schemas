@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="MachineMonitor_CrypticProcess_Response">
+  <table>
+    <column name="MachineMonitor_CrypticProcess_Response" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Type" type="INT">
+      <offset>0</offset>
+      <static_define_list external="GlobalType" />
+    </column>
+    <column name="ID" type="INT">
+      <offset>4</offset>
+    </column>
+    <column name="Pid" type="INT">
+      <offset>8</offset>
+    </column>
+    <column name="Executablename" type="STRING">
+      <offset>16</offset>
+    </column>
+    <column name="Commandline" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="StartTime" type="INT64">
+      <offset>32</offset>
+    </column>
+    <column name="Version" type="STRING">
+      <offset>40</offset>
+    </column>
+    <column name="Shardinfostring" type="STRING">
+      <offset>48</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="shardName" type="STRING">
+      <offset>56</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="ProductName" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="ShortProductName" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="Statusreportingname" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>ESTRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

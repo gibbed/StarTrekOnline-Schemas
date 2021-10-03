@@ -7,15 +7,17 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="drawable_lods" type="STRUCT">
+    <column name="Drawable_Lods" type="STRUCT">
       <offset>0</offset>
       <subtable external="WorldDrawableLodParsed" />
     </column>
-    <column name="no_fog" type="U8">
-      <offset>4</offset>
+    <column name="No_Fog" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="high_detail_high_lod" type="U8">
-      <offset>5</offset>
+    <column name="High_Detail_High_Lod" type="U8">
+      <offset>9</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

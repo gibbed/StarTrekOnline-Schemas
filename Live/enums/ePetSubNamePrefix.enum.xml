@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="ePetSubNamePrefix">
+  <elements type="int">
+    <element name="Unset_SubPrefix">0</element>
+    <element name="AT">1</element>
+    <element name="CRS">2</element>
+    <element name="CSN">3</element>
+    <element name="NAR">5</element>
+    <element name="NCC">6</element>
+    <element name="NCV">8</element>
+    <element name="No_Prefix">9</element>
+    <element name="No_Prefix_Forced">10</element>
+    <element name="TNR">12</element>
+    <element name="VS">13</element>
+  </elements>
+</enum>

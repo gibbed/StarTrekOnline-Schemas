@@ -11,10 +11,10 @@
       <offset>0</offset>
       <static_define_list external="LogoutTimerType" />
     </column>
-    <column name="expirationTime" type="INT">
+    <column name="ExpirationTime" type="INT">
       <offset>4</offset>
     </column>
-    <column name="timeRemaining" type="INT">
+    <column name="Timeremaining" type="INT">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

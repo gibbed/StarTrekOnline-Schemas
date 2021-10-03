@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hPath" type="REFERENCE">
+    <column name="Hpath" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>

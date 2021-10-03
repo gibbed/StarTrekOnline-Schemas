@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="service" type="STRING">
+    <column name="Service" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -15,13 +15,13 @@
       </flags>
     </column>
     <column name="State" type="INT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>PERSIST</flag>
       </flags>
     </column>
-    <column name="userdata" type="STRING">
-      <offset>8</offset>
+    <column name="Userdata" type="STRING">
+      <offset>16</offset>
       <flags>
         <flag>ESTRING</flag>
         <flag>PERSIST</flag>

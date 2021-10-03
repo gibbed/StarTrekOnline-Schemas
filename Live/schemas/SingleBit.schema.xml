@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ByteOffset" type="INT">
+    <column name="Byteoffset" type="INT">
       <offset>0</offset>
     </column>
-    <column name="BitOffset" type="INT">
+    <column name="Bitoffset" type="INT">
       <offset>4</offset>
     </column>
     <column name="}" type="END" />

@@ -7,40 +7,40 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="LeaverPenaltyMinGroupMemberCount" type="INT">
+    <column name="Leaverpenaltymingroupmembercount" type="INT">
       <offset>0</offset>
     </column>
-    <column name="PlayerLimboTimeout" type="INT">
+    <column name="Playerlimbotimeout" type="INT">
       <offset>4</offset>
     </column>
-    <column name="PenaltyDuration" type="INT">
+    <column name="Penaltyduration" type="INT">
       <offset>8</offset>
     </column>
-    <column name="MissionReturnLogoutTime" type="INT">
+    <column name="Missionreturnlogouttime" type="INT">
       <offset>12</offset>
     </column>
-    <column name="KickLogoutTime" type="INT">
-      <offset>12</offset>
-      <flags>
-        <flag>ALIAS</flag>
-      </flags>
-      <redundant_name>MissionReturnLogoutTime</redundant_name>
-    </column>
-    <column name="QueueKickLogoutTime" type="INT">
+    <column name="Kicklogouttime" type="INT">
       <offset>12</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>MissionReturnLogoutTime</redundant_name>
+      <redundant_name>Missionreturnlogouttime</redundant_name>
     </column>
-    <column name="MaxAFKTime" type="INT">
+    <column name="Queuekicklogouttime" type="INT">
+      <offset>12</offset>
+      <flags>
+        <flag>REDUNDANTNAME</flag>
+      </flags>
+      <redundant_name>Missionreturnlogouttime</redundant_name>
+    </column>
+    <column name="Maxafktime" type="INT">
       <offset>16</offset>
     </column>
     <column name="Public" type="BIT">
       <offset>20</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="AlwaysCreate" type="BIT">
+    <column name="Alwayscreate" type="BIT">
       <offset>20</offset>
       <bit_offset>65537</bit_offset>
     </column>
@@ -48,11 +48,11 @@
       <offset>20</offset>
       <bit_offset>65538</bit_offset>
     </column>
-    <column name="StayInQueueOnMapLeave" type="BIT">
+    <column name="Stayinqueueonmapleave" type="BIT">
       <offset>20</offset>
       <bit_offset>65539</bit_offset>
     </column>
-    <column name="DestroyEmptyMaps" type="BIT">
+    <column name="Destroyemptymaps" type="BIT">
       <offset>20</offset>
       <flags>
         <flag>SPECIAL_DEFAULT</flag>
@@ -62,21 +62,21 @@
         <format_string name="SPECIAL_DEFAULT">1</format_string>
       </format_strings>
     </column>
-    <column name="RandomMap" type="BIT">
+    <column name="Randommap" type="BIT">
       <offset>20</offset>
       <bit_offset>65541</bit_offset>
     </column>
-    <column name="SplitTeams" type="BIT">
+    <column name="Splitteams" type="BIT">
       <offset>20</offset>
       <bit_offset>65542</bit_offset>
     </column>
-    <column name="IgnoreLevelBandsForTeams" type="BIT">
+    <column name="Ignorelevelbandsforteams" type="BIT">
       <offset>20</offset>
       <bit_offset>65543</bit_offset>
     </column>
-    <column name="EnableLeaverPenalty" type="BIT">
-      <offset>20</offset>
-      <bit_offset>65544</bit_offset>
+    <column name="Enableleaverpenalty" type="BIT">
+      <offset>21</offset>
+      <bit_offset>65536</bit_offset>
     </column>
     <column name="}" type="END" />
   </table>

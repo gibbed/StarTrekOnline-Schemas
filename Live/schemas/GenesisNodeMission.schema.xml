@@ -11,11 +11,11 @@
       <offset>0</offset>
     </column>
     <column name="Object" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="GenesisNodeObject" />
     </column>
     <column name="Patrol" type="STRUCT">
-      <offset>8</offset>
+      <offset>16</offset>
       <subtable external="GenesisNodePatrol" />
     </column>
     <column name="}" type="END" />

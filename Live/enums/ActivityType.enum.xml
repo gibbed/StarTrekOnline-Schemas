@@ -7,9 +7,14 @@
     <element name="LevelUp">3</element>
     <element name="Perk">4</element>
     <element name="Item">5</element>
-    <element name="Guild">6</element>
-    <element name="Guild">7</element>
-    <element name="Guild">8</element>
-    <element name="Guild">9</element>
+    <element name="GuildCreate">6</element>
+    <element name="GuildJoin">7</element>
+    <element name="GuildLeave">8</element>
+    <element name="GuildRankChange">9</element>
+    <element name="GuildPermEnable">10</element>
+    <element name="GuildPermDisable">11</element>
+    <element name="AllianceJoined">12</element>
+    <element name="AllianceKicked">13</element>
+    <element name="AllianceLeft">14</element>
   </elements>
 </enum>

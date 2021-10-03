@@ -7,10 +7,10 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="loDirScale" type="F32">
+    <column name="Lodirscale" type="F32">
       <offset>0</offset>
     </column>
-    <column name="hiDirScale" type="F32">
+    <column name="Hidirscale" type="F32">
       <offset>4</offset>
     </column>
     <column name="Speed" type="F32">

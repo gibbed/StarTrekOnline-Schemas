@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CodeName" type="STRING">
+    <column name="Codename" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="DesignerName" type="STRING">
-      <offset>4</offset>
+    <column name="Designername" type="STRING">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

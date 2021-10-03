@@ -11,11 +11,12 @@
       <offset>0</offset>
       <subtable external="ResourceAction" />
     </column>
-    <column name="DisableValidation" type="U8">
-      <offset>4</offset>
+    <column name="Disablevalidation" type="U8">
+      <offset>8</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Result" type="INT">
-      <offset>8</offset>
+      <offset>12</offset>
       <static_define_list external="ResourceActionResult" />
     </column>
     <column name="}" type="END" />

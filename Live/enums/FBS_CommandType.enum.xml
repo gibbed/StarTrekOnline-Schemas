@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<enum name="FBS_CommandType">
+  <elements type="int">
+    <element name="OPENFILE">0</element>
+    <element name="CLOSEFILE">1</element>
+    <element name="WRITE">2</element>
+    <element name="SEEK">3</element>
+    <element name="TRUNCATE">4</element>
+  </elements>
+</enum>

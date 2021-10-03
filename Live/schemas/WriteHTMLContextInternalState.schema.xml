@@ -10,20 +10,20 @@
     <column name="Depth" type="INT">
       <offset>0</offset>
     </column>
-    <column name="GeneratingTableStack" type="INTARRAY">
-      <offset>4</offset>
-    </column>
-    <column name="XPathSegments" type="STRINGARRAY">
+    <column name="Generatingtablestack" type="INTARRAY">
       <offset>8</offset>
     </column>
-    <column name="OverrideLink" type="STRING">
-      <offset>12</offset>
+    <column name="Xpathsegments" type="STRINGARRAY">
+      <offset>16</offset>
+    </column>
+    <column name="Overridelink" type="STRING">
+      <offset>24</offset>
       <flags>
         <flag>ESTRING</flag>
       </flags>
     </column>
-    <column name="XpathDepthOfOverrideLink" type="INT">
-      <offset>16</offset>
+    <column name="Xpathdepthofoverridelink" type="INT">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

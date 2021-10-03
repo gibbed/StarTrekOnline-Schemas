@@ -41,6 +41,11 @@
     <element name="UPDATE_HTTPINFO">38</element>
     <element name="BAD_PACKET">39</element>
     <element name="UPDATE_AUTOUPINFO">40</element>
-    <element name="CMD_COUNT">41</element>
+    <element name="CONNECT_OK2">41</element>
+    <element name="PROJECT_DATABASE">42</element>
+    <element name="FILE_REV_EXPIRATION_SET">43</element>
+    <element name="CHECKINS_BETWEEN_REVISIONS">44</element>
+    <element name="BATCHFILEVERSIONINFO">45</element>
+    <element name="CMD_COUNT">46</element>
   </elements>
 </enum>

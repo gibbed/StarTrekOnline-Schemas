@@ -7,16 +7,16 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="ExpressionBlock" type="OPTIONALSTRUCT">
+    <column name="Expressionblock" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <subtable external="Expression" />
     </column>
     <column name="Expression" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
       </flags>
-      <redundant_name>ExpressionBlock</redundant_name>
+      <redundant_name>Expressionblock</redundant_name>
       <subtable external="Expression_StructParam" />
     </column>
     <column name="}" type="END" />

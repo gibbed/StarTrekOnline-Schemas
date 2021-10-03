@@ -7,13 +7,13 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="PetID" type="INT">
+    <column name="Petid" type="INT">
       <offset>0</offset>
     </column>
     <column name="PetType" type="INT">
       <offset>4</offset>
     </column>
-    <column name="PetIsPuppet" type="INT">
+    <column name="Petispuppet" type="INT">
       <offset>8</offset>
     </column>
     <column name="}" type="END" />

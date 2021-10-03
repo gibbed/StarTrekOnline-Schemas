@@ -10,8 +10,8 @@
     <column name="Name" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="parseTableIndex" type="INT">
-      <offset>4</offset>
+    <column name="Parsetableindex" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

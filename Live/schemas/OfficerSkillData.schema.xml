@@ -7,21 +7,23 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="CategoryList" type="STRUCT">
+    <column name="Categorylist" type="STRUCT">
       <offset>0</offset>
       <subtable external="OfficerSkillCategoryUI" />
     </column>
     <column name="Trees" type="STRING">
-      <offset>4</offset>
-    </column>
-    <column name="LastUseTime" type="INT">
       <offset>8</offset>
     </column>
-    <column name="reset" type="U8">
-      <offset>12</offset>
+    <column name="Lastusetime" type="INT">
+      <offset>16</offset>
     </column>
-    <column name="AnyAvailable" type="U8">
-      <offset>13</offset>
+    <column name="reset" type="U8">
+      <offset>20</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Anyavailable" type="U8">
+      <offset>21</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

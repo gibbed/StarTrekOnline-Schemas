@@ -15,107 +15,163 @@
       </flags>
     </column>
     <column name="DisplayName" type="EMBEDDEDSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="LogName" type="STRING">
-      <offset>16</offset>
+    <column name="Logname" type="STRING">
+      <offset>32</offset>
     </column>
     <column name="Icon" type="STRING">
-      <offset>20</offset>
+      <offset>40</offset>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>24</offset>
+      <offset>48</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
     <column name="Faction" type="REFERENCE">
-      <offset>28</offset>
+      <offset>56</offset>
       <dictionary_name>CritterFaction</dictionary_name>
     </column>
-    <column name="FactionBattleForm" type="REFERENCE">
-      <offset>32</offset>
+    <column name="Factionbattleform" type="REFERENCE">
+      <offset>64</offset>
       <dictionary_name>CritterFaction</dictionary_name>
     </column>
     <column name="Description" type="EMBEDDEDSTRUCT">
-      <offset>36</offset>
+      <offset>72</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="DescriptionLong" type="EMBEDDEDSTRUCT">
-      <offset>48</offset>
+    <column name="Descriptionlong" type="EMBEDDEDSTRUCT">
+      <offset>96</offset>
       <subtable external="DisplayMessage" />
     </column>
-    <column name="RequiredPermission" type="STRING">
-      <offset>60</offset>
+    <column name="Allegiancedisplaysortorder" type="INT">
+      <offset>120</offset>
     </column>
-    <column name="DefaultPlayerAllegiance" type="U8">
-      <offset>64</offset>
+    <column name="Requiredpermission" type="STRING">
+      <offset>128</offset>
     </column>
-    <column name="CanBeSubAllegiance" type="U8">
-      <offset>65</offset>
+    <column name="Defaultplayerallegiance" type="U8">
+      <offset>136</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="DeferOfficerToSubAllegiance" type="U8">
-      <offset>66</offset>
+    <column name="Canbesuballegiance" type="U8">
+      <offset>137</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="CannotPlayUGC" type="U8">
-      <offset>67</offset>
+    <column name="Officeroverrideprimaryallegiance" type="U8">
+      <offset>138</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="RequiredMissionForAllegianceChange" type="REFERENCE">
-      <offset>68</offset>
+    <column name="Newplayermapsoverrideprimaryallegiance" type="U8">
+      <offset>139</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Mandatorysuballegiance" type="STRING">
+      <offset>144</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <dictionary_name>AllegianceDef</dictionary_name>
+    </column>
+    <column name="Mandatorysuballegianceof" type="STRING">
+      <offset>144</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+        <flag>REDUNDANTNAME</flag>
+        <flag>GLOBAL_NAME</flag>
+      </flags>
+      <redundant_name>Mandatorysuballegiance</redundant_name>
+      <dictionary_name>AllegianceDef</dictionary_name>
+    </column>
+    <column name="Requiredmissionforallegiancechange" type="REFERENCE">
+      <offset>152</offset>
       <dictionary_name>MissionDef</dictionary_name>
     </column>
-    <column name="AllowedAllegianceChange" type="STRINGARRAY">
-      <offset>72</offset>
+    <column name="Requireditemforallegiancechangealternative" type="STRINGARRAY">
+      <offset>160</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>
     </column>
-    <column name="StartingSpecies" type="STRUCT">
-      <offset>76</offset>
+    <column name="Allowedallegiancechange" type="STRINGARRAY">
+      <offset>168</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Startingspecies" type="STRUCT">
+      <offset>176</offset>
       <subtable external="SpeciesDefRef" />
     </column>
-    <column name="PetGrantSpecies" type="STRUCT">
-      <offset>80</offset>
+    <column name="Speciesnestedgroupuidef" type="STRUCT">
+      <offset>184</offset>
+      <subtable external="SpeciesNestedGroupUIDef" />
+    </column>
+    <column name="Petgrantspecies" type="STRUCT">
+      <offset>192</offset>
       <subtable external="SpeciesDefRef" />
     </column>
-    <column name="SpeciesChange" type="STRUCT">
-      <offset>84</offset>
+    <column name="Specieschange" type="STRUCT">
+      <offset>200</offset>
       <subtable external="AllegianceSpeciesChange" />
     </column>
-    <column name="AllowedClass" type="STRUCT">
-      <offset>88</offset>
-      <subtable external="CharacterClassRef" />
+    <column name="Allowedclass" type="STRUCT">
+      <offset>208</offset>
+      <subtable external="AllegianceCharacterClass" />
     </column>
-    <column name="WarpRestrictions" type="OPTIONALSTRUCT">
-      <offset>92</offset>
+    <column name="Otherclassdata" type="STRUCT">
+      <offset>216</offset>
+      <subtable external="AllegianceCharacterClass" />
+    </column>
+    <column name="Warprestrictions" type="OPTIONALSTRUCT">
+      <offset>224</offset>
       <subtable external="AllegianceWarpRestrict" />
     </column>
-    <column name="DefaultMap" type="STRUCT">
-      <offset>96</offset>
+    <column name="Defaultmap" type="STRUCT">
+      <offset>232</offset>
       <subtable external="AllegianceDefaultMap" />
     </column>
-    <column name="NamePrefix" type="STRUCT">
-      <offset>100</offset>
-      <subtable external="AllegianceNamePrefix" />
+    <column name="Newcharactermap" type="STRINGARRAY">
+      <offset>240</offset>
     </column>
-    <column name="SubNamePrefix" type="STRUCT">
-      <offset>104</offset>
-      <subtable external="AllegianceNamePrefix" />
+    <column name="Skiptutorialmap" type="STRINGARRAY">
+      <offset>248</offset>
     </column>
-    <column name="NewCharacterMap" type="STRINGARRAY">
-      <offset>108</offset>
+    <column name="Fallbackstaticmap" type="STRING">
+      <offset>256</offset>
     </column>
-    <column name="SkipTutorialMap" type="STRINGARRAY">
-      <offset>112</offset>
-    </column>
-    <column name="FallbackStaticMap" type="STRING">
-      <offset>116</offset>
-    </column>
-    <column name="FXSwap" type="STRUCT">
-      <offset>120</offset>
+    <column name="Fxswap" type="STRUCT">
+      <offset>264</offset>
       <subtable external="PCFXSwap" />
     </column>
+    <column name="Costumebits" type="STRING">
+      <offset>272</offset>
+    </column>
+    <column name="Peripheralcolor" type="F32FIXEDARRAY">
+      <offset>280</offset>
+      <num_elements>3</num_elements>
+      <format_raw>14</format_raw>
+    </column>
+    <column name="Isprimaryalliegiance" type="U8">
+      <offset>292</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Reacquiremapname" type="STRING">
+      <offset>296</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Recuitmenteventname" type="STRINGARRAY">
+      <offset>304</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Cannotplayugc" type="IGNORE" />
     <column name="}" type="END" />
   </table>
 </parser>

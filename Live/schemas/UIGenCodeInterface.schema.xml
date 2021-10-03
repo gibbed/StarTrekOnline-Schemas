@@ -7,25 +7,50 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SortColumn" type="INT">
-      <offset>16</offset>
+    <column name="Datachangetimecolumn" type="INT">
+      <offset>56</offset>
+      <default>-1</default>
+    </column>
+    <column name="Eaastrsounds" type="STRINGARRAY">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Sortcolumn" type="INT">
+      <offset>72</offset>
       <default>-1</default>
     </column>
     <column name="Sort" type="INT">
-      <offset>20</offset>
+      <offset>76</offset>
       <static_define_list external="UISortType" />
     </column>
-    <column name="uiFrameLastUpdate" type="INT">
-      <offset>24</offset>
+    <column name="Tokeninterpretation" type="INT">
+      <offset>80</offset>
+      <static_define_list external="UIGenTokenInterpretation" />
     </column>
-    <column name="uiFrameLastBadMemoryError" type="INT">
-      <offset>28</offset>
+    <column name="Uiframelastupdate" type="INT">
+      <offset>112</offset>
     </column>
-    <column name="ManagedStructures" type="U8">
-      <offset>32</offset>
+    <column name="Uiframelastbadmemoryerror" type="INT">
+      <offset>116</offset>
     </column>
-    <column name="ManagedPointer" type="U8">
-      <offset>33</offset>
+    <column name="Uiframelastmodelinstability" type="INT">
+      <offset>120</offset>
+    </column>
+    <column name="Uiframesmodelinstability" type="INT">
+      <offset>124</offset>
+    </column>
+    <column name="Managedstructures" type="U8">
+      <offset>128</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Managedpointer" type="U8">
+      <offset>129</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Uisizemodelupdateinfo" type="INT64">
+      <offset>144</offset>
     </column>
     <column name="}" type="END" />
   </table>

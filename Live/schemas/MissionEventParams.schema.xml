@@ -12,11 +12,11 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>1199</default>
+      <default>1310</default>
       <static_define_list external="AttribType" />
     </column>
     <column name="EventName" type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

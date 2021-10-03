@@ -7,36 +7,36 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="chan" type="OPTIONALSTRUCT">
+    <column name="Chan" type="OPTIONALSTRUCT">
       <offset>0</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="VoiceChannel" />
     </column>
     <column name="User" type="OPTIONALSTRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
-        <flag>UNKNOWN_32</flag>
+        <flag>UNOWNED</flag>
       </flags>
       <subtable external="VoiceUser" />
     </column>
-    <column name="energy" type="F32">
-      <offset>8</offset>
+    <column name="Energy" type="F32">
+      <offset>16</offset>
     </column>
     <column name="Volume" type="F32">
-      <offset>12</offset>
+      <offset>20</offset>
     </column>
     <column name="IsTalking" type="BIT">
-      <offset>16</offset>
+      <offset>24</offset>
       <bit_offset>65536</bit_offset>
     </column>
-    <column name="isMutedByOp" type="BIT">
-      <offset>16</offset>
+    <column name="Ismutedbyop" type="BIT">
+      <offset>24</offset>
       <bit_offset>65537</bit_offset>
     </column>
-    <column name="isMutedByMe" type="BIT">
-      <offset>16</offset>
+    <column name="Ismutedbyme" type="BIT">
+      <offset>24</offset>
       <bit_offset>65538</bit_offset>
     </column>
     <column name="}" type="END" />

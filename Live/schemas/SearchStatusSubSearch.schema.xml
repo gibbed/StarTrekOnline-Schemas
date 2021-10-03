@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parser name="SearchStatusSubSearch">
+  <table>
+    <column name="SearchStatusSubSearch" type="IGNORE">
+      <flags>
+        <flag>PARSETABLE_INFO</flag>
+      </flags>
+    </column>
+    <column name="{" type="START" />
+    <column name="Fields" type="STRINGARRAY">
+      <offset>0</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Names" type="STRINGARRAY">
+      <offset>8</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Mode" type="INT">
+      <offset>16</offset>
+      <default>1</default>
+      <static_define_list external="ResourceSearchMode" />
+    </column>
+    <column name="Style" type="INT">
+      <offset>20</offset>
+      <static_define_list external="SubSearchStyle" />
+    </column>
+    <column name="Filter" type="STRING">
+      <offset>24</offset>
+    </column>
+    <column name="Result" type="EMBEDDEDSTRUCT">
+      <offset>32</offset>
+      <subtable external="ResourceSearchResult" />
+    </column>
+    <column name="Treefilter" type="STRING">
+      <offset>48</offset>
+    </column>
+    <column name="Strict" type="U8">
+      <offset>56</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Regex" type="U8">
+      <offset>57</offset>
+      <format>INT_WAS_BOOL</format>
+    </column>
+    <column name="Dictname" type="STRING">
+      <offset>64</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Lastdictname" type="STRING">
+      <offset>72</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Selectedresource" type="STRING">
+      <offset>80</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Lastselectedresource" type="STRING">
+      <offset>88</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="Eapcresnamelist" type="STRINGARRAY">
+      <offset>96</offset>
+      <flags>
+        <flag>POOL_STRING</flag>
+      </flags>
+    </column>
+    <column name="}" type="END" />
+  </table>
+</parser>

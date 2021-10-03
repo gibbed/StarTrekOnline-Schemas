@@ -7,11 +7,11 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="SuspiciousFuncName" type="STRING">
+    <column name="Suspiciousfuncname" type="STRING">
       <offset>0</offset>
     </column>
-    <column name="AutoTransNames" type="STRINGARRAY">
-      <offset>4</offset>
+    <column name="Autotransnames" type="STRINGARRAY">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

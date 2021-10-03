@@ -7,32 +7,33 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hMissionDef" type="REFERENCE">
+    <column name="Hmissiondef" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>MissionDef</dictionary_name>
     </column>
-    <column name="SharerType" type="INT">
-      <offset>4</offset>
+    <column name="Sharertype" type="INT">
+      <offset>8</offset>
       <static_define_list external="GlobalType" />
     </column>
-    <column name="uSharerID" type="INT">
-      <offset>8</offset>
-    </column>
-    <column name="CreditType" type="INT">
+    <column name="Usharerid" type="INT">
       <offset>12</offset>
+    </column>
+    <column name="Credittype" type="INT">
+      <offset>16</offset>
       <static_define_list external="MissionCreditType" />
     </column>
-    <column name="entHeadshotOverride" type="INT">
-      <offset>16</offset>
-    </column>
-    <column name="Silent" type="U8">
+    <column name="Entheadshotoverride" type="INT">
       <offset>20</offset>
     </column>
-    <column name="TimeStamp" type="INT">
+    <column name="Silent" type="U8">
       <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
-    <column name="uTimerStartTime" type="INT">
+    <column name="TimeStamp" type="INT">
       <offset>28</offset>
+    </column>
+    <column name="Utimerstarttime" type="INT">
+      <offset>32</offset>
     </column>
     <column name="}" type="END" />
   </table>

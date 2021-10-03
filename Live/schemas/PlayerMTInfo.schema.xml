@@ -7,25 +7,25 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="dirtyBit" type="U8">
+    <column name="Dirtybit" type="U8">
       <offset>0</offset>
       <flags>
         <flag>NO_NETSEND</flag>
         <flag>DIRTY_BIT</flag>
       </flags>
     </column>
-    <column name="eaOneTimePurchases" type="STRINGARRAY">
-      <offset>4</offset>
-      <flags>
-        <flag>PERSIST</flag>
-      </flags>
-    </column>
-    <column name="eaFirstPurchases" type="STRUCT">
+    <column name="Eaonetimepurchases" type="STRUCT">
       <offset>8</offset>
       <flags>
+        <flag>SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <subtable external="MicroTransactionPurchase" />
+      <subtable external="PlayerMTOneTimeRecord" />
+    </column>
+    <column name="Eafirstpurchases" type="IGNORE">
+      <flags>
+        <flag>IGNORE_STRUCT</flag>
+      </flags>
     </column>
     <column name="}" type="END" />
   </table>

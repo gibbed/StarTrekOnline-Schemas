@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="DictName" type="STRING">
+    <column name="Dictname" type="STRING">
       <offset>0</offset>
       <flags>
         <flag>POOL_STRING</flag>
@@ -15,10 +15,10 @@
       </flags>
     </column>
     <column name="Tag" type="STRINGARRAY">
-      <offset>4</offset>
+      <offset>8</offset>
     </column>
     <column name="FileName" type="CURRENTFILE">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>POOL_STRING</flag>
       </flags>

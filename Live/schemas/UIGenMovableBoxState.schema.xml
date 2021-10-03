@@ -12,7 +12,7 @@
       <flags>
         <flag>OBJECTTYPE</flag>
       </flags>
-      <default>13</default>
+      <default>14</default>
       <static_define_list external="UIGenType" />
     </column>
     <column name="Original" type="EMBEDDEDSTRUCT">
@@ -20,24 +20,25 @@
       <subtable external="UIPosition" />
     </column>
     <column name="Override" type="OPTIONALSTRUCT">
-      <offset>84</offset>
+      <offset>88</offset>
       <subtable external="UIPosition" />
     </column>
     <column name="Moving" type="U8">
-      <offset>88</offset>
+      <offset>96</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="Resizing" type="INT">
-      <offset>92</offset>
+      <offset>100</offset>
       <static_define_list external="UIDirection" />
     </column>
-    <column name="GrabbedX" type="INT">
-      <offset>96</offset>
-    </column>
-    <column name="GrabbedY" type="INT">
-      <offset>100</offset>
-    </column>
-    <column name="chPriority" type="U8">
+    <column name="Grabbedx" type="INT">
       <offset>104</offset>
+    </column>
+    <column name="Grabbedy" type="INT">
+      <offset>108</offset>
+    </column>
+    <column name="Chpriority" type="U8">
+      <offset>112</offset>
     </column>
     <column name="}" type="END" />
   </table>

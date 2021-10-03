@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="MissionWarpCostDef" type="STRUCT">
+    <column name="Missionwarpcostdef" type="STRUCT">
       <offset>0</offset>
       <subtable external="MissionWarpCostDef" />
     </column>

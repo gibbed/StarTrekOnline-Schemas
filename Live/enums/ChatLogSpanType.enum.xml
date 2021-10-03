@@ -8,5 +8,6 @@
     <element name="Spy">4</element>
     <element name="Channel">5</element>
     <element name="Message">6</element>
+    <element name="AllianceTag">7</element>
   </elements>
 </enum>

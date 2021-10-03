@@ -7,12 +7,12 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="RarityCount" type="INTARRAY">
+    <column name="Raritycount" type="INTARRAY">
       <offset>0</offset>
       <static_define_list external="ItemAssignmentRarityCountType" />
     </column>
-    <column name="RefreshTime" type="INT">
-      <offset>4</offset>
+    <column name="Refreshtime" type="INT">
+      <offset>8</offset>
     </column>
     <column name="}" type="END" />
   </table>

@@ -7,22 +7,23 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="hTutorial" type="REFERENCE">
+    <column name="Htutorial" type="REFERENCE">
       <offset>0</offset>
       <dictionary_name>UIGenTutorial</dictionary_name>
     </column>
-    <column name="InfoState" type="STRUCT">
-      <offset>4</offset>
+    <column name="Infostate" type="STRUCT">
+      <offset>8</offset>
       <subtable external="UIGenTutorialInfoState" />
     </column>
     <column name="Step" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
     </column>
     <column name="Version" type="INT">
-      <offset>12</offset>
+      <offset>20</offset>
     </column>
     <column name="Dirty" type="U8">
-      <offset>16</offset>
+      <offset>24</offset>
+      <format>INT_WAS_BOOL</format>
     </column>
     <column name="}" type="END" />
   </table>

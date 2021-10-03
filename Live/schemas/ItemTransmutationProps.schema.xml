@@ -7,7 +7,7 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="TransmutatedItemDef" type="REFERENCE">
+    <column name="Transmutateditemdef" type="REFERENCE">
       <offset>0</offset>
       <flags>
         <flag>SUBSCRIBE</flag>
@@ -16,15 +16,15 @@
       </flags>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
-    <column name="hTransmutatedItemDef" type="REFERENCE">
+    <column name="Htransmutateditemdef" type="REFERENCE">
       <offset>0</offset>
       <flags>
-        <flag>ALIAS</flag>
+        <flag>REDUNDANTNAME</flag>
         <flag>SUBSCRIBE</flag>
         <flag>LOGIN_SUBSCRIBE</flag>
         <flag>PERSIST</flag>
       </flags>
-      <redundant_name>TransmutatedItemDef</redundant_name>
+      <redundant_name>Transmutateditemdef</redundant_name>
       <dictionary_name>ItemDef</dictionary_name>
     </column>
     <column name="}" type="END" />

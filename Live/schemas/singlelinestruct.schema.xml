@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<parser name="singlelinestruct">
+<parser name="Singlelinestruct">
   <table>
     <column type="INT">
       <offset>0</offset>
@@ -8,13 +8,13 @@
       </flags>
     </column>
     <column type="STRING">
-      <offset>4</offset>
+      <offset>8</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>
     </column>
     <column type="F32">
-      <offset>8</offset>
+      <offset>16</offset>
       <flags>
         <flag>STRUCTPARAM</flag>
       </flags>

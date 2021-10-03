@@ -17,26 +17,26 @@
       </flags>
     </column>
     <column name="Name" type="STRING">
-      <offset>12</offset>
+      <offset>24</offset>
       <flags>
         <flag>KEY</flag>
       </flags>
     </column>
-    <column name="CommandStats" type="STRUCT">
-      <offset>20</offset>
+    <column name="Commandstats" type="STRUCT">
+      <offset>40</offset>
       <subtable external="LinkReceiveStats_PerCommand" />
     </column>
     <column name="Overall" type="EMBEDDEDSTRUCT">
-      <offset>24</offset>
+      <offset>48</offset>
       <subtable external="LinkReceiveStats_SizeCounts" />
     </column>
-    <column name="FirstDataTime" type="INT">
-      <offset>80</offset>
+    <column name="Firstdatatime" type="INT">
+      <offset>112</offset>
       <format_strings>
         <format_string name="HTML_SECS_AGO">1</format_string>
       </format_strings>
     </column>
-    <column name="Begin getting a delta for ALL LinkReceiveStats" type="COMMAND">
+    <column name="Begin Getting A Delta For All Linkreceivestats" type="COMMAND">
       <offset>0</offset>
       <command_string>ReceiveStats_CaptureDelta $INT(How many seconds of data, 0 to cancel)</command_string>
     </column>

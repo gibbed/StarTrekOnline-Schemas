@@ -7,20 +7,21 @@
       </flags>
     </column>
     <column name="{" type="START" />
-    <column name="base_drawable" type="EMBEDDEDSTRUCT">
+    <column name="Base_Drawable" type="EMBEDDEDSTRUCT">
       <offset>0</offset>
       <subtable external="WorldDrawableEntryParsed" />
     </column>
-    <column name="wind_params" type="F32FIXEDARRAY">
-      <offset>124</offset>
+    <column name="Wind_Params" type="F32FIXEDARRAY">
+      <offset>152</offset>
       <num_elements>4</num_elements>
+      <format_raw>14</format_raw>
     </column>
     <column name="Instances" type="STRUCT">
-      <offset>140</offset>
+      <offset>168</offset>
       <subtable external="WorldModelInstanceInfoParsed" />
     </column>
-    <column name="lod_idx" type="INT">
-      <offset>144</offset>
+    <column name="Lod_Idx" type="INT">
+      <offset>176</offset>
     </column>
     <column name="}" type="END" />
   </table>

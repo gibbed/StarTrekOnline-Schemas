@@ -12,14 +12,14 @@
       <dictionary_name>PowerTreeDef</dictionary_name>
     </column>
     <column name="Groups" type="STRUCT">
-      <offset>4</offset>
+      <offset>8</offset>
       <subtable external="PTGroupTopDown" />
     </column>
     <column name="Width" type="INT">
-      <offset>8</offset>
+      <offset>16</offset>
     </column>
     <column name="Height" type="INT">
-      <offset>12</offset>
+      <offset>20</offset>
     </column>
     <column name="}" type="END" />
   </table>
